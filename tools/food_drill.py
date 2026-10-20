@@ -33,7 +33,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from chain_probe import haversine                            # noqa: E402
+from chain_probe import haversine, heat_band                  # noqa: E402
 from district_scan import query_place                        # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -178,9 +178,19 @@ def classify(poi_inner, chain_inner, heat, carrier_state):
     else:
         food_sig = "餐饮稀疏"
 
-    # 行政区/居民区否决：既无连锁投票，人流读数也极低
-    admin_kill = (chain_inner == 0
-                  and (heat is None or (isinstance(heat, (int, float)) and heat < 1)))
+    # 行政区/居民区否决：既无连锁投票，人流读数也处于 floor 档。
+    # v0.5.0：原判定 `heat < 1` 写死了「0–10 量纲」假设。实测 arrival_heat
+    # 跨 4 个数量级（岳阳 0.05 / 汴河街 8.95 / 长沙五一 351.55），
+    # `heat < 1` 对长沙/成都这类城市等于「恒真」，会把真实商圈全否掉。
+    # 改用 heat_band 的 floor 档（≤0.1，跨城绝对可靠）。
+    if chain_inner == 0:
+        if heat is None:
+            admin_kill = True
+        else:
+            _band, _ = heat_band(heat)
+            admin_kill = (_band == "floor")
+    else:
+        admin_kill = False
     if admin_kill and poi_inner >= 8:
         return "非商圈/居民区（餐饮为周边溢出，非街区人流）", "联动否决"
     if admin_kill:

@@ -33,6 +33,11 @@ os.makedirs(CACHE, exist_ok=True)
 
 PLACE_URL = "https://api.map.baidu.com/agent_plan/v1/place"
 TODAY = date(2026, 10, 20)
+
+# v0.5.0 说明：本脚本是**已产出卡片的回灌工具**，不是通用核验器。
+# QUERY_MAP 是「卡片条目号 → 真实店名」的人工映射表，只覆盖已实测过的
+# 武汉/岳阳/恩施三城。换城市请用 chain_probe.py / district_scan.py，
+# 或按下节的 JSON 输入走通用路径。
 REGION = {"武汉": "武汉市", "岳阳": "岳阳市", "恩施": "恩施市"}
 
 

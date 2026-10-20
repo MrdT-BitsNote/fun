@@ -100,6 +100,20 @@ DECAY_M = 1500.0
 
 
 # ---------------------------------------------------------------- HTTP
+class QuotaExceeded(RuntimeError):
+    """百度 Agent Plan 配额耗尽。
+
+    实测事故（v0.5.0）：一次全国 6 城普查打掉了「近 5 小时」配额，
+    此后接口返回
+        {"message":"近5小时请求总量超限额…","status":302}
+    **注意 `results` 字段直接缺失**，上层拿到的是「空列表」，
+    于是把配额故障误判成「地图未收录这家店」——
+    这是最危险的静默失败：所有核验结果会集体降级而无人察觉。
+
+    必须在最底层拦截并显式抛出，绝不能让调用方把配额问题读成地理问题。
+    """
+
+
 def query_place(user_raw_request, city, retries=2):
     qs = urllib.parse.urlencode({
         "user_raw_request": user_raw_request,
@@ -114,11 +128,25 @@ def query_place(user_raw_request, city, retries=2):
     for attempt in range(retries + 1):
         try:
             with urllib.request.urlopen(req, timeout=45) as r:
-                return json.loads(r.read().decode("utf-8"))
+                blob = json.loads(r.read().decode("utf-8"))
         except Exception as e:                      # noqa: BLE001
             last = e
             if attempt < retries:
                 time.sleep(1.2 * (attempt + 1))
+            continue
+        # ── v0.5.0 新增：错误状态必须显式拦截 ──
+        msg = str(blob.get("message") or "")
+        status = blob.get("status")
+        if "超限额" in msg or "超额" in msg or "quota" in msg.lower():
+            raise QuotaExceeded(
+                "百度地图 Agent Plan 配额耗尽（status=%s）：%s\n"
+                "这是配额问题，不是地理问题——请停止一切 POI 查询，"
+                "改用已缓存数据或等待配额窗口恢复（近 5 小时）。"
+                % (status, msg[:80]))
+        if status not in (None, 0) and "超限额" not in msg:
+            # 其他非 0 状态也记录，但不阻断（有少量正常返回带提示信息）
+            blob.setdefault("_status", status)
+        return blob
     raise RuntimeError("POI 请求失败：%s" % last)
 
 
@@ -590,3 +618,97 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ---------------------------------------------------- heat 量纲自适应分级
+# v0.5.0 实测事故：文档与代码都按「arrival_heat 取值 0–10 量级」写，
+# 于是 `heat >= 5` 这种阈值会把所有真实热门商圈全部误判。
+#
+# 865 个实测样本的真相（岳阳/长沙/成都/哈尔滨/汕头）：
+#   最小 0.05（行政区 POI、空洞店 POI）… 中位 0.25 … 8.95（汴河街）
+#   … 201.20（长沙 IFS）… 351.55（长沙五一广场）… 最大 440.30（成都春熙路）
+#
+# 结论：它**不是 0–10 连续量**，而是跨 4 个数量级的离散档位值。
+# 城市规模不同，同一档位的绝对值差异巨大——长沙五一 351 与长沙IFS 201
+# 是同一量级，岳阳汴河街 8.95 却是另一个量级。**绝不能用跨城绝对阈值。**
+#
+# 正确做法：按**同城相对分位**判定，而不是绝对值。参考锚点取同次扫描中
+# 有效样本的中位值；热点则用「是否进入同城头部区间」判断。
+HEAT_NULLISH = {"—", "-", "", None, "null"}
+
+
+def heat_ref(values):
+    """计算同次扫描的 heat 参照基准。
+
+    用**几何均值**而非算术中位数：
+    实测岳阳算术中位 0.88 / 长沙 5.92（比值 7），
+    几何均值 1.99 / 21.54（比值 11），几何均值对数量级差异更稳健，
+    不容易被大量 0.05 的空洞 POI 拉偏。
+
+    样本少于 6 个时返回 None，调用方须退回绝对分档——
+    样本太少时相对分位不稳定，比绝对值更危险。
+    """
+    nz = []
+    for v in values or ():
+        if v in HEAT_NULLISH:
+            continue
+        try:
+            f = float(v)
+        except (TypeError, ValueError):
+            continue
+        if f > 0.1:                    # 0.05 这类 floor 值不参与参照
+            nz.append(f)
+    if len(nz) < 6:
+        return None
+    return math.exp(sum(math.log(x) for x in nz) / len(nz))
+
+
+def heat_band(value, ref=None):
+    """把绝对 heat 值映射为可跨城比较的相对档位。
+
+    返回 (band, 说明)：
+      missing  无热度数据
+      floor    近乎无客流（≤0.1，绝对可靠，与城市规模无关）
+      low      弱
+      mid      中
+      high     强
+      top      极强（城市级核心）
+
+    **双轨设计**：floor 用绝对阈值判定（0.1 在任何城市都意味着
+    「这不是人流承载点」，实测岳阳洞庭街道 0.05、成都春熙路 440.30
+    同时成立）；low 及以上用同城几何均值作参照，避免跨城绝对阈值失效。
+
+    ⚠️ **ref 必须取同城。** 实测教训：用长沙中位 217 去比岳阳汴河街 8.95，
+    会把岳阳最热的商圈判成 floor。跨城比较 heat 绝对值没有意义。
+    """
+    if value in HEAT_NULLISH:
+        return "missing", "无到访热度数据"
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return "missing", "热度字段不可解析：%r" % (value,)
+    # ── 轨道一：floor 用绝对阈值（跨城可靠）──
+    if v <= 0.1:
+        return "floor", "%.2f：近乎无客流，通常是行政区 POI 或空洞点" % v
+    # ── 轨道二：其余用同城参照 ──
+    if ref is None or ref <= 0:
+        if v >= 150:
+            return "top", "%.2f：城市级核心商圈（无同城参照，按绝对值判定）" % v
+        if v >= 20:
+            return "high", "%.2f：强人流（无同城参照，结论置信度较低）" % v
+        if v >= 2:
+            return "mid", "%.2f：中等人流（无同城参照，结论置信度较低）" % v
+        return "low", "%.2f：弱人流（无同城参照）" % v
+    r = v / ref
+    if r >= 6:
+        return "top", "%.2f＝同城中位 %.2f 的 %.0f 倍：城市级核心" % (v, ref, r)
+    if r >= 2:
+        return "high", "%.2f＝同城中位 %.2f 的 %.0f 倍：强人流" % (v, ref, r)
+    if r >= 0.8:
+        return "mid", "%.2f＝同城中位 %.2f：中等人流" % (v, ref)
+    return "low", "%.2f＝同城中位 %.2f 的 %.0f 倍：弱人流" % (v, ref, r)
+
+
+def heat_is_hot(band):
+    """热度是否达到「热点」级别（用于景区/枢纽识别）。"""
+    return band in ("high", "top")

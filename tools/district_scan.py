@@ -41,13 +41,26 @@ from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from chain_probe import (                                    # noqa: E402
     ALL_BRANDS, DECAY_M, TIERS, anchor_quality, carrier_check,
-    haversine, brand_of, load_token, norm,
+    haversine, brand_of, heat_band, heat_is_hot, heat_ref, load_token, norm,
 )
 
 PLACE_URL = "https://api.map.baidu.com/agent_plan/v1/place"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BRAND_CACHE = os.path.join(ROOT, ".cache", "brand_pois.json")
+CACHE_DIR = os.path.join(ROOT, ".cache", "brands")
+
+
+def _brand_cache_path(city):
+    """品牌门店缓存路径**按城市分文件**。
+
+    v0.5.0 实测事故：原实现用固定的 `.cache/brand_pois.json`，
+    而缓存内容与城市强相关。切城市（岳阳→长沙→哈尔滨）时会读到
+    上一个城市的门店，坐标全错，普查结果整体失真且**静默**——
+    实测发现该文件里存的是哈尔滨的门店，却在给长沙做密度统计。
+    """
+    safe = "".join(ch for ch in city if ch.isalnum() or ch in "-_")
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    return os.path.join(CACHE_DIR, "brands_%s.json" % (safe or "default"))
 
 
 # ---------------------------------------------------------------- HTTP
@@ -77,14 +90,19 @@ def query_place(user_raw_request, city, retries=2):
 def fetch_brand_pois(city, workers=6):
     """一次性拉取全部品牌的门店，返回 {brand: [poi_dict, ...]}。"""
     cache = {}
-    if os.path.exists(BRAND_CACHE):
+    cache_path = _brand_cache_path(city)
+    if os.path.exists(cache_path):
         try:
-            with open(BRAND_CACHE, encoding="utf-8") as f:
+            with open(cache_path, encoding="utf-8") as f:
                 blob = json.load(f)
+            # 双保险：文件名已按城市分，这里再校验一次 city 字段
             if blob.get("city") == city:
                 cache = blob.get("brands", {})
-                print("[阶段1] 命中缓存：%d 个品牌，0 次请求" % len(cache))
+                print("[阶段1] 命中缓存 %s：%d 个品牌，0 次请求"
+                      % (os.path.basename(cache_path), len(cache)))
                 return cache
+            print("[阶段1] 缓存城市不符（%s ≠ %s），已忽略"
+                  % (blob.get("city"), city))
         except (ValueError, OSError):
             pass
 
@@ -120,10 +138,10 @@ def fetch_brand_pois(city, workers=6):
             res[brand] = out
             print("  · %-8s %d 家" % (brand, len(out)))
 
-    os.makedirs(os.path.dirname(BRAND_CACHE), exist_ok=True)
-    with open(BRAND_CACHE, "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    with open(cache_path, "w", encoding="utf-8") as f:
         json.dump({"city": city, "brands": res}, f, ensure_ascii=False, indent=2)
-    print("[阶段1] 完成，已缓存 → %s" % BRAND_CACHE)
+    print("[阶段1] 完成，已缓存 → %s" % cache_path)
     return res
 
 
@@ -131,7 +149,10 @@ def fetch_brand_pois(city, workers=6):
 def scan_one(item, brand_pois, radius=800, inner_m=300):
     """对单个锚点做密度判定（品牌数据走本地缓存）。"""
     anchor, label = item["anchor"], item.get("label", item["anchor"])
-    d = query_place("帮我找" + anchor, "岳阳市")
+    # v0.5.0：city 原先硬编码「岳阳市」，换城市后所有锚点都按岳阳市检索，
+    # 锚点坐标全部错位。改为从入参传入。
+    city = item.get("city") or "岳阳市"
+    d = query_place("帮我找" + anchor, city)
     res = d.get("results") or []
     if not res:
         return {"label": label, "anchor_req": anchor,
@@ -203,8 +224,14 @@ def scan_one(item, brand_pois, radius=800, inner_m=300):
     if mall_locked:
         verdict += "｜形态：%s（连锁集中于%s内，动线按店内楼层编排，不做街面动线）" \
             % (shape, list(malls)[0])
-    if len(inner) <= 2 and isinstance(heat, (int, float)) and heat >= 5:
-        verdict += "｜⚠连锁少但热度高：景区/枢纽/校园型人流，非零售商圈"
+    # v0.5.0：热度改用**量纲自适应**判档，废弃硬编码 `heat >= 5`。
+    # 实测事故：arrival_heat 不是 0–10 量级，而是跨 4 个数量级的离散值
+    # （岳阳 0.05、汴河街 8.95、长沙五一 351.55、成都春熙路 440.30）。
+    # 旧阈值 `heat >= 5` 会把长沙五一广场这类城市级核心商圈直接误判成
+    # 「景区/枢纽/校园型人流」。
+    #
+    # 注意：ref 必须**跨锚点**计算（同城几何均值），所以判定延后到 main()，
+    # 这里只落原始值。see finalize_heat_bands()。
     if car_state == "offsite":
         verdict += "｜⚠" + car_note
 
@@ -242,12 +269,21 @@ def main():
     print("[阶段2] 扫描 %d 个锚点（并发 %d）……" % (len(items), args.workers))
     rows = []
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futs = [ex.submit(scan_one, it, brand_pois, args.radius) for it in items]
+        futs = [ex.submit(scan_one, dict(it, city=args.city),
+                          brand_pois, args.radius) for it in items]
         for fu in futs:
             try:
                 rows.append(fu.result())
             except Exception as e:                          # noqa: BLE001
                 rows.append({"label": "?", "verdict": "扫描失败：%s" % e})
+
+    # v0.5.0：热度跨锚点统一判档（ref 必须同城，故在扫描层算）
+    ref = heat_ref([r.get("arrival_heat") for r in rows])
+    for r in rows:
+        band, note = heat_band(r.get("arrival_heat"), ref=ref)
+        r["heat_band"] = band
+        r["heat_note"] = note if band != "missing" else "—"
+    print("[热度] 同城参照 ref=%s" % ("%.2f" % ref if ref else "样本不足，回退绝对分档"))
 
     # 排序：商圈 > 准商圈 > 非商圈，其次按核心连锁数
     def rank(r):
@@ -257,14 +293,17 @@ def main():
     rows.sort(key=rank)
 
     print("=" * 92)
-    print("%-14s %-30s %5s %5s %7s  %s"
-          % ("商圈", "锚点命中", "核心", "加权", "热度", "判定"))
+    print("%-14s %-30s %5s %5s %-8s %-8s %s"
+          % ("商圈", "锚点命中", "核心", "加权", "热度档", "热度值", "判定"))
     print("-" * 92)
     for r in rows:
-        print("%-14s %-30s %5s %5s %7s  %s"
+        print("%-14s %-30s %5s %5s %-8s %7s  %s"
               % (r["label"][:13], (r.get("anchor") or "-")[:28],
                  r.get("chain_inner", "-"), r.get("chain_inner_weighted", "-"),
-                 r.get("heat_note", "-"), r["verdict"]))
+                 r.get("heat_band", "-"),
+                 ("%.2f" % r["arrival_heat"])
+                 if isinstance(r.get("arrival_heat"), (int, float)) else "-",
+                 r["verdict"]))
     print("=" * 92)
 
     if args.out:
