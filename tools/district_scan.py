@@ -42,7 +42,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from chain_probe import (                                    # noqa: E402
     ALL_BRANDS, DECAY_M, TIERS, anchor_quality, carrier_check,
     haversine, brand_of, heat_band, heat_is_hot, heat_ref, load_token, norm,
+    QuotaExceeded,
 )
+from chain_probe import query_place as _chain_query_place   # noqa: E402
 
 PLACE_URL = "https://api.map.baidu.com/agent_plan/v1/place"
 
@@ -64,26 +66,20 @@ def _brand_cache_path(city):
 
 
 # ---------------------------------------------------------------- HTTP
-def query_place(user_raw_request, city, retries=2):
-    qs = urllib.parse.urlencode({
-        "user_raw_request": user_raw_request,
-        "region": city,
-        "sort": "relevance",
-    })
-    req = urllib.request.Request(
-        PLACE_URL + "?" + qs,
-        headers={"Authorization": "Bearer " + load_token(),
-                 "User-Agent": "curl/8"})
-    last = None
-    for attempt in range(retries + 1):
-        try:
-            with urllib.request.urlopen(req, timeout=45) as r:
-                return json.loads(r.read().decode("utf-8"))
-        except Exception as e:                              # noqa: BLE001
-            last = e
-            if attempt < retries:
-                time.sleep(1.2 * (attempt + 1))
-    raise RuntimeError("POI 请求失败：%s" % last)
+# v0.5.0 修正：删除本文件里 query_place 的**独立副本**，统一复用
+# chain_probe.query_place。
+#
+# 实测事故：副本存在时，配额检查只在 chain_probe 里加了，这个副本仍是旧版
+# ——返回 {status:302} 无 results，上层读成「该品牌在此城无门店」。
+# 更严重的是 fetch_brand_pois 会把这 26 个空结果**写进按城缓存**，
+# 二次运行命中空缓存不再重拉 → 全城商圈被判「非商圈」，且全程静默。
+# 一份逻辑只能有一处实现，否则修 A 漏 B。
+query_place = _chain_query_place
+
+
+def _probe_query_place(user_raw_request, city, retries=2):
+    """兼容旧调用名。"""
+    return _chain_query_place(user_raw_request, city, retries=retries)
 
 
 # ---------------------------------------------------------------- 阶段 1
@@ -139,9 +135,25 @@ def fetch_brand_pois(city, workers=6):
             print("  · %-8s %d 家" % (brand, len(out)))
 
     os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    # ── v0.5.0 防污染：全空结果绝不写缓存 ──
+    # 实测事故：配额耗尽时 26 个品牌全部返回空，若照写缓存，
+    # 二次运行会命中这份「全空缓存」且因 city 字段相符而不再重拉，
+    # 导致全城商圈被判「非商圈」，且全程没有任何报错。
+    # 这是比「读到错误结果」更糟的失败——它会**主动阻断**自愈。
+    nonempty = sum(1 for v in res.values() if v)
+    if nonempty == 0:
+        raise QuotaExceeded(
+            "全部 %d 个品牌门店均返回空——几乎确定是配额耗尽或凭据失效，"
+            "而非该城真的没有这些品牌。**已跳过写缓存**以免污染后续运行。"
+            "请检查 BAIDU_MAP_AUTH_TOKEN 与配额窗口后重试。"
+            % len(res))
+    if nonempty < len(res) * 0.5:
+        print("[警告] 仅 %d/%d 个品牌有结果，疑似查询不稳定，"
+              "建议稍后重试" % (nonempty, len(res)))
     with open(cache_path, "w", encoding="utf-8") as f:
         json.dump({"city": city, "brands": res}, f, ensure_ascii=False, indent=2)
-    print("[阶段1] 完成，已缓存 → %s" % cache_path)
+    print("[阶段1] 完成，已缓存 → %s（%d/%d 品牌有门店）"
+          % (cache_path, nonempty, len(res)))
     return res
 
 

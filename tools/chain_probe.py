@@ -511,35 +511,34 @@ def probe(anchor, city, radius=800, quiet=False):
         why = "核心 300 m 内连锁 %d 家、加权 %d 分" % (len(inner), inner_w)
 
     # 4) 第二信号交叉：到访热度
+    # v0.5.0 修正：本节原有 4 处硬编码阈值（heat>=5 / >=1 / <0.5），
+    # 全部基于「0–10 量纲」的错误假设。实测该字段跨 4 个数量级
+    # （岳阳 0.05 / 汴河街 8.95 / 长沙五一 351.55 / 成都春熙路 440.30），
+    # 旧阈值会把长沙五一、哈尔滨透笼这类真实核心商圈误判为景区。
+    # 单锚点探针拿不到同城样本量（heat_ref 需 ≥6 个有效值），
+    # 因此这里走 heat_band() 的**绝对档**分支，并显式标注置信度较低。
     heat_note = "—"
+    heat_band_v = "missing"
     if isinstance(heat, (int, float)):
-        if heat >= 5:
-            heat_note = "%.2f（强人流公共空间）" % heat
-        elif heat >= 1:
-            heat_note = "%.2f（有稳定到访）" % heat
-        else:
-            heat_note = "%.2f（低到访）" % heat
+        heat_band_v, _bn = heat_band(heat, ref=None)      # 单点无参照 → 绝对档
+        heat_note = "%s（%s）" % (heat_band_v, _bn)
+        heat_note = "%.2f｜%s" % (heat, heat_note)
 
         if not a_ok:
             # 锚点本身不可信时，热度读数属于该店铺而非该街区，必须弃用
             heat_note += "　⚠锚点不可信，本热度读数不采信"
             verdict += "｜⚠锚点解析疑似错误，需重新定位后再判定"
-        elif len(inner) >= 4 and heat < 0.5:
+        elif heat_band_v == "floor" and len(inner) >= 4:
             # 实测修正：东茅岭是真正的商圈（15 家连锁，含天虹/步步高/百盛），
             # 但街区 POI 本身热度仅 0.05——因为「街道」POI 是行政区，
             # 不是承载人流的实体点。原判「疑似封闭园区」是错的。
             # 真正的假阳性是「单一商场内店铺集中」：连锁全在同一个 mall 里。
-            malls = set()
-            for v in inner:
-                addr = v["address"] or ""
-                for kw in ("商场", "购物中心", "商业广场", "百货", "广场",
-                           "购物", "生活广场", "新天地"):
-                    if kw in addr:
-                        malls.add(kw)
             verdict += "｜⚠行政区型锚点热度天然偏低，不作为否定依据"
             heat_note += "（行政区 POI，非人流承载点，属正常）"
-        elif len(inner) <= 2 and heat >= 5:
-            verdict += "｜⚠连锁少但到访热度高：可能是景区/公园/交通枢纽，非零售型商圈"
+        elif len(inner) <= 2 and heat_is_hot(heat_band_v):
+            verdict += ("｜⚠连锁少但到访热度%s（%s）：可能是景区/公园/"
+                        "交通枢纽/大学城，非零售型商圈，见 SKILL.md §6.5"
+                        % (heat_band_v, "%.2f" % heat))
     else:
         if not a_ok:
             verdict += "｜⚠锚点解析疑似错误，且无到访热度可交叉，需重新定位"
@@ -563,6 +562,7 @@ def probe(anchor, city, radius=800, quiet=False):
         "chain_inner_raw": len(inner),
         "chain_inner_weighted": inner_w,
         "arrival_heat": heat,
+        "heat_band": heat_band_v,
         "heat_note": heat_note,
         "verdict": verdict,
         "why": why,
@@ -582,7 +582,7 @@ def probe(anchor, city, radius=800, quiet=False):
         print("核心 300m　%d 家　加权 %d 分　%s"
               % (len(inner), inner_w,
                  "　".join("%s%d" % (k, v) for k, v in out["tier_count"].items())))
-        print("到访热度　%s" % heat_note)
+        print("到访热度　%s　［档位 %s］" % (heat_note, heat_band_v))
         print("-" * 66)
         print("命中明细（按距离，★ = 街本体 300 m 内）")
         for v in sorted(hits.values(), key=lambda x: x["dist"]):
