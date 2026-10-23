@@ -157,4 +157,41 @@ if(cgrid){
     b.classList.add('on');filt(b.getAttribute('data-g'));
   });
 }
+
+/* 首页数据调用入口：现场调用 /api/stats.json */
+var tryBtn=document.getElementById('api-try'),liveBox=document.getElementById('api-live'),
+    liveMeta=document.getElementById('api-live-meta'),liveGrid=document.getElementById('api-live-grid');
+if(tryBtn&&liveBox&&liveGrid){
+  tryBtn.addEventListener('click',function(){
+    if(!window.fetch){
+      liveBox.hidden=false;liveMeta.textContent='';
+      liveGrid.innerHTML='<div class="api-live-err">当前浏览器不支持 fetch，请点击上方端点链接直接查看 JSON。</div>';
+      return;
+    }
+    tryBtn.disabled=true;tryBtn.textContent='调用中…';
+    var t0=performance.now();
+    fetch('api/stats.json',{cache:'no-store'}).then(function(r){
+      if(!r.ok)throw new Error('HTTP '+r.status);
+      return r.json();
+    }).then(function(d){
+      var ms=Math.round(performance.now()-t0);
+      liveBox.hidden=false;
+      liveMeta.textContent='200 OK · '+ms+' ms · '+new Date().toLocaleTimeString('zh-CN');
+      var g=d.grades||{};
+      var vals=[[d.provinces,'省级行政区'],[d.cities,'已建库城市'],[d.poi_total,'POI（去重）'],
+                [d.districts_total,'商圈档案'],[g.S,'S 级商圈'],[g.A,'A 级商圈'],[g.B,'B 级商圈'],[g.C,'C 级商圈']];
+      liveGrid.innerHTML=vals.map(function(p){
+        if(p[0]==null)return '';
+        return '<div class="alv"><b>'+(typeof p[0]==='number'?p[0].toLocaleString('zh-CN'):esc(p[0]))+'</b><span>'+p[1]+'</span></div>';
+      }).join('');
+      tryBtn.textContent='✓ 调用成功，可再次调用';
+    }).catch(function(err){
+      liveBox.hidden=false;liveMeta.textContent='';
+      liveGrid.innerHTML='<div class="api-live-err">现场调用未成功：'+esc(err.message||String(err))
+        +'。<br>通过 http(s) 访问本站时，该按钮会直接拉取 <code>/api/stats.json</code> 并展示真实返回；'
+        +'以 file:// 本地打开时浏览器会拦截 fetch——请点击上方端点链接直接查看 JSON 原文。</div>';
+      tryBtn.textContent='▶ 重新调用';
+    }).then(function(){tryBtn.disabled=false;});
+  });
+}
 })();

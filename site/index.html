@@ -32,7 +32,7 @@
 <p class="hero-sub">一座城市一种玩法。从街头馆子到城市商圈，从夜市到亲子乐园——用数据找到值得去的地方。</p>
 <div class="hero-cta">
 <a class="btn btn-p" href="#cities">开始探索 ↓</a>
-<a class="btn btn-g" href="api.html">数据接口 →</a>
+<a class="btn btn-g" href="#api">数据接口 →</a>
 </div></div>
 <div class="hero-hint"><span class="mouse"></span>向下滚动进入主站</div>
 </header>
@@ -258,6 +258,36 @@
 <div class="sec-head reveal"><div class="sec-label">API</div>
 <h2 class="sec-title">数据接口</h2>
 <p class="sec-desc">全站数据以 JSON + Markdown 双格式开放，供自有 skill 或第三方 agent 直接调用，无需爬虫。</p></div>
+<div class="api-entry reveal">
+<div class="api-entry-head">
+<div class="aeh-left">
+<div class="aeh-kicker">API ENTRY · 调用入口</div>
+<div class="aeh-base">
+<code id="api-base">https://fun.worldstip.com</code>
+<button class="copy-btn" id="copy-base" type="button" data-copy="https://fun.worldstip.com">复制</button>
+</div>
+<p class="aeh-tip">复制接口地址到你的 skill / agent，或点击下方端点直接试读；也可现场调用一次看真实返回。</p>
+</div>
+<button class="api-try" id="api-try" type="button">▶ 现场调用</button>
+</div>
+<div class="api-quick">
+<div class="aq-group"><span class="aq-label">JSON 接口</span>
+<a class="aq-btn" href="api/index.json" target="_blank" rel="noopener"><code>/api/index.json</code><em>全国总索引</em></a>
+<a class="aq-btn" href="api/stats.json" target="_blank" rel="noopener"><code>/api/stats.json</code><em>全站统计</em></a>
+<a class="aq-btn" href="api/cities/index.json" target="_blank" rel="noopener"><code>/api/cities/index.json</code><em>城市轻索引</em></a>
+<a class="aq-btn" href="api/food/top.json" target="_blank" rel="noopener"><code>/api/food/top.json</code><em>全国美食榜</em></a>
+<a class="aq-btn" href="api/districts/top.json" target="_blank" rel="noopener"><code>/api/districts/top.json</code><em>商圈 S/A 榜</em></a>
+<a class="aq-btn" href="api/cities/430600.json" target="_blank" rel="noopener"><code>/api/cities/430600.json</code><em>岳阳市全量</em></a>
+</div>
+<div class="aq-group"><span class="aq-label">Markdown 档案</span>
+<a class="aq-btn aq-md" href="md/README.md" target="_blank" rel="noopener"><code>/md/README.md</code><em>数据总索引</em></a>
+<a class="aq-btn aq-md" href="md/API.md" target="_blank" rel="noopener"><code>/md/API.md</code><em>接口文档</em></a>
+<a class="aq-btn aq-md" href="md/%E6%B9%96%E5%8D%97%E7%9C%81/%E5%B2%B3%E9%98%B3%E5%B8%82.md" target="_blank" rel="noopener"><code>/md/湖南省/岳阳市.md</code><em>城市档案原文</em></a>
+</div>
+</div>
+<div class="api-live" id="api-live" hidden><div class="api-live-head">GET <code>/api/stats.json</code> · <span id="api-live-meta"></span></div>
+<div class="api-live-grid" id="api-live-grid"></div></div>
+</div>
 <div class="panel reveal" style="padding:0;overflow:hidden">
 <table class="api-table"><thead><tr><th style="width:34%">端点</th><th style="width:12%">格式</th><th>说明</th></tr></thead><tbody>
 <tr><td><code>/api/index.json</code></td><td>JSON</td><td>全国总索引：省 → 市 → 轻量 meta + 商圈评级统计</td></tr>
@@ -295,7 +325,7 @@ curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md</code></pre>
 <div class="src-grid">
 <div class="src-card reveal" data-d="1"><div class="src-ico" style="background:linear-gradient(135deg,#0091ff,#00c6ff)">高</div>
 <div class="role">Primary · 全量底账</div><h3>高德地图 POI</h3>
-<p>34 省级单位 / 389 城全量采集：商圈载体、餐饮、休闲娱乐、儿童亲子、酒店、特产六大维度，约 60 个查询面/城，POI 去重后 328,980 条。</p>
+<p>32 个省级行政区 / 389 城全量采集：商圈载体、餐饮、休闲娱乐、儿童亲子、酒店、特产六大维度，约 60 个查询面/城，POI 去重后 328,980 条。</p>
 <div class="src-links"><a href="https://lbs.amap.com/" target="_blank" rel="noopener">开放平台 →</a></div></div>
 <div class="src-card reveal" data-d="2"><div class="src-ico" style="background:linear-gradient(135deg,#ffd100,#ff9f0a)">美</div>
 <div class="role">Food · 消费视角</div><h3>美团</h3>
@@ -309,14 +339,14 @@ curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md</code></pre>
 
 </div></main><footer class="footer"><div class="foot-in">
 <div><div class="foot-brand">FUN<i></i></div>
-<p class="foot-desc">全国美食 × 商圈 × 娱乐探索站。覆盖 34 省级单位 · 389 个城市，数据驱动你的本地生活。</p></div>
+<p class="foot-desc">全国美食 × 商圈 × 娱乐探索站。覆盖 32 个省级行政区 · 389 座城市，数据驱动你的本地生活。</p></div>
 <div class="foot-col"><h4>站点</h4>
 <a href="index.html">首页</a><a href="index.html#cities">探索城市</a><a href="index.html#food">美食榜</a>
 <a href="index.html#districts">商圈评级</a></div>
 <div class="foot-col"><h4>数据</h4>
 <a href="api.html">数据接口</a><a href="sources.html">数据来源</a>
 <a href="data.json">data.json</a><a href="https://github.com/MrdT-BitsNote/fun" target="_blank" rel="noopener">GitHub 仓库</a></div>
-</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-24 01:31<br>
+</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-24 01:55<br>
 数据仅供探索参考，营业状态与评分以各平台实时信息为准。FUN · fun.worldstip.com</div></footer>
 <script src="assets/app.js"></script>
 </body></html>

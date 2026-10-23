@@ -1,6 +1,6 @@
 # FUN 数据接口文档
 
-> 站点：https://fun.worldstip.com  ·  生成时间：2026-10-24 01:24
+> 站点：https://fun.worldstip.com  ·  生成时间：2026-10-24 01:55
 > 所有端点只读、无鉴权、无速率限制，可被 CDN 缓存。JSON 与 Markdown 由同一数据层生成，同源同值。
 
 ## 端点总览

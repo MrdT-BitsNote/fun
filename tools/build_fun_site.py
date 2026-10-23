@@ -249,6 +249,38 @@ pre.code .kw{color:var(--purple);font-weight:600}
 .note-box ul{margin:8px 0 0 18px}
 .note-box li{margin:4px 0}
 
+/* ---------- 数据调用入口 ---------- */
+.api-entry{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-l);
+  box-shadow:var(--shadow-2);padding:22px 24px;margin-bottom:18px}
+.api-entry-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.aeh-kicker{font-size:11.5px;font-weight:700;letter-spacing:.14em;color:var(--blue);margin-bottom:10px}
+.aeh-base{display:flex;align-items:center;gap:6px;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:12px;padding:9px 12px 9px 14px;width:fit-content;max-width:100%}
+.aeh-base code{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--text);word-break:break-all}
+.aeh-tip{font-size:13px;color:var(--text-2);margin-top:10px;max-width:46em}
+.api-try{flex-shrink:0;background:var(--grad-fun);color:#fff;border:0;border-radius:var(--pill);
+  padding:11px 22px;font-size:14px;font-weight:700;cursor:pointer;transition:.2s;
+  box-shadow:0 4px 14px rgba(255,55,95,.28);font-family:var(--font)}
+.api-try:hover{transform:scale(1.04)}
+.api-try:disabled{opacity:.55;cursor:default;transform:none}
+.api-quick{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+.aq-group{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.aq-label{font-size:12px;font-weight:700;color:var(--text-3);width:92px;flex-shrink:0;letter-spacing:.06em}
+.aq-btn{display:inline-flex;flex-direction:column;gap:2px;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:10px;padding:8px 12px;text-decoration:none;transition:.18s;min-width:0}
+.aq-btn:hover{border-color:var(--blue);background:#fff;transform:translateY(-1px);box-shadow:var(--shadow-1)}
+.aq-btn code{font-family:var(--mono);font-size:12.5px;color:var(--blue);font-weight:600;word-break:break-all}
+.aq-btn em{font-style:normal;font-size:11.5px;color:var(--text-3)}
+.aq-md code{color:#248a3d}
+.api-live{margin-top:16px;border:1px dashed var(--line-2);border-radius:12px;padding:14px 16px;background:var(--surface-2)}
+.api-live-head{font-family:var(--mono);font-size:12px;color:var(--text-2);margin-bottom:10px}
+.api-live-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:10px}
+.alv{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.alv b{display:block;font-size:18px;font-weight:800;letter-spacing:-.02em;color:var(--text)}
+.alv span{font-size:11.5px;color:var(--text-3)}
+.api-live-err{font-size:13px;color:#b42318;line-height:1.6}
+@media(max-width:640px){.aq-label{width:100%}.api-entry{padding:18px}}
+
 /* ---------- 数据来源 ---------- */
 .src-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 @media(max-width:860px){.src-grid{grid-template-columns:1fr}}
@@ -548,6 +580,43 @@ if(cgrid){
     b.classList.add('on');filt(b.getAttribute('data-g'));
   });
 }
+
+/* 首页数据调用入口：现场调用 /api/stats.json */
+var tryBtn=document.getElementById('api-try'),liveBox=document.getElementById('api-live'),
+    liveMeta=document.getElementById('api-live-meta'),liveGrid=document.getElementById('api-live-grid');
+if(tryBtn&&liveBox&&liveGrid){
+  tryBtn.addEventListener('click',function(){
+    if(!window.fetch){
+      liveBox.hidden=false;liveMeta.textContent='';
+      liveGrid.innerHTML='<div class="api-live-err">当前浏览器不支持 fetch，请点击上方端点链接直接查看 JSON。</div>';
+      return;
+    }
+    tryBtn.disabled=true;tryBtn.textContent='调用中…';
+    var t0=performance.now();
+    fetch('api/stats.json',{cache:'no-store'}).then(function(r){
+      if(!r.ok)throw new Error('HTTP '+r.status);
+      return r.json();
+    }).then(function(d){
+      var ms=Math.round(performance.now()-t0);
+      liveBox.hidden=false;
+      liveMeta.textContent='200 OK · '+ms+' ms · '+new Date().toLocaleTimeString('zh-CN');
+      var g=d.grades||{};
+      var vals=[[d.provinces,'省级行政区'],[d.cities,'已建库城市'],[d.poi_total,'POI（去重）'],
+                [d.districts_total,'商圈档案'],[g.S,'S 级商圈'],[g.A,'A 级商圈'],[g.B,'B 级商圈'],[g.C,'C 级商圈']];
+      liveGrid.innerHTML=vals.map(function(p){
+        if(p[0]==null)return '';
+        return '<div class="alv"><b>'+(typeof p[0]==='number'?p[0].toLocaleString('zh-CN'):esc(p[0]))+'</b><span>'+p[1]+'</span></div>';
+      }).join('');
+      tryBtn.textContent='✓ 调用成功，可再次调用';
+    }).catch(function(err){
+      liveBox.hidden=false;liveMeta.textContent='';
+      liveGrid.innerHTML='<div class="api-live-err">现场调用未成功：'+esc(err.message||String(err))
+        +'。<br>通过 http(s) 访问本站时，该按钮会直接拉取 <code>/api/stats.json</code> 并展示真实返回；'
+        +'以 file:// 本地打开时浏览器会拦截 fetch——请点击上方端点链接直接查看 JSON 原文。</div>';
+      tryBtn.textContent='▶ 重新调用';
+    }).then(function(){tryBtn.disabled=false;});
+  });
+}
 })();"""
 
 
@@ -597,7 +666,7 @@ def footer(path_prefix=""):
     p = path_prefix
     return f"""<footer class="footer"><div class="foot-in">
 <div><div class="foot-brand">FUN<i></i></div>
-<p class="foot-desc">全国美食 × 商圈 × 娱乐探索站。覆盖 34 省级单位 · 389 个城市，数据驱动你的本地生活。</p></div>
+<p class="foot-desc">全国美食 × 商圈 × 娱乐探索站。覆盖 32 个省级行政区 · 389 座城市，数据驱动你的本地生活。</p></div>
 <div class="foot-col"><h4>站点</h4>
 <a href="{p}index.html">首页</a><a href="{p}index.html#cities">探索城市</a><a href="{p}index.html#food">美食榜</a>
 <a href="{p}index.html#districts">商圈评级</a></div>
@@ -701,7 +770,7 @@ def render_index(idx, stats, food_top, dist_top):
 <p class="hero-sub">一座城市一种玩法。从街头馆子到城市商圈，从夜市到亲子乐园——用数据找到值得去的地方。</p>
 <div class="hero-cta">
 <a class="btn btn-p" href="#cities">开始探索 ↓</a>
-<a class="btn btn-g" href="api.html">数据接口 →</a>
+<a class="btn btn-g" href="#api">数据接口 →</a>
 </div></div>
 <div class="hero-hint"><span class="mouse"></span>向下滚动进入主站</div>
 </header>
@@ -767,6 +836,36 @@ def render_index(idx, stats, food_top, dist_top):
 <div class="sec-head reveal"><div class="sec-label">API</div>
 <h2 class="sec-title">数据接口</h2>
 <p class="sec-desc">全站数据以 JSON + Markdown 双格式开放，供自有 skill 或第三方 agent 直接调用，无需爬虫。</p></div>
+<div class="api-entry reveal">
+<div class="api-entry-head">
+<div class="aeh-left">
+<div class="aeh-kicker">API ENTRY · 调用入口</div>
+<div class="aeh-base">
+<code id="api-base">https://fun.worldstip.com</code>
+<button class="copy-btn" id="copy-base" type="button" data-copy="https://fun.worldstip.com">复制</button>
+</div>
+<p class="aeh-tip">复制接口地址到你的 skill / agent，或点击下方端点直接试读；也可现场调用一次看真实返回。</p>
+</div>
+<button class="api-try" id="api-try" type="button">▶ 现场调用</button>
+</div>
+<div class="api-quick">
+<div class="aq-group"><span class="aq-label">JSON 接口</span>
+<a class="aq-btn" href="api/index.json" target="_blank" rel="noopener"><code>/api/index.json</code><em>全国总索引</em></a>
+<a class="aq-btn" href="api/stats.json" target="_blank" rel="noopener"><code>/api/stats.json</code><em>全站统计</em></a>
+<a class="aq-btn" href="api/cities/index.json" target="_blank" rel="noopener"><code>/api/cities/index.json</code><em>城市轻索引</em></a>
+<a class="aq-btn" href="api/food/top.json" target="_blank" rel="noopener"><code>/api/food/top.json</code><em>全国美食榜</em></a>
+<a class="aq-btn" href="api/districts/top.json" target="_blank" rel="noopener"><code>/api/districts/top.json</code><em>商圈 S/A 榜</em></a>
+<a class="aq-btn" href="api/cities/430600.json" target="_blank" rel="noopener"><code>/api/cities/430600.json</code><em>岳阳市全量</em></a>
+</div>
+<div class="aq-group"><span class="aq-label">Markdown 档案</span>
+<a class="aq-btn aq-md" href="md/README.md" target="_blank" rel="noopener"><code>/md/README.md</code><em>数据总索引</em></a>
+<a class="aq-btn aq-md" href="md/API.md" target="_blank" rel="noopener"><code>/md/API.md</code><em>接口文档</em></a>
+<a class="aq-btn aq-md" href="md/%E6%B9%96%E5%8D%97%E7%9C%81/%E5%B2%B3%E9%98%B3%E5%B8%82.md" target="_blank" rel="noopener"><code>/md/湖南省/岳阳市.md</code><em>城市档案原文</em></a>
+</div>
+</div>
+<div class="api-live" id="api-live" hidden><div class="api-live-head">GET <code>/api/stats.json</code> · <span id="api-live-meta"></span></div>
+<div class="api-live-grid" id="api-live-grid"></div></div>
+</div>
 <div class="panel reveal" style="padding:0;overflow:hidden">
 <table class="api-table"><thead><tr><th style="width:34%">端点</th><th style="width:12%">格式</th><th>说明</th></tr></thead><tbody>
 <tr><td><code>/api/index.json</code></td><td>JSON</td><td>全国总索引：省 → 市 → 轻量 meta + 商圈评级统计</td></tr>
@@ -804,7 +903,7 @@ curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md</code></pre>
 <div class="src-grid">
 <div class="src-card reveal" data-d="1"><div class="src-ico" style="background:linear-gradient(135deg,#0091ff,#00c6ff)">高</div>
 <div class="role">Primary · 全量底账</div><h3>高德地图 POI</h3>
-<p>34 省级单位 / 389 城全量采集：商圈载体、餐饮、休闲娱乐、儿童亲子、酒店、特产六大维度，约 60 个查询面/城，POI 去重后 {poi_total:,} 条。</p>
+<p>32 个省级行政区 / 389 城全量采集：商圈载体、餐饮、休闲娱乐、儿童亲子、酒店、特产六大维度，约 60 个查询面/城，POI 去重后 {poi_total:,} 条。</p>
 <div class="src-links"><a href="https://lbs.amap.com/" target="_blank" rel="noopener">开放平台 →</a></div></div>
 <div class="src-card reveal" data-d="2"><div class="src-ico" style="background:linear-gradient(135deg,#ffd100,#ff9f0a)">美</div>
 <div class="role">Food · 消费视角</div><h3>美团</h3>
@@ -1149,6 +1248,44 @@ def render_province(prov, cities, stats):
                 path_prefix="../") + body
 
 
+# 全国 34 个省级行政区（含暂无建库城市的特别行政区，用于空态页与 sitemap 全覆盖）
+ALL_PROVINCES = [
+    "北京市", "天津市", "河北省", "山西省", "内蒙古自治区", "辽宁省", "吉林省", "黑龙江省",
+    "上海市", "江苏省", "浙江省", "安徽省", "福建省", "江西省", "山东省", "河南省",
+    "湖北省", "湖南省", "广东省", "广西壮族自治区", "海南省", "重庆市", "四川省", "贵州省",
+    "云南省", "西藏自治区", "陕西省", "甘肃省", "青海省", "宁夏回族自治区", "新疆维吾尔自治区",
+    "台湾省", "香港特别行政区", "澳门特别行政区",
+]
+
+
+def render_province_empty(prov, stats):
+    """暂无建库城市数据的省级行政区空态页（如香港/澳门）：路线可达、文案诚实、导流回主站。"""
+    body = f"""<main>
+<div class="prov-hero"><div class="wrap">
+<a class="back-link" href="../index.html#cities">← 返回全国</a>
+<h1 class="prov-title">{esc(prov)}</h1>
+<div class="prov-stats">
+<div class="metric-chip"><b>0</b>已建库城市</div>
+<div class="metric-chip"><b>—</b>POI（去重）</div>
+</div></div></div>
+<div class="wrap" style="padding-top:8px">
+<div class="panel reveal" style="max-width:760px;text-align:center;padding:52px 28px">
+<div style="font-size:44px;line-height:1;margin-bottom:14px">🗺️</div>
+<h2 style="font-size:1.35rem;font-weight:800;letter-spacing:-.02em;margin-bottom:10px">暂无建库城市数据</h2>
+<p style="color:var(--text-2);max-width:34em;margin:0 auto 8px">当前数据层覆盖全国 {stats['cities']} 座城市 / {stats['provinces']} 个省级行政区，
+{esc(prov)}暂未纳入采集范围，因此没有可展示的商圈、美食与娱乐档案。</p>
+<p style="color:var(--text-3);font-size:13.5px;max-width:34em;margin:0 auto 24px">我们只呈现真实采集到的数据，不用占位内容充数。
+后续采集波次覆盖后将自动生成本省全部城市档案。</p>
+<div class="hero-cta" style="justify-content:center">
+<a class="btn btn-p" href="../index.html#cities">探索已建库城市</a>
+<a class="btn btn-g" href="../api.html">查看数据接口</a>
+</div></div></div></main>{footer(path_prefix='../')}"""
+
+    return head(f"{prov} · 暂无建库数据 · FUN",
+                f"{prov}暂未纳入采集范围。当前数据层覆盖全国 {stats['cities']} 城美食与商圈档案。",
+                path_prefix="../") + body
+
+
 # ================================================================ API 文档页
 
 def render_api_doc(idx, stats):
@@ -1411,18 +1548,20 @@ def build_404():
         f.write(head("页面不存在 · FUN", "你访问的路线没有数据。回首页探索 389 城美食与商圈。") + body)
 
 
-def build_deploy_files(idx):
+def build_deploy_files(idx, empty_provs=()):
     """robots.txt / sitemap.xml / _headers / CNAME —— 部署与 SEO 资产。"""
     base = "https://fun.worldstip.com"
     # robots.txt
     with open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")
-    # sitemap.xml（首页 1.0 / 省份页 0.8 / 城市页 0.7 / 文档页 0.5）
+    # sitemap.xml（首页 1.0 / 省份页 0.8 / 城市页 0.7 / 文档页 0.5 / 空态省份 0.3）
     urls = [(f"{base}/", "1.0", "weekly"), (f"{base}/index.html", "1.0", "weekly"),
             (f"{base}/api.html", "0.5", "monthly"), (f"{base}/sources.html", "0.5", "monthly"),
             (f"{base}/README.html", "0.4", "monthly")]
     for prov in sorted(set(c["province"] for c in idx["city_index"])):
         urls.append((f"{base}/provinces/{quote(prov)}.html", "0.8", "weekly"))
+    for prov in sorted(empty_provs):
+        urls.append((f"{base}/provinces/{quote(prov)}.html", "0.3", "monthly"))
     for c in idx["city_index"]:
         urls.append((f"{base}/{c['page']}", "0.7", "weekly"))
     items = "".join(f"<url><loc>{u}</loc><changefreq>{cf}</changefreq><priority>{p}</priority></url>"
@@ -1483,7 +1622,14 @@ def main():
         os.makedirs(os.path.dirname(out), exist_ok=True)
         with open(out, "w", encoding="utf-8") as f:
             f.write(render_province(prov, cities, stats))
-    print(f"[fun_site] provinces: {len(by_prov)}")
+    # 空态省份页（无建库城市的省级行政区，如香港/澳门）：覆盖旧版残留页，保证路线可达
+    empty_provs = [p for p in ALL_PROVINCES if p not in by_prov]
+    for prov in empty_provs:
+        out = os.path.join(SITE, "provinces", f"{prov}.html")
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        with open(out, "w", encoding="utf-8") as f:
+            f.write(render_province_empty(prov, stats))
+    print(f"[fun_site] provinces: {len(by_prov)}（含空态 {len(empty_provs)}: {'、'.join(empty_provs) or '无'}）")
 
     # 文档页
     for name, fn in (("api.html", lambda: render_api_doc(idx, stats)),
@@ -1496,7 +1642,7 @@ def main():
     # 部署资产：城市名重定向存根 / 404 / robots / sitemap / _headers / CNAME
     n_stub = build_redirect_stubs(idx)
     build_404()
-    n_url = build_deploy_files(idx)
+    n_url = build_deploy_files(idx, empty_provs=empty_provs)
     print(f"[fun_site] deploy assets: {n_stub} 重定向存根 + 404 + robots + sitemap({n_url} urls) + _headers + CNAME")
 
 
