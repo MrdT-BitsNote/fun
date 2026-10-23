@@ -1,0 +1,6 @@
+timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
+2026-10-20T13:25	baseline	local-food-explorer	-	63.5	baseline	-	初始 8 维评估，维度8 由独立子 agent 干跑 4 条测试 prompt	full_test
+2026-10-20T13:52	ee081e4	local-food-explorer	63.5	-	keep	边界条件	修 carrier_check 单字「湖」误判 + 行政前缀贪婪剥离，回归 21/23	full_test
+2026-10-20T13:58	5645ccc	local-food-explorer	-	-	keep	资源整合度	heat 双轨判档、缓存按城隔离、硬编码城市、配额显式抛错、新增 verify_generic.py	full_test
+2026-10-20T14:10	cb28896	local-food-explorer	-	75	keep	工作流清晰度	SKILL v0.4.0->v0.5.0：小吃档入流程图、§6.5 死分支补全、工具速查表、frontmatter 瘦身	full_test
+2026-10-20T14:25	7cfd91d	local-food-explorer	75	79	keep	指令具体性	v0.5.1：删 district_scan 的 query_place 副本、chain_probe 补 heat_band、§6.6 编造项按代码核对修正	full_test
