@@ -811,7 +811,7 @@ curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md</code></pre>
 <div class="src-links"><a href="https://www.dianping.com/" target="_blank" rel="noopener">dianping.com →</a></div></div>
 </div></section>
 
-</div>{footer()}</main>"""
+</div></main>{footer()}"""
 
     return head(f"FUN · 全国美食 × 商圈 × 娱乐探索站",
                 f"覆盖 {stats['provinces']} 省级单位 / {stats['cities']} 城，{poi_total:,} POI。商圈评级、美食榜、休闲娱乐、儿童亲子、酒店特产，JSON/MD 双格式开放。") + body
@@ -1094,7 +1094,7 @@ def render_city(rec):
 <div class="sec-head reveal"><div class="sec-label">Hotels</div><h2 class="sec-title">酒店配套</h2></div>
 <div class="panel reveal">{table(h_rows, [("标记", "标记"), ("名称", "名称"), ("类型", "类型"), ("评分", "评分"), ("地址", "地址")])}</div></section>
 
-</div>{footer(path_prefix='../')}</main>"""
+</div></main>{footer(path_prefix='../')}"""
 
     return head(f"{c} · {prov} 美食与商圈档案 · FUN",
                 f"{prov}{c}的完整本地档案：商圈评级、美食榜、休闲娱乐、儿童亲子、酒店与特产，JSON/MD 数据接口开放。",
@@ -1138,7 +1138,7 @@ def render_province(prov, cities, stats):
 <div class="wrap" style="padding-top:26px">
 <h2 style="font-size:1.4rem;font-weight:800;letter-spacing:-.02em;margin-bottom:16px">城市列表</h2>
 <div class="city-grid">{''.join(cards)}</div>
-</div>{footer(path_prefix='../')}</main>"""
+</div></main>{footer(path_prefix='../')}"""
 
     return head(f"{prov} · 美食与商圈 · FUN", f"{prov}下辖城市的本地档案总览：商圈评级、美食、休闲娱乐、儿童亲子、酒店与特产。",
                 path_prefix="../") + body
@@ -1244,7 +1244,7 @@ data = json.load(urllib.request.urlopen("https://fun.worldstip.com/api/cities/{a
 <li><b>变更频率</b>：数据层随采集波次滚动更新；大版本变更在 GitHub Releases 说明。</li>
 <li><b>许可</b>：数据仅可正当使用，不得整库转售；请保留来源标注（高德/美团/大众点评）。</li>
 </ul>
-</div>{footer()}</main>"""
+</div></main>{footer()}"""
 
     return head("数据接口文档 · FUN", "FUN 全站 JSON/Markdown 数据接口文档：端点、Schema、调用示例与使用约定。") + body
 
@@ -1286,7 +1286,7 @@ def render_sources(stats):
 </ul>
 
 <div class="callout"><b>合规提示：</b>数据用于正当的信息聚合与探索参考，不整库转售；引用请标注「高德地图 POI / 美团 / 大众点评」。</div>
-</div>{footer()}</main>"""
+</div></main>{footer()}"""
 
     return head("数据来源与方法论 · FUN", "高德 POI 全量底账 + 美团/大众点评美食视角：采集方法、评级判据与更新策略。") + body
 
@@ -1337,7 +1337,7 @@ def render_readme(stats):
 <pre class="code"><code>python tools/build_api.py        <span class="cm"># md 档案 → JSON 数据层（site/api + site/md）</span>
 python tools/build_fun_site.py  <span class="cm"># JSON → 网站（site/*.html + assets）</span>
 python tools/validate_data.py   <span class="cm"># C1–C10 数据校验</span></code></pre>
-</div>{footer()}</main>"""
+</div></main>{footer()}"""
 
     return head("部署与备份说明 · FUN", "FUN 静态站点结构、fun.worldstip.com 部署方案与 GitHub 备份说明。") + body
 
