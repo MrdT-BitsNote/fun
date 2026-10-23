@@ -16,27 +16,28 @@ OUT = os.path.join(os.path.dirname(ROOT), "fun-site-upload.zip")
 
 DEPLOY_MD = """# FUN · 全国美食 × 商圈 × 娱乐探索站 — 直接上传产品
 
-> fun.worldstip.com · v0.8.1 · {cities} 城 / {provs_data} 个有数据省级行政区（页面全覆盖 34）/ {poi:,} POI
+> fun.worldstip.com · v0.9.0 · {cities} 城 / {provs_data} 个省级行政区 / {poi:,} 条 POI / 商圈 {dist:,} 处
+> 数据集已整合为 **两个全量文件**：`data.json`（机读）+ `data.md`（人读 / LLM 直读）。
 > 本包为纯静态零依赖产物，**解压即传、无需构建、无需服务器**。
 
 ## 包内容
 
 | 路径 | 内容 |
 |---|---|
-| `index.html` | FUN hero（巨型字体 + 滚动入场）+ 主站六区块，首页内含**数据调用入口**（base URL 一键复制 / JSON·MD 端点快捷键 / 现场调用演示） |
+| `index.html` | FUN hero（巨型字体 + 滚动入场）+ 主站六区块，首页内含**数据调用入口**（两个全量文件卡片 + Range 现场调用演示） |
 | `cities/<adcode>.html` | {cities} 个城市档案页 |
 | `cities/<市名>.html` | 城市名 URL 兼容存根（meta refresh 自动跳转 adcode 页） |
 | `provinces/<省>.html` | {prov_pages} 个省级页面（{provs_data} 个有数据 + 2 个特别行政区空态兜底页） |
-| `api.html` / `sources.html` / `README.html` | 接口文档 / 数据来源 / 使用说明 |
-| `api/` | JSON 数据接口层（index / stats / cities / provinces / food/top / districts/top） |
-| `md/` | 全量 Markdown 内容（{md_count} 个文件：城市档案 + 省级索引 + README/API/SOURCES/行政层级总览） |
+| `data.json` | **全国全量 JSON 单文件**（{jraw} / gzip {jgz}）：meta · stats · {provs_data} 省汇总 · **{cities} 城全量明细** · 美食榜 800 · 商圈榜 1000 |
+| `data.md` | **全国全量 Markdown 单文件**（{mraw} / gzip {mgz}）：目录 + 统计 + {provs_data} 省索引 + {cities} 城档案全文 + 附录 |
+| `api.html` / `sources.html` / `README.html` | 接口文档 / 数据来源 / 部署说明 |
 | `assets/` | style.css + app.js（零依赖，自包含） |
 | `404.html` | FUN 风格错误页 |
 | `robots.txt` / `sitemap.xml` | SEO（{sitemap} 条 URL） |
-| `_headers` | Cloudflare Pages 缓存规则（/api/* 与 /md/* 24h，/assets/* 1 年 immutable） |
+| `_headers` | Cloudflare Pages 缓存规则（data.json / data.md 24h，/assets/* 1 年 immutable） |
 | `CNAME` | fun.worldstip.com |
 
-## 上传方式（三选一）
+## 上传方式（四选一）
 
 ### 1. Netlify Drop（最快，30 秒）
 
@@ -83,18 +84,23 @@ server {
 
 ## 调用数据（skill / agent）
 
+整个数据集就**两个文件**，一次请求拿全量：
+
 ```bash
-# 全国总索引
-curl -s https://fun.worldstip.com/api/index.json
+# ① 全量落地（服务端/CND 自动 gzip 或 br）
+curl -s https://fun.worldstip.com/data.json -o fun-data.json
+curl -s https://fun.worldstip.com/data.md   -o fun-data.md
 
-# 城市全量数据（adcode）
-curl -s https://fun.worldstip.com/api/cities/430600.json
+# ② 只要一座城市（Python 标准库读流）
+python -c "import json,urllib.request as u;d=json.load(u.urlopen('https://fun.worldstip.com/data.json'));\
+print(next(c for c in d['cities'] if c['city']=='岳阳市')['poi_total'])"
 
-# 城市档案 Markdown 原文
-curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md
+# ③ 高效取法：meta/stats 集中在文件头 4KB 内，只要概览就用 Range 取首段
+curl -s -r 0-8191 https://fun.worldstip.com/data.json | head -c 2000
+curl -s https://fun.worldstip.com/data.json | jq '.cities[] | select(.city=="岳阳市") | .districts[] | select(.grade=="S")'
 ```
 
-字段口径见 `api.html` 与 `/md/API.md`；JSON 与 MD 由同一数据层生成，同源同值。
+字段 Schema 与完整示例见 `api.html`；data.json 与 data.md 由同一数据层一次生成，同源同值。
 
 ---
 
@@ -113,18 +119,22 @@ def count(pred):
 
 def main():
     import json
-    stats = json.load(open(os.path.join(SITE, "api", "stats.json"), encoding="utf-8"))
-    idx = json.load(open(os.path.join(SITE, "api", "index.json"), encoding="utf-8"))
+    import gzip
+    d = json.load(open(os.path.join(SITE, "data.json"), encoding="utf-8"))
+    stats = d["stats"]
     sitemap_n = open(os.path.join(SITE, "sitemap.xml"), encoding="utf-8").read().count("<loc>")
-    md_n = count(lambda p: p.endswith(".md"))
     prov_pages = count(lambda p: p.startswith(os.path.join(SITE, "provinces")) and p.endswith(".html"))
 
     deploy = (DEPLOY_MD
               .replace("{cities}", str(stats["cities"]))
               .replace("{provs_data}", str(stats["provinces"]))
-              .replace("{poi}", f'{stats["poi_total"]:,}')
+              .replace("{poi:,}", f'{stats["poi_total"]:,}')
               .replace("{prov_pages}", str(prov_pages))
-              .replace("{md_count}", str(md_n))
+              .replace("{dist:,}", f'{stats["districts_total"]:,}')
+              .replace("{jraw}", f'{os.path.getsize(os.path.join(SITE, "data.json"))/1048576:.1f} MB')
+              .replace("{jgz}", f'{len(gzip.compress(open(os.path.join(SITE, "data.json"), "rb").read(), 1))/1048576:.1f} MB')
+              .replace("{mraw}", f'{os.path.getsize(os.path.join(SITE, "data.md"))/1048576:.1f} MB')
+              .replace("{mgz}", f'{len(gzip.compress(open(os.path.join(SITE, "data.md"), "rb").read(), 1))/1048576:.1f} MB')
               .replace("{sitemap}", str(sitemap_n))
               .replace("{gen}", datetime.now().strftime("%Y-%m-%d %H:%M")))
 

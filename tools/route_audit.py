@@ -8,10 +8,10 @@ route_audit.py — FUN 站点全量路线核查（链接 / 锚点 / 接口 / 同
   R2  meta refresh 跳转目标
   R3  canonical 链接目标
   R4  sitemap.xml 全部 URL
-  R5  JSON 内嵌路线（cities/index.json、index.json、food/top.json、
-      districts/top.json、provinces/*.json、data.json 的 page/json/md/city_page 字段）
-  R6  孤儿文件核查（cities/ 下不对应任何城市的残留页）
-  R7  JSON↔MD 同源同值核查（md 副本与 data 源字节一致 + JSON 数值与 md 重解析一致）
+  R5  全量数据文件结构核查（data.json 的 cities/provinces/food_top/districts_top
+      内嵌 page/city_page 路线 + 统计自洽 + 外链形态）
+  R6  孤儿文件核查（cities/ 与 provinces/ 下不对应任何城市的残留页）
+  R7  data.json ↔ data.md 同源同值核查（覆盖对齐 + 逐城 8 项数值重解析比对 + md 内锚点可达）
   R8  robots.txt / _headers / CNAME 存在性
 
 用法: python tools/route_audit.py [--site site]
@@ -21,6 +21,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 from html.parser import HTMLParser
 from urllib.parse import unquote, urljoin
 
@@ -151,8 +152,15 @@ def audit_sitemap(site_root, problems, stats):
             problems.append(f"[R4 sitemap 断链] {u} -> 缺失 {path}")
 
 
+def _load(site_root, name):
+    p = os.path.join(site_root, name)
+    if not os.path.isfile(p):
+        return None
+    return json.loads(read(p))
+
+
 def audit_json_routes(site_root, problems, stats):
-    """JSON 内嵌的 page/json/md/city_page 路线。"""
+    """R5 全量 data.json：内嵌路线落盘 + 聚合统计自洽 + 外链形态。"""
     checked = 0
 
     def chk(field, url, ctx):
@@ -164,56 +172,93 @@ def audit_json_routes(site_root, problems, stats):
         if cat == "external":
             return
         if target and not os.path.isfile(target):
-            problems.append(f"[R5 JSON 断链] {ctx} {field}={url} -> 缺失")
+            problems.append(f"[R5 全量数据断链] {ctx} {field}={url} -> 缺失")
 
-    # 1. cities/index.json + index.json
-    for jf in ("api/cities/index.json", "api/index.json", "data.json"):
-        p = os.path.join(site_root, jf)
-        if not os.path.isfile(p):
-            problems.append(f"[R5] {jf} 缺失")
-            continue
-        d = json.loads(read(p))
-        rows = d.get("cities") if isinstance(d.get("cities"), list) else None
-        if rows is None:
-            rows = d.get("city_index") if isinstance(d.get("city_index"), list) else []
-        for c in rows:
-            for f in ("page", "json", "md", "url"):
-                chk(f, c.get(f), f"{jf}[{c.get('city')}]")
-    # 2. food/top.json + districts/top.json
-    for jf, field in (("api/food/top.json", "city_page"), ("api/districts/top.json", "city_page")):
-        p = os.path.join(site_root, jf)
-        if not os.path.isfile(p):
-            problems.append(f"[R5] {jf} 缺失")
-            continue
-        d = json.loads(read(p))
-        for it in d.get("items", []):
-            chk(field, it.get(field), f"{jf}[{it.get('name')}]")
-    # 3. provinces/*.json
-    pdir = os.path.join(site_root, "api", "provinces")
-    if os.path.isdir(pdir):
-        for fn in sorted(os.listdir(pdir)):
-            if not fn.endswith(".json"):
+    d = _load(site_root, "data.json")
+    if d is None:
+        problems.append("[R5] data.json 缺失")
+        return
+
+    cities = d.get("cities") or []
+    provs = d.get("provinces") or []
+    st = d.get("stats") or {}
+    stats["data_cities"] = len(cities)
+    stats["data_provinces"] = len(provs)
+
+    # ① 内嵌路线
+    for c in cities:
+        chk("page", c.get("page"), f"cities[{c.get('city')}]")
+    for pv in provs:
+        chk("page", pv.get("page"), f"provinces[{pv.get('province')}]")
+    for it in d.get("food_top") or []:
+        chk("city_page", it.get("city_page"), f"food_top[{it.get('name')}]")
+    for it in d.get("districts_top") or []:
+        chk("city_page", it.get("city_page"), f"districts_top[{it.get('name')}]")
+
+    # ② 顶层结构与聚合自洽
+    for k in ("meta", "stats", "provinces", "cities", "food_top", "districts_top"):
+        if k not in d:
+            problems.append(f"[R5] data.json 缺顶层键: {k}")
+    if st.get("cities") != len(cities):
+        problems.append(f"[R5] stats.cities={st.get('cities')} 与 cities 实际 {len(cities)} 不符")
+    if st.get("provinces") != len(provs):
+        problems.append(f"[R5] stats.provinces={st.get('provinces')} 与 provinces 实际 {len(provs)} 不符")
+    if sum(c.get("poi_total") or 0 for c in cities) != st.get("poi_total"):
+        problems.append(f"[R5] stats.poi_total={st.get('poi_total')} 与逐城求和不符")
+    if sum(c.get("district_count") or 0 for c in cities) != st.get("districts_total"):
+        problems.append(f"[R5] stats.districts_total={st.get('districts_total')} 与逐城商圈数求和不符")
+    for g in ("S", "A", "B", "C"):
+        if sum((c.get("grades") or {}).get(g, 0) for c in cities) != (st.get("grades") or {}).get(g):
+            problems.append(f"[R5] stats.grades.{g} 与逐城求和不符")
+    # 省级汇总 vs 城市明细
+    acc_poi, acc_city, acc_dist = {}, {}, {}
+    for c in cities:
+        pv = c.get("province")
+        acc_city[pv] = acc_city.get(pv, 0) + 1
+        acc_poi[pv] = acc_poi.get(pv, 0) + (c.get("poi_total") or 0)
+        acc_dist[pv] = acc_dist.get(pv, 0) + (c.get("district_count") or 0)
+    for pv in provs:
+        n = pv.get("province")
+        if pv.get("cities") != acc_city.get(n):
+            problems.append(f"[R5] provinces[{n}].cities={pv.get('cities')} 与明细 {acc_city.get(n)} 不符")
+        if pv.get("poi") != acc_poi.get(n):
+            problems.append(f"[R5] provinces[{n}].poi={pv.get('poi')} 与明细 {acc_poi.get(n)} 不符")
+        if pv.get("districts") != acc_dist.get(n):
+            problems.append(f"[R5] provinces[{n}].districts={pv.get('districts')} 与明细 {acc_dist.get(n)} 不符")
+    # ③ 必填字段
+    required_city = ("city", "province", "adcode", "poi_total", "page", "districts", "grades")
+    for c in cities:
+        for k in required_city:
+            if k not in c:
+                problems.append(f"[R5] cities[{c.get('city', '?')}] 缺字段 {k}")
+                break
+    # ④ 外链形态（美团/大众点评）
+    meituan_cnt = 0
+    for c in cities:
+        ext = c.get("external") or {}
+        for k, u in (ext.items() if isinstance(ext, dict) else []):
+            if not u:
                 continue
-            d = json.loads(read(os.path.join(pdir, fn)))
-            for c in d.get("cities", []):
-                for f in ("page", "json", "md"):
-                    chk(f, c.get(f), f"api/provinces/{fn}[{c.get('city')}]")
+            meituan_cnt += 1
+            if not str(u).startswith(("http://", "https://")):
+                problems.append(f"[R5] {c.get('city')} external.{k} 非合法 URL: {u}")
     stats["json_routes_checked"] = checked
+    stats["external_links"] = meituan_cnt
 
 
 def audit_orphans(site_root, problems, stats):
-    """cities/ 与 provinces/ 下不对应任何城市的残留文件。"""
-    idx = os.path.join(site_root, "api", "cities", "index.json")
-    if not os.path.isfile(idx):
+    """R6 cities/ 与 provinces/ 下不对应任何城市的残留文件。"""
+    d = _load(site_root, "data.json")
+    if d is None:
         return
-    d = json.loads(read(idx))
-    # --- cities/
+    cities = d.get("cities") or []
     legit = set()
     provs_with_cities = set()
-    for c in d["cities"]:
-        legit.add(os.path.basename(c["page"]))          # <adcode>.html
-        legit.add(f"{c['city']}.html")                   # 城市名存根
+    for c in cities:
+        legit.add(os.path.basename(c.get("page") or ""))          # <adcode>.html
+        legit.add(f"{c['city']}.html")                             # 城市名存根
         provs_with_cities.add(c["province"])
+    # --- cities/
     cdir = os.path.join(site_root, "cities")
     actual = {fn for fn in os.listdir(cdir) if fn.endswith(".html")}
     stats["city_pages"] = len(actual)
@@ -221,12 +266,11 @@ def audit_orphans(site_root, problems, stats):
         problems.append(f"[R6 孤儿文件] cities/{o} 不对应任何城市（建议删除）")
     for m in sorted(legit - actual):
         problems.append(f"[R6 缺页面] cities/{m} 应有页面缺失")
-    # --- provinces/（空态省份页合法：34 省全覆盖，允许无城市省份存在）
+    # --- provinces/（空态省份页合法）
     pdir = os.path.join(site_root, "provinces")
     pactual = {fn[:-5] for fn in os.listdir(pdir) if fn.endswith(".html")}
     stats["province_pages"] = len(pactual)
     for o in sorted(pactual - provs_with_cities):
-        # 仅允许清单内的空态省份（如香港/澳门），其余为旧版残留
         if o not in ("香港特别行政区", "澳门特别行政区"):
             problems.append(f"[R6 孤儿省份页] provinces/{o}.html 无建库城市且不在空态白名单（建议删除或重建）")
     for m in sorted(provs_with_cities - pactual):
@@ -234,59 +278,116 @@ def audit_orphans(site_root, problems, stats):
 
 
 def audit_json_md_sync(site_root, problems, stats):
-    """R7 JSON↔MD 同源同值: ① md 副本与 data 源字节一致 ② JSON 数值与 md 重解析一致 ③ 双格式覆盖对齐。"""
+    """R7 data.json ↔ data.md 同源同值：覆盖对齐 + 逐城重解析比对 + md 内锚点可达。"""
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     import build_api as B
 
-    idx = os.path.join(site_root, "api", "cities", "index.json")
-    d = json.loads(read(idx))
-    data_root = os.path.join(ROOT, "data")
+    d = _load(site_root, "data.json")
+    md_path = os.path.join(site_root, "data.md")
+    if d is None or not os.path.isfile(md_path):
+        problems.append("[R7] data.json / data.md 缺失")
+        return
+    cities = d.get("cities") or []
+    md = read(md_path)
+
+    # 解析 md 的章节结构：## <省> / ### <市>，记录每段落字节范围与标题集合
+    import re
+    heads = [(m.start(), m.group(1)) for m in re.finditer(r"(?m)^(#{1,3}) ", md)]
+
+    def slug(h):
+        return h.strip().lower().replace(" ", "-")
+
+    anchors = set()
+    for i, (pos, _) in enumerate(heads):
+        line_end = md.find("\n", pos)
+        title = md[pos:line_end]
+        level = len(title.split(" ")[0])
+        name = title[level + 1:].strip()
+        anchors.add(slug(name))
+    # md 内锚点链接可达性
+    bad_anchor = 0
+    for a in set(re.findall(r"\]\(#([^)]+)\)", md)):
+        if a not in anchors and unquote(a) not in anchors:
+            bad_anchor += 1
+            if bad_anchor <= 10:
+                problems.append(f"[R7 md 死锚点] ](#{a}) 无对应标题")
+    if bad_anchor > 10:
+        problems.append(f"[R7 md 死锚点] 另有 {bad_anchor - 10} 处")
+    stats["md_anchors"] = len(anchors)
+
+    # 逐城切分：每个 ### <市> 段由此处到下一个同级以上标题之前
+    # 注意：省级索引正文下沉后会产生 `### 城市列表` 之类的非城市三级标题，须按已知城市名过滤
+    json_cities = {(c["province"], c["city"]) for c in cities}
+    lines = heads[:]
+    sec_pos = []
+    cur_prov = None
+    n_skip_h3 = 0
+    for i, (pos, _) in enumerate(lines):
+        line_end = md.find("\n", pos)
+        title = md[pos:line_end]
+        lvl = len(title.split(" ")[0])
+        nxt = lines[i + 1][0] if i + 1 < len(lines) else len(md)
+        name = title[lvl + 1:].strip()
+        if lvl == 2:
+            cur_prov = name if (name, name) in json_cities or any(p == name for p, _ in json_cities) else None
+            continue
+        if lvl == 3:
+            if cur_prov is not None and (cur_prov, name) in json_cities:
+                sec_pos.append((cur_prov, name, md[line_end + 1:nxt]))
+            else:
+                n_skip_h3 += 1
+    md_cities = {}
+    for pv, nm, body in sec_pos:
+        md_cities.setdefault((pv, nm), body)
+    stats["md_h3_index_subsections"] = n_skip_h3
+
+    for miss in sorted(json_cities - set(md_cities)):
+        problems.append(f"[R7] data.md 缺城市章节: {miss[0]}/{miss[1]}")
+    for extra in sorted(set(md_cities) - json_cities):
+        problems.append(f"[R7] data.md 多余城市章节: {extra[0]}/{extra[1]}（data.json 无对应）")
+
     n_city = 0
-    for c in d["cities"]:
-        prov, city = c["province"], c["city"]
-        src = os.path.join(data_root, prov, city + ".md")
-        dst = os.path.join(site_root, "md", prov, city + ".md")
-        jpath = os.path.join(site_root, c["json"].lstrip("/"))
-        # ① md 副本存在且与源一致
-        if not os.path.isfile(dst):
-            problems.append(f"[R7] md 副本缺失: md/{prov}/{city}.md")
+    n_img_ok = 0
+    for c in cities:
+        body = md_cities.get((c["province"], c["city"]))
+        if body is None:
             continue
-        if os.path.isfile(src) and read(src) != read(dst):
-            problems.append(f"[R7] md 副本与 data 源不一致: md/{prov}/{city}.md")
-        # ② JSON 存在且与 md 重解析同值
-        if not os.path.isfile(jpath):
-            problems.append(f"[R7] JSON 缺失: {c['json']}")
-            continue
-        j = json.loads(read(jpath))
-        reparsed = B.parse_city_md(dst, prov)
+        # 还原成可被 parse_city_md 解析的形态：补回一级标题 + 撤销 data.md 的标题下沉（-2 级）
+        body = re.sub(r"(?m)^(#{1,6})(\s+)",
+                      lambda m: "#" * max(len(m.group(1)) - 2, 1) + m.group(2), body)
+        txt = f"# {c['city']}\n" + body
+        tmp = os.path.join(tempfile.gettempdir(), "_ra_%s.md" % abs(hash((c["province"], c["city"]))))
+        with open(tmp, "w", encoding="utf-8") as f:
+            f.write(txt)
+        try:
+            rp = B.parse_city_md(tmp, c["province"])
+        finally:
+            if os.path.isfile(tmp):
+                os.remove(tmp)
+        def _n(v):
+            return len(v.get("list", [])) if isinstance(v, dict) else len(v or [])
         checks = [
-            ("poi_total", j.get("poi_total"), reparsed.get("poi_total")),
-            ("district_count", j.get("district_count"), reparsed.get("district_count")),
-            ("food_count", len(j.get("food", [])), len(reparsed.get("food", []))),
-            ("leisure_count", len(j.get("leisure", {}).get("list", [])), len(reparsed.get("leisure", {}).get("list", []))),
-            ("kids_count", len(j.get("kids", {}).get("list", [])), len(reparsed.get("kids", {}).get("list", []))),
-            ("hotels_count", len(j.get("hotels", [])), len(reparsed.get("hotels", []))),
-            ("specialties_count", len(j.get("specialties", [])), len(reparsed.get("specialties", []))),
-            ("waves", j.get("waves"), reparsed.get("waves")),
+            ("poi_total", c.get("poi_total"), rp.get("poi_total")),
+            ("district_count", c.get("district_count"), rp.get("district_count")),
+            ("food", len(c.get("food") or []), len(rp.get("food") or [])),
+            ("leisure", _n(c.get("leisure")), _n(rp.get("leisure"))),
+            ("kids", _n(c.get("kids")), _n(rp.get("kids"))),
+            ("malls", len(c.get("malls") or []), len(rp.get("malls") or [])),
+            ("hotels", len(c.get("hotels") or []), len(rp.get("hotels") or [])),
+            ("specialties", len(c.get("specialties") or []), len(rp.get("specialties") or [])),
+            ("waves", c.get("waves"), rp.get("waves")),
         ]
         for name, a, b in checks:
             if a != b:
-                problems.append(f"[R7 JSON≠MD] {city}({c['json']}) {name}: json={a} md={b}")
+                problems.append(f"[R7 JSON≠MD] {c['city']} {name}: json={a} md={b}")
         n_city += 1
+        if c.get("food"):
+            n_img_ok += 1
     stats["sync_cities"] = n_city
-    # ③ md 目录下城市文件与 JSON 覆盖对齐（无多余 md）
-    mdir = os.path.join(site_root, "md")
-    md_cities = set()
-    for prov in os.listdir(mdir):
-        pdir = os.path.join(mdir, prov)
-        if not os.path.isdir(pdir):
-            continue
-        for fn in os.listdir(pdir):
-            if fn.endswith(".md") and fn != prov + ".md":
-                md_cities.add((prov, fn[:-3]))
-    json_cities = {(c["province"], c["city"]) for c in d["cities"]}
-    for extra in sorted(md_cities - json_cities):
-        problems.append(f"[R7] md 有多余城市档案: md/{extra[0]}/{extra[1]}.md（无对应 JSON）")
+    # data.md 尾部附录存在性
+    for sec in ("附录 A", "附录 B"):
+        if sec not in md:
+            problems.append(f"[R7] data.md 缺附录: {sec}")
 
 
 def audit_assets(site_root, problems, stats):

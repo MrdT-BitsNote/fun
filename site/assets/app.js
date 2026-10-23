@@ -158,28 +158,66 @@ if(cgrid){
   });
 }
 
-/* 首页数据调用入口：现场调用 /api/stats.json */
+/* 首页数据调用入口：单次 Range 请求演示
+   全量 data.json 有几十 MB，但「meta + stats」集中在文件头 4KB 内，
+   故只取前 8KB 即可解析出全站统计——这也是推荐的高效调用方式。 */
 var tryBtn=document.getElementById('api-try'),liveBox=document.getElementById('api-live'),
     liveMeta=document.getElementById('api-live-meta'),liveGrid=document.getElementById('api-live-grid');
 if(tryBtn&&liveBox&&liveGrid){
+  /* 只读取响应体的第一段即取消下载，避免为看统计而拉完整个大文件 */
+  function readHead(res,limit){
+    if(res.body&&res.body.getReader){
+      var rd=res.body.getReader(),parts=[],len=0,dec=new TextDecoder();
+      return new Promise(function(resolve,reject){
+        function pump(){
+          rd.read().then(function(ch){
+            if(ch.done){resolve(parts.join(''));return;}
+            var s=dec.decode(ch.value,{stream:true});
+            parts.push(s);len+=s.length;
+            if(len>=limit){rd.cancel();resolve(parts.join(''));return;}
+            pump();
+          }).catch(reject);
+        }
+        pump();
+      });
+    }
+    return res.text();
+  }
+  /* 从首段文本中按花括号配对提取顶层 "stats" 对象 */
+  function pickStats(txt){
+    var i=txt.indexOf('"stats": {');
+    if(i<0)return null;
+    var j=txt.indexOf('{',i+8),d=0,k=-1;
+    for(var p2=j;p2<txt.length;p2++){
+      var c=txt.charAt(p2);
+      if(c==='{')d++;
+      else if(c==='}'){d--;if(d===0){k=p2;break;}}
+    }
+    if(k<0)return null;
+    try{return JSON.parse(txt.slice(j,k+1));}catch(e){return null;}
+  }
   tryBtn.addEventListener('click',function(){
     if(!window.fetch){
       liveBox.hidden=false;liveMeta.textContent='';
-      liveGrid.innerHTML='<div class="api-live-err">当前浏览器不支持 fetch，请点击上方端点链接直接查看 JSON。</div>';
+      liveGrid.innerHTML='<div class="api-live-err">当前浏览器不支持 fetch，请点击上方文件卡片直接查看原文。</div>';
       return;
     }
     tryBtn.disabled=true;tryBtn.textContent='调用中…';
     var t0=performance.now();
-    fetch('api/stats.json',{cache:'no-store'}).then(function(r){
-      if(!r.ok)throw new Error('HTTP '+r.status);
-      return r.json();
-    }).then(function(d){
+    fetch('data.json',{headers:{'Range':'bytes=0-8191'},cache:'no-store'}).then(function(r){
+      if(!r.ok&&r.status!==206)throw new Error('HTTP '+r.status);
+      return readHead(r,8192).then(function(txt){return {r:r,txt:txt};});
+    }).then(function(o){
+      var s=pickStats(o.txt);
+      if(!s)throw new Error('首段未解析到 stats');
       var ms=Math.round(performance.now()-t0);
+      var served=o.txt.length;
       liveBox.hidden=false;
-      liveMeta.textContent='200 OK · '+ms+' ms · '+new Date().toLocaleTimeString('zh-CN');
-      var g=d.grades||{};
-      var vals=[[d.provinces,'省级行政区'],[d.cities,'已建库城市'],[d.poi_total,'POI（去重）'],
-                [d.districts_total,'商圈档案'],[g.S,'S 级商圈'],[g.A,'A 级商圈'],[g.B,'B 级商圈'],[g.C,'C 级商圈']];
+      liveMeta.textContent='HTTP '+o.r.status+' · '+ms+' ms · 传输 '+served+' 字节'
+        +(o.r.status===206?'（Range 分段）':'（流式截断）');
+      var g=s.grades||{};
+      var vals=[[s.provinces,'省级行政区'],[s.cities,'已建库城市'],[s.poi_total,'POI（去重）'],
+                [s.districts_total,'商圈档案'],[g.S,'S 级商圈'],[g.A,'A 级商圈'],[g.B,'B 级商圈'],[g.C,'C 级商圈']];
       liveGrid.innerHTML=vals.map(function(p){
         if(p[0]==null)return '';
         return '<div class="alv"><b>'+(typeof p[0]==='number'?p[0].toLocaleString('zh-CN'):esc(p[0]))+'</b><span>'+p[1]+'</span></div>';
@@ -188,8 +226,8 @@ if(tryBtn&&liveBox&&liveGrid){
     }).catch(function(err){
       liveBox.hidden=false;liveMeta.textContent='';
       liveGrid.innerHTML='<div class="api-live-err">现场调用未成功：'+esc(err.message||String(err))
-        +'。<br>通过 http(s) 访问本站时，该按钮会直接拉取 <code>/api/stats.json</code> 并展示真实返回；'
-        +'以 file:// 本地打开时浏览器会拦截 fetch——请点击上方端点链接直接查看 JSON 原文。</div>';
+        +'。<br>该按钮对 <code>/data.json</code> 发起 <code>Range: bytes=0-8191</code> 请求，读取首段后即取消下载，解析其中 stats；'
+        +'以 file:// 本地打开时浏览器会拦截 fetch——请用 http(s) 访问，或直接点击上方文件卡片查看原文。</div>';
       tryBtn.textContent='▶ 重新调用';
     }).then(function(){tryBtn.disabled=false;});
   });

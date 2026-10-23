@@ -6,8 +6,8 @@ build_api.py — 将 data/<省>/<市>.md 档案解析为结构化 JSON 数据接
 输出（写入 site/ 目录）:
   api/index.json            全国总索引（省 -> 市 -> 轻量 meta + 统计）
   api/stats.json            全站统计
-  api/cities/index.json     城市轻索引数组（含 html/api/md 三地址）
-  api/cities/<adcode>.json  城市全量结构化数据（skill 可直接消费）
+  site/data.json             全国全量单文件（meta/stats/provinces/389 城全量明细/美食榜/商圈榜）
+  site/data.md               全国全量单文件 Markdown（目录+32 省索引+389 城档案+附录）
   api/provinces/<省>.json   省级汇总
   api/food/top.json         全国美食榜（跨城，按评分）
   api/districts/top.json    全国商圈榜（S/A 级，按关联美食数）
@@ -22,6 +22,7 @@ build_api.py — 将 data/<省>/<市>.md 档案解析为结构化 JSON 数据接
 import json
 import os
 import re
+import shutil
 import sys
 import unicodedata
 from datetime import datetime
@@ -35,8 +36,11 @@ except ImportError:
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 SITE = os.path.join(ROOT, "site")
-API = os.path.join(SITE, "api")
-MD_OUT = os.path.join(SITE, "md")
+API = os.path.join(SITE, "api")          # 旧散片目录（v0.9.0 起整体退场，构建时清理）
+MD_OUT = os.path.join(SITE, "md")        # 旧逐城 md 目录（同上）
+
+# POI 明细表（城市档案的八个数据表）
+POI_TABLES = ("food", "xiaocan", "leisure", "kids", "malls", "specialties", "hotels", "assoc")
 
 # ---------------------------------------------------------------- 基础工具
 
@@ -85,6 +89,21 @@ def cell_image(s):
 def sanitize(s):
     """去掉竖线，防止污染 JSON 字符串（防御性）"""
     return str(s).replace("|", "/").strip() if s else ""
+
+
+# POI 记录中文键 -> 英文短键（机读友好、体积更小；data.md 仍为中文表头，同源同值）
+# 注意各节表头不完全统一：名称列美食节为「店名」、其余节为「名称」；细分/备注/载体类型等归入 sub
+def en_poi(x):
+    return {
+        "mark": x.get("标记", ""),
+        "name": x.get("店名") or x.get("名称") or "",
+        "sub": x.get("细分") or x.get("备注") or x.get("载体类型") or x.get("来源查询面") or "",
+        "type": x.get("类型", ""),
+        "rating": num(x.get("评分")),
+        "avg": num(x.get("人均")),
+        "addr": x.get("地址", ""),
+        "img": x.get("image", ""),
+    }
 
 
 def parse_table(lines, i):
@@ -408,7 +427,6 @@ def main():
                 if len(p) >= 4:
                     adcodes[(p[0], p[1])] = p[2]
 
-    cities = []
     prov_files = {}
     for prov in sorted(os.listdir(DATA)):
         pdir = os.path.join(DATA, prov)
@@ -427,82 +445,61 @@ def main():
             rec["adcode"] = adcodes.get((prov, city), "")
             prov_files.setdefault(prov, []).append((city, rec))
 
-    # 逐城写 JSON + 复制 md
+    # ---------- 全量 cities（POI 记录键名英文化：机读友好 + 体积更小） ----------
+    all_cities = []
     for prov, lst in prov_files.items():
         for city, rec in lst:
             ad = rec["adcode"] or city
-            rec["urls"] = {
-                "page": f"cities/{quote(ad)}.html",
-                "json": f"api/cities/{ad}.json",
-                "md": f"md/{quote(prov)}/{quote(city)}.md",
-            }
-            write_json(os.path.join(API, "cities", f"{ad}.json"), rec)
-            # md 副本
-            mdd = os.path.join(MD_OUT, prov)
-            os.makedirs(mdd, exist_ok=True)
-            src = os.path.join(DATA, prov, city + ".md")
-            dst = os.path.join(mdd, city + ".md")
-            if not os.path.exists(dst) or os.path.getmtime(src) > os.path.getmtime(dst):
-                with open(src, encoding="utf-8") as a, open(dst, "w", encoding="utf-8") as b:
-                    b.write(a.read())
-            cities.append(rec)
+            out = {k: rec.get(k) for k in (
+                "city", "province", "adcode", "poi_total", "waves", "updated",
+                "overview", "credibility", "districts", "district_count",
+                "queries", "external")}
+            for t in POI_TABLES:
+                v = rec.get(t)
+                if t in ("leisure", "kids"):
+                    # 休闲/儿童为 {subcats, list} 包装结构
+                    out[t] = {"subcats": (v or {}).get("subcats", {}),
+                              "list": [en_poi(x) for x in ((v or {}).get("list") or [])]}
+                elif t == "assoc":
+                    out[t] = v or []          # 已是英文键结构（district/count/items）
+                else:
+                    out[t] = [en_poi(x) for x in (v or [])]
+            g = {"S": 0, "A": 0, "B": 0, "C": 0}
+            for dd in out["districts"]:
+                if dd.get("grade") in g:
+                    g[dd["grade"]] += 1
+            out["grades"] = g
+            out["page"] = f"cities/{quote(ad)}.html"
+            all_cities.append(out)
 
-    # 城市轻索引
-    light = []
-    for r in cities:
-        dims = r.get("credibility", {}).get("dims", {})
-        grades = {"S": 0, "A": 0, "B": 0, "C": 0}
-        for d in r.get("districts", []):
-            g = d.get("grade")
-            if g in grades:
-                grades[g] += 1
-        light.append({
-            "city": r["city"], "province": r["province"], "adcode": r["adcode"],
-            "poi": r.get("poi_total"), "waves": r.get("waves"), "updated": r.get("updated"),
-            "page": r["urls"]["page"], "json": r["urls"]["json"], "md": r["urls"]["md"],
-            "grades": grades,
-            "dims": {"food": dims.get("美食", 0), "district": dims.get("商圈", 0),
-                     "leisure": dims.get("休闲娱乐", 0), "kids": dims.get("儿童娱乐", 0),
-                     "hotel": dims.get("酒店", 0), "product": dims.get("特产", 0)},
-        })
-    write_json(os.path.join(API, "cities", "index.json"), {
-        "count": len(light), "cities": light,
-    })
-
-    # 全国总索引 + 省级汇总
+    # ---------- 省级汇总 ----------
     prov_summary = {}
-    for r in light:
-        p = prov_summary.setdefault(r["province"], {"cities": 0, "poi": 0, "grades": {"S": 0, "A": 0, "B": 0, "C": 0}})
+    for c in all_cities:
+        g = {"S": 0, "A": 0, "B": 0, "C": 0}
+        for d in c["districts"]:
+            if d.get("grade") in g:
+                g[d["grade"]] += 1
+        p = prov_summary.setdefault(c["province"],
+                                    {"cities": 0, "poi": 0, "districts": 0,
+                                     "grades": {"S": 0, "A": 0, "B": 0, "C": 0}})
         p["cities"] += 1
-        p["poi"] += r["poi"] or 0
-        for g in ("S", "A", "B", "C"):
-            p["grades"][g] += r["grades"][g]
-    for prov, lst in prov_files.items():
-        s = prov_summary.get(prov, {"cities": 0, "poi": 0, "grades": {}})
-        write_json(os.path.join(API, "provinces", f"{prov}.json"), {
-            "province": prov,
-            "stats": s,
-            "cities": [c for c in light if c["province"] == prov],
-        })
-    write_json(os.path.join(API, "index.json"), {
-        "name": "FUN 全国美食×商圈×娱乐数据库",
-        "home": "https://fun.worldstip.com",
-        "generated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "provinces": len(prov_summary),
-        "cities": len(light),
-        "poi_total": sum(c["poi"] or 0 for c in light),
-        "province_index": {k: {"cities": v["cities"], "poi": v["poi"], "grades": v["grades"]}
-                           for k, v in sorted(prov_summary.items())},
-        "city_index": light,
-    })
+        p["poi"] += c["poi_total"] or 0
+        p["districts"] += len(c["districts"])
+        for k in ("S", "A", "B", "C"):
+            p["grades"][k] += g[k]
+    provinces = [{
+        "province": prov, "cities": s["cities"], "poi": s["poi"],
+        "districts": s["districts"], "grades": s["grades"],
+        "page": f"provinces/{quote(prov)}.html",
+    } for prov, s in sorted(prov_summary.items())]
 
-    # 全国美食榜（每城取评分前列，带图优先；仅收餐饮业主导 POI，防酒店/宾馆混入）
+    # ---------- 全国美食榜（每城评分前列，带图优先；仅收餐饮业主导 POI） ----------
     # 剔除规则：名称命中住宿关键词，或高德主类型段为「住宿服务」（餐饮仅作次要类型的不算美食）
     LODGING_NAME = re.compile(r"酒店|宾馆|旅馆|招待所|客栈|民宿|度假村|山庄|旅社|客房|公寓|青年旅舍|客舍")
 
     def _foodish(x):
-        t = x.get("类型") or ""
-        n = x.get("店名") or ""
+        t = x.get("type") or ""
+        n = x.get("name") or ""
         if "餐饮" not in t:
             return False
         if t.split("｜")[0].strip().startswith("住宿服务"):
@@ -512,13 +509,12 @@ def main():
         return True
 
     food_top = []
-    for r in cities:
-        pool = [x for x in r.get("food", [])
-                if x.get("评分") not in (None, "") and _foodish(x)]
-        pool.sort(key=lambda x: (-(num(x.get("评分")) or 0), -(num(x.get("人均")) or 0)))
+    for r in all_cities:
+        pool = [x for x in r["food"] if x.get("rating") not in (None, "") and _foodish(x)]
+        pool.sort(key=lambda x: (-(x["rating"] or 0), -(x["avg"] or 0)))
         picked, withimg = [], 0
         for x in pool:
-            has_img = bool(x.get("image"))
+            has_img = bool(x.get("img"))
             if len(picked) >= 8:
                 break
             if withimg >= 3 and not has_img:
@@ -526,245 +522,190 @@ def main():
             if has_img:
                 withimg += 1
             picked.append({
-                "name": x.get("店名", ""), "type": x.get("类型", ""), "rating": num(x.get("评分")),
-                "avg": num(x.get("人均")), "address": x.get("地址", ""), "image": x.get("image"),
-                "mark": x.get("标记", ""), "city": r["city"], "province": r["province"],
-                "city_page": r["urls"]["page"],
+                "name": x.get("name", ""), "type": x.get("type", ""),
+                "rating": x.get("rating"), "avg": x.get("avg"),
+                "address": x.get("addr", ""), "image": x.get("img", ""),
+                "mark": x.get("mark", ""), "city": r["city"], "province": r["province"],
+                "city_page": r["page"],
             })
         food_top.extend(picked)
     food_top.sort(key=lambda x: (-(x["rating"] or 0), x["city"]))
     food_top = food_top[:800]
-    write_json(os.path.join(API, "food", "top.json"), {
-        "note": "按高德评分排序；每人每城最多 8 家，优先带图；已剔除住宿业主导 POI（名称命中酒店/宾馆/旅馆/民宿等关键词，或主类型段为住宿服务）。字段含城市与城市页地址，可直接跳转。",
-        "count": len(food_top), "items": food_top,
-    })
 
-    # 全国商圈榜
+    # ---------- 全国商圈榜 ----------
     dist_top = []
-    for r in cities:
+    for r in all_cities:
         for d in r.get("districts", []):
             if d.get("grade") in ("S", "A"):
                 dist_top.append({
                     "name": d["name"], "grade": d["grade"], "carrier": d.get("carrier", ""),
                     "rating": d.get("rating"), "food": d.get("food"), "leisure": d.get("leisure"),
                     "kids": d.get("kids"), "hotel": d.get("hotel"),
-                    "city": r["city"], "province": r["province"], "city_page": r["urls"]["page"],
+                    "city": r["city"], "province": r["province"], "city_page": r["page"],
                 })
     dist_top.sort(key=lambda x: (-(x["food"] or 0), -(x["rating"] or 0)))
-    write_json(os.path.join(API, "districts", "top.json"), {
-        "note": "S/A 级商圈，按关联美食数降序。",
-        "count": len(dist_top), "items": dist_top[:1000],
-    })
+    dist_top = dist_top[:1000]
 
-    # 全站统计
-    write_json(os.path.join(API, "stats.json"), {
-        "generated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    # ---------- 全站统计 ----------
+    stats = {
         "provinces": len(prov_summary),
-        "cities": len(light),
-        "poi_total": sum(c["poi"] or 0 for c in light),
-        "full_dim_cities": sum(1 for c in light if 3 in (c.get("waves") or [])),
-        "districts_total": sum(len(r.get("districts", [])) for r in cities),
-        "grades": {g: sum(c["grades"][g] for c in light) for g in ("S", "A", "B", "C")},
+        "cities": len(all_cities),
+        "poi_total": sum(c["poi_total"] or 0 for c in all_cities),
+        "full_dim_cities": sum(1 for c in all_cities if 3 in (c.get("waves") or [])),
+        "districts_total": sum(len(c.get("districts", [])) for c in all_cities),
+        "grades": {g: sum(p["grades"][g] for p in prov_summary.values()) for g in ("S", "A", "B", "C")},
         "sources": ["高德地图 Web 服务 POI（restapi.amap.com）", "美团", "大众点评"],
         "site": "https://fun.worldstip.com",
-    })
+    }
 
-    # 兼容旧版 data.json
-    write_json(os.path.join(SITE, "data.json"), {
-        "generated_by": "build_api.py",
-        "source": "高德地图 Web 服务 POI",
-        "skill": "local-food-explorer v0.8.0",
-        "cities_total": len(light),
-        "cities_built": len(light),
-        "cities_full_dims": sum(1 for c in light if 3 in (c.get("waves") or [])),
-        "poi_total": sum(c["poi"] or 0 for c in light),
-        "cities": [{"city": c["city"], "province": c["province"], "adcode": c["adcode"],
-                    "poi": c["poi"], "waves": c["waves"], "updated": c["updated"],
-                    "url": c["page"]} for c in light],
-    })
+    # ---------- 清理旧散片（可复现：api/ 390+32 文件、md/ 421 文件整体退场） ----------
+    shutil.rmtree(API, ignore_errors=True)
+    shutil.rmtree(MD_OUT, ignore_errors=True)
 
-    # 站点级 Markdown 文档（内容全量 md 化：省级索引 / 全国索引 / 层级总览 / API / SOURCES）
-    build_site_docs(light, cities)
+    # ---------- 写 site/data.json（全国全量单文件，流式编码省内存） ----------
+    gen = datetime.now().strftime("%Y-%m-%d %H:%M")
+    doc = {
+        "meta": {
+            "name": "FUN 全国美食×商圈×娱乐数据库",
+            "version": "v0.9.0",
+            "generated": gen,
+            "home": "https://fun.worldstip.com",
+            "source": "高德地图 Web 服务 POI（restapi.amap.com）+ 美团 + 大众点评",
+            "format": "全国全量单文件 JSON；人类可读全量版见 /data.md",
+            "files": {"json": "/data.json", "md": "/data.md", "docs": "/api.html"},
+            "schema": {
+                "meta": "版本/生成时间/数据源说明",
+                "stats": "全站统计（省数/城数/POI/商圈/SABC）",
+                "provinces": "32 省级汇总 [{province,cities,poi,districts,grades,page}]",
+                "cities": "389 城全量 [{city,province,adcode,poi_total,overview,districts,food,xiaocan,leisure,kids,malls,specialties,hotels,assoc,page}]",
+                "poi": "POI 记录 {mark,name,sub,type,rating,avg,addr,img}；mark=✅S-/✅A- 等商圈携带标记，sub=细分/备注/载体类型，type 为高德多段类型串（; 分隔，首段为主类）",
+                "food_top": "全国美食榜 800 条（已剔除住宿业主导 POI）",
+                "districts_top": "全国 S/A 商圈榜 1000 条",
+            },
+        },
+        "stats": stats,
+        "provinces": provinces,
+        "cities": all_cities,
+        "food_top": food_top,
+        "districts_top": dist_top,
+    }
+    out_json = os.path.join(SITE, "data.json")
+    with open(out_json, "w", encoding="utf-8") as f:
+        for chunk in json.JSONEncoder(ensure_ascii=False).iterencode(doc):
+            f.write(chunk)
+    jsize = os.path.getsize(out_json)
+
+    # ---------- 写 site/data.md（全国全量单文件 Markdown） ----------
+    msize = build_data_md(provinces, all_cities, stats, gen)
 
     dt = (datetime.now() - t0).total_seconds()
-    print(f"[build_api] {len(light)} cities / {len(prov_summary)} provinces / "
-          f"poi={sum(c['poi'] or 0 for c in light)} / {dt:.1f}s")
+    print(f"[build_api] data.json {jsize/1048576:.1f}MB + data.md {msize/1048576:.1f}MB / "
+          f"{len(all_cities)} cities / {len(provinces)} provinces / "
+          f"poi={stats['poi_total']} / {dt:.1f}s")
 
 
-# ================================================================ 站点级 Markdown 文档
+# ================================================================ 全量 Markdown（单文件）
 
-def _copy_if_newer(src, dst):
-    if not os.path.isfile(src):
-        return False
-    os.makedirs(os.path.dirname(dst), exist_ok=True)
-    if not os.path.exists(dst) or os.path.getmtime(src) > os.path.getmtime(dst):
-        with open(src, encoding="utf-8") as a, open(dst, "w", encoding="utf-8") as b:
-            b.write(a.read())
-        return True
-    return False
+def _rewrite_links(txt):
+    """md 源内链改写为 data.md 锚点：](<市>.md) -> ](#<市>)；](../README.md) -> ](#目录)。"""
+    txt = re.sub(r"\]\(([^)#:/]+?)\.md\)", r"](#\1)", txt)
+    txt = txt.replace("](../README.md)", "](#目录)")
+    return txt
 
 
-def build_site_docs(light, cities):
-    """把站点全部内容拆分为 Markdown：省级索引副本、全国索引、行政层级总览、API/SOURCES 文档。"""
-    # 1. 省级索引 md 副本（data/<省>/<省>.md → site/md/<省>/<省>.md）
-    n_prov = 0
-    for prov in sorted(os.listdir(DATA)):
-        pdir = os.path.join(DATA, prov)
-        if not os.path.isdir(pdir):
+def _shift_headings(txt, n):
+    """把 md 源内的 ATX 标题整体下沉 n 级（最小 1 级、最大 6 级），
+    使城市原文内部的 `## 0. 数据可信度` / `### 商圈 —— 评级 A` 等正确嵌套在省/市标题之下。
+    围栏代码块（```）内的 # 行不处理。"""
+    out, fence = [], False
+    for ln in txt.split("\n"):
+        if ln.lstrip().startswith("```"):
+            fence = not fence
+            out.append(ln)
             continue
-        if _copy_if_newer(os.path.join(pdir, prov + ".md"),
-                          os.path.join(MD_OUT, prov, prov + ".md")):
-            n_prov += 1
-    # 2. 全国索引 + 行政层级总览
-    n_root = sum(_copy_if_newer(os.path.join(DATA, name), os.path.join(MD_OUT, name))
-                 for name in ("README.md", "行政层级总览.md"))
+        if not fence:
+            m = re.match(r"^(#{1,6})(\s+)", ln)
+            if m:
+                lvl = min(len(m.group(1)) + n, 6)
+                ln = "#" * lvl + m.group(2) + ln[m.end():]
+        out.append(ln)
+    return "\n".join(out)
 
-    poi_total = sum(c["poi"] or 0 for c in light)
-    gen = datetime.now().strftime("%Y-%m-%d %H:%M")
-    full3 = sum(1 for c in light if 3 in (c.get("waves") or []))
 
-    # 3. API.md —— 数据接口文档（与 api.html 同源）
-    api_md = f"""# FUN 数据接口文档
+def _strip_h1(txt):
+    """去掉 md 源的一级标题行（合并时由区块自己给出标题）。"""
+    return re.sub(r"^# [^\n]*\n", "", txt, count=1)
 
-> 站点：https://fun.worldstip.com  ·  生成时间：{gen}
-> 所有端点只读、无鉴权、无速率限制，可被 CDN 缓存。JSON 与 Markdown 由同一数据层生成，同源同值。
 
-## 端点总览
+def build_data_md(provinces, all_cities, stats, gen):
+    """全国全量单文件 Markdown：目录 + 全国统计 + 32 省索引 + 389 城档案 + 附录。"""
+    by_prov = {}
+    for c in all_cities:
+        by_prov.setdefault(c["province"], []).append(c["city"])
 
-| 端点 | 格式 | 内容 | 体积量级 |
-|---|---|---|---|
-| `/api/index.json` | JSON | 全国总索引：省 → 市 → 轻量 meta + 评级统计 | ~150 KB |
-| `/api/stats.json` | JSON | 全站统计快照 | < 1 KB |
-| `/api/cities/index.json` | JSON | 城市轻索引数组（含页面/JSON/MD 三地址） | ~120 KB |
-| `/api/cities/<adcode>.json` | JSON | 城市全量结构化数据（见下方 Schema） | 50–500 KB/城 |
-| `/api/provinces/<省>.json` | JSON | 省级汇总：城市列表 + 聚合统计 | ~10–60 KB |
-| `/api/food/top.json` | JSON | 全国美食榜（按评分降序，含图与城市跳转；已剔除住宿业主导 POI） | ~600 KB |
-| `/api/districts/top.json` | JSON | 全国 S/A 级商圈榜（按关联美食数） | ~400 KB |
-| `/md/<省>/<市>.md` | Markdown | 城市档案原文（13 章），skill 直读 | 20–80 KB/城 |
-| `/data.json` | JSON | 兼容旧版轻量总索引 | ~100 KB |
+    parts = []
+    w = parts.append
+    w("# FUN 全国美食 × 商圈 × 娱乐数据库（全量 Markdown 版）\n\n")
+    w(f"> 版本 v0.9.0 · 生成 {gen} · 机器可读全量 JSON：[`/data.json`](/data.json)  \n")
+    w("> 数据源：高德地图 Web 服务 POI（restapi.amap.com）+ 美团 + 大众点评  \n")
+    w(f"> 覆盖 {stats['provinces']} 个省级行政区 / {stats['cities']} 城 / "
+      f"POI 去重 {stats['poi_total']:,} 条 / 商圈 {stats['districts_total']:,} 处\n")
 
-## 城市 JSON Schema（`/api/cities/<adcode>.json`）
+    # 目录（省 -> 城 两级锚点）
+    w("\n## 目录\n")
+    for p in provinces:
+        name = p["province"]
+        w(f"- **[{name}](#{name})**（{p['cities']} 城 · POI {p['poi']:,}）")
+        w(" · ".join(f"[{c}](#{c})" for c in by_prov.get(name, [])) + "\n")
 
-```json
-{{
-  "city": "岳阳市",                  // 城市名
-  "province": "湖南省",              // 所属省级单位
-  "adcode": "430600",                // 高德区划代码
-  "poi_total": 1018,                 // 去重 POI 总数
-  "waves": [2, 3],                   // 采集波次
-  "updated": "2026-10-23 20:07:00",  // 采集时间
-  "credibility": {{                  // §0 可信度
-    "poi_total": 1018, "rated_ratio": "99%", "warnings": 0,
-    "dims": {{"美食": 311, "商圈": 184, "休闲娱乐": 386, "儿童娱乐": 40, "酒店": 32, "特产": 41}}
-  }},
-  "overview": {{                     // §1 总览
-    "admin": {{"下级区县": "9", "街道/镇/乡": "134"}},
-    "district_poi": [{{"district": "岳阳楼区", "poi": 534, "ratio": "52%"}}],
-    "carrier_types": [{{"type": "购物中心/综合体", "count": 59}}]
-  }},
-  "districts": [{{                   // §2 商圈档案（含 S/A/B/C 评级与详情）
-    "name": "步步高新天地", "grade": "A", "carrier": "购物中心/综合体",
-    "rating": 4.7, "food": 21, "leisure": 51, "kids": 1, "hotel": 3,
-    "detail": {{"address": "东茅岭路1号", "bandwidth": "¥45（8–81）", "axis": "东茅岭街", "mixes": [...]}}
-  }}],
-  "leisure":  {{"subcats": [...], "list": [...]}},   // §4 休闲娱乐（14 子类）
-  "kids":     {{"subcats": [...], "list": [...]}},   // 儿童亲子
-  "malls":    [...],                  // §5 综合体与商场
-  "food":     [...],                  // §6 美食（image 为高德实拍图 URL）
-  "xiaocan":  [...],                  // §7 苍蝇馆/小店候选
-  "specialties": [...],               // §8 特产
-  "assoc":    [...],                  // §9 美食×商圈关联
-  "hotels":   [...],                  // §10 酒店
-  "queries":  [...],                  // §11 原始查询面
-  "external": {{                      // 美团 / 大众点评外链
-    "meituan_search": "https://www.meituan.com/s/...",
-    "dianping_food": "https://www.dianping.com/yueyang/ch10"
-  }}
-}}
-```
+    # 全国统计
+    g = stats["grades"]
+    w("\n## 全国统计\n\n")
+    w("| 项 | 值 |\n|---|---|\n")
+    w(f"| 省级行政区 | {stats['provinces']} |\n")
+    w(f"| 已建库城市 | {stats['cities']} |\n")
+    w(f"| POI（去重） | {stats['poi_total']:,} |\n")
+    w(f"| 商圈档案 | {stats['districts_total']:,} |\n")
+    w(f"| 商圈评级 | S {g['S']} · A {g['A']} · B {g['B']} · C {g['C']} |\n")
+    w(f"| 全维度城市（wave1+2+3） | {stats['full_dim_cities']} |\n")
 
-## 调用示例
+    # 省索引 + 城市档案（标题层级下沉 + 内链改锚点）
+    # 层级约定：省标题 ## -> 省级索引正文下沉 1 级（## 变 ###）
+    #           市标题 ### -> 城市档案正文下沉 2 级（## 变 ####，### 变 #####）
+    for prov in sorted(by_prov):
+        cities_in_prov = by_prov[prov]
+        w(f"\n## {prov}\n")
+        src = os.path.join(DATA, prov, prov + ".md")
+        # 直辖市只有 1 座城市且与省同名：索引文件即城市档案本身，避免重复收录
+        is_single = len(cities_in_prov) == 1 and cities_in_prov[0] == prov
+        if os.path.isfile(src) and not is_single:
+            body = _shift_headings(_strip_h1(read(src)), 1)
+            w(_rewrite_links(body).rstrip() + "\n")
+        for city in cities_in_prov:
+            src = os.path.join(DATA, prov, city + ".md")
+            if not os.path.isfile(src):
+                continue
+            body = _shift_headings(_strip_h1(read(src)), 2)
+            w(f"\n### {city}\n")
+            w(_rewrite_links(body).rstrip() + "\n")
 
-```bash
-# 1. 拿全国索引，筛出目标城市
-curl -s https://fun.worldstip.com/api/index.json | jq '.city_index[] | select(.province=="湖南省")'
+    # 附录：接口与来源
+    w("\n## 附录 A · 数据接口\n\n")
+    w("| 端点 | 格式 | 内容 |\n|---|---|---|\n")
+    w("| `/data.json` | JSON | 全国全量单文件：meta / stats / provinces / cities（389 城全量明细）/ food_top / districts_top |\n")
+    w("| `/data.md` | Markdown | 本文件：全量人类可读版（目录 + 32 省索引 + 389 城档案） |\n")
+    w("\nPOI 记录字段：`mark`（商圈携带标记）/ `name`（店名）/ `type`（高德多段类型串，`;` 分隔，首段为主类）/ "
+      "`rating`（评分）/ `avg`（人均）/ `addr`（地址）/ `img`（商家实拍图，无图为空串）。\n")
+    w("\n## 附录 B · 数据来源与边界\n\n")
+    w("- POI 来自高德地图 Web 服务（restapi.amap.com）文本检索，按城市 + 60 查询面采集，高德 POI id 去重。\n")
+    w("- 美食/酒店/特产等维度计数以高德类型串判定；美食榜已剔除酒店/宾馆/旅馆/民宿/客栈/客舍等住宿业主导 POI。\n")
+    w("- 无评分条目标记 ⚠️，不做推荐；人均/图片以高德返回为准，缺图为空。\n")
+    w("- 数据用于正当的信息聚合与探索参考，不整库转售；引用请标注「高德地图 POI / 美团 / 大众点评」。\n")
 
-# 2. 取城市全量数据
-curl -s https://fun.worldstip.com/api/cities/430600.json
-
-# 3. 只取 S 级商圈
-curl -s https://fun.worldstip.com/api/cities/430600.json | jq '.districts[] | select(.grade=="S")'
-
-# 4. 取带图的美食 TOP10
-curl -s https://fun.worldstip.com/api/cities/430600.json | jq '[.food[] | select(.image)][:10]'
-
-# 5. Markdown 原文（skill 直读，零解析成本）
-curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md
-```
-
-```python
-# 6. Python 一行读取
-import json, urllib.request
-data = json.load(urllib.request.urlopen("https://fun.worldstip.com/api/cities/430600.json"))
-```
-
-## 使用约定
-
-- **一致性承诺**：JSON 与 Markdown 由同一数据层（`build_api.py`）生成，同源同值；任一字段都能在对应城市的 md 档案中找到出处。
-- **无鉴权无限率**：静态托管 + CDN 缓存，请合理使用（建议客户端侧缓存 24h）。
-- **评分口径**：高德快照评分（0–5），采集时间见城市 JSON 的 `updated` 字段；人均单位元。
-- **标记口径**：✅ 优质 / ⚠️ 待核 / ❌ 不推荐；派生规则见各城市页说明。
-- **许可**：数据仅可正当使用，不得整库转售；请保留来源标注（高德/美团/大众点评）。
-
-## Markdown 内容索引（/md/）
-
-| 路径 | 内容 |
-|---|---|
-| `/md/README.md` | 全国数据总索引 |
-| `/md/行政层级总览.md` | 43,474 个行政节点（省→镇街） |
-| `/md/<省>/<省>.md` | 省级索引（城市列表 + 聚合统计） |
-| `/md/<省>/<市>.md` | 城市档案原文（13 章），与 JSON 同源同值 |
-"""
-    with open(os.path.join(MD_OUT, "API.md"), "w", encoding="utf-8") as f:
-        f.write(api_md)
-
-    # 4. SOURCES.md —— 数据来源与方法论（与 sources.html 同源）
-    src_md = f"""# 数据来源与方法论
-
-> 站点：https://fun.worldstip.com  ·  生成时间：{gen}
-
-## 三层数据源
-
-| 层级 | 来源 | 作用 | 覆盖 |
-|---|---|---|---|
-| **Primary 底账** | 高德地图 Web 服务 POI（restapi.amap.com） | 商圈载体、餐饮、休闲娱乐、儿童亲子、酒店、特产六大维度全量采集 | {len(light)} 城 / {poi_total:,} POI（去重） |
-| **Food 消费视角** | 美团 | 美食榜单、团购与实时消费热度参考；城市页提供搜索直达 | 每城搜索外链 |
-| **Food 评价视角** | 大众点评 | 必吃榜与用户评价参考；城市页提供城市美食频道直达（/拼音/ch10） | 每城频道外链 |
-
-## 采集与评级方法
-
-- **查询面**：每城约 60 个查询面，覆盖类型码（中餐厅/步行街/购物中心/酒吧/KTV/电影院/运动场馆/游乐场等）与关键词（美食/老字号/大排档/苍蝇馆/小吃/夜市/特产等）双通道。
-- **去重**：按高德 POI id 去重；跨查询面命中去重后计入维度。
-- **商圈评级**：S = 关联美食 ≥20 家且均分 ≥4.3、覆盖 ≥3 类业态；A = 美食 ≥10 家且均分 ≥4.0、覆盖 ≥2 类；B = 美食 ≥5 家或单业态 ≥10 家；C = 数据稀薄，仅登记待人工补充。
-- **载体识别**：剥离分店后缀、地址不参与判定、类型码须为 06 购物类或 050000 餐饮载体，三重护栏防止餐厅混入商圈列表。
-- **苍蝇馆纪律**：不凭空判定，仅命中关键词或小店语义（小馆/排挡/家常/私房/土菜/大排档）方列为候选。
-- **美食×商圈关联**：① 名称互证；② 距离就近（≤600m 且同区县）。仅靠距离的关联标注 ⚠。
-
-## 更新策略
-
-- 数据层随采集波次滚动更新（wave1 底账 → wave2 酒店/迷你动物园/商场 → wave3 休闲娱乐）。
-- 每城档案头部记录采集时间与告警数；站点统计（`/api/stats.json`）为全局快照。
-- 评分为快照值，营业状态以美团/大众点评实时信息为准。
-
-## 合规提示
-
-数据用于正当的信息聚合与探索参考，不整库转售；引用请标注「高德地图 POI / 美团 / 大众点评」。
-"""
-    with open(os.path.join(MD_OUT, "SOURCES.md"), "w", encoding="utf-8") as f:
-        f.write(src_md)
-
-    print(f"[build_api] site docs: {n_prov} 省级索引 / {n_root} 根级 / API.md / SOURCES.md "
-          f"(full-dim cities: {full3}/{len(light)})")
+    out = os.path.join(SITE, "data.md")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write("".join(parts))
+    return os.path.getsize(out)
 
 
 if __name__ == "__main__":

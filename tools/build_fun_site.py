@@ -36,8 +36,28 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+_SZ_CACHE = {}
+
+
+def _file_size(name):
+    """全量数据文件的真实体积（原始 + gzip-1），带缓存；供入口卡片与接口文档页展示。"""
+    if name in _SZ_CACHE:
+        return _SZ_CACHE[name]
+    import gzip as _gz
+    p = os.path.join(SITE, name)
+    if not os.path.isfile(p):
+        return _SZ_CACHE.setdefault(name, ("—", "—"))
+    with open(p, "rb") as f:
+        raw_bytes = f.read()
+    gz = len(_gz.compress(raw_bytes, 1))
+    val = (f"{len(raw_bytes)/1048576:.1f} MB", f"{gz/1048576:.1f} MB")
+    _SZ_CACHE[name] = val
+    return val
+
+
 def load(name):
-    with open(os.path.join(API, name), encoding="utf-8") as f:
+    """从 site/ 根读取数据文件（v0.9.0 起唯一数据层为 site/data.json）。"""
+    with open(os.path.join(SITE, name), encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -46,7 +66,7 @@ def load(name):
 CSS = r"""/* FUN · 设计系统（Apple 风格基线 + FUN 品牌渐变） */
 :root{
   --bg:#fbfbfd; --surface:#ffffff; --surface-2:#f5f5f7; --surface-3:#ececed;
-  --text:#1d1d1f; --text-2:#6e6e73; --text-3:#aeaeb2;
+  --text:#1d1d1f; --text-2:#58585d; --text-3:#6e6e73;
   --line:rgba(0,0,0,.08); --line-2:rgba(0,0,0,.14);
   --blue:#0071e3; --orange:#ff9f0a; --pink:#ff375f; --purple:#bf5af2; --green:#30d158;
   --grad-fun:linear-gradient(120deg,#ff9f0a 0%,#ff375f 52%,#bf5af2 100%);
@@ -216,7 +236,6 @@ section{padding:96px 0 8px}
 .food-type{font-size:12px;color:var(--text-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .food-foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px}
 .food-avg{font-size:13px;font-weight:700;color:var(--orange)}
-.food-city{font-size:12px;color:var(--blue);font-weight:600}
 
 /* ---------- 休闲聚合条 ---------- */
 .play-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -257,29 +276,54 @@ pre.code .kw{color:var(--purple);font-weight:600}
 .aeh-base{display:flex;align-items:center;gap:6px;background:var(--surface-2);border:1px solid var(--line);
   border-radius:12px;padding:9px 12px 9px 14px;width:fit-content;max-width:100%}
 .aeh-base code{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--text);word-break:break-all}
+.aeh-left{flex:1 1 320px;min-width:0}
 .aeh-tip{font-size:13px;color:var(--text-2);margin-top:10px;max-width:46em}
 .api-try{flex-shrink:0;background:var(--grad-fun);color:#fff;border:0;border-radius:var(--pill);
   padding:11px 22px;font-size:14px;font-weight:700;cursor:pointer;transition:.2s;
   box-shadow:0 4px 14px rgba(255,55,95,.28);font-family:var(--font)}
 .api-try:hover{transform:scale(1.04)}
 .api-try:disabled{opacity:.55;cursor:default;transform:none}
-.api-quick{display:flex;flex-direction:column;gap:10px;margin-top:18px}
-.aq-group{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.aq-label{font-size:12px;font-weight:700;color:var(--text-3);width:92px;flex-shrink:0;letter-spacing:.06em}
-.aq-btn{display:inline-flex;flex-direction:column;gap:2px;background:var(--surface-2);border:1px solid var(--line);
-  border-radius:10px;padding:8px 12px;text-decoration:none;transition:.18s;min-width:0}
-.aq-btn:hover{border-color:var(--blue);background:#fff;transform:translateY(-1px);box-shadow:var(--shadow-1)}
-.aq-btn code{font-family:var(--mono);font-size:12.5px;color:var(--blue);font-weight:600;word-break:break-all}
-.aq-btn em{font-style:normal;font-size:11.5px;color:var(--text-3)}
-.aq-md code{color:#248a3d}
+/* 两个全量文件卡片：并列双卡，格式色区分，超大幽灵字符作背景层 */
+.aq-files{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.aq-file{position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;gap:9px;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-m);
+  padding:18px 20px 16px;text-decoration:none;color:inherit;
+  transition:transform .28s cubic-bezier(.16,1,.3,1),box-shadow .28s,border-color .28s,background .28s}
+.aq-file::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .28s;
+  background:radial-gradient(120% 92% at 100% 0%,rgba(0,113,227,.11),transparent 62%)}
+.aq-file::after{content:"{ }";position:absolute;right:-10px;bottom:-30px;font-family:var(--mono);
+  font-size:92px;font-weight:700;line-height:1;letter-spacing:-.06em;color:rgba(0,0,0,.035);
+  pointer-events:none;user-select:none}
+.aq-file.md::before{background:radial-gradient(120% 92% at 100% 0%,rgba(48,209,88,.15),transparent 62%)}
+.aq-file.md::after{content:"#"}
+.aq-file:hover{background:#fff;border-color:rgba(0,113,227,.42);
+  transform:translateY(-2px);box-shadow:var(--shadow-2)}
+.aq-file.md:hover{border-color:rgba(48,209,88,.48)}
+.aq-file:hover::before{opacity:1}
+.aq-file-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.aq-tag{font-size:10.5px;font-weight:800;letter-spacing:.12em;border-radius:6px;padding:3px 8px}
+.aq-tag.tj{color:#0060c7;background:rgba(0,113,227,.10)}
+.aq-tag.tm{color:#1b7a36;background:rgba(48,209,88,.15)}
+.aq-size{font-family:var(--mono);font-size:11.5px;color:var(--text-3);white-space:nowrap}
+.aq-file>code{font-family:var(--mono);font-size:20px;font-weight:700;letter-spacing:-.02em;color:var(--text)}
+.aq-file>p{font-size:12.5px;line-height:1.62;color:var(--text-2)}
+.aq-file>p b{color:var(--text);font-weight:700}
+.aq-file>p code{font-family:var(--mono);font-size:11.5px;color:var(--text);
+  background:rgba(0,0,0,.05);border-radius:4px;padding:1px 4px}
+.aq-go{margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:6px;
+  font-size:12.5px;font-weight:700;color:#0060c7;transition:gap .2s}
+.aq-file.md .aq-go{color:#1b7a36}
+.aq-file:hover .aq-go{gap:11px}
 .api-live{margin-top:16px;border:1px dashed var(--line-2);border-radius:12px;padding:14px 16px;background:var(--surface-2)}
 .api-live-head{font-family:var(--mono);font-size:12px;color:var(--text-2);margin-bottom:10px}
 .api-live-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:10px}
 .alv{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
 .alv b{display:block;font-size:18px;font-weight:800;letter-spacing:-.02em;color:var(--text)}
 .alv span{font-size:11.5px;color:var(--text-3)}
+.dd-sub{font-size:11.5px;color:var(--text-3);font-variant-numeric:tabular-nums}
 .api-live-err{font-size:13px;color:#b42318;line-height:1.6}
-@media(max-width:640px){.aq-label{width:100%}.api-entry{padding:18px}}
+@media(max-width:760px){.aq-files{grid-template-columns:1fr}.api-entry{padding:18px;border-radius:var(--r-m)}
+  .aq-file>code{font-size:18px}.api-entry-head{gap:12px}.api-try{width:100%;text-align:center}}
 
 /* ---------- 数据来源 ---------- */
 .src-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -356,7 +400,6 @@ table.dt tr:hover td{background:#fafafc}
 .mark-ok{color:var(--green);font-weight:700}
 .mark-warn{color:var(--orange);font-weight:700}
 .mark-bad{color:var(--pink);font-weight:700}
-.mono{font-family:var(--mono);font-size:12.5px}
 .api-box{background:#1d1d1f;color:#f5f5f7;border-radius:var(--r-l);padding:26px 28px;display:flex;
   flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
 .api-box .ab-t{font-size:15px;font-weight:700}
@@ -370,9 +413,6 @@ table.dt tr:hover td{background:#fafafc}
 .ab-btn.ghost{background:transparent;color:#f5f5f7;border:1px solid rgba(255,255,255,.25)}
 .ab-btn.ghost:hover{background:rgba(255,255,255,.1)}
 .sec-block{padding-top:64px}
-.mini-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
-.mini-card{background:var(--surface-2);border-radius:14px;padding:14px 16px;font-size:13px;color:var(--text-2)}
-.mini-card b{display:block;color:var(--text);font-size:14.5px;margin-bottom:2px}
 .poi-bars{display:flex;flex-direction:column;gap:7px}
 .poi-bar{display:flex;align-items:center;gap:10px;font-size:13px}
 .poi-bar .lb{width:96px;text-align:right;color:var(--text-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -393,7 +433,8 @@ table.dt tr:hover td{background:#fafafc}
 .reveal[data-d="1"]{transition-delay:.08s}.reveal[data-d="2"]{transition-delay:.16s}
 .reveal[data-d="3"]{transition-delay:.24s}.reveal[data-d="4"]{transition-delay:.32s}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
-  .fun-word span,.fun-word .dot{animation:none}}
+  .fun-word span,.fun-word .dot{animation:none}
+  .aq-file,.aq-file:hover,.aq-go,.aq-file:hover .aq-go,.api-try:hover{transform:none;transition:none;gap:6px}}
 
 /* ---------- 省份页 ---------- */
 .prov-hero{padding:calc(var(--nav-h) + 64px) 0 24px}
@@ -581,28 +622,66 @@ if(cgrid){
   });
 }
 
-/* 首页数据调用入口：现场调用 /api/stats.json */
+/* 首页数据调用入口：单次 Range 请求演示
+   全量 data.json 有几十 MB，但「meta + stats」集中在文件头 4KB 内，
+   故只取前 8KB 即可解析出全站统计——这也是推荐的高效调用方式。 */
 var tryBtn=document.getElementById('api-try'),liveBox=document.getElementById('api-live'),
     liveMeta=document.getElementById('api-live-meta'),liveGrid=document.getElementById('api-live-grid');
 if(tryBtn&&liveBox&&liveGrid){
+  /* 只读取响应体的第一段即取消下载，避免为看统计而拉完整个大文件 */
+  function readHead(res,limit){
+    if(res.body&&res.body.getReader){
+      var rd=res.body.getReader(),parts=[],len=0,dec=new TextDecoder();
+      return new Promise(function(resolve,reject){
+        function pump(){
+          rd.read().then(function(ch){
+            if(ch.done){resolve(parts.join(''));return;}
+            var s=dec.decode(ch.value,{stream:true});
+            parts.push(s);len+=s.length;
+            if(len>=limit){rd.cancel();resolve(parts.join(''));return;}
+            pump();
+          }).catch(reject);
+        }
+        pump();
+      });
+    }
+    return res.text();
+  }
+  /* 从首段文本中按花括号配对提取顶层 "stats" 对象 */
+  function pickStats(txt){
+    var i=txt.indexOf('"stats": {');
+    if(i<0)return null;
+    var j=txt.indexOf('{',i+8),d=0,k=-1;
+    for(var p2=j;p2<txt.length;p2++){
+      var c=txt.charAt(p2);
+      if(c==='{')d++;
+      else if(c==='}'){d--;if(d===0){k=p2;break;}}
+    }
+    if(k<0)return null;
+    try{return JSON.parse(txt.slice(j,k+1));}catch(e){return null;}
+  }
   tryBtn.addEventListener('click',function(){
     if(!window.fetch){
       liveBox.hidden=false;liveMeta.textContent='';
-      liveGrid.innerHTML='<div class="api-live-err">当前浏览器不支持 fetch，请点击上方端点链接直接查看 JSON。</div>';
+      liveGrid.innerHTML='<div class="api-live-err">当前浏览器不支持 fetch，请点击上方文件卡片直接查看原文。</div>';
       return;
     }
     tryBtn.disabled=true;tryBtn.textContent='调用中…';
     var t0=performance.now();
-    fetch('api/stats.json',{cache:'no-store'}).then(function(r){
-      if(!r.ok)throw new Error('HTTP '+r.status);
-      return r.json();
-    }).then(function(d){
+    fetch('data.json',{headers:{'Range':'bytes=0-8191'},cache:'no-store'}).then(function(r){
+      if(!r.ok&&r.status!==206)throw new Error('HTTP '+r.status);
+      return readHead(r,8192).then(function(txt){return {r:r,txt:txt};});
+    }).then(function(o){
+      var s=pickStats(o.txt);
+      if(!s)throw new Error('首段未解析到 stats');
       var ms=Math.round(performance.now()-t0);
+      var served=o.txt.length;
       liveBox.hidden=false;
-      liveMeta.textContent='200 OK · '+ms+' ms · '+new Date().toLocaleTimeString('zh-CN');
-      var g=d.grades||{};
-      var vals=[[d.provinces,'省级行政区'],[d.cities,'已建库城市'],[d.poi_total,'POI（去重）'],
-                [d.districts_total,'商圈档案'],[g.S,'S 级商圈'],[g.A,'A 级商圈'],[g.B,'B 级商圈'],[g.C,'C 级商圈']];
+      liveMeta.textContent='HTTP '+o.r.status+' · '+ms+' ms · 传输 '+served+' 字节'
+        +(o.r.status===206?'（Range 分段）':'（流式截断）');
+      var g=s.grades||{};
+      var vals=[[s.provinces,'省级行政区'],[s.cities,'已建库城市'],[s.poi_total,'POI（去重）'],
+                [s.districts_total,'商圈档案'],[g.S,'S 级商圈'],[g.A,'A 级商圈'],[g.B,'B 级商圈'],[g.C,'C 级商圈']];
       liveGrid.innerHTML=vals.map(function(p){
         if(p[0]==null)return '';
         return '<div class="alv"><b>'+(typeof p[0]==='number'?p[0].toLocaleString('zh-CN'):esc(p[0]))+'</b><span>'+p[1]+'</span></div>';
@@ -611,8 +690,8 @@ if(tryBtn&&liveBox&&liveGrid){
     }).catch(function(err){
       liveBox.hidden=false;liveMeta.textContent='';
       liveGrid.innerHTML='<div class="api-live-err">现场调用未成功：'+esc(err.message||String(err))
-        +'。<br>通过 http(s) 访问本站时，该按钮会直接拉取 <code>/api/stats.json</code> 并展示真实返回；'
-        +'以 file:// 本地打开时浏览器会拦截 fetch——请点击上方端点链接直接查看 JSON 原文。</div>';
+        +'。<br>该按钮对 <code>/data.json</code> 发起 <code>Range: bytes=0-8191</code> 请求，读取首段后即取消下载，解析其中 stats；'
+        +'以 file:// 本地打开时浏览器会拦截 fetch——请用 http(s) 访问，或直接点击上方文件卡片查看原文。</div>';
       tryBtn.textContent='▶ 重新调用';
     }).then(function(){tryBtn.disabled=false;});
   });
@@ -706,18 +785,22 @@ def render_index(idx, stats, dist_top):
     provs = sorted(set(c["province"] for c in cities))
     poi_total = idx["poi_total"]
 
-    # 休闲娱乐子类全国聚合
+    # 全量数据文件实测体积（入口卡片展示）
+    data_jraw, data_jgz = _file_size("data.json")
+    data_mraw, data_mgz = _file_size("data.md")
+
+    # 休闲娱乐子类全国聚合（从全量 data.json 一次读取）
     leisure_agg = {}
     kids_agg = {}
-    for c in cities:
-        try:
-            full = load(os.path.join("cities", f"{c['adcode']}.json"))
-        except Exception:
-            continue
-        for s in full.get("leisure", {}).get("subcats", []):
-            leisure_agg[s["name"]] = leisure_agg.get(s["name"], 0) + (s.get("count") or 0)
-        for s in full.get("kids", {}).get("subcats", []):
-            kids_agg[s["name"]] = kids_agg.get(s["name"], 0) + (s.get("count") or 0)
+    try:
+        full_data = load("data.json")
+        for c in full_data.get("cities", []):
+            for s in c.get("leisure", {}).get("subcats", []):
+                leisure_agg[s["name"]] = leisure_agg.get(s["name"], 0) + (s.get("count") or 0)
+            for s in c.get("kids", {}).get("subcats", []):
+                kids_agg[s["name"]] = kids_agg.get(s["name"], 0) + (s.get("count") or 0)
+    except Exception:
+        pass
     leisure_top = sorted(leisure_agg.items(), key=lambda x: -x[1])[:12]
     kids_top = sorted(kids_agg.items(), key=lambda x: -x[1])[:8]
     lmax = leisure_top[0][1] if leisure_top else 1
@@ -809,65 +892,64 @@ def render_index(idx, stats, dist_top):
 <section id="api">
 <div class="sec-head reveal"><div class="sec-label">API</div>
 <h2 class="sec-title">数据接口</h2>
-<p class="sec-desc">全站数据以 JSON + Markdown 双格式开放，供自有 skill 或第三方 agent 直接调用，无需爬虫。</p></div>
+<p class="sec-desc">全国数据整合为两个全量文件——一次请求拿全量，不必逐城拼凑。JSON 供机器与 skill 消费，Markdown 供人读与模型直读。</p></div>
 <div class="api-entry reveal">
 <div class="api-entry-head">
 <div class="aeh-left">
-<div class="aeh-kicker">API ENTRY · 调用入口</div>
+<div class="aeh-kicker">DATA ENTRY · 全国全量双文件</div>
 <div class="aeh-base">
 <code id="api-base">https://fun.worldstip.com</code>
 <button class="copy-btn" id="copy-base" type="button" data-copy="https://fun.worldstip.com">复制</button>
 </div>
-<p class="aeh-tip">复制接口地址到你的 skill / agent，或点击下方端点直接试读；也可现场调用一次看真实返回。</p>
+<p class="aeh-tip">整个数据集就是这两个文件：一次请求拿全量。若只要概览，用 <code>Range: bytes=0-8191</code> 取首段即可拿到 stats——右上按钮现场演示。</p>
 </div>
 <button class="api-try" id="api-try" type="button">▶ 现场调用</button>
 </div>
-<div class="api-quick">
-<div class="aq-group"><span class="aq-label">JSON 接口</span>
-<a class="aq-btn" href="api/index.json" target="_blank" rel="noopener"><code>/api/index.json</code><em>全国总索引</em></a>
-<a class="aq-btn" href="api/stats.json" target="_blank" rel="noopener"><code>/api/stats.json</code><em>全站统计</em></a>
-<a class="aq-btn" href="api/cities/index.json" target="_blank" rel="noopener"><code>/api/cities/index.json</code><em>城市轻索引</em></a>
-<a class="aq-btn" href="api/food/top.json" target="_blank" rel="noopener"><code>/api/food/top.json</code><em>美食榜·已剔住宿</em></a>
-<a class="aq-btn" href="api/districts/top.json" target="_blank" rel="noopener"><code>/api/districts/top.json</code><em>商圈 S/A 榜</em></a>
-<a class="aq-btn" href="api/cities/430600.json" target="_blank" rel="noopener"><code>/api/cities/430600.json</code><em>岳阳市全量</em></a>
+<div class="aq-files">
+<a class="aq-file" href="data.json" target="_blank" rel="noopener">
+<div class="aq-file-top"><span class="aq-tag tj">JSON</span><span class="aq-size">{data_jraw} · gzip 约 {data_jgz}</span></div>
+<code>/data.json</code>
+<p>meta · stats · <b>32 省汇总</b> · <b>389 城全量明细</b>（商圈 / 美食 / 休闲 / 儿童 / 商场 / 特产 / 酒店 / 商圈×美食关联）· 全国美食榜 800 · S/A 商圈榜 1000。POI 为英文字段：<code>mark / name / sub / type / rating / avg / addr / img</code>。</p>
+<span class="aq-go">打开 JSON →</span>
+</a>
+<a class="aq-file md" href="data.md" target="_blank" rel="noopener">
+<div class="aq-file-top"><span class="aq-tag tm">MARKDOWN</span><span class="aq-size">{data_mraw} · gzip 约 {data_mgz}</span></div>
+<code>/data.md</code>
+<p>可跳转目录 + 全国统计 + 32 省索引 + <b>389 城档案全文</b>（每城 13 章）+ 接口与来源附录。人类可读，LLM / skill 可直接 ingest。</p>
+<span class="aq-go">打开 Markdown →</span>
+</a>
 </div>
-<div class="aq-group"><span class="aq-label">Markdown 档案</span>
-<a class="aq-btn aq-md" href="md/README.md" target="_blank" rel="noopener"><code>/md/README.md</code><em>数据总索引</em></a>
-<a class="aq-btn aq-md" href="md/API.md" target="_blank" rel="noopener"><code>/md/API.md</code><em>接口文档</em></a>
-<a class="aq-btn aq-md" href="md/%E6%B9%96%E5%8D%97%E7%9C%81/%E5%B2%B3%E9%98%B3%E5%B8%82.md" target="_blank" rel="noopener"><code>/md/湖南省/岳阳市.md</code><em>城市档案原文</em></a>
-</div>
-</div>
-<div class="api-live" id="api-live" hidden><div class="api-live-head">GET <code>/api/stats.json</code> · <span id="api-live-meta"></span></div>
+<div class="api-live" id="api-live" hidden><div class="api-live-head">GET <code>/data.json</code> · Range: bytes=0-8191 · <span id="api-live-meta"></span></div>
 <div class="api-live-grid" id="api-live-grid"></div></div>
 </div>
 <div class="panel reveal" style="padding:0;overflow:hidden">
-<table class="api-table"><thead><tr><th style="width:34%">端点</th><th style="width:12%">格式</th><th>说明</th></tr></thead><tbody>
-<tr><td><code>/api/index.json</code></td><td>JSON</td><td>全国总索引：省 → 市 → 轻量 meta + 商圈评级统计</td></tr>
-<tr><td><code>/api/stats.json</code></td><td>JSON</td><td>全站统计：城市数、POI 数、评级分布、数据源</td></tr>
-<tr><td><code>/api/cities/index.json</code></td><td>JSON</td><td>城市轻索引数组（含页面 / JSON / MD 三地址）</td></tr>
-<tr><td><code>/api/cities/&lt;adcode&gt;.json</code></td><td>JSON</td><td>城市全量结构化数据：商圈档案与详情、美食、休闲、儿童、商场、特产、酒店、关联</td></tr>
-<tr><td><code>/api/provinces/&lt;省&gt;.json</code></td><td>JSON</td><td>省级汇总：城市列表 + 聚合统计</td></tr>
-<tr><td><code>/api/food/top.json</code></td><td>JSON</td><td>全国美食榜（按评分；已剔除酒店/宾馆等住宿业主导 POI，含图片与城市跳转地址）</td></tr>
-<tr><td><code>/api/districts/top.json</code></td><td>JSON</td><td>全国商圈 S/A 级榜单（按关联美食数）</td></tr>
-<tr><td><code>/md/&lt;省&gt;/&lt;市&gt;.md</code></td><td>Markdown</td><td>城市档案原文，skill 直读；与 JSON 同源同值</td></tr>
-<tr><td><code>/data.json</code></td><td>JSON</td><td>兼容旧版轻量总索引</td></tr>
+<table class="api-table"><thead><tr><th style="width:22%">端点</th><th style="width:12%">格式</th><th>说明</th></tr></thead><tbody>
+<tr><td><code>/data.json</code></td><td>JSON</td><td>全国全量单文件：meta / stats / provinces（32 省汇总）/ cities（389 城全量明细，英文字段）/ food_top（800，已剔除住宿业主导 POI）/ districts_top（1000）</td></tr>
+<tr><td><code>/data.md</code></td><td>Markdown</td><td>全国全量单文件：目录 + 统计 + 32 省索引 + 389 城档案 + 附录；与 data.json 同源同值</td></tr>
 </tbody></table></div>
 <div class="note-box reveal" style="margin-top:16px">
 <b>调用示例</b>
-<pre class="code"><code><span class="cm"># 全国索引</span>
-curl -s https://fun.worldstip.com/api/index.json
+<pre class="code"><code><span class="cm"># 全量一次落地（{data_jraw}，CDN 自动 gzip / br 压缩）</span>
+curl -s https://fun.worldstip.com/data.json -o fun-data.json
 
-<span class="cm"># 岳阳全量数据（adcode 430600）</span>
-curl -s https://fun.worldstip.com/api/cities/430600.json
+<span class="cm"># 只要概览：stats 在文件头 4KB 内，Range 取首段即可（省 99.9% 流量）</span>
+curl -s -r 0-8191 https://fun.worldstip.com/data.json
 
-<span class="cm"># 全国美食榜前 10</span>
-curl -s https://fun.worldstip.com/api/food/top.json | jq '.items[:10]'
+<span class="cm"># 只要某座城市（Python 标准库，json.load 直接读流）</span>
+import json, urllib.request
+with urllib.request.urlopen("https://fun.worldstip.com/data.json") as r:
+    d = json.load(r)
+yy = next(c for c in d["cities"] if c["city"] == "岳阳市")
+print(yy["poi_total"], len(yy["food"]), yy["grades"])
 
-<span class="cm"># 城市档案 Markdown 原文</span>
-curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md</code></pre>
-<ul><li>所有端点只读、无鉴权、无速率限制，允许 CDN 缓存。</li>
-<li>字段口径与<a href="api.html" style="color:var(--blue)">接口文档</a>一致；JSON 与 MD 由同一数据层生成，可交叉校验。</li>
-<li>评分/人均为高德快照，采集时间见各城市档案头部。</li></ul>
+<span class="cm"># 全国美食榜前 10（评分降序）</span>
+curl -s https://fun.worldstip.com/data.json | jq '.food_top[:10]'
+
+<span class="cm"># 人类可读全量 Markdown</span>
+curl -s https://fun.worldstip.com/data.md -o fun-data.md</code></pre>
+<ul><li>两个文件即完整数据集，只读、无鉴权、无速率限制，允许 CDN 长缓存；数据更新时全量刷新。</li>
+<li>JSON 与 MD 由同一数据层生成，可交叉校验；字段口径见<a href="api.html" style="color:var(--blue)">接口文档</a>。</li>
+<li>评分/人均为高德快照，采集时间见 data.md 各城市档案头部。</li></ul>
 </div></section>
 
 <section id="sources">
@@ -1079,8 +1161,8 @@ def render_city(rec):
     anchor_html = '<div class="anchor-nav"><div class="anchor-nav-in">' + "".join(
         f'<a href="#{i}">{esc(t)}</a>' for i, t in anchors) + "</div></div>"
 
-    api_url = f"https://fun.worldstip.com/api/cities/{adcode}.json" if adcode else ""
-    md_url = f"https://fun.worldstip.com/md/{quote(prov)}/{quote(c)}.md"
+    api_url = "https://fun.worldstip.com/data.json"
+    md_url = "https://fun.worldstip.com/data.md"
 
     # 预计算头部文本（避免 f-string 内嵌引号冲突）
     admin_level = ""
@@ -1106,12 +1188,12 @@ def render_city(rec):
 
 <div class="api-box reveal" id="sec-api">
 <div><div class="ab-t">本页数据的机器可读版本</div>
-<div class="ab-d">JSON 全量结构化 / Markdown 档案原文，供 skill 与 agent 直接调用</div>
-<code>{esc(api_url)}</code></div>
+<div class="ab-d">全国数据已整合为两个全量文件，本市档案包含在内——一次请求拿全量，不必逐城拼凑</div>
+<code>https://fun.worldstip.com/data.json</code></div>
 <div class="ab-links">
-<a class="ab-btn" href="../{esc(urls.get('json', ''))}" target="_blank" rel="noopener">打开 JSON</a>
-<a class="ab-btn ghost" href="../{esc(urls.get('md', ''))}" target="_blank" rel="noopener">Markdown 原文</a>
-<button class="ab-btn ghost" data-copy="{esc(api_url)}">复制 JSON 地址</button>
+<a class="ab-btn" href="../data.json" target="_blank" rel="noopener">全量 JSON（含本市）</a>
+<a class="ab-btn ghost" href="../data.md" target="_blank" rel="noopener">全量 Markdown</a>
+<button class="ab-btn ghost" data-copy="https://fun.worldstip.com/data.json">复制 JSON 地址</button>
 </div></div>
 
 <section class="sec-block" id="sec-cred">
@@ -1263,106 +1345,106 @@ def render_province_empty(prov, stats):
 # ================================================================ API 文档页
 
 def render_api_doc(idx, stats):
-    cities = idx["city_index"]
-    sample_city = None
-    for c in cities:
-        if c["city"] == "岳阳市":
-            sample_city = c
-            break
-    sample_city = sample_city or cities[0]
-    ad = sample_city["adcode"]
+    jraw, jgz = _file_size("data.json")
+    mraw, mgz = _file_size("data.md")
 
     body = f"""<main>
 <div class="doc-hero"><div class="wrap">
 <a class="back-link" href="index.html">← 返回首页</a>
 <div class="sec-label">API</div>
 <h1 class="sec-title" style="font-size:clamp(2.2rem,5vw,3.4rem)">数据接口文档</h1>
-<p class="sec-desc">FUN 全站数据以 JSON + Markdown 双格式开放。所有端点只读、无鉴权、可被 CDN 缓存，适合 skill / agent / 前端直接消费。</p>
+<p class="sec-desc">全国数据整合为两个全量文件——一次请求拿全量，不必逐城拼凑。所有端点只读、无鉴权、可被 CDN 缓存，适合 skill / agent / 前端直接消费。</p>
 </div></div>
 <div class="wrap doc-body" style="padding-top:30px;padding-bottom:10px">
 
 <h2>端点总览</h2>
-<table><thead><tr><th>端点</th><th>格式</th><th>内容</th><th>体积量级</th></tr></thead><tbody>
-<tr><td><code>/api/index.json</code></td><td>JSON</td><td>全国总索引：省 → 市 → 轻量 meta + 评级统计</td><td>~150 KB</td></tr>
-<tr><td><code>/api/stats.json</code></td><td>JSON</td><td>全站统计快照</td><td>&lt; 1 KB</td></tr>
-<tr><td><code>/api/cities/index.json</code></td><td>JSON</td><td>城市轻索引数组（含页面/JSON/MD 三地址）</td><td>~120 KB</td></tr>
-<tr><td><code>/api/cities/&lt;adcode&gt;.json</code></td><td>JSON</td><td>城市全量结构化数据（见下方 Schema）</td><td>50–500 KB/城</td></tr>
-<tr><td><code>/api/provinces/&lt;省&gt;.json</code></td><td>JSON</td><td>省级汇总：城市列表 + 聚合统计</td><td>~10–60 KB</td></tr>
-<tr><td><code>/api/food/top.json</code></td><td>JSON</td><td>全国美食榜（按评分降序，含图与跳转；已剔除住宿业主导 POI）</td><td>~600 KB</td></tr>
-<tr><td><code>/api/districts/top.json</code></td><td>JSON</td><td>全国 S/A 级商圈榜（按关联美食数）</td><td>~400 KB</td></tr>
-<tr><td><code>/md/&lt;省&gt;/&lt;市&gt;.md</code></td><td>Markdown</td><td>城市档案原文（13 章），skill 直读</td><td>20–80 KB/城</td></tr>
-<tr><td><code>/data.json</code></td><td>JSON</td><td>兼容旧版轻量总索引</td><td>~100 KB</td></tr>
+<table><thead><tr><th>端点</th><th>格式</th><th>内容</th><th>体积</th></tr></thead><tbody>
+<tr><td><code>/data.json</code></td><td>JSON</td><td>全国全量单文件：meta / stats / provinces（32 省汇总）/ <b>cities（389 城全量明细）</b> / food_top（800）/ districts_top（1000）</td><td>{jraw} · gzip 约 {jgz}</td></tr>
+<tr><td><code>/data.md</code></td><td>Markdown</td><td>全国全量单文件：目录 + 统计 + 32 省索引 + 389 城档案（每城 13 章）+ 接口与来源附录</td><td>{mraw} · gzip 约 {mgz}</td></tr>
 </tbody></table>
 
-<h2>城市 JSON Schema（<code>/api/cities/{ad}.json</code>）</h2>
+<h2><code>/data.json</code> 顶层结构</h2>
 <pre class="code"><code>{{
-  "city": "{esc(sample_city['city'])}",            <span class="cm">// 城市名</span>
-  "province": "{esc(sample_city['province'])}",        <span class="cm">// 所属省级单位</span>
-  "adcode": "{ad}",                    <span class="cm">// 高德区划代码</span>
-  "poi_total": 1018,                 <span class="cm">// 去重 POI 总数</span>
-  "waves": [2, 3],                   <span class="cm">// 采集波次</span>
-  "updated": "2026-10-23 20:07:00",  <span class="cm">// 采集时间</span>
-  "credibility": {{                    <span class="cm">// §0 可信度</span>
-    "poi_total": 1018, "rated_ratio": "99%", "warnings": 0,
-    "dims": {{"美食": 311, "商圈": 184, "休闲娱乐": 386, "儿童娱乐": 40, "酒店": 32, "特产": 41}}
-  }},
-  "overview": {{                       <span class="cm">// §1 总览</span>
-    "admin": {{"下级区县": "9", "街道/镇/乡": "134"}},
-    "district_poi": [{{"district": "岳阳楼区", "poi": 534, "ratio": "52%"}}],
-    "carrier_types": [{{"type": "购物中心/综合体", "count": 59}}]
-  }},
-  "districts": [{{                     <span class="cm">// §2 商圈档案（含 S/A/B/C 评级与详情）</span>
-    "name": "步步高新天地", "grade": "A", "carrier": "购物中心/综合体",
-    "rating": 4.7, "food": 21, "leisure": 51, "kids": 1, "hotel": 3,
-    "detail": {{"address": "东茅岭路1号", "bandwidth": "¥45（8–81）", "axis": "东茅岭街", "mixes": [...]}}
-  }}],
-  "leisure":  {{"subcats": [...], "list": [{{"标记","名称","子类","类型","评分","人均","地址"}}]}},
-  "kids":     {{"subcats": [...], "list": [...]}},
-  "malls":    [...],                  <span class="cm">// §5 综合体与商场</span>
-  "food":     [...],                  <span class="cm">// §6 美食（image 为高德实拍图 URL）</span>
-  "xiaocan":  [...],                  <span class="cm">// §7 苍蝇馆/小店候选</span>
-  "specialties": [...],               <span class="cm">// §8 特产</span>
-  "assoc":    [...],                  <span class="cm">// §9 美食×商圈关联</span>
-  "hotels":   [...],                  <span class="cm">// §10 酒店</span>
-  "queries":  [...],                  <span class="cm">// §11 原始查询面</span>
-  "external": {{                      <span class="cm">// 美团 / 大众点评外链</span>
-    "meituan_search": "https://www.meituan.com/s/...",
-    "dianping_food": "https://www.dianping.com/yueyang/ch10"
-  }}
+  "meta":  {{ "name": "FUN 全国美食×商圈×娱乐数据库", "version": "v0.9.0",
+            "generated": "...", "home": "https://fun.worldstip.com", "schema": {{...}} }},
+  "stats": {{ "provinces": 32, "cities": 389, "poi_total": 328980,
+            "districts_total": 15405, "grades": {{"S": 231, "A": 3345, "B": 5300, "C": 6529}} }},
+  "provinces": [ {{"province": "湖南省", "cities": 14, "poi": 11628,
+                  "districts": 428, "grades": {{...}}, "page": "provinces/湖南省.html"}} ],  <span class="cm">// ×32</span>
+  "cities": [ {{ <span class="cm">// ×389，字段见下</span> }} ],
+  "food_top": [ {{"name": "...", "type": "餐饮服务;中餐厅;...", "rating": 4.8,
+                 "avg": 63, "address": "...", "image": "https://store.is.autonavi.com/...",
+                 "city": "岳阳市", "province": "湖南省", "city_page": "cities/430600.html"}} ],  <span class="cm">// ×800，已剔除住宿业主导 POI</span>
+  "districts_top": [ {{"name": "...", "grade": "S", "carrier": "...", "rating": 4.8,
+                      "food": 120, "leisure": 88, "city": "...", "province": "...", "city_page": "..."}} ]  <span class="cm">// ×1000，S/A 级</span>
 }}</code></pre>
 
+<h2>城市记录字段（<code>cities[]</code>）</h2>
+<table><thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead><tbody>
+<tr><td><code>city / province / adcode</code></td><td>str</td><td>城市名 / 所属省 / 高德区划代码（页面文件名同 adcode）</td></tr>
+<tr><td><code>poi_total / district_count</code></td><td>int</td><td>去重 POI 总数 / 商圈档案数</td></tr>
+<tr><td><code>waves / updated</code></td><td>array / str</td><td>采集波次（1 美食商圈 / 2 酒店亲子商场 / 3 休闲全维度）/ 采集时间</td></tr>
+<tr><td><code>credibility</code></td><td>obj</td><td>§0 可信度：poi_total / rated_ratio / warnings / dims 六维计数</td></tr>
+<tr><td><code>overview</code></td><td>obj</td><td>§1 总览：行政层级 / 各区县 POI 分布 / 载体类型分布</td></tr>
+<tr><td><code>districts</code></td><td>array</td><td>§2 商圈档案：name / grade(S·A·B·C) / carrier / rating / food / leisure / kids / hotel / detail</td></tr>
+<tr><td><code>grades</code></td><td>obj</td><td>本市商圈评级计数 {{S, A, B, C}}</td></tr>
+<tr><td><code>food / xiaocan</code></td><td>array</td><td>§6 美食 / §7 小店候选（POI 记录，字段见下）</td></tr>
+<tr><td><code>leisure / kids</code></td><td>obj</td><td>§3 / §4：{{"subcats": [{{name, count}}], "list": [POI]}}</td></tr>
+<tr><td><code>malls / specialties / hotels</code></td><td>array</td><td>§5 综合体商场 / §8 特产 / §10 酒店</td></tr>
+<tr><td><code>assoc</code></td><td>array</td><td>§9 商圈×美食关联：{{district, count, items: [{{name, how, dist, rating, src}}]}}</td></tr>
+<tr><td><code>queries / external</code></td><td>array / obj</td><td>§11 原始查询面统计 / 美团·大众点评城市外链</td></tr>
+<tr><td><code>page</code></td><td>str</td><td>城市页相对地址 <code>cities/&lt;adcode&gt;.html</code></td></tr>
+</tbody></table>
+
+<h2>POI 记录字段（各明细表内）</h2>
+<table><thead><tr><th>字段</th><th>类型</th><th>说明</th></tr></thead><tbody>
+<tr><td><code>mark</code></td><td>str</td><td>商圈携带标记，如 <code>✅A-</code>；空 = 不属任何已评商圈</td></tr>
+<tr><td><code>name</code></td><td>str</td><td>店名 / 名称</td></tr>
+<tr><td><code>sub</code></td><td>str</td><td>细分 / 备注 / 载体类型 / 来源查询面（各节表头归一）</td></tr>
+<tr><td><code>type</code></td><td>str</td><td>高德多段类型串，<code>;</code> 分隔，首段为主类（如 <code>餐饮服务;中餐厅;海鲜酒楼</code>）</td></tr>
+<tr><td><code>rating</code></td><td>num</td><td>高德快照评分 0–5，无评分为 null</td></tr>
+<tr><td><code>avg</code></td><td>num</td><td>人均消费（元），无则 null</td></tr>
+<tr><td><code>addr</code></td><td>str</td><td>地址</td></tr>
+<tr><td><code>img</code></td><td>str</td><td>高德商家实拍图 URL，无图为空串</td></tr>
+</tbody></table>
+
 <h2>调用示例</h2>
-<pre class="code"><code><span class="cm"># 1. 拿全国索引，筛出目标城市</span>
-curl -s https://fun.worldstip.com/api/index.json | jq '.city_index[] | select(.province=="湖南省")'
+<pre class="code"><code><span class="cm"># 1. 全量一次落地（约 {jraw}，CDN 自动 gzip/br）</span>
+curl -s https://fun.worldstip.com/data.json -o fun-data.json
 
-<span class="cm"># 2. 取城市全量数据</span>
-curl -s https://fun.worldstip.com/api/cities/{ad}.json
-
-<span class="cm"># 3. 只取 S 级商圈</span>
-curl -s https://fun.worldstip.com/api/cities/{ad}.json | jq '.districts[] | select(.grade=="S")'
-
-<span class="cm"># 4. 取带图的美食 TOP10</span>
-curl -s https://fun.worldstip.com/api/cities/{ad}.json | jq '[.food[] | select(.image)][:10]'
-
-<span class="cm"># 5. Markdown 原文（skill 直读，零解析成本）</span>
-curl -s https://fun.worldstip.com/md/{sample_city['province']}/{sample_city['city']}.md
-
-<span class="cm"># 6. Python 一行读取</span>
+<span class="cm"># 2. Python 流式读取，只保留目标城市</span>
 <span class="kw">import</span> json, urllib.request
-data = json.load(urllib.request.urlopen("https://fun.worldstip.com/api/cities/{ad}.json"))</code></pre>
+with urllib.request.urlopen("https://fun.worldstip.com/data.json") as r:
+    d = json.load(r)
+yy = next(c <span class="kw">for</span> c <span class="kw">in</span> d["cities"] <span class="kw">if</span> c["city"] == "岳阳市")
+print(yy["poi_total"], yy["grades"], len(yy["food"]))
+
+<span class="cm"># 3. 只要某省汇总 / 某城商圈 S 级</span>
+curl -s https://fun.worldstip.com/data.json | jq '.provinces[] | select(.province=="湖南省")'
+curl -s https://fun.worldstip.com/data.json | jq '.cities[] | select(.city=="岳阳市") | .districts[] | select(.grade=="S")'
+
+<span class="cm"># 4. 全国美食榜前 10（评分降序，已剔住宿业主导 POI）</span>
+curl -s https://fun.worldstip.com/data.json | jq '.food_top[:10]'
+
+<span class="cm"># 5. 带图美食（jq 过滤 img 非空）</span>
+curl -s https://fun.worldstip.com/data.json | jq '[.cities[] | select(.city=="岳阳市") | .food[] | select(.img != "")][:10]'
+
+<span class="cm"># 6. 人类可读全量 Markdown（LLM / skill 直读）</span>
+curl -s https://fun.worldstip.com/data.md -o fun-data.md</code></pre>
 
 <h2>使用约定</h2>
-<div class="callout"><b>一致性承诺：</b>JSON 与 Markdown 由同一数据层（<code>build_api.py</code>）生成，同源同值；任一字段都能在对应城市的 md 档案中找到出处。</div>
+<div class="callout"><b>一致性承诺：</b>data.json 与 data.md 由同一数据层（<code>build_api.py</code>）从 <code>data/</code> 源档案一次生成，同源同值；任一字段都能在 data.md 对应城市档案中找到出处。</div>
 <ul>
 <li><b>无鉴权无限率</b>：静态托管 + CDN 缓存，请合理使用（建议客户端侧缓存 24h）。</li>
-<li><b>评分口径</b>：高德快照评分（0–5），采集时间见城市 JSON 的 <code>updated</code> 字段；人均单位元。</li>
+<li><b>评分口径</b>：高德快照评分（0–5），采集时间见各城市 <code>updated</code> 字段；人均单位元。</li>
 <li><b>标记口径</b>：✅ 优质 / ⚠️ 待核 / ❌ 不推荐；派生规则见各城市页说明。</li>
-<li><b>变更频率</b>：数据层随采集波次滚动更新；大版本变更在 GitHub Releases 说明。</li>
+<li><b>美食榜口径</b>：已剔除名称命中酒店/宾馆/旅馆/民宿/客栈/客舍等关键词、或主类型段为住宿服务的 POI。</li>
+<li><b>变更频率</b>：数据层随采集波次滚动更新，全量文件整体刷新；大版本变更在 GitHub Releases 说明。</li>
 <li><b>许可</b>：数据仅可正当使用，不得整库转售；请保留来源标注（高德/美团/大众点评）。</li>
 </ul>
 </div></main>{footer()}"""
 
-    return head("数据接口文档 · FUN", "FUN 全站 JSON/Markdown 数据接口文档：端点、Schema、调用示例与使用约定。") + body
+    return head("数据接口文档 · FUN", "FUN 全国全量数据接口文档：data.json / data.md 端点、Schema 字段、调用示例与使用约定。") + body
 
 
 # ================================================================ 数据来源页
@@ -1397,7 +1479,7 @@ def render_sources(stats):
 <h2>更新策略</h2>
 <ul>
 <li>数据层随采集波次滚动更新（wave1 底账 → wave2 酒店/迷你动物园/商场 → wave3 休闲娱乐）。</li>
-<li>每城档案头部记录采集时间与告警数；站点统计页（<a href="api/stats.json" style="color:var(--blue)">/api/stats.json</a>）为全局快照。</li>
+<li>每城档案头部记录采集时间与告警数；全量文件 <a href="data.json" style="color:var(--blue)">/data.json</a> 的 <code>stats</code> 字段为全局快照。</li>
 <li>评分为快照值，营业状态以美团/大众点评实时信息为准。</li>
 </ul>
 
@@ -1420,21 +1502,15 @@ def render_readme(stats):
 <div class="wrap doc-body" style="padding-top:30px;padding-bottom:10px">
 <h2>站点结构</h2>
 <pre class="code"><code>site/
-├── index.html              <span class="cm"># FUN hero + 主站</span>
+├── index.html              <span class="cm"># FUN hero + 主站（含数据调用入口）</span>
+├── data.json               <span class="cm"># 全国全量 JSON（meta/stats/32省/389城全量明细/美食榜/商圈榜）</span>
+├── data.md                 <span class="cm"># 全国全量 Markdown（目录+统计+32省索引+389城档案+附录）</span>
 ├── assets/                 <span class="cm"># style.css / app.js（零依赖）</span>
 ├── cities/&lt;adcode&gt;.html   <span class="cm"># 城市页（389）</span>
 ├── cities/&lt;市名&gt;.html     <span class="cm"># 城市名 URL 兼容存根 → 跳转 adcode 页</span>
 ├── provinces/&lt;省&gt;.html    <span class="cm"># 省份页（32）</span>
 ├── api.html                <span class="cm"># 数据接口文档</span>
 ├── sources.html            <span class="cm"># 数据来源</span>
-├── api/                    <span class="cm"># JSON 数据接口层</span>
-│   ├── index.json / stats.json / data.json
-│   ├── cities/&lt;adcode&gt;.json（389 + index.json 轻索引）
-│   ├── provinces/&lt;省&gt;.json
-│   ├── food/top.json · districts/top.json
-├── md/                     <span class="cm"># Markdown 内容全量（skill 直读）</span>
-│   ├── README.md · API.md · SOURCES.md · 行政层级总览.md
-│   └── &lt;省&gt;/&lt;市&gt;.md（389 城档案 + 32 省级索引）
 ├── 404.html                <span class="cm"># FUN 风格错误页</span>
 ├── robots.txt · sitemap.xml  <span class="cm"># SEO（389 城 + 省页 + 文档页）</span>
 ├── _headers                <span class="cm"># Cloudflare Pages 缓存规则</span>
@@ -1445,7 +1521,7 @@ def render_readme(stats):
 <ul>
 <li>构建命令：留空（纯静态）；输出目录：<code>site</code>。</li>
 <li>DNS：<code>fun</code> CNAME 到 Cloudflare Pages 域名，橙色云 proxied。</li>
-<li>缓存规则已随站交付（<code>_headers</code>）：<code>/api/*</code> 与 <code>/md/*</code> 24h、<code>/assets/*</code> 一年 immutable、HTML 1h。</li>
+<li>缓存规则已随站交付（<code>_headers</code>）：<code>/data.json</code> 与 <code>/data.md</code> 24h、<code>/assets/*</code> 一年 immutable、HTML 1h。</li>
 <li>备选：GitHub Pages（本仓库根目录 + Actions）、Netlify Drop、任意 Nginx。</li>
 </ul>
 
@@ -1517,7 +1593,7 @@ def build_404():
 <a class="btn btn-p" href="index.html">回到首页</a>
 <a class="btn btn-g" href="index.html#cities">探索城市</a>
 <a class="btn btn-g" href="api.html">数据接口</a>
-</div></div></div></main>"""
+</div></div></div></main></body></html>"""
     with open(os.path.join(SITE, "404.html"), "w", encoding="utf-8") as f:
         f.write(head("页面不存在 · FUN", "你访问的路线没有数据。回首页探索 389 城美食与商圈。") + body)
 
@@ -1547,8 +1623,8 @@ def build_deploy_files(idx, empty_provs=()):
     # _headers（Cloudflare Pages 缓存规则）
     with open(os.path.join(SITE, "_headers"), "w", encoding="utf-8") as f:
         f.write("# Cloudflare Pages 缓存规则\n"
-                "/api/*\n  Cache-Control: public, max-age=86400\n"
-                "/md/*\n  Cache-Control: public, max-age=86400\n"
+                "/data.json\n  Cache-Control: public, max-age=86400\n"
+                "/data.md\n  Cache-Control: public, max-age=86400\n"
                 "/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n"
                 "/*.html\n  Cache-Control: public, max-age=3600\n")
     # CNAME（Cloudflare Pages / GitHub Pages 自定义域名）
@@ -1559,10 +1635,30 @@ def build_deploy_files(idx, empty_provs=()):
 
 # ================================================================ 主流程
 
+def _dims(c):
+    """从全量城市记录提取六维度计数（供首页/省份页轻索引用）。"""
+    dims = (c.get("credibility") or {}).get("dims", {})
+    return {"food": dims.get("美食", 0), "district": dims.get("商圈", 0),
+            "leisure": dims.get("休闲娱乐", 0), "kids": dims.get("儿童娱乐", 0),
+            "hotel": dims.get("酒店", 0), "product": dims.get("特产", 0)}
+
+
 def main():
-    idx = load("index.json")
-    stats = load("stats.json")
-    dist_top = load(os.path.join("districts", "top.json"))
+    # v0.9.0：site/data.json 是唯一数据层（全国全量单文件）
+    from build_api import parse_city_md
+    data_dir = os.path.join(os.path.dirname(SITE), "data")
+
+    full = load("data.json")
+    stats = full["stats"]
+    dist_top = {"items": full["districts_top"]}
+    idx = {
+        "poi_total": stats["poi_total"],
+        "city_index": [{
+            "city": c["city"], "province": c["province"], "adcode": c["adcode"],
+            "poi": c["poi_total"], "page": c["page"], "grades": c["grades"],
+            "dims": _dims(c), "updated": c.get("updated"),
+        } for c in full["cities"]],
+    }
 
     # 资产
     os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
@@ -1576,10 +1672,11 @@ def main():
         f.write(render_index(idx, stats, dist_top))
     print("[fun_site] index.html")
 
-    # 城市页
+    # 城市页（从 data/ 源 md 同源解析，保持中文字段渲染）
     for c in idx["city_index"]:
-        rec = load(os.path.join("cities", f"{c['adcode']}.json"))
-        rec["urls"] = c.get("page") and {"page": c["page"], "json": c["json"], "md": c["md"]}
+        rec = parse_city_md(os.path.join(data_dir, c["province"], c["city"] + ".md"), c["province"])
+        rec["adcode"] = c["adcode"]
+        rec["urls"] = {"page": c["page"], "json": "data.json", "md": "data.md"}
         out = os.path.join(SITE, "cities", f"{c['adcode']}.html")
         os.makedirs(os.path.dirname(out), exist_ok=True)
         with open(out, "w", encoding="utf-8") as f:

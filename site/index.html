@@ -88,65 +88,64 @@
 <section id="api">
 <div class="sec-head reveal"><div class="sec-label">API</div>
 <h2 class="sec-title">数据接口</h2>
-<p class="sec-desc">全站数据以 JSON + Markdown 双格式开放，供自有 skill 或第三方 agent 直接调用，无需爬虫。</p></div>
+<p class="sec-desc">全国数据整合为两个全量文件——一次请求拿全量，不必逐城拼凑。JSON 供机器与 skill 消费，Markdown 供人读与模型直读。</p></div>
 <div class="api-entry reveal">
 <div class="api-entry-head">
 <div class="aeh-left">
-<div class="aeh-kicker">API ENTRY · 调用入口</div>
+<div class="aeh-kicker">DATA ENTRY · 全国全量双文件</div>
 <div class="aeh-base">
 <code id="api-base">https://fun.worldstip.com</code>
 <button class="copy-btn" id="copy-base" type="button" data-copy="https://fun.worldstip.com">复制</button>
 </div>
-<p class="aeh-tip">复制接口地址到你的 skill / agent，或点击下方端点直接试读；也可现场调用一次看真实返回。</p>
+<p class="aeh-tip">整个数据集就是这两个文件：一次请求拿全量。若只要概览，用 <code>Range: bytes=0-8191</code> 取首段即可拿到 stats——右上按钮现场演示。</p>
 </div>
 <button class="api-try" id="api-try" type="button">▶ 现场调用</button>
 </div>
-<div class="api-quick">
-<div class="aq-group"><span class="aq-label">JSON 接口</span>
-<a class="aq-btn" href="api/index.json" target="_blank" rel="noopener"><code>/api/index.json</code><em>全国总索引</em></a>
-<a class="aq-btn" href="api/stats.json" target="_blank" rel="noopener"><code>/api/stats.json</code><em>全站统计</em></a>
-<a class="aq-btn" href="api/cities/index.json" target="_blank" rel="noopener"><code>/api/cities/index.json</code><em>城市轻索引</em></a>
-<a class="aq-btn" href="api/food/top.json" target="_blank" rel="noopener"><code>/api/food/top.json</code><em>美食榜·已剔住宿</em></a>
-<a class="aq-btn" href="api/districts/top.json" target="_blank" rel="noopener"><code>/api/districts/top.json</code><em>商圈 S/A 榜</em></a>
-<a class="aq-btn" href="api/cities/430600.json" target="_blank" rel="noopener"><code>/api/cities/430600.json</code><em>岳阳市全量</em></a>
+<div class="aq-files">
+<a class="aq-file" href="data.json" target="_blank" rel="noopener">
+<div class="aq-file-top"><span class="aq-tag tj">JSON</span><span class="aq-size">51.3 MB · gzip 约 10.7 MB</span></div>
+<code>/data.json</code>
+<p>meta · stats · <b>32 省汇总</b> · <b>389 城全量明细</b>（商圈 / 美食 / 休闲 / 儿童 / 商场 / 特产 / 酒店 / 商圈×美食关联）· 全国美食榜 800 · S/A 商圈榜 1000。POI 为英文字段：<code>mark / name / sub / type / rating / avg / addr / img</code>。</p>
+<span class="aq-go">打开 JSON →</span>
+</a>
+<a class="aq-file md" href="data.md" target="_blank" rel="noopener">
+<div class="aq-file-top"><span class="aq-tag tm">MARKDOWN</span><span class="aq-size">38.9 MB · gzip 约 10.9 MB</span></div>
+<code>/data.md</code>
+<p>可跳转目录 + 全国统计 + 32 省索引 + <b>389 城档案全文</b>（每城 13 章）+ 接口与来源附录。人类可读，LLM / skill 可直接 ingest。</p>
+<span class="aq-go">打开 Markdown →</span>
+</a>
 </div>
-<div class="aq-group"><span class="aq-label">Markdown 档案</span>
-<a class="aq-btn aq-md" href="md/README.md" target="_blank" rel="noopener"><code>/md/README.md</code><em>数据总索引</em></a>
-<a class="aq-btn aq-md" href="md/API.md" target="_blank" rel="noopener"><code>/md/API.md</code><em>接口文档</em></a>
-<a class="aq-btn aq-md" href="md/%E6%B9%96%E5%8D%97%E7%9C%81/%E5%B2%B3%E9%98%B3%E5%B8%82.md" target="_blank" rel="noopener"><code>/md/湖南省/岳阳市.md</code><em>城市档案原文</em></a>
-</div>
-</div>
-<div class="api-live" id="api-live" hidden><div class="api-live-head">GET <code>/api/stats.json</code> · <span id="api-live-meta"></span></div>
+<div class="api-live" id="api-live" hidden><div class="api-live-head">GET <code>/data.json</code> · Range: bytes=0-8191 · <span id="api-live-meta"></span></div>
 <div class="api-live-grid" id="api-live-grid"></div></div>
 </div>
 <div class="panel reveal" style="padding:0;overflow:hidden">
-<table class="api-table"><thead><tr><th style="width:34%">端点</th><th style="width:12%">格式</th><th>说明</th></tr></thead><tbody>
-<tr><td><code>/api/index.json</code></td><td>JSON</td><td>全国总索引：省 → 市 → 轻量 meta + 商圈评级统计</td></tr>
-<tr><td><code>/api/stats.json</code></td><td>JSON</td><td>全站统计：城市数、POI 数、评级分布、数据源</td></tr>
-<tr><td><code>/api/cities/index.json</code></td><td>JSON</td><td>城市轻索引数组（含页面 / JSON / MD 三地址）</td></tr>
-<tr><td><code>/api/cities/&lt;adcode&gt;.json</code></td><td>JSON</td><td>城市全量结构化数据：商圈档案与详情、美食、休闲、儿童、商场、特产、酒店、关联</td></tr>
-<tr><td><code>/api/provinces/&lt;省&gt;.json</code></td><td>JSON</td><td>省级汇总：城市列表 + 聚合统计</td></tr>
-<tr><td><code>/api/food/top.json</code></td><td>JSON</td><td>全国美食榜（按评分；已剔除酒店/宾馆等住宿业主导 POI，含图片与城市跳转地址）</td></tr>
-<tr><td><code>/api/districts/top.json</code></td><td>JSON</td><td>全国商圈 S/A 级榜单（按关联美食数）</td></tr>
-<tr><td><code>/md/&lt;省&gt;/&lt;市&gt;.md</code></td><td>Markdown</td><td>城市档案原文，skill 直读；与 JSON 同源同值</td></tr>
-<tr><td><code>/data.json</code></td><td>JSON</td><td>兼容旧版轻量总索引</td></tr>
+<table class="api-table"><thead><tr><th style="width:22%">端点</th><th style="width:12%">格式</th><th>说明</th></tr></thead><tbody>
+<tr><td><code>/data.json</code></td><td>JSON</td><td>全国全量单文件：meta / stats / provinces（32 省汇总）/ cities（389 城全量明细，英文字段）/ food_top（800，已剔除住宿业主导 POI）/ districts_top（1000）</td></tr>
+<tr><td><code>/data.md</code></td><td>Markdown</td><td>全国全量单文件：目录 + 统计 + 32 省索引 + 389 城档案 + 附录；与 data.json 同源同值</td></tr>
 </tbody></table></div>
 <div class="note-box reveal" style="margin-top:16px">
 <b>调用示例</b>
-<pre class="code"><code><span class="cm"># 全国索引</span>
-curl -s https://fun.worldstip.com/api/index.json
+<pre class="code"><code><span class="cm"># 全量一次落地（51.3 MB，CDN 自动 gzip / br 压缩）</span>
+curl -s https://fun.worldstip.com/data.json -o fun-data.json
 
-<span class="cm"># 岳阳全量数据（adcode 430600）</span>
-curl -s https://fun.worldstip.com/api/cities/430600.json
+<span class="cm"># 只要概览：stats 在文件头 4KB 内，Range 取首段即可（省 99.9% 流量）</span>
+curl -s -r 0-8191 https://fun.worldstip.com/data.json
 
-<span class="cm"># 全国美食榜前 10</span>
-curl -s https://fun.worldstip.com/api/food/top.json | jq '.items[:10]'
+<span class="cm"># 只要某座城市（Python 标准库，json.load 直接读流）</span>
+import json, urllib.request
+with urllib.request.urlopen("https://fun.worldstip.com/data.json") as r:
+    d = json.load(r)
+yy = next(c for c in d["cities"] if c["city"] == "岳阳市")
+print(yy["poi_total"], len(yy["food"]), yy["grades"])
 
-<span class="cm"># 城市档案 Markdown 原文</span>
-curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md</code></pre>
-<ul><li>所有端点只读、无鉴权、无速率限制，允许 CDN 缓存。</li>
-<li>字段口径与<a href="api.html" style="color:var(--blue)">接口文档</a>一致；JSON 与 MD 由同一数据层生成，可交叉校验。</li>
-<li>评分/人均为高德快照，采集时间见各城市档案头部。</li></ul>
+<span class="cm"># 全国美食榜前 10（评分降序）</span>
+curl -s https://fun.worldstip.com/data.json | jq '.food_top[:10]'
+
+<span class="cm"># 人类可读全量 Markdown</span>
+curl -s https://fun.worldstip.com/data.md -o fun-data.md</code></pre>
+<ul><li>两个文件即完整数据集，只读、无鉴权、无速率限制，允许 CDN 长缓存；数据更新时全量刷新。</li>
+<li>JSON 与 MD 由同一数据层生成，可交叉校验；字段口径见<a href="api.html" style="color:var(--blue)">接口文档</a>。</li>
+<li>评分/人均为高德快照，采集时间见 data.md 各城市档案头部。</li></ul>
 </div></section>
 
 <section id="sources">
@@ -176,7 +175,7 @@ curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md</code></pre>
 <div class="foot-col"><h4>数据</h4>
 <a href="api.html">数据接口</a><a href="sources.html">数据来源</a>
 <a href="data.json">data.json</a><a href="https://github.com/MrdT-BitsNote/fun" target="_blank" rel="noopener">GitHub 仓库</a></div>
-</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-24 02:21<br>
+</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-24 03:29<br>
 数据仅供探索参考，营业状态与评分以各平台实时信息为准。FUN · fun.worldstip.com</div></footer>
 <script src="assets/app.js"></script>
 </body></html>

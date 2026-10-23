@@ -32,21 +32,15 @@
 <div class="wrap doc-body" style="padding-top:30px;padding-bottom:10px">
 <h2>站点结构</h2>
 <pre class="code"><code>site/
-├── index.html              <span class="cm"># FUN hero + 主站</span>
+├── index.html              <span class="cm"># FUN hero + 主站（含数据调用入口）</span>
+├── data.json               <span class="cm"># 全国全量 JSON（meta/stats/32省/389城全量明细/美食榜/商圈榜）</span>
+├── data.md                 <span class="cm"># 全国全量 Markdown（目录+统计+32省索引+389城档案+附录）</span>
 ├── assets/                 <span class="cm"># style.css / app.js（零依赖）</span>
 ├── cities/&lt;adcode&gt;.html   <span class="cm"># 城市页（389）</span>
 ├── cities/&lt;市名&gt;.html     <span class="cm"># 城市名 URL 兼容存根 → 跳转 adcode 页</span>
 ├── provinces/&lt;省&gt;.html    <span class="cm"># 省份页（32）</span>
 ├── api.html                <span class="cm"># 数据接口文档</span>
 ├── sources.html            <span class="cm"># 数据来源</span>
-├── api/                    <span class="cm"># JSON 数据接口层</span>
-│   ├── index.json / stats.json / data.json
-│   ├── cities/&lt;adcode&gt;.json（389 + index.json 轻索引）
-│   ├── provinces/&lt;省&gt;.json
-│   ├── food/top.json · districts/top.json
-├── md/                     <span class="cm"># Markdown 内容全量（skill 直读）</span>
-│   ├── README.md · API.md · SOURCES.md · 行政层级总览.md
-│   └── &lt;省&gt;/&lt;市&gt;.md（389 城档案 + 32 省级索引）
 ├── 404.html                <span class="cm"># FUN 风格错误页</span>
 ├── robots.txt · sitemap.xml  <span class="cm"># SEO（389 城 + 省页 + 文档页）</span>
 ├── _headers                <span class="cm"># Cloudflare Pages 缓存规则</span>
@@ -57,7 +51,7 @@
 <ul>
 <li>构建命令：留空（纯静态）；输出目录：<code>site</code>。</li>
 <li>DNS：<code>fun</code> CNAME 到 Cloudflare Pages 域名，橙色云 proxied。</li>
-<li>缓存规则已随站交付（<code>_headers</code>）：<code>/api/*</code> 与 <code>/md/*</code> 24h、<code>/assets/*</code> 一年 immutable、HTML 1h。</li>
+<li>缓存规则已随站交付（<code>_headers</code>）：<code>/data.json</code> 与 <code>/data.md</code> 24h、<code>/assets/*</code> 一年 immutable、HTML 1h。</li>
 <li>备选：GitHub Pages（本仓库根目录 + Actions）、Netlify Drop、任意 Nginx。</li>
 </ul>
 
@@ -88,7 +82,7 @@ python tools/validate_data.py   <span class="cm"># C1–C10 数据校验</span><
 <div class="foot-col"><h4>数据</h4>
 <a href="api.html">数据接口</a><a href="sources.html">数据来源</a>
 <a href="data.json">data.json</a><a href="https://github.com/MrdT-BitsNote/fun" target="_blank" rel="noopener">GitHub 仓库</a></div>
-</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-24 02:21<br>
+</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-24 03:29<br>
 数据仅供探索参考，营业状态与评分以各平台实时信息为准。FUN · fun.worldstip.com</div></footer>
 <script src="assets/app.js"></script>
 </body></html>
