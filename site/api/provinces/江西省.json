@@ -2,12 +2,12 @@
  "province": "江西省",
  "stats": {
   "cities": 11,
-  "poi": 1990,
+  "poi": 10046,
   "grades": {
-   "S": 0,
-   "A": 0,
-   "B": 42,
-   "C": 398
+   "S": 4,
+   "A": 108,
+   "B": 129,
+   "C": 199
   }
  },
  "cities": [
@@ -15,297 +15,319 @@
    "city": "上饶市",
    "province": "江西省",
    "adcode": "361100",
-   "poi": 193,
+   "poi": 1025,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:48:35",
+   "updated": "2026-10-23 21:54:54",
    "page": "cities/361100.html",
    "json": "api/cities/361100.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E4%B8%8A%E9%A5%B6%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 2,
-    "C": 38
+    "A": 8,
+    "B": 6,
+    "C": 26
    },
    "dims": {
-    "food": 1,
-    "district": 62,
-    "leisure": 83,
-    "kids": 11,
-    "hotel": 30,
-    "product": 1
+    "food": 296,
+    "district": 213,
+    "leisure": 381,
+    "kids": 40,
+    "hotel": 36,
+    "product": 40
    }
   },
   {
    "city": "九江市",
    "province": "江西省",
    "adcode": "360400",
-   "poi": 188,
+   "poi": 1009,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:49:12",
+   "updated": "2026-10-23 21:55:38",
    "page": "cities/360400.html",
    "json": "api/cities/360400.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E4%B9%9D%E6%B1%9F%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 1,
-    "C": 39
+    "A": 7,
+    "B": 11,
+    "C": 22
    },
    "dims": {
-    "food": 2,
-    "district": 62,
-    "leisure": 78,
-    "kids": 11,
-    "hotel": 29,
-    "product": 0
+    "food": 294,
+    "district": 196,
+    "leisure": 377,
+    "kids": 43,
+    "hotel": 33,
+    "product": 41
    }
   },
   {
    "city": "南昌市",
    "province": "江西省",
    "adcode": "360100",
-   "poi": 232,
+   "poi": 1133,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:48:21",
+   "updated": "2026-10-23 21:57:12",
    "page": "cities/360100.html",
    "json": "api/cities/360100.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E5%8D%97%E6%98%8C%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 2,
-    "C": 38
+    "A": 4,
+    "B": 14,
+    "C": 22
    },
    "dims": {
-    "food": 1,
-    "district": 62,
-    "leisure": 86,
-    "kids": 10,
-    "hotel": 29,
-    "product": 0
+    "food": 280,
+    "district": 229,
+    "leisure": 445,
+    "kids": 43,
+    "hotel": 32,
+    "product": 40
    }
   },
   {
    "city": "吉安市",
    "province": "江西省",
    "adcode": "360800",
-   "poi": 180,
+   "poi": 946,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:46:52",
+   "updated": "2026-10-23 21:57:55",
    "page": "cities/360800.html",
    "json": "api/cities/360800.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E5%90%89%E5%AE%89%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 7,
-    "C": 33
+    "A": 12,
+    "B": 11,
+    "C": 17
    },
    "dims": {
-    "food": 1,
-    "district": 61,
-    "leisure": 73,
-    "kids": 8,
+    "food": 297,
+    "district": 178,
+    "leisure": 342,
+    "kids": 33,
     "hotel": 30,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "宜春市",
    "province": "江西省",
    "adcode": "360900",
-   "poi": 174,
+   "poi": 954,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:47:40",
+   "updated": "2026-10-23 21:59:59",
    "page": "cities/360900.html",
    "json": "api/cities/360900.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E5%AE%9C%E6%98%A5%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 0,
-    "C": 40
+    "A": 9,
+    "B": 12,
+    "C": 19
    },
    "dims": {
-    "food": 2,
-    "district": 61,
-    "leisure": 67,
-    "kids": 6,
-    "hotel": 30,
-    "product": 0
+    "food": 298,
+    "district": 178,
+    "leisure": 353,
+    "kids": 28,
+    "hotel": 33,
+    "product": 40
    }
   },
   {
    "city": "抚州市",
    "province": "江西省",
    "adcode": "361000",
-   "poi": 168,
+   "poi": 885,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:47:05",
+   "updated": "2026-10-23 22:02:09",
    "page": "cities/361000.html",
    "json": "api/cities/361000.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E6%8A%9A%E5%B7%9E%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 3,
-    "C": 37
+    "A": 10,
+    "B": 9,
+    "C": 21
    },
    "dims": {
-    "food": 5,
-    "district": 58,
-    "leisure": 66,
-    "kids": 9,
+    "food": 288,
+    "district": 173,
+    "leisure": 308,
+    "kids": 36,
     "hotel": 25,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "新余市",
    "province": "江西省",
    "adcode": "360500",
-   "poi": 156,
+   "poi": 726,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:46:38",
+   "updated": "2026-10-23 22:02:48",
    "page": "cities/360500.html",
    "json": "api/cities/360500.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E6%96%B0%E4%BD%99%E5%B8%82.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 5,
-    "C": 35
+    "S": 2,
+    "A": 12,
+    "B": 16,
+    "C": 10
    },
    "dims": {
-    "food": 0,
-    "district": 53,
-    "leisure": 62,
-    "kids": 1,
-    "hotel": 29,
-    "product": 0
+    "food": 267,
+    "district": 115,
+    "leisure": 240,
+    "kids": 16,
+    "hotel": 32,
+    "product": 37
    }
   },
   {
    "city": "景德镇市",
    "province": "江西省",
    "adcode": "360200",
-   "poi": 168,
+   "poi": 794,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:48:07",
+   "updated": "2026-10-23 22:03:29",
    "page": "cities/360200.html",
    "json": "api/cities/360200.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E6%99%AF%E5%BE%B7%E9%95%87%E5%B8%82.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 4,
-    "C": 36
+    "S": 1,
+    "A": 15,
+    "B": 9,
+    "C": 15
    },
    "dims": {
-    "food": 0,
-    "district": 57,
-    "leisure": 74,
-    "kids": 6,
-    "hotel": 29,
-    "product": 0
+    "food": 260,
+    "district": 143,
+    "leisure": 289,
+    "kids": 22,
+    "hotel": 31,
+    "product": 40
    }
   },
   {
    "city": "萍乡市",
    "province": "江西省",
    "adcode": "360300",
-   "poi": 156,
+   "poi": 802,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:47:54",
+   "updated": "2026-10-23 22:06:05",
    "page": "cities/360300.html",
    "json": "api/cities/360300.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E8%90%8D%E4%B9%A1%E5%B8%82.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 2,
-    "C": 38
+    "S": 1,
+    "A": 9,
+    "B": 18,
+    "C": 12
    },
    "dims": {
-    "food": 1,
-    "district": 56,
-    "leisure": 65,
-    "kids": 2,
-    "hotel": 25,
-    "product": 1
+    "food": 288,
+    "district": 135,
+    "leisure": 283,
+    "kids": 20,
+    "hotel": 27,
+    "product": 40
    }
   },
   {
    "city": "赣州市",
    "province": "江西省",
    "adcode": "360700",
-   "poi": 213,
+   "poi": 1089,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:48:58",
+   "updated": "2026-10-23 22:06:51",
    "page": "cities/360700.html",
    "json": "api/cities/360700.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E8%B5%A3%E5%B7%9E%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 3,
-    "C": 37
+    "A": 4,
+    "B": 13,
+    "C": 23
    },
    "dims": {
-    "food": 1,
-    "district": 65,
-    "leisure": 87,
-    "kids": 15,
-    "hotel": 24,
-    "product": 0
+    "food": 300,
+    "district": 212,
+    "leisure": 416,
+    "kids": 49,
+    "hotel": 26,
+    "product": 43
    }
   },
   {
    "city": "鹰潭市",
    "province": "江西省",
    "adcode": "360600",
-   "poi": 162,
+   "poi": 683,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:47:27",
+   "updated": "2026-10-23 22:09:35",
    "page": "cities/360600.html",
    "json": "api/cities/360600.json",
    "md": "md/%E6%B1%9F%E8%A5%BF%E7%9C%81/%E9%B9%B0%E6%BD%AD%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 13,
-    "C": 27
+    "A": 18,
+    "B": 10,
+    "C": 12
    },
    "dims": {
-    "food": 0,
-    "district": 61,
-    "leisure": 63,
-    "kids": 3,
+    "food": 261,
+    "district": 108,
+    "leisure": 230,
+    "kids": 11,
     "hotel": 28,
-    "product": 0
+    "product": 30
    }
   }
  ]

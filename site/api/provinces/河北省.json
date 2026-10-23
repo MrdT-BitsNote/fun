@@ -2,12 +2,12 @@
  "province": "河北省",
  "stats": {
   "cities": 11,
-  "poi": 3602,
+  "poi": 11351,
   "grades": {
-   "S": 0,
-   "A": 5,
-   "B": 57,
-   "C": 378
+   "S": 9,
+   "A": 31,
+   "B": 156,
+   "C": 244
   }
  },
  "cities": [
@@ -15,52 +15,54 @@
    "city": "保定市",
    "province": "河北省",
    "adcode": "130600",
-   "poi": 210,
+   "poi": 1103,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:18:46",
+   "updated": "2026-10-23 21:17:51",
    "page": "cities/130600.html",
    "json": "api/cities/130600.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E4%BF%9D%E5%AE%9A%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 4,
-    "C": 36
+    "A": 2,
+    "B": 10,
+    "C": 28
    },
    "dims": {
-    "food": 4,
-    "district": 61,
-    "leisure": 80,
-    "kids": 10,
-    "hotel": 24,
-    "product": 0
+    "food": 309,
+    "district": 222,
+    "leisure": 434,
+    "kids": 40,
+    "hotel": 30,
+    "product": 40
    }
   },
   {
    "city": "唐山市",
    "province": "河北省",
    "adcode": "130200",
-   "poi": 923,
+   "poi": 1096,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 20:27:13",
+   "updated": "2026-10-23 21:15:15",
    "page": "cities/130200.html",
    "json": "api/cities/130200.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E5%94%90%E5%B1%B1%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 5,
-    "B": 6,
-    "C": 29
+    "B": 7,
+    "C": 28
    },
    "dims": {
-    "food": 299,
+    "food": 300,
     "district": 212,
-    "leisure": 235,
-    "kids": 43,
+    "leisure": 418,
+    "kids": 42,
     "hotel": 31,
     "product": 40
    }
@@ -69,160 +71,166 @@
    "city": "廊坊市",
    "province": "河北省",
    "adcode": "131000",
-   "poi": 217,
+   "poi": 1059,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:17:37",
+   "updated": "2026-10-23 21:16:24",
    "page": "cities/131000.html",
    "json": "api/cities/131000.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E5%BB%8A%E5%9D%8A%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 0,
-    "B": 2,
-    "C": 38
+    "B": 16,
+    "C": 24
    },
    "dims": {
-    "food": 0,
-    "district": 59,
-    "leisure": 82,
-    "kids": 10,
-    "hotel": 25,
-    "product": 2
+    "food": 287,
+    "district": 206,
+    "leisure": 404,
+    "kids": 35,
+    "hotel": 27,
+    "product": 44
    }
   },
   {
    "city": "张家口市",
    "province": "河北省",
    "adcode": "130700",
-   "poi": 198,
+   "poi": 1008,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:17:51",
+   "updated": "2026-10-23 21:16:41",
    "page": "cities/130700.html",
    "json": "api/cities/130700.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E5%BC%A0%E5%AE%B6%E5%8F%A3%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 0,
-    "B": 2,
-    "C": 38
+    "B": 27,
+    "C": 13
    },
    "dims": {
-    "food": 0,
-    "district": 59,
-    "leisure": 81,
-    "kids": 10,
-    "hotel": 31,
-    "product": 0
+    "food": 307,
+    "district": 168,
+    "leisure": 406,
+    "kids": 29,
+    "hotel": 36,
+    "product": 40
    }
   },
   {
    "city": "承德市",
    "province": "河北省",
    "adcode": "130800",
-   "poi": 193,
+   "poi": 940,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:18:18",
+   "updated": "2026-10-23 21:17:13",
    "page": "cities/130800.html",
    "json": "api/cities/130800.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E6%89%BF%E5%BE%B7%E5%B8%82.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 9,
-    "C": 31
+    "S": 9,
+    "A": 2,
+    "B": 17,
+    "C": 12
    },
    "dims": {
-    "food": 0,
-    "district": 60,
-    "leisure": 78,
-    "kids": 8,
-    "hotel": 32,
-    "product": 1
+    "food": 289,
+    "district": 155,
+    "leisure": 381,
+    "kids": 30,
+    "hotel": 38,
+    "product": 41
    }
   },
   {
    "city": "沧州市",
    "province": "河北省",
    "adcode": "130900",
-   "poi": 225,
+   "poi": 1022,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:19:09",
+   "updated": "2026-10-23 21:18:07",
    "page": "cities/130900.html",
    "json": "api/cities/130900.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E6%B2%A7%E5%B7%9E%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 3,
-    "C": 37
+    "A": 3,
+    "B": 6,
+    "C": 31
    },
    "dims": {
-    "food": 2,
-    "district": 57,
-    "leisure": 83,
-    "kids": 14,
+    "food": 296,
+    "district": 188,
+    "leisure": 382,
+    "kids": 41,
     "hotel": 33,
-    "product": 0
+    "product": 43
    }
   },
   {
    "city": "石家庄市",
    "province": "河北省",
    "adcode": "130100",
-   "poi": 212,
+   "poi": 1138,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:17:15",
+   "updated": "2026-10-23 21:16:08",
    "page": "cities/130100.html",
    "json": "api/cities/130100.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E7%9F%B3%E5%AE%B6%E5%BA%84%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 3,
-    "C": 37
+    "A": 1,
+    "B": 11,
+    "C": 28
    },
    "dims": {
-    "food": 1,
-    "district": 62,
-    "leisure": 85,
-    "kids": 6,
-    "hotel": 28,
-    "product": 0
+    "food": 292,
+    "district": 245,
+    "leisure": 441,
+    "kids": 49,
+    "hotel": 30,
+    "product": 41
    }
   },
   {
    "city": "秦皇岛市",
    "province": "河北省",
    "adcode": "130300",
-   "poi": 832,
+   "poi": 973,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 20:27:56",
+   "updated": "2026-10-23 21:15:30",
    "page": "cities/130300.html",
    "json": "api/cities/130300.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E7%A7%A6%E7%9A%87%E5%B2%9B%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 0,
-    "B": 20,
-    "C": 20
+    "B": 22,
+    "C": 18
    },
    "dims": {
-    "food": 283,
+    "food": 285,
     "district": 165,
-    "leisure": 206,
-    "kids": 35,
+    "leisure": 365,
+    "kids": 34,
     "hotel": 34,
     "product": 40
    }
@@ -231,81 +239,84 @@
    "city": "衡水市",
    "province": "河北省",
    "adcode": "131100",
-   "poi": 181,
+   "poi": 900,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:18:32",
+   "updated": "2026-10-23 21:17:27",
    "page": "cities/131100.html",
    "json": "api/cities/131100.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E8%A1%A1%E6%B0%B4%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 0,
-    "C": 40
+    "A": 6,
+    "B": 16,
+    "C": 18
    },
    "dims": {
-    "food": 2,
-    "district": 55,
-    "leisure": 72,
-    "kids": 3,
+    "food": 290,
+    "district": 145,
+    "leisure": 341,
+    "kids": 26,
     "hotel": 28,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "邢台市",
    "province": "河北省",
    "adcode": "130500",
-   "poi": 206,
+   "poi": 1029,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:18:04",
+   "updated": "2026-10-23 21:16:57",
    "page": "cities/130500.html",
    "json": "api/cities/130500.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E9%82%A2%E5%8F%B0%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 6,
-    "C": 34
+    "A": 10,
+    "B": 10,
+    "C": 20
    },
    "dims": {
-    "food": 2,
-    "district": 58,
-    "leisure": 84,
-    "kids": 20,
-    "hotel": 28,
-    "product": 0
+    "food": 295,
+    "district": 188,
+    "leisure": 395,
+    "kids": 57,
+    "hotel": 29,
+    "product": 41
    }
   },
   {
    "city": "邯郸市",
    "province": "河北省",
    "adcode": "130400",
-   "poi": 205,
+   "poi": 1083,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:17:01",
+   "updated": "2026-10-23 21:15:44",
    "page": "cities/130400.html",
    "json": "api/cities/130400.json",
    "md": "md/%E6%B2%B3%E5%8C%97%E7%9C%81/%E9%82%AF%E9%83%B8%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 2,
-    "C": 38
+    "A": 2,
+    "B": 14,
+    "C": 24
    },
    "dims": {
-    "food": 5,
-    "district": 56,
-    "leisure": 85,
-    "kids": 19,
-    "hotel": 29,
-    "product": 0
+    "food": 296,
+    "district": 216,
+    "leisure": 426,
+    "kids": 49,
+    "hotel": 31,
+    "product": 42
    }
   }
  ]

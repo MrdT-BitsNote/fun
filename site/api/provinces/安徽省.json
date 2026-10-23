@@ -2,12 +2,12 @@
  "province": "安徽省",
  "stats": {
   "cities": 16,
-  "poi": 12788,
+  "poi": 14834,
   "grades": {
    "S": 24,
    "A": 147,
-   "B": 139,
-   "C": 330
+   "B": 167,
+   "C": 302
   }
  },
  "cities": [
@@ -15,26 +15,27 @@
    "city": "亳州市",
    "province": "安徽省",
    "adcode": "341600",
-   "poi": 824,
+   "poi": 954,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:24:17",
+   "updated": "2026-10-23 20:51:19",
    "page": "cities/341600.html",
    "json": "api/cities/341600.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E4%BA%B3%E5%B7%9E%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 3,
-    "B": 12,
-    "C": 25
+    "B": 15,
+    "C": 22
    },
    "dims": {
-    "food": 305,
-    "district": 181,
-    "leisure": 208,
+    "food": 307,
+    "district": 182,
+    "leisure": 342,
     "kids": 31,
-    "hotel": 26,
+    "hotel": 27,
     "product": 40
    }
   },
@@ -42,26 +43,27 @@
    "city": "六安市",
    "province": "安徽省",
    "adcode": "341500",
-   "poi": 831,
+   "poi": 978,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:17:55",
+   "updated": "2026-10-23 20:49:07",
    "page": "cities/341500.html",
    "json": "api/cities/341500.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%85%AD%E5%AE%89%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 12,
-    "B": 7,
-    "C": 21
+    "A": 13,
+    "B": 8,
+    "C": 19
    },
    "dims": {
-    "food": 300,
+    "food": 303,
     "district": 187,
-    "leisure": 218,
-    "kids": 26,
-    "hotel": 31,
+    "leisure": 372,
+    "kids": 25,
+    "hotel": 32,
     "product": 40
    }
   },
@@ -69,26 +71,27 @@
    "city": "合肥市",
    "province": "安徽省",
    "adcode": "340100",
-   "poi": 950,
+   "poi": 1138,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:21:58",
+   "updated": "2026-10-23 20:50:27",
    "page": "cities/340100.html",
    "json": "api/cities/340100.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%90%88%E8%82%A5%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 2,
-    "B": 4,
-    "C": 34
+    "B": 11,
+    "C": 27
    },
    "dims": {
-    "food": 287,
-    "district": 248,
-    "leisure": 223,
-    "kids": 34,
-    "hotel": 31,
+    "food": 290,
+    "district": 249,
+    "leisure": 425,
+    "kids": 35,
+    "hotel": 32,
     "product": 40
    }
   },
@@ -96,11 +99,12 @@
    "city": "安庆市",
    "province": "安徽省",
    "adcode": "340800",
-   "poi": 841,
+   "poi": 973,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:15:41",
+   "updated": "2026-10-23 20:48:25",
    "page": "cities/340800.html",
    "json": "api/cities/340800.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%AE%89%E5%BA%86%E5%B8%82.md",
@@ -111,11 +115,11 @@
     "C": 27
    },
    "dims": {
-    "food": 290,
+    "food": 291,
     "district": 197,
-    "leisure": 210,
-    "kids": 41,
-    "hotel": 34,
+    "leisure": 346,
+    "kids": 39,
+    "hotel": 35,
     "product": 40
    }
   },
@@ -123,26 +127,27 @@
    "city": "宣城市",
    "province": "安徽省",
    "adcode": "341800",
-   "poi": 815,
+   "poi": 941,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:23:34",
+   "updated": "2026-10-23 20:50:55",
    "page": "cities/341800.html",
    "json": "api/cities/341800.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%AE%A3%E5%9F%8E%E5%B8%82.md",
    "grades": {
     "S": 5,
     "A": 4,
-    "B": 7,
-    "C": 24
+    "B": 9,
+    "C": 22
    },
    "dims": {
-    "food": 293,
+    "food": 294,
     "district": 166,
-    "leisure": 208,
+    "leisure": 345,
     "kids": 30,
-    "hotel": 33,
+    "hotel": 34,
     "product": 41
    }
   },
@@ -150,25 +155,26 @@
    "city": "宿州市",
    "province": "安徽省",
    "adcode": "341300",
-   "poi": 874,
+   "poi": 1006,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:25:53",
+   "updated": "2026-10-23 20:51:47",
    "page": "cities/341300.html",
    "json": "api/cities/341300.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%AE%BF%E5%B7%9E%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 16,
-    "B": 9,
-    "C": 15
+    "B": 10,
+    "C": 14
    },
    "dims": {
-    "food": 290,
+    "food": 291,
     "district": 213,
-    "leisure": 212,
-    "kids": 43,
+    "leisure": 357,
+    "kids": 42,
     "hotel": 27,
     "product": 40
    }
@@ -177,11 +183,12 @@
    "city": "池州市",
    "province": "安徽省",
    "adcode": "341700",
-   "poi": 645,
+   "poi": 727,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:14:48",
+   "updated": "2026-10-23 20:48:10",
    "page": "cities/341700.html",
    "json": "api/cities/341700.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E6%B1%A0%E5%B7%9E%E5%B8%82.md",
@@ -193,8 +200,8 @@
    },
    "dims": {
     "food": 274,
-    "district": 122,
-    "leisure": 156,
+    "district": 123,
+    "leisure": 241,
     "kids": 16,
     "hotel": 36,
     "product": 41
@@ -204,25 +211,26 @@
    "city": "淮北市",
    "province": "安徽省",
    "adcode": "340600",
-   "poi": 706,
+   "poi": 805,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:17:12",
+   "updated": "2026-10-23 20:48:53",
    "page": "cities/340600.html",
    "json": "api/cities/340600.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E6%B7%AE%E5%8C%97%E5%B8%82.md",
    "grades": {
     "S": 4,
     "A": 8,
-    "B": 11,
-    "C": 17
+    "B": 12,
+    "C": 16
    },
    "dims": {
     "food": 280,
     "district": 144,
-    "leisure": 177,
-    "kids": 33,
+    "leisure": 285,
+    "kids": 32,
     "hotel": 26,
     "product": 10
    }
@@ -231,24 +239,25 @@
    "city": "淮南市",
    "province": "安徽省",
    "adcode": "340400",
-   "poi": 770,
+   "poi": 900,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:25:09",
+   "updated": "2026-10-23 20:51:33",
    "page": "cities/340400.html",
    "json": "api/cities/340400.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E6%B7%AE%E5%8D%97%E5%B8%82.md",
    "grades": {
     "S": 1,
     "A": 8,
-    "B": 11,
-    "C": 20
+    "B": 16,
+    "C": 15
    },
    "dims": {
-    "food": 263,
+    "food": 264,
     "district": 187,
-    "leisure": 205,
+    "leisure": 334,
     "kids": 30,
     "hotel": 31,
     "product": 40
@@ -258,26 +267,27 @@
    "city": "滁州市",
    "province": "安徽省",
    "adcode": "341100",
-   "poi": 830,
+   "poi": 983,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:19:31",
+   "updated": "2026-10-23 20:49:44",
    "page": "cities/341100.html",
    "json": "api/cities/341100.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E6%BB%81%E5%B7%9E%E5%B8%82.md",
    "grades": {
     "S": 2,
     "A": 5,
-    "B": 9,
-    "C": 24
+    "B": 10,
+    "C": 23
    },
    "dims": {
-    "food": 280,
+    "food": 282,
     "district": 207,
-    "leisure": 207,
+    "leisure": 363,
     "kids": 40,
-    "hotel": 34,
+    "hotel": 35,
     "product": 40
    }
   },
@@ -285,24 +295,25 @@
    "city": "芜湖市",
    "province": "安徽省",
    "adcode": "340200",
-   "poi": 846,
+   "poi": 997,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:22:42",
+   "updated": "2026-10-23 20:50:41",
    "page": "cities/340200.html",
    "json": "api/cities/340200.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E8%8A%9C%E6%B9%96%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 10,
-    "B": 7,
-    "C": 23
+    "B": 9,
+    "C": 21
    },
    "dims": {
-    "food": 282,
-    "district": 187,
-    "leisure": 215,
+    "food": 283,
+    "district": 192,
+    "leisure": 375,
     "kids": 41,
     "hotel": 29,
     "product": 41
@@ -312,11 +323,12 @@
    "city": "蚌埠市",
    "province": "安徽省",
    "adcode": "340300",
-   "poi": 836,
+   "poi": 972,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:20:23",
+   "updated": "2026-10-23 20:49:59",
    "page": "cities/340300.html",
    "json": "api/cities/340300.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E8%9A%8C%E5%9F%A0%E5%B8%82.md",
@@ -327,9 +339,9 @@
     "C": 12
    },
    "dims": {
-    "food": 277,
+    "food": 279,
     "district": 167,
-    "leisure": 206,
+    "leisure": 358,
     "kids": 37,
     "hotel": 35,
     "product": 40
@@ -339,11 +351,12 @@
    "city": "铜陵市",
    "province": "安徽省",
    "adcode": "340700",
-   "poi": 637,
+   "poi": 717,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:14:09",
+   "updated": "2026-10-23 20:47:48",
    "page": "cities/340700.html",
    "json": "api/cities/340700.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E9%93%9C%E9%99%B5%E5%B8%82.md",
@@ -354,9 +367,9 @@
     "C": 15
    },
    "dims": {
-    "food": 281,
+    "food": 282,
     "district": 115,
-    "leisure": 147,
+    "leisure": 231,
     "kids": 21,
     "hotel": 26,
     "product": 40
@@ -366,26 +379,27 @@
    "city": "阜阳市",
    "province": "安徽省",
    "adcode": "341200",
-   "poi": 950,
+   "poi": 1112,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:18:49",
+   "updated": "2026-10-23 20:49:21",
    "page": "cities/341200.html",
    "json": "api/cities/341200.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E9%98%9C%E9%98%B3%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 3,
-    "B": 9,
-    "C": 28
+    "B": 11,
+    "C": 26
    },
    "dims": {
-    "food": 307,
-    "district": 239,
-    "leisure": 234,
+    "food": 309,
+    "district": 240,
+    "leisure": 401,
     "kids": 53,
-    "hotel": 28,
+    "hotel": 29,
     "product": 40
    }
   },
@@ -393,24 +407,25 @@
    "city": "马鞍山市",
    "province": "安徽省",
    "adcode": "340500",
-   "poi": 728,
+   "poi": 842,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:16:22",
+   "updated": "2026-10-23 20:48:39",
    "page": "cities/340500.html",
    "json": "api/cities/340500.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E9%A9%AC%E9%9E%8D%E5%B1%B1%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 15,
-    "B": 8,
-    "C": 17
+    "B": 9,
+    "C": 16
    },
    "dims": {
-    "food": 278,
+    "food": 280,
     "district": 137,
-    "leisure": 190,
+    "leisure": 307,
     "kids": 27,
     "hotel": 33,
     "product": 40
@@ -420,27 +435,28 @@
    "city": "黄山市",
    "province": "安徽省",
    "adcode": "341000",
-   "poi": 705,
+   "poi": 789,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:21:03",
+   "updated": "2026-10-23 20:50:12",
    "page": "cities/341000.html",
    "json": "api/cities/341000.json",
    "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E9%BB%84%E5%B1%B1%E5%B8%82.md",
    "grades": {
     "S": 6,
-    "A": 10,
-    "B": 8,
-    "C": 16
+    "A": 9,
+    "B": 10,
+    "C": 15
    },
    "dims": {
     "food": 291,
-    "district": 152,
-    "leisure": 165,
+    "district": 153,
+    "leisure": 252,
     "kids": 10,
     "hotel": 38,
-    "product": 40
+    "product": 41
    }
   }
  ]

@@ -2,12 +2,12 @@
  "province": "天津市",
  "stats": {
   "cities": 1,
-  "poi": 224,
+  "poi": 1146,
   "grades": {
    "S": 0,
-   "A": 0,
-   "B": 2,
-   "C": 38
+   "A": 6,
+   "B": 1,
+   "C": 33
   }
  },
  "cities": [
@@ -15,27 +15,28 @@
    "city": "天津市",
    "province": "天津市",
    "adcode": "120100",
-   "poi": 224,
+   "poi": 1146,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:28:05",
+   "updated": "2026-10-23 21:27:03",
    "page": "cities/120100.html",
    "json": "api/cities/120100.json",
    "md": "md/%E5%A4%A9%E6%B4%A5%E5%B8%82/%E5%A4%A9%E6%B4%A5%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 2,
-    "C": 38
+    "A": 6,
+    "B": 1,
+    "C": 33
    },
    "dims": {
-    "food": 3,
-    "district": 68,
-    "leisure": 88,
-    "kids": 6,
-    "hotel": 34,
-    "product": 0
+    "food": 290,
+    "district": 255,
+    "leisure": 441,
+    "kids": 55,
+    "hotel": 36,
+    "product": 40
    }
   }
  ]

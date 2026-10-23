@@ -2,12 +2,12 @@
  "province": "青海省",
  "stats": {
   "cities": 8,
-  "poi": 3815,
+  "poi": 4267,
   "grades": {
    "S": 0,
-   "A": 48,
-   "B": 207,
-   "C": 65
+   "A": 47,
+   "B": 209,
+   "C": 64
   }
  },
  "cities": [
@@ -15,11 +15,12 @@
    "city": "果洛藏族自治州",
    "province": "青海省",
    "adcode": "632600",
-   "poi": 294,
+   "poi": 317,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 20:00:34",
+   "updated": "2026-10-23 21:06:43",
    "page": "cities/632600.html",
    "json": "api/cities/632600.json",
    "md": "md/%E9%9D%92%E6%B5%B7%E7%9C%81/%E6%9E%9C%E6%B4%9B%E8%97%8F%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
@@ -32,7 +33,7 @@
    "dims": {
     "food": 151,
     "district": 46,
-    "leisure": 55,
+    "leisure": 78,
     "kids": 8,
     "hotel": 28,
     "product": 8
@@ -42,11 +43,12 @@
    "city": "海东市",
    "province": "青海省",
    "adcode": "630200",
-   "poi": 600,
+   "poi": 668,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:57:12",
+   "updated": "2026-10-23 21:05:35",
    "page": "cities/630200.html",
    "json": "api/cities/630200.json",
    "md": "md/%E9%9D%92%E6%B5%B7%E7%9C%81/%E6%B5%B7%E4%B8%9C%E5%B8%82.md",
@@ -59,7 +61,7 @@
    "dims": {
     "food": 271,
     "district": 117,
-    "leisure": 131,
+    "leisure": 201,
     "kids": 12,
     "hotel": 30,
     "product": 40
@@ -69,11 +71,12 @@
    "city": "海北藏族自治州",
    "province": "青海省",
    "adcode": "632200",
-   "poi": 391,
+   "poi": 421,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 20:01:09",
+   "updated": "2026-10-23 21:06:54",
    "page": "cities/632200.html",
    "json": "api/cities/632200.json",
    "md": "md/%E9%9D%92%E6%B5%B7%E7%9C%81/%E6%B5%B7%E5%8C%97%E8%97%8F%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
@@ -86,7 +89,7 @@
    "dims": {
     "food": 178,
     "district": 53,
-    "leisure": 81,
+    "leisure": 112,
     "kids": 6,
     "hotel": 35,
     "product": 40
@@ -96,26 +99,27 @@
    "city": "海南藏族自治州",
    "province": "青海省",
    "adcode": "632500",
-   "poi": 441,
+   "poi": 495,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:57:57",
+   "updated": "2026-10-23 21:05:57",
    "page": "cities/632500.html",
    "json": "api/cities/632500.json",
    "md": "md/%E9%9D%92%E6%B5%B7%E7%9C%81/%E6%B5%B7%E5%8D%97%E8%97%8F%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
    "grades": {
     "S": 0,
     "A": 3,
-    "B": 26,
-    "C": 11
+    "B": 27,
+    "C": 10
    },
    "dims": {
     "food": 201,
     "district": 74,
-    "leisure": 104,
+    "leisure": 159,
     "kids": 3,
-    "hotel": 38,
+    "hotel": 39,
     "product": 23
    }
   },
@@ -123,11 +127,12 @@
    "city": "海西蒙古族藏族自治州",
    "province": "青海省",
    "adcode": "632800",
-   "poi": 584,
+   "poi": 659,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:58:35",
+   "updated": "2026-10-23 21:06:09",
    "page": "cities/632800.html",
    "json": "api/cities/632800.json",
    "md": "md/%E9%9D%92%E6%B5%B7%E7%9C%81/%E6%B5%B7%E8%A5%BF%E8%92%99%E5%8F%A4%E6%97%8F%E8%97%8F%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
@@ -138,9 +143,9 @@
     "C": 11
    },
    "dims": {
-    "food": 261,
+    "food": 262,
     "district": 109,
-    "leisure": 131,
+    "leisure": 208,
     "kids": 10,
     "hotel": 30,
     "product": 40
@@ -150,11 +155,12 @@
    "city": "玉树藏族自治州",
    "province": "青海省",
    "adcode": "632700",
-   "poi": 368,
+   "poi": 396,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:59:20",
+   "updated": "2026-10-23 21:06:20",
    "page": "cities/632700.html",
    "json": "api/cities/632700.json",
    "md": "md/%E9%9D%92%E6%B5%B7%E7%9C%81/%E7%8E%89%E6%A0%91%E8%97%8F%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
@@ -167,7 +173,7 @@
    "dims": {
     "food": 180,
     "district": 68,
-    "leisure": 61,
+    "leisure": 90,
     "kids": 2,
     "hotel": 35,
     "product": 25
@@ -177,24 +183,25 @@
    "city": "西宁市",
    "province": "青海省",
    "adcode": "630100",
-   "poi": 820,
+   "poi": 968,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 20:01:52",
+   "updated": "2026-10-23 21:07:08",
    "page": "cities/630100.html",
    "json": "api/cities/630100.json",
    "md": "md/%E9%9D%92%E6%B5%B7%E7%9C%81/%E8%A5%BF%E5%AE%81%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 20,
-    "B": 14,
+    "A": 19,
+    "B": 15,
     "C": 6
    },
    "dims": {
     "food": 298,
-    "district": 166,
-    "leisure": 217,
+    "district": 169,
+    "leisure": 372,
     "kids": 25,
     "hotel": 30,
     "product": 40
@@ -204,11 +211,12 @@
    "city": "黄南藏族自治州",
    "province": "青海省",
    "adcode": "632300",
-   "poi": 317,
+   "poi": 343,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:59:52",
+   "updated": "2026-10-23 21:06:31",
    "page": "cities/632300.html",
    "json": "api/cities/632300.json",
    "md": "md/%E9%9D%92%E6%B5%B7%E7%9C%81/%E9%BB%84%E5%8D%97%E8%97%8F%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
@@ -221,7 +229,7 @@
    "dims": {
     "food": 167,
     "district": 53,
-    "leisure": 60,
+    "leisure": 88,
     "kids": 2,
     "hotel": 26,
     "product": 5

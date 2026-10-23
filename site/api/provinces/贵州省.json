@@ -2,12 +2,12 @@
  "province": "贵州省",
  "stats": {
   "cities": 9,
-  "poi": 7455,
+  "poi": 8645,
   "grades": {
    "S": 8,
-   "A": 90,
-   "B": 101,
-   "C": 161
+   "A": 92,
+   "B": 110,
+   "C": 150
   }
  },
  "cities": [
@@ -15,11 +15,12 @@
    "city": "六盘水市",
    "province": "贵州省",
    "adcode": "520200",
-   "poi": 744,
+   "poi": 858,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:07:41",
+   "updated": "2026-10-23 20:45:46",
    "page": "cities/520200.html",
    "json": "api/cities/520200.json",
    "md": "md/%E8%B4%B5%E5%B7%9E%E7%9C%81/%E5%85%AD%E7%9B%98%E6%B0%B4%E5%B8%82.md",
@@ -30,9 +31,9 @@
     "C": 11
    },
    "dims": {
-    "food": 278,
-    "district": 142,
-    "leisure": 199,
+    "food": 279,
+    "district": 144,
+    "leisure": 318,
     "kids": 31,
     "hotel": 29,
     "product": 40
@@ -42,11 +43,12 @@
    "city": "安顺市",
    "province": "贵州省",
    "adcode": "520400",
-   "poi": 801,
+   "poi": 922,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:08:24",
+   "updated": "2026-10-23 20:46:00",
    "page": "cities/520400.html",
    "json": "api/cities/520400.json",
    "md": "md/%E8%B4%B5%E5%B7%9E%E7%9C%81/%E5%AE%89%E9%A1%BA%E5%B8%82.md",
@@ -57,9 +59,9 @@
     "C": 23
    },
    "dims": {
-    "food": 278,
-    "district": 198,
-    "leisure": 208,
+    "food": 279,
+    "district": 199,
+    "leisure": 339,
     "kids": 35,
     "hotel": 29,
     "product": 40
@@ -69,11 +71,12 @@
    "city": "毕节市",
    "province": "贵州省",
    "adcode": "520500",
-   "poi": 848,
+   "poi": 984,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:11:36",
+   "updated": "2026-10-23 20:47:05",
    "page": "cities/520500.html",
    "json": "api/cities/520500.json",
    "md": "md/%E8%B4%B5%E5%B7%9E%E7%9C%81/%E6%AF%95%E8%8A%82%E5%B8%82.md",
@@ -84,9 +87,9 @@
     "C": 19
    },
    "dims": {
-    "food": 299,
+    "food": 302,
     "district": 207,
-    "leisure": 219,
+    "leisure": 361,
     "kids": 36,
     "hotel": 28,
     "product": 40
@@ -96,25 +99,26 @@
    "city": "贵阳市",
    "province": "贵州省",
    "adcode": "520100",
-   "poi": 948,
+   "poi": 1132,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:12:34",
+   "updated": "2026-10-23 20:47:20",
    "page": "cities/520100.html",
    "json": "api/cities/520100.json",
    "md": "md/%E8%B4%B5%E5%B7%9E%E7%9C%81/%E8%B4%B5%E9%98%B3%E5%B8%82.md",
    "grades": {
     "S": 3,
-    "A": 3,
-    "B": 14,
-    "C": 20
+    "A": 4,
+    "B": 17,
+    "C": 16
    },
    "dims": {
-    "food": 300,
-    "district": 229,
-    "leisure": 242,
-    "kids": 38,
+    "food": 304,
+    "district": 230,
+    "leisure": 438,
+    "kids": 40,
     "hotel": 32,
     "product": 40
    }
@@ -123,25 +127,26 @@
    "city": "遵义市",
    "province": "贵州省",
    "adcode": "520300",
-   "poi": 882,
+   "poi": 1053,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:06:07",
+   "updated": "2026-10-23 20:45:18",
    "page": "cities/520300.html",
    "json": "api/cities/520300.json",
    "md": "md/%E8%B4%B5%E5%B7%9E%E7%9C%81/%E9%81%B5%E4%B9%89%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 8,
-    "B": 6,
-    "C": 26
+    "B": 8,
+    "C": 24
    },
    "dims": {
     "food": 277,
-    "district": 220,
-    "leisure": 230,
-    "kids": 39,
+    "district": 221,
+    "leisure": 409,
+    "kids": 37,
     "hotel": 36,
     "product": 40
    }
@@ -150,25 +155,26 @@
    "city": "铜仁市",
    "province": "贵州省",
    "adcode": "520600",
-   "poi": 830,
+   "poi": 925,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:06:50",
+   "updated": "2026-10-23 20:45:32",
    "page": "cities/520600.html",
    "json": "api/cities/520600.json",
    "md": "md/%E8%B4%B5%E5%B7%9E%E7%9C%81/%E9%93%9C%E4%BB%81%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 13,
-    "B": 13,
-    "C": 14
+    "B": 15,
+    "C": 12
    },
    "dims": {
-    "food": 313,
+    "food": 314,
     "district": 169,
-    "leisure": 200,
-    "kids": 43,
+    "leisure": 303,
+    "kids": 42,
     "hotel": 30,
     "product": 40
    }
@@ -177,25 +183,26 @@
    "city": "黔东南苗族侗族自治州",
    "province": "贵州省",
    "adcode": "522600",
-   "poi": 807,
+   "poi": 928,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:10:53",
+   "updated": "2026-10-23 20:46:51",
    "page": "cities/522600.html",
    "json": "api/cities/522600.json",
    "md": "md/%E8%B4%B5%E5%B7%9E%E7%9C%81/%E9%BB%94%E4%B8%9C%E5%8D%97%E8%8B%97%E6%97%8F%E4%BE%97%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
    "grades": {
     "S": 0,
     "A": 14,
-    "B": 14,
-    "C": 12
+    "B": 16,
+    "C": 10
    },
    "dims": {
-    "food": 305,
+    "food": 306,
     "district": 174,
-    "leisure": 202,
-    "kids": 35,
+    "leisure": 334,
+    "kids": 32,
     "hotel": 31,
     "product": 40
    }
@@ -204,25 +211,26 @@
    "city": "黔南布依族苗族自治州",
    "province": "贵州省",
    "adcode": "522700",
-   "poi": 820,
+   "poi": 953,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:09:17",
+   "updated": "2026-10-23 20:46:24",
    "page": "cities/522700.html",
    "json": "api/cities/522700.json",
    "md": "md/%E8%B4%B5%E5%B7%9E%E7%9C%81/%E9%BB%94%E5%8D%97%E5%B8%83%E4%BE%9D%E6%97%8F%E8%8B%97%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
    "grades": {
     "S": 0,
-    "A": 7,
+    "A": 8,
     "B": 14,
-    "C": 19
+    "C": 18
    },
    "dims": {
-    "food": 285,
+    "food": 287,
     "district": 203,
-    "leisure": 206,
-    "kids": 33,
+    "leisure": 346,
+    "kids": 32,
     "hotel": 29,
     "product": 40
    }
@@ -231,11 +239,12 @@
    "city": "黔西南布依族苗族自治州",
    "province": "贵州省",
    "adcode": "522300",
-   "poi": 775,
+   "poi": 890,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:10:01",
+   "updated": "2026-10-23 20:46:37",
    "page": "cities/522300.html",
    "json": "api/cities/522300.json",
    "md": "md/%E8%B4%B5%E5%B7%9E%E7%9C%81/%E9%BB%94%E8%A5%BF%E5%8D%97%E5%B8%83%E4%BE%9D%E6%97%8F%E8%8B%97%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
@@ -246,11 +255,11 @@
     "C": 17
    },
    "dims": {
-    "food": 274,
-    "district": 162,
-    "leisure": 196,
+    "food": 275,
+    "district": 165,
+    "leisure": 319,
     "kids": 33,
-    "hotel": 34,
+    "hotel": 35,
     "product": 40
    }
   }

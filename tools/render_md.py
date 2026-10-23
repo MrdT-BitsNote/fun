@@ -503,9 +503,10 @@ def render_city(city, cache, prov_name, hier=None):
         w("| ⚠️ 采集告警 | %d 条 | %s |" % (len(errs), "；".join(errs[:3])))
     else:
         w("| 采集告警 | 0 | 本次采集无配额或接口错误 |")
-    miss = [wv for wv in (2, 3) if wv not in waves]
+    miss = [wv for wv in (1, 2, 3) if wv not in waves]
     if miss:
-        miss_desc = {2: "酒店/迷你动物园/百货奥莱",
+        miss_desc = {1: "美食/特产/商圈基础面",
+                     2: "酒店/迷你动物园/百货奥莱",
                      3: "休闲娱乐（KTV/影院/体育馆/足疗/卡丁车）"}
         w("| ⚠️ 维度不全 | 缺 wave%s | 本档案未含%s补采面，"
           "需跑 `amap_collect.py --city %s --wave %s` |"

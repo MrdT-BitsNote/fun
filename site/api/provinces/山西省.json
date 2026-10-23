@@ -2,12 +2,12 @@
  "province": "山西省",
  "stats": {
   "cities": 11,
-  "poi": 2079,
+  "poi": 10067,
   "grades": {
-   "S": 0,
-   "A": 0,
-   "B": 52,
-   "C": 388
+   "S": 5,
+   "A": 82,
+   "B": 173,
+   "C": 180
   }
  },
  "cities": [
@@ -15,297 +15,308 @@
    "city": "临汾市",
    "province": "山西省",
    "adcode": "141000",
-   "poi": 198,
+   "poi": 984,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:30:04",
+   "updated": "2026-10-23 21:29:15",
    "page": "cities/141000.html",
    "json": "api/cities/141000.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E4%B8%B4%E6%B1%BE%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 5,
-    "C": 35
+    "A": 12,
+    "B": 9,
+    "C": 19
    },
    "dims": {
-    "food": 0,
-    "district": 58,
-    "leisure": 74,
-    "kids": 5,
-    "hotel": 31,
-    "product": 0
+    "food": 317,
+    "district": 150,
+    "leisure": 354,
+    "kids": 42,
+    "hotel": 32,
+    "product": 40
    }
   },
   {
    "city": "吕梁市",
    "province": "山西省",
    "adcode": "141100",
-   "poi": 176,
+   "poi": 908,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:28:46",
+   "updated": "2026-10-23 21:27:54",
    "page": "cities/141100.html",
    "json": "api/cities/141100.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E5%90%95%E6%A2%81%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 1,
-    "C": 39
+    "A": 4,
+    "B": 13,
+    "C": 23
    },
    "dims": {
-    "food": 1,
-    "district": 60,
-    "leisure": 65,
-    "kids": 1,
-    "hotel": 35,
-    "product": 0
+    "food": 300,
+    "district": 151,
+    "leisure": 339,
+    "kids": 24,
+    "hotel": 36,
+    "product": 40
    }
   },
   {
    "city": "大同市",
    "province": "山西省",
    "adcode": "140200",
-   "poi": 224,
+   "poi": 946,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:28:32",
+   "updated": "2026-10-23 21:27:40",
    "page": "cities/140200.html",
    "json": "api/cities/140200.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E5%A4%A7%E5%90%8C%E5%B8%82.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 4,
-    "C": 36
+    "S": 3,
+    "A": 4,
+    "B": 18,
+    "C": 15
    },
    "dims": {
-    "food": 2,
-    "district": 73,
-    "leisure": 82,
-    "kids": 13,
-    "hotel": 29,
-    "product": 0
+    "food": 274,
+    "district": 163,
+    "leisure": 364,
+    "kids": 40,
+    "hotel": 35,
+    "product": 40
    }
   },
   {
    "city": "太原市",
    "province": "山西省",
    "adcode": "140100",
-   "poi": 224,
+   "poi": 1077,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:30:55",
+   "updated": "2026-10-23 21:29:58",
    "page": "cities/140100.html",
    "json": "api/cities/140100.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E5%A4%AA%E5%8E%9F%E5%B8%82.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 3,
-    "C": 37
+    "S": 2,
+    "A": 7,
+    "B": 14,
+    "C": 17
    },
    "dims": {
-    "food": 1,
-    "district": 67,
-    "leisure": 85,
-    "kids": 6,
-    "hotel": 36,
-    "product": 0
+    "food": 296,
+    "district": 214,
+    "leisure": 419,
+    "kids": 37,
+    "hotel": 37,
+    "product": 41
    }
   },
   {
    "city": "忻州市",
    "province": "山西省",
    "adcode": "140900",
-   "poi": 179,
+   "poi": 891,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:29:50",
+   "updated": "2026-10-23 21:28:50",
    "page": "cities/140900.html",
    "json": "api/cities/140900.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E5%BF%BB%E5%B7%9E%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 11,
-    "C": 29
+    "A": 7,
+    "B": 19,
+    "C": 14
    },
    "dims": {
-    "food": 1,
-    "district": 60,
-    "leisure": 70,
-    "kids": 4,
-    "hotel": 35,
-    "product": 0
+    "food": 309,
+    "district": 143,
+    "leisure": 324,
+    "kids": 33,
+    "hotel": 39,
+    "product": 40
    }
   },
   {
    "city": "晋中市",
    "province": "山西省",
    "adcode": "140700",
-   "poi": 191,
+   "poi": 949,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:30:31",
+   "updated": "2026-10-23 21:29:43",
    "page": "cities/140700.html",
    "json": "api/cities/140700.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E6%99%8B%E4%B8%AD%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 2,
-    "C": 38
+    "A": 11,
+    "B": 11,
+    "C": 18
    },
    "dims": {
-    "food": 0,
-    "district": 70,
-    "leisure": 68,
-    "kids": 7,
+    "food": 292,
+    "district": 178,
+    "leisure": 351,
+    "kids": 38,
     "hotel": 26,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "晋城市",
    "province": "山西省",
    "adcode": "140500",
-   "poi": 187,
+   "poi": 870,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:29:23",
+   "updated": "2026-10-23 21:28:22",
    "page": "cities/140500.html",
    "json": "api/cities/140500.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E6%99%8B%E5%9F%8E%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 7,
-    "C": 33
+    "A": 10,
+    "B": 12,
+    "C": 18
    },
    "dims": {
-    "food": 5,
-    "district": 74,
-    "leisure": 65,
-    "kids": 5,
+    "food": 273,
+    "district": 155,
+    "leisure": 328,
+    "kids": 26,
     "hotel": 27,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "朔州市",
    "province": "山西省",
    "adcode": "140600",
-   "poi": 161,
+   "poi": 751,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:29:37",
+   "updated": "2026-10-23 21:28:36",
    "page": "cities/140600.html",
    "json": "api/cities/140600.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E6%9C%94%E5%B7%9E%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 0,
-    "C": 40
+    "A": 6,
+    "B": 22,
+    "C": 12
    },
    "dims": {
-    "food": 1,
-    "district": 59,
-    "leisure": 64,
-    "kids": 1,
-    "hotel": 31,
-    "product": 0
+    "food": 256,
+    "district": 114,
+    "leisure": 282,
+    "kids": 28,
+    "hotel": 33,
+    "product": 40
    }
   },
   {
    "city": "运城市",
    "province": "山西省",
    "adcode": "140800",
-   "poi": 196,
+   "poi": 1020,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:29:09",
+   "updated": "2026-10-23 21:28:08",
    "page": "cities/140800.html",
    "json": "api/cities/140800.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E8%BF%90%E5%9F%8E%E5%B8%82.md",
    "grades": {
     "S": 0,
     "A": 0,
-    "B": 5,
-    "C": 35
+    "B": 23,
+    "C": 17
    },
    "dims": {
-    "food": 0,
-    "district": 59,
-    "leisure": 78,
-    "kids": 9,
-    "hotel": 28,
-    "product": 0
+    "food": 303,
+    "district": 194,
+    "leisure": 390,
+    "kids": 40,
+    "hotel": 29,
+    "product": 41
    }
   },
   {
    "city": "长治市",
    "province": "山西省",
    "adcode": "140400",
-   "poi": 187,
+   "poi": 928,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:30:18",
+   "updated": "2026-10-23 21:29:29",
    "page": "cities/140400.html",
    "json": "api/cities/140400.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E9%95%BF%E6%B2%BB%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 10,
-    "C": 30
+    "A": 8,
+    "B": 12,
+    "C": 20
    },
    "dims": {
-    "food": 3,
-    "district": 63,
-    "leisure": 70,
-    "kids": 12,
+    "food": 283,
+    "district": 164,
+    "leisure": 348,
+    "kids": 45,
     "hotel": 36,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "阳泉市",
    "province": "山西省",
    "adcode": "140300",
-   "poi": 156,
+   "poi": 743,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:28:19",
+   "updated": "2026-10-23 21:27:17",
    "page": "cities/140300.html",
    "json": "api/cities/140300.json",
    "md": "md/%E5%B1%B1%E8%A5%BF%E7%9C%81/%E9%98%B3%E6%B3%89%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 4,
-    "C": 36
+    "A": 13,
+    "B": 20,
+    "C": 7
    },
    "dims": {
-    "food": 1,
-    "district": 58,
-    "leisure": 64,
-    "kids": 1,
-    "hotel": 27,
-    "product": 0
+    "food": 274,
+    "district": 120,
+    "leisure": 260,
+    "kids": 19,
+    "hotel": 28,
+    "product": 40
    }
   }
  ]

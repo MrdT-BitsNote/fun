@@ -2,7 +2,7 @@
  "province": "重庆市",
  "stats": {
   "cities": 1,
-  "poi": 973,
+  "poi": 1179,
   "grades": {
    "S": 0,
    "A": 0,
@@ -15,11 +15,12 @@
    "city": "重庆市",
    "province": "重庆市",
    "adcode": "500100",
-   "poi": 973,
+   "poi": 1179,
    "waves": [
-    2
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:13:21",
+   "updated": "2026-10-23 20:47:35",
    "page": "cities/500100.html",
    "json": "api/cities/500100.json",
    "md": "md/%E9%87%8D%E5%BA%86%E5%B8%82/%E9%87%8D%E5%BA%86%E5%B8%82.md",
@@ -30,11 +31,11 @@
     "C": 35
    },
    "dims": {
-    "food": 295,
-    "district": 267,
-    "leisure": 246,
+    "food": 296,
+    "district": 268,
+    "leisure": 476,
     "kids": 42,
-    "hotel": 31,
+    "hotel": 32,
     "product": 40
    }
   }

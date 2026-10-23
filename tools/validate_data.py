@@ -118,7 +118,7 @@ def check_file(path, cache_path=None):
             warned = set()
             if m:
                 warned = {int(x) for x in m.group(1).split("/")}
-            expect = {wv for wv in (2, 3) if wv not in waves}
+            expect = {wv for wv in (1, 2, 3) if wv not in waves}
             if expect != warned:
                 errs.append("C10 波次口径矛盾：缓存缺 %s，§0 警告缺 %s"
                             % (sorted(expect), sorted(warned)))

@@ -923,14 +923,22 @@ S-0 候选枚举（不靠记忆，靠检索）
 | 该城未建库 | 用 `verify_generic.py` 实时查，或跑 `amap_collect.py --city <市>` |
 | 数据可疑要复核 | 读 §0 可信度与 §12 校对待办，原始 JSON 在 `.cache/amap/raw/<市>.json` |
 
-**给其他技能/网站的机读出口**
+**给其他技能/网站的机读出口（v0.8.0 起 FUN 网站双格式开放）**
 
 | 出口 | 内容 |
 |---|---|
+| `https://fun.worldstip.com/api/index.json` | 全国总索引：省 → 市 → 轻量 meta + 评级统计 |
+| `https://fun.worldstip.com/api/cities/<adcode>.json` | 城市全量结构化数据（商圈档案+详情/美食/休闲/儿童/商场/特产/酒店/关联/查询面） |
+| `https://fun.worldstip.com/api/provinces/<省>.json` | 省级汇总 |
+| `https://fun.worldstip.com/api/food/top.json` | 全国美食榜（按评分，含图与城市跳转） |
+| `https://fun.worldstip.com/api/districts/top.json` | 全国 S/A 级商圈榜 |
+| `https://fun.worldstip.com/api/stats.json` | 全站统计快照 |
+| `https://fun.worldstip.com/md/<省>/<市>.md` | 城市档案 Markdown 原文（skill 直读，与 JSON 同源同值） |
 | `data/_status.tsv` | 全部城市的 POI 数/查询面/波次/告警 |
-| `site/data.json` | 结构化索引（城市/省份/adcode/POI 数/波次/URL） |
+| `site/data.json` | 兼容旧版轻量索引（城市/省份/adcode/POI 数/波次/URL） |
 | `data/行政层级总览.md` + `.cache/amap/hierarchy.json` | 43,474 个行政节点（省→镇街），村级高德不提供 |
-| `site/` | 由 md 生成的静态网站（部署方案见 `docs/fun.worldstip.com部署方案.md`） |
+| `site/` | FUN 苹果风静态网站（hero + 389 城页 + 32 省页 + 接口文档，部署见 `docs/fun.worldstip.com部署方案.md`） |
+| GitHub 备份 | `MrdT-BitsNote/fun`（public，网站 + 数据 + 工具链全量） |
 
 **数据层纪律（五条）**
 
@@ -953,11 +961,13 @@ S-0 候选枚举（不靠记忆，靠检索）
 | 单城补采 | `python tools/amap_collect.py --city <市>` |
 | 只补新维度（酒店/动物园/百货奥莱） | `python tools/amap_collect.py --city <市> --wave 2` |
 | 只补休闲娱乐（KTV/影院/体育馆/足疗/卡丁车） | `python tools/amap_collect.py --city <市> --wave 3` |
+| 只补基础面（美食/特产/商圈，残档修复） | `python tools/amap_collect.py --city <市> --wave 1 --force` |
 | 重渲染 md | `python tools/render_md.py --all` |
 | 重建索引（含省级页） | `python tools/build_index.py` |
 | 全量校验 | `python tools/validate_data.py`（10 项规则） |
 | 重建行政层级 | `python tools/fetch_district_tree.py && python tools/build_hierarchy.py --md` |
-| 生成静态网站 | `python tools/build_site.py` → `site/` |
+| 生成 JSON 数据层 | `python tools/build_api.py` → `site/api/` + `site/md/` |
+| 生成 FUN 网站 | `python tools/build_fun_site.py` → `site/*.html` + `assets/` |
 
 ⚠️ **采集预算是硬闸**：高德个人 key 有日配额，`amap_collect.py` 每城约耗
 78 请求（wave1 50 + wave2 14 + wave3 15）。批量跑全国前必须估算并在命令中给
@@ -989,6 +999,13 @@ IP 拒绝造成的空结果渲染成「该城无美食」的假档案。
 ⚠️ **限速纪律（v0.6.2 用户明确要求）**：默认单请求间隔 0.6s、城间 2s、
 每 100 请求长休 10s，`--pace` 可调。宁可慢，不可错——错误的空结果
 比慢更致命。
+
+⚠️ **残档事故与防线（v0.8.0 实测）**：v0.6.0 的 IP 白名单事故曾让 22 城
+（含北京市）只采到 wave2/3、**wave1 美食面永久缺失**，而渲染器与校验器
+当时只监控 wave2/3，缺口被静默吞掉。v0.8.0 起双边修复：
+`render_md.py` 的 `miss` 与 `validate_data.py` 的 C10 都按 (1,2,3) 全波次
+核对；修复手段是 `--city <市> --wave 1 --force` 补采基础面。
+**教训：波次监控必须覆盖全部波次，`waves=[2,3]` 不等于完整档案。**
 
 ---
 

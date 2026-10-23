@@ -2,12 +2,12 @@
  "province": "吉林省",
  "stats": {
   "cities": 9,
-  "poi": 1559,
+  "poi": 7456,
   "grades": {
-   "S": 0,
-   "A": 0,
-   "B": 46,
-   "C": 314
+   "S": 5,
+   "A": 146,
+   "B": 120,
+   "C": 89
   }
  },
  "cities": [
@@ -15,243 +15,261 @@
    "city": "吉林市",
    "province": "吉林省",
    "adcode": "220200",
-   "poi": 194,
+   "poi": 960,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:44:26",
+   "updated": "2026-10-23 21:58:37",
    "page": "cities/220200.html",
    "json": "api/cities/220200.json",
    "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E5%90%89%E6%9E%97%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 9,
-    "C": 31
+    "A": 20,
+    "B": 11,
+    "C": 9
    },
    "dims": {
-    "food": 0,
-    "district": 58,
-    "leisure": 82,
-    "kids": 12,
+    "food": 286,
+    "district": 157,
+    "leisure": 386,
+    "kids": 42,
     "hotel": 32,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "四平市",
    "province": "吉林省",
    "adcode": "220300",
-   "poi": 167,
+   "poi": 757,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:45:21",
+   "updated": "2026-10-23 21:59:16",
    "page": "cities/220300.html",
    "json": "api/cities/220300.json",
    "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E5%9B%9B%E5%B9%B3%E5%B8%82.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 0,
-    "C": 40
+    "S": 2,
+    "A": 18,
+    "B": 9,
+    "C": 11
    },
    "dims": {
-    "food": 0,
-    "district": 54,
-    "leisure": 65,
-    "kids": 9,
+    "food": 269,
+    "district": 124,
+    "leisure": 262,
+    "kids": 25,
     "hotel": 26,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "延边朝鲜族自治州",
    "province": "吉林省",
    "adcode": "222400",
-   "poi": 180,
+   "poi": 902,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:46:24",
+   "updated": "2026-10-23 22:00:42",
    "page": "cities/222400.html",
    "json": "api/cities/222400.json",
    "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E5%BB%B6%E8%BE%B9%E6%9C%9D%E9%B2%9C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 2,
-    "C": 38
+    "S": 1,
+    "A": 19,
+    "B": 8,
+    "C": 12
    },
    "dims": {
-    "food": 3,
-    "district": 55,
-    "leisure": 74,
-    "kids": 8,
+    "food": 300,
+    "district": 139,
+    "leisure": 339,
+    "kids": 40,
     "hotel": 30,
-    "product": 1
+    "product": 41
    }
   },
   {
    "city": "松原市",
    "province": "吉林省",
    "adcode": "220700",
-   "poi": 167,
+   "poi": 809,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:45:08",
+   "updated": "2026-10-23 22:04:08",
    "page": "cities/220700.html",
    "json": "api/cities/220700.json",
    "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E6%9D%BE%E5%8E%9F%E5%B8%82.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 3,
-    "C": 37
+    "S": 1,
+    "A": 15,
+    "B": 14,
+    "C": 10
    },
    "dims": {
-    "food": 0,
-    "district": 56,
-    "leisure": 63,
-    "kids": 7,
+    "food": 277,
+    "district": 109,
+    "leisure": 299,
+    "kids": 37,
     "hotel": 28,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "白城市",
    "province": "吉林省",
    "adcode": "220800",
-   "poi": 158,
+   "poi": 718,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:44:54",
+   "updated": "2026-10-23 22:04:47",
    "page": "cities/220800.html",
    "json": "api/cities/220800.json",
    "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E7%99%BD%E5%9F%8E%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 11,
-    "C": 29
+    "A": 15,
+    "B": 22,
+    "C": 3
    },
    "dims": {
-    "food": 0,
-    "district": 59,
-    "leisure": 59,
-    "kids": 5,
+    "food": 263,
+    "district": 115,
+    "leisure": 251,
+    "kids": 15,
     "hotel": 24,
-    "product": 0
+    "product": 40
    }
   },
   {
    "city": "白山市",
    "province": "吉林省",
    "adcode": "220600",
-   "poi": 152,
+   "poi": 700,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:46:11",
+   "updated": "2026-10-23 22:05:25",
    "page": "cities/220600.html",
    "json": "api/cities/220600.json",
    "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E7%99%BD%E5%B1%B1%E5%B8%82.md",
    "grades": {
-    "S": 0,
-    "A": 0,
-    "B": 7,
-    "C": 33
+    "S": 1,
+    "A": 15,
+    "B": 19,
+    "C": 5
    },
    "dims": {
-    "food": 1,
-    "district": 56,
-    "leisure": 57,
-    "kids": 4,
-    "hotel": 27,
-    "product": 0
+    "food": 273,
+    "district": 111,
+    "leisure": 222,
+    "kids": 21,
+    "hotel": 29,
+    "product": 40
    }
   },
   {
    "city": "辽源市",
    "province": "吉林省",
    "adcode": "220400",
-   "poi": 144,
+   "poi": 662,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:45:44",
+   "updated": "2026-10-23 22:07:30",
    "page": "cities/220400.html",
    "json": "api/cities/220400.json",
    "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E8%BE%BD%E6%BA%90%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 7,
-    "C": 33
+    "A": 16,
+    "B": 14,
+    "C": 10
    },
    "dims": {
-    "food": 0,
-    "district": 54,
-    "leisure": 53,
-    "kids": 1,
+    "food": 255,
+    "district": 107,
+    "leisure": 214,
+    "kids": 21,
     "hotel": 30,
-    "product": 0
+    "product": 23
    }
   },
   {
    "city": "通化市",
    "province": "吉林省",
    "adcode": "220500",
-   "poi": 162,
+   "poi": 778,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:45:57",
+   "updated": "2026-10-23 22:08:10",
    "page": "cities/220500.html",
    "json": "api/cities/220500.json",
    "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E9%80%9A%E5%8C%96%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 5,
-    "C": 35
+    "A": 20,
+    "B": 12,
+    "C": 8
    },
    "dims": {
-    "food": 2,
-    "district": 56,
-    "leisure": 67,
-    "kids": 8,
-    "hotel": 25,
-    "product": 0
+    "food": 286,
+    "district": 117,
+    "leisure": 286,
+    "kids": 21,
+    "hotel": 27,
+    "product": 40
    }
   },
   {
    "city": "长春市",
    "province": "吉林省",
    "adcode": "220100",
-   "poi": 235,
+   "poi": 1170,
    "waves": [
-    2
+    1,
+    2,
+    3
    ],
-   "updated": "2026-10-23 19:44:40",
+   "updated": "2026-10-23 22:08:56",
    "page": "cities/220100.html",
    "json": "api/cities/220100.json",
    "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E9%95%BF%E6%98%A5%E5%B8%82.md",
    "grades": {
     "S": 0,
-    "A": 0,
-    "B": 2,
-    "C": 38
+    "A": 8,
+    "B": 11,
+    "C": 21
    },
    "dims": {
-    "food": 2,
-    "district": 66,
-    "leisure": 84,
-    "kids": 16,
-    "hotel": 30,
-    "product": 0
+    "food": 306,
+    "district": 230,
+    "leisure": 459,
+    "kids": 55,
+    "hotel": 34,
+    "product": 40
    }
   }
  ]

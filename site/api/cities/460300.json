@@ -3,9 +3,10 @@
  "province": "海南省",
  "poi_total": 9,
  "waves": [
+  1,
   2
  ],
- "updated": "2026-10-23 19:37:56",
+ "updated": "2026-10-23 22:11:43",
  "credibility": {
   "poi_total": 9,
   "rated_ratio": "56%",
@@ -339,11 +340,6 @@
   {
    "dim": "kids",
    "query": "关键词:电玩城",
-   "hits": 0
-  },
-  {
-   "dim": "kids",
-   "query": "关键词:游乐场",
    "hits": 0
   },
   {
