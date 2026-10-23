@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-全国省市「美食 × 商圈 × 娱乐」md 生成器 v0.7.0
+全国省市「美食 × 商圈 × 娱乐」md 生成器 v0.7.1
+
+v0.7.1：休闲娱乐分类体系（原「成人娱乐」正名扩展）+ 商圈载体判定修复
+（剥离分店后缀，防门店误判为商圈载体）
 
 把 .cache/amap/raw/{城市}.json 渲染成可查、可校对的 md 档案。
 
@@ -24,7 +27,7 @@ v0.7.0 结构重构（吸收同类产品优点后重设计）
   0. 数据可信度
   1. 城市总览（行政层级 + 商圈分布统计 + 业态构成）
   2. 商圈档案（每商圈：画像 + 业态分布总结 + 评级 S/A/B/C）
-  3. 成人娱乐（酒吧/酒馆/livehouse/密室/KTV/影院/棋牌/电玩）
+  3. 休闲娱乐（KTV/夜店/酒吧/清吧/游乐场/卡丁车/体育馆/足疗按摩/影院/游戏厅）
   4. 儿童与亲子（儿童乐园/淘气堡/迷你游乐场/亲子乐园/迷你动物园/萌宠/电玩）
   5. 综合体与商场（购物中心/百货/奥莱/批发城）
   6. 本地美食与特色美食
@@ -49,6 +52,7 @@ import collections
 import json
 import math
 import os
+import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, ".cache", "amap", "raw")
@@ -70,11 +74,12 @@ TC = {
              "060400", "060401", "060402", "060500"),
     "street": ("061000", "061001", "061002", "061100", "061101"),
     "night": ("080304", "080301", "080302", "080303", "080305"),
-    "ent": ("080300", "080301", "080302", "080303", "080304", "080305",
-            "080400", "080401", "080402", "080500", "080501", "080502",
-            "080503", "080504", "080505", "080506", "080507", "080508",
-            "080600", "080601", "080602", "080603", "080700", "080701",
-            "080702", "080703"),
+    # 休闲娱乐（v0.7.1）：酒吧/KTV/电影院/运动场馆/游乐场全族
+    "leisure": ("080300", "080301", "080302", "080303", "080304", "080305",
+                "080400", "080401", "080402", "080500", "080501", "080502",
+                "080503", "080504", "080505", "080506", "080507", "080508",
+                "080600", "080601", "080602", "080603", "080700", "080701",
+                "080702", "080703"),
     "kids": ("080501", "080502", "080503", "080504", "080505", "080506",
              "080507", "080508"),
 }
@@ -101,27 +106,48 @@ SMALL_SHOP_KW = ("小馆", "排挡", "家常", "私房", "苍蝇馆", "小店", 
 LOCAL_DISH_KW = ("本地菜", "地方菜", "土菜", "特色", "老字号", "传统",
                  "家乡", "农家", "私房", "正宗", "小吃")
 
-# 成人娱乐细分
-ADULT_ENT = [
-    ("酒吧/酒馆", ("酒吧", "酒馆", "bar ", "Bar", "CLUB", "club", "夜店",
-                  "Speakeasy", "speakeasy", "清吧", "啤酒吧")),
+# 休闲娱乐细分（v0.7.1：原「成人娱乐」正名并扩展语义）
+# 覆盖：KTV/量贩KTV、夜店、酒吧、清吧、游乐场（成人向）、卡丁车、
+#       体育馆/运动场馆、洗脚按摩（足疗/足浴/推拿）、电影院、游戏厅、
+#       桌游、蹦床、密室逃脱、剧本杀、棋牌
+LEISURE_ENT = [
+    ("酒吧/清吧", ("酒吧", "酒馆", "清吧", "啤酒吧", "精酿", "bar ", "Bar",
+                   "BAR", "CLUB", "club", "夜店", "Speakeasy", "speakeasy",
+                   "小酒馆", "酒馆")),
     ("Livehouse", ("livehouse", "Livehouse", "LIVEHOUSE", "LiveHouse",
-                  "LIVE", " liveshow", "LIVESHOW")),
+                   " liveshow", "LIVESHOW")),
+    ("KTV/夜总会", ("KTV", "ktv", "量贩式KTV", "卡拉OK", "歌厅", "夜总会")),
+    ("电影院", ("电影院", "影城", "影剧院", "剧院", "影咖")),
+    ("游戏厅/电玩", ("电玩", "游戏厅", "游戏城", "桌游")),
     ("密室逃脱/剧本杀", ("密室", "剧本杀", "推理馆")),
-    ("KTV", ("KTV", "ktv", "量贩式KTV", "卡拉OK")),
-    ("电影院", ("电影院", "影城", "影剧院", "剧院")),
     ("棋牌室", ("棋牌", "麻将馆")),
-    ("电玩城", ("电玩", "游戏厅", "游戏城")),
+    ("运动场馆/体育馆", ("体育馆", "体育中心", "运动馆", "体育场", "体育馆",
+                        "健身中心", "健身房")),
+    ("卡丁车/赛车", ("卡丁车", "赛车", "竞速")),
+    ("足疗按摩", ("足疗", "足浴", "按摩", "推拿", "艾灸", "spa", "SPA",
+                  "沐足", "养生会所")),
+    ("游乐场（成人向）", ("游乐场", "游乐园", "蹦床", "蹦极", "运动公园")),
+    ("水上乐园/游泳馆", ("水上乐园", "水世界", "游泳馆", "游泳场", "水上活动")),
+    ("度假村/农家乐", ("度假村", "农家乐", "生态园", "采摘", "疗养")),
+    ("网吧/网咖/电竞", ("网咖", "网吧", "电竞", "网鱼")),
 ]
-# 儿童娱乐细分
+# 儿童娱乐细分（仅儿童向；成人向游乐场归休闲娱乐）
 KIDS_ENT = [
     ("迷你动物园/萌宠", ("动物园", "萌宠", "宠物乐园", "动物乐园")),
     ("儿童乐园/游乐场", ("儿童乐园", "游乐场", "游乐园", "儿童游乐")),
     ("淘气堡", ("淘气堡",)),
     ("迷你游乐场", ("迷你游乐",)),
     ("亲子乐园", ("亲子", "儿童成长", "儿童体验")),
-    ("电玩城", ("电玩", "游戏厅")),
 ]
+
+# 儿童向判定词：命中即归儿童类，不进休闲娱乐（即使名称含「游乐场」）
+KIDS_ONLY = ("儿童", "亲子", "淘气堡", "迷你", "孕婴童", "婴童", "少儿")
+# 强餐饮词：名称命中且不含娱乐词时，判定为餐饮店而非娱乐场所
+# （v0.7.1 实测：高德会给餐酒吧/园区餐厅打混合 type，
+#  「网网有鱼特色河鲜」type=娱乐场所;酒吧 但实为餐厅）
+FOOD_STRONG = ("菜", "餐厅", "饭", "粉", "面馆", "海鲜", "河鲜", "火锅",
+               "烧烤", "酒楼", "小吃", "农家", "食堂", "粥", "烤鱼",
+               "龙虾", "牛肉", "羊肉", "鸡", "鸭", "鱼")
 
 
 def haversine(lat1, lng1, lat2, lng2):
@@ -134,6 +160,23 @@ def haversine(lat1, lng1, lat2, lng2):
     a = (math.sin(dp / 2) ** 2
          + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2)
     return 2 * R * math.asin(math.sqrt(a))
+
+
+def strip_branch(name):
+    """剥离分店区位后缀：「盛香亭转转热卤(岳阳步行街店)」→「盛香亭转转热卤」。
+
+    v0.7.1 修复：门店名带区位后缀（步行街店/美食街店/百盛广场旗舰店）
+    会让名称判定把门店误判成商圈载体——实测岳阳 §2 商圈档案混入了
+    「酒蜗KTV(岳阳北辅街店)」「盛香亭(岳阳步行街店)」等门店。
+    判定载体前必须先剥后缀；地址同样不参与载体判定（地址里的
+    「XX路/百货」是门店位置，不是门店性质）。
+    """
+    n = name or ""
+    prev = None
+    while prev != n:
+        prev = n
+        n = re.sub(r"[（(][^）)]*[）)]\s*$", "", n).strip()
+    return n
 
 
 def has_ctx(text, words):
@@ -178,8 +221,8 @@ def is_mall(text):
 
 
 def carrier_of(poi):
-    """POI 的商圈载体类型（名称优先，类型码兜底）。"""
-    name = poi.get("name") or ""
+    """POI 的商圈载体类型（剥离分店后缀后按名称判定，类型码兜底）。"""
+    name = strip_branch(poi.get("name") or "")
     ty = poi.get("type") or ""
     blob = name + " " + ty
     for label, kws in CARRIER_RULES:
@@ -336,7 +379,7 @@ def render_city(city, cache, prov_name, hier=None):
             if p.get("id"):
                 facets[p["id"]].add(q.get("facet"))
 
-    food, product, district, night, kids, hotel, adult = \
+    food, product, district, night, kids, hotel, leisure = \
         [], [], [], [], [], [], []
     for p in pois:
         fs = facets.get(p["id"], set())
@@ -350,22 +393,49 @@ def render_city(city, cache, prov_name, hier=None):
         # 特产
         if "product" in fs or ("特产" in blob):
             product.append(p)
-        # 商圈载体
-        if ("district" in fs or tc_in(p, "street") or tc_in(p, "mall")
-                or has_ctx(blob, STREET_CTX) or is_mall(blob)):
+        # 商圈载体（v0.7.1：三重修正）
+        # ① 剥离分店后缀后按名称判定——「盛香亭(岳阳步行街店)」不是载体
+        # ② 地址不参与判定——地址含「XX路/百货」是位置不是性质
+        # ③ 类型码护栏：06 购物服务 或 050000 餐饮相关场所（高德把
+        #    美食街/夜市归在 050000）；050100+ 是具体餐厅，不是载体。
+        #    实测：关键词"小吃街"夹带「细毛私房菜」tc=050100，
+        #    "本地菜"返回「巴陵玖号老街菜馆」名称含"老街" tc=050100
+        core_name = strip_branch(name)
+        tc = p.get("typecode") or ""
+        is_carrier_tc = tc.startswith("06") or tc == "050000"
+        if (is_carrier_tc
+                and ("district" in fs or tc_in(p, "street")
+                     or tc_in(p, "mall") or has_ctx(core_name, STREET_CTX)
+                     or is_mall(core_name))):
             district.append(p)
-        # 夜生活（成人）
-        if "nightlife" in fs or "adult" in fs or tc_in(p, "night"):
+        # 夜生活（酒吧/酒馆/livehouse，休闲娱乐的酒吧子类来源）
+        if "nightlife" in fs or tc_in(p, "night"):
             night.append(p)
-        # 儿童
+        # 休闲娱乐（v0.7.1：原成人娱乐，含 wave3 补采面与语义兜底）
+        ent_kw = ("密室", "剧本杀", "KTV", "ktv", "电影院",
+                  "影城", "影剧院", "棋牌", "游戏厅", "游戏城",
+                  "足疗", "足浴", "按摩", "推拿", "艾灸",
+                  "卡丁车", "体育馆", "体育中心", "蹦床", "网咖",
+                  "网吧", "电竞")
+        if ("leisure" in fs or "adult" in fs or tc_in(p, "leisure")
+                or has_ctx(blob, ent_kw)):
+            # 儿童向游乐场（儿童乐园/亲子/淘气堡/迷你）归儿童类，不进休闲娱乐
+            if has_ctx(name + addr, KIDS_ONLY):
+                pass
+            # 餐饮护栏：名称是强餐饮词且无任何娱乐语义，判为餐厅
+            elif (has_ctx(name, FOOD_STRONG)
+                  and not has_ctx(name, ("吧", "CLUB", "club", "酒", "咖",
+                                         "KTV", "ktv", "影", "玩", "乐"))):
+                pass
+            else:
+                leisure.append(p)
+        # 儿童（仅儿童向）
         if "kids" in fs or has_ctx(blob, (
                 "儿童乐园", "电玩", "游乐场", "淘气堡", "亲子",
                 "儿童体验", "迷你游乐", "动物园", "萌宠")):
-            kids.append(p)
-        # 成人娱乐（密室/KTV/影院/棋牌）
-        if has_ctx(blob, ("密室", "剧本杀", "KTV", "ktv", "电影院", "影城",
-                          "影剧院", "棋牌", "游戏厅", "游戏城")):
-            adult.append(p)
+            if has_ctx(name + addr, KIDS_ONLY) or has_ctx(
+                    name, ("儿童乐园", "淘气堡", "亲子", "迷你", "萌宠")):
+                kids.append(p)
         # 酒店
         if "hotel" in fs or tc_in(p, "hotel"):
             hotel.append(p)
@@ -379,24 +449,24 @@ def render_city(city, cache, prov_name, hier=None):
             out.append(p)
         return out
 
-    food, product, district, night, kids, hotel, adult = (
+    food, product, district, night, kids, hotel, leisure = (
         dedup(food), dedup(product), dedup(district), dedup(night),
-        dedup(kids), dedup(hotel), dedup(adult))
+        dedup(kids), dedup(hotel), dedup(leisure))
 
     def key(p):
         try:
             return -float(p.get("rating") or 0)
         except (TypeError, ValueError):
             return 0
-    for lst in (food, product, district, night, kids, hotel, adult):
+    for lst in (food, product, district, night, kids, hotel, leisure):
         lst.sort(key=key)
 
-    # 商圈关联（美食 + 夜生活 + 儿童 + 酒店）
-    night_adult = dedup(night + adult)      # 两列表有重叠，先去重再关联
+    # 商圈关联（美食 + 休闲娱乐 + 儿童 + 酒店）
+    leisure_all = dedup(night + leisure)   # 两列表有重叠，先去重再关联
     linked = link_poi_to_district(
-        food + night_adult + kids + hotel, district[:60])
+        food + leisure_all + kids + hotel, district[:60])
     food_linked = link_poi_to_district(food, district[:60])
-    night_linked = link_poi_to_district(night_adult, district[:60])
+    leisure_linked = link_poi_to_district(leisure_all, district[:60])
     kids_linked = link_poi_to_district(kids, district[:60])
     hotel_linked = link_poi_to_district(hotel, district[:60])
 
@@ -426,16 +496,22 @@ def render_city(city, cache, prov_name, hier=None):
     rated = sum(1 for p in pois if p.get("rating"))
     w("| 有评分的比例 | %.0f%% | 无评分者标 ⚠️，不强行推荐 |"
       % (100.0 * rated / max(len(pois), 1)))
-    w("| 维度覆盖 | 美食 %d · 商圈 %d · 成人娱乐 %d · 儿童娱乐 %d · 酒店 %d · 特产 %d | 各维度去重计数 |"
-      % (len(food), len(district), len(night) + len(adult),
+    w("| 维度覆盖 | 美食 %d · 商圈 %d · 休闲娱乐 %d · 儿童娱乐 %d · 酒店 %d · 特产 %d | 各维度去重计数 |"
+      % (len(food), len(district), len(leisure_all),
          len(kids), len(hotel), len(product)))
     if errs:
         w("| ⚠️ 采集告警 | %d 条 | %s |" % (len(errs), "；".join(errs[:3])))
     else:
         w("| 采集告警 | 0 | 本次采集无配额或接口错误 |")
-    if 2 not in waves:
-        w("| ⚠️ 维度不全 | 缺 wave2 | 本档案未含酒店/迷你动物园/成人娱乐补采面，"
-          "需跑 `amap_collect.py --city %s --wave 2` |" % city)
+    miss = [wv for wv in (2, 3) if wv not in waves]
+    if miss:
+        miss_desc = {2: "酒店/迷你动物园/百货奥莱",
+                     3: "休闲娱乐（KTV/影院/体育馆/足疗/卡丁车）"}
+        w("| ⚠️ 维度不全 | 缺 wave%s | 本档案未含%s补采面，"
+          "需跑 `amap_collect.py --city %s --wave %s` |"
+          % ("/".join(str(m) for m in miss),
+             "、".join(miss_desc[m] for m in miss), city,
+             "/".join(str(m) for m in miss)))
     w("")
 
     # ── 1. 城市总览 ──
@@ -471,10 +547,14 @@ def render_city(city, cache, prov_name, hier=None):
     w("")
     w("**商圈载体类型构成**（%d 处商圈锚点）：" % len(district))
     w("")
-    w("| 载体类型 | 数量 |")
-    w("|---|---|")
-    for k, v in carrier_cnt.most_common():
-        w("| %s | %d |" % (k, v))
+    if w_or_none(w, carrier_cnt.most_common(),
+                 "本城未采集到购物服务类（06 开头）或餐饮相关场所"
+                 "（050000）POI，无商圈锚点"):
+        w("")
+        w("| 载体类型 | 数量 |")
+        w("|---|---|")
+        for k, v in carrier_cnt.most_common():
+            w("| %s | %d |" % (k, v))
     w("")
 
     # ── 2. 商圈档案 ──
@@ -495,7 +575,7 @@ def render_city(city, cache, prov_name, hier=None):
     for p in district[:40]:
         dname = p.get("name") or ""
         lf = food_linked.get(dname, [])
-        ln = night_linked.get(dname, [])
+        ln = leisure_linked.get(dname, [])
         lk = kids_linked.get(dname, [])
         lh = hotel_linked.get(dname, [])
         g, why = district_grade(p, lf, ln, lk, lh)
@@ -506,7 +586,7 @@ def render_city(city, cache, prov_name, hier=None):
     if not w_or_none(w, graded, "本城未采集到商圈锚点 POI"):
         w("")
     else:
-        w("| 评级 | 商圈名 | 载体类型 | 评分 | 关联美食 | 成人娱乐 | 儿童娱乐 | 酒店 |")
+        w("| 评级 | 商圈名 | 载体类型 | 评分 | 关联美食 | 休闲娱乐 | 儿童娱乐 | 酒店 |")
         w("|---|---|---|---|---|---|---|---|")
     for g, p, lf, ln, lk, lh, why in graded[:40]:
         w("| %s | %s | %s | %s | %d | %d | %d | %d |" % (
@@ -530,13 +610,13 @@ def render_city(city, cache, prov_name, hier=None):
             w("- **消费带宽**：待人工校对（高德未收录人均）")
         mr = main_road_of([f for f, _d, _m in lf])
         w("- **动线主轴**：%s" % (mr or "待人工校对（关联 POI 地址无道路词）"))
-        w("- **业态分布**：美食 %d · 成人娱乐 %d · 儿童娱乐 %d · 酒店 %d"
+        w("- **业态分布**：美食 %d · 休闲娱乐 %d · 儿童娱乐 %d · 酒店 %d"
           % (len(lf), len(ln), len(lk), len(lh)))
         # 业态分布总结表
         rows = [
             ("步行街/商业街载体", [p]),
             ("美食", [f for f, _d, _m in lf]),
-            ("成人娱乐", [f for f, _d, _m in ln]),
+            ("休闲娱乐", [f for f, _d, _m in ln]),
             ("儿童娱乐", [f for f, _d, _m in lk]),
             ("酒店配套", [f for f, _d, _m in lh]),
         ]
@@ -552,14 +632,15 @@ def render_city(city, cache, prov_name, hier=None):
                 "、".join(cell(x.get("name")) for x in top)))
         w("")
 
-    # ── 3. 成人娱乐 ──
-    w("## 3. 成人娱乐（%d 家）" % (len(night) + len(adult)))
+    # ── 3. 休闲娱乐（v0.7.1：原成人娱乐正名，含 KTV/夜店/酒吧/清吧/
+    #     游乐场/卡丁车/体育馆/足疗按摩/影院/游戏厅/桌游/密室/棋牌）──
+    w("## 3. 休闲娱乐（%d 家）" % len(leisure_all))
     w("")
-    adult_all = dedup(night + adult)
     sub_cnt = collections.Counter()
-    for p in adult_all:
-        blob = (p.get("name") or "") + " " + (p.get("address") or "")
-        for label, kws in ADULT_ENT:
+    for p in leisure_all:
+        blob = ((p.get("name") or "") + " " + (p.get("address") or "") + " "
+                + (p.get("type") or ""))
+        for label, kws in LEISURE_ENT:
             if has_ctx(blob, kws):
                 sub_cnt[label] += 1
                 break
@@ -571,15 +652,16 @@ def render_city(city, cache, prov_name, hier=None):
         for k, v in sub_cnt.most_common():
             w("| %s | %d |" % (k, v))
         w("")
-    if w_or_none(w, adult_all, "本城未采集到成人娱乐 POI"):
+    if w_or_none(w, leisure_all, "本城未采集到休闲娱乐 POI"):
         w("")
         w("| 标记 | 名称 | 子类 | 类型 | 评分 | 人均 | 地址 |")
         w("|---|---|---|---|---|---|---|")
-    for p in adult_all[:60]:
+    for p in leisure_all[:60]:
         mk, _ = mark_poi(p)
-        blob = (p.get("name") or "") + " " + (p.get("address") or "")
+        blob = ((p.get("name") or "") + " " + (p.get("address") or "") + " "
+                + (p.get("type") or ""))
         sub = "其他娱乐场所"
-        for label, kws in ADULT_ENT:
+        for label, kws in LEISURE_ENT:
             if has_ctx(blob, kws):
                 sub = label
                 break
@@ -588,9 +670,9 @@ def render_city(city, cache, prov_name, hier=None):
             (p.get("type") or "").replace("|", "/"),
             p.get("rating") or "—", p.get("cost") or "—",
             cell(p.get("address"))))
-    if len(adult_all) > 60:
+    if len(leisure_all) > 60:
         w("")
-        w("（另 %d 家见 §11 原始数据）" % (len(adult_all) - 60))
+        w("（另 %d 家见 §11 原始数据）" % (len(leisure_all) - 60))
     w("")
 
     # ── 4. 儿童与亲子 ──
@@ -737,6 +819,10 @@ def render_city(city, cache, prov_name, hier=None):
       "② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，"
       "因为景区边界、跨街区的误配都靠距离无法排除。")
     w("")
+    if not linked:
+        w("（本城商圈锚点与餐饮 POI 无互证/就近关联——可能是锚点过少"
+          "或餐饮 POI 距离均超 600m，需人工补充）")
+        w("")
     for dname, lst in list(linked.items())[:25]:
         w("### %s（%d 家）" % (cell(dname), len(lst)))
         w("")
@@ -814,7 +900,7 @@ def render_city(city, cache, prov_name, hier=None):
     if errs:
         todo.append("采集有告警：%s" % "；".join(errs[:3]))
     if 2 not in waves:
-        todo.append("本档案缺 wave 2 维度（酒店/迷你动物园/成人娱乐/百货奥莱），"
+        todo.append("本档案缺 wave 2 维度（酒店/迷你动物园/百货奥莱），"
                     "需补采。")
     todo.append("本城 POI 覆盖 %d 个区县：%s——缺区县的需补充采集。"
                 % (len(adname_cnt), "、".join(sorted(adname_cnt))))

@@ -108,18 +108,20 @@ def check_file(path, cache_path=None):
         errs.append("C9 缺商圈评级判据说明")
 
     # C10 维度完整性：缓存波次与 §0「维度不全」警告必须双向一致
-    # （wave1 的 POI 也可能 incidental 命中酒店分类，所以不能以酒店
-    #  家数判断是否采了 wave2，只能以缓存 waves 字段与警告文本对照）
+    # （wave1 的 POI 也可能 incidental 命中酒店/休闲娱乐分类，所以不能以
+    #  家数判断是否采了某波，只能以缓存 waves 字段与警告文本对照）
     if cache_path and os.path.exists(cache_path):
         try:
             cache = json.load(open(cache_path, encoding="utf-8"))
             waves = cache.get("waves") or [1]
-            has_warn = "缺 wave2" in text
-            if 2 not in waves and not has_warn:
-                errs.append("C10 缓存未采 wave2 但 §0 无「缺 wave2」警告")
-            if 2 in waves and has_warn:
-                errs.append("C10 缓存已采 wave2 但 §0 仍警告「缺 wave2」，"
-                            "口径矛盾")
+            m = re.search(r"缺 wave(\d(?:/\d)*)", text)
+            warned = set()
+            if m:
+                warned = {int(x) for x in m.group(1).split("/")}
+            expect = {wv for wv in (2, 3) if wv not in waves}
+            if expect != warned:
+                errs.append("C10 波次口径矛盾：缓存缺 %s，§0 警告缺 %s"
+                            % (sorted(expect), sorted(warned)))
         except (ValueError, KeyError):
             pass
 

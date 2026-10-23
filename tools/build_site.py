@@ -395,7 +395,7 @@ def main():
     body = ('<main><div class="wrap">'
             '<div class="hero"><h1>全国美食 × 商圈 × 娱乐 数据库</h1>'
             '<p>覆盖全国 34 省级单位 · 389 个地级市 · '
-            '美食 / 商圈 / 成人娱乐 / 儿童亲子 / 酒店 / 特产 六维数据，'
+            '美食 / 商圈 / 休闲娱乐 / 儿童亲子 / 酒店 / 特产 六维数据，'
             '每城含商圈画像与 S/A/B/C 评级。数据可机读调用：'
             '<a href="data.json">data.json</a></p></div>'
             '<div class="stats">'

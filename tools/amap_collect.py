@@ -196,11 +196,13 @@ def request(params, retries=3, pause=None):
 #                         无法用类型码表达的本地概念
 # pages 表示最多翻几页（高德 offset 上限 25，超过即截断）
 #
-# v0.7.0 分两波：
+# v0.7.0 分三波：
 #   wave 1 = 原美食/特产/商圈/夜生活/儿童游乐面（51+69 城已采）
-#   wave 2 = 用户 v0.7 新增维度：酒店配套、迷你动物园/萌宠、成人娱乐
-#           （密室/KTV/影院/棋牌）、百货/奥莱/批发城
-#   --wave 2 可单独补采，与已有缓存合并，不重复采 wave 1。
+#   wave 2 = 用户 v0.7 新增维度：酒店配套、迷你动物园/萌宠、休闲娱乐
+#            （密室/KTV/影院/棋牌）、百货/奥莱/批发城
+#   wave 3 = 用户 v0.7.1 休闲娱乐扩展：运动场馆/电影院/KTV夜总会/足疗/
+#            按摩/卡丁车/清吧/夜店/桌游/蹦床/游乐场（成人向）/游戏厅
+#   --wave 2/3 可单独补采，与已有缓存合并，不重复采已有波次。
 QUERIES = [
     # ── wave 1 ──
     (1, "food", "类型:中餐厅",          dict(types="050100", pages=2)),
@@ -250,7 +252,7 @@ QUERIES = [
     (2, "kids", "关键词:萌宠乐园",       dict(keywords="萌宠乐园", pages=1)),
     (2, "kids", "关键词:室内动物园",     dict(keywords="室内动物园", pages=1)),
     (2, "kids", "关键词:动物园",        dict(keywords="动物园", pages=1)),
-    # ── wave 2：成人娱乐（密室/KTV/影院/棋牌）──
+    # ── wave 2：休闲娱乐初版（密室/KTV/影院/棋牌，v0.7.1 起并入 wave 3）──
     (2, "adult", "关键词:密室逃脱",      dict(keywords="密室逃脱", pages=1)),
     (2, "adult", "关键词:KTV",          dict(keywords="KTV", pages=1)),
     (2, "adult", "关键词:电影院",        dict(keywords="电影院", pages=1)),
@@ -260,6 +262,23 @@ QUERIES = [
     (2, "district", "关键词:奥特莱斯",    dict(keywords="奥特莱斯", pages=1)),
     (2, "district", "关键词:批发市场",    dict(keywords="批发市场", pages=1)),
     (2, "district", "关键词:商贸城",      dict(keywords="商贸城", pages=1)),
+    # ── wave 3：休闲娱乐（用户 v0.7.1 正名，「成人娱乐」→「休闲娱乐」）──
+    # 语义扩展：KTV/量贩KTV/夜店/酒吧/清吧/游乐场/卡丁车/体育馆/
+    #           洗脚按摩/电影院/游戏厅/桌游/蹦床/密室
+    # 类型码实测（v0.7.1 岳阳探测）：080101 运动场馆、080601 电影院、
+    # 080301 KTV/夜总会；足疗按摩与卡丁车高德无独立类型码，走关键词
+    (3, "leisure", "类型:运动场馆",      dict(types="080101", pages=2)),
+    (3, "leisure", "类型:影剧院",        dict(types="080601", pages=2)),
+    (3, "leisure", "类型:KTV/夜总会",    dict(types="080301", pages=2)),
+    (3, "leisure", "关键词:足疗",        dict(keywords="足疗", pages=2)),
+    (3, "leisure", "关键词:按摩",        dict(keywords="按摩", pages=1)),
+    (3, "leisure", "关键词:卡丁车",       dict(keywords="卡丁车", pages=1)),
+    (3, "leisure", "关键词:清吧",        dict(keywords="清吧", pages=1)),
+    (3, "leisure", "关键词:夜店",        dict(keywords="夜店", pages=1)),
+    (3, "leisure", "关键词:桌游",        dict(keywords="桌游", pages=1)),
+    (3, "leisure", "关键词:蹦床",        dict(keywords="蹦床", pages=1)),
+    (3, "leisure", "关键词:游乐场",       dict(keywords="游乐场", pages=1)),
+    (3, "leisure", "关键词:游戏厅",       dict(keywords="游戏厅", pages=1)),
 ]
 
 
@@ -317,7 +336,7 @@ def normalize(p):
     }
 
 
-def collect_city(city, budget, verbose=False, dry=False, waves=(1, 2)):
+def collect_city(city, budget, verbose=False, dry=False, waves=(1, 2, 3)):
     """采集单城，返回该城缓存 dict。
 
     waves：跑哪几波查询面。补采时传 (2,) 只跑新增面，与已有缓存合并。
@@ -448,16 +467,16 @@ def main():
                     help="单请求间隔秒数（默认 0.6；越大越慢越稳）")
     ap.add_argument("--dry", action="store_true", help="不落盘")
     ap.add_argument("--force", action="store_true", help="重跑已完成城市")
-    ap.add_argument("--wave", default="1,2",
+    ap.add_argument("--wave", default="1,2,3",
                     help="跑哪些查询波次：1=基础面 2=新增面（酒店/动物园/"
-                         "成人娱乐/百货奥莱）。补采用 --wave 2")
+                         "休闲娱乐）。补采用 --wave 3")
     args = ap.parse_args()
     PACE["req"] = max(0.2, args.pace)
     try:
         waves = tuple(sorted({int(x) for x in args.wave.split(",")
                               if x.strip()}))
     except ValueError:
-        raise SystemExit("--wave 只能是 1 和/或 2，如 --wave 2")
+        raise SystemExit("--wave 只能是 1/2/3，如 --wave 3")
     if not waves:
         raise SystemExit("--wave 不能为空")
 
@@ -484,8 +503,8 @@ def main():
         if not args.force and prev.get("ok") and not run_waves:
             skipped += 1
             continue
-        if 2 in run_waves and 1 not in prev_waves and not args.force:
-            # 补采波次要求 wave1 已采；否则会造出只有新维度的残档
+        if run_waves and 1 not in prev_waves and not args.force:
+            # 补采波次（wave2/3）要求 wave1 已采；否则会造出只有新维度的残档
             skipped += 1
             continue
         if budget_left is not None and budget_left <= 0:
