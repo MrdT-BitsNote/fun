@@ -17,6 +17,11 @@
 4. **预算硬闸**：--budget 限制单次运行的总请求数，防止一次跑爆日配额。
 5. **offset 上限护栏**：高德 text 接口单次最多返回 20/25 条（视 types 而定），
    翻页上限 offset=25；count 大于 600 时说明被截断，显式标记 truncated。
+6. **限速纪律（v0.6.2）**：默认单请求间隔 0.6s、城间休息 2s、每 100 请求
+   长休 10s。高频连续请求会触发高德 IP 访问策略（10005 INVALID_USER_IP），
+   宁可慢，不可错——错误的空结果比慢更致命。
+7. **多 key 池（v0.6.1）**：keys.txt 存多个 key，主 key 被 IP 白名单拒绝
+   或无效时自动切换，成功后重置计数支持恢复。
 
 用法
 ----
@@ -43,10 +48,56 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(ROOT, ".cache", "amap")
 RAW = os.path.join(CACHE, "raw")
 PROGRESS = os.path.join(CACHE, "progress.json")
-
-KEY = os.environ.get("AMAP_KEY", "7ffb28318f588bbca7158f3f3840ec59")
+KEYS_FILE = os.path.join(CACHE, "keys.txt")
 
 PLACE_URL = "https://restapi.amap.com/v3/place/text"
+
+# ---------------------------------------------------------------- 凭据池
+# v0.6.1：单 key 被 IP 白名单锁死时整批中断（实测损失 168 城 × 13 分钟）。
+# 改为多 key 池：主 key 出现 IP 拒绝 / key 无效时自动切备用 key，
+# 每个 key 独立记录连续失败次数，恢复后自动切回。
+def load_keys():
+    keys = []
+    env = os.environ.get("AMAP_KEYS", "")
+    if env:
+        keys += [k.strip() for k in env.split(",") if k.strip()]
+    if os.path.exists(KEYS_FILE):
+        with open(KEYS_FILE, encoding="utf-8") as f:
+            keys += [ln.strip() for ln in f if ln.strip()]
+    # 去重保序
+    seen, out = set(), []
+    for k in keys:
+        if k not in seen:
+            seen.add(k)
+            out.append(k)
+    if not out:
+        raise SystemExit(
+            "未找到高德 key。设置环境变量 AMAP_KEYS（逗号分隔）"
+            "或写入 %s" % KEYS_FILE)
+    return out
+
+
+KEYS = load_keys()
+_key_state = {"idx": 0, "fail": [0] * len(KEYS)}
+
+
+def current_key():
+    return KEYS[_key_state["idx"]]
+
+
+def rotate_key(reason):
+    """切到下一个可用 key。返回新 key 序号。"""
+    old = _key_state["idx"]
+    n = len(KEYS)
+    for step in range(1, n + 1):
+        i = (old + step) % n
+        if _key_state["fail"][i] < 3:      # 连续失败 3 次的 key 暂时弃用
+            _key_state["idx"] = i
+            _key_state["fail"][old] = 0
+            print("    🔑 key %d → %d（%s）" % (old + 1, i + 1, reason))
+            return i
+    raise QuotaExceeded(
+        "全部 %d 个 key 均不可用（%s）——请检查 IP 白名单与配额" % (n, reason))
 
 # ---------------------------------------------------------------- 配额与错误
 class QuotaExceeded(RuntimeError):
@@ -62,19 +113,36 @@ class DistrictBlocked(RuntimeError):
     pass
 
 
-def request(params, retries=3, pause=0.35):
-    """统一请求入口：带重试、限流保护、错误分类。
+PACE = {"req": 0.6, "city": 2.0, "long": 10.0}   # 全局节流：单请求/城间/长休
 
-    v0.6.0 修正：10005 INVALID_USER_IP 属接口故障，不能当空结果处理。
-    重试间隔采用「递增退避 + 单次运行内动态降速」：
-    首次 1.5s，之后 3s/6s；同时把单次请求间隔从 0.35s 提到 0.55s，
-    降低连续高频触发 IP 策略的概率。
+
+def throttle(city_rest=False):
+    """限速：单请求间隔 + 城间休息 + 每 100 请求长休 10s。
+
+    v0.6.2 用户明确要求「节奏慢一点，太快容易出错」。
+    高频请求会触发高德 IP 访问策略（实测 INVALID_USER_IP 10005），
+    宁可慢，不可错——错误的空结果比慢更致命。
+    """
+    global _req_counter
+    _req_counter = getattr(sys.modules[__name__], "_req_counter", 0) + 1
+    if _req_counter % 100 == 0:
+        time.sleep(PACE["long"])
+    elif city_rest:
+        time.sleep(PACE["city"])
+    else:
+        time.sleep(PACE["req"])
+
+
+def request(params, retries=3, pause=None):
+    """统一请求入口：带重试、限流保护、错误分类、多 key 轮换。
+
+    v0.6.2：成功后重置该 key 失败计数（支持临时故障恢复）。
     """
     q = dict(params)
-    q["key"] = KEY
-    url = PLACE_URL + "?" + urllib.parse.urlencode(q)
     last = None
     for attempt in range(retries + 1):
+        q["key"] = current_key()
+        url = PLACE_URL + "?" + urllib.parse.urlencode(q)
         try:
             with urllib.request.urlopen(url, timeout=40) as r:
                 blob = json.loads(r.read().decode("utf-8"))
@@ -90,15 +158,25 @@ def request(params, retries=3, pause=0.35):
         if code == "10021" or "CUQPS" in info or "超" in info and "限" in info:
             raise QuotaExceeded("高德配额受限（%s）：%s" % (code, info[:100]))
         # INVALID_USER_IP（10005）：key 的 IP 白名单/访问策略拒绝。
-        # 实测（v0.6.0 全国建库）：连续请求约 40 城后开始零星出现，
-        # 影响 44 城全查询面失败。这不是「该城市没有数据」——
+        # 实测（v0.6.0 全国建库）：连续请求约 51 城后 key 开始对所有城市
+        # 返回 10005，影响 168 城全查询面失败。这不是「该城市没有数据」——
         # 若把空结果当真实数据落盘，会渲染出「0 家美食」的假档案，
-        # 与百度通道的静默降级事故同构。必须归类为可重试故障。
+        # 与百度通道的静默降级事故同构。
+        # v0.6.1：属 key 级问题，重试同 key 无效，直接轮换备用 key。
         if code == "10005" or "INVALID_USER_IP" in info:
+            _key_state["fail"][_key_state["idx"]] += 1
+            if len(KEYS) > 1:
+                # 有备用 key 就立即轮换重试（旧 key 的 IP 拒绝不会自愈）
+                rotate_key("INVALID_USER_IP")
+                continue
             raise DistrictBlocked(
                 "高德 IP 访问策略拒绝（%s）：%s——属接口故障，"
                 "非地理结论，不可当作「该城无数据」" % (code, info[:80]))
         if code == "10003" or code == "10004" or code == "10001":
+            _key_state["fail"][_key_state["idx"]] += 1
+            if len(KEYS) > 1:
+                rotate_key("key 无效")
+                continue
             raise KeyInvalid("高德 key 无效或过期（%s）：%s" % (code, info[:100]))
         if code == "10020" or code == "10022" or code == "20800":
             raise DistrictBlocked("高德接口层拒绝（%s）：%s" % (code, info[:100]))
@@ -106,6 +184,7 @@ def request(params, retries=3, pause=0.35):
             raise DistrictBlocked(
                 "高德返回非成功状态 status=%s code=%s info=%s"
                 % (status, code, info[:100]))
+        _key_state["fail"][_key_state["idx"]] = 0     # 成功即恢复
         return blob
     raise DistrictBlocked("高德请求失败：%s" % last)
 
@@ -116,47 +195,71 @@ def request(params, retries=3, pause=0.35):
 #   关键词查（kw_query） ：吃自然语言，捕捉「苍蝇馆 / 大排档 / 夜宵」等
 #                         无法用类型码表达的本地概念
 # pages 表示最多翻几页（高德 offset 上限 25，超过即截断）
+#
+# v0.7.0 分两波：
+#   wave 1 = 原美食/特产/商圈/夜生活/儿童游乐面（51+69 城已采）
+#   wave 2 = 用户 v0.7 新增维度：酒店配套、迷你动物园/萌宠、成人娱乐
+#           （密室/KTV/影院/棋牌）、百货/奥莱/批发城
+#   --wave 2 可单独补采，与已有缓存合并，不重复采 wave 1。
 QUERIES = [
-    # ── 美食 ──
-    ("food", "类型:中餐厅",          dict(types="050100", pages=2)),
-    ("food", "类型:湘菜/地方菜",     dict(types="050108", pages=1)),
-    ("food", "类型:地方风味餐厅",    dict(types="050118", pages=1)),
-    ("food", "类型:酒楼/火锅/海鲜",  dict(types="050101", pages=1)),
-    ("food", "类型:火锅",            dict(types="050117", pages=1)),
-    ("food", "类型:海鲜酒楼",        dict(types="050119", pages=1)),
-    ("food", "关键词:特色美食",      dict(keywords="特色美食", pages=2)),
-    ("food", "关键词:老字号",        dict(keywords="老字号", pages=1)),
-    ("food", "关键词:大排档",        dict(keywords="大排档", pages=1)),
-    ("food", "关键词:苍蝇馆",        dict(keywords="苍蝇馆", pages=1)),
-    ("food", "关键词:小吃",          dict(keywords="小吃", pages=2)),
-    ("food", "关键词:本地菜",        dict(keywords="本地菜", pages=1)),
+    # ── wave 1 ──
+    (1, "food", "类型:中餐厅",          dict(types="050100", pages=2)),
+    (1, "food", "类型:湘菜/地方菜",     dict(types="050108", pages=1)),
+    (1, "food", "类型:地方风味餐厅",    dict(types="050118", pages=1)),
+    (1, "food", "类型:酒楼/火锅/海鲜",  dict(types="050101", pages=1)),
+    (1, "food", "类型:火锅",            dict(types="050117", pages=1)),
+    (1, "food", "类型:海鲜酒楼",        dict(types="050119", pages=1)),
+    (1, "food", "关键词:特色美食",      dict(keywords="特色美食", pages=2)),
+    (1, "food", "关键词:老字号",        dict(keywords="老字号", pages=1)),
+    (1, "food", "关键词:大排档",        dict(keywords="大排档", pages=1)),
+    (1, "food", "关键词:苍蝇馆",        dict(keywords="苍蝇馆", pages=1)),
+    (1, "food", "关键词:小吃",          dict(keywords="小吃", pages=2)),
+    (1, "food", "关键词:本地菜",        dict(keywords="本地菜", pages=1)),
     # ── 特产 ──
-    ("product", "关键词:特产",       dict(keywords="特产", pages=2)),
-    ("product", "关键词:土特产",     dict(keywords="土特产", pages=1)),
-    ("product", "关键词:地方特产",   dict(keywords="地方特产", pages=1)),
+    (1, "product", "关键词:特产",       dict(keywords="特产", pages=2)),
+    (1, "product", "关键词:土特产",     dict(keywords="土特产", pages=1)),
+    (1, "product", "关键词:地方特产",   dict(keywords="地方特产", pages=1)),
     # ── 商圈：商业街 / 购物 / 美食街 / 夜市 ──
-    ("district", "类型:步行街",      dict(types="061001", pages=1)),
-    ("district", "类型:特色商业街",   dict(types="061000", pages=2)),
-    ("district", "类型:购物中心",     dict(types="060101", pages=3)),
-    ("district", "类型:商场",        dict(types="060100", pages=2)),
-    ("district", "关键词:美食街",     dict(keywords="美食街", pages=2)),
-    ("district", "关键词:夜市",      dict(keywords="夜市", pages=2)),
-    ("district", "关键词:小吃街",     dict(keywords="小吃街", pages=1)),
-    ("district", "关键词:步行街",     dict(keywords="步行街", pages=1)),
-    ("district", "关键词:购物中心",   dict(keywords="购物中心", pages=2)),
+    (1, "district", "类型:步行街",      dict(types="061001", pages=1)),
+    (1, "district", "类型:特色商业街",   dict(types="061000", pages=2)),
+    (1, "district", "类型:购物中心",     dict(types="060101", pages=3)),
+    (1, "district", "类型:商场",        dict(types="060100", pages=2)),
+    (1, "district", "关键词:美食街",     dict(keywords="美食街", pages=2)),
+    (1, "district", "关键词:夜市",      dict(keywords="夜市", pages=2)),
+    (1, "district", "关键词:小吃街",     dict(keywords="小吃街", pages=1)),
+    (1, "district", "关键词:步行街",     dict(keywords="步行街", pages=1)),
+    (1, "district", "关键词:购物中心",   dict(keywords="购物中心", pages=2)),
     # ── 商圈：酒吧 / 酒馆 / 娱乐 ──
-    ("nightlife", "类型:酒吧",       dict(types="080304", pages=2)),
-    ("nightlife", "关键词:酒馆",      dict(keywords="酒馆", pages=1)),
-    ("nightlife", "关键词:LIVEHOUSE", dict(keywords="livehouse", pages=1)),
-    ("nightlife", "类型:娱乐场所",    dict(types="080300", pages=1)),
+    (1, "nightlife", "类型:酒吧",       dict(types="080304", pages=2)),
+    (1, "nightlife", "关键词:酒馆",      dict(keywords="酒馆", pages=1)),
+    (1, "nightlife", "关键词:LIVEHOUSE", dict(keywords="livehouse", pages=1)),
+    (1, "nightlife", "类型:娱乐场所",    dict(types="080300", pages=1)),
     # ── 商场儿童游乐（用户 v0.6 新增维度）──
-    ("kids", "关键词:儿童乐园",       dict(keywords="儿童乐园", pages=2)),
-    ("kids", "关键词:电玩城",        dict(keywords="电玩城", pages=2)),
-    ("kids", "关键词:游乐场",        dict(keywords="游乐场", pages=2)),
-    ("kids", "关键词:迷你游乐场",     dict(keywords="迷你游乐场", pages=1)),
-    ("kids", "关键词:亲子乐园",       dict(keywords="亲子乐园", pages=1)),
-    ("kids", "关键词:淘气堡",        dict(keywords="淘气堡", pages=1)),
-    ("kids", "关键词:儿童体验",       dict(keywords="儿童体验", pages=1)),
+    (1, "kids", "关键词:儿童乐园",       dict(keywords="儿童乐园", pages=2)),
+    (1, "kids", "关键词:电玩城",        dict(keywords="电玩城", pages=2)),
+    (1, "kids", "关键词:游乐场",        dict(keywords="游乐场", pages=2)),
+    (1, "kids", "关键词:迷你游乐场",     dict(keywords="迷你游乐场", pages=1)),
+    (1, "kids", "关键词:亲子乐园",       dict(keywords="亲子乐园", pages=1)),
+    (1, "kids", "关键词:淘气堡",        dict(keywords="淘气堡", pages=1)),
+    (1, "kids", "关键词:儿童体验",       dict(keywords="儿童体验", pages=1)),
+    # ── wave 2：酒店配套（用户 v0.7 新增）──
+    (2, "hotel", "类型:住宿服务",       dict(types="100000", pages=1)),
+    (2, "hotel", "关键词:酒店",         dict(keywords="酒店", pages=1)),
+    # ── wave 2：迷你动物园 / 萌宠（用户 v0.7 新增）──
+    (2, "kids", "关键词:迷你动物园",     dict(keywords="迷你动物园", pages=1)),
+    (2, "kids", "关键词:萌宠乐园",       dict(keywords="萌宠乐园", pages=1)),
+    (2, "kids", "关键词:室内动物园",     dict(keywords="室内动物园", pages=1)),
+    (2, "kids", "关键词:动物园",        dict(keywords="动物园", pages=1)),
+    # ── wave 2：成人娱乐（密室/KTV/影院/棋牌）──
+    (2, "adult", "关键词:密室逃脱",      dict(keywords="密室逃脱", pages=1)),
+    (2, "adult", "关键词:KTV",          dict(keywords="KTV", pages=1)),
+    (2, "adult", "关键词:电影院",        dict(keywords="电影院", pages=1)),
+    (2, "adult", "关键词:棋牌室",        dict(keywords="棋牌室", pages=1)),
+    # ── wave 2：百货 / 奥莱 / 批发城 ──
+    (2, "district", "关键词:百货",       dict(keywords="百货", pages=1)),
+    (2, "district", "关键词:奥特莱斯",    dict(keywords="奥特莱斯", pages=1)),
+    (2, "district", "关键词:批发市场",    dict(keywords="批发市场", pages=1)),
+    (2, "district", "关键词:商贸城",      dict(keywords="商贸城", pages=1)),
 ]
 
 
@@ -214,14 +317,24 @@ def normalize(p):
     }
 
 
-def collect_city(city, budget, verbose=False, dry=False):
-    """采集单城，返回该城缓存 dict。"""
+def collect_city(city, budget, verbose=False, dry=False, waves=(1, 2)):
+    """采集单城，返回该城缓存 dict。
+
+    waves：跑哪几波查询面。补采时传 (2,) 只跑新增面，与已有缓存合并。
+    """
     cache = {"city": city, "queries": {}, "errors": [], "updated": None}
     if os.path.exists(city_cache_path(city)):
         with open(city_cache_path(city), encoding="utf-8") as f:
             cache = json.load(f)
+        # v0.6.2 修复：上次部分失败残留的 errors 会被继承，导致本次
+        # 全量成功的城市仍被标记 ok=False（实测：武汉市 50 次请求全部
+        # 成功，却因残留的 10005 记录被判受限）。重采即重新开始，
+        # 旧错误一律清零，由本次运行结果决定状态。
+        cache["errors"] = []
     spent = 0
-    for facet, label, spec in QUERIES:
+    for wave, facet, label, spec in QUERIES:
+        if wave not in waves:
+            continue
         if budget is not None and spent >= budget:
             cache["errors"].append("预算耗尽，%s 未采" % label)
             break
@@ -254,7 +367,7 @@ def collect_city(city, budget, verbose=False, dry=False):
                 note = "预算耗尽于第 %d 页" % pg
                 cache["errors"].append(note)
                 break
-            time.sleep(pause)
+            throttle()                 # v0.6.2 限速：单请求间隔 + 定期长休
             pois = d.get("pois") or []
             total = int(d.get("count") or 0)
             if not pois and pg == 1:
@@ -283,19 +396,39 @@ def collect_city(city, budget, verbose=False, dry=False):
                                           "  ⚠ " + note if note else ""))
     cache["updated"] = time.strftime("%Y-%m-%d %H:%M:%S")
     cache["request_spent"] = spent
+    done_waves = set(cache.get("waves") or [])
+    done_waves |= set(waves)
+    cache["waves"] = sorted(done_waves)
     # ── v0.6.0 核心修复：全查询面失败的城市绝不落盘 ──
     # 实测事故：高德 INVALID_USER_IP（10005）导致 44 城全查询面失败，
     # 空结果被当成真实数据写进缓存，渲染出「0 家美食 0 处商圈」的假档案。
     # 这类城市的正确状态是「未采集/不可用」，而不是「采集了但没有」。
     if not dry:
-        failed_all = (cache["queries"]
-                      and all(q["count"] == 0 for q in cache["queries"].values()))
+        # 补采波次（waves 不含 1）时，缓存里已有 wave1 数据，
+        # 不能因「本轮查询面 0 条」就整体否决，只否决本轮全空。
+        if 1 in waves:
+            failed_all = (cache["queries"]
+                          and all(q["count"] == 0
+                                  for q in cache["queries"].values()))
+        else:
+            new_labels = {lbl for wv, _f, lbl, _s in QUERIES if wv in waves}
+            new_qs = [q for lbl, q in cache["queries"].items()
+                      if lbl in new_labels]
+            failed_all = (new_qs
+                          and all(q["count"] == 0 for q in new_qs))
         if failed_all:
-            if os.path.exists(city_cache_path(city)):
+            if 1 not in waves:
+                # 补采失败：只回滚本轮新增的查询面，保留 wave1 数据
+                for lbl in new_labels:
+                    cache["queries"].pop(lbl, None)
+                cache["waves"] = sorted(done_waves - set(waves))
+                with open(city_cache_path(city), "w", encoding="utf-8") as f:
+                    json.dump(cache, f, ensure_ascii=False)
+            elif os.path.exists(city_cache_path(city)):
                 os.remove(city_cache_path(city))
             raise DistrictBlocked(
-                "%s 全部 %d 个查询面均返回 0 条，判定为接口故障而非"
-                "「该城无数据」；已清除该城缓存，不生成假档案。"
+                "%s 本轮 %d 个查询面均返回 0 条，判定为接口故障而非"
+                "「该城无数据」；不生成假档案。"
                 % (city, len(cache["queries"])))
         os.makedirs(RAW, exist_ok=True)
         with open(city_cache_path(city), "w", encoding="utf-8") as f:
@@ -311,9 +444,22 @@ def main():
     ap.add_argument("--budget", type=int, default=None,
                     help="单次运行总请求上限（防打爆日配额）")
     ap.add_argument("--verbose", action="store_true")
+    ap.add_argument("--pace", type=float, default=0.6,
+                    help="单请求间隔秒数（默认 0.6；越大越慢越稳）")
     ap.add_argument("--dry", action="store_true", help="不落盘")
     ap.add_argument("--force", action="store_true", help="重跑已完成城市")
+    ap.add_argument("--wave", default="1,2",
+                    help="跑哪些查询波次：1=基础面 2=新增面（酒店/动物园/"
+                         "成人娱乐/百货奥莱）。补采用 --wave 2")
     args = ap.parse_args()
+    PACE["req"] = max(0.2, args.pace)
+    try:
+        waves = tuple(sorted({int(x) for x in args.wave.split(",")
+                              if x.strip()}))
+    except ValueError:
+        raise SystemExit("--wave 只能是 1 和/或 2，如 --wave 2")
+    if not waves:
+        raise SystemExit("--wave 不能为空")
 
     provs = json.load(open(
         os.path.join(CACHE, "prov_cities.json"), encoding="utf-8"))
@@ -331,14 +477,23 @@ def main():
     done, skipped, failed = 0, 0, 0
     budget_left = args.budget
     for city in cities:
-        if not args.force and city in prog and prog[city].get("ok"):
+        prev = prog.get(city) or {}
+        prev_waves = set(prev.get("waves") or (1,))   # 旧记录无 waves 视为已采 wave1
+        # 只跑「缺失波次」：老城市已有 wave1 就只补 wave2，不重复采
+        run_waves = tuple(sorted(set(waves) - prev_waves))
+        if not args.force and prev.get("ok") and not run_waves:
+            skipped += 1
+            continue
+        if 2 in run_waves and 1 not in prev_waves and not args.force:
+            # 补采波次要求 wave1 已采；否则会造出只有新维度的残档
             skipped += 1
             continue
         if budget_left is not None and budget_left <= 0:
             print("⛔ 预算耗尽，停止。已完成 %d 城。" % done)
             break
         try:
-            cache = collect_city(city, budget_left, args.verbose, args.dry)
+            cache = collect_city(city, budget_left, args.verbose, args.dry,
+                                 run_waves or waves)
         except QuotaExceeded as e:
             print("⛔ 配额受限，停止后续采集：%s" % e)
             break
@@ -365,6 +520,7 @@ def main():
             "pois": n,
             "queries": len(cache["queries"]),
             "spent": cache.get("request_spent"),
+            "waves": sorted(prev_waves | set(run_waves or waves)),
             "errors": errs[:5],
             "at": cache["updated"],
         }
@@ -378,6 +534,7 @@ def main():
             done += 1
             print("  ✅ %s：%d 条 POI（%d 次请求）"
                   % (city, n, cache.get("request_spent")))
+        throttle(city_rest=True)      # 城间休息，避免连续高压
     save_progress(prog)
     print("\n完成 %d 城，跳过 %d，受限 %d。进度见 %s"
           % (done, skipped, failed, PROGRESS))

@@ -1,31 +1,47 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-全国省市美食 × 商圈 md 生成器
+全国省市「美食 × 商圈 × 娱乐」md 生成器 v0.7.0
 
 把 .cache/amap/raw/{城市}.json 渲染成可查、可校对的 md 档案。
 
-输出结构
---------
-    data/{省}/{市}.md         单城档案（美食 + 商圈 + 关联 + 儿童游乐 + 校对区）
-    data/README.md            全国索引与使用说明
-    data/_status.tsv          采集进度机读表
+v0.7.0 结构重构（吸收同类产品优点后重设计）
+--------------------------------------------------------------------
+对标对象与吸收点：
+  1. 大众点评必吃榜 —— 五维评选（真实/口味/稳定/性价比/本地性）：
+     评级必须「维度可解释」，因此每个 POI 与商圈都带判据说明，
+     不写算法黑箱；商圈级新增 S/A/B/C 评级。
+  2. 高德 21 主类 193 子类分类体系 —— 分类码驱动，
+     不靠名称猜；名称语义只做兜底。
+  3. 开源全国商圈数据集（BusinessDistrict 等）—— 只有「名称+坐标」，
+     无评级、无业态构成、无关联，用户查了还得自己跑一趟。
+     本库补齐：画像、业态分布、关联、评级、可回查指针。
+  4. POI 开源数据集（Iter-X 等）—— 多语言/结构化字段：
+     每个实体都带分类、坐标、评级、图片、来源查询面。
 
-设计要点
---------
-1. **五级标记沿用 skill 现有口径**（✅A / ✅A- / ✅B / ⚠️ / ❌），
-   判据全部写进 md，不写「算法黑箱」。
-2. **美食 × 商圈关联用几何就近 + 名称互证双轨**：
-   只算距离会把「岳阳楼景区外的肯德基」也算进汴河街，因此要求
-   商圈名或其同义段落在 POI 地址/名称中互证，或直线距离 ≤600m
-   且同区县。互证失败的降级为 ⚠️。
-3. **苍蝇馆不做无据判定**：仅当 POI 命中「苍蝇馆」关键词、或
-   名称含 小馆/排挡/家常/私房 等小店语义且评分在 3.6–4.5 区间时
-   列为候选，其余一律不标——宁可漏，不可编。
-4. **儿童游乐必须区分载体**：
-   「商场内」与「独立门店」的可靠性、可达性完全不同，混在一张表里
-   会让用户跑空。判定：地址/名称含 商场/购物中心/MALL/广场/百货/大厦
-   → 场内；否则 → 独立。
+输出结构（每城 md）
+--------------------------------------------------------------------
+  0. 数据可信度
+  1. 城市总览（行政层级 + 商圈分布统计 + 业态构成）
+  2. 商圈档案（每商圈：画像 + 业态分布总结 + 评级 S/A/B/C）
+  3. 成人娱乐（酒吧/酒馆/livehouse/密室/KTV/影院/棋牌/电玩）
+  4. 儿童与亲子（儿童乐园/淘气堡/迷你游乐场/亲子乐园/迷你动物园/萌宠/电玩）
+  5. 综合体与商场（购物中心/百货/奥莱/批发城）
+  6. 本地美食与特色美食
+  7. 苍蝇馆候选
+  8. 知名特产
+  9. 美食 × 商圈关联
+ 10. 酒店配套（商圈住宿）
+ 11. 原始查询清单与数据
+ 12. 校对待办
+
+设计纪律
+--------------------------------------------------------------------
+1. 画像能推导的推导（载体类型/消费带宽/动线主轴/关联规模），
+   不能推导的如实标「待人工校对」——绝不编造。
+2. 商圈评级判据全部写进 md，可复算。
+3. 五级标记沿用 skill 口径：✅A / ✅A- / ✅B / ⚠️ / ❌。
+4. 表格单元格净化 ASCII 竖线（v0.6.0 事故）。
 """
 
 import argparse
@@ -37,21 +53,75 @@ import os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, ".cache", "amap", "raw")
 PROV = os.path.join(ROOT, ".cache", "amap", "prov_cities.json")
+HIER = os.path.join(ROOT, ".cache", "amap", "city_districts.json")
 DATA = os.path.join(ROOT, "data")
 
-# ── 城市 → 省会/省份映射由 prov_cities.json 反推 ──
+# ── 分类码口径（高德 21 主类，本文档用到的子集）──
+TC = {
+    "food": ("050100", "050101", "050102", "050103", "050104", "050105",
+             "050106", "050107", "050108", "050109", "050110", "050111",
+             "050112", "050113", "050114", "050115", "050116", "050117",
+             "050118", "050119", "050120", "050121", "050122", "050123",
+             "050200", "050300", "050301", "050302", "050500"),
+    "hotel": ("100000", "100100", "100200", "100300", "100400", "100500",
+              "100600", "100700", "100800", "100900", "101000", "101100",
+              "101200", "101300"),
+    "mall": ("060100", "060101", "060102", "060200", "060201", "060202",
+             "060400", "060401", "060402", "060500"),
+    "street": ("061000", "061001", "061002", "061100", "061101"),
+    "night": ("080304", "080301", "080302", "080303", "080305"),
+    "ent": ("080300", "080301", "080302", "080303", "080304", "080305",
+            "080400", "080401", "080402", "080500", "080501", "080502",
+            "080503", "080504", "080505", "080506", "080507", "080508",
+            "080600", "080601", "080602", "080603", "080700", "080701",
+            "080702", "080703"),
+    "kids": ("080501", "080502", "080503", "080504", "080505", "080506",
+             "080507", "080508"),
+}
+
+# 商圈载体类型（按优先级判定）
+CARRIER_RULES = [
+    ("美食街/小吃街", ("美食街", "小吃街", "食品街", "餐饮街")),
+    ("夜市", ("夜市", "夜间集市")),
+    ("步行街", ("步行街", "步行街")),
+    ("商业街", ("商业街", "大街", "老街", "街区")),
+    ("购物中心/综合体", ("购物中心", "购物广场", "商业广场", "城市广场",
+                        "综合体", "SHOPPING", "Shopping")),
+    ("百货/商场", ("百货", "商场", "商贸城", "商城")),
+    ("奥特莱斯", ("奥特莱斯", "outlets", "Outlets")),
+    ("批发城", ("批发", "商贸城", "小商品")),
+]
 
 MALL_CTX = ("商场", "购物中心", "MALL", "mall", "广场", "百货", "大厦",
-            "购物广场", "商业广场", "购物城", "商贸城", "城市广场", "广场")
+            "购物广场", "商业广场", "购物城", "商贸城", "城市广场")
 STREET_CTX = ("步行街", "商业街", "美食街", "老街", "小吃街", "夜市", "街区",
-              "后街", "巷", "大街", "路", "牌坊", "古镇", "码头", "坡子街")
+              "后街", "巷", "大街", "牌坊", "古镇", "码头")
 SMALL_SHOP_KW = ("小馆", "排挡", "家常", "私房", "苍蝇馆", "小店", "夫妻店",
                  "土菜", "农家", "食堂", "小吃店", "夜宵店", "烧烤店", "大排档")
-LOCAL_DISH_KW = ("本地菜", "地方菜", "土菜", "湘菜", "特色", "老字号",
-                 "传统", "家乡", "农家", "私房", "正宗", "小吃")
+LOCAL_DISH_KW = ("本地菜", "地方菜", "土菜", "特色", "老字号", "传统",
+                 "家乡", "农家", "私房", "正宗", "小吃")
 
-PRODUCT_CTX = ("特产", "土特产", "地方特产", "老字号", "腊味", "酱", "茶叶",
-               "糕饼", "糖", "酒", "米粉", "腐乳", "辣椒", "干货", "竹")
+# 成人娱乐细分
+ADULT_ENT = [
+    ("酒吧/酒馆", ("酒吧", "酒馆", "bar ", "Bar", "CLUB", "club", "夜店",
+                  "Speakeasy", "speakeasy", "清吧", "啤酒吧")),
+    ("Livehouse", ("livehouse", "Livehouse", "LIVEHOUSE", "LiveHouse",
+                  "LIVE", " liveshow", "LIVESHOW")),
+    ("密室逃脱/剧本杀", ("密室", "剧本杀", "推理馆")),
+    ("KTV", ("KTV", "ktv", "量贩式KTV", "卡拉OK")),
+    ("电影院", ("电影院", "影城", "影剧院", "剧院")),
+    ("棋牌室", ("棋牌", "麻将馆")),
+    ("电玩城", ("电玩", "游戏厅", "游戏城")),
+]
+# 儿童娱乐细分
+KIDS_ENT = [
+    ("迷你动物园/萌宠", ("动物园", "萌宠", "宠物乐园", "动物乐园")),
+    ("儿童乐园/游乐场", ("儿童乐园", "游乐场", "游乐园", "儿童游乐")),
+    ("淘气堡", ("淘气堡",)),
+    ("迷你游乐场", ("迷你游乐",)),
+    ("亲子乐园", ("亲子", "儿童成长", "儿童体验")),
+    ("电玩城", ("电玩", "游戏厅")),
+]
 
 
 def haversine(lat1, lng1, lat2, lng2):
@@ -72,8 +142,13 @@ def has_ctx(text, words):
     return any(w in text for w in words)
 
 
+def tc_in(p, group):
+    tc = p.get("typecode") or ""
+    return any(tc.startswith(t) or tc == t for t in TC.get(group, ()))
+
+
 def mark_poi(p):
-    """五级标记：✅A / ✅A- / ✅B / ⚠️ / ❌"""
+    """五级标记：✅A / ✅A- / ✅B / ⚠️ / ❌，判据可解释。"""
     r = p.get("rating")
     try:
         r = float(r) if r is not None else None
@@ -81,7 +156,6 @@ def mark_poi(p):
         r = None
     name = p.get("name") or ""
     addr = p.get("address") or ""
-    ty = p.get("type") or ""
     if not p.get("id"):
         return "❌", "无 POI ID，无法回查原始记录"
     if not addr:
@@ -103,20 +177,116 @@ def is_mall(text):
     return has_ctx(text, MALL_CTX)
 
 
-def street_of(p):
-    """取该 POI 所属街道/商圈线索，用于关联匹配。"""
-    return (p.get("adname") or "") + (p.get("address") or "")
+def carrier_of(poi):
+    """POI 的商圈载体类型（名称优先，类型码兜底）。"""
+    name = poi.get("name") or ""
+    ty = poi.get("type") or ""
+    blob = name + " " + ty
+    for label, kws in CARRIER_RULES:
+        if has_ctx(blob, kws):
+            return label
+    if tc_in(poi, "street"):
+        return "商业街"
+    if tc_in(poi, "mall"):
+        return "购物中心/综合体"
+    if has_ctx(name, STREET_CTX):
+        return "商业街"
+    return "其他商业载体"
 
 
-# ---------------------------------------------------------------- 关联逻辑
-def link_food_to_district(foods, districts):
-    """为每个商圈找其关联美食。返回 {district_name: [(poi, dist, mode)]}"""
+def cell(v):
+    """表格单元格净化：ASCII 竖线撑破列数（v0.6.0 实测事故）。"""
+    if v is None:
+        return "—"
+    s = str(v)
+    if not s:
+        return "—"
+    return s.replace("|", "｜")
+
+
+def w_or_none(w, rows, note):
+    """空表防护：无数据时不渲染空表头，显式写「无」及原因。
+
+    实测缺陷（v0.7.0）：新星市（兵团新城）无购物中心 POI，
+    §5 渲染出只有表头的空表，校验器 C7 抓到。小城市维度稀疏是
+    真实情况，必须显式说明，不能留一张空表让校对者困惑。
+    """
+    if not rows:
+        w("")
+        w("（%s）" % note)
+        return False
+    return True
+
+
+def rating_of(lst):
+    """列表均分（仅计有评分的）。"""
+    rs = []
+    for p in lst:
+        try:
+            v = float(p.get("rating"))
+            if v > 0:
+                rs.append(v)
+        except (TypeError, ValueError):
+            pass
+    return (sum(rs) / len(rs)) if rs else None
+
+
+def cost_band(lst):
+    """人均带宽：返回 (中位数, 最低, 最高)，无人均返回 None。"""
+    cs = []
+    for p in lst:
+        try:
+            v = float(p.get("cost"))
+            if v > 0:
+                cs.append(v)
+        except (TypeError, ValueError):
+            pass
+    if not cs:
+        return None
+    cs.sort()
+    n = len(cs)
+    med = cs[n // 2] if n % 2 else (cs[n // 2 - 1] + cs[n // 2]) / 2
+    return (med, cs[0], cs[-1])
+
+
+def unwrap(lst):
+    """关联列表元素是 (poi, dist, mode) 三元组，取出 POI。"""
+    return [t[0] if isinstance(t, tuple) else t for t in lst]
+
+
+def district_grade(d, linked_food, linked_night, linked_kids, linked_hotel):
+    """商圈级评级 S/A/B/C——判据可解释、可复算。
+
+    借鉴必吃榜「维度化评选」：不搞单一人气分，而是分维度达标。
+      S：关联美食 ≥20 家且均分 ≥4.3，且覆盖 ≥3 类业态（美食/娱乐/酒店）
+      A：关联美食 ≥10 家且均分 ≥4.0，且覆盖 ≥2 类业态
+      B：关联美食 ≥5 家，或任一业态 ≥10 家
+      C：其余（数据稀薄，仅登记）
+    """
+    lf, ln, lk, lh = (unwrap(linked_food), unwrap(linked_night),
+                      unwrap(linked_kids), unwrap(linked_hotel))
+    n_food, n_night, n_kids, n_hotel = len(lf), len(ln), len(lk), len(lh)
+    dims = sum(1 for x in (n_food, n_night, n_kids, n_hotel) if x > 0)
+    avg = rating_of(lf)
+    if n_food >= 20 and avg is not None and avg >= 4.3 and dims >= 3:
+        return "S", ("美食 %d 家（均分 %.2f）+ %d 类业态"
+                     % (n_food, avg, dims))
+    if n_food >= 10 and avg is not None and avg >= 4.0 and dims >= 2:
+        return "A", ("美食 %d 家（均分 %.2f）+ %d 类业态"
+                     % (n_food, avg, dims))
+    if n_food >= 5 or max(n_food, n_night, n_kids, n_hotel) >= 10:
+        return "B", ("美食 %d 家 / 娱乐 %d / 酒店 %d"
+                     % (n_food, n_night + n_kids, n_hotel))
+    return "C", "关联数据稀薄，仅登记待人工补充"
+
+
+def link_poi_to_district(pois, districts):
+    """商圈关联：① 名称互证；② 距离就近 ≤600m 且同区县。"""
     out = collections.defaultdict(list)
     for d in districts:
         dname = d.get("name") or ""
-        # 商圈名简化：取去掉括号的核心词
         core = dname.split("(")[0].split("（")[0]
-        for f in foods:
+        for f in pois:
             blob = (f.get("name") or "") + " " + (f.get("address") or "")
             dist = haversine(d["lat"], d["lng"], f["lat"], f["lng"])
             mode = None
@@ -132,28 +302,22 @@ def link_food_to_district(foods, districts):
     return out
 
 
-# ---------------------------------------------------------------- 渲染
-def fmt_addr(p):
-    a = p.get("address") or ""
-    return a if a else "—"
+def main_road_of(pois):
+    """动线主轴：关联 POI 地址里出现最多的道路/街道词。"""
+    cnt = collections.Counter()
+    for p in pois:
+        addr = p.get("address") or ""
+        for seg in ("大道", "大街", "路", "街", "巷"):
+            i = addr.find(seg)
+            if i > 1:
+                cnt[addr[max(0, i - 4):i + len(seg)]] += 1
+                break
+    if not cnt:
+        return None
+    return cnt.most_common(1)[0][0]
 
 
-def cell(v):
-    """表格单元格净化：ASCII 竖线会撑破 md 表格列数，统一转全角。
-
-    实测缺陷（v0.6.0）：高德店名「INXX CLUB(英克斯酒吧|濮阳店)」
-    原样写入后表格列数 +1，校验器 C2 抓到。既在采集端 normalize()
-    做了替换，渲染端也兜底——旧缓存数据没有这层净化。
-    """
-    if v is None:
-        return "—"
-    s = str(v)
-    if not s:
-        return "—"
-    return s.replace("|", "｜")
-
-
-def render_city(city, cache, prov_name):
+def render_city(city, cache, prov_name, hier=None):
     qs = cache.get("queries") or {}
     allp = [p for q in qs.values() for p in q.get("items", [])]
     uniq = {}
@@ -163,30 +327,49 @@ def render_city(city, cache, prov_name):
     pois = list(uniq.values())
     updated = cache.get("updated") or "未知"
     errs = cache.get("errors") or []
+    waves = cache.get("waves") or [1]
 
-    # 分类
-    food, product, district, night, kids = [], [], [], [], []
+    # ── POI 分类：facet 优先，类型码兜底 ──
+    facets = collections.defaultdict(set)
+    for label, q in qs.items():
+        for p in q.get("items", []):
+            if p.get("id"):
+                facets[p["id"]].add(q.get("facet"))
+
+    food, product, district, night, kids, hotel, adult = \
+        [], [], [], [], [], [], []
     for p in pois:
-        facet = qs.get("", {})
-        tc = p.get("typecode") or ""
-        ty = p.get("type") or ""
+        fs = facets.get(p["id"], set())
         name = p.get("name") or ""
         addr = p.get("address") or ""
-        blob = name + " " + addr
-        if tc.startswith("0501") or tc.startswith("050300"):
+        blob = name + " " + addr + " " + (p.get("type") or "")
+        low = blob.lower()
+        # 美食
+        if "food" in fs or tc_in(p, "food"):
             food.append(p)
-        if any(k in blob for k in PRODUCT_CTX) or tc.startswith("0607"):
+        # 特产
+        if "product" in fs or ("特产" in blob):
             product.append(p)
-        if tc.startswith("061") or is_mall(blob) or has_ctx(blob, STREET_CTX):
+        # 商圈载体
+        if ("district" in fs or tc_in(p, "street") or tc_in(p, "mall")
+                or has_ctx(blob, STREET_CTX) or is_mall(blob)):
             district.append(p)
-        if tc.startswith("080304") or "酒馆" in blob or "livehouse" in blob.lower():
+        # 夜生活（成人）
+        if "nightlife" in fs or "adult" in fs or tc_in(p, "night"):
             night.append(p)
-        if tc.startswith("0805") or any(k in blob for k in (
+        # 儿童
+        if "kids" in fs or has_ctx(blob, (
                 "儿童乐园", "电玩", "游乐场", "淘气堡", "亲子",
-                "儿童体验", "迷你游乐")):
+                "儿童体验", "迷你游乐", "动物园", "萌宠")):
             kids.append(p)
+        # 成人娱乐（密室/KTV/影院/棋牌）
+        if has_ctx(blob, ("密室", "剧本杀", "KTV", "ktv", "电影院", "影城",
+                          "影剧院", "棋牌", "游戏厅", "游戏城")):
+            adult.append(p)
+        # 酒店
+        if "hotel" in fs or tc_in(p, "hotel"):
+            hotel.append(p)
 
-    # 去重
     def dedup(lst):
         seen, out = set(), []
         for p in lst:
@@ -195,85 +378,328 @@ def render_city(city, cache, prov_name):
             seen.add(p["id"])
             out.append(p)
         return out
-    food, product, district, night, kids = (
-        dedup(food), dedup(product), dedup(district),
-        dedup(night), dedup(kids))
 
-    # 排序：评分高者优先
+    food, product, district, night, kids, hotel, adult = (
+        dedup(food), dedup(product), dedup(district), dedup(night),
+        dedup(kids), dedup(hotel), dedup(adult))
+
     def key(p):
         try:
             return -float(p.get("rating") or 0)
         except (TypeError, ValueError):
             return 0
-    food.sort(key=key)
-    product.sort(key=key)
-    district.sort(key=key)
-    night.sort(key=key)
-    kids.sort(key=key)
+    for lst in (food, product, district, night, kids, hotel, adult):
+        lst.sort(key=key)
 
-    linked = link_food_to_district(food + night, district[:40])
+    # 商圈关联（美食 + 夜生活 + 儿童 + 酒店）
+    night_adult = dedup(night + adult)      # 两列表有重叠，先去重再关联
+    linked = link_poi_to_district(
+        food + night_adult + kids + hotel, district[:60])
+    food_linked = link_poi_to_district(food, district[:60])
+    night_linked = link_poi_to_district(night_adult, district[:60])
+    kids_linked = link_poi_to_district(kids, district[:60])
+    hotel_linked = link_poi_to_district(hotel, district[:60])
+
+    # 区县分布
+    adname_cnt = collections.Counter(
+        p.get("adname") for p in pois if p.get("adname"))
+    # 商圈载体类型构成
+    carrier_cnt = collections.Counter(carrier_of(p) for p in district)
 
     L = []
     w = L.append
     w("# %s · %s 美食与商圈档案" % (city, prov_name))
     w("")
     w("> 数据来源：高德地图 Web 服务 POI（restapi.amap.com）  ")
-    w("> 采集时间：%s  ·  POI 总量：%d（去重后）  ·  查询面：%d  " % (
-        updated, len(pois), len(qs)))
+    w("> 采集时间：%s  ·  POI 总量：%d（去重后）  ·  查询面：%d  ·  "
+      "查询波次：%s  " % (updated, len(pois), len(qs),
+                        "+".join(str(x) for x in waves)))
     w("> 文件用途：本 skill 的城市级数据可查与人工校对底稿。")
     w("")
 
-    # ── 0. 数据可信度 ──
+    # ── 0. 可信度 ──
     w("## 0. 数据可信度")
     w("")
     w("| 项 | 值 | 说明 |")
     w("|---|---|---|")
     w("| POI 总数（去重） | %d | 高德 POI id 去重 |" % len(pois))
-    w("| 有评分的比例 | %.0f%% | 无评分者标 ⚠️，不强行推荐 |" % (
-        100.0 * sum(1 for p in pois if p.get("rating")) / max(len(pois), 1)))
-    w("| 查询面数 | %d | 见 §7 原始查询清单 |" % len(qs))
+    rated = sum(1 for p in pois if p.get("rating"))
+    w("| 有评分的比例 | %.0f%% | 无评分者标 ⚠️，不强行推荐 |"
+      % (100.0 * rated / max(len(pois), 1)))
+    w("| 维度覆盖 | 美食 %d · 商圈 %d · 成人娱乐 %d · 儿童娱乐 %d · 酒店 %d · 特产 %d | 各维度去重计数 |"
+      % (len(food), len(district), len(night) + len(adult),
+         len(kids), len(hotel), len(product)))
     if errs:
         w("| ⚠️ 采集告警 | %d 条 | %s |" % (len(errs), "；".join(errs[:3])))
     else:
         w("| 采集告警 | 0 | 本次采集无配额或接口错误 |")
+    if 2 not in waves:
+        w("| ⚠️ 维度不全 | 缺 wave2 | 本档案未含酒店/迷你动物园/成人娱乐补采面，"
+          "需跑 `amap_collect.py --city %s --wave 2` |" % city)
     w("")
 
-    # ── 1. 本地美食 / 特色美食 ──
-    w("## 1. 本地美食与特色美食（%d 家）" % len(food))
+    # ── 1. 城市总览 ──
+    w("## 1. 城市总览")
+    w("")
+    if hier and city in hier:
+        h = hier[city]
+        w("### 1.1 行政层级")
+        w("")
+        w("| 项 | 值 |")
+        w("|---|---|")
+        w("| 所属 | %s · %s |" % (h["province"], h["kind"]))
+        w("| 下级区县 | %d 个 |" % len(h["districts"]))
+        tw_total = sum(d["township_total"] for d in h["districts"])
+        w("| 街道/镇/乡 | %d 个 |" % tw_total)
+        dk = collections.Counter(d["kind"] for d in h["districts"])
+        w("| 区县构成 | %s |" % "、".join(
+            "%s×%d" % (k, v) for k, v in dk.most_common()))
+        w("")
+        w("（村级数据高德不提供，未列入；行政层级详见 "
+          "`data/行政层级总览.md`）")
+        w("")
+    w("### 1.2 商圈与业态分布")
+    w("")
+    w("| 区县 | POI 数 | 占比 |")
+    w("|---|---|---|")
+    for ad, n in adname_cnt.most_common(15):
+        w("| %s | %d | %.0f%% |"
+          % (cell(ad), n, 100.0 * n / max(len(pois), 1)))
+    if len(adname_cnt) > 15:
+        w("")
+        w("（另 %d 个区县见原始数据）" % (len(adname_cnt) - 15))
+    w("")
+    w("**商圈载体类型构成**（%d 处商圈锚点）：" % len(district))
+    w("")
+    w("| 载体类型 | 数量 |")
+    w("|---|---|")
+    for k, v in carrier_cnt.most_common():
+        w("| %s | %d |" % (k, v))
+    w("")
+
+    # ── 2. 商圈档案 ──
+    w("## 2. 商圈档案（%d 处，按评级排序）" % len(district))
+    w("")
+    w("商圈评级判据（借鉴必吃榜维度化评选，可复算）：")
+    w("")
+    w("| 评级 | 判据 |")
+    w("|---|---|")
+    w("| S | 关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店） |")
+    w("| A | 关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态 |")
+    w("| B | 关联美食 ≥5 家，或任一业态 ≥10 家 |")
+    w("| C | 其余（数据稀薄，仅登记待人工补充） |")
+    w("")
+
+    # 评级排序
+    graded = []
+    for p in district[:40]:
+        dname = p.get("name") or ""
+        lf = food_linked.get(dname, [])
+        ln = night_linked.get(dname, [])
+        lk = kids_linked.get(dname, [])
+        lh = hotel_linked.get(dname, [])
+        g, why = district_grade(p, lf, ln, lk, lh)
+        graded.append((g, p, lf, ln, lk, lh, why))
+    gorder = {"S": 0, "A": 1, "B": 2, "C": 3}
+    graded.sort(key=lambda t: (gorder[t[0]], -len(t[2])))
+
+    if not w_or_none(w, graded, "本城未采集到商圈锚点 POI"):
+        w("")
+    else:
+        w("| 评级 | 商圈名 | 载体类型 | 评分 | 关联美食 | 成人娱乐 | 儿童娱乐 | 酒店 |")
+        w("|---|---|---|---|---|---|---|---|")
+    for g, p, lf, ln, lk, lh, why in graded[:40]:
+        w("| %s | %s | %s | %s | %d | %d | %d | %d |" % (
+            g, cell(p.get("name")), carrier_of(p),
+            p.get("rating") or "—", len(lf), len(ln), len(lk), len(lh)))
+    w("")
+
+    # 每个商圈一节画像
+    for g, p, lf, ln, lk, lh, why in graded[:15]:
+        dname = p.get("name") or ""
+        w("### %s —— 评级 %s" % (cell(dname), g))
+        w("")
+        w("- **评级判据**：%s" % why)
+        w("- **载体类型**：%s（%s）" % (carrier_of(p), cell(p.get("type") or "")))
+        w("- **地址**：%s" % cell(p.get("address") or "—"))
+        cb = cost_band([f for f, _d, _m in lf])
+        if cb:
+            w("- **消费带宽**：关联美食人均中位数 ¥%.0f（区间 ¥%.0f–%.0f）"
+              % (cb[0], cb[1], cb[2]))
+        else:
+            w("- **消费带宽**：待人工校对（高德未收录人均）")
+        mr = main_road_of([f for f, _d, _m in lf])
+        w("- **动线主轴**：%s" % (mr or "待人工校对（关联 POI 地址无道路词）"))
+        w("- **业态分布**：美食 %d · 成人娱乐 %d · 儿童娱乐 %d · 酒店 %d"
+          % (len(lf), len(ln), len(lk), len(lh)))
+        # 业态分布总结表
+        rows = [
+            ("步行街/商业街载体", [p]),
+            ("美食", [f for f, _d, _m in lf]),
+            ("成人娱乐", [f for f, _d, _m in ln]),
+            ("儿童娱乐", [f for f, _d, _m in lk]),
+            ("酒店配套", [f for f, _d, _m in lh]),
+        ]
+        w("")
+        w("| 业态 | 家数 | 代表（按评分） |")
+        w("|---|---|---|")
+        for label, lst in rows:
+            if not lst:
+                continue
+            top = sorted(lst, key=key)[:3]
+            w("| %s | %d | %s |" % (
+                label, len(lst),
+                "、".join(cell(x.get("name")) for x in top)))
+        w("")
+
+    # ── 3. 成人娱乐 ──
+    w("## 3. 成人娱乐（%d 家）" % (len(night) + len(adult)))
+    w("")
+    adult_all = dedup(night + adult)
+    sub_cnt = collections.Counter()
+    for p in adult_all:
+        blob = (p.get("name") or "") + " " + (p.get("address") or "")
+        for label, kws in ADULT_ENT:
+            if has_ctx(blob, kws):
+                sub_cnt[label] += 1
+                break
+        else:
+            sub_cnt["其他娱乐场所"] += 1
+    if sub_cnt:
+        w("| 子类 | 家数 |")
+        w("|---|---|")
+        for k, v in sub_cnt.most_common():
+            w("| %s | %d |" % (k, v))
+        w("")
+    if w_or_none(w, adult_all, "本城未采集到成人娱乐 POI"):
+        w("")
+        w("| 标记 | 名称 | 子类 | 类型 | 评分 | 人均 | 地址 |")
+        w("|---|---|---|---|---|---|---|")
+    for p in adult_all[:60]:
+        mk, _ = mark_poi(p)
+        blob = (p.get("name") or "") + " " + (p.get("address") or "")
+        sub = "其他娱乐场所"
+        for label, kws in ADULT_ENT:
+            if has_ctx(blob, kws):
+                sub = label
+                break
+        w("| %s | %s | %s | %s | %s | %s | %s |" % (
+            mk, cell(p.get("name")), sub,
+            (p.get("type") or "").replace("|", "/"),
+            p.get("rating") or "—", p.get("cost") or "—",
+            cell(p.get("address"))))
+    if len(adult_all) > 60:
+        w("")
+        w("（另 %d 家见 §11 原始数据）" % (len(adult_all) - 60))
+    w("")
+
+    # ── 4. 儿童与亲子 ──
+    w("## 4. 儿童与亲子娱乐（%d 家）" % len(kids))
+    w("")
+    w("**载体区分**：`场内` = 位于商场/购物中心/广场内（可顺路，"
+      "与逛吃同动线）；`独立` = 独立门店或园区点位（需单独规划）。"
+      "两者可靠性、可达性完全不同，混表会导致跑空。")
+    w("")
+    kidsub = collections.Counter()
+    for p in kids:
+        blob = (p.get("name") or "") + " " + (p.get("address") or "")
+        for label, kws in KIDS_ENT:
+            if has_ctx(blob, kws):
+                kidsub[label] += 1
+                break
+        else:
+            kidsub["其他儿童场所"] += 1
+    if kidsub:
+        w("| 子类 | 家数 |")
+        w("|---|---|")
+        for k, v in kidsub.most_common():
+            w("| %s | %d |" % (k, v))
+        w("")
+    if w_or_none(w, kids, "本城未采集到儿童娱乐 POI"):
+        w("")
+        w("| 标记 | 名称 | 子类 | 载体 | 评分 | 地址 |")
+        w("|---|---|---|---|---|---|")
+    for p in kids[:60]:
+        mk, _ = mark_poi(p)
+        blob = (p.get("name") or "") + " " + (p.get("address") or "")
+        sub = "其他儿童场所"
+        for label, kws in KIDS_ENT:
+            if has_ctx(blob, kws):
+                sub = label
+                break
+        carrier = "场内" if is_mall(blob) else "独立"
+        w("| %s | %s | %s | %s | %s | %s |" % (
+            mk, cell(p.get("name")), sub, carrier,
+            p.get("rating") or "—", cell(p.get("address"))))
+    if len(kids) > 60:
+        w("")
+        w("（另 %d 家见 §11 原始数据）" % (len(kids) - 60))
+    w("")
+
+    # ── 5. 综合体与商场 ──
+    malls = [p for p in district if carrier_of(p) in (
+        "购物中心/综合体", "百货/商场", "奥特莱斯", "批发城")]
+    w("## 5. 综合体与商场（%d 家）" % len(malls))
+    w("")
+    w("口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，"
+      "或名称含购物中心/百货/奥莱/批发。")
+    w("")
+    if w_or_none(w, malls, "本城未采集到购物中心/百货/奥莱/批发类 POI"):
+        w("")
+        w("| 标记 | 名称 | 载体类型 | 评分 | 场内儿童娱乐 | 关联美食 | 地址 |")
+        w("|---|---|---|---|---|---|---|")
+    for p in malls[:50]:
+        mk, _ = mark_poi(p)
+        dname = p.get("name") or ""
+        nk = len(kids_linked.get(dname, []))
+        nf = len(food_linked.get(dname, []))
+        w("| %s | %s | %s | %s | %d | %d | %s |" % (
+            mk, cell(p.get("name")), carrier_of(p),
+            p.get("rating") or "—", nk, nf, cell(p.get("address"))))
+    if len(malls) > 50:
+        w("")
+        w("（另 %d 家见 §11 原始数据）" % (len(malls) - 50))
+    w("")
+
+    # ── 6. 本地美食 ──
+    w("## 6. 本地美食与特色美食（%d 家）" % len(food))
     w("")
     w("标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；"
       "✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ <3.5 或无地址。")
     w("")
-    w("| 标记 | 店名 | 类型 | 评分 | 人均 | 地址 | 图片 |")
-    w("|---|---|---|---|---|---|---|")
+    if w_or_none(w, food, "本城未采集到餐饮 POI"):
+        w("")
+        w("| 标记 | 店名 | 类型 | 评分 | 人均 | 地址 | 图片 |")
+        w("|---|---|---|---|---|---|---|")
     for p in food[:80]:
         mk, _why = mark_poi(p)
-        img = "![图](https://store.is.autonavi.com/showpic/%s)" % \
-              (p["photos"][0].split("/")[-1]) if p.get("photos") else ""
+        img = ("![图](https://store.is.autonavi.com/showpic/%s)"
+               % p["photos"][0].split("/")[-1]) if p.get("photos") else ""
         w("| %s | %s | %s | %s | %s | %s | %s |" % (
             mk, cell(p.get("name")), (p.get("type") or "").replace("|", "/"),
             p.get("rating") or "—", p.get("cost") or "—",
             cell(p.get("address")), img))
     if len(food) > 80:
         w("")
-        w("（另 %d 家见 §7 原始数据，评分排序后 80 名未列入）" % (len(food) - 80))
+        w("（另 %d 家见 §11 原始数据，评分排序后 80 名未列入）"
+          % (len(food) - 80))
     w("")
 
-    # ── 2. 苍蝇馆候选 ──
-    w("## 2. 苍蝇馆 / 小店候选（%d 家）" % len(
-        [p for p in food if has_ctx(p.get("name") or "", SMALL_SHOP_KW)]))
+    # ── 7. 苍蝇馆 ──
+    small = [p for p in food if has_ctx(p.get("name") or "", SMALL_SHOP_KW)]
+    w("## 7. 苍蝇馆 / 小店候选（%d 家）" % len(small))
     w("")
     w("**判定纪律**：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，"
       "或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；"
       "「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，"
       "因此评分区间放宽到 3.6–4.6。")
     w("")
-    w("| 店名 | 来源查询面 | 评分 | 人均 | 地址 | 备注 |")
-    w("|---|---|---|---|---|---|")
-    for p in food:
+    if w_or_none(w, small, "未命中苍蝇馆关键词或小店语义——需人工补充"):
+        w("")
+        w("| 店名 | 来源查询面 | 评分 | 人均 | 地址 | 备注 |")
+        w("|---|---|---|---|---|---|")
+    for p in small:
         name = p.get("name") or ""
-        if not has_ctx(name, SMALL_SHOP_KW):
-            continue
         src = "苍蝇馆关键词" if "苍蝇馆" in name else "店名小店语义"
         try:
             r = float(p.get("rating") or 0)
@@ -287,11 +713,13 @@ def render_city(city, cache, prov_name):
             cell(p.get("address")), note))
     w("")
 
-    # ── 3. 知名特产 ──
-    w("## 3. 知名特产（%d 家）" % len(product))
+    # ── 8. 特产 ──
+    w("## 8. 知名特产（%d 家）" % len(product))
     w("")
-    w("| 标记 | 名称 | 类型 | 评分 | 地址 |")
-    w("|---|---|---|---|---|")
+    if w_or_none(w, product, "本城未采集到特产类 POI"):
+        w("")
+        w("| 标记 | 名称 | 类型 | 评分 | 地址 |")
+        w("|---|---|---|---|---|")
     for p in product[:60]:
         mk, _ = mark_poi(p)
         w("| %s | %s | %s | %s | %s |" % (
@@ -299,76 +727,58 @@ def render_city(city, cache, prov_name):
             p.get("rating") or "—", cell(p.get("address"))))
     if len(product) > 60:
         w("")
-        w("（另 %d 家见 §7）" % (len(product) - 60))
+        w("（另 %d 家见 §11）" % (len(product) - 60))
     w("")
 
-    # ── 4. 商圈 ──
-    w("## 4. 商圈总览（%d 处）" % len(district))
-    w("")
-    w("口径：购物服务 061001 步行街 / 061000 特色商业街 / 060101 购物中心 / "
-      "060100 商场，或名称地址含商业街/步行街/夜市/美食街等载体词。")
-    w("")
-    w("| 标记 | 商圈名 | 类型 | 评分 | 关联美食数 | 地址 |")
-    w("|---|---|---|---|---|---|")
-    for p in district[:60]:
-        mk, _ = mark_poi(p)
-        n = len(linked.get(p.get("name") or "", []))
-        w("| %s | %s | %s | %s | %d | %s |" % (
-            mk, cell(p.get("name")), (p.get("type") or "").replace("|", "/"),
-            p.get("rating") or "—", n, cell(p.get("address"))))
-    if len(district) > 60:
-        w("")
-        w("（另 %d 处见 §7）" % (len(district) - 60))
-    w("")
-
-    # ── 5. 商圈 × 美食 关联 ──
-    w("## 5. 美食 × 商圈 关联")
+    # ── 9. 美食 × 商圈关联 ──
+    w("## 9. 美食 × 商圈 关联")
     w("")
     w("关联方式：① 名称互证（美食店名/地址含商圈核心词）；"
       "② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，"
       "因为景区边界、跨街区的误配都靠距离无法排除。")
     w("")
     for dname, lst in list(linked.items())[:25]:
-        w("### %s（%d 家）" % (dname, len(lst)))
+        w("### %s（%d 家）" % (cell(dname), len(lst)))
         w("")
         w("| 店名 | 关联方式 | 直线距离 | 评分 | 数据位置 |")
         w("|---|---|---|---|---|")
         for f, dist, mode in lst[:25]:
             nm = f.get("name") or ""
-            # §1 只列评分前 80 名，其余条目指向 §7 原始 JSON，
-            # 保证任何引用都可回查（C6：引用完整性，而非位置一致）
-            where = "§1" if any(f.get("name") == q.get("name")
-                                for q in food[:80]) else "§7"
+            where = ("§6" if any(f.get("name") == q.get("name")
+                                 for q in food[:80]) else "§11")
             w("| %s | %s | %s | %s | %s |" % (
                 cell(nm), mode,
                 ("%dm" % round(dist)) if dist is not None else "—",
                 f.get("rating") or "—", where))
         w("")
 
-    # ── 6. 商圈儿童游乐 ──
-    w("## 6. 商圈儿童游乐 / 电玩 / 迷你游乐场（%d 家）" % len(kids))
+    # ── 10. 酒店 ──
+    w("## 10. 酒店配套（%d 家）" % len(hotel))
     w("")
-    w("**载体区分**：`场内` = 位于商场/购物中心/广场内（可顺路，"
-      "通常与逛吃同动线）；`独立` = 独立门店或园区内点位（需单独规划）。"
-      "两者可靠性、可达性完全不同，混表会导致跑空。")
-    w("")
-    w("| 标记 | 名称 | 载体 | 类型 | 评分 | 地址 |")
-    w("|---|---|---|---|---|---|")
-    for p in kids[:60]:
-        mk, _ = mark_poi(p)
-        blob = (p.get("name") or "") + " " + (p.get("address") or "")
-        carrier = "场内" if is_mall(blob) else "独立"
-        w("| %s | %s | %s | %s | %s | %s |" % (
-            mk, cell(p.get("name")), carrier,
-            (p.get("type") or "").replace("|", "/"),
-            p.get("rating") or "—", cell(p.get("address"))))
-    if len(kids) > 60:
-        w("")
-        w("（另 %d 家见 §7）" % (len(kids) - 60))
+    if hotel:
+        w("| 标记 | 名称 | 类型 | 评分 | 人均 | 地址 |")
+        w("|---|---|---|---|---|---|")
+        for p in hotel[:50]:
+            mk, _ = mark_poi(p)
+            w("| %s | %s | %s | %s | %s | %s |" % (
+                mk, cell(p.get("name")),
+                (p.get("type") or "").replace("|", "/"),
+                p.get("rating") or "—", p.get("cost") or "—",
+                cell(p.get("address"))))
+        if len(hotel) > 50:
+            w("")
+            w("（另 %d 家见 §11 原始数据）" % (len(hotel) - 50))
+    elif 2 not in waves:
+        w("（本档案未采集酒店维度——wave 2 未跑，"
+          "执行 `amap_collect.py --city %s --wave 2` 补齐）" % city)
+    else:
+        w("（wave 2 已采集住宿服务查询面，但本城返回 0 条酒店 POI——"
+          "可能是该城酒店 POI 收录较少，需人工确认；"
+          "原始查询面明细见 §11）")
     w("")
 
-    # ── 7. 原始查询清单 ──
-    w("## 7. 原始查询清单与原始数据")
+    # ── 11. 原始查询清单 ──
+    w("## 11. 原始查询清单与原始数据")
     w("")
     w("| 维度 | 查询面 | 命中 | 备注 |")
     w("|---|---|---|---|")
@@ -380,8 +790,8 @@ def render_city(city, cache, prov_name):
       "含照片 URL、电话、营业时间）。" % city)
     w("")
 
-    # ── 8. 校对待办 ──
-    w("## 8. 校对待办")
+    # ── 12. 校对待办 ──
+    w("## 12. 校对待办")
     w("")
     todo = []
     noaddr = [p for p in pois if not p.get("address")]
@@ -397,14 +807,17 @@ def render_city(city, cache, prov_name):
     todo.append("儿童游乐 %d 家，其中场内 %d 家、独立 %d 家——"
                 "需确认场内点位是否仍在营业（商场撤柜率高）。"
                 % (len(kids), mall_ct, len(kids) - mall_ct))
-    todo.append("§5 关联中，仅靠距离就近的条目需逐条确认"
+    todo.append("§2 商圈画像中「动线主轴」由地址道路词频推导，"
+                "「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。")
+    todo.append("§9 关联中，仅靠距离就近的条目需逐条确认"
                 "（防止景区/跨街区误配）。")
     if errs:
         todo.append("采集有告警：%s" % "；".join(errs[:3]))
+    if 2 not in waves:
+        todo.append("本档案缺 wave 2 维度（酒店/迷你动物园/成人娱乐/百货奥莱），"
+                    "需补采。")
     todo.append("本城 POI 覆盖 %d 个区县：%s——缺区县的需补充采集。"
-                % (len(set(p.get("adname") for p in pois if p.get("adname"))),
-                   "、".join(sorted(set(
-                       p["adname"] for p in pois if p.get("adname"))))))
+                % (len(adname_cnt), "、".join(sorted(adname_cnt))))
     for t in todo:
         w("- [ ] %s" % t)
     w("")
@@ -419,6 +832,9 @@ def main():
     args = ap.parse_args()
 
     provs = json.load(open(PROV, encoding="utf-8"))
+    hier = {}
+    if os.path.exists(HIER):
+        hier = json.load(open(HIER, encoding="utf-8"))
     os.makedirs(DATA, exist_ok=True)
 
     targets = []          # (省, 市)
@@ -443,7 +859,7 @@ def main():
         cache = json.load(open(fp, encoding="utf-8"))
         outdir = os.path.join(DATA, pname)
         os.makedirs(outdir, exist_ok=True)
-        md = render_city(city, cache, pname)
+        md = render_city(city, cache, pname, hier)
         outp = os.path.join(outdir, city + ".md")
         with open(outp, "w", encoding="utf-8") as f:
             f.write(md)
