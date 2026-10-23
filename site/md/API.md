@@ -1,6 +1,6 @@
 # FUN 数据接口文档
 
-> 站点：https://fun.worldstip.com  ·  生成时间：2026-10-24 01:55
+> 站点：https://fun.worldstip.com  ·  生成时间：2026-10-24 02:23
 > 所有端点只读、无鉴权、无速率限制，可被 CDN 缓存。JSON 与 Markdown 由同一数据层生成，同源同值。
 
 ## 端点总览
@@ -12,7 +12,7 @@
 | `/api/cities/index.json` | JSON | 城市轻索引数组（含页面/JSON/MD 三地址） | ~120 KB |
 | `/api/cities/<adcode>.json` | JSON | 城市全量结构化数据（见下方 Schema） | 50–500 KB/城 |
 | `/api/provinces/<省>.json` | JSON | 省级汇总：城市列表 + 聚合统计 | ~10–60 KB |
-| `/api/food/top.json` | JSON | 全国美食榜（按评分降序，含图与城市跳转） | ~600 KB |
+| `/api/food/top.json` | JSON | 全国美食榜（按评分降序，含图与城市跳转；已剔除住宿业主导 POI） | ~600 KB |
 | `/api/districts/top.json` | JSON | 全国 S/A 级商圈榜（按关联美食数） | ~400 KB |
 | `/md/<省>/<市>.md` | Markdown | 城市档案原文（13 章），skill 直读 | 20–80 KB/城 |
 | `/data.json` | JSON | 兼容旧版轻量总索引 | ~100 KB |

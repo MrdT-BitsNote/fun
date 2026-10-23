@@ -496,11 +496,25 @@ def main():
         "city_index": light,
     })
 
-    # 全国美食榜（每城取评分前列，带图优先；仅收餐饮类，防酒店/娱乐混入）
+    # 全国美食榜（每城取评分前列，带图优先；仅收餐饮业主导 POI，防酒店/宾馆混入）
+    # 剔除规则：名称命中住宿关键词，或高德主类型段为「住宿服务」（餐饮仅作次要类型的不算美食）
+    LODGING_NAME = re.compile(r"酒店|宾馆|旅馆|招待所|客栈|民宿|度假村|山庄|旅社|客房|公寓|青年旅舍|客舍")
+
+    def _foodish(x):
+        t = x.get("类型") or ""
+        n = x.get("店名") or ""
+        if "餐饮" not in t:
+            return False
+        if t.split("｜")[0].strip().startswith("住宿服务"):
+            return False
+        if LODGING_NAME.search(n):
+            return False
+        return True
+
     food_top = []
     for r in cities:
         pool = [x for x in r.get("food", [])
-                if x.get("评分") not in (None, "") and "餐饮" in (x.get("类型") or "")]
+                if x.get("评分") not in (None, "") and _foodish(x)]
         pool.sort(key=lambda x: (-(num(x.get("评分")) or 0), -(num(x.get("人均")) or 0)))
         picked, withimg = [], 0
         for x in pool:
@@ -521,7 +535,7 @@ def main():
     food_top.sort(key=lambda x: (-(x["rating"] or 0), x["city"]))
     food_top = food_top[:800]
     write_json(os.path.join(API, "food", "top.json"), {
-        "note": "按高德评分排序；每人每城最多 8 家，优先带图。字段含城市与城市页地址，可直接跳转。",
+        "note": "按高德评分排序；每人每城最多 8 家，优先带图；已剔除住宿业主导 POI（名称命中酒店/宾馆/旅馆/民宿等关键词，或主类型段为住宿服务）。字段含城市与城市页地址，可直接跳转。",
         "count": len(food_top), "items": food_top,
     })
 
@@ -624,7 +638,7 @@ def build_site_docs(light, cities):
 | `/api/cities/index.json` | JSON | 城市轻索引数组（含页面/JSON/MD 三地址） | ~120 KB |
 | `/api/cities/<adcode>.json` | JSON | 城市全量结构化数据（见下方 Schema） | 50–500 KB/城 |
 | `/api/provinces/<省>.json` | JSON | 省级汇总：城市列表 + 聚合统计 | ~10–60 KB |
-| `/api/food/top.json` | JSON | 全国美食榜（按评分降序，含图与城市跳转） | ~600 KB |
+| `/api/food/top.json` | JSON | 全国美食榜（按评分降序，含图与城市跳转；已剔除住宿业主导 POI） | ~600 KB |
 | `/api/districts/top.json` | JSON | 全国 S/A 级商圈榜（按关联美食数） | ~400 KB |
 | `/md/<省>/<市>.md` | Markdown | 城市档案原文（13 章），skill 直读 | 20–80 KB/城 |
 | `/data.json` | JSON | 兼容旧版轻量总索引 | ~100 KB |

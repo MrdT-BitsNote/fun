@@ -655,7 +655,6 @@ def head(title, desc, path_prefix=""):
 <div class="nav-links">
 <a href="{path_prefix}index.html#cities">城市</a>
 <a href="{path_prefix}index.html#districts">商圈评级</a>
-<a href="{path_prefix}index.html#food">美食榜</a>
 <a href="{path_prefix}api.html">数据接口</a>
 <a href="{path_prefix}sources.html">数据来源</a>
 <a class="nav-gh" href="{GH_REPO}" target="_blank" rel="noopener">GitHub</a>
@@ -668,8 +667,7 @@ def footer(path_prefix=""):
 <div><div class="foot-brand">FUN<i></i></div>
 <p class="foot-desc">全国美食 × 商圈 × 娱乐探索站。覆盖 32 个省级行政区 · 389 座城市，数据驱动你的本地生活。</p></div>
 <div class="foot-col"><h4>站点</h4>
-<a href="{p}index.html">首页</a><a href="{p}index.html#cities">探索城市</a><a href="{p}index.html#food">美食榜</a>
-<a href="{p}index.html#districts">商圈评级</a></div>
+<a href="{p}index.html">首页</a><a href="{p}index.html#cities">探索城市</a><a href="{p}index.html#districts">商圈评级</a></div>
 <div class="foot-col"><h4>数据</h4>
 <a href="{p}api.html">数据接口</a><a href="{p}sources.html">数据来源</a>
 <a href="{p}data.json">data.json</a><a href="{GH_REPO}" target="_blank" rel="noopener">GitHub 仓库</a></div>
@@ -703,7 +701,7 @@ def fmt_price(v):
 
 # ================================================================ 首页
 
-def render_index(idx, stats, food_top, dist_top):
+def render_index(idx, stats, dist_top):
     cities = idx["city_index"]
     provs = sorted(set(c["province"] for c in cities))
     poi_total = idx["poi_total"]
@@ -735,22 +733,6 @@ def render_index(idx, stats, food_top, dist_top):
     chips = "".join(
         f'<button class="chip{" on" if p == "全部" else ""}" data-prov="{esc(p)}">{esc(p)}</button>'
         for p in ["全部"] + provs)
-
-    # 美食卡（服务端渲染前 32 张，带图）
-    food_cards = []
-    for x in food_top["items"]:
-        if len(food_cards) >= 32:
-            break
-        if not x.get("image"):
-            continue
-        img = f'<img src="{esc(x["image"])}" alt="{esc(x["name"])}" loading="lazy" decoding="async">'
-        ph = f'<div class="ph">{esc((x["name"] or "?")[0])}</div>'
-        food_cards.append(f"""<a class="food-card reveal" href="{esc(x['city_page'])}" data-d="{len(food_cards)%4+1}">
-<div class="food-img">{img}{ph}<span class="rt">★ {x['rating']:g}</span></div>
-<div class="food-body"><div class="food-name">{esc(x['name'])}</div>
-<div class="food-type">{esc(x['type'] or '')}</div>
-<div class="food-foot"><span class="food-avg">{fmt_price(x['avg'])}</span>
-<span class="food-city">{esc(x['city'])}</span></div></div></a>""")
 
     leisure_bars = "".join(
         f'<div class="bar-row"><span class="lb">{esc(k)}</span>'
@@ -815,14 +797,6 @@ def render_index(idx, stats, food_top, dist_top):
 <script type="application/json" id="dist-data">{dist_js}</script>
 </section>
 
-<section id="food">
-<div class="sec-head reveal"><div class="sec-label">Food</div>
-<h2 class="sec-title">全国美食榜</h2>
-<p class="sec-desc">各城市高德评分前列的餐饮（含老字号与地方风味语义优先）。图片来自高德商家实拍。</p></div>
-<div class="food-grid">{''.join(food_cards)}</div>
-<p class="sec-desc" style="margin-top:18px">完整榜单（{food_top['count']} 家）见机器可读接口：<a href="api/food/top.json" style="color:var(--blue)">/api/food/top.json</a></p>
-</section>
-
 <section id="play">
 <div class="sec-head reveal"><div class="sec-label">Beyond Food</div>
 <h2 class="sec-title">不止于吃</h2>
@@ -853,7 +827,7 @@ def render_index(idx, stats, food_top, dist_top):
 <a class="aq-btn" href="api/index.json" target="_blank" rel="noopener"><code>/api/index.json</code><em>全国总索引</em></a>
 <a class="aq-btn" href="api/stats.json" target="_blank" rel="noopener"><code>/api/stats.json</code><em>全站统计</em></a>
 <a class="aq-btn" href="api/cities/index.json" target="_blank" rel="noopener"><code>/api/cities/index.json</code><em>城市轻索引</em></a>
-<a class="aq-btn" href="api/food/top.json" target="_blank" rel="noopener"><code>/api/food/top.json</code><em>全国美食榜</em></a>
+<a class="aq-btn" href="api/food/top.json" target="_blank" rel="noopener"><code>/api/food/top.json</code><em>美食榜·已剔住宿</em></a>
 <a class="aq-btn" href="api/districts/top.json" target="_blank" rel="noopener"><code>/api/districts/top.json</code><em>商圈 S/A 榜</em></a>
 <a class="aq-btn" href="api/cities/430600.json" target="_blank" rel="noopener"><code>/api/cities/430600.json</code><em>岳阳市全量</em></a>
 </div>
@@ -873,7 +847,7 @@ def render_index(idx, stats, food_top, dist_top):
 <tr><td><code>/api/cities/index.json</code></td><td>JSON</td><td>城市轻索引数组（含页面 / JSON / MD 三地址）</td></tr>
 <tr><td><code>/api/cities/&lt;adcode&gt;.json</code></td><td>JSON</td><td>城市全量结构化数据：商圈档案与详情、美食、休闲、儿童、商场、特产、酒店、关联</td></tr>
 <tr><td><code>/api/provinces/&lt;省&gt;.json</code></td><td>JSON</td><td>省级汇总：城市列表 + 聚合统计</td></tr>
-<tr><td><code>/api/food/top.json</code></td><td>JSON</td><td>全国美食榜（按评分，含图片与城市跳转地址）</td></tr>
+<tr><td><code>/api/food/top.json</code></td><td>JSON</td><td>全国美食榜（按评分；已剔除酒店/宾馆等住宿业主导 POI，含图片与城市跳转地址）</td></tr>
 <tr><td><code>/api/districts/top.json</code></td><td>JSON</td><td>全国商圈 S/A 级榜单（按关联美食数）</td></tr>
 <tr><td><code>/md/&lt;省&gt;/&lt;市&gt;.md</code></td><td>Markdown</td><td>城市档案原文，skill 直读；与 JSON 同源同值</td></tr>
 <tr><td><code>/data.json</code></td><td>JSON</td><td>兼容旧版轻量总索引</td></tr>
@@ -918,7 +892,7 @@ curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md</code></pre>
 </div></main>{footer()}"""
 
     return head(f"FUN · 全国美食 × 商圈 × 娱乐探索站",
-                f"覆盖 {stats['provinces']} 省级单位 / {stats['cities']} 城，{poi_total:,} POI。商圈评级、美食榜、休闲娱乐、儿童亲子、酒店特产，JSON/MD 双格式开放。") + body
+                f"覆盖 {stats['provinces']} 省级单位 / {stats['cities']} 城，{poi_total:,} POI。商圈评级、城市美食、休闲娱乐、儿童亲子、酒店特产，JSON/MD 双格式开放。") + body
 
 
 # ================================================================ 城市页
@@ -1201,7 +1175,7 @@ def render_city(rec):
 </div></main>{footer(path_prefix='../')}"""
 
     return head(f"{c} · {prov} 美食与商圈档案 · FUN",
-                f"{prov}{c}的完整本地档案：商圈评级、美食榜、休闲娱乐、儿童亲子、酒店与特产，JSON/MD 数据接口开放。",
+                f"{prov}{c}的完整本地档案：商圈评级、城市美食、休闲娱乐、儿童亲子、酒店与特产，JSON/MD 数据接口开放。",
                 path_prefix="../") + body
 
 
@@ -1314,7 +1288,7 @@ def render_api_doc(idx, stats):
 <tr><td><code>/api/cities/index.json</code></td><td>JSON</td><td>城市轻索引数组（含页面/JSON/MD 三地址）</td><td>~120 KB</td></tr>
 <tr><td><code>/api/cities/&lt;adcode&gt;.json</code></td><td>JSON</td><td>城市全量结构化数据（见下方 Schema）</td><td>50–500 KB/城</td></tr>
 <tr><td><code>/api/provinces/&lt;省&gt;.json</code></td><td>JSON</td><td>省级汇总：城市列表 + 聚合统计</td><td>~10–60 KB</td></tr>
-<tr><td><code>/api/food/top.json</code></td><td>JSON</td><td>全国美食榜（按评分降序，含图与城市跳转）</td><td>~600 KB</td></tr>
+<tr><td><code>/api/food/top.json</code></td><td>JSON</td><td>全国美食榜（按评分降序，含图与跳转；已剔除住宿业主导 POI）</td><td>~600 KB</td></tr>
 <tr><td><code>/api/districts/top.json</code></td><td>JSON</td><td>全国 S/A 级商圈榜（按关联美食数）</td><td>~400 KB</td></tr>
 <tr><td><code>/md/&lt;省&gt;/&lt;市&gt;.md</code></td><td>Markdown</td><td>城市档案原文（13 章），skill 直读</td><td>20–80 KB/城</td></tr>
 <tr><td><code>/data.json</code></td><td>JSON</td><td>兼容旧版轻量总索引</td><td>~100 KB</td></tr>
@@ -1588,7 +1562,6 @@ def build_deploy_files(idx, empty_provs=()):
 def main():
     idx = load("index.json")
     stats = load("stats.json")
-    food_top = load(os.path.join("food", "top.json"))
     dist_top = load(os.path.join("districts", "top.json"))
 
     # 资产
@@ -1600,7 +1573,7 @@ def main():
 
     # 首页
     with open(os.path.join(SITE, "index.html"), "w", encoding="utf-8") as f:
-        f.write(render_index(idx, stats, food_top, dist_top))
+        f.write(render_index(idx, stats, dist_top))
     print("[fun_site] index.html")
 
     # 城市页

@@ -23,7 +23,7 @@ DEPLOY_MD = """# FUN · 全国美食 × 商圈 × 娱乐探索站 — 直接上�
 
 | 路径 | 内容 |
 |---|---|
-| `index.html` | FUN hero（巨型字体 + 滚动入场）+ 主站七区块，首页内含**数据调用入口**（base URL 一键复制 / JSON·MD 端点快捷键 / 现场调用演示） |
+| `index.html` | FUN hero（巨型字体 + 滚动入场）+ 主站六区块，首页内含**数据调用入口**（base URL 一键复制 / JSON·MD 端点快捷键 / 现场调用演示） |
 | `cities/<adcode>.html` | {cities} 个城市档案页 |
 | `cities/<市名>.html` | 城市名 URL 兼容存根（meta refresh 自动跳转 adcode 页） |
 | `provinces/<省>.html` | {prov_pages} 个省级页面（{provs_data} 个有数据 + 2 个特别行政区空态兜底页） |

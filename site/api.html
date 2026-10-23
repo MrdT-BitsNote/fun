@@ -19,7 +19,6 @@
 <div class="nav-links">
 <a href="index.html#cities">城市</a>
 <a href="index.html#districts">商圈评级</a>
-<a href="index.html#food">美食榜</a>
 <a href="api.html">数据接口</a>
 <a href="sources.html">数据来源</a>
 <a class="nav-gh" href="https://github.com/MrdT-BitsNote/fun" target="_blank" rel="noopener">GitHub</a>
@@ -39,7 +38,7 @@
 <tr><td><code>/api/cities/index.json</code></td><td>JSON</td><td>城市轻索引数组（含页面/JSON/MD 三地址）</td><td>~120 KB</td></tr>
 <tr><td><code>/api/cities/&lt;adcode&gt;.json</code></td><td>JSON</td><td>城市全量结构化数据（见下方 Schema）</td><td>50–500 KB/城</td></tr>
 <tr><td><code>/api/provinces/&lt;省&gt;.json</code></td><td>JSON</td><td>省级汇总：城市列表 + 聚合统计</td><td>~10–60 KB</td></tr>
-<tr><td><code>/api/food/top.json</code></td><td>JSON</td><td>全国美食榜（按评分降序，含图与城市跳转）</td><td>~600 KB</td></tr>
+<tr><td><code>/api/food/top.json</code></td><td>JSON</td><td>全国美食榜（按评分降序，含图与跳转；已剔除住宿业主导 POI）</td><td>~600 KB</td></tr>
 <tr><td><code>/api/districts/top.json</code></td><td>JSON</td><td>全国 S/A 级商圈榜（按关联美食数）</td><td>~400 KB</td></tr>
 <tr><td><code>/md/&lt;省&gt;/&lt;市&gt;.md</code></td><td>Markdown</td><td>城市档案原文（13 章），skill 直读</td><td>20–80 KB/城</td></tr>
 <tr><td><code>/data.json</code></td><td>JSON</td><td>兼容旧版轻量总索引</td><td>~100 KB</td></tr>
@@ -115,12 +114,11 @@ data = json.load(urllib.request.urlopen("https://fun.worldstip.com/api/cities/43
 <div><div class="foot-brand">FUN<i></i></div>
 <p class="foot-desc">全国美食 × 商圈 × 娱乐探索站。覆盖 32 个省级行政区 · 389 座城市，数据驱动你的本地生活。</p></div>
 <div class="foot-col"><h4>站点</h4>
-<a href="index.html">首页</a><a href="index.html#cities">探索城市</a><a href="index.html#food">美食榜</a>
-<a href="index.html#districts">商圈评级</a></div>
+<a href="index.html">首页</a><a href="index.html#cities">探索城市</a><a href="index.html#districts">商圈评级</a></div>
 <div class="foot-col"><h4>数据</h4>
 <a href="api.html">数据接口</a><a href="sources.html">数据来源</a>
 <a href="data.json">data.json</a><a href="https://github.com/MrdT-BitsNote/fun" target="_blank" rel="noopener">GitHub 仓库</a></div>
-</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-24 01:55<br>
+</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-24 02:21<br>
 数据仅供探索参考，营业状态与评分以各平台实时信息为准。FUN · fun.worldstip.com</div></footer>
 <script src="assets/app.js"></script>
 </body></html>
