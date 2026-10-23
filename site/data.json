@@ -3,9 +3,9 @@
  "source": "高德地图 Web 服务 POI",
  "skill": "本地美食探索 v0.7.0",
  "cities_total": 389,
- "cities_built": 114,
- "cities_full_dims": 97,
- "poi_total": 79624,
+ "cities_built": 389,
+ "cities_full_dims": 388,
+ "poi_total": 184350,
  "cities": [
   {
    "city": "洛阳市",
@@ -1078,188 +1078,3213 @@
    "city": "天门市",
    "province": "湖北省",
    "adcode": "429006",
-   "poi": 454,
+   "poi": 571,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:33:55",
+   "updated": "2026-10-23 18:36:11",
    "url": "cities/天门市.html"
   },
   {
    "city": "孝感市",
    "province": "湖北省",
    "adcode": "420900",
-   "poi": 685,
+   "poi": 849,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:34:38",
+   "updated": "2026-10-23 18:36:25",
    "url": "cities/孝感市.html"
   },
   {
    "city": "仙桃市",
    "province": "湖北省",
    "adcode": "429004",
-   "poi": 485,
+   "poi": 614,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:36:39",
+   "url": "cities/仙桃市.html"
+  },
+  {
+   "city": "荆州市",
+   "province": "湖北省",
+   "adcode": "421000",
+   "poi": 839,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:36:52",
+   "url": "cities/荆州市.html"
+  },
+  {
+   "city": "恩施土家族苗族自治州",
+   "province": "湖北省",
+   "adcode": "422800",
+   "poi": 174,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:37:14",
+   "url": "cities/恩施土家族苗族自治州.html"
+  },
+  {
+   "city": "咸宁市",
+   "province": "湖北省",
+   "adcode": "421200",
+   "poi": 618,
    "waves": [
     1
    ],
-   "updated": "2026-10-23 18:35:27",
-   "url": "cities/仙桃市.html"
+   "updated": "2026-10-23 18:37:45",
+   "url": "cities/咸宁市.html"
+  },
+  {
+   "city": "神农架林区",
+   "province": "湖北省",
+   "adcode": "429021",
+   "poi": 329,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:38:27",
+   "url": "cities/神农架林区.html"
+  },
+  {
+   "city": "随州市",
+   "province": "湖北省",
+   "adcode": "421300",
+   "poi": 683,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:39:05",
+   "url": "cities/随州市.html"
+  },
+  {
+   "city": "黄石市",
+   "province": "湖北省",
+   "adcode": "420200",
+   "poi": 758,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:39:59",
+   "url": "cities/黄石市.html"
+  },
+  {
+   "city": "鄂州市",
+   "province": "湖北省",
+   "adcode": "420700",
+   "poi": 653,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:40:38",
+   "url": "cities/鄂州市.html"
+  },
+  {
+   "city": "葫芦岛市",
+   "province": "辽宁省",
+   "adcode": "211400",
+   "poi": 764,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:41:18",
+   "url": "cities/葫芦岛市.html"
+  },
+  {
+   "city": "大连市",
+   "province": "辽宁省",
+   "adcode": "210200",
+   "poi": 910,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:42:13",
+   "url": "cities/大连市.html"
+  },
+  {
+   "city": "丹东市",
+   "province": "辽宁省",
+   "adcode": "210600",
+   "poi": 710,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:42:53",
+   "url": "cities/丹东市.html"
+  },
+  {
+   "city": "锦州市",
+   "province": "辽宁省",
+   "adcode": "210700",
+   "poi": 761,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:43:43",
+   "url": "cities/锦州市.html"
+  },
+  {
+   "city": "沈阳市",
+   "province": "辽宁省",
+   "adcode": "210100",
+   "poi": 958,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:44:30",
+   "url": "cities/沈阳市.html"
+  },
+  {
+   "city": "铁岭市",
+   "province": "辽宁省",
+   "adcode": "211200",
+   "poi": 674,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:45:19",
+   "url": "cities/铁岭市.html"
+  },
+  {
+   "city": "阜新市",
+   "province": "辽宁省",
+   "adcode": "210900",
+   "poi": 638,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:45:57",
+   "url": "cities/阜新市.html"
+  },
+  {
+   "city": "本溪市",
+   "province": "辽宁省",
+   "adcode": "210500",
+   "poi": 610,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:46:45",
+   "url": "cities/本溪市.html"
+  },
+  {
+   "city": "辽阳市",
+   "province": "辽宁省",
+   "adcode": "211000",
+   "poi": 612,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:47:23",
+   "url": "cities/辽阳市.html"
+  },
+  {
+   "city": "抚顺市",
+   "province": "辽宁省",
+   "adcode": "210400",
+   "poi": 671,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:48:11",
+   "url": "cities/抚顺市.html"
+  },
+  {
+   "city": "盘锦市",
+   "province": "辽宁省",
+   "adcode": "211100",
+   "poi": 722,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:48:51",
+   "url": "cities/盘锦市.html"
+  },
+  {
+   "city": "朝阳市",
+   "province": "辽宁省",
+   "adcode": "211300",
+   "poi": 678,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:49:40",
+   "url": "cities/朝阳市.html"
+  },
+  {
+   "city": "鞍山市",
+   "province": "辽宁省",
+   "adcode": "210300",
+   "poi": 815,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:50:22",
+   "url": "cities/鞍山市.html"
+  },
+  {
+   "city": "营口市",
+   "province": "辽宁省",
+   "adcode": "210800",
+   "poi": 747,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:51:13",
+   "url": "cities/营口市.html"
+  },
+  {
+   "city": "东营市",
+   "province": "山东省",
+   "adcode": "370500",
+   "poi": 803,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:51:54",
+   "url": "cities/东营市.html"
+  },
+  {
+   "city": "滨州市",
+   "province": "山东省",
+   "adcode": "371600",
+   "poi": 802,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:52:46",
+   "url": "cities/滨州市.html"
+  },
+  {
+   "city": "烟台市",
+   "province": "山东省",
+   "adcode": "370600",
+   "poi": 916,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:53:31",
+   "url": "cities/烟台市.html"
+  },
+  {
+   "city": "威海市",
+   "province": "山东省",
+   "adcode": "371000",
+   "poi": 845,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:54:25",
+   "url": "cities/威海市.html"
+  },
+  {
+   "city": "青岛市",
+   "province": "山东省",
+   "adcode": "370200",
+   "poi": 930,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:55:11",
+   "url": "cities/青岛市.html"
+  },
+  {
+   "city": "聊城市",
+   "province": "山东省",
+   "adcode": "371500",
+   "poi": 864,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:56:04",
+   "url": "cities/聊城市.html"
+  },
+  {
+   "city": "淄博市",
+   "province": "山东省",
+   "adcode": "370300",
+   "poi": 878,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:56:48",
+   "url": "cities/淄博市.html"
+  },
+  {
+   "city": "潍坊市",
+   "province": "山东省",
+   "adcode": "370700",
+   "poi": 941,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:57:43",
+   "url": "cities/潍坊市.html"
+  },
+  {
+   "city": "泰安市",
+   "province": "山东省",
+   "adcode": "370900",
+   "poi": 911,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:58:27",
+   "url": "cities/泰安市.html"
+  },
+  {
+   "city": "枣庄市",
+   "province": "山东省",
+   "adcode": "370400",
+   "poi": 851,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:59:20",
+   "url": "cities/枣庄市.html"
+  },
+  {
+   "city": "济南市",
+   "province": "山东省",
+   "adcode": "370100",
+   "poi": 948,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:00:06",
+   "url": "cities/济南市.html"
+  },
+  {
+   "city": "临沂市",
+   "province": "山东省",
+   "adcode": "371300",
+   "poi": 962,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:01:00",
+   "url": "cities/临沂市.html"
+  },
+  {
+   "city": "日照市",
+   "province": "山东省",
+   "adcode": "371100",
+   "poi": 786,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:01:44",
+   "url": "cities/日照市.html"
+  },
+  {
+   "city": "德州市",
+   "province": "山东省",
+   "adcode": "371400",
+   "poi": 899,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:02:37",
+   "url": "cities/德州市.html"
+  },
+  {
+   "city": "济宁市",
+   "province": "山东省",
+   "adcode": "370800",
+   "poi": 955,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:03:22",
+   "url": "cities/济宁市.html"
+  },
+  {
+   "city": "菏泽市",
+   "province": "山东省",
+   "adcode": "371700",
+   "poi": 920,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:04:15",
+   "url": "cities/菏泽市.html"
+  },
+  {
+   "city": "上海市",
+   "province": "上海市",
+   "adcode": "310100",
+   "poi": 977,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:05:10",
+   "url": "cities/上海市.html"
+  },
+  {
+   "city": "遵义市",
+   "province": "贵州省",
+   "adcode": "520300",
+   "poi": 882,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:06:07",
+   "url": "cities/遵义市.html"
+  },
+  {
+   "city": "铜仁市",
+   "province": "贵州省",
+   "adcode": "520600",
+   "poi": 830,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:06:50",
+   "url": "cities/铜仁市.html"
+  },
+  {
+   "city": "六盘水市",
+   "province": "贵州省",
+   "adcode": "520200",
+   "poi": 744,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:07:41",
+   "url": "cities/六盘水市.html"
+  },
+  {
+   "city": "安顺市",
+   "province": "贵州省",
+   "adcode": "520400",
+   "poi": 801,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:08:24",
+   "url": "cities/安顺市.html"
+  },
+  {
+   "city": "黔南布依族苗族自治州",
+   "province": "贵州省",
+   "adcode": "522700",
+   "poi": 820,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:09:17",
+   "url": "cities/黔南布依族苗族自治州.html"
+  },
+  {
+   "city": "黔西南布依族苗族自治州",
+   "province": "贵州省",
+   "adcode": "522300",
+   "poi": 775,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:10:01",
+   "url": "cities/黔西南布依族苗族自治州.html"
+  },
+  {
+   "city": "黔东南苗族侗族自治州",
+   "province": "贵州省",
+   "adcode": "522600",
+   "poi": 807,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:10:53",
+   "url": "cities/黔东南苗族侗族自治州.html"
+  },
+  {
+   "city": "毕节市",
+   "province": "贵州省",
+   "adcode": "520500",
+   "poi": 848,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:11:36",
+   "url": "cities/毕节市.html"
+  },
+  {
+   "city": "贵阳市",
+   "province": "贵州省",
+   "adcode": "520100",
+   "poi": 948,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:12:34",
+   "url": "cities/贵阳市.html"
+  },
+  {
+   "city": "重庆市",
+   "province": "重庆市",
+   "adcode": "500100",
+   "poi": 973,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:13:21",
+   "url": "cities/重庆市.html"
+  },
+  {
+   "city": "铜陵市",
+   "province": "安徽省",
+   "adcode": "340700",
+   "poi": 637,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:14:09",
+   "url": "cities/铜陵市.html"
+  },
+  {
+   "city": "池州市",
+   "province": "安徽省",
+   "adcode": "341700",
+   "poi": 645,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:14:48",
+   "url": "cities/池州市.html"
+  },
+  {
+   "city": "安庆市",
+   "province": "安徽省",
+   "adcode": "340800",
+   "poi": 841,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:15:41",
+   "url": "cities/安庆市.html"
+  },
+  {
+   "city": "马鞍山市",
+   "province": "安徽省",
+   "adcode": "340500",
+   "poi": 728,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:16:22",
+   "url": "cities/马鞍山市.html"
+  },
+  {
+   "city": "淮北市",
+   "province": "安徽省",
+   "adcode": "340600",
+   "poi": 706,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:17:12",
+   "url": "cities/淮北市.html"
+  },
+  {
+   "city": "六安市",
+   "province": "安徽省",
+   "adcode": "341500",
+   "poi": 831,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:17:55",
+   "url": "cities/六安市.html"
+  },
+  {
+   "city": "阜阳市",
+   "province": "安徽省",
+   "adcode": "341200",
+   "poi": 950,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:18:49",
+   "url": "cities/阜阳市.html"
+  },
+  {
+   "city": "滁州市",
+   "province": "安徽省",
+   "adcode": "341100",
+   "poi": 830,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:19:31",
+   "url": "cities/滁州市.html"
+  },
+  {
+   "city": "蚌埠市",
+   "province": "安徽省",
+   "adcode": "340300",
+   "poi": 836,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:23",
+   "url": "cities/蚌埠市.html"
+  },
+  {
+   "city": "黄山市",
+   "province": "安徽省",
+   "adcode": "341000",
+   "poi": 705,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:03",
+   "url": "cities/黄山市.html"
+  },
+  {
+   "city": "合肥市",
+   "province": "安徽省",
+   "adcode": "340100",
+   "poi": 950,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:58",
+   "url": "cities/合肥市.html"
+  },
+  {
+   "city": "芜湖市",
+   "province": "安徽省",
+   "adcode": "340200",
+   "poi": 846,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:42",
+   "url": "cities/芜湖市.html"
+  },
+  {
+   "city": "宣城市",
+   "province": "安徽省",
+   "adcode": "341800",
+   "poi": 815,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:34",
+   "url": "cities/宣城市.html"
+  },
+  {
+   "city": "亳州市",
+   "province": "安徽省",
+   "adcode": "341600",
+   "poi": 824,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:17",
+   "url": "cities/亳州市.html"
+  },
+  {
+   "city": "淮南市",
+   "province": "安徽省",
+   "adcode": "340400",
+   "poi": 770,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:09",
+   "url": "cities/淮南市.html"
+  },
+  {
+   "city": "宿州市",
+   "province": "安徽省",
+   "adcode": "341300",
+   "poi": 874,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:53",
+   "url": "cities/宿州市.html"
+  },
+  {
+   "city": "宁德市",
+   "province": "福建省",
+   "adcode": "350900",
+   "poi": 760,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:44",
+   "url": "cities/宁德市.html"
+  },
+  {
+   "city": "福州市",
+   "province": "福建省",
+   "adcode": "350100",
+   "poi": 952,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:30",
+   "url": "cities/福州市.html"
+  },
+  {
+   "city": "莆田市",
+   "province": "福建省",
+   "adcode": "350300",
+   "poi": 808,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:28:22",
+   "url": "cities/莆田市.html"
+  },
+  {
+   "city": "泉州市",
+   "province": "福建省",
+   "adcode": "350500",
+   "poi": 915,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:29:07",
+   "url": "cities/泉州市.html"
+  },
+  {
+   "city": "厦门市",
+   "province": "福建省",
+   "adcode": "350200",
+   "poi": 939,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:30:03",
+   "url": "cities/厦门市.html"
+  },
+  {
+   "city": "漳州市",
+   "province": "福建省",
+   "adcode": "350600",
+   "poi": 878,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:30:46",
+   "url": "cities/漳州市.html"
+  },
+  {
+   "city": "三明市",
+   "province": "福建省",
+   "adcode": "350400",
+   "poi": 746,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:31:37",
+   "url": "cities/三明市.html"
+  },
+  {
+   "city": "南平市",
+   "province": "福建省",
+   "adcode": "350700",
+   "poi": 765,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:32:19",
+   "url": "cities/南平市.html"
+  },
+  {
+   "city": "龙岩市",
+   "province": "福建省",
+   "adcode": "350800",
+   "poi": 760,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:33:42",
+   "url": "cities/龙岩市.html"
   },
   {
    "city": "怀化市",
    "province": "湖南省",
    "adcode": "431200",
-   "poi": 685,
+   "poi": 832,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:48:57",
+   "updated": "2026-10-23 18:55:19",
    "url": "cities/怀化市.html"
   },
   {
    "city": "岳阳市",
    "province": "湖南省",
    "adcode": "430600",
-   "poi": 696,
+   "poi": 866,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:49:09",
+   "updated": "2026-10-23 18:55:42",
    "url": "cities/岳阳市.html"
   },
   {
    "city": "湘西土家族苗族自治州",
    "province": "湖南省",
    "adcode": "433100",
-   "poi": 616,
+   "poi": 754,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:49:20",
+   "updated": "2026-10-23 18:55:56",
    "url": "cities/湘西土家族苗族自治州.html"
   },
   {
    "city": "张家界市",
    "province": "湖南省",
    "adcode": "430800",
-   "poi": 571,
+   "poi": 707,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:49:30",
+   "updated": "2026-10-23 18:56:09",
    "url": "cities/张家界市.html"
   },
   {
    "city": "永州市",
    "province": "湖南省",
    "adcode": "431100",
-   "poi": 681,
+   "poi": 826,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:49:42",
+   "updated": "2026-10-23 18:56:23",
    "url": "cities/永州市.html"
   },
   {
    "city": "常德市",
    "province": "湖南省",
    "adcode": "430700",
-   "poi": 708,
+   "poi": 868,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:49:53",
+   "updated": "2026-10-23 18:56:37",
    "url": "cities/常德市.html"
   },
   {
    "city": "湘潭市",
    "province": "湖南省",
    "adcode": "430300",
-   "poi": 627,
+   "poi": 771,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:50:04",
+   "updated": "2026-10-23 18:56:50",
    "url": "cities/湘潭市.html"
   },
   {
    "city": "郴州市",
    "province": "湖南省",
    "adcode": "431000",
-   "poi": 693,
+   "poi": 847,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:50:16",
+   "updated": "2026-10-23 18:57:04",
    "url": "cities/郴州市.html"
   },
   {
    "city": "株洲市",
    "province": "湖南省",
    "adcode": "430200",
-   "poi": 673,
+   "poi": 822,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:50:27",
+   "updated": "2026-10-23 18:57:26",
    "url": "cities/株洲市.html"
   },
   {
    "city": "长沙市",
    "province": "湖南省",
    "adcode": "430100",
-   "poi": 738,
+   "poi": 941,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:50:41",
+   "updated": "2026-10-23 18:57:41",
    "url": "cities/长沙市.html"
   },
   {
    "city": "衡阳市",
    "province": "湖南省",
    "adcode": "430400",
-   "poi": 688,
+   "poi": 851,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:50:53",
+   "updated": "2026-10-23 18:57:54",
    "url": "cities/衡阳市.html"
   },
   {
    "city": "邵阳市",
    "province": "湖南省",
    "adcode": "430500",
-   "poi": 674,
+   "poi": 838,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:51:04",
+   "updated": "2026-10-23 18:58:08",
    "url": "cities/邵阳市.html"
   },
   {
    "city": "娄底市",
    "province": "湖南省",
    "adcode": "431300",
-   "poi": 639,
+   "poi": 786,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:51:16",
+   "updated": "2026-10-23 18:58:22",
    "url": "cities/娄底市.html"
   },
   {
    "city": "益阳市",
    "province": "湖南省",
    "adcode": "430900",
-   "poi": 621,
+   "poi": 767,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 16:51:27",
+   "updated": "2026-10-23 18:58:35",
    "url": "cities/益阳市.html"
+  },
+  {
+   "city": "白沙黎族自治县",
+   "province": "海南省",
+   "adcode": "469025",
+   "poi": 228,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:34:22",
+   "url": "cities/白沙黎族自治县.html"
+  },
+  {
+   "city": "屯昌县",
+   "province": "海南省",
+   "adcode": "469022",
+   "poi": 292,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:34:53",
+   "url": "cities/屯昌县.html"
+  },
+  {
+   "city": "东方市",
+   "province": "海南省",
+   "adcode": "469007",
+   "poi": 439,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:35:37",
+   "url": "cities/东方市.html"
+  },
+  {
+   "city": "琼中黎族苗族自治县",
+   "province": "海南省",
+   "adcode": "469030",
+   "poi": 250,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:36:09",
+   "url": "cities/琼中黎族苗族自治县.html"
+  },
+  {
+   "city": "乐东黎族自治县",
+   "province": "海南省",
+   "adcode": "469027",
+   "poi": 452,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:36:43",
+   "url": "cities/乐东黎族自治县.html"
+  },
+  {
+   "city": "文昌市",
+   "province": "海南省",
+   "adcode": "469005",
+   "poi": 529,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:37:27",
+   "url": "cities/文昌市.html"
+  },
+  {
+   "city": "三沙市",
+   "province": "海南省",
+   "adcode": "460300",
+   "poi": 9,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:37:56",
+   "url": "cities/三沙市.html"
+  },
+  {
+   "city": "陵水黎族自治县",
+   "province": "海南省",
+   "adcode": "469028",
+   "poi": 542,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:38:42",
+   "url": "cities/陵水黎族自治县.html"
+  },
+  {
+   "city": "临高县",
+   "province": "海南省",
+   "adcode": "469024",
+   "poi": 367,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:39:16",
+   "url": "cities/临高县.html"
+  },
+  {
+   "city": "三亚市",
+   "province": "海南省",
+   "adcode": "460200",
+   "poi": 758,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:40:09",
+   "url": "cities/三亚市.html"
+  },
+  {
+   "city": "五指山市",
+   "province": "海南省",
+   "adcode": "469001",
+   "poi": 264,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:40:41",
+   "url": "cities/五指山市.html"
+  },
+  {
+   "city": "保亭黎族苗族自治县",
+   "province": "海南省",
+   "adcode": "469029",
+   "poi": 282,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:41:13",
+   "url": "cities/保亭黎族苗族自治县.html"
+  },
+  {
+   "city": "定安县",
+   "province": "海南省",
+   "adcode": "469021",
+   "poi": 313,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:41:54",
+   "url": "cities/定安县.html"
+  },
+  {
+   "city": "昌江黎族自治县",
+   "province": "海南省",
+   "adcode": "469026",
+   "poi": 317,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:42:26",
+   "url": "cities/昌江黎族自治县.html"
+  },
+  {
+   "city": "澄迈县",
+   "province": "海南省",
+   "adcode": "469023",
+   "poi": 491,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:43:11",
+   "url": "cities/澄迈县.html"
+  },
+  {
+   "city": "海口市",
+   "province": "海南省",
+   "adcode": "460100",
+   "poi": 861,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:43:55",
+   "url": "cities/海口市.html"
+  },
+  {
+   "city": "儋州市",
+   "province": "海南省",
+   "adcode": "460400",
+   "poi": 565,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:44:40",
+   "url": "cities/儋州市.html"
+  },
+  {
+   "city": "琼海市",
+   "province": "海南省",
+   "adcode": "469002",
+   "poi": 530,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:45:16",
+   "url": "cities/琼海市.html"
+  },
+  {
+   "city": "万宁市",
+   "province": "海南省",
+   "adcode": "469006",
+   "poi": 550,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:45:52",
+   "url": "cities/万宁市.html"
+  },
+  {
+   "city": "连云港市",
+   "province": "江苏省",
+   "adcode": "320700",
+   "poi": 852,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:46:45",
+   "url": "cities/连云港市.html"
+  },
+  {
+   "city": "南通市",
+   "province": "江苏省",
+   "adcode": "320600",
+   "poi": 952,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:47:30",
+   "url": "cities/南通市.html"
+  },
+  {
+   "city": "南京市",
+   "province": "江苏省",
+   "adcode": "320100",
+   "poi": 913,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:48:25",
+   "url": "cities/南京市.html"
+  },
+  {
+   "city": "苏州市",
+   "province": "江苏省",
+   "adcode": "320500",
+   "poi": 1004,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:49:11",
+   "url": "cities/苏州市.html"
+  },
+  {
+   "city": "宿迁市",
+   "province": "江苏省",
+   "adcode": "321300",
+   "poi": 904,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:50:05",
+   "url": "cities/宿迁市.html"
+  },
+  {
+   "city": "淮安市",
+   "province": "江苏省",
+   "adcode": "320800",
+   "poi": 862,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:50:48",
+   "url": "cities/淮安市.html"
+  },
+  {
+   "city": "徐州市",
+   "province": "江苏省",
+   "adcode": "320300",
+   "poi": 228,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:05:08",
+   "url": "cities/徐州市.html"
+  },
+  {
+   "city": "常州市",
+   "province": "江苏省",
+   "adcode": "320400",
+   "poi": 239,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:05:24",
+   "url": "cities/常州市.html"
+  },
+  {
+   "city": "盐城市",
+   "province": "江苏省",
+   "adcode": "320900",
+   "poi": 212,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:05:48",
+   "url": "cities/盐城市.html"
+  },
+  {
+   "city": "泰州市",
+   "province": "江苏省",
+   "adcode": "321200",
+   "poi": 210,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:06:01",
+   "url": "cities/泰州市.html"
+  },
+  {
+   "city": "无锡市",
+   "province": "江苏省",
+   "adcode": "320200",
+   "poi": 233,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:06:16",
+   "url": "cities/无锡市.html"
+  },
+  {
+   "city": "镇江市",
+   "province": "江苏省",
+   "adcode": "321100",
+   "poi": 209,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:06:29",
+   "url": "cities/镇江市.html"
+  },
+  {
+   "city": "扬州市",
+   "province": "江苏省",
+   "adcode": "321000",
+   "poi": 214,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:06:43",
+   "url": "cities/扬州市.html"
+  },
+  {
+   "city": "海东市",
+   "province": "青海省",
+   "adcode": "630200",
+   "poi": 145,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:06:57",
+   "url": "cities/海东市.html"
+  },
+  {
+   "city": "海南藏族自治州",
+   "province": "青海省",
+   "adcode": "632500",
+   "poi": 123,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:07:10",
+   "url": "cities/海南藏族自治州.html"
+  },
+  {
+   "city": "海西蒙古族藏族自治州",
+   "province": "青海省",
+   "adcode": "632800",
+   "poi": 139,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:07:31",
+   "url": "cities/海西蒙古族藏族自治州.html"
+  },
+  {
+   "city": "玉树藏族自治州",
+   "province": "青海省",
+   "adcode": "632700",
+   "poi": 93,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:07:44",
+   "url": "cities/玉树藏族自治州.html"
+  },
+  {
+   "city": "黄南藏族自治州",
+   "province": "青海省",
+   "adcode": "632300",
+   "poi": 72,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:07:57",
+   "url": "cities/黄南藏族自治州.html"
+  },
+  {
+   "city": "果洛藏族自治州",
+   "province": "青海省",
+   "adcode": "632600",
+   "poi": 71,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:08:10",
+   "url": "cities/果洛藏族自治州.html"
+  },
+  {
+   "city": "海北藏族自治州",
+   "province": "青海省",
+   "adcode": "632200",
+   "poi": 106,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:08:24",
+   "url": "cities/海北藏族自治州.html"
+  },
+  {
+   "city": "西宁市",
+   "province": "青海省",
+   "adcode": "630100",
+   "poi": 207,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:08:37",
+   "url": "cities/西宁市.html"
+  },
+  {
+   "city": "百色市",
+   "province": "广西壮族自治区",
+   "adcode": "451000",
+   "poi": 172,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:09:00",
+   "url": "cities/百色市.html"
+  },
+  {
+   "city": "钦州市",
+   "province": "广西壮族自治区",
+   "adcode": "450700",
+   "poi": 160,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:09:14",
+   "url": "cities/钦州市.html"
+  },
+  {
+   "city": "北海市",
+   "province": "广西壮族自治区",
+   "adcode": "450500",
+   "poi": 172,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:09:28",
+   "url": "cities/北海市.html"
+  },
+  {
+   "city": "防城港市",
+   "province": "广西壮族自治区",
+   "adcode": "450600",
+   "poi": 151,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:09:43",
+   "url": "cities/防城港市.html"
+  },
+  {
+   "city": "柳州市",
+   "province": "广西壮族自治区",
+   "adcode": "450200",
+   "poi": 194,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:09:57",
+   "url": "cities/柳州市.html"
+  },
+  {
+   "city": "梧州市",
+   "province": "广西壮族自治区",
+   "adcode": "450400",
+   "poi": 155,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:10:10",
+   "url": "cities/梧州市.html"
+  },
+  {
+   "city": "贵港市",
+   "province": "广西壮族自治区",
+   "adcode": "450800",
+   "poi": 160,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:10:24",
+   "url": "cities/贵港市.html"
+  },
+  {
+   "city": "玉林市",
+   "province": "广西壮族自治区",
+   "adcode": "450900",
+   "poi": 166,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:10:47",
+   "url": "cities/玉林市.html"
+  },
+  {
+   "city": "崇左市",
+   "province": "广西壮族自治区",
+   "adcode": "451400",
+   "poi": 149,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:11:00",
+   "url": "cities/崇左市.html"
+  },
+  {
+   "city": "贺州市",
+   "province": "广西壮族自治区",
+   "adcode": "451100",
+   "poi": 145,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:11:14",
+   "url": "cities/贺州市.html"
+  },
+  {
+   "city": "南宁市",
+   "province": "广西壮族自治区",
+   "adcode": "450100",
+   "poi": 230,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:11:28",
+   "url": "cities/南宁市.html"
+  },
+  {
+   "city": "桂林市",
+   "province": "广西壮族自治区",
+   "adcode": "450300",
+   "poi": 194,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:11:42",
+   "url": "cities/桂林市.html"
+  },
+  {
+   "city": "来宾市",
+   "province": "广西壮族自治区",
+   "adcode": "451300",
+   "poi": 148,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:11:55",
+   "url": "cities/来宾市.html"
+  },
+  {
+   "city": "河池市",
+   "province": "广西壮族自治区",
+   "adcode": "451200",
+   "poi": 157,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:12:09",
+   "url": "cities/河池市.html"
+  },
+  {
+   "city": "石嘴山市",
+   "province": "宁夏回族自治区",
+   "adcode": "640200",
+   "poi": 137,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:12:33",
+   "url": "cities/石嘴山市.html"
+  },
+  {
+   "city": "固原市",
+   "province": "宁夏回族自治区",
+   "adcode": "640400",
+   "poi": 148,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:12:46",
+   "url": "cities/固原市.html"
+  },
+  {
+   "city": "中卫市",
+   "province": "宁夏回族自治区",
+   "adcode": "640500",
+   "poi": 146,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:13:00",
+   "url": "cities/中卫市.html"
+  },
+  {
+   "city": "银川市",
+   "province": "宁夏回族自治区",
+   "adcode": "640100",
+   "poi": 216,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:13:14",
+   "url": "cities/银川市.html"
+  },
+  {
+   "city": "吴忠市",
+   "province": "宁夏回族自治区",
+   "adcode": "640300",
+   "poi": 158,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:13:27",
+   "url": "cities/吴忠市.html"
+  },
+  {
+   "city": "舟山市",
+   "province": "浙江省",
+   "adcode": "330900",
+   "poi": 192,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:13:41",
+   "url": "cities/舟山市.html"
+  },
+  {
+   "city": "嘉兴市",
+   "province": "浙江省",
+   "adcode": "330400",
+   "poi": 207,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:14:04",
+   "url": "cities/嘉兴市.html"
+  },
+  {
+   "city": "宁波市",
+   "province": "浙江省",
+   "adcode": "330200",
+   "poi": 236,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:14:18",
+   "url": "cities/宁波市.html"
+  },
+  {
+   "city": "台州市",
+   "province": "浙江省",
+   "adcode": "331000",
+   "poi": 225,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:14:32",
+   "url": "cities/台州市.html"
+  },
+  {
+   "city": "温州市",
+   "province": "浙江省",
+   "adcode": "330300",
+   "poi": 249,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:14:46",
+   "url": "cities/温州市.html"
+  },
+  {
+   "city": "丽水市",
+   "province": "浙江省",
+   "adcode": "331100",
+   "poi": 178,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:15:00",
+   "url": "cities/丽水市.html"
+  },
+  {
+   "city": "衢州市",
+   "province": "浙江省",
+   "adcode": "330800",
+   "poi": 171,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:15:14",
+   "url": "cities/衢州市.html"
+  },
+  {
+   "city": "金华市",
+   "province": "浙江省",
+   "adcode": "330700",
+   "poi": 237,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:15:28",
+   "url": "cities/金华市.html"
+  },
+  {
+   "city": "湖州市",
+   "province": "浙江省",
+   "adcode": "330500",
+   "poi": 202,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:15:51",
+   "url": "cities/湖州市.html"
+  },
+  {
+   "city": "杭州市",
+   "province": "浙江省",
+   "adcode": "330100",
+   "poi": 242,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:16:05",
+   "url": "cities/杭州市.html"
+  },
+  {
+   "city": "绍兴市",
+   "province": "浙江省",
+   "adcode": "330600",
+   "poi": 232,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:16:19",
+   "url": "cities/绍兴市.html"
+  },
+  {
+   "city": "唐山市",
+   "province": "河北省",
+   "adcode": "130200",
+   "poi": 222,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:16:33",
+   "url": "cities/唐山市.html"
+  },
+  {
+   "city": "秦皇岛市",
+   "province": "河北省",
+   "adcode": "130300",
+   "poi": 210,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:16:47",
+   "url": "cities/秦皇岛市.html"
+  },
+  {
+   "city": "邯郸市",
+   "province": "河北省",
+   "adcode": "130400",
+   "poi": 205,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:17:01",
+   "url": "cities/邯郸市.html"
+  },
+  {
+   "city": "石家庄市",
+   "province": "河北省",
+   "adcode": "130100",
+   "poi": 212,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:17:15",
+   "url": "cities/石家庄市.html"
+  },
+  {
+   "city": "廊坊市",
+   "province": "河北省",
+   "adcode": "131000",
+   "poi": 217,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:17:37",
+   "url": "cities/廊坊市.html"
+  },
+  {
+   "city": "张家口市",
+   "province": "河北省",
+   "adcode": "130700",
+   "poi": 198,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:17:51",
+   "url": "cities/张家口市.html"
+  },
+  {
+   "city": "邢台市",
+   "province": "河北省",
+   "adcode": "130500",
+   "poi": 206,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:18:04",
+   "url": "cities/邢台市.html"
+  },
+  {
+   "city": "承德市",
+   "province": "河北省",
+   "adcode": "130800",
+   "poi": 193,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:18:18",
+   "url": "cities/承德市.html"
+  },
+  {
+   "city": "衡水市",
+   "province": "河北省",
+   "adcode": "131100",
+   "poi": 181,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:18:32",
+   "url": "cities/衡水市.html"
+  },
+  {
+   "city": "保定市",
+   "province": "河北省",
+   "adcode": "130600",
+   "poi": 210,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:18:46",
+   "url": "cities/保定市.html"
+  },
+  {
+   "city": "沧州市",
+   "province": "河北省",
+   "adcode": "130900",
+   "poi": 225,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:19:09",
+   "url": "cities/沧州市.html"
+  },
+  {
+   "city": "酒泉市",
+   "province": "甘肃省",
+   "adcode": "620900",
+   "poi": 173,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:19:23",
+   "url": "cities/酒泉市.html"
+  },
+  {
+   "city": "嘉峪关市",
+   "province": "甘肃省",
+   "adcode": "620200",
+   "poi": 121,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:19:36",
+   "url": "cities/嘉峪关市.html"
+  },
+  {
+   "city": "兰州市",
+   "province": "甘肃省",
+   "adcode": "620100",
+   "poi": 231,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:19:50",
+   "url": "cities/兰州市.html"
+  },
+  {
+   "city": "平凉市",
+   "province": "甘肃省",
+   "adcode": "620800",
+   "poi": 162,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:04",
+   "url": "cities/平凉市.html"
+  },
+  {
+   "city": "金昌市",
+   "province": "甘肃省",
+   "adcode": "620300",
+   "poi": 137,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:17",
+   "url": "cities/金昌市.html"
+  },
+  {
+   "city": "天水市",
+   "province": "甘肃省",
+   "adcode": "620500",
+   "poi": 169,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:31",
+   "url": "cities/天水市.html"
+  },
+  {
+   "city": "白银市",
+   "province": "甘肃省",
+   "adcode": "620400",
+   "poi": 147,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:53",
+   "url": "cities/白银市.html"
+  },
+  {
+   "city": "武威市",
+   "province": "甘肃省",
+   "adcode": "620600",
+   "poi": 171,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:07",
+   "url": "cities/武威市.html"
+  },
+  {
+   "city": "张掖市",
+   "province": "甘肃省",
+   "adcode": "620700",
+   "poi": 151,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:20",
+   "url": "cities/张掖市.html"
+  },
+  {
+   "city": "定西市",
+   "province": "甘肃省",
+   "adcode": "621100",
+   "poi": 158,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:34",
+   "url": "cities/定西市.html"
+  },
+  {
+   "city": "甘南藏族自治州",
+   "province": "甘肃省",
+   "adcode": "623000",
+   "poi": 144,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:47",
+   "url": "cities/甘南藏族自治州.html"
+  },
+  {
+   "city": "庆阳市",
+   "province": "甘肃省",
+   "adcode": "621000",
+   "poi": 151,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:01",
+   "url": "cities/庆阳市.html"
+  },
+  {
+   "city": "临夏回族自治州",
+   "province": "甘肃省",
+   "adcode": "622900",
+   "poi": 159,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:14",
+   "url": "cities/临夏回族自治州.html"
+  },
+  {
+   "city": "陇南市",
+   "province": "甘肃省",
+   "adcode": "621200",
+   "poi": 156,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:36",
+   "url": "cities/陇南市.html"
+  },
+  {
+   "city": "广元市",
+   "province": "四川省",
+   "adcode": "510800",
+   "poi": 162,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:50",
+   "url": "cities/广元市.html"
+  },
+  {
+   "city": "南充市",
+   "province": "四川省",
+   "adcode": "511300",
+   "poi": 199,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:03",
+   "url": "cities/南充市.html"
+  },
+  {
+   "city": "巴中市",
+   "province": "四川省",
+   "adcode": "511900",
+   "poi": 170,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:17",
+   "url": "cities/巴中市.html"
+  },
+  {
+   "city": "德阳市",
+   "province": "四川省",
+   "adcode": "510600",
+   "poi": 181,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:31",
+   "url": "cities/德阳市.html"
+  },
+  {
+   "city": "绵阳市",
+   "province": "四川省",
+   "adcode": "510700",
+   "poi": 212,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:45",
+   "url": "cities/绵阳市.html"
+  },
+  {
+   "city": "成都市",
+   "province": "四川省",
+   "adcode": "510100",
+   "poi": 249,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:09",
+   "url": "cities/成都市.html"
+  },
+  {
+   "city": "广安市",
+   "province": "四川省",
+   "adcode": "511600",
+   "poi": 168,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:23",
+   "url": "cities/广安市.html"
+  },
+  {
+   "city": "达州市",
+   "province": "四川省",
+   "adcode": "511700",
+   "poi": 169,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:36",
+   "url": "cities/达州市.html"
+  },
+  {
+   "city": "遂宁市",
+   "province": "四川省",
+   "adcode": "510900",
+   "poi": 155,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:50",
+   "url": "cities/遂宁市.html"
+  },
+  {
+   "city": "资阳市",
+   "province": "四川省",
+   "adcode": "512000",
+   "poi": 150,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:03",
+   "url": "cities/资阳市.html"
+  },
+  {
+   "city": "眉山市",
+   "province": "四川省",
+   "adcode": "511400",
+   "poi": 181,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:17",
+   "url": "cities/眉山市.html"
+  },
+  {
+   "city": "内江市",
+   "province": "四川省",
+   "adcode": "511000",
+   "poi": 197,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:31",
+   "url": "cities/内江市.html"
+  },
+  {
+   "city": "乐山市",
+   "province": "四川省",
+   "adcode": "511100",
+   "poi": 179,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:54",
+   "url": "cities/乐山市.html"
+  },
+  {
+   "city": "自贡市",
+   "province": "四川省",
+   "adcode": "510300",
+   "poi": 175,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:08",
+   "url": "cities/自贡市.html"
+  },
+  {
+   "city": "泸州市",
+   "province": "四川省",
+   "adcode": "510500",
+   "poi": 185,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:21",
+   "url": "cities/泸州市.html"
+  },
+  {
+   "city": "宜宾市",
+   "province": "四川省",
+   "adcode": "511500",
+   "poi": 193,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:35",
+   "url": "cities/宜宾市.html"
+  },
+  {
+   "city": "凉山彝族自治州",
+   "province": "四川省",
+   "adcode": "513400",
+   "poi": 164,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:49",
+   "url": "cities/凉山彝族自治州.html"
+  },
+  {
+   "city": "攀枝花市",
+   "province": "四川省",
+   "adcode": "510400",
+   "poi": 138,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:02",
+   "url": "cities/攀枝花市.html"
+  },
+  {
+   "city": "甘孜藏族自治州",
+   "province": "四川省",
+   "adcode": "513300",
+   "poi": 137,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:16",
+   "url": "cities/甘孜藏族自治州.html"
+  },
+  {
+   "city": "雅安市",
+   "province": "四川省",
+   "adcode": "511800",
+   "poi": 180,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:38",
+   "url": "cities/雅安市.html"
+  },
+  {
+   "city": "阿坝藏族羌族自治州",
+   "province": "四川省",
+   "adcode": "513200",
+   "poi": 138,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:51",
+   "url": "cities/阿坝藏族羌族自治州.html"
+  },
+  {
+   "city": "天津市",
+   "province": "天津市",
+   "adcode": "120100",
+   "poi": 224,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:28:05",
+   "url": "cities/天津市.html"
+  },
+  {
+   "city": "阳泉市",
+   "province": "山西省",
+   "adcode": "140300",
+   "poi": 156,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:28:19",
+   "url": "cities/阳泉市.html"
+  },
+  {
+   "city": "大同市",
+   "province": "山西省",
+   "adcode": "140200",
+   "poi": 224,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:28:32",
+   "url": "cities/大同市.html"
+  },
+  {
+   "city": "吕梁市",
+   "province": "山西省",
+   "adcode": "141100",
+   "poi": 176,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:28:46",
+   "url": "cities/吕梁市.html"
+  },
+  {
+   "city": "运城市",
+   "province": "山西省",
+   "adcode": "140800",
+   "poi": 196,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:29:09",
+   "url": "cities/运城市.html"
+  },
+  {
+   "city": "晋城市",
+   "province": "山西省",
+   "adcode": "140500",
+   "poi": 187,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:29:23",
+   "url": "cities/晋城市.html"
+  },
+  {
+   "city": "朔州市",
+   "province": "山西省",
+   "adcode": "140600",
+   "poi": 161,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:29:37",
+   "url": "cities/朔州市.html"
+  },
+  {
+   "city": "忻州市",
+   "province": "山西省",
+   "adcode": "140900",
+   "poi": 179,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:29:50",
+   "url": "cities/忻州市.html"
+  },
+  {
+   "city": "临汾市",
+   "province": "山西省",
+   "adcode": "141000",
+   "poi": 198,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:30:04",
+   "url": "cities/临汾市.html"
+  },
+  {
+   "city": "长治市",
+   "province": "山西省",
+   "adcode": "140400",
+   "poi": 187,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:30:18",
+   "url": "cities/长治市.html"
+  },
+  {
+   "city": "晋中市",
+   "province": "山西省",
+   "adcode": "140700",
+   "poi": 191,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:30:31",
+   "url": "cities/晋中市.html"
+  },
+  {
+   "city": "太原市",
+   "province": "山西省",
+   "adcode": "140100",
+   "poi": 224,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:30:55",
+   "url": "cities/太原市.html"
+  },
+  {
+   "city": "商洛市",
+   "province": "陕西省",
+   "adcode": "611000",
+   "poi": 163,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:31:08",
+   "url": "cities/商洛市.html"
+  },
+  {
+   "city": "汉中市",
+   "province": "陕西省",
+   "adcode": "610700",
+   "poi": 184,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:31:22",
+   "url": "cities/汉中市.html"
+  },
+  {
+   "city": "西安市",
+   "province": "陕西省",
+   "adcode": "610100",
+   "poi": 247,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:31:36",
+   "url": "cities/西安市.html"
+  },
+  {
+   "city": "榆林市",
+   "province": "陕西省",
+   "adcode": "610800",
+   "poi": 186,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:31:50",
+   "url": "cities/榆林市.html"
+  },
+  {
+   "city": "咸阳市",
+   "province": "陕西省",
+   "adcode": "610400",
+   "poi": 217,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:32:04",
+   "url": "cities/咸阳市.html"
+  },
+  {
+   "city": "宝鸡市",
+   "province": "陕西省",
+   "adcode": "610300",
+   "poi": 200,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:32:18",
+   "url": "cities/宝鸡市.html"
+  },
+  {
+   "city": "安康市",
+   "province": "陕西省",
+   "adcode": "610900",
+   "poi": 169,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:32:40",
+   "url": "cities/安康市.html"
+  },
+  {
+   "city": "延安市",
+   "province": "陕西省",
+   "adcode": "610600",
+   "poi": 165,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:32:53",
+   "url": "cities/延安市.html"
+  },
+  {
+   "city": "铜川市",
+   "province": "陕西省",
+   "adcode": "610200",
+   "poi": 130,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:33:07",
+   "url": "cities/铜川市.html"
+  },
+  {
+   "city": "渭南市",
+   "province": "陕西省",
+   "adcode": "610500",
+   "poi": 187,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:33:20",
+   "url": "cities/渭南市.html"
+  },
+  {
+   "city": "昌都市",
+   "province": "西藏自治区",
+   "adcode": "540300",
+   "poi": 118,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:33:34",
+   "url": "cities/昌都市.html"
+  },
+  {
+   "city": "那曲市",
+   "province": "西藏自治区",
+   "adcode": "540600",
+   "poi": 123,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:33:47",
+   "url": "cities/那曲市.html"
+  },
+  {
+   "city": "日喀则市",
+   "province": "西藏自治区",
+   "adcode": "540200",
+   "poi": 129,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:34:10",
+   "url": "cities/日喀则市.html"
+  },
+  {
+   "city": "拉萨市",
+   "province": "西藏自治区",
+   "adcode": "540100",
+   "poi": 190,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:34:23",
+   "url": "cities/拉萨市.html"
+  },
+  {
+   "city": "山南市",
+   "province": "西藏自治区",
+   "adcode": "540500",
+   "poi": 112,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:34:36",
+   "url": "cities/山南市.html"
+  },
+  {
+   "city": "林芝市",
+   "province": "西藏自治区",
+   "adcode": "540400",
+   "poi": 128,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:34:50",
+   "url": "cities/林芝市.html"
+  },
+  {
+   "city": "阿里地区",
+   "province": "西藏自治区",
+   "adcode": "542500",
+   "poi": 100,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:35:03",
+   "url": "cities/阿里地区.html"
+  },
+  {
+   "city": "昭通市",
+   "province": "云南省",
+   "adcode": "530600",
+   "poi": 177,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:35:16",
+   "url": "cities/昭通市.html"
+  },
+  {
+   "city": "曲靖市",
+   "province": "云南省",
+   "adcode": "530300",
+   "poi": 174,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:35:30",
+   "url": "cities/曲靖市.html"
+  },
+  {
+   "city": "红河哈尼族彝族自治州",
+   "province": "云南省",
+   "adcode": "532500",
+   "poi": 188,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:35:53",
+   "url": "cities/红河哈尼族彝族自治州.html"
+  },
+  {
+   "city": "怒江傈僳族自治州",
+   "province": "云南省",
+   "adcode": "533300",
+   "poi": 249,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:36:08",
+   "url": "cities/怒江傈僳族自治州.html"
+  },
+  {
+   "city": "玉溪市",
+   "province": "云南省",
+   "adcode": "530400",
+   "poi": 186,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:36:21",
+   "url": "cities/玉溪市.html"
+  },
+  {
+   "city": "大理白族自治州",
+   "province": "云南省",
+   "adcode": "532900",
+   "poi": 164,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:36:35",
+   "url": "cities/大理白族自治州.html"
+  },
+  {
+   "city": "迪庆藏族自治州",
+   "province": "云南省",
+   "adcode": "533400",
+   "poi": 132,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:36:48",
+   "url": "cities/迪庆藏族自治州.html"
+  },
+  {
+   "city": "保山市",
+   "province": "云南省",
+   "adcode": "530500",
+   "poi": 163,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:37:02",
+   "url": "cities/保山市.html"
+  },
+  {
+   "city": "丽江市",
+   "province": "云南省",
+   "adcode": "530700",
+   "poi": 156,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:37:16",
+   "url": "cities/丽江市.html"
+  },
+  {
+   "city": "西双版纳傣族自治州",
+   "province": "云南省",
+   "adcode": "532800",
+   "poi": 150,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:37:37",
+   "url": "cities/西双版纳傣族自治州.html"
+  },
+  {
+   "city": "楚雄彝族自治州",
+   "province": "云南省",
+   "adcode": "532300",
+   "poi": 169,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:37:51",
+   "url": "cities/楚雄彝族自治州.html"
+  },
+  {
+   "city": "昆明市",
+   "province": "云南省",
+   "adcode": "530100",
+   "poi": 253,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:38:05",
+   "url": "cities/昆明市.html"
+  },
+  {
+   "city": "普洱市",
+   "province": "云南省",
+   "adcode": "530800",
+   "poi": 151,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:38:19",
+   "url": "cities/普洱市.html"
+  },
+  {
+   "city": "德宏傣族景颇族自治州",
+   "province": "云南省",
+   "adcode": "533100",
+   "poi": 149,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:38:32",
+   "url": "cities/德宏傣族景颇族自治州.html"
+  },
+  {
+   "city": "文山壮族苗族自治州",
+   "province": "云南省",
+   "adcode": "532600",
+   "poi": 161,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:38:46",
+   "url": "cities/文山壮族苗族自治州.html"
+  },
+  {
+   "city": "临沧市",
+   "province": "云南省",
+   "adcode": "530900",
+   "poi": 160,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:39:08",
+   "url": "cities/临沧市.html"
+  },
+  {
+   "city": "南投县",
+   "province": "台湾省",
+   "adcode": "710900",
+   "poi": 104,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:39:21",
+   "url": "cities/南投县.html"
+  },
+  {
+   "city": "花莲县",
+   "province": "台湾省",
+   "adcode": "711000",
+   "poi": 94,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:39:34",
+   "url": "cities/花莲县.html"
+  },
+  {
+   "city": "苗栗县",
+   "province": "台湾省",
+   "adcode": "711100",
+   "poi": 100,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:39:47",
+   "url": "cities/苗栗县.html"
+  },
+  {
+   "city": "台中市",
+   "province": "台湾省",
+   "adcode": "710400",
+   "poi": 189,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:40:01",
+   "url": "cities/台中市.html"
+  },
+  {
+   "city": "云林县",
+   "province": "台湾省",
+   "adcode": "711400",
+   "poi": 115,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:40:14",
+   "url": "cities/云林县.html"
+  },
+  {
+   "city": "彰化县",
+   "province": "台湾省",
+   "adcode": "711300",
+   "poi": 122,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:40:27",
+   "url": "cities/彰化县.html"
+  },
+  {
+   "city": "屏东县",
+   "province": "台湾省",
+   "adcode": "710800",
+   "poi": 138,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:40:50",
+   "url": "cities/屏东县.html"
+  },
+  {
+   "city": "台南市",
+   "province": "台湾省",
+   "adcode": "710500",
+   "poi": 152,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:41:03",
+   "url": "cities/台南市.html"
+  },
+  {
+   "city": "台东县",
+   "province": "台湾省",
+   "adcode": "711500",
+   "poi": 78,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:41:16",
+   "url": "cities/台东县.html"
+  },
+  {
+   "city": "高雄市",
+   "province": "台湾省",
+   "adcode": "710200",
+   "poi": 178,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:41:29",
+   "url": "cities/高雄市.html"
+  },
+  {
+   "city": "嘉义市",
+   "province": "台湾省",
+   "adcode": "711800",
+   "poi": 109,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:41:42",
+   "url": "cities/嘉义市.html"
+  },
+  {
+   "city": "新竹县",
+   "province": "台湾省",
+   "adcode": "710700",
+   "poi": 117,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:41:55",
+   "url": "cities/新竹县.html"
+  },
+  {
+   "city": "新竹市",
+   "province": "台湾省",
+   "adcode": "711200",
+   "poi": 127,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:42:08",
+   "url": "cities/新竹市.html"
+  },
+  {
+   "city": "桃园市",
+   "province": "台湾省",
+   "adcode": "710600",
+   "poi": 164,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:42:30",
+   "url": "cities/桃园市.html"
+  },
+  {
+   "city": "宜兰县",
+   "province": "台湾省",
+   "adcode": "711700",
+   "poi": 124,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:42:43",
+   "url": "cities/宜兰县.html"
+  },
+  {
+   "city": "基隆市",
+   "province": "台湾省",
+   "adcode": "711600",
+   "poi": 86,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:42:56",
+   "url": "cities/基隆市.html"
+  },
+  {
+   "city": "台北市",
+   "province": "台湾省",
+   "adcode": "710100",
+   "poi": 201,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:43:10",
+   "url": "cities/台北市.html"
+  },
+  {
+   "city": "澎湖县",
+   "province": "台湾省",
+   "adcode": "712000",
+   "poi": 66,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:43:23",
+   "url": "cities/澎湖县.html"
+  },
+  {
+   "city": "嘉义县",
+   "province": "台湾省",
+   "adcode": "711900",
+   "poi": 94,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:43:36",
+   "url": "cities/嘉义县.html"
+  },
+  {
+   "city": "新北市",
+   "province": "台湾省",
+   "adcode": "710300",
+   "poi": 173,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:43:58",
+   "url": "cities/新北市.html"
+  },
+  {
+   "city": "北京市",
+   "province": "北京市",
+   "adcode": "110100",
+   "poi": 239,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:44:13",
+   "url": "cities/北京市.html"
+  },
+  {
+   "city": "吉林市",
+   "province": "吉林省",
+   "adcode": "220200",
+   "poi": 194,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:44:26",
+   "url": "cities/吉林市.html"
+  },
+  {
+   "city": "长春市",
+   "province": "吉林省",
+   "adcode": "220100",
+   "poi": 235,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:44:40",
+   "url": "cities/长春市.html"
+  },
+  {
+   "city": "白城市",
+   "province": "吉林省",
+   "adcode": "220800",
+   "poi": 158,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:44:54",
+   "url": "cities/白城市.html"
+  },
+  {
+   "city": "松原市",
+   "province": "吉林省",
+   "adcode": "220700",
+   "poi": 167,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:45:08",
+   "url": "cities/松原市.html"
+  },
+  {
+   "city": "四平市",
+   "province": "吉林省",
+   "adcode": "220300",
+   "poi": 167,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:45:21",
+   "url": "cities/四平市.html"
+  },
+  {
+   "city": "辽源市",
+   "province": "吉林省",
+   "adcode": "220400",
+   "poi": 144,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:45:44",
+   "url": "cities/辽源市.html"
+  },
+  {
+   "city": "通化市",
+   "province": "吉林省",
+   "adcode": "220500",
+   "poi": 162,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:45:57",
+   "url": "cities/通化市.html"
+  },
+  {
+   "city": "白山市",
+   "province": "吉林省",
+   "adcode": "220600",
+   "poi": 152,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:46:11",
+   "url": "cities/白山市.html"
+  },
+  {
+   "city": "延边朝鲜族自治州",
+   "province": "吉林省",
+   "adcode": "222400",
+   "poi": 180,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:46:24",
+   "url": "cities/延边朝鲜族自治州.html"
+  },
+  {
+   "city": "新余市",
+   "province": "江西省",
+   "adcode": "360500",
+   "poi": 156,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:46:38",
+   "url": "cities/新余市.html"
+  },
+  {
+   "city": "吉安市",
+   "province": "江西省",
+   "adcode": "360800",
+   "poi": 180,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:46:52",
+   "url": "cities/吉安市.html"
+  },
+  {
+   "city": "抚州市",
+   "province": "江西省",
+   "adcode": "361000",
+   "poi": 168,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:47:05",
+   "url": "cities/抚州市.html"
+  },
+  {
+   "city": "鹰潭市",
+   "province": "江西省",
+   "adcode": "360600",
+   "poi": 162,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:47:27",
+   "url": "cities/鹰潭市.html"
+  },
+  {
+   "city": "宜春市",
+   "province": "江西省",
+   "adcode": "360900",
+   "poi": 174,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:47:40",
+   "url": "cities/宜春市.html"
+  },
+  {
+   "city": "萍乡市",
+   "province": "江西省",
+   "adcode": "360300",
+   "poi": 156,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:47:54",
+   "url": "cities/萍乡市.html"
+  },
+  {
+   "city": "景德镇市",
+   "province": "江西省",
+   "adcode": "360200",
+   "poi": 168,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:48:07",
+   "url": "cities/景德镇市.html"
+  },
+  {
+   "city": "南昌市",
+   "province": "江西省",
+   "adcode": "360100",
+   "poi": 232,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:48:21",
+   "url": "cities/南昌市.html"
+  },
+  {
+   "city": "上饶市",
+   "province": "江西省",
+   "adcode": "361100",
+   "poi": 193,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:48:35",
+   "url": "cities/上饶市.html"
+  },
+  {
+   "city": "赣州市",
+   "province": "江西省",
+   "adcode": "360700",
+   "poi": 213,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:48:58",
+   "url": "cities/赣州市.html"
+  },
+  {
+   "city": "九江市",
+   "province": "江西省",
+   "adcode": "360400",
+   "poi": 188,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:49:12",
+   "url": "cities/九江市.html"
   }
  ]
 }
