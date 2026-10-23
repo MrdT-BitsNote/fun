@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>长春市 · 吉林省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/吉林省.html">← 返回吉林省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>长春市 · 吉林省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:44:40  ·  POI 总量：235（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>235</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 2 · 商圈 133 · 成人娱乐 156 · 儿童娱乐 56 · 酒店 30 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>吉林省 · 省会市</td></tr>
+<tr><td>下级区县</td><td>11 个</td></tr>
+<tr><td>街道/镇/乡</td><td>220 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×7、县级市×3、县×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>南关区</td><td>129</td><td>55%</td></tr>
+<tr><td>朝阳区</td><td>55</td><td>23%</td></tr>
+<tr><td>宽城区</td><td>23</td><td>10%</td></tr>
+<tr><td>二道区</td><td>9</td><td>4%</td></tr>
+<tr><td>绿园区</td><td>6</td><td>3%</td></tr>
+<tr><td>公主岭市</td><td>6</td><td>3%</td></tr>
+<tr><td>德惠市</td><td>3</td><td>1%</td></tr>
+<tr><td>榆树市</td><td>2</td><td>1%</td></tr>
+<tr><td>农安县</td><td>1</td><td>0%</td></tr>
+<tr><td>双阳区</td><td>1</td><td>0%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（133 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>61</td></tr>
+<tr><td>购物中心/综合体</td><td>31</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>百货/商场</td><td>13</td></tr>
+<tr><td>商业街</td><td>5</td></tr>
+<tr><td>奥特莱斯</td><td>4</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（133 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>长春市动植物公园</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>33</td><td>0</td></tr>
+<tr><td>B</td><td>比优特超市(卫星广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>10</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>森泰宾馆(长春一汽店)</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>优家公寓(砂之船中东奥莱店)</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>2</td><td>1</td></tr>
+<tr><td>C</td><td>万豪洗浴宾馆</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>宝地宾馆(大兴路)</td><td>其他商业载体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>欧亚卖场</td><td>其他商业载体</td><td>4.9</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>摩天活力城MALL</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>长春万象城</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>庭园汉庭酒店(长春宽城万达广场店)</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>远大购物中心(长春店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>沃尔玛(迅驰广场店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新天地购物公园</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>砂之船中东奥莱</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>2</td><td>1</td></tr>
+<tr><td>C</td><td>万达广场(长春红旗街店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>6</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>中东大市场</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(长春上海路店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>这有山</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>吾悦广场(长春绿园店)</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>长春万达茂</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>迅驰广场</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(长春宽城店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>王府井奥莱·净月小镇</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(长春北湖店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>活力城</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>4</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>欧亚新生活购物广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>欧亚商都</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>花喜宾馆</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>X.PARTY</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>领秀娱乐</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>印象KTV(前进大街店)</td><td>商业街</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>卓展购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>亚细亚百货</td><td>百货/商场</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>麦德龙(长春宽城商场)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>2</td><td>1</td></tr>
+<tr><td>C</td><td>比优特超市(长春上海路万达广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宽城砂之船奥莱店(繁盛路店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>2</td><td>1</td></tr>
+<tr><td>C</td><td>砂之船(砂之船中东奥莱店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>2</td><td>1</td></tr>
+<tr><td>C</td><td>欧亚益民</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>摩天活力城·2期</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>吉林省东北虎园</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+</tbody></table></div>
+<h3>长春市动植物公园 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 33 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（风景名胜;公园广场;动物园）</li><li><strong>地址</strong>：自由大路2121号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 33 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>长春市动植物公园</td></tr>
+<tr><td>儿童娱乐</td><td>33</td><td>长春市动植物公园、长春动植物公园-动物表演场、动植物公园儿童动物园</td></tr>
+</tbody></table></div>
+<h3>比优特超市(卫星广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：人民大街8668号百汇商场B1层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>比优特超市(卫星广场店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>华庭乔氏桌球棋牌、澄岚雀庄、雀神24小时自助棋牌室(卫星广场店)</td></tr>
+</tbody></table></div>
+<h3>森泰宾馆(长春一汽店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：东风大街79号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>森泰宾馆(长春一汽店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>森泰宾馆(长春一汽店)</td></tr>
+</tbody></table></div>
+<h3>优家公寓(砂之船中东奥莱店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：人民北路大街中东港5栋24楼2426室</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 2 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>优家公寓(砂之船中东奥莱店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>砂之船(砂之船中东奥莱店)、天空之城(砂之船中东奥莱店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>优家公寓(砂之船中东奥莱店)</td></tr>
+</tbody></table></div>
+<h3>万豪洗浴宾馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：工农大街66号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万豪洗浴宾馆</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>万豪洗浴宾馆</td></tr>
+</tbody></table></div>
+<h3>宝地宾馆(大兴路) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：大兴路与万宝街交汇处(文化广场地铁站A口步行320米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>宝地宾馆(大兴路)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>宝地宾馆(大兴路)</td></tr>
+</tbody></table></div>
+<h3>欧亚卖场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;综合市场;综合市场）</li><li><strong>地址</strong>：开运街5178号(欧亚卖场地铁站C口步行90米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>欧亚卖场</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>虚线密室逃脱(欧亚卖场店)</td></tr>
+</tbody></table></div>
+<h3>摩天活力城MALL —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜商务住宅;商务住宅相关;商务住宅相关）</li><li><strong>地址</strong>：卫星路1777号(吉林广电地铁站出入口步行440米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>摩天活力城MALL</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>寰映影城(摩天活力城店)、魅KTV(摩天活力城店)、虚线密室逃脱(摩天活力城店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>摩天乐园(摩天活力城MALL店)</td></tr>
+</tbody></table></div>
+<h3>长春万象城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：人民大街3388号(人民大街与解放大路交汇)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>长春万象城</td></tr>
+</tbody></table></div>
+<h3>庭园汉庭酒店(长春宽城万达广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;经济型连锁酒店）</li><li><strong>地址</strong>：万达广场长春宽城店东出入口旁</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>庭园汉庭酒店(长春宽城万达广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>庭园汉庭酒店(长春宽城万达广场店)</td></tr>
+</tbody></table></div>
+<h3>远大购物中心(长春店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;超级市场;超市）</li><li><strong>地址</strong>：新明街3333号(轨道集团地铁站B2口步行160米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>远大购物中心(长春店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>唱吧麦颂KTV(远大购物中心店)、小雀圣棋牌会所(壹湖国际店)、星轶影城(长春远大店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>馋宠官萌宠综合体验馆</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(迅驰广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;沃尔玛）</li><li><strong>地址</strong>：博学路1555号迅驰广场B1层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沃尔玛(迅驰广场店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>谜失.MIst 沉浸密室、黑衣人密室(诡校店)</td></tr>
+</tbody></table></div>
+<h3>新天地购物公园 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：亚泰大街1138号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>新天地购物公园</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>第9街区真人密室逃脱(长通路)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>朵芽·萌宠专售空间(新天地购物公园亚泰大街店)</td></tr>
+</tbody></table></div>
+<h3>砂之船中东奥莱 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：北环城路地铁站C口步行60米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 2 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>砂之船中东奥莱</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>砂之船(砂之船中东奥莱店)、天空之城(砂之船中东奥莱店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>优家公寓(砂之船中东奥莱店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(长春红旗街店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：红旗街1296号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(长春红旗街店)</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>长影电影院(湖西路店)、华影巨幕影城、魔王天堂疯人院密室逃脱</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>好家宾馆(红旗街店)、庭园汉庭酒店(长春宽城万达广场店)</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（156 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>18</td></tr>
+<tr><td>电影院</td><td>18</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>18</td></tr>
+<tr><td>棋牌室</td><td>17</td></tr>
+<tr><td>KTV</td><td>7</td></tr>
+<tr><td>酒吧/酒馆</td><td>2</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>X.PARTY</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;运动场馆;运动场所</td><td>4.7</td><td>167.00</td><td>前进大街1816号(前进大街地铁站B口步行460米)</td></tr>
+<tr><td>✅A-</td><td>领秀娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.7</td><td>72.00</td><td>东至住宅南至繁荣路西至前进大街北至边界力旺广场A1-A5栋1-4层</td></tr>
+<tr><td>✅A-</td><td>印象KTV(前进大街店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;购物相关场所;购物相关场所</td><td>4.7</td><td>54.00</td><td>前进大街599号(如一坊楼下)</td></tr>
+<tr><td>✅A-</td><td>云上娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.7</td><td>—</td><td>东岭南街1882号</td></tr>
+<tr><td>✅A-</td><td>菲芘K·PARTY</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.7</td><td>51.00</td><td>桂林路740号</td></tr>
+<tr><td>✅A-</td><td>印象K(临河街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.7</td><td>54.00</td><td>临河街道临河街5343号梁氏中医院</td></tr>
+<tr><td>✅A-</td><td>银河列车影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>38.00</td><td>繁荣路秋实e景佳园2期17号楼</td></tr>
+<tr><td>✅A-</td><td>雅痞剧场</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;剧场</td><td>4.7</td><td>—</td><td>青怡坊云琅G座3楼303</td></tr>
+<tr><td>✅A-</td><td>长影电影院(湖西路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>58.00</td><td>红旗街与湖西路交汇南行100米</td></tr>
+<tr><td>✅A-</td><td>无间密室(大世界写字楼店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>141.00</td><td>桂林胡同与同志街交汇大世界写字间7楼东侧</td></tr>
+<tr><td>✅A-</td><td>断片密室逃脱(隆礼路店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>176.00</td><td>同志街与隆礼路交汇(新宇富贵苑南1门旁)</td></tr>
+<tr><td>✅A-</td><td>爱嘉PARTY·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>101.00</td><td>幸福街1548号陶然庭苑</td></tr>
+<tr><td>✅A-</td><td>唱吧麦颂KTV(远大购物中心店)</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>154.00</td><td>新明街3333号远大购物中心</td></tr>
+<tr><td>✅A-</td><td>格莱美(前进大街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜生活服务;生活服务场所;生活服务场所</td><td>4.6</td><td>309.00</td><td>九州汤悦东门旁</td></tr>
+<tr><td>✅A-</td><td>长春丽璟会</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室｜餐饮服务;中餐厅;中餐厅｜生活服务;生活服务场所;生活服务场所</td><td>4.6</td><td>97.00</td><td>临河街4988号(北海路地铁站A口步行390米)</td></tr>
+<tr><td>✅A-</td><td>魅KTV(摩天活力城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>55.00</td><td>卫星路1777号摩天活力城MALLF6层</td></tr>
+<tr><td>✅A-</td><td>星光畔AI自助KTV(桂林路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>40.00</td><td>同志街68号福林大厦F4层</td></tr>
+<tr><td>✅A-</td><td>吉影影城(御景店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>23.00</td><td>幸福街与乙二路交汇恒大御景(一期)20号楼3楼</td></tr>
+<tr><td>✅A-</td><td>万达影城(钜城华亿广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>62.00</td><td>华惠路与泰兴街交汇锯城华亿购物广场A座3F</td></tr>
+<tr><td>✅A-</td><td>映·12街影城</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>51.00</td><td>临河街与南环城路交汇中海国际社区G组团H10楼443号</td></tr>
+<tr><td>✅A-</td><td>吉大巨幕影城(体育场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>38.00</td><td>日新楼5层</td></tr>
+<tr><td>✅A-</td><td>万达影城(力旺广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>44.00</td><td>前进大街与繁荣路交汇处力旺广场3层</td></tr>
+<tr><td>✅A-</td><td>十二坊影城(天地十二坊广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>42.00</td><td>长春市经济开发区珠海路与临河街交汇天地十二坊广场5楼</td></tr>
+<tr><td>✅A-</td><td>寰映影城(摩天活力城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>57.00</td><td>仙台大街与卫星路交汇摩天活力城Mall5楼</td></tr>
+<tr><td>✅A-</td><td>万达影城(环球广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>52.00</td><td>净月区生态大街环球贸易中心环球广场4F</td></tr>
+<tr><td>✅A-</td><td>华影巨幕影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>53.00</td><td>工农大路欧亚商都A座10楼</td></tr>
+<tr><td>✅A-</td><td>星弈汇棋牌会所(瑞邦广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>34.00</td><td>瑞邦城市广场B座5楼</td></tr>
+<tr><td>✅A-</td><td>小雀圣棋牌会所(钜城上景店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>20.00</td><td>钜城上景2期2号楼13楼整层</td></tr>
+<tr><td>✅A-</td><td>小雀圣棋牌会所(壹湖国际店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>20.00</td><td>钜城华亿大厦2号楼21楼整层</td></tr>
+<tr><td>✅A-</td><td>肆禧茶社·棋牌会所(幸福街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>18.00</td><td>新城雅苑西北门旁</td></tr>
+<tr><td>✅A-</td><td>华庭乔氏桌球棋牌</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.6</td><td>22.00</td><td>明珠街道卫星路星城国际A座三楼</td></tr>
+<tr><td>✅B</td><td>魔王校园大逃亡密室逃脱(桂林路福林大厦店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>121.00</td><td>福林大厦4F魔王校园大逃亡店</td></tr>
+<tr><td>✅B</td><td>魔王天堂疯人院密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>111.00</td><td>工农大路1128号欧亚商都A座F8层</td></tr>
+<tr><td>✅B</td><td>朋友圈剧本密室演绎剧场AE店</td><td>酒吧/酒馆</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>92.00</td><td>前进大街卫星路交汇1816号Ae酒吧北侧</td></tr>
+<tr><td>✅B</td><td>Mr.Wu真人密室逃脱(桂林路店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>149.00</td><td>桂林路同志街肯德基左侧福林大厦5楼</td></tr>
+<tr><td>✅B</td><td>魔王真人密室逃脱(桂林路立信街店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>90.00</td><td>桂林路与立信街交汇天虹商厦2楼</td></tr>
+<tr><td>✅B</td><td>好声音自唱酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>79.00</td><td>幸福街88号北方饮业院内东侧</td></tr>
+<tr><td>✅B</td><td>私人订制KTV(临河街店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>43.00</td><td>临河街与南环城路交叉口南400米</td></tr>
+<tr><td>✅B</td><td>鱼乐圈·(国泰2店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>41.00</td><td>双德街道中巴跨境电商小镇国泰(国泰·Rio Mall拾乐街店)</td></tr>
+<tr><td>✅B</td><td>鱼乐圈(吉大南岭店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;迪厅</td><td>4.5</td><td>18.00</td><td>进南湖假日宾馆坐电梯3楼鱼乐圈(吉大南岭店)</td></tr>
+<tr><td>✅B</td><td>长影影城(欧亚三环店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>44.00</td><td>亚泰大街与南环城路交汇处欧亚三环购物中心6层</td></tr>
+<tr><td>✅B</td><td>星轶影城(长春远大店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>新明街3333号远大购物中心B座五层</td></tr>
+<tr><td>✅B</td><td>上影国际影城(欧亚新生活店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>37.00</td><td>延安大街99号欧亚新生活购物广场F5层</td></tr>
+<tr><td>✅B</td><td>元满棋牌娱乐旗舰店(警官公寓店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>47.00</td><td>万豪·汇景新城西2门旁</td></tr>
+<tr><td>✅B</td><td>闲庭阁棋牌室(陶然庭苑店)</td><td>棋牌室</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.5</td><td>24.00</td><td>幸福街1802号</td></tr>
+<tr><td>✅B</td><td>喜雀棋牌室(新星宇·之洲店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>17.00</td><td>长春市南关区伊通河河堤路以西吉林省女子劳动教养所(C、D)地块棚改项目C-3、C-16号楼102号</td></tr>
+<tr><td>✅B</td><td>雀神24小时自助棋牌室(卫星广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>13.00</td><td>民航花园西4门旁(卫星广场地铁站出入口步行70米)</td></tr>
+<tr><td>✅B</td><td>爱棋艺棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>24.00</td><td>新里中央公馆C-2-1栋108室</td></tr>
+<tr><td>✅B</td><td>麻小将24h自助棋牌(长春大学店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>24.00</td><td>幸福街与星城胡同交叉口西南40米</td></tr>
+<tr><td>✅B</td><td>庭甄棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>—</td><td>明珠街道万科金域长春(西1门)</td></tr>
+<tr><td>✅B</td><td>澄岚雀庄</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>32.00</td><td>卫星路5702中银苑A栋</td></tr>
+<tr><td>✅B</td><td>谈小娱24h自助台球(长春大学店)</td><td>其他娱乐场所</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.5</td><td>—</td><td>吉林省南关区星城胡同星城国际大厦107号二楼三楼</td></tr>
+<tr><td>✅B</td><td>NB魔王沉浸式剧场(欧亚新生活店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>147.00</td><td>延安大街99号长春欧亚新生活购物广场内D座负一楼层B1-49号铺位</td></tr>
+<tr><td>✅B</td><td>秘境超级密室(津门风情街店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>101.00</td><td>桂林路同志街交汇肯德基与稻香春中间门上3楼</td></tr>
+<tr><td>✅B</td><td>柚子音乐客厅</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>51.00</td><td>宋东明中医诊所东南侧100米</td></tr>
+<tr><td>✅B</td><td>完美易凯德影城(国商百货店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>36.00</td><td>国商百货卫星广场店6层</td></tr>
+<tr><td>✅B</td><td>合颖茶楼·棋牌会馆</td><td>棋牌室</td><td>餐饮服务;茶艺馆;茶艺馆｜体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>31.00</td><td>幸福街与汇福路交汇恒大御景14-2-106</td></tr>
+<tr><td>✅B</td><td>不胡都南.棋牌茶社</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>19.00</td><td>源汇大街与谊民路交叉口东南方向人民大街10666号</td></tr>
+<tr><td>✅B</td><td>港铄桌球棋牌会馆(幸福街店)</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅｜生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.4</td><td>99.00</td><td>幸福街1833号绿地中央广场B2-307</td></tr>
+<tr><td>✅B</td><td>黑衣人密室(桂林路店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>179.00</td><td>同志街68号福林大厦负一层</td></tr>
+</tbody></table></div>
+<p>（另 20 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（56 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>34</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>21</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>长春市动植物公园</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>自由大路2121号</td></tr>
+<tr><td>✅A-</td><td>砂之船(砂之船中东奥莱店)</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>繁盛路与九台北路交叉口西北180米</td></tr>
+<tr><td>✅A-</td><td>长春动植物公园-动物表演场</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>曙光街道自由大路2121号长春市动植物公园</td></tr>
+<tr><td>✅A-</td><td>吉林省东北虎园</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>净月大街10500号</td></tr>
+<tr><td>✅A-</td><td>天空之城(砂之船中东奥莱店)</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>北人民大街4082号砂之船中东奥莱F3</td></tr>
+<tr><td>✅B</td><td>爱霓儿熊猫主题游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.5</td><td>德隆大街与博硕路交汇北行30米</td></tr>
+<tr><td>✅B</td><td>科默KEMOO萌宠(中海紫金苑店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>中海紫金苑E区9栋111室</td></tr>
+<tr><td>✅B</td><td>得宠宠物乐园FAVORITISM(东方万达城店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>珠海路东方万达城8号门口25号楼113栋</td></tr>
+<tr><td>✅B</td><td>摩天乐园(摩天活力城MALL店)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>卫星路1777号摩天活力城MALLF3层</td></tr>
+<tr><td>✅B</td><td>动植物公园儿童动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>自由大路2121号长春动植物公园内</td></tr>
+<tr><td>✅B</td><td>小怪兽宠物乐园(卓越东街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>创意路336号综合楼1层</td></tr>
+<tr><td>✅B</td><td>馋宠官萌宠综合体验馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>南湖中街吉星花园4栋109门市</td></tr>
+<tr><td>✅B</td><td>酷爱宠物乐园(吉地华府店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>人民街与和平路交叉口西南20米</td></tr>
+<tr><td>✅B</td><td>小怪兽动物医院·诊疗中心·宠物乐园(卓越东街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>卓越东街336号院内综合楼2层</td></tr>
+<tr><td>✅B</td><td>四宝萌宠宠物店</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>净月大街4666号万科·惠斯勒小镇班芙花园</td></tr>
+<tr><td>⚠️</td><td>非凡萌宠生活馆(龙府·御桂园店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>阜育西街1103号</td></tr>
+<tr><td>⚠️</td><td>悦萌乐园宠物店</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>岭西三路东侧蓝山商城2-17</td></tr>
+<tr><td>⚠️</td><td>萌宠部落(东皇·君园1期店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>长春汽车产业开发区腾飞南路东皇君园9栋门市</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-猛兽谷</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>自由大路2121号长春动植物公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>朵芽·萌宠专售空间(新天地购物公园亚泰大街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>亚泰大街1138号新天地购物公园负一楼</td></tr>
+<tr><td>⚠️</td><td>宠它它萌宠驿站</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>上台花园A区9栋104号</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-大象馆</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>自由大路2121号长春市动植物公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>中型猛兽馆</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>自由大路2121号长春市动植物公园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-西门前广场</td><td>其他儿童场所</td><td>场内</td><td>3.9</td><td>自由大路2121号长春市动植物公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>FAFA宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>新立城镇耿家屯万达·星光半岛二期</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-长颈鹿馆</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>自由大路2121号长春市动植物公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>东北虎园-熊猫馆</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>净月大街10500号吉林省东北虎园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-两栖爬行馆</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>自由大路2121号长春动植物公园内</td></tr>
+<tr><td>⚠️</td><td>宠小丫萌宠乐园(力旺康城一期店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>金钱路3号</td></tr>
+<tr><td>⚠️</td><td>火烈鸟馆</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>自由大路2121号长春市动植物公园</td></tr>
+<tr><td>⚠️</td><td>斑马馆</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>自由大路2121号长春动植物公园内</td></tr>
+<tr><td>⚠️</td><td>小动物合家欢</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>自由大路2121号长春市动植物公园内</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-虎区</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>自由大路2121号长春市动植物公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-犀牛馆</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>曙光街道曙光街道自由大路2121号长春市动植物公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>鹦宠乐园手养鹦鹉</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>大沟花鸟鱼市场</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-水禽馆</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>自由大路2121号长春市动植物公园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-狐猴岛</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>自由大路2121号长春市动植物公园内</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-狮区</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>自由大路2121号长春市动植物公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-河马馆</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>自由大路2121号长春市动植物公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>热带动物体验馆</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>自由大路2121号长春动植物公园(东南角)</td></tr>
+<tr><td>⚠️</td><td>猛禽笼-金雕</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>自由大路2121号长春市动植物公园(西南角)</td></tr>
+<tr><td>⚠️</td><td>袋鼠馆</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>自由大路2121号长春市动植物公园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-极地动物馆</td><td>其他儿童场所</td><td>独立</td><td>3.5</td><td>自由大路2121号长春市动植物公园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>长春动植物公园-松鼠猴</td><td>其他儿童场所</td><td>独立</td><td>3.5</td><td>平泉路与平阳街交叉口西南120米</td></tr>
+<tr><td>❌</td><td>长春动植物公园儿童动物园-浣熊</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>自由大路2121号长春动植物公园内儿童动物园</td></tr>
+<tr><td>❌</td><td>禧伴萌宠宠物店</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>北湾西街与雅园路交叉口西北60米</td></tr>
+<tr><td>❌</td><td>鸵鸟馆</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>平泉路与平阳街交叉口西南200米</td></tr>
+<tr><td>❌</td><td>猩猿新苑</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>自由大路2121号长春市动植物公园</td></tr>
+<tr><td>❌</td><td>长春动植物公园-珍猴馆</td><td>其他儿童场所</td><td>独立</td><td>3.2</td><td>自由大路2121号长春市动植物公园</td></tr>
+<tr><td>❌</td><td>长春动植物公园儿童动物园-环尾狐猴</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>动植物公园儿童动物园</td></tr>
+<tr><td>❌</td><td>长春动植物公园-豹馆</td><td>其他儿童场所</td><td>独立</td><td>3.0</td><td>自由大路2121号长春动植物公园内</td></tr>
+<tr><td>❌</td><td>长春动植物公园儿童动物园-驯鹿</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.9</td><td>动植物公园儿童动物园</td></tr>
+<tr><td>❌</td><td>玛塔萌宠室内动物园</td><td>迷你动物园/萌宠</td><td>场内</td><td>2.8</td><td>洋浦大街欧亚万豪购物中心3层</td></tr>
+<tr><td>❌</td><td>长春动植物公园儿童动物园-绿狒狒</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.5</td><td>动植物公园儿童动物园</td></tr>
+<tr><td>❌</td><td>长春动植物公园-秃鹫</td><td>其他儿童场所</td><td>独立</td><td>2.4</td><td>自由大路2121号长春动植物公园内(西南角)</td></tr>
+<tr><td>❌</td><td>长春动植物公园儿童动物园-香猪</td><td>迷你动物园/萌宠</td><td>独立</td><td>1.3</td><td>动植物公园儿童动物园(西北角)</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（67 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>摩天活力城MALL</td><td>购物中心/综合体</td><td>4.9</td><td>1</td><td>0</td><td>卫星路1777号(吉林广电地铁站出入口步行440米)</td></tr>
+<tr><td>✅A-</td><td>长春万象城</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>人民大街3388号(人民大街与解放大路交汇)</td></tr>
+<tr><td>✅A-</td><td>远大购物中心(长春店)</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>新明街3333号(轨道集团地铁站B2口步行160米)</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(迅驰广场店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>博学路1555号迅驰广场B1层</td></tr>
+<tr><td>✅A-</td><td>新天地购物公园</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>亚泰大街1138号</td></tr>
+<tr><td>✅A-</td><td>砂之船中东奥莱</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>0</td><td>北环城路地铁站C口步行60米</td></tr>
+<tr><td>✅A-</td><td>万达广场(长春红旗街店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>红旗街1296号</td></tr>
+<tr><td>✅A-</td><td>万达广场(长春上海路店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>上海路577号</td></tr>
+<tr><td>✅A-</td><td>这有山</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>红旗街959号</td></tr>
+<tr><td>✅A-</td><td>长春万达茂</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>净月开发区生态大街9242号</td></tr>
+<tr><td>✅A-</td><td>万达广场(长春宽城店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>人民大街155号(长春站北地铁站F口旁)</td></tr>
+<tr><td>✅A-</td><td>王府井奥莱·净月小镇</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>永顺路388号(长影世纪城地铁站出入口步行270米)</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(长春北湖店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>北远达大街9888号</td></tr>
+<tr><td>✅A-</td><td>活力城</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>重庆路88号</td></tr>
+<tr><td>✅A-</td><td>欧亚新生活购物广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>红旗街道延安大街99号欧亚新生活购物广场B1层</td></tr>
+<tr><td>✅A-</td><td>欧亚商都</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>工农大路1310号</td></tr>
+<tr><td>✅A-</td><td>卓展购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>重庆路1255号</td></tr>
+<tr><td>✅A-</td><td>亚细亚百货</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>红旗街5号</td></tr>
+<tr><td>✅A-</td><td>麦德龙(长春宽城商场)</td><td>百货/商场</td><td>4.7</td><td>2</td><td>0</td><td>九台北路2083号(北环城路地铁站B1口步行150米)</td></tr>
+<tr><td>✅A-</td><td>比优特超市(卫星广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>人民大街8668号百汇商场B1层</td></tr>
+<tr><td>✅A-</td><td>比优特超市(长春上海路万达广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>新广街道宁波路95号万达广场长春上海路店LG-B层</td></tr>
+<tr><td>✅A-</td><td>欧亚益民</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>大马路1451号</td></tr>
+<tr><td>✅A-</td><td>摩天活力城·2期</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>卫星路2085号(吉林广电地铁站出入口步行450米)</td></tr>
+<tr><td>✅A-</td><td>唱吧麦颂KTV(远大购物中心店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新明街3333号远大购物中心</td></tr>
+<tr><td>✅A-</td><td>长春百货大楼</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>人民大街1881号(人民广场地铁站A口步行270米)</td></tr>
+<tr><td>✅A-</td><td>国商眼镜城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>辽宁路162号(长春站地铁站A口步行190米)</td></tr>
+<tr><td>✅A-</td><td>比优特超市(恒兴国际店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>解放大路与大经路交汇处恒兴国际一楼(南关地铁站B口旁)</td></tr>
+<tr><td>✅A-</td><td>欧亚超市(欧亚商都店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>工农大路1128号欧亚商都A座B1层</td></tr>
+<tr><td>✅A-</td><td>比优特超市(高新活力汇店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>华光街588号活力汇负一层比优特超市</td></tr>
+<tr><td>✅A-</td><td>欧亚超市(西安广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新竹路基隆南街天嘉水晶城53栋</td></tr>
+<tr><td>❌</td><td>欧亚超市(柳影路店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>欧亚奥特莱斯(新发路店)</td><td>奥特莱斯</td><td>4.6</td><td>0</td><td>0</td><td>新发路北胡同与清明街交叉口东南60米</td></tr>
+<tr><td>✅A-</td><td>欧亚新发</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>新发路1号</td></tr>
+<tr><td>✅A-</td><td>千嘉惠服饰批发城(中东店)</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>会展大街255号</td></tr>
+<tr><td>✅A-</td><td>摩天活力城MALL1期</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>经济开发区卫星路1777号</td></tr>
+<tr><td>✅B</td><td>国商百货(卫星广场店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>人民大街207号(卫星广场地铁站出入口步行110米)</td></tr>
+<tr><td>✅B</td><td>华生百货</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>公主西大街253号</td></tr>
+<tr><td>✅B</td><td>财神商厦(财神庙胡同)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>大马路197号</td></tr>
+<tr><td>✅B</td><td>万利批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>乐群街2416号</td></tr>
+<tr><td>✅B</td><td>千嘉惠服饰批发城(晨宇科技城店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>吉林大路1999号负一层晨宇科技城</td></tr>
+<tr><td>✅B</td><td>千嘉惠服饰批发城(名仕店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>四联大街与自兴路交汇处(车城名仕家园B区南门东北210米)</td></tr>
+<tr><td>✅B</td><td>千嘉惠服饰批发城(财神庙胡同财神商厦店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>全安街道大马路与三道街交汇财神商厦二楼</td></tr>
+<tr><td>✅B</td><td>完美易凯德影城(国商百货店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>国商百货卫星广场店6层</td></tr>
+<tr><td>✅B</td><td>海五湖海鲜批发(吉森·漫桦林二期店)</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>吉森漫桦林二期16栋102室</td></tr>
+<tr><td>⚠️</td><td>彩宇平价海鲜批发(富奥花园店)</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>净月高新技术产业开发区世光路1009号富奥花园A区</td></tr>
+<tr><td>⚠️</td><td>中东砂之船购物中心</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>北人民大街辅路与万兴路交叉口南100米</td></tr>
+<tr><td>⚠️</td><td>义乌小商品批发城</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>幸福街与星城胡同交叉口西南60米</td></tr>
+<tr><td>⚠️</td><td>义乌小商品批发城</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>金宇大路97号</td></tr>
+<tr><td>⚠️</td><td>南铂农贸市场继磊粮油批发</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>南铂农贸市场继磊粮油批</td></tr>
+<tr><td>⚠️</td><td>梧同里奥特莱斯商业综合体</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>东新路与东环城路交汇处向西350米</td></tr>
+</tbody></table></div>
+<p>（另 17 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（2 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>温泉洗浴宾馆(弓棚镇店)</td><td>餐饮服务;中餐厅;中餐厅｜住宿服务;宾馆酒店;宾馆酒店｜生活服务;洗浴推拿场所;洗浴推拿场所</td><td>5.0</td><td>—</td><td>弓棚高级中学校西北侧280米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/afcd090928d6c508a635a8d197f25700"></td></tr>
+<tr><td>✅B</td><td>关东宾馆(长春火车站店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>东二条路与黄河路交汇</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d6efec822fe263d887978eca9d3a4389"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>森泰宾馆(长春一汽店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>森泰宾馆(长春一汽店)</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>优家公寓(砂之船中东奥莱店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>优家公寓(砂之船中东奥莱店)</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>天空之城(砂之船中东奥莱店)</td><td>距离就近</td><td>254m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>砂之船(砂之船中东奥莱店)</td><td>距离就近</td><td>283m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万豪洗浴宾馆（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万豪洗浴宾馆</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宝地宾馆(大兴路)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宝地宾馆(大兴路)</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>欧亚卖场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>虚线密室逃脱(欧亚卖场店)</td><td>名称互证</td><td>323m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>摩天活力城MALL（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>虚线密室逃脱(摩天活力城店)</td><td>距离就近</td><td>24m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>寰映影城(摩天活力城店)</td><td>距离就近</td><td>60m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>摩天乐园(摩天活力城MALL店)</td><td>名称互证</td><td>99m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魅KTV(摩天活力城店)</td><td>名称互证</td><td>114m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>庭园汉庭酒店(长春宽城万达广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>庭园汉庭酒店(长春宽城万达广场店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>远大购物中心(长春店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星轶影城(长春远大店)</td><td>名称互证</td><td>178m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(远大购物中心店)</td><td>名称互证</td><td>188m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>小雀圣棋牌会所(壹湖国际店)</td><td>距离就近</td><td>497m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>馋宠官萌宠综合体验馆</td><td>距离就近</td><td>534m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(迅驰广场店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>谜失.MIst 沉浸密室</td><td>距离就近</td><td>218m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>黑衣人密室(诡校店)</td><td>距离就近</td><td>494m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新天地购物公园（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>朵芽·萌宠专售空间(新天地购物公园亚泰大街店)</td><td>名称互证</td><td>56m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>第9街区真人密室逃脱(长通路)</td><td>距离就近</td><td>116m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>砂之船中东奥莱（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>天空之城(砂之船中东奥莱店)</td><td>名称互证</td><td>5m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>砂之船(砂之船中东奥莱店)</td><td>名称互证</td><td>51m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>优家公寓(砂之船中东奥莱店)</td><td>名称互证</td><td>251m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(长春红旗街店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>魔王真人实景密室逃脱(万达广场店)</td><td>名称互证</td><td>78m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>SOLO超级密室街角店</td><td>名称互证</td><td>125m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>好家宾馆(红旗街店)</td><td>距离就近</td><td>137m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>秘境超级密室(红旗街店)</td><td>距离就近</td><td>412m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>华影巨幕影城</td><td>距离就近</td><td>457m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魔王天堂疯人院密室逃脱</td><td>距离就近</td><td>494m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长影电影院(湖西路店)</td><td>距离就近</td><td>561m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>庭园汉庭酒店(长春宽城万达广场店)</td><td>名称互证</td><td>5800m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(长春上海路店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>庭园汉庭酒店(长春宽城万达广场店)</td><td>名称互证</td><td>1754m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>SOLO超级密室街角店</td><td>名称互证</td><td>4633m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>魔王真人实景密室逃脱(万达广场店)</td><td>名称互证</td><td>4800m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>这有山（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>魔王真人实景密室逃脱(万达广场店)</td><td>距离就近</td><td>226m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>好家宾馆(红旗街店)</td><td>距离就近</td><td>235m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>长影电影院(湖西路店)</td><td>距离就近</td><td>412m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>SOLO超级密室街角店</td><td>距离就近</td><td>424m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>迅驰广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>谜失.MIst 沉浸密室</td><td>距离就近</td><td>248m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>黑衣人密室(诡校店)</td><td>距离就近</td><td>458m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(长春宽城店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>庭园汉庭酒店(长春宽城万达广场店)</td><td>名称互证</td><td>168m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>SOLO超级密室街角店</td><td>名称互证</td><td>5594m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>魔王真人实景密室逃脱(万达广场店)</td><td>名称互证</td><td>5723m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>活力城（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>魔王密室重庆路店</td><td>距离就近</td><td>124m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>悦家宾馆(北安路北三胡同)</td><td>距离就近</td><td>579m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>维景商旅宾馆</td><td>距离就近</td><td>579m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>魅KTV(摩天活力城店)</td><td>名称互证</td><td>7094m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>寰映影城(摩天活力城店)</td><td>名称互证</td><td>7175m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>虚线密室逃脱(摩天活力城店)</td><td>名称互证</td><td>7188m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>摩天乐园(摩天活力城MALL店)</td><td>名称互证</td><td>7304m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>欧亚新生活购物广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>NB魔王沉浸式剧场(欧亚新生活店)</td><td>名称互证</td><td>128m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>上影国际影城(欧亚新生活店)</td><td>名称互证</td><td>138m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>欧亚商都（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>魔王天堂疯人院密室逃脱</td><td>名称互证</td><td>44m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>华影巨幕影城</td><td>名称互证</td><td>94m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>秘境超级密室(红旗街店)</td><td>距离就近</td><td>252m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>SOLO超级密室街角店</td><td>距离就近</td><td>384m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>好家宾馆(红旗街店)</td><td>距离就近</td><td>539m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>魔王真人实景密室逃脱(万达广场店)</td><td>距离就近</td><td>573m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>花喜宾馆（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>花喜宾馆</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>拾光集Loft民宿(长春阳光硅谷店)</td><td>距离就近</td><td>581m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>长春市动植物公园（33 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>长春市动植物公园</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>斑马馆</td><td>距离就近</td><td>147m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>鸵鸟馆</td><td>距离就近</td><td>166m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>小动物合家欢</td><td>名称互证</td><td>171m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>长春动植物公园-狐猴岛</td><td>名称互证</td><td>183m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>火烈鸟馆</td><td>名称互证</td><td>191m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>长春动植物公园-珍猴馆</td><td>名称互证</td><td>195m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>长春动植物公园-长颈鹿馆</td><td>名称互证</td><td>215m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>长春动植物公园-两栖爬行馆</td><td>距离就近</td><td>219m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>猩猿新苑</td><td>名称互证</td><td>223m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>长春动植物公园儿童动物园-绿狒狒</td><td>距离就近</td><td>239m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>动植物公园儿童动物园</td><td>距离就近</td><td>243m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>长春动植物公园-动物表演场</td><td>名称互证</td><td>250m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>长春动植物公园-大象馆</td><td>名称互证</td><td>268m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>长春动植物公园-松鼠猴</td><td>距离就近</td><td>275m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>长春动植物公园-犀牛馆</td><td>名称互证</td><td>287m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>热带动物体验馆</td><td>距离就近</td><td>294m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>长春动植物公园儿童动物园-香猪</td><td>距离就近</td><td>308m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>袋鼠馆</td><td>名称互证</td><td>313m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>长春动植物公园儿童动物园-浣熊</td><td>距离就近</td><td>315m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>长春动植物公园-虎区</td><td>名称互证</td><td>330m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>长春动植物公园-狮区</td><td>名称互证</td><td>345m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>长春动植物公园儿童动物园-环尾狐猴</td><td>距离就近</td><td>350m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>长春动植物公园-猛兽谷</td><td>距离就近</td><td>380m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>长春动植物公园儿童动物园-驯鹿</td><td>距离就近</td><td>388m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>X.PARTY（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>X.PARTY</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>朋友圈剧本密室演绎剧场AE店</td><td>距离就近</td><td>77m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>鱼乐圈·(国泰2店)</td><td>距离就近</td><td>468m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>领秀娱乐（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>领秀娱乐</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>万达影城(力旺广场店)</td><td>距离就近</td><td>135m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>印象KTV(前进大街店)</td><td>距离就近</td><td>346m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>印象KTV(前进大街店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>印象KTV(前进大街店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>领秀娱乐</td><td>距离就近</td><td>346m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>万达影城(力旺广场店)</td><td>距离就近</td><td>478m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>卓展购物中心（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>长春金海旅店</td><td>距离就近</td><td>280m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>长春明哲时尚旅馆</td><td>距离就近</td><td>518m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（30 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>森泰宾馆(长春一汽店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>东风大街79号</td></tr>
+<tr><td>✅A-</td><td>悦家宾馆(北安路北三胡同)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>北安路2-1栋3号门</td></tr>
+<tr><td>✅A-</td><td>温泉洗浴宾馆(弓棚镇店)</td><td>餐饮服务;中餐厅;中餐厅｜住宿服务;宾馆酒店;宾馆酒店｜生活服务;洗浴推拿场所;洗浴推拿场所</td><td>5.0</td><td>—</td><td>弓棚高级中学校西北侧280米</td></tr>
+<tr><td>✅A-</td><td>优家公寓(砂之船中东奥莱店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>人民北路大街中东港5栋24楼2426室</td></tr>
+<tr><td>✅A-</td><td>考拉自助式公寓(长春吉大一院二部店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>春印小区1号楼25楼</td></tr>
+<tr><td>✅A-</td><td>万豪洗浴宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>工农大街66号</td></tr>
+<tr><td>✅A-</td><td>华信旅店(经开区店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>经开一区东5门北480米</td></tr>
+<tr><td>✅A-</td><td>轻住酒店·星辰优选(德惠胜利街店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.9</td><td>—</td><td>德惠路500号</td></tr>
+<tr><td>✅A-</td><td>雅居宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>兴隆大路6798号</td></tr>
+<tr><td>✅A-</td><td>宝地宾馆(大兴路)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>大兴路与万宝街交汇处(文化广场地铁站A口步行320米)</td></tr>
+<tr><td>✅A-</td><td>长春美美伊林公寓</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.9</td><td>—</td><td>长新东路伊林公寓4楼</td></tr>
+<tr><td>✅A-</td><td>好家宾馆(红旗街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>华亿红府东南门旁</td></tr>
+<tr><td>✅A-</td><td>STARHOUSE星宿韩雅客房</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>长春市高新技术产业开发区长春市高新区修正路1017号</td></tr>
+<tr><td>✅A-</td><td>维景商旅宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>长春南关区政府小区10栋二楼</td></tr>
+<tr><td>✅A-</td><td>庭园汉庭酒店(长春宽城万达广场店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.8</td><td>—</td><td>万达广场长春宽城店东出入口旁</td></tr>
+<tr><td>✅A-</td><td>拾光集Loft民宿(长春阳光硅谷店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.8</td><td>—</td><td>飞跃街道荷园路1048号阳光硅谷A座1606室</td></tr>
+<tr><td>✅A-</td><td>长春宾馆</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.7</td><td>—</td><td>新华路458号(近建政街口)</td></tr>
+<tr><td>✅A-</td><td>长春明哲时尚旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>永安街16号1门</td></tr>
+<tr><td>✅A-</td><td>公主岭天缘宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>西头道街温州城一区正东门(乔丹对面)</td></tr>
+<tr><td>✅A-</td><td>花喜宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>硅谷大街与佳园路交汇处超达磐古15栋</td></tr>
+<tr><td>✅A-</td><td>长春宝铂酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>幸福街1888号</td></tr>
+<tr><td>✅A-</td><td>友源宾馆(东环城路店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>东环城路7778号(东环城路地铁站C口步行460米)</td></tr>
+<tr><td>✅A-</td><td>长春广厦小旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>富强c区一栋104</td></tr>
+<tr><td>✅B</td><td>佳美旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>硅谷大街西越达路富强C区1-101号门市</td></tr>
+<tr><td>✅B</td><td>德惠客运宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>对站街德惠公路客运站附近</td></tr>
+<tr><td>✅B</td><td>铭家时尚宾馆(长春火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜购物服务;购物相关场所;购物相关场所</td><td>4.5</td><td>—</td><td>站前金街2号楼109号</td></tr>
+<tr><td>✅B</td><td>关东宾馆(长春火车站店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>东二条路与黄河路交汇</td></tr>
+<tr><td>✅B</td><td>长春金海旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>崇智胡同278号</td></tr>
+<tr><td>⚠️</td><td>长春亿家合时尚宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>枫叶路和文冠街交汇望月山庄10栋</td></tr>
+<tr><td>⚠️</td><td>长春宜家时尚客房</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.6</td><td>—</td><td>远达大街与长新街交汇吴中家天下20栋</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>2</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>13</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/长春市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>1 个 POI 无地址</strong>，需人工补：欧亚超市(柳影路店)</li><li><input type="checkbox" disabled> 儿童游乐 56 家，其中场内 3 家、独立 53 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 10 个区县：二道区、公主岭市、农安县、南关区、双阳区、宽城区、德惠市、朝阳区、榆树市、绿园区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

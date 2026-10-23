@@ -1,0 +1,582 @@
+{
+ "province": "四川省",
+ "stats": {
+  "cities": 21,
+  "poi": 3682,
+  "grades": {
+   "S": 0,
+   "A": 0,
+   "B": 99,
+   "C": 741
+  }
+ },
+ "cities": [
+  {
+   "city": "乐山市",
+   "province": "四川省",
+   "adcode": "511100",
+   "poi": 179,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:54",
+   "page": "cities/511100.html",
+   "json": "api/cities/511100.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E4%B9%90%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 6,
+    "C": 34
+   },
+   "dims": {
+    "food": 0,
+    "district": 58,
+    "leisure": 74,
+    "kids": 6,
+    "hotel": 28,
+    "product": 0
+   }
+  },
+  {
+   "city": "内江市",
+   "province": "四川省",
+   "adcode": "511000",
+   "poi": 197,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:31",
+   "page": "cities/511000.html",
+   "json": "api/cities/511000.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E5%86%85%E6%B1%9F%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 5,
+    "C": 35
+   },
+   "dims": {
+    "food": 1,
+    "district": 61,
+    "leisure": 74,
+    "kids": 5,
+    "hotel": 28,
+    "product": 0
+   }
+  },
+  {
+   "city": "凉山彝族自治州",
+   "province": "四川省",
+   "adcode": "513400",
+   "poi": 164,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:49",
+   "page": "cities/513400.html",
+   "json": "api/cities/513400.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E5%87%89%E5%B1%B1%E5%BD%9D%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 4,
+    "C": 36
+   },
+   "dims": {
+    "food": 2,
+    "district": 63,
+    "leisure": 63,
+    "kids": 5,
+    "hotel": 27,
+    "product": 0
+   }
+  },
+  {
+   "city": "南充市",
+   "province": "四川省",
+   "adcode": "511300",
+   "poi": 199,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:03",
+   "page": "cities/511300.html",
+   "json": "api/cities/511300.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E5%8D%97%E5%85%85%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 3,
+    "C": 37
+   },
+   "dims": {
+    "food": 0,
+    "district": 64,
+    "leisure": 81,
+    "kids": 14,
+    "hotel": 32,
+    "product": 0
+   }
+  },
+  {
+   "city": "宜宾市",
+   "province": "四川省",
+   "adcode": "511500",
+   "poi": 193,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:35",
+   "page": "cities/511500.html",
+   "json": "api/cities/511500.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E5%AE%9C%E5%AE%BE%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 6,
+    "C": 34
+   },
+   "dims": {
+    "food": 1,
+    "district": 64,
+    "leisure": 80,
+    "kids": 9,
+    "hotel": 34,
+    "product": 0
+   }
+  },
+  {
+   "city": "巴中市",
+   "province": "四川省",
+   "adcode": "511900",
+   "poi": 170,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:17",
+   "page": "cities/511900.html",
+   "json": "api/cities/511900.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E5%B7%B4%E4%B8%AD%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 5,
+    "C": 35
+   },
+   "dims": {
+    "food": 2,
+    "district": 59,
+    "leisure": 68,
+    "kids": 1,
+    "hotel": 27,
+    "product": 0
+   }
+  },
+  {
+   "city": "广元市",
+   "province": "四川省",
+   "adcode": "510800",
+   "poi": 162,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:50",
+   "page": "cities/510800.html",
+   "json": "api/cities/510800.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E5%B9%BF%E5%85%83%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 3,
+    "C": 37
+   },
+   "dims": {
+    "food": 1,
+    "district": 53,
+    "leisure": 70,
+    "kids": 5,
+    "hotel": 24,
+    "product": 0
+   }
+  },
+  {
+   "city": "广安市",
+   "province": "四川省",
+   "adcode": "511600",
+   "poi": 168,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:23",
+   "page": "cities/511600.html",
+   "json": "api/cities/511600.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E5%B9%BF%E5%AE%89%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 8,
+    "C": 32
+   },
+   "dims": {
+    "food": 0,
+    "district": 51,
+    "leisure": 73,
+    "kids": 6,
+    "hotel": 23,
+    "product": 0
+   }
+  },
+  {
+   "city": "德阳市",
+   "province": "四川省",
+   "adcode": "510600",
+   "poi": 181,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:31",
+   "page": "cities/510600.html",
+   "json": "api/cities/510600.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E5%BE%B7%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 3,
+    "C": 37
+   },
+   "dims": {
+    "food": 2,
+    "district": 58,
+    "leisure": 72,
+    "kids": 8,
+    "hotel": 24,
+    "product": 0
+   }
+  },
+  {
+   "city": "成都市",
+   "province": "四川省",
+   "adcode": "510100",
+   "poi": 249,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:09",
+   "page": "cities/510100.html",
+   "json": "api/cities/510100.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E6%88%90%E9%83%BD%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 4,
+    "C": 36
+   },
+   "dims": {
+    "food": 1,
+    "district": 78,
+    "leisure": 88,
+    "kids": 3,
+    "hotel": 33,
+    "product": 0
+   }
+  },
+  {
+   "city": "攀枝花市",
+   "province": "四川省",
+   "adcode": "510400",
+   "poi": 138,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:02",
+   "page": "cities/510400.html",
+   "json": "api/cities/510400.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E6%94%80%E6%9E%9D%E8%8A%B1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 9,
+    "C": 31
+   },
+   "dims": {
+    "food": 0,
+    "district": 49,
+    "leisure": 57,
+    "kids": 1,
+    "hotel": 21,
+    "product": 0
+   }
+  },
+  {
+   "city": "泸州市",
+   "province": "四川省",
+   "adcode": "510500",
+   "poi": 185,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:21",
+   "page": "cities/510500.html",
+   "json": "api/cities/510500.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E6%B3%B8%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 5,
+    "C": 35
+   },
+   "dims": {
+    "food": 0,
+    "district": 63,
+    "leisure": 70,
+    "kids": 2,
+    "hotel": 25,
+    "product": 0
+   }
+  },
+  {
+   "city": "甘孜藏族自治州",
+   "province": "四川省",
+   "adcode": "513300",
+   "poi": 137,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:16",
+   "page": "cities/513300.html",
+   "json": "api/cities/513300.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E7%94%98%E5%AD%9C%E8%97%8F%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 0,
+    "C": 40
+   },
+   "dims": {
+    "food": 2,
+    "district": 49,
+    "leisure": 50,
+    "kids": 0,
+    "hotel": 32,
+    "product": 0
+   }
+  },
+  {
+   "city": "眉山市",
+   "province": "四川省",
+   "adcode": "511400",
+   "poi": 181,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:17",
+   "page": "cities/511400.html",
+   "json": "api/cities/511400.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E7%9C%89%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 0,
+    "C": 40
+   },
+   "dims": {
+    "food": 1,
+    "district": 55,
+    "leisure": 66,
+    "kids": 9,
+    "hotel": 31,
+    "product": 0
+   }
+  },
+  {
+   "city": "绵阳市",
+   "province": "四川省",
+   "adcode": "510700",
+   "poi": 212,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:45",
+   "page": "cities/510700.html",
+   "json": "api/cities/510700.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E7%BB%B5%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 7,
+    "C": 33
+   },
+   "dims": {
+    "food": 1,
+    "district": 56,
+    "leisure": 80,
+    "kids": 10,
+    "hotel": 31,
+    "product": 0
+   }
+  },
+  {
+   "city": "自贡市",
+   "province": "四川省",
+   "adcode": "510300",
+   "poi": 175,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:08",
+   "page": "cities/510300.html",
+   "json": "api/cities/510300.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E8%87%AA%E8%B4%A1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 10,
+    "C": 30
+   },
+   "dims": {
+    "food": 2,
+    "district": 59,
+    "leisure": 75,
+    "kids": 6,
+    "hotel": 27,
+    "product": 0
+   }
+  },
+  {
+   "city": "资阳市",
+   "province": "四川省",
+   "adcode": "512000",
+   "poi": 150,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:03",
+   "page": "cities/512000.html",
+   "json": "api/cities/512000.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E8%B5%84%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 6,
+    "C": 34
+   },
+   "dims": {
+    "food": 0,
+    "district": 57,
+    "leisure": 58,
+    "kids": 1,
+    "hotel": 24,
+    "product": 0
+   }
+  },
+  {
+   "city": "达州市",
+   "province": "四川省",
+   "adcode": "511700",
+   "poi": 169,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:36",
+   "page": "cities/511700.html",
+   "json": "api/cities/511700.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E8%BE%BE%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 9,
+    "C": 31
+   },
+   "dims": {
+    "food": 3,
+    "district": 52,
+    "leisure": 70,
+    "kids": 7,
+    "hotel": 28,
+    "product": 0
+   }
+  },
+  {
+   "city": "遂宁市",
+   "province": "四川省",
+   "adcode": "510900",
+   "poi": 155,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:50",
+   "page": "cities/510900.html",
+   "json": "api/cities/510900.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E9%81%82%E5%AE%81%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 3,
+    "C": 37
+   },
+   "dims": {
+    "food": 2,
+    "district": 55,
+    "leisure": 65,
+    "kids": 5,
+    "hotel": 24,
+    "product": 0
+   }
+  },
+  {
+   "city": "阿坝藏族羌族自治州",
+   "province": "四川省",
+   "adcode": "513200",
+   "poi": 138,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:51",
+   "page": "cities/513200.html",
+   "json": "api/cities/513200.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E9%98%BF%E5%9D%9D%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 0,
+    "C": 40
+   },
+   "dims": {
+    "food": 0,
+    "district": 42,
+    "leisure": 54,
+    "kids": 1,
+    "hotel": 31,
+    "product": 0
+   }
+  },
+  {
+   "city": "雅安市",
+   "province": "四川省",
+   "adcode": "511800",
+   "poi": 180,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:38",
+   "page": "cities/511800.html",
+   "json": "api/cities/511800.json",
+   "md": "md/%E5%9B%9B%E5%B7%9D%E7%9C%81/%E9%9B%85%E5%AE%89%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 3,
+    "C": 37
+   },
+   "dims": {
+    "food": 0,
+    "district": 56,
+    "leisure": 55,
+    "kids": 3,
+    "hotel": 29,
+    "product": 0
+   }
+  }
+ ]
+}

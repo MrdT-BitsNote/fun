@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>盐城市 · 江苏省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/江苏省.html">← 返回江苏省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>盐城市 · 江苏省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:05:48  ·  POI 总量：212（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>212</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>96%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 1 · 商圈 129 · 成人娱乐 149 · 儿童娱乐 45 · 酒店 31 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>江苏省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>9 个</td></tr>
+<tr><td>街道/镇/乡</td><td>139 个</td></tr>
+<tr><td>区县构成</td><td>县×5、市辖区×3、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>亭湖区</td><td>68</td><td>32%</td></tr>
+<tr><td>盐都区</td><td>61</td><td>29%</td></tr>
+<tr><td>大丰区</td><td>24</td><td>11%</td></tr>
+<tr><td>东台市</td><td>17</td><td>8%</td></tr>
+<tr><td>射阳县</td><td>12</td><td>6%</td></tr>
+<tr><td>滨海县</td><td>12</td><td>6%</td></tr>
+<tr><td>响水县</td><td>9</td><td>4%</td></tr>
+<tr><td>建湖县</td><td>5</td><td>2%</td></tr>
+<tr><td>阜宁县</td><td>4</td><td>2%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（129 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>57</td></tr>
+<tr><td>购物中心/综合体</td><td>39</td></tr>
+<tr><td>批发城</td><td>18</td></tr>
+<tr><td>百货/商场</td><td>10</td></tr>
+<tr><td>商业街</td><td>4</td></tr>
+<tr><td>奥特莱斯</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（129 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>盐城宝龙广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>10</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>盐城大有境</td><td>百货/商场</td><td>4.8</td><td>0</td><td>5</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>悦达889商业广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(大丰店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(东台店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(盐城滨海店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(盐城店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>星期8快捷酒店(盐城高铁站盐镇水街店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>万达影城(盐城万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>盒马鲜生(新辰里店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(大丰店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>雅家乐•悦+精品超市(生活广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(滨海店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(建湖店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(东台店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>麦德龙(盐城商场店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(盐城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(盐城射阳店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盐城建湖宝龙广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盐城魔力月光广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盐城招商场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盐城·新弄里</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>响水爱琴海购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>德润广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>盐城大丰港动物园</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>8</td><td>0</td></tr>
+<tr><td>C</td><td>海乐迪PARTY·KTV(凤凰金宝广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>上海纯恺量贩式KTV(人民路店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>爱圣堡影院(凤凰金宝广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>UMC国际影城(凤凰汇商业街区店)</td><td>商业街</td><td>4.6</td><td>0</td><td>7</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>幸福蓝海国际影城(新弄里店巴可S4CINEMA巨幕)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盐城奥斯卡国际影城(文泽商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>峰尚影城(峰尚广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(射阳店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(天鹅湖国际广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(先峰岛店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(盐城中南城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>5</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(悦达889商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>雅家乐·悦+精品超市(大丰东方1号店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>建湖农副产品批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新辰里</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>盐城宝龙广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：人民中路9号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盐城宝龙广场</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>1990CLUB、四方城·棋牌·茗茶·简餐(宝龙店)、上海纯K商务会客厅(K歌)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>感物知趣动物馆(宝龙店)</td></tr>
+</tbody></table></div>
+<h3>盐城大有境 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;商场）</li><li><strong>地址</strong>：新都街道解放南路278号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盐城大有境</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>星聚会ktv(盐城大有境店)、战斧超大型真人实景密室(盐城店)、CGV星聚汇影城(中南城店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>Ta宠物乐园</td></tr>
+</tbody></table></div>
+<h3>悦达889商业广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场）</li><li><strong>地址</strong>：希望大道与青年东路交叉口东北角</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>悦达889商业广场</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>万象超级密室(悦达889店)</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(大丰店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;商场;普通商场）</li><li><strong>地址</strong>：常新北路东、红星河与新村路之间</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(大丰店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>星轶影城、镇魂沉浸式密室逃脱(吾悦广场店)、聚玩汇密室逃脱(射阳吾悦广场店)</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(东台店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;商场;普通商场）</li><li><strong>地址</strong>：惠阳路107号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(东台店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>星轶影城、镇魂沉浸式密室逃脱(吾悦广场店)、聚玩汇密室逃脱(射阳吾悦广场店)</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(盐城滨海店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：朝阳路6号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(盐城滨海店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>星轶影城、镇魂沉浸式密室逃脱(吾悦广场店)、聚玩汇密室逃脱(射阳吾悦广场店)</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(盐城店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;商场;普通商场）</li><li><strong>地址</strong>：海洋路216号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(盐城店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>星轶影城、镇魂沉浸式密室逃脱(吾悦广场店)、聚玩汇密室逃脱(射阳吾悦广场店)</td></tr>
+</tbody></table></div>
+<h3>星期8快捷酒店(盐城高铁站盐镇水街店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：经济开发区商业街22号楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 1 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>星期8快捷酒店(盐城高铁站盐镇水街店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>听牌棋牌室</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宠当家宠物生活馆(商业街店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>星期8快捷酒店(盐城高铁站盐镇水街店)、云海宾馆(盐城开放大道店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(盐城万达广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：西环路盐城万达广场</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(盐城万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>万达影城(盐城万达广场店)、魅KTV·AI辅唱(盐城万达店)、無止境·超级密室</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>多奇怪动物公园(万达广场盐城店)</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(新辰里店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：建军东路239号新辰里购物中心1层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盒马鲜生(新辰里店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>中影南方SpaceX电影空间站(新辰里)</td></tr>
+</tbody></table></div>
+<h3>大润发(大丰店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：幸福东大街7号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(大丰店)</td></tr>
+</tbody></table></div>
+<h3>雅家乐•悦+精品超市(生活广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：新都路3号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>雅家乐•悦+精品超市(生活广场店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>东悦量贩KTV</td></tr>
+</tbody></table></div>
+<h3>大润发(滨海店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;家电电子卖场;手机销售｜购物服务;超级市场;超市）</li><li><strong>地址</strong>：东坎镇人民中路62号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(滨海店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>九玩沉浸式密室逃脱</td></tr>
+</tbody></table></div>
+<h3>大润发(建湖店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：向阳西路128号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(建湖店)</td></tr>
+</tbody></table></div>
+<h3>大润发(东台店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：红兰中路3号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(东台店)</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（149 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>棋牌室</td><td>20</td></tr>
+<tr><td>电影院</td><td>18</td></tr>
+<tr><td>KTV</td><td>14</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>14</td></tr>
+<tr><td>其他娱乐场所</td><td>8</td></tr>
+<tr><td>酒吧/酒馆</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(盐城万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>46.00</td><td>西环路盐城万达广场</td></tr>
+<tr><td>✅A-</td><td>海乐迪PARTY·KTV(凤凰金宝广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>24.00</td><td>凤凰金宝广场3楼</td></tr>
+<tr><td>✅A-</td><td>1990CLUB</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>—</td><td>东进路23号</td></tr>
+<tr><td>✅A-</td><td>上海纯恺量贩式KTV(人民路店)</td><td>KTV</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.6</td><td>51.00</td><td>文峰街道人民中路188号飞驰新天地广场B幢401室</td></tr>
+<tr><td>✅A-</td><td>凤凰城K歌沐足养生中心</td><td>其他娱乐场所</td><td>生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.6</td><td>38.00</td><td>剧场路22号</td></tr>
+<tr><td>✅A-</td><td>爱圣堡影院(凤凰金宝广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>44.00</td><td>世纪大道611号凤凰金宝广场四楼</td></tr>
+<tr><td>✅A-</td><td>UMC国际影城(凤凰汇商业街区店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>47.00</td><td>城南新区解放南路266号凤凰汇商业街3楼</td></tr>
+<tr><td>✅A-</td><td>幸福蓝海国际影城(新弄里店巴可S4CINEMA巨幕)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>33.00</td><td>新都街道新龙广场16号楼幸福蓝海影院</td></tr>
+<tr><td>✅A-</td><td>盐城电影院1956星剧场</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>41.00</td><td>建军中路96号</td></tr>
+<tr><td>✅A-</td><td>盐城奥斯卡国际影城(文泽商业广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>29.00</td><td>黄海中路6号文泽商业广场3楼</td></tr>
+<tr><td>✅A-</td><td>峰尚影城(峰尚广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>36.00</td><td>建军东路153号盐城峰尚生活广场4号楼</td></tr>
+<tr><td>✅A-</td><td>爱麻仕棋牌·四方城连锁(盐渎明城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>21.00</td><td>解放南路296号</td></tr>
+<tr><td>✅A-</td><td>四方城·棋牌·茗茶·简餐(宝龙店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>44.00</td><td>迎宾南路与青年路交叉口东100米</td></tr>
+<tr><td>✅B</td><td>战斧超大型真人实景密室(盐城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>92.00</td><td>中南城大有镜B座2楼战斧密室</td></tr>
+<tr><td>✅B</td><td>东悦量贩KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>136.00</td><td>南高新区新都街道人民南路2号紫薇广场C区</td></tr>
+<tr><td>✅B</td><td>星辉派对空间KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>289.00</td><td>黄海街道东进路美食街16幢101、101-1、101-2、101-3、101-4、102、102-1、103</td></tr>
+<tr><td>✅B</td><td>秀客XIUKE LIFE同心多元化KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;迪厅</td><td>4.5</td><td>49.00</td><td>娱乐村一组盐渎明城6B-3幢02室1层大堂</td></tr>
+<tr><td>✅B</td><td>上海纯K商务会客厅(K歌)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>50.00</td><td>人民中路9号盐城亭湖宝龙广场F4层</td></tr>
+<tr><td>✅B</td><td>星聚会ktv(盐城大有境店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>64.00</td><td>中南城5F</td></tr>
+<tr><td>✅B</td><td>魅KTV·AI辅唱(盐城万达店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>75.00</td><td>西环中路88号万达广场6号门三楼</td></tr>
+<tr><td>✅B</td><td>卢米埃影城(盐城聚龙湖金鹰购物中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>29.00</td><td>解放南路268号金鹰购物中心6层</td></tr>
+<tr><td>✅B</td><td>未来影城(尚城国际购物中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>47.00</td><td>迎宾南路100号尚城购物中心4层</td></tr>
+<tr><td>✅B</td><td>中影国际影城(北金鹰店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>34.00</td><td>建军中路169号金鹰国际购物中心7层</td></tr>
+<tr><td>✅B</td><td>幸福蓝海天幕影城(五洲国际广场文峰路)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>31.00</td><td>迎宾南路28号五洲国际广场(文峰路)4F层(东门进入直行40m,扶梯上到4F可见)</td></tr>
+<tr><td>✅B</td><td>中影南方SpaceX电影空间站(新辰里)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>41.00</td><td>建军东路239号</td></tr>
+<tr><td>✅B</td><td>禧悦棋牌·茶馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>23.00</td><td>世纪大道611号凤凰文化广场5幢18F</td></tr>
+<tr><td>✅B</td><td>花满楼棋牌室茶室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>39.00</td><td>聚亨路98号</td></tr>
+<tr><td>✅B</td><td>乐棋轩棋牌狼人馆</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>12.00</td><td>世纪大道88号中远广场F幢1楼</td></tr>
+<tr><td>✅B</td><td>听牌棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>19.00</td><td>大地房产大厦三楼</td></tr>
+<tr><td>✅B</td><td>叁雀一棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>92.00</td><td>世纪大道与西环路交口东南角</td></tr>
+<tr><td>✅B</td><td>無止境·超级密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>153.00</td><td>万达华府大公馆26幢2楼202</td></tr>
+<tr><td>✅B</td><td>星光大道量贩式KTV(东进路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>46.00</td><td>东进中路36号</td></tr>
+<tr><td>✅B</td><td>星光大道量贩式KTV(大庆路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>59.00</td><td>大庆西路19号(盐都车站旁)</td></tr>
+<tr><td>✅B</td><td>云上星辰</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;迪厅｜体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>159.00</td><td>五星街道大庆东路,六合路交叉口</td></tr>
+<tr><td>✅B</td><td>横店电影城(盐城亭湖宝龙广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>38.00</td><td>人民中路9号宝龙城市广场4层</td></tr>
+<tr><td>✅B</td><td>恒大影城(盐城恒大名都店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>35.00</td><td>神州路与新都路交汇处恒大剧场3层</td></tr>
+<tr><td>✅B</td><td>星轶影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>41.00</td><td>海洋路216号吾悦广场5F</td></tr>
+<tr><td>✅B</td><td>新纪元皇家国际影城(新纪元商业广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>35.00</td><td>开放大道北路65号新纪元商业广场5层</td></tr>
+<tr><td>✅B</td><td>悦之棋牌·麻将(紫薇花园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>9.00</td><td>紫薇广场b栋4楼</td></tr>
+<tr><td>✅B</td><td>雀兴棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>27.00</td><td>科城街道人民南路与聚亨路交叉口瑞尔花园31栋3楼3016室</td></tr>
+<tr><td>✅B</td><td>盐城市盐南高新区棋乐棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>19.00</td><td>温馨花园北区东北门西南110米</td></tr>
+<tr><td>✅B</td><td>樂汇国粹·棋牌馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>80.00</td><td>华夏路8-124号</td></tr>
+<tr><td>✅B</td><td>CGV星聚汇影城(中南城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>60.00</td><td>解放南路278号中南城购物中心5层</td></tr>
+<tr><td>✅B</td><td>添运棋牌(南金鹰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>21.00</td><td>新都街道解放南路268号金鹰天地广场2幢1019-1020室</td></tr>
+<tr><td>⚠️</td><td>万象·超级密室(宝龙潮街店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>72.00</td><td>人民中路9号宝龙公寓2号楼F2层</td></tr>
+<tr><td>⚠️</td><td>皓妤棋牌室(茶互口店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>33.00</td><td>人民路与鹿鸣路交界处鹿鸣广场</td></tr>
+<tr><td>⚠️</td><td>雀思听·麻将·棋牌(宝龙店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>20.00</td><td>人民中路9号盐城宝龙广场F2层</td></tr>
+<tr><td>⚠️</td><td>君悦会( 解放南路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>82.00</td><td>解放南路250号</td></tr>
+<tr><td>⚠️</td><td>皇家永利</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;迪厅</td><td>4.1</td><td>48.00</td><td>黄海街道东进路11号</td></tr>
+<tr><td>⚠️</td><td>欢乐巢智慧KTV(盐城魔力月光店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>29.00</td><td>魔力月光广场</td></tr>
+<tr><td>⚠️</td><td>嘉凯影城(盐城激光巨幕店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>41.00</td><td>神州路与新都路交汇处恒大影城三楼</td></tr>
+<tr><td>⚠️</td><td>曼哈顿无人自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>172.00</td><td>新都街道人民南路与世纪大道交汇处紫薇曼哈顿2905室</td></tr>
+<tr><td>⚠️</td><td>麻友记棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>73.00</td><td>新都街道解放南路80号</td></tr>
+<tr><td>⚠️</td><td>迷兔·超级密室(魔力月光店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>86.00</td><td>魔力月光二楼20173</td></tr>
+<tr><td>⚠️</td><td>万物生真人密室逃脱(建湖店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>103.00</td><td>金地步行街3楼3018</td></tr>
+<tr><td>⚠️</td><td>将相和茶室棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>68.00</td><td>世纪大道5号盐城金融城3号楼F1层</td></tr>
+<tr><td>⚠️</td><td>悦享影咖棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>13.00</td><td>鹿鸣西路6-27商铺(温馨花园南区西北门)</td></tr>
+<tr><td>⚠️</td><td>万象超级密室(悦达889店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>86.00</td><td>希望大道58号绿地商务城12幢230-232室</td></tr>
+<tr><td>⚠️</td><td>九玩密室逃脱(阜宁店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>107.00</td><td>阜城大街199号富建广场F3层</td></tr>
+<tr><td>⚠️</td><td>九玩沉浸式密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>119.00</td><td>人民中路62号金正生活广场5楼</td></tr>
+</tbody></table></div>
+<p>（另 15 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（45 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>23</td></tr>
+<tr><td>其他儿童场所</td><td>22</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>盐城大丰港动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>大丰港青岛港路6号</td></tr>
+<tr><td>✅B</td><td>盐城海昌海洋探索馆</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>新都街道解放南路268号金鹰购物中心聚龙湖店负一层</td></tr>
+<tr><td>✅B</td><td>森灵欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>沙岗村二组(226省道路西)</td></tr>
+<tr><td>✅B</td><td>萌宠社宠物生活馆(新城花园A区店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>新城花园A区10栋M01</td></tr>
+<tr><td>✅B</td><td>贝爱佳萌宠生活馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>海陵北路1号兴城国际花园</td></tr>
+<tr><td>✅B</td><td>畅心园(万方名城·畅心园店)</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>双元西路5号万方名城畅心园</td></tr>
+<tr><td>✅B</td><td>盐城湿地博物园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>大庆东路与运河路交接处</td></tr>
+<tr><td>✅B</td><td>董永七仙女文化园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>宁树路</td></tr>
+<tr><td>✅B</td><td>UU迷你球房(迎宾南路店)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>文峰街道迎宾南路28号五洲国际广场3号楼二楼</td></tr>
+<tr><td>✅B</td><td>Ta宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>海洋路16号</td></tr>
+<tr><td>✅B</td><td>萌宠当家宠物生活馆(商业街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>商业街西首凯发新园5号109室(西湖国际大酒店北侧)</td></tr>
+<tr><td>⚠️</td><td>迷妳彩妆·美甲(城中花园店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>城中花园南门1-13.2号商铺</td></tr>
+<tr><td>⚠️</td><td>西溪乐园</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>惠阳路西园印象菜向西500米</td></tr>
+<tr><td>⚠️</td><td>皇狮宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>中市北路中市桥</td></tr>
+<tr><td>⚠️</td><td>海洋宠物店(新时代乐园店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>新时代乐园9号楼107室</td></tr>
+<tr><td>⚠️</td><td>萌宠之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>达阳路5-23号</td></tr>
+<tr><td>⚠️</td><td>汪旺宠物(新时代乐园店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>海滨大道辅路新时代乐园34栋110号</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园(福缘居小区店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>开放大道51号福缘居小区</td></tr>
+<tr><td>❌</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园宠物店(光明路店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>光明路17号</td></tr>
+<tr><td>⚠️</td><td>大丰港动物园-大丰大熊猫乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>大丰港经济开发区大丰港经济开发区大丰港青岛港路6号盐城大丰港动物园(西南角)</td></tr>
+<tr><td>⚠️</td><td>圣宠乐园(人民中路辅路店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>人民北路193号红星桥北头新东坎老街对面</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>特庸镇码中街137号</td></tr>
+<tr><td>⚠️</td><td>小屁孩萌宠园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>剧场路12号</td></tr>
+<tr><td>⚠️</td><td>新安盟宠乐园(东方·锦绣南城店)</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>大中街道锦绣南城北门西侧太仓银行东侧</td></tr>
+<tr><td>⚠️</td><td>盐城森林动物王国</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>汇丰路48号</td></tr>
+<tr><td>⚠️</td><td>响水五哥动物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>双港镇友爱村</td></tr>
+<tr><td>⚠️</td><td>春燕鸟业</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>双港镇友爱村响水五哥动物乐园附近</td></tr>
+<tr><td>❌</td><td>感物知趣动物馆(宝龙店)</td><td>其他儿童场所</td><td>场内</td><td>3.4</td><td>人民中路9号盐城宝龙广场</td></tr>
+<tr><td>❌</td><td>珍禽异兽馆</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>川东镇麋鹿线中华麋鹿园内</td></tr>
+<tr><td>❌</td><td>乐思堡萌宠乐园(盐城爱琴海购物中心店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.2</td><td>开放大道北路150号盐城爱琴海购物中心F3层</td></tr>
+<tr><td>❌</td><td>迷你百货</td><td>其他儿童场所</td><td>场内</td><td>3.1</td><td>上冈镇府前路50号</td></tr>
+<tr><td>❌</td><td>迷你小屋</td><td>其他儿童场所</td><td>独立</td><td>2.9</td><td>滨江路步行街与幸福路交叉口东北20米</td></tr>
+<tr><td>❌</td><td>国家电网汽车充电站(国网盐城大丰港动物园充电站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.7</td><td>大丰港动物园停车场</td></tr>
+<tr><td>❌</td><td>多奇怪动物公园(万达广场盐城店)</td><td>其他儿童场所</td><td>场内</td><td>2.5</td><td>西环路88号万达广场盐城店F3层</td></tr>
+<tr><td>❌</td><td>迷你优选</td><td>其他儿童场所</td><td>独立</td><td>2.4</td><td>北关路与黄海路交叉口东南180米</td></tr>
+<tr><td>❌</td><td>合德宠物园</td><td>其他儿童场所</td><td>独立</td><td>1.6</td><td>达阳路与兴农路交叉口东160米</td></tr>
+<tr><td>⚠️</td><td>盐城大丰港动物园停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>港路8号大丰市动物园</td></tr>
+<tr><td>⚠️</td><td>静心园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>双元西路18号</td></tr>
+<tr><td>⚠️</td><td>盐城大丰港动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>大丰港青岛港路6号盐城大丰港动物园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>大丰港动物园(公交站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>(停运)大丰区游1线;景区直通车一号线(生态鹤影之旅);景区直通车二号线(花海鹿苑之旅)</td></tr>
+<tr><td>⚠️</td><td>盐城大丰港动物园游客中心</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>青岛港路8号</td></tr>
+<tr><td>⚠️</td><td>响水动物园(公交站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>(停运)响水320路(北线)</td></tr>
+<tr><td>⚠️</td><td>华景园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>天山中路28号</td></tr>
+<tr><td>⚠️</td><td>公共厕所</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>青岛港路大丰港动物园</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（68 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>盐城大有境</td><td>百货/商场</td><td>4.8</td><td>1</td><td>0</td><td>新都街道解放南路278号</td></tr>
+<tr><td>✅A-</td><td>悦达889商业广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>希望大道与青年东路交叉口东北角</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(大丰店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>常新北路东、红星河与新村路之间</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(东台店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>惠阳路107号</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(盐城滨海店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>朝阳路6号</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(盐城店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>海洋路216号</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(新辰里店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>建军东路239号新辰里购物中心1层</td></tr>
+<tr><td>✅A-</td><td>大润发(大丰店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>幸福东大街7号</td></tr>
+<tr><td>✅A-</td><td>雅家乐•悦+精品超市(生活广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>新都路3号</td></tr>
+<tr><td>✅A-</td><td>大润发(建湖店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>向阳西路128号</td></tr>
+<tr><td>✅A-</td><td>大润发(东台店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>红兰中路3号</td></tr>
+<tr><td>✅A-</td><td>麦德龙(盐城商场店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>西环路295号邮编</td></tr>
+<tr><td>✅A-</td><td>盐城宝龙广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>人民中路9号</td></tr>
+<tr><td>✅A-</td><td>万达广场(盐城店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>西环路88号</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(盐城射阳店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>射阳县开发区新城大道东侧人民路南侧88号</td></tr>
+<tr><td>✅A-</td><td>盐城建湖宝龙广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>湖中南路896号建湖宝龙广场购物中心</td></tr>
+<tr><td>✅A-</td><td>盐城魔力月光广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>解放南路与海潮路交汇处中南城购物中心北侧</td></tr>
+<tr><td>✅A-</td><td>盐城招商场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>黄海东路16号</td></tr>
+<tr><td>✅A-</td><td>盐城·新弄里</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>新都街道人民南路28号</td></tr>
+<tr><td>✅A-</td><td>响水爱琴海购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>响水镇和谐路83号</td></tr>
+<tr><td>✅A-</td><td>德润广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>海陵北路9号</td></tr>
+<tr><td>✅A-</td><td>盐城奥斯卡国际影城(文泽商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>黄海中路6号文泽商业广场3楼</td></tr>
+<tr><td>✅A-</td><td>大润发(天鹅湖国际广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>阜城崔湾村四组(香港路与上海路交汇处东南角)</td></tr>
+<tr><td>✅A-</td><td>大润发(先峰岛店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>建军西路1-2号</td></tr>
+<tr><td>❌</td><td>永辉超市(盐城中南城店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>永辉超市(悦达889商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>希望大道中路60号负一层</td></tr>
+<tr><td>✅A-</td><td>雅家乐·悦+精品超市(大丰东方1号店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>东方1号创意小镇4号楼</td></tr>
+<tr><td>✅A-</td><td>建湖农副产品批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>森达东路与231省道交汇处西北角</td></tr>
+<tr><td>✅A-</td><td>新辰里</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>天山路与建军东路交叉口西120米</td></tr>
+<tr><td>✅A-</td><td>金鹰奥莱城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>人民南路11号</td></tr>
+<tr><td>✅A-</td><td>盐城城东宝龙广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>新都路100号</td></tr>
+<tr><td>✅A-</td><td>凤凰金宝广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>世纪大道611号</td></tr>
+<tr><td>✅B</td><td>卢米埃影城(盐城聚龙湖金鹰购物中心店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>解放南路268号金鹰购物中心6层</td></tr>
+<tr><td>✅B</td><td>未来影城(尚城国际购物中心店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>迎宾南路100号尚城购物中心4层</td></tr>
+<tr><td>✅B</td><td>M会员商店(盐城店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>佳源广场</td></tr>
+<tr><td>✅B</td><td>华润苏果(苏果巷店)</td><td>购物中心/综合体</td><td>4.5</td><td>2</td><td>0</td><td>解放路与朝阳街交汇处西南</td></tr>
+<tr><td>✅B</td><td>雅家乐•悦+精品超市(五洲国际广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>迎宾南路28号五洲国际广场B1层</td></tr>
+<tr><td>✅B</td><td>雅家乐超市(解放店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>黄海街道解放南路128号瑞景花园A幢2层201室</td></tr>
+<tr><td>✅B</td><td>浦发超市(幸福商业广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>合德镇幸福华城H栋一楼</td></tr>
+<tr><td>✅B</td><td>盐都花卉批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>冈中街道杨韦村五组</td></tr>
+<tr><td>✅B</td><td>大丰区富民批发中心</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>苏港路117号</td></tr>
+<tr><td>✅B</td><td>盐城商业大厦</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>建军中路132号</td></tr>
+<tr><td>✅B</td><td>新纪元皇家国际影城(新纪元商业广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>开放大道北路65号新纪元商业广场5层</td></tr>
+<tr><td>✅B</td><td>家得乐购物广场(南洋店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>南洋中学东门花木路10号</td></tr>
+<tr><td>✅B</td><td>惠我家生鲜农超(名尚国际购物广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>朝阳路2-27号惠我家生鲜农超</td></tr>
+<tr><td>✅B</td><td>滨海农副产品批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>便民路与港城支路交叉口东北160米</td></tr>
+<tr><td>✅B</td><td>长青瓜果批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>范公中路与东关路交叉口东南140米</td></tr>
+<tr><td>⚠️</td><td>嵛山岛海鲜批发城(钱江财富广场店)</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>盐城市盐南高新区钱江财富广场1幢109室</td></tr>
+<tr><td>⚠️</td><td>花季绿植鲜花直营批发</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>新都东路9号106号门市</td></tr>
+<tr><td>⚠️</td><td>绿环园林(盐都花卉批发市场店)</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>新204国道与南环路交界处向南300米路东盐都花卉批发市场</td></tr>
+</tbody></table></div>
+<p>（另 18 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（1 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅B</td><td>畅心园(万方名城·畅心园店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.4</td><td>—</td><td>双元西路5号万方名城畅心园</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b661ec5553830321e700b52aeba95037"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>盐城大有境（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>CGV星聚汇影城(中南城店)</td><td>距离就近</td><td>59m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星聚会ktv(盐城大有境店)</td><td>名称互证</td><td>115m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>战斧超大型真人实景密室(盐城店)</td><td>距离就近</td><td>125m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>欢乐巢智慧KTV(盐城魔力月光店)</td><td>距离就近</td><td>295m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>迷兔·超级密室(魔力月光店)</td><td>距离就近</td><td>302m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>Ta宠物乐园</td><td>距离就近</td><td>405m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>悦达889商业广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万象超级密室(悦达889店)</td><td>距离就近</td><td>261m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(大丰店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星轶影城</td><td>名称互证</td><td>30341m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>镇魂沉浸式密室逃脱(吾悦广场店)</td><td>名称互证</td><td>44106m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>聚玩汇密室逃脱(射阳吾悦广场店)</td><td>名称互证</td><td>63440m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(东台店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>镇魂沉浸式密室逃脱(吾悦广场店)</td><td>名称互证</td><td>17m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>星轶影城</td><td>名称互证</td><td>55230m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>聚玩汇密室逃脱(射阳吾悦广场店)</td><td>名称互证</td><td>104262m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(盐城滨海店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>聚玩汇密室逃脱(射阳吾悦广场店)</td><td>名称互证</td><td>51664m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>星轶影城</td><td>名称互证</td><td>83395m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>镇魂沉浸式密室逃脱(吾悦广场店)</td><td>名称互证</td><td>138536m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(盐城店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星轶影城</td><td>名称互证</td><td>51m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>聚玩汇密室逃脱(射阳吾悦广场店)</td><td>名称互证</td><td>53449m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>镇魂沉浸式密室逃脱(吾悦广场店)</td><td>名称互证</td><td>55257m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>星期8快捷酒店(盐城高铁站盐镇水街店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星期8快捷酒店(盐城高铁站盐镇水街店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>听牌棋牌室</td><td>距离就近</td><td>368m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>云海宾馆(盐城开放大道店)</td><td>距离就近</td><td>533m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>萌宠当家宠物生活馆(商业街店)</td><td>距离就近</td><td>587m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(盐城万达广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(盐城万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>多奇怪动物公园(万达广场盐城店)</td><td>距离就近</td><td>59m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>多奇怪动物公园(万达广场盐城店)</td><td>距离就近</td><td>59m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(盐城万达店)</td><td>距离就近</td><td>191m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>無止境·超级密室</td><td>距离就近</td><td>255m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(新辰里店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影南方SpaceX电影空间站(新辰里)</td><td>距离就近</td><td>25m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>雅家乐•悦+精品超市(生活广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>东悦量贩KTV</td><td>距离就近</td><td>399m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(滨海店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>九玩沉浸式密室逃脱</td><td>距离就近</td><td>65m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>麦德龙(盐城商场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>恒大影城(盐城恒大名都店)</td><td>距离就近</td><td>584m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盐城宝龙广场（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>上海纯K商务会客厅(K歌)</td><td>距离就近</td><td>62m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>横店电影城(盐城亭湖宝龙广场店)</td><td>距离就近</td><td>114m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>感物知趣动物馆(宝龙店)</td><td>名称互证</td><td>121m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>密室逃脱(盐城宝龙城市广场南区店)</td><td>距离就近</td><td>127m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>雀思听·麻将·棋牌(宝龙店)</td><td>名称互证</td><td>144m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>万象·超级密室(宝龙潮街店)</td><td>距离就近</td><td>146m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>星辉派对空间KTV</td><td>距离就近</td><td>329m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>1990CLUB</td><td>距离就近</td><td>456m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>星光大道量贩式KTV(东进路店)</td><td>距离就近</td><td>514m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四方城·棋牌·茗茶·简餐(宝龙店)</td><td>距离就近</td><td>526m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>皇家永利</td><td>距离就近</td><td>598m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(盐城店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>多奇怪动物公园(万达广场盐城店)</td><td>名称互证</td><td>63m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>多奇怪动物公园(万达广场盐城店)</td><td>名称互证</td><td>63m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>万达影城(盐城万达广场店)</td><td>名称互证</td><td>72m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(盐城万达店)</td><td>名称互证</td><td>120m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>無止境·超级密室</td><td>距离就近</td><td>275m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(盐城射阳店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>聚玩汇密室逃脱(射阳吾悦广场店)</td><td>名称互证</td><td>91m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>星轶影城</td><td>名称互证</td><td>53545m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>镇魂沉浸式密室逃脱(吾悦广场店)</td><td>名称互证</td><td>104325m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盐城魔力月光广场（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>欢乐巢智慧KTV(盐城魔力月光店)</td><td>距离就近</td><td>52m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>迷兔·超级密室(魔力月光店)</td><td>距离就近</td><td>63m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星聚会ktv(盐城大有境店)</td><td>距离就近</td><td>234m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>战斧超大型真人实景密室(盐城店)</td><td>距离就近</td><td>255m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>CGV星聚汇影城(中南城店)</td><td>距离就近</td><td>405m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盐城招商场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新纪元皇家国际影城(新纪元商业广场店)</td><td>距离就近</td><td>230m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盐城·新弄里（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幸福蓝海国际影城(新弄里店巴可S4CINEMA巨幕)</td><td>距离就近</td><td>1m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>德润广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>贝爱佳萌宠生活馆</td><td>距离就近</td><td>165m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盐城大丰港动物园（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>盐城大丰港动物园</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>公共厕所</td><td>距离就近</td><td>105m</td><td>—</td><td>§11</td></tr>
+<tr><td>盐城大丰港动物园停车场</td><td>名称互证</td><td>138m</td><td>—</td><td>§11</td></tr>
+<tr><td>盐城大丰港动物园游客中心</td><td>名称互证</td><td>187m</td><td>—</td><td>§11</td></tr>
+<tr><td>盐城大丰港动物园售票处</td><td>名称互证</td><td>194m</td><td>—</td><td>§11</td></tr>
+<tr><td>国家电网汽车充电站(国网盐城大丰港动物园充电站)</td><td>名称互证</td><td>235m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>大丰港动物园(公交站)</td><td>距离就近</td><td>249m</td><td>—</td><td>§11</td></tr>
+<tr><td>大丰港动物园-大丰大熊猫乐园</td><td>名称互证</td><td>282m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>海乐迪PARTY·KTV(凤凰金宝广场店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>海乐迪PARTY·KTV(凤凰金宝广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>Vparty乐空间(KTV)</td><td>距离就近</td><td>100m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>爱圣堡影院(凤凰金宝广场店)</td><td>距离就近</td><td>158m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>君悦会( 解放南路店)</td><td>距离就近</td><td>184m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>禧悦棋牌·茶馆</td><td>距离就近</td><td>185m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>宏都宾馆(金鹰店)</td><td>距离就近</td><td>313m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>盐城幸福宾馆</td><td>距离就近</td><td>340m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>上海纯恺量贩式KTV(人民路店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>上海纯恺量贩式KTV(人民路店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>橙天嘉禾影城(五洲店)</td><td>距离就近</td><td>375m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>UU迷你球房(迎宾南路店)</td><td>距离就近</td><td>409m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>幸福蓝海天幕影城(五洲国际广场文峰路)</td><td>距离就近</td><td>433m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>爱圣堡影院(凤凰金宝广场店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>爱圣堡影院(凤凰金宝广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>禧悦棋牌·茶馆</td><td>距离就近</td><td>61m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>Vparty乐空间(KTV)</td><td>距离就近</td><td>76m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>海乐迪PARTY·KTV(凤凰金宝广场店)</td><td>距离就近</td><td>158m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>君悦会( 解放南路店)</td><td>距离就近</td><td>335m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>盐城幸福宾馆</td><td>距离就近</td><td>406m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>宏都宾馆(金鹰店)</td><td>距离就近</td><td>424m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>UMC国际影城(凤凰汇商业街区店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>UMC国际影城(凤凰汇商业街区店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麻友记棋牌室</td><td>距离就近</td><td>238m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>添运棋牌(南金鹰店)</td><td>距离就近</td><td>347m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>秀客XIUKE LIFE同心多元化KTV</td><td>距离就近</td><td>412m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>盐渎明城乐嘉量贩式KTV</td><td>距离就近</td><td>460m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>爱麻仕棋牌·四方城连锁(盐渎明城店)</td><td>距离就近</td><td>486m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>盐城海昌海洋探索馆</td><td>距离就近</td><td>492m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>卢米埃影城(盐城聚龙湖金鹰购物中心店)</td><td>距离就近</td><td>497m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>幸福蓝海国际影城(新弄里店巴可S4CINEMA巨幕)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幸福蓝海国际影城(新弄里店巴可S4CINEMA巨幕)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（31 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>蓝天宾馆(解放西路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>解放西路文泽康城小区南大门12号楼8号门市</td></tr>
+<tr><td>✅A-</td><td>月亮湾旅馆(健康东路)</td><td>住宿服务;旅馆招待所;旅馆招待所｜生活服务;生活服务场所;生活服务场所</td><td>5.0</td><td>—</td><td>健康东路劳服公司12号楼号</td></tr>
+<tr><td>✅A-</td><td>天缘酒店(盐新路店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>5.0</td><td>—</td><td>盐东镇盐海路237号</td></tr>
+<tr><td>✅A-</td><td>天地缘酒店(盐城师范学院高铁站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>开放大道36号(东闸加油站对面)</td></tr>
+<tr><td>✅A-</td><td>盐城金港宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>三龙镇斗龙小街育才路29号</td></tr>
+<tr><td>✅A-</td><td>五星宾馆(大庆路)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.8</td><td>—</td><td>大庆东路65号</td></tr>
+<tr><td>✅A-</td><td>东台江南宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>唐洋镇新西街16号</td></tr>
+<tr><td>✅A-</td><td>宏福来大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>五星街道青年东路49号</td></tr>
+<tr><td>✅A-</td><td>盐城慧龙宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>人民南路102号</td></tr>
+<tr><td>✅A-</td><td>星期8快捷酒店(盐城高铁站盐镇水街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>经济开发区商业街22号楼</td></tr>
+<tr><td>✅A-</td><td>盐城恒北梨园民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>大中街道恒北村</td></tr>
+<tr><td>✅B</td><td>尚友·丽都大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>开放大道38号(五星派出所对面)</td></tr>
+<tr><td>✅B</td><td>射阳南门宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>解放路389号</td></tr>
+<tr><td>✅B</td><td>盐城弘立宾馆(健康西路新词广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>健康西路7-15号</td></tr>
+<tr><td>✅B</td><td>海源商务宾馆(宁树路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>宁树路46号(中医院西北)</td></tr>
+<tr><td>✅B</td><td>金苹果大酒店(金丰南大街)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>金丰南大街95-9号</td></tr>
+<tr><td>⚠️</td><td>东台海洋宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>富腾路3号(东台汽车站斜对面)</td></tr>
+<tr><td>⚠️</td><td>恒驿商务宾馆(响水汽车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>桃花源路4-2号</td></tr>
+<tr><td>⚠️</td><td>盐城幸福宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>开元路商业街7号楼</td></tr>
+<tr><td>⚠️</td><td>宏都宾馆(金鹰店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>解放南路盐都新区商城5号楼</td></tr>
+<tr><td>⚠️</td><td>龙泉宾馆(盐城高铁站豪德广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>文港路78号</td></tr>
+<tr><td>⚠️</td><td>滨海海洲宾馆(银厦广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>阜东中路201号</td></tr>
+<tr><td>⚠️</td><td>东台红宝石宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>望海东路宝石巷8号(市委党校斜对过)</td></tr>
+<tr><td>⚠️</td><td>东亭宾馆(东台二店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>望海东路42号</td></tr>
+<tr><td>⚠️</td><td>射阳金运楼宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>红旗西路19号</td></tr>
+<tr><td>⚠️</td><td>尚客快捷酒店(青年路高架店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>青年东路22号1幢10-13层</td></tr>
+<tr><td>⚠️</td><td>响水公园宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>灌河大桥南首听潮阁公园</td></tr>
+<tr><td>⚠️</td><td>云海宾馆(盐城开放大道店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>开发区开放大道南路13号</td></tr>
+<tr><td>⚠️</td><td>响水田园宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>双园路51-2号</td></tr>
+<tr><td>❌</td><td>金海岸大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.3</td><td>—</td><td>阜城东大街506号</td></tr>
+<tr><td>❌</td><td>东台玉兰宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.1</td><td>—</td><td>范公中路42号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>15</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>8</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>14</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>2</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/盐城市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>2 个 POI 无地址</strong>，需人工补：萌宠乐园、永辉超市(盐城中南城店)</li><li><input type="checkbox" disabled> <strong>8 个 POI 无评分</strong>，暂标 ⚠️：盐城大丰港动物园停车场、静心园、盐城大丰港动物园售票处、大丰港动物园(公交站)、盐城大丰港动物园游客中心</li><li><input type="checkbox" disabled> 儿童游乐 45 家，其中场内 6 家、独立 39 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 9 个区县：东台市、亭湖区、响水县、大丰区、射阳县、建湖县、滨海县、盐都区、阜宁县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

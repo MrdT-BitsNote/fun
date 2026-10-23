@@ -1,0 +1,312 @@
+{
+ "province": "浙江省",
+ "stats": {
+  "cities": 11,
+  "poi": 9666,
+  "grades": {
+   "S": 5,
+   "A": 43,
+   "B": 101,
+   "C": 291
+  }
+ },
+ "cities": [
+  {
+   "city": "丽水市",
+   "province": "浙江省",
+   "adcode": "331100",
+   "poi": 759,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:21:22",
+   "page": "cities/331100.html",
+   "json": "api/cities/331100.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E4%B8%BD%E6%B0%B4%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 14,
+    "C": 19
+   },
+   "dims": {
+    "food": 292,
+    "district": 144,
+    "leisure": 211,
+    "kids": 21,
+    "hotel": 33,
+    "product": 40
+   }
+  },
+  {
+   "city": "台州市",
+   "province": "浙江省",
+   "adcode": "331000",
+   "poi": 898,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:19:45",
+   "page": "cities/331000.html",
+   "json": "api/cities/331000.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E5%8F%B0%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 14,
+    "C": 26
+   },
+   "dims": {
+    "food": 270,
+    "district": 220,
+    "leisure": 240,
+    "kids": 35,
+    "hotel": 34,
+    "product": 40
+   }
+  },
+  {
+   "city": "嘉兴市",
+   "province": "浙江省",
+   "adcode": "330400",
+   "poi": 898,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:17:53",
+   "page": "cities/330400.html",
+   "json": "api/cities/330400.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E5%98%89%E5%85%B4%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 10,
+    "C": 30
+   },
+   "dims": {
+    "food": 287,
+    "district": 222,
+    "leisure": 228,
+    "kids": 35,
+    "hotel": 34,
+    "product": 42
+   }
+  },
+  {
+   "city": "宁波市",
+   "province": "浙江省",
+   "adcode": "330200",
+   "poi": 946,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:18:48",
+   "page": "cities/330200.html",
+   "json": "api/cities/330200.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E5%AE%81%E6%B3%A2%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 4,
+    "B": 3,
+    "C": 33
+   },
+   "dims": {
+    "food": 302,
+    "district": 236,
+    "leisure": 242,
+    "kids": 32,
+    "hotel": 39,
+    "product": 41
+   }
+  },
+  {
+   "city": "杭州市",
+   "province": "浙江省",
+   "adcode": "330100",
+   "poi": 980,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:25:33",
+   "page": "cities/330100.html",
+   "json": "api/cities/330100.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E6%9D%AD%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 5,
+    "C": 33
+   },
+   "dims": {
+    "food": 283,
+    "district": 267,
+    "leisure": 233,
+    "kids": 35,
+    "hotel": 40,
+    "product": 40
+   }
+  },
+  {
+   "city": "温州市",
+   "province": "浙江省",
+   "adcode": "330300",
+   "poi": 966,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:20:30",
+   "page": "cities/330300.html",
+   "json": "api/cities/330300.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E6%B8%A9%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 5,
+    "C": 33
+   },
+   "dims": {
+    "food": 295,
+    "district": 243,
+    "leisure": 245,
+    "kids": 39,
+    "hotel": 34,
+    "product": 40
+   }
+  },
+  {
+   "city": "湖州市",
+   "province": "浙江省",
+   "adcode": "330500",
+   "poi": 916,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:24:34",
+   "page": "cities/330500.html",
+   "json": "api/cities/330500.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E6%B9%96%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 9,
+    "B": 9,
+    "C": 22
+   },
+   "dims": {
+    "food": 301,
+    "district": 209,
+    "leisure": 226,
+    "kids": 35,
+    "hotel": 45,
+    "product": 41
+   }
+  },
+  {
+   "city": "绍兴市",
+   "province": "浙江省",
+   "adcode": "330600",
+   "poi": 917,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:26:18",
+   "page": "cities/330600.html",
+   "json": "api/cities/330600.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E7%BB%8D%E5%85%B4%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 4,
+    "B": 10,
+    "C": 26
+   },
+   "dims": {
+    "food": 295,
+    "district": 213,
+    "leisure": 236,
+    "kids": 24,
+    "hotel": 40,
+    "product": 41
+   }
+  },
+  {
+   "city": "舟山市",
+   "province": "浙江省",
+   "adcode": "330900",
+   "poi": 712,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:17:07",
+   "page": "cities/330900.html",
+   "json": "api/cities/330900.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E8%88%9F%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 10,
+    "B": 10,
+    "C": 19
+   },
+   "dims": {
+    "food": 288,
+    "district": 129,
+    "leisure": 171,
+    "kids": 20,
+    "hotel": 40,
+    "product": 40
+   }
+  },
+  {
+   "city": "衢州市",
+   "province": "浙江省",
+   "adcode": "330800",
+   "poi": 737,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:22:49",
+   "page": "cities/330800.html",
+   "json": "api/cities/330800.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E8%A1%A2%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 4,
+    "A": 4,
+    "B": 9,
+    "C": 23
+   },
+   "dims": {
+    "food": 283,
+    "district": 145,
+    "leisure": 185,
+    "kids": 24,
+    "hotel": 29,
+    "product": 40
+   }
+  },
+  {
+   "city": "金华市",
+   "province": "浙江省",
+   "adcode": "330700",
+   "poi": 937,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:23:45",
+   "page": "cities/330700.html",
+   "json": "api/cities/330700.json",
+   "md": "md/%E6%B5%99%E6%B1%9F%E7%9C%81/%E9%87%91%E5%8D%8E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 12,
+    "C": 27
+   },
+   "dims": {
+    "food": 271,
+    "district": 236,
+    "leisure": 246,
+    "kids": 34,
+    "hotel": 40,
+    "product": 41
+   }
+  }
+ ]
+}

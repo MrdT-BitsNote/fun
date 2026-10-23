@@ -1,0 +1,603 @@
+{
+ "province": "广东省",
+ "stats": {
+  "cities": 21,
+  "poi": 21245,
+  "grades": {
+   "S": 9,
+   "A": 65,
+   "B": 252,
+   "C": 514
+  }
+ },
+ "cities": [
+  {
+   "city": "东莞市",
+   "province": "广东省",
+   "adcode": "441900",
+   "poi": 1184,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:20:13",
+   "page": "cities/441900.html",
+   "json": "api/cities/441900.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E4%B8%9C%E8%8E%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 5,
+    "C": 33
+   },
+   "dims": {
+    "food": 282,
+    "district": 254,
+    "leisure": 466,
+    "kids": 34,
+    "hotel": 31,
+    "product": 41
+   }
+  },
+  {
+   "city": "中山市",
+   "province": "广东省",
+   "adcode": "442000",
+   "poi": 1073,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:20:28",
+   "page": "cities/442000.html",
+   "json": "api/cities/442000.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E4%B8%AD%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 10,
+    "C": 29
+   },
+   "dims": {
+    "food": 278,
+    "district": 236,
+    "leisure": 417,
+    "kids": 33,
+    "hotel": 34,
+    "product": 44
+   }
+  },
+  {
+   "city": "云浮市",
+   "province": "广东省",
+   "adcode": "445300",
+   "poi": 810,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:19:49",
+   "page": "cities/445300.html",
+   "json": "api/cities/445300.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E4%BA%91%E6%B5%AE%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 16,
+    "C": 17
+   },
+   "dims": {
+    "food": 296,
+    "district": 130,
+    "leisure": 291,
+    "kids": 27,
+    "hotel": 24,
+    "product": 41
+   }
+  },
+  {
+   "city": "佛山市",
+   "province": "广东省",
+   "adcode": "440600",
+   "poi": 1172,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:14:40",
+   "page": "cities/440600.html",
+   "json": "api/cities/440600.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E4%BD%9B%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 6,
+    "C": 34
+   },
+   "dims": {
+    "food": 282,
+    "district": 250,
+    "leisure": 476,
+    "kids": 45,
+    "hotel": 32,
+    "product": 41
+   }
+  },
+  {
+   "city": "广州市",
+   "province": "广东省",
+   "adcode": "440100",
+   "poi": 1184,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:18:34",
+   "page": "cities/440100.html",
+   "json": "api/cities/440100.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E5%B9%BF%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 11,
+    "C": 29
+   },
+   "dims": {
+    "food": 273,
+    "district": 277,
+    "leisure": 465,
+    "kids": 55,
+    "hotel": 42,
+    "product": 40
+   }
+  },
+  {
+   "city": "惠州市",
+   "province": "广东省",
+   "adcode": "441300",
+   "poi": 1129,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:15:09",
+   "page": "cities/441300.html",
+   "json": "api/cities/441300.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%83%A0%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 11,
+    "C": 29
+   },
+   "dims": {
+    "food": 288,
+    "district": 234,
+    "leisure": 450,
+    "kids": 35,
+    "hotel": 38,
+    "product": 40
+   }
+  },
+  {
+   "city": "揭阳市",
+   "province": "广东省",
+   "adcode": "445200",
+   "poi": 987,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:18:09",
+   "page": "cities/445200.html",
+   "json": "api/cities/445200.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%8F%AD%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 15,
+    "C": 20
+   },
+   "dims": {
+    "food": 285,
+    "district": 183,
+    "leisure": 378,
+    "kids": 48,
+    "hotel": 33,
+    "product": 40
+   }
+  },
+  {
+   "city": "梅州市",
+   "province": "广东省",
+   "adcode": "441400",
+   "poi": 905,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:18:50",
+   "page": "cities/441400.html",
+   "json": "api/cities/441400.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%A2%85%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 16,
+    "C": 23
+   },
+   "dims": {
+    "food": 292,
+    "district": 157,
+    "leisure": 343,
+    "kids": 37,
+    "hotel": 29,
+    "product": 41
+   }
+  },
+  {
+   "city": "汕头市",
+   "province": "广东省",
+   "adcode": "440500",
+   "poi": 1039,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:14:26",
+   "page": "cities/440500.html",
+   "json": "api/cities/440500.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%B1%95%E5%A4%B4%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 13,
+    "C": 22
+   },
+   "dims": {
+    "food": 287,
+    "district": 177,
+    "leisure": 398,
+    "kids": 53,
+    "hotel": 40,
+    "product": 40
+   }
+  },
+  {
+   "city": "汕尾市",
+   "province": "广东省",
+   "adcode": "441500",
+   "poi": 876,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:17:55",
+   "page": "cities/441500.html",
+   "json": "api/cities/441500.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%B1%95%E5%B0%BE%E5%B8%82.md",
+   "grades": {
+    "S": 5,
+    "A": 3,
+    "B": 10,
+    "C": 22
+   },
+   "dims": {
+    "food": 271,
+    "district": 138,
+    "leisure": 352,
+    "kids": 26,
+    "hotel": 36,
+    "product": 40
+   }
+  },
+  {
+   "city": "江门市",
+   "province": "广东省",
+   "adcode": "440700",
+   "poi": 1086,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:16:35",
+   "page": "cities/440700.html",
+   "json": "api/cities/440700.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%B1%9F%E9%97%A8%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 9,
+    "C": 31
+   },
+   "dims": {
+    "food": 295,
+    "district": 222,
+    "leisure": 410,
+    "kids": 31,
+    "hotel": 39,
+    "product": 40
+   }
+  },
+  {
+   "city": "河源市",
+   "province": "广东省",
+   "adcode": "441600",
+   "poi": 889,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:19:35",
+   "page": "cities/441600.html",
+   "json": "api/cities/441600.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%B2%B3%E6%BA%90%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 19,
+    "C": 18
+   },
+   "dims": {
+    "food": 287,
+    "district": 139,
+    "leisure": 337,
+    "kids": 31,
+    "hotel": 36,
+    "product": 42
+   }
+  },
+  {
+   "city": "深圳市",
+   "province": "广东省",
+   "adcode": "440300",
+   "poi": 1197,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:16:06",
+   "page": "cities/440300.html",
+   "json": "api/cities/440300.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%B7%B1%E5%9C%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 9,
+    "C": 31
+   },
+   "dims": {
+    "food": 290,
+    "district": 260,
+    "leisure": 456,
+    "kids": 56,
+    "hotel": 33,
+    "product": 40
+   }
+  },
+  {
+   "city": "清远市",
+   "province": "广东省",
+   "adcode": "441800",
+   "poi": 992,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:19:06",
+   "page": "cities/441800.html",
+   "json": "api/cities/441800.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%B8%85%E8%BF%9C%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 6,
+    "B": 18,
+    "C": 16
+   },
+   "dims": {
+    "food": 307,
+    "district": 180,
+    "leisure": 380,
+    "kids": 29,
+    "hotel": 39,
+    "product": 41
+   }
+  },
+  {
+   "city": "湛江市",
+   "province": "广东省",
+   "adcode": "440800",
+   "poi": 994,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:17:27",
+   "page": "cities/440800.html",
+   "json": "api/cities/440800.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%B9%9B%E6%B1%9F%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 10,
+    "C": 25
+   },
+   "dims": {
+    "food": 293,
+    "district": 185,
+    "leisure": 393,
+    "kids": 32,
+    "hotel": 31,
+    "product": 41
+   }
+  },
+  {
+   "city": "潮州市",
+   "province": "广东省",
+   "adcode": "445100",
+   "poi": 857,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:17:41",
+   "page": "cities/445100.html",
+   "json": "api/cities/445100.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E6%BD%AE%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 3,
+    "A": 8,
+    "B": 10,
+    "C": 19
+   },
+   "dims": {
+    "food": 260,
+    "district": 158,
+    "leisure": 282,
+    "kids": 37,
+    "hotel": 32,
+    "product": 42
+   }
+  },
+  {
+   "city": "珠海市",
+   "province": "广东省",
+   "adcode": "440400",
+   "poi": 1059,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:16:20",
+   "page": "cities/440400.html",
+   "json": "api/cities/440400.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E7%8F%A0%E6%B5%B7%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 17,
+    "C": 23
+   },
+   "dims": {
+    "food": 278,
+    "district": 210,
+    "leisure": 401,
+    "kids": 29,
+    "hotel": 42,
+    "product": 40
+   }
+  },
+  {
+   "city": "肇庆市",
+   "province": "广东省",
+   "adcode": "441200",
+   "poi": 992,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:14:55",
+   "page": "cities/441200.html",
+   "json": "api/cities/441200.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E8%82%87%E5%BA%86%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 6,
+    "B": 11,
+    "C": 23
+   },
+   "dims": {
+    "food": 292,
+    "district": 183,
+    "leisure": 397,
+    "kids": 38,
+    "hotel": 28,
+    "product": 40
+   }
+  },
+  {
+   "city": "茂名市",
+   "province": "广东省",
+   "adcode": "440900",
+   "poi": 981,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:17:12",
+   "page": "cities/440900.html",
+   "json": "api/cities/440900.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E8%8C%82%E5%90%8D%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 13,
+    "C": 24
+   },
+   "dims": {
+    "food": 282,
+    "district": 187,
+    "leisure": 377,
+    "kids": 32,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "阳江市",
+   "province": "广东省",
+   "adcode": "441700",
+   "poi": 884,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:16:58",
+   "page": "cities/441700.html",
+   "json": "api/cities/441700.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E9%98%B3%E6%B1%9F%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 3,
+    "B": 13,
+    "C": 23
+   },
+   "dims": {
+    "food": 288,
+    "district": 155,
+    "leisure": 328,
+    "kids": 30,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "韶关市",
+   "province": "广东省",
+   "adcode": "440200",
+   "poi": 955,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:19:21",
+   "page": "cities/440200.html",
+   "json": "api/cities/440200.json",
+   "md": "md/%E5%B9%BF%E4%B8%9C%E7%9C%81/%E9%9F%B6%E5%85%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 10,
+    "C": 23
+   },
+   "dims": {
+    "food": 298,
+    "district": 173,
+    "leisure": 364,
+    "kids": 36,
+    "hotel": 37,
+    "product": 41
+   }
+  }
+ ]
+}

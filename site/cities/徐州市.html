@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>徐州市 · 江苏省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/江苏省.html">← 返回江苏省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>徐州市 · 江苏省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:05:08  ·  POI 总量：228（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>228</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>96%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 2 · 商圈 113 · 成人娱乐 158 · 儿童娱乐 56 · 酒店 31 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>江苏省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>10 个</td></tr>
+<tr><td>街道/镇/乡</td><td>164 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×5、县×3、县级市×2</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>云龙区</td><td>64</td><td>28%</td></tr>
+<tr><td>泉山区</td><td>59</td><td>26%</td></tr>
+<tr><td>鼓楼区</td><td>23</td><td>10%</td></tr>
+<tr><td>贾汪区</td><td>19</td><td>8%</td></tr>
+<tr><td>铜山区</td><td>18</td><td>8%</td></tr>
+<tr><td>邳州市</td><td>17</td><td>7%</td></tr>
+<tr><td>睢宁县</td><td>15</td><td>7%</td></tr>
+<tr><td>沛县</td><td>6</td><td>3%</td></tr>
+<tr><td>新沂市</td><td>4</td><td>2%</td></tr>
+<tr><td>丰县</td><td>3</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（113 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>52</td></tr>
+<tr><td>购物中心/综合体</td><td>26</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>百货/商场</td><td>14</td></tr>
+<tr><td>商业街</td><td>1</td></tr>
+<tr><td>奥特莱斯</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（113 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>徐州动物园</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>24</td><td>0</td></tr>
+<tr><td>C</td><td>徐州杉杉奥特莱斯广场</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盒马鲜生(徐州云龙万达店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>徐州彭城苏宁广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>万达广场(徐州云龙店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>9</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(徐州铜山店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>8</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>吾悦广场(徐州丰县店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>如家快捷酒店(徐州金鹰国际购物中心店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>万达影城(徐州云龙万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达影城(徐州铜山万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>7</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>金鹰国际购物中心(徐州人民广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>大润发(徐州西关建国店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>大润发(徐州东关世茂店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>爱购集市(徐州·印象城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>徐州潘安湖奥特莱斯购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>淮海环球港</td><td>百货/商场</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(徐州贾汪店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>三胞国际广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>3</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(徐州新沂店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>徐州和信广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>1</td><td>6</td></tr>
+<tr><td>C</td><td>宣武商贸城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>美的广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>徐州印象城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(徐州睢宁店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>徐州招商花园城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大吴商城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>徐州爱琴海购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>兴美城市广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>城投国际购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>徐州九顶山野生动物园</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>战斧超大型真人沉浸密室(云龙万达店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中影东方影城</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>麦尔影城(徐州云龙区星悦城店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>古彭大厦(徐州彭城广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>九鼎百货商贸城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(徐州南关欣欣店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>欢乐买(邳州通城广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万客隆超市(邳州官湖店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>鹏泰百货</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>华润苏果(城投国际购物广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>徐州动物园 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 24 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（风景名胜;公园广场;动物园）</li><li><strong>地址</strong>：泰山路49号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 24 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>徐州动物园</td></tr>
+<tr><td>儿童娱乐</td><td>24</td><td>徐州动物园、徐州动物园-熊馆、长颈鹿馆</td></tr>
+</tbody></table></div>
+<h3>徐州杉杉奥特莱斯广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：玉带大道6号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>徐州杉杉奥特莱斯广场</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(徐州云龙万达店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：和平大道58号云龙万达广场B1层(庆丰路地铁站4A口旁)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盒马鲜生(徐州云龙万达店)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>万达影城(徐州云龙万达广场店)、战斧超大型真人沉浸密室(云龙万达店)、中影东方影城</td></tr>
+</tbody></table></div>
+<h3>徐州彭城苏宁广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：淮海东路29号(彭城广场地铁站5、6、7号口步行1米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>徐州彭城苏宁广场</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>熊猫密室探索乐园(徐州苏宁店)、天珠变密室逃脱(金地国际店)、LOST密室逃脱</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>手养鹦鹉</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>如家快捷酒店(徐州金鹰国际购物中心店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(徐州云龙店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：和平大道58号(庆丰路地铁站4A、4C号口步行150米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 9 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(徐州云龙店)</td></tr>
+<tr><td>成人娱乐</td><td>9</td><td>万达影城(徐州云龙万达广场店)、万达影城(徐州铜山万达广场店)、战斧超大型真人沉浸密室(云龙万达店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(徐州铜山店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：北京北路19号(师范大学地铁站1号口南)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 8 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(徐州铜山店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>万达影城(徐州铜山万达广场店)、万达影城(徐州云龙万达广场店)、战斧超大型真人沉浸密室(云龙万达店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>徐州泰山宾馆(师范大学店)</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(徐州丰县店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：中阳大道与栖凤路交叉口西南180米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(徐州丰县店)</td></tr>
+</tbody></table></div>
+<h3>如家快捷酒店(徐州金鹰国际购物中心店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（住宿服务;宾馆酒店;经济型连锁酒店）</li><li><strong>地址</strong>：夹河东街11-3</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>如家快捷酒店(徐州金鹰国际购物中心店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>熊猫密室探索乐园(徐州苏宁店)、天珠变密室逃脱(金地国际店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>手养鹦鹉</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>如家快捷酒店(徐州金鹰国际购物中心店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(徐州云龙万达广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：和平大道58号云龙万达广场4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(徐州云龙万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>万达影城(徐州云龙万达广场店)、万达影城(徐州铜山万达广场店)、战斧超大型真人沉浸密室(云龙万达店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(徐州铜山万达广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：北京北路19号万达广场(徐州铜山店)4F层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 7 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(徐州铜山万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>万达影城(徐州铜山万达广场店)、万达影城(徐州云龙万达广场店)、嘻歌汇Party KTV(徐州铜山万达广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>徐州泰山宾馆(师范大学店)</td></tr>
+</tbody></table></div>
+<h3>金鹰国际购物中心(徐州人民广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：淮海西路270号(金鹰二店3楼北门电梯口)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金鹰国际购物中心(徐州人民广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>如家快捷酒店(徐州金鹰国际购物中心店)</td></tr>
+</tbody></table></div>
+<h3>大润发(徐州西关建国店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;专卖店;自行车专卖店｜购物服务;超级市场;超市）</li><li><strong>地址</strong>：煤建路8号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(徐州西关建国店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>红宝石大酒店(瑞龙东方广场店)</td></tr>
+</tbody></table></div>
+<h3>大润发(徐州东关世茂店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：三环东路与兵马俑路交汇处西南角</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(徐州东关世茂店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>中影南方影城(世茂广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>红宝石大酒店(瑞龙东方广场店)</td></tr>
+</tbody></table></div>
+<h3>爱购集市(徐州·印象城店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：翠屏山街道和平大道118号徐州万科新淮中心B1-10</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>爱购集市(徐州·印象城店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>CGV影城(印象城ULTRA 4DX店)、万达影城(万科翡翠之光售楼处店)</td></tr>
+</tbody></table></div>
+<h3>徐州潘安湖奥特莱斯购物广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：潘安湖街道(西大吴村北侧)徐贾快速通道</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>徐州潘安湖奥特莱斯购物广场</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（158 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>22</td></tr>
+<tr><td>棋牌室</td><td>18</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>18</td></tr>
+<tr><td>电影院</td><td>16</td></tr>
+<tr><td>KTV</td><td>6</td></tr>
+<tr><td>酒吧/酒馆</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(徐州云龙万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>49.00</td><td>和平大道58号云龙万达广场4层</td></tr>
+<tr><td>✅A-</td><td>万达影城(徐州铜山万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>46.00</td><td>北京北路19号万达广场(徐州铜山店)4F层</td></tr>
+<tr><td>✅A-</td><td>雀湖荟棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.7</td><td>14.00</td><td>黄山街道黄山新村2号楼3层</td></tr>
+<tr><td>✅A-</td><td>战斧超大型真人沉浸密室(云龙万达店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>47.00</td><td>云龙万达广场商业广场4楼战斧密室</td></tr>
+<tr><td>✅A-</td><td>幸福蓝海(徐州招商花园城)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>48.00</td><td>昆仑大道与汉风路交叉口西北角徐州招商花园城L6层</td></tr>
+<tr><td>✅A-</td><td>徐州东方影剧院(云珑里店)</td><td>电影院</td><td>体育休闲服务;影剧院;影剧院相关</td><td>4.6</td><td>29.00</td><td>唐盛路云珑里3层</td></tr>
+<tr><td>✅A-</td><td>CGV影城(印象城ULTRA 4DX店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>59.00</td><td>徐州印象城(乔家湖地铁站4号口步行250米)</td></tr>
+<tr><td>✅A-</td><td>中影东方影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>46.00</td><td>绿地生活购物中心(庆丰路地铁站3号口步行490米)</td></tr>
+<tr><td>✅A-</td><td>银座影城(金龙湖店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>37.00</td><td>经开区金龙湖新天地3号楼2层</td></tr>
+<tr><td>✅A-</td><td>麦尔影城(徐州云龙区星悦城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>57.00</td><td>金为星悦城商业街区6号楼</td></tr>
+<tr><td>✅B</td><td>ActionTeam密室逃脱(凤凰店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>99.00</td><td>凤凰书城新华书店东南角入口(旁边有丰巢快递柜)上电梯21层</td></tr>
+<tr><td>✅B</td><td>Z世界沉浸剧场(南郊·彩云里店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>115.00</td><td>彭城街道和平路53号南郊彩云里4楼</td></tr>
+<tr><td>✅B</td><td>花园里G9·商务会馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;运动场馆;运动场所</td><td>4.5</td><td>56.00</td><td>招商花园5-6地块2001-2003铺位</td></tr>
+<tr><td>✅B</td><td>紫水晶·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;服装鞋帽皮具店;服装鞋帽皮具店</td><td>4.5</td><td>128.00</td><td>惠民路109号</td></tr>
+<tr><td>✅B</td><td>嘉年华•国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>36.00</td><td>汉景大道35号</td></tr>
+<tr><td>✅B</td><td>V-KING商务公馆(荣盛未来广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>71.00</td><td>三环南路荣盛未来广场5号门4楼</td></tr>
+<tr><td>✅B</td><td>星聚会KTV(徐州三胞广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>58.00</td><td>解放南路26-8号三胞广场4号楼1-126购物中心叁层L325号商铺</td></tr>
+<tr><td>✅B</td><td>VIRGO PARTY娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>31.00</td><td>金龙湖街道优美民宿高铁时代广场2号楼</td></tr>
+<tr><td>✅B</td><td>华夏国际影城(美的广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>38.00</td><td>汉风街道美的广场B座4层</td></tr>
+<tr><td>✅B</td><td>金逸影城(三胞国际广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>51.00</td><td>解放南路26-8号三胞广场5层</td></tr>
+<tr><td>✅B</td><td>银座影城(金山桥店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>广德路贺村新天地2层</td></tr>
+<tr><td>✅B</td><td>中影星美国际影城(颐和汇邻湾店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>27.00</td><td>颐和汇邻湾</td></tr>
+<tr><td>✅B</td><td>时代VIP影城(南郊彩云里店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>54.00</td><td>和平路53号南郊中茵城5号楼商业中心5层501-506室和535室</td></tr>
+<tr><td>✅B</td><td>汇赢棋牌(绿地领海店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>19.00</td><td>汉风路绿地商务城领海5号楼2楼222室</td></tr>
+<tr><td>✅B</td><td>86茶吧棋牌(绿地商务城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室｜餐饮服务;茶艺馆;茶艺馆</td><td>4.5</td><td>10.00</td><td>绿地商务城B05号楼1-178、179、180、181</td></tr>
+<tr><td>✅B</td><td>麻先生棋牌会馆(花园里店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>35.00</td><td>太行路7号陈一道辣椒炒肉4楼</td></tr>
+<tr><td>✅B</td><td>蓝次方真人沉浸式剧场密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;休闲场所;休闲场所</td><td>4.4</td><td>43.00</td><td>复兴北路27号徐州和信宝龙广场二期F5层</td></tr>
+<tr><td>✅B</td><td>莎啦啦KTV(徐州招商花园城)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>79.00</td><td>汉风大道昆仑大道与汉风路交叉口西北角的507,506,509,508商铺</td></tr>
+<tr><td>✅B</td><td>莎啦啦(徐州店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>51.00</td><td>爱琴海购物中心(黄山垅地铁站1号口步行370米)</td></tr>
+<tr><td>✅B</td><td>嘻歌汇Party KTV(徐州铜山万达广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>59.00</td><td>北京北路万达广场3层(近2号门)</td></tr>
+<tr><td>✅B</td><td>徐州罗曼达商务夜总会(南郊·彩云里店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室｜公司企业;公司;公司</td><td>4.4</td><td>303.00</td><td>彭城街道和平路南郊彩云里3楼</td></tr>
+<tr><td>✅B</td><td>中影南方影城(世茂广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>40.00</td><td>郭庄路99号世茂广场3层</td></tr>
+<tr><td>✅B</td><td>雅和茶吧棋牌(绿地商务城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>7.00</td><td>绿地商务城商业5号楼1-208</td></tr>
+<tr><td>✅B</td><td>萌宠乐园(邳州泽丰园生态农庄店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.3</td><td>60.00</td><td>红新路邳州泽丰园生态农庄</td></tr>
+<tr><td>✅B</td><td>名人KTV(民富园店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;服装鞋帽皮具店;服装鞋帽皮具店</td><td>4.3</td><td>20.00</td><td>骆驼山街道名人KTV(民富园店)东区中心幼儿园(汉景大道)</td></tr>
+<tr><td>✅B</td><td>莎啦啦KTV(徐州铜山印象里店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;购物相关场所;购物相关场所｜生活服务;生活服务场所;生活服务场所</td><td>4.3</td><td>67.00</td><td>北京北路街16号万科新都会第1栋第4层第L4-01、02、07、08号</td></tr>
+<tr><td>✅B</td><td>繁星PARTY娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.3</td><td>63.00</td><td>泰山街道软件园路7号万科·云谷中城</td></tr>
+<tr><td>✅B</td><td>金运棋牌(绿地商务城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>26.00</td><td>中央公元店226幢118号</td></tr>
+<tr><td>✅B</td><td>麻先生棋牌会馆(美的广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>—</td><td>美的翰城东区</td></tr>
+<tr><td>✅B</td><td>智胜台球棋牌休闲馆</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.3</td><td>—</td><td>沟棠路204县</td></tr>
+<tr><td>⚠️</td><td>熊猫密室探索乐园(徐州苏宁店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>76.00</td><td>苏宁广场第3F层第347号</td></tr>
+<tr><td>⚠️</td><td>星座主题·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>43.00</td><td>黄山街道民祥园路228号民祥大厦</td></tr>
+<tr><td>⚠️</td><td>ONE·party·娱乐(伯爵店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>107.00</td><td>北京路与学府路交叉口南40米</td></tr>
+<tr><td>⚠️</td><td>音米加·娱乐(晴朗谷店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>56.00</td><td>三环南路27号晴朗谷广场·1818PARKF1层</td></tr>
+<tr><td>⚠️</td><td>洋葱台球棋牌俱乐部(美的广场店)</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.2</td><td>—</td><td>昆仑大道13号美的广场A座F1层</td></tr>
+<tr><td>⚠️</td><td>未知领域(中山堂商业广场店)</td><td>其他娱乐场所</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.1</td><td>82.00</td><td>解放路2中山堂商业广场徐州彭城广场店B1层</td></tr>
+<tr><td>⚠️</td><td>怪客联盟沉浸体验密室逃脱(富国街店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>88.00</td><td>国贸大厦停车场院内</td></tr>
+<tr><td>⚠️</td><td>神盾局科技密室(徐州和信广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>86.00</td><td>黄楼街道复兴北路27号和信广场2期商场4楼</td></tr>
+<tr><td>⚠️</td><td>M·PARTY·KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>49.00</td><td>泰隆商业街与长安大道交叉口东300米</td></tr>
+<tr><td>⚠️</td><td>万达影城(万科翡翠之光售楼处店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>46.00</td><td>黄山大道与彭旅路交叉口西南120米</td></tr>
+<tr><td>⚠️</td><td>久雀棋牌·郭庄路东头临安小镇店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>15.00</td><td>东城智慧商贸中心18号楼1单元119室</td></tr>
+<tr><td>⚠️</td><td>天珠变密室逃脱(金地国际店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>97.00</td><td>中山北路6号金地商都(徐州彭城广场店)B座和C座之间1818大厦写字楼4楼416室</td></tr>
+<tr><td>⚠️</td><td>昼梦超级密室(沛县店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.0</td><td>83.00</td><td>德信之翼商场A馆4楼</td></tr>
+<tr><td>⚠️</td><td>天珠变密室逃脱(徐州市百货大楼店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>67.00</td><td>王陵街道淮海西路12号古彭大厦二楼</td></tr>
+<tr><td>⚠️</td><td>音悦壹号·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>—</td><td>黄山街道民祥园路33-49号新开明市场大楼</td></tr>
+<tr><td>⚠️</td><td>云龙雀魂棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>26.00</td><td>汉风街道昆仑大道13号美的广场A座706室</td></tr>
+<tr><td>⚠️</td><td>KK桌球足浴棋牌</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.0</td><td>—</td><td>奥都农贸市场4层</td></tr>
+<tr><td>⚠️</td><td>第八区NPC真人密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>50.00</td><td>招商场百意超市西门三楼</td></tr>
+<tr><td>⚠️</td><td>Max守夜人密室逃脱(三胞广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>90.00</td><td>泰山街道解放南路26-8号三胞国际广场3楼L319号商铺</td></tr>
+<tr><td>⚠️</td><td>醉美阿里山商务会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜生活服务;生活服务场所;生活服务场所</td><td>3.9</td><td>194.00</td><td>泰山街道解放南路侯山沃社区2号商业楼101-105</td></tr>
+</tbody></table></div>
+<p>（另 21 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（56 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>45</td></tr>
+<tr><td>其他儿童场所</td><td>11</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>徐州动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>泰山路49号</td></tr>
+<tr><td>✅A-</td><td>树与树乐园</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>潘安湖国家湿地公园</td></tr>
+<tr><td>✅A-</td><td>徐州九顶山野生动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>岚山镇观岚路88-1号</td></tr>
+<tr><td>✅B</td><td>喜兽生活·城市高端宠物寄养</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>汉王镇汉何路82号</td></tr>
+<tr><td>✅B</td><td>萌宠猫舍犬舍宠物店</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>杨山路蟠桃花园一期北门西侧第二家</td></tr>
+<tr><td>✅B</td><td>徐州海底世界(三胞国际广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.4</td><td>解放南路26-8号B201、B101、B106、B107</td></tr>
+<tr><td>✅B</td><td>小笨鼠萌宠(恒泰山水文园店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>恒泰山水文园东门北140米</td></tr>
+<tr><td>✅B</td><td>真趣萌宠馆宠物店</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>牌楼街道山水湾南区恒嘉·郡望花园C2-13-109</td></tr>
+<tr><td>✅B</td><td>壹宠宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>潘安湖街道恒盛智谷科技园22号楼</td></tr>
+<tr><td>✅B</td><td>大炮萌宠(大庙店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>大庙街道兴镇北路东侧光明家园门面3</td></tr>
+<tr><td>✅B</td><td>萌宠乐园(邳州泽丰园生态农庄店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>红新路邳州泽丰园生态农庄</td></tr>
+<tr><td>⚠️</td><td>糯卡萌宠体验馆·宠物酒店·犬猫售卖</td><td>迷你动物园/萌宠</td><td>场内</td><td>4.2</td><td>中汇国际商业广场3幢一单元131铺</td></tr>
+<tr><td>⚠️</td><td>汪汪队宠物乐园(闫庄繁荣小区店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>大吴镇大吴集狗市南50米</td></tr>
+<tr><td>⚠️</td><td>晴宝萌宠</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>美润园西北门西70米</td></tr>
+<tr><td>⚠️</td><td>宠物宝乐园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>西苑农贸市场5门旁</td></tr>
+<tr><td>⚠️</td><td>萌宠之家(九鼎百货商贸城店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>4.1</td><td>人民东路303号九鼎百货商贸城</td></tr>
+<tr><td>⚠️</td><td>圣泉湖欢乐园</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>圣泉湖西侧</td></tr>
+<tr><td>⚠️</td><td>手养鹦鹉</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>金地商都摩宠街B1层53号</td></tr>
+<tr><td>⚠️</td><td>家宠乐园宠物店</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>茅村镇304县道凤凰现代城底商西南方向170米</td></tr>
+<tr><td>⚠️</td><td>沙沟湖水杉公园-萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>沙沟湖水杉公园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>萌宠世家</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>大马北路与校园路交叉口东北360米</td></tr>
+<tr><td>⚠️</td><td>潘安湖鸟岛动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>潘安湖国家湿地公园(东北角)</td></tr>
+<tr><td>⚠️</td><td>一一萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>太湖大道2号</td></tr>
+<tr><td>⚠️</td><td>徐州动物园-熊馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>泰山路21-1号徐州动物园内(东南角)</td></tr>
+<tr><td>⚠️</td><td>零界爬宠动物公园(徐州和信广场店)</td><td>其他儿童场所</td><td>场内</td><td>3.5</td><td>复兴北路27号和信广场A区3层</td></tr>
+<tr><td>⚠️</td><td>徐州动物园-演艺馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>泰山路21-1号徐州动物园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>长颈鹿馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>泰山路21-1号徐州动物园内(东南角)</td></tr>
+<tr><td>⚠️</td><td>森林半岛动物部落</td><td>其他儿童场所</td><td>场内</td><td>3.5</td><td>湖北路1号新盛·弘阳广场2层</td></tr>
+<tr><td>❌</td><td>徐州动物园-猴山</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>泰山路21-1号徐州动物园内(东北角)</td></tr>
+<tr><td>❌</td><td>两栖爬行动物馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>泰山街道泰山街道泰山路21-1号徐州动物园内(北侧)</td></tr>
+<tr><td>❌</td><td>墨上集小镇萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>弘阳凤鸣府东北侧370米</td></tr>
+<tr><td>❌</td><td>徐州动物园-鹿苑</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.2</td><td>泰山路21-1号徐州动物园内(南侧)</td></tr>
+<tr><td>❌</td><td>童趣园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.2</td><td>泰山街道泰山街道泰山路21-1号徐州动物园内(北侧)</td></tr>
+<tr><td>❌</td><td>徐州动物园-小熊猫馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>泰山路21-1号徐州动物园内(西北角)</td></tr>
+<tr><td>❌</td><td>东北虎馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.0</td><td>泰山路21-1号徐州动物园内</td></tr>
+<tr><td>❌</td><td>狮虎苑</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.9</td><td>泰山路21-1号徐州动物园内(东南角)</td></tr>
+<tr><td>❌</td><td>涉禽馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.8</td><td>泰山路21-1号徐州动物园内(西侧)</td></tr>
+<tr><td>❌</td><td>食草动物苑</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.8</td><td>泰山路21-1号徐州动物园内(南侧)</td></tr>
+<tr><td>❌</td><td>鸟语林</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.8</td><td>泰山路21-1号徐州动物园内(北侧)</td></tr>
+<tr><td>❌</td><td>徐州动物园-鸣禽馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.7</td><td>泰山路21-1号徐州动物园内(西北角)</td></tr>
+<tr><td>❌</td><td>童天乐微动物园(三胞国际广场店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>2.7</td><td>解放南路26-8号三胞国际广场</td></tr>
+<tr><td>❌</td><td>鸵鸟苑</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.7</td><td>泰山路21-1号徐州动物园内(西侧)</td></tr>
+<tr><td>❌</td><td>猛禽笼</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.6</td><td>泰山路21-1号徐州动物园内(西侧)</td></tr>
+<tr><td>❌</td><td>白枕鹤</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.5</td><td>泰山路21-1号徐州动物园内(南侧)</td></tr>
+<tr><td>❌</td><td>珍猴馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.3</td><td>泰山路21-1号徐州动物园内(东侧)</td></tr>
+<tr><td>❌</td><td>迷你穿梭</td><td>其他儿童场所</td><td>独立</td><td>2.0</td><td>泰山路彭祖园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>徐州动物园地面停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>泰山路21-1号(徐州动物园)</td></tr>
+<tr><td>⚠️</td><td>徐州动物园地面停车场(出入口)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>泰山路21-1号徐州动物园地面停车场</td></tr>
+<tr><td>⚠️</td><td>嘉慧园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>圭山路7号</td></tr>
+<tr><td>⚠️</td><td>徐州动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>泰山路21-1</td></tr>
+<tr><td>⚠️</td><td>徐州动物园(公交站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>41路;47路;53路;601路北行;601路南行;603路;63路;69路;78路;78路区间;82路;彭城七里定制文脉线;游5路</td></tr>
+<tr><td>⚠️</td><td>徐州九顶山野生动物园售票中心</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>岚山镇观岚路88-1号</td></tr>
+<tr><td>⚠️</td><td>徐州九顶山野生动物园步行外停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>岚山镇观岚路88-1号徐州九顶山野生动物园</td></tr>
+<tr><td>⚠️</td><td>徐州九顶山野生动物园自驾区停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>岚山镇观岚路88-1号徐州九顶山野生动物园内(北侧)</td></tr>
+<tr><td>⚠️</td><td>九顶山野生动物园-游客中心</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>天鹅湖酒店(徐州九顶山野生动物园店)西侧80米</td></tr>
+<tr><td>⚠️</td><td>九顶山野生动物园(公交站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>徐州九顶山野生动物园定制专线</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（60 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>徐州杉杉奥特莱斯广场</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>玉带大道6号</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(徐州云龙万达店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>和平大道58号云龙万达广场B1层(庆丰路地铁站4A口旁)</td></tr>
+<tr><td>✅A-</td><td>徐州彭城苏宁广场</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>淮海东路29号(彭城广场地铁站5、6、7号口步行1米)</td></tr>
+<tr><td>✅A-</td><td>万达广场(徐州云龙店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>和平大道58号(庆丰路地铁站4A、4C号口步行150米)</td></tr>
+<tr><td>✅A-</td><td>万达广场(徐州铜山店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>北京北路19号(师范大学地铁站1号口南)</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(徐州丰县店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>中阳大道与栖凤路交叉口西南180米</td></tr>
+<tr><td>✅A-</td><td>如家快捷酒店(徐州金鹰国际购物中心店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>夹河东街11-3</td></tr>
+<tr><td>✅A-</td><td>金鹰国际购物中心(徐州人民广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>淮海西路270号(金鹰二店3楼北门电梯口)</td></tr>
+<tr><td>✅A-</td><td>大润发(徐州东关世茂店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>三环东路与兵马俑路交汇处西南角</td></tr>
+<tr><td>✅A-</td><td>爱购集市(徐州·印象城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>翠屏山街道和平大道118号徐州万科新淮中心B1-10</td></tr>
+<tr><td>✅A-</td><td>徐州潘安湖奥特莱斯购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>潘安湖街道(西大吴村北侧)徐贾快速通道</td></tr>
+<tr><td>✅A-</td><td>淮海环球港</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>经济技术开发区徐海路8号</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(徐州贾汪店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>中旺路1号</td></tr>
+<tr><td>✅A-</td><td>三胞国际广场</td><td>百货/商场</td><td>4.7</td><td>2</td><td>0</td><td>解放南路26-8号</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(徐州新沂店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>上海路19号</td></tr>
+<tr><td>✅A-</td><td>徐州和信广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>复兴北路27号(徐州火车站地铁站7号口旁)</td></tr>
+<tr><td>✅A-</td><td>宣武商贸城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>建国东路与黄河西路交叉口西北150米</td></tr>
+<tr><td>✅A-</td><td>美的广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>昆仑大道与明正路交叉口</td></tr>
+<tr><td>✅A-</td><td>徐州印象城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>和平大道118号(乔家湖地铁站4号口步行260米)</td></tr>
+<tr><td>✅A-</td><td>万达广场(徐州睢宁店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>睢河路与永昶路交叉口西北140米</td></tr>
+<tr><td>✅A-</td><td>徐州招商花园城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>昆仑大道与汉风路交叉口西北角</td></tr>
+<tr><td>✅A-</td><td>大吴商城</td><td>百货/商场</td><td>4.7</td><td>1</td><td>0</td><td>206国道附近</td></tr>
+<tr><td>✅A-</td><td>徐州爱琴海购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>和平大道(黄山陇地铁站2号口北)</td></tr>
+<tr><td>✅A-</td><td>兴美城市广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>八一西路与中山南路交叉口西100米</td></tr>
+<tr><td>✅A-</td><td>城投国际购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>鼓楼街与汉城路交汇处西南</td></tr>
+<tr><td>✅A-</td><td>九鼎百货商贸城</td><td>百货/商场</td><td>4.6</td><td>1</td><td>0</td><td>人民东路303号</td></tr>
+<tr><td>✅A-</td><td>大润发(徐州南关欣欣店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>翟山街道北京北路65号(翟山地铁站2号口步行120米)</td></tr>
+<tr><td>✅A-</td><td>欢乐买(邳州通城广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>建设北路1号通城广场</td></tr>
+<tr><td>✅A-</td><td>万客隆超市(邳州官湖店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>官湖镇官湖街时代大道519号</td></tr>
+<tr><td>✅A-</td><td>鹏泰百货</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>汤沐路好人广场帝王大厦2层</td></tr>
+<tr><td>✅A-</td><td>华润苏果(城投国际购物广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>汉城路与鼓楼街交叉口苏果城投国际购物广场(原老市场北侧)</td></tr>
+<tr><td>✅A-</td><td>欢乐买(邳州宏大店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>运河街道青年东路5号</td></tr>
+<tr><td>✅A-</td><td>爱购集市(徐州爱琴海购物中心店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>爱琴海购物中心(黄山垅地铁站1号口步行120米)</td></tr>
+<tr><td>❌</td><td>徐州农副产品中心批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>七里沟批发市场结算中心</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>迎宾大道与奎河路交叉口北220米</td></tr>
+<tr><td>✅B</td><td>宜家福生活超市(泉城新区农贸市场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>泉城新区农贸市场二楼</td></tr>
+<tr><td>✅B</td><td>欢乐买新城农产品综合批发市场(邳州店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>东湖街道南京路与环城北路交叉口北150米</td></tr>
+<tr><td>✅B</td><td>中国供销睢宁古黄河农产品批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>中央大街与学圆路交叉口东南280米</td></tr>
+<tr><td>✅B</td><td>徐州天一农产品批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>104国道与诚意大道交叉口北360米</td></tr>
+<tr><td>✅B</td><td>新黄河家具批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>黄河北路北50米</td></tr>
+<tr><td>✅B</td><td>新沂百货大楼</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>南京路39号</td></tr>
+<tr><td>✅B</td><td>徐州粤鑫钢材市场批发</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>拾屯街道云天物流园大门口现货开单处</td></tr>
+<tr><td>⚠️</td><td>百货大楼(中山南路店)</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>中山南路1号</td></tr>
+<tr><td>⚠️</td><td>邳州百货大楼</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>青年东路1号(韩世步行街)</td></tr>
+<tr><td>⚠️</td><td>潮衣库服饰批发城(鑫朝阳店)</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>淮海食品城复兴北路14号鑫朝阳三楼</td></tr>
+<tr><td>⚠️</td><td>萌宠之家(九鼎百货商贸城店)</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>人民东路303号九鼎百货商贸城</td></tr>
+<tr><td>⚠️</td><td>未知领域(中山堂商业广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>解放路2中山堂商业广场徐州彭城广场店B1层</td></tr>
+<tr><td>⚠️</td><td>天珠变密室逃脱(徐州市百货大楼店)</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>王陵街道淮海西路12号古彭大厦二楼</td></tr>
+<tr><td>⚠️</td><td>徐州钢材批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>铜山街道望城村4-75号</td></tr>
+<tr><td>⚠️</td><td>邳州奥特莱斯专卖(世茂国际广场店)</td><td>奥特莱斯</td><td>3.8</td><td>0</td><td>0</td><td>民主路世贸大厦负一楼</td></tr>
+</tbody></table></div>
+<p>（另 10 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（2 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅B</td><td>杨氏大酒店(煤港路店)</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>煤港路15号(煤港路小学对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000114692_ss__1761310073351_49984352.jpg"></td></tr>
+<tr><td>⚠️</td><td>王府精致酒店</td><td>餐饮服务;中餐厅;中餐厅｜住宿服务;住宿服务相关;住宿服务相关</td><td>3.7</td><td>—</td><td>棠张镇</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4b3c8c476d0551c3aadd17eba8d16d75"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>盒马鲜生(徐州云龙万达店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(徐州云龙万达广场店)</td><td>距离就近</td><td>8m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>战斧超大型真人沉浸密室(云龙万达店)</td><td>距离就近</td><td>91m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>星座主题·娱乐</td><td>距离就近</td><td>252m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影东方影城</td><td>距离就近</td><td>497m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>徐州彭城苏宁广场（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>熊猫密室探索乐园(徐州苏宁店)</td><td>距离就近</td><td>25m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>LOST密室逃脱</td><td>距离就近</td><td>152m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>手养鹦鹉</td><td>距离就近</td><td>438m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>天珠变密室逃脱(金地国际店)</td><td>距离就近</td><td>463m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>如家快捷酒店(徐州金鹰国际购物中心店)</td><td>距离就近</td><td>582m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(徐州云龙店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>战斧超大型真人沉浸密室(云龙万达店)</td><td>名称互证</td><td>33m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(徐州云龙万达广场店)</td><td>名称互证</td><td>68m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>星座主题·娱乐</td><td>距离就近</td><td>290m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影东方影城</td><td>距离就近</td><td>486m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麦尔影城(徐州云龙区星悦城店)</td><td>距离就近</td><td>579m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(徐州铜山万达广场店)</td><td>名称互证</td><td>8723m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>嘻歌汇Party KTV(徐州铜山万达广场店)</td><td>名称互证</td><td>8776m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>长安世家沉浸式真人密室(徐州铜山万达广场店)</td><td>名称互证</td><td>8845m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>方寸真人密室逃脱(万达广场徐州睢宁店)</td><td>名称互证</td><td>73408m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(徐州铜山店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(徐州铜山万达广场店)</td><td>名称互证</td><td>42m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>芋见美好私影club</td><td>距离就近</td><td>50m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>嘻歌汇Party KTV(徐州铜山万达广场店)</td><td>名称互证</td><td>77m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>长安世家沉浸式真人密室(徐州铜山万达广场店)</td><td>名称互证</td><td>107m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>莎啦啦KTV(徐州铜山印象里店)</td><td>距离就近</td><td>186m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>徐州泰山宾馆(师范大学店)</td><td>距离就近</td><td>551m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>万达影城(徐州云龙万达广场店)</td><td>名称互证</td><td>8681m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>战斧超大型真人沉浸密室(云龙万达店)</td><td>名称互证</td><td>8739m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>方寸真人密室逃脱(万达广场徐州睢宁店)</td><td>名称互证</td><td>75128m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>如家快捷酒店(徐州金鹰国际购物中心店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>如家快捷酒店(徐州金鹰国际购物中心店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>天珠变密室逃脱(金地国际店)</td><td>距离就近</td><td>258m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>手养鹦鹉</td><td>距离就近</td><td>337m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>熊猫密室探索乐园(徐州苏宁店)</td><td>距离就近</td><td>586m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(徐州云龙万达广场店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(徐州云龙万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>战斧超大型真人沉浸密室(云龙万达店)</td><td>距离就近</td><td>85m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>星座主题·娱乐</td><td>距离就近</td><td>252m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影东方影城</td><td>距离就近</td><td>498m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(万科翡翠之光售楼处店)</td><td>名称互证</td><td>1721m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>万达影城(徐州铜山万达广场店)</td><td>名称互证</td><td>8663m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(徐州铜山万达广场店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(徐州铜山万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>芋见美好私影club</td><td>距离就近</td><td>10m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>嘻歌汇Party KTV(徐州铜山万达广场店)</td><td>距离就近</td><td>61m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>长安世家沉浸式真人密室(徐州铜山万达广场店)</td><td>距离就近</td><td>122m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>莎啦啦KTV(徐州铜山印象里店)</td><td>距离就近</td><td>145m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>徐州泰山宾馆(师范大学店)</td><td>距离就近</td><td>593m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>万达影城(徐州云龙万达广场店)</td><td>名称互证</td><td>8663m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>万达影城(万科翡翠之光售楼处店)</td><td>名称互证</td><td>10091m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金鹰国际购物中心(徐州人民广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>如家快捷酒店(徐州金鹰国际购物中心店)</td><td>名称互证</td><td>2451m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(徐州西关建国店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>红宝石大酒店(瑞龙东方广场店)</td><td>名称互证</td><td>5846m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(徐州东关世茂店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影南方影城(世茂广场店)</td><td>距离就近</td><td>74m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>红宝石大酒店(瑞龙东方广场店)</td><td>名称互证</td><td>481m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>爱购集市(徐州·印象城店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>CGV影城(印象城ULTRA 4DX店)</td><td>距离就近</td><td>48m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(万科翡翠之光售楼处店)</td><td>距离就近</td><td>300m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>淮海环球港（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>VIRGO PARTY娱乐</td><td>距离就近</td><td>301m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>三胞国际广场（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Max守夜人密室逃脱(三胞广场店)</td><td>名称互证</td><td>63m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>星聚会KTV(徐州三胞广场店)</td><td>距离就近</td><td>86m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>金逸影城(三胞国际广场店)</td><td>名称互证</td><td>102m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>徐州海底世界(三胞国际广场店)</td><td>名称互证</td><td>111m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>童天乐微动物园(三胞国际广场店)</td><td>名称互证</td><td>130m</td><td>2.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>徐州和信广场（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>零界爬宠动物公园(徐州和信广场店)</td><td>名称互证</td><td>4m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>蓝次方真人沉浸式剧场密室</td><td>距离就近</td><td>20m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>神盾局科技密室(徐州和信广场店)</td><td>名称互证</td><td>54m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>米兰花酒店(徐州站店)</td><td>距离就近</td><td>245m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>三江旅社</td><td>距离就近</td><td>305m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>桃元宾馆</td><td>距离就近</td><td>332m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>扬州宾馆</td><td>距离就近</td><td>337m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>徐州旅社(淮海东路)</td><td>距离就近</td><td>384m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>徐州泽喜快捷宾馆</td><td>距离就近</td><td>409m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宣武商贸城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>华鸿快捷宾馆</td><td>距离就近</td><td>552m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美的广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>华夏国际影城(美的广场店)</td><td>名称互证</td><td>3m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>棋会江湖棋牌·娱乐空间专家(徐州美的广场店)</td><td>名称互证</td><td>149m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>云龙雀魂棋牌室</td><td>名称互证</td><td>152m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>洋葱台球棋牌俱乐部(美的广场店)</td><td>名称互证</td><td>171m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麻先生棋牌会馆(美的广场店)</td><td>名称互证</td><td>376m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>云龙区三十棋牌店</td><td>距离就近</td><td>406m</td><td>2.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>徐州印象城（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>CGV影城(印象城ULTRA 4DX店)</td><td>名称互证</td><td>48m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(万科翡翠之光售楼处店)</td><td>距离就近</td><td>300m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(徐州睢宁店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>方寸真人密室逃脱(万达广场徐州睢宁店)</td><td>名称互证</td><td>18m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>战斧超大型真人沉浸密室(云龙万达店)</td><td>名称互证</td><td>73369m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(徐州云龙万达广场店)</td><td>名称互证</td><td>73439m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>嘻歌汇Party KTV(徐州铜山万达广场店)</td><td>名称互证</td><td>75061m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达影城(徐州铜山万达广场店)</td><td>名称互证</td><td>75078m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长安世家沉浸式真人密室(徐州铜山万达广场店)</td><td>名称互证</td><td>75119m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>徐州招商花园城（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幸福蓝海(徐州招商花园城)</td><td>名称互证</td><td>63m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>莎啦啦KTV(徐州招商花园城)</td><td>名称互证</td><td>72m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>汇赢棋牌(绿地领海店)</td><td>距离就近</td><td>223m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>辰悦·商务-棋-牌</td><td>距离就近</td><td>235m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>77私影馆</td><td>距离就近</td><td>292m</td><td>3.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大吴商城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>汪汪队宠物乐园(闫庄繁荣小区店)</td><td>距离就近</td><td>140m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>徐州爱琴海购物中心（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>莎啦啦(徐州店)</td><td>距离就近</td><td>33m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>雀湖荟棋牌会所</td><td>距离就近</td><td>378m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>徐州动物园（24 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>徐州动物园</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>东北虎馆</td><td>名称互证</td><td>27m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>珍猴馆</td><td>名称互证</td><td>44m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>徐州动物园-猴山</td><td>名称互证</td><td>60m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>狮虎苑</td><td>名称互证</td><td>68m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>徐州动物园-小熊猫馆</td><td>名称互证</td><td>71m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>长颈鹿馆</td><td>名称互证</td><td>83m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>白枕鹤</td><td>名称互证</td><td>84m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>涉禽馆</td><td>名称互证</td><td>88m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>猛禽笼</td><td>名称互证</td><td>89m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>徐州动物园售票处</td><td>名称互证</td><td>91m</td><td>—</td><td>§11</td></tr>
+<tr><td>徐州动物园-鸣禽馆</td><td>名称互证</td><td>98m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>徐州动物园-鹿苑</td><td>名称互证</td><td>118m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>徐州动物园-演艺馆</td><td>名称互证</td><td>121m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>徐州动物园-熊馆</td><td>名称互证</td><td>122m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>鸵鸟苑</td><td>名称互证</td><td>124m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>徐州动物园地面停车场(出入口)</td><td>名称互证</td><td>133m</td><td>—</td><td>§11</td></tr>
+<tr><td>徐州动物园地面停车场</td><td>名称互证</td><td>136m</td><td>—</td><td>§11</td></tr>
+<tr><td>食草动物苑</td><td>名称互证</td><td>139m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>徐州动物园(公交站)</td><td>名称互证</td><td>144m</td><td>—</td><td>§11</td></tr>
+<tr><td>鸟语林</td><td>名称互证</td><td>152m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>两栖爬行动物馆</td><td>名称互证</td><td>161m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>童趣园</td><td>名称互证</td><td>200m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>迷你穿梭</td><td>距离就近</td><td>435m</td><td>2.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>徐州九顶山野生动物园（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>徐州九顶山野生动物园</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>九顶山野生动物园-游客中心</td><td>名称互证</td><td>216m</td><td>—</td><td>§11</td></tr>
+<tr><td>徐州九顶山野生动物园自驾区停车场</td><td>名称互证</td><td>305m</td><td>—</td><td>§11</td></tr>
+<tr><td>徐州九顶山野生动物园售票中心</td><td>名称互证</td><td>315m</td><td>—</td><td>§11</td></tr>
+<tr><td>九顶山野生动物园(公交站)</td><td>名称互证</td><td>726m</td><td>—</td><td>§11</td></tr>
+<tr><td>徐州九顶山野生动物园步行外停车场</td><td>名称互证</td><td>903m</td><td>—</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>战斧超大型真人沉浸密室(云龙万达店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>战斧超大型真人沉浸密室(云龙万达店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(徐州云龙万达广场店)</td><td>距离就近</td><td>85m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>星座主题·娱乐</td><td>距离就近</td><td>321m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影东方影城</td><td>距离就近</td><td>454m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麦尔影城(徐州云龙区星悦城店)</td><td>距离就近</td><td>583m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中影东方影城（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影东方影城</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>嘉年华•国际娱乐</td><td>距离就近</td><td>414m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>战斧超大型真人沉浸密室(云龙万达店)</td><td>距离就近</td><td>454m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(徐州云龙万达广场店)</td><td>距离就近</td><td>498m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（31 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>徐州旅社(淮海东路)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>淮海东路165-6号</td></tr>
+<tr><td>✅A-</td><td>舒心宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>大泉路8号(近育才路)</td></tr>
+<tr><td>✅A-</td><td>如家快捷酒店(徐州金鹰国际购物中心店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.7</td><td>—</td><td>夹河东街11-3</td></tr>
+<tr><td>✅A-</td><td>花园饭店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.7</td><td>—</td><td>解放路1号</td></tr>
+<tr><td>✅A-</td><td>汉府酒店(邳州福州路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>福州路环球新天地</td></tr>
+<tr><td>✅B</td><td>杨氏大酒店(煤港路店)</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>煤港路15号(煤港路小学对面)</td></tr>
+<tr><td>✅B</td><td>红宝石大酒店(瑞龙东方广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>东三环大润发向北300米路西瑞龙广场G座</td></tr>
+<tr><td>✅B</td><td>金陵金源大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.4</td><td>—</td><td>淮海西路33(徐医附院地铁站3号口步行210米)</td></tr>
+<tr><td>✅B</td><td>邳州贵人阁宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>同盛广场一号楼</td></tr>
+<tr><td>✅B</td><td>沛县郝寨福临门大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>煤电公司十一村</td></tr>
+<tr><td>⚠️</td><td>新生快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>民主南路190-2号</td></tr>
+<tr><td>⚠️</td><td>华鸿快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>淮海东路186号(徐州火车站地铁站3A口步行450米)</td></tr>
+<tr><td>⚠️</td><td>益客商务宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.1</td><td>—</td><td>正阳路27号</td></tr>
+<tr><td>⚠️</td><td>米兰花酒店(徐州站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>复兴北路12-13号</td></tr>
+<tr><td>⚠️</td><td>睢宁金桥宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>新车站对面</td></tr>
+<tr><td>⚠️</td><td>桃元宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>大马路68号民生大厦二楼</td></tr>
+<tr><td>⚠️</td><td>徐州泰山宾馆(师范大学店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>同盛路11号</td></tr>
+<tr><td>⚠️</td><td>徐州泽喜快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>淮海东路159号(徐州火车站地铁站5号口步行460米)</td></tr>
+<tr><td>⚠️</td><td>金利商务宾馆(汽车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>支农南路58号</td></tr>
+<tr><td>⚠️</td><td>睢宁大西洋宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>元府西路256号农业局斜对面</td></tr>
+<tr><td>⚠️</td><td>徐州工农旅社</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.8</td><td>—</td><td>工农南路38号(工农路地铁站2号口步行290米)</td></tr>
+<tr><td>⚠️</td><td>徐州磊磊青年旅舍</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.7</td><td>—</td><td>夹河前街36号(光荣巷小学西侧)</td></tr>
+<tr><td>⚠️</td><td>文轩宾馆(柳新镇唐沟社区爱心医院东南)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>迎宾路8号圆盘道东侧</td></tr>
+<tr><td>⚠️</td><td>王府精致酒店</td><td>餐饮服务;中餐厅;中餐厅｜住宿服务;住宿服务相关;住宿服务相关</td><td>3.7</td><td>—</td><td>棠张镇</td></tr>
+<tr><td>⚠️</td><td>徐州九新宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>长江西路15号九州大学对面</td></tr>
+<tr><td>⚠️</td><td>金尚宾馆(邳州同盛广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>解放西路48号(同盛广场2栋)</td></tr>
+<tr><td>⚠️</td><td>新沂现代宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>南京路3-1号</td></tr>
+<tr><td>⚠️</td><td>三江旅社</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.6</td><td>—</td><td>王大路33号(徐州火车站地铁站5号口步行440米)</td></tr>
+<tr><td>⚠️</td><td>嘉泰商务宾馆(蟠桃花园社区卫生服务站东北)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>蟠桃花园1期35-2号</td></tr>
+<tr><td>⚠️</td><td>文苑旅社(江苏师范大学店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.5</td><td>—</td><td>学院路667号,36路公交终点站对面近建筑学院</td></tr>
+<tr><td>❌</td><td>扬州宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.3</td><td>—</td><td>淮海东路187号(徐州火车站地铁站5号口步行260米)</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>3</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/徐州市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>1 个 POI 无地址</strong>，需人工补：徐州农副产品中心批发市场</li><li><input type="checkbox" disabled> <strong>10 个 POI 无评分</strong>，暂标 ⚠️：徐州动物园地面停车场、徐州动物园地面停车场(出入口)、嘉慧园、徐州动物园售票处、徐州动物园(公交站)</li><li><input type="checkbox" disabled> 儿童游乐 56 家，其中场内 6 家、独立 50 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 10 个区县：丰县、云龙区、新沂市、沛县、泉山区、睢宁县、贾汪区、邳州市、铜山区、鼓楼区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

@@ -1,0 +1,528 @@
+{
+ "province": "海南省",
+ "stats": {
+  "cities": 19,
+  "poi": 8039,
+  "grades": {
+   "S": 20,
+   "A": 202,
+   "B": 256,
+   "C": 223
+  }
+ },
+ "cities": [
+  {
+   "city": "万宁市",
+   "province": "海南省",
+   "adcode": "469006",
+   "poi": 550,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:45:52",
+   "page": "cities/469006.html",
+   "json": "api/cities/469006.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E4%B8%87%E5%AE%81%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 21,
+    "B": 7,
+    "C": 12
+   },
+   "dims": {
+    "food": 264,
+    "district": 85,
+    "leisure": 115,
+    "kids": 9,
+    "hotel": 38,
+    "product": 40
+   }
+  },
+  {
+   "city": "三亚市",
+   "province": "海南省",
+   "adcode": "460200",
+   "poi": 758,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:40:09",
+   "page": "cities/460200.html",
+   "json": "api/cities/460200.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E4%B8%89%E4%BA%9A%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 9,
+    "B": 15,
+    "C": 16
+   },
+   "dims": {
+    "food": 283,
+    "district": 168,
+    "leisure": 189,
+    "kids": 27,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "三沙市",
+   "province": "海南省",
+   "adcode": "460300",
+   "poi": 9,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:37:56",
+   "page": "cities/460300.html",
+   "json": "api/cities/460300.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E4%B8%89%E6%B2%99%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 0,
+    "C": 0
+   },
+   "dims": {
+    "food": 5,
+    "district": 0,
+    "leisure": 0,
+    "kids": 0,
+    "hotel": 1,
+    "product": 0
+   }
+  },
+  {
+   "city": "东方市",
+   "province": "海南省",
+   "adcode": "469007",
+   "poi": 439,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:35:37",
+   "page": "cities/469007.html",
+   "json": "api/cities/469007.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E4%B8%9C%E6%96%B9%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 22,
+    "B": 9,
+    "C": 9
+   },
+   "dims": {
+    "food": 222,
+    "district": 71,
+    "leisure": 105,
+    "kids": 1,
+    "hotel": 27,
+    "product": 14
+   }
+  },
+  {
+   "city": "临高县",
+   "province": "海南省",
+   "adcode": "469024",
+   "poi": 367,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:39:16",
+   "page": "cities/469024.html",
+   "json": "api/cities/469024.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E4%B8%B4%E9%AB%98%E5%8E%BF.md",
+   "grades": {
+    "S": 0,
+    "A": 8,
+    "B": 16,
+    "C": 16
+   },
+   "dims": {
+    "food": 207,
+    "district": 47,
+    "leisure": 73,
+    "kids": 5,
+    "hotel": 26,
+    "product": 10
+   }
+  },
+  {
+   "city": "乐东黎族自治县",
+   "province": "海南省",
+   "adcode": "469027",
+   "poi": 452,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:36:43",
+   "page": "cities/469027.html",
+   "json": "api/cities/469027.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E4%B9%90%E4%B8%9C%E9%BB%8E%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8E%BF.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 16,
+    "C": 17
+   },
+   "dims": {
+    "food": 222,
+    "district": 81,
+    "leisure": 100,
+    "kids": 5,
+    "hotel": 27,
+    "product": 20
+   }
+  },
+  {
+   "city": "五指山市",
+   "province": "海南省",
+   "adcode": "469001",
+   "poi": 264,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:40:41",
+   "page": "cities/469001.html",
+   "json": "api/cities/469001.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E4%BA%94%E6%8C%87%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 23,
+    "C": 3
+   },
+   "dims": {
+    "food": 156,
+    "district": 33,
+    "leisure": 35,
+    "kids": 0,
+    "hotel": 26,
+    "product": 15
+   }
+  },
+  {
+   "city": "保亭黎族苗族自治县",
+   "province": "海南省",
+   "adcode": "469029",
+   "poi": 282,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:41:13",
+   "page": "cities/469029.html",
+   "json": "api/cities/469029.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E4%BF%9D%E4%BA%AD%E9%BB%8E%E6%97%8F%E8%8B%97%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8E%BF.md",
+   "grades": {
+    "S": 0,
+    "A": 20,
+    "B": 12,
+    "C": 8
+   },
+   "dims": {
+    "food": 158,
+    "district": 44,
+    "leisure": 43,
+    "kids": 3,
+    "hotel": 24,
+    "product": 10
+   }
+  },
+  {
+   "city": "儋州市",
+   "province": "海南省",
+   "adcode": "460400",
+   "poi": 565,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:44:40",
+   "page": "cities/460400.html",
+   "json": "api/cities/460400.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E5%84%8B%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 19,
+    "B": 5,
+    "C": 16
+   },
+   "dims": {
+    "food": 262,
+    "district": 101,
+    "leisure": 125,
+    "kids": 11,
+    "hotel": 39,
+    "product": 19
+   }
+  },
+  {
+   "city": "定安县",
+   "province": "海南省",
+   "adcode": "469021",
+   "poi": 313,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:41:54",
+   "page": "cities/469021.html",
+   "json": "api/cities/469021.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E5%AE%9A%E5%AE%89%E5%8E%BF.md",
+   "grades": {
+    "S": 0,
+    "A": 16,
+    "B": 7,
+    "C": 17
+   },
+   "dims": {
+    "food": 180,
+    "district": 45,
+    "leisure": 46,
+    "kids": 3,
+    "hotel": 33,
+    "product": 6
+   }
+  },
+  {
+   "city": "屯昌县",
+   "province": "海南省",
+   "adcode": "469022",
+   "poi": 292,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:34:53",
+   "page": "cities/469022.html",
+   "json": "api/cities/469022.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E5%B1%AF%E6%98%8C%E5%8E%BF.md",
+   "grades": {
+    "S": 0,
+    "A": 10,
+    "B": 22,
+    "C": 8
+   },
+   "dims": {
+    "food": 166,
+    "district": 49,
+    "leisure": 51,
+    "kids": 1,
+    "hotel": 20,
+    "product": 6
+   }
+  },
+  {
+   "city": "文昌市",
+   "province": "海南省",
+   "adcode": "469005",
+   "poi": 529,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:37:27",
+   "page": "cities/469005.html",
+   "json": "api/cities/469005.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E6%96%87%E6%98%8C%E5%B8%82.md",
+   "grades": {
+    "S": 4,
+    "A": 10,
+    "B": 11,
+    "C": 15
+   },
+   "dims": {
+    "food": 256,
+    "district": 101,
+    "leisure": 96,
+    "kids": 7,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "昌江黎族自治县",
+   "province": "海南省",
+   "adcode": "469026",
+   "poi": 317,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:42:26",
+   "page": "cities/469026.html",
+   "json": "api/cities/469026.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E6%98%8C%E6%B1%9F%E9%BB%8E%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8E%BF.md",
+   "grades": {
+    "S": 0,
+    "A": 11,
+    "B": 18,
+    "C": 11
+   },
+   "dims": {
+    "food": 181,
+    "district": 51,
+    "leisure": 54,
+    "kids": 1,
+    "hotel": 25,
+    "product": 2
+   }
+  },
+  {
+   "city": "海口市",
+   "province": "海南省",
+   "adcode": "460100",
+   "poi": 861,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:43:55",
+   "page": "cities/460100.html",
+   "json": "api/cities/460100.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E6%B5%B7%E5%8F%A3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 16,
+    "C": 23
+   },
+   "dims": {
+    "food": 273,
+    "district": 208,
+    "leisure": 219,
+    "kids": 34,
+    "hotel": 35,
+    "product": 41
+   }
+  },
+  {
+   "city": "澄迈县",
+   "province": "海南省",
+   "adcode": "469023",
+   "poi": 491,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:43:11",
+   "page": "cities/469023.html",
+   "json": "api/cities/469023.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E6%BE%84%E8%BF%88%E5%8E%BF.md",
+   "grades": {
+    "S": 7,
+    "A": 8,
+    "B": 5,
+    "C": 20
+   },
+   "dims": {
+    "food": 245,
+    "district": 64,
+    "leisure": 111,
+    "kids": 9,
+    "hotel": 31,
+    "product": 32
+   }
+  },
+  {
+   "city": "琼中黎族苗族自治县",
+   "province": "海南省",
+   "adcode": "469030",
+   "poi": 250,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:36:09",
+   "page": "cities/469030.html",
+   "json": "api/cities/469030.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E7%90%BC%E4%B8%AD%E9%BB%8E%E6%97%8F%E8%8B%97%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8E%BF.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 24,
+    "C": 8
+   },
+   "dims": {
+    "food": 152,
+    "district": 32,
+    "leisure": 35,
+    "kids": 3,
+    "hotel": 25,
+    "product": 5
+   }
+  },
+  {
+   "city": "琼海市",
+   "province": "海南省",
+   "adcode": "469002",
+   "poi": 530,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:45:16",
+   "page": "cities/469002.html",
+   "json": "api/cities/469002.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E7%90%BC%E6%B5%B7%E5%B8%82.md",
+   "grades": {
+    "S": 7,
+    "A": 14,
+    "B": 14,
+    "C": 5
+   },
+   "dims": {
+    "food": 254,
+    "district": 94,
+    "leisure": 102,
+    "kids": 11,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "白沙黎族自治县",
+   "province": "海南省",
+   "adcode": "469025",
+   "poi": 228,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:34:22",
+   "page": "cities/469025.html",
+   "json": "api/cities/469025.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E7%99%BD%E6%B2%99%E9%BB%8E%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8E%BF.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 31,
+    "C": 5
+   },
+   "dims": {
+    "food": 125,
+    "district": 36,
+    "leisure": 36,
+    "kids": 0,
+    "hotel": 28,
+    "product": 5
+   }
+  },
+  {
+   "city": "陵水黎族自治县",
+   "province": "海南省",
+   "adcode": "469028",
+   "poi": 542,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:38:42",
+   "page": "cities/469028.html",
+   "json": "api/cities/469028.json",
+   "md": "md/%E6%B5%B7%E5%8D%97%E7%9C%81/%E9%99%B5%E6%B0%B4%E9%BB%8E%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8E%BF.md",
+   "grades": {
+    "S": 2,
+    "A": 19,
+    "B": 5,
+    "C": 14
+   },
+   "dims": {
+    "food": 239,
+    "district": 81,
+    "leisure": 146,
+    "kids": 11,
+    "hotel": 36,
+    "product": 30
+   }
+  }
+ ]
+}

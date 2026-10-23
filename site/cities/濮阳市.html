@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>濮阳市 · 河南省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/河南省.html">← 返回河南省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>濮阳市 · 河南省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 18:10:59  ·  POI 总量：845（去重后）  ·  查询面：49  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>845</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>99%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 301 · 商圈 353 · 成人娱乐 277 · 儿童娱乐 163 · 酒店 33 · 特产 40</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>河南省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>6 个</td></tr>
+<tr><td>街道/镇/乡</td><td>89 个</td></tr>
+<tr><td>区县构成</td><td>县×5、市辖区×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>华龙区</td><td>486</td><td>58%</td></tr>
+<tr><td>濮阳县</td><td>99</td><td>12%</td></tr>
+<tr><td>南乐县</td><td>76</td><td>9%</td></tr>
+<tr><td>范县</td><td>68</td><td>8%</td></tr>
+<tr><td>清丰县</td><td>67</td><td>8%</td></tr>
+<tr><td>台前县</td><td>49</td><td>6%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（353 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>151</td></tr>
+<tr><td>购物中心/综合体</td><td>52</td></tr>
+<tr><td>百货/商场</td><td>44</td></tr>
+<tr><td>商业街</td><td>40</td></tr>
+<tr><td>批发城</td><td>21</td></tr>
+<tr><td>步行街</td><td>20</td></tr>
+<tr><td>夜市</td><td>16</td></tr>
+<tr><td>美食街/小吃街</td><td>7</td></tr>
+<tr><td>奥特莱斯</td><td>2</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（353 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>A</td><td>三强鸽子(中心广场店)</td><td>其他商业载体</td><td>4.7</td><td>18</td><td>11</td><td>2</td><td>2</td></tr>
+<tr><td>A</td><td>丹尼斯百货(长庆中路店)</td><td>购物中心/综合体</td><td>4.6</td><td>17</td><td>23</td><td>15</td><td>1</td></tr>
+<tr><td>A</td><td>万嘉360广场</td><td>百货/商场</td><td>4.7</td><td>16</td><td>16</td><td>10</td><td>0</td></tr>
+<tr><td>A</td><td>麦当劳(濮阳黄河路得来速餐厅)</td><td>其他商业载体</td><td>4.6</td><td>15</td><td>17</td><td>10</td><td>0</td></tr>
+<tr><td>A</td><td>麦当劳(濮阳麦当劳龙之光万达广场餐厅)</td><td>其他商业载体</td><td>4.6</td><td>13</td><td>17</td><td>13</td><td>0</td></tr>
+<tr><td>A</td><td>万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>12</td><td>19</td><td>16</td><td>0</td></tr>
+<tr><td>A</td><td>万达影城(濮阳万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>12</td><td>17</td><td>13</td><td>0</td></tr>
+<tr><td>A</td><td>永望里</td><td>其他商业载体</td><td>4.6</td><td>12</td><td>17</td><td>13</td><td>1</td></tr>
+<tr><td>A</td><td>濮阳义乌国际商贸城</td><td>百货/商场</td><td>4.6</td><td>12</td><td>17</td><td>13</td><td>0</td></tr>
+<tr><td>A</td><td>魅KTV·AI辅唱(濮阳昆濮大厦店)</td><td>其他商业载体</td><td>4.6</td><td>12</td><td>13</td><td>9</td><td>0</td></tr>
+<tr><td>A</td><td>水秀街</td><td>商业街</td><td>4.7</td><td>10</td><td>20</td><td>14</td><td>0</td></tr>
+<tr><td>B</td><td>濮阳上亿广场</td><td>购物中心/综合体</td><td>4.7</td><td>9</td><td>3</td><td>3</td><td>0</td></tr>
+<tr><td>B</td><td>湘遇老长沙下饭菜(上亿广场店)</td><td>其他商业载体</td><td>4.6</td><td>9</td><td>4</td><td>3</td><td>0</td></tr>
+<tr><td>B</td><td>濮城名吃(刘坑老店)</td><td>其他商业载体</td><td>4.6</td><td>9</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>老李记美食饭庄(古城路店)</td><td>其他商业载体</td><td>4.6</td><td>8</td><td>8</td><td>1</td><td>3</td></tr>
+<tr><td>B</td><td>巴黎街(金堤中路店)</td><td>商业街</td><td>4.6</td><td>8</td><td>12</td><td>3</td><td>2</td></tr>
+<tr><td>B</td><td>银座商城(胜利路店)</td><td>百货/商场</td><td>4.6</td><td>7</td><td>7</td><td>2</td><td>7</td></tr>
+<tr><td>B</td><td>银座商城(京开店)</td><td>百货/商场</td><td>4.6</td><td>7</td><td>5</td><td>2</td><td>5</td></tr>
+<tr><td>B</td><td>上亿国际影城(上亿广场店)</td><td>其他商业载体</td><td>4.6</td><td>7</td><td>3</td><td>3</td><td>0</td></tr>
+<tr><td>B</td><td>大丰国际商场</td><td>百货/商场</td><td>4.7</td><td>6</td><td>1</td><td>2</td><td>0</td></tr>
+<tr><td>B</td><td>银街地下商场</td><td>百货/商场</td><td>4.6</td><td>6</td><td>6</td><td>1</td><td>6</td></tr>
+<tr><td>B</td><td>新天地购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>6</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>柏维轻居酒店(建设路濮阳市中心广场店)</td><td>其他商业载体</td><td>4.8</td><td>5</td><td>1</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>福嘉百货</td><td>百货/商场</td><td>4.6</td><td>5</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>红星美凯龙濮阳枫叶商场</td><td>百货/商场</td><td>4.6</td><td>5</td><td>12</td><td>3</td><td>2</td></tr>
+<tr><td>B</td><td>濮阳东北庄野生动物园</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>24</td><td>0</td></tr>
+<tr><td>C</td><td>范县新区商贸城</td><td>百货/商场</td><td>4.7</td><td>4</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>建德商业步行街</td><td>步行街</td><td>4.6</td><td>4</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>建德商业广场</td><td>购物中心/综合体</td><td>4.7</td><td>2</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>新城国际商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>5</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>亿丰时代广场</td><td>其他商业载体</td><td>4.6</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中心动物园</td><td>其他商业载体</td><td>4.6</td><td>2</td><td>2</td><td>8</td><td>0</td></tr>
+<tr><td>C</td><td>二厂商贸城</td><td>百货/商场</td><td>4.7</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>欧尚时代广场</td><td>其他商业载体</td><td>4.6</td><td>1</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>正大中心</td><td>其他商业载体</td><td>4.6</td><td>1</td><td>5</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>万邦·濮阳国际农产品批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>后王楼家具家电商场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>687 PARTY-K</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>板桥古镇游乐场</td><td>商业街</td><td>4.6</td><td>0</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>汇丰板桥古镇</td><td>商业街</td><td>4.6</td><td>0</td><td>0</td><td>3</td><td>0</td></tr>
+</tbody></table></div>
+<h3>三强鸽子(中心广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 18 家（均分 4.48）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;特色/地方风味餐厅）</li><li><strong>地址</strong>：建设路与开州路交叉口向西50米路南</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥42（区间 ¥16–88）</li><li><strong>动线主轴</strong>：建设中路</li><li><strong>业态分布</strong>：美食 18 · 成人娱乐 11 · 儿童娱乐 2 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>三强鸽子(中心广场店)</td></tr>
+<tr><td>美食</td><td>18</td><td>三强鸽子(中心广场店)、老李记美食饭庄(古城路店)、老家水饺濮阳菜(昆吾路店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>星雀棋牌、童话KTV(建设路店)、大赢家休闲棋牌</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>蜻蜓宇宙主机游戏体验馆、趣玩PS电玩体验店</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>温馨宾馆(古城路)、濮阳五洲宾馆</td></tr>
+</tbody></table></div>
+<h3>丹尼斯百货(长庆中路店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 17 家（均分 4.28）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜生活服务;生活服务场所;生活服务场所）</li><li><strong>地址</strong>：任丘路与长庆中路交叉口</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥42（区间 ¥14–85）</li><li><strong>动线主轴</strong>：长庆路</li><li><strong>业态分布</strong>：美食 17 · 成人娱乐 23 · 儿童娱乐 15 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丹尼斯百货(长庆中路店)</td></tr>
+<tr><td>美食</td><td>17</td><td>三强鸽子(安居街店)、瑾妈妈韩式大排档(安居街店)、麦当劳(濮阳黄河路得来速餐厅)</td></tr>
+<tr><td>成人娱乐</td><td>23</td><td>圣雅超级巨幕影院(恒丰店)、魅KTV·AI辅唱(濮阳昆濮大厦店)、圣雅金逸国际影城(丹尼斯店)</td></tr>
+<tr><td>儿童娱乐</td><td>15</td><td>真理主机游戏、秋野原电玩(安居街店)、奥悠悠家庭互动中心</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>花园酒店</td></tr>
+</tbody></table></div>
+<h3>万嘉360广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 16 家（均分 4.26）+ 3 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：黄河路与长庆路交叉口向北100米路东</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥38（区间 ¥14–85）</li><li><strong>动线主轴</strong>：长庆路</li><li><strong>业态分布</strong>：美食 16 · 成人娱乐 16 · 儿童娱乐 10 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万嘉360广场</td></tr>
+<tr><td>美食</td><td>16</td><td>麦当劳(濮阳黄河路得来速餐厅)、瑾妈妈韩式大排档(安居街店)、三强鸽子(安居街店)</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>魅KTV·AI辅唱(濮阳昆濮大厦店)、万嘉好莱坞国际影城(万嘉360广场店)、圣雅金逸国际影城(丹尼斯店)</td></tr>
+<tr><td>儿童娱乐</td><td>10</td><td>真理主机游戏、奥悠悠家庭互动中心、秋野原电玩(安居街店)</td></tr>
+</tbody></table></div>
+<h3>麦当劳(濮阳黄河路得来速餐厅) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 15 家（均分 4.27）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;快餐厅;麦当劳）</li><li><strong>地址</strong>：黄河路与长庆路交叉口昆濮时代广场1层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥34（区间 ¥14–85）</li><li><strong>动线主轴</strong>：长庆路</li><li><strong>业态分布</strong>：美食 15 · 成人娱乐 17 · 儿童娱乐 10 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>麦当劳(濮阳黄河路得来速餐厅)</td></tr>
+<tr><td>美食</td><td>15</td><td>麦当劳(濮阳黄河路得来速餐厅)、瑾妈妈韩式大排档(安居街店)、三强鸽子(安居街店)</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>魅KTV·AI辅唱(濮阳昆濮大厦店)、万嘉好莱坞国际影城(万嘉360广场店)、奥斯卡影城(悦尚城店)</td></tr>
+<tr><td>儿童娱乐</td><td>10</td><td>真理主机游戏、奥悠悠家庭互动中心、秋野原电玩(安居街店)</td></tr>
+</tbody></table></div>
+<h3>麦当劳(濮阳麦当劳龙之光万达广场餐厅) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.28）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;快餐厅;麦当劳）</li><li><strong>地址</strong>：开州路与绿城路交叉口</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥32（区间 ¥20–88）</li><li><strong>动线主轴</strong>：开州路</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 17 · 儿童娱乐 13 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>麦当劳(濮阳麦当劳龙之光万达广场餐厅)</td></tr>
+<tr><td>美食</td><td>13</td><td>麦当劳(濮阳麦当劳龙之光万达广场餐厅)、三强鸽子(万达店)、麦当劳(濮阳黄河路得来速餐厅)</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>万达影城(濮阳万达广场店)、欢聚SHOW KTV(万达店)、OT-PARTY·KTV(万达店)</td></tr>
+<tr><td>儿童娱乐</td><td>13</td><td>乐逍遥潮玩、Super超级玩家、万达宝贝王(万达广场店)</td></tr>
+</tbody></table></div>
+<h3>万达广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.25）+ 3 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：开州路绿城路交叉口</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥38（区间 ¥20–88）</li><li><strong>动线主轴</strong>：开州路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 19 · 儿童娱乐 16 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场</td></tr>
+<tr><td>美食</td><td>12</td><td>麦当劳(濮阳麦当劳龙之光万达广场餐厅)、三强鸽子(万达店)、澶州苑·土家湘菜</td></tr>
+<tr><td>成人娱乐</td><td>19</td><td>万达影城(濮阳万达广场店)、欢聚SHOW KTV(万达店)、OT-PARTY·KTV(万达店)</td></tr>
+<tr><td>儿童娱乐</td><td>16</td><td>乐逍遥潮玩、Super超级玩家、万达宝贝王(万达广场店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(濮阳万达广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.25）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：五一路与开州路交叉口西北角万达广场4层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥38（区间 ¥20–88）</li><li><strong>动线主轴</strong>：开州路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 17 · 儿童娱乐 13 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(濮阳万达广场店)</td></tr>
+<tr><td>美食</td><td>12</td><td>麦当劳(濮阳麦当劳龙之光万达广场餐厅)、三强鸽子(万达店)、澶州苑·土家湘菜</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>万达影城(濮阳万达广场店)、欢聚SHOW KTV(万达店)、OT-PARTY·KTV(万达店)</td></tr>
+<tr><td>儿童娱乐</td><td>13</td><td>乐逍遥潮玩、Super超级玩家、万达宝贝王(万达广场店)</td></tr>
+</tbody></table></div>
+<h3>永望里 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.19）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;住宅区;住宅小区）</li><li><strong>地址</strong>：丽都路与任丘路交叉口东北180米</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥31（区间 ¥14–85）</li><li><strong>动线主轴</strong>：长庆路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 17 · 儿童娱乐 13 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>永望里</td></tr>
+<tr><td>美食</td><td>12</td><td>三强鸽子(安居街店)、瑾妈妈韩式大排档(安居街店)、方中山胡辣汤(恒丰花园店)</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>圣雅超级巨幕影院(恒丰店)、云宜网吧·黑蚁管理、圣雅金逸国际影城(丹尼斯店)</td></tr>
+<tr><td>儿童娱乐</td><td>13</td><td>特别好玩游戏屋、秋野原电玩(安居街店)、奥悠悠家庭互动中心</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>花园酒店</td></tr>
+</tbody></table></div>
+<h3>濮阳义乌国际商贸城 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.17）+ 3 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;家居建材市场;家具建材综合市场）</li><li><strong>地址</strong>：任丘路与丽都路交汇处</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥30（区间 ¥14–85）</li><li><strong>动线主轴</strong>：长庆路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 17 · 儿童娱乐 13 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>濮阳义乌国际商贸城</td></tr>
+<tr><td>美食</td><td>12</td><td>三强鸽子(安居街店)、瑾妈妈韩式大排档(安居街店)、麦当劳(濮阳黄河路得来速餐厅)</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>圣雅超级巨幕影院(恒丰店)、云宜网吧·黑蚁管理、圣雅金逸国际影城(丹尼斯店)</td></tr>
+<tr><td>儿童娱乐</td><td>13</td><td>秋野原电玩(安居街店)、特别好玩游戏屋、奥悠悠家庭互动中心</td></tr>
+</tbody></table></div>
+<h3>魅KTV·AI辅唱(濮阳昆濮大厦店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.25）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：黄河路与长庆路交叉口西南角鼎基时代广场1号楼1楼</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥37（区间 ¥14–85）</li><li><strong>动线主轴</strong>：玉门中路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 13 · 儿童娱乐 9 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>魅KTV·AI辅唱(濮阳昆濮大厦店)</td></tr>
+<tr><td>美食</td><td>12</td><td>麦当劳(濮阳黄河路得来速餐厅)、瑾妈妈韩式大排档(安居街店)、三强鸽子(安居街店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>魅KTV·AI辅唱(濮阳昆濮大厦店)、万嘉好莱坞国际影城(万嘉360广场店)、奥斯卡影城(悦尚城店)</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>真理主机游戏、奥悠悠家庭互动中心、秋野原电玩(安居街店)</td></tr>
+</tbody></table></div>
+<h3>水秀街 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.20）+ 3 类业态</li><li><strong>载体类型</strong>：商业街（购物服务;特色商业街;特色商业街）</li><li><strong>地址</strong>：开州路与五一路交叉口西南角</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥38（区间 ¥20–88）</li><li><strong>动线主轴</strong>：开州路</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 20 · 儿童娱乐 14 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>水秀街</td></tr>
+<tr><td>美食</td><td>10</td><td>三强鸽子(万达店)、澶州苑·土家湘菜、柳州肥姨妈大骨螺蛳粉(濮阳万达店)</td></tr>
+<tr><td>成人娱乐</td><td>20</td><td>超越电竞(水秀街店)、水秀国际影城(水秀国际大剧院店)、几许民谣烧烤酒馆(濮阳水秀街店)</td></tr>
+<tr><td>儿童娱乐</td><td>14</td><td>乐逍遥潮玩、Super超级玩家、星悦乐玩城</td></tr>
+</tbody></table></div>
+<h3>濮阳上亿广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 6 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：红旗路44号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥18（区间 ¥9–63）</li><li><strong>动线主轴</strong>：建新路</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 3 · 儿童娱乐 3 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>濮阳上亿广场</td></tr>
+<tr><td>美食</td><td>9</td><td>湘遇老长沙下饭菜(上亿广场店)、濮阳第一烩面馆(老城店)、杨氏凉皮老店(清真)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>上亿国际影城(上亿广场店)、月初酒馆、蛮牛酒馆(上亿广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>狂欢套圈圈、嘟嘟的游戏搭子(上亿广场店)、星漫娱乐城</td></tr>
+</tbody></table></div>
+<h3>湘遇老长沙下饭菜(上亿广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 7 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;湖南菜(湘菜)）</li><li><strong>地址</strong>：城关镇红旗路东段花好月圆临街商铺1号楼09号-10一层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥28（区间 ¥14–63）</li><li><strong>动线主轴</strong>：关镇红旗路</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 4 · 儿童娱乐 3 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>湘遇老长沙下饭菜(上亿广场店)</td></tr>
+<tr><td>美食</td><td>9</td><td>湘遇老长沙下饭菜(上亿广场店)、濮阳第一烩面馆(老城店)、杨氏凉皮老店(清真)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>上亿国际影城(上亿广场店)、Black Lips小黑唇·日咖夜酒(富民路店)、月初酒馆</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>狂欢套圈圈、嘟嘟的游戏搭子(上亿广场店)、星漫娱乐城</td></tr>
+</tbody></table></div>
+<h3>濮城名吃(刘坑老店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 4 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：河南省濮阳市华龙区开州路84号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥55（区间 ¥12–67）</li><li><strong>动线主轴</strong>：黄河路</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>濮城名吃(刘坑老店)</td></tr>
+<tr><td>美食</td><td>9</td><td>春江水·濮阳名菜楼、798餐厅融合菜(振兴路店)、濮城名吃(刘坑老店)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>卓爵网络(振兴路店)、鸣夜酒吧、朝花夕拾•女士休闲娱乐会所</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>维港快捷酒店(开州中路)</td></tr>
+</tbody></table></div>
+<h3>老李记美食饭庄(古城路店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 9 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：古城路295号(长兴集团第三生活区北门西80米)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥46（区间 ¥26–85）</li><li><strong>动线主轴</strong>：古城路</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 8 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>老李记美食饭庄(古城路店)</td></tr>
+<tr><td>美食</td><td>8</td><td>三强鸽子(中心广场店)、老李记美食饭庄(古城路店)、东北私房菜(昆吾路)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>星雀棋牌、雀巢棋牌俱乐部(昆吾南路店)、大赢家休闲棋牌</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>蜻蜓宇宙主机游戏体验馆</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>温馨宾馆(古城路)、濮阳五洲宾馆、聚源酒店</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（277 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>82</td></tr>
+<tr><td>酒吧/酒馆</td><td>26</td></tr>
+<tr><td>棋牌室</td><td>18</td></tr>
+<tr><td>电影院</td><td>16</td></tr>
+<tr><td>KTV</td><td>12</td></tr>
+<tr><td>电玩城</td><td>10</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>8</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(濮阳万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>37.00</td><td>五一路与开州路交叉口西北角万达广场4层</td></tr>
+<tr><td>✅A-</td><td>INXX CLUB(英克斯酒吧｜濮阳店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>106.00</td><td>京开路与黄河路交叉口向南一百米路西346号</td></tr>
+<tr><td>✅A-</td><td>魅KTV·AI辅唱(濮阳昆濮大厦店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>47.00</td><td>黄河路与长庆路交叉口西南角鼎基时代广场1号楼1楼</td></tr>
+<tr><td>✅A-</td><td>龙庭太沽里会客厅足道(二店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>269.00</td><td>长庆街道中原路与玉门路交叉口向西100米路南0101号</td></tr>
+<tr><td>✅A-</td><td>卓爵网络(振兴路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>振兴路与颐和路交叉口西南角融金国际三楼网吧</td></tr>
+<tr><td>✅A-</td><td>云鼎·KTV(原巴黎街名人店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>36.00</td><td>金堤路巴黎街颐和花园东门</td></tr>
+<tr><td>✅A-</td><td>齐歌KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>71.00</td><td>安寨村212省道东200米</td></tr>
+<tr><td>✅A-</td><td>超越电竞(水秀街店)</td><td>电影院</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>水秀街水秀大剧院票务中心斜对面</td></tr>
+<tr><td>✅A-</td><td>熔点上网咖啡简餐(华府旗舰店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>大庆路街道黄河东路851号华府商城</td></tr>
+<tr><td>✅A-</td><td>687 PARTY-K</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>32.00</td><td>濮上路与卫都大街交叉口东南角</td></tr>
+<tr><td>✅A-</td><td>畅PARTY国际商务汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>26.00</td><td>京开大道戚城公园东门原秦汉夜宴一楼</td></tr>
+<tr><td>✅A-</td><td>DF-SHOW</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;服装鞋帽皮具店;服装鞋帽皮具店</td><td>4.6</td><td>27.00</td><td>京开大道体育场南100米</td></tr>
+<tr><td>✅A-</td><td>W•ONE国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>—</td><td>中原路街道京开大道北段2号维也纳酒店(中原路友谊店)</td></tr>
+<tr><td>✅A-</td><td>水秀国际影城(水秀国际大剧院店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>33.00</td><td>开州北路4号</td></tr>
+<tr><td>✅A-</td><td>圣雅超级巨幕影院(恒丰店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>52.00</td><td>任丘路与丽都路交叉口东北角</td></tr>
+<tr><td>✅A-</td><td>上亿国际影城(上亿广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>34.00</td><td>红旗路44号濮阳上亿广场F2层</td></tr>
+<tr><td>✅B</td><td>无解民谣(范县店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>53.00</td><td>新城国际商业广场二楼2209</td></tr>
+<tr><td>✅B</td><td>几许民谣烧烤酒馆(濮阳水秀街店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>43.00</td><td>开州北路水秀街6号楼1层西区</td></tr>
+<tr><td>✅B</td><td>鸣夜酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>88.00</td><td>黄河路振兴路交叉口容金国际152号二楼</td></tr>
+<tr><td>✅B</td><td>时醒ZEST</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>18.00</td><td>市普乐幼儿园边上</td></tr>
+<tr><td>✅B</td><td>偶屿音乐酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>36.00</td><td>帝豪大厦</td></tr>
+<tr><td>✅B</td><td>啤啤猫烧烤酒馆(河南濮阳店)</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>43.00</td><td>振兴中路310正</td></tr>
+<tr><td>✅B</td><td>NASHA酒吧(濮阳店)</td><td>酒吧/酒馆</td><td>购物服务;家居建材市场;家具城</td><td>4.5</td><td>86.00</td><td>黄河路与丽都路交汇处红星美凯龙1层西北角</td></tr>
+<tr><td>✅B</td><td>IN99CLUB</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>53.00</td><td>开州北路与安泰路交叉口西北40米</td></tr>
+<tr><td>✅B</td><td>云宜网吧·黑蚁管理</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>任丘路与丽都路交叉口向东五十米路北恒丰永望里6层F6-01</td></tr>
+<tr><td>✅B</td><td>OT-PARTY·KTV(万达店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>43.00</td><td>五一中路470号</td></tr>
+<tr><td>✅B</td><td>大虎牙网吧(长途店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>京开大道中段340号</td></tr>
+<tr><td>✅B</td><td>大公馆KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>126.00</td><td>城关镇昌乐花园西边</td></tr>
+<tr><td>✅B</td><td>欢聚SHOW KTV(万达店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>32.00</td><td>万达广场濮阳店南门东80米</td></tr>
+<tr><td>✅B</td><td>特别演绎沉浸式演绎剧场</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;影剧院;剧场</td><td>4.5</td><td>—</td><td>中原路长庆路交叉口东200米路南特别演绎推理馆</td></tr>
+<tr><td>✅B</td><td>蝶秀时尚KTV(容金店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>27.00</td><td>振兴路与黄河路交叉口速8酒店2-3层</td></tr>
+<tr><td>✅B</td><td>万濠·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>192.00</td><td>建设路街道振兴南路6号濮阳宾馆</td></tr>
+<tr><td>✅B</td><td>童话音乐空间专业KTV(京开大道店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>70.00</td><td>京开大道中段293号(中国银行濮阳分行营业部西门南60米)</td></tr>
+<tr><td>✅B</td><td>天阙·城市会客中心</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>169.00</td><td>黄河路街道黄河中路130号濮阳星辰制丝有限公司</td></tr>
+<tr><td>❌</td><td>唞音派对国际商务汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>275.00</td><td>[]</td></tr>
+<tr><td>✅B</td><td>星河KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>78.00</td><td>兴濮路与中原西路交叉口东北100米</td></tr>
+<tr><td>✅B</td><td>名人KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>26.00</td><td>长庆路街道中原东路233号</td></tr>
+<tr><td>✅B</td><td>奥斯卡国际影城(兴隆街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>26.00</td><td>人民路与开州路交叉口西北角</td></tr>
+<tr><td>✅B</td><td>奥斯卡影城(悦尚城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>26.00</td><td>黄河路与丽都街东100米路北悦尚城百货4层</td></tr>
+<tr><td>✅B</td><td>万嘉好莱坞国际影城(万嘉360广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>黄河路与长庆路交叉口万利财富广场二期5层</td></tr>
+<tr><td>✅B</td><td>圣雅金逸国际影城(丹尼斯店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>41.00</td><td>(长庆中路)丹尼斯四楼</td></tr>
+<tr><td>✅B</td><td>星光影城(江汉路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>24.00</td><td>江汉路与茂名路交叉口西北角2层</td></tr>
+<tr><td>✅B</td><td>聚点棋牌俱乐部</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>34.00</td><td>胜利路与开州路交叉口向西50米路北</td></tr>
+<tr><td>✅B</td><td>星雀棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>57.00</td><td>昆吾中路472号</td></tr>
+<tr><td>✅B</td><td>清幺九棋牌茶楼</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>53.00</td><td>京开大道420号</td></tr>
+<tr><td>✅B</td><td>Black Lips小黑唇·日咖夜酒(富民路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>25.00</td><td>富民路与工业路交叉口未来城小区一期13幢109号商铺</td></tr>
+<tr><td>✅B</td><td>零叁酒叁酒城</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>—</td><td>滨湖湾商业街027号楼0119号商铺</td></tr>
+<tr><td>✅B</td><td>Helens海伦司小酒馆(濮阳华龙体育场店)</td><td>酒吧/酒馆</td><td>生活服务;生活服务场所;生活服务场所</td><td>4.4</td><td>72.00</td><td>京开路与任丘路交叉口向东100米路北体育场看台外围门市房1层019号</td></tr>
+<tr><td>✅B</td><td>小自在音乐酒馆·社交朋友圈</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>20.00</td><td>黄河东路与丽都路交叉口东北60米</td></tr>
+<tr><td>✅B</td><td>海豚电竞</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.4</td><td>21.00</td><td>开州中路与胜利中路交叉口北160米</td></tr>
+<tr><td>✅B</td><td>亿洲(亿洲·乐活城市广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>—</td><td>人民路与幸福大道交叉口亿洲乐活城市广场F3</td></tr>
+<tr><td>✅B</td><td>不夜城商务国际</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV/体育休闲服务;娱乐场所;夜总会</td><td>4.4</td><td>88.00</td><td>光明北路231号</td></tr>
+<tr><td>✅B</td><td>Super超级玩家</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.4</td><td>62.00</td><td>开州路与五一路交叉口向东100米路北欧亚达2层A2-1-A2-35号</td></tr>
+<tr><td>✅B</td><td>乐逍遥潮玩</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.4</td><td>16.00</td><td>万达金街2层258号</td></tr>
+<tr><td>✅B</td><td>天阙至尊KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>52.00</td><td>京开大道南段132号</td></tr>
+<tr><td>✅B</td><td>朝花夕拾•女士休闲娱乐会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>—</td><td>振兴中路与振东街交叉口南100米</td></tr>
+<tr><td>✅B</td><td>华夏可人影城(恒大悦龙台店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>52.00</td><td>卫都路与开州路交叉口东南角恒大商业中心二楼</td></tr>
+<tr><td>✅B</td><td>中原影都</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>25.00</td><td>扶余路2号</td></tr>
+<tr><td>✅B</td><td>贰条国粹馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>64.00</td><td>昆吾路黄河路交叉口(谢庄内)</td></tr>
+<tr><td>✅B</td><td>麻友社自助棋牌(巴黎街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>14.00</td><td>金堤中路156号金堤路茶叶批发城</td></tr>
+</tbody></table></div>
+<p>（另 112 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（163 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>73</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>42</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>31</td></tr>
+<tr><td>电玩城</td><td>13</td></tr>
+<tr><td>亲子乐园</td><td>3</td></tr>
+<tr><td>淘气堡</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>板桥古镇游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.6</td><td>板桥古镇</td></tr>
+<tr><td>✅A-</td><td>汇丰板桥古镇</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>十字坡大道与滨河路交汇处</td></tr>
+<tr><td>✅A-</td><td>濮阳东北庄野生动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>东北庄村西S101与X008交叉口西50米路北</td></tr>
+<tr><td>✅A-</td><td>中心动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>扶余路附近</td></tr>
+<tr><td>✅B</td><td>濮水小镇撒欢乐园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>濮水小镇(东南角)</td></tr>
+<tr><td>✅B</td><td>龙栖岛梦幻乐园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>黄河西路260号龙栖岛</td></tr>
+<tr><td>✅B</td><td>好先生宠物乐园(宠物寄养)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>金堤路与骏北街交叉路口向西100米路南</td></tr>
+<tr><td>✅B</td><td>蘑菇点灯</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>马庄桥镇赵家村</td></tr>
+<tr><td>✅B</td><td>贝贝龙亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.4</td><td>中原路与黄城路交叉口北500米路东(实验幼儿园北侧)</td></tr>
+<tr><td>✅B</td><td>东湖沙滩游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.4</td><td>京开路与龙泽大街交叉口向西500米龙湖沙滩浴场北侧79号</td></tr>
+<tr><td>✅B</td><td>濮上园龙栖岛童话王国</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>黄河西路260号龙栖岛</td></tr>
+<tr><td>✅B</td><td>Super超级玩家</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>开州路与五一路交叉口向东100米路北欧亚达2层A2-1-A2-35号</td></tr>
+<tr><td>✅B</td><td>乐逍遥潮玩</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>万达金街2层258号</td></tr>
+<tr><td>✅B</td><td>蔚秀园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>开州南路58号</td></tr>
+<tr><td>✅B</td><td>萌宠之家宠物美容生活馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>城关镇黄河路东段文体馆北门对面</td></tr>
+<tr><td>✅B</td><td>范县名泉度假村</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>濮城镇沈庄村黄河路东段</td></tr>
+<tr><td>✅B</td><td>万达宝贝王(万达广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>五一路与开州路交叉口西北角濮阳万达广场三F</td></tr>
+<tr><td>✅B</td><td>悦动小森林乐园</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>中原东路208号</td></tr>
+<tr><td>✅B</td><td>童梦岛潮玩街区</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>美士嘉广场二期无动力乐园广场东南角二楼</td></tr>
+<tr><td>✅B</td><td>佳佳欢乐园</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>五一路与东濮路交叉口向西二百米路南(百姓量贩1楼)</td></tr>
+<tr><td>✅B</td><td>卓越梦幻乐园(水秀街店)</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>水秀街中2号楼1层116铺</td></tr>
+<tr><td>✅B</td><td>迪米嘉儿童主题游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.3</td><td>西关街与李家街交叉口北480米</td></tr>
+<tr><td>✅B</td><td>启菲熊儿童乐园(未来城店)</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.3</td><td>工业路与未来路交叉口东南80米</td></tr>
+<tr><td>✅B</td><td>濮阳魔幻精灵部落</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>马庄桥蘑菇点灯项目</td></tr>
+<tr><td>✅B</td><td>星悦乐玩城</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>昆吾中路与五一中路交叉口东南240米</td></tr>
+<tr><td>✅B</td><td>真理主机游戏</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>黄河路与玉门路向北100和玉街内</td></tr>
+<tr><td>✅B</td><td>好先生宠物乐园(老城店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>城关镇建新路众悦鑫城112号</td></tr>
+<tr><td>✅B</td><td>昆吾园</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>任丘路161号</td></tr>
+<tr><td>⚠️</td><td>奥悠悠家庭互动中心</td><td>其他儿童场所</td><td>场内</td><td>4.2</td><td>万嘉360广场二楼2-2-0-300</td></tr>
+<tr><td>⚠️</td><td>蓝精灵亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.2</td><td>乐泰森林公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>奥悠悠家庭互动中心(濮阳万达店)</td><td>其他儿童场所</td><td>场内</td><td>4.2</td><td>万达广场三楼3016、3017</td></tr>
+<tr><td>⚠️</td><td>启菲熊儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.2</td><td>龙苑路与北关街交叉口普客隆超市二楼</td></tr>
+<tr><td>⚠️</td><td>悠游堂</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>江汉路扶余路交叉口往南20米</td></tr>
+<tr><td>⚠️</td><td>秋野原电玩(巴黎街店)</td><td>电玩城</td><td>独立</td><td>4.2</td><td>黄河中路与金堤中路交叉口东北角2楼</td></tr>
+<tr><td>⚠️</td><td>世外星空游乐厅</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>胜利路街道银座商城3楼</td></tr>
+<tr><td>⚠️</td><td>大玩家(万达广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.2</td><td>开州路与绿城路交叉口万达广场2F-A</td></tr>
+<tr><td>⚠️</td><td>秋野原电玩(安居街店)</td><td>电玩城</td><td>独立</td><td>4.2</td><td>安居街与乐业街交叉口路西二楼</td></tr>
+<tr><td>⚠️</td><td>淘嘻乐运动乐园(百姓量贩店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>长庆中路与胜利东路交叉口东北约120米</td></tr>
+<tr><td>⚠️</td><td>特别好玩游戏屋</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>中原东路185号</td></tr>
+<tr><td>⚠️</td><td>宝贝王乐园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>长庆路街道永望里3楼01号商铺</td></tr>
+<tr><td>⚠️</td><td>星光乐园(欧尚时代广场)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>板桥路与十字坡大道交叉口南40米</td></tr>
+<tr><td>⚠️</td><td>吉吉王国游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.1</td><td>水秀街4号楼</td></tr>
+<tr><td>⚠️</td><td>濮水欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>新南环与京开大道交叉口向东50米路北</td></tr>
+<tr><td>⚠️</td><td>树袋熊儿童乐园(君悦兰亭店)</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.1</td><td>新东路与中原路交叉口西60米</td></tr>
+<tr><td>⚠️</td><td>头号玩家PS5&amp;Switch主机体验馆(万达金街店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>濮上街道万达金街2楼248号头号玩家主机体验馆</td></tr>
+<tr><td>⚠️</td><td>蓝斧Ps·Switch电玩体验(安居街店)</td><td>电玩城</td><td>独立</td><td>4.1</td><td>安居街与乐业街交叉口万恒美食汇3层</td></tr>
+<tr><td>⚠️</td><td>夹玩站(濮阳万达广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>万达广场2楼2009号</td></tr>
+<tr><td>⚠️</td><td>星空电玩</td><td>电玩城</td><td>独立</td><td>4.1</td><td>北关路与华美路交叉口建业新城1号楼1单元104铺</td></tr>
+<tr><td>⚠️</td><td>LX潮玩街区(汇丰商业广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>正大广场3楼</td></tr>
+<tr><td>⚠️</td><td>西湖体育公园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>纬九支路与开州北路交叉口西40米</td></tr>
+<tr><td>⚠️</td><td>童梦乐园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>尚合健身游泳中心南侧</td></tr>
+<tr><td>⚠️</td><td>阳光宠物乐园(阳光花园店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>安泰路172号</td></tr>
+<tr><td>⚠️</td><td>胖头鱼动漫·游戏厅</td><td>电玩城</td><td>独立</td><td>4.0</td><td>五一路与昆吾路交叉口东北角开州城市综合体龙之光国际中心商业门面房29号楼301号门市房</td></tr>
+<tr><td>⚠️</td><td>潮玩电玩城</td><td>电玩城</td><td>独立</td><td>4.0</td><td>盛庄眼科西南侧120米</td></tr>
+<tr><td>⚠️</td><td>七彩丛林游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>扶余路2号新蕾公园西门口</td></tr>
+<tr><td>⚠️</td><td>激速飞滑游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>黄河路西段中原绿色庄园</td></tr>
+<tr><td>⚠️</td><td>乐淘淘训犬</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>中原路濮瑞路交叉口向东100米路南</td></tr>
+<tr><td>⚠️</td><td>甜萌宠物之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>文化街与板桥路交叉口南50米</td></tr>
+<tr><td>⚠️</td><td>七彩幻想(大丰国际店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>城关镇大丰国际三楼</td></tr>
+<tr><td>⚠️</td><td>佳佳欢乐园</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>五一路与茂名北路交叉口东200米</td></tr>
+</tbody></table></div>
+<p>（另 103 家见 §11 原始数据）</p>
+<h2>5. 综合体与商场（119 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>16</td><td>12</td><td>开州路绿城路交叉口</td></tr>
+<tr><td>✅A-</td><td>建德商业广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>2</td><td>台吴路与金水南路交汇处</td></tr>
+<tr><td>✅A-</td><td>濮阳上亿广场</td><td>购物中心/综合体</td><td>4.7</td><td>3</td><td>9</td><td>红旗路44号</td></tr>
+<tr><td>✅A-</td><td>范县新区商贸城</td><td>百货/商场</td><td>4.7</td><td>1</td><td>4</td><td>259省道附近</td></tr>
+<tr><td>✅A-</td><td>大丰国际商场</td><td>百货/商场</td><td>4.7</td><td>2</td><td>6</td><td>白衣阁乡文化街水利局对面</td></tr>
+<tr><td>✅A-</td><td>二厂商贸城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>1</td><td>028乡道与Z011交叉口东北150米</td></tr>
+<tr><td>✅A-</td><td>万嘉360广场</td><td>百货/商场</td><td>4.7</td><td>10</td><td>16</td><td>黄河路与长庆路交叉口向北100米路东</td></tr>
+<tr><td>✅A-</td><td>万邦·濮阳国际农产品批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>万邦理想蔬菜商行</td></tr>
+<tr><td>✅A-</td><td>丹尼斯百货(长庆中路店)</td><td>购物中心/综合体</td><td>4.6</td><td>15</td><td>17</td><td>任丘路与长庆中路交叉口</td></tr>
+<tr><td>❌</td><td>银街地下商场</td><td>百货/商场</td><td>4.6</td><td>1</td><td>6</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>银座商城(胜利路店)</td><td>百货/商场</td><td>4.6</td><td>2</td><td>7</td><td>京开路与胜利路交叉口银座商城手机大世界</td></tr>
+<tr><td>✅A-</td><td>福嘉百货</td><td>百货/商场</td><td>4.6</td><td>0</td><td>5</td><td>朝阳路139号</td></tr>
+<tr><td>✅A-</td><td>银座商城(京开店)</td><td>百货/商场</td><td>4.6</td><td>2</td><td>7</td><td>胜利路与京开大道东南角</td></tr>
+<tr><td>✅A-</td><td>濮阳义乌国际商贸城</td><td>百货/商场</td><td>4.6</td><td>13</td><td>12</td><td>任丘路与丽都路交汇处</td></tr>
+<tr><td>✅A-</td><td>新城国际商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>3</td><td>2</td><td>一行路与兴华路交叉口西南180米</td></tr>
+<tr><td>✅A-</td><td>新天地购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>6</td><td>兴华路26号</td></tr>
+<tr><td>✅A-</td><td>后王楼家具家电商场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>陆集乡后王楼村12号</td></tr>
+<tr><td>✅A-</td><td>红星美凯龙濮阳枫叶商场</td><td>百货/商场</td><td>4.6</td><td>3</td><td>5</td><td>黄河路与丽都路交叉口西南80米</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(万达广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>17</td><td>12</td><td>濮上街道开州路与绿城路交叉口西南角万达广场负一层</td></tr>
+<tr><td>✅A-</td><td>绿城超市(井下店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>柳屯镇井下俱乐部对面</td></tr>
+<tr><td>✅A-</td><td>百姓量贩(邻里中心店)</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>3</td><td>未来路与健康路交叉口</td></tr>
+<tr><td>✅A-</td><td>小冶家超市上和院店</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>冶都上和院北门</td></tr>
+<tr><td>✅A-</td><td>百姓量贩(中原店)</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>9</td><td>中原中路大庆中路交叉口西南侧约130米路南</td></tr>
+<tr><td>✅A-</td><td>百姓量贩(水秀店)</td><td>购物中心/综合体</td><td>4.6</td><td>18</td><td>13</td><td>开州路与五一路西南角水秀街3号</td></tr>
+<tr><td>✅B</td><td>华龙商业大厦</td><td>购物中心/综合体</td><td>4.5</td><td>6</td><td>7</td><td>大庆中路393号</td></tr>
+<tr><td>✅B</td><td>新天地商业广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>6</td><td>幸福大道与朝阳路交叉口东北80米</td></tr>
+<tr><td>✅B</td><td>新油田商贸城</td><td>百货/商场</td><td>4.5</td><td>2</td><td>2</td><td>任丘路301号</td></tr>
+<tr><td>✅B</td><td>银座商城(大庆路店)</td><td>百货/商场</td><td>4.5</td><td>8</td><td>5</td><td>大庆路与任丘路交汇处东南侧</td></tr>
+<tr><td>✅B</td><td>波头集商贸城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>波头集商贸城十字路口</td></tr>
+<tr><td>✅B</td><td>联华城市广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>京开大道中段银座商城(京开店)</td></tr>
+<tr><td>✅B</td><td>悦尚城百货</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>黄河路长庆路与交叉口西200米</td></tr>
+<tr><td>✅B</td><td>银座商城(濮阳店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>黄河路与长庆路交汇处西南侧</td></tr>
+<tr><td>✅B</td><td>龙城购物中心(茂名路)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>中原东路316号</td></tr>
+<tr><td>✅B</td><td>百姓量贩(东城店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>五一路与东濮路交叉口西220米</td></tr>
+<tr><td>✅B</td><td>百姓量贩五一大卖场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>五一东路</td></tr>
+<tr><td>✅B</td><td>隆祥生活超市(丽康苑店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>黄河路与金堤路交叉口向西150米路北</td></tr>
+<tr><td>✅B</td><td>隆祥超市(滨湖湾店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>开州路与开德路交叉口向西300米路北滨湖湾商业街B1层</td></tr>
+<tr><td>✅B</td><td>东方国贸综合批发市场(东方国贸创业大厦店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>大庆中路177号</td></tr>
+<tr><td>✅B</td><td>万国花卉批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>城关镇濮阳老城</td></tr>
+<tr><td>✅B</td><td>米村拌饭(华龙区丹尼斯百货店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>长庆路街道长庆中路56号丹尼斯百货商场一楼</td></tr>
+<tr><td>✅B</td><td>黑天鹅购物中心</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>人民路与开州路交叉口市文化宫对面</td></tr>
+<tr><td>✅B</td><td>新时代购物广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>杏林街与范水路交叉口东南角新时代购物广场</td></tr>
+<tr><td>✅B</td><td>清丰商贸城</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>东大街与幸福大道交叉路口东侧(城关医院北侧约200米)</td></tr>
+<tr><td>✅B</td><td>亿洲(亿洲·乐活城市广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>人民路与幸福大道交叉口亿洲乐活城市广场F3</td></tr>
+<tr><td>✅B</td><td>百姓量贩(世龙店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>开州中路283号</td></tr>
+<tr><td>✅B</td><td>百姓量贩(添运店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>长庆中路159号</td></tr>
+<tr><td>✅B</td><td>绿城购物广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>人民路与昆吾路交叉口西北角</td></tr>
+<tr><td>✅B</td><td>鼎基时代广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>长庆中路128号</td></tr>
+<tr><td>✅B</td><td>凤凰商城(人民路)</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>人民路与槐荫路交汇处西100米</td></tr>
+<tr><td>✅B</td><td>东风奕派濮阳祥丰锦田路全功能中心</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>106国道与锦田路交叉口西200米路南</td></tr>
+</tbody></table></div>
+<p>（另 69 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（301 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>798餐厅融合菜(振兴路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>67.00</td><td>黄河路与振兴路交义口向北50米路西振兴路18号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8efe10c861847ef060588ddfd1cea389_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>三强鸽子(中心广场店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>85.00</td><td>建设路与开州路交叉口向西50米路南</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100003013_1739771580347_00682787.jpg"></td></tr>
+<tr><td>✅A-</td><td>婆婆凉皮店(富民路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>14.00</td><td>上城公馆南1门东80米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c910ce9b2df65e6d0000004482588388?type=pic"></td></tr>
+<tr><td>✅A-</td><td>春江水·濮阳名菜楼</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>64.00</td><td>黄河路与振兴路交叉口向西150米路南</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/431E5DC9_7AC4_4F56_879C_9E47219F74EF_L0_001_1561_208_1767514433871_06851754.jpg"></td></tr>
+<tr><td>✅A-</td><td>逍遥镇方建伟祖传优质牛肉胡辣汤总店</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.6</td><td>16.00</td><td>石化中路温泉花园31号楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/f80159030aca05278d25458b05d434ac_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A</td><td>东北私房菜(昆吾路)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>49.00</td><td>古城路与昆吾南路交叉口西南30米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/07853400_BA70_46E3_B6E0_4B369A7EDDBC_L0_001_1129_869_1731398390334_39737218.jpg"></td></tr>
+<tr><td>✅A-</td><td>八公桥段智臣壮馍</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>14.00</td><td>038乡道</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_7152_ss__1763270235620_01906629.jpg"></td></tr>
+<tr><td>✅A-</td><td>湘铺湖南大厨拿手菜(翰林苑店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>37.00</td><td>昆吾南路285号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000031669_ss__1770691863176_77138267.jpg"></td></tr>
+<tr><td>✅A-</td><td>九品一堂鱼头泡饼(五一路店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>55.00</td><td>五一路与历山路交叉口东南角路南</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_service__1773377730636_98074762_1773377739191_29548478.jpg"></td></tr>
+<tr><td>✅A-</td><td>湘遇老长沙下饭菜(上亿广场店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>63.00</td><td>城关镇红旗路东段花好月圆临街商铺1号楼09号-10一层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9fcbd10cc80f22a70000008099040859?type=pic"></td></tr>
+<tr><td>✅A-</td><td>鸿泰祥饭吧(颐和银座店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>37.00</td><td>玉门中路57号颐和银座</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/E9307ECB_AC83_401E_B06C_6C82C2548558_L0_001_1179_1528_1742988611345_99425264.jpg"></td></tr>
+<tr><td>✅A-</td><td>鸿雁火锅(营业中)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.6</td><td>62.00</td><td>国庆路(城镇幼儿园西邻)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4f36c3ac5084c995304f1b1625fb661e"></td></tr>
+<tr><td>✅A-</td><td>小万花甲粉烧烤(朝阳路店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>44.00</td><td>朝阳路乐园北门</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1A25F2AA_5105_42D4_8CC3_6982C216BC8A_L0_001_1500_200_1759449236401_73850256.jpg"></td></tr>
+<tr><td>✅A-</td><td>家味道川湘汇(玉门路店)</td><td>餐饮服务;中餐厅;四川菜(川菜)</td><td>4.6</td><td>75.00</td><td>玉门东38号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_64463_ss__1768264412521_55779638.jpg"></td></tr>
+<tr><td>✅A-</td><td>梁库川菜(水景湾店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>68.00</td><td>马颊河西路与南海路桥交叉口西侧</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9a43f5c514752b307b41712c9baf5f09"></td></tr>
+<tr><td>✅A-</td><td>老城烽火壮馍</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>40.00</td><td>龙苑路建业新城南门西侧50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100010655_1772865951004_92563823.jpg"></td></tr>
+<tr><td>✅A-</td><td>华豫羊肉馆(阳光花苑店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>55.00</td><td>清华园西门南70米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/79b31a3864d112f50000002201594994?type=pic"></td></tr>
+<tr><td>✅A-</td><td>辛蓉记川菜(茂名路店)</td><td>餐饮服务;中餐厅;四川菜(川菜)</td><td>4.6</td><td>55.00</td><td>苏北路与茂名路交叉口向北50米路东</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1fb4634436e53cf1f054db781c82883f"></td></tr>
+<tr><td>✅A-</td><td>三强鸽子(万达店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>88.00</td><td>开州路与尚和路交叉口北路东(万达2号门马路对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_7233_1764221948406_68709747.jpg"></td></tr>
+<tr><td>✅A-</td><td>濮城名吃(刘坑老店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>58.00</td><td>河南省濮阳市华龙区开州路84号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a5526018ffa9694dd6c4c342416e7991_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>三强鸽子(安居街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>70.00</td><td>咖啡时光西北门西北60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ba2765b9d1fffd110000000981504471?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老李记美食饭庄(古城路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>44.00</td><td>古城路295号(长兴集团第三生活区北门西80米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_350139_ss__1731197182993_56908697.jpg"></td></tr>
+<tr><td>✅A-</td><td>四川菜馆(碧水云天店)</td><td>餐饮服务;中餐厅;四川菜(川菜)</td><td>4.6</td><td>45.00</td><td>黄河东路847号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/26CA55CF_625D_4DBD_9271_90AEF3A1DD62_L0_001_1151_1570_1734497745456_99651474.jpg"></td></tr>
+<tr><td>✅A-</td><td>黄记平锅鱼(中原乙烯生活区店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>36.00</td><td>乙烯生活区一区车棚三号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000292052_ss__1748142395973_10414196.jpg"></td></tr>
+<tr><td>✅A-</td><td>瑞璞庄园</td><td>体育休闲服务;休闲场所;休闲场所</td><td>4.6</td><td>—</td><td>濮上路与站前路交叉口向西200米路南1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100010663_1772869271109_96944487.jpg"></td></tr>
+<tr><td>✅A-</td><td>祥的王记壮馍</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>16.00</td><td>颐和明珠北门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/C55569D4_A20C_4A9F_AC42_9EDA5ABF9EDF_L0_001_2016_151_1746657358482_03614488.jpg"></td></tr>
+<tr><td>✅A-</td><td>三强鸽子(胜利路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>78.00</td><td>胜利东路与帝丘路口东50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/84101e4ffec86f6aff979a69e990f1f3_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>东来顺饭庄(建设中路店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.6</td><td>112.00</td><td>京开路与建设路口西北角东来顺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/D5DE6B76_7F26_48AB_ADC0_871600C8EE89_L0_001_1440_92_1764237176440_12819832.jpg"></td></tr>
+<tr><td>✅A-</td><td>朱家棒棒鸡(老城店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>9.00</td><td>槐荫路与新华街交叉口东北角(老城店)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100005050_1766182081018_38896856.jpg"></td></tr>
+<tr><td>✅A-</td><td>自强饭店(胜利东路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>61.00</td><td>公园南路8号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100004589_1755182158030_86272105.jpg"></td></tr>
+<tr><td>✅A-</td><td>老盖牛肉汤(政和二路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>12.00</td><td>政和二路46号老盖牛肉汤</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/173079711462_1730797126291_48210674.jpg"></td></tr>
+<tr><td>✅A-</td><td>范县老七羊肉汤(总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>19.00</td><td>开州中路138号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000009978_ss__1764329720269_35808339.jpg"></td></tr>
+<tr><td>✅A-</td><td>胖民烩面(行理路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>34.00</td><td>孙庄北区南门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260305-e1bb127a2843beeb8864c087-3F2Lc8ECTLr70rtOxt1PxD.jpg"></td></tr>
+<tr><td>❌</td><td>瑾妈妈韩式大排档(安居街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>85.00</td><td>[]</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_service__1770526616235_70685672_1770526621004_01755805.jpg"></td></tr>
+<tr><td>✅A-</td><td>老家水饺濮阳菜(开发区店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>49.00</td><td>中原路与濮上路交叉口向南200路南莜面村</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/C51532A5_BBCE_4D54_BB6D_7D2DE357DAA1_L0_001_1438_92_1757237286125_42314769.jpg"></td></tr>
+<tr><td>✅A-</td><td>麦当劳(濮阳黄河路得来速餐厅)</td><td>餐饮服务;快餐厅;麦当劳</td><td>4.6</td><td>27.00</td><td>黄河路与长庆路交叉口昆濮时代广场1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4503dfda207e9b930000003208190421?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老家水饺濮阳菜(昆吾路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>38.00</td><td>建设中路333号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1902b276151a00040000002483382828?type=pic"></td></tr>
+<tr><td>✅A-</td><td>平顶山老宋麻辣烫</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>12.00</td><td>振兴路与胜利路交叉口中青网络家园旁边</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/EE45BA7A_7D86_4132_8619_2B43C827F84B_L0_001_1440_174_1762302041840_21342457.jpg"></td></tr>
+<tr><td>✅A-</td><td>老家水饺濮阳菜(中原路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>31.00</td><td>中原中路181号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/48F51D1D_1ED0_4663_8C05_8D40EF697C73_L0_001_1179_155_1757488073306_15191909.jpg"></td></tr>
+<tr><td>✅A-</td><td>麦当劳(濮阳麦当劳龙之光万达广场餐厅)</td><td>餐饮服务;快餐厅;麦当劳</td><td>4.6</td><td>23.00</td><td>开州路与绿城路交叉口</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d97b18ba8fb909fa19feff0d1db83b4e_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>赵家羊汤馆(光明路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>14.00</td><td>光明路北路227号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/05696f2cfc6ef9940000005501956375?type=pic"></td></tr>
+<tr><td>✅A-</td><td>肯德基(春天店)</td><td>餐饮服务;快餐厅;肯德基</td><td>4.6</td><td>29.00</td><td>任丘路九鼎街交叉口(大庆路银座商城一楼)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/62e8c0ce15bcc103e31e666dae763967"></td></tr>
+<tr><td>✅A</td><td>正宗一机厂二楼凉皮20年老店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>10.00</td><td>黄埔街北一机厂12号楼2层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/adf79db13791ad7a0000007350690931?type=pic"></td></tr>
+<tr><td>✅A-</td><td>邢家胡辣汤豆腐脑(泰和花园南区店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>50.00</td><td>安泰路泰和花园门口往东50米22-10门市房</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b4f4e9fcfd7733490000007515074100?type=pic"></td></tr>
+<tr><td>✅A-</td><td>采油院燃面馆</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>20.00</td><td>友谊路附近</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100011930_1768908697310_64065269.jpg"></td></tr>
+<tr><td>✅A-</td><td>稻万家八宝粥(龙湖澜岸店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>21.00</td><td>濮东街道苏北路与新东路交叉口龙湖澜岸9号1楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100001842_1732860980185_65489275.jpg"></td></tr>
+<tr><td>✅A-</td><td>昌乐宴匠心菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>39.00</td><td>一行路天玺一品东门南侧</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bbffa6e44d44ce6b0000000963100108?type=pic"></td></tr>
+<tr><td>✅A</td><td>胡掌柜私房菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>54.00</td><td>华美路109号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/cb3f2e879bd5481f0000003296086682?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老家私厨(胜利路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>39.00</td><td>胜利路东段365号路南(燃气管理处对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/adb9d324c7e10fbd89d445b5f822ef8e"></td></tr>
+<tr><td>✅B</td><td>传统刘家驴肉</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>39.00</td><td>濮上路与站前路交叉口南300米路西</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6bc540b1f0bc1f140000003113414582?type=pic"></td></tr>
+<tr><td>✅B</td><td>濮阳开州国际会馆</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>—</td><td>人民路1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0bc264a40b23841d0000002745290527?type=pic"></td></tr>
+<tr><td>✅B</td><td>开德府焖黄河大鲤鱼</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>—</td><td>濮上中路241号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b08d670db841cdb137e2ddc6158cb654_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>杨氏凉皮老店(清真)</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.5</td><td>14.00</td><td>建新路南段路东</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9e8ecbe70c3f68040000003046080565?type=pic"></td></tr>
+<tr><td>✅B</td><td>濮阳第一凉皮店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>9.00</td><td>濮阳县第三中学东50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2369DD34_DEEB_4A93_B1F4_F589F9C7A663_L0_001_1500_200_1755185471894_44272526.jpg"></td></tr>
+<tr><td>✅B</td><td>老李记(总站店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>77.00</td><td>大庆中路349号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3AD992CC_BD8D_4775_885F_B7990FCC35C7_L0_001_1290_90_1766546409372_89777429.jpg"></td></tr>
+<tr><td>✅B</td><td>蔡家羊肉炖白菜</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.5</td><td>41.00</td><td>濮城镇西环一矿铁道口北路东</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000045615_ss__1770536232416_86527662.jpg"></td></tr>
+<tr><td>✅B</td><td>清真薛家米皮老店(建新路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>16.00</td><td>建新路与大众路交叉口南180米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/40e88c4cb6f344108ff48afc4dc64cdd"></td></tr>
+<tr><td>✅B</td><td>炒鸡小馆(安康路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>34.00</td><td>开州街道安康路13号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4cf4ff653ded686a0000002253708343?type=pic"></td></tr>
+<tr><td>✅B</td><td>茂源饭庄(南乐县韩张镇卫生院东)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>57.00</td><td>韩张镇农业银行西邻</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e798ac8897c3e501204697ca9c95a1ee"></td></tr>
+<tr><td>✅B</td><td>濮阳第一湘菜馆</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>38.00</td><td>家福小区东北门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4771b913fffa0dcb4daff8ed904c6f12_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>银河酒楼·家湘情</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>42.00</td><td>黄河东路北402号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000273081_ss__1764991125278_90807075.jpg"></td></tr>
+<tr><td>✅B</td><td>湖南湘菜(华创首府东北)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>65.00</td><td>政通大道72号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/88e525d455c3dbc74db283745aef9c4e"></td></tr>
+<tr><td>✅B</td><td>湘遇老长沙下饭菜(振兴路店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>39.00</td><td>振兴路177号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4b9eb997c71208fdef83ad485198fd3a_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>澶州苑·土家湘菜</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>43.00</td><td>梧桐树</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/52b92e3e986bc8f6a4ca99483862ef7e_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>湖南毛家大碗菜·湘菜馆(壹号城邦店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>42.00</td><td>濮上街道中原路与兴濮路交叉口向北50米路东</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100006787_1728737084222_56077168.jpg"></td></tr>
+<tr><td>✅B</td><td>湘遇老长沙下饭菜(天街店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>47.00</td><td>碧水云天北2门西北60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000081588_ss__1762933275145_67421746.jpg"></td></tr>
+<tr><td>✅B</td><td>嫂子水饺(大庆中路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>25.00</td><td>大庆中路358号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/691e14a87946a94a1d6a708afbd2c1d2"></td></tr>
+<tr><td>✅B</td><td>汉俪轩自助烤肉(中心广场店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>47.00</td><td>开州路黑天鹅购物中心3层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d7eea5fd30aebd120000003079594918?type=pic"></td></tr>
+<tr><td>✅B</td><td>濮阳第一烩面馆(老城店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>35.00</td><td>红旗路34号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7c3ca337-6602-4975-878a-b54f1fe1aec4.png"></td></tr>
+<tr><td>✅B</td><td>聚福大酒店</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>—</td><td>柳屯镇小集村</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/F5E91F70_DB3F_48FD_8B35_9214497C5D17_L0_001_2000_1500__1661910900045_812af09d.jpg"></td></tr>
+<tr><td>✅B</td><td>七保安驴肉馆</td><td>餐饮服务;中餐厅;火锅店/餐饮服务;中餐厅;综合酒楼/餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>40.00</td><td>209省道东侧</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/fe3401eb0d21cb2dfbd4e1a093c93d61"></td></tr>
+<tr><td>✅B</td><td>花园酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>长庆北路3号花园酒店</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c91483586835e23f56f0ce341056cab9"></td></tr>
+<tr><td>✅B</td><td>鸽子楼(体育路)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>—</td><td>体育路与帝丘路交汇处南20米路东</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ecf778199dd6b2fe0000003967122838?type=pic"></td></tr>
+<tr><td>✅B</td><td>渠村鱼汤馆(建设路店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>58.00</td><td>古城路263号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7eb23ae3112776a20000002219794833?type=pic"></td></tr>
+<tr><td>✅B</td><td>钱小久·沸腾水煮鱼家常菜(振兴路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>55.00</td><td>振兴中路与黄河路交叉口向北100米路西188号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/DE2A1D0E_E26C_4DC8_91F7_21004EA1003F_L0_001_1080_162_1757153451247_01402279.jpg"></td></tr>
+<tr><td>✅B</td><td>方中山胡辣汤(恒丰花园店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.5</td><td>16.00</td><td>恒丰广场外围</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7ebac8d82d2b96040000002702150980?type=pic"></td></tr>
+<tr><td>✅B</td><td>储味花园餐厅</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>54.00</td><td>任丘路与大庆中路交叉口东南120米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7305621D_5FA0_4ADA_9706_53854C5BBA85_L0_001_2016_151_1764917534634_85640787.jpg"></td></tr>
+<tr><td>✅B</td><td>董小二 烩面烧烤(油田公安局店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>29.00</td><td>五一路与大庆路交叉口东行100米路南(油田公安局对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5e5e21bc1253496d951d5a424e733d57_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>明月麻辣香锅(五一路总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>29.00</td><td>中原油田街道五一东路399号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b65b5ea8c657f2abc27e87df33e14ae3_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>金涛小海鲜(濮阳店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>121.00</td><td>昆吾中路14号华庭丽景小区</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/752c9b372352899f0000001991850293?type=pic"></td></tr>
+</tbody></table></div>
+<p>（另 221 家见 §11 原始数据，评分排序后 80 名未列入）</p>
+<h2>7. 苍蝇馆 / 小店候选（32 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>东北私房菜(昆吾路)</td><td>店名小店语义</td><td>4.6</td><td>49.00</td><td>古城路与昆吾南路交叉口西南30米</td><td></td></tr>
+<tr><td>瑾妈妈韩式大排档(安居街店)</td><td>店名小店语义</td><td>4.6</td><td>85.00</td><td>[]</td><td></td></tr>
+<tr><td>胡掌柜私房菜</td><td>店名小店语义</td><td>4.6</td><td>54.00</td><td>华美路109号</td><td></td></tr>
+<tr><td>炒鸡小馆(安康路店)</td><td>店名小店语义</td><td>4.5</td><td>34.00</td><td>开州街道安康路13号</td><td></td></tr>
+<tr><td>钱小久·沸腾水煮鱼家常菜(振兴路店)</td><td>店名小店语义</td><td>4.5</td><td>55.00</td><td>振兴中路与黄河路交叉口向北100米路西188号</td><td></td></tr>
+<tr><td>王老三烧烤大排档(国庆路店)</td><td>店名小店语义</td><td>4.5</td><td>38.00</td><td>国庆路与建新路交叉口东北100米</td><td></td></tr>
+<tr><td>明洞阿姨·韩式酱蟹烤肉大排档(濮阳店)</td><td>店名小店语义</td><td>4.5</td><td>94.00</td><td>任丘路与文明路交叉口向东100米路北</td><td></td></tr>
+<tr><td>濮阳老厂大排档</td><td>店名小店语义</td><td>4.5</td><td>22.00</td><td>濮水路与昌盛路交叉口东北角50米</td><td></td></tr>
+<tr><td>王记烧烤大排档(兴濮路店)</td><td>店名小店语义</td><td>4.5</td><td>27.00</td><td>兴濮路(建业一号城邦三期项目东北侧约50米)</td><td></td></tr>
+<tr><td>张家老院子东北私房菜</td><td>店名小店语义</td><td>4.5</td><td>29.00</td><td>胜利东路东463号</td><td></td></tr>
+<tr><td>牛馆私房菜(历山路总店)</td><td>店名小店语义</td><td>4.5</td><td>28.00</td><td>中原路与历山路交叉口向北50米路西</td><td></td></tr>
+<tr><td>谷养元八宝粥家常菜(南乐店)</td><td>店名小店语义</td><td>4.4</td><td>25.00</td><td>昌州西路</td><td></td></tr>
+<tr><td>八戒烧烤大排档</td><td>店名小店语义</td><td>4.4</td><td>—</td><td>中原路东段安厦小区对面</td><td></td></tr>
+<tr><td>魏家烧烤大排档(文化路店)</td><td>店名小店语义</td><td>4.4</td><td>40.00</td><td>黄河路195号</td><td></td></tr>
+<tr><td>青岛海鲜大排档(胜利小区店)</td><td>店名小店语义</td><td>4.4</td><td>10.00</td><td>胜利小区东区</td><td></td></tr>
+<tr><td>小南同学烧烤大排档</td><td>店名小店语义</td><td>4.4</td><td>—</td><td>清丰县幸福大道经理部家属院门口</td><td></td></tr>
+<tr><td>阿旺大排档</td><td>店名小店语义</td><td>4.4</td><td>—</td><td>红灯笼大排档东侧</td><td></td></tr>
+<tr><td>东北家常菜</td><td>店名小店语义</td><td>4.4</td><td>19.00</td><td>开元南路360号</td><td></td></tr>
+<tr><td>农家餐馆(中原路店)</td><td>店名小店语义</td><td>4.3</td><td>50.00</td><td>城关镇中原西路路南</td><td></td></tr>
+<tr><td>名爷·活虾小馆</td><td>店名小店语义</td><td>4.3</td><td>47.00</td><td>京开大道与黄河路交叉口西南角</td><td></td></tr>
+<tr><td>谷养元八宝粥家常菜(台前店)</td><td>店名小店语义</td><td>4.3</td><td>25.00</td><td>民生路18号(龙鼎御园东门北50米)</td><td></td></tr>
+<tr><td>禾鲜记海鲜家常菜</td><td>店名小店语义</td><td>4.2</td><td>15.00</td><td>新台·尚品春天东北门南160米</td><td></td></tr>
+<tr><td>二雷大排档(张海村店)</td><td>店名小店语义</td><td>4.2</td><td>29.00</td><td>建设路张海村</td><td></td></tr>
+<tr><td>二强大排档</td><td>店名小店语义</td><td>4.1</td><td>61.00</td><td>范水路与杏林街交叉口东60米</td><td></td></tr>
+<tr><td>双福纪侯庙大排档</td><td>店名小店语义</td><td>4.1</td><td>—</td><td>候庙市场监督管理所西南侧50米</td><td></td></tr>
+<tr><td>小伟烧烤大排档(银河花都店)</td><td>店名小店语义</td><td>4.1</td><td>79.00</td><td>银河花都</td><td></td></tr>
+<tr><td>楼下大排档</td><td>店名小店语义</td><td>3.9</td><td>—</td><td>昆吾中路61号</td><td></td></tr>
+<tr><td>刘一烤烧烤大排档</td><td>店名小店语义</td><td>3.8</td><td>26.00</td><td>台前县孙口镇凤翔大道129号</td><td></td></tr>
+<tr><td>上岛·徐州超级大排档(历山路店)</td><td>店名小店语义</td><td>3.8</td><td>29.00</td><td>建苑商务中心</td><td></td></tr>
+<tr><td>西湖大排档</td><td>店名小店语义</td><td>3.7</td><td>—</td><td>一行路与傅潭路交叉口南100米</td><td></td></tr>
+<tr><td>安澜夜市大排档</td><td>店名小店语义</td><td>2.9</td><td>—</td><td>帝舜大道168号安澜小镇凤栖府</td><td>评分 2.9 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>大排档夜市</td><td>店名小店语义</td><td>2.9</td><td>16.00</td><td>春晖路与黄河路交叉口西南20米</td><td>评分 2.9 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（40 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>茂家状元红·河南特产总汇(京开大道店)</td><td>购物服务;专卖店;烟酒专卖店</td><td>4.5</td><td>京开大道与古城路交叉口路东茂家状元红右侧</td></tr>
+<tr><td>✅B</td><td>隆源名酒特产专卖(九天城店)</td><td>购物服务;专卖店;烟酒专卖店</td><td>4.3</td><td>南海路九天城南门</td></tr>
+<tr><td>✅B</td><td>静虹烟酒 濮阳特产</td><td>购物服务;专卖店;烟酒专卖店</td><td>4.3</td><td>户部寨镇兴濮路17号</td></tr>
+<tr><td>⚠️</td><td>王称堌李老二糟鱼</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.0</td><td>l濮阳县王称固卫生院南一百五十米</td></tr>
+<tr><td>⚠️</td><td>龙乡特产(旗舰店)</td><td>购物服务;专卖店;专营店</td><td>4.0</td><td>建设中路224号</td></tr>
+<tr><td>⚠️</td><td>中礼土特产(海韵店)</td><td>购物服务;专卖店;专营店</td><td>4.0</td><td>杏坛路66号海韵世纪公园A区A103-104号</td></tr>
+<tr><td>⚠️</td><td>山西特产平遥牛肉(振兴中路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.0</td><td>振兴中路与边拐街交叉口西北40米</td></tr>
+<tr><td>⚠️</td><td>濮阳农副产品展销中心特产馆</td><td>购物服务;综合市场;农副产品市场</td><td>3.9</td><td>黄河中路与骏中巷交叉口东北140米</td></tr>
+<tr><td>⚠️</td><td>河南农副产品帮扶供销中心绿色土特产超市</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.9</td><td>石化中路与濮上中路交叉口东南140米</td></tr>
+<tr><td>⚠️</td><td>鹏源酒城河南特产总汇(建设中路店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.9</td><td>建设路 226 号</td></tr>
+<tr><td>⚠️</td><td>范县特产专卖(德政园店)</td><td>购物服务;专卖店;专营店</td><td>3.9</td><td>德政街西段路北</td></tr>
+<tr><td>⚠️</td><td>河南特产礼品馆</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.9</td><td>开州北路51号</td></tr>
+<tr><td>⚠️</td><td>南乐县龙乡特产店</td><td>购物服务;专卖店;专营店</td><td>3.8</td><td>昌州路24号</td></tr>
+<tr><td>⚠️</td><td>濮阳特产</td><td>购物服务;专卖店;专营店</td><td>3.8</td><td>古城路225号</td></tr>
+<tr><td>⚠️</td><td>范县特产(马桥分店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.8</td><td>市民公园西南角</td></tr>
+<tr><td>⚠️</td><td>来只麻椒鸡濮阳特产渠村黑牛肉龙升佳苑3期店</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.8</td><td>龙升佳苑三期北门西100米</td></tr>
+<tr><td>⚠️</td><td>润丰副食(临期食品折扣店)</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.7</td><td>三实小向西200路南</td></tr>
+<tr><td>⚠️</td><td>范县特产稻鳅大米(马桥店)</td><td>购物服务;综合市场;农副产品市场</td><td>3.7</td><td>342国道与240国道交叉口西160米</td></tr>
+<tr><td>⚠️</td><td>新奇特特产馆</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>振兴北路87号</td></tr>
+<tr><td>⚠️</td><td>助农展销中心河南土特产超市</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>胜利路综合楼北门139号</td></tr>
+<tr><td>⚠️</td><td>向阳桥东北特产超市</td><td>购物服务;综合市场;农副产品市场/购物服务;专卖店;专营店</td><td>3.7</td><td>惠民路与公园南路交汇处西北</td></tr>
+<tr><td>⚠️</td><td>冯氏新疆特产(贵州筑春酒)</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>长庆路街道黄河路玉门路交叉口往南50米路西202号</td></tr>
+<tr><td>⚠️</td><td>超越副食商场(任丘路店)</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.6</td><td>任丘路307号</td></tr>
+<tr><td>⚠️</td><td>濮阳特产耗辣椒</td><td>购物服务;专卖店;专营店</td><td>3.6</td><td>国庆路与北街交叉口西60米</td></tr>
+<tr><td>⚠️</td><td>道德金特产(不夜城店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.6</td><td>光明北路与育才路交叉口南80米</td></tr>
+<tr><td>⚠️</td><td>豫新米业范县大米特产店</td><td>购物服务;综合市场;农副产品市场</td><td>3.6</td><td>208省道东50米</td></tr>
+<tr><td>⚠️</td><td>桃园建民地方特产副食</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.6</td><td>东西大街与凤鸣路交叉口西北20米</td></tr>
+<tr><td>⚠️</td><td>清丰特产(四合楼店)</td><td>购物服务;专卖店;专营店</td><td>3.6</td><td>政通大道与黄河路交叉口南100米清丰教育局对面</td></tr>
+<tr><td>⚠️</td><td>新兴土产门市部</td><td>购物服务;专卖店;土特产专卖店</td><td>3.5</td><td>开元路南段319号</td></tr>
+<tr><td>⚠️</td><td>颐家·北大荒绿色食品连锁专卖(濮阳店)</td><td>购物服务;专卖店;土特产专卖店/购物服务;综合市场;农副产品市场</td><td>3.5</td><td>江汉路九天城北门东五十米路南</td></tr>
+<tr><td>⚠️</td><td>河南特产滋补养生礼品</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.5</td><td>开州南路与德胜街交叉口北80米</td></tr>
+<tr><td>❌</td><td>中礼土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.4</td><td>盛世兰亭东门北140米</td></tr>
+<tr><td>❌</td><td>台前特产(台前消费扶贫馆)</td><td>购物服务;专卖店;土特产专卖店/购物服务;专卖店;烟酒专卖店</td><td>3.4</td><td>孙口镇经六路与纬七路交叉口西北角6号</td></tr>
+<tr><td>❌</td><td>特产干果店</td><td>购物服务;综合市场;果品市场</td><td>3.3</td><td>板桥路与怡苑路交叉口西100米</td></tr>
+<tr><td>❌</td><td>名烟名酒名茶土特产(开元南路店)</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.2</td><td>开元南路186号</td></tr>
+<tr><td>❌</td><td>新疆特产干果(原建新路口店)</td><td>购物服务;专卖店;礼品饰品店</td><td>3.2</td><td>清风苑东北门旁</td></tr>
+<tr><td>❌</td><td>土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.1</td><td>县城昌州路西段路北230号</td></tr>
+<tr><td>❌</td><td>东北特产(翰林世家店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.1</td><td>翰林世家开元路东门旁</td></tr>
+<tr><td>❌</td><td>德利鲜肉店</td><td>购物服务;综合市场;农副产品市场</td><td>3.1</td><td>清丰大道与通达路交叉口西北260米</td></tr>
+<tr><td>❌</td><td>山海关老酱铺</td><td>购物服务;综合市场;农副产品市场</td><td>3.0</td><td>中原路120号</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>万达广场（47 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>阿香米线(濮阳经开万达餐厅)</td><td>名称互证</td><td>0m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>米村拌饭(濮阳万达广场店)</td><td>名称互证</td><td>30m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>米村拌饭(濮阳万达广场店)</td><td>名称互证</td><td>30m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>大玩家(万达广场店)</td><td>名称互证</td><td>34m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>大玩家(万达广场店)</td><td>名称互证</td><td>34m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>濮阳海洋世界·球幕影院</td><td>名称互证</td><td>34m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>兰湘子·湘菜小炒(濮阳万达店)</td><td>名称互证</td><td>44m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>虎丫炒鸡(河南濮阳华龙万达店)</td><td>名称互证</td><td>44m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>乐人码头球幕悬空飞行影院(濮阳万达店)</td><td>名称互证</td><td>45m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>姐弟俩土豆粉(濮阳华龙万达店)</td><td>名称互证</td><td>46m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>夹玩站(濮阳万达广场店)</td><td>名称互证</td><td>54m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>夹玩站(濮阳万达广场店)</td><td>名称互证</td><td>54m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麦当劳(濮阳麦当劳龙之光万达广场餐厅)</td><td>名称互证</td><td>60m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>濮阳海底两万里·球幕影院</td><td>名称互证</td><td>69m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>奥悠悠家庭互动中心(濮阳万达店)</td><td>名称互证</td><td>69m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>特别演绎超级密室·恐怖馆(万达二店)</td><td>名称互证</td><td>79m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达影城(濮阳万达广场店)</td><td>名称互证</td><td>84m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>头号玩家PS5&amp;Switch主机体验馆(万达金街店)</td><td>距离就近</td><td>90m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>头号玩家PS5&amp;Switch主机体验馆(万达金街店)</td><td>距离就近</td><td>90m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>智游·真人NPC密室(万达店)</td><td>距离就近</td><td>94m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>必胜客(濮阳万达店)</td><td>名称互证</td><td>96m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达宝贝王(万达广场店)</td><td>名称互证</td><td>104m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>欢聚SHOW KTV(万达店)</td><td>名称互证</td><td>104m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>花宝街石锅鸡公煲(华龙区万达广场店)</td><td>名称互证</td><td>106m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>趣游娱乐电玩城</td><td>距离就近</td><td>125m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>柏维轻居酒店(建设路濮阳市中心广场店)（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>柏维轻居酒店(建设路濮阳市中心广场店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>东来顺饭庄(建设中路店)</td><td>距离就近</td><td>41m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>新尚胡辣汤(濮阳市烟草专卖局家属楼店)</td><td>距离就近</td><td>61m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>红磨坊(盟城店)</td><td>距离就近</td><td>354m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>濮阳开州国际会馆</td><td>距离就近</td><td>369m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>濮阳开州国际会馆</td><td>距离就近</td><td>369m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>重庆王火锅(建设路店)</td><td>距离就近</td><td>406m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>濮阳开州客栈</td><td>距离就近</td><td>480m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>慢时光棋牌·24小时营业</td><td>距离就近</td><td>516m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>臻享住·京龙国际酒店</td><td>距离就近</td><td>563m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>泽世源大酒店</td><td>距离就近</td><td>588m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>三强鸽子(中心广场店)（33 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>三强鸽子(中心广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>二雷大排档(张海村店)</td><td>距离就近</td><td>156m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>童话KTV(建设路店)</td><td>距离就近</td><td>207m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>大赢家休闲棋牌</td><td>距离就近</td><td>237m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>小清欢·造物社棋牌</td><td>距离就近</td><td>249m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雀圣棋牌室</td><td>距离就近</td><td>264m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>侯记砂锅(金融街店)</td><td>距离就近</td><td>266m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>渠村鱼汤馆(建设路店)</td><td>距离就近</td><td>269m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>濮阳五洲宾馆</td><td>距离就近</td><td>276m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>汉俪轩自助烤肉(中心广场店)</td><td>距离就近</td><td>351m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>蜻蜓宇宙主机游戏体验馆</td><td>距离就近</td><td>370m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>阿利茄汁面(开州中路店)</td><td>距离就近</td><td>378m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>老李记美食饭庄(古城路店)</td><td>距离就近</td><td>381m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>8090真人密室逃脱(中心广场店)</td><td>距离就近</td><td>391m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>张记自选式冒菜王</td><td>距离就近</td><td>407m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>老家水饺濮阳菜(昆吾路店)</td><td>距离就近</td><td>418m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>肯德基(中心广场店)</td><td>距离就近</td><td>418m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星雀棋牌</td><td>距离就近</td><td>426m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>123湘菜馆</td><td>距离就近</td><td>433m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>濮阳市悦享酒馆</td><td>距离就近</td><td>436m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>王由里格外香大盘鸡(濮阳市第一分店)</td><td>距离就近</td><td>448m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>育禾棋牌俱乐部</td><td>距离就近</td><td>451m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>汉堡王(濮阳铜锣湾广场)</td><td>距离就近</td><td>478m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>柒七棋牌俱乐部</td><td>距离就近</td><td>489m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>趣玩PS电玩体验店</td><td>距离就近</td><td>512m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>水秀街（44 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>吉吉王国游乐园</td><td>名称互证</td><td>48m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>星悦乐玩城</td><td>距离就近</td><td>50m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星悦乐玩城</td><td>距离就近</td><td>50m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>特别演绎超级密室(水秀街店)</td><td>名称互证</td><td>62m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>几许民谣烧烤酒馆(濮阳水秀街店)</td><td>名称互证</td><td>99m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>卓越梦幻乐园(水秀街店)</td><td>名称互证</td><td>102m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>欢乐多游乐园</td><td>名称互证</td><td>125m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>超越电竞(水秀街店)</td><td>名称互证</td><td>172m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>支云主机游戏体验馆</td><td>距离就近</td><td>208m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>支云主机游戏体验馆</td><td>距离就近</td><td>208m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>水秀国际影城(水秀国际大剧院店)</td><td>距离就近</td><td>226m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>IN99CLUB</td><td>距离就近</td><td>248m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>胖头鱼动漫·游戏厅</td><td>距离就近</td><td>403m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>胖头鱼动漫·游戏厅</td><td>距离就近</td><td>403m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>秋野原电玩(万达店)</td><td>距离就近</td><td>407m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>秋野原电玩(万达店)</td><td>距离就近</td><td>407m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>OT-PARTY·KTV(万达店)</td><td>距离就近</td><td>447m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>乐逍遥潮玩</td><td>距离就近</td><td>450m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乐逍遥潮玩</td><td>距离就近</td><td>450m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>少儿体能游乐园</td><td>距离就近</td><td>458m</td><td>0.9</td><td>§11</td></tr>
+<tr><td>趣游娱乐电玩城</td><td>距离就近</td><td>465m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>趣游娱乐电玩城</td><td>距离就近</td><td>465m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>欢聚SHOW KTV(万达店)</td><td>距离就近</td><td>467m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(濮阳万达店)</td><td>距离就近</td><td>473m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>澶州苑·土家湘菜</td><td>距离就近</td><td>476m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>建德商业广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>花宝街石锅鸡公煲(河南濮阳台前县建德商业广场店)</td><td>名称互证</td><td>15m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>七彩幻想娱乐空间(建德广场店)</td><td>名称互证</td><td>33m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>刘一烤烧烤大排档</td><td>距离就近</td><td>530m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>濮阳上亿广场（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星漫娱乐城</td><td>名称互证</td><td>3m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>月初酒馆</td><td>名称互证</td><td>70m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>蛮牛酒馆(上亿广场店)</td><td>距离就近</td><td>75m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>狂欢套圈圈</td><td>名称互证</td><td>88m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>塔斯汀中国汉堡(濮阳县上亿广场店)</td><td>距离就近</td><td>94m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>嘟嘟的游戏搭子(上亿广场店)</td><td>距离就近</td><td>97m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(濮阳上亿广场店)</td><td>名称互证</td><td>108m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>上亿国际影城(上亿广场店)</td><td>名称互证</td><td>123m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>上亿广场夜市街(濮阳上亿广场店)</td><td>名称互证</td><td>166m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>濮阳第一烩面馆(老城店)</td><td>距离就近</td><td>187m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>湘遇老长沙下饭菜(上亿广场店)</td><td>距离就近</td><td>189m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>方中山胡辣汤(濮阳县恒大店)</td><td>距离就近</td><td>484m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>杨氏凉皮老店(清真)</td><td>距离就近</td><td>501m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>濮阳第一凉皮店</td><td>距离就近</td><td>528m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>清真薛家米皮老店(建新路店)</td><td>距离就近</td><td>589m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>范县新区商贸城（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>武家烧鸡店(中原路)</td><td>距离就近</td><td>280m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>古城水饺</td><td>距离就近</td><td>426m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>喜客来酒店</td><td>距离就近</td><td>439m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>七彩幻想(大丰国际店)</td><td>距离就近</td><td>443m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>老三烧烤</td><td>距离就近</td><td>525m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>爱啤士国民精酿(文体馆店)</td><td>距离就近</td><td>596m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大丰国际商场（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>七彩幻想(大丰国际店)</td><td>距离就近</td><td>53m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>古城水饺</td><td>距离就近</td><td>99m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>爱啤士国民精酿(文体馆店)</td><td>距离就近</td><td>177m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>花宝街石锅鸡公煲(新区大丰店)</td><td>距离就近</td><td>188m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>萌宠之家宠物美容生活馆</td><td>距离就近</td><td>231m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>喜客来酒店</td><td>距离就近</td><td>251m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>老三烧烤</td><td>距离就近</td><td>399m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>华豫羊肉馆(阳光花苑店)</td><td>距离就近</td><td>406m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>武家烧鸡店(中原路)</td><td>距离就近</td><td>537m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>二厂商贸城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>花宝街石锅鸡公煲(范县濮城镇店)</td><td>距离就近</td><td>353m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万嘉360广场（42 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>虎丫炒鸡(河南濮阳华龙万嘉360店)</td><td>名称互证</td><td>0m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>朴大叔拌饭</td><td>名称互证</td><td>17m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>万嘉好莱坞国际影城(万嘉360广场店)</td><td>名称互证</td><td>24m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>奥悠悠家庭互动中心</td><td>名称互证</td><td>33m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>逗梦园沉浸式儿童探索乐园</td><td>名称互证</td><td>49m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>考拉大冒险儿童乐园(万嘉360广场店)</td><td>名称互证</td><td>55m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>谷太初の弹珠堂(濮阳万嘉店)</td><td>名称互证</td><td>56m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>麦当劳(濮阳黄河路得来速餐厅)</td><td>距离就近</td><td>196m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>瑾妈妈韩式大排档(安居街店)</td><td>距离就近</td><td>214m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>银河酒楼·家湘情</td><td>距离就近</td><td>217m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>三强鸽子(安居街店)</td><td>距离就近</td><td>239m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>来一杯长庆路精酿店</td><td>距离就近</td><td>244m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>肯德基(长庆路店)</td><td>距离就近</td><td>245m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>圣雅金逸国际影城(丹尼斯店)</td><td>距离就近</td><td>284m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万恒生活美食汇</td><td>距离就近</td><td>297m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>秋野原电玩(安居街店)</td><td>距离就近</td><td>301m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>米村拌饭(华龙区丹尼斯百货店)</td><td>距离就近</td><td>302m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>蛮牛酒馆</td><td>距离就近</td><td>306m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>蓝斧Ps·Switch电玩体验(安居街店)</td><td>距离就近</td><td>308m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>格格贝勒儿童乐园(丹尼斯店)</td><td>距离就近</td><td>320m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>味美多美食城</td><td>距离就近</td><td>320m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>星际玩家电玩城(丹尼斯店)</td><td>距离就近</td><td>323m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星际玩家电玩城(丹尼斯店)</td><td>距离就近</td><td>323m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(濮阳昆濮大厦店)</td><td>距离就近</td><td>326m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>玫瑰酒馆</td><td>距离就近</td><td>329m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(濮阳万达广场店)（42 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(濮阳万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>特别演绎超级密室·恐怖馆(万达二店)</td><td>距离就近</td><td>20m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>智游·真人NPC密室(万达店)</td><td>距离就近</td><td>21m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>麦当劳(濮阳麦当劳龙之光万达广场餐厅)</td><td>距离就近</td><td>25m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>奥悠悠家庭互动中心(濮阳万达店)</td><td>距离就近</td><td>32m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>大玩家(万达广场店)</td><td>距离就近</td><td>57m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>大玩家(万达广场店)</td><td>距离就近</td><td>57m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>米村拌饭(濮阳万达广场店)</td><td>名称互证</td><td>58m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>米村拌饭(濮阳万达广场店)</td><td>名称互证</td><td>58m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>阿香米线(濮阳经开万达餐厅)</td><td>距离就近</td><td>84m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>智星动漫俱乐部</td><td>距离就近</td><td>85m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>万达宝贝王(万达广场店)</td><td>距离就近</td><td>92m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>兰湘子·湘菜小炒(濮阳万达店)</td><td>距离就近</td><td>99m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>虎丫炒鸡(河南濮阳华龙万达店)</td><td>距离就近</td><td>106m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>姐弟俩土豆粉(濮阳华龙万达店)</td><td>距离就近</td><td>108m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>必胜客(濮阳万达店)</td><td>距离就近</td><td>111m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>濮阳海洋世界·球幕影院</td><td>距离就近</td><td>114m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>头号玩家PS5&amp;Switch主机体验馆(万达金街店)</td><td>距离就近</td><td>122m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>头号玩家PS5&amp;Switch主机体验馆(万达金街店)</td><td>距离就近</td><td>122m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>乐人码头球幕悬空飞行影院(濮阳万达店)</td><td>距离就近</td><td>129m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>夹玩站(濮阳万达广场店)</td><td>距离就近</td><td>135m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>夹玩站(濮阳万达广场店)</td><td>距离就近</td><td>135m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>濮阳海底两万里·球幕影院</td><td>距离就近</td><td>148m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>花宝街石锅鸡公煲(华龙区万达广场店)</td><td>距离就近</td><td>154m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(濮阳万达店)</td><td>距离就近</td><td>175m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>湘遇老长沙下饭菜(上亿广场店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>湘遇老长沙下饭菜(上亿广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>塔斯汀中国汉堡(濮阳县上亿广场店)</td><td>距离就近</td><td>125m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>蛮牛酒馆(上亿广场店)</td><td>距离就近</td><td>139m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>濮阳第一烩面馆(老城店)</td><td>距离就近</td><td>140m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>月初酒馆</td><td>距离就近</td><td>140m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星漫娱乐城</td><td>距离就近</td><td>192m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>上亿国际影城(上亿广场店)</td><td>距离就近</td><td>270m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>嘟嘟的游戏搭子(上亿广场店)</td><td>距离就近</td><td>274m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>狂欢套圈圈</td><td>距离就近</td><td>276m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(濮阳上亿广场店)</td><td>距离就近</td><td>292m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>上亿广场夜市街(濮阳上亿广场店)</td><td>距离就近</td><td>296m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>方中山胡辣汤(濮阳县恒大店)</td><td>距离就近</td><td>377m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>Black Lips小黑唇·日咖夜酒(富民路店)</td><td>距离就近</td><td>550m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>杨氏凉皮老店(清真)</td><td>距离就近</td><td>590m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>湘遇老长沙下饭菜(振兴路店)</td><td>名称互证</td><td>7019m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>湘遇老长沙下饭菜(天街店)</td><td>名称互证</td><td>7726m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>濮城名吃(刘坑老店)（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>濮城名吃(刘坑老店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>范县老七羊肉汤(总店)</td><td>距离就近</td><td>361m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>春江水·濮阳名菜楼</td><td>距离就近</td><td>408m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>乌托邦酒室</td><td>距离就近</td><td>509m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>798餐厅融合菜(振兴路店)</td><td>距离就近</td><td>516m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>老盖牛肉汤(政和二路店)</td><td>距离就近</td><td>520m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>鸣夜酒吧</td><td>距离就近</td><td>527m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>钱小久·沸腾水煮鱼家常菜(振兴路店)</td><td>距离就近</td><td>527m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>湘遇老长沙下饭菜(振兴路店)</td><td>距离就近</td><td>528m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>维港快捷酒店(开州中路)</td><td>距离就近</td><td>546m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>厨味滋饸饹面(政和二路店)</td><td>距离就近</td><td>581m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>朝花夕拾•女士休闲娱乐会所</td><td>距离就近</td><td>582m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>卓爵网络(振兴路店)</td><td>距离就近</td><td>597m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>王婆大虾(黄河路店)</td><td>距离就近</td><td>600m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>老李记美食饭庄(古城路店)（20 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>老李记美食饭庄(古城路店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>蜻蜓宇宙主机游戏体验馆</td><td>距离就近</td><td>33m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>雀圣棋牌室</td><td>距离就近</td><td>118m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>温馨宾馆(古城路)</td><td>距离就近</td><td>279m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>雀巢棋牌俱乐部(昆吾南路店)</td><td>距离就近</td><td>285m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>二雷大排档(张海村店)</td><td>距离就近</td><td>324m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>东北私房菜(昆吾路)</td><td>距离就近</td><td>337m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>大赢家休闲棋牌</td><td>距离就近</td><td>346m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>王由里格外香大盘鸡(濮阳市第一分店)</td><td>距离就近</td><td>378m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>三强鸽子(中心广场店)</td><td>距离就近</td><td>381m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>濮阳市悦享酒馆</td><td>距离就近</td><td>394m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>聚源酒店</td><td>距离就近</td><td>433m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>老家水饺濮阳菜(昆吾路店)</td><td>距离就近</td><td>454m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>童话KTV(建设路店)</td><td>距离就近</td><td>472m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>小清欢·造物社棋牌</td><td>距离就近</td><td>500m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>侯记砂锅(金融街店)</td><td>距离就近</td><td>505m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>渠村鱼汤馆(建设路店)</td><td>距离就近</td><td>510m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>濮阳五洲宾馆</td><td>距离就近</td><td>568m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>友聚棋牌</td><td>距离就近</td><td>589m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星雀棋牌</td><td>距离就近</td><td>590m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>麦当劳(濮阳黄河路得来速餐厅)（42 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>麦当劳(濮阳黄河路得来速餐厅)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>来一杯长庆路精酿店</td><td>距离就近</td><td>86m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玫瑰酒馆</td><td>距离就近</td><td>134m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(濮阳昆濮大厦店)</td><td>距离就近</td><td>143m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>考拉大冒险儿童乐园(万嘉360广场店)</td><td>距离就近</td><td>144m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>万嘉好莱坞国际影城(万嘉360广场店)</td><td>距离就近</td><td>171m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>逗梦园沉浸式儿童探索乐园</td><td>距离就近</td><td>173m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>虎丫炒鸡(河南濮阳华龙万嘉360店)</td><td>距离就近</td><td>196m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>瑾妈妈韩式大排档(安居街店)</td><td>距离就近</td><td>202m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>朴大叔拌饭</td><td>距离就近</td><td>212m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>奥悠悠家庭互动中心</td><td>距离就近</td><td>214m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>三强鸽子(安居街店)</td><td>距离就近</td><td>236m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>谷太初の弹珠堂(濮阳万嘉店)</td><td>距离就近</td><td>240m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>慢酌</td><td>距离就近</td><td>253m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>奥斯卡影城(悦尚城店)</td><td>距离就近</td><td>283m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>银河酒楼·家湘情</td><td>距离就近</td><td>304m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>秋野原电玩(安居街店)</td><td>距离就近</td><td>386m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>万恒生活美食汇</td><td>距离就近</td><td>388m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>老房子露营酒馆(黄河路店)</td><td>距离就近</td><td>389m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>肯德基(长庆路店)</td><td>距离就近</td><td>393m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>蓝斧Ps·Switch电玩体验(安居街店)</td><td>距离就近</td><td>397m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>蛮牛酒馆</td><td>距离就近</td><td>406m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>味美多美食城</td><td>距离就近</td><td>413m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>小自在音乐酒馆·社交朋友圈</td><td>距离就近</td><td>431m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>圣雅金逸国际影城(丹尼斯店)</td><td>距离就近</td><td>436m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>麦当劳(濮阳麦当劳龙之光万达广场餐厅)（43 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>麦当劳(濮阳麦当劳龙之光万达广场餐厅)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>特别演绎超级密室·恐怖馆(万达二店)</td><td>距离就近</td><td>22m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达影城(濮阳万达广场店)</td><td>距离就近</td><td>25m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>奥悠悠家庭互动中心(濮阳万达店)</td><td>距离就近</td><td>30m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>米村拌饭(濮阳万达广场店)</td><td>距离就近</td><td>36m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>米村拌饭(濮阳万达广场店)</td><td>距离就近</td><td>36m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>智游·真人NPC密室(万达店)</td><td>距离就近</td><td>36m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>大玩家(万达广场店)</td><td>距离就近</td><td>36m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>大玩家(万达广场店)</td><td>距离就近</td><td>36m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>阿香米线(濮阳经开万达餐厅)</td><td>距离就近</td><td>60m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>兰湘子·湘菜小炒(濮阳万达店)</td><td>距离就近</td><td>80m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>虎丫炒鸡(河南濮阳华龙万达店)</td><td>距离就近</td><td>87m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>智星动漫俱乐部</td><td>距离就近</td><td>87m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>姐弟俩土豆粉(濮阳华龙万达店)</td><td>距离就近</td><td>88m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>濮阳海洋世界·球幕影院</td><td>距离就近</td><td>88m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>万达宝贝王(万达广场店)</td><td>距离就近</td><td>93m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>头号玩家PS5&amp;Switch主机体验馆(万达金街店)</td><td>距离就近</td><td>103m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>头号玩家PS5&amp;Switch主机体验馆(万达金街店)</td><td>距离就近</td><td>103m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>必胜客(濮阳万达店)</td><td>距离就近</td><td>104m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乐人码头球幕悬空飞行影院(濮阳万达店)</td><td>距离就近</td><td>104m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>夹玩站(濮阳万达广场店)</td><td>距离就近</td><td>109m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>夹玩站(濮阳万达广场店)</td><td>距离就近</td><td>109m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>濮阳海底两万里·球幕影院</td><td>距离就近</td><td>123m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>花宝街石锅鸡公煲(华龙区万达广场店)</td><td>距离就近</td><td>132m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(濮阳万达店)</td><td>距离就近</td><td>154m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>建德商业步行街（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>超有味麻辣砂锅粉步行街店</td><td>距离就近</td><td>33m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>傣味鲜米线建德步行街店</td><td>距离就近</td><td>67m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>青岛啤酒鲜啤吧</td><td>距离就近</td><td>227m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星空里·日茶夜酒Bar</td><td>距离就近</td><td>356m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>谷养元八宝粥家常菜(台前店)</td><td>距离就近</td><td>374m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>台前县雪花精酿啤酒鲜吧</td><td>距离就近</td><td>402m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>王记啤酒鸭沸腾鱼(盛世龙鼎店)</td><td>距离就近</td><td>591m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>巴黎街(金堤中路店)（25 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>爱啤士精酿啤酒(巴黎街店)</td><td>名称互证</td><td>61m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>秋野原电玩(巴黎街店)</td><td>名称互证</td><td>87m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>秋野原电玩(巴黎街店)</td><td>名称互证</td><td>87m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>绘梦人间沉浸式演绎推理剧场</td><td>距离就近</td><td>131m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>天阙·城市会客中心</td><td>距离就近</td><td>152m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友自助棋牌(巴黎街店)</td><td>名称互证</td><td>206m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麻友社自助棋牌(巴黎街店)</td><td>名称互证</td><td>287m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>好先生宠物乐园(宠物寄养)</td><td>距离就近</td><td>334m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>濮阳金泉酒店</td><td>距离就近</td><td>380m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>濮阳金泉酒店</td><td>距离就近</td><td>380m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>风华ps5ps4Switch主机游戏体验馆</td><td>距离就近</td><td>392m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>风华ps5ps4Switch主机游戏体验馆</td><td>距离就近</td><td>392m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>濮阳第一湘菜馆</td><td>距离就近</td><td>430m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>海极鲜</td><td>距离就近</td><td>495m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>王婆大虾(黄河路店)</td><td>距离就近</td><td>541m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>小孟驴肉汤馆老店</td><td>距离就近</td><td>554m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>锦足会所</td><td>距离就近</td><td>557m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>龙虾海鲜工坊(烤鱼)</td><td>距离就近</td><td>560m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>八公桥靳四壮馍(濮阳市轻工小区店)</td><td>距离就近</td><td>569m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>朝花夕拾•女士休闲娱乐会所</td><td>距离就近</td><td>582m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>加州酒店(京开大道店)</td><td>距离就近</td><td>591m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>名爷·活虾小馆</td><td>距离就近</td><td>593m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>INXX CLUB(英克斯酒吧｜濮阳店)</td><td>距离就近</td><td>597m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>云鼎·KTV(原巴黎街名人店)</td><td>名称互证</td><td>618m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>失眠企鹅精酿啤酒(濮阳巴黎街店)</td><td>名称互证</td><td>628m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丹尼斯百货(长庆中路店)（56 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>米村拌饭(华龙区丹尼斯百货店)</td><td>名称互证</td><td>12m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>格格贝勒儿童乐园(丹尼斯店)</td><td>距离就近</td><td>28m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>圣雅金逸国际影城(丹尼斯店)</td><td>距离就近</td><td>32m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星际玩家电玩城(丹尼斯店)</td><td>名称互证</td><td>33m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星际玩家电玩城(丹尼斯店)</td><td>名称互证</td><td>33m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>肯德基(长庆路店)</td><td>距离就近</td><td>48m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>蛮牛酒馆</td><td>距离就近</td><td>94m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>味美多美食城</td><td>距离就近</td><td>111m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>万恒生活美食汇</td><td>距离就近</td><td>112m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>蓝斧Ps·Switch电玩体验(安居街店)</td><td>距离就近</td><td>116m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>秋野原电玩(安居街店)</td><td>距离就近</td><td>124m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>光峰激光家庭影院</td><td>距离就近</td><td>126m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>绝味鸭脖(濮阳任丘路店)</td><td>距离就近</td><td>170m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>谷太初の弹珠堂(濮阳万嘉店)</td><td>距离就近</td><td>239m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>兰湘子·湘菜小炒(濮阳永望里店)</td><td>距离就近</td><td>244m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>封门村·幽冥迷宫</td><td>距离就近</td><td>260m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>奥悠悠家庭互动中心</td><td>距离就近</td><td>260m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>云宜网吧·黑蚁管理</td><td>距离就近</td><td>260m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>三强鸽子(安居街店)</td><td>距离就近</td><td>267m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>瑾妈妈韩式大排档(安居街店)</td><td>距离就近</td><td>280m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>朴大叔拌饭</td><td>距离就近</td><td>282m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>虎丫炒鸡(河南濮阳华龙万嘉360店)</td><td>距离就近</td><td>293m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>万嘉好莱坞国际影城(万嘉360广场店)</td><td>距离就近</td><td>309m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>末日11区(原幽冥剧本融合店)</td><td>距离就近</td><td>321m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>宝贝王家庭娱乐中心</td><td>距离就近</td><td>323m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>银街地下商场（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>肯德基(胜利店)</td><td>距离就近</td><td>99m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>世外星空游乐厅</td><td>距离就近</td><td>139m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>名人汇客厅(联华店)</td><td>距离就近</td><td>187m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>豪享来(京开店)</td><td>距离就近</td><td>187m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>清幺九棋牌茶楼</td><td>距离就近</td><td>276m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天空翼城9D飞行影院</td><td>距离就近</td><td>323m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>童话音乐空间专业KTV(京开大道店)</td><td>距离就近</td><td>328m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>臻享住·京龙国际酒店</td><td>距离就近</td><td>344m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>京开宾馆</td><td>距离就近</td><td>359m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>四个朋友24小时自助棋牌室</td><td>距离就近</td><td>363m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>青岛海鲜大排档(胜利小区店)</td><td>距离就近</td><td>370m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>三强鸽子(胜利路店)</td><td>距离就近</td><td>402m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>濮阳开州客栈</td><td>距离就近</td><td>439m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>濮阳腾飞公寓</td><td>距离就近</td><td>472m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>濮阳开州国际会馆</td><td>距离就近</td><td>533m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>濮阳开州国际会馆</td><td>距离就近</td><td>533m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>鸽子楼(体育路)</td><td>距离就近</td><td>537m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>仁祥酒店(京开大道店)</td><td>距离就近</td><td>553m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>雀悦棋牌</td><td>距离就近</td><td>584m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>银座商城(胜利路店)（23 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>清幺九棋牌茶楼</td><td>距离就近</td><td>197m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友24小时自助棋牌室</td><td>距离就近</td><td>202m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>天空翼城9D飞行影院</td><td>距离就近</td><td>249m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>名人汇客厅(联华店)</td><td>距离就近</td><td>251m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>肯德基(胜利店)</td><td>距离就近</td><td>256m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>豪享来(京开店)</td><td>距离就近</td><td>266m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>世外星空游乐厅</td><td>名称互证</td><td>282m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>京开宾馆</td><td>距离就近</td><td>282m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>童话音乐空间专业KTV(京开大道店)</td><td>距离就近</td><td>286m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>濮阳腾飞公寓</td><td>距离就近</td><td>336m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>臻享住·京龙国际酒店</td><td>距离就近</td><td>351m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>雀悦棋牌</td><td>距离就近</td><td>457m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>正宗沙县小吃(金堤路总店)</td><td>距离就近</td><td>458m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>锦足会所</td><td>距离就近</td><td>464m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>仁祥酒店(京开大道店)</td><td>距离就近</td><td>477m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>濮阳开州客栈</td><td>距离就近</td><td>490m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>青岛海鲜大排档(胜利小区店)</td><td>距离就近</td><td>530m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>濮阳开州国际会馆</td><td>距离就近</td><td>548m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>濮阳开州国际会馆</td><td>距离就近</td><td>548m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>三强鸽子(胜利路店)</td><td>距离就近</td><td>558m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>濮阳飞龙旅馆</td><td>距离就近</td><td>558m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>创享童年儿童乐园(大庆中路银座店)</td><td>名称互证</td><td>3185m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>肯德基(春天店)</td><td>名称互证</td><td>3196m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>福嘉百货（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>温州透骨香酱鸡酱鸭店</td><td>距离就近</td><td>404m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>小万花甲粉烧烤(朝阳路店)</td><td>距离就近</td><td>458m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>红太阳美食城(朝阳路店)</td><td>距离就近</td><td>567m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>贵臣水饺馆(朝阳路店)</td><td>距离就近</td><td>591m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>福建千里香馄饨馆</td><td>距离就近</td><td>599m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>银座商城(京开店)（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>世外星空游乐厅</td><td>名称互证</td><td>21m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>肯德基(胜利店)</td><td>距离就近</td><td>50m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>豪享来(京开店)</td><td>距离就近</td><td>116m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>名人汇客厅(联华店)</td><td>距离就近</td><td>130m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>臻享住·京龙国际酒店</td><td>距离就近</td><td>296m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>青岛海鲜大排档(胜利小区店)</td><td>距离就近</td><td>302m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>濮阳开州客栈</td><td>距离就近</td><td>351m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>三强鸽子(胜利路店)</td><td>距离就近</td><td>356m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>清幺九棋牌茶楼</td><td>距离就近</td><td>397m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>鸽子楼(体育路)</td><td>距离就近</td><td>417m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>天空翼城9D飞行影院</td><td>距离就近</td><td>444m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>童话音乐空间专业KTV(京开大道店)</td><td>距离就近</td><td>445m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友24小时自助棋牌室</td><td>距离就近</td><td>456m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>濮阳开州国际会馆</td><td>距离就近</td><td>463m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>濮阳开州国际会馆</td><td>距离就近</td><td>463m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>京开宾馆</td><td>距离就近</td><td>479m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>濮阳腾飞公寓</td><td>距离就近</td><td>588m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>创享童年儿童乐园(大庆中路银座店)</td><td>名称互证</td><td>3075m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>肯德基(春天店)</td><td>名称互证</td><td>3089m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>永望里（43 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>末日11区(原幽冥剧本融合店)</td><td>名称互证</td><td>0m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>宝贝王家庭娱乐中心</td><td>距离就近</td><td>10m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>闪豆玩家</td><td>名称互证</td><td>31m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>闪豆玩家</td><td>名称互证</td><td>31m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>圣雅超级巨幕影院(恒丰店)</td><td>距离就近</td><td>60m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>云宜网吧·黑蚁管理</td><td>名称互证</td><td>65m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>封门村·幽冥迷宫</td><td>距离就近</td><td>68m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>兰湘子·湘菜小炒(濮阳永望里店)</td><td>名称互证</td><td>79m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>宝贝王乐园</td><td>名称互证</td><td>117m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>方中山胡辣汤(恒丰花园店)</td><td>距离就近</td><td>123m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>V8酒馆</td><td>距离就近</td><td>127m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>特别好玩游戏屋</td><td>距离就近</td><td>266m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>特别好玩游戏屋</td><td>距离就近</td><td>266m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>味美多美食城</td><td>距离就近</td><td>290m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>格格贝勒儿童乐园(丹尼斯店)</td><td>距离就近</td><td>293m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>蛮牛酒馆</td><td>距离就近</td><td>300m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星际玩家电玩城(丹尼斯店)</td><td>距离就近</td><td>300m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星际玩家电玩城(丹尼斯店)</td><td>距离就近</td><td>300m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>蓝斧Ps·Switch电玩体验(安居街店)</td><td>距离就近</td><td>305m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>米村拌饭(华龙区丹尼斯百货店)</td><td>距离就近</td><td>310m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>光峰激光家庭影院</td><td>距离就近</td><td>311m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>万恒生活美食汇</td><td>距离就近</td><td>314m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>秋野原电玩(安居街店)</td><td>距离就近</td><td>316m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>圣雅金逸国际影城(丹尼斯店)</td><td>距离就近</td><td>343m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>义乌国际影城(义乌商贸城店)</td><td>距离就近</td><td>365m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>濮阳义乌国际商贸城（42 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>兰湘子·湘菜小炒(濮阳永望里店)</td><td>距离就近</td><td>137m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>宝贝王家庭娱乐中心</td><td>距离就近</td><td>146m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>云宜网吧·黑蚁管理</td><td>距离就近</td><td>146m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>封门村·幽冥迷宫</td><td>距离就近</td><td>150m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>末日11区(原幽冥剧本融合店)</td><td>距离就近</td><td>153m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>闪豆玩家</td><td>距离就近</td><td>160m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>闪豆玩家</td><td>距离就近</td><td>160m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>圣雅超级巨幕影院(恒丰店)</td><td>距离就近</td><td>161m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>味美多美食城</td><td>距离就近</td><td>183m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>蓝斧Ps·Switch电玩体验(安居街店)</td><td>距离就近</td><td>193m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>蛮牛酒馆</td><td>距离就近</td><td>199m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>秋野原电玩(安居街店)</td><td>距离就近</td><td>200m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>万恒生活美食汇</td><td>距离就近</td><td>204m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>义乌国际影城(义乌商贸城店)</td><td>距离就近</td><td>225m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>宝贝王乐园</td><td>距离就近</td><td>226m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>格格贝勒儿童乐园(丹尼斯店)</td><td>距离就近</td><td>237m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>米村拌饭(华龙区丹尼斯百货店)</td><td>距离就近</td><td>249m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星际玩家电玩城(丹尼斯店)</td><td>距离就近</td><td>255m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星际玩家电玩城(丹尼斯店)</td><td>距离就近</td><td>255m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>方中山胡辣汤(恒丰花园店)</td><td>距离就近</td><td>269m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>V8酒馆</td><td>距离就近</td><td>277m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>圣雅金逸国际影城(丹尼斯店)</td><td>距离就近</td><td>291m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>肯德基(长庆路店)</td><td>距离就近</td><td>298m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>光峰激光家庭影院</td><td>距离就近</td><td>312m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>三强鸽子(安居街店)</td><td>距离就近</td><td>337m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（33 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>濮阳开州客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>京开大道中段415号</td></tr>
+<tr><td>✅A-</td><td>濮阳县新华招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>濮上南路与国庆路交叉口</td></tr>
+<tr><td>✅A-</td><td>温馨宾馆(古城路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>古城路367号</td></tr>
+<tr><td>✅A-</td><td>柳格招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>人和大道与015县道交叉口东北100米</td></tr>
+<tr><td>✅A-</td><td>柏维轻居酒店(建设路濮阳市中心广场店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.8</td><td>—</td><td>建设中路与京开大道交叉口西北角</td></tr>
+<tr><td>✅A-</td><td>豪运公寓</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>黄河路与希望南路交叉口向南50米路东</td></tr>
+<tr><td>✅B</td><td>濮阳开州国际会馆</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>—</td><td>人民路1号</td></tr>
+<tr><td>✅B</td><td>花园酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>长庆北路3号花园酒店</td></tr>
+<tr><td>✅B</td><td>泽世源大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.5</td><td>—</td><td>京开大道304号</td></tr>
+<tr><td>✅B</td><td>99艾家宾馆</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.5</td><td>—</td><td>黄河东路与幸福南路交叉口西80米</td></tr>
+<tr><td>✅B</td><td>南乐昌盛快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>光明路232号</td></tr>
+<tr><td>✅B</td><td>皇家风情主题宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>黄河路与滨河路交叉口北400米</td></tr>
+<tr><td>✅B</td><td>清丰好再来宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>顿丘大道与春晖路交叉口西北40米</td></tr>
+<tr><td>✅B</td><td>范县名泉度假村</td><td>住宿服务;住宿服务相关;住宿服务相关/体育休闲服务;度假疗养场所;度假村</td><td>4.3</td><td>—</td><td>濮城镇沈庄村黄河路东段</td></tr>
+<tr><td>✅B</td><td>欧雅风格酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>乾坤路与政通大道口向西400米路南</td></tr>
+<tr><td>✅B</td><td>濮阳五洲宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>开州路中段331号</td></tr>
+<tr><td>⚠️</td><td>加州酒店(京开大道店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>京开大道与黄河路交汇处西南角</td></tr>
+<tr><td>⚠️</td><td>臻享住·京龙国际酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>京开道新华书店南200米路西(京开大道176号)</td></tr>
+<tr><td>⚠️</td><td>蜗居时尚酒店(濮阳黄河路汽车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>黄河东路14号</td></tr>
+<tr><td>⚠️</td><td>濮阳金泉酒店</td><td>住宿服务;宾馆酒店;宾馆酒店/餐饮服务;中餐厅;中餐厅</td><td>4.1</td><td>—</td><td>黄河路148号</td></tr>
+<tr><td>⚠️</td><td>台前金水宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>金水北路与人民路交叉口东北40米</td></tr>
+<tr><td>⚠️</td><td>聚源酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.1</td><td>—</td><td>开州南路61号</td></tr>
+<tr><td>⚠️</td><td>京开宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>京开大道402号</td></tr>
+<tr><td>⚠️</td><td>华都宾馆(濮阳东站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>黄河东路与106国道交叉口向西500米路南</td></tr>
+<tr><td>⚠️</td><td>仁祥酒店(京开大道店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>京开大道364号(和谐创业园东门南70米)</td></tr>
+<tr><td>⚠️</td><td>和平宾馆(濮阳火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>解放大道2号</td></tr>
+<tr><td>⚠️</td><td>清丰锦鸿宾馆(清丰亭公交车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>清风亭东汽车站北楼</td></tr>
+<tr><td>⚠️</td><td>忆江南酒店华尔尼</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>京开大道与黄河中路交叉口北</td></tr>
+<tr><td>⚠️</td><td>濮阳飞龙旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.7</td><td>—</td><td>京开大道中段328号</td></tr>
+<tr><td>⚠️</td><td>濮阳腾飞公寓</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>华阳街往西300米(京龙如家宾馆后面)</td></tr>
+<tr><td>❌</td><td>濮阳登峰商务宾馆(油田总医院店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>黄河路与大庆路交叉向南200米路西</td></tr>
+<tr><td>❌</td><td>维港快捷酒店(开州中路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>开州中路241号</td></tr>
+<tr><td>❌</td><td>容尊国际</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>3.3</td><td>—</td><td>京开大道与五一路交叉口向东100米路南</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>food</td><td>类型:中餐厅</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>类型:湘菜/地方菜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:地方风味餐厅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:酒楼/火锅/海鲜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:火锅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:海鲜酒楼</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:特色美食</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:老字号</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:大排档</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:苍蝇馆</td><td>1</td><td></td></tr>
+<tr><td>food</td><td>关键词:小吃</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:本地菜</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:特产</td><td>40</td><td></td></tr>
+<tr><td>product</td><td>关键词:土特产</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:地方特产</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:步行街</td><td>7</td><td></td></tr>
+<tr><td>district</td><td>类型:特色商业街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>类型:购物中心</td><td>18</td><td></td></tr>
+<tr><td>district</td><td>类型:商场</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:美食街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:夜市</td><td>17</td><td></td></tr>
+<tr><td>district</td><td>关键词:小吃街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:步行街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:购物中心</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:酒吧</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:酒馆</td><td>20</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:LIVEHOUSE</td><td>1</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:娱乐场所</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童乐园</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:电玩城</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:游乐场</td><td>37</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你游乐场</td><td>17</td><td></td></tr>
+<tr><td>kids</td><td>关键词:亲子乐园</td><td>2</td><td></td></tr>
+<tr><td>kids</td><td>关键词:淘气堡</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童体验</td><td>8</td><td></td></tr>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>17</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>14</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>11</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>3</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/濮阳市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>6 个 POI 无地址</strong>，需人工补：志辉饭店(006乡道)、瑾妈妈韩式大排档(安居街店)、濮阳县文留供销合作社商业街、银街地下商场、东方商贸城</li><li><input type="checkbox" disabled> <strong>8 个 POI 无评分</strong>，暂标 ⚠️：繁水街、荷园游乐场停车场、濮阳东北庄野生动物园售票处、濮阳市中心动物园(濮阳永望里店)地上停车场、濮阳东北庄野生动物园南门地上停车场</li><li><input type="checkbox" disabled> 儿童游乐 163 家，其中场内 24 家、独立 139 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 6 个区县：华龙区、南乐县、台前县、清丰县、濮阳县、范县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

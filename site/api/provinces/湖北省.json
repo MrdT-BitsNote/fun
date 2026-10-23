@@ -1,0 +1,474 @@
+{
+ "province": "湖北省",
+ "stats": {
+  "cities": 17,
+  "poi": 11817,
+  "grades": {
+   "S": 5,
+   "A": 197,
+   "B": 185,
+   "C": 289
+  }
+ },
+ "cities": [
+  {
+   "city": "仙桃市",
+   "province": "湖北省",
+   "adcode": "429004",
+   "poi": 614,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:36:39",
+   "page": "cities/429004.html",
+   "json": "api/cities/429004.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E4%BB%99%E6%A1%83%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 23,
+    "B": 7,
+    "C": 10
+   },
+   "dims": {
+    "food": 271,
+    "district": 111,
+    "leisure": 157,
+    "kids": 9,
+    "hotel": 30,
+    "product": 29
+   }
+  },
+  {
+   "city": "十堰市",
+   "province": "湖北省",
+   "adcode": "420300",
+   "poi": 814,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:34:53",
+   "page": "cities/420300.html",
+   "json": "api/cities/420300.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E5%8D%81%E5%A0%B0%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 17,
+    "B": 10,
+    "C": 13
+   },
+   "dims": {
+    "food": 308,
+    "district": 176,
+    "leisure": 213,
+    "kids": 36,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "咸宁市",
+   "province": "湖北省",
+   "adcode": "421200",
+   "poi": 618,
+   "waves": [
+    1
+   ],
+   "updated": "2026-10-23 18:37:45",
+   "page": "cities/421200.html",
+   "json": "api/cities/421200.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E5%92%B8%E5%AE%81%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 16,
+    "B": 10,
+    "C": 14
+   },
+   "dims": {
+    "food": 292,
+    "district": 109,
+    "leisure": 141,
+    "kids": 28,
+    "hotel": 1,
+    "product": 40
+   }
+  },
+  {
+   "city": "天门市",
+   "province": "湖北省",
+   "adcode": "429006",
+   "poi": 571,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:36:11",
+   "page": "cities/429006.html",
+   "json": "api/cities/429006.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E5%A4%A9%E9%97%A8%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 17,
+    "B": 15,
+    "C": 8
+   },
+   "dims": {
+    "food": 269,
+    "district": 111,
+    "leisure": 136,
+    "kids": 14,
+    "hotel": 26,
+    "product": 10
+   }
+  },
+  {
+   "city": "孝感市",
+   "province": "湖北省",
+   "adcode": "420900",
+   "poi": 849,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:36:25",
+   "page": "cities/420900.html",
+   "json": "api/cities/420900.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E5%AD%9D%E6%84%9F%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 8,
+    "B": 11,
+    "C": 21
+   },
+   "dims": {
+    "food": 306,
+    "district": 175,
+    "leisure": 208,
+    "kids": 35,
+    "hotel": 32,
+    "product": 41
+   }
+  },
+  {
+   "city": "宜昌市",
+   "province": "湖北省",
+   "adcode": "420500",
+   "poi": 840,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:35:07",
+   "page": "cities/420500.html",
+   "json": "api/cities/420500.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E5%AE%9C%E6%98%8C%E5%B8%82.md",
+   "grades": {
+    "S": 2,
+    "A": 11,
+    "B": 8,
+    "C": 19
+   },
+   "dims": {
+    "food": 312,
+    "district": 163,
+    "leisure": 211,
+    "kids": 40,
+    "hotel": 37,
+    "product": 41
+   }
+  },
+  {
+   "city": "恩施土家族苗族自治州",
+   "province": "湖北省",
+   "adcode": "422800",
+   "poi": 174,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:37:14",
+   "page": "cities/422800.html",
+   "json": "api/cities/422800.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E6%81%A9%E6%96%BD%E5%9C%9F%E5%AE%B6%E6%97%8F%E8%8B%97%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 7,
+    "C": 33
+   },
+   "dims": {
+    "food": 0,
+    "district": 55,
+    "leisure": 71,
+    "kids": 9,
+    "hotel": 28,
+    "product": 0
+   }
+  },
+  {
+   "city": "武汉市",
+   "province": "湖北省",
+   "adcode": "420100",
+   "poi": 941,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:09:32",
+   "page": "cities/420100.html",
+   "json": "api/cities/420100.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E6%AD%A6%E6%B1%89%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 4,
+    "C": 35
+   },
+   "dims": {
+    "food": 296,
+    "district": 261,
+    "leisure": 239,
+    "kids": 46,
+    "hotel": 38,
+    "product": 40
+   }
+  },
+  {
+   "city": "潜江市",
+   "province": "湖北省",
+   "adcode": "429005",
+   "poi": 586,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:35:58",
+   "page": "cities/429005.html",
+   "json": "api/cities/429005.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E6%BD%9C%E6%B1%9F%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 17,
+    "B": 9,
+    "C": 14
+   },
+   "dims": {
+    "food": 272,
+    "district": 101,
+    "leisure": 142,
+    "kids": 3,
+    "hotel": 30,
+    "product": 27
+   }
+  },
+  {
+   "city": "神农架林区",
+   "province": "湖北省",
+   "adcode": "429021",
+   "poi": 329,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:38:27",
+   "page": "cities/429021.html",
+   "json": "api/cities/429021.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E7%A5%9E%E5%86%9C%E6%9E%B6%E6%9E%97%E5%8C%BA.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 28,
+    "C": 5
+   },
+   "dims": {
+    "food": 189,
+    "district": 36,
+    "leisure": 26,
+    "kids": 1,
+    "hotel": 46,
+    "product": 40
+   }
+  },
+  {
+   "city": "荆州市",
+   "province": "湖北省",
+   "adcode": "421000",
+   "poi": 839,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:36:52",
+   "page": "cities/421000.html",
+   "json": "api/cities/421000.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E8%8D%86%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 6,
+    "B": 9,
+    "C": 25
+   },
+   "dims": {
+    "food": 300,
+    "district": 172,
+    "leisure": 226,
+    "kids": 37,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "荆门市",
+   "province": "湖北省",
+   "adcode": "420800",
+   "poi": 774,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:35:45",
+   "page": "cities/420800.html",
+   "json": "api/cities/420800.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E8%8D%86%E9%97%A8%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 14,
+    "B": 15,
+    "C": 11
+   },
+   "dims": {
+    "food": 296,
+    "district": 151,
+    "leisure": 194,
+    "kids": 33,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "襄阳市",
+   "province": "湖北省",
+   "adcode": "420600",
+   "poi": 896,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:34:40",
+   "page": "cities/420600.html",
+   "json": "api/cities/420600.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E8%A5%84%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 6,
+    "B": 10,
+    "C": 24
+   },
+   "dims": {
+    "food": 301,
+    "district": 213,
+    "leisure": 217,
+    "kids": 42,
+    "hotel": 34,
+    "product": 41
+   }
+  },
+  {
+   "city": "鄂州市",
+   "province": "湖北省",
+   "adcode": "420700",
+   "poi": 653,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:40:38",
+   "page": "cities/420700.html",
+   "json": "api/cities/420700.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E9%84%82%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 22,
+    "B": 6,
+    "C": 11
+   },
+   "dims": {
+    "food": 291,
+    "district": 119,
+    "leisure": 149,
+    "kids": 16,
+    "hotel": 23,
+    "product": 40
+   }
+  },
+  {
+   "city": "随州市",
+   "province": "湖北省",
+   "adcode": "421300",
+   "poi": 683,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:39:05",
+   "page": "cities/421300.html",
+   "json": "api/cities/421300.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E9%9A%8F%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 13,
+    "B": 13,
+    "C": 14
+   },
+   "dims": {
+    "food": 294,
+    "district": 115,
+    "leisure": 170,
+    "kids": 21,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "黄冈市",
+   "province": "湖北省",
+   "adcode": "421100",
+   "poi": 878,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:35:30",
+   "page": "cities/421100.html",
+   "json": "api/cities/421100.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E9%BB%84%E5%86%88%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 11,
+    "C": 24
+   },
+   "dims": {
+    "food": 316,
+    "district": 189,
+    "leisure": 235,
+    "kids": 29,
+    "hotel": 32,
+    "product": 41
+   }
+  },
+  {
+   "city": "黄石市",
+   "province": "湖北省",
+   "adcode": "420200",
+   "poi": 758,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:39:59",
+   "page": "cities/420200.html",
+   "json": "api/cities/420200.json",
+   "md": "md/%E6%B9%96%E5%8C%97%E7%9C%81/%E9%BB%84%E7%9F%B3%E5%B8%82.md",
+   "grades": {
+    "S": 2,
+    "A": 18,
+    "B": 12,
+    "C": 8
+   },
+   "dims": {
+    "food": 298,
+    "district": 142,
+    "leisure": 194,
+    "kids": 32,
+    "hotel": 33,
+    "product": 40
+   }
+  }
+ ]
+}

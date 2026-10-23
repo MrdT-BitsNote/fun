@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黄冈市 · 湖北省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/湖北省.html">← 返回湖北省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>黄冈市 · 湖北省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 18:35:30  ·  POI 总量：878（去重后）  ·  查询面：49  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>878</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>99%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 316 · 商圈 418 · 成人娱乐 278 · 儿童娱乐 150 · 酒店 32 · 特产 41</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>湖北省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>10 个</td></tr>
+<tr><td>街道/镇/乡</td><td>150 个</td></tr>
+<tr><td>区县构成</td><td>县×7、县级市×2、市辖区×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>黄州区</td><td>227</td><td>26%</td></tr>
+<tr><td>麻城市</td><td>102</td><td>12%</td></tr>
+<tr><td>蕲春县</td><td>99</td><td>11%</td></tr>
+<tr><td>浠水县</td><td>86</td><td>10%</td></tr>
+<tr><td>黄梅县</td><td>85</td><td>10%</td></tr>
+<tr><td>武穴市</td><td>78</td><td>9%</td></tr>
+<tr><td>红安县</td><td>65</td><td>7%</td></tr>
+<tr><td>罗田县</td><td>64</td><td>7%</td></tr>
+<tr><td>英山县</td><td>49</td><td>6%</td></tr>
+<tr><td>团风县</td><td>23</td><td>3%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（418 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>174</td></tr>
+<tr><td>购物中心/综合体</td><td>82</td></tr>
+<tr><td>百货/商场</td><td>45</td></tr>
+<tr><td>步行街</td><td>38</td></tr>
+<tr><td>商业街</td><td>31</td></tr>
+<tr><td>夜市</td><td>28</td></tr>
+<tr><td>批发城</td><td>16</td></tr>
+<tr><td>美食街/小吃街</td><td>4</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（418 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>A</td><td>万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>18</td><td>15</td><td>19</td><td>2</td></tr>
+<tr><td>A</td><td>万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>18</td><td>15</td><td>19</td><td>2</td></tr>
+<tr><td>A</td><td>大东方·非遗东坡肉(青砖湖路店)</td><td>其他商业载体</td><td>4.6</td><td>15</td><td>17</td><td>5</td><td>0</td></tr>
+<tr><td>A</td><td>奥康(黄冈奥康商业步行街店)</td><td>步行街</td><td>4.5</td><td>15</td><td>15</td><td>5</td><td>0</td></tr>
+<tr><td>A</td><td>梦巷遵义羊肉粉(黄州店)</td><td>商业街</td><td>4.5</td><td>13</td><td>20</td><td>5</td><td>0</td></tr>
+<tr><td>A</td><td>梅林鲜一品面馆(黄商购物中心店)</td><td>购物中心/综合体</td><td>4.5</td><td>10</td><td>16</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>浠水润达国际购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>10</td><td>7</td><td>5</td><td>0</td></tr>
+<tr><td>B</td><td>黄商购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>9</td><td>15</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>美天香餐厅</td><td>其他商业载体</td><td>4.5</td><td>8</td><td>7</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>万达影城(黄冈万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>7</td><td>10</td><td>10</td><td>0</td></tr>
+<tr><td>B</td><td>麻城广场</td><td>购物中心/综合体</td><td>4.7</td><td>6</td><td>5</td><td>3</td><td>1</td></tr>
+<tr><td>B</td><td>鹏泰百货</td><td>百货/商场</td><td>4.6</td><td>6</td><td>4</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>沃尔玛(麻城广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>6</td><td>8</td><td>5</td><td>1</td></tr>
+<tr><td>B</td><td>黄州学生街</td><td>商业街</td><td>4.9</td><td>5</td><td>7</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>潘记牛肉拉面(正街鑫城店)</td><td>其他商业载体</td><td>4.6</td><td>5</td><td>4</td><td>1</td><td>2</td></tr>
+<tr><td>B</td><td>棕盛商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>5</td><td>3</td><td>3</td><td>2</td></tr>
+<tr><td>B</td><td>桔子红了电竞馆学生街店</td><td>其他商业载体</td><td>4.6</td><td>5</td><td>4</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>沃尔玛(黄冈红安沿河路店)</td><td>购物中心/综合体</td><td>4.6</td><td>5</td><td>4</td><td>3</td><td>2</td></tr>
+<tr><td>C</td><td>大中华购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>4</td><td>3</td><td>6</td><td>1</td></tr>
+<tr><td>C</td><td>刘一手重庆火锅(罗田店)</td><td>其他商业载体</td><td>4.6</td><td>4</td><td>4</td><td>4</td><td>0</td></tr>
+<tr><td>C</td><td>东坡外滩</td><td>商业街</td><td>4.6</td><td>4</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>雅斯广场(武穴店)</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>3</td><td>2</td><td>2</td></tr>
+<tr><td>C</td><td>汤和夜市</td><td>夜市</td><td>4.6</td><td>4</td><td>2</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>大碗菜(二店)</td><td>其他商业载体</td><td>4.5</td><td>4</td><td>1</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>黄冈红安万达广场</td><td>百货/商场</td><td>4.7</td><td>3</td><td>4</td><td>4</td><td>2</td></tr>
+<tr><td>C</td><td>董和宋·禧宴</td><td>其他商业载体</td><td>4.6</td><td>3</td><td>1</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>长胜街</td><td>商业街</td><td>4.6</td><td>3</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>电力街(蕲春县质量技术监督局西)</td><td>商业街</td><td>4.6</td><td>3</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>麻城市商贸步行街</td><td>步行街</td><td>4.6</td><td>2</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>武商购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>1</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>黄商团风购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>1</td><td>4</td><td>1</td></tr>
+<tr><td>C</td><td>好又多购物广场(武穴店)</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>节节红卤虾海鲜烧烤大排档</td><td>其他商业载体</td><td>4.5</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>美食不夜城</td><td>其他商业载体</td><td>4.6</td><td>1</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>黄商中美购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>英山时代广场</td><td>百货/商场</td><td>4.6</td><td>1</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新轩阁美食城(月湖店)</td><td>其他商业载体</td><td>4.5</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>黄梅武商购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>胡涂广场</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>洗马果多多超市</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>万达广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 18 家（均分 4.22）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：永宁大道123号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥36（区间 ¥20–71）</li><li><strong>动线主轴</strong>：赤壁大道</li><li><strong>业态分布</strong>：美食 18 · 成人娱乐 15 · 儿童娱乐 19 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场</td></tr>
+<tr><td>美食</td><td>18</td><td>董和宋·禧宴、董和宋·禧宴、大碗菜(二店)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>万达影城(黄冈万达广场店)、万达影城(黄冈万达广场店)、星聚会KTV(黄岗黄州万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>19</td><td>大玩家(黄冈万达广场店)、大玩家(黄冈万达广场店)、武穴大风车乐园(万达广场店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>天台假日商务宾馆(万达广场店)、天台假日商务宾馆(万达广场店)</td></tr>
+</tbody></table></div>
+<h3>万达广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 18 家（均分 4.22）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：赤壁大道89号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥36（区间 ¥20–71）</li><li><strong>动线主轴</strong>：赤壁大道</li><li><strong>业态分布</strong>：美食 18 · 成人娱乐 15 · 儿童娱乐 19 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场</td></tr>
+<tr><td>美食</td><td>18</td><td>董和宋·禧宴、董和宋·禧宴、大碗菜(二店)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>万达影城(黄冈万达广场店)、万达影城(黄冈万达广场店)、星聚会KTV(黄岗黄州万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>19</td><td>大玩家(黄冈万达广场店)、大玩家(黄冈万达广场店)、武穴大风车乐园(万达广场店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>天台假日商务宾馆(万达广场店)、天台假日商务宾馆(万达广场店)</td></tr>
+</tbody></table></div>
+<h3>大东方·非遗东坡肉(青砖湖路店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 15 家（均分 4.13）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;综合酒楼）</li><li><strong>地址</strong>：青砖湖路中商百货对面</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥24（区间 ¥11–81）</li><li><strong>动线主轴</strong>：青砖湖路</li><li><strong>业态分布</strong>：美食 15 · 成人娱乐 17 · 儿童娱乐 5 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大东方·非遗东坡肉(青砖湖路店)</td></tr>
+<tr><td>美食</td><td>15</td><td>大东方·非遗东坡肉(青砖湖路店)、梦巷遵义羊肉粉(黄州店)、德尔福黄冈味道酒店</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>横店电影城(黄冈居然之家店)、鑫玉荟k歌沐足、U·SHOW PARTY·K优秀派对KTV(玫瑰时代广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>快乐电堂、梦幻嘻游、嗨闯大世界儿童乐园</td></tr>
+</tbody></table></div>
+<h3>奥康(黄冈奥康商业步行街店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 15 家（均分 4.21）+ 3 类业态</li><li><strong>载体类型</strong>：步行街（购物服务;特色商业街;步行街｜购物服务;服装鞋帽皮具店;品牌鞋店）</li><li><strong>地址</strong>：八一路60号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥24（区间 ¥11–81）</li><li><strong>动线主轴</strong>：青砖湖路</li><li><strong>业态分布</strong>：美食 15 · 成人娱乐 15 · 儿童娱乐 5 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>奥康(黄冈奥康商业步行街店)</td></tr>
+<tr><td>美食</td><td>15</td><td>大东方·非遗东坡肉(青砖湖路店)、梦巷遵义羊肉粉(黄州店)、德尔福黄冈味道酒店</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>横店电影城(黄冈居然之家店)、守夜人恐怖密室、U·SHOW PARTY·K优秀派对KTV(玫瑰时代广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>快乐电堂、梦幻嘻游、漫步星空动漫</td></tr>
+</tbody></table></div>
+<h3>梦巷遵义羊肉粉(黄州店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.10）+ 3 类业态</li><li><strong>载体类型</strong>：商业街（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：八一路中商百货往东100米</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥26（区间 ¥18–81）</li><li><strong>动线主轴</strong>：青砖湖路</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 20 · 儿童娱乐 5 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>梦巷遵义羊肉粉(黄州店)</td></tr>
+<tr><td>美食</td><td>13</td><td>大东方·非遗东坡肉(青砖湖路店)、梦巷遵义羊肉粉(黄州店)、德尔福黄冈味道酒店</td></tr>
+<tr><td>成人娱乐</td><td>20</td><td>横店电影城(黄冈居然之家店)、鑫玉荟k歌沐足、U·SHOW PARTY·K优秀派对KTV(玫瑰时代广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>快乐电堂、梦幻嘻游、嗨闯大世界儿童乐园</td></tr>
+</tbody></table></div>
+<h3>梅林鲜一品面馆(黄商购物中心店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.08）+ 3 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：东门路18号黄商购物中心F1层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥20（区间 ¥15–143）</li><li><strong>动线主轴</strong>：东门路</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 16 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>梅林鲜一品面馆(黄商购物中心店)</td></tr>
+<tr><td>美食</td><td>10</td><td>梅林鲜一品面馆(黄商购物中心店)、香格里拉(黄冈市儿童医院店)、德尔福黄冈味道酒店</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>黄州梦巴黎(扬子江小区店)、香格里拉(黄冈市儿童医院店)、云雀棋牌(黄州店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>嗨闯大世界儿童乐园</td></tr>
+</tbody></table></div>
+<h3>浠水润达国际购物中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：清泉镇车站大道458号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥32（区间 ¥11–50）</li><li><strong>动线主轴</strong>：车站大道</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 7 · 儿童娱乐 5 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>浠水润达国际购物中心</td></tr>
+<tr><td>美食</td><td>10</td><td>万氏老字号瓦罐汤、绍喜烧烤小排档、浠袁记牛肉面</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>中影星汇电影城(浠水店)、兴华电影城(新华正街店)、Tm-Max神秘岛密室逃脱(润达街区店)</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>ABAM电玩城(润达国际购物中心双桥路店)、泽杉电玩城、抓小鱼儿童乐园(浠水润达店)</td></tr>
+</tbody></table></div>
+<h3>黄商购物中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场）</li><li><strong>地址</strong>：东门路18号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥21（区间 ¥15–143）</li><li><strong>动线主轴</strong>：东门路</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 15 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>黄商购物中心</td></tr>
+<tr><td>美食</td><td>9</td><td>梅林鲜一品面馆(黄商购物中心店)、香格里拉(黄冈市儿童医院店)、德尔福黄冈味道酒店</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>黄州梦巴黎(扬子江小区店)、香格里拉(黄冈市儿童医院店)、云雀棋牌(黄州店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>嗨闯大世界儿童乐园</td></tr>
+</tbody></table></div>
+<h3>美天香餐厅 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 8 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：赤壁街道新街6-1号锦绣大厦</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥22（区间 ¥11–54）</li><li><strong>动线主轴</strong>：胜利街</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 7 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>美天香餐厅</td></tr>
+<tr><td>美食</td><td>8</td><td>美天香餐厅、十八坡土豆片(黄冈第一店)、雅惠鸭脖鸭掌专卖(黄冈三分店)</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>银兴国际影城(黄冈奥康商业步行街店)、东坡棋院(沙街店)、唱吧麦颂KTV(黄冈奥康步行街店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>漫步星空动漫</td></tr>
+</tbody></table></div>
+<h3>万达影城(黄冈万达广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 7 家 / 娱乐 20 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：赤壁大道89号黄冈万达广场4层-B</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥26（区间 ¥20–48）</li><li><strong>动线主轴</strong>：赤壁大道</li><li><strong>业态分布</strong>：美食 7 · 成人娱乐 10 · 儿童娱乐 10 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(黄冈万达广场店)</td></tr>
+<tr><td>美食</td><td>7</td><td>麦当劳(黄冈麦当劳万达餐厅)、肯德基(黄冈万达店)、必胜客(黄冈万达店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>万达影城(黄冈万达广场店)、星聚会KTV(黄岗黄州万达广场店)、JOYMARK(黄冈黄州万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>10</td><td>大玩家(黄冈万达广场店)、猫爪电玩社、小叮当电玩社(万达店)</td></tr>
+</tbody></table></div>
+<h3>麻城广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 8 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：将军路76号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥14（区间 ¥11–77）</li><li><strong>动线主轴</strong>：街道将军路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 5 · 儿童娱乐 3 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>麻城广场</td></tr>
+<tr><td>美食</td><td>6</td><td>王牌杀猪粉(麻城店)、丁三姐烤粑(麻城店)、胡老大馄饨店(工业路店)</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>EHA赛博萤火电竞馆(麻城融辉步行街12栋)、伴醉人间小酒馆、名人堂网咖(麻城广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>孩皮吧家庭娱乐中心(麻城广场店)、兔尔堡亲子乐园(麻城广场店)、小白鲸游乐园(麻城广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>简朴寨城市旅店(陵园路店)</td></tr>
+</tbody></table></div>
+<h3>鹏泰百货 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 5 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（购物服务;专卖店;烟酒专卖店｜购物服务;商场;商场｜购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：黄梅镇建陶路23号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥23（区间 ¥10–68）</li><li><strong>动线主轴</strong>：梅镇建陶路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 4 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>鹏泰百货</td></tr>
+<tr><td>美食</td><td>6</td><td>潘记牛肉拉面(正街鑫城店)、黄梅县古塔饭店、鹏泰美食城(鹏泰百货店)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>整点么肆小酒馆、蓝鲸密室(鹏泰百货店)、密室逃脱密境空间</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>七彩大玩家逗逗鱼</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>黄梅之星宾馆</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(麻城广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 13 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;沃尔玛）</li><li><strong>地址</strong>：将军路76号麻城广场F1层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥24（区间 ¥11–77）</li><li><strong>动线主轴</strong>：建设路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 8 · 儿童娱乐 5 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沃尔玛(麻城广场店)</td></tr>
+<tr><td>美食</td><td>6</td><td>丁三姐烤粑(麻城店)、辉仔烧烤、胡老大馄饨店(工业路店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>EHA赛博萤火电竞馆(麻城融辉步行街12栋)、伴醉人间小酒馆、名人堂网咖(麻城广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>孩皮吧家庭娱乐中心(麻城广场店)、兔尔堡亲子乐园(麻城广场店)、红安超级玩家娱乐中心(盛地广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>简朴寨城市旅店(陵园路店)</td></tr>
+</tbody></table></div>
+<h3>黄州学生街 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 5 家 / 娱乐 8 / 酒店 1</li><li><strong>载体类型</strong>：商业街（购物服务;特色商业街;特色商业街）</li><li><strong>地址</strong>：珠宝路46号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥53（区间 ¥10–89）</li><li><strong>动线主轴</strong>：新港二路</li><li><strong>业态分布</strong>：美食 5 · 成人娱乐 7 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>黄州学生街</td></tr>
+<tr><td>美食</td><td>5</td><td>渔味堂(新港大道店)、嚣夜大排档(黄州开发区学生街店)、学生街美食广场(三能教育广场店)</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>桔子红了电竞馆学生街店、黑猫·电竞台球俱乐部(黄冈师范学院店)、Helens海伦司小酒馆(黄冈昆仑东湖一号店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>宝丽金·国际娱乐</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>明珠宾馆(黄冈师范学院店)</td></tr>
+</tbody></table></div>
+<h3>潘记牛肉拉面(正街鑫城店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 5 家 / 娱乐 5 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：正街鑫城步行街</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥23（区间 ¥10–68）</li><li><strong>动线主轴</strong>：梅镇建陶路</li><li><strong>业态分布</strong>：美食 5 · 成人娱乐 4 · 儿童娱乐 1 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>潘记牛肉拉面(正街鑫城店)</td></tr>
+<tr><td>美食</td><td>5</td><td>潘记牛肉拉面(正街鑫城店)、黄梅县古塔饭店、鹏泰美食城(鹏泰百货店)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>整点么肆小酒馆、密室逃脱密境空间、蓝鲸密室(鹏泰百货店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>七彩大玩家逗逗鱼</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>黄梅天天宾馆、黄梅之星宾馆</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（278 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>63</td></tr>
+<tr><td>酒吧/酒馆</td><td>31</td></tr>
+<tr><td>电影院</td><td>21</td></tr>
+<tr><td>棋牌室</td><td>20</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>17</td></tr>
+<tr><td>KTV</td><td>14</td></tr>
+<tr><td>电玩城</td><td>10</td></tr>
+<tr><td>Livehouse</td><td>2</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(黄冈万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>47.00</td><td>赤壁大道89号黄冈万达广场4层-B</td></tr>
+<tr><td>✅A-</td><td>黄州梦巴黎(扬子江小区店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧｜餐饮服务;休闲餐饮场所;休闲餐饮场所</td><td>4.6</td><td>35.00</td><td>赤壁大道23号(扬子江小区东南门旁)</td></tr>
+<tr><td>✅A-</td><td>桔子红了电竞馆学生街店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>22.00</td><td>黄冈经济开发区新港大道89号三能教育广场4楼</td></tr>
+<tr><td>✅A-</td><td>黑猫·电竞台球俱乐部(黄冈师范学院店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>明珠大道69号中洲慧谷二层</td></tr>
+<tr><td>✅A-</td><td>星潮电竞</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>新港大道43号</td></tr>
+<tr><td>✅A-</td><td>胡涂广场</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所｜生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.6</td><td>70.00</td><td>黄梅镇五祖大道糊涂广场</td></tr>
+<tr><td>✅B</td><td>Helens海伦司小酒馆(黄冈昆仑东湖一号店)</td><td>酒吧/酒馆</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>56.00</td><td>新港二路8号29幢1层101-2商铺</td></tr>
+<tr><td>✅B</td><td>天空之城派对K</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>99.00</td><td>航信汽贸城入口</td></tr>
+<tr><td>✅B</td><td>港北浪革民谣酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>63.00</td><td>东坡外滩C4-127</td></tr>
+<tr><td>✅B</td><td>摩羊电竞(武商店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>刊江大道铜锣湾广场26号楼3层</td></tr>
+<tr><td>✅B</td><td>名人堂电竞(香榭花都店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>12.00</td><td>香榭花都一期</td></tr>
+<tr><td>✅B</td><td>猎豹网咖(义水外滩商业A区店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>义水外滩一号地块4楼</td></tr>
+<tr><td>✅B</td><td>黄梅十月电竞(黄梅府店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>晋梅大道黄梅府8栋1单元3楼</td></tr>
+<tr><td>✅B</td><td>桔子红了电竞经济园店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>东门路56号万象巴黎c1栋3层s301号</td></tr>
+<tr><td>✅B</td><td>EHA赛博萤火电竞馆(麻城融辉步行街12栋)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>12.00</td><td>融辉商业街12栋</td></tr>
+<tr><td>✅B</td><td>天宫一号量贩式KTV(体育路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>53.00</td><td>体育路7号(胖子酒家旁七一商场对面)</td></tr>
+<tr><td>✅B</td><td>香格里拉(黄冈市儿童医院店)</td><td>其他娱乐场所</td><td>餐饮服务;中餐厅;综合酒楼｜体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>143.00</td><td>黄州大道26号(黄冈市人民银行旁边)</td></tr>
+<tr><td>✅B</td><td>黄冈星龙国际影城(原成龙影城)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>35.00</td><td>西湖街道东坡大道东坡外滩C-3栋3层</td></tr>
+<tr><td>✅B</td><td>ACTO梦空间影城(浠水店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>26.00</td><td>闻一多大道5号金桂城广场4层</td></tr>
+<tr><td>✅B</td><td>忆威士忌雪茄吧</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>—</td><td>漕河镇文昌大道书香名邸C栋1楼S101铺</td></tr>
+<tr><td>✅B</td><td>丽都国际夜总会</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;夜总会</td><td>4.4</td><td>10.00</td><td>白果镇中部石材产业园SN005号万顺石材第2-3层</td></tr>
+<tr><td>✅B</td><td>Y11酒吧(黄州大道店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>62.00</td><td>黄州大道与西湖四路交叉口东北160米</td></tr>
+<tr><td>✅B</td><td>不差火烧烤酒馆(北川路店)</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.4</td><td>31.00</td><td>北川路181号</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(罗田城南店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>35.00</td><td>凤城大道博雅公馆1号楼</td></tr>
+<tr><td>✅B</td><td>星火电竞馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.4</td><td>—</td><td>西湖三路太华国际商场1号门3楼</td></tr>
+<tr><td>✅B</td><td>超频电竞</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.4</td><td>—</td><td>东门路91-36号鑫龙上上城5栋二层202商铺</td></tr>
+<tr><td>✅B</td><td>摩登电竞馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.4</td><td>—</td><td>北川路139号</td></tr>
+<tr><td>✅B</td><td>VTOP电竞俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.4</td><td>—</td><td>东门路桐梓岗社区居民委员会综合楼2层</td></tr>
+<tr><td>✅B</td><td>钻石人间·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室｜体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>277.00</td><td>赤壁街道体育路湖北省黄州体育馆</td></tr>
+<tr><td>✅B</td><td>宝丽金·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>80.00</td><td>西湖街道新港二路15号金泰国际广场</td></tr>
+<tr><td>✅B</td><td>梅子KTV(体育路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>84.00</td><td>体育路5-3号附近</td></tr>
+<tr><td>✅B</td><td>鑫玉荟k歌沐足</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>133.00</td><td>赤壁大道16号紫荆广场3楼(筷子巷旁原叶拾酒店)</td></tr>
+<tr><td>✅B</td><td>横店电影城(黄冈居然之家店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>30.00</td><td>八一路和胜利路交叉口居然之家六楼</td></tr>
+<tr><td>✅B</td><td>中影星汇电影城(浠水店)</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>26.00</td><td>浠水润达商场5楼中影星汇影城内</td></tr>
+<tr><td>✅B</td><td>大中华电影城(大中华购物广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>33.00</td><td>漕河大道大中华广场三层</td></tr>
+<tr><td>✅B</td><td>华鼎天河国际影城(蕲春店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院｜公司企业;公司;公司</td><td>4.4</td><td>39.00</td><td>人民广场1号楼</td></tr>
+<tr><td>✅B</td><td>云雀棋牌(黄州店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>14.00</td><td>东门路20号保利步行街1幢3层301号</td></tr>
+<tr><td>✅B</td><td>雀圣棋牌俱乐部</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>153.00</td><td>中环路南26号</td></tr>
+<tr><td>✅B</td><td>酒迷Lounge</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>40.00</td><td>漕河镇福迪百货韩国城1层</td></tr>
+<tr><td>✅B</td><td>伴醉人间小酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>57.00</td><td>工业路与盛唐街交叉口北80米</td></tr>
+<tr><td>✅B</td><td>EZ HOUSE</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>81.00</td><td>西湖一路与教委路叉口西160米</td></tr>
+<tr><td>✅B</td><td>故鄉Live house</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>69.00</td><td>一方山水塔山城商业B2栋临街东头119-120号商铺</td></tr>
+<tr><td>✅B</td><td>优布劳精酿酒馆(红旗二桥店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>—</td><td>齐昌大道与王楼路交叉口东南80米</td></tr>
+<tr><td>✅B</td><td>红中杠音乐烤吧小酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>27.00</td><td>宪司坳沿河路97号</td></tr>
+<tr><td>✅B</td><td>Chill Room Bar·冷却室(师院店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>48.00</td><td>相地城104商铺</td></tr>
+<tr><td>✅B</td><td>105·酒咖</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>50.00</td><td>誉天下名城17幢117铺</td></tr>
+<tr><td>✅B</td><td>星聚会KTV(黄岗黄州万达广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>45.00</td><td>赤壁大道89号万达广场4F-A</td></tr>
+<tr><td>✅B</td><td>麦高迪量贩式KTV(黄梅店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>65.00</td><td>人民大道西池天下3号楼2层</td></tr>
+<tr><td>✅B</td><td>守夜人恐怖密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>100.00</td><td>八一路32号1栋2楼</td></tr>
+<tr><td>✅B</td><td>水晶宫商务俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>66.00</td><td>黄冈市黄州区体育路市体育场综合楼旁(近李四光纪念馆)</td></tr>
+<tr><td>✅B</td><td>鑫乐迪KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.3</td><td>59.00</td><td>体育路与涵晖路交叉口北60米</td></tr>
+<tr><td>✅B</td><td>至尊豪门KTV(黄冈市畜牧局西)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>61.00</td><td>黄冈经济开发区涵晖路6号</td></tr>
+<tr><td>✅B</td><td>聚会金座KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>41.00</td><td>君城花苑北侧</td></tr>
+<tr><td>✅B</td><td>流星雨KTV(紫煌店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>—</td><td>赤壁街道体育路公安局龙王山警务综合服务站</td></tr>
+<tr><td>✅B</td><td>潮唱KTV</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.3</td><td>63.00</td><td>黄州体育馆南门北60米</td></tr>
+<tr><td>✅B</td><td>U·SHOW PARTY·K优秀派对KTV(玫瑰时代广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>53.00</td><td>八一路70-1号(玫瑰时代广场南门西110米)</td></tr>
+<tr><td>✅B</td><td>蓝海影城(黄冈紫金城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>37.00</td><td>东门路12号紫金广场3楼</td></tr>
+<tr><td>✅B</td><td>中影光辉巨幕影城(团风店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>35.00</td><td>鸿园广场南门东北80米</td></tr>
+<tr><td>✅B</td><td>兴华电影城(新华正街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>52.00</td><td>清泉镇新华正街300号</td></tr>
+<tr><td>✅B</td><td>万和国际影城(蕲春店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>41.00</td><td>漕河大道棕盛商业广场3号楼4层</td></tr>
+</tbody></table></div>
+<p>（另 118 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（150 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>89</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>31</td></tr>
+<tr><td>亲子乐园</td><td>14</td></tr>
+<tr><td>电玩城</td><td>11</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>5</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>泊心域·牧星营地</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>永佳河镇泊心域牧星营地</td></tr>
+<tr><td>✅B</td><td>小梅花亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>青砖湖路246号</td></tr>
+<tr><td>✅B</td><td>梦幻亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>杜鹃大道64号</td></tr>
+<tr><td>✅B</td><td>麻城欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>台湾街博森翰林城对面</td></tr>
+<tr><td>✅B</td><td>柿外陶园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>S78蕲嘉高速与红旗岗枢纽交叉口南200米</td></tr>
+<tr><td>✅B</td><td>南斗天湖国际生态旅游度假区</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>234省道东侧</td></tr>
+<tr><td>✅B</td><td>天鹅湖亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.4</td><td>大胜工业园天鹅湖国际新城通威饲料对面</td></tr>
+<tr><td>✅B</td><td>凤凰城亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.4</td><td>清泉路与安时大道交叉口东500米</td></tr>
+<tr><td>✅B</td><td>欢乐熊儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.4</td><td>茶韵古镇隔壁</td></tr>
+<tr><td>✅B</td><td>好时光亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.4</td><td>章大屋村</td></tr>
+<tr><td>✅B</td><td>四桥奇妙乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>举水四桥</td></tr>
+<tr><td>✅B</td><td>钻石人间·国际娱乐</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>赤壁街道体育路湖北省黄州体育馆</td></tr>
+<tr><td>✅B</td><td>宝丽金·国际娱乐</td><td>其他儿童场所</td><td>场内</td><td>4.4</td><td>西湖街道新港二路15号金泰国际广场</td></tr>
+<tr><td>✅B</td><td>大风车乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>沿河大道</td></tr>
+<tr><td>✅B</td><td>龙感湖公园水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>龙感湖公园</td></tr>
+<tr><td>✅B</td><td>鄂东动物王国</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>杉木乡藕塘村3组</td></tr>
+<tr><td>✅B</td><td>万达宝贝王超级乐园</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>刊江大道与龙港路交叉口北360米</td></tr>
+<tr><td>✅B</td><td>开心部落</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>散花镇李渡村四组</td></tr>
+<tr><td>✅B</td><td>大玩家(黄冈万达广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>赤壁二路39号万达广场F3层</td></tr>
+<tr><td>✅B</td><td>不晓得PS5拼豆手工桌游棋牌私人影院</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>东门路100-39</td></tr>
+<tr><td>✅B</td><td>黄梅文化广场</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>黄梅镇民营四路99号</td></tr>
+<tr><td>✅B</td><td>蛙湘跳跳蛙(经济园店)</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>东坡大道1幢</td></tr>
+<tr><td>✅B</td><td>爱尚宠物萌宠宠物生活馆(文化公园路店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>文化公园路146号</td></tr>
+<tr><td>⚠️</td><td>黄冈鄂人谷生态度假村</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>漕河镇鄂人谷生态旅游度假村</td></tr>
+<tr><td>⚠️</td><td>红安欢乐世界游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.2</td><td>城关镇胡家河社区胡河澜岸西北方向</td></tr>
+<tr><td>⚠️</td><td>红安县百灵游乐中心</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>七里坪镇柏林寺村</td></tr>
+<tr><td>⚠️</td><td>梦幻嘉年华欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>沿河大道</td></tr>
+<tr><td>⚠️</td><td>浠水迷你时代酒店(皂泥湖店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>翟港路81号(湖滨平价商行楼上)</td></tr>
+<tr><td>⚠️</td><td>麻城古孝感乡都度假生态旅游度假村</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>南湖街道南湖街道南湖街道南湖街道沈家庄近003乡道</td></tr>
+<tr><td>⚠️</td><td>印象东坡·欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>黄州大道178号</td></tr>
+<tr><td>⚠️</td><td>考拉王国家庭娱乐中心</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>东门路91-88号东方名都1、2、3幢2层203铺</td></tr>
+<tr><td>⚠️</td><td>稻田乐园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>东山问梅村</td></tr>
+<tr><td>⚠️</td><td>趣玩乐园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>段家桥街与道观冲巷交叉口西北60米</td></tr>
+<tr><td>⚠️</td><td>北极熊乐园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>高桥镇何家湾村四组6-99号</td></tr>
+<tr><td>⚠️</td><td>真嗨皮乐园</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>街心花园天下城市广场宏润发购物广场电梯上二楼</td></tr>
+<tr><td>⚠️</td><td>夏天游戏体验馆</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>民主路与刊江大道交叉口北300米</td></tr>
+<tr><td>⚠️</td><td>浠水欢乐世界游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.1</td><td>清泉镇月西公园楚街内</td></tr>
+<tr><td>⚠️</td><td>蕲春小火苗双语亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.1</td><td>漕河镇东方花园4号楼201</td></tr>
+<tr><td>⚠️</td><td>迷你早餐(六福花园小区店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>黄州大道东南湖六福花园小区</td></tr>
+<tr><td>⚠️</td><td>萌宠宠物生活馆(鸿园未来城店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>鸿园未来城3栋</td></tr>
+<tr><td>⚠️</td><td>小淘气宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>小池镇中心一支路26号</td></tr>
+<tr><td>⚠️</td><td>JOYMARK(大中华购物广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>漕河大道88号大中华购物广场F2层</td></tr>
+<tr><td>⚠️</td><td>月西儿童公园</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>月水路与揽月路交叉口西南420米</td></tr>
+<tr><td>⚠️</td><td>乐翻天亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.0</td><td>义水北路东205号</td></tr>
+<tr><td>⚠️</td><td>孩皮吧家庭娱乐中心(麻城广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>将军路76号麻城广场F3层</td></tr>
+<tr><td>⚠️</td><td>武穴大风车乐园(万达广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>永宁大道123号万达广场</td></tr>
+<tr><td>❌</td><td>蕲春大飞机</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>世纪电玩城</td><td>电玩城</td><td>独立</td><td>4.0</td><td>新八·世纪华城西北门东北100米</td></tr>
+<tr><td>⚠️</td><td>亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.0</td><td>梅川镇玉带路46号</td></tr>
+<tr><td>⚠️</td><td>芸品汇儿童游乐场(小池店)</td><td>儿童乐园/游乐场</td><td>独立</td><td>3.9</td><td>妙乐路与复兴路交叉口东南20米</td></tr>
+<tr><td>⚠️</td><td>蕲春乐夹</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>3楼乐夹</td></tr>
+<tr><td>⚠️</td><td>潮玩九号</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>温泉镇鸡鸣路60商业步行街</td></tr>
+<tr><td>⚠️</td><td>田园童话世界</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>团风镇黄湖大道</td></tr>
+<tr><td>⚠️</td><td>龙腾欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>雪龙大道1号</td></tr>
+<tr><td>⚠️</td><td>濒湖游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>3.9</td><td>李时珍大道106号</td></tr>
+<tr><td>⚠️</td><td>童话小镇游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>3.9</td><td>杉木乡旗杆村童话小镇游乐园</td></tr>
+<tr><td>⚠️</td><td>牛牛亲子乐园</td><td>亲子乐园</td><td>独立</td><td>3.9</td><td>总路咀镇肖石坳村牛牛亲子乐园</td></tr>
+<tr><td>⚠️</td><td>松鼠ai智能学习体验中心(小池店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>小池镇大地步行街139号(小池镇一中南门右侧200米)</td></tr>
+<tr><td>⚠️</td><td>小宠乐园宠物生活馆(步行街二楼店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>团风镇步行街二楼温州街c215号</td></tr>
+<tr><td>⚠️</td><td>宝贝王超级乐园</td><td>其他儿童场所</td><td>场内</td><td>3.8</td><td>武穴街道永宁大道123号万达广场F3层</td></tr>
+</tbody></table></div>
+<p>（另 90 家见 §11 原始数据）</p>
+<h2>5. 综合体与商场（143 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>麻城广场</td><td>购物中心/综合体</td><td>4.7</td><td>3</td><td>6</td><td>将军路76号</td></tr>
+<tr><td>✅A-</td><td>浠水润达国际购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>5</td><td>10</td><td>清泉镇车站大道458号</td></tr>
+<tr><td>✅A-</td><td>万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>19</td><td>18</td><td>永宁大道123号</td></tr>
+<tr><td>✅A-</td><td>黄梅武商购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>五祖大道与晋梅大道交叉口东160米</td></tr>
+<tr><td>✅A-</td><td>大中华购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>6</td><td>4</td><td>中心城区漕河大道88号</td></tr>
+<tr><td>✅A-</td><td>万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>19</td><td>18</td><td>赤壁大道89号</td></tr>
+<tr><td>✅A-</td><td>黄冈红安万达广场</td><td>百货/商场</td><td>4.7</td><td>4</td><td>3</td><td>将军路16号</td></tr>
+<tr><td>✅A-</td><td>雅斯广场(武穴店)</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>4</td><td>北川路30号</td></tr>
+<tr><td>✅A-</td><td>武商购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>2</td><td>刊江大道与岳武路交叉口东120米</td></tr>
+<tr><td>✅A-</td><td>黄商中美购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>蕲春大道125号黄商中美购物广场2层</td></tr>
+<tr><td>✅A-</td><td>棕盛商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>3</td><td>5</td><td>漕河大道</td></tr>
+<tr><td>✅A-</td><td>英山时代广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>1</td><td>莲花路26号</td></tr>
+<tr><td>✅A-</td><td>鹏泰百货</td><td>百货/商场</td><td>4.6</td><td>1</td><td>6</td><td>黄梅镇建陶路23号</td></tr>
+<tr><td>✅A-</td><td>黄商购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>9</td><td>东门路18号</td></tr>
+<tr><td>✅A-</td><td>黄商团风购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>2</td><td>团风镇</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(黄冈红安沿河路店)</td><td>购物中心/综合体</td><td>4.6</td><td>3</td><td>5</td><td>城关镇沿河路11号盛地广场2-3层</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(麻城广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>5</td><td>6</td><td>将军路76号麻城广场F1层</td></tr>
+<tr><td>✅A-</td><td>洗马果多多超市</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>洗马镇洗马畈村3组</td></tr>
+<tr><td>✅A-</td><td>好又多购物广场(武穴店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>2</td><td>永宁大道与龙潭路交叉口西北50米</td></tr>
+<tr><td>✅B</td><td>梅林鲜一品面馆(黄商购物中心店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>10</td><td>东门路18号黄商购物中心F1层</td></tr>
+<tr><td>✅B</td><td>时代广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>2</td><td>金桥大道与金通大道交叉口西南角</td></tr>
+<tr><td>✅B</td><td>盛百客城市广场店</td><td>购物中心/综合体</td><td>4.5</td><td>4</td><td>5</td><td>红烛路260号</td></tr>
+<tr><td>✅B</td><td>瑞天广场</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>3</td><td>明珠大道28号</td></tr>
+<tr><td>✅B</td><td>红万家购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>1</td><td>创业街1东南方向50米</td></tr>
+<tr><td>✅B</td><td>黄梅黄商购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>5</td><td>黄梅镇人民大道392号</td></tr>
+<tr><td>✅B</td><td>黄商明珠购物中心(创业中心店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>5</td><td>明珠大道68号创业中心</td></tr>
+<tr><td>✅B</td><td>梦想城购物公园</td><td>百货/商场</td><td>4.5</td><td>0</td><td>1</td><td>黄梅大道95号1层</td></tr>
+<tr><td>✅B</td><td>浠水商场</td><td>百货/商场</td><td>4.5</td><td>5</td><td>9</td><td>新华正街</td></tr>
+<tr><td>✅B</td><td>黄商购物中心(罗田百货店)</td><td>购物中心/综合体</td><td>4.5</td><td>4</td><td>5</td><td>凤山镇徐寿大道城市广场</td></tr>
+<tr><td>✅B</td><td>黄商购物中心(麻城店)</td><td>购物中心/综合体</td><td>4.5</td><td>3</td><td>9</td><td>将军路东方红酒店对面</td></tr>
+<tr><td>✅B</td><td>漕河镇工贸新天地二期</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>蕲阳南路与万丰路交汇处</td></tr>
+<tr><td>✅B</td><td>玫瑰时代广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>八一路与赤壁大道交叉口东北150米</td></tr>
+<tr><td>✅B</td><td>中百仓储(黄冈购物广场)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>东门路59号</td></tr>
+<tr><td>✅B</td><td>武商量贩(黄州店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>宝塔大道69号</td></tr>
+<tr><td>✅B</td><td>黄商购物中心(东方名都店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>东门路91-88号</td></tr>
+<tr><td>✅B</td><td>罗田城市广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>徐寿辉大道黄商购物中心(罗田百货店)</td></tr>
+<tr><td>✅B</td><td>鹏泰美食城(鹏泰百货店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>黄梅镇建陶路23号鹏泰百货F1层</td></tr>
+<tr><td>✅B</td><td>盛地广场</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>城关镇沿河路</td></tr>
+<tr><td>✅B</td><td>麻城鼓楼天街</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>西正街7号</td></tr>
+<tr><td>✅B</td><td>工贸新天地1期</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>漕河镇蕲春大道与电力街交汇处西北侧</td></tr>
+<tr><td>✅B</td><td>大中华电影城(大中华购物广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>漕河大道大中华广场三层</td></tr>
+<tr><td>✅B</td><td>黄商超市(翰林城店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>台湾街</td></tr>
+<tr><td>✅B</td><td>中百仓储(麻城金桥店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>金桥大道28号杜鹃大厦1-2层</td></tr>
+<tr><td>✅B</td><td>天宏农产品批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>宝塔大道191号天宏国际商贸城内</td></tr>
+<tr><td>✅B</td><td>包天下(黄商购物中心店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>东门路18号</td></tr>
+<tr><td>✅B</td><td>永宁商场</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>永宁大道30号</td></tr>
+<tr><td>✅B</td><td>英山军翔百货</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>鸡鸣路 31 号</td></tr>
+<tr><td>✅B</td><td>黄梅文化广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>黄梅镇民营四路99号</td></tr>
+<tr><td>✅B</td><td>悦活里超市(万达广场店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>永宁大道123号万达广场二楼</td></tr>
+<tr><td>✅B</td><td>好又多超市(大中华购物广场店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>漕河大道88号大中华购物广场F2层</td></tr>
+</tbody></table></div>
+<p>（另 93 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（316 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>汉昌大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>福田河镇两路口村,106国道汉昌大酒店</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/66896e4542fc5a3b8911d798850bdf1c"></td></tr>
+<tr><td>✅A-</td><td>黄冈宴·非遗头牌黄州鱼丸(地标黑金冠好店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>72.00</td><td>赤壁一路88号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/63f56c9400700c710000005431556764?type=pic"></td></tr>
+<tr><td>✅A-</td><td>胜利吊锅城(拨云尖总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>79.00</td><td>凤山镇慈云街碧水星城小区1号楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e863244bbc6faeb0b200b13aeb13cd1b_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>大东方·非遗东坡肉(青砖湖路店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>81.00</td><td>青砖湖路中商百货对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/645ED9F8_BD93_4819_81FB_A017EEA464E5_L0_001_2000_150_1759567419121_07237152.jpg"></td></tr>
+<tr><td>✅A-</td><td>品味鲜商务酒店</td><td>餐饮服务;中餐厅;湖北菜(鄂菜)｜餐饮服务;中餐厅;海鲜酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>英联大道12号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/91c57cb6dd361dadc3c57559aab6c045"></td></tr>
+<tr><td>✅A-</td><td>鑫容吊锅菜馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>20.00</td><td>三里畈镇温泉村兔儿嘴丰太大门斜对面(三里畈温泉)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7915e14ce5f267d70000001997410935?type=pic"></td></tr>
+<tr><td>✅A</td><td>爱河小院农家饭</td><td>餐饮服务;中餐厅;中餐厅｜体育休闲服务;休闲场所;休闲场所</td><td>4.6</td><td>48.00</td><td>206县道天台山森林公园公司团建特色农家菜食宿一体附近名宿团建漂流</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ce69288343dfda3d0000003766532244?type=pic"></td></tr>
+<tr><td>✅A-</td><td>眉州东坡酒楼(黄冈店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>95.00</td><td>遗爱湖大道东坡外滩55号(遗爱湖边)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/query_pic?id=st9c54501e-38ad-4c75-b97e-eee4c456f310&amp;user=search&amp;operate=original"></td></tr>
+<tr><td>✅A-</td><td>渔味堂(新港大道店)</td><td>餐饮服务;中餐厅;湖北菜(鄂菜)</td><td>4.6</td><td>89.00</td><td>新港大道116号聆湖春天小区门口渔味堂</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2510b11d2c7662cb5f52ae3259b9137f_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>青苗小院(香榭花都店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>83.00</td><td>香榭花都综合楼一楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a4a8e1eb5ba51ea70000001485134040?type=pic"></td></tr>
+<tr><td>✅A-</td><td>小时候味(中环坐标城店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>69.00</td><td>中环路28号(人民检察院斜对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/94e83b0fe495189372a2e916bed049f4"></td></tr>
+<tr><td>✅A</td><td>田埂季·山野私房菜</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>71.00</td><td>文峰路8号瑞丰世家</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c67e5696b37571f40000005545458708?type=pic"></td></tr>
+<tr><td>✅A-</td><td>渔乐香村武穴店</td><td>餐饮服务;中餐厅;综合酒楼｜餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>59.00</td><td>北川路39号玉柴门口</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/da1229657b6d4f846df13575e11d289b"></td></tr>
+<tr><td>✅A-</td><td>锅里锅香</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>58.00</td><td>温泉北路22附近</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4541c7162d6d52c729dc4e1b793f3d58_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>百姓大院千家宴</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>66.00</td><td>漕河镇蕲春大道(城市花园东北侧约100米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4d7c0af21079aa32ebda005831b52ea0"></td></tr>
+<tr><td>✅A-</td><td>罗田土家寨吊锅(英山店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>71.00</td><td>罗非鱼小区临街商铺93-95号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1022054_1655371416270_8c9b7978.jpg"></td></tr>
+<tr><td>✅A-</td><td>大碗菜(城西景江豪庭店)</td><td>餐饮服务;中餐厅;湖北菜(鄂菜)</td><td>4.6</td><td>53.00</td><td>龙港路景江豪庭西北侧100米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2ac9bf8ddbced8830000000738794330?type=pic"></td></tr>
+<tr><td>✅A</td><td>小厨土菜馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>20.00</td><td>黄梅镇人民大道818号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000032175_ss__1768751433211_40252796.jpg"></td></tr>
+<tr><td>✅A-</td><td>潘记牛肉拉面(正街鑫城店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>12.00</td><td>正街鑫城步行街</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260315-853d74ad95f0e856a02db1fb-7vIu2YcFu4i5YpfSx0yfuD.jpg"></td></tr>
+<tr><td>✅A-</td><td>渔香盛宴·东坡江庭店</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>47.00</td><td>沿江大道38号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260310-a8722ce0ab2523963865ab13-7kXtwNz12eU9Y27uSDOpHS.jpg"></td></tr>
+<tr><td>✅A-</td><td>九环好日子·水上餐厅(新港大道)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>65.00</td><td>新港大道158号(九环好日子酒家东北门旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260310-a8722ce0ab2523963865ab13-7pE9C1SQMxNA445n2ueBH7.jpg"></td></tr>
+<tr><td>✅A-</td><td>黄梅县古塔饭店</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>68.00</td><td>古塔西路7号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000424974_ss__1766075566350_92276865.jpg"></td></tr>
+<tr><td>✅A-</td><td>美食不夜城</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>59.00</td><td>栖贤路与陆家畈巷交叉口西南50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/fb671fed1ff6deb30000000978544459"></td></tr>
+<tr><td>✅A-</td><td>龙凤归饭庄</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>41.00</td><td>翠堤路2号(升华翡翠城东南2门旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9D5EF025_9CC1_424C_BCC3_226B1D98C3D2_L0_001_1500_2000_1728003769272_76509515.jpg"></td></tr>
+<tr><td>✅A-</td><td>天天渔港大排档(锦绣苑店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>100.00</td><td>锦绣苑</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c287b5ba8aacdd005bc9a60cbf789f4c_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>小小大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>72.00</td><td>刊江大道细垄上路口</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000042277_ss__1737979864575_14376618.jpg"></td></tr>
+<tr><td>✅A-</td><td>虾先生(西湖二路店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>84.00</td><td>水星苑2幢1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_35813_ss__1761197670371_45232513.jpg"></td></tr>
+<tr><td>✅A-</td><td>刘一手重庆火锅(罗田店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.6</td><td>83.00</td><td>城市广场二楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/51c1f665817c75c92a206c914e1eeab7_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>搬运站拉面馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>17.00</td><td>宪司坳街与沿河路交叉口西50米(搬运站下坡)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/deca823f31109e880000002982596641?type=pic"></td></tr>
+<tr><td>✅A-</td><td>香港九龙包(黄冈总店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>12.00</td><td>东门路与赤壁一路交汇处东北150米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_230060_ss__1767694321552_99574388.jpg"></td></tr>
+<tr><td>✅A-</td><td>大王牛肉面馆(西湖一路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>16.00</td><td>西湖一路15号(文峰宝岻斜对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/99AB60BA_872B_444A_8A8D_005BC95985E2_L0_001_1284_171_1767775349088_75023738.jpg"></td></tr>
+<tr><td>✅A-</td><td>肯德基(青砖湖店)</td><td>餐饮服务;快餐厅;肯德基</td><td>4.6</td><td>27.00</td><td>青砖湖路232号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/62e8c0ce15bcc103e31e666dae763967"></td></tr>
+<tr><td>✅A-</td><td>小潘拉面馆黄冈老店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>15.00</td><td>黄冈住房公积金管理中心黄州办事处西北门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/402d0ac612b177920000008395248293?type=pic"></td></tr>
+<tr><td>✅A-</td><td>董和宋·禧宴</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>53.00</td><td>武穴街道永宁大道万达广场2号门对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4cdf008f2d11fd7b0000003133198194?type=pic"></td></tr>
+<tr><td>✅A-</td><td>广济大院</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>84.00</td><td>北川路西端2号(玉柴门面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/21a261f3e6be14d78e781f594d63479b_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>卫生餐厅(凤凰小区店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>88.00</td><td>凤山镇凤城大道环保局附近</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/04747feac126fbd10000001674998968?type=pic"></td></tr>
+<tr><td>✅B</td><td>美天香餐厅</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>30.00</td><td>赤壁街道新街6-1号锦绣大厦</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b169ebf854cc43d9ebfce39ace52a155"></td></tr>
+<tr><td>✅B</td><td>德尔福黄冈味道酒店</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>—</td><td>胜利街97号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100004504_1758512471791_09651893.jpg"></td></tr>
+<tr><td>✅B</td><td>湘里味道·福宴楼</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>62.00</td><td>浠水县经济开发区南岳庙村176号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6efce333b53ee22b44983703aa22764f_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>百味鱼府</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>49.00</td><td>漕河三路219号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7d9713ba470d8ef0cecefcf142cb14a5_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>尚滋味龙虾(黄梅店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>57.00</td><td>黄梅镇东禅爱民路39号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/F0CE9F1C_46F1_4D4A_9903_2E5C291A771B_L0_001_1500_200_1759726624505_43970001.jpg"></td></tr>
+<tr><td>✅B</td><td>胜利吊锅城(体委店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.5</td><td>80.00</td><td>凤山镇民建街2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0feedback_sendimage_1656671047852_5f926163.jpeg"></td></tr>
+<tr><td>✅B</td><td>老猫私厨(天宝花园店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>48.00</td><td>义水南路73-11天宝花园小区门口</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/181453294d40fc6e557bf0a462340edc"></td></tr>
+<tr><td>✅B</td><td>辛香味·烧鱼馆(红安店)</td><td>餐饮服务;中餐厅;湖北菜(鄂菜)</td><td>4.5</td><td>57.00</td><td>城关镇金沙村二桥西汪家集贸市场东部</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c0d679bf47491e4cf83993b1f2d31f64_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>黄冈市黄州顺景宫土菜馆(水岸公馆店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>34.00</td><td>水岸公馆东南2门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_9970_1772943487306_18725463.jpg"></td></tr>
+<tr><td>✅B</td><td>嚣夜大排档(黄州开发区学生街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>56.00</td><td>新港二路13号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8FD0FF57_0DEB_4BD5_8FEC_07AA09F8E7B9_L0_001_2000_150_1766565420340_58246337.jpg"></td></tr>
+<tr><td>✅B</td><td>醉一品土菜馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>82.00</td><td>迎宾大道561号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4800519790cd23006c4e3fd9efccffde_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>三国吊锅</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>58.00</td><td>温泉镇罗非鱼基地1栋1层1单元101号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5a15fa1d1d0260ece56edb522db8f03c_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>大碗菜(二店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>60.00</td><td>武穴办事处明惠广场B区128-130号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000631_1757689047120_41691258.jpg"></td></tr>
+<tr><td>✅B</td><td>香山园农家饭</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>78.00</td><td>七里坪镇花园畈村附近的农家菜私房菜特色美食朋友聚会家庭聚餐承接宴席</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/791e647147bc9aba51d7067f68a5d675"></td></tr>
+<tr><td>✅B</td><td>浠袁记牛肉面</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>11.00</td><td>清泉镇文化路1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5e4fdbb0d645725e0000003216648662?type=pic"></td></tr>
+<tr><td>✅B</td><td>鑫晶土菜坊</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>77.00</td><td>东坡大道62号黄冈科技职业学院旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260310-a8722ce0ab2523963865ab13-pRKzyA4I6TA0V6qaXv3PS.jpg"></td></tr>
+<tr><td>✅B</td><td>新轩阁美食城(月湖店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>68.00</td><td>襟湖路4-1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/07d3e07a9a5a8c950000005651982753?type=pic"></td></tr>
+<tr><td>✅B</td><td>万氏老字号瓦罐汤</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>15.00</td><td>新华正街60号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0004e5a1991cd04f0000000724150778?type=pic"></td></tr>
+<tr><td>✅B</td><td>万小七大排档(麻城店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>66.00</td><td>将军南路1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6C3BF65C_12EB_4828_857E_F5B93FAE9F38_L0_001_1126_2000_1740842514950_55778279.jpg"></td></tr>
+<tr><td>✅B</td><td>小强烧烤大排档</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>49.00</td><td>金色阳光城西北门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100114787_1773109776654_95869015.jpg"></td></tr>
+<tr><td>✅B</td><td>顶峰锅贴大排档(西湖一路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>34.00</td><td>西湖一路30号城管局对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e0eba257dd6b51904c8ae9ee038043bb"></td></tr>
+<tr><td>✅B</td><td>光头强烧烤(一品福地)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>51.00</td><td>一品福地104店铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/31b2986aebc9cf08301285670ec84425"></td></tr>
+<tr><td>✅B</td><td>绍喜烧烤小排档</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>36.00</td><td>清泉镇双桥北路172号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_468_1760046791682_50188152.jpg"></td></tr>
+<tr><td>✅B</td><td>节节红卤虾海鲜烧烤大排档</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>89.00</td><td>齐昌大道330号(百家夜市城旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4c5817cb2d5146cd0000003121736770?type=pic"></td></tr>
+<tr><td>✅B</td><td>甜老板超级大牌档(东城国际店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>63.00</td><td>同泰路碧桂园S1-111商铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/982a5c131008203389ac1e1cab875c0b"></td></tr>
+<tr><td>✅B</td><td>梁记粥铺(红安店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>82.00</td><td>金沙世纪城临水壹号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3503253A_1BE2_4A64_B283_7F80AE649B87_L0_001_1500_200_1758013906859_29803132.jpg"></td></tr>
+<tr><td>✅B</td><td>爷爷家的粥铺·忆江南(洪广毕昇温泉酒店店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>83.00</td><td>温泉镇温泉北路特1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8ad2d160be1267c412f9b2efe06950c8_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>梅林鲜一品面馆(黄商购物中心店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>15.00</td><td>东门路18号黄商购物中心F1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a680c122d623675cc8d5119c3b970e0a"></td></tr>
+<tr><td>✅B</td><td>大雄哥拉面馆</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>12.00</td><td>黄梅镇鲍照路大雄哥拉面馆</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1195CD9D_1A5E_42BC_AF03_4FDDD020CB64_L0_001_2160_216_1759805706308_23674156.jpg"></td></tr>
+<tr><td>✅B</td><td>麦当劳(麻城摩尔城店)</td><td>餐饮服务;快餐厅;麦当劳</td><td>4.5</td><td>29.00</td><td>陵园路与南正街交汇处麻城摩尔城一楼麦当劳店</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8524541bf653b389e4eb0f37758bbea7_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>黄记白果小吃(紫竹林店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>18.00</td><td>紫竹林11栋2单元</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d947b510f4659d3a0000003392342098?type=pic"></td></tr>
+<tr><td>✅B</td><td>王牌杀猪粉(麻城店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>14.00</td><td>龙池街道将军路28号7栋105-106号铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000074441_ss__1731489901502_45403432.jpg"></td></tr>
+<tr><td>✅B</td><td>巴河黄腊丁汤面馆(西湖一路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>23.00</td><td>西湖一路13号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ea97c33f156d833d0f87de874d3e561b"></td></tr>
+<tr><td>✅B</td><td>梦巷遵义羊肉粉(黄州店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>24.00</td><td>八一路中商百货往东100米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3a9a623696d3aadda99a6764cb246f5e"></td></tr>
+<tr><td>✅B</td><td>小食侯湘(黄梅店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>50.00</td><td>人民大道569号(汽车站好又多斜对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/query_pic?id=stedd51985-07f9-484a-89da-444fab326fc4&amp;user=search&amp;operate=original"></td></tr>
+<tr><td>✅B</td><td>柴火小厨</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>100.00</td><td>麻城文化小镇西门东北70米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100005602_1740646893848_91685232.jpg"></td></tr>
+<tr><td>✅B</td><td>小辣椒黄梅土菜馆</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>40.00</td><td>郭林桥新村六路与郭林桥新村一路交叉口东北80米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a8634df2ec93f9d87acc001d6d3d064a"></td></tr>
+<tr><td>✅B</td><td>大集体饭店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>60.00</td><td>红两路99号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/728a19b5570c399aa6e01ccf551efbfa"></td></tr>
+<tr><td>✅B</td><td>渔家大院</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>61.00</td><td>小池镇清江大道电信隔壁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_7092_1657454478535_d2c9f234.jpg"></td></tr>
+<tr><td>✅B</td><td>达圣甲·老郝家常菜(总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>74.00</td><td>赤壁一路99号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_9991_1772957587871_45961968.jpg"></td></tr>
+<tr><td>✅B</td><td>稻香小院黄梅菜</td><td>餐饮服务;中餐厅;湖北菜(鄂菜)</td><td>4.5</td><td>35.00</td><td>永安村7组稻香禅居民宿</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260222-1a2974d628d8f8eb6dab85ba-89dEfbf83ZR795WtqtwvPY.jpg"></td></tr>
+<tr><td>✅B</td><td>学生街美食广场(三能教育广场店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>21.00</td><td>新港大道89号三能教育广场F1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100006114_1772540408477_72606553.jpg"></td></tr>
+<tr><td>✅B</td><td>醉秋风美食城</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>58.00</td><td>义水北路296号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7070778b782b88e062397cd1d3a3ada5"></td></tr>
+<tr><td>✅B</td><td>汤河夜市</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>—</td><td>温泉路与长安大道交叉口东北480米</td><td></td></tr>
+</tbody></table></div>
+<p>（另 236 家见 §11 原始数据，评分排序后 80 名未列入）</p>
+<h2>7. 苍蝇馆 / 小店候选（40 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>爱河小院农家饭</td><td>店名小店语义</td><td>4.6</td><td>48.00</td><td>206县道天台山森林公园公司团建特色农家菜食宿一体附近名宿团建漂流</td><td></td></tr>
+<tr><td>田埂季·山野私房菜</td><td>店名小店语义</td><td>4.6</td><td>71.00</td><td>文峰路8号瑞丰世家</td><td></td></tr>
+<tr><td>小厨土菜馆</td><td>店名小店语义</td><td>4.6</td><td>20.00</td><td>黄梅镇人民大道818号</td><td></td></tr>
+<tr><td>天天渔港大排档(锦绣苑店)</td><td>店名小店语义</td><td>4.6</td><td>100.00</td><td>锦绣苑</td><td></td></tr>
+<tr><td>小小大排档</td><td>店名小店语义</td><td>4.6</td><td>72.00</td><td>刊江大道细垄上路口</td><td></td></tr>
+<tr><td>黄冈市黄州顺景宫土菜馆(水岸公馆店)</td><td>店名小店语义</td><td>4.5</td><td>34.00</td><td>水岸公馆东南2门旁</td><td></td></tr>
+<tr><td>嚣夜大排档(黄州开发区学生街店)</td><td>店名小店语义</td><td>4.5</td><td>56.00</td><td>新港二路13号</td><td></td></tr>
+<tr><td>醉一品土菜馆</td><td>店名小店语义</td><td>4.5</td><td>82.00</td><td>迎宾大道561号</td><td></td></tr>
+<tr><td>香山园农家饭</td><td>店名小店语义</td><td>4.5</td><td>78.00</td><td>七里坪镇花园畈村附近的农家菜私房菜特色美食朋友聚会家庭聚餐承接宴席</td><td></td></tr>
+<tr><td>鑫晶土菜坊</td><td>店名小店语义</td><td>4.5</td><td>77.00</td><td>东坡大道62号黄冈科技职业学院旁</td><td></td></tr>
+<tr><td>万小七大排档(麻城店)</td><td>店名小店语义</td><td>4.5</td><td>66.00</td><td>将军南路1号</td><td></td></tr>
+<tr><td>小强烧烤大排档</td><td>店名小店语义</td><td>4.5</td><td>49.00</td><td>金色阳光城西北门旁</td><td></td></tr>
+<tr><td>顶峰锅贴大排档(西湖一路店)</td><td>店名小店语义</td><td>4.5</td><td>34.00</td><td>西湖一路30号城管局对面</td><td></td></tr>
+<tr><td>节节红卤虾海鲜烧烤大排档</td><td>店名小店语义</td><td>4.5</td><td>89.00</td><td>齐昌大道330号(百家夜市城旁)</td><td></td></tr>
+<tr><td>小辣椒黄梅土菜馆</td><td>店名小店语义</td><td>4.5</td><td>40.00</td><td>郭林桥新村六路与郭林桥新村一路交叉口东北80米</td><td></td></tr>
+<tr><td>达圣甲·老郝家常菜(总店)</td><td>店名小店语义</td><td>4.5</td><td>74.00</td><td>赤壁一路99号</td><td></td></tr>
+<tr><td>三里畈巴河人家土菜馆</td><td>店名小店语义</td><td>4.4</td><td>53.00</td><td>弘博·水墨年华南门旁</td><td></td></tr>
+<tr><td>盛友私房菜</td><td>店名小店语义</td><td>4.4</td><td>65.00</td><td>中环路110号附近</td><td></td></tr>
+<tr><td>一品天下海鲜大排档</td><td>店名小店语义</td><td>4.4</td><td>71.00</td><td>红安县东路万景城万家酒店一楼一品天下海鲜大排档</td><td></td></tr>
+<tr><td>小农夫湖南土菜(万锦城店)</td><td>店名小店语义</td><td>4.4</td><td>53.00</td><td>万锦城小区商铺第三号楼一楼04-05号铺</td><td></td></tr>
+<tr><td>小佬头烧烤大排档(城投.时代广场店)</td><td>店名小店语义</td><td>4.4</td><td>58.00</td><td>城投时代广场</td><td></td></tr>
+<tr><td>527大排档</td><td>店名小店语义</td><td>4.4</td><td>46.00</td><td>老汽车站527大排档</td><td></td></tr>
+<tr><td>二师兄大排档</td><td>店名小店语义</td><td>4.4</td><td>43.00</td><td>温泉镇温泉北路英山客厅</td><td></td></tr>
+<tr><td>聚味欢朋家鲜大排档</td><td>店名小店语义</td><td>4.4</td><td>42.00</td><td>广源瑞府一栋8/121/122/123</td><td></td></tr>
+<tr><td>人间肆季·鲜货烧烤大排档</td><td>店名小店语义</td><td>4.4</td><td>55.00</td><td>鼓楼办事处二桥头滨河公园旁</td><td></td></tr>
+<tr><td>山李娃(土菜院子)</td><td>店名小店语义</td><td>4.4</td><td>84.00</td><td>漕河镇南门畈七组77号(南阳三路新妇幼对面)</td><td></td></tr>
+<tr><td>黑马大排档</td><td>店名小店语义</td><td>4.3</td><td>26.00</td><td>明珠路与保康路交叉口北100米</td><td></td></tr>
+<tr><td>阿苏烧烤大排档</td><td>店名小店语义</td><td>4.3</td><td>50.00</td><td>陵园大道31-1号附近</td><td></td></tr>
+<tr><td>喜湘宴·私房菜</td><td>店名小店语义</td><td>4.2</td><td>59.00</td><td>红色旅游路中国邮政储蓄银行(大河镇支行)北侧约220米</td><td></td></tr>
+<tr><td>大别山土菜馆</td><td>店名小店语义</td><td>4.2</td><td>42.00</td><td>薄刀峰景区鹤皋古街3号楼一层</td><td></td></tr>
+<tr><td>清泉人家私房菜馆</td><td>店名小店语义</td><td>4.1</td><td>46.00</td><td>闻一多大道313号(黄商超市鲁宝店对面)</td><td></td></tr>
+<tr><td>庆余农家</td><td>店名小店语义</td><td>4.1</td><td>—</td><td>红山镇乌云山村</td><td></td></tr>
+<tr><td>老四家常菜(034乡道)</td><td>店名小店语义</td><td>4.0</td><td>50.00</td><td>濯港一社区105国道旁</td><td></td></tr>
+<tr><td>辣不怂·川菜大排档(浠水润达店)</td><td>店名小店语义</td><td>4.0</td><td>34.00</td><td>车站大道888号浠水润达国际购物中心F4层018号</td><td></td></tr>
+<tr><td>百里山川美食城-原《红飞土菜馆》</td><td>店名小店语义</td><td>3.9</td><td>—</td><td>106县道西50米</td><td></td></tr>
+<tr><td>罗田古月土菜馆</td><td>店名小店语义</td><td>3.8</td><td>—</td><td>九资河镇圣人堂村中心广场</td><td></td></tr>
+<tr><td>步行街潘德芬小吃店</td><td>店名小店语义</td><td>3.8</td><td>18.00</td><td>沿河大道与303县道交叉口东220米</td><td></td></tr>
+<tr><td>红遍天烧烤店(翟港路店)</td><td>店名小店语义</td><td>3.6</td><td>96.00</td><td>翟港路12号(翟港路与丽文大道交口)</td><td></td></tr>
+<tr><td>长胜街小吃店</td><td>店名小店语义</td><td>3.3</td><td>13.00</td><td>320省道与沿河大道交叉口西南100米</td><td>评分 3.3 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>弘农农家</td><td>店名小店语义</td><td>2.9</td><td>—</td><td>219县道东50米</td><td>评分 2.9 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（41 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>福硕特产(一品福第A区店)</td><td>购物服务;专卖店;土特产专卖店</td><td>4.2</td><td>徐寿辉大道与祝家边巷交叉口东140米</td></tr>
+<tr><td>⚠️</td><td>一尖香武穴特色扶贫馆</td><td>购物服务;专卖店;专营店</td><td>4.1</td><td>刊江大道西3号</td></tr>
+<tr><td>⚠️</td><td>熊大土特产(东坡小区店)</td><td>购物服务;专卖店;土特产专卖店</td><td>4.1</td><td>东坡小区西北门旁</td></tr>
+<tr><td>⚠️</td><td>八妹特产</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.0</td><td>人民大道222号</td></tr>
+<tr><td>⚠️</td><td>黄梅特产店</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.0</td><td>黄梅大道459号</td></tr>
+<tr><td>⚠️</td><td>刘姐土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>4.0</td><td>上寨街</td></tr>
+<tr><td>⚠️</td><td>麻城特产(杜鹃大道店)</td><td>购物服务;专卖店;专营店</td><td>3.9</td><td>杜鹃大道麻城特产店</td></tr>
+<tr><td>⚠️</td><td>麻城特产(建设路店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.9</td><td>建设西路8号</td></tr>
+<tr><td>⚠️</td><td>红安土特产(新街店)</td><td>购物服务;专卖店;土特产专卖店｜购物服务;超级市场;超市</td><td>3.9</td><td>新街土特产(工商银行旁边)</td></tr>
+<tr><td>⚠️</td><td>皮蛋姐土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.9</td><td>343省道与228省道交叉口东南120米</td></tr>
+<tr><td>⚠️</td><td>茶乡人家</td><td>购物服务;专卖店;土特产专卖店｜餐饮服务;餐饮相关场所;餐饮相关</td><td>3.8</td><td>乌云山茶叶公园老门楼入内100米</td></tr>
+<tr><td>⚠️</td><td>罗田土特产(吉祥小区店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.8</td><td>青砖湖路55号小区西南3门旁</td></tr>
+<tr><td>⚠️</td><td>梅儿姐土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.8</td><td>西环路72号</td></tr>
+<tr><td>⚠️</td><td>张帆特产</td><td>购物服务;综合市场;果品市场</td><td>3.7</td><td>新华正街460号</td></tr>
+<tr><td>⚠️</td><td>芳草时光原生态特产</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.7</td><td>勇毅路勇毅馨苑小区门店(停车场正对面)</td></tr>
+<tr><td>⚠️</td><td>麻城土特产(明珠大道店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.7</td><td>明珠大道相地城小区门口麻城特产店</td></tr>
+<tr><td>⚠️</td><td>蕲春土特产超市</td><td>购物服务;超级市场;超市</td><td>3.6</td><td>蕲春光荣院隔壁</td></tr>
+<tr><td>⚠️</td><td>盛鑫土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.6</td><td>沿河大道15号</td></tr>
+<tr><td>⚠️</td><td>浠水县深林土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.5</td><td>闻一多大道270号</td></tr>
+<tr><td>⚠️</td><td>山珍百味土特产店</td><td>购物服务;专卖店;土特产专卖店</td><td>3.5</td><td>义水北路与万密斋大道交叉口西60米</td></tr>
+<tr><td>⚠️</td><td>广缘烟酒副食店</td><td>购物服务;专卖店;烟酒专卖店</td><td>3.5</td><td>永宁大道西29号</td></tr>
+<tr><td>⚠️</td><td>浠水印象</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.5</td><td>新华正街456号</td></tr>
+<tr><td>❌</td><td>内蒙特产草原涮羊肉</td><td>购物服务;专卖店;专营店</td><td>3.4</td><td>东门路与筷子巷交叉口西北80米</td></tr>
+<tr><td>❌</td><td>黄梅特产店</td><td>购物服务;专卖店;土特产专卖店</td><td>3.4</td><td>人民大道222号</td></tr>
+<tr><td>❌</td><td>武穴土特产</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.4</td><td>龙潭宾馆西南门西70米</td></tr>
+<tr><td>❌</td><td>山里货特产(碧水星城店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.3</td><td>凤山镇义水南路196号</td></tr>
+<tr><td>❌</td><td>好运来副食店武穴特产</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.2</td><td>南洋花园酒店对面巷子里左侧</td></tr>
+<tr><td>❌</td><td>武穴诚丰副食土特产</td><td>购物服务;专卖店;专营店</td><td>3.2</td><td>武穴街道李顶武社区</td></tr>
+<tr><td>❌</td><td>家乡情特产礼品批发超市</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.2</td><td>新华正街与车站大道交叉口西北300米</td></tr>
+<tr><td>❌</td><td>姣姐鲜果土特产</td><td>购物服务;综合市场;果品市场</td><td>3.2</td><td>洗马镇洗马畈村新农村第三栋</td></tr>
+<tr><td>❌</td><td>小燕子土特产商行(英山农产品批发大市场店)</td><td>购物服务;综合市场;农副产品市场</td><td>3.2</td><td>洪广农贸</td></tr>
+<tr><td>❌</td><td>手工油面</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.2</td><td>宋埠镇英联大道357号</td></tr>
+<tr><td>❌</td><td>天堂尚品山泉水(大别山土特产)</td><td>生活服务;生活服务场所;生活服务场所</td><td>3.2</td><td>新港大道109号</td></tr>
+<tr><td>❌</td><td>内蒙古牛羊肉特产店</td><td>购物服务;综合市场;农副产品市场</td><td>3.1</td><td>孝感乡路与金盛路交叉口东北300米</td></tr>
+<tr><td>❌</td><td>小周纯干黄牛肉</td><td>购物服务;综合市场;农副产品市场</td><td>3.1</td><td>小区路与云台西街交叉口东20米</td></tr>
+<tr><td>❌</td><td>乡部落特产专卖</td><td>购物服务;专卖店;专营店</td><td>3.1</td><td>创业路066号</td></tr>
+<tr><td>❌</td><td>朱兵山货行</td><td>购物服务;综合市场;果品市场</td><td>2.9</td><td>义水北路罗田</td></tr>
+<tr><td>❌</td><td>心怡特产副食(金谷园店)</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>2.8</td><td>龙池路金谷园</td></tr>
+<tr><td>❌</td><td>可心土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>2.7</td><td>106县道西50米</td></tr>
+<tr><td>❌</td><td>盐田河土特产</td><td>购物服务;商场;购物中心</td><td>2.5</td><td>209县道与059乡道交叉口北240米</td></tr>
+<tr><td>⚠️</td><td>蕲迹艾草工厂店</td><td>医疗保健服务;医药保健销售店;医疗保健用品</td><td>—</td><td>李时珍医药港B2-27号</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>黄州学生街（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>嚣夜大排档(黄州开发区学生街店)</td><td>距离就近</td><td>97m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>宝丽金·国际娱乐</td><td>距离就近</td><td>98m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>宝丽金·国际娱乐</td><td>距离就近</td><td>98m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>湘满楼(地道湖南菜)</td><td>距离就近</td><td>110m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>周荡烧烤大排档(学生街店)</td><td>距离就近</td><td>123m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>明珠宾馆(黄冈师范学院店)</td><td>距离就近</td><td>183m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>桔子红了电竞馆学生街店</td><td>距离就近</td><td>226m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>学生街美食广场(三能教育广场店)</td><td>距离就近</td><td>236m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>Helens海伦司小酒馆(黄冈昆仑东湖一号店)</td><td>距离就近</td><td>338m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>黑猫·电竞台球俱乐部(黄冈师范学院店)</td><td>距离就近</td><td>390m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>冈Boom酒馆(师院店)</td><td>距离就近</td><td>394m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>Chill Room Bar·冷却室(师院店)</td><td>距离就近</td><td>402m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>渔味堂(新港大道店)</td><td>距离就近</td><td>470m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>小林卤煮(瑞天广场店)</td><td>距离就近</td><td>570m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>麻城广场（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>施南巡梦·沉浸式密室(麻城广场店)</td><td>名称互证</td><td>0m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>小白鲸游乐园(麻城广场店)</td><td>名称互证</td><td>36m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>暗光幻境·鬼屋(麻城广场店)</td><td>名称互证</td><td>39m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>倾锅倾城海鲜火锅烤肉自助(麻城广场店)</td><td>名称互证</td><td>43m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>孩皮吧家庭娱乐中心(麻城广场店)</td><td>名称互证</td><td>55m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>兔尔堡亲子乐园(麻城广场店)</td><td>名称互证</td><td>94m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>名人堂网咖(麻城广场店)</td><td>名称互证</td><td>151m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>南京灌汤小笼包(麻城店)</td><td>名称互证</td><td>226m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>简朴寨城市旅店(陵园路店)</td><td>距离就近</td><td>289m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>胡老大馄饨店(工业路店)</td><td>距离就近</td><td>313m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>伴醉人间小酒馆</td><td>距离就近</td><td>315m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>辉仔烧烤</td><td>距离就近</td><td>316m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>丁三姐烤粑(麻城店)</td><td>距离就近</td><td>342m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>EHA赛博萤火电竞馆(麻城融辉步行街12栋)</td><td>距离就近</td><td>462m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>王牌杀猪粉(麻城店)</td><td>距离就近</td><td>583m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>浠水润达国际购物中心（22 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>恐龙游乐园</td><td>名称互证</td><td>2m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>ABAM电玩城(润达国际购物中心双桥路店)</td><td>距离就近</td><td>13m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>ABAM电玩城(润达国际购物中心双桥路店)</td><td>距离就近</td><td>13m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>辣不怂·川菜大排档(浠水润达店)</td><td>名称互证</td><td>15m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>抓小鱼儿童乐园(浠水润达店)</td><td>距离就近</td><td>17m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>中影星汇电影城(浠水店)</td><td>距离就近</td><td>21m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>漳州万达影城</td><td>名称互证</td><td>42m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>Tm-Max神秘岛密室逃脱(润达街区店)</td><td>距离就近</td><td>217m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>泽杉电玩城</td><td>距离就近</td><td>243m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>泽杉电玩城</td><td>距离就近</td><td>243m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>虾雨·辣螃铠盆盆蟹</td><td>距离就近</td><td>284m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>万氏老字号瓦罐汤</td><td>距离就近</td><td>297m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>周黑鸭(黄冈浠水店)</td><td>距离就近</td><td>298m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>智得优亲子益智乐园</td><td>距离就近</td><td>299m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>绍喜烧烤小排档</td><td>距离就近</td><td>374m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>耿记小龙虾(浠水店)</td><td>距离就近</td><td>406m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>肯德基(浠水盛百客店)</td><td>距离就近</td><td>475m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>武汉炸酱面馆</td><td>距离就近</td><td>485m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>浠袁记牛肉面</td><td>距离就近</td><td>531m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>533m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>兴华电影城(新华正街店)</td><td>距离就近</td><td>533m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四川人家后街店(农科路店)</td><td>距离就近</td><td>591m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场（54 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>JOYMARK(黄冈黄州万达广场店)</td><td>名称互证</td><td>2m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>直通车欢聚中心(黄冈万达店)</td><td>名称互证</td><td>20m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>直通车欢聚中心(黄冈万达店)</td><td>名称互证</td><td>20m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>至幻佳境科技密室(黄冈黄州万达广场店)</td><td>名称互证</td><td>39m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>星聚会KTV(黄岗黄州万达广场店)</td><td>名称互证</td><td>53m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>老汪的面馆(黄冈万达店)</td><td>名称互证</td><td>56m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>醉得意·山茶油炒土鸡(黄冈万达店)</td><td>名称互证</td><td>57m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>万达影城(黄冈万达广场店)</td><td>名称互证</td><td>58m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>重庆德庄火锅(武穴万达店)</td><td>名称互证</td><td>60m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>大玩家(黄冈万达广场店)</td><td>名称互证</td><td>65m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>火木星球(黄冈万达店)</td><td>名称互证</td><td>74m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>宝贝王超级乐园</td><td>名称互证</td><td>94m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>万达宝贝王(黄冈店)</td><td>名称互证</td><td>95m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>麦当劳(黄冈麦当劳万达餐厅)</td><td>名称互证</td><td>97m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>肯德基(黄冈万达店)</td><td>名称互证</td><td>103m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>老乡鸡(万达广场店)</td><td>名称互证</td><td>120m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>必胜客(黄冈万达店)</td><td>名称互证</td><td>127m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>猫爪电玩社</td><td>距离就近</td><td>148m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>猫爪电玩社</td><td>距离就近</td><td>148m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>淘淘兔家庭娱乐中心(万达店)</td><td>名称互证</td><td>151m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>小叮当电玩社(万达店)</td><td>距离就近</td><td>162m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>幽领密室逃脱(万达广场武穴店)</td><td>名称互证</td><td>206m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>碧桂园中央公馆</td><td>距离就近</td><td>226m</td><td>—</td><td>§11</td></tr>
+<tr><td>潮乐空间电玩城</td><td>距离就近</td><td>241m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>潮乐空间电玩城</td><td>距离就近</td><td>241m</td><td>3.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>黄梅武商购物中心（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>捞鱼仔儿童娱乐(武商广场店)</td><td>名称互证</td><td>63m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>黄梅十月电竞(黄梅府店)</td><td>距离就近</td><td>178m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大中华购物广场（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>蕲春乐夹</td><td>距离就近</td><td>0m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>梦幻城堡游乐园(大中华购物广场店)</td><td>名称互证</td><td>31m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>蕲春县孩皮吧游乐城(大中华购物广场店)</td><td>名称互证</td><td>38m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>大中华电影城(大中华购物广场店)</td><td>名称互证</td><td>42m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>朴大叔拌饭(黄冈蕲春大中华广场店)</td><td>名称互证</td><td>48m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>JOYMARK(大中华购物广场店)</td><td>名称互证</td><td>50m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>JOYMARK(大中华购物广场店)</td><td>名称互证</td><td>50m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>Smart·先生真人密室逃脱(大中华购物广场店)</td><td>名称互证</td><td>61m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>抓小鱼</td><td>名称互证</td><td>71m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>锦官巷鲜牛肉串串火锅(蕲春大中华店)</td><td>距离就近</td><td>130m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>行动盒子主机游戏店</td><td>距离就近</td><td>324m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>惟楚有材湖南特色米粉</td><td>距离就近</td><td>433m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>传蕲柴火鸡甲鱼馆(蕲春店)</td><td>距离就近</td><td>522m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>中美如家酒店</td><td>距离就近</td><td>549m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>黄冈红安万达广场（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>天台假日商务宾馆(万达广场店)</td><td>距离就近</td><td>253m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>红安红税商务宾馆</td><td>距离就近</td><td>300m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>淘气堡儿童乐园</td><td>距离就近</td><td>370m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>真嗨皮乐园</td><td>距离就近</td><td>385m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>一品天下海鲜大排档</td><td>距离就近</td><td>480m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>小农夫湖南土菜(万锦城店)</td><td>距离就近</td><td>569m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>好酒不见</td><td>距离就近</td><td>574m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>小佬头烧烤大排档(城投.时代广场店)</td><td>距离就近</td><td>577m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>红安超级玩家娱乐中心(盛地广场店)</td><td>距离就近</td><td>588m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>红安超级玩家娱乐中心(盛地广场店)</td><td>距离就近</td><td>588m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星一号电玩城(盛地广场店)</td><td>距离就近</td><td>593m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>星一号电玩城(盛地广场店)</td><td>距离就近</td><td>593m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>一室半解·密室逃脱</td><td>距离就近</td><td>595m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(黄冈万达广场店)（27 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(黄冈万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>老汪的面馆(黄冈万达店)</td><td>距离就近</td><td>10m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>至幻佳境科技密室(黄冈黄州万达广场店)</td><td>距离就近</td><td>28m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>万达宝贝王(黄冈店)</td><td>距离就近</td><td>39m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>直通车欢聚中心(黄冈万达店)</td><td>距离就近</td><td>45m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>直通车欢聚中心(黄冈万达店)</td><td>距离就近</td><td>45m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>JOYMARK(黄冈黄州万达广场店)</td><td>距离就近</td><td>56m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麦当劳(黄冈麦当劳万达餐厅)</td><td>距离就近</td><td>58m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>醉得意·山茶油炒土鸡(黄冈万达店)</td><td>距离就近</td><td>60m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>肯德基(黄冈万达店)</td><td>距离就近</td><td>72m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>老乡鸡(万达广场店)</td><td>距离就近</td><td>74m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>大玩家(黄冈万达广场店)</td><td>距离就近</td><td>90m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>火木星球(黄冈万达店)</td><td>距离就近</td><td>100m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>星聚会KTV(黄岗黄州万达广场店)</td><td>距离就近</td><td>110m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>必胜客(黄冈万达店)</td><td>距离就近</td><td>161m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>猫爪电玩社</td><td>距离就近</td><td>183m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>猫爪电玩社</td><td>距离就近</td><td>183m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>小叮当电玩社(万达店)</td><td>距离就近</td><td>186m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>潮乐空间电玩城</td><td>距离就近</td><td>234m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>潮乐空间电玩城</td><td>距离就近</td><td>234m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>真啤熊精酿酒屋(黄冈万达店)</td><td>距离就近</td><td>255m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>塔斯汀中国汉堡(黄冈市万达碧桂园店)</td><td>距离就近</td><td>261m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>碧桂园中央公馆</td><td>距离就近</td><td>263m</td><td>—</td><td>§11</td></tr>
+<tr><td>小飞英语体验馆</td><td>距离就近</td><td>328m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>漳州万达影城</td><td>名称互证</td><td>34602m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大东方·非遗东坡肉(青砖湖路店)（37 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大东方·非遗东坡肉(青砖湖路店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>四个朋友自助棋牌(黄州中商百货店)</td><td>距离就近</td><td>110m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>四个朋友自助棋牌(黄州中商百货店)</td><td>距离就近</td><td>110m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>虾王蟹王</td><td>距离就近</td><td>110m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>尖叫中心·超级密室</td><td>距离就近</td><td>139m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>麻公馆24H自助棋牌</td><td>距离就近</td><td>142m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>横店电影城(黄冈居然之家店)</td><td>距离就近</td><td>144m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(黄冈居然之家店)</td><td>距离就近</td><td>153m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>快乐电堂</td><td>距离就近</td><td>166m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>杠上有花24小时自助棋牌</td><td>距离就近</td><td>175m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>晓阳春烧烤</td><td>距离就近</td><td>179m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>梦巷遵义羊肉粉(黄州店)</td><td>距离就近</td><td>190m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>U·SHOW PARTY·K优秀派对KTV(玫瑰时代广场店)</td><td>距离就近</td><td>199m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>中影星美国际影城(黄冈新世界广场店)</td><td>距离就近</td><td>232m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>米村拌饭(黄州居然之家店)</td><td>距离就近</td><td>242m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>花宝街石锅鸡公煲(湖北黄冈黄州区居然之家店)</td><td>距离就近</td><td>244m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>梦幻嘻游</td><td>距离就近</td><td>246m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>黄冈市黄州区友约24小时棋牌娱乐休闲室</td><td>距离就近</td><td>258m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>Mini·Mini(黄冈奥康商业步行街店)</td><td>距离就近</td><td>265m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>四个朋友24h智慧共享棋牌室(奥康步行街店)</td><td>距离就近</td><td>266m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>真啤熊精酿酒屋(青砖湖店)</td><td>距离就近</td><td>274m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(黄冈奥康步行街店)</td><td>距离就近</td><td>277m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>瑞宝游乐园馆</td><td>距离就近</td><td>286m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>银兴国际影城(黄冈奥康商业步行街店)</td><td>距离就近</td><td>290m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>守夜人恐怖密室</td><td>距离就近</td><td>306m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>潘记牛肉拉面(正街鑫城店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>潘记牛肉拉面(正街鑫城店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>密室逃脱密境空间</td><td>距离就近</td><td>160m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>魔斯密室酒吧(正街鑫城店)</td><td>距离就近</td><td>164m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>七彩大玩家逗逗鱼</td><td>距离就近</td><td>187m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>鹏泰美食城(鹏泰百货店)</td><td>距离就近</td><td>197m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>蓝鲸密室(鹏泰百货店)</td><td>距离就近</td><td>218m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>整点么肆小酒馆</td><td>距离就近</td><td>225m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>黄梅之星宾馆</td><td>距离就近</td><td>268m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>品味拉面馆</td><td>距离就近</td><td>351m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>老邓烧烤美食城(水产街口店)</td><td>距离就近</td><td>372m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>黄梅县古塔饭店</td><td>距离就近</td><td>385m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>黄梅天天宾馆</td><td>距离就近</td><td>557m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美食不夜城（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美食不夜城</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>纳森体育休闲酒吧</td><td>距离就近</td><td>305m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>优布劳精酿酒馆(钟楼店)</td><td>距离就近</td><td>416m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>刘一手重庆火锅(罗田店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>刘一手重庆火锅(罗田店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>悟川烧烤(义水南路店)</td><td>距离就近</td><td>54m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>智多宝儿童亲子乐园</td><td>距离就近</td><td>54m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>智多堡欢乐大世界(罗田城市广场店)</td><td>距离就近</td><td>102m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>胜利吊锅城(桥头店)</td><td>距离就近</td><td>115m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>整点酒吧</td><td>距离就近</td><td>342m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>猎豹网咖(义水外滩商业A区店)</td><td>距离就近</td><td>366m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>宝来屋亲子乐园</td><td>距离就近</td><td>382m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>动漫童话(义水北路店)</td><td>距离就近</td><td>385m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(罗田城南店)</td><td>距离就近</td><td>438m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>蓝鲸密室</td><td>距离就近</td><td>550m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>刘一手重庆火锅(武商购物中心店)</td><td>名称互证</td><td>103355m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>董和宋·禧宴（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>董和宋·禧宴</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>武穴大风车乐园(万达广场店)</td><td>距离就近</td><td>133m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>幽领密室逃脱(万达广场武穴店)</td><td>距离就近</td><td>167m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>大碗菜(二店)</td><td>距离就近</td><td>179m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>淘淘兔家庭娱乐中心(万达店)</td><td>距离就近</td><td>221m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>重庆德庄火锅(武穴万达店)</td><td>距离就近</td><td>280m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>宝贝王超级乐园</td><td>距离就近</td><td>424m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>麻城市商贸步行街（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>黄记白果小吃(紫竹林店)</td><td>距离就近</td><td>150m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>麦当劳(麻城摩尔城店)</td><td>距离就近</td><td>159m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>云逸宝摇杆游戏机(万达影城麻城摩尔城店)</td><td>距离就近</td><td>218m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机(万达影城麻城摩尔城店)</td><td>距离就近</td><td>218m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>mc-house超级密室</td><td>距离就近</td><td>337m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>密室逃脱</td><td>距离就近</td><td>343m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>EHA赛博萤火电竞馆(麻城融辉步行街12栋)</td><td>距离就近</td><td>439m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>东坡外滩（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>酒不久·JBB线上酒馆</td><td>距离就近</td><td>28m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>黄冈星龙国际影城(原成龙影城)</td><td>名称互证</td><td>69m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>眉州东坡酒楼(黄冈店)</td><td>名称互证</td><td>86m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>港北浪革民谣酒馆</td><td>名称互证</td><td>123m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>阿胖·肥肥龙虾(东坡外滩店)</td><td>名称互证</td><td>131m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>艳阳天·非遗楚菜(西湖一路店)</td><td>距离就近</td><td>266m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>鑫晶土菜坊</td><td>距离就近</td><td>570m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>长胜街（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>步行街潘德芬小吃店</td><td>距离就近</td><td>169m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>步行街美食餐厅</td><td>距离就近</td><td>193m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>长胜街小吃店</td><td>名称互证</td><td>268m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>华润红安七里坪镇张家湾游乐园</td><td>距离就近</td><td>384m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>电力街(蕲春县质量技术监督局西)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>辣点</td><td>距离就近</td><td>420m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>佳常风味馆(四路店)</td><td>距离就近</td><td>466m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>4号虾铺(电力街店)</td><td>名称互证</td><td>578m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>奇乐电玩俱乐部</td><td>距离就近</td><td>591m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>奇乐电玩俱乐部</td><td>距离就近</td><td>591m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>雅斯广场(武穴店)（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宇宙队长(武穴雅斯店)</td><td>名称互证</td><td>3m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>半醒酒咖</td><td>距离就近</td><td>164m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>蔡林记(武穴新街店)</td><td>距离就近</td><td>168m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>凯琳网咖</td><td>距离就近</td><td>232m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>老汉口(民主路店)</td><td>距离就近</td><td>282m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>蚝门夜市</td><td>距离就近</td><td>326m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>东三峡巫山麻辣烫</td><td>距离就近</td><td>345m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>武穴168宾馆</td><td>距离就近</td><td>444m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>摩登电竞馆</td><td>距离就近</td><td>450m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>黄冈舒城大酒店</td><td>距离就近</td><td>468m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>宇宙队长(好又多店)</td><td>距离就近</td><td>496m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>武商购物中心（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宇宙队长(武商店)</td><td>名称互证</td><td>17m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>刘一手重庆火锅(武商购物中心店)</td><td>名称互证</td><td>25m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>摩羊电竞(武商店)</td><td>距离就近</td><td>159m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>海珍鲜海鲜</td><td>距离就近</td><td>444m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>捞鱼仔儿童娱乐(武商广场店)</td><td>名称互证</td><td>40372m</td><td>2.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>黄商中美购物广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>天府鱼庄(蕲阳北路店)</td><td>距离就近</td><td>524m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>棕盛商业广场（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>刘文祥麻辣烫(棕盛广场店)</td><td>名称互证</td><td>8m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>喜弹馆手办盲盒弹珠世界</td><td>名称互证</td><td>43m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>万和国际影城(蕲春店)</td><td>名称互证</td><td>43m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>小海豚梦幻乐园(棕盛商业广场店)</td><td>名称互证</td><td>48m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>雾谷真人NPC密室逃脱</td><td>名称互证</td><td>134m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>优布劳精酿酒馆(红旗二桥店)</td><td>距离就近</td><td>190m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>蕲春小火苗双语亲子乐园</td><td>距离就近</td><td>194m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>4号虾铺(电力街店)</td><td>距离就近</td><td>210m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>东方花园快捷酒店</td><td>距离就近</td><td>213m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>惟楚有材湖南特色米粉</td><td>距离就近</td><td>362m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>传蕲柴火鸡甲鱼馆(蕲春店)</td><td>距离就近</td><td>394m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>新天地大酒店(漕河四路)</td><td>距离就近</td><td>439m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>正新鸡排(蕲春店)</td><td>距离就近</td><td>471m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>英山时代广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>密室逃脱探案剧本店</td><td>名称互证</td><td>2m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>隐叁酒馆(英山新郡时代广场店)</td><td>距离就近</td><td>130m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>华莱士·全鸡汉堡(英山飞达店)</td><td>距离就近</td><td>470m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>汤和夜市（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>四个朋友夜市一街店</td><td>距离就近</td><td>123m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>夜市烧烤</td><td>距离就近</td><td>275m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>浅听LIVEHOUSE</td><td>距离就近</td><td>357m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>闵记武汉黑鸭夜市街黄商二店</td><td>距离就近</td><td>394m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>好酒不见酒馆</td><td>距离就近</td><td>418m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>汤河夜市</td><td>距离就近</td><td>441m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>英山红都宾馆</td><td>距离就近</td><td>448m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>鹏泰百货（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>七彩大玩家逗逗鱼</td><td>名称互证</td><td>17m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>蓝鲸密室(鹏泰百货店)</td><td>名称互证</td><td>27m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>鹏泰美食城(鹏泰百货店)</td><td>名称互证</td><td>42m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>魔斯密室酒吧(正街鑫城店)</td><td>距离就近</td><td>105m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>整点么肆小酒馆</td><td>距离就近</td><td>108m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>密室逃脱密境空间</td><td>距离就近</td><td>190m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>潘记牛肉拉面(正街鑫城店)</td><td>距离就近</td><td>191m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>黄梅县古塔饭店</td><td>距离就近</td><td>222m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>黄梅之星宾馆</td><td>距离就近</td><td>445m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>老邓烧烤美食城(水产街口店)</td><td>距离就近</td><td>499m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>品味拉面馆</td><td>距离就近</td><td>541m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>南街面馆</td><td>距离就近</td><td>553m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>黄商购物中心（25 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>包天下(黄商购物中心店)</td><td>名称互证</td><td>56m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>雀喜棋牌(保利店)</td><td>距离就近</td><td>66m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>梅林鲜一品面馆(黄商购物中心店)</td><td>名称互证</td><td>71m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>云雀棋牌(黄州店)</td><td>距离就近</td><td>87m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四个朋友·24h自助棋牌(黄商店)</td><td>名称互证</td><td>94m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>爱麻24h无人自助棋牌(黄冈黄商保利店)</td><td>距离就近</td><td>94m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>喜麻24h自助棋牌</td><td>距离就近</td><td>96m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(保利壹号公馆店)</td><td>距离就近</td><td>123m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>享玩乐24h自助棋牌(紫荆广场店)</td><td>距离就近</td><td>257m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>蓝海影城(黄冈紫金城店)</td><td>距离就近</td><td>283m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(紫荆广场店)</td><td>距离就近</td><td>289m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>嗨闯大世界儿童乐园</td><td>距离就近</td><td>295m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>七碗湘辣椒炒肉(黄冈筷子巷店)</td><td>距离就近</td><td>309m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>陕西特色美食(筷子巷店)</td><td>距离就近</td><td>317m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>黄州梦巴黎(扬子江小区店)</td><td>距离就近</td><td>350m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>香格里拉(黄冈市儿童医院店)</td><td>距离就近</td><td>359m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>香格里拉(黄冈市儿童医院店)</td><td>距离就近</td><td>359m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>小目标棋牌休闲娱乐馆</td><td>距离就近</td><td>413m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>鑫玉荟k歌沐足</td><td>距离就近</td><td>443m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>出来玩嘛24h棋牌茶室副食</td><td>距离就近</td><td>459m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>湖南牛肉粉(果园南村店)</td><td>距离就近</td><td>473m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(天和大厦店)</td><td>距离就近</td><td>502m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>德尔福黄冈味道酒店</td><td>距离就近</td><td>584m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>味美思酒店</td><td>距离就近</td><td>588m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>悟川烧烤(义水南路店)</td><td>名称互证</td><td>61045m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（32 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>艾晶大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>5.0</td><td>—</td><td>李时珍大道1号</td></tr>
+<tr><td>✅A-</td><td>简朴寨城市旅店(陵园路店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>陵园路30号(麻城市中医医院旁)</td></tr>
+<tr><td>✅A-</td><td>四方宾馆(万密斋大道店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>凤山镇义水北路213号</td></tr>
+<tr><td>✅A-</td><td>黄梅东方大酒店(碧波园住宅小区东北店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>古塔东路137号</td></tr>
+<tr><td>✅A-</td><td>武穴创元大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>粮食路8号9</td></tr>
+<tr><td>✅A-</td><td>吉祥宾馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.8</td><td>—</td><td>204省道石佛寺镇火车站门口旁</td></tr>
+<tr><td>✅A-</td><td>泊心域·牧星营地</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>永佳河镇泊心域牧星营地</td></tr>
+<tr><td>✅A-</td><td>不见不散</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>清泉镇丽文大道与法院路交口</td></tr>
+<tr><td>✅A-</td><td>中美如家酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>齐昌大道145号</td></tr>
+<tr><td>✅B</td><td>雅景坊酒店</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>—</td><td>金桥大道170号(麻城市商务局斜对面)</td></tr>
+<tr><td>✅B</td><td>黄冈舒城大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>民主路77号</td></tr>
+<tr><td>✅B</td><td>武穴帝豪宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>民主路279号</td></tr>
+<tr><td>✅B</td><td>明珠快捷酒店(人民大道)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>人民大道842号</td></tr>
+<tr><td>✅B</td><td>武穴168宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>窝披塘路69号</td></tr>
+<tr><td>✅B</td><td>团风八方缘宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>利民路12号</td></tr>
+<tr><td>⚠️</td><td>明珠宾馆(黄冈师范学院店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>新港二路52号</td></tr>
+<tr><td>⚠️</td><td>贝壳酒店(罗田万密斋大道店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>国家税务总局罗田县税务局东南门西南50米</td></tr>
+<tr><td>⚠️</td><td>黄梅星光宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>小池客运站对面</td></tr>
+<tr><td>⚠️</td><td>浠水迷你时代酒店(皂泥湖店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜购物服务;便民商店/便利店;便民商店/便利店</td><td>4.2</td><td>—</td><td>翟港路81号(湖滨平价商行楼上)</td></tr>
+<tr><td>⚠️</td><td>红安红税商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>红税路105号</td></tr>
+<tr><td>⚠️</td><td>电信宾馆(玉带路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>梅川镇附近好的住宿附近好的旅馆附近好的民宿</td></tr>
+<tr><td>⚠️</td><td>东方花园快捷酒店</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>3.8</td><td>—</td><td>漕河大道351号</td></tr>
+<tr><td>⚠️</td><td>新天地大酒店(漕河四路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>漕河四路128号</td></tr>
+<tr><td>⚠️</td><td>麻城荷塘月色花园酒店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.7</td><td>—</td><td>沪蓉大道7号</td></tr>
+<tr><td>⚠️</td><td>黄梅天天宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>五祖大道363号五祖大道(黄梅博物馆附近)</td></tr>
+<tr><td>⚠️</td><td>黄梅帝苑大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>黄梅大道511号(皇家大酒店正对面)</td></tr>
+<tr><td>⚠️</td><td>天台假日商务宾馆(万达广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>城关镇红坪大道红税路二中旁(教研室旁,近将军城购物广场)</td></tr>
+<tr><td>⚠️</td><td>浠水宝丰宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>丽文大道365号(汽车站对面)</td></tr>
+<tr><td>⚠️</td><td>英山红都宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>温泉镇北门坳11号</td></tr>
+<tr><td>❌</td><td>小四川酒店(义水北路店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;餐饮相关场所;餐饮相关</td><td>3.3</td><td>—</td><td>义水北路167号罗田县一中出口处</td></tr>
+<tr><td>❌</td><td>黄梅之星宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>兴隆小区2号</td></tr>
+<tr><td>❌</td><td>浠水中运宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.0</td><td>—</td><td>车站路307号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>food</td><td>类型:中餐厅</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>类型:湘菜/地方菜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:地方风味餐厅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:酒楼/火锅/海鲜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:火锅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:海鲜酒楼</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:特色美食</td><td>38</td><td></td></tr>
+<tr><td>food</td><td>关键词:老字号</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:大排档</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:苍蝇馆</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>food</td><td>关键词:小吃</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:本地菜</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:特产</td><td>40</td><td></td></tr>
+<tr><td>product</td><td>关键词:土特产</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:地方特产</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:步行街</td><td>19</td><td></td></tr>
+<tr><td>district</td><td>类型:特色商业街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>类型:购物中心</td><td>44</td><td></td></tr>
+<tr><td>district</td><td>类型:商场</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:美食街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:夜市</td><td>29</td><td></td></tr>
+<tr><td>district</td><td>关键词:小吃街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:步行街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:购物中心</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:酒吧</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:酒馆</td><td>20</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:LIVEHOUSE</td><td>2</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:娱乐场所</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童乐园</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:电玩城</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:游乐场</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你游乐场</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:亲子乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:淘气堡</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童体验</td><td>15</td><td></td></tr>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>6</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>6</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>6</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>4</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>1</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/黄冈市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>4 个 POI 无地址</strong>，需人工补：家家旺购物中心(同泰路店)、夜市烧烤、蕲春大飞机、团陂影剧院</li><li><input type="checkbox" disabled> <strong>5 个 POI 无评分</strong>，暂标 ⚠️：蕲迹艾草工厂店、小凡星·语音发育迟缓·社交障碍·感统失调·谱系障碍(黄冈店)、碧桂园中央公馆、鄂东动物王国售票处、鄂东动物王国游客中心</li><li><input type="checkbox" disabled> 儿童游乐 150 家，其中场内 36 家、独立 114 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 10 个区县：团风县、武穴市、浠水县、红安县、罗田县、英山县、蕲春县、麻城市、黄州区、黄梅县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

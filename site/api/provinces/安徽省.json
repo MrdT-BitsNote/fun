@@ -1,0 +1,447 @@
+{
+ "province": "安徽省",
+ "stats": {
+  "cities": 16,
+  "poi": 12788,
+  "grades": {
+   "S": 24,
+   "A": 147,
+   "B": 139,
+   "C": 330
+  }
+ },
+ "cities": [
+  {
+   "city": "亳州市",
+   "province": "安徽省",
+   "adcode": "341600",
+   "poi": 824,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:24:17",
+   "page": "cities/341600.html",
+   "json": "api/cities/341600.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E4%BA%B3%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 12,
+    "C": 25
+   },
+   "dims": {
+    "food": 305,
+    "district": 181,
+    "leisure": 208,
+    "kids": 31,
+    "hotel": 26,
+    "product": 40
+   }
+  },
+  {
+   "city": "六安市",
+   "province": "安徽省",
+   "adcode": "341500",
+   "poi": 831,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:17:55",
+   "page": "cities/341500.html",
+   "json": "api/cities/341500.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%85%AD%E5%AE%89%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 12,
+    "B": 7,
+    "C": 21
+   },
+   "dims": {
+    "food": 300,
+    "district": 187,
+    "leisure": 218,
+    "kids": 26,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "合肥市",
+   "province": "安徽省",
+   "adcode": "340100",
+   "poi": 950,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:58",
+   "page": "cities/340100.html",
+   "json": "api/cities/340100.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%90%88%E8%82%A5%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 4,
+    "C": 34
+   },
+   "dims": {
+    "food": 287,
+    "district": 248,
+    "leisure": 223,
+    "kids": 34,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "安庆市",
+   "province": "安徽省",
+   "adcode": "340800",
+   "poi": 841,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:15:41",
+   "page": "cities/340800.html",
+   "json": "api/cities/340800.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%AE%89%E5%BA%86%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 5,
+    "B": 7,
+    "C": 27
+   },
+   "dims": {
+    "food": 290,
+    "district": 197,
+    "leisure": 210,
+    "kids": 41,
+    "hotel": 34,
+    "product": 40
+   }
+  },
+  {
+   "city": "宣城市",
+   "province": "安徽省",
+   "adcode": "341800",
+   "poi": 815,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:23:34",
+   "page": "cities/341800.html",
+   "json": "api/cities/341800.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%AE%A3%E5%9F%8E%E5%B8%82.md",
+   "grades": {
+    "S": 5,
+    "A": 4,
+    "B": 7,
+    "C": 24
+   },
+   "dims": {
+    "food": 293,
+    "district": 166,
+    "leisure": 208,
+    "kids": 30,
+    "hotel": 33,
+    "product": 41
+   }
+  },
+  {
+   "city": "宿州市",
+   "province": "安徽省",
+   "adcode": "341300",
+   "poi": 874,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:53",
+   "page": "cities/341300.html",
+   "json": "api/cities/341300.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E5%AE%BF%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 16,
+    "B": 9,
+    "C": 15
+   },
+   "dims": {
+    "food": 290,
+    "district": 213,
+    "leisure": 212,
+    "kids": 43,
+    "hotel": 27,
+    "product": 40
+   }
+  },
+  {
+   "city": "池州市",
+   "province": "安徽省",
+   "adcode": "341700",
+   "poi": 645,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:14:48",
+   "page": "cities/341700.html",
+   "json": "api/cities/341700.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E6%B1%A0%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 18,
+    "B": 9,
+    "C": 12
+   },
+   "dims": {
+    "food": 274,
+    "district": 122,
+    "leisure": 156,
+    "kids": 16,
+    "hotel": 36,
+    "product": 41
+   }
+  },
+  {
+   "city": "淮北市",
+   "province": "安徽省",
+   "adcode": "340600",
+   "poi": 706,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:17:12",
+   "page": "cities/340600.html",
+   "json": "api/cities/340600.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E6%B7%AE%E5%8C%97%E5%B8%82.md",
+   "grades": {
+    "S": 4,
+    "A": 8,
+    "B": 11,
+    "C": 17
+   },
+   "dims": {
+    "food": 280,
+    "district": 144,
+    "leisure": 177,
+    "kids": 33,
+    "hotel": 26,
+    "product": 10
+   }
+  },
+  {
+   "city": "淮南市",
+   "province": "安徽省",
+   "adcode": "340400",
+   "poi": 770,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:25:09",
+   "page": "cities/340400.html",
+   "json": "api/cities/340400.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E6%B7%AE%E5%8D%97%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 8,
+    "B": 11,
+    "C": 20
+   },
+   "dims": {
+    "food": 263,
+    "district": 187,
+    "leisure": 205,
+    "kids": 30,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "滁州市",
+   "province": "安徽省",
+   "adcode": "341100",
+   "poi": 830,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:19:31",
+   "page": "cities/341100.html",
+   "json": "api/cities/341100.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E6%BB%81%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 2,
+    "A": 5,
+    "B": 9,
+    "C": 24
+   },
+   "dims": {
+    "food": 280,
+    "district": 207,
+    "leisure": 207,
+    "kids": 40,
+    "hotel": 34,
+    "product": 40
+   }
+  },
+  {
+   "city": "芜湖市",
+   "province": "安徽省",
+   "adcode": "340200",
+   "poi": 846,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:42",
+   "page": "cities/340200.html",
+   "json": "api/cities/340200.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E8%8A%9C%E6%B9%96%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 10,
+    "B": 7,
+    "C": 23
+   },
+   "dims": {
+    "food": 282,
+    "district": 187,
+    "leisure": 215,
+    "kids": 41,
+    "hotel": 29,
+    "product": 41
+   }
+  },
+  {
+   "city": "蚌埠市",
+   "province": "安徽省",
+   "adcode": "340300",
+   "poi": 836,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:23",
+   "page": "cities/340300.html",
+   "json": "api/cities/340300.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E8%9A%8C%E5%9F%A0%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 17,
+    "B": 11,
+    "C": 12
+   },
+   "dims": {
+    "food": 277,
+    "district": 167,
+    "leisure": 206,
+    "kids": 37,
+    "hotel": 35,
+    "product": 40
+   }
+  },
+  {
+   "city": "铜陵市",
+   "province": "安徽省",
+   "adcode": "340700",
+   "poi": 637,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:14:09",
+   "page": "cities/340700.html",
+   "json": "api/cities/340700.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E9%93%9C%E9%99%B5%E5%B8%82.md",
+   "grades": {
+    "S": 4,
+    "A": 11,
+    "B": 10,
+    "C": 15
+   },
+   "dims": {
+    "food": 281,
+    "district": 115,
+    "leisure": 147,
+    "kids": 21,
+    "hotel": 26,
+    "product": 40
+   }
+  },
+  {
+   "city": "阜阳市",
+   "province": "安徽省",
+   "adcode": "341200",
+   "poi": 950,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:18:49",
+   "page": "cities/341200.html",
+   "json": "api/cities/341200.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E9%98%9C%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 9,
+    "C": 28
+   },
+   "dims": {
+    "food": 307,
+    "district": 239,
+    "leisure": 234,
+    "kids": 53,
+    "hotel": 28,
+    "product": 40
+   }
+  },
+  {
+   "city": "马鞍山市",
+   "province": "安徽省",
+   "adcode": "340500",
+   "poi": 728,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:16:22",
+   "page": "cities/340500.html",
+   "json": "api/cities/340500.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E9%A9%AC%E9%9E%8D%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 15,
+    "B": 8,
+    "C": 17
+   },
+   "dims": {
+    "food": 278,
+    "district": 137,
+    "leisure": 190,
+    "kids": 27,
+    "hotel": 33,
+    "product": 40
+   }
+  },
+  {
+   "city": "黄山市",
+   "province": "安徽省",
+   "adcode": "341000",
+   "poi": 705,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:03",
+   "page": "cities/341000.html",
+   "json": "api/cities/341000.json",
+   "md": "md/%E5%AE%89%E5%BE%BD%E7%9C%81/%E9%BB%84%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 6,
+    "A": 10,
+    "B": 8,
+    "C": 16
+   },
+   "dims": {
+    "food": 291,
+    "district": 152,
+    "leisure": 165,
+    "kids": 10,
+    "hotel": 38,
+    "product": 40
+   }
+  }
+ ]
+}

@@ -1,0 +1,393 @@
+{
+ "province": "广西壮族自治区",
+ "stats": {
+  "cities": 14,
+  "poi": 10510,
+  "grades": {
+   "S": 16,
+   "A": 180,
+   "B": 165,
+   "C": 199
+  }
+ },
+ "cities": [
+  {
+   "city": "北海市",
+   "province": "广西壮族自治区",
+   "adcode": "450500",
+   "poi": 715,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:04:16",
+   "page": "cities/450500.html",
+   "json": "api/cities/450500.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E5%8C%97%E6%B5%B7%E5%B8%82.md",
+   "grades": {
+    "S": 3,
+    "A": 12,
+    "B": 11,
+    "C": 14
+   },
+   "dims": {
+    "food": 278,
+    "district": 130,
+    "leisure": 188,
+    "kids": 18,
+    "hotel": 36,
+    "product": 40
+   }
+  },
+  {
+   "city": "南宁市",
+   "province": "广西壮族自治区",
+   "adcode": "450100",
+   "poi": 915,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:10:29",
+   "page": "cities/450100.html",
+   "json": "api/cities/450100.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E5%8D%97%E5%AE%81%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 8,
+    "B": 8,
+    "C": 24
+   },
+   "dims": {
+    "food": 265,
+    "district": 231,
+    "leisure": 236,
+    "kids": 48,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "崇左市",
+   "province": "广西壮族自治区",
+   "adcode": "451400",
+   "poi": 691,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:08:52",
+   "page": "cities/451400.html",
+   "json": "api/cities/451400.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E5%B4%87%E5%B7%A6%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 8,
+    "B": 16,
+    "C": 16
+   },
+   "dims": {
+    "food": 292,
+    "district": 138,
+    "leisure": 149,
+    "kids": 26,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "来宾市",
+   "province": "广西壮族自治区",
+   "adcode": "451300",
+   "poi": 684,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:12:03",
+   "page": "cities/451300.html",
+   "json": "api/cities/451300.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E6%9D%A5%E5%AE%BE%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 14,
+    "B": 8,
+    "C": 18
+   },
+   "dims": {
+    "food": 292,
+    "district": 135,
+    "leisure": 147,
+    "kids": 27,
+    "hotel": 26,
+    "product": 41
+   }
+  },
+  {
+   "city": "柳州市",
+   "province": "广西壮族自治区",
+   "adcode": "450200",
+   "poi": 821,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:05:49",
+   "page": "cities/450200.html",
+   "json": "api/cities/450200.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E6%9F%B3%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 7,
+    "A": 7,
+    "B": 6,
+    "C": 20
+   },
+   "dims": {
+    "food": 281,
+    "district": 178,
+    "leisure": 205,
+    "kids": 36,
+    "hotel": 29,
+    "product": 42
+   }
+  },
+  {
+   "city": "桂林市",
+   "province": "广西壮族自治区",
+   "adcode": "450300",
+   "poi": 839,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:11:13",
+   "page": "cities/450300.html",
+   "json": "api/cities/450300.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E6%A1%82%E6%9E%97%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 16,
+    "B": 11,
+    "C": 13
+   },
+   "dims": {
+    "food": 292,
+    "district": 178,
+    "leisure": 224,
+    "kids": 40,
+    "hotel": 30,
+    "product": 42
+   }
+  },
+  {
+   "city": "梧州市",
+   "province": "广西壮族自治区",
+   "adcode": "450400",
+   "poi": 722,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:06:30",
+   "page": "cities/450400.html",
+   "json": "api/cities/450400.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E6%A2%A7%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 14,
+    "B": 10,
+    "C": 15
+   },
+   "dims": {
+    "food": 278,
+    "district": 144,
+    "leisure": 197,
+    "kids": 23,
+    "hotel": 28,
+    "product": 40
+   }
+  },
+  {
+   "city": "河池市",
+   "province": "广西壮族自治区",
+   "adcode": "451200",
+   "poi": 720,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:12:44",
+   "page": "cities/451200.html",
+   "json": "api/cities/451200.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E6%B2%B3%E6%B1%A0%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 9,
+    "B": 23,
+    "C": 8
+   },
+   "dims": {
+    "food": 305,
+    "district": 142,
+    "leisure": 167,
+    "kids": 36,
+    "hotel": 24,
+    "product": 40
+   }
+  },
+  {
+   "city": "玉林市",
+   "province": "广西壮族自治区",
+   "adcode": "450900",
+   "poi": 804,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:08:04",
+   "page": "cities/450900.html",
+   "json": "api/cities/450900.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E7%8E%89%E6%9E%97%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 12,
+    "B": 17,
+    "C": 11
+   },
+   "dims": {
+    "food": 292,
+    "district": 162,
+    "leisure": 212,
+    "kids": 37,
+    "hotel": 29,
+    "product": 40
+   }
+  },
+  {
+   "city": "百色市",
+   "province": "广西壮族自治区",
+   "adcode": "451000",
+   "poi": 746,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:02:43",
+   "page": "cities/451000.html",
+   "json": "api/cities/451000.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E7%99%BE%E8%89%B2%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 9,
+    "B": 16,
+    "C": 15
+   },
+   "dims": {
+    "food": 288,
+    "district": 142,
+    "leisure": 189,
+    "kids": 35,
+    "hotel": 28,
+    "product": 40
+   }
+  },
+  {
+   "city": "贵港市",
+   "province": "广西壮族自治区",
+   "adcode": "450800",
+   "poi": 768,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:07:22",
+   "page": "cities/450800.html",
+   "json": "api/cities/450800.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E8%B4%B5%E6%B8%AF%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 15,
+    "B": 12,
+    "C": 13
+   },
+   "dims": {
+    "food": 298,
+    "district": 155,
+    "leisure": 194,
+    "kids": 26,
+    "hotel": 24,
+    "product": 40
+   }
+  },
+  {
+   "city": "贺州市",
+   "province": "广西壮族自治区",
+   "adcode": "451100",
+   "poi": 690,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:09:34",
+   "page": "cities/451100.html",
+   "json": "api/cities/451100.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E8%B4%BA%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 24,
+    "B": 7,
+    "C": 9
+   },
+   "dims": {
+    "food": 296,
+    "district": 131,
+    "leisure": 173,
+    "kids": 21,
+    "hotel": 27,
+    "product": 40
+   }
+  },
+  {
+   "city": "钦州市",
+   "province": "广西壮族自治区",
+   "adcode": "450700",
+   "poi": 741,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:03:24",
+   "page": "cities/450700.html",
+   "json": "api/cities/450700.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E9%92%A6%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 13,
+    "B": 14,
+    "C": 13
+   },
+   "dims": {
+    "food": 302,
+    "district": 153,
+    "leisure": 182,
+    "kids": 25,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "防城港市",
+   "province": "广西壮族自治区",
+   "adcode": "450600",
+   "poi": 654,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 20:04:56",
+   "page": "cities/450600.html",
+   "json": "api/cities/450600.json",
+   "md": "md/%E5%B9%BF%E8%A5%BF%E5%A3%AE%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E9%98%B2%E5%9F%8E%E6%B8%AF%E5%B8%82.md",
+   "grades": {
+    "S": 5,
+    "A": 19,
+    "B": 6,
+    "C": 10
+   },
+   "dims": {
+    "food": 292,
+    "district": 126,
+    "leisure": 142,
+    "kids": 12,
+    "hotel": 28,
+    "product": 40
+   }
+  }
+ ]
+}

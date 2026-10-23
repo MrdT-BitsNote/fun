@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>达州市 · 四川省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/四川省.html">← 返回四川省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>达州市 · 四川省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:24:36  ·  POI 总量：169（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>169</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>96%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 3 · 商圈 94 · 成人娱乐 126 · 儿童娱乐 15 · 酒店 28 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>四川省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>7 个</td></tr>
+<tr><td>街道/镇/乡</td><td>200 个</td></tr>
+<tr><td>区县构成</td><td>县×4、市辖区×2、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>通川区</td><td>113</td><td>67%</td></tr>
+<tr><td>达川区</td><td>19</td><td>11%</td></tr>
+<tr><td>大竹县</td><td>13</td><td>8%</td></tr>
+<tr><td>宣汉县</td><td>9</td><td>5%</td></tr>
+<tr><td>渠县</td><td>8</td><td>5%</td></tr>
+<tr><td>开江县</td><td>4</td><td>2%</td></tr>
+<tr><td>万源市</td><td>3</td><td>2%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（94 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>42</td></tr>
+<tr><td>购物中心/综合体</td><td>20</td></tr>
+<tr><td>批发城</td><td>20</td></tr>
+<tr><td>百货/商场</td><td>10</td></tr>
+<tr><td>步行街</td><td>1</td></tr>
+<tr><td>商业街</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（94 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>罗浮广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>13</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>索菲亚时尚大酒店(足浴店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>14</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>沃尔玛</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>12</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>新世纪百货(达州商都)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>11</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>美乐美地互动式KTV(罗浮广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>12</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>梦工场时尚纯K</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>16</td><td>1</td><td>3</td></tr>
+<tr><td>B</td><td>卡秀派对(翠屏大厦店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>16</td><td>1</td><td>3</td></tr>
+<tr><td>B</td><td>和悦广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>12</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>横店电影城(罗浮广场店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>14</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>太平洋影城(四川省达州市新世纪广场店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>13</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>世纪隆生活广场(世纪隆通锦·国际广场店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>10</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>天娱派对KTV</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>10</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>世纪隆超市(大北街店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>16</td><td>1</td><td>3</td></tr>
+<tr><td>C</td><td>YOYO优优酒店(达州市罗浮广场火车站店)</td><td>其他商业载体</td><td>4.3</td><td>1</td><td>8</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>宏泰宾馆</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>达州升华广场</td><td>百货/商场</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>北城酒店(大竹县煌歌广场店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>仁和新城购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>6</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>环城好一新商贸城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宏帆巴人广场</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>煌歌商业广场</td><td>步行街</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>6</td></tr>
+<tr><td>C</td><td>永辉超市(地旺广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(渠县店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>好一新批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>金鼓商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>曼哈顿·国际娱乐</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>6</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>横店电影城(达州升华广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>世纪隆超市(江湾城店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>金利美城市广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>世纪隆生活广场(大竹店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>6</td></tr>
+<tr><td>C</td><td>玛格派对国际商务汇</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>6</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>复兴批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>渠县比家美商务宾馆</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>UU迷你球房</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>6</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>达州洞天星密室光影剧场(升华广场店)</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>帆麦自助KTV(四川文理学院店)</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>北洲影城(北外店)</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>世纪隆超市(万源店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>世纪隆超市(新桥店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>世纪隆超市(侨兴中央城店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>罗浮广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：金兰路77号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>罗浮广场</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>美乐美地互动式KTV(罗浮广场店)、横店电影城(罗浮广场店)、春天里</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>YOYO优优酒店(达州市罗浮广场火车站店)</td></tr>
+</tbody></table></div>
+<h3>索菲亚时尚大酒店(足浴店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：来凤路朝阳巷29号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>索菲亚时尚大酒店(足浴店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>太平洋红旗影城(来凤路店)、梦工场时尚纯K、新保利</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>索菲亚时尚大酒店(足浴店)、达州宾馆、金利亚酒店</td></tr>
+</tbody></table></div>
+<h3>沃尔玛 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 3</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;沃尔玛）</li><li><strong>地址</strong>：朝阳东路165号-1层和-2层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沃尔玛</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>太平洋红旗影城(来凤路店)、新保利、梦工场时尚纯K</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>索菲亚时尚大酒店(足浴店)、达州宾馆、金利亚酒店</td></tr>
+</tbody></table></div>
+<h3>新世纪百货(达州商都) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：通川中路130号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>新世纪百货(达州商都)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>新保利、卡秀派对(翠屏大厦店)、梦工场时尚纯K</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>索菲亚时尚大酒店(足浴店)</td></tr>
+</tbody></table></div>
+<h3>美乐美地互动式KTV(罗浮广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：罗浮第壹区东北门旁</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>美乐美地互动式KTV(罗浮广场店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>美乐美地互动式KTV(罗浮广场店)、横店电影城(罗浮广场店)、春天里</td></tr>
+</tbody></table></div>
+<h3>梦工场时尚纯K —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 17 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：烽火巷99号2层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 16 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>梦工场时尚纯K</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>梦工场时尚纯K、博视影城商厦、卡秀派对(翠屏大厦店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>福宠乐园</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>索菲亚时尚大酒店(足浴店)、金利亚酒店、达州宾馆</td></tr>
+</tbody></table></div>
+<h3>卡秀派对(翠屏大厦店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 17 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV｜购物服务;服装鞋帽皮具店;服装鞋帽皮具店）</li><li><strong>地址</strong>：院棚巷59号翠屏大厦F1层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 16 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>卡秀派对(翠屏大厦店)</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>卡秀派对(翠屏大厦店)、博视影城商厦、梦工场时尚纯K</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>福宠乐园</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>索菲亚时尚大酒店(足浴店)、金利亚酒店、达州宾馆</td></tr>
+</tbody></table></div>
+<h3>和悦广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 3</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：朝阳东路165号城市中心广场旁</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>和悦广场</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>太平洋红旗影城(来凤路店)、新保利、梦工场时尚纯K</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>索菲亚时尚大酒店(足浴店)、达州宾馆、金利亚酒店</td></tr>
+</tbody></table></div>
+<h3>横店电影城(罗浮广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：万兴路385号罗浮新城市广场5层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>横店电影城(罗浮广场店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>美乐美地互动式KTV(罗浮广场店)、横店电影城(达州升华广场店)、横店电影城(罗浮广场店)</td></tr>
+</tbody></table></div>
+<h3>太平洋影城(四川省达州市新世纪广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：通川中路130号世纪广场二楼(肯德基旁)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>太平洋影城(四川省达州市新世纪广场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>新保利、卡秀派对(翠屏大厦店)、梦工场时尚纯K</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>索菲亚时尚大酒店(足浴店)</td></tr>
+</tbody></table></div>
+<h3>世纪隆生活广场(世纪隆通锦·国际广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;商场｜购物服务;超级市场;超市｜购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：金龙大道205号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>世纪隆生活广场(世纪隆通锦·国际广场店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>碰碰捌台球俱乐部.棋牌(通川白塔路店)、永利会·国际娱乐、麻界24H自助棋牌室(巨鑫园店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>达州金海宾馆</td></tr>
+</tbody></table></div>
+<h3>天娱派对KTV —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：观草巷与东城壕巷交叉口东北40米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>天娱派对KTV</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>博视影城商厦、卡秀派对(翠屏大厦店)、梦工场时尚纯K</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>福宠乐园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金利亚酒店</td></tr>
+</tbody></table></div>
+<h3>世纪隆超市(大北街店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 17 / 酒店 3</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：大北街50号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 16 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>世纪隆超市(大北街店)</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>梦工场时尚纯K、博视影城商厦、卡秀派对(翠屏大厦店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>福宠乐园</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>索菲亚时尚大酒店(足浴店)、金利亚酒店、达州宾馆</td></tr>
+</tbody></table></div>
+<h3>YOYO优优酒店(达州市罗浮广场火车站店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：朝阳西路458号国粮大厦F1层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥12（区间 ¥12–12）</li><li><strong>动线主轴</strong>：道金山南路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 8 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>YOYO优优酒店(达州市罗浮广场火车站店)</td></tr>
+<tr><td>美食</td><td>1</td><td>四个朋友(西客站店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>启点唯爱纯K、麻界24h自助棋牌(西外五一花园店)、四个朋友(西客站店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>京奥电竞酒店(达州火车站店)、YOYO优优酒店(达州市罗浮广场火车站店)、新力·花园酒店</td></tr>
+</tbody></table></div>
+<h3>宏泰宾馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：书苑社区沿河街利豪大厦二楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>宏泰宾馆</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>宏泰宾馆</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（126 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>23</td></tr>
+<tr><td>电影院</td><td>19</td></tr>
+<tr><td>棋牌室</td><td>12</td></tr>
+<tr><td>KTV</td><td>7</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>6</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>❌</td><td>达州巨幕影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>23.00</td><td>[]</td></tr>
+<tr><td>✅B</td><td>美乐美地互动式KTV(罗浮广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>28.00</td><td>罗浮第壹区东北门旁</td></tr>
+<tr><td>✅B</td><td>启点唯爱纯K</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>73.00</td><td>恒阳骊都二期</td></tr>
+<tr><td>✅B</td><td>曼哈顿·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>129.00</td><td>朝阳街道洪迈会馆(仁和新城店)仁和新城购物中心F3层</td></tr>
+<tr><td>✅B</td><td>梦工场时尚纯K</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>46.00</td><td>烽火巷99号2层</td></tr>
+<tr><td>✅B</td><td>卡秀派对(翠屏大厦店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;服装鞋帽皮具店;服装鞋帽皮具店</td><td>4.5</td><td>77.00</td><td>院棚巷59号翠屏大厦F1层</td></tr>
+<tr><td>✅B</td><td>星辉·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>78.00</td><td>西城街道大西街都市花园四区259号</td></tr>
+<tr><td>✅B</td><td>新保利</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>54.00</td><td>通川中路17号</td></tr>
+<tr><td>✅B</td><td>太平洋红旗影城(来凤路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>22.00</td><td>来凤路296号</td></tr>
+<tr><td>✅B</td><td>博视影城商厦</td><td>电影院</td><td>商务住宅;楼宇;商务写字楼</td><td>4.5</td><td>27.00</td><td>柴市街2号</td></tr>
+<tr><td>✅B</td><td>横店电影城(达州升华广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>31.00</td><td>南外二号干道汉兴街达州升华广场健身路123号7楼-A13</td></tr>
+<tr><td>✅B</td><td>雲杰茗楼</td><td>其他娱乐场所</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.5</td><td>—</td><td>龙泉路龙泉世纪城A栋2层</td></tr>
+<tr><td>✅B</td><td>永利会·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>43.00</td><td>朝阳街道金龙大道333号翡翠凤凰2-3楼</td></tr>
+<tr><td>✅B</td><td>玛格派对国际商务汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>—</td><td>朝阳街道巴渠东路318号仁和新城购物中心5楼</td></tr>
+<tr><td>✅B</td><td>熙悦会·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜生活服务;生活服务场所;生活服务场所</td><td>4.4</td><td>264.00</td><td>朝阳街道磨拜咖啡(仁和新城店)仁和春天国际花园</td></tr>
+<tr><td>✅B</td><td>熊猫不打烊自助KTV(文理学院店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>24.00</td><td>学府街与宏文路交叉口西南100米</td></tr>
+<tr><td>✅B</td><td>恋尚纯K PARTY KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>286.00</td><td>翠屏路致青春茶楼楼下</td></tr>
+<tr><td>✅B</td><td>横店电影城(罗浮广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>31.00</td><td>万兴路385号罗浮新城市广场5层</td></tr>
+<tr><td>✅B</td><td>太平洋影城(四川省达州市新世纪广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>26.00</td><td>通川中路130号世纪广场二楼(肯德基旁)</td></tr>
+<tr><td>✅B</td><td>万银影城(达州店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>40.00</td><td>华蜀南路132号美好农贸市场综合楼四楼</td></tr>
+<tr><td>✅B</td><td>春天里</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室｜餐饮服务;咖啡厅;咖啡厅</td><td>4.4</td><td>55.00</td><td>万兴路439号</td></tr>
+<tr><td>✅B</td><td>碰碰捌台球俱乐部.棋牌(通川白塔路店)</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.4</td><td>—</td><td>A栋商业二楼391号附201号</td></tr>
+<tr><td>✅B</td><td>达州洞天星密室光影剧场(升华广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;影剧院;剧场</td><td>4.3</td><td>7.00</td><td>升华广场6楼(篮球馆旁)</td></tr>
+<tr><td>✅B</td><td>达州市凯歌娱乐有限公司</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>35.00</td><td>朝阳街道巴渠东路318号仁和春天7栋</td></tr>
+<tr><td>✅B</td><td>九区量贩KTV</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.3</td><td>42.00</td><td>西城街道大西街1591号金利亚酒店</td></tr>
+<tr><td>✅B</td><td>帆麦自助KTV(四川文理学院店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>24.00</td><td>中迪商业广场星月里-居尚C区2-4-3-1</td></tr>
+<tr><td>✅B</td><td>乐爵纯K</td><td>电影院</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>25.00</td><td>柴市街2号博视影城商厦F3层</td></tr>
+<tr><td>✅B</td><td>天娱派对KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>34.00</td><td>观草巷与东城壕巷交叉口东北40米</td></tr>
+<tr><td>✅B</td><td>北洲影城(北外店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>34.00</td><td>北外宏冠城市广场商业2层</td></tr>
+<tr><td>✅B</td><td>宣汉橙天国际影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>17.00</td><td>蒲江街道西华大道龙城一号A座3楼</td></tr>
+<tr><td>✅B</td><td>太平洋影城(达州开江店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>29.00</td><td>环城西路239号二楼</td></tr>
+<tr><td>✅B</td><td>麻界24h自助棋牌(西外五一花园店)</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.3</td><td>14.00</td><td>秋棠街25号</td></tr>
+<tr><td>✅B</td><td>麻界24H自助棋牌室(巨鑫园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>36.00</td><td>金龙大道260号巨鑫园</td></tr>
+<tr><td>✅B</td><td>杠上发自助棋牌室四季花城店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>14.00</td><td>白塔路451号</td></tr>
+<tr><td>✅B</td><td>麻界自助棋牌室(香榭国际店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>19.00</td><td>朝阳街道凤凰大道222号3幢楼2-A1号</td></tr>
+<tr><td>⚠️</td><td>GOGO吸引力纯K</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>193.00</td><td>西外镇达州西外金兰路2号(原华联超市旁)</td></tr>
+<tr><td>⚠️</td><td>U.E太平洋影城(仁和新城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>26.00</td><td>巴渠东路318号1号楼仁和新城5层</td></tr>
+<tr><td>⚠️</td><td>海逸电影城(通洲商厦店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>30.00</td><td>柴市街216号6楼</td></tr>
+<tr><td>⚠️</td><td>秦巴国际影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>27.00</td><td>复兴镇环城西路秦巴电商谷2-2-2</td></tr>
+<tr><td>⚠️</td><td>幸福蓝海巴人影城(宏帆巴人广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>33.00</td><td>宏帆巴人广场6层</td></tr>
+<tr><td>⚠️</td><td>雀家•自助棋牌麻将 西外水文局店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>15.00</td><td>金兰路431号兰桂花园</td></tr>
+<tr><td>⚠️</td><td>雀家•自助棋牌麻将【西外海棠湾店】</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>15.00</td><td>朝阳西路3号二楼</td></tr>
+<tr><td>⚠️</td><td>谜雾实景密室体验馆</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>69.00</td><td>朝阳中路415号</td></tr>
+<tr><td>⚠️</td><td>樱奈密室(来凤路店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>72.00</td><td>东城街道来凤路37号2幢4单元401号</td></tr>
+<tr><td>⚠️</td><td>剧忽优·沉浸式超级剧场(黑月西外店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.1</td><td>78.00</td><td>朝阳西路美佳美装饰城一楼后街区6号</td></tr>
+<tr><td>⚠️</td><td>宣汉银河影城(多宝寺路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>33.00</td><td>多宝寺路117号</td></tr>
+<tr><td>⚠️</td><td>麻伽汇棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>17.00</td><td>白塔路243号质监小区1幢1单元3号</td></tr>
+<tr><td>⚠️</td><td>金楠茗楼(馨园店)</td><td>其他娱乐场所</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.1</td><td>29.00</td><td>金兰路468号馨园</td></tr>
+<tr><td>⚠️</td><td>四个朋友(西客站店)</td><td>其他娱乐场所</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.1</td><td>12.00</td><td>朝阳街道金山南路341号二楼</td></tr>
+<tr><td>⚠️</td><td>金逸影城(和悦广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>—</td><td>和悦广场3层Z01号</td></tr>
+<tr><td>⚠️</td><td>环球国际影城(万佳商业广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>26.00</td><td>惠安路115号</td></tr>
+<tr><td>⚠️</td><td>雀家主题棋牌室(巨鑫园)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>13.00</td><td>金牌路36号</td></tr>
+<tr><td>⚠️</td><td>麻界自助棋牌(罗浮阳光店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>17.00</td><td>罗浮·阳光</td></tr>
+<tr><td>⚠️</td><td>美好庄园(金兰小区店)</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.9</td><td>47.00</td><td>金兰路248号金兰小区</td></tr>
+<tr><td>⚠️</td><td>上阳茗楼</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>38.00</td><td>西外镇朝阳西路251号</td></tr>
+<tr><td>⚠️</td><td>黑月沉浸式剧场&amp;密室(升华店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.8</td><td>104.00</td><td>升华广场6楼01-2号</td></tr>
+<tr><td>⚠️</td><td>小戏鬼超级密室(城市中心广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.8</td><td>66.00</td><td>来凤路122号</td></tr>
+<tr><td>⚠️</td><td>圣地雅歌商务(k歌)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.8</td><td>48.00</td><td>朝阳西路635号</td></tr>
+<tr><td>⚠️</td><td>飞越天下9D球幕飞行影院(罗浮广场店)</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.8</td><td>33.00</td><td>金兰路77号罗浮广场F3层</td></tr>
+<tr><td>⚠️</td><td>大地影院(通川国际新城广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>44.00</td><td>达州通锦国际广场第4层</td></tr>
+</tbody></table></div>
+<p>（另 7 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（15 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>9</td></tr>
+<tr><td>其他儿童场所</td><td>6</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>UU迷你球房</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>仁和春天商业广场4号楼4层</td></tr>
+<tr><td>✅B</td><td>萌宠之家(东湖路店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>东湖路369号</td></tr>
+<tr><td>✅B</td><td>萌宠之家(祥和路店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>祥和路144号月季园56门市</td></tr>
+<tr><td>✅B</td><td>喵喵连萌宠物星球</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>朝阳街道滨河西路碧桂园珑樾湾8号楼1-108号</td></tr>
+<tr><td>⚠️</td><td>宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>清河东路与永隆巷交叉口西40米</td></tr>
+<tr><td>⚠️</td><td>玖点萌宠乐园(龙城名邸店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>新育路龙城名邸3-LG38号门面</td></tr>
+<tr><td>⚠️</td><td>洲际萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>莲花湖巴山大剧院对面露天酒吧旁</td></tr>
+<tr><td>⚠️</td><td>金石云顶野生动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>金石镇高兴村</td></tr>
+<tr><td>⚠️</td><td>大竹动植物园</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>中华乡白雀村7组</td></tr>
+<tr><td>⚠️</td><td>福宠乐园</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>珠市街151号</td></tr>
+<tr><td>❌</td><td>杨杨小熊乐园</td><td>其他儿童场所</td><td>独立</td><td>3.2</td><td>马河沟路55号</td></tr>
+<tr><td>❌</td><td>大竹迷你家常菜</td><td>其他儿童场所</td><td>独立</td><td>2.3</td><td>文昌巷与文昌阁巷交叉口西南60米</td></tr>
+<tr><td>⚠️</td><td>东升园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>达川大道三段398号</td></tr>
+<tr><td>⚠️</td><td>金石云顶野生动物园停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>金石镇高兴村金石云顶野生动物园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>公共厕所</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>金石云顶野生动物园(东侧)</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（50 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>达州升华广场</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>汉兴大道二段170号</td></tr>
+<tr><td>✅A-</td><td>仁和新城购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>巴渠东路318号</td></tr>
+<tr><td>✅A-</td><td>环城好一新商贸城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>达州绕城公路与秦巴大道交叉口西南500米</td></tr>
+<tr><td>✅A-</td><td>罗浮广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>金兰路77号</td></tr>
+<tr><td>✅A-</td><td>沃尔玛</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>朝阳东路165号-1层和-2层</td></tr>
+<tr><td>✅A-</td><td>新世纪百货(达州商都)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>通川中路130号</td></tr>
+<tr><td>✅A-</td><td>永辉超市(地旺广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>华中安置房小区西南门西80米</td></tr>
+<tr><td>❌</td><td>好一新批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>金鼓商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>景观大道109号</td></tr>
+<tr><td>✅B</td><td>和悦广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>朝阳东路165号城市中心广场旁</td></tr>
+<tr><td>✅B</td><td>世纪隆超市(江湾城店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>江湾城一期南门东南140米</td></tr>
+<tr><td>✅B</td><td>金利美城市广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>竹阳东路东段东南区派出所</td></tr>
+<tr><td>✅B</td><td>世纪隆生活广场(大竹店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>白塔街道新华路东段煌歌广场世纪隆生活广场负一楼</td></tr>
+<tr><td>✅B</td><td>复兴批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>达州绕城公路与秦巴大道交叉口南320米</td></tr>
+<tr><td>✅B</td><td>世纪隆生活广场(世纪隆通锦·国际广场店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>金龙大道205号</td></tr>
+<tr><td>✅B</td><td>世纪隆超市(万源店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>河街南路世纪新城B1层</td></tr>
+<tr><td>✅B</td><td>世纪隆超市(新桥店)</td><td>购物中心/综合体</td><td>4.3</td><td>1</td><td>0</td><td>达川大道三段398号东升园</td></tr>
+<tr><td>✅B</td><td>世纪隆超市(大北街店)</td><td>购物中心/综合体</td><td>4.3</td><td>1</td><td>0</td><td>大北街50号</td></tr>
+<tr><td>✅B</td><td>世纪隆超市(侨兴中央城店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>峨城大道侨兴中央城综合体B1层</td></tr>
+<tr><td>✅B</td><td>世纪隆超市(车坝店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>通川中路165号老车坝购物广场F1层</td></tr>
+<tr><td>✅B</td><td>东汇海鲜批发城(西晶御雅园店)</td><td>批发城</td><td>4.3</td><td>0</td><td>1</td><td>永兴路西晶御雅园</td></tr>
+<tr><td>✅B</td><td>环城好一新复兴批发市场水果区</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>环城好一新</td></tr>
+<tr><td>✅B</td><td>龙田家具批发商城</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>四川达竹物流有限责任公司仓储园区3号库房</td></tr>
+<tr><td>✅B</td><td>好一新奥莱购物广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>绥定大道二段238号</td></tr>
+<tr><td>⚠️</td><td>大润发(御赐苑店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>鹤鸣西路19号御赐苑</td></tr>
+<tr><td>⚠️</td><td>世纪隆超市(复兴店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>复兴镇秦巴电商谷2栋1层</td></tr>
+<tr><td>⚠️</td><td>世纪隆超市(长田新苑店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>长田新苑北区南门西130米</td></tr>
+<tr><td>⚠️</td><td>达州市复兴花卉批发市场</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>通商路</td></tr>
+<tr><td>⚠️</td><td>名创优品(仁和新城购物中心店)</td><td>购物中心/综合体</td><td>4.1</td><td>1</td><td>0</td><td>巴渠东路318号仁和新城购物中心B1层B13-1号商铺</td></tr>
+<tr><td>⚠️</td><td>奥特乐(达州达川升华广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>南外丁家巷升华广场2层30号(大明眼镜楼上)</td></tr>
+<tr><td>⚠️</td><td>衣乐惠大型服装批发城(达州店)</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>城市中心广场B区</td></tr>
+<tr><td>⚠️</td><td>木森家具批发中心</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>杨柳街道绥定大道二段233号好一新五金机电市场11栋3楼木森家具批发中心</td></tr>
+<tr><td>⚠️</td><td>罗浮新城市广场(罗浮广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>朝阳街道金兰路77号罗浮新城市广场3楼B区9号</td></tr>
+<tr><td>⚠️</td><td>环球国际影城(万佳商业广场店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>惠安路115号</td></tr>
+<tr><td>⚠️</td><td>鸡鸭批发市场</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>凤翔街与魏复路交叉口西南280米</td></tr>
+<tr><td>⚠️</td><td>环城好一新三和水产批发</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>复兴镇好一新市场23-3栋2层11号12号门市</td></tr>
+<tr><td>⚠️</td><td>九龙印象渠江奥特莱斯广场</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>黄花大道北段1599号</td></tr>
+<tr><td>⚠️</td><td>福森建材批发市场</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>金南大道与达州绕城公路交叉口东40米</td></tr>
+<tr><td>⚠️</td><td>复兴水果批发市场进口</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>环城好一新复兴批发市场东1门南80米</td></tr>
+<tr><td>⚠️</td><td>品牌家具批发城</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>科伦路与南国大道二段交叉口西南260米</td></tr>
+<tr><td>⚠️</td><td>誉多佰盛摩尔批发超市(现代城店)</td><td>百货/商场</td><td>3.7</td><td>0</td><td>0</td><td>河西现代城</td></tr>
+<tr><td>⚠️</td><td>荣惠高档水果批发部</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>四川供销合作社卫龙服务中心加油站北侧110米</td></tr>
+<tr><td>⚠️</td><td>复兴批发市场招商中心</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>环城好一新复兴批发市场东2门旁</td></tr>
+<tr><td>❌</td><td>达州市桥架龙骨穿线管批发</td><td>批发城</td><td>3.4</td><td>0</td><td>0</td><td>好一新五金机电市场第9栋第6号</td></tr>
+<tr><td>❌</td><td>义乌小商品批发</td><td>批发城</td><td>3.2</td><td>0</td><td>0</td><td>魏复路与达州绕城公路交叉口西北180米</td></tr>
+<tr><td>❌</td><td>张廷文蔬菜批发配送中心</td><td>批发城</td><td>3.1</td><td>0</td><td>0</td><td>复兴蔬菜批发市场A区76号</td></tr>
+<tr><td>❌</td><td>袁德富蔬菜批发中心</td><td>批发城</td><td>3.0</td><td>0</td><td>0</td><td>蔬菜市场A区37-38号</td></tr>
+<tr><td>❌</td><td>小温蔬菜批发</td><td>批发城</td><td>2.8</td><td>0</td><td>0</td><td>环城好一新蔬菜批发市场C区9号</td></tr>
+<tr><td>❌</td><td>富丽百货(牌立湾店)</td><td>百货/商场</td><td>2.6</td><td>0</td><td>0</td><td>西街49号</td></tr>
+<tr><td>⚠️</td><td>燕飞商贸有限公司(奶粉批发超市)</td><td>批发城</td><td>—</td><td>0</td><td>0</td><td>环城好一新商贸城</td></tr>
+</tbody></table></div>
+<h2>6. 本地美食与特色美食（3 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅B</td><td>东汇海鲜批发城(西晶御雅园店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.3</td><td>—</td><td>永兴路西晶御雅园</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/933A2B92_E5BA_490D_B87C_56F1309A523B_L0_001_IMG_2724_1655786579748_17d244d8.JPG"></td></tr>
+<tr><td>⚠️</td><td>四个朋友(西客站店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.1</td><td>12.00</td><td>朝阳街道金山南路341号二楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3f38aee6619eb2adb77bc2a2d17205bf"></td></tr>
+<tr><td>❌</td><td>大竹迷你家常菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>2.3</td><td>21.00</td><td>文昌巷与文昌阁巷交叉口西南60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/aa374327aac059706eeb12f736f59f3f"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（1 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>大竹迷你家常菜</td><td>店名小店语义</td><td>2.3</td><td>21.00</td><td>文昌巷与文昌阁巷交叉口西南60米</td><td>评分 2.3 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>宏泰宾馆（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宏泰宾馆</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>达州升华广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>达州洞天星密室光影剧场(升华广场店)</td><td>距离就近</td><td>23m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>横店电影城(达州升华广场店)</td><td>名称互证</td><td>60m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>黑月沉浸式剧场&amp;密室(升华店)</td><td>距离就近</td><td>84m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北城酒店(大竹县煌歌广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>北城酒店(大竹县煌歌广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>大竹金海旅馆</td><td>距离就近</td><td>21m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>红楼商务宾馆(北大街)</td><td>距离就近</td><td>257m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>同福客栈(大竹县职业中学店)</td><td>距离就近</td><td>552m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>唯客乐假日酒店</td><td>距离就近</td><td>575m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>仁和新城购物中心（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>U.E太平洋影城(仁和新城店)</td><td>距离就近</td><td>10m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玛格派对国际商务汇</td><td>名称互证</td><td>58m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>UU迷你球房</td><td>距离就近</td><td>115m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>曼哈顿·国际娱乐</td><td>名称互证</td><td>156m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>熙悦会·国际娱乐</td><td>距离就近</td><td>164m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>达州市凯歌娱乐有限公司</td><td>距离就近</td><td>172m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>雲杰茗楼</td><td>距离就近</td><td>418m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宏帆巴人广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幸福蓝海巴人影城(宏帆巴人广场店)</td><td>名称互证</td><td>101m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>罗浮广场（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>飞越天下9D球幕飞行影院(罗浮广场店)</td><td>名称互证</td><td>11m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>美乐美地互动式KTV(罗浮广场店)</td><td>名称互证</td><td>115m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>横店电影城(罗浮广场店)</td><td>名称互证</td><td>130m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>剧忽优·沉浸式超级剧场(黑月西外店)</td><td>距离就近</td><td>226m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>GOGO吸引力纯K</td><td>距离就近</td><td>236m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>淼森自由麻将</td><td>距离就近</td><td>347m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>潘多拉超级密室(海棠湾店)</td><td>距离就近</td><td>360m</td><td>2.2</td><td>§11</td></tr>
+<tr><td>雀家•自助棋牌麻将【西外海棠湾店】</td><td>距离就近</td><td>397m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>春天里</td><td>距离就近</td><td>419m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>美好庄园(金兰小区店)</td><td>距离就近</td><td>452m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>上阳茗楼</td><td>距离就近</td><td>520m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>雀家自助棋牌室</td><td>距离就近</td><td>535m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>麻伽汇棋牌</td><td>距离就近</td><td>584m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>YOYO优优酒店(达州市罗浮广场火车站店)</td><td>名称互证</td><td>1001m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>煌歌商业广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>红楼商务宾馆(北大街)</td><td>距离就近</td><td>326m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>大竹鑫海宾馆</td><td>距离就近</td><td>331m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>唯客乐假日酒店</td><td>距离就近</td><td>356m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>金洋酒店</td><td>距离就近</td><td>438m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>北城酒店(大竹县煌歌广场店)</td><td>距离就近</td><td>553m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>大竹金海旅馆</td><td>距离就近</td><td>568m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>索菲亚时尚大酒店(足浴店)（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>索菲亚时尚大酒店(足浴店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金逸影城(和悦广场店)</td><td>距离就近</td><td>83m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>小戏鬼超级密室(城市中心广场店)</td><td>距离就近</td><td>106m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>樱奈密室(来凤路店)</td><td>距离就近</td><td>210m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>太平洋红旗影城(来凤路店)</td><td>距离就近</td><td>304m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>达州宾馆</td><td>距离就近</td><td>395m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>乐爵纯K</td><td>距离就近</td><td>478m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>海逸电影城(通洲商厦店)</td><td>距离就近</td><td>501m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>梦工场时尚纯K</td><td>距离就近</td><td>502m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>金利亚酒店</td><td>距离就近</td><td>518m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>博士影城</td><td>距离就近</td><td>531m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>太平洋影城(四川省达州市新世纪广场店)</td><td>距离就近</td><td>534m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新保利</td><td>距离就近</td><td>537m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>卡秀派对(翠屏大厦店)</td><td>距离就近</td><td>554m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博视影城商厦</td><td>距离就近</td><td>558m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>九区量贩KTV</td><td>距离就近</td><td>587m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星辉·国际娱乐</td><td>距离就近</td><td>593m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沃尔玛（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金逸影城(和悦广场店)</td><td>距离就近</td><td>7m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>索菲亚时尚大酒店(足浴店)</td><td>距离就近</td><td>80m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>小戏鬼超级密室(城市中心广场店)</td><td>距离就近</td><td>85m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>樱奈密室(来凤路店)</td><td>距离就近</td><td>170m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>太平洋红旗影城(来凤路店)</td><td>距离就近</td><td>382m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>海逸电影城(通洲商厦店)</td><td>距离就近</td><td>446m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>达州宾馆</td><td>距离就近</td><td>458m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>太平洋影城(四川省达州市新世纪广场店)</td><td>距离就近</td><td>466m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新保利</td><td>距离就近</td><td>468m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>乐爵纯K</td><td>距离就近</td><td>492m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>梦工场时尚纯K</td><td>距离就近</td><td>508m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博士影城</td><td>距离就近</td><td>539m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>卡秀派对(翠屏大厦店)</td><td>距离就近</td><td>552m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>金利亚酒店</td><td>距离就近</td><td>556m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>博视影城商厦</td><td>距离就近</td><td>560m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新世纪百货(达州商都)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新保利</td><td>距离就近</td><td>26m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>太平洋影城(四川省达州市新世纪广场店)</td><td>距离就近</td><td>26m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>海逸电影城(通洲商厦店)</td><td>距离就近</td><td>156m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>樱奈密室(来凤路店)</td><td>距离就近</td><td>349m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>小戏鬼超级密室(城市中心广场店)</td><td>距离就近</td><td>440m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金逸影城(和悦广场店)</td><td>距离就近</td><td>463m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>卡秀派对(翠屏大厦店)</td><td>距离就近</td><td>529m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>索菲亚时尚大酒店(足浴店)</td><td>距离就近</td><td>532m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>梦工场时尚纯K</td><td>距离就近</td><td>549m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博视影城商厦</td><td>距离就近</td><td>553m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博士影城</td><td>距离就近</td><td>572m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>乐爵纯K</td><td>距离就近</td><td>573m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金鼓商业广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宣汉橙天国际影城</td><td>距离就近</td><td>285m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美乐美地互动式KTV(罗浮广场店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美乐美地互动式KTV(罗浮广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>剧忽优·沉浸式超级剧场(黑月西外店)</td><td>距离就近</td><td>125m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>飞越天下9D球幕飞行影院(罗浮广场店)</td><td>距离就近</td><td>125m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>横店电影城(罗浮广场店)</td><td>距离就近</td><td>188m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>GOGO吸引力纯K</td><td>距离就近</td><td>234m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>淼森自由麻将</td><td>距离就近</td><td>256m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>潘多拉超级密室(海棠湾店)</td><td>距离就近</td><td>287m</td><td>2.2</td><td>§11</td></tr>
+<tr><td>雀家•自助棋牌麻将【西外海棠湾店】</td><td>距离就近</td><td>331m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>春天里</td><td>距离就近</td><td>388m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>上阳茗楼</td><td>距离就近</td><td>410m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>雀家自助棋牌室</td><td>距离就近</td><td>489m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>美好庄园(金兰小区店)</td><td>距离就近</td><td>557m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>曼哈顿·国际娱乐（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>曼哈顿·国际娱乐</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>熙悦会·国际娱乐</td><td>距离就近</td><td>56m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>UU迷你球房</td><td>距离就近</td><td>58m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>达州市凯歌娱乐有限公司</td><td>距离就近</td><td>64m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>U.E太平洋影城(仁和新城店)</td><td>距离就近</td><td>166m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玛格派对国际商务汇</td><td>距离就近</td><td>179m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>雲杰茗楼</td><td>距离就近</td><td>314m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>梦工场时尚纯K（20 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>梦工场时尚纯K</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博士影城</td><td>距离就近</td><td>31m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>乐爵纯K</td><td>距离就近</td><td>47m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>博视影城商厦</td><td>距离就近</td><td>64m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>卡秀派对(翠屏大厦店)</td><td>距离就近</td><td>75m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>恋尚纯K PARTY KTV</td><td>距离就近</td><td>130m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>金利亚酒店</td><td>距离就近</td><td>213m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>天娱派对KTV</td><td>距离就近</td><td>248m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>九区量贩KTV</td><td>距离就近</td><td>289m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>福宠乐园</td><td>距离就近</td><td>332m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>樱奈密室(来凤路店)</td><td>距离就近</td><td>369m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>达州宾馆</td><td>距离就近</td><td>380m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>海逸电影城(通洲商厦店)</td><td>距离就近</td><td>400m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>小戏鬼超级密室(城市中心广场店)</td><td>距离就近</td><td>423m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星辉·国际娱乐</td><td>距离就近</td><td>463m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>索菲亚时尚大酒店(足浴店)</td><td>距离就近</td><td>502m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金逸影城(和悦广场店)</td><td>距离就近</td><td>515m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>太平洋红旗影城(来凤路店)</td><td>距离就近</td><td>518m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>太平洋影城(四川省达州市新世纪广场店)</td><td>距离就近</td><td>528m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新保利</td><td>距离就近</td><td>531m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>卡秀派对(翠屏大厦店)（20 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>卡秀派对(翠屏大厦店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博视影城商厦</td><td>距离就近</td><td>26m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博士影城</td><td>距离就近</td><td>69m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>梦工场时尚纯K</td><td>距离就近</td><td>75m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>恋尚纯K PARTY KTV</td><td>距离就近</td><td>113m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乐爵纯K</td><td>距离就近</td><td>122m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>天娱派对KTV</td><td>距离就近</td><td>187m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>金利亚酒店</td><td>距离就近</td><td>278m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>福宠乐园</td><td>距离就近</td><td>300m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>九区量贩KTV</td><td>距离就近</td><td>348m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>海逸电影城(通洲商厦店)</td><td>距离就近</td><td>375m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>樱奈密室(来凤路店)</td><td>距离就近</td><td>400m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>达州宾馆</td><td>距离就近</td><td>455m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>小戏鬼超级密室(城市中心广场店)</td><td>距离就近</td><td>468m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>太平洋影城(四川省达州市新世纪广场店)</td><td>距离就近</td><td>506m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新保利</td><td>距离就近</td><td>508m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星辉·国际娱乐</td><td>距离就近</td><td>531m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>索菲亚时尚大酒店(足浴店)</td><td>距离就近</td><td>554m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金逸影城(和悦广场店)</td><td>距离就近</td><td>559m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>太平洋红旗影城(来凤路店)</td><td>距离就近</td><td>591m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>横店电影城(达州升华广场店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(达州升华广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>达州洞天星密室光影剧场(升华广场店)</td><td>距离就近</td><td>54m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>黑月沉浸式剧场&amp;密室(升华店)</td><td>距离就近</td><td>54m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>横店电影城(罗浮广场店)</td><td>名称互证</td><td>4785m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>和悦广场（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金逸影城(和悦广场店)</td><td>名称互证</td><td>20m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>索菲亚时尚大酒店(足浴店)</td><td>距离就近</td><td>103m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>小戏鬼超级密室(城市中心广场店)</td><td>距离就近</td><td>106m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>樱奈密室(来凤路店)</td><td>距离就近</td><td>178m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>太平洋红旗影城(来凤路店)</td><td>距离就近</td><td>407m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>海逸电影城(通洲商厦店)</td><td>距离就近</td><td>445m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>太平洋影城(四川省达州市新世纪广场店)</td><td>距离就近</td><td>457m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新保利</td><td>距离就近</td><td>459m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>达州宾馆</td><td>距离就近</td><td>485m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>乐爵纯K</td><td>距离就近</td><td>512m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>梦工场时尚纯K</td><td>距离就近</td><td>527m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博士影城</td><td>距离就近</td><td>558m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>卡秀派对(翠屏大厦店)</td><td>距离就近</td><td>569m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博视影城商厦</td><td>距离就近</td><td>577m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>金利亚酒店</td><td>距离就近</td><td>581m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>世纪隆生活广场(大竹店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大竹鑫海宾馆</td><td>距离就近</td><td>321m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>红楼商务宾馆(北大街)</td><td>距离就近</td><td>327m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>唯客乐假日酒店</td><td>距离就近</td><td>366m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>金洋酒店</td><td>距离就近</td><td>447m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>北城酒店(大竹县煌歌广场店)</td><td>距离就近</td><td>556m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>大竹金海旅馆</td><td>距离就近</td><td>571m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>玛格派对国际商务汇（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>玛格派对国际商务汇</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>U.E太平洋影城(仁和新城店)</td><td>距离就近</td><td>57m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>UU迷你球房</td><td>距离就近</td><td>154m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>曼哈顿·国际娱乐</td><td>距离就近</td><td>179m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>熙悦会·国际娱乐</td><td>距离就近</td><td>202m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>达州市凯歌娱乐有限公司</td><td>距离就近</td><td>211m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>雲杰茗楼</td><td>距离就近</td><td>396m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>横店电影城(罗浮广场店)（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(罗浮广场店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>飞越天下9D球幕飞行影院(罗浮广场店)</td><td>距离就近</td><td>123m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>美乐美地互动式KTV(罗浮广场店)</td><td>距离就近</td><td>188m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>剧忽优·沉浸式超级剧场(黑月西外店)</td><td>距离就近</td><td>313m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>春天里</td><td>距离就近</td><td>318m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>淼森自由麻将</td><td>距离就近</td><td>322m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>GOGO吸引力纯K</td><td>距离就近</td><td>365m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>美好庄园(金兰小区店)</td><td>距离就近</td><td>388m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>雀家自助棋牌室</td><td>距离就近</td><td>443m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>潘多拉超级密室(海棠湾店)</td><td>距离就近</td><td>470m</td><td>2.2</td><td>§11</td></tr>
+<tr><td>雀家•自助棋牌麻将【西外海棠湾店】</td><td>距离就近</td><td>512m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>上阳茗楼</td><td>距离就近</td><td>526m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>麻伽汇棋牌</td><td>距离就近</td><td>556m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>横店电影城(达州升华广场店)</td><td>名称互证</td><td>4785m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>太平洋影城(四川省达州市新世纪广场店)（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>太平洋影城(四川省达州市新世纪广场店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新保利</td><td>距离就近</td><td>3m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>海逸电影城(通洲商厦店)</td><td>距离就近</td><td>132m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>樱奈密室(来凤路店)</td><td>距离就近</td><td>345m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>小戏鬼超级密室(城市中心广场店)</td><td>距离就近</td><td>439m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金逸影城(和悦广场店)</td><td>距离就近</td><td>467m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>卡秀派对(翠屏大厦店)</td><td>距离就近</td><td>506m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>梦工场时尚纯K</td><td>距离就近</td><td>528m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博视影城商厦</td><td>距离就近</td><td>530m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>索菲亚时尚大酒店(足浴店)</td><td>距离就近</td><td>534m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>博士影城</td><td>距离就近</td><td>551m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>乐爵纯K</td><td>距离就近</td><td>553m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>U.E太平洋影城(仁和新城店)</td><td>名称互证</td><td>3944m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>太平洋影城(达州开江店)</td><td>名称互证</td><td>36483m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>世纪隆生活广场(世纪隆通锦·国际广场店)（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大地影院(通川国际新城广场店)</td><td>距离就近</td><td>32m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>麻界24H自助棋牌室(巨鑫园店)</td><td>距离就近</td><td>110m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>菲尼亚大酒店·棋牌室</td><td>距离就近</td><td>164m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>达州金海宾馆</td><td>距离就近</td><td>166m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雀家主题棋牌室(巨鑫园)</td><td>距离就近</td><td>204m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星禾KTV</td><td>距离就近</td><td>291m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>碰碰捌台球俱乐部.棋牌(通川白塔路店)</td><td>距离就近</td><td>429m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>雀家•自助棋牌麻将 西外水文局店</td><td>距离就近</td><td>524m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>金楠茗楼(馨园店)</td><td>距离就近</td><td>539m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>永利会·国际娱乐</td><td>距离就近</td><td>541m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>美好庄园(金兰小区店)</td><td>距离就近</td><td>597m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>渠县比家美商务宾馆（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>渠县比家美商务宾馆</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>萌宠之家(祥和路店)</td><td>距离就近</td><td>290m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>YOYO优优酒店(达州市罗浮广场火车站店)（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>YOYO优优酒店(达州市罗浮广场火车站店)</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>达州都市壹壹八酒店(达州火车站店)</td><td>距离就近</td><td>68m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>京奥电竞酒店(达州火车站店)</td><td>距离就近</td><td>81m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>启点唯爱纯K</td><td>距离就近</td><td>98m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>安逸158连锁酒店(达州火车站店)</td><td>距离就近</td><td>150m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>新力·花园酒店</td><td>距离就近</td><td>165m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麻界自助棋牌(罗浮阳光店)</td><td>距离就近</td><td>313m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>圣地雅歌商务(k歌)</td><td>距离就近</td><td>434m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>麻界24h自助棋牌(西外五一花园店)</td><td>距离就近</td><td>439m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>雀家自助棋牌室</td><td>距离就近</td><td>525m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>四个朋友(西客站店)</td><td>距离就近</td><td>527m</td><td>4.1</td><td>§6</td></tr>
+<tr><td>四个朋友(西客站店)</td><td>距离就近</td><td>527m</td><td>4.1</td><td>§6</td></tr>
+<tr><td>松乐国际麻将机(达州旗舰店)</td><td>距离就近</td><td>542m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>上阳茗楼</td><td>距离就近</td><td>587m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>UU迷你球房（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>UU迷你球房</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>熙悦会·国际娱乐</td><td>距离就近</td><td>49m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>曼哈顿·国际娱乐</td><td>距离就近</td><td>58m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>达州市凯歌娱乐有限公司</td><td>距离就近</td><td>58m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>U.E太平洋影城(仁和新城店)</td><td>距离就近</td><td>125m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玛格派对国际商务汇</td><td>距离就近</td><td>154m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>雲杰茗楼</td><td>距离就近</td><td>368m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（28 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>大竹鑫海宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>一环路北段95号</td></tr>
+<tr><td>✅A-</td><td>宏泰宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>书苑社区沿河街利豪大厦二楼</td></tr>
+<tr><td>✅A-</td><td>北城酒店(大竹县煌歌广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>竹海路西段108号附5号</td></tr>
+<tr><td>✅A-</td><td>索菲亚时尚大酒店(足浴店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>来凤路朝阳巷29号</td></tr>
+<tr><td>✅B</td><td>宣汉南山宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>圣墩东路147号</td></tr>
+<tr><td>✅B</td><td>同福客栈(大竹县职业中学店)</td><td>住宿服务;旅馆招待所;青年旅舍</td><td>4.5</td><td>—</td><td>建设路</td></tr>
+<tr><td>✅B</td><td>大竹金海旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>沙桥路96号</td></tr>
+<tr><td>✅B</td><td>京奥电竞酒店(达州火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>阳平路17号</td></tr>
+<tr><td>✅B</td><td>达州滨都宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>达州紫荆妇产医院旁边</td></tr>
+<tr><td>✅B</td><td>渠县比家美商务宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>万兴广场万乐苑</td></tr>
+<tr><td>✅B</td><td>达州兴茂住宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>通惠路38号2幢3单元1号</td></tr>
+<tr><td>✅B</td><td>YOYO优优酒店(达州市罗浮广场火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>朝阳西路458号国粮大厦F1层</td></tr>
+<tr><td>⚠️</td><td>达州金华招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>南滨路三段547号</td></tr>
+<tr><td>⚠️</td><td>新力·花园酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>朝阳西路471号(邮政花园内)</td></tr>
+<tr><td>⚠️</td><td>唯客乐假日酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.2</td><td>—</td><td>竹阳镇新华广场</td></tr>
+<tr><td>⚠️</td><td>达州宾馆</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>—</td><td>荷叶街318号</td></tr>
+<tr><td>⚠️</td><td>金利亚酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.1</td><td>—</td><td>鹅市巷35号</td></tr>
+<tr><td>⚠️</td><td>达州金海宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>白塔路422号</td></tr>
+<tr><td>⚠️</td><td>玲珑山庄招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>东大街文峰路790号</td></tr>
+<tr><td>⚠️</td><td>达州秦巴商务宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>翠屏街道南滨路三段172号</td></tr>
+<tr><td>⚠️</td><td>红楼商务宾馆(北大街)</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>3.7</td><td>—</td><td>白塔街道新生街235号</td></tr>
+<tr><td>⚠️</td><td>渠江大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>渠江镇和平街70号</td></tr>
+<tr><td>⚠️</td><td>达州鸿通宾馆一店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>汽车南站出站口</td></tr>
+<tr><td>⚠️</td><td>达州都市壹壹八酒店(达州火车站店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>3.6</td><td>—</td><td>朝阳西路459号</td></tr>
+<tr><td>⚠️</td><td>金洋酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>竹阳北路与竹阳东路交汇处</td></tr>
+<tr><td>⚠️</td><td>华源大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>太平镇福鑫大道422号</td></tr>
+<tr><td>❌</td><td>安逸158连锁酒店(达州火车站店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>3.3</td><td>—</td><td>朝阳西路422号</td></tr>
+<tr><td>❌</td><td>达州鑫隆宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>2.9</td><td>—</td><td>金山顺街113号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>6</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>8</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>5</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>2</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>7</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>1</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/达州市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>2 个 POI 无地址</strong>，需人工补：达州巨幕影城、好一新批发市场</li><li><input type="checkbox" disabled> <strong>7 个 POI 无评分</strong>，暂标 ⚠️：东升园、金石云顶野生动物园停车场、公共厕所、餐餐有味商贸有限公司、燕飞商贸有限公司(奶粉批发超市)</li><li><input type="checkbox" disabled> 儿童游乐 15 家，其中场内 1 家、独立 14 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 7 个区县：万源市、大竹县、宣汉县、开江县、渠县、达川区、通川区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

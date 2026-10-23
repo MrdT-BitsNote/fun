@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>金华市 · 浙江省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/浙江省.html">← 返回浙江省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>金华市 · 浙江省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:15:28  ·  POI 总量：237（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>237</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>97%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 1 · 商圈 114 · 成人娱乐 152 · 儿童娱乐 54 · 酒店 38 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>浙江省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>9 个</td></tr>
+<tr><td>街道/镇/乡</td><td>146 个</td></tr>
+<tr><td>区县构成</td><td>县级市×4、县×3、市辖区×2</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>婺城区</td><td>119</td><td>50%</td></tr>
+<tr><td>义乌市</td><td>46</td><td>19%</td></tr>
+<tr><td>金东区</td><td>22</td><td>9%</td></tr>
+<tr><td>东阳市</td><td>20</td><td>8%</td></tr>
+<tr><td>永康市</td><td>13</td><td>5%</td></tr>
+<tr><td>兰溪市</td><td>6</td><td>3%</td></tr>
+<tr><td>武义县</td><td>5</td><td>2%</td></tr>
+<tr><td>浦江县</td><td>4</td><td>2%</td></tr>
+<tr><td>磐安县</td><td>2</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（114 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>41</td></tr>
+<tr><td>购物中心/综合体</td><td>28</td></tr>
+<tr><td>批发城</td><td>20</td></tr>
+<tr><td>百货/商场</td><td>19</td></tr>
+<tr><td>奥特莱斯</td><td>5</td></tr>
+<tr><td>美食街/小吃街</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（114 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>金华世贸城市广场</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>11</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>永盛购物中心</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>银泰百货(金华江北店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>14</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>恒大百货</td><td>百货/商场</td><td>4.7</td><td>0</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>沃尔玛(金华时代广场分店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>12</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>至潮主题影城(宾虹路店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>12</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>神画影城(永盛购物中心店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>银泰仓</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>13</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>福泰隆超市(金华江南银泰百货店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>13</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>金华永盛购物中心B馆</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>义乌天地</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>义乌之心</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盒马鲜生(义乌天地店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>义乌国际商贸城</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>义乌国际商贸城一区</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>义乌国际商贸城四区</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>东阳银泰城</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(金华金东店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(义乌店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(义乌店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新光汇购物中心</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>义乌市植物园</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>万达影城(金华金东万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>银泰百货(义乌店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(永康店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(金华店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>万泰·公园大道奥特莱斯</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>金华农产品批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>金华水果批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>义乌国际商贸城五区</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>绿地朝阳门商业中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(永康店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>义乌国际商贸城二区</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永康宝龙广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>兰溪宝龙广场</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>金华金义宝龙广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>战斧超大型真人沉浸密室(义乌店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>博纳戏幕影城(金华之心店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>东阳世贸城市广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>世纪联华(义乌印悦城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>金华世贸城市广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场｜购物服务;商场;购物中心）</li><li><strong>地址</strong>：三江街道李渔路888号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金华世贸城市广场</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>麻和友·24小时自助棋牌室(世贸店)、至潮主题影城(宾虹路店)、UIN·友隐棋牌</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>艺龙酒店、金华高兴宾馆</td></tr>
+</tbody></table></div>
+<h3>永盛购物中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;超级市场;超市）</li><li><strong>地址</strong>：新华街67号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>永盛购物中心</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>神画影城(永盛购物中心店)、环球壹号商务会所(婺江西路店)、Amazing沉浸式密室(大世界店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>布丁酒店(古子城金华站店)</td></tr>
+</tbody></table></div>
+<h3>银泰百货(金华江北店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：解放东路168号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>银泰百货(金华江北店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>神画影城(永盛购物中心店)、博纳戏幕影城(金华之心店)、横店电影城(银泰百货馆)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>布丁酒店(古子城金华站店)、爱舍空间精品酒店(人民西路店)</td></tr>
+</tbody></table></div>
+<h3>恒大百货 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：文化路102号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>恒大百货</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>神画影城(永盛购物中心店)、环球壹号商务会所(婺江西路店)、Amazing沉浸式密室(大世界店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>布丁酒店(古子城金华站店)</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(金华时代广场分店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;沃尔玛）</li><li><strong>地址</strong>：八一北街108号时代广场B1层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沃尔玛(金华时代广场分店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>环球壹号商务会所(婺江西路店)、神画影城(永盛购物中心店)、星濠汇商务俱乐部</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>布丁酒店(古子城金华站店)</td></tr>
+</tbody></table></div>
+<h3>至潮主题影城(宾虹路店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：宾虹路686号3层(兰溪步行街对面)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>至潮主题影城(宾虹路店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>至潮主题影城(宾虹路店)、麻和友·24小时自助棋牌室(世贸店)、UIN·友隐棋牌</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金华高兴宾馆</td></tr>
+</tbody></table></div>
+<h3>神画影城(永盛购物中心店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（体育休闲服务;体育休闲服务场所;体育休闲服务场所）</li><li><strong>地址</strong>：新华街67号永盛购物中心6楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>神画影城(永盛购物中心店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>神画影城(永盛购物中心店)、环球壹号商务会所(婺江西路店)、Amazing沉浸式密室(大世界店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>布丁酒店(古子城金华站店)</td></tr>
+</tbody></table></div>
+<h3>银泰仓 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：宾虹路777号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>银泰仓</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>麻和友·24小时自助棋牌室(世贸店)、至潮主题影城(宾虹路店)、UIN·友隐棋牌</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金华高兴宾馆</td></tr>
+</tbody></table></div>
+<h3>福泰隆超市(金华江南银泰百货店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场｜购物服务;超级市场;超市）</li><li><strong>地址</strong>：江南街道宾虹路777号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>福泰隆超市(金华江南银泰百货店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>至潮主题影城(宾虹路店)、麻和友·24小时自助棋牌室(世贸店)、UIN·友隐棋牌</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金华高兴宾馆</td></tr>
+</tbody></table></div>
+<h3>金华永盛购物中心B馆 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：西市街159号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金华永盛购物中心B馆</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>神画影城(永盛购物中心店)、环球壹号商务会所(婺江西路店)、Amazing沉浸式密室(大世界店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>布丁酒店(古子城金华站店)</td></tr>
+</tbody></table></div>
+<h3>义乌天地 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：稠城街道城中中路61号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>义乌天地</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>战斧超大型真人沉浸密室(义乌店)、义乌市鬼谷子密室逃脱(朝阳门店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>稠州公园-动物园</td></tr>
+</tbody></table></div>
+<h3>义乌之心 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：工人西路9号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>义乌之心</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>战斧超大型真人沉浸密室(义乌店)、尖叫派对密室光影馆</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(义乌天地店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：城中中路61号义乌天地B1层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盒马鲜生(义乌天地店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>战斧超大型真人沉浸密室(义乌店)、义乌市鬼谷子密室逃脱(朝阳门店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>稠州公园-动物园</td></tr>
+</tbody></table></div>
+<h3>义乌国际商贸城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：—</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>义乌国际商贸城</td></tr>
+</tbody></table></div>
+<h3>义乌国际商贸城一区 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;综合市场;小商品市场）</li><li><strong>地址</strong>：稠州北路555号(国际商贸城地铁站D口步行90米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>义乌国际商贸城一区</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（152 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>棋牌室</td><td>22</td></tr>
+<tr><td>电影院</td><td>18</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>16</td></tr>
+<tr><td>其他娱乐场所</td><td>14</td></tr>
+<tr><td>KTV</td><td>9</td></tr>
+<tr><td>酒吧/酒馆</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>夜行者密室逃脱(绣湖里店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.7</td><td>130.00</td><td>绣湖里商业中心1号门1楼N-61店</td></tr>
+<tr><td>✅A-</td><td>万达影城(金华金东万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>59.00</td><td>李渔东路366号万达广场娱乐楼4层</td></tr>
+<tr><td>✅A-</td><td>金鼎豪门·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;夜总会｜体育休闲服务;娱乐场所;KTV｜购物服务;家居建材市场;建材五金市场｜体育休闲服务;娱乐场所;棋牌室｜住宿服务;住宿服务相关;住宿服务相关｜生活服务;生活服务场所;生活服务场所</td><td>4.6</td><td>87.00</td><td>三江口街道晓雯音乐学校(兰溪街)丹溪花园西区</td></tr>
+<tr><td>✅A-</td><td>战斧超大型真人沉浸密室(义乌店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>99.00</td><td>稠城街道馨润世纪商场十街1号(超逸桌球俱乐部旁边)</td></tr>
+<tr><td>✅A-</td><td>东方魅力娱乐KTV(八一南街店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>308.00</td><td>八一南街1538号</td></tr>
+<tr><td>✅A-</td><td>音悦PANDA自助KTV(金职大店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>21.00</td><td>壶源路与金帆街交叉口西北40米</td></tr>
+<tr><td>✅A-</td><td>环球壹号商务会所(婺江西路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>43.00</td><td>婺江西路28号时代商务中心4层</td></tr>
+<tr><td>✅A-</td><td>星聚会KTV(金华三江里店)</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>58.00</td><td>燕尾洲路与启明街交叉口东北60米</td></tr>
+<tr><td>✅A-</td><td>悦汇Vip Royal club行政会客中心</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>220.00</td><td>宾虹东路299号浙中总部经济中心1号楼8楼</td></tr>
+<tr><td>✅A-</td><td>至潮主题影城(宾虹路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>31.00</td><td>宾虹路686号3层(兰溪步行街对面)</td></tr>
+<tr><td>✅A-</td><td>博纳戏幕影城(金华之心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>47.00</td><td>李渔路1313号7号楼银泰百货F5</td></tr>
+<tr><td>✅A-</td><td>横店电影城(欧景名城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>33.00</td><td>宾虹路1195号欧景名城4层</td></tr>
+<tr><td>✅A-</td><td>神画影城(永盛购物中心店)</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>54.00</td><td>新华街67号永盛购物中心6楼</td></tr>
+<tr><td>✅A-</td><td>麻和友·24小时自助棋牌室(世贸店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>21.00</td><td>金顺楼西门旁</td></tr>
+<tr><td>✅A-</td><td>UIN·友隐棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>27.00</td><td>兰溪街195号-2(八一南街地铁站B口步行430米)</td></tr>
+<tr><td>✅A-</td><td>友个局台球棋牌俱乐部</td><td>棋牌室</td><td>体育休闲服务;运动场馆;运动场所</td><td>4.6</td><td>51.00</td><td>丹溪路1489号鼎泰F2层</td></tr>
+<tr><td>✅B</td><td>Amazing沉浸式密室(大世界店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>110.00</td><td>西市街大世界商场5楼(观光电梯直达)</td></tr>
+<tr><td>✅B</td><td>小黑屋沉浸式实景密室逃脱(奇度-贝村店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>157.00</td><td>经发大道211号贵州大厦7楼(盛世豪门对面)</td></tr>
+<tr><td>✅B</td><td>INLOVE KTV(世贸城市广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>45.00</td><td>李渔路888号世贸城市广场A座5楼</td></tr>
+<tr><td>✅B</td><td>魅KTV·AI辅唱(银泰城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>87.00</td><td>李渔路1313号金华信息经济产业园7-2号楼5层</td></tr>
+<tr><td>✅B</td><td>皇家贵族(八一南街店)</td><td>其他娱乐场所</td><td>生活服务;生活服务场所;生活服务场所</td><td>4.5</td><td>330.00</td><td>八一南街1386号</td></tr>
+<tr><td>✅B</td><td>知喜棋牌娱乐会所</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>—</td><td>浦江街330号</td></tr>
+<tr><td>✅B</td><td>星濠汇商务俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>53.00</td><td>城西街道八一北街108号(沃尔玛)时代广场5层</td></tr>
+<tr><td>✅B</td><td>银河印迹K歌足浴SPA汤泉(总部中心店)</td><td>其他娱乐场所</td><td>生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.5</td><td>121.00</td><td>东市南街与光南路交叉口西120米</td></tr>
+<tr><td>✅B</td><td>金典会</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜生活服务;生活服务场所;生活服务场所</td><td>4.5</td><td>221.00</td><td>城中街道叙家宴餐厅环城大楼</td></tr>
+<tr><td>✅B</td><td>徐氏杜比MAX影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>46.00</td><td>环城南路1159号大润发金华店3层</td></tr>
+<tr><td>✅B</td><td>中影电影院线-华耀光冕影城</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>47.00</td><td>苏孟乡双龙南街2367号望湖领悦广场4层</td></tr>
+<tr><td>✅B</td><td>阳羽格影城(锦绣天地店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>57.00</td><td>新狮街道迎宾大道699号3层312铺</td></tr>
+<tr><td>✅B</td><td>横店电影城(银泰百货馆)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>48.00</td><td>解放东路168号银泰百货F5层</td></tr>
+<tr><td>✅B</td><td>阳羽格影城(万泰奥莱店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>43.00</td><td>白龙桥镇宾虹西路2999号婺城城市广场C1幢401-2</td></tr>
+<tr><td>✅B</td><td>时代影城·金瓯万达店</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>29.00</td><td>金殴路1428号金瓯万达广场四层</td></tr>
+<tr><td>✅B</td><td>山野半日石门农场老电影院美学空间</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>71.00</td><td>苏孟乡石门农场老电影院美学空间</td></tr>
+<tr><td>✅B</td><td>乐博雀馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>70.00</td><td>兰溪街405号</td></tr>
+<tr><td>✅B</td><td>麻和友·24小时自助棋牌室(八一南街何宅店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>25.00</td><td>八一南街862号二楼</td></tr>
+<tr><td>✅B</td><td>金楠棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>160.00</td><td>四联路24号</td></tr>
+<tr><td>✅B</td><td>雀语棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>63.00</td><td>金艺路141路口进来左手第一栋楼2楼</td></tr>
+<tr><td>✅B</td><td>约麻24小时自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>15.00</td><td>三江街道阳光路165号工商城35幢</td></tr>
+<tr><td>✅B</td><td>鼎尚汇商务棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>—</td><td>宾虹路1268号</td></tr>
+<tr><td>✅B</td><td>H先生·超级密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>145.00</td><td>西市街159号永盛B馆6楼</td></tr>
+<tr><td>✅B</td><td>黑岛实景沉浸密室·剧本推理(金华店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>100.00</td><td>后街63号四世一品A栋四楼</td></tr>
+<tr><td>✅B</td><td>X·超级密室(1970文创园店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>185.00</td><td>城中北路与三挺路交叉口西80米</td></tr>
+<tr><td>✅B</td><td>义乌市鬼谷子密室逃脱(朝阳门店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>93.00</td><td>心潮里商业街A028(负一层)</td></tr>
+<tr><td>✅B</td><td>X.逃脱艺术</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>214.00</td><td>稠城街道城中北路135号老火车站1970文创园B5-1号二楼</td></tr>
+<tr><td>✅B</td><td>夜未央密室逃脱(宝龙店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>217.00</td><td>从桂路60号地下A层</td></tr>
+<tr><td>✅B</td><td>魅KTV·AI辅唱(永盛店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>50.00</td><td>新华街67号永盛购物中心F6层</td></tr>
+<tr><td>✅B</td><td>MK KTV(金华万达广场店)</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>44.00</td><td>多湖街道李渔东路366号万达广场金华店三楼</td></tr>
+<tr><td>✅B</td><td>横店电影城金华世贸广场店</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>47.00</td><td>三江街道李渔路888号世贸城市广场5层B001号</td></tr>
+<tr><td>✅B</td><td>上影国际影城(紫金城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>36.00</td><td>光南路999号涵碧·紫金城购物中心四楼璀璨星河艺术中心内</td></tr>
+<tr><td>✅B</td><td>雀潮自助主题棋牌(世贸店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>30.00</td><td>李渔路777号二楼(八一南街地铁站B口步行290米)</td></tr>
+<tr><td>✅B</td><td>四个朋友自助棋牌(金华之心银泰百货店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>17.00</td><td>西关街道李渔路1313号7号楼6F</td></tr>
+<tr><td>✅B</td><td>碰碰胡棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>90.00</td><td>永康街833号2层</td></tr>
+<tr><td>✅B</td><td>麻和友·24小时自助棋牌室(公元大厦店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>20.00</td><td>双龙南街307号公元大厦F5层</td></tr>
+<tr><td>✅B</td><td>快乐方舟.儿童探案馆(1970文创园店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>61.00</td><td>稠城街道城中北路135号1970文创园里面B5-1-2-1</td></tr>
+<tr><td>✅B</td><td>四个朋友24小时无人自助棋牌(万通国际名座店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>12.00</td><td>西关街道双龙南街518号泰地·国际名座B幢B903室</td></tr>
+<tr><td>✅B</td><td>雀友阁棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>46.00</td><td>双龙南街307号公元大厦5楼</td></tr>
+<tr><td>✅B</td><td>雀在线自助棋牌(王村店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>13.00</td><td>西关街道王村小区23栋1号一楼二楼</td></tr>
+<tr><td>✅B</td><td>雀咖智能棋牌(发财俱乐部总店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>41.00</td><td>三江街道何宅路15号安居苑1幢01-B室</td></tr>
+<tr><td>⚠️</td><td>尖叫派对密室光影馆</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>100.00</td><td>义乌之心4层L427号</td></tr>
+<tr><td>⚠️</td><td>夜未央密室逃脱(美食城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>120.00</td><td>胜利街188号麦当劳和康美大药房中间上三楼</td></tr>
+<tr><td>⚠️</td><td>异光年密室逃脱(见大未来天地店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>93.00</td><td>吴宁东路1号见大未来天地东阳店F4层</td></tr>
+</tbody></table></div>
+<p>（另 20 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（54 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>38</td></tr>
+<tr><td>其他儿童场所</td><td>15</td></tr>
+<tr><td>亲子乐园</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>义乌市植物园</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>幸福湖路和大通路交叉口(小停车场旁)</td></tr>
+<tr><td>✅A-</td><td>鹿语清风牧场</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>安地镇回坑村199号</td></tr>
+<tr><td>✅A-</td><td>贝佳宠物医院</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>江东中路397号</td></tr>
+<tr><td>✅A-</td><td>义乌猫狗萌宠基地</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>工人北路44号</td></tr>
+<tr><td>✅A-</td><td>义乌蹦D宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>明哥家庭农场东侧60米</td></tr>
+<tr><td>✅B</td><td>名宇宠物乐园(金苑美食街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>稠江街道城店路187-2号</td></tr>
+<tr><td>✅B</td><td>马畈景区</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>大陈镇马畈村58号</td></tr>
+<tr><td>✅B</td><td>宠迹宠物训练寄养乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>塘雅镇含香村下台门巷9号104室</td></tr>
+<tr><td>✅B</td><td>银湖北星亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.4</td><td>湖滨路银湖公园旁</td></tr>
+<tr><td>✅B</td><td>youyou萌宠</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>稠江街道龙海家园东区11栋5号1层</td></tr>
+<tr><td>✅B</td><td>金华宠趣宠物市场猫狗售卖基地</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>新狮街道东市北街1729号金华CRC文化创意园A-104E号</td></tr>
+<tr><td>✅B</td><td>沐沐萌宠(新都花园店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>苏华街70号</td></tr>
+<tr><td>✅B</td><td>小宠乐园(骆家塘店)</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>春泽路1号</td></tr>
+<tr><td>✅B</td><td>兰溪欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>丹溪大道1098号</td></tr>
+<tr><td>✅B</td><td>义乌市二郎神萌宠馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>香港城三街32号</td></tr>
+<tr><td>⚠️</td><td>金华动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>双龙南街延长线</td></tr>
+<tr><td>⚠️</td><td>义乌趣玩谷</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>丹丹路26号</td></tr>
+<tr><td>⚠️</td><td>义乌萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>佛堂镇倍磊南朱村</td></tr>
+<tr><td>⚠️</td><td>金华爪驻爱宠空间(宠物乐园)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>北达路58号</td></tr>
+<tr><td>⚠️</td><td>金多萌宠(家和园店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>八达路995号家和园北门</td></tr>
+<tr><td>⚠️</td><td>义乌森林动物王国</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>中国,浙江省,金华市,义乌市</td></tr>
+<tr><td>⚠️</td><td>广厦西山公园-动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>西山公园(东北角)</td></tr>
+<tr><td>⚠️</td><td>稠州公园-动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>稠城街道稠城街道稠州中路221号稠州公园</td></tr>
+<tr><td>⚠️</td><td>膨胀动物园(义乌众安广场店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.8</td><td>众安广场</td></tr>
+<tr><td>⚠️</td><td>罗埠心想事成萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>罗埠镇罗埠二村孙家村西800米</td></tr>
+<tr><td>⚠️</td><td>团力萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>空天大道10号</td></tr>
+<tr><td>⚠️</td><td>猛兽园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>双龙南街延长线金华动物园内(北侧)</td></tr>
+<tr><td>⚠️</td><td>武义县博物馆-文物动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>壶山街道(温泉北路东50米)武义博物馆</td></tr>
+<tr><td>⚠️</td><td>小动物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>倍鱼线</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>仙华街道仙华街道</td></tr>
+<tr><td>⚠️</td><td>野生驯养动物</td><td>其他儿童场所</td><td>独立</td><td>3.5</td><td>壶山街道武阳中路武义汽车站旁</td></tr>
+<tr><td>❌</td><td>团力野生动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>团力萌宠乐园北侧</td></tr>
+<tr><td>❌</td><td>百熊园</td><td>其他儿童场所</td><td>独立</td><td>3.4</td><td>青年路与常乐巷交叉口北40米</td></tr>
+<tr><td>❌</td><td>金华动物园-斑马</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>安地镇双龙南街延长线金华动物园(东北角)</td></tr>
+<tr><td>❌</td><td>小熊猫馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.2</td><td>双龙南街延长线金华动物园</td></tr>
+<tr><td>❌</td><td>小动物馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.9</td><td>双龙南街延长线金华动物园</td></tr>
+<tr><td>❌</td><td>狼园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.9</td><td>双龙南街延长线金华动物园(东北角)</td></tr>
+<tr><td>❌</td><td>猴园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.8</td><td>双龙南街延长线金华动物园</td></tr>
+<tr><td>❌</td><td>白虎园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.6</td><td>双龙南街延长线金华动物园</td></tr>
+<tr><td>❌</td><td>百鸟园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.6</td><td>双龙南街延长线金华动物园(东北角)</td></tr>
+<tr><td>❌</td><td>喜鹊园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.6</td><td>双龙南街延长线金华动物园(东北角)</td></tr>
+<tr><td>❌</td><td>深山熊馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.5</td><td>双龙南街延长线金华动物园</td></tr>
+<tr><td>❌</td><td>迷你酒吧(三意街)</td><td>其他儿童场所</td><td>独立</td><td>2.4</td><td>三江街道三路口社区三意街15弄12号</td></tr>
+<tr><td>❌</td><td>海狸鼠馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.3</td><td>双龙南街延长线金华动物园</td></tr>
+<tr><td>❌</td><td>猴类天地</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.3</td><td>双龙南街延长线金华动物园</td></tr>
+<tr><td>❌</td><td>浣熊魅影</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.1</td><td>双龙南街延长线金华动物园</td></tr>
+<tr><td>⚠️</td><td>金华动物园游客中心</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>金华动物园东北门旁</td></tr>
+<tr><td>⚠️</td><td>金华动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>金华动物园东北门旁</td></tr>
+<tr><td>⚠️</td><td>金华动物园停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>安地镇黄桑园金安线金华动物园东北门</td></tr>
+<tr><td>⚠️</td><td>动物园(快速公交站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>322路;B5路</td></tr>
+<tr><td>⚠️</td><td>团力萌宠乐园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>空天大道8号(景区内)</td></tr>
+<tr><td>⚠️</td><td>美辰园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>工人路588号</td></tr>
+<tr><td>⚠️</td><td>迷你公寓</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>万兴路东阳市花园商业中心22栋-1号</td></tr>
+<tr><td>⚠️</td><td>广厦西山公园动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>广厦西山公园-动物园</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（72 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>义乌天地</td><td>购物中心/综合体</td><td>4.9</td><td>1</td><td>0</td><td>稠城街道城中中路61号</td></tr>
+<tr><td>✅A-</td><td>义乌之心</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>工人西路9号</td></tr>
+<tr><td>✅A-</td><td>金华世贸城市广场</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>三江街道李渔路888号</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(义乌天地店)</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>城中中路61号义乌天地B1层</td></tr>
+<tr><td>❌</td><td>义乌国际商贸城</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>义乌国际商贸城一区</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>稠州北路555号(国际商贸城地铁站D口步行90米)</td></tr>
+<tr><td>✅A-</td><td>义乌国际商贸城四区</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>诚信大道与福田路交叉口东侧100米</td></tr>
+<tr><td>✅A-</td><td>东阳银泰城</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>白云街道兴平西路428号</td></tr>
+<tr><td>✅A-</td><td>万达广场(金华金东店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>李渔东路300号(万达广场地铁站A口步行290米)</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(义乌店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>江东街道江东东路2号</td></tr>
+<tr><td>✅A-</td><td>万达广场(义乌店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>新科路9号</td></tr>
+<tr><td>✅A-</td><td>永盛购物中心</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>新华街67号</td></tr>
+<tr><td>✅A-</td><td>新光汇购物中心</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>福田路6号</td></tr>
+<tr><td>✅A-</td><td>银泰百货(金华江北店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>解放东路168号</td></tr>
+<tr><td>✅A-</td><td>银泰百货(义乌店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>工人西路15号</td></tr>
+<tr><td>✅A-</td><td>恒大百货</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>文化路102号</td></tr>
+<tr><td>✅A-</td><td>大润发(永康店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>九铃东路3117号</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(金华时代广场分店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>八一北街108号时代广场B1层</td></tr>
+<tr><td>✅A-</td><td>大润发(金华店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>八一南街1159号</td></tr>
+<tr><td>✅A-</td><td>万泰·公园大道奥特莱斯</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>宾虹西路2999号</td></tr>
+<tr><td>✅A-</td><td>金华农产品批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>环城北路117号</td></tr>
+<tr><td>✅A-</td><td>金华水果批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>北二环东路和中央大道交叉口</td></tr>
+<tr><td>✅A-</td><td>义乌国际商贸城五区</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>义乌国际酒店商贸城</td></tr>
+<tr><td>✅A-</td><td>绿地朝阳门商业中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>县前街与城中中路交叉口东150米(义乌稠城一小对面)</td></tr>
+<tr><td>✅A-</td><td>万达广场(永康店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>长城西大道399号</td></tr>
+<tr><td>✅A-</td><td>义乌国际商贸城二区</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>稠州北路(国际商贸城地铁站A口步行320米)</td></tr>
+<tr><td>✅A-</td><td>永康宝龙广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>解放路188号</td></tr>
+<tr><td>✅A-</td><td>金华金义宝龙广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>金港大道与通港街路口</td></tr>
+<tr><td>✅A-</td><td>神画影城(永盛购物中心店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新华街67号永盛购物中心6楼</td></tr>
+<tr><td>✅A-</td><td>银泰仓</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>宾虹路777号</td></tr>
+<tr><td>✅A-</td><td>福泰隆超市(金华江南银泰百货店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>江南街道宾虹路777号</td></tr>
+<tr><td>✅A-</td><td>东阳世贸城市广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>人民路106号</td></tr>
+<tr><td>✅A-</td><td>金华永盛购物中心B馆</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>西市街159号</td></tr>
+<tr><td>✅A-</td><td>世纪联华(义乌印悦城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>望道路168号印悦城B1层</td></tr>
+<tr><td>✅A-</td><td>加贝超市(武义店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>解放中街红马时代广场</td></tr>
+<tr><td>✅A-</td><td>浦江农副产品批发交易市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>毛亚路1号</td></tr>
+<tr><td>✅A-</td><td>义乌中国进口商品城</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>义乌市银海路</td></tr>
+<tr><td>✅B</td><td>INLOVE KTV(世贸城市广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>李渔路888号世贸城市广场A座5楼</td></tr>
+<tr><td>✅B</td><td>横店电影城(银泰百货馆)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>解放东路168号银泰百货F5层</td></tr>
+<tr><td>✅B</td><td>万泰奥特莱斯C座</td><td>奥特莱斯</td><td>4.5</td><td>0</td><td>0</td><td>温寿线与紫金南街交叉口西北80米</td></tr>
+<tr><td>✅B</td><td>金华农产品批发市场水海产交易新区</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>环城北路117号金华农产品批发市场</td></tr>
+<tr><td>✅B</td><td>义乌小商品批发市场(中国小商品城·篁园服装市场店)</td><td>批发城</td><td>4.5</td><td>1</td><td>0</td><td>稠城街道篁园市场6号门二楼四街089号</td></tr>
+<tr><td>✅B</td><td>四个朋友自助棋牌(金华之心银泰百货店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>西关街道李渔路1313号7号楼6F</td></tr>
+<tr><td>✅B</td><td>银泰百货(金华江南店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>宾虹路777号银泰仓F1层</td></tr>
+<tr><td>✅B</td><td>华丰·新世纪百货</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>胡家街24号</td></tr>
+<tr><td>✅B</td><td>江北农贸批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>江北街道中山北路87号</td></tr>
+<tr><td>✅B</td><td>银泰百货B馆</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>解放东路168号</td></tr>
+<tr><td>⚠️</td><td>金华商城小百货区</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>八一南街718号金华商城2层</td></tr>
+<tr><td>⚠️</td><td>奥特莱斯(恒昌·财富广场店)</td><td>奥特莱斯</td><td>4.2</td><td>0</td><td>0</td><td>人民东路33号恒昌财富广场F1层</td></tr>
+<tr><td>⚠️</td><td>江江家水果批发仓储店</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>省金园路与真源街交叉口金华水果农产品物流中心G区一楼7-47-5号</td></tr>
+</tbody></table></div>
+<p>（另 22 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（1 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>新豪都大酒店</td><td>餐饮服务;中餐厅;海鲜酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>100.00</td><td>城中北路495号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5F9CA7FB_51B9_49AB_9DA4_E1F0A075CE01_L0_001_1170_153_1766025182929_54568798.jpg"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>义乌天地（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>战斧超大型真人沉浸密室(义乌店)</td><td>距离就近</td><td>362m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>稠州公园-动物园</td><td>距离就近</td><td>403m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>义乌市鬼谷子密室逃脱(朝阳门店)</td><td>距离就近</td><td>570m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>义乌之心（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>尖叫派对密室光影馆</td><td>名称互证</td><td>148m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>战斧超大型真人沉浸密室(义乌店)</td><td>距离就近</td><td>552m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金华世贸城市广场（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>INLOVE KTV(世贸城市广场店)</td><td>距离就近</td><td>96m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>横店电影城金华世贸广场店</td><td>距离就近</td><td>107m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麻和友·24小时自助棋牌室(世贸店)</td><td>距离就近</td><td>180m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>福泰隆影城(银泰店)</td><td>距离就近</td><td>221m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>雀潮自助主题棋牌(世贸店)</td><td>距离就近</td><td>268m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>至潮主题影城(宾虹路店)</td><td>距离就近</td><td>294m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>UIN·友隐棋牌</td><td>距离就近</td><td>311m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>银乐迪KTV量贩(世贸城市广场店)</td><td>距离就近</td><td>337m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>安达棋牌(世贸店)</td><td>距离就近</td><td>349m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金华高兴宾馆</td><td>距离就近</td><td>437m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>四个朋友24小时无人自助棋牌(万通国际名座店)</td><td>距离就近</td><td>440m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>艺龙酒店</td><td>距离就近</td><td>505m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>星雀棋牌</td><td>距离就近</td><td>562m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(义乌天地店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>战斧超大型真人沉浸密室(义乌店)</td><td>距离就近</td><td>379m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>稠州公园-动物园</td><td>距离就近</td><td>394m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>义乌市鬼谷子密室逃脱(朝阳门店)</td><td>距离就近</td><td>551m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>东阳银泰城（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>GG密室逃脱</td><td>距离就近</td><td>93m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>神盾局(东阳银泰城店)</td><td>名称互证</td><td>98m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(金华金东店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(金华金东万达广场店)</td><td>名称互证</td><td>92m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>MK KTV(金华万达广场店)</td><td>名称互证</td><td>163m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>银河印迹K歌足浴SPA汤泉(总部中心店)</td><td>距离就近</td><td>384m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>悦汇Vip Royal club行政会客中心</td><td>距离就近</td><td>426m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>时代影城·金瓯万达店</td><td>名称互证</td><td>4255m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(义乌店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>时代影城·金瓯万达店</td><td>名称互证</td><td>37126m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MK KTV(金华万达广场店)</td><td>名称互证</td><td>41150m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达影城(金华金东万达广场店)</td><td>名称互证</td><td>41217m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永盛购物中心（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>魅KTV·AI辅唱(永盛店)</td><td>名称互证</td><td>10m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>神画影城(永盛购物中心店)</td><td>名称互证</td><td>10m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>鬼谷子密室逃脱(西市街店)</td><td>距离就近</td><td>51m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>Amazing沉浸式密室(大世界店)</td><td>距离就近</td><td>65m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>ALLINKTV(恒大百货店)</td><td>距离就近</td><td>132m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>H先生·超级密室逃脱</td><td>距离就近</td><td>138m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>神画影城(帝壹城店)</td><td>距离就近</td><td>175m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>美佳私影空间</td><td>距离就近</td><td>194m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>黑岛实景沉浸密室·剧本推理(金华店)</td><td>距离就近</td><td>204m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>布丁酒店(古子城金华站店)</td><td>距离就近</td><td>289m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>横店电影城(银泰百货馆)</td><td>距离就近</td><td>353m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>杜比全景声·巨幕</td><td>距离就近</td><td>370m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>环球壹号商务会所(婺江西路店)</td><td>距离就近</td><td>382m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>乐葩沉浸式剧场</td><td>距离就近</td><td>391m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>星濠汇商务俱乐部</td><td>距离就近</td><td>428m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>义乌市植物园（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>义乌市植物园</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(金华金东万达广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(金华金东万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>MK KTV(金华万达广场店)</td><td>距离就近</td><td>72m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>银河印迹K歌足浴SPA汤泉(总部中心店)</td><td>距离就近</td><td>474m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>悦汇Vip Royal club行政会客中心</td><td>距离就近</td><td>516m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(万固广场店)</td><td>名称互证</td><td>4932m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>银泰百货(金华江北店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(银泰百货馆)</td><td>名称互证</td><td>55m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>ALLINKTV(恒大百货店)</td><td>距离就近</td><td>187m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>H先生·超级密室逃脱</td><td>距离就近</td><td>188m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>美佳私影空间</td><td>距离就近</td><td>196m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>乐葩沉浸式剧场</td><td>距离就近</td><td>233m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>Amazing沉浸式密室(大世界店)</td><td>距离就近</td><td>290m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>神画影城(永盛购物中心店)</td><td>距离就近</td><td>311m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(永盛店)</td><td>距离就近</td><td>321m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>鬼谷子密室逃脱(西市街店)</td><td>距离就近</td><td>337m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>黑岛实景沉浸密室·剧本推理(金华店)</td><td>距离就近</td><td>395m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>布丁酒店(古子城金华站店)</td><td>距离就近</td><td>438m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>神画影城(帝壹城店)</td><td>距离就近</td><td>472m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>金典会</td><td>距离就近</td><td>475m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>爱舍空间精品酒店(人民西路店)</td><td>距离就近</td><td>595m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友自助棋牌(金华之心银泰百货店)</td><td>名称互证</td><td>3314m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>博纳戏幕影城(金华之心店)</td><td>名称互证</td><td>3353m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>银泰百货(义乌店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>尖叫派对密室光影馆</td><td>距离就近</td><td>302m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>战斧超大型真人沉浸密室(义乌店)</td><td>距离就近</td><td>392m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>横店电影城(银泰百货馆)</td><td>名称互证</td><td>46649m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博纳戏幕影城(金华之心店)</td><td>名称互证</td><td>49434m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>四个朋友自助棋牌(金华之心银泰百货店)</td><td>名称互证</td><td>49459m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>恒大百货（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>ALLINKTV(恒大百货店)</td><td>名称互证</td><td>6m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>H先生·超级密室逃脱</td><td>距离就近</td><td>54m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>美佳私影空间</td><td>距离就近</td><td>98m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>Amazing沉浸式密室(大世界店)</td><td>距离就近</td><td>123m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>神画影城(永盛购物中心店)</td><td>距离就近</td><td>128m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(永盛店)</td><td>距离就近</td><td>136m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>鬼谷子密室逃脱(西市街店)</td><td>距离就近</td><td>162m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>横店电影城(银泰百货馆)</td><td>距离就近</td><td>227m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>黑岛实景沉浸密室·剧本推理(金华店)</td><td>距离就近</td><td>269m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>神画影城(帝壹城店)</td><td>距离就近</td><td>300m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>布丁酒店(古子城金华站店)</td><td>距离就近</td><td>306m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>乐葩沉浸式剧场</td><td>距离就近</td><td>310m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>杜比全景声·巨幕</td><td>距离就近</td><td>462m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>环球壹号商务会所(婺江西路店)</td><td>距离就近</td><td>487m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>星濠汇商务俱乐部</td><td>距离就近</td><td>496m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(永康店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>徐氏杜比MAX影城</td><td>名称互证</td><td>41693m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(金华时代广场分店)（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星濠汇商务俱乐部</td><td>名称互证</td><td>96m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>杜比全景声·巨幕</td><td>距离就近</td><td>118m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>布丁酒店(古子城金华站店)</td><td>距离就近</td><td>138m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>环球壹号商务会所(婺江西路店)</td><td>距离就近</td><td>176m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(永盛店)</td><td>距离就近</td><td>328m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>神画影城(永盛购物中心店)</td><td>距离就近</td><td>347m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>美佳私影空间</td><td>距离就近</td><td>360m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>鬼谷子密室逃脱(西市街店)</td><td>距离就近</td><td>377m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>Amazing沉浸式密室(大世界店)</td><td>距离就近</td><td>402m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>ALLINKTV(恒大百货店)</td><td>距离就近</td><td>404m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>神画影城(帝壹城店)</td><td>距离就近</td><td>405m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>H先生·超级密室逃脱</td><td>距离就近</td><td>441m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>黑岛实景沉浸密室·剧本推理(金华店)</td><td>距离就近</td><td>523m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(金华店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>徐氏杜比MAX影城</td><td>名称互证</td><td>82m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>皇家贵族(八一南街店)</td><td>距离就近</td><td>485m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>雀咖智能棋牌(发财俱乐部总店)</td><td>距离就近</td><td>555m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>迷你酒吧(三意街)</td><td>距离就近</td><td>565m</td><td>2.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万泰·公园大道奥特莱斯（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>阳羽格影城(万泰奥莱店)</td><td>距离就近</td><td>165m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>绿地朝阳门商业中心（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>义乌市鬼谷子密室逃脱(朝阳门店)</td><td>距离就近</td><td>192m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>战斧超大型真人沉浸密室(义乌店)</td><td>距离就近</td><td>561m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(永康店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>时代影城·金瓯万达店</td><td>名称互证</td><td>42108m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MK KTV(金华万达广场店)</td><td>名称互证</td><td>43226m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达影城(金华金东万达广场店)</td><td>名称互证</td><td>43283m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永康宝龙广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>夜未央密室逃脱(宝龙店)</td><td>距离就近</td><td>104m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>夜未央密室逃脱(美食城店)</td><td>距离就近</td><td>404m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>兰溪宝龙广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>镇魂沉浸式密室逃脱(宝龙广场金华兰溪店)</td><td>距离就近</td><td>191m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>战斧超大型真人沉浸密室(义乌店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>战斧超大型真人沉浸密室(义乌店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>至潮主题影城(宾虹路店)（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>至潮主题影城(宾虹路店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>福泰隆影城(银泰店)</td><td>距离就近</td><td>111m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麻和友·24小时自助棋牌室(世贸店)</td><td>距离就近</td><td>166m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>INLOVE KTV(世贸城市广场店)</td><td>距离就近</td><td>273m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>银乐迪KTV量贩(世贸城市广场店)</td><td>距离就近</td><td>332m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>横店电影城金华世贸广场店</td><td>距离就近</td><td>382m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>雀潮自助主题棋牌(世贸店)</td><td>距离就近</td><td>463m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星雀棋牌</td><td>距离就近</td><td>494m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>雀友阁棋牌会所</td><td>距离就近</td><td>519m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麻和友·24小时自助棋牌室(公元大厦店)</td><td>距离就近</td><td>519m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>安达棋牌(世贸店)</td><td>距离就近</td><td>529m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金华高兴宾馆</td><td>距离就近</td><td>538m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>UIN·友隐棋牌</td><td>距离就近</td><td>545m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>博纳戏幕影城(金华之心店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>博纳戏幕影城(金华之心店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>闹市喜剧脱口秀-银泰博纳影城店</td><td>距离就近</td><td>14m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(银泰城店)</td><td>距离就近</td><td>50m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友自助棋牌(金华之心银泰百货店)</td><td>距离就近</td><td>109m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>友个局台球棋牌俱乐部</td><td>距离就近</td><td>261m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>碰碰胡棋牌会所</td><td>距离就近</td><td>533m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>神画影城(永盛购物中心店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>神画影城(永盛购物中心店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(永盛店)</td><td>距离就近</td><td>19m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>鬼谷子密室逃脱(西市街店)</td><td>距离就近</td><td>48m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>Amazing沉浸式密室(大世界店)</td><td>距离就近</td><td>55m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>ALLINKTV(恒大百货店)</td><td>距离就近</td><td>126m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>H先生·超级密室逃脱</td><td>距离就近</td><td>130m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>神画影城(帝壹城店)</td><td>名称互证</td><td>177m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>美佳私影空间</td><td>距离就近</td><td>192m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>黑岛实景沉浸密室·剧本推理(金华店)</td><td>距离就近</td><td>199m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>布丁酒店(古子城金华站店)</td><td>距离就近</td><td>296m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>横店电影城(银泰百货馆)</td><td>距离就近</td><td>345m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>杜比全景声·巨幕</td><td>距离就近</td><td>380m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>乐葩沉浸式剧场</td><td>距离就近</td><td>381m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>环球壹号商务会所(婺江西路店)</td><td>距离就近</td><td>392m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>星濠汇商务俱乐部</td><td>距离就近</td><td>437m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（38 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>简爱时尚酒店(兴平西路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>兴平路228号</td></tr>
+<tr><td>✅A-</td><td>金华建文旅馆</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.9</td><td>—</td><td>蒋农路102号</td></tr>
+<tr><td>✅A-</td><td>磐安薇爱主题宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>北镇街70号近客运中心</td></tr>
+<tr><td>✅A-</td><td>艺龙酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.8</td><td>—</td><td>兰溪街299号</td></tr>
+<tr><td>✅A-</td><td>义乌党校迎宾馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.8</td><td>—</td><td>江东街道黎明湖路999号</td></tr>
+<tr><td>✅A-</td><td>丽豪商务宾馆(中山路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>中山路287-289号</td></tr>
+<tr><td>✅A-</td><td>金鼎豪门·国际娱乐</td><td>体育休闲服务;娱乐场所;夜总会｜体育休闲服务;娱乐场所;KTV｜购物服务;家居建材市场;建材五金市场｜体育休闲服务;娱乐场所;棋牌室｜住宿服务;住宿服务相关;住宿服务相关｜生活服务;生活服务场所;生活服务场所</td><td>4.6</td><td>87.00</td><td>三江口街道晓雯音乐学校(兰溪街)丹溪花园西区</td></tr>
+<tr><td>✅A-</td><td>锦豪大酒店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>兴平西路2号(人民路地铁站C口步行360米)</td></tr>
+<tr><td>✅A-</td><td>新豪都大酒店</td><td>餐饮服务;中餐厅;海鲜酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>100.00</td><td>城中北路495号</td></tr>
+<tr><td>✅B</td><td>义乌颐和大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>—</td><td>工人北路2号</td></tr>
+<tr><td>✅B</td><td>磐安山河宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>北镇街128号</td></tr>
+<tr><td>✅B</td><td>布丁酒店(古子城金华站店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.5</td><td>—</td><td>八一北街190号</td></tr>
+<tr><td>✅B</td><td>将军殿农庄</td><td>体育休闲服务;休闲场所;休闲场所｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>218省道雅坑村内</td></tr>
+<tr><td>✅B</td><td>东阳望江宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>望江北路3号</td></tr>
+<tr><td>✅B</td><td>横好家度假村酒店</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.3</td><td>—</td><td>横店镇万盛南街199号</td></tr>
+<tr><td>✅B</td><td>爱舍空间精品酒店(人民西路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>人民西路85号婺商国际对面</td></tr>
+<tr><td>✅B</td><td>香格里大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.3</td><td>—</td><td>兴平西路256号</td></tr>
+<tr><td>✅B</td><td>兰溪海龙宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>兰江街道丹溪大道191号</td></tr>
+<tr><td>✅B</td><td>永康金都旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>城北西路199号</td></tr>
+<tr><td>✅B</td><td>金华翼飞宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>后城里街87号</td></tr>
+<tr><td>⚠️</td><td>申华商务酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.1</td><td>—</td><td>丹溪路1113号申华大厦</td></tr>
+<tr><td>⚠️</td><td>比亚宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>新狮街道道院街12号</td></tr>
+<tr><td>⚠️</td><td>中奥宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>济慈路108号</td></tr>
+<tr><td>⚠️</td><td>馨居快捷酒店(东阳广厦大学店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.0</td><td>—</td><td>江北街道广福东街28号</td></tr>
+<tr><td>⚠️</td><td>浦江星光宾馆(财富广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>恒昌财富广场南1门东110米</td></tr>
+<tr><td>⚠️</td><td>九红宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>永康金城路355-361号</td></tr>
+<tr><td>⚠️</td><td>金华高兴宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>李渔路681号(八一南街地铁站B口步行140米)</td></tr>
+<tr><td>⚠️</td><td>金华宏泰酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>汽车西站倍熙街37-39号</td></tr>
+<tr><td>⚠️</td><td>永康云都宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>永康九铃西路1089号</td></tr>
+<tr><td>⚠️</td><td>永康君兰金康酒店(汽车东站巴黎商街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>金城路195号(江南甲第大酒店对面)</td></tr>
+<tr><td>⚠️</td><td>东阳富豪宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>人民南路1号</td></tr>
+<tr><td>⚠️</td><td>永康白天鹅宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>永康金城路330弄1幢1号</td></tr>
+<tr><td>⚠️</td><td>丽苑商务酒店(永康街)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.8</td><td>—</td><td>永康街205号(近锦江之星)</td></tr>
+<tr><td>⚠️</td><td>金丹宾馆(金华八一南街地铁站店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>3.8</td><td>—</td><td>江南街道明伦街199号</td></tr>
+<tr><td>⚠️</td><td>金华美和宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>婺城区开发区秋滨街道美和路80号美和宾馆三人间两人间大床房宾馆住宿</td></tr>
+<tr><td>⚠️</td><td>华鑫宾馆(金华苗木城店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>澧浦镇和谐南街111号近苗木市场</td></tr>
+<tr><td>⚠️</td><td>顺安宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.7</td><td>—</td><td>东城街道金城路265号</td></tr>
+<tr><td>⚠️</td><td>迷你公寓</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>—</td><td>—</td><td>万兴路东阳市花园商业中心22栋-1号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>7</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/金华市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>1 个 POI 无地址</strong>，需人工补：义乌国际商贸城</li><li><input type="checkbox" disabled> <strong>8 个 POI 无评分</strong>，暂标 ⚠️：金华动物园游客中心、金华动物园售票处、金华动物园停车场、动物园(快速公交站)、团力萌宠乐园售票处</li><li><input type="checkbox" disabled> 儿童游乐 54 家，其中场内 1 家、独立 53 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 9 个区县：东阳市、义乌市、兰溪市、婺城区、武义县、永康市、浦江县、磐安县、金东区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

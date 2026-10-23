@@ -1,0 +1,519 @@
+{
+ "province": "河南省",
+ "stats": {
+  "cities": 18,
+  "poi": 17784,
+  "grades": {
+   "S": 0,
+   "A": 103,
+   "B": 250,
+   "C": 367
+  }
+ },
+ "cities": [
+  {
+   "city": "三门峡市",
+   "province": "河南省",
+   "adcode": "411200",
+   "poi": 819,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:10:54",
+   "page": "cities/411200.html",
+   "json": "api/cities/411200.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E4%B8%89%E9%97%A8%E5%B3%A1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 10,
+    "B": 15,
+    "C": 15
+   },
+   "dims": {
+    "food": 288,
+    "district": 140,
+    "leisure": 288,
+    "kids": 17,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "信阳市",
+   "province": "河南省",
+   "adcode": "411500",
+   "poi": 1048,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:10:26",
+   "page": "cities/411500.html",
+   "json": "api/cities/411500.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E4%BF%A1%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 8,
+    "B": 13,
+    "C": 19
+   },
+   "dims": {
+    "food": 301,
+    "district": 221,
+    "leisure": 388,
+    "kids": 40,
+    "hotel": 27,
+    "product": 40
+   }
+  },
+  {
+   "city": "南阳市",
+   "province": "河南省",
+   "adcode": "411300",
+   "poi": 1099,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:10:12",
+   "page": "cities/411300.html",
+   "json": "api/cities/411300.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E5%8D%97%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 14,
+    "C": 25
+   },
+   "dims": {
+    "food": 313,
+    "district": 222,
+    "leisure": 405,
+    "kids": 47,
+    "hotel": 37,
+    "product": 40
+   }
+  },
+  {
+   "city": "周口市",
+   "province": "河南省",
+   "adcode": "411600",
+   "poi": 1105,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:13:48",
+   "page": "cities/411600.html",
+   "json": "api/cities/411600.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E5%91%A8%E5%8F%A3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 8,
+    "C": 30
+   },
+   "dims": {
+    "food": 317,
+    "district": 233,
+    "leisure": 406,
+    "kids": 55,
+    "hotel": 33,
+    "product": 40
+   }
+  },
+  {
+   "city": "商丘市",
+   "province": "河南省",
+   "adcode": "411400",
+   "poi": 1106,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:14:02",
+   "page": "cities/411400.html",
+   "json": "api/cities/411400.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E5%95%86%E4%B8%98%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 15,
+    "C": 25
+   },
+   "dims": {
+    "food": 315,
+    "district": 224,
+    "leisure": 401,
+    "kids": 43,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "安阳市",
+   "province": "河南省",
+   "adcode": "410500",
+   "poi": 1008,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:12:27",
+   "page": "cities/410500.html",
+   "json": "api/cities/410500.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E5%AE%89%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 13,
+    "C": 22
+   },
+   "dims": {
+    "food": 296,
+    "district": 183,
+    "leisure": 383,
+    "kids": 42,
+    "hotel": 38,
+    "product": 41
+   }
+  },
+  {
+   "city": "平顶山市",
+   "province": "河南省",
+   "adcode": "410400",
+   "poi": 990,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:13:19",
+   "page": "cities/410400.html",
+   "json": "api/cities/410400.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E5%B9%B3%E9%A1%B6%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 4,
+    "B": 17,
+    "C": 19
+   },
+   "dims": {
+    "food": 297,
+    "district": 202,
+    "leisure": 362,
+    "kids": 39,
+    "hotel": 27,
+    "product": 40
+   }
+  },
+  {
+   "city": "开封市",
+   "province": "河南省",
+   "adcode": "410200",
+   "poi": 957,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:11:58",
+   "page": "cities/410200.html",
+   "json": "api/cities/410200.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E5%BC%80%E5%B0%81%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 6,
+    "B": 14,
+    "C": 20
+   },
+   "dims": {
+    "food": 270,
+    "district": 211,
+    "leisure": 359,
+    "kids": 35,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "新乡市",
+   "province": "河南省",
+   "adcode": "410700",
+   "poi": 1076,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:13:04",
+   "page": "cities/410700.html",
+   "json": "api/cities/410700.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E6%96%B0%E4%B9%A1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 8,
+    "B": 11,
+    "C": 21
+   },
+   "dims": {
+    "food": 309,
+    "district": 208,
+    "leisure": 407,
+    "kids": 54,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "洛阳市",
+   "province": "河南省",
+   "adcode": "410300",
+   "poi": 1050,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:09:44",
+   "page": "cities/410300.html",
+   "json": "api/cities/410300.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E6%B4%9B%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 4,
+    "B": 14,
+    "C": 22
+   },
+   "dims": {
+    "food": 280,
+    "district": 211,
+    "leisure": 400,
+    "kids": 45,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "济源市",
+   "province": "河南省",
+   "adcode": "419001",
+   "poi": 652,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:11:15",
+   "page": "cities/419001.html",
+   "json": "api/cities/419001.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E6%B5%8E%E6%BA%90%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 16,
+    "B": 17,
+    "C": 7
+   },
+   "dims": {
+    "food": 278,
+    "district": 88,
+    "leisure": 204,
+    "kids": 11,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "漯河市",
+   "province": "河南省",
+   "adcode": "411100",
+   "poi": 886,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:09:58",
+   "page": "cities/411100.html",
+   "json": "api/cities/411100.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E6%BC%AF%E6%B2%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 16,
+    "C": 17
+   },
+   "dims": {
+    "food": 277,
+    "district": 156,
+    "leisure": 325,
+    "kids": 28,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "濮阳市",
+   "province": "河南省",
+   "adcode": "410900",
+   "poi": 973,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:10:40",
+   "page": "cities/410900.html",
+   "json": "api/cities/410900.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E6%BF%AE%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 17,
+    "C": 16
+   },
+   "dims": {
+    "food": 303,
+    "district": 172,
+    "leisure": 352,
+    "kids": 23,
+    "hotel": 33,
+    "product": 40
+   }
+  },
+  {
+   "city": "焦作市",
+   "province": "河南省",
+   "adcode": "410800",
+   "poi": 995,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:11:44",
+   "page": "cities/410800.html",
+   "json": "api/cities/410800.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E7%84%A6%E4%BD%9C%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 15,
+    "C": 20
+   },
+   "dims": {
+    "food": 324,
+    "district": 173,
+    "leisure": 364,
+    "kids": 34,
+    "hotel": 34,
+    "product": 41
+   }
+  },
+  {
+   "city": "许昌市",
+   "province": "河南省",
+   "adcode": "411000",
+   "poi": 1035,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:11:30",
+   "page": "cities/411000.html",
+   "json": "api/cities/411000.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E8%AE%B8%E6%98%8C%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 11,
+    "B": 14,
+    "C": 15
+   },
+   "dims": {
+    "food": 311,
+    "district": 201,
+    "leisure": 396,
+    "kids": 23,
+    "hotel": 34,
+    "product": 40
+   }
+  },
+  {
+   "city": "郑州市",
+   "province": "河南省",
+   "adcode": "410100",
+   "poi": 1140,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:13:33",
+   "page": "cities/410100.html",
+   "json": "api/cities/410100.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E9%83%91%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 11,
+    "C": 29
+   },
+   "dims": {
+    "food": 283,
+    "district": 251,
+    "leisure": 430,
+    "kids": 44,
+    "hotel": 34,
+    "product": 40
+   }
+  },
+  {
+   "city": "驻马店市",
+   "province": "河南省",
+   "adcode": "411700",
+   "poi": 1056,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:12:12",
+   "page": "cities/411700.html",
+   "json": "api/cities/411700.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E9%A9%BB%E9%A9%AC%E5%BA%97%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 14,
+    "C": 24
+   },
+   "dims": {
+    "food": 323,
+    "district": 190,
+    "leisure": 389,
+    "kids": 40,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "鹤壁市",
+   "province": "河南省",
+   "adcode": "410600",
+   "poi": 789,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:12:50",
+   "page": "cities/410600.html",
+   "json": "api/cities/410600.json",
+   "md": "md/%E6%B2%B3%E5%8D%97%E7%9C%81/%E9%B9%A4%E5%A3%81%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 12,
+    "C": 21
+   },
+   "dims": {
+    "food": 286,
+    "district": 137,
+    "leisure": 267,
+    "kids": 20,
+    "hotel": 27,
+    "product": 40
+   }
+  }
+ ]
+}

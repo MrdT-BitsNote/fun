@@ -1,0 +1,447 @@
+{
+ "province": "山东省",
+ "stats": {
+  "cities": 16,
+  "poi": 14211,
+  "grades": {
+   "S": 0,
+   "A": 66,
+   "B": 159,
+   "C": 415
+  }
+ },
+ "cities": [
+  {
+   "city": "东营市",
+   "province": "山东省",
+   "adcode": "370500",
+   "poi": 803,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:51:54",
+   "page": "cities/370500.html",
+   "json": "api/cities/370500.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E4%B8%9C%E8%90%A5%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 17,
+    "C": 20
+   },
+   "dims": {
+    "food": 307,
+    "district": 162,
+    "leisure": 202,
+    "kids": 36,
+    "hotel": 28,
+    "product": 40
+   }
+  },
+  {
+   "city": "临沂市",
+   "province": "山东省",
+   "adcode": "371300",
+   "poi": 962,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:01:00",
+   "page": "cities/371300.html",
+   "json": "api/cities/371300.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E4%B8%B4%E6%B2%82%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 9,
+    "B": 7,
+    "C": 24
+   },
+   "dims": {
+    "food": 296,
+    "district": 254,
+    "leisure": 230,
+    "kids": 42,
+    "hotel": 32,
+    "product": 45
+   }
+  },
+  {
+   "city": "威海市",
+   "province": "山东省",
+   "adcode": "371000",
+   "poi": 845,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:54:25",
+   "page": "cities/371000.html",
+   "json": "api/cities/371000.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E5%A8%81%E6%B5%B7%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 9,
+    "B": 12,
+    "C": 19
+   },
+   "dims": {
+    "food": 269,
+    "district": 188,
+    "leisure": 221,
+    "kids": 38,
+    "hotel": 37,
+    "product": 40
+   }
+  },
+  {
+   "city": "德州市",
+   "province": "山东省",
+   "adcode": "371400",
+   "poi": 899,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:02:37",
+   "page": "cities/371400.html",
+   "json": "api/cities/371400.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E5%BE%B7%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 4,
+    "C": 35
+   },
+   "dims": {
+    "food": 294,
+    "district": 220,
+    "leisure": 212,
+    "kids": 31,
+    "hotel": 33,
+    "product": 44
+   }
+  },
+  {
+   "city": "日照市",
+   "province": "山东省",
+   "adcode": "371100",
+   "poi": 786,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:01:44",
+   "page": "cities/371100.html",
+   "json": "api/cities/371100.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E6%97%A5%E7%85%A7%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 13,
+    "C": 26
+   },
+   "dims": {
+    "food": 271,
+    "district": 163,
+    "leisure": 209,
+    "kids": 30,
+    "hotel": 34,
+    "product": 40
+   }
+  },
+  {
+   "city": "枣庄市",
+   "province": "山东省",
+   "adcode": "370400",
+   "poi": 851,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:59:20",
+   "page": "cities/370400.html",
+   "json": "api/cities/370400.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E6%9E%A3%E5%BA%84%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 13,
+    "C": 26
+   },
+   "dims": {
+    "food": 290,
+    "district": 187,
+    "leisure": 219,
+    "kids": 44,
+    "hotel": 35,
+    "product": 40
+   }
+  },
+  {
+   "city": "泰安市",
+   "province": "山东省",
+   "adcode": "370900",
+   "poi": 911,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:58:27",
+   "page": "cities/370900.html",
+   "json": "api/cities/370900.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E6%B3%B0%E5%AE%89%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 8,
+    "B": 5,
+    "C": 27
+   },
+   "dims": {
+    "food": 304,
+    "district": 222,
+    "leisure": 228,
+    "kids": 33,
+    "hotel": 31,
+    "product": 43
+   }
+  },
+  {
+   "city": "济南市",
+   "province": "山东省",
+   "adcode": "370100",
+   "poi": 948,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:00:06",
+   "page": "cities/370100.html",
+   "json": "api/cities/370100.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E6%B5%8E%E5%8D%97%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 4,
+    "B": 9,
+    "C": 27
+   },
+   "dims": {
+    "food": 284,
+    "district": 256,
+    "leisure": 231,
+    "kids": 25,
+    "hotel": 39,
+    "product": 41
+   }
+  },
+  {
+   "city": "济宁市",
+   "province": "山东省",
+   "adcode": "370800",
+   "poi": 955,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:03:22",
+   "page": "cities/370800.html",
+   "json": "api/cities/370800.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E6%B5%8E%E5%AE%81%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 11,
+    "C": 26
+   },
+   "dims": {
+    "food": 299,
+    "district": 242,
+    "leisure": 243,
+    "kids": 50,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "淄博市",
+   "province": "山东省",
+   "adcode": "370300",
+   "poi": 878,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:56:48",
+   "page": "cities/370300.html",
+   "json": "api/cities/370300.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E6%B7%84%E5%8D%9A%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 4,
+    "B": 11,
+    "C": 25
+   },
+   "dims": {
+    "food": 289,
+    "district": 211,
+    "leisure": 226,
+    "kids": 46,
+    "hotel": 29,
+    "product": 40
+   }
+  },
+  {
+   "city": "滨州市",
+   "province": "山东省",
+   "adcode": "371600",
+   "poi": 802,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:52:46",
+   "page": "cities/371600.html",
+   "json": "api/cities/371600.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E6%BB%A8%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 12,
+    "C": 26
+   },
+   "dims": {
+    "food": 310,
+    "district": 181,
+    "leisure": 181,
+    "kids": 35,
+    "hotel": 33,
+    "product": 40
+   }
+  },
+  {
+   "city": "潍坊市",
+   "province": "山东省",
+   "adcode": "370700",
+   "poi": 941,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:57:43",
+   "page": "cities/370700.html",
+   "json": "api/cities/370700.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E6%BD%8D%E5%9D%8A%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 9,
+    "C": 28
+   },
+   "dims": {
+    "food": 292,
+    "district": 230,
+    "leisure": 221,
+    "kids": 41,
+    "hotel": 31,
+    "product": 46
+   }
+  },
+  {
+   "city": "烟台市",
+   "province": "山东省",
+   "adcode": "370600",
+   "poi": 916,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:53:31",
+   "page": "cities/370600.html",
+   "json": "api/cities/370600.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E7%83%9F%E5%8F%B0%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 8,
+    "C": 25
+   },
+   "dims": {
+    "food": 279,
+    "district": 222,
+    "leisure": 227,
+    "kids": 47,
+    "hotel": 36,
+    "product": 41
+   }
+  },
+  {
+   "city": "聊城市",
+   "province": "山东省",
+   "adcode": "371500",
+   "poi": 864,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:56:04",
+   "page": "cities/371500.html",
+   "json": "api/cities/371500.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E8%81%8A%E5%9F%8E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 4,
+    "B": 12,
+    "C": 24
+   },
+   "dims": {
+    "food": 303,
+    "district": 192,
+    "leisure": 209,
+    "kids": 44,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "菏泽市",
+   "province": "山东省",
+   "adcode": "371700",
+   "poi": 920,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:04:15",
+   "page": "cities/371700.html",
+   "json": "api/cities/371700.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E8%8F%8F%E6%B3%BD%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 10,
+    "C": 28
+   },
+   "dims": {
+    "food": 292,
+    "district": 235,
+    "leisure": 231,
+    "kids": 39,
+    "hotel": 28,
+    "product": 40
+   }
+  },
+  {
+   "city": "青岛市",
+   "province": "山东省",
+   "adcode": "370200",
+   "poi": 930,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:55:11",
+   "page": "cities/370200.html",
+   "json": "api/cities/370200.json",
+   "md": "md/%E5%B1%B1%E4%B8%9C%E7%9C%81/%E9%9D%92%E5%B2%9B%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 6,
+    "C": 29
+   },
+   "dims": {
+    "food": 271,
+    "district": 249,
+    "leisure": 234,
+    "kids": 46,
+    "hotel": 37,
+    "product": 40
+   }
+  }
+ ]
+}

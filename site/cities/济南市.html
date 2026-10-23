@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>济南市 · 山东省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/山东省.html">← 返回山东省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>济南市 · 山东省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:00:06  ·  POI 总量：948（去重后）  ·  查询面：49  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>948</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 284 · 商圈 486 · 成人娱乐 273 · 儿童娱乐 192 · 酒店 39 · 特产 41</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>山东省 · 省会市</td></tr>
+<tr><td>下级区县</td><td>12 个</td></tr>
+<tr><td>街道/镇/乡</td><td>161 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×10、县×2</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>历下区</td><td>307</td><td>32%</td></tr>
+<tr><td>历城区</td><td>162</td><td>17%</td></tr>
+<tr><td>天桥区</td><td>103</td><td>11%</td></tr>
+<tr><td>市中区</td><td>96</td><td>10%</td></tr>
+<tr><td>槐荫区</td><td>94</td><td>10%</td></tr>
+<tr><td>章丘区</td><td>46</td><td>5%</td></tr>
+<tr><td>莱芜区</td><td>40</td><td>4%</td></tr>
+<tr><td>长清区</td><td>39</td><td>4%</td></tr>
+<tr><td>济阳区</td><td>24</td><td>3%</td></tr>
+<tr><td>商河县</td><td>17</td><td>2%</td></tr>
+<tr><td>平阴县</td><td>13</td><td>1%</td></tr>
+<tr><td>钢城区</td><td>7</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（486 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>185</td></tr>
+<tr><td>购物中心/综合体</td><td>95</td></tr>
+<tr><td>商业街</td><td>55</td></tr>
+<tr><td>百货/商场</td><td>46</td></tr>
+<tr><td>夜市</td><td>35</td></tr>
+<tr><td>步行街</td><td>23</td></tr>
+<tr><td>美食街/小吃街</td><td>21</td></tr>
+<tr><td>批发城</td><td>20</td></tr>
+<tr><td>奥特莱斯</td><td>6</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（486 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>A</td><td>长藤鬼校(泉城路店)</td><td>其他商业载体</td><td>4.7</td><td>18</td><td>26</td><td>10</td><td>1</td></tr>
+<tr><td>A</td><td>贵和购物中心</td><td>购物中心/综合体</td><td>4.8</td><td>15</td><td>25</td><td>12</td><td>1</td></tr>
+<tr><td>A</td><td>济南历下世茂广场</td><td>百货/商场</td><td>4.8</td><td>13</td><td>27</td><td>12</td><td>1</td></tr>
+<tr><td>A</td><td>济南恒隆广场</td><td>百货/商场</td><td>4.9</td><td>12</td><td>27</td><td>9</td><td>1</td></tr>
+<tr><td>A</td><td>世茂国际广场酒店式公寓</td><td>其他商业载体</td><td>5.0</td><td>11</td><td>27</td><td>12</td><td>1</td></tr>
+<tr><td>B</td><td>幸福蓝海影城(泺源大街银座商城店)</td><td>商业街</td><td>4.7</td><td>8</td><td>11</td><td>6</td><td>3</td></tr>
+<tr><td>B</td><td>济南魏家庄万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>5</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>融汇济南老商埠</td><td>商业街</td><td>4.8</td><td>5</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>弘阳广场</td><td>百货/商场</td><td>4.8</td><td>5</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>響 Livehouse (济南店)</td><td>其他商业载体</td><td>4.8</td><td>5</td><td>9</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>NB网咖电竞连锁(泉城路店)</td><td>其他商业载体</td><td>4.8</td><td>5</td><td>10</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>济南印象城</td><td>购物中心/综合体</td><td>4.8</td><td>3</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>B</td><td>济南万象城</td><td>购物中心/综合体</td><td>4.9</td><td>2</td><td>10</td><td>7</td><td>0</td></tr>
+<tr><td>B</td><td>济南融创茂</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>2</td><td>11</td><td>0</td></tr>
+<tr><td>B</td><td>济南动物园</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>29</td><td>0</td></tr>
+<tr><td>C</td><td>龙湖济南奥体天街</td><td>购物中心/综合体</td><td>4.8</td><td>4</td><td>9</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>长清大学城商业街</td><td>商业街</td><td>4.8</td><td>4</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>贵和购物中心(领秀城店)</td><td>购物中心/综合体</td><td>4.8</td><td>4</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>青春夜市</td><td>夜市</td><td>4.8</td><td>4</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>嘉华购物广场(济南槐荫店)</td><td>购物中心/综合体</td><td>4.7</td><td>4</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盒马鲜生(奥体国际城店)</td><td>其他商业载体</td><td>4.8</td><td>3</td><td>9</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>济南和谐广场</td><td>购物中心/综合体</td><td>4.8</td><td>3</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>和谐广场(章丘店)</td><td>购物中心/综合体</td><td>4.8</td><td>3</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>箪食巷私房菜馆(玉函店)</td><td>商业街</td><td>4.8</td><td>3</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>悦量贩式KTV(奥体店)</td><td>其他商业载体</td><td>4.7</td><td>3</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>环联夜市</td><td>夜市</td><td>4.9</td><td>2</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>山姆会员商店(济南高新店)</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>济南鑫颖招待所(泉城广场趵突泉店)</td><td>其他商业载体</td><td>4.7</td><td>2</td><td>5</td><td>3</td><td>2</td></tr>
+<tr><td>C</td><td>龙湖济南西城天街</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>济南华山环宇城</td><td>百货/商场</td><td>4.8</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>刘小忙把子肉总店</td><td>其他商业载体</td><td>4.8</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>济南融创夜市</td><td>夜市</td><td>4.8</td><td>1</td><td>2</td><td>4</td><td>0</td></tr>
+<tr><td>C</td><td>钢都宾馆(府前大街)</td><td>商业街</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>济南首创奥特莱斯</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>百联奥特莱斯广场(济南∙海那城)</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>济南高新万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>8</td><td>7</td><td>0</td></tr>
+<tr><td>C</td><td>济南世纪大道万达广场</td><td>百货/商场</td><td>4.8</td><td>0</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>龙湖济南北宸天街</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>泺口服装城商贸中心泺享汇</td><td>商业街</td><td>4.8</td><td>0</td><td>1</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>万达影城(高新万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>8</td><td>8</td><td>0</td></tr>
+</tbody></table></div>
+<h3>长藤鬼校(泉城路店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 18 家（均分 4.48）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;娱乐场所）</li><li><strong>地址</strong>：泉城路77号Q77美食广场四楼</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥54（区间 ¥15–100）</li><li><strong>动线主轴</strong>：泉城路</li><li><strong>业态分布</strong>：美食 18 · 成人娱乐 26 · 儿童娱乐 10 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>长藤鬼校(泉城路店)</td></tr>
+<tr><td>美食</td><td>18</td><td>義利永百年老号·牛肉烧饼(大明湖店)、群众青年酒馆(宽厚里店)、武岳庙把子肉(济南总店)</td></tr>
+<tr><td>成人娱乐</td><td>26</td><td>长藤鬼校(泉城路店)、玩美攻略潮玩街区、网猫电竞(泉城路店)</td></tr>
+<tr><td>儿童娱乐</td><td>10</td><td>玩美攻略潮玩街区、百丽宫影城(济南恒隆广场店)、汪庄园·猫咖·狗咖·羊驼·异宠</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>世茂国际广场酒店式公寓</td></tr>
+</tbody></table></div>
+<h3>贵和购物中心 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 15 家（均分 4.44）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：天地坛街1号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥70（区间 ¥15–171）</li><li><strong>动线主轴</strong>：泉城路</li><li><strong>业态分布</strong>：美食 15 · 成人娱乐 25 · 儿童娱乐 12 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>贵和购物中心</td></tr>
+<tr><td>美食</td><td>15</td><td>金春禧(世茂国际广场店)、超意兴·把子肉(泉城广场店)、萍姐火锅·公路夜市(济南首店)</td></tr>
+<tr><td>成人娱乐</td><td>25</td><td>百丽宫影城(济南恒隆广场店)、网猫电竞(泉城路店)、玩美攻略潮玩街区</td></tr>
+<tr><td>儿童娱乐</td><td>12</td><td>百丽宫影城(济南恒隆广场店)、玩美攻略潮玩街区、汪庄园·猫咖·狗咖·羊驼·异宠</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>世茂国际广场酒店式公寓</td></tr>
+</tbody></table></div>
+<h3>济南历下世茂广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.56）+ 4 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;商场）</li><li><strong>地址</strong>：泉城路26号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥48（区间 ¥15–100）</li><li><strong>动线主轴</strong>：泉城路</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 27 · 儿童娱乐 12 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>济南历下世茂广场</td></tr>
+<tr><td>美食</td><td>13</td><td>群众青年酒馆(宽厚里店)、陈氏肥蛤(圣凯·财富广场店)、義利永百年老号·牛肉烧饼(大明湖店)</td></tr>
+<tr><td>成人娱乐</td><td>27</td><td>群众青年酒馆(宽厚里店)、大冰的小屋(济南分舵)、蔻纳进口啤酒超市(世茂店)</td></tr>
+<tr><td>儿童娱乐</td><td>12</td><td>玩美攻略潮玩街区、百丽宫影城(济南恒隆广场店)、汪庄园·猫咖·狗咖·羊驼·异宠</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>世茂国际广场酒店式公寓</td></tr>
+</tbody></table></div>
+<h3>济南恒隆广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.41）+ 4 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：泉城路188号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥56（区间 ¥15–86）</li><li><strong>动线主轴</strong>：泉城路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 27 · 儿童娱乐 9 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>济南恒隆广场</td></tr>
+<tr><td>美食</td><td>12</td><td>超意兴·把子肉(泉城广场店)、金春禧(世茂国际广场店)、济南香格里拉大堂酒廊</td></tr>
+<tr><td>成人娱乐</td><td>27</td><td>響 Livehouse (济南店)、NB网咖电竞连锁(泉城路店)、百丽宫影城(济南恒隆广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>百丽宫影城(济南恒隆广场店)、玩美攻略潮玩街区、汪庄园·猫咖·狗咖·羊驼·异宠</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>世茂国际广场酒店式公寓</td></tr>
+</tbody></table></div>
+<h3>世茂国际广场酒店式公寓 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.55）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：大明湖街道泉城路26号世茂国际广场E座709室</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥48（区间 ¥15–79）</li><li><strong>动线主轴</strong>：泉城路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 27 · 儿童娱乐 12 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>世茂国际广场酒店式公寓</td></tr>
+<tr><td>美食</td><td>11</td><td>群众青年酒馆(宽厚里店)、陈氏肥蛤(圣凯·财富广场店)、金春禧(世茂国际广场店)</td></tr>
+<tr><td>成人娱乐</td><td>27</td><td>大冰的小屋(济南分舵)、群众青年酒馆(宽厚里店)、Buff Club(济南宽厚里店)</td></tr>
+<tr><td>儿童娱乐</td><td>12</td><td>玩美攻略潮玩街区、百丽宫影城(济南恒隆广场店)、汪庄园·猫咖·狗咖·羊驼·异宠</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>世茂国际广场酒店式公寓</td></tr>
+</tbody></table></div>
+<h3>幸福蓝海影城(泺源大街银座商城店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 17 / 酒店 3</li><li><strong>载体类型</strong>：商业街（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：泺源大街66号银座商城三期8F</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥62（区间 ¥19–80）</li><li><strong>动线主轴</strong>：泺源大街</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 11 · 儿童娱乐 6 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>幸福蓝海影城(泺源大街银座商城店)</td></tr>
+<tr><td>美食</td><td>8</td><td>陈氏肥蛤(圣凯·财富广场店)、群众青年酒馆(宽厚里店)、城南往事(文化西路店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>幸福蓝海影城(泺源大街银座商城店)、赶夜(韩国城店)、Buff Club(济南宽厚里店)</td></tr>
+<tr><td>儿童娱乐</td><td>6</td><td>Ex未来科技探索中心、咕噜岛家庭享乐小镇(银座商城店)、潮玩社(泺源店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>世茂国际广场酒店式公寓、济南鑫颖招待所(泉城广场趵突泉店)、济南鑫兄弟招待所</td></tr>
+</tbody></table></div>
+<h3>济南魏家庄万达广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 5 家 / 娱乐 3 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：经四路5号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥54（区间 ¥35–71）</li><li><strong>动线主轴</strong>：经二路</li><li><strong>业态分布</strong>：美食 5 · 成人娱乐 2 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>济南魏家庄万达广场</td></tr>
+<tr><td>美食</td><td>5</td><td>宝勤·临沂炒鸡(经四万达店)、魏斯理汉堡(济南绿地中心店)、穆得老周家牛肉烧饼</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>柯洛克机械式沉浸密室(泉城路店)、青岛啤酒鲜酒吧(经二纬一店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>万达宝贝王(济南魏家庄店)</td></tr>
+</tbody></table></div>
+<h3>融汇济南老商埠 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 5 家 / 娱乐 0 / 酒店 1</li><li><strong>载体类型</strong>：商业街（购物服务;特色商业街;特色商业街）</li><li><strong>地址</strong>：经四路333号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥70（区间 ¥29–75）</li><li><strong>动线主轴</strong>：街道经四路</li><li><strong>业态分布</strong>：美食 5 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>融汇济南老商埠</td></tr>
+<tr><td>美食</td><td>5</td><td>鲁南仔·滕州炒鸡(经三路店)、比格比萨自助(济南大观园店)、达美乐比萨(老商埠店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>济南海岱旅社</td></tr>
+</tbody></table></div>
+<h3>弘阳广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 5 家 / 娱乐 1 / 酒店 0</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：张庄路街道兴福寺路2660号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥76（区间 ¥70–120）</li><li><strong>动线主轴</strong>：兴福寺路</li><li><strong>业态分布</strong>：美食 5 · 成人娱乐 0 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>弘阳广场</td></tr>
+<tr><td>美食</td><td>5</td><td>海底捞火锅(弘阳广场店)、笨鸡小跑·临沂炒鸡(印象济南店)、南二楼海鲜大排档(印象济南店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>夏天儿童乐园小逗逗游乐场(印象济南店)</td></tr>
+</tbody></table></div>
+<h3>響 Livehouse (济南店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 5 家 / 娱乐 10 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;酒吧）</li><li><strong>地址</strong>：泉城路332号恒祺商业广场F2-21-1、F2-21-2号商铺</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥70（区间 ¥20–75）</li><li><strong>动线主轴</strong>：泉城路</li><li><strong>业态分布</strong>：美食 5 · 成人娱乐 9 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>響 Livehouse (济南店)</td></tr>
+<tr><td>美食</td><td>5</td><td>超意兴·把子肉(泉城广场店)、达美乐比萨(芙蓉街店)、南京大牌档(济南恒隆店)</td></tr>
+<tr><td>成人娱乐</td><td>9</td><td>響 Livehouse (济南店)、NB网咖电竞连锁(泉城路店)、连枝(鞭指巷)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>幻境空间·超级元宇宙(济南总店)</td></tr>
+</tbody></table></div>
+<h3>NB网咖电竞连锁(泉城路店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 5 家 / 娱乐 11 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;网吧）</li><li><strong>地址</strong>：泉城路339号恒祺广场4楼4008-4009商铺</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥70（区间 ¥20–75）</li><li><strong>动线主轴</strong>：泉城路</li><li><strong>业态分布</strong>：美食 5 · 成人娱乐 10 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>NB网咖电竞连锁(泉城路店)</td></tr>
+<tr><td>美食</td><td>5</td><td>超意兴·把子肉(泉城广场店)、达美乐比萨(芙蓉街店)、南京大牌档(济南恒隆店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>NB网咖电竞连锁(泉城路店)、響 Livehouse (济南店)、连枝(鞭指巷)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>幻境空间·超级元宇宙(济南总店)</td></tr>
+</tbody></table></div>
+<h3>济南印象城 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 3 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：花园路136-7号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥53（区间 ¥21–75）</li><li><strong>动线主轴</strong>：洪家楼西路</li><li><strong>业态分布</strong>：美食 3 · 成人娱乐 6 · 儿童娱乐 10 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>济南印象城</td></tr>
+<tr><td>美食</td><td>3</td><td>洪楼夜市(聚隆广场店)、素和美素食文化主题餐厅(洪楼店)、赶夜大排档</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>NB网咖电竞连锁(印象城旗舰店)、CGV影城(印象城花园路店)、D7街区潮玩社</td></tr>
+<tr><td>儿童娱乐</td><td>10</td><td>D7街区潮玩社、森之谷·数字娱乐空间、奈思互娱 桌游 棋牌 电玩</td></tr>
+</tbody></table></div>
+<h3>济南万象城 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 2 家 / 娱乐 17 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：经十路11111号(转山西路万象城地铁站A口旁)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥26（区间 ¥22–30）</li><li><strong>动线主轴</strong>：经十路</li><li><strong>业态分布</strong>：美食 2 · 成人娱乐 10 · 儿童娱乐 7 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>济南万象城</td></tr>
+<tr><td>美食</td><td>2</td><td>超意兴快餐(省博店)、麦当劳(济南万象城店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>纯K(万象城店)、万象影城(济南万象城IMAX激光店)、星悦荟棋牌·茶楼·私房菜(CBD旗舰店)</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>嗨贝天地(济南万象城店)、玩聚空间PS5&amp;Switch主机游戏体验馆(万象城店)、潮玩社(济南万象城店)</td></tr>
+</tbody></table></div>
+<h3>济南融创茂 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 1 家 / 娱乐 13 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：经十路199号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥34（区间 ¥34–34）</li><li><strong>动线主轴</strong>：街道凤集路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 2 · 儿童娱乐 11 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>济南融创茂</td></tr>
+<tr><td>美食</td><td>1</td><td>济南融创夜市</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>万达影城(济南融创茂店)、快乐由我抓物社(融创茂店)</td></tr>
+<tr><td>儿童娱乐</td><td>11</td><td>MELAND CLUB(济南融创体育世界店)、济南融创乐园、木先生宠物乐园</td></tr>
+</tbody></table></div>
+<h3>济南动物园 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 29 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（风景名胜;公园广场;动物园）</li><li><strong>地址</strong>：济泺路87号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 29 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>济南动物园</td></tr>
+<tr><td>儿童娱乐</td><td>29</td><td>济南动物园、济南动物园-大熊猫馆、大象馆</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（273 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>58</td></tr>
+<tr><td>酒吧/酒馆</td><td>35</td></tr>
+<tr><td>电影院</td><td>21</td></tr>
+<tr><td>棋牌室</td><td>20</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>18</td></tr>
+<tr><td>KTV</td><td>12</td></tr>
+<tr><td>电玩城</td><td>7</td></tr>
+<tr><td>Livehouse</td><td>5</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>纯K(万象城店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.8</td><td>74.00</td><td>经十路11111号万象城二期LG2层</td></tr>
+<tr><td>✅A-</td><td>響 Livehouse (济南店)</td><td>Livehouse</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.8</td><td>103.00</td><td>泉城路332号恒祺商业广场F2-21-1、F2-21-2号商铺</td></tr>
+<tr><td>✅A-</td><td>民谣集烧烤酒馆(济南国际会展中心)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.8</td><td>91.00</td><td>中国(山东)自由贸易试验区济南片区高新会展中心1层西南角</td></tr>
+<tr><td>✅A-</td><td>BINGO(龙湖济南奥体天街店)</td><td>其他娱乐场所</td><td>购物服务;个人用品/化妆品店;其它个人用品店</td><td>4.8</td><td>68.00</td><td>奥体西路3699号龙湖济南奥体天街A馆F1层</td></tr>
+<tr><td>✅A-</td><td>NB网咖电竞连锁(泉城路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.8</td><td>—</td><td>泉城路339号恒祺广场4楼4008-4009商铺</td></tr>
+<tr><td>✅A-</td><td>网猫电竞(高新万达店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.8</td><td>27.00</td><td>会展中心以北新生活家园112号</td></tr>
+<tr><td>✅A-</td><td>长藤鬼校(泉城路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.7</td><td>84.00</td><td>泉城路77号Q77美食广场四楼</td></tr>
+<tr><td>✅A-</td><td>悦量贩式KTV(奥体店)</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.7</td><td>63.00</td><td>奥林匹克体育中心商业街2007号</td></tr>
+<tr><td>✅A-</td><td>爱上歌唱家KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.7</td><td>38.00</td><td>舜华路街道舜华路879号5号楼济高世贸芯环中心L4层商铺L402-L403</td></tr>
+<tr><td>✅A-</td><td>万达影城(高新万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>49.00</td><td>工业南路57号高新万达广场5层</td></tr>
+<tr><td>✅A-</td><td>幸福蓝海影城(泺源大街银座商城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>37.00</td><td>泺源大街66号银座商城三期8F</td></tr>
+<tr><td>✅A-</td><td>万达影城(济南融创茂店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>53.00</td><td>凤鸣路4646号融创茂东1号门L2层</td></tr>
+<tr><td>✅A-</td><td>赤道LIVE HOUSE(济南店)</td><td>Livehouse</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>97.00</td><td>会展东路388号大树体育馆2F层</td></tr>
+<tr><td>✅A-</td><td>大冰的小屋(济南分舵)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>71.00</td><td>宽厚里二期5楼116</td></tr>
+<tr><td>✅A-</td><td>群众青年酒馆(宽厚里店)</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅｜体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.7</td><td>59.00</td><td>泉城路26号世茂国际广场东座2F</td></tr>
+<tr><td>✅A-</td><td>MeTAMusicPark酒吧(原奥斯卡升级店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.7</td><td>120.00</td><td>东关大街126号(原名萃商厦1-4层)</td></tr>
+<tr><td>✅A-</td><td>赶夜(韩国城店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>39.00</td><td>千佛山街道所里街济南明府城内(南侧)</td></tr>
+<tr><td>✅A-</td><td>蔻纳进口啤酒超市(世茂店)</td><td>其他娱乐场所</td><td>购物服务;专卖店;烟酒专卖店</td><td>4.7</td><td>60.00</td><td>黑虎泉北路187号</td></tr>
+<tr><td>✅A-</td><td>连枝(鞭指巷)</td><td>其他娱乐场所</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.7</td><td>60.00</td><td>鞭指巷103号(泉城路派出所斜对面)</td></tr>
+<tr><td>✅A-</td><td>BINGO(山师店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>78.00</td><td>历山路134号一层</td></tr>
+<tr><td>✅A-</td><td>THANK Bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>107.00</td><td>芙蓉街16号</td></tr>
+<tr><td>✅A-</td><td>Work&amp;Work</td><td>其他娱乐场所</td><td>购物服务;服装鞋帽皮具店;服装鞋帽皮具店</td><td>4.7</td><td>85.00</td><td>绿地国金天地·东园岸A4-3F(安成街地铁站F口旁)</td></tr>
+<tr><td>✅A-</td><td>从前慢小酒馆</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>84.00</td><td>山大南路123-8号</td></tr>
+<tr><td>✅A-</td><td>Buff Club(济南宽厚里店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>89.00</td><td>黑虎泉西路17号宽厚里5号楼103八福酒吧</td></tr>
+<tr><td>✅A-</td><td>玩美攻略潮玩街区</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.7</td><td>79.00</td><td>泉城路111华典大厦F1层</td></tr>
+<tr><td>✅A-</td><td>MODERNSKYLAB</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.7</td><td>131.00</td><td>泉城路277号山东手造展示体验中心F4层</td></tr>
+<tr><td>✅A-</td><td>网猫电竞(泉城路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.7</td><td>—</td><td>齐鲁国际大厦西南门网猫电竞</td></tr>
+<tr><td>✅A-</td><td>YY电竞·俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.7</td><td>—</td><td>历黄路5号与北园大街交叉口南220米</td></tr>
+<tr><td>✅A-</td><td>1001 PARTY WORLD</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>90.00</td><td>历下区历山路101号</td></tr>
+<tr><td>✅A-</td><td>网猫电竞(汉峪金谷店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.7</td><td>50.00</td><td>舜华南路100号(东城逸家逸俊园西门南120米)</td></tr>
+<tr><td>✅A-</td><td>NB网咖电竞连锁(印象城旗舰店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.7</td><td>20.00</td><td>花园路123-1号</td></tr>
+<tr><td>✅A-</td><td>般若·F超级密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>213.00</td><td>经十一路31号人防商城B5区东侧3(16出入口)</td></tr>
+<tr><td>✅A-</td><td>长藤密室(泉城路2店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>131.00</td><td>泉城路77号Q77美食广场1楼</td></tr>
+<tr><td>✅A-</td><td>K-ONE KTV(奥体店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>68.00</td><td>奥体中心3A区3001号</td></tr>
+<tr><td>✅A-</td><td>星聚会KTV(济南奥体龙湖店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>71.00</td><td>奥体西路3699号龙湖济南奥体天街L5层</td></tr>
+<tr><td>✅A-</td><td>星光麦田KTV(CBD华润广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>77.00</td><td>经十路以北、奥体西路以西华置万象天地A-6地块2号楼1单元201室</td></tr>
+<tr><td>✅A-</td><td>好声音PARTY.K(高新会展中心店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>40.00</td><td>济南国际会展中心A区乐活MALL4楼</td></tr>
+<tr><td>✅A-</td><td>星聚会KTV(济南高新万达店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>80.00</td><td>工业南路57号万达广场(济南高新店)3F层</td></tr>
+<tr><td>✅A-</td><td>幸福蓝海国际影城(全运村·中央广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>31.00</td><td>全运村·中央广场</td></tr>
+<tr><td>✅A-</td><td>山东文旅星辉影城(逸家广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>22.00</td><td>舜义路558号逸家广场B座L4层</td></tr>
+<tr><td>✅A-</td><td>万象影城(济南万象城IMAX激光店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>46.00</td><td>经十路11111号济南万象城L5层</td></tr>
+<tr><td>✅A-</td><td>CGV影城(龙湖杜比影院4DX店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>61.00</td><td>奥体西路3699号(礼耕路地铁站D口旁)龙湖济南奥体天街A馆L5层</td></tr>
+<tr><td>✅A-</td><td>CGV影城(印象城花园路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>63.00</td><td>印象城6层</td></tr>
+<tr><td>✅A-</td><td>万达影城CINITY(济南世纪大道万达广场店)</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>42.00</td><td>唐冶街道凤歧路1956号济南世纪大道万达广场4楼</td></tr>
+<tr><td>✅A-</td><td>V影荟影城(城投凤鸣广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>45.00</td><td>世纪大道10678号凤鸣广场A区L4层</td></tr>
+<tr><td>✅A-</td><td>新世纪电影城(赛博店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>37.00</td><td>解放路43号赛博数码广场5层</td></tr>
+<tr><td>✅A-</td><td>沃美影城CINITY LED(龙湖济南北宸天街)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>38.00</td><td>工业北路17887号(与凤凰路交汇口)龙湖济南北宸天街5F层A-5F-Z02</td></tr>
+<tr><td>✅A-</td><td>约麻棋牌社(奥体中心店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>44.00</td><td>奥体中心游泳馆1052-1</td></tr>
+<tr><td>✅A</td><td>星悦荟棋牌·茶楼·私房菜(CBD旗舰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>49.00</td><td>解放东路27号东鸿广场1-201</td></tr>
+<tr><td>✅A-</td><td>如棋而至棋牌(齐鲁软件园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>29.00</td><td>舜华路1116号如棋而至棋牌(贝壳酒店3楼)</td></tr>
+<tr><td>✅A-</td><td>博雅聚茶楼棋牌(万象城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>32.00</td><td>文博家园西门旁</td></tr>
+<tr><td>✅A-</td><td>永遇乐棋牌(雅居园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>138.00</td><td>雅居园北门旁</td></tr>
+<tr><td>✅A-</td><td>如棋而至棋牌(新泺大街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>29.00</td><td>高新区舜华路街道龙湖天奕9号4层401</td></tr>
+<tr><td>✅A-</td><td>博雅聚茶楼棋牌(齐鲁软件园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>90.00</td><td>舜华路街道舜华东路600号万创汇4楼</td></tr>
+<tr><td>✅A-</td><td>雀悦里棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>21.00</td><td>天辰路丁家嵘汇花园A区南门丁家商街4-7</td></tr>
+<tr><td>✅A-</td><td>The Fiddich Bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>111.00</td><td>舜华南路汉峪金谷a1-2栋北向底商</td></tr>
+<tr><td>✅A-</td><td>朗格啤酒屋</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>78.00</td><td>荆山东路107号(凯莱商务东南门旁)</td></tr>
+<tr><td>✅A-</td><td>皇家啤酒馆(九城尚都店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>143.00</td><td>舜耕路217号九城尚都217-5号</td></tr>
+<tr><td>✅A-</td><td>济南香格里拉大堂酒廊</td><td>其他娱乐场所</td><td>餐饮服务;咖啡厅;咖啡厅</td><td>4.6</td><td>86.00</td><td>泺源大街106号香格里拉2层</td></tr>
+<tr><td>✅A-</td><td>难得民谣(泉城路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>39.00</td><td>泉城路123号3楼</td></tr>
+</tbody></table></div>
+<p>（另 116 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（192 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>105</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>36</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>26</td></tr>
+<tr><td>电玩城</td><td>13</td></tr>
+<tr><td>亲子乐园</td><td>10</td></tr>
+<tr><td>淘气堡</td><td>2</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>济南动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.7</td><td>济泺路87号</td></tr>
+<tr><td>✅A-</td><td>玩美攻略潮玩街区</td><td>其他儿童场所</td><td>场内</td><td>4.7</td><td>泉城路111华典大厦F1层</td></tr>
+<tr><td>✅A-</td><td>MELAND CLUB(济南融创体育世界店)</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>经十路201号济南融创茂LG层体育世界1号</td></tr>
+<tr><td>✅A-</td><td>Meland Club(和谐广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.7</td><td>经十路22799号和谐广场2楼</td></tr>
+<tr><td>✅A-</td><td>奈尔宝·儿童乐园·亲子餐厅(济南华山环宇城店)</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.7</td><td>将军路1688华山华宇城2F北侧</td></tr>
+<tr><td>✅A-</td><td>梦幻城堡欢乐运动馆(聚仁体育店)</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>匡山街道山东国际会展中心5号门2楼8号厅</td></tr>
+<tr><td>✅A-</td><td>泉城公园</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>经十路18762号</td></tr>
+<tr><td>✅A-</td><td>济南融创乐园</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>经十路与凤鸣路交汇处南500米路东</td></tr>
+<tr><td>✅A-</td><td>百丽宫影城(济南恒隆广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.7</td><td>泉城路188号恒隆广场6层</td></tr>
+<tr><td>✅A-</td><td>济南野生动物世界</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>埠村街道埠西村(济南市植物园南邻)</td></tr>
+<tr><td>✅A-</td><td>环龙山·环联小镇</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>柳埠镇龙门村村南</td></tr>
+<tr><td>✅A-</td><td>开心农场亲子乐园HAPPY FARM</td><td>亲子乐园</td><td>独立</td><td>4.6</td><td>市医院北200米</td></tr>
+<tr><td>✅A-</td><td>撒野宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>后魏华庄10号</td></tr>
+<tr><td>✅A-</td><td>呜昂汪宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>龙洞风景区</td></tr>
+<tr><td>✅A-</td><td>汪庄园·猫咖·狗咖·羊驼·异宠</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>泉城路77号4楼</td></tr>
+<tr><td>✅A-</td><td>精灵派宠物俱乐部</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>名士花园2区1号楼</td></tr>
+<tr><td>✅A-</td><td>顽酷星球呼啸谷检票口</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>港沟街道港九路5001号顽酷星球呼啸谷</td></tr>
+<tr><td>✅A-</td><td>不觉晓玉符河自然聚场</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>宅科村大桥东500米306号</td></tr>
+<tr><td>✅A-</td><td>如梦令宋词主题演艺乐园</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>大桥街道大刘村</td></tr>
+<tr><td>✅A-</td><td>园博园探险乐园</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>崮云湖街道园博园水之门济南国际园博园(东北角)</td></tr>
+<tr><td>✅A-</td><td>GREEN FIELD潮玩运动馆</td><td>其他儿童场所</td><td>场内</td><td>4.6</td><td>美里路555号海那百联奥特莱斯广场2期2层250-254</td></tr>
+<tr><td>✅A-</td><td>北纬37度康旅示范小镇</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>248省道</td></tr>
+<tr><td>✅A-</td><td>子房农庄</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>高而乡东沟村62号</td></tr>
+<tr><td>✅A-</td><td>泊心湾欢乐岛</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>环湖南路99号(雍和楼西南侧)</td></tr>
+<tr><td>✅A-</td><td>摇滚小黄鸭主题乐园(历城店)</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>工业北路37号</td></tr>
+<tr><td>✅A-</td><td>麦子家儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.6</td><td>工业北路69-2号</td></tr>
+<tr><td>✅A-</td><td>多乐岛DORO桌游电玩·撸猫咖啡(泉乐坊店)</td><td>电玩城</td><td>独立</td><td>4.6</td><td>泉乐坊308号(齐鲁金店南侧步梯上三楼直行50米)</td></tr>
+<tr><td>✅A-</td><td>幻境空间·超级元宇宙(济南总店)</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>泉城路277号柒坊巷漫心府后门</td></tr>
+<tr><td>✅A-</td><td>润笙春芽舞蹈培训学校(新世界校区)</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>经十一路新世界商城3楼3-9号商铺</td></tr>
+<tr><td>✅B</td><td>顽酷星球呼啸谷</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>港沟街道港九路5001号</td></tr>
+<tr><td>✅B</td><td>虫鸣探秘活体自然博物馆</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>经十一路人防商城A6入口下即到</td></tr>
+<tr><td>✅B</td><td>环宠森林</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>舜华路街道舜华路881号济高·世茂芯环中心2楼</td></tr>
+<tr><td>✅B</td><td>小狗当家宠物服务中心</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>党家街道公铁立交(济微公路辅路)西南侧约50米</td></tr>
+<tr><td>✅B</td><td>木先生宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>经十路199号(济南融创乐园)</td></tr>
+<tr><td>✅B</td><td>汪汪旺宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>东营西路与威海路交叉口南240米</td></tr>
+<tr><td>✅B</td><td>济南动物园-大熊猫馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>济泺路87号济南动物园猛兽区内</td></tr>
+<tr><td>✅B</td><td>趣音盒子</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>工业南路68号华润置地广场F1层</td></tr>
+<tr><td>✅B</td><td>嗨贝天地(济南万象城店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>经十路11111号济南万象城L2层L261号</td></tr>
+<tr><td>✅B</td><td>十里童话欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>金舆大道3399号与王保路交叉口</td></tr>
+<tr><td>✅B</td><td>Qmiss家庭娱乐中心(万虹广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>工业北路60号万虹广场F3层</td></tr>
+<tr><td>✅B</td><td>提米世界亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>官扎营街道制革街10号29幢-101</td></tr>
+<tr><td>✅B</td><td>蟹田王国赶海乐园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>党家街道寨而头村48号</td></tr>
+<tr><td>✅B</td><td>StarPark幻游王国星际乐园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>闵子骞路10号百花公园(东南角)</td></tr>
+<tr><td>✅B</td><td>Ex未来科技探索中心</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>千佛山街道泺源大街66号银座商城C3座六楼</td></tr>
+<tr><td>✅B</td><td>月亮湾度假村</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>仲宫镇杨而村月亮湾水上乐园(近卧虎山水库)</td></tr>
+<tr><td>✅B</td><td>玩聚空间PS5&amp;Switch主机游戏体验馆(万象城店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>姚家街道华润中心二期二号楼二单元1303户</td></tr>
+<tr><td>✅B</td><td>玩界动漫电玩馆</td><td>电玩城</td><td>独立</td><td>4.5</td><td>工业南路57号济南高新万达金街F2层</td></tr>
+<tr><td>✅B</td><td>体育欢乐世界(体育中心店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>文苑街83号(唐冶地铁站B口旁)</td></tr>
+<tr><td>✅B</td><td>马套将军山景区</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>万德镇马套村(泰山西大门桃花峪旁边)</td></tr>
+<tr><td>✅B</td><td>QMiss家庭娱乐中心(燕山银座西馆)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>窑头路8号燕山银座购物广场西馆2层西头2040商铺</td></tr>
+<tr><td>✅B</td><td>蟹老板赶海亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>鹊华里亲子露营斜对面向东30米</td></tr>
+<tr><td>✅B</td><td>学易佳教育(无影山校区)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>无影山东路29号(天桥教育局南邻)</td></tr>
+<tr><td>✅B</td><td>学易佳教育(连城国际校区)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>经七路与纬十二路交叉口东南角连城国际A座三楼</td></tr>
+<tr><td>✅B</td><td>华夏开智感统专注力训练中心(盛景校区)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>鲁商盛景广场西南1门旁</td></tr>
+<tr><td>✅B</td><td>陶语手工(济南高新万达广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>高新金街霸王茶姬斜对面2楼B221</td></tr>
+<tr><td>✅B</td><td>康语儿童言语社交训练中心(济南洪家楼中心)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>华龙路东方丽景大厦2118号</td></tr>
+<tr><td>✅B</td><td>咕噜岛(龙湖济南奥体天街)</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>奥体西路3699号龙湖济南奥体天街L3层(7号门进入直行10m,扶梯上到L3可见)</td></tr>
+<tr><td>✅B</td><td>柚子宠物大学城店(宠小格品牌合作店)</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>鲁商常春藤商业街西2栋2层207</td></tr>
+<tr><td>✅B</td><td>KOK汪星号宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>明发路西首,泉城农业公园区逍遥田野,济西林果基地</td></tr>
+<tr><td>✅B</td><td>都市萌宠(宠物店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>华山街道观华园C2-106商铺</td></tr>
+</tbody></table></div>
+<p>（另 132 家见 §11 原始数据）</p>
+<h2>5. 综合体与商场（167 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>济南万象城</td><td>购物中心/综合体</td><td>4.9</td><td>7</td><td>2</td><td>经十路11111号(转山西路万象城地铁站A口旁)</td></tr>
+<tr><td>✅A-</td><td>济南恒隆广场</td><td>百货/商场</td><td>4.9</td><td>9</td><td>12</td><td>泉城路188号</td></tr>
+<tr><td>✅A-</td><td>山姆会员商店(济南高新店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>舜华路街道凤凰北路5788号</td></tr>
+<tr><td>✅A-</td><td>济南首创奥特莱斯</td><td>百货/商场</td><td>4.8</td><td>1</td><td>0</td><td>唐冶东路与世纪大道交汇处</td></tr>
+<tr><td>✅A-</td><td>百联奥特莱斯广场(济南∙海那城)</td><td>百货/商场</td><td>4.8</td><td>1</td><td>0</td><td>美里路555号</td></tr>
+<tr><td>✅A-</td><td>济南印象城</td><td>购物中心/综合体</td><td>4.8</td><td>10</td><td>3</td><td>花园路136-7号</td></tr>
+<tr><td>✅A-</td><td>济南高新万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>7</td><td>0</td><td>工业南路57号</td></tr>
+<tr><td>✅A-</td><td>济南融创茂</td><td>购物中心/综合体</td><td>4.8</td><td>11</td><td>1</td><td>经十路199号</td></tr>
+<tr><td>✅A-</td><td>龙湖济南西城天街</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>1</td><td>经十路29299号(经十路与腊山河东路交叉口)</td></tr>
+<tr><td>✅A-</td><td>济南和谐广场</td><td>购物中心/综合体</td><td>4.8</td><td>3</td><td>3</td><td>经十路22799号</td></tr>
+<tr><td>✅A-</td><td>济南魏家庄万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>5</td><td>经四路5号</td></tr>
+<tr><td>✅A-</td><td>济南华山环宇城</td><td>百货/商场</td><td>4.8</td><td>1</td><td>1</td><td>将军路1688号</td></tr>
+<tr><td>✅A-</td><td>济南历下世茂广场</td><td>百货/商场</td><td>4.8</td><td>12</td><td>13</td><td>泉城路26号</td></tr>
+<tr><td>✅A-</td><td>济南世纪大道万达广场</td><td>百货/商场</td><td>4.8</td><td>1</td><td>0</td><td>凤仁路与世纪大道交叉口西北180米</td></tr>
+<tr><td>✅A-</td><td>龙湖济南奥体天街</td><td>购物中心/综合体</td><td>4.8</td><td>5</td><td>4</td><td>奥体西路3699号(安成街地铁站出入口旁)</td></tr>
+<tr><td>✅A-</td><td>龙湖济南北宸天街</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>0</td><td>工业北路17887号(与凤凰路交汇口)</td></tr>
+<tr><td>✅A-</td><td>弘阳广场</td><td>百货/商场</td><td>4.8</td><td>1</td><td>5</td><td>张庄路街道兴福寺路2660号</td></tr>
+<tr><td>✅A-</td><td>和谐广场(章丘店)</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>3</td><td>双山大街路1688号</td></tr>
+<tr><td>✅A-</td><td>贵和购物中心(领秀城店)</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>4</td><td>二环南路与英雄山路交叉口</td></tr>
+<tr><td>✅A-</td><td>贵和购物中心</td><td>购物中心/综合体</td><td>4.8</td><td>12</td><td>15</td><td>天地坛街1号</td></tr>
+<tr><td>✅A-</td><td>嘉华购物广场(济南槐荫店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>豪行西市场街道经二路588号</td></tr>
+<tr><td>✅A-</td><td>信誉楼百货(莱芜店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>嬴牟东大街1号</td></tr>
+<tr><td>✅A-</td><td>大润发(历下店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>文化西路1号</td></tr>
+<tr><td>✅A-</td><td>大润发(天桥店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>1</td><td>堤口路80号</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(印象济南·泉世界店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>5</td><td>青岛路2668印象</td></tr>
+<tr><td>✅A-</td><td>麦德龙(济南槐荫商场)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>1</td><td>党杨路1号(大杨地铁站D口步行340米)</td></tr>
+<tr><td>✅A-</td><td>大润发(市中店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>二七新村南路9号</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(银座新辰店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>唐冶中路5199号银座新辰天地B1层</td></tr>
+<tr><td>✅A-</td><td>大润发(莱芜店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>汶源东大街15号</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(济南世茂广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>12</td><td>13</td><td>泉城路26号济南历下世茂广场西座2F层</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(经四路万达店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>5</td><td>经四路5号魏家庄万达1层</td></tr>
+<tr><td>✅A-</td><td>大润发(章丘店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>山泉路2428号</td></tr>
+<tr><td>✅A-</td><td>银座·奥特莱斯(七里山店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>英雄山路161号银座奥特莱斯</td></tr>
+<tr><td>✅A-</td><td>百联奥特莱斯广场(济南∙高新)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>春晖路6777号</td></tr>
+<tr><td>✅A-</td><td>七里堡综合批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>二环东路1599号(七里堡地铁站A口步行270米)</td></tr>
+<tr><td>✅A-</td><td>维尔康肉类水产批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>工业北路25777号</td></tr>
+<tr><td>✅A-</td><td>八里桥蔬菜批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>张庄路4号(八里桥地铁站F口旁)</td></tr>
+<tr><td>✅A-</td><td>堤口果品批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>济齐路2号(八里桥地铁站B口步行110米)</td></tr>
+<tr><td>✅A-</td><td>华百广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>富阳街47号</td></tr>
+<tr><td>✅A-</td><td>全运村·中央广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>龙鼎大道600号</td></tr>
+<tr><td>✅A-</td><td>K88名泉广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>堤口路68号(济南站北地铁站E口步行120米)</td></tr>
+<tr><td>✅A-</td><td>章丘世茂广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>双山街道唐王山东路8228号</td></tr>
+<tr><td>✅A-</td><td>逸家广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>舜义路558号(龙奥北路与舜义路交叉口东南角)</td></tr>
+<tr><td>✅A-</td><td>鲁商天街</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>唐冶中路与敬德街交汇处西南角</td></tr>
+<tr><td>✅A-</td><td>山东手造展示体验中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>泉城路街道泉城路277号</td></tr>
+<tr><td>✅A-</td><td>银座购物广场(长清大学城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>大学路2166号</td></tr>
+<tr><td>✅A-</td><td>万虹广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>工业北路60号</td></tr>
+<tr><td>✅A-</td><td>美莲广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>新泺大街1166号</td></tr>
+<tr><td>✅A-</td><td>和瑞广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>二环东路5001号</td></tr>
+<tr><td>✅A-</td><td>银座新辰天地</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>唐冶街道唐冶中路5199号</td></tr>
+</tbody></table></div>
+<p>（另 117 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（284 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>刘小忙把子肉总店</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.8</td><td>27.00</td><td>北园大街536-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8b89369d3c9cb7bd9be0cc5187b370f1"></td></tr>
+<tr><td>✅A-</td><td>陈氏肥蛤(岔路街15号院店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>90.00</td><td>小纬六路165号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/176880517230_1768805185784_82977047.jpg"></td></tr>
+<tr><td>✅A-</td><td>大红门(英雄山路千佛山店)</td><td>餐饮服务;中餐厅;广东菜(粤菜)</td><td>4.8</td><td>79.00</td><td>英雄山路152号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000003259_ss__1756881178410_47222666.jpg"></td></tr>
+<tr><td>✅A-</td><td>鑫龙火锅城(环山路店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.8</td><td>82.00</td><td>环山路43-1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/50c26e828008dc747b725f15844965f2"></td></tr>
+<tr><td>✅A-</td><td>颂禧·品湖酒店·临湖宴</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>—</td><td>水屯北路与水屯路交叉口往西260米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100003875_1750055813344_74688093.jpg"></td></tr>
+<tr><td>✅A-</td><td>金春禧(二环南路店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.8</td><td>78.00</td><td>二环南路4666号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/query_pic?id=stc5b51bb9-a6a3-4f8e-b988-ebf01860f033&amp;user=search&amp;operate=original"></td></tr>
+<tr><td>✅A-</td><td>鑫李记缘菏泽原汁羊汤</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.8</td><td>28.00</td><td>凤凰路与花园东路交叉口徐家庄南门门头房</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3c246c3459629711841e4496ab7a5d6f_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>埠村马姐牛骨(20年老店)</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.8</td><td>70.00</td><td>埠村人民法庭对过</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100003198_1743933146299_22898558.jpg"></td></tr>
+<tr><td>✅A-</td><td>向民炒鸡老店(济南店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.8</td><td>89.00</td><td>堤口路与西工商河路交汇往北200米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000092841_ss__1767498043413_84347454.jpg"></td></tr>
+<tr><td>✅A-</td><td>舜和海鲜(天发店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.8</td><td>158.00</td><td>堤口路31号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8efb806f746a774fb8f1f281430f84f0?operate=original"></td></tr>
+<tr><td>✅A-</td><td>南二楼海鲜大排档(万象城店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.8</td><td>70.00</td><td>解放东路24号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9ac4df38c06b0a670000000843560755?type=pic"></td></tr>
+<tr><td>✅A-</td><td>小马扎大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>97.00</td><td>少年路2号济南鲁丰纸业公司院内</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b99e0e5d7dd65209a52c2ce6bf97d189_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>小马扎大排档二店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>96.00</td><td>解放东路61号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5d76e97a7978b26c3c184f085eb729d9_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>魏斯理汉堡(绿地国金天地店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.8</td><td>40.00</td><td>姚家街道齐音路966号绿地国金天地东园湾1栋1层101</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/cdef9c049e7727260000001493502394?type=pic"></td></tr>
+<tr><td>✅A-</td><td>渔家鲜·海鲜小炒·切馅煎包</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.8</td><td>56.00</td><td>十六里河街道万寿路2号产业园B座B1海外双创基地1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/149625baf0d14ecd0000003221520442?type=pic"></td></tr>
+<tr><td>✅A</td><td>箪食巷私房菜馆(玉函店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>96.00</td><td>玉函路100号(近西藏中学)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e7723219b0fd3ea32aad8da8bd63f113"></td></tr>
+<tr><td>✅A-</td><td>济南融创夜市</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>34.00</td><td>港沟街道凤集路融创国际体育中心广场</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1cbaac6a02d6c3430000007841304504?type=pic"></td></tr>
+<tr><td>✅A-</td><td>青春夜市</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>33.00</td><td>metoo蜜桃百货南门西60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/file_media_Photo_23890_IMG_1757514360_23566_image_1757514260320_jpg_ss_2.jpg"></td></tr>
+<tr><td>✅A-</td><td>舜庐・水上人家丨东方美学湖畔园林酒店</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>—</td><td>经十路23929号(营市街地铁站A口步行310米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c2c81e9f4dd264307acd7433a28ac692_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>鸡语青花椒炒鸡(经六路总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>49.00</td><td>经六路延长线桃园小区北区15号楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000063357_ss__1768363650721_92559254.jpg"></td></tr>
+<tr><td>✅A-</td><td>新疆食府(华龙店)</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.7</td><td>71.00</td><td>华龙路399号新龙家园c座</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/31379866c690baa9199345dfd440382f"></td></tr>
+<tr><td>✅A-</td><td>云侠龙虾城(北园大街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>70.00</td><td>清河中街清河小学西侧自西向东第二组</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6568d78c3235a001d96bf455e0e0cb32"></td></tr>
+<tr><td>✅A-</td><td>美顺香食府鱼头老店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>61.00</td><td>雪野大道雪野水库大桥西北10米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100003661_1759011487723_27997672.jpg"></td></tr>
+<tr><td>✅A-</td><td>湖南文氏湘菜馆</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.7</td><td>67.00</td><td>边庄美食城389号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000017403_ss__1747871895583_47332176.jpg"></td></tr>
+<tr><td>✅A-</td><td>鲁泉大酒店</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>88.00</td><td>经十西路28676号(腊山y地铁站A口步行450米)原济兖路174号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6370abab3976a235c3172ef5153c1116"></td></tr>
+<tr><td>✅A-</td><td>鹊华居·地道鲁菜·海鲜·融合味(大明湖店)</td><td>餐饮服务;中餐厅;综合酒楼｜餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>97.00</td><td>明湖路1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d8d75f4303b4c3f4faa422355271bc57"></td></tr>
+<tr><td>✅A-</td><td>健民一品鱼头炒鸡老店(雪野湖店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>48.00</td><td>雪野街道办事处邢家峪村向阳路58号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/379172ea54312d780000003364184952?type=pic"></td></tr>
+<tr><td>✅A-</td><td>海底捞火锅(明湖路店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>120.00</td><td>大明湖路288号明湖湾1F层(东2门附近)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bcb84a02dd0ebb388d01c309af554414?operate=original"></td></tr>
+<tr><td>✅A</td><td>春水锅贴·传统鲁菜(五龙潭公园店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>63.00</td><td>制锦市花店街25号(五龙潭西门西南100米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e07fff64386bebd8951b8b1caaf73c01"></td></tr>
+<tr><td>✅A-</td><td>穆得老周家牛肉烧饼</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.7</td><td>35.00</td><td>普利街77号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/879f87ca3e8149efad3a1e8aea14c9ca"></td></tr>
+<tr><td>✅A-</td><td>海底捞火锅(弘阳广场店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>120.00</td><td>兴福寺路弘阳广场4层4009号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bcb84a02dd0ebb388d01c309af554414?operate=original"></td></tr>
+<tr><td>✅A-</td><td>陈氏肥蛤(圣凯·财富广场店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>79.00</td><td>泺源大街29号圣凯财富广场F1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_12652_1764423468299_97707939.jpg"></td></tr>
+<tr><td>✅A-</td><td>大红门(历山路店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>80.00</td><td>历山路137号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/819f2de01f1ece890000003892504485?type=pic"></td></tr>
+<tr><td>✅A-</td><td>东舜赶海•渔家菜(经十路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>98.00</td><td>经十路15702号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100010752_1773449858584_70960241.jpg"></td></tr>
+<tr><td>✅A-</td><td>宝勤·临沂炒鸡(经四万达店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>59.00</td><td>经二路99号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100001501_1750043975369_97035934.jpg"></td></tr>
+<tr><td>✅A-</td><td>枕湖私宴(大明湖店)</td><td>体育休闲服务;休闲场所;休闲场所</td><td>4.7</td><td>230.00</td><td>明湖路39号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3842a504a36340120000002646700962?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老济南济南菜(大明湖店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>58.00</td><td>北关北路7-7号(生产路地铁站C口步行410米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/D60E8FA2_1AF5_42B5_8A11_FEC1FE05625B_L0_001_1500_200_1759542170584_97962101.jpg"></td></tr>
+<tr><td>✅A</td><td>燕喜堂·中华老字号(CBD店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>94.00</td><td>山左路与秦公路交叉口</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/935d79c82525273a0000003767726720?type=pic"></td></tr>
+<tr><td>✅A-</td><td>義利永百年老号·牛肉烧饼(大明湖店)</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.7</td><td>24.00</td><td>大明湖街道县西巷5号泉乐坊D地块商业综合楼109</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/352db8ec437523d00000002762556910?type=pic"></td></tr>
+<tr><td>✅A-</td><td>大滋味·大师手艺菜(鲁菜)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>120.00</td><td>姚家街道经十东路10567号成城大厦1楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000056169_ss__1766674779894_51678352.jpg"></td></tr>
+<tr><td>✅A-</td><td>梅飛酒家(一店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>118.00</td><td>桑园路9-1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6cb29fcf7624c2c62fd260ec213e3db2"></td></tr>
+<tr><td>✅A-</td><td>德升园·鲁菜</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>85.00</td><td>荷宁路3005号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4be4f98ea8a716f4c8472fe47f7287fa"></td></tr>
+<tr><td>✅A-</td><td>誉泉楼</td><td>商务住宅;住宅区;住宅小区｜餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>103.00</td><td>经十路20286号体育中心体育场西区</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_3492_1726725939723_38652457.jpg"></td></tr>
+<tr><td>✅A-</td><td>金春禧(英雄山路旗舰店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>78.00</td><td>英雄山路12-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/query_pic?id=stc5b51bb9-a6a3-4f8e-b988-ebf01860f033&amp;user=search&amp;operate=original"></td></tr>
+<tr><td>✅A-</td><td>鲁南仔·滕州炒鸡(经三路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>59.00</td><td>经三路133号(经三纬四交叉口)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8C6F2D95_09A4_4879_BBB6_8D010446D281_L0_001_2000_128_1771830815761_84954962.jpg"></td></tr>
+<tr><td>✅A-</td><td>武岳庙把子肉(济南总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>31.00</td><td>县西巷6号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/79fa07f41d093070bf006e772d85058b"></td></tr>
+<tr><td>✅A-</td><td>羊东家(全国总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>75.00</td><td>骄龙餐饮创业孵化中心西侧</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100004342_1748444547870_76451823.jpg"></td></tr>
+<tr><td>✅A-</td><td>海底捞火锅(龙泉国际广场店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>120.00</td><td>区双山大街1688号1号楼龙泉国际广场二层J206号商铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bcb84a02dd0ebb388d01c309af554414?operate=original"></td></tr>
+<tr><td>✅A-</td><td>海边人家(浪潮路店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>98.00</td><td>浪潮路黄金时代3区2号楼1-104室</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_2014_1753113631959_01166629.jpg"></td></tr>
+<tr><td>✅A</td><td>春水锅贴·传统鲁菜(和谐店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>59.00</td><td>经六路247-11号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/E0CEF0AA_9690_4E65_9E06_E5EDF79F6BD5_L0_001_1284_1594_1733719021184_49898379.jpg"></td></tr>
+<tr><td>✅A-</td><td>舜和海鲜(天禧店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>158.00</td><td>经十纬五路133号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8efb806f746a774fb8f1f281430f84f0?operate=original"></td></tr>
+<tr><td>✅A-</td><td>舜和海鲜(舜和国际店)</td><td>餐饮服务;外国餐厅;巴西菜</td><td>4.7</td><td>156.00</td><td>经十路26008号舜和国际酒店内(近段兴西路)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8efb806f746a774fb8f1f281430f84f0?operate=original"></td></tr>
+<tr><td>✅A-</td><td>闫记汇泉楼饭庄</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>102.00</td><td>经九路30-1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9759a6d481f9f48434b0ea8f8bf03d68_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>新海渔港(唐冶店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>98.00</td><td>绿地汇中心</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/F78E8FF8_D34E_43C5_922D_B47292CC9BA9_L0_001_1334_200_1744966172573_24068194.jpg"></td></tr>
+<tr><td>✅A-</td><td>海悦府</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>103.00</td><td>千佛山路9-9-1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000162010_ss__1771632382171_49674975.jpg"></td></tr>
+<tr><td>✅A</td><td>箪食巷私房菜(奥体店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>127.00</td><td>经十路奥体中心柳康路和中心南路交叉口</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/02dda3d9347ed6010000003007272129?type=pic"></td></tr>
+<tr><td>✅A-</td><td>来来渔市·海鲜大排档(CBD店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>53.00</td><td>新泺大街与齐风路交叉口北100米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a89b766cac6a6c280000003877508678?type=pic"></td></tr>
+<tr><td>✅A-</td><td>来来渔市·海鲜大排档(云泉中心店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>48.00</td><td>凤凰路4569号云泉中心东北角</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000135073_ss__1773027401070_87701956.jpg"></td></tr>
+<tr><td>✅A-</td><td>朱海升海鲜大排档</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>95.00</td><td>济南历下区解放东路33号泺邑坊</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/78e9ad6934d137e40000005827012329?type=pic"></td></tr>
+<tr><td>✅A-</td><td>南二楼海鲜大排档(印象济南店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>77.00</td><td>兴福寺路104号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/E79D6FFA_4E91_4177_974A_A8ACD292485E_L0_001_1512_201_1745728827909_71306015.jpg"></td></tr>
+<tr><td>✅A-</td><td>肥姐芬广州大排档(济南首店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>89.00</td><td>窑头路8号一楼102号(燕山银座西邻)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/78eefeee1aacefc40000002428214993?type=pic"></td></tr>
+<tr><td>✅A-</td><td>南二楼海鲜大排档(领秀城店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>65.00</td><td>让秀路169号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_31356_ss__1745485077654_82022895.jpg"></td></tr>
+<tr><td>✅A-</td><td>魏斯理汉堡(济南绿地中心店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.7</td><td>50.00</td><td>共青团路25号绿地中心商业广场6号楼1F-009-011号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3d90a0ff763568570000007560956078?type=pic"></td></tr>
+<tr><td>✅A-</td><td>邢记老婆爱吃螺蛳粉(碧桂园总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>23.00</td><td>碧桂园凤凰中心东门北80米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/64833B55_519B_4B72_B835_364195BA7DA2_L0_001_1500_200_1760697808783_79164892.jpg"></td></tr>
+<tr><td>✅A-</td><td>金房子水饺城</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>62.00</td><td>张庄路162号(森林公园对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/%5B2025-04-09-02-11-05%5D2C7CC441-71D4-443E-AD36-B8B0C1AF9FB_1744135866975_13100079.jpg"></td></tr>
+<tr><td>✅A-</td><td>城南往事(文化西路店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>60.00</td><td>棋盘东街11号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/01c9ee4805d528fff5e8fd06bcfde782_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>比格比萨自助(济南大观园店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.7</td><td>71.00</td><td>纬二路37号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/FE954294_E855_47B2_94A4_3A435BCDFEA0_L0_001_1500_2000_1737176876986_18771633.jpg"></td></tr>
+<tr><td>✅A-</td><td>亮亮面馆(槐荫总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>29.00</td><td>经六路685号槐村西里5号楼1幢</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7a52cdc8f82892bb9cb7d364cfbbfc8a_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>阿源鱼捞斑鱼火锅·海鲜粥(奥体西路店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>85.00</td><td>历下区-齐音路966号绿地国金天地森5栋1层106号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_216468_ss__1766222427463_37628853.jpg"></td></tr>
+<tr><td>✅A-</td><td>牛贵川霸王牛肉粉</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>18.00</td><td>姚家街道绿地中央商务区A5地块2号楼1单元1层110号-2</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_3890_ss__1769214254629_00196054.jpg"></td></tr>
+<tr><td>✅A-</td><td>徐升记不改良老火锅(济南东八区店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>70.00</td><td>唐冶街道西路868号山东设计创意业园项目(南区)37号楼101</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e543f828fceefe901b50b6fbde8dd726?operate=original"></td></tr>
+<tr><td>✅A-</td><td>梁记串串香(嘉华店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>68.00</td><td>纬九路18号嘉华购物广场东门路东</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8bb2f79f5e4bf53eb6b14d32ae4022da_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>Bruce’s Pizza布鲁斯披萨(山师东路店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.7</td><td>56.00</td><td>文化东路79号山东电影洗印厂院内西北角</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0e56ce03e34c7c860000001481106618?type=pic"></td></tr>
+<tr><td>✅A-</td><td>永和面馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>21.00</td><td>小纬北路2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b1e02d2c5cb8a2abe7538862a7386d1f"></td></tr>
+<tr><td>✅A-</td><td>亮亮面馆(新世界商城店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>27.00</td><td>经十一路南侧</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/97E6A3C7_2DC5_4AFF_8C59_88B4A76CC4F5_L0_001_1127_860__1702968307722_ea02492e.jpg"></td></tr>
+<tr><td>✅A-</td><td>清河老苏把子肉</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>20.00</td><td>生产路北延东侧1-3号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000059607_ss__1746658517470_83929819.jpg"></td></tr>
+<tr><td>✅A-</td><td>笨鸡小跑·临沂炒鸡(印象济南店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>76.00</td><td>印象济南泉世界三区14号楼2层201-210号商铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_2482181_1658841650163_0aed4078.jpg"></td></tr>
+<tr><td>✅A</td><td>鲁西南老厨子·特色鲁菜(千佛山路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>71.00</td><td>千佛山路7-1号(千佛山地铁站A口步行360米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/dea82d4057cf1f290000000989950356?type=pic"></td></tr>
+<tr><td>✅A</td><td>鲁西南老厨子·特色鲁菜(经六路会展店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>57.00</td><td>经六路延长线桃园小区19号楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100003343_1762524553988_53437877.jpg"></td></tr>
+<tr><td>✅A</td><td>老济南四合院·正宗鲁菜(印象济南店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>70.00</td><td>青岛路2668号印象济南蜡像馆对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b9741dff57e8cda90000006969842018?type=pic"></td></tr>
+</tbody></table></div>
+<p>（另 204 家见 §11 原始数据，评分排序后 80 名未列入）</p>
+<h2>7. 苍蝇馆 / 小店候选（28 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>南二楼海鲜大排档(万象城店)</td><td>店名小店语义</td><td>4.8</td><td>70.00</td><td>解放东路24号</td><td>评分 4.8 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>小马扎大排档</td><td>店名小店语义</td><td>4.8</td><td>97.00</td><td>少年路2号济南鲁丰纸业公司院内</td><td>评分 4.8 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>小马扎大排档二店</td><td>店名小店语义</td><td>4.8</td><td>96.00</td><td>解放东路61号</td><td>评分 4.8 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>箪食巷私房菜馆(玉函店)</td><td>店名小店语义</td><td>4.8</td><td>96.00</td><td>玉函路100号(近西藏中学)</td><td>评分 4.8 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>箪食巷私房菜(奥体店)</td><td>店名小店语义</td><td>4.7</td><td>127.00</td><td>经十路奥体中心柳康路和中心南路交叉口</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>来来渔市·海鲜大排档(CBD店)</td><td>店名小店语义</td><td>4.7</td><td>53.00</td><td>新泺大街与齐风路交叉口北100米</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>来来渔市·海鲜大排档(云泉中心店)</td><td>店名小店语义</td><td>4.7</td><td>48.00</td><td>凤凰路4569号云泉中心东北角</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>朱海升海鲜大排档</td><td>店名小店语义</td><td>4.7</td><td>95.00</td><td>济南历下区解放东路33号泺邑坊</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>南二楼海鲜大排档(印象济南店)</td><td>店名小店语义</td><td>4.7</td><td>77.00</td><td>兴福寺路104号</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>肥姐芬广州大排档(济南首店)</td><td>店名小店语义</td><td>4.7</td><td>89.00</td><td>窑头路8号一楼102号(燕山银座西邻)</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>南二楼海鲜大排档(领秀城店)</td><td>店名小店语义</td><td>4.7</td><td>65.00</td><td>让秀路169号</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>箪食巷私房菜馆(经十路店)</td><td>店名小店语义</td><td>4.7</td><td>93.00</td><td>经十路16262号</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>王家大院农家菜</td><td>店名小店语义</td><td>4.6</td><td>57.00</td><td>仲宫镇红叶谷景区下山路上850米</td><td></td></tr>
+<tr><td>来来渔市·海鲜大排档(汇鑫时代店)</td><td>店名小店语义</td><td>4.6</td><td>53.00</td><td>汇鑫时代中心西门西南50米</td><td></td></tr>
+<tr><td>赶海大集平价海鲜大排档</td><td>店名小店语义</td><td>4.6</td><td>81.00</td><td>张庄北街395号(二环西路地铁站A口步行190米)</td><td></td></tr>
+<tr><td>赶夜大排档</td><td>店名小店语义</td><td>4.6</td><td>75.00</td><td>银储大厦北门旁</td><td></td></tr>
+<tr><td>猪油贵海鲜大排档</td><td>店名小店语义</td><td>4.6</td><td>50.00</td><td>唐冶街道唐冶中路和贞元街交汇处鲁坤天鸿创谷1-1号楼114室</td><td></td></tr>
+<tr><td>小马扎大排档(阳光100凤凰街)</td><td>店名小店语义</td><td>4.6</td><td>87.00</td><td>阳光100凤凰街2区206</td><td></td></tr>
+<tr><td>泉润家常菜(济南传统菜店)</td><td>店名小店语义</td><td>4.6</td><td>60.00</td><td>舜耕路6号</td><td></td></tr>
+<tr><td>山东艺术学院长清校区山艺食堂</td><td>店名小店语义</td><td>4.5</td><td>11.00</td><td>紫薇路6000号</td><td></td></tr>
+<tr><td>湘鄂人家土菜馆</td><td>店名小店语义</td><td>4.5</td><td>47.00</td><td>华山西路2299号</td><td></td></tr>
+<tr><td>猛猛烧烤海鲜大排档(山大南路店)</td><td>店名小店语义</td><td>4.5</td><td>72.00</td><td>山大南路东段3-2号(令狐冲烤鱼西)</td><td></td></tr>
+<tr><td>辣不怂·川菜大排档(长清大学城店)</td><td>店名小店语义</td><td>4.5</td><td>29.00</td><td>长清大学城商业街3号楼1区</td><td></td></tr>
+<tr><td>胶东小海鸥海鲜大排档(平阴店)</td><td>店名小店语义</td><td>4.4</td><td>94.00</td><td>文笔山路33号</td><td></td></tr>
+<tr><td>辣不怂·川菜大排档(老商埠店)</td><td>店名小店语义</td><td>4.4</td><td>29.00</td><td>大观园街道经四路333号</td><td></td></tr>
+<tr><td>沈家烧烤店(豪门店)</td><td>店名小店语义</td><td>4.3</td><td>55.00</td><td>富民路豪门庄园对面</td><td></td></tr>
+<tr><td>万德老五火锅烧烤店</td><td>店名小店语义</td><td>4.0</td><td>66.00</td><td>104国道东50米</td><td></td></tr>
+<tr><td>五福临门私房菜章丘(章丘店)</td><td>店名小店语义</td><td>4.0</td><td>38.00</td><td>龙泉大道与六号路交叉口东160米</td><td></td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（41 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>山东老济南特产店(芙蓉街57号店)</td><td>购物服务;专卖店;土特产专卖店</td><td>4.5</td><td>芙蓉街57号</td></tr>
+<tr><td>✅B</td><td>叮当仓储礼品礼盒批发(泺河港店)</td><td>公司企业;公司;公司</td><td>4.5</td><td>小清河南路10777号洛河港不夜城一楼L-011(漱玉平民大药房东临)</td></tr>
+<tr><td>✅B</td><td>大观园商城</td><td>购物服务;商场;普通商场</td><td>4.4</td><td>大观园街道经四纬二49号</td></tr>
+<tr><td>✅B</td><td>蟹状元·大闸蟹(济南高新店)</td><td>购物服务;综合市场;水产海鲜市场</td><td>4.4</td><td>万达华府北区北门康虹路390号(路南)</td></tr>
+<tr><td>✅B</td><td>老济南特产商店</td><td>购物服务;专卖店;专营店</td><td>4.4</td><td>大明湖风景名胜区西南门270号(大明湖售票处西侧)</td></tr>
+<tr><td>✅B</td><td>鲁礼荟·山东特产(奥体龙湖天街店)</td><td>购物服务;专卖店;专营店</td><td>4.4</td><td>汉臣街龙湖天璞2-1-105沿街商铺</td></tr>
+<tr><td>✅B</td><td>泉乐坊步行商业街(烟酒特产平价超市店)</td><td>购物服务;特色商业街;步行街｜商务住宅;楼宇;商务写字楼</td><td>4.4</td><td>县西巷与东西仓棚街交叉口南100米</td></tr>
+<tr><td>✅B</td><td>蟹状元·大闸蟹(济南市中店)</td><td>购物服务;综合市场;水产海鲜市场｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.3</td><td>麟祥街107号底商</td></tr>
+<tr><td>✅B</td><td>大囍杂货铺</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.3</td><td>明湖小区7区2号楼底商</td></tr>
+<tr><td>✅B</td><td>稻香村(山师经销店)</td><td>餐饮服务;糕饼店;糕饼店｜购物服务;购物相关场所;购物相关场所</td><td>4.3</td><td>文化东路86-1号</td></tr>
+<tr><td>✅B</td><td>嘉士利AIECHIRE·黄油手信(济南槐荫万象里店)</td><td>购物服务;专卖店;专营店</td><td>4.3</td><td>纬十二路92号济南槐荫万象里1层L101号</td></tr>
+<tr><td>✅B</td><td>老济南特产店(大观园旗舰店)</td><td>购物服务;专卖店;土特产专卖店</td><td>4.3</td><td>经四路218-1号(大观园北门旁)</td></tr>
+<tr><td>✅B</td><td>贝嘉鲁-山东特产(济南旗舰店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.3</td><td>南门大街2号泉城大酒店北邻</td></tr>
+<tr><td>✅B</td><td>黄家烤肉总店章丘特产(章丘山泉路旺兴店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.3</td><td>明水街道山泉路科技局宿舍东</td></tr>
+<tr><td>✅B</td><td>叮当仓储礼品特产(唐冶店)</td><td>购物服务;专卖店;专营店</td><td>4.3</td><td>唐冶西路686号山东设计创意产业园北区A12号楼102商铺</td></tr>
+<tr><td>✅B</td><td>新疆特产大巴扎(山大北路店)</td><td>购物服务;专卖店;专营店</td><td>4.3</td><td>山大北路24号</td></tr>
+<tr><td>⚠️</td><td>蟹状元·大闸蟹(济南绿地中央公馆店)</td><td>购物服务;综合市场;水产海鲜市场｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.2</td><td>姚家街道新泺大街与齐音路交叉口西南角绿地中央公馆B12区</td></tr>
+<tr><td>⚠️</td><td>老济南特产王莉酥锅</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.2</td><td>经四路222号沿街(大观园北门旁)</td></tr>
+<tr><td>⚠️</td><td>齐鲁特产城(恒祺广场店)</td><td>购物服务;专卖店;专营店</td><td>4.2</td><td>泉城路339号恒祺广场一层29、33号商铺</td></tr>
+<tr><td>⚠️</td><td>玉香斋南肠香肠总厂旗舰店</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.2</td><td>大道口镇下水河石门对过</td></tr>
+<tr><td>⚠️</td><td>山东特产专卖(西客站店)</td><td>购物服务;专卖店;土特产专卖店</td><td>4.2</td><td>齐州路与烟台路交叉口西路南</td></tr>
+<tr><td>⚠️</td><td>蟹状元·大闸蟹(济南历下店)</td><td>购物服务;综合市场;水产海鲜市场｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>泺源大街29号圣凯财富广场一层(蟹状元)</td></tr>
+<tr><td>⚠️</td><td>山东特产超市(趵北路店)</td><td>购物服务;专卖店;土特产专卖店｜购物服务;超级市场;超市</td><td>4.1</td><td>趵突泉北路2号</td></tr>
+<tr><td>⚠️</td><td>野风酥山东特产超市(泉城路店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.1</td><td>趵突泉北路22号</td></tr>
+<tr><td>⚠️</td><td>老济南特产城(大观园商场店)</td><td>购物服务;专卖店;专营店</td><td>4.1</td><td>大观园商场一楼山东特产</td></tr>
+<tr><td>⚠️</td><td>齐鲁沂蒙特产旗舰店</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.1</td><td>辰祥路940号</td></tr>
+<tr><td>⚠️</td><td>叮当仓储礼品特产(二环南路店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.1</td><td>十六里河街道二环南路3388号正大南环国际中心2号楼101底商</td></tr>
+<tr><td>⚠️</td><td>济南特产宗记锅饼(大观园店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>大观园49号院内传统食品街</td></tr>
+<tr><td>⚠️</td><td>老济南特产店</td><td>购物服务;专卖店;专营店</td><td>4.0</td><td>经一路92-5号</td></tr>
+<tr><td>⚠️</td><td>九特益品临夏牛羊肉</td><td>购物服务;综合市场;农副产品市场</td><td>4.0</td><td>舜玉路街道舜耕路29号-7</td></tr>
+<tr><td>⚠️</td><td>烟酒特产平价超市</td><td>商务住宅;楼宇;商务写字楼｜购物服务;特色商业街;步行街｜购物服务;超级市场;超市</td><td>3.9</td><td>县西巷9号泉乐坊107商铺</td></tr>
+<tr><td>⚠️</td><td>龙山小米专卖(龙泉路北侧)</td><td>购物服务;综合市场;农副产品市场</td><td>3.9</td><td>龙山街道办事处龙泉路17091号农商银行东30米(龙泉路北侧)</td></tr>
+<tr><td>⚠️</td><td>山东特产超市(宽厚里东门)</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.9</td><td>宽厚里二期三组110号</td></tr>
+<tr><td>⚠️</td><td>山东特产便利店(机场路店)</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.9</td><td>临港街道机场路3522号</td></tr>
+<tr><td>⚠️</td><td>章丘铁锅济南特产批发中心</td><td>购物服务;综合市场;农副产品市场</td><td>3.8</td><td>泉城路街道榜棚街1号院内第二楼</td></tr>
+<tr><td>⚠️</td><td>济南历下由桂花食品店(环山店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.8</td><td>羊头峪路16-1号</td></tr>
+<tr><td>⚠️</td><td>章丘铁锅官方非遗店(古城南门)</td><td>餐饮服务;中餐厅;火锅店</td><td>3.7</td><td>唐人中心A座113号</td></tr>
+<tr><td>⚠️</td><td>山东特产超市(济南长途客运中心店)</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>无影山东路93号(长运石化加油站南邻)</td></tr>
+<tr><td>⚠️</td><td>山东特产烟酒超市</td><td>购物服务;专卖店;专营店</td><td>3.6</td><td>交校路5号交通学院门头房</td></tr>
+<tr><td>⚠️</td><td>山东特产(太阳城店)</td><td>购物服务;便民商店/便利店;便民商店/便利店｜购物服务;专卖店;专营店</td><td>3.6</td><td>济泺路87-4号</td></tr>
+<tr><td>⚠️</td><td>地方特产(小星便利店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.5</td><td>经十路14958号</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>钢都宾馆(府前大街)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>钢都宾馆(府前大街)</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>世茂国际广场酒店式公寓（51 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>世茂国际广场酒店式公寓</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>Qmiss骇玩部落亲子乐园(世茂广场店)</td><td>距离就近</td><td>83m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玩聚空间PS5&amp;Switch主机游戏体验馆(宽厚里店)</td><td>距离就近</td><td>95m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>玩聚空间PS5&amp;Switch主机游戏体验馆(宽厚里店)</td><td>距离就近</td><td>95m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>茂星球亲子游乐园(世茂国际广场西座店)</td><td>距离就近</td><td>114m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麦当劳(世茂广场店)</td><td>距离就近</td><td>121m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>娱人部落Ps5·Switch主机游戏体验馆(宽厚里店)</td><td>距离就近</td><td>132m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>电潮社Ps5·Switch·主机游戏·私影</td><td>距离就近</td><td>138m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>金春禧(世茂国际广场店)</td><td>距离就近</td><td>156m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>超意兴把子肉(宽厚里店)</td><td>距离就近</td><td>174m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大冰的小屋(济南分舵)</td><td>距离就近</td><td>190m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>秘境超级密室(济南旗舰店)</td><td>距离就近</td><td>204m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>群众青年酒馆(宽厚里店)</td><td>距离就近</td><td>208m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>群众青年酒馆(宽厚里店)</td><td>距离就近</td><td>208m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>Buff Club(济南宽厚里店)</td><td>距离就近</td><td>239m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长藤密室(泉城路店)</td><td>距离就近</td><td>241m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长藤鬼校(泉城路店)</td><td>距离就近</td><td>246m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>萍姐火锅·公路夜市(济南首店)</td><td>距离就近</td><td>249m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>蔻纳进口啤酒超市(世茂店)</td><td>距离就近</td><td>254m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长藤密室(泉城路2店)</td><td>距离就近</td><td>256m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>大笨象原创剧情密室(泉城路店)</td><td>距离就近</td><td>269m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>汪庄园·猫咖·狗咖·羊驼·异宠</td><td>距离就近</td><td>273m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>Helens海伦司小酒馆(济南泉城路百乐荟店)</td><td>距离就近</td><td>278m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>异次元密室(泉城路店)</td><td>距离就近</td><td>280m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>无限世界密室剧场(齐鲁国际大厦C座店)</td><td>距离就近</td><td>308m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>济南万象城（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万象影城(济南万象城IMAX激光店)</td><td>名称互证</td><td>42m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>嗨贝天地(济南万象城店)</td><td>名称互证</td><td>104m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麦当劳(济南万象城店)</td><td>名称互证</td><td>105m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>潮玩社(济南万象城店)</td><td>名称互证</td><td>144m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>纯K(万象城店)</td><td>距离就近</td><td>202m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>鲁班电玩·Ps5switch主机游戏·私影(万象城店)</td><td>距离就近</td><td>223m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>鲁班电玩·Ps5switch主机游戏·私影(万象城店)</td><td>距离就近</td><td>223m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>胡桃电玩社</td><td>距离就近</td><td>233m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>胡桃电玩社</td><td>距离就近</td><td>233m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>玩聚空间PS5&amp;Switch主机游戏体验馆(万象城店)</td><td>距离就近</td><td>276m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>电潮社Ps5·Switch主机电玩游戏·私影(万象城店)</td><td>距离就近</td><td>295m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>电潮社Ps5·Switch主机电玩游戏·私影(万象城店)</td><td>距离就近</td><td>295m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>JFC星辰艺术空间</td><td>距离就近</td><td>478m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>超意兴快餐(省博店)</td><td>距离就近</td><td>506m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>七禧棋牌(万象城店)</td><td>距离就近</td><td>540m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>盛世莲花·国际娱乐</td><td>距离就近</td><td>542m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>盛世莲花·国际娱乐</td><td>距离就近</td><td>542m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>星悦荟棋牌·茶楼·私房菜(CBD旗舰店)</td><td>距离就近</td><td>560m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>羲和棋牌</td><td>距离就近</td><td>576m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>济南恒隆广场（49 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>南京大牌档(济南恒隆店)</td><td>距离就近</td><td>76m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>百丽宫影城(济南恒隆广场店)</td><td>名称互证</td><td>92m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>百丽宫影城(济南恒隆广场店)</td><td>名称互证</td><td>92m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>泉城路夜市</td><td>距离就近</td><td>122m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>达美乐比萨(芙蓉街店)</td><td>距离就近</td><td>168m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>难得民谣(泉城路店)</td><td>距离就近</td><td>172m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>大笨象原创剧情密室(芙蓉街店)</td><td>距离就近</td><td>181m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MODERNSKYLAB</td><td>距离就近</td><td>214m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>玩美攻略潮玩街区</td><td>距离就近</td><td>225m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>玩美攻略潮玩街区</td><td>距离就近</td><td>225m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>卫巷菜馆(芙蓉总店)</td><td>距离就近</td><td>242m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>青橙推理密室</td><td>距离就近</td><td>265m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>超意兴·把子肉(泉城广场店)</td><td>距离就近</td><td>269m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>网猫电竞(泉城路店)</td><td>距离就近</td><td>270m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>云镜密室(泉城路店)</td><td>距离就近</td><td>274m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>通未来剧情密室(齐鲁国际大厦店)</td><td>距离就近</td><td>280m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>芙蓉街会仙楼饭庄</td><td>距离就近</td><td>284m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>无限世界密室剧场(齐鲁国际大厦C座店)</td><td>距离就近</td><td>307m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>汪庄园·猫咖·狗咖·羊驼·异宠</td><td>距离就近</td><td>403m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>大笨象原创剧情密室(泉城路店)</td><td>距离就近</td><td>409m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>连枝(鞭指巷)</td><td>距离就近</td><td>418m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长藤密室(泉城路2店)</td><td>距离就近</td><td>426m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>异次元密室(泉城路店)</td><td>距离就近</td><td>431m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>长藤鬼校(泉城路店)</td><td>距离就近</td><td>434m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>青岛啤酒1903餐吧(济南店)</td><td>距离就近</td><td>435m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>环联夜市（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>祝甸夜市</td><td>距离就近</td><td>131m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>胖老大烧烤火锅(新环联夜市店)</td><td>名称互证</td><td>148m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>小猪佩奇游乐场</td><td>距离就近</td><td>156m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>山姆会员商店(济南高新店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鑫李记缘菏泽原汁羊汤</td><td>距离就近</td><td>292m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>劈柴院海鲜王(工业南路店)</td><td>距离就近</td><td>484m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(奥体国际城店)（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>快乐棋牌室</td><td>距离就近</td><td>153m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>咕噜岛(龙湖济南奥体天街)</td><td>距离就近</td><td>178m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>BINGO(龙湖济南奥体天街店)</td><td>距离就近</td><td>246m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>滕小国饭店(礼耕路店)</td><td>距离就近</td><td>251m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>CGV影城(龙湖杜比影院4DX店)</td><td>距离就近</td><td>312m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麦芽堂西餐厅·精酿·日咖夜酒(奥体店)</td><td>距离就近</td><td>317m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魏斯理汉堡(绿地国金天地店)</td><td>距离就近</td><td>330m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>吾爱玩潮玩体验中心</td><td>距离就近</td><td>332m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>吾爱玩潮玩体验中心</td><td>距离就近</td><td>332m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>星聚会KTV(济南奥体龙湖店)</td><td>距离就近</td><td>332m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>CBD迷你公园</td><td>距离就近</td><td>373m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>Work&amp;Work</td><td>距离就近</td><td>400m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>魅KTV</td><td>距离就近</td><td>414m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>阿源鱼捞斑鱼火锅·海鲜粥(奥体西路店)</td><td>距离就近</td><td>454m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>玩加主机游戏体验馆(CBD旗舰店)</td><td>距离就近</td><td>546m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>玩加主机游戏体验馆(CBD旗舰店)</td><td>距离就近</td><td>546m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>MadGame迈游主机游戏体验馆</td><td>距离就近</td><td>560m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>济南首创奥特莱斯（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>体育欢乐世界(体育中心店)</td><td>距离就近</td><td>558m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>百联奥特莱斯广场(济南∙海那城)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>GREEN FIELD潮玩运动馆</td><td>名称互证</td><td>347m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>济南印象城（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>CGV影城(印象城花园路店)</td><td>距离就近</td><td>47m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>共享游戏空间旗舰店(花园路印象城店)</td><td>名称互证</td><td>50m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>迪卡丘儿童乐园(济南印象城店)</td><td>名称互证</td><td>87m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>森之谷·数字娱乐空间</td><td>距离就近</td><td>136m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>奈思互娱 桌游 棋牌 电玩</td><td>距离就近</td><td>136m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>奈思互娱 桌游 棋牌 电玩</td><td>距离就近</td><td>136m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>电潮社ps5·Switch·私影电玩主机游戏(洪楼印象城店)</td><td>距离就近</td><td>140m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>玩聚空间PS&amp;Switch主机游戏体验馆</td><td>距离就近</td><td>143m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>D7街区潮玩社</td><td>距离就近</td><td>146m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>D7街区潮玩社</td><td>距离就近</td><td>146m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>壹城潮玩(济南印象城店)</td><td>名称互证</td><td>158m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>独角小兽沉浸式密室(悦立方店)</td><td>距离就近</td><td>181m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>调皮象(悦立方店)</td><td>距离就近</td><td>189m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>素和美素食文化主题餐厅(洪楼店)</td><td>距离就近</td><td>224m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>洪楼夜市(聚隆广场店)</td><td>距离就近</td><td>238m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>喵柄电玩ps5·switch馆(印象城店)</td><td>距离就近</td><td>306m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>喵柄电玩ps5·switch馆(印象城店)</td><td>距离就近</td><td>306m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>NB网咖电竞连锁(印象城旗舰店)</td><td>距离就近</td><td>415m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>赶夜大排档</td><td>距离就近</td><td>465m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>济南高新万达广场（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>陶语手工(济南高新万达广场店)</td><td>名称互证</td><td>45m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蓝梦日记电玩城</td><td>名称互证</td><td>62m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>云逸宝游戏厅(万达广场店)</td><td>名称互证</td><td>71m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>云逸宝游戏厅(万达广场店)</td><td>名称互证</td><td>71m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>玩界动漫电玩馆</td><td>距离就近</td><td>78m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星聚会KTV(济南高新万达店)</td><td>距离就近</td><td>90m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(高新万达广场店)</td><td>距离就近</td><td>96m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>双人成行PS5·switch·主机游戏屋(高新万达店)</td><td>名称互证</td><td>110m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>娱人部落PS5·switch·主机游戏体验馆(高新万达店)</td><td>距离就近</td><td>116m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>赤道LIVE HOUSE(济南店)</td><td>距离就近</td><td>250m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>小时光·娱乐空间(高新万达店)</td><td>距离就近</td><td>312m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>好声音PARTY.K(高新会展中心店)</td><td>距离就近</td><td>477m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>民谣集烧烤酒馆(济南国际会展中心)</td><td>距离就近</td><td>564m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>台北唛乐P U B(高新店)</td><td>距离就近</td><td>565m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>网猫电竞(高新万达店)</td><td>距离就近</td><td>582m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>济南融创茂（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>融创海世界-游乐园</td><td>距离就近</td><td>61m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>融创球球猩超级游乐场(济南融创茂店)</td><td>名称互证</td><td>115m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>木先生宠物乐园</td><td>距离就近</td><td>171m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>济南融创体育世界</td><td>距离就近</td><td>185m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>MELAND CLUB(济南融创体育世界店)</td><td>名称互证</td><td>216m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>快乐由我抓物社(融创茂店)</td><td>名称互证</td><td>221m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>快乐由我抓物社(融创茂店)</td><td>名称互证</td><td>221m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达影城(济南融创茂店)</td><td>名称互证</td><td>224m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>济南融创文旅城游乐场</td><td>距离就近</td><td>364m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>融创乐园-水生动物</td><td>距离就近</td><td>504m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>有循·艺术空间(精灵森林)</td><td>距离就近</td><td>544m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>济南融创乐园</td><td>距离就近</td><td>550m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>港湾木龙</td><td>距离就近</td><td>580m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>济南融创夜市</td><td>距离就近</td><td>597m</td><td>4.8</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>龙湖济南西城天街（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>汤姆熊欢乐世界(龙湖西城天街店)</td><td>距离就近</td><td>94m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>汤姆熊欢乐世界(龙湖西城天街店)</td><td>距离就近</td><td>94m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>鲁泉大酒店</td><td>距离就近</td><td>591m</td><td>4.7</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>济南和谐广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>咕噜岛(和谐广场店)</td><td>距离就近</td><td>49m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>南京大牌档(和谐广场店)</td><td>距离就近</td><td>61m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>Meland Club(和谐广场店)</td><td>距离就近</td><td>71m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>学易佳教育(连城国际校区)</td><td>距离就近</td><td>237m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>酥锅李</td><td>距离就近</td><td>335m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>春水锅贴·传统鲁菜(和谐店)</td><td>距离就近</td><td>553m</td><td>4.7</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>济南魏家庄万达广场（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达宝贝王(济南魏家庄店)</td><td>距离就近</td><td>49m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>柯洛克机械式沉浸密室(泉城路店)</td><td>距离就近</td><td>141m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>宝勤·临沂炒鸡(经四万达店)</td><td>距离就近</td><td>358m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>魏斯理汉堡(济南绿地中心店)</td><td>距离就近</td><td>422m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>青岛啤酒鲜酒吧(经二纬一店)</td><td>距离就近</td><td>433m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>华意酒店</td><td>距离就近</td><td>482m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>穆得老周家牛肉烧饼</td><td>距离就近</td><td>512m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>比格比萨自助(济南大观园店)</td><td>距离就近</td><td>584m</td><td>4.7</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>济南华山环宇城（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>奈尔宝·儿童乐园·亲子餐厅(济南华山环宇城店)</td><td>名称互证</td><td>139m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>福满园美食城</td><td>距离就近</td><td>241m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>济南历下世茂广场（53 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>世茂国际广场酒店式公寓</td><td>距离就近</td><td>45m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>Qmiss骇玩部落亲子乐园(世茂广场店)</td><td>距离就近</td><td>61m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玩聚空间PS5&amp;Switch主机游戏体验馆(宽厚里店)</td><td>距离就近</td><td>78m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>玩聚空间PS5&amp;Switch主机游戏体验馆(宽厚里店)</td><td>距离就近</td><td>78m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>茂星球亲子游乐园(世茂国际广场西座店)</td><td>距离就近</td><td>140m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麦当劳(世茂广场店)</td><td>距离就近</td><td>163m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>娱人部落Ps5·Switch主机游戏体验馆(宽厚里店)</td><td>距离就近</td><td>176m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>电潮社Ps5·Switch·主机游戏·私影</td><td>距离就近</td><td>182m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>金春禧(世茂国际广场店)</td><td>距离就近</td><td>190m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>群众青年酒馆(宽厚里店)</td><td>距离就近</td><td>199m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>群众青年酒馆(宽厚里店)</td><td>距离就近</td><td>199m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>秘境超级密室(济南旗舰店)</td><td>距离就近</td><td>199m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大冰的小屋(济南分舵)</td><td>距离就近</td><td>206m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>萍姐火锅·公路夜市(济南首店)</td><td>距离就近</td><td>209m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>超意兴把子肉(宽厚里店)</td><td>距离就近</td><td>211m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蔻纳进口啤酒超市(世茂店)</td><td>距离就近</td><td>241m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长藤密室(泉城路店)</td><td>距离就近</td><td>243m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>Buff Club(济南宽厚里店)</td><td>距离就近</td><td>249m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长藤鬼校(泉城路店)</td><td>距离就近</td><td>250m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长藤密室(泉城路2店)</td><td>距离就近</td><td>260m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>大笨象原创剧情密室(泉城路店)</td><td>距离就近</td><td>274m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>Helens海伦司小酒馆(济南泉城路百乐荟店)</td><td>距离就近</td><td>275m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>汪庄园·猫咖·狗咖·羊驼·异宠</td><td>距离就近</td><td>279m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>异次元密室(泉城路店)</td><td>距离就近</td><td>281m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>无限世界密室剧场(齐鲁国际大厦C座店)</td><td>距离就近</td><td>329m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>济南世纪大道万达广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城CINITY(济南世纪大道万达广场店)</td><td>名称互证</td><td>23m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>潮玩社(世纪大道万达店)</td><td>距离就近</td><td>28m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>潮玩社(世纪大道万达店)</td><td>距离就近</td><td>28m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>龙湖济南奥体天街（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>BINGO(龙湖济南奥体天街店)</td><td>名称互证</td><td>33m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>星聚会KTV(济南奥体龙湖店)</td><td>名称互证</td><td>74m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>吾爱玩潮玩体验中心</td><td>距离就近</td><td>75m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>吾爱玩潮玩体验中心</td><td>距离就近</td><td>75m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>CGV影城(龙湖杜比影院4DX店)</td><td>名称互证</td><td>85m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>咕噜岛(龙湖济南奥体天街)</td><td>名称互证</td><td>94m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>魏斯理汉堡(绿地国金天地店)</td><td>距离就近</td><td>138m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>Work&amp;Work</td><td>距离就近</td><td>141m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>魅KTV</td><td>距离就近</td><td>155m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>阿源鱼捞斑鱼火锅·海鲜粥(奥体西路店)</td><td>距离就近</td><td>253m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>快乐棋牌室</td><td>距离就近</td><td>298m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>CBD迷你公园</td><td>距离就近</td><td>303m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>玩加主机游戏体验馆(CBD旗舰店)</td><td>距离就近</td><td>337m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>玩加主机游戏体验馆(CBD旗舰店)</td><td>距离就近</td><td>337m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>MadGame迈游主机游戏体验馆</td><td>距离就近</td><td>351m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>燕喜堂·中华老字号(CBD店)</td><td>距离就近</td><td>427m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>滕小国饭店(礼耕路店)</td><td>距离就近</td><td>498m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麦芽堂西餐厅·精酿·日咖夜酒(奥体店)</td><td>距离就近</td><td>540m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>龙湖济南北宸天街（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>户外游乐场售票厅</td><td>距离就近</td><td>72m</td><td>—</td><td>§11</td></tr>
+<tr><td>沃美影城CINITY LED(龙湖济南北宸天街)</td><td>名称互证</td><td>75m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>嘉凯影城(济南恒大城激光巨幕店)</td><td>距离就近</td><td>236m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麦子家儿童乐园</td><td>距离就近</td><td>268m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>融汇济南老商埠（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>辣不怂·川菜大排档(老商埠店)</td><td>距离就近</td><td>10m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>达美乐比萨(老商埠店)</td><td>距离就近</td><td>31m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>鲁南仔·滕州炒鸡(经三路店)</td><td>距离就近</td><td>115m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>比格比萨自助(济南大观园店)</td><td>距离就近</td><td>409m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>鱼头之湘(经五纬二店)</td><td>距离就近</td><td>456m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>济南海岱旅社</td><td>距离就近</td><td>456m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>弘阳广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>海底捞火锅(弘阳广场店)</td><td>名称互证</td><td>32m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>夏天儿童乐园小逗逗游乐场(印象济南店)</td><td>距离就近</td><td>145m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>笨鸡小跑·临沂炒鸡(印象济南店)</td><td>距离就近</td><td>149m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>南二楼海鲜大排档(印象济南店)</td><td>距离就近</td><td>328m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>萍姐火锅·公路夜市(印象济南·泉世界店)</td><td>距离就近</td><td>529m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>老济南四合院·正宗鲁菜(印象济南店)</td><td>距离就近</td><td>586m</td><td>4.7</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>和谐广场(章丘店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>海底捞火锅(龙泉国际广场店)</td><td>距离就近</td><td>113m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>章丘和谐广场美食城</td><td>名称互证</td><td>187m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>Meland Club(和谐广场店)</td><td>名称互证</td><td>49496m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>南京大牌档(和谐广场店)</td><td>名称互证</td><td>49540m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>咕噜岛(和谐广场店)</td><td>名称互证</td><td>49548m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>刘小忙把子肉总店（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>刘小忙把子肉总店</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>箪食巷私房菜馆(玉函店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>箪食巷私房菜馆(玉函店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>大大龙虾(舜玉路店)</td><td>距离就近</td><td>352m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>箪食巷私房菜馆(经十路店)</td><td>名称互证</td><td>4324m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（39 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>钢都宾馆(府前大街)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>5.0</td><td>—</td><td>府前大街29号</td></tr>
+<tr><td>✅A-</td><td>世茂国际广场酒店式公寓</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>大明湖街道泉城路26号世茂国际广场E座709室</td></tr>
+<tr><td>✅A-</td><td>西美酒店(长清区政府店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>文昌街道经十西路16358号1楼</td></tr>
+<tr><td>✅A-</td><td>云边和悦精选酒店(济南唐冶院士谷店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.9</td><td>—</td><td>唐冶街道中物科创中1号公寓一楼</td></tr>
+<tr><td>✅A-</td><td>佳驿宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>五岭路南段平阴县教育体育局对面</td></tr>
+<tr><td>✅A-</td><td>济南七巧公寓</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>泺南五街3号</td></tr>
+<tr><td>✅A-</td><td>成嘉青年旅舍(邢村立交桥东地铁站店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.7</td><td>—</td><td>唐冶中路5199号银座·新辰天地5号商务公寓2824</td></tr>
+<tr><td>✅A-</td><td>济南鑫颖招待所(泉城广场趵突泉店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>千佛山街道佛山街佛山苑小区三区16号楼2单元103室</td></tr>
+<tr><td>✅A-</td><td>济南金桃园宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>刘庄路时代佳苑前门头房8号</td></tr>
+<tr><td>✅A-</td><td>舜庐・水上人家丨东方美学湖畔园林酒店</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>—</td><td>经十路23929号(营市街地铁站A口步行310米)</td></tr>
+<tr><td>✅A-</td><td>舜港大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.6</td><td>—</td><td>无影山北路77号</td></tr>
+<tr><td>✅A-</td><td>福利来酒店(舜耕店)</td><td>餐饮服务;中餐厅;中餐厅｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>舜耕路75号(舜耕路与八里洼路交界口西北角)</td></tr>
+<tr><td>✅A-</td><td>三明山庄</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.6</td><td>—</td><td>经十路13606号</td></tr>
+<tr><td>✅A-</td><td>济南宜客宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>黄岗路北段50号(黄岗小区西门)</td></tr>
+<tr><td>✅A-</td><td>济南平安旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>经十西路10242号</td></tr>
+<tr><td>✅A-</td><td>济南舜耕山庄生态园酒店</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>—</td><td>绣源路1110号</td></tr>
+<tr><td>✅B</td><td>银座佳驿酒店(经十东路大学城店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>双山街道民强路127号广播电视局</td></tr>
+<tr><td>✅B</td><td>济南浅深在水一方燕山店</td><td>生活服务;洗浴推拿场所;洗浴推拿场所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>燕子山路4号</td></tr>
+<tr><td>✅B</td><td>济南鑫兄弟招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>千佛山街道佛山街佛山苑三区22号楼1单元101室</td></tr>
+<tr><td>✅B</td><td>学人大厦中餐厅</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>山大南路27号山东大学中心校区</td></tr>
+<tr><td>✅B</td><td>平阴南门宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>榆山路和金水河交叉口明达眼镜店南邻</td></tr>
+<tr><td>✅B</td><td>国茂宾馆(经十西路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>腊山立交桥经十西路27509号(长青园林机械南门旁)</td></tr>
+<tr><td>✅B</td><td>NAHAFA雪野国际露营度假村</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>环湖北路7号</td></tr>
+<tr><td>✅B</td><td>新世纪大酒店(凤凰路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>凤凰路4466号</td></tr>
+<tr><td>✅B</td><td>佰金瀚商务会馆(原山路)</td><td>住宿服务;宾馆酒店;宾馆酒店｜购物服务;购物相关场所;购物相关场所</td><td>4.3</td><td>—</td><td>凤城东大街与原山路交叉口东北(广电大厦东北)</td></tr>
+<tr><td>✅B</td><td>平阴金星宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>锦水城西门南140米</td></tr>
+<tr><td>⚠️</td><td>济南海岱旅社</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>纬三路9号</td></tr>
+<tr><td>⚠️</td><td>昌源商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>昌源世纪家园一楼昌源酒店</td></tr>
+<tr><td>⚠️</td><td>银座佳驿酒店(济南火车站广场店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.1</td><td>—</td><td>车站街115-14号</td></tr>
+<tr><td>⚠️</td><td>美达迷你情景客房(济南大学店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>二环南路8355号2层房</td></tr>
+<tr><td>⚠️</td><td>天地仁和连锁酒店(济南省立医院经四路店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.1</td><td>—</td><td>经四路392号(经四纬六十字路口向西80米马路南)</td></tr>
+<tr><td>⚠️</td><td>济南惠民旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.0</td><td>—</td><td>趵突泉南路22号楼2号102(齐鲁医院东门北150米)临近趵突泉南路</td></tr>
+<tr><td>⚠️</td><td>济南名元招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.0</td><td>—</td><td>趵突泉街道趵突泉南路22号楼1栋3楼</td></tr>
+<tr><td>⚠️</td><td>舒安宾馆(济南洪楼印象城店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>花园路205号华鑫商务2号楼300室</td></tr>
+<tr><td>⚠️</td><td>竹源客房</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.8</td><td>—</td><td>十亩园东街与解放路交叉口东南40米</td></tr>
+<tr><td>⚠️</td><td>711城市之星店</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>3.8</td><td>—</td><td>济北街道办事处开元大街77号祥生中央华府城市之星小区21号楼商104</td></tr>
+<tr><td>⚠️</td><td>乐居宾馆(明水大街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>明水l鲁信明珠商业广场103</td></tr>
+<tr><td>⚠️</td><td>吉祥宾馆(莱芜富民街店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>3.5</td><td>—</td><td>万福路吕花园青草河美食街38号</td></tr>
+<tr><td>❌</td><td>济南爱民旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.3</td><td>—</td><td>花园路251号(商贸学校南)</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>12</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:中餐厅</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>类型:湘菜/地方菜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:地方风味餐厅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:酒楼/火锅/海鲜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:火锅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:海鲜酒楼</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:特色美食</td><td>39</td><td></td></tr>
+<tr><td>food</td><td>关键词:老字号</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:大排档</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:苍蝇馆</td><td>1</td><td></td></tr>
+<tr><td>food</td><td>关键词:小吃</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:本地菜</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:特产</td><td>40</td><td></td></tr>
+<tr><td>product</td><td>关键词:土特产</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:地方特产</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:步行街</td><td>17</td><td></td></tr>
+<tr><td>district</td><td>类型:特色商业街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>类型:购物中心</td><td>60</td><td></td></tr>
+<tr><td>district</td><td>类型:商场</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:美食街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:夜市</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:小吃街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:步行街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:购物中心</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:酒吧</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:酒馆</td><td>20</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:LIVEHOUSE</td><td>5</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:娱乐场所</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童乐园</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:电玩城</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:游乐场</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你游乐场</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:亲子乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:淘气堡</td><td>2</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童体验</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/济南市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>1 个 POI 无地址</strong>，需人工补：民族大街市场</li><li><input type="checkbox" disabled> <strong>3 个 POI 无评分</strong>，暂标 ⚠️：济南动物园北门地面停车场(出入口)、龙湖新壹街、户外游乐场售票厅</li><li><input type="checkbox" disabled> 儿童游乐 192 家，其中场内 45 家、独立 147 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 12 个区县：历下区、历城区、商河县、天桥区、市中区、平阴县、槐荫区、济阳区、章丘区、莱芜区、钢城区、长清区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

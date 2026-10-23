@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>延安市 · 陕西省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/陕西省.html">← 返回陕西省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>延安市 · 陕西省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:32:53  ·  POI 总量：165（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>165</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 1 · 商圈 96 · 成人娱乐 123 · 儿童娱乐 10 · 酒店 34 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>陕西省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>13 个</td></tr>
+<tr><td>街道/镇/乡</td><td>117 个</td></tr>
+<tr><td>区县构成</td><td>县×10、市辖区×2、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>宝塔区</td><td>134</td><td>81%</td></tr>
+<tr><td>洛川县</td><td>5</td><td>3%</td></tr>
+<tr><td>吴起县</td><td>5</td><td>3%</td></tr>
+<tr><td>安塞区</td><td>5</td><td>3%</td></tr>
+<tr><td>黄龙县</td><td>2</td><td>1%</td></tr>
+<tr><td>宜川县</td><td>2</td><td>1%</td></tr>
+<tr><td>延川县</td><td>2</td><td>1%</td></tr>
+<tr><td>子长市</td><td>2</td><td>1%</td></tr>
+<tr><td>延长县</td><td>2</td><td>1%</td></tr>
+<tr><td>甘泉县</td><td>2</td><td>1%</td></tr>
+<tr><td>富县</td><td>2</td><td>1%</td></tr>
+<tr><td>黄陵县</td><td>1</td><td>1%</td></tr>
+<tr><td>志丹县</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（96 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>44</td></tr>
+<tr><td>批发城</td><td>20</td></tr>
+<tr><td>百货/商场</td><td>17</td></tr>
+<tr><td>购物中心/综合体</td><td>11</td></tr>
+<tr><td>商业街</td><td>3</td></tr>
+<tr><td>奥特莱斯</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（96 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>吾悦广场(延安店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>14</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>万达影城(延安万达广场XLAND店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>14</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>延安宝塔万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>13</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>南门里PARK</td><td>百货/商场</td><td>4.7</td><td>0</td><td>10</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>延安百货大楼</td><td>百货/商场</td><td>4.6</td><td>0</td><td>13</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>永辉超市(万达广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>13</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>金圣国际</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>14</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>K5音乐派对KTV</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>13</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>横店电影城(新城上城生活广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>10</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>延安横店电影城(北大街店)</td><td>商业街</td><td>4.5</td><td>0</td><td>13</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>肆方汇·棋牌茶艺</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>13</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>华润万家(延安中心街店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>13</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>四方朋友·AI智慧KTV(吾悦广场店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>15</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>星聚会ktv(延安宝塔万达广场店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>14</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>后街Party(小东门街)</td><td>商业街</td><td>4.4</td><td>0</td><td>13</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>延安星轶影城(宝塔吾悦店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>14</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>治平购物中心</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>13</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>延安万象汇</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>13</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>四个朋友24h自助棋牌室(吾悦广场店)</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>15</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>中延国际购物中心</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>13</td><td>0</td><td>5</td></tr>
+<tr><td>B</td><td>延安国贸</td><td>百货/商场</td><td>4.3</td><td>0</td><td>13</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>北龙商务酒店(延安火车站店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>延安百货大楼东大上品</td><td>百货/商场</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>中环广场</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>暮色party-k聚会餐厅</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>半城棋牌</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>9</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>开邻超市(双拥大道店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>开邻超市(德胜路店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新城中国农批水果批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>延安市迎宾蔬菜水果粮油批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>上城生活广场(上城贰号店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>9</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>光影星空国际影城(美联店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>文投国际影城(延安枣园店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>华润万家(延安枣园店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>富县客都购物广场(沙梁街)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>天宝建材批发城</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>向阳沟蔬菜批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宝塔山综合批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>民生百货(延安店)</td><td>百货/商场</td><td>4.3</td><td>0</td><td>1</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>盛大购物中心</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>1</td><td>0</td><td>4</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(延安店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：轩辕大道36号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(延安店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>云顶棋牌、川中棋牌(金圣国际店)、星聚会ktv(延安大都荟店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(延安万达广场XLAND店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 5</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：北滨路与大东门交汇处延安万达广场6层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(延安万达广场XLAND店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>万达影城(延安万达广场XLAND店)、K5音乐派对KTV、延安横店电影城(北大街店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>延安福来登宾馆(宝塔山清凉山店)、海盛酒店(延安中心街宝塔山万达店)、延安钜恒商务酒店(二道街万达广场店)</td></tr>
+</tbody></table></div>
+<h3>延安宝塔万达广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 5</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：凤凰社区27号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>延安宝塔万达广场</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(延安万达广场XLAND店)、K5音乐派对KTV、延安横店电影城(北大街店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>延安福来登宾馆(宝塔山清凉山店)、海盛酒店(延安中心街宝塔山万达店)、延安钜恒商务酒店(二道街万达广场店)</td></tr>
+</tbody></table></div>
+<h3>南门里PARK —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 3</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：中心街南门广场</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>南门里PARK</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>K5音乐派对KTV、延安横店电影城(北大街店)、中影南门巨幕影城(南门里店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>海盛酒店(延安中心街宝塔山万达店)、延安钜恒商务酒店(二道街万达广场店)、帝豪宾馆(延安店)</td></tr>
+</tbody></table></div>
+<h3>延安百货大楼 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 5</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：大桥街</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>延安百货大楼</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(延安万达广场XLAND店)、K5音乐派对KTV、延安横店电影城(北大街店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>延安福来登宾馆(宝塔山清凉山店)、海盛酒店(延安中心街宝塔山万达店)、延安钜恒商务酒店(二道街万达广场店)</td></tr>
+</tbody></table></div>
+<h3>永辉超市(万达广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 5</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：中心街万达广场</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>永辉超市(万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(延安万达广场XLAND店)、K5音乐派对KTV、延安横店电影城(北大街店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>延安福来登宾馆(宝塔山清凉山店)、海盛酒店(延安中心街宝塔山万达店)、延安钜恒商务酒店(二道街万达广场店)</td></tr>
+</tbody></table></div>
+<h3>金圣国际 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;商务住宅相关;商务住宅相关）</li><li><strong>地址</strong>：轩辕大道36号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金圣国际</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>川中棋牌(金圣国际店)、胡楽24H棋牌娱乐(新城店)、云顶棋牌</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td></tr>
+</tbody></table></div>
+<h3>K5音乐派对KTV —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 5</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：大桥街延飞大厦4楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>K5音乐派对KTV</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(延安万达广场XLAND店)、K5音乐派对KTV、延安横店电影城(北大街店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>延安福来登宾馆(宝塔山清凉山店)、延安钜恒商务酒店(二道街万达广场店)、海盛酒店(延安中心街宝塔山万达店)</td></tr>
+</tbody></table></div>
+<h3>横店电影城(新城上城生活广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：新区轩辕大道与韶山街交叉口上城生活广场5楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>横店电影城(新城上城生活广场店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>横店电影城(新城上城生活广场店)、麻和友·24小时自助棋牌室(新区上城贰号店)、半城棋牌</td></tr>
+</tbody></table></div>
+<h3>延安横店电影城(北大街店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 3</li><li><strong>载体类型</strong>：商业街（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：北大街凤凰广场4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>延安横店电影城(北大街店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(延安万达广场XLAND店)、延安横店电影城(北大街店)、K5音乐派对KTV</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>延安钜恒商务酒店(二道街万达广场店)、海盛酒店(延安中心街宝塔山万达店)、帝豪宾馆(延安店)</td></tr>
+</tbody></table></div>
+<h3>肆方汇·棋牌茶艺 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：遵义大街12号鼎盛豪庭2号楼5楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>肆方汇·棋牌茶艺</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>肆方汇·棋牌茶艺、云顶棋牌、川中棋牌(金圣国际店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td></tr>
+</tbody></table></div>
+<h3>华润万家(延安中心街店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（购物服务;超级市场;华润）</li><li><strong>地址</strong>：大桥街与中心街交汇处凤凰广场B区1-4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>华润万家(延安中心街店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(延安万达广场XLAND店)、延安横店电影城(北大街店)、K5音乐派对KTV</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>延安钜恒商务酒店(二道街万达广场店)、海盛酒店(延安中心街宝塔山万达店)、帝豪宾馆(延安店)</td></tr>
+</tbody></table></div>
+<h3>四方朋友·AI智慧KTV(吾悦广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：新城街道吾悦广场璀璨天街3幢3层T312</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 15 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>四方朋友·AI智慧KTV(吾悦广场店)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>川中棋牌(金圣国际店)、云顶棋牌、星聚会ktv(延安大都荟店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td></tr>
+</tbody></table></div>
+<h3>星聚会ktv(延安宝塔万达广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 5</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：万达广场3楼3F-A</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>星聚会ktv(延安宝塔万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>万达影城(延安万达广场XLAND店)、K5音乐派对KTV、延安横店电影城(北大街店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>延安福来登宾馆(宝塔山清凉山店)、海盛酒店(延安中心街宝塔山万达店)、延安钜恒商务酒店(二道街万达广场店)</td></tr>
+</tbody></table></div>
+<h3>后街Party(小东门街) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 5</li><li><strong>载体类型</strong>：商业街（体育休闲服务;娱乐场所;KTV｜餐饮服务;中餐厅;火锅店）</li><li><strong>地址</strong>：凤凰山街道二道街23号国贸大厦5楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>后街Party(小东门街)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(延安万达广场XLAND店)、K5音乐派对KTV、延安横店电影城(北大街店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>延安福来登宾馆(宝塔山清凉山店)、海盛酒店(延安中心街宝塔山万达店)、延安钜恒商务酒店(二道街万达广场店)</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（123 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>棋牌室</td><td>20</td></tr>
+<tr><td>电影院</td><td>17</td></tr>
+<tr><td>其他娱乐场所</td><td>14</td></tr>
+<tr><td>KTV</td><td>11</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>3</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(延安万达广场XLAND店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>32.00</td><td>北滨路与大东门交汇处延安万达广场6层</td></tr>
+<tr><td>✅B</td><td>星聚会ktv(延安大都荟店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>71.00</td><td>轩辕大道36号</td></tr>
+<tr><td>✅B</td><td>魅KTV·AI辅唱(延安盛唐坊店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>60.00</td><td>子午路于行知北路(复盛唐苑)2号楼负一层01号</td></tr>
+<tr><td>✅B</td><td>暮色party-k聚会餐厅</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>83.00</td><td>金明大街919号</td></tr>
+<tr><td>✅B</td><td>K5音乐派对KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>56.00</td><td>大桥街延飞大厦4楼</td></tr>
+<tr><td>✅B</td><td>横店电影城(新城上城生活广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>27.00</td><td>新区轩辕大道与韶山街交叉口上城生活广场5楼</td></tr>
+<tr><td>✅B</td><td>奥斯卡国际影城(凯旋城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>26.00</td><td>百米大道尹家沟凯旋城5楼</td></tr>
+<tr><td>✅B</td><td>延安横店电影城(北大街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>北大街凤凰广场4层</td></tr>
+<tr><td>✅B</td><td>万达影城(延安红街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>39.00</td><td>科技城环湖路1号延安红街内(南侧)</td></tr>
+<tr><td>✅B</td><td>肆方汇·棋牌茶艺</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>65.00</td><td>遵义大街12号鼎盛豪庭2号楼5楼</td></tr>
+<tr><td>✅B</td><td>半城棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>31.00</td><td>亿利博生活广场4号楼</td></tr>
+<tr><td>✅B</td><td>麻和友·24小时自助棋牌室(新区上城贰号店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>22.00</td><td>新城街道办事处上城贰号2-201B号</td></tr>
+<tr><td>✅B</td><td>胡楽24H棋牌娱乐(新城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>27.00</td><td>桥沟街道轩辕大道36号金圣国际7号楼804室</td></tr>
+<tr><td>✅B</td><td>川中棋牌(金圣国际店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>37.00</td><td>新城街道办事处金圣国际3号楼601室</td></tr>
+<tr><td>✅B</td><td>云顶棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>67.00</td><td>金圣国际二号楼六楼(星河湾楼上)</td></tr>
+<tr><td>✅B</td><td>四方朋友·AI智慧KTV(吾悦广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>54.00</td><td>新城街道吾悦广场璀璨天街3幢3层T312</td></tr>
+<tr><td>✅B</td><td>山水兰亭·K歌沐足</td><td>其他娱乐场所</td><td>生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.4</td><td>199.00</td><td>新城街道办事处复盛唐苑5号楼2层27B、2层30B号商铺</td></tr>
+<tr><td>✅B</td><td>星聚会ktv(延安宝塔万达广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>43.00</td><td>万达广场3楼3F-A</td></tr>
+<tr><td>✅B</td><td>后街Party(小东门街)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜餐饮服务;中餐厅;火锅店</td><td>4.4</td><td>78.00</td><td>凤凰山街道二道街23号国贸大厦5楼</td></tr>
+<tr><td>✅B</td><td>延安星轶影城(宝塔吾悦店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>36.00</td><td>轩辕大道36号延安吾悦广场4层</td></tr>
+<tr><td>✅B</td><td>光影星空国际影城(美联店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>69.00</td><td>联通大街美联大厦2层</td></tr>
+<tr><td>✅B</td><td>光影星空国际影城(圣都花园店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>41.00</td><td>圣都花园工商银行侧边商铺101</td></tr>
+<tr><td>✅B</td><td>中影南门巨幕影城(南门里店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>59.00</td><td>南门里B1不夜城</td></tr>
+<tr><td>✅B</td><td>文投国际影城(延安枣园店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>31.00</td><td>枣园街道枣园路1938时代广场负一层</td></tr>
+<tr><td>✅B</td><td>局也棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>51.00</td><td>轩辕大道36号</td></tr>
+<tr><td>✅B</td><td>久雀自助棋牌麻将茶楼(金圣国际臻选店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>24.00</td><td>金圣国际6号楼2单元入口进8楼久雀棋牌室</td></tr>
+<tr><td>✅B</td><td>把把胡自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>21.00</td><td>新城上壹号南门DK1-2-203把把胡24小时自助棋牌室</td></tr>
+<tr><td>✅B</td><td>四个朋友24h自助棋牌茶室(上城壹号店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>18.00</td><td>上城壹号</td></tr>
+<tr><td>✅B</td><td>中影·金延安影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>65.00</td><td>河庄坪镇金延安景区延二路钟楼1F-72</td></tr>
+<tr><td>✅B</td><td>星空影城(东大上品店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>38.00</td><td>尹家沟十字路口东大上品4层</td></tr>
+<tr><td>✅B</td><td>四个朋友24h自助棋牌室(吾悦广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>26.00</td><td>福仁巷与轩辕大道交叉口北140米</td></tr>
+<tr><td>✅B</td><td>镜川棋牌.茶艺</td><td>棋牌室</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.3</td><td>32.00</td><td>金圣国际7号楼9楼906室</td></tr>
+<tr><td>⚠️</td><td>斌海音乐唱吧</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>65.00</td><td>百米大道永盛路一号</td></tr>
+<tr><td>⚠️</td><td>华夏影城(丽融店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>39.00</td><td>丽融大厦4层</td></tr>
+<tr><td>⚠️</td><td>山木旬24H共享棋牌室新城店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>34.00</td><td>新城地块壹1-204A号铺</td></tr>
+<tr><td>⚠️</td><td>浪馆长聼胡棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>193.00</td><td>上城三号西南角</td></tr>
+<tr><td>⚠️</td><td>萤火棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>—</td><td>颐园广场商业街2层5栋110室</td></tr>
+<tr><td>⚠️</td><td>汉腾KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>125.00</td><td>景御大厦东南门旁</td></tr>
+<tr><td>⚠️</td><td>麦克斯主题量贩式KTV(塞纳国际店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>54.00</td><td>永安路004号塞纳国际F5层</td></tr>
+<tr><td>⚠️</td><td>延安SUPER KING PARTY</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.1</td><td>85.00</td><td>桥沟街道凯泽国际</td></tr>
+<tr><td>⚠️</td><td>遇见meet音乐火吧KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>80.00</td><td>百米大道交通银行三楼</td></tr>
+<tr><td>⚠️</td><td>百年奥斯卡国际影城(美水路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>26.00</td><td>城关镇县医院坡底</td></tr>
+<tr><td>⚠️</td><td>叁雀一24小时共享棋牌室(北苑店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>21.00</td><td>韶山街杨家岭北苑东南角二楼</td></tr>
+<tr><td>⚠️</td><td>乐派棋牌俱乐部</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>—</td><td>星光不夜城C4栋203-204室</td></tr>
+<tr><td>⚠️</td><td>锦濠汇棋牌会馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>—</td><td>桥沟街道中环大道锦绣东方</td></tr>
+<tr><td>⚠️</td><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.0</td><td>106.00</td><td>二道街中古楼4号楼负一层昼梦超级密室</td></tr>
+<tr><td>⚠️</td><td>钱柜纯K</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>69.00</td><td>百合路6号金岳小区</td></tr>
+<tr><td>⚠️</td><td>王朝量贩KTV(金明美地西南)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>48.00</td><td>真武洞镇东滩鼓乡酒店四楼</td></tr>
+<tr><td>⚠️</td><td>Z+超级密室(天姿凤凰广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>73.00</td><td>中心巷御城国际9楼920号</td></tr>
+<tr><td>⚠️</td><td>御轩阁·K歌沐足养生SPA</td><td>其他娱乐场所</td><td>生活服务;洗浴推拿场所;洗浴推拿场所</td><td>3.9</td><td>194.00</td><td>李渠派出所东侧50米</td></tr>
+<tr><td>⚠️</td><td>安塞区电影院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>—</td><td>真武洞街与龙凤路交叉口西北40米</td></tr>
+<tr><td>⚠️</td><td>归野茶安棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.9</td><td>34.00</td><td>星光不夜城C3座501</td></tr>
+<tr><td>⚠️</td><td>棋纪·麻友社·棋牌(杨家岭南苑店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.9</td><td>17.00</td><td>新城街道办事处杨家岭南苑小区S2-203号商铺</td></tr>
+<tr><td>⚠️</td><td>安塞逐梦国际影视城</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>29.00</td><td>真武洞街道安塞县文化大楼</td></tr>
+<tr><td>⚠️</td><td>金麦KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.7</td><td>186.00</td><td>幸福苑小区北侧120米</td></tr>
+<tr><td>⚠️</td><td>凯歌楼(金延安文化旅游产业园)</td><td>其他娱乐场所</td><td>风景名胜;风景名胜相关;旅游景点</td><td>3.6</td><td>—</td><td>河庄坪镇东南边金延安文化旅游产业园F3层</td></tr>
+<tr><td>⚠️</td><td>TT纯K(泰合东方明珠店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.5</td><td>46.00</td><td>泰合轻工市场东门西北60米</td></tr>
+<tr><td>⚠️</td><td>9D影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.5</td><td>262.00</td><td>科技城环湖路1号延安红街内(西侧)</td></tr>
+<tr><td>❌</td><td>惊魂迷窟</td><td>其他娱乐场所</td><td>体育休闲服务;休闲场所;游乐场</td><td>3.3</td><td>—</td><td>肤施街道办事处方塔路15号延安红街c0181号商铺</td></tr>
+<tr><td>❌</td><td>棱镜密室逃脱(延安红街店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.3</td><td>70.00</td><td>科技城环湖路1号延安红街(西南角)</td></tr>
+</tbody></table></div>
+<p>（另 5 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（10 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>7</td></tr>
+<tr><td>其他儿童场所</td><td>3</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>萌宠之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>桥沟街道办事处双拥天道紫玉东方不区2号楼9号商铺</td></tr>
+<tr><td>✅B</td><td>蹦蹦跳跳萌宠生活馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>特殊学校对面宠物店</td></tr>
+<tr><td>⚠️</td><td>田野动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>陕西省延安市宝塔区柳林镇上桥村</td></tr>
+<tr><td>⚠️</td><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.9</td><td>吾悦广场3楼3033</td></tr>
+<tr><td>⚠️</td><td>宠物之家(太皇路店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>太皇路与迎宾路交叉口西南140米</td></tr>
+<tr><td>❌</td><td>萌宠犬业</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>桃园小区东侧</td></tr>
+<tr><td>❌</td><td>萌萌宠动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>包茂高速金延安北5楼</td></tr>
+<tr><td>❌</td><td>惊魂迷窟</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>肤施街道办事处方塔路15号延安红街c0181号商铺</td></tr>
+<tr><td>❌</td><td>延安动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.2</td><td>柳林镇上桥村田野动物园</td></tr>
+<tr><td>❌</td><td>镜幻迷宫</td><td>其他儿童场所</td><td>独立</td><td>3.2</td><td>科技城环湖路1号延安红街(西南角)</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（49 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>吾悦广场(延安店)</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>轩辕大道36号</td></tr>
+<tr><td>✅A-</td><td>延安宝塔万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>凤凰社区27号</td></tr>
+<tr><td>✅A-</td><td>南门里PARK</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>中心街南门广场</td></tr>
+<tr><td>✅A-</td><td>延安百货大楼东大上品</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>百米大道双拥大道26号</td></tr>
+<tr><td>✅A-</td><td>延安百货大楼</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>大桥街</td></tr>
+<tr><td>✅A-</td><td>永辉超市(万达广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>中心街万达广场</td></tr>
+<tr><td>✅B</td><td>开邻超市(德胜路店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>桥沟街道德胜南路上城新世纪广场负一楼</td></tr>
+<tr><td>✅B</td><td>新城中国农批水果批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>管委会东1000米</td></tr>
+<tr><td>✅B</td><td>延安市迎宾蔬菜水果粮油批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>东滨路</td></tr>
+<tr><td>✅B</td><td>富县客都购物广场(沙梁街)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>沙梁街体育场隔壁</td></tr>
+<tr><td>✅B</td><td>天宝建材批发城</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>桥沟街道百米大道尹家沟新城主干道正西方向180米</td></tr>
+<tr><td>✅B</td><td>向阳沟蔬菜批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>向阳沟1号</td></tr>
+<tr><td>✅B</td><td>宝塔山综合批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>黄蒿洼路与210国道交叉口东340米</td></tr>
+<tr><td>✅B</td><td>治平购物中心</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>大桥街与中心街交叉口东南角治平大厦1-4层</td></tr>
+<tr><td>✅B</td><td>民生百货(延安店)</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>210国道与双拥大道交叉口东100米</td></tr>
+<tr><td>✅B</td><td>盛大购物中心</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>东大街与黑龙沟巷交叉口西50米</td></tr>
+<tr><td>✅B</td><td>中延国际购物中心</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>南滨路28号</td></tr>
+<tr><td>✅B</td><td>延安国贸</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>二道街国贸大厦主楼</td></tr>
+<tr><td>⚠️</td><td>东大百货</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>双拥大道30号延安百货大楼</td></tr>
+<tr><td>⚠️</td><td>洛川百货</td><td>百货/商场</td><td>4.1</td><td>1</td><td>0</td><td>商贸步行街</td></tr>
+<tr><td>⚠️</td><td>昇蓝海鲜水产批发</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>新城农批市场</td></tr>
+<tr><td>⚠️</td><td>银海百货</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>二道街与大桥街交叉口北100米</td></tr>
+<tr><td>⚠️</td><td>民生百货(东方大厦店)</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>吴起镇东方大厦</td></tr>
+<tr><td>⚠️</td><td>华林新百货</td><td>百货/商场</td><td>4.0</td><td>0</td><td>1</td><td>安定路中段东兴小区旁</td></tr>
+<tr><td>⚠️</td><td>延安新时代奥特莱斯营销中心</td><td>奥特莱斯</td><td>4.0</td><td>0</td><td>0</td><td>延安新时代广场</td></tr>
+<tr><td>⚠️</td><td>家天下建材批发城</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>天宝建材批发城(尹家沟路西)</td></tr>
+<tr><td>⚠️</td><td>长青路批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>常青路3号</td></tr>
+<tr><td>⚠️</td><td>融丽轻工批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>桥沟镇南寨砭安置小区1号楼</td></tr>
+<tr><td>⚠️</td><td>丰泉建材家居批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>李渠路与延安北过境线辅路交叉口西南200米</td></tr>
+<tr><td>⚠️</td><td>欧凯罗农副产品批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>福鑫苑西门北120米</td></tr>
+<tr><td>⚠️</td><td>瑞丽时尚购物广场</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>延河大桥街8号高第大厦1楼</td></tr>
+<tr><td>⚠️</td><td>天姿凤凰广场</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>中心街与大桥街交叉口西南80米</td></tr>
+<tr><td>⚠️</td><td>名都百货商城(七一大厦店)</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>七里铺大街七一大厦</td></tr>
+<tr><td>⚠️</td><td>天龙百货(长征街)</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>吴起县公路段</td></tr>
+<tr><td>⚠️</td><td>鑫辉海鲜批发中心</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>人民路6号D019</td></tr>
+<tr><td>⚠️</td><td>延安北郊批发市场</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>延大路与金延安路交叉口西北420米</td></tr>
+<tr><td>⚠️</td><td>凤凰广场A区</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>天姿凤凰广场</td></tr>
+<tr><td>⚠️</td><td>东风购物广场(东风大厦店)</td><td>购物中心/综合体</td><td>3.7</td><td>0</td><td>0</td><td>东风大厦</td></tr>
+<tr><td>⚠️</td><td>凤凰广场B区(天姿凤凰广场店)</td><td>百货/商场</td><td>3.7</td><td>0</td><td>0</td><td>中心街与大东门街交叉口西南100米</td></tr>
+<tr><td>⚠️</td><td>长盛时代百货</td><td>百货/商场</td><td>3.6</td><td>0</td><td>0</td><td>中心街</td></tr>
+<tr><td>⚠️</td><td>鲜四季水果批发(新城店)</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>新城农产品批发市场B80号</td></tr>
+<tr><td>⚠️</td><td>睿腾酒店用品批发</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>泰合东方明珠1号楼二单元楼下1号门面</td></tr>
+<tr><td>⚠️</td><td>中古楼商厦(二道街)</td><td>百货/商场</td><td>3.6</td><td>0</td><td>0</td><td>顺阳北街与大东门街交叉口北40米</td></tr>
+<tr><td>⚠️</td><td>蔬菜批发市场</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>黄蒿坬住宅小区南侧180米</td></tr>
+<tr><td>❌</td><td>金日郎(中延国际购物中心店)</td><td>购物中心/综合体</td><td>3.4</td><td>0</td><td>0</td><td>南滨路28号中延国际购物中心F1层</td></tr>
+<tr><td>❌</td><td>惠晓军老闫家批发延川狗头枣</td><td>批发城</td><td>3.3</td><td>0</td><td>0</td><td>中农批延安物流园水果批发市场B区141号</td></tr>
+<tr><td>❌</td><td>凤凰诚沙发(融丽轻工批发市场店)</td><td>批发城</td><td>3.3</td><td>0</td><td>0</td><td>桥沟街道南寨砭融丽轻工市场三楼10-11号</td></tr>
+<tr><td>❌</td><td>拼乐多塑料袋批发</td><td>批发城</td><td>3.2</td><td>0</td><td>0</td><td>金地生活广场7号楼1层130号</td></tr>
+<tr><td>❌</td><td>老李蔬菜批发门市</td><td>批发城</td><td>2.5</td><td>0</td><td>0</td><td>向阳沟</td></tr>
+</tbody></table></div>
+<h2>6. 本地美食与特色美食（1 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅B</td><td>电力大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>秀延街33号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ef211b3821160cfc0000003364492879?type=pic"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>吾悦广场(延安店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td><td>名称互证</td><td>12m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>四方朋友·AI智慧KTV(吾悦广场店)</td><td>名称互证</td><td>58m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>延安星轶影城(宝塔吾悦店)</td><td>名称互证</td><td>76m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>云顶棋牌</td><td>距离就近</td><td>168m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>川中棋牌(金圣国际店)</td><td>距离就近</td><td>172m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌室(吾悦广场店)</td><td>名称互证</td><td>175m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安大都荟店)</td><td>距离就近</td><td>230m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>乐派棋牌俱乐部</td><td>距离就近</td><td>231m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>镜川棋牌.茶艺</td><td>距离就近</td><td>232m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>局也棋牌</td><td>距离就近</td><td>233m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>胡楽24H棋牌娱乐(新城店)</td><td>距离就近</td><td>247m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>久雀自助棋牌麻将茶楼(金圣国际臻选店)</td><td>距离就近</td><td>267m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>归野茶安棋牌室</td><td>距离就近</td><td>322m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>山水兰亭·K歌沐足</td><td>距离就近</td><td>469m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>肆方汇·棋牌茶艺</td><td>距离就近</td><td>481m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北龙商务酒店(延安火车站店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>北龙商务酒店(延安火车站店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>延安隆昌圣商务宾馆</td><td>距离就近</td><td>52m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>中阳大酒店</td><td>距离就近</td><td>292m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(延安万达广场XLAND店)（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(延安万达广场XLAND店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安宝塔万达广场店)</td><td>距离就近</td><td>36m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>46m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>171m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>188m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>229m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>252m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>262m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>K5音乐派对KTV</td><td>距离就近</td><td>279m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>327m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>340m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>延安横店电影城(北大街店)</td><td>距离就近</td><td>358m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>后街Party(小东门街)</td><td>距离就近</td><td>390m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>412m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>清华酒店(东关大街店)</td><td>距离就近</td><td>424m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>延安福来登宾馆(宝塔山清凉山店)</td><td>距离就近</td><td>451m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>533m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>591m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达影城(延安红街店)</td><td>名称互证</td><td>4777m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>延安宝塔万达广场（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>11m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安宝塔万达广场店)</td><td>名称互证</td><td>41m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达影城(延安万达广场XLAND店)</td><td>距离就近</td><td>49m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>130m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>152m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>190m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>207m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>221m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>K5音乐派对KTV</td><td>距离就近</td><td>231m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>279m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>301m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>延安横店电影城(北大街店)</td><td>距离就近</td><td>319m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>后街Party(小东门街)</td><td>距离就近</td><td>345m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>389m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>清华酒店(东关大街店)</td><td>距离就近</td><td>417m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>延安福来登宾馆(宝塔山清凉山店)</td><td>距离就近</td><td>443m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>484m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>543m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南门里PARK（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>65m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>125m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>后街Party(小东门街)</td><td>距离就近</td><td>263m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>359m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>396m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>K5音乐派对KTV</td><td>距离就近</td><td>396m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>延安横店电影城(北大街店)</td><td>距离就近</td><td>469m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>472m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>475m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>479m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>506m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>523m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>595m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>延安百货大楼东大上品（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星空影城(东大上品店)</td><td>距离就近</td><td>26m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麦克斯主题量贩式KTV(塞纳国际店)</td><td>距离就近</td><td>89m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>延安悦家酒店</td><td>距离就近</td><td>136m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(凯旋城店)</td><td>距离就近</td><td>346m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>延安百货大楼（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>后街Party(小东门街)</td><td>距离就近</td><td>67m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>72m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>152m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>K5音乐派对KTV</td><td>距离就近</td><td>169m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>177m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>239m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>251m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>253m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>267m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>270m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>278m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>311m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安宝塔万达广场店)</td><td>距离就近</td><td>317m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>延安横店电影城(北大街店)</td><td>距离就近</td><td>320m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万达影城(延安万达广场XLAND店)</td><td>距离就近</td><td>324m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>清华酒店(东关大街店)</td><td>距离就近</td><td>371m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>延安福来登宾馆(宝塔山清凉山店)</td><td>距离就近</td><td>390m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>477m</td><td>2.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永辉超市(万达广场店)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>25m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>万达影城(延安万达广场XLAND店)</td><td>距离就近</td><td>43m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安宝塔万达广场店)</td><td>距离就近</td><td>61m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>147m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>165m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>214m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>225m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>255m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>K5音乐派对KTV</td><td>距离就近</td><td>258m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>306m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>335m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>后街Party(小东门街)</td><td>距离就近</td><td>352m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>延安横店电影城(北大街店)</td><td>距离就近</td><td>354m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>清华酒店(东关大街店)</td><td>距离就近</td><td>389m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>延安福来登宾馆(宝塔山清凉山店)</td><td>距离就近</td><td>415m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>425m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>502m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>554m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中环广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星聚会ktv(延安大都荟店)</td><td>距离就近</td><td>548m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金圣国际（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>川中棋牌(金圣国际店)</td><td>名称互证</td><td>30m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>镜川棋牌.茶艺</td><td>名称互证</td><td>50m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>胡楽24H棋牌娱乐(新城店)</td><td>名称互证</td><td>62m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>云顶棋牌</td><td>名称互证</td><td>67m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>局也棋牌</td><td>距离就近</td><td>70m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>久雀自助棋牌麻将茶楼(金圣国际臻选店)</td><td>名称互证</td><td>71m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四方朋友·AI智慧KTV(吾悦广场店)</td><td>距离就近</td><td>186m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td><td>距离就近</td><td>190m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>延安星轶影城(宝塔吾悦店)</td><td>距离就近</td><td>198m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乐派棋牌俱乐部</td><td>距离就近</td><td>274m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安大都荟店)</td><td>距离就近</td><td>287m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>归野茶安棋牌室</td><td>距离就近</td><td>323m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌室(吾悦广场店)</td><td>距离就近</td><td>377m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>肆方汇·棋牌茶艺</td><td>距离就近</td><td>381m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>锦濠汇棋牌会馆</td><td>距离就近</td><td>554m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>暮色party-k聚会餐厅（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>暮色party-k聚会餐厅</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>K5音乐派对KTV（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>K5音乐派对KTV</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>49m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>88m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>113m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>129m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>144m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>147m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>延安横店电影城(北大街店)</td><td>距离就近</td><td>155m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>206m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>后街Party(小东门街)</td><td>距离就近</td><td>207m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>237m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安宝塔万达广场店)</td><td>距离就近</td><td>255m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>275m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>万达影城(延安万达广场XLAND店)</td><td>距离就近</td><td>279m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>308m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>360m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>清华酒店(东关大街店)</td><td>距离就近</td><td>504m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>延安福来登宾馆(宝塔山清凉山店)</td><td>距离就近</td><td>526m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>横店电影城(新城上城生活广场店)（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(新城上城生活广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌茶室(上城壹号店)</td><td>距离就近</td><td>43m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>山木旬24H共享棋牌室新城店</td><td>距离就近</td><td>67m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麻和友·24小时自助棋牌室(新区上城贰号店)</td><td>距离就近</td><td>113m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(杨家岭南苑店)</td><td>距离就近</td><td>152m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>把把胡自助棋牌室</td><td>距离就近</td><td>223m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>叁雀一24小时共享棋牌室(北苑店)</td><td>距离就近</td><td>275m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>浪馆长聼胡棋牌</td><td>距离就近</td><td>358m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>半城棋牌</td><td>距离就近</td><td>455m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>延安横店电影城(北大街店)</td><td>名称互证</td><td>4985m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>延安横店电影城(北大街店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>延安横店电影城(北大街店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>19m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>101m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>130m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>146m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>K5音乐派对KTV</td><td>距离就近</td><td>155m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>170m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>189m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>301m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安宝塔万达广场店)</td><td>距离就近</td><td>325m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>329m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>345m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>后街Party(小东门街)</td><td>距离就近</td><td>346m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>349m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达影城(延安万达广场XLAND店)</td><td>距离就近</td><td>358m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>451m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>肆方汇·棋牌茶艺（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>肆方汇·棋牌茶艺</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>归野茶安棋牌室</td><td>距离就近</td><td>222m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>锦濠汇棋牌会馆</td><td>距离就近</td><td>252m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>乐派棋牌俱乐部</td><td>距离就近</td><td>300m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>云顶棋牌</td><td>距离就近</td><td>348m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>川中棋牌(金圣国际店)</td><td>距离就近</td><td>391m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>久雀自助棋牌麻将茶楼(金圣国际臻选店)</td><td>距离就近</td><td>398m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>延安星轶影城(宝塔吾悦店)</td><td>距离就近</td><td>414m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>镜川棋牌.茶艺</td><td>距离就近</td><td>415m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>胡楽24H棋牌娱乐(新城店)</td><td>距离就近</td><td>418m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>局也棋牌</td><td>距离就近</td><td>440m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td><td>距离就近</td><td>473m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>四方朋友·AI智慧KTV(吾悦广场店)</td><td>距离就近</td><td>508m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌室(吾悦广场店)</td><td>距离就近</td><td>597m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>半城棋牌（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>半城棋牌</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>叁雀一24小时共享棋牌室(北苑店)</td><td>距离就近</td><td>280m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>浪馆长聼胡棋牌</td><td>距离就近</td><td>394m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>把把胡自助棋牌室</td><td>距离就近</td><td>397m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌茶室(上城壹号店)</td><td>距离就近</td><td>428m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>横店电影城(新城上城生活广场店)</td><td>距离就近</td><td>455m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>山木旬24H共享棋牌室新城店</td><td>距离就近</td><td>462m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麻和友·24小时自助棋牌室(新区上城贰号店)</td><td>距离就近</td><td>554m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(杨家岭南苑店)</td><td>距离就近</td><td>566m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>开邻超市(双拥大道店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>麦克斯主题量贩式KTV(塞纳国际店)</td><td>距离就近</td><td>161m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>延安悦家酒店</td><td>距离就近</td><td>202m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星空影城(东大上品店)</td><td>距离就近</td><td>209m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(凯旋城店)</td><td>距离就近</td><td>404m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>斌海音乐唱吧</td><td>距离就近</td><td>429m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>遇见meet音乐火吧KTV</td><td>距离就近</td><td>574m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>华润万家(延安中心街店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>延安横店电影城(北大街店)</td><td>距离就近</td><td>26m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>35m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>101m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>126m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>135m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>K5音乐派对KTV</td><td>距离就近</td><td>140m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>193m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>195m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>287m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>319m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>后街Party(小东门街)</td><td>距离就近</td><td>325m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安宝塔万达广场店)</td><td>距离就近</td><td>331m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>331m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>340m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达影城(延安万达广场XLAND店)</td><td>距离就近</td><td>363m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>426m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>上城生活广场(上城贰号店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(新城上城生活广场店)</td><td>名称互证</td><td>6m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌茶室(上城壹号店)</td><td>距离就近</td><td>39m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>山木旬24H共享棋牌室新城店</td><td>距离就近</td><td>67m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麻和友·24小时自助棋牌室(新区上城贰号店)</td><td>距离就近</td><td>118m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(杨家岭南苑店)</td><td>距离就近</td><td>156m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>把把胡自助棋牌室</td><td>距离就近</td><td>220m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>叁雀一24小时共享棋牌室(北苑店)</td><td>距离就近</td><td>271m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>浪馆长聼胡棋牌</td><td>距离就近</td><td>354m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>半城棋牌</td><td>距离就近</td><td>449m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>四方朋友·AI智慧KTV(吾悦广场店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>四方朋友·AI智慧KTV(吾悦广场店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td><td>距离就近</td><td>53m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>延安星轶影城(宝塔吾悦店)</td><td>距离就近</td><td>127m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>川中棋牌(金圣国际店)</td><td>距离就近</td><td>157m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>云顶棋牌</td><td>距离就近</td><td>172m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安大都荟店)</td><td>距离就近</td><td>175m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>局也棋牌</td><td>距离就近</td><td>200m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>镜川棋牌.茶艺</td><td>距离就近</td><td>205m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌室(吾悦广场店)</td><td>距离就近</td><td>211m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>胡楽24H棋牌娱乐(新城店)</td><td>距离就近</td><td>218m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>久雀自助棋牌麻将茶楼(金圣国际臻选店)</td><td>距离就近</td><td>243m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乐派棋牌俱乐部</td><td>距离就近</td><td>280m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>归野茶安棋牌室</td><td>距离就近</td><td>367m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>山水兰亭·K歌沐足</td><td>距离就近</td><td>441m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>肆方汇·棋牌茶艺</td><td>距离就近</td><td>508m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(延安盛唐坊店)</td><td>距离就近</td><td>569m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>星聚会ktv(延安宝塔万达广场店)（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星聚会ktv(延安宝塔万达广场店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达影城(延安万达广场XLAND店)</td><td>距离就近</td><td>36m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>47m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>139m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>193m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>196m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>231m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>246m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>K5音乐派对KTV</td><td>距离就近</td><td>255m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>303m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>306m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>延安横店电影城(北大街店)</td><td>距离就近</td><td>325m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>377m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>后街Party(小东门街)</td><td>距离就近</td><td>383m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>清华酒店(东关大街店)</td><td>距离就近</td><td>450m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>延安福来登宾馆(宝塔山清凉山店)</td><td>距离就近</td><td>476m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>516m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>579m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安大都荟店)</td><td>名称互证</td><td>4647m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>后街Party(小东门街)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>后街Party(小东门街)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>帝豪宾馆(延安店)</td><td>距离就近</td><td>139m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>华夏影城(丽融店)</td><td>距离就近</td><td>187m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>时光KTV(旅游大厦3楼店)</td><td>距离就近</td><td>200m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>中影南门巨幕影城(南门里店)</td><td>距离就近</td><td>205m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>K5音乐派对KTV</td><td>距离就近</td><td>207m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>海盛酒店(延安中心街宝塔山万达店)</td><td>距离就近</td><td>217m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>Z+超级密室(天姿凤凰广场店)</td><td>距离就近</td><td>295m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>昼梦沉浸式真人密室逃脱(延安店)</td><td>距离就近</td><td>308m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>延安钜恒商务酒店(二道街万达广场店)</td><td>距离就近</td><td>315m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>中影·凤凰广场电影城</td><td>距离就近</td><td>341m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>超级元宇宙·裸眼9D影院(万达广场延安宝塔店)</td><td>距离就近</td><td>345m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>延安横店电影城(北大街店)</td><td>距离就近</td><td>346m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安宝塔万达广场店)</td><td>距离就近</td><td>383m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达影城(延安万达广场XLAND店)</td><td>距离就近</td><td>390m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>清华酒店(东关大街店)</td><td>距离就近</td><td>399m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>延安福来登宾馆(宝塔山清凉山店)</td><td>距离就近</td><td>414m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>老电影院</td><td>距离就近</td><td>511m</td><td>2.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>延安星轶影城(宝塔吾悦店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>延安星轶影城(宝塔吾悦店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌奇岛•萌宠亲子乐园(延安吾悦广场店)</td><td>距离就近</td><td>75m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>四方朋友·AI智慧KTV(吾悦广场店)</td><td>距离就近</td><td>127m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>云顶棋牌</td><td>距离就近</td><td>144m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>乐派棋牌俱乐部</td><td>距离就近</td><td>155m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>川中棋牌(金圣国际店)</td><td>距离就近</td><td>171m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌室(吾悦广场店)</td><td>距离就近</td><td>200m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>镜川棋牌.茶艺</td><td>距离就近</td><td>240m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>归野茶安棋牌室</td><td>距离就近</td><td>246m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>局也棋牌</td><td>距离就近</td><td>249m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>胡楽24H棋牌娱乐(新城店)</td><td>距离就近</td><td>255m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>久雀自助棋牌麻将茶楼(金圣国际臻选店)</td><td>距离就近</td><td>269m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星聚会ktv(延安大都荟店)</td><td>距离就近</td><td>302m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>肆方汇·棋牌茶艺</td><td>距离就近</td><td>414m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>山水兰亭·K歌沐足</td><td>距离就近</td><td>541m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>光影星空国际影城(美联店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>光影星空国际影城(美联店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌宠之家</td><td>距离就近</td><td>407m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>延安SUPER KING PARTY</td><td>距离就近</td><td>476m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>遇见meet音乐火吧KTV</td><td>距离就近</td><td>512m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>光影星空国际影城(圣都花园店)</td><td>名称互证</td><td>5822m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>文投国际影城(延安枣园店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>文投国际影城(延安枣园店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>延安仪和酒店</td><td>距离就近</td><td>321m</td><td>2.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（34 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>尚佰高定延安店</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>5.0</td><td>—</td><td>尹家沟路与长征南路交叉口西南440米</td></tr>
+<tr><td>✅A-</td><td>北龙商务酒店(延安火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>北龙大厦东门旁</td></tr>
+<tr><td>✅A-</td><td>林苑宾馆(东河南路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>中心街附近</td></tr>
+<tr><td>✅A-</td><td>安塞石油宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>206省道杏子川延长油矿钻采公司院内</td></tr>
+<tr><td>✅A-</td><td>延安福来登宾馆(宝塔山清凉山店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>东关街71号(慈善医院对面)</td></tr>
+<tr><td>✅B</td><td>电力大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>秀延街33号</td></tr>
+<tr><td>✅B</td><td>延安悦宾快捷酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>枣园路</td></tr>
+<tr><td>✅B</td><td>德林酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>201省道(朝阳小区斜对面)</td></tr>
+<tr><td>✅B</td><td>延安悦家酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>双拥大道中段东苑西区旁(近延安市妇幼保健院)</td></tr>
+<tr><td>✅B</td><td>洛川交口宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>交口河镇交口小学旁边</td></tr>
+<tr><td>✅B</td><td>延安多彩精选酒店(杨家岭延安大学店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>杨家岭路3号铺3-021号</td></tr>
+<tr><td>⚠️</td><td>海华酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>环山路与翠屏东路交叉口东南20米</td></tr>
+<tr><td>⚠️</td><td>延长天府宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>农贸市场内</td></tr>
+<tr><td>⚠️</td><td>吴起金海商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>洛源街29号</td></tr>
+<tr><td>⚠️</td><td>鸿福大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.0</td><td>—</td><td>商贸步行街</td></tr>
+<tr><td>⚠️</td><td>海盛酒店(延安中心街宝塔山万达店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.0</td><td>—</td><td>大桥街(延安大桥西侧)</td></tr>
+<tr><td>⚠️</td><td>延安青华宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>姚店镇后街</td></tr>
+<tr><td>⚠️</td><td>延安钜恒商务酒店(二道街万达广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>中心街(近大东门街)</td></tr>
+<tr><td>⚠️</td><td>延安新闻宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>新闻大厦</td></tr>
+<tr><td>⚠️</td><td>洛川县瑞丰宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>凤栖街(中国建设银行东侧)</td></tr>
+<tr><td>⚠️</td><td>吴起飞龙大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>吴起镇政府前五十米,洛源大街吴起汽车站</td></tr>
+<tr><td>⚠️</td><td>枣园印象假日酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.7</td><td>—</td><td>枣园路保卫战景区斜对面50米</td></tr>
+<tr><td>⚠️</td><td>延安海旭宾馆(宝塔店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>北关街252号</td></tr>
+<tr><td>⚠️</td><td>中阳大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>3.7</td><td>—</td><td>南河滨路135号</td></tr>
+<tr><td>⚠️</td><td>永洲宾馆(会师广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>永安巷与常稍路交叉口东北60米</td></tr>
+<tr><td>⚠️</td><td>延安隆昌圣商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>柳林路</td></tr>
+<tr><td>❌</td><td>帝豪宾馆(延安店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>大桥街帝豪时代广场8楼</td></tr>
+<tr><td>❌</td><td>宜川宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.3</td><td>—</td><td>宜川北大街10号</td></tr>
+<tr><td>❌</td><td>清华酒店(东关大街店)</td><td>住宿服务;住宿服务相关;住宿服务相关｜餐饮服务;中餐厅;中餐厅</td><td>3.2</td><td>—</td><td>东关大街清华饭店</td></tr>
+<tr><td>❌</td><td>轩辕宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>城北街6号</td></tr>
+<tr><td>❌</td><td>黄龙国宾酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.1</td><td>—</td><td>广场大街人民广场斜对面</td></tr>
+<tr><td>❌</td><td>延川广场宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>2.9</td><td>—</td><td>延川县汽车站对面广场宾馆</td></tr>
+<tr><td>❌</td><td>延安汇源宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>2.9</td><td>—</td><td>西市路市场沟民众剧团对面2-3层</td></tr>
+<tr><td>❌</td><td>延安仪和酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>2.8</td><td>—</td><td>枣园中国延安干部学院对面</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>3</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>5</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>3</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>3</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>5</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>1</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/延安市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> 儿童游乐 10 家，其中场内 1 家、独立 9 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 13 个区县：吴起县、子长市、安塞区、宜川县、宝塔区、富县、延川县、延长县、志丹县、洛川县、甘泉县、黄陵县、黄龙县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

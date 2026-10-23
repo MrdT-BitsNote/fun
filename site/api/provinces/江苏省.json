@@ -1,0 +1,366 @@
+{
+ "province": "江苏省",
+ "stats": {
+  "cities": 13,
+  "poi": 11787,
+  "grades": {
+   "S": 1,
+   "A": 70,
+   "B": 132,
+   "C": 317
+  }
+ },
+ "cities": [
+  {
+   "city": "南京市",
+   "province": "江苏省",
+   "adcode": "320100",
+   "poi": 913,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:48:25",
+   "page": "cities/320100.html",
+   "json": "api/cities/320100.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E5%8D%97%E4%BA%AC%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 3,
+    "C": 35
+   },
+   "dims": {
+    "food": 268,
+    "district": 252,
+    "leisure": 225,
+    "kids": 36,
+    "hotel": 38,
+    "product": 41
+   }
+  },
+  {
+   "city": "南通市",
+   "province": "江苏省",
+   "adcode": "320600",
+   "poi": 952,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:47:30",
+   "page": "cities/320600.html",
+   "json": "api/cities/320600.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E5%8D%97%E9%80%9A%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 11,
+    "C": 29
+   },
+   "dims": {
+    "food": 289,
+    "district": 234,
+    "leisure": 230,
+    "kids": 35,
+    "hotel": 36,
+    "product": 40
+   }
+  },
+  {
+   "city": "宿迁市",
+   "province": "江苏省",
+   "adcode": "321300",
+   "poi": 904,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:50:05",
+   "page": "cities/321300.html",
+   "json": "api/cities/321300.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E5%AE%BF%E8%BF%81%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 11,
+    "B": 19,
+    "C": 10
+   },
+   "dims": {
+    "food": 293,
+    "district": 219,
+    "leisure": 228,
+    "kids": 49,
+    "hotel": 32,
+    "product": 41
+   }
+  },
+  {
+   "city": "常州市",
+   "province": "江苏省",
+   "adcode": "320400",
+   "poi": 950,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:52:28",
+   "page": "cities/320400.html",
+   "json": "api/cities/320400.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E5%B8%B8%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 9,
+    "B": 4,
+    "C": 27
+   },
+   "dims": {
+    "food": 297,
+    "district": 231,
+    "leisure": 242,
+    "kids": 41,
+    "hotel": 45,
+    "product": 41
+   }
+  },
+  {
+   "city": "徐州市",
+   "province": "江苏省",
+   "adcode": "320300",
+   "poi": 953,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:51:43",
+   "page": "cities/320300.html",
+   "json": "api/cities/320300.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E5%BE%90%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 10,
+    "B": 6,
+    "C": 24
+   },
+   "dims": {
+    "food": 311,
+    "district": 224,
+    "leisure": 243,
+    "kids": 36,
+    "hotel": 32,
+    "product": 41
+   }
+  },
+  {
+   "city": "扬州市",
+   "province": "江苏省",
+   "adcode": "321000",
+   "poi": 867,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:56:35",
+   "page": "cities/321000.html",
+   "json": "api/cities/321000.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E6%89%AC%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 2,
+    "B": 13,
+    "C": 25
+   },
+   "dims": {
+    "food": 277,
+    "district": 198,
+    "leisure": 225,
+    "kids": 40,
+    "hotel": 36,
+    "product": 41
+   }
+  },
+  {
+   "city": "无锡市",
+   "province": "江苏省",
+   "adcode": "320200",
+   "poi": 960,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:54:59",
+   "page": "cities/320200.html",
+   "json": "api/cities/320200.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E6%97%A0%E9%94%A1%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 9,
+    "C": 28
+   },
+   "dims": {
+    "food": 290,
+    "district": 232,
+    "leisure": 248,
+    "kids": 34,
+    "hotel": 39,
+    "product": 41
+   }
+  },
+  {
+   "city": "泰州市",
+   "province": "江苏省",
+   "adcode": "321200",
+   "poi": 850,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:54:04",
+   "page": "cities/321200.html",
+   "json": "api/cities/321200.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E6%B3%B0%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 18,
+    "C": 21
+   },
+   "dims": {
+    "food": 285,
+    "district": 193,
+    "leisure": 217,
+    "kids": 36,
+    "hotel": 33,
+    "product": 40
+   }
+  },
+  {
+   "city": "淮安市",
+   "province": "江苏省",
+   "adcode": "320800",
+   "poi": 862,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:50:48",
+   "page": "cities/320800.html",
+   "json": "api/cities/320800.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E6%B7%AE%E5%AE%89%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 11,
+    "B": 15,
+    "C": 14
+   },
+   "dims": {
+    "food": 261,
+    "district": 206,
+    "leisure": 219,
+    "kids": 28,
+    "hotel": 34,
+    "product": 41
+   }
+  },
+  {
+   "city": "盐城市",
+   "province": "江苏省",
+   "adcode": "320900",
+   "poi": 887,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:53:21",
+   "page": "cities/320900.html",
+   "json": "api/cities/320900.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E7%9B%90%E5%9F%8E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 10,
+    "C": 25
+   },
+   "dims": {
+    "food": 271,
+    "district": 230,
+    "leisure": 217,
+    "kids": 35,
+    "hotel": 34,
+    "product": 40
+   }
+  },
+  {
+   "city": "苏州市",
+   "province": "江苏省",
+   "adcode": "320500",
+   "poi": 1004,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:49:11",
+   "page": "cities/320500.html",
+   "json": "api/cities/320500.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E8%8B%8F%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 0,
+    "B": 1,
+    "C": 38
+   },
+   "dims": {
+    "food": 290,
+    "district": 269,
+    "leisure": 236,
+    "kids": 47,
+    "hotel": 44,
+    "product": 40
+   }
+  },
+  {
+   "city": "连云港市",
+   "province": "江苏省",
+   "adcode": "320700",
+   "poi": 852,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:46:45",
+   "page": "cities/320700.html",
+   "json": "api/cities/320700.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E8%BF%9E%E4%BA%91%E6%B8%AF%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 11,
+    "B": 8,
+    "C": 21
+   },
+   "dims": {
+    "food": 273,
+    "district": 207,
+    "leisure": 226,
+    "kids": 30,
+    "hotel": 34,
+    "product": 40
+   }
+  },
+  {
+   "city": "镇江市",
+   "province": "江苏省",
+   "adcode": "321100",
+   "poi": 833,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:55:42",
+   "page": "cities/321100.html",
+   "json": "api/cities/321100.json",
+   "md": "md/%E6%B1%9F%E8%8B%8F%E7%9C%81/%E9%95%87%E6%B1%9F%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 15,
+    "C": 20
+   },
+   "dims": {
+    "food": 263,
+    "district": 196,
+    "leisure": 208,
+    "kids": 56,
+    "hotel": 34,
+    "product": 40
+   }
+  }
+ ]
+}

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>台中市 · 台湾省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/台湾省.html">← 返回台湾省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>台中市 · 台湾省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:40:01  ·  POI 总量：189（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>189</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 73 · 成人娱乐 143 · 儿童娱乐 32 · 酒店 36 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>台湾省 · 直辖市</td></tr>
+<tr><td>下级区县</td><td>29 个</td></tr>
+<tr><td>街道/镇/乡</td><td>0 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×29</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>西屯区</td><td>47</td><td>25%</td></tr>
+<tr><td>西区</td><td>24</td><td>13%</td></tr>
+<tr><td>中区</td><td>19</td><td>10%</td></tr>
+<tr><td>北区</td><td>18</td><td>10%</td></tr>
+<tr><td>东区</td><td>14</td><td>7%</td></tr>
+<tr><td>北屯区</td><td>7</td><td>4%</td></tr>
+<tr><td>太平区</td><td>6</td><td>3%</td></tr>
+<tr><td>南屯区</td><td>6</td><td>3%</td></tr>
+<tr><td>丰原区</td><td>6</td><td>3%</td></tr>
+<tr><td>和平区</td><td>5</td><td>3%</td></tr>
+<tr><td>清水区</td><td>5</td><td>3%</td></tr>
+<tr><td>后里区</td><td>4</td><td>2%</td></tr>
+<tr><td>大里区</td><td>4</td><td>2%</td></tr>
+<tr><td>南区</td><td>4</td><td>2%</td></tr>
+<tr><td>雾峰区</td><td>3</td><td>2%</td></tr>
+</tbody></table></div>
+<p>（另 11 个区县见原始数据）</p>
+<p><strong>商圈载体类型构成</strong>（73 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>35</td></tr>
+<tr><td>百货/商场</td><td>15</td></tr>
+<tr><td>批发城</td><td>11</td></tr>
+<tr><td>购物中心/综合体</td><td>8</td></tr>
+<tr><td>商业街</td><td>3</td></tr>
+<tr><td>夜市</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（73 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>LOJEL-勤美-诚品绿园道</td><td>其他商业载体</td><td>3.7</td><td>0</td><td>10</td><td>1</td><td>2</td></tr>
+<tr><td>B</td><td>L·T24H自助麻将桌游馆</td><td>其他商业载体</td><td>3.0</td><td>0</td><td>12</td><td>3</td><td>1</td></tr>
+<tr><td>B</td><td>大三元自助麻将-逢甲店</td><td>其他商业载体</td><td>3.0</td><td>0</td><td>12</td><td>2</td><td>2</td></tr>
+<tr><td>B</td><td>熊猫大观园</td><td>其他商业载体</td><td>2.6</td><td>0</td><td>11</td><td>3</td><td>2</td></tr>
+<tr><td>B</td><td>逢甲夜市艾丸村(I one Village)-电动麻将/德州扑克游戏馆</td><td>夜市</td><td>2.6</td><td>0</td><td>12</td><td>3</td><td>1</td></tr>
+<tr><td>C</td><td>旅巷自在轻旅Loosha Hostel</td><td>商业街</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>4</td></tr>
+<tr><td>C</td><td>莿桐花文创微旅</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>3</td><td>0</td><td>9</td></tr>
+<tr><td>C</td><td>Lalaport台中南馆</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>2</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>Samsonite新光三越台中店</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>2020EYEhaus台中大远百</td><td>其他商业载体</td><td>4.1</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>LaLaport(北3口)</td><td>其他商业载体</td><td>4.0</td><td>0</td><td>2</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>新天地崇德旗舰店</td><td>其他商业载体</td><td>3.8</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>丰原太平洋百货</td><td>百货/商场</td><td>3.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中友百货A栋</td><td>百货/商场</td><td>3.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>Regus台中草悟道</td><td>其他商业载体</td><td>3.7</td><td>0</td><td>9</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>Outlet mall Taichung</td><td>其他商业载体</td><td>3.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>台中市第二市场六角楼</td><td>其他商业载体</td><td>3.6</td><td>0</td><td>3</td><td>0</td><td>9</td></tr>
+<tr><td>C</td><td>丰原果菜批发市场</td><td>批发城</td><td>3.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>许多门密室逃脱X公益馆</td><td>其他商业载体</td><td>3.4</td><td>0</td><td>9</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>Mitsui Shopping Park LaLaport台中</td><td>购物中心/综合体</td><td>3.4</td><td>0</td><td>2</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>香港城</td><td>其他商业载体</td><td>3.4</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>台中温泉｜谷关住宿｜谷关饭店｜惠来谷关温泉会馆</td><td>其他商业载体</td><td>3.3</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>中联百货连锁台中太平店</td><td>百货/商场</td><td>3.2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>小北百货-台中五权店</td><td>百货/商场</td><td>3.2</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>兔乐园(同理心动物协会)</td><td>其他商业载体</td><td>3.1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>拼图密室(台中店)</td><td>其他商业载体</td><td>3.1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>四季精品百货东海店</td><td>百货/商场</td><td>3.1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大地商场</td><td>百货/商场</td><td>3.1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>永生昆虫植物馆</td><td>其他商业载体</td><td>3.0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>一路发麻将棋牌乐活馆《西屯旗舰店》</td><td>其他商业载体</td><td>3.0</td><td>0</td><td>9</td><td>3</td><td>2</td></tr>
+<tr><td>C</td><td>中联百货连锁-台中水源店</td><td>百货/商场</td><td>3.0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店台中日新店</td><td>购物中心/综合体</td><td>3.0</td><td>0</td><td>2</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>小北百货-台中永福店SHOWBA</td><td>百货/商场</td><td>3.0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>武星级水果批发仓库</td><td>批发城</td><td>3.0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>台中丰原太平洋6F</td><td>其他商业载体</td><td>3.0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>阿卡姆图书馆主题桌游店-桌上游戏｜游戏空间｜派对空间出租｜活动场地出租｜近台中科博馆｜勤美</td><td>其他商业载体</td><td>2.9</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>莱尔富便利商店｜外埔水美店</td><td>购物中心/综合体</td><td>2.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店台中民主店</td><td>购物中心/综合体</td><td>2.8</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大象百货有限公司</td><td>百货/商场</td><td>2.7</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>全家便利商店太平一江桥店</td><td>购物中心/综合体</td><td>2.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>LOJEL-勤美-诚品绿园道 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（风景名胜;风景名胜相关;旅游景点）</li><li><strong>地址</strong>：403台湾台中市西区民龙里公益路68号2F</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 1 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>LOJEL-勤美-诚品绿园道</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>好乐迪KTV美村店、许多门密室逃脱X公益馆、笨蛋工作室密室逃脱美村旗舰馆《武仁新村》《入学式》《平安戏院》</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>追风奇幻岛-台中广三SOGO-动物农场</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>台中勤美洲际酒店InterContinental Taichung、金典绿园道商旅Park Lane Inn</td></tr>
+</tbody></table></div>
+<h3>L·T24H自助麻将桌游馆 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：407台湾台中市西屯区逢甲里西屯路二段282巷56号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 3 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>L·T24H自助麻将桌游馆</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>银柜KTV逢甲店、L·T24H自助麻将桌游馆、大三元自助麻将-逢甲店</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>宠物公园(逢甲店)、熊猫大观园、夜兔娱乐麻将</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>Green Hotel-Fengjia</td></tr>
+</tbody></table></div>
+<h3>大三元自助麻将-逢甲店 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：407台湾台中市西屯区西平里逢甲路20巷26-3号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 2 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大三元自助麻将-逢甲店</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>银柜KTV逢甲店、大三元自助麻将-逢甲店、L·T24H自助麻将桌游馆</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>宠物公园(逢甲店)、夜兔娱乐麻将</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>探索私旅Explore Hotel、Green Hotel-Fengjia</td></tr>
+</tbody></table></div>
+<h3>熊猫大观园 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;住宅区;住宅小区）</li><li><strong>地址</strong>：407台湾台中市西屯区上石里上石南八巷33号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 3 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>熊猫大观园</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>银柜KTV逢甲店、L·T24H自助麻将桌游馆、一路发麻将棋牌乐活馆《西屯旗舰店》</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>宠物公园(逢甲店)、熊猫大观园、夜兔娱乐麻将</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>Green Hotel-Fengjia、台中逢甲拓程商旅</td></tr>
+</tbody></table></div>
+<h3>逢甲夜市艾丸村(I one Village)-电动麻将/德州扑克游戏馆 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 1</li><li><strong>载体类型</strong>：夜市（体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：407台湾台中市西屯区文华路71号逢甲欢乐星A5/6/7摊位</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 3 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>逢甲夜市艾丸村(I one Village)-电动麻将/德州扑克游戏馆</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>银柜KTV逢甲店、L·T24H自助麻将桌游馆、大三元自助麻将-逢甲店</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>宠物公园(逢甲店)、熊猫大观园、夜兔娱乐麻将</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>Green Hotel-Fengjia</td></tr>
+</tbody></table></div>
+<h3>旅巷自在轻旅Loosha Hostel —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：400台湾台中市中区绿川里成功路10号5楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>旅巷自在轻旅Loosha Hostel</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>台中站前秀泰影城、台中大鲁阁新时代威秀影城</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>新驿旅店(台中车站店)、旅巷自在轻旅Loosha Hostel、双星大饭店</td></tr>
+</tbody></table></div>
+<h3>莿桐花文创微旅 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：400台湾台中市中区继光里台湾大道一段141巷11号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 9</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>莿桐花文创微旅</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>神不在场/密室逃脱/实境游戏、中山73影视艺文空间、黄色起司密室逃脱</td></tr>
+<tr><td>酒店配套</td><td>9</td><td>背包41青年旅馆-台中馆、安可旅店、台中东旅Hotel East Taichung</td></tr>
+</tbody></table></div>
+<h3>Lalaport台中南馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：401台湾台中市东区泉源里进德路600号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>Lalaport台中南馆</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>台中大鲁阁新时代威秀影城、Regal</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>企业家大饭店</td></tr>
+</tbody></table></div>
+<h3>Samsonite新光三越台中店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;家居建材市场;家具城）</li><li><strong>地址</strong>：407台湾台中市西屯区惠来里台湾大道三段301号8楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 8 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>Samsonite新光三越台中店</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>台中大远百威秀影城、金悦富理容KTV、Superstar KTV Shizheng Henan Branch</td></tr>
+</tbody></table></div>
+<h3>2020EYEhaus台中大远百 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：3楼,No.251号台湾大道三段惠来里西屯区台中市台湾407</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>2020EYEhaus台中大远百</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>金悦富理容KTV、台中大远百威秀影城、Superstar KTV Shizheng Henan Branch</td></tr>
+</tbody></table></div>
+<h3>LaLaport(北3口) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;餐饮相关场所;餐饮相关）</li><li><strong>地址</strong>：401,Taiwan,Taichung City,East District,Jinde Rd,600号2楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>LaLaport(北3口)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>台中大鲁阁新时代威秀影城、Regal</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>企业家大饭店、双星大饭店</td></tr>
+</tbody></table></div>
+<h3>新天地崇德旗舰店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：406台湾台中市北屯区松竹里崇德五路345号1楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>新天地崇德旗舰店</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>新天地崇德旗舰店</td></tr>
+</tbody></table></div>
+<h3>丰原太平洋百货 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：420台湾台中市丰原区中山里复兴路2号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丰原太平洋百货</td></tr>
+</tbody></table></div>
+<h3>中友百货A栋 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：404台湾台中市北区锦平里三民路三段161号a栋5楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>中友百货A栋</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>拼图密室(台中店)</td></tr>
+</tbody></table></div>
+<h3>Regus台中草悟道 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（生活服务;中介机构;中介机构）</li><li><strong>地址</strong>：3及4楼,No.512号英才路西区台中市台湾40350</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 9 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>Regus台中草悟道</td></tr>
+<tr><td>成人娱乐</td><td>9</td><td>好乐迪KTV美村店、许多门密室逃脱X公益馆、笨蛋工作室密室逃脱美村旗舰馆《武仁新村》《入学式》《平安戏院》</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>台中勤美洲际酒店InterContinental Taichung</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（143 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>29</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>20</td></tr>
+<tr><td>电影院</td><td>15</td></tr>
+<tr><td>KTV</td><td>11</td></tr>
+<tr><td>棋牌室</td><td>5</td></tr>
+<tr><td>酒吧/酒馆</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>台中站前秀泰影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>—</td><td>401台湾台中市东区干城里南京路76号1楼</td></tr>
+<tr><td>⚠️</td><td>金悦富理容KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>3.9</td><td>—</td><td>407台湾台中市西屯区惠来里惠中路一段2号</td></tr>
+<tr><td>⚠️</td><td>台中大远百威秀影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>—</td><td>407台湾台中市西屯区惠来里台湾大道三段251号13楼</td></tr>
+<tr><td>⚠️</td><td>日新电影院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>—</td><td>400台湾台中市中区中华里中华路一段58号</td></tr>
+<tr><td>⚠️</td><td>台中文心秀泰影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>—</td><td>408台湾台中市南屯区文心南路289号7楼8楼</td></tr>
+<tr><td>⚠️</td><td>台中大鲁阁新时代威秀影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>—</td><td>401台中市东区新庄里复兴路四段186号4F</td></tr>
+<tr><td>⚠️</td><td>亲亲影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>—</td><td>404台湾台中市北区锦祥里北屯路14号1楼</td></tr>
+<tr><td>⚠️</td><td>秀泰影城二馆</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>—</td><td>401台湾台中市东区干城里南京路66号</td></tr>
+<tr><td>⚠️</td><td>丽都KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.8</td><td>—</td><td>408台湾台中市南屯区南屯里大墩四街575号</td></tr>
+<tr><td>⚠️</td><td>全球影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>—</td><td>403台湾台中市西区平和里中华路一段1-1号</td></tr>
+<tr><td>⚠️</td><td>Superstar KTV Shizheng Henan Branch</td><td>KTV</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.7</td><td>—</td><td>407台湾台中市西屯区惠来里河南路三段109号</td></tr>
+<tr><td>⚠️</td><td>好乐迪KTV美村店</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.6</td><td>—</td><td>403台湾台中市西区美村路一段272号</td></tr>
+<tr><td>⚠️</td><td>享温馨企业(股)公司台中分公司</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.5</td><td>—</td><td>407台湾台中市西屯区潮洋里青海南街79号</td></tr>
+<tr><td>❌</td><td>许多门密室逃脱X公益馆</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.4</td><td>—</td><td>403台湾台中市西区公益路155巷9号2楼</td></tr>
+<tr><td>❌</td><td>银柜KTV逢甲店</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.4</td><td>—</td><td>407台湾台中市西屯区上石里西屯路二段273-5号</td></tr>
+<tr><td>❌</td><td>享温馨KTV南屯向学店</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>3.4</td><td>—</td><td>408台湾台中市南屯区惠中里大观路38号</td></tr>
+<tr><td>❌</td><td>大映VITA</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅区</td><td>3.4</td><td>—</td><td>406台湾台中市北屯区水景里景贤南二路329号</td></tr>
+<tr><td>❌</td><td>台中丰原in89豪华影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.4</td><td>—</td><td>420台湾台中市丰原区丰圳里成功路500号5楼</td></tr>
+<tr><td>❌</td><td>红太阳-台中黎明店</td><td>其他娱乐场所</td><td>餐饮服务;冷饮店;冷饮店</td><td>3.3</td><td>—</td><td>黎明路二段与向上路三段交叉口西北80米</td></tr>
+<tr><td>❌</td><td>俪晶皇宫</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;夜总会</td><td>3.3</td><td>—</td><td>408台湾台中市南屯区惠中里惠中路三段173号</td></tr>
+<tr><td>❌</td><td>威秀影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.3</td><td>—</td><td>407台湾台中市西屯区潮洋里河南路三段120-1号4楼</td></tr>
+<tr><td>❌</td><td>时代影城2馆</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.3</td><td>—</td><td>436台湾台中市清水区文昌里中山路339号2馆3F-5F</td></tr>
+<tr><td>❌</td><td>Escer异世客民权店-台中密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.2</td><td>—</td><td>404台湾台中市北区民权路559号2F</td></tr>
+<tr><td>❌</td><td>万代福影城</td><td>电影院</td><td>体育休闲服务;休闲场所;游乐场</td><td>3.2</td><td>—</td><td>411台湾台中市太平区宜佳里宜昌路126号128、130号</td></tr>
+<tr><td>❌</td><td>拼图密室(台中店)</td><td>密室逃脱/剧本杀</td><td>购物服务;专卖店;儿童用品店</td><td>3.1</td><td>—</td><td>404台湾台中市北区新北里一中街219巷3号</td></tr>
+<tr><td>❌</td><td>神不在场/密室逃脱/实境游戏</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.0</td><td>—</td><td>400台湾台中市中区平等街34号</td></tr>
+<tr><td>❌</td><td>曼哈顿</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅小区</td><td>3.0</td><td>—</td><td>407台湾台中市西屯区何德里汉口路二段121号上楼</td></tr>
+<tr><td>❌</td><td>一路发麻将棋牌乐活馆《西屯旗舰店》</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.0</td><td>—</td><td>407台湾台中市西屯区逢甲里西屯路二段上石北二巷15号地下一楼</td></tr>
+<tr><td>❌</td><td>L·T24H自助麻将桌游馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.0</td><td>—</td><td>407台湾台中市西屯区逢甲里西屯路二段282巷56号</td></tr>
+<tr><td>❌</td><td>大三元自助麻将-逢甲店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.0</td><td>—</td><td>407台湾台中市西屯区西平里逢甲路20巷26-3号</td></tr>
+<tr><td>❌</td><td>阿卡姆图书馆主题桌游店-桌上游戏｜游戏空间｜派对空间出租｜活动场地出租｜近台中科博馆｜勤美</td><td>其他娱乐场所</td><td>体育休闲服务;休闲场所;游乐场</td><td>2.9</td><td>—</td><td>404台湾台中市北区淡沟里博馆东街10巷9号</td></tr>
+<tr><td>❌</td><td>台中忠孝国宾影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>2.9</td><td>—</td><td>台湾台中市南区城隍里忠孝路163号</td></tr>
+<tr><td>❌</td><td>中山73影视艺文空间</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.8</td><td>—</td><td>400台湾台中市中区公园里中山路73号</td></tr>
+<tr><td>❌</td><td>时代影城1馆</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>2.8</td><td>—</td><td>436台湾台中市清水区文昌里光复街65号3楼</td></tr>
+<tr><td>❌</td><td>笨蛋工作室密室逃脱美村旗舰馆《武仁新村》《入学式》《平安戏院》</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.7</td><td>—</td><td>403台湾台中市西区忠明里美村路一段36号B1</td></tr>
+<tr><td>❌</td><td>loop回圈密室逃脱恐怖馆(阳信银行隔壁)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;休闲场所;游乐场</td><td>2.7</td><td>—</td><td>404台湾台中市北区赖旺里文心路四段182号B1号之1号</td></tr>
+<tr><td>❌</td><td>王牌映画影城ACE ENT CINEMAS</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>2.7</td><td>—</td><td>403台湾台中市西区忠明里台湾大道二段459号18-19楼</td></tr>
+<tr><td>❌</td><td>游麻地yaumatei台中店｜预约制｜私讯IG随约随玩</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.7</td><td>—</td><td>407,Taichung City,Xitun District,Daxin St,52号4楼之1号</td></tr>
+<tr><td>❌</td><td>loop回圈密室逃脱旗舰店</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.6</td><td>—</td><td>406台湾台中市北屯区赖旺里文心路四段188号</td></tr>
+<tr><td>❌</td><td>密室逃脱(丽宝乐园)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.6</td><td>—</td><td>421台湾台中市后里区月眉里福容路8号</td></tr>
+<tr><td>❌</td><td>说故事密室逃脱-何厝馆-若无人接听电话会转至山西馆</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.6</td><td>—</td><td>407台湾台中市西屯区何厝里何厝东二街103号b1</td></tr>
+<tr><td>❌</td><td>好乐迪KTV逢甲店</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.6</td><td>—</td><td>407台湾台中市西屯区上石里青海路二段242-15号</td></tr>
+<tr><td>❌</td><td>星光璀璨</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.6</td><td>—</td><td>[]</td></tr>
+<tr><td>❌</td><td>Suzuran日文KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.6</td><td>—</td><td>403台湾台中市西区昇平里美村路一段300号3楼</td></tr>
+<tr><td>❌</td><td>逢甲夜市艾丸村(I one Village)-电动麻将/德州扑克游戏馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>2.6</td><td>—</td><td>407台湾台中市西屯区文华路71号逢甲欢乐星A5/6/7摊位</td></tr>
+<tr><td>❌</td><td>欧洲之星</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅区</td><td>2.5</td><td>—</td><td>市政路与河南路三段交叉口东400米</td></tr>
+<tr><td>❌</td><td>LOST真人密室逃脱(河南店)</td><td>密室逃脱/剧本杀</td><td>公司企业;公司;公司</td><td>2.4</td><td>—</td><td>407台湾台中市西屯区上安里河南路二段476号九江净水器旁巷子内B1</td></tr>
+<tr><td>❌</td><td>LOST真人密室逃脱</td><td>密室逃脱/剧本杀</td><td>公司企业;公司;公司</td><td>2.4</td><td>—</td><td>403台湾台中市西区民龙里台湾大道二段186号4楼之5号</td></tr>
+<tr><td>❌</td><td>ROOMIN-台中密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.4</td><td>—</td><td>40342西区利民里市府路39号10楼</td></tr>
+<tr><td>❌</td><td>AKA POKER CLUB德州扑克俱乐部</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.4</td><td>—</td><td>403台湾台中市西区后龙里民权路235-4号1楼</td></tr>
+<tr><td>❌</td><td>黄色起司密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.3</td><td>—</td><td>400台湾台中市中区绿川西街85号12楼之一</td></tr>
+<tr><td>❌</td><td>花都午舞KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.3</td><td>—</td><td>美村路一段300号5楼</td></tr>
+<tr><td>❌</td><td>𝑯𝑼’𝑳𝑬胡乐台中桌游麻将馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.3</td><td>—</td><td>407台湾台中市西屯区重庆路99号B1</td></tr>
+<tr><td>❌</td><td>金悦华越南平价KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.2</td><td>—</td><td>407台湾台中市西屯区宁夏路79号5楼之1号</td></tr>
+<tr><td>❌</td><td>英棋雅筑</td><td>其他娱乐场所</td><td>商务住宅;商务住宅相关;商务住宅相关</td><td>2.1</td><td>—</td><td>407台湾台中市西屯区何成里大洲街11号</td></tr>
+<tr><td>❌</td><td>谜宇宙Myverse密室逃脱(新场馆)🪐全面预约制</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.0</td><td>—</td><td>404台湾台中市北区淡沟里健行路795号</td></tr>
+<tr><td>❌</td><td>Cinema lnn</td><td>其他娱乐场所</td><td>商务住宅;商务住宅相关;商务住宅相关</td><td>2.0</td><td>—</td><td>西屯区台中市台湾407</td></tr>
+<tr><td>❌</td><td>EagleDream逢甲德州扑克体验馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.9</td><td>—</td><td>407台湾台中市西屯区西平里文华路</td></tr>
+<tr><td>❌</td><td>NJOTA你我他密室逃脱(丽宝OUTLET店)询问/预约请加LINE ID 524aommb</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.8</td><td>—</td><td>月眉东路二段与月眉北路交叉口西400米</td></tr>
+<tr><td>❌</td><td>EagleDream勤美德州扑克体验馆</td><td>其他娱乐场所</td><td>购物服务;专卖店;专营店</td><td>1.7</td><td>—</td><td>403台湾台中市西区中兴八巷24号</td></tr>
+</tbody></table></div>
+<p>（另 21 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（32 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>29</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>3</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>宝乐园宠物生命纪念园区</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>423台湾台中市东势区势林街</td></tr>
+<tr><td>❌</td><td>宠物公园(台中大雅店)</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>428台湾台中市大雅区文雅里中清路三段1103号</td></tr>
+<tr><td>❌</td><td>万代福影城</td><td>其他儿童场所</td><td>独立</td><td>3.2</td><td>411台湾台中市太平区宜佳里宜昌路126号128、130号</td></tr>
+<tr><td>❌</td><td>兔乐园(同理心动物协会)</td><td>其他儿童场所</td><td>独立</td><td>3.1</td><td>422台湾台中市石冈区九房里丰势路山下巷3-3-2号</td></tr>
+<tr><td>❌</td><td>宠物公园(逢甲店)</td><td>其他儿童场所</td><td>独立</td><td>3.0</td><td>407台湾台中市西屯区逢甲里福星路556号</td></tr>
+<tr><td>❌</td><td>永生昆虫植物馆</td><td>其他儿童场所</td><td>独立</td><td>3.0</td><td>Heping District,Taichung City,台湾424</td></tr>
+<tr><td>❌</td><td>宠物公园(台中清水店)</td><td>其他儿童场所</td><td>独立</td><td>2.9</td><td>桥头里中华路465号</td></tr>
+<tr><td>❌</td><td>清水鸟园</td><td>其他儿童场所</td><td>独立</td><td>2.9</td><td>436台湾台中市清水区南宁里海滨路10号</td></tr>
+<tr><td>❌</td><td>阿卡姆图书馆主题桌游店-桌上游戏｜游戏空间｜派对空间出租｜活动场地出租｜近台中科博馆｜勤美</td><td>其他儿童场所</td><td>独立</td><td>2.9</td><td>404台湾台中市北区淡沟里博馆东街10巷9号</td></tr>
+<tr><td>❌</td><td>loop回圈密室逃脱恐怖馆(阳信银行隔壁)</td><td>其他儿童场所</td><td>独立</td><td>2.7</td><td>404台湾台中市北区赖旺里文心路四段182号B1号之1号</td></tr>
+<tr><td>❌</td><td>熊猫大观园</td><td>其他儿童场所</td><td>独立</td><td>2.6</td><td>407台湾台中市西屯区上石里上石南八巷33号</td></tr>
+<tr><td>❌</td><td>宠物公园台中大里店</td><td>其他儿童场所</td><td>独立</td><td>2.5</td><td>412台湾台中市大里区永隆里国光路二段409号</td></tr>
+<tr><td>❌</td><td>宠物公园(北屯军功店)</td><td>其他儿童场所</td><td>独立</td><td>2.5</td><td>406台湾台中市北屯区军功里军功路二段167号</td></tr>
+<tr><td>❌</td><td>宠物公园(台中沙鹿店)</td><td>其他儿童场所</td><td>独立</td><td>2.4</td><td>433台湾台中市沙鹿区兴安里中正街71号</td></tr>
+<tr><td>❌</td><td>猫奴乐园-自取点</td><td>其他儿童场所</td><td>独立</td><td>2.4</td><td>434台湾台中市龙井区龙岗里Xiangrui St70号1楼</td></tr>
+<tr><td>❌</td><td>台中市国际机场动物保护警察局</td><td>其他儿童场所</td><td>独立</td><td>2.4</td><td>433台湾台中市沙鹿区西势里中清路42号,Domestic Terminal</td></tr>
+<tr><td>❌</td><td>丽宝宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.2</td><td>421台湾台中市后里区月眉里福容路200号</td></tr>
+<tr><td>❌</td><td>逗狗宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>1.9</td><td>[]</td></tr>
+<tr><td>❌</td><td>跑跑动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>1.9</td><td>406台湾台中市北屯区总站夜市第三道中间</td></tr>
+<tr><td>❌</td><td>追风奇幻岛-台中广三SOGO-动物农场</td><td>其他儿童场所</td><td>独立</td><td>1.8</td><td>403台湾台中市西区忠明里台湾大道二段459号17楼</td></tr>
+<tr><td>❌</td><td>猕猴PIT区</td><td>其他儿童场所</td><td>独立</td><td>1.8</td><td>[]</td></tr>
+<tr><td>❌</td><td>黑熊馆</td><td>其他儿童场所</td><td>独立</td><td>1.7</td><td>407台湾台中市西屯区大河里甘肃路二段28-2号</td></tr>
+<tr><td>❌</td><td>社团法人台湾之心爱护动物协会(Heart of Taiwan Animal Care HOTAC)</td><td>其他儿童场所</td><td>独立</td><td>1.6</td><td>43648中社里建国路90号1楼</td></tr>
+<tr><td>❌</td><td>长龙野鹿场</td><td>其他儿童场所</td><td>独立</td><td>1.6</td><td>411台湾台中市太平区东汴里长龙路二段215号</td></tr>
+<tr><td>❌</td><td>一心鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.5</td><td>423台湾台中市东势区</td></tr>
+<tr><td>❌</td><td>Lin Animal Farm</td><td>其他儿童场所</td><td>独立</td><td>1.5</td><td>437台湾台中市大甲区临江路82巷25号</td></tr>
+<tr><td>❌</td><td>社团法人台湾野鸟协会(伤鸟请电话直拨1999)</td><td>其他儿童场所</td><td>独立</td><td>1.4</td><td>402台湾台中市南区建国南路二段218号</td></tr>
+<tr><td>❌</td><td>瑞泰鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.4</td><td>432台湾台中市大肚区自强里游园路二段166号</td></tr>
+<tr><td>❌</td><td>鳄鱼收容中心</td><td>其他儿童场所</td><td>独立</td><td>1.3</td><td>Dongnan Rd,Dali District,Taichung City,Taiwan 412</td></tr>
+<tr><td>❌</td><td>夜兔娱乐麻将</td><td>其他儿童场所</td><td>独立</td><td>1.1</td><td>407,Taiwan,Taichung City,Xitun District,福上巷216弄19号</td></tr>
+<tr><td>❌</td><td>庆丰鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.0</td><td>412台湾台中市大里区新里里大里路240-8号</td></tr>
+<tr><td>❌</td><td>齁斑科技社会企业｜中部办公室</td><td>其他儿童场所</td><td>独立</td><td>0.3</td><td>402台湾台中市南区南和一街6巷8号</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（34 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>丰原太平洋百货</td><td>百货/商场</td><td>3.7</td><td>0</td><td>0</td><td>420台湾台中市丰原区中山里复兴路2号</td></tr>
+<tr><td>⚠️</td><td>中友百货A栋</td><td>百货/商场</td><td>3.7</td><td>0</td><td>0</td><td>404台湾台中市北区锦平里三民路三段161号a栋5楼</td></tr>
+<tr><td>⚠️</td><td>丰原果菜批发市场</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>420台湾台中市丰原区丰圳里丰原大道八段369号</td></tr>
+<tr><td>❌</td><td>Mitsui Shopping Park LaLaport台中</td><td>购物中心/综合体</td><td>3.4</td><td>0</td><td>0</td><td>40154台湾台中市东区泉源里进德路600号</td></tr>
+<tr><td>❌</td><td>中联百货连锁台中太平店</td><td>百货/商场</td><td>3.2</td><td>0</td><td>0</td><td>41170中山里中山路二段401号</td></tr>
+<tr><td>❌</td><td>小北百货-台中五权店</td><td>百货/商场</td><td>3.2</td><td>0</td><td>0</td><td>403台湾台中市西区蓝兴里五权路1号之27号</td></tr>
+<tr><td>❌</td><td>四季精品百货东海店</td><td>百货/商场</td><td>3.1</td><td>0</td><td>0</td><td>434台湾台中市龙井区新东里新兴路17号1楼</td></tr>
+<tr><td>❌</td><td>大地商场</td><td>百货/商场</td><td>3.1</td><td>1</td><td>0</td><td>406台湾台中市北屯区旧社里敦富一街133号</td></tr>
+<tr><td>❌</td><td>中联百货连锁-台中水源店</td><td>百货/商场</td><td>3.0</td><td>0</td><td>0</td><td>42074南村里水源路532号</td></tr>
+<tr><td>❌</td><td>全家便利商店台中日新店</td><td>购物中心/综合体</td><td>3.0</td><td>0</td><td>0</td><td>400台湾台中市中区中华里中华路一段109号</td></tr>
+<tr><td>❌</td><td>小北百货-台中永福店SHOWBA</td><td>百货/商场</td><td>3.0</td><td>0</td><td>0</td><td>407台湾台中市西屯区福雅里永福路168号</td></tr>
+<tr><td>❌</td><td>武星级水果批发仓库</td><td>批发城</td><td>3.0</td><td>0</td><td>0</td><td>427台湾台中市潭子区东宝里昌平路三段201巷162-2号</td></tr>
+<tr><td>❌</td><td>莱尔富便利商店｜外埔水美店</td><td>购物中心/综合体</td><td>2.8</td><td>0</td><td>0</td><td>438台湾台中市外埔区水美里水美路61号</td></tr>
+<tr><td>❌</td><td>全家便利商店台中民主店</td><td>购物中心/综合体</td><td>2.8</td><td>0</td><td>0</td><td>407台湾台中市西屯区潮洋里黎明路二段779号</td></tr>
+<tr><td>❌</td><td>大象百货有限公司</td><td>百货/商场</td><td>2.7</td><td>0</td><td>0</td><td>401台湾台中市东区振兴里建成路742号</td></tr>
+<tr><td>❌</td><td>全家便利商店太平一江桥店</td><td>购物中心/综合体</td><td>2.5</td><td>0</td><td>0</td><td>411台湾台中市太平区东平路6号</td></tr>
+<tr><td>❌</td><td>OK Mart</td><td>购物中心/综合体</td><td>2.5</td><td>0</td><td>0</td><td>400台湾台中市中区柳川里柳川东路三段26号</td></tr>
+<tr><td>❌</td><td>中联百货连锁-台中潭子店</td><td>百货/商场</td><td>2.5</td><td>0</td><td>0</td><td>427台湾台中市潭子区甘蔗里雅潭路一段65号</td></tr>
+<tr><td>❌</td><td>富盈渔业｜海鲜水产批发｜水产买卖｜台中东区水产</td><td>批发城</td><td>2.4</td><td>0</td><td>0</td><td>401台湾台中市东区新庄里和平街261号</td></tr>
+<tr><td>❌</td><td>寒单南湖大山接驳高山蔬果批发宅配</td><td>批发城</td><td>2.4</td><td>0</td><td>0</td><td>424台湾台中市和平区中兴路三段28号</td></tr>
+<tr><td>❌</td><td>东兴市场(食品物料批发)</td><td>批发城</td><td>2.3</td><td>0</td><td>0</td><td>404台湾台中市北区东兴市场</td></tr>
+<tr><td>❌</td><td>台湾知日商流(股)公司-知日商场</td><td>百货/商场</td><td>2.3</td><td>0</td><td>0</td><td>407,Taiwan,Taichung City,Xitun District,府会园道169号1楼</td></tr>
+<tr><td>❌</td><td>全家便利商店台中福邻店</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>407台湾台中市西屯区西墩里西屯路三段166号之25号</td></tr>
+<tr><td>❌</td><td>不倒翁百货商场</td><td>百货/商场</td><td>2.2</td><td>0</td><td>0</td><td>413台湾台中市雾峰区本乡里民主街29号</td></tr>
+<tr><td>❌</td><td>高弟街百货</td><td>百货/商场</td><td>2.2</td><td>0</td><td>0</td><td>420台湾台中市丰原区东势里中山路392号</td></tr>
+<tr><td>❌</td><td>九联百货后里店(后里九九)</td><td>百货/商场</td><td>2.1</td><td>0</td><td>0</td><td>421台湾台中市后里区墩北里甲后路一段1103号</td></tr>
+<tr><td>❌</td><td>全家便利商店 雾峰金来店</td><td>购物中心/综合体</td><td>2.0</td><td>0</td><td>0</td><td>中正路与莱园路交叉口南260米</td></tr>
+<tr><td>❌</td><td>水果批发</td><td>批发城</td><td>1.9</td><td>0</td><td>0</td><td>413台湾台中市雾峰区中正里和平街19号</td></tr>
+<tr><td>❌</td><td>顺天百货股份有限公司</td><td>百货/商场</td><td>1.8</td><td>0</td><td>0</td><td>No.26,Wenwu Rd,Dajia District,Taichung City,Taiwan 437</td></tr>
+<tr><td>❌</td><td>台中水产批发｜扣桑生猛海鲜</td><td>批发城</td><td>1.7</td><td>0</td><td>0</td><td>412台湾台中市大里区国中路500号</td></tr>
+<tr><td>❌</td><td>丽园鲜花批发中心</td><td>批发城</td><td>1.5</td><td>0</td><td>0</td><td>北屯区台中市台湾406</td></tr>
+<tr><td>❌</td><td>昇囿花卉批发</td><td>批发城</td><td>1.4</td><td>0</td><td>0</td><td>435台湾台中市梧栖区草湳里自强一街114巷22号</td></tr>
+<tr><td>❌</td><td>Mr.Li鲜果批发</td><td>批发城</td><td>1.2</td><td>0</td><td>0</td><td>404台湾台中市北区光大里五顺街233号</td></tr>
+<tr><td>❌</td><td>大湖草莓北屯区批发处</td><td>批发城</td><td>1.2</td><td>0</td><td>0</td><td>和平里和祥七街181号</td></tr>
+</tbody></table></div>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>旅巷自在轻旅Loosha Hostel（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>旅巷自在轻旅Loosha Hostel</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>双星大饭店</td><td>距离就近</td><td>282m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>新驿旅店(台中车站店)</td><td>距离就近</td><td>283m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>台中大鲁阁新时代威秀影城</td><td>距离就近</td><td>315m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>台中站前秀泰影城</td><td>距离就近</td><td>447m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>企业家大饭店</td><td>距离就近</td><td>451m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>莿桐花文创微旅（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>莿桐花文创微旅</td><td>名称互证</td><td>0m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中山73影视艺文空间</td><td>距离就近</td><td>81m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>背包41青年旅馆-台中馆</td><td>距离就近</td><td>107m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>伴畔旅店</td><td>距离就近</td><td>128m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>台中东旅Hotel East Taichung</td><td>距离就近</td><td>148m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>黄色起司密室逃脱</td><td>距离就近</td><td>190m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>安可旅店</td><td>距离就近</td><td>276m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>WE2 HOTEL唯二设计文旅</td><td>距离就近</td><td>284m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>Mr.Mantter</td><td>距离就近</td><td>285m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>奇异果快捷旅店(台中成功店)</td><td>距离就近</td><td>297m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>神不在场/密室逃脱/实境游戏</td><td>距离就近</td><td>305m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>华利大旅社Modern Inn</td><td>距离就近</td><td>404m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>Lalaport台中南馆（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Regal</td><td>距离就近</td><td>153m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>台中大鲁阁新时代威秀影城</td><td>距离就近</td><td>536m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>企业家大饭店</td><td>距离就近</td><td>566m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>Samsonite新光三越台中店（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Future Baccarat</td><td>距离就近</td><td>108m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>台中大远百威秀影城</td><td>距离就近</td><td>117m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>星光璀璨</td><td>距离就近</td><td>241m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>金悦富理容KTV</td><td>距离就近</td><td>247m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>Superstar KTV Shizheng Henan Branch</td><td>距离就近</td><td>391m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>欧洲之星</td><td>距离就近</td><td>512m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>威秀影城</td><td>距离就近</td><td>549m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>Cocobar-(老虎城)电话亭KTV</td><td>距离就近</td><td>589m</td><td>1.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>2020EYEhaus台中大远百（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Future Baccarat</td><td>距离就近</td><td>103m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>金悦富理容KTV</td><td>距离就近</td><td>103m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>台中大远百威秀影城</td><td>距离就近</td><td>105m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>星光璀璨</td><td>距离就近</td><td>302m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>欧洲之星</td><td>距离就近</td><td>518m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>Superstar KTV Shizheng Henan Branch</td><td>距离就近</td><td>526m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>LaLaport(北3口)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Regal</td><td>距离就近</td><td>101m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>台中大鲁阁新时代威秀影城</td><td>距离就近</td><td>522m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>企业家大饭店</td><td>距离就近</td><td>571m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>双星大饭店</td><td>距离就近</td><td>594m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新天地崇德旗舰店（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新天地崇德旗舰店</td><td>名称互证</td><td>0m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中友百货A栋（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>拼图密室(台中店)</td><td>距离就近</td><td>125m</td><td>3.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>LOJEL-勤美-诚品绿园道（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>许多门密室逃脱X公益馆</td><td>距离就近</td><td>94m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>台中勤美洲际酒店InterContinental Taichung</td><td>距离就近</td><td>180m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>EagleDream勤美德州扑克体验馆</td><td>距离就近</td><td>193m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>E麻教室</td><td>距离就近</td><td>271m</td><td>1.4</td><td>§11</td></tr>
+<tr><td>笨蛋工作室密室逃脱美村旗舰馆《武仁新村》《入学式》《平安戏院》</td><td>距离就近</td><td>410m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>追风奇幻岛-台中广三SOGO-动物农场</td><td>距离就近</td><td>526m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>王牌映画影城ACE ENT CINEMAS</td><td>距离就近</td><td>531m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>好乐迪KTV美村店</td><td>距离就近</td><td>531m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>Suzuran日文KTV</td><td>距离就近</td><td>562m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>花都午舞KTV</td><td>距离就近</td><td>564m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>金典绿园道商旅Park Lane Inn</td><td>距离就近</td><td>574m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>AKA POKER CLUB德州扑克俱乐部</td><td>距离就近</td><td>581m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>LOST真人密室逃脱</td><td>距离就近</td><td>592m</td><td>2.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>Regus台中草悟道（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>许多门密室逃脱X公益馆</td><td>距离就近</td><td>65m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>台中勤美洲际酒店InterContinental Taichung</td><td>距离就近</td><td>259m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>EagleDream勤美德州扑克体验馆</td><td>距离就近</td><td>288m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>E麻教室</td><td>距离就近</td><td>301m</td><td>1.4</td><td>§11</td></tr>
+<tr><td>AKA POKER CLUB德州扑克俱乐部</td><td>距离就近</td><td>469m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>LOST真人密室逃脱</td><td>距离就近</td><td>491m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>笨蛋工作室密室逃脱美村旗舰馆《武仁新村》《入学式》《平安戏院》</td><td>距离就近</td><td>509m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>好乐迪KTV美村店</td><td>距离就近</td><td>559m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>Suzuran日文KTV</td><td>距离就近</td><td>587m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>花都午舞KTV</td><td>距离就近</td><td>590m</td><td>2.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>台中市第二市场六角楼（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>奇异果快捷旅店(台中中正店)</td><td>距离就近</td><td>147m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>Mr.Mantter</td><td>距离就近</td><td>223m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>神不在场/密室逃脱/实境游戏</td><td>距离就近</td><td>228m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>奇异果快捷旅店(台中成功店)</td><td>距离就近</td><td>300m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>快乐脚旅栈</td><td>距离就近</td><td>311m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>台中东旅Hotel East Taichung</td><td>距离就近</td><td>363m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>日新电影院</td><td>距离就近</td><td>382m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>台中公园智选假日酒店</td><td>距离就近</td><td>474m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>中山73影视艺文空间</td><td>距离就近</td><td>497m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>莿桐花文创微旅</td><td>距离就近</td><td>501m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>背包41青年旅馆-台中馆</td><td>距离就近</td><td>528m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>伴畔旅店</td><td>距离就近</td><td>587m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丰原果菜批发市场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>台中丰原in89豪华影城</td><td>距离就近</td><td>303m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>许多门密室逃脱X公益馆（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>许多门密室逃脱X公益馆</td><td>名称互证</td><td>0m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>EagleDream勤美德州扑克体验馆</td><td>距离就近</td><td>233m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>E麻教室</td><td>距离就近</td><td>237m</td><td>1.4</td><td>§11</td></tr>
+<tr><td>台中勤美洲际酒店InterContinental Taichung</td><td>距离就近</td><td>269m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>好乐迪KTV美村店</td><td>距离就近</td><td>496m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>笨蛋工作室密室逃脱美村旗舰馆《武仁新村》《入学式》《平安戏院》</td><td>距离就近</td><td>503m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>AKA POKER CLUB德州扑克俱乐部</td><td>距离就近</td><td>518m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>Suzuran日文KTV</td><td>距离就近</td><td>525m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>花都午舞KTV</td><td>距离就近</td><td>527m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>LOST真人密室逃脱</td><td>距离就近</td><td>551m</td><td>2.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>Mitsui Shopping Park LaLaport台中（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Regal</td><td>距离就近</td><td>172m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>台中大鲁阁新时代威秀影城</td><td>距离就近</td><td>490m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>企业家大饭店</td><td>距离就近</td><td>510m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>双星大饭店</td><td>距离就近</td><td>557m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>香港城（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Regal</td><td>距离就近</td><td>138m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>台中大鲁阁新时代威秀影城</td><td>距离就近</td><td>567m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>台中温泉｜谷关住宿｜谷关饭店｜惠来谷关温泉会馆（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>台中温泉｜谷关住宿｜谷关饭店｜惠来谷关温泉会馆</td><td>名称互证</td><td>0m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>小北百货-台中五权店（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>豪爵大饭店台中馆</td><td>距离就近</td><td>35m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>爱丽丝国际大饭店</td><td>距离就近</td><td>229m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>爱莱时尚旅馆</td><td>距离就近</td><td>326m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>兔乐园(同理心动物协会)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>兔乐园(同理心动物协会)</td><td>名称互证</td><td>0m</td><td>3.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>拼图密室(台中店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>拼图密室(台中店)</td><td>名称互证</td><td>0m</td><td>3.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大地商场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>跑跑动物园</td><td>距离就近</td><td>137m</td><td>1.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永生昆虫植物馆（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>永生昆虫植物馆</td><td>名称互证</td><td>0m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>武陵富野渡假村</td><td>距离就近</td><td>93m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>一路发麻将棋牌乐活馆《西屯旗舰店》（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>一路发麻将棋牌乐活馆《西屯旗舰店》</td><td>名称互证</td><td>0m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>好乐迪KTV逢甲店</td><td>距离就近</td><td>296m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>台中逢甲拓程商旅</td><td>距离就近</td><td>336m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>宠物公园(逢甲店)</td><td>距离就近</td><td>347m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>Cinema lnn</td><td>距离就近</td><td>369m</td><td>2.0</td><td>§11</td></tr>
+<tr><td>夜兔娱乐麻将</td><td>距离就近</td><td>405m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>夜兔娱乐麻将</td><td>距离就近</td><td>405m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>熊猫大观园</td><td>距离就近</td><td>411m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>银柜KTV逢甲店</td><td>距离就近</td><td>429m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>LOST真人密室逃脱(河南店)</td><td>距离就近</td><td>479m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>WIN自助桌游(24H附电动麻将桌)</td><td>距离就近</td><td>491m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>逢甲夜市艾丸村(I one Village)-电动麻将/德州扑克游戏馆</td><td>距离就近</td><td>555m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>L·T24H自助麻将桌游馆</td><td>距离就近</td><td>571m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>Green Hotel-Fengjia</td><td>距离就近</td><td>571m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>L·T24H自助麻将桌游馆（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>L·T24H自助麻将桌游馆</td><td>名称互证</td><td>0m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>24H自助桌游(逢甲馆)(电动麻将桌)</td><td>距离就近</td><td>138m</td><td>1.6</td><td>§11</td></tr>
+<tr><td>逢甲夜市艾丸村(I one Village)-电动麻将/德州扑克游戏馆</td><td>距离就近</td><td>172m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>Green Hotel-Fengjia</td><td>距离就近</td><td>172m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>宠物公园(逢甲店)</td><td>距离就近</td><td>224m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>银柜KTV逢甲店</td><td>距离就近</td><td>246m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>优胡棋牌竞技馆</td><td>距离就近</td><td>267m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>Cinema lnn</td><td>距离就近</td><td>273m</td><td>2.0</td><td>§11</td></tr>
+<tr><td>24h自助HJ娱乐逢甲麻将桌游(逢甲店)(电动麻将桌)</td><td>距离就近</td><td>300m</td><td>0.4</td><td>§11</td></tr>
+<tr><td>大三元自助麻将-逢甲店</td><td>距离就近</td><td>308m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>熊猫大观园</td><td>距离就近</td><td>320m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>EagleDream逢甲德州扑克体验馆</td><td>距离就近</td><td>332m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>夜兔娱乐麻将</td><td>距离就近</td><td>354m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>夜兔娱乐麻将</td><td>距离就近</td><td>354m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>WIN自助桌游(24H附电动麻将桌)</td><td>距离就近</td><td>538m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>一路发麻将棋牌乐活馆《西屯旗舰店》</td><td>距离就近</td><td>571m</td><td>3.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大三元自助麻将-逢甲店（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大三元自助麻将-逢甲店</td><td>名称互证</td><td>0m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>EagleDream逢甲德州扑克体验馆</td><td>距离就近</td><td>32m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>24h自助HJ娱乐逢甲麻将桌游(逢甲店)(电动麻将桌)</td><td>距离就近</td><td>77m</td><td>0.4</td><td>§11</td></tr>
+<tr><td>优胡棋牌竞技馆</td><td>距离就近</td><td>104m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>24H自助桌游(逢甲馆)(电动麻将桌)</td><td>距离就近</td><td>178m</td><td>1.6</td><td>§11</td></tr>
+<tr><td>逢甲夜市艾丸村(I one Village)-电动麻将/德州扑克游戏馆</td><td>距离就近</td><td>252m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>L·T24H自助麻将桌游馆</td><td>距离就近</td><td>308m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>麻胡自助桌游</td><td>距离就近</td><td>391m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>Cinema lnn</td><td>距离就近</td><td>441m</td><td>2.0</td><td>§11</td></tr>
+<tr><td>夜兔娱乐麻将</td><td>距离就近</td><td>453m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>夜兔娱乐麻将</td><td>距离就近</td><td>453m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>Green Hotel-Fengjia</td><td>距离就近</td><td>463m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>宠物公园(逢甲店)</td><td>距离就近</td><td>483m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>银柜KTV逢甲店</td><td>距离就近</td><td>554m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>WIN自助桌游(24H附电动麻将桌)</td><td>距离就近</td><td>563m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>探索私旅Explore Hotel</td><td>距离就近</td><td>569m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>全家便利商店台中日新店（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>日新电影院</td><td>距离就近</td><td>78m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>奇异果快捷旅店(台中中正店)</td><td>距离就近</td><td>264m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>快乐脚旅栈</td><td>距离就近</td><td>313m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>神不在场/密室逃脱/实境游戏</td><td>距离就近</td><td>586m</td><td>3.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（36 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>新驿旅店(台中车站店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.9</td><td>—</td><td>401台湾台中市东区新庄里复兴路四段133号</td></tr>
+<tr><td>✅A-</td><td>探索私旅Explore Hotel</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>407台湾台中市西屯区西平里汉翔路3号</td></tr>
+<tr><td>✅A-</td><td>台中公园智选假日酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.8</td><td>—</td><td>三民路三段与精武路交叉口西南80米</td></tr>
+<tr><td>✅A-</td><td>裕元花园酒店Windsor Hotel</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>台中西屯区台湾大道四段610号</td></tr>
+<tr><td>✅A-</td><td>台中勤美洲际酒店InterContinental Taichung</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>40353台湾台中市西区忠明里馆前路77号</td></tr>
+<tr><td>✅A-</td><td>武陵富野渡假村</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.6</td><td>—</td><td>424台湾台中市和平区平等里武陵路3-16号</td></tr>
+<tr><td>✅A-</td><td>快乐脚旅栈</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>台中市中区中华路一段185号10楼</td></tr>
+<tr><td>✅A-</td><td>旅巷自在轻旅Loosha Hostel</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>400台湾台中市中区绿川里成功路10号5楼</td></tr>
+<tr><td>✅B</td><td>Green Hotel-Fengjia</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>西屯区台中市台湾407</td></tr>
+<tr><td>✅B</td><td>梦想12旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>404台湾台中市北区柳川西路四段1号12楼</td></tr>
+<tr><td>✅B</td><td>背包41青年旅馆-台中馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>400台湾台中市中区继光里继光街59号</td></tr>
+<tr><td>✅B</td><td>奇异果快捷旅店(台中站前二馆)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>绿川西路29号</td></tr>
+<tr><td>✅B</td><td>新福商务饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>404台湾台中市北区崇德路一段647号</td></tr>
+<tr><td>✅B</td><td>安可旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>400台湾台中市中区绿川里中山路3-1号</td></tr>
+<tr><td>✅B</td><td>新·通豪大饭店T hotel</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>40460台湾台中市北区长青里中清路一段521号</td></tr>
+<tr><td>✅B</td><td>统一渡假村谷关温泉养生会馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>博爱里东关路一段188号</td></tr>
+<tr><td>✅B</td><td>台中东旅Hotel East Taichung</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>400台湾台中市中区公园里台湾大道一段201号</td></tr>
+<tr><td>✅B</td><td>金沙时尚汽车旅馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>404台湾台中市北区大湖里太平路201号</td></tr>
+<tr><td>✅B</td><td>WE2 HOTEL唯二设计文旅</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>400台湾台中市中区光复路42-3号</td></tr>
+<tr><td>✅B</td><td>扑克商旅A ACE HOTEL</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>民权路67号扑克商旅</td></tr>
+<tr><td>✅B</td><td>双星大饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>401台湾台中市东区新庄里复兴路四段158号</td></tr>
+<tr><td>✅B</td><td>企业家大饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>401台湾台中市东区新庄里和平街160号</td></tr>
+<tr><td>⚠️</td><td>金典绿园道商旅Park Lane Inn</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>40353台湾台中市西区育德里健行路1049号17F</td></tr>
+<tr><td>⚠️</td><td>华利大旅社Modern Inn</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>400台湾台中市中区继光里双十路一段35号4-8楼</td></tr>
+<tr><td>⚠️</td><td>莿桐花文创微旅</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.2</td><td>—</td><td>400台湾台中市中区继光里台湾大道一段141巷11号</td></tr>
+<tr><td>⚠️</td><td>豪爵大饭店台中馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.2</td><td>—</td><td>40348台湾台中市西区公民里五权路1-23号</td></tr>
+<tr><td>⚠️</td><td>伴畔旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.1</td><td>—</td><td>400台湾台中市中区绿川西街135号4楼</td></tr>
+<tr><td>⚠️</td><td>Mr.Mantter</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.1</td><td>—</td><td>400台湾台中市中区光复里台湾大道一段271号</td></tr>
+<tr><td>⚠️</td><td>奇异果快捷旅店(台中成功店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.0</td><td>—</td><td>成功路165号</td></tr>
+<tr><td>⚠️</td><td>爱莱时尚旅馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.0</td><td>—</td><td>403台湾台中市西区安龙里五权路2-55号</td></tr>
+<tr><td>⚠️</td><td>爱丽丝国际大饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.9</td><td>—</td><td>403台湾台中市西区柳川西路二段77号</td></tr>
+<tr><td>⚠️</td><td>奇异果快捷旅店(台中中正店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.9</td><td>—</td><td>400台湾台中市中区中正里台湾大道一段441号</td></tr>
+<tr><td>⚠️</td><td>永丰栈丽致酒店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.8</td><td>—</td><td>西屯区台中市台湾407</td></tr>
+<tr><td>⚠️</td><td>台中逢甲拓程商旅</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.7</td><td>—</td><td>407台湾台中市西屯区上石里青海路二段242-33号</td></tr>
+<tr><td>⚠️</td><td>富比世大饭店Forbes Hotel</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.6</td><td>—</td><td>404台湾台中市北区赖村里学士路181号</td></tr>
+<tr><td>❌</td><td>台中温泉｜谷关住宿｜谷关饭店｜惠来谷关温泉会馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.3</td><td>—</td><td>424台湾台中市和平区博爱里东关路一段温泉巷10号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>11</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>16</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>11</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/台中市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>3 个 POI 无地址</strong>，需人工补：逗狗宠物乐园、猕猴PIT区、星光璀璨</li><li><input type="checkbox" disabled> 儿童游乐 32 家，其中场内 0 家、独立 32 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 26 个区县：东势区、东区、中区、丰原区、乌日区、北区、北屯区、南区、南屯区、后里区、和平区、外埔区、大甲区、大肚区、大里区、大雅区、太平区、梧栖区、沙鹿区、清水区、潭子区、石冈区、西区、西屯区、雾峰区、龙井区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>丽水市 · 浙江省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/浙江省.html">← 返回浙江省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>丽水市 · 浙江省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:15:00  ·  POI 总量：178（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>178</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>99%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 83 · 成人娱乐 141 · 儿童娱乐 13 · 酒店 32 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>浙江省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>9 个</td></tr>
+<tr><td>街道/镇/乡</td><td>173 个</td></tr>
+<tr><td>区县构成</td><td>县×6、县级市×1、自治县×1、市辖区×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>莲都区</td><td>101</td><td>57%</td></tr>
+<tr><td>缙云县</td><td>26</td><td>15%</td></tr>
+<tr><td>青田县</td><td>20</td><td>11%</td></tr>
+<tr><td>松阳县</td><td>12</td><td>7%</td></tr>
+<tr><td>遂昌县</td><td>7</td><td>4%</td></tr>
+<tr><td>云和县</td><td>5</td><td>3%</td></tr>
+<tr><td>景宁畲族自治县</td><td>4</td><td>2%</td></tr>
+<tr><td>龙泉市</td><td>3</td><td>2%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（83 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>购物中心/综合体</td><td>29</td></tr>
+<tr><td>其他商业载体</td><td>27</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>百货/商场</td><td>7</td></tr>
+<tr><td>奥特莱斯</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（83 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>丽水万地广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>11</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>大润发(丽水店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>11</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>万地国际影城(万地广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>10</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>丽水银泰城</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盒马鲜生(丽水银泰城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>江泰未来城</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>江泰广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>缙云万地广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>青田之心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>金桥宾馆(丽水学院中山街店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>4</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>丽水山海猩球体感动物园</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>丽水百货大楼</td><td>百货/商场</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万家惠超市(松阳店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>MT新嬉里超市(金桥店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万家惠超市(丽百店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>MT新嬉里超市(解放店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>4</td></tr>
+<tr><td>C</td><td>遂昌领悦广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(龙泉店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>金汇广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>松阳瓦窑头广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>景宁江泰广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>新汇丰商旅酒店(丽水高铁站万地广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>4</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>蜜KTV(万地广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>9</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>西城佰悦国际影城(印象西城店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万地国际影城(缙云万地广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>横店电影城(松阳店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>莲都山超(未来社区店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>丽水粮油副食品批发市场(城西路店)</td><td>批发城</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>凯新购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>乐业广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>星火商城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>遂昌云峰购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>壹德江泰广场</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中国青田侨乡进口商品城</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华东药用植物园</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>唛歌时尚KTV(文丽二路店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>丽水兴鑫时代电影大世界(金汇广场店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>乐业影城(乐业广场店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>世纪联华(金汇广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华联超市(华侨总部经济大楼店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>丽水万地广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：宇雷路104号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽水万地广场</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>万锦棋牌会所精品店、蜜KTV(万地广场店)、万地国际影城(万地广场店)</td></tr>
+</tbody></table></div>
+<h3>大润发(丽水店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：岩泉街道人民街花园路万地广场地下一楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(丽水店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>万锦棋牌会所精品店、蜜KTV(万地广场店)、万地国际影城(万地广场店)</td></tr>
+</tbody></table></div>
+<h3>万地国际影城(万地广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：花园路38号万地广场4层东南侧</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万地国际影城(万地广场店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>万锦棋牌会所精品店、万地国际影城(万地广场店)、蜜KTV(万地广场店)</td></tr>
+</tbody></table></div>
+<h3>丽水银泰城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：花园路与卢镗街交叉口</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽水银泰城</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>博纳院线影城(丽水银泰城店)、魅KTV(丽水银泰店)、MODE沉浸式密室·光影馆(银泰店)</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(丽水银泰城店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：紫金街道宇雷路899号丽水银泰城B1层B1012号商铺</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盒马鲜生(丽水银泰城店)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>博纳院线影城(丽水银泰城店)、魅KTV(丽水银泰店)、MODE沉浸式密室·光影馆(银泰店)</td></tr>
+</tbody></table></div>
+<h3>江泰未来城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：处州大道650号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>江泰未来城</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>万达影城(未来城店)</td></tr>
+</tbody></table></div>
+<h3>江泰广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：成大街199号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>江泰广场</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>唛歌时尚KTV(文丽二路店)、艾里亚(江泰国际广场店)、时尚纯歌量贩式KTV</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>雅苑精品大酒店</td></tr>
+</tbody></table></div>
+<h3>缙云万地广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：鼎湖路与永宁路交叉口南120米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>缙云万地广场</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>万地国际影城(缙云万地广场店)、钱汇量贩式KTV(农贸市场店)、新时代影城(缙云店)</td></tr>
+</tbody></table></div>
+<h3>青田之心 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：油竹街道石锦路399号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>青田之心</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>1001夜俱乐部·剧本杀·密室逃脱、魔法门沉浸式剧场密室、黑镜密室逃脱</td></tr>
+</tbody></table></div>
+<h3>金桥宾馆(丽水学院中山街店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：中山街131号(金桥街和交叉口近万地广场)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金桥宾馆(丽水学院中山街店)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>大咖棋牌会所、麻友记24小时自助棋牌室(灯塔三村店)、新雀友棋牌会所</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>金桥宾馆(丽水学院中山街店)、丽水金芒果电竞酒店</td></tr>
+</tbody></table></div>
+<h3>丽水山海猩球体感动物园 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（生活服务;信息咨询中心;服务中心｜风景名胜;公园广场;动物园）</li><li><strong>地址</strong>：大港头镇石玄头嘴666号(古堰画乡旅游度假区东侧)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 3 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽水山海猩球体感动物园</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>丽水山海猩球体感动物园、丽水市山海猩球动物主题乐园管理有限公司、丽水山海猩球体感动物园-游客中心</td></tr>
+</tbody></table></div>
+<h3>丽水百货大楼 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场｜购物服务;服装鞋帽皮具店;品牌服装店）</li><li><strong>地址</strong>：中山街498号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽水百货大楼</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>佰悦国际影城(中山店)、A-PARTY量贩式KTV、奥斯卡国际影城(丽水店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>欧凯纳斯酒店</td></tr>
+</tbody></table></div>
+<h3>万家惠超市(松阳店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;便民商店/便利店;便民商店/便利店｜购物服务;超级市场;超市）</li><li><strong>地址</strong>：要津路155号天元名都酒店负1楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万家惠超市(松阳店)</td></tr>
+</tbody></table></div>
+<h3>MT新嬉里超市(金桥店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：绿谷信息产业园新嬉里大厦负一楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>MT新嬉里超市(金桥店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>大咖棋牌会所</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金桥宾馆(丽水学院中山街店)</td></tr>
+</tbody></table></div>
+<h3>万家惠超市(丽百店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：剑川大道与锦绣路交叉口东南60米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万家惠超市(丽百店)</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（141 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>棋牌室</td><td>18</td></tr>
+<tr><td>电影院</td><td>16</td></tr>
+<tr><td>其他娱乐场所</td><td>15</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>13</td></tr>
+<tr><td>KTV</td><td>11</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>X PARTY星都汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.7</td><td>197.00</td><td>花园路388-6号</td></tr>
+<tr><td>✅A-</td><td>万达影城(未来城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>39.00</td><td>南明街道处州大道650号中广未来城4F-A</td></tr>
+<tr><td>✅A-</td><td>万锦棋牌会所精品店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>199.00</td><td>宇雷路71-73号附近</td></tr>
+<tr><td>✅A-</td><td>大咖棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>17.00</td><td>金桥东街163号</td></tr>
+<tr><td>✅A-</td><td>天和棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>27.00</td><td>丽阳街934号</td></tr>
+<tr><td>✅B</td><td>蜜KTV(万地广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>67.00</td><td>宇雷路104号丽水万地广场F4层</td></tr>
+<tr><td>✅B</td><td>丽水和天下娱乐会所(万和豪生大酒店店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>11.00</td><td>开发北路42号</td></tr>
+<tr><td>✅B</td><td>新留芳娱乐城(后庆店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>—</td><td>灯塔小区后庆路107号</td></tr>
+<tr><td>✅B</td><td>A-PARTY量贩式KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>107.00</td><td>灯塔街与城西路交叉口东40米</td></tr>
+<tr><td>✅B</td><td>魅KTV(丽水银泰店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>75.00</td><td>银泰城B1层(盒马出口旁边)</td></tr>
+<tr><td>✅B</td><td>麦霸KTV(中澳大酒店店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>111.00</td><td>长虹中路85号</td></tr>
+<tr><td>✅B</td><td>万地国际影城(万地广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>41.00</td><td>花园路38号万地广场4层东南侧</td></tr>
+<tr><td>✅B</td><td>西城佰悦国际影城(印象西城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>34.00</td><td>学院路36号西城广场6-7层</td></tr>
+<tr><td>✅B</td><td>佰悦国际影城(中山店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>27.00</td><td>中山街525号</td></tr>
+<tr><td>✅B</td><td>南方影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>54.00</td><td>卢镗街处州府城8栋南方影城</td></tr>
+<tr><td>✅B</td><td>博纳院线影城(丽水银泰城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>53.00</td><td>宇雷路799号丽水银泰城3008</td></tr>
+<tr><td>✅B</td><td>万地国际影城(缙云万地广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>34.00</td><td>五云街道鼎湖南路369号万地广场4F</td></tr>
+<tr><td>✅B</td><td>横店电影城(松阳店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>27.00</td><td>环城西路美林松州广场3层</td></tr>
+<tr><td>✅B</td><td>天天胡棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>31.00</td><td>宇雷北路138号二楼</td></tr>
+<tr><td>✅B</td><td>168棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>173.00</td><td>宇雷北路与天宁街交叉口东南60米</td></tr>
+<tr><td>✅B</td><td>拾间棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>81.00</td><td>岩泉街道世贸花园6幢7-8号拾间棋牌</td></tr>
+<tr><td>✅B</td><td>大发·棋牌会所(丽阳街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>35.00</td><td>丽阳街588号</td></tr>
+<tr><td>✅B</td><td>麻神理工棋牌馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室｜公司企业;公司;公司</td><td>4.5</td><td>11.00</td><td>紫金路5号二楼麻神理工</td></tr>
+<tr><td>✅B</td><td>麻友记24小时自助棋牌室(灯塔三村店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>14.00</td><td>灯塔三村143号一楼三间店面</td></tr>
+<tr><td>✅B</td><td>新雀友棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>17.00</td><td>人民路339号</td></tr>
+<tr><td>✅B</td><td>168棋牌会所(宇雷路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>35.00</td><td>金龙·长运花苑西门旁</td></tr>
+<tr><td>✅B</td><td>大喜·国粹棋牌会所(寿元店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>142.00</td><td>岩泉街道寿元街36号(正达阳光城东南门旁)</td></tr>
+<tr><td>✅B</td><td>棋屿24H营业棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>46.00</td><td>紫金路29号</td></tr>
+<tr><td>✅B</td><td>MODE沉浸式密室逃脱(紫金北路店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>97.00</td><td>紫金北路161号二楼</td></tr>
+<tr><td>✅B</td><td>唛歌时尚KTV(文丽二路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>61.00</td><td>遂松路307号南城广场2楼</td></tr>
+<tr><td>✅B</td><td>钱汇量贩式KTV(农贸市场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>44.00</td><td>农贸市场三楼</td></tr>
+<tr><td>✅B</td><td>音玖柒!n97PARTY K</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>150.00</td><td>五云街道旭山路锦湖新天地二楼</td></tr>
+<tr><td>✅B</td><td>云鼎汇K歌沐足</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>206.00</td><td>北山路与长虹中路交叉口东北120米</td></tr>
+<tr><td>✅B</td><td>丽水兴鑫时代电影大世界(金汇广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>36.00</td><td>解放街198号金汇广场F2层(东4门旁扶梯上到F2可见)</td></tr>
+<tr><td>✅B</td><td>新时代影城(缙云店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>45.00</td><td>永宁星座3层</td></tr>
+<tr><td>✅B</td><td>沃伦国际影城(松阳店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>37.00</td><td>长松东路8号4楼(人民医院对面)</td></tr>
+<tr><td>✅B</td><td>乐业影城(乐业广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>33.00</td><td>壶镇大桥乐业广场3层</td></tr>
+<tr><td>✅B</td><td>198棋牌会所(天宁店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>115.00</td><td>天宁中学东北门旁</td></tr>
+<tr><td>✅B</td><td>198谊友棋牌会所(大洋北路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>—</td><td>大洋北路519号2层</td></tr>
+<tr><td>✅B</td><td>时尚纯歌量贩式KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>100.00</td><td>张村路25号万侨国际F1层</td></tr>
+<tr><td>✅B</td><td>艾里亚(江泰国际广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>47.00</td><td>成大街199号江泰广场F1层</td></tr>
+<tr><td>✅B</td><td>玖号公馆娱乐会所(松阳农贸市场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>28.00</td><td>长松东路142号5幢8楼</td></tr>
+<tr><td>✅B</td><td>金逸大家影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>28.00</td><td>大家未来社区商业街B1层</td></tr>
+<tr><td>✅B</td><td>蜂乐台球棋牌俱乐部</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.3</td><td>—</td><td>大洋北路34号</td></tr>
+<tr><td>⚠️</td><td>1001夜俱乐部·剧本杀·密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>116.00</td><td>油竹街道芝上38号</td></tr>
+<tr><td>⚠️</td><td>MODE沉浸式密室·光影馆(银泰店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>109.00</td><td>大猷街113号银泰城负一楼下沉广场(古鲁特烤肉隔壁)</td></tr>
+<tr><td>⚠️</td><td>无敌密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>62.00</td><td>西街与西街35弄交叉口东北180米</td></tr>
+<tr><td>⚠️</td><td>处州府城·金钻KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>38.00</td><td>处州府城内(西侧)</td></tr>
+<tr><td>⚠️</td><td>奥斯卡国际影城(丽水店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>28.00</td><td>中山街460号</td></tr>
+<tr><td>⚠️</td><td>青川影剧院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>39.00</td><td>壶镇镇胡宅口</td></tr>
+<tr><td>⚠️</td><td>杨阿姨棋牌室(庆春街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>—</td><td>大洋路102号</td></tr>
+<tr><td>⚠️</td><td>魔法门沉浸式剧场密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>398.00</td><td>油竹街道芝竹街上32-34号</td></tr>
+<tr><td>⚠️</td><td>叁生密室逃脱(继光街店)</td><td>密室逃脱/剧本杀</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>118.00</td><td>继光街28-1号</td></tr>
+<tr><td>⚠️</td><td>叁生密室逃脱(解放街店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.1</td><td>117.00</td><td>解放街48号</td></tr>
+<tr><td>⚠️</td><td>惊悦密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>77.00</td><td>永宁路永宁步行街商城二楼247号</td></tr>
+<tr><td>⚠️</td><td>云鼎KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>—</td><td>鼎湖南路与好溪路交叉口东120米</td></tr>
+<tr><td>⚠️</td><td>魅力金尊商务轰趴馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>—</td><td>成大街与桥亭路交叉口东北400米</td></tr>
+<tr><td>⚠️</td><td>来胡自助棋牌(清新绿生活购物广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>242.00</td><td>岩泉街道大洋北路28号清新绿生活购物广场二楼</td></tr>
+<tr><td>⚠️</td><td>南城电影大世界(水阁南城广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>41.00</td><td>遂松路307号水阁南城广场3层</td></tr>
+<tr><td>⚠️</td><td>松阳时代VIP影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>41.00</td><td>水南街道江泰广场4楼</td></tr>
+</tbody></table></div>
+<p>（另 13 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（13 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>9</td></tr>
+<tr><td>其他儿童场所</td><td>4</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>丽水山海猩球体感动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>大港头镇石玄头嘴666号(古堰画乡旅游度假区东侧)</td></tr>
+<tr><td>✅B</td><td>华东药用植物园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>城北街11号</td></tr>
+<tr><td>✅B</td><td>Zoo动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>鼎湖路与219省道交叉口南80米</td></tr>
+<tr><td>⚠️</td><td>亿只宠萌宠生活馆(兴昌路店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>名都花园3幢2号商铺亿只宠萌宠生活馆(宠物店)</td></tr>
+<tr><td>⚠️</td><td>Show Show宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>丽阳街939号邮政隔壁</td></tr>
+<tr><td>⚠️</td><td>丽水市嗅嗅宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>丽阳街与寿尔福北路交叉口东北160米</td></tr>
+<tr><td>⚠️</td><td>云曼萌宠主题儿童乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>G赤石乡赤石村云和湖度假村12号1楼</td></tr>
+<tr><td>⚠️</td><td>3D石头动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.6</td><td>舒洪镇坦五公路仁岸景区</td></tr>
+<tr><td>⚠️</td><td>丽水市山海猩球动物主题乐园管理有限公司</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>大西段与210省道交叉口东南160米丽水-山海猩球体感动物园后勤中心</td></tr>
+<tr><td>❌</td><td>迷你电动车行</td><td>其他儿童场所</td><td>独立</td><td>3.1</td><td>长松路214号</td></tr>
+<tr><td>❌</td><td>木玩公园宠物店</td><td>其他儿童场所</td><td>独立</td><td>2.6</td><td>新建南路与学林街交叉口西北200米</td></tr>
+<tr><td>⚠️</td><td>嘉慧园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>欣苑街与括苍北路交叉口东南260米</td></tr>
+<tr><td>⚠️</td><td>丽水山海猩球体感动物园-游客中心</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>大港头镇石玄头嘴666号丽水山海猩球体感动物园</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（56 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>丽水银泰城</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>花园路与卢镗街交叉口</td></tr>
+<tr><td>✅A-</td><td>丽水万地广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>宇雷路104号</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(丽水银泰城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>紫金街道宇雷路899号丽水银泰城B1层B1012号商铺</td></tr>
+<tr><td>✅A-</td><td>江泰未来城</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>处州大道650号</td></tr>
+<tr><td>✅A-</td><td>江泰广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>成大街199号</td></tr>
+<tr><td>✅A-</td><td>缙云万地广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>鼎湖路与永宁路交叉口南120米</td></tr>
+<tr><td>✅A-</td><td>青田之心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>油竹街道石锦路399号</td></tr>
+<tr><td>✅A-</td><td>丽水百货大楼</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>中山街498号</td></tr>
+<tr><td>✅A-</td><td>万家惠超市(松阳店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>要津路155号天元名都酒店负1楼</td></tr>
+<tr><td>✅A-</td><td>大润发(丽水店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>岩泉街道人民街花园路万地广场地下一楼</td></tr>
+<tr><td>✅A-</td><td>MT新嬉里超市(金桥店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>绿谷信息产业园新嬉里大厦负一楼</td></tr>
+<tr><td>✅A-</td><td>万家惠超市(丽百店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>剑川大道与锦绣路交叉口东南60米</td></tr>
+<tr><td>✅A-</td><td>MT新嬉里超市(解放店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>华夏大厦</td></tr>
+<tr><td>✅A-</td><td>遂昌领悦广场</td><td>百货/商场</td><td>4.6</td><td>1</td><td>0</td><td>妙高街道后江路2号未来公园南面</td></tr>
+<tr><td>✅A-</td><td>万达广场(龙泉店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>东茶路118号</td></tr>
+<tr><td>✅A-</td><td>金汇广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>解放街198号</td></tr>
+<tr><td>✅A-</td><td>松阳瓦窑头广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>水南街道瓦窑头农耕文化园2号-6</td></tr>
+<tr><td>✅A-</td><td>景宁江泰广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>人民中路176号</td></tr>
+<tr><td>✅B</td><td>丽水粮油副食品批发市场(城西路店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>灯塔街130号</td></tr>
+<tr><td>✅B</td><td>凯新购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>酒厂路</td></tr>
+<tr><td>✅B</td><td>乐业广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>壶镇镇乐业路1号</td></tr>
+<tr><td>✅B</td><td>星火商城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>丽阳街与城西路交叉口北100米</td></tr>
+<tr><td>✅B</td><td>遂昌云峰购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>社后街</td></tr>
+<tr><td>✅B</td><td>世纪联华(金汇广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>解放街200号金汇广场地下1-3号</td></tr>
+<tr><td>✅B</td><td>华联超市(华侨总部经济大楼店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>330国道中梁百悦城4栋地下室</td></tr>
+<tr><td>✅B</td><td>丽水市星火综合批发市场(灯塔利群购物中心南)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>丽街403-1号</td></tr>
+<tr><td>✅B</td><td>惠民菜市场(丽水农产品批发市场店)</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>水阁开发区缙青路525号丽农批万吨冷链物流园区</td></tr>
+<tr><td>✅B</td><td>云和江泰广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>解放东路210号</td></tr>
+<tr><td>✅B</td><td>美林松州广场</td><td>百货/商场</td><td>4.4</td><td>1</td><td>0</td><td>白龙路150号</td></tr>
+<tr><td>✅B</td><td>鲸淘鲜选生活超市</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>永宁步行街</td></tr>
+<tr><td>✅B</td><td>锦侨奥特莱斯广场(锦侨·欧悦城店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>锦侨·欧悦城</td></tr>
+<tr><td>✅B</td><td>龙泉市农产品批发市场</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>剑池西路701号</td></tr>
+<tr><td>⚠️</td><td>高湾蔬菜批发市场</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>高平街与鹤温路交叉口西北480米</td></tr>
+<tr><td>⚠️</td><td>七里良富购物中心</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>六下线与六金段交叉口西180米</td></tr>
+<tr><td>⚠️</td><td>十足便利店(丽水晋祥大厦店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>瓯南街道水南公路3号</td></tr>
+<tr><td>⚠️</td><td>十足便利店(天宁二村店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>天宁二村22幢</td></tr>
+<tr><td>⚠️</td><td>绿之源水果批发零售店(江南大道店)</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>百川润城8幢5号</td></tr>
+<tr><td>⚠️</td><td>来胡自助棋牌(清新绿生活购物广场店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>岩泉街道大洋北路28号清新绿生活购物广场二楼</td></tr>
+<tr><td>⚠️</td><td>十足便利店(丽水紫金公寓店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>丽青路212号(十足隔壁)</td></tr>
+<tr><td>⚠️</td><td>十足便利店(丽水前路街店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>前路街93号(欧洲城东北门旁)</td></tr>
+<tr><td>⚠️</td><td>立训钢材批发(鸿达花苑店)</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>开发路671-675号</td></tr>
+<tr><td>⚠️</td><td>水阁农产品批发市场(山村农蔬菜批发)</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>水阁开发区缙青路525号丽农批万吨冷链物流园区</td></tr>
+<tr><td>⚠️</td><td>温州阿业海鲜批发(丽水农产品批发市场店)</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>水阁开发区缙青路525号丽农批万吨冷链物流园区</td></tr>
+<tr><td>⚠️</td><td>余生鲜花批发缙云仓储供应中心(金水湾城市花园东区店)</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>金水湾城市花园东区</td></tr>
+<tr><td>⚠️</td><td>十足便利店(丽水宝幢街店)</td><td>购物中心/综合体</td><td>3.8</td><td>0</td><td>0</td><td>鹤城街道宝幢街41-47号(谢桥小区西南门旁)</td></tr>
+<tr><td>⚠️</td><td>寻花鲜花批发配送中心</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>五云街道朝晖巷16号</td></tr>
+<tr><td>⚠️</td><td>冬梅钢材批发(丽水市灵山建材市场店)</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>青林路与春云街交叉口西北160米</td></tr>
+<tr><td>⚠️</td><td>海平粮油批发</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>缙青路525号丽水农产品批发市场3P-A02海平粮油</td></tr>
+<tr><td>❌</td><td>玛娃奥特莱斯店</td><td>奥特莱斯</td><td>3.4</td><td>0</td><td>0</td><td>新建镇新溪路393号</td></tr>
+<tr><td>❌</td><td>丽水地板批发市场</td><td>批发城</td><td>3.4</td><td>0</td><td>0</td><td>浙南国际建材城</td></tr>
+</tbody></table></div>
+<p>（另 6 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>丽水银泰城（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>MODE沉浸式密室·光影馆(银泰店)</td><td>距离就近</td><td>3m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>博纳院线影城(丽水银泰城店)</td><td>名称互证</td><td>51m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魅KTV(丽水银泰店)</td><td>距离就近</td><td>132m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽水万地广场（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>MODE沉浸密室体验馆(万地广场新店)</td><td>距离就近</td><td>83m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>蜜KTV(万地广场店)</td><td>名称互证</td><td>92m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万地国际影城(万地广场店)</td><td>距离就近</td><td>95m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>拾间棋牌</td><td>距离就近</td><td>221m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天天胡棋牌会所</td><td>距离就近</td><td>252m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>小客厅</td><td>距离就近</td><td>347m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>大发·棋牌会所(丽阳街店)</td><td>距离就近</td><td>381m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>杨阿姨棋牌室(庆春街店)</td><td>距离就近</td><td>491m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>MODE沉浸式密室逃脱(紫金北路店)</td><td>距离就近</td><td>535m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万锦棋牌会所精品店</td><td>距离就近</td><td>549m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麻神理工棋牌馆</td><td>距离就近</td><td>598m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(丽水银泰城店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>MODE沉浸式密室·光影馆(银泰店)</td><td>距离就近</td><td>47m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>博纳院线影城(丽水银泰城店)</td><td>距离就近</td><td>97m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魅KTV(丽水银泰店)</td><td>距离就近</td><td>110m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>IN17 PARTY KTV</td><td>距离就近</td><td>595m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>江泰未来城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(未来城店)</td><td>距离就近</td><td>109m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>江泰广场（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>艾里亚(江泰国际广场店)</td><td>名称互证</td><td>36m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>时尚纯歌量贩式KTV</td><td>距离就近</td><td>509m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>雅苑精品大酒店</td><td>距离就近</td><td>555m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>唛歌时尚KTV(文丽二路店)</td><td>距离就近</td><td>590m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>松阳时代VIP影城</td><td>名称互证</td><td>36875m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>缙云万地广场（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万地国际影城(缙云万地广场店)</td><td>名称互证</td><td>41m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>云鼎KTV</td><td>距离就近</td><td>292m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>钱汇量贩式KTV(农贸市场店)</td><td>距离就近</td><td>442m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新时代影城(缙云店)</td><td>距离就近</td><td>504m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>青田之心（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>V咖·超级密室(青田之心店)</td><td>名称互证</td><td>1m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>奇幻密室逃脱</td><td>距离就近</td><td>266m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>魔法门沉浸式剧场密室</td><td>距离就近</td><td>367m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>黑镜密室逃脱</td><td>距离就近</td><td>379m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>1001夜俱乐部·剧本杀·密室逃脱</td><td>距离就近</td><td>381m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金桥宾馆(丽水学院中山街店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金桥宾馆(丽水学院中山街店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>大咖棋牌会所</td><td>距离就近</td><td>70m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>丽水金芒果电竞酒店</td><td>距离就近</td><td>147m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>麻友记24小时自助棋牌室(灯塔三村店)</td><td>距离就近</td><td>271m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>新雀友棋牌会所</td><td>距离就近</td><td>323m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>新留芳娱乐城(后庆店)</td><td>距离就近</td><td>574m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽水山海猩球体感动物园（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽水山海猩球体感动物园</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>丽水山海猩球体感动物园-游客中心</td><td>名称互证</td><td>110m</td><td>—</td><td>§11</td></tr>
+<tr><td>丽水市山海猩球动物主题乐园管理有限公司</td><td>距离就近</td><td>158m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽水百货大楼（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>奥斯卡国际影城(丽水店)</td><td>距离就近</td><td>111m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>欧凯纳斯酒店</td><td>距离就近</td><td>166m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>佰悦国际影城(中山店)</td><td>距离就近</td><td>294m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>A-PARTY量贩式KTV</td><td>距离就近</td><td>305m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>派对·KTV</td><td>距离就近</td><td>327m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>叁生密室逃脱(继光街店)</td><td>距离就近</td><td>438m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>叁生密室逃脱(解放街店)</td><td>距离就近</td><td>588m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(丽水店)（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>MODE沉浸密室体验馆(万地广场新店)</td><td>距离就近</td><td>75m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>蜜KTV(万地广场店)</td><td>距离就近</td><td>120m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万地国际影城(万地广场店)</td><td>距离就近</td><td>128m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天天胡棋牌会所</td><td>距离就近</td><td>225m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>拾间棋牌</td><td>距离就近</td><td>261m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>小客厅</td><td>距离就近</td><td>314m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>大发·棋牌会所(丽阳街店)</td><td>距离就近</td><td>378m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MODE沉浸式密室逃脱(紫金北路店)</td><td>距离就近</td><td>497m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>杨阿姨棋牌室(庆春街店)</td><td>距离就近</td><td>529m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>万锦棋牌会所精品店</td><td>距离就近</td><td>543m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麻神理工棋牌馆</td><td>距离就近</td><td>565m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>MT新嬉里超市(金桥店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大咖棋牌会所</td><td>距离就近</td><td>571m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金桥宾馆(丽水学院中山街店)</td><td>距离就近</td><td>577m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>MT新嬉里超市(解放店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽水格林罗曼风情酒店(高铁站店)</td><td>距离就近</td><td>308m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新时代酒店(丽水高铁站银泰城店)</td><td>距离就近</td><td>357m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>仲夏私影</td><td>距离就近</td><td>442m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>丽水鑫辰商务宾馆</td><td>距离就近</td><td>499m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>青年养佬院</td><td>距离就近</td><td>547m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>新汇丰商旅酒店(丽水高铁站万地广场店)</td><td>距离就近</td><td>581m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>遂昌领悦广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>亿只宠萌宠生活馆(兴昌路店)</td><td>距离就近</td><td>481m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金汇广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽水兴鑫时代电影大世界(金汇广场店)</td><td>名称互证</td><td>11m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>松阳瓦窑头广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>松阳时代VIP影城</td><td>距离就近</td><td>38m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>景宁江泰广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>景宁红太阳宾馆</td><td>距离就近</td><td>401m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>景宁长城宾馆</td><td>距离就近</td><td>536m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>新金鹤大酒店</td><td>距离就近</td><td>568m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新汇丰商旅酒店(丽水高铁站万地广场店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新汇丰商旅酒店(丽水高铁站万地广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>丽水鑫辰商务宾馆</td><td>距离就近</td><td>230m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>青年养佬院</td><td>距离就近</td><td>328m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>168棋牌会所(宇雷路店)</td><td>距离就近</td><td>438m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大喜·国粹棋牌会所(寿元店)</td><td>距离就近</td><td>515m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>X PARTY星都汇</td><td>距离就近</td><td>526m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>蜜KTV(万地广场店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>蜜KTV(万地广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万地国际影城(万地广场店)</td><td>距离就近</td><td>20m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MODE沉浸密室体验馆(万地广场新店)</td><td>距离就近</td><td>173m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>拾间棋牌</td><td>距离就近</td><td>198m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大发·棋牌会所(丽阳街店)</td><td>距离就近</td><td>321m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天天胡棋牌会所</td><td>距离就近</td><td>343m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>杨阿姨棋牌室(庆春街店)</td><td>距离就近</td><td>419m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>小客厅</td><td>距离就近</td><td>434m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>万锦棋牌会所精品店</td><td>距离就近</td><td>494m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万地国际影城(万地广场店)（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万地国际影城(万地广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蜜KTV(万地广场店)</td><td>距离就近</td><td>20m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MODE沉浸密室体验馆(万地广场新店)</td><td>距离就近</td><td>173m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>拾间棋牌</td><td>距离就近</td><td>178m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大发·棋牌会所(丽阳街店)</td><td>距离就近</td><td>337m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天天胡棋牌会所</td><td>距离就近</td><td>346m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>杨阿姨棋牌室(庆春街店)</td><td>距离就近</td><td>405m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>小客厅</td><td>距离就近</td><td>441m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>万锦棋牌会所精品店</td><td>距离就近</td><td>511m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万地国际影城(缙云万地广场店)</td><td>名称互证</td><td>26557m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>西城佰悦国际影城(印象西城店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>西城佰悦国际影城(印象西城店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>学院新鑫宾馆(西城广场店)</td><td>距离就近</td><td>424m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万地国际影城(缙云万地广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万地国际影城(缙云万地广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>云鼎KTV</td><td>距离就近</td><td>258m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>钱汇量贩式KTV(农贸市场店)</td><td>距离就近</td><td>454m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新时代影城(缙云店)</td><td>距离就近</td><td>521m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万地国际影城(万地广场店)</td><td>名称互证</td><td>26557m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>横店电影城(松阳店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(松阳店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>迷你电动车行</td><td>距离就近</td><td>556m</td><td>3.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>莲都山超(未来社区店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金逸大家影城</td><td>距离就近</td><td>126m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽水粮油副食品批发市场(城西路店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>A-PARTY量贩式KTV</td><td>距离就近</td><td>93m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>欧凯纳斯酒店</td><td>距离就近</td><td>96m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>派对·KTV</td><td>距离就近</td><td>110m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(丽水店)</td><td>距离就近</td><td>145m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>佰悦国际影城(中山店)</td><td>距离就近</td><td>444m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>叁生密室逃脱(继光街店)</td><td>距离就近</td><td>490m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（32 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>大华宾馆(东升北区店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>东升北区23幢1单元</td></tr>
+<tr><td>✅A-</td><td>豪丹宾馆(大洋路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>丽东一村77号</td></tr>
+<tr><td>✅A-</td><td>侨乡国际大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.7</td><td>—</td><td>江南大道108号(近青田公路客运中心)</td></tr>
+<tr><td>✅A-</td><td>缙云近云丽舍轻奢美宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>仙都街道下洋村303号</td></tr>
+<tr><td>✅A-</td><td>遂昌炭缘客栈</td><td>住宿服务;宾馆酒店;三星级宾馆｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>上江飞龙路58号中国竹炭博物馆内(近遂昌东高速出口)</td></tr>
+<tr><td>✅A-</td><td>江东宾馆(丽水高铁站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>东升北区14幢17号</td></tr>
+<tr><td>✅A-</td><td>景宁红太阳宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>鹤溪镇童弄街3弄2号</td></tr>
+<tr><td>✅A-</td><td>金桥宾馆(丽水学院中山街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>中山街131号(金桥街和交叉口近万地广场)</td></tr>
+<tr><td>✅B</td><td>绿谷明珠精品酒店</td><td>住宿服务;宾馆酒店;五星级宾馆</td><td>4.5</td><td>—</td><td>大洋路199号</td></tr>
+<tr><td>✅B</td><td>新汇丰商旅酒店(丽水高铁站万地广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>丽青路157号-1(离宇雷路美食街450米)</td></tr>
+<tr><td>✅B</td><td>松阳现代宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>长虹中路153号</td></tr>
+<tr><td>✅B</td><td>群仙居</td><td>住宿服务;住宿服务相关;住宿服务相关｜体育休闲服务;休闲场所;休闲场所</td><td>4.4</td><td>—</td><td>五云镇笋川村26号(近鼎湖峰公园、仙都景点出入口对面)</td></tr>
+<tr><td>✅B</td><td>丽水格林罗曼风情酒店(高铁站店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.4</td><td>—</td><td>宇雷路598-600号</td></tr>
+<tr><td>✅B</td><td>旭日摄影主题酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>长虹中路2号</td></tr>
+<tr><td>✅B</td><td>云和云泰商务大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>中山街44号</td></tr>
+<tr><td>✅B</td><td>雅苑精品大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>绿谷大道208号</td></tr>
+<tr><td>✅B</td><td>新金鹤大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>鹤溪镇团结西路2号</td></tr>
+<tr><td>✅B</td><td>缙云小白鹅宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>五云街道电力路69号</td></tr>
+<tr><td>✅B</td><td>新时代酒店(丽水高铁站银泰城店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>宇雷路618号</td></tr>
+<tr><td>⚠️</td><td>云和云都宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>云和镇吉祥路65号</td></tr>
+<tr><td>⚠️</td><td>遂昌魅溪民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>石练镇换乘中心斜对面</td></tr>
+<tr><td>⚠️</td><td>君豪商务酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>五云镇船埠头村综合大楼</td></tr>
+<tr><td>⚠️</td><td>欧凯纳斯酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.1</td><td>—</td><td>中山街433号(中山街与灯塔街交叉路口)</td></tr>
+<tr><td>⚠️</td><td>景宁长城宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>鹤溪镇金仙二弄19号</td></tr>
+<tr><td>⚠️</td><td>丽水鑫辰商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>丽青路202号</td></tr>
+<tr><td>⚠️</td><td>阳光商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>温溪镇安定东路320号</td></tr>
+<tr><td>⚠️</td><td>缙云品鑫宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>新区仙都路24号</td></tr>
+<tr><td>⚠️</td><td>丽水金芒果电竞酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>中山路195号</td></tr>
+<tr><td>⚠️</td><td>青田丽江宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>江南大道139号(青田火车站进站口旁)</td></tr>
+<tr><td>❌</td><td>缙云升升宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.3</td><td>—</td><td>电力路59号</td></tr>
+<tr><td>❌</td><td>丽水美君宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>莲都区火车站A5地块北侧1-2号</td></tr>
+<tr><td>❌</td><td>学院新鑫宾馆(西城广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>2.9</td><td>—</td><td>丽阳街173号(三岩寺路口西城广场,距离丽水学)</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>8</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>6</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>2</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>13</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>2</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/丽水市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>2 个 POI 无评分</strong>，暂标 ⚠️：嘉慧园、丽水山海猩球体感动物园-游客中心</li><li><input type="checkbox" disabled> 儿童游乐 13 家，其中场内 0 家、独立 13 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 8 个区县：云和县、景宁畲族自治县、松阳县、缙云县、莲都区、遂昌县、青田县、龙泉市——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

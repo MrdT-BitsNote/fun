@@ -1,0 +1,38 @@
+{
+ "city": "西藏自治区",
+ "province": "西藏自治区",
+ "poi_total": null,
+ "waves": [],
+ "updated": null,
+ "credibility": {},
+ "overview": {},
+ "districts": [],
+ "district_count": 0,
+ "leisure": {
+  "subcats": [],
+  "list": []
+ },
+ "kids": {
+  "subcats": [],
+  "list": []
+ },
+ "malls": [],
+ "food": [],
+ "xiaocan": [],
+ "specialties": [],
+ "hotels": [],
+ "assoc": [],
+ "queries": [],
+ "external": {
+  "meituan_search": "https://www.meituan.com/s/%E8%A5%BF%E8%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA%E7%BE%8E%E9%A3%9F",
+  "meituan_home": "https://www.meituan.com/",
+  "dianping_food": "https://www.dianping.com/xizangzizhiqu/ch10",
+  "dianping_search": "https://www.dianping.com/search/keyword/2/0_%E8%A5%BF%E8%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA"
+ },
+ "adcode": "",
+ "urls": {
+  "page": "cities/%E8%A5%BF%E8%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA.html",
+  "json": "api/cities/西藏自治区.json",
+  "md": "md/%E8%A5%BF%E8%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA/%E8%A5%BF%E8%97%8F%E8%87%AA%E6%B2%BB%E5%8C%BA.md"
+ }
+}

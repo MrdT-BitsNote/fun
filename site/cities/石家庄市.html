@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>石家庄市 · 河北省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/河北省.html">← 返回河北省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>石家庄市 · 河北省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:17:15  ·  POI 总量：212（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>212</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 1 · 商圈 135 · 成人娱乐 155 · 儿童娱乐 39 · 酒店 28 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>河北省 · 省会市</td></tr>
+<tr><td>下级区县</td><td>22 个</td></tr>
+<tr><td>街道/镇/乡</td><td>278 个</td></tr>
+<tr><td>区县构成</td><td>县×11、市辖区×8、县级市×3</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>桥西区</td><td>57</td><td>27%</td></tr>
+<tr><td>长安区</td><td>47</td><td>22%</td></tr>
+<tr><td>鹿泉区</td><td>26</td><td>12%</td></tr>
+<tr><td>新华区</td><td>25</td><td>12%</td></tr>
+<tr><td>裕华区</td><td>24</td><td>11%</td></tr>
+<tr><td>赵县</td><td>5</td><td>2%</td></tr>
+<tr><td>晋州市</td><td>5</td><td>2%</td></tr>
+<tr><td>正定县</td><td>5</td><td>2%</td></tr>
+<tr><td>辛集市</td><td>4</td><td>2%</td></tr>
+<tr><td>新乐市</td><td>3</td><td>1%</td></tr>
+<tr><td>灵寿县</td><td>2</td><td>1%</td></tr>
+<tr><td>高邑县</td><td>2</td><td>1%</td></tr>
+<tr><td>深泽县</td><td>1</td><td>0%</td></tr>
+<tr><td>行唐县</td><td>1</td><td>0%</td></tr>
+<tr><td>井陉矿区</td><td>1</td><td>0%</td></tr>
+</tbody></table></div>
+<p>（另 4 个区县见原始数据）</p>
+<p><strong>商圈载体类型构成</strong>（135 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>61</td></tr>
+<tr><td>购物中心/综合体</td><td>30</td></tr>
+<tr><td>百货/商场</td><td>22</td></tr>
+<tr><td>批发城</td><td>17</td></tr>
+<tr><td>奥特莱斯</td><td>3</td></tr>
+<tr><td>商业街</td><td>2</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（135 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>勒泰中心</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>14</td><td>2</td><td>0</td></tr>
+<tr><td>B</td><td>北国商城</td><td>百货/商场</td><td>4.8</td><td>0</td><td>33</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>石家庄市动物园</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>17</td><td>0</td></tr>
+<tr><td>B</td><td>红馆长棋牌(旗舰店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>33</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>盒马鲜生(勒泰中心店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>14</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>石家庄万象城</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(石家庄裕华店)</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新百广场</td><td>百货/商场</td><td>4.8</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>北国奥特莱斯</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>砂之船(石家庄)奥莱</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(石家庄长安店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>欢乐汇100FUN CITY</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>1</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>西美·花街生活工场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>勒泰广场</td><td>百货/商场</td><td>4.8</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>北国先天下</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>威尼斯水世界</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>73唇K(怀特商业广场)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>莱茵河公馆</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>好先生KTV聚会馆(湾里庙店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>6</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万达影城</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>奥美国际影城(鑫佑瑞商业广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>信誉楼百货(晋州店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>信誉楼百货(高柱店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>信誉楼百货(赵县店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>信誉楼百货(新乐店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>信誉楼百货(元氏店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>信誉楼百货(平山店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>信和商厦(晋州店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(小马店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>北国超市(简良店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(民心广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>北国超市(中环店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>北国未来城</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>塔坛国际商城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>海悦天地</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>信誉楼</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>怀特商业广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>藁城信誉楼商厦</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>石家庄高新万象汇</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>东源宾馆</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+</tbody></table></div>
+<h3>勒泰中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：中山东路39号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 2 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>勒泰中心</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>UME影城(勒泰中心店)、星聚会KTV(石家庄勒泰广场店)、哆唻咪量贩式KTV(中山店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>汪庄园猫咖·狗咖·羊驼、喜宝宠物乐园(勒泰中心店)</td></tr>
+</tbody></table></div>
+<h3>北国商城 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 34 / 酒店 0</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：中山东路188号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 33 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>北国商城</td></tr>
+<tr><td>成人娱乐</td><td>33</td><td>红馆长棋牌(旗舰店)、耀莱成龙国际影城(北国商城店)、长藤鬼校(勒泰店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>鲸与山川</td></tr>
+</tbody></table></div>
+<h3>石家庄市动物园 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 17 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（风景名胜;公园广场;动物园）</li><li><strong>地址</strong>：观景大街99号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 17 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>石家庄市动物园</td></tr>
+<tr><td>儿童娱乐</td><td>17</td><td>石家庄市动物园、大熊猫馆、石家庄动物园狮虎谷</td></tr>
+</tbody></table></div>
+<h3>红馆长棋牌(旗舰店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 34 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：凯嘉大厦南门二楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 33 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>红馆长棋牌(旗舰店)</td></tr>
+<tr><td>成人娱乐</td><td>33</td><td>红馆长棋牌(旗舰店)、长藤鬼校(勒泰店)、观澜茶社·陈源泰白茶(平安店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>鲸与山川</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(勒泰中心店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：中山东路39号地下一层1008室</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 2 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盒马鲜生(勒泰中心店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>UME影城(勒泰中心店)、星聚会KTV(石家庄勒泰广场店)、哆唻咪量贩式KTV(中山店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>汪庄园猫咖·狗咖·羊驼、喜宝宠物乐园(勒泰中心店)</td></tr>
+</tbody></table></div>
+<h3>石家庄万象城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：中山西路108号(新百广场地铁站出入口步行70米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>石家庄万象城</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>万象影城IMAX(万象城激光店)、谜古屋剧情密室(万象城店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(石家庄裕华店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：槐安东路123号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(石家庄裕华店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>万达影城、神秘星球沉浸式体验密室(裕华万达店)</td></tr>
+</tbody></table></div>
+<h3>新百广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;商场）</li><li><strong>地址</strong>：中山西路139号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>新百广场</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>万象影城IMAX(万象城激光店)、谜古屋剧情密室(万象城店)</td></tr>
+</tbody></table></div>
+<h3>北国奥特莱斯 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：铜冶镇青龙山大道88号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>北国奥特莱斯</td></tr>
+</tbody></table></div>
+<h3>砂之船(石家庄)奥莱 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：正定新区河北大道397号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>砂之船(石家庄)奥莱</td></tr>
+</tbody></table></div>
+<h3>万达广场(石家庄长安店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：中山东路583号(谈固地铁站A口直达)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(石家庄长安店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>万达影城、神秘星球沉浸式体验密室(裕华万达店)</td></tr>
+</tbody></table></div>
+<h3>欢乐汇100FUN CITY —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：裕泰路77号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 3 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>欢乐汇100FUN CITY</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>菇菇星球儿童密室(欢乐汇店)</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>喜宝宠物乐园(欢乐汇店)、卡皮巴拉萌宠乐园(欢乐汇店)、百猴国萌宠乐园(欢乐汇100FUN CITY店)</td></tr>
+</tbody></table></div>
+<h3>西美·花街生活工场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：汇丰路与红旗大街交口西南角西美花街3层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>西美·花街生活工场</td></tr>
+</tbody></table></div>
+<h3>勒泰广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：城角街672号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>勒泰广场</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>星聚会KTV(石家庄勒泰广场店)</td></tr>
+</tbody></table></div>
+<h3>北国先天下 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：中山东路326号(博物院地铁站B东南口步行300米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>北国先天下</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>金棕榈先天下影城(北国先天下店)、宣和棋牌(西大街店)、MINI影院(北国先天下店)</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（155 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>棋牌室</td><td>19</td></tr>
+<tr><td>电影院</td><td>17</td></tr>
+<tr><td>其他娱乐场所</td><td>16</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>16</td></tr>
+<tr><td>KTV</td><td>13</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>73唇K(怀特商业广场)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.7</td><td>49.00</td><td>槐安东路105号怀特商业广场L4层</td></tr>
+<tr><td>✅A-</td><td>莱茵河公馆</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅小区｜体育休闲服务;娱乐场所;酒吧｜生活服务;生活服务场所;生活服务场所</td><td>4.7</td><td>315.00</td><td>富强大街101号</td></tr>
+<tr><td>✅A-</td><td>好先生KTV聚会馆(湾里庙店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.7</td><td>59.00</td><td>中山西路与站前街交叉口东北100米恒大城市广场1F层</td></tr>
+<tr><td>✅A-</td><td>万达影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>54.00</td><td>槐安东路123号万达广场(石家庄裕华店)3F层(3号门进入直行20m,扶梯上到3F可见)</td></tr>
+<tr><td>✅A-</td><td>奥美国际影城(鑫佑瑞商业广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>47.00</td><td>民族路77号鑫佑瑞商业广场77精品童装城5楼</td></tr>
+<tr><td>✅A-</td><td>红馆长棋牌(旗舰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.7</td><td>16.00</td><td>凯嘉大厦南门二楼</td></tr>
+<tr><td>✅A-</td><td>长藤鬼校(勒泰店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>92.00</td><td>中山路172号5层</td></tr>
+<tr><td>✅A-</td><td>哆唻咪量贩式KTV(中山店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>40.00</td><td>中山东路181号国大时代广场F3层</td></tr>
+<tr><td>✅A-</td><td>星聚会KTV(石家庄勒泰广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>72.00</td><td>中山东路39号勒泰中心F5-10A</td></tr>
+<tr><td>✅A-</td><td>唱吧麦颂KTV(石家庄湾里庙店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>155.00</td><td>中山西路83号东方城市广场七层</td></tr>
+<tr><td>✅A-</td><td>五月天量贩式KTV(怀特国际商城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>29.00</td><td>育才街265号怀特国际商城育才街店4F层</td></tr>
+<tr><td>✅A-</td><td>金棕榈国际影城(东尚年轻力中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>25.00</td><td>中山东路265号东尚年轻力中心5层</td></tr>
+<tr><td>✅A-</td><td>耀莱成龙国际影城(北国商城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>26.00</td><td>中山东路188号北国商城9层</td></tr>
+<tr><td>✅A-</td><td>UME影城(勒泰中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>33.00</td><td>中山东路39号勒泰中心L5层F5-06</td></tr>
+<tr><td>✅A-</td><td>金棕榈先天下影城(北国先天下店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>33.00</td><td>中山东路326号先天下广场6层</td></tr>
+<tr><td>✅A-</td><td>奥斯卡国际影城(乐汇城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>32.00</td><td>中山东路11号乐汇城5层</td></tr>
+<tr><td>✅A-</td><td>完美世界影城石家庄织音1953店</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>48.00</td><td>MAEALNMD5A和平东路161号织音1953西北门进入顺行</td></tr>
+<tr><td>✅A-</td><td>迈凯陇影城(GIMO店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>40.00</td><td>中山西路77号恒大城市广场701</td></tr>
+<tr><td>✅A-</td><td>万象影城IMAX(万象城激光店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>50.00</td><td>中山西路108号华润万象城7楼L722</td></tr>
+<tr><td>✅A-</td><td>博纳国际影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>31.00</td><td>裕华西路15号万象天成B2层</td></tr>
+<tr><td>✅A-</td><td>三元茶社·棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>46.00</td><td>中天世都(裕华路地铁站D1西北口步行130米)</td></tr>
+<tr><td>✅A-</td><td>观澜茶社·陈源泰白茶(平安店)</td><td>其他娱乐场所</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.6</td><td>84.00</td><td>平安大街19号</td></tr>
+<tr><td>✅B</td><td>问号先生沉浸密室(勒泰店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>76.00</td><td>中山东路168号河北贸易大厦负一层北侧</td></tr>
+<tr><td>✅B</td><td>弥钛沉浸式剧情密室(鼎泰中心商务店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>77.00</td><td>中山东路166号鼎泰中心商务F8层</td></tr>
+<tr><td>✅B</td><td>幽都实景密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>70.00</td><td>鼎泰中心商务5楼</td></tr>
+<tr><td>✅B</td><td>SGP梦岛超级实景密室(滨江优谷店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>178.00</td><td>休门街道休门街3号滨江优谷大厦负一层</td></tr>
+<tr><td>✅B</td><td>长藤密室(勒泰旗舰店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>130.00</td><td>中山东路172号(河北贸易大厦北门东50米)</td></tr>
+<tr><td>✅B</td><td>红墙·沉浸式推理剧场</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>149.00</td><td>休门街6号滨江古街B1-03</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(石家庄博物馆店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>156.00</td><td>中山东路265号东尚年轻力中心Z503-1</td></tr>
+<tr><td>✅B</td><td>来来PARTY广场</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>177.00</td><td>青园街道府阳公寓长安大厦</td></tr>
+<tr><td>✅B</td><td>盛装 PARTY</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>70.00</td><td>建设南大街6号西美大厦南门F1层</td></tr>
+<tr><td>✅B</td><td>娱乐猩KTV(勒泰店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>54.00</td><td>中山东路170号</td></tr>
+<tr><td>✅B</td><td>微微秀量贩式KTV(勒泰店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>45.00</td><td>中山东路158号滨江商务大厦B1层</td></tr>
+<tr><td>✅B</td><td>音浪熊KTV(勒泰店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>121.00</td><td>中山东路39号勒泰中心F6层</td></tr>
+<tr><td>✅B</td><td>音浪熊Ai智慧KTV(休门街店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>101.00</td><td>休门街1号滨江商务大厦B座</td></tr>
+<tr><td>✅B</td><td>皇都国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>234.00</td><td>东马路9-1新东安大厦</td></tr>
+<tr><td>✅B</td><td>千子星影城舒适观影区(怀特商业广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>44.00</td><td>槐安东路105号怀特商业广场4层</td></tr>
+<tr><td>✅B</td><td>宣和棋牌(西大街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>26.00</td><td>西大街与中山东路交叉口西南60米</td></tr>
+<tr><td>✅B</td><td>雀掌柜24H自助棋牌(四中路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>86.00</td><td>中央银座66号1-105二楼</td></tr>
+<tr><td>✅B</td><td>胖麻棋牌(勒泰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>21.00</td><td>中山东路街道长征街8号勒泰A座对面底商</td></tr>
+<tr><td>✅B</td><td>雀小仙自助棋牌(滨江商务A座店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>17.00</td><td>中山东路88号(平安大街地铁站B东南口步行410米)滨江商务大厦A座18楼1804</td></tr>
+<tr><td>✅B</td><td>喜麻棋牌(勒泰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>32.00</td><td>休门街道休门街1号滨江商务大厦B座616室</td></tr>
+<tr><td>✅B</td><td>盘古密室体验馆(滨江优谷店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>103.00</td><td>休门街道休门街3号滨江优谷大厦4层</td></tr>
+<tr><td>✅B</td><td>怪奇物语沉浸式超级密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>92.00</td><td>河北贸易大厦2号楼5楼</td></tr>
+<tr><td>✅B</td><td>异次元密室(勒泰店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>94.00</td><td>中山路172号5层</td></tr>
+<tr><td>✅B</td><td>谜古屋剧情密室(万象城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>67.00</td><td>中山西路127号国贸中心西侧老凤祥珠宝三层</td></tr>
+<tr><td>✅B</td><td>三五惊奇剧场</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;剧场</td><td>4.4</td><td>—</td><td>京东mall7楼(解放广场地铁站D西北口步行80米)</td></tr>
+<tr><td>✅B</td><td>帆麦自助KTV(蜂巢购物中心店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>30.00</td><td>建设北大街20号新源蜂巢购物中心B1层</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(石家庄乐汇城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>50.00</td><td>中山东路11号乐汇城5F</td></tr>
+<tr><td>✅B</td><td>盛世罗兰商务俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜商务住宅;住宅区;住宅小区｜购物服务;家居建材市场;布艺市场｜体育休闲服务;娱乐场所;夜总会</td><td>4.4</td><td>41.00</td><td>建设北大街75号(建和桥地铁站D西北口步行260米)</td></tr>
+<tr><td>✅B</td><td>寰星影城(勒泰中心山也店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>38.00</td><td>中山东路39号勒泰中心山也商业3楼</td></tr>
+<tr><td>✅B</td><td>金熊国际影城(银座东购店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>47.00</td><td>中山西路83号银座商城(东购店)F5层</td></tr>
+<tr><td>✅B</td><td>庄里聚点·胖麻棋牌(勒泰二店)</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>20.00</td><td>休门街道中山东路168号河北贸易大厦1号楼601室</td></tr>
+<tr><td>✅B</td><td>红雀·棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>26.00</td><td>范光胡同与范民街交叉口北120米</td></tr>
+<tr><td>✅B</td><td>枫禾棋牌·台球(勒泰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室｜体育休闲服务;运动场馆;台球厅</td><td>4.4</td><td>18.00</td><td>休门街道中山东路168号河北贸易大厦1号楼703室</td></tr>
+<tr><td>✅B</td><td>雀小仙自助棋牌室(银泰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>15.00</td><td>广安街道广安大街36号银泰国际大厦36号楼</td></tr>
+<tr><td>✅B</td><td>百慕大冒险(河北首店)</td><td>其他娱乐场所</td><td>体育休闲服务;休闲场所;休闲场所</td><td>4.3</td><td>—</td><td>中山东路街道中山东路39号勒泰中心4号门负一层第B1-A18</td></tr>
+<tr><td>✅B</td><td>大三元棋牌茶社(勒泰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>37.00</td><td>如意大厦27楼</td></tr>
+<tr><td>✅B</td><td>麻多多·自助棋牌室(勒泰店)</td><td>棋牌室</td><td>体育休闲服务;休闲场所;休闲场所</td><td>4.3</td><td>24.00</td><td>中山东路与栗康街交叉口西南80米</td></tr>
+<tr><td>⚠️</td><td>铜雀台(城角商业街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜公司企业;公司;公司｜住宿服务;住宿服务相关;住宿服务相关｜风景名胜;风景名胜相关;旅游景点</td><td>4.2</td><td>340.00</td><td>中山西路422东南方向100米城角商业街</td></tr>
+</tbody></table></div>
+<p>（另 21 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（39 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>31</td></tr>
+<tr><td>其他儿童场所</td><td>8</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>石家庄市动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.7</td><td>观景大街99号</td></tr>
+<tr><td>✅A-</td><td>萌宠奇缘(荣鼎店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>中华北大街226号荣鼎天下2层</td></tr>
+<tr><td>✅A-</td><td>喜宝宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>外贸街6号文创园第4-5号</td></tr>
+<tr><td>✅A-</td><td>鲸与山川</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>北国商城9楼鲸与山川</td></tr>
+<tr><td>✅B</td><td>法米未来动物城</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>北国未来城5层A区</td></tr>
+<tr><td>✅B</td><td>尾巴乐园宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>工农路67号</td></tr>
+<tr><td>✅B</td><td>宝来乐园宠物寄养度假中心</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>永寺大街8号东行100米</td></tr>
+<tr><td>✅B</td><td>喜宝宠物乐园(勒泰中心店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>中山东路39号勒泰中心负一层B1-C19</td></tr>
+<tr><td>✅B</td><td>汪庄园猫咖·狗咖·羊驼</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>勒泰中心负一楼</td></tr>
+<tr><td>✅B</td><td>喜宝宠物乐园(翟营店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>翟营南大街50号005栋商用楼1栋西南角101室</td></tr>
+<tr><td>✅B</td><td>狗当家宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>南村镇大丰屯内部路</td></tr>
+<tr><td>✅B</td><td>大熊猫馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>向阳南大街石家庄市动物园管理处</td></tr>
+<tr><td>✅B</td><td>侏罗纪恐龙主题乐园(怀特商业广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.4</td><td>槐安东路105号怀特商业广场L5层</td></tr>
+<tr><td>✅B</td><td>福旺旺宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>正定镇河北明美系统门窗基地</td></tr>
+<tr><td>✅B</td><td>兔喵喵宠乐园(兔咖猫咖狗咖)</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>中山东路11号乐汇城A座2单元13楼电梯左侧1316室</td></tr>
+<tr><td>✅B</td><td>宠物寄养乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>正定镇新村新源街与向阳路交叉口东北角院落一处</td></tr>
+<tr><td>✅B</td><td>石家庄动物园狮虎谷</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>向阳南大街石家庄市动物园(西南角)</td></tr>
+<tr><td>✅B</td><td>福宝乐园</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>科技路与定慧路交叉口东南200米</td></tr>
+<tr><td>✅B</td><td>莫妮卡宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>善众寺街福美B区东门南行100米</td></tr>
+<tr><td>✅B</td><td>喜宝宠物乐园(欢乐汇店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>裕泰路77号欢乐汇100FUN CITY F2层</td></tr>
+<tr><td>⚠️</td><td>儿童动物园-兔子</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>观景大街与山前大道交叉口西南处石家庄市动物园儿童动物园</td></tr>
+<tr><td>⚠️</td><td>卡皮巴拉萌宠乐园(欢乐汇店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>裕泰路77号欢乐汇100FUN CITY F3层</td></tr>
+<tr><td>⚠️</td><td>长颈鹿馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>大象馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>石家庄市动物园-两栖爬行动物馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>石家庄动物园-猴山</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>场馆路石家庄市动物园(东侧)</td></tr>
+<tr><td>⚠️</td><td>石家庄市动物园-熊谷</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内</td></tr>
+<tr><td>⚠️</td><td>辛玛萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>观景大街99号石家庄市动物园内(北侧)</td></tr>
+<tr><td>⚠️</td><td>石家庄市动物园-河马馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>北美浣熊</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>近郊向阳南大街动物园北门辛玛王国主题乐园内</td></tr>
+<tr><td>⚠️</td><td>石家庄动物园-辛玛办公区</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>石家庄动物园辛玛王国</td></tr>
+<tr><td>⚠️</td><td>两栖爬行动物馆-扬子鳄</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>非洲狮</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>石家庄动物园狮虎谷内</td></tr>
+<tr><td>⚠️</td><td>黑猩猩</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>石家庄市动物园湾鳄</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>中型猛兽区</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(南侧)</td></tr>
+<tr><td>⚠️</td><td>珍猴馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>百猴国萌宠乐园(欢乐汇100FUN CITY店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>裕泰路77号欢乐汇100FUN CITY</td></tr>
+<tr><td>❌</td><td>迷你马</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>观景大街与山前大道交叉口西南处石家庄市动物园内(西南角)</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（72 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>石家庄万象城</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>中山西路108号(新百广场地铁站出入口步行70米)</td></tr>
+<tr><td>✅A-</td><td>勒泰中心</td><td>购物中心/综合体</td><td>4.9</td><td>2</td><td>0</td><td>中山东路39号</td></tr>
+<tr><td>✅A-</td><td>万达广场(石家庄裕华店)</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>槐安东路123号</td></tr>
+<tr><td>✅A-</td><td>新百广场</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>中山西路139号</td></tr>
+<tr><td>✅A-</td><td>北国奥特莱斯</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>铜冶镇青龙山大道88号</td></tr>
+<tr><td>✅A-</td><td>砂之船(石家庄)奥莱</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>正定新区河北大道397号</td></tr>
+<tr><td>✅A-</td><td>万达广场(石家庄长安店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>中山东路583号(谈固地铁站A口直达)</td></tr>
+<tr><td>✅A-</td><td>北国商城</td><td>百货/商场</td><td>4.8</td><td>1</td><td>0</td><td>中山东路188号</td></tr>
+<tr><td>✅A-</td><td>欢乐汇100FUN CITY</td><td>购物中心/综合体</td><td>4.8</td><td>3</td><td>0</td><td>裕泰路77号</td></tr>
+<tr><td>✅A-</td><td>西美·花街生活工场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>汇丰路与红旗大街交口西南角西美花街3层</td></tr>
+<tr><td>✅A-</td><td>勒泰广场</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>城角街672号</td></tr>
+<tr><td>✅A-</td><td>北国先天下</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>中山东路326号(博物院地铁站B东南口步行300米)</td></tr>
+<tr><td>✅A-</td><td>73唇K(怀特商业广场)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>槐安东路105号怀特商业广场L4层</td></tr>
+<tr><td>✅A-</td><td>奥美国际影城(鑫佑瑞商业广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>民族路77号鑫佑瑞商业广场77精品童装城5楼</td></tr>
+<tr><td>✅A-</td><td>信誉楼百货(晋州店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>世纪街75号</td></tr>
+<tr><td>✅A-</td><td>信誉楼百货(高柱店)</td><td>百货/商场</td><td>4.7</td><td>1</td><td>0</td><td>中华北大街210号</td></tr>
+<tr><td>✅A-</td><td>信誉楼百货(赵县店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>自强路</td></tr>
+<tr><td>✅A-</td><td>信誉楼百货(新乐店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>新华路69号</td></tr>
+<tr><td>❌</td><td>信誉楼百货(元氏店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>信誉楼百货(平山店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>冶河东路147号</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(勒泰中心店)</td><td>购物中心/综合体</td><td>4.7</td><td>2</td><td>0</td><td>中山东路39号地下一层1008室</td></tr>
+<tr><td>✅A-</td><td>信和商厦(晋州店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>晋州市人民医院对面</td></tr>
+<tr><td>✅A-</td><td>永辉超市(小马店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>槐安路153号</td></tr>
+<tr><td>✅A-</td><td>北国超市(简良店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>南简良东街简良小学北侧</td></tr>
+<tr><td>✅A-</td><td>永辉超市(民心广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>维明南大街甲96号民心广场B1层</td></tr>
+<tr><td>✅A-</td><td>北国超市(中环店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>中华北大街238号</td></tr>
+<tr><td>✅A-</td><td>北国未来城</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>南二环西路辅路与广平街交叉口西南300米</td></tr>
+<tr><td>✅A-</td><td>塔坛国际商城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>平安南大街416号(塔坛地铁站C口)</td></tr>
+<tr><td>✅A-</td><td>海悦天地</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>裕华西路66号</td></tr>
+<tr><td>✅A-</td><td>信誉楼</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>翟营南大街389号</td></tr>
+<tr><td>✅A-</td><td>怀特商业广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>槐安东路105号</td></tr>
+<tr><td>✅A-</td><td>藁城信誉楼商厦</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>工业东路48号</td></tr>
+<tr><td>✅A-</td><td>石家庄高新万象汇</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>裕华东路311号</td></tr>
+<tr><td>✅A-</td><td>北国超市(新百店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>中山西路139号(新百广场地铁站A东北口步行60米)</td></tr>
+<tr><td>✅A-</td><td>益元百货</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>联盟路368号(高柱地铁站C西南口步行190米)</td></tr>
+<tr><td>✅A-</td><td>乐城·百货食品城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>天山大街36号</td></tr>
+<tr><td>✅A-</td><td>新万宝商城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>中山东路76号</td></tr>
+<tr><td>✅A-</td><td>祥隆泰超市(红旗店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>红旗大街268号(新石中路口)</td></tr>
+<tr><td>✅A-</td><td>石家庄砂之船奥特莱斯二期</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>河北奥体中心东侧,河北大道与天泽大街西北侧</td></tr>
+<tr><td>✅A-</td><td>南三条超级批发市场</td><td>批发城</td><td>4.6</td><td>1</td><td>0</td><td>乐汇城西南4门西50米</td></tr>
+<tr><td>✅A-</td><td>千嘉惠服饰批发城(怀特商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>槐安东路105号怀特商业广场B1层(北3门进入直行20m,扶梯下到B1可见)</td></tr>
+<tr><td>✅A-</td><td>品汇广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>中山西路81号(解放广场地铁站D西北口旁)</td></tr>
+<tr><td>✅B</td><td>千子星影城舒适观影区(怀特商业广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>槐安东路105号怀特商业广场4层</td></tr>
+<tr><td>✅B</td><td>益中百货</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>中山东路与东二环北路辅路交叉口西北100米</td></tr>
+<tr><td>✅B</td><td>信誉楼百货(顺城街店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>顺城街1号信誉楼商厦辛集店B1层</td></tr>
+<tr><td>✅B</td><td>千嘉惠服饰批发城(蓝天商厦店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>中山东路458号蓝天商厦F1层</td></tr>
+<tr><td>✅B</td><td>中储副食品批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>中华北大街(市庄地铁站A东北口步行300米)</td></tr>
+<tr><td>✅B</td><td>千嘉惠服饰批发城(塔坛店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>阜安路43号塔坛国际商贸城-东区</td></tr>
+<tr><td>✅B</td><td>千嘉惠服饰批发城(高柱店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>联盟街道联盟西路366号宏基商城1楼</td></tr>
+<tr><td>✅B</td><td>西仰陵农贸批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>厚德路与求新路交叉口西240米</td></tr>
+</tbody></table></div>
+<p>（另 22 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（1 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>石家庄江南大酒店</td><td>餐饮服务;中餐厅;浙江菜｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>78.00</td><td>九中街与市庄路交叉口西行60米路西东数第1间门脸</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1941767_ss_2_1689300848584_ffe70278.jpg"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>石家庄万象城（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万象影城IMAX(万象城激光店)</td><td>距离就近</td><td>88m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>谜古屋剧情密室(万象城店)</td><td>距离就近</td><td>244m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>勒泰中心（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>音浪熊KTV(勒泰店)</td><td>名称互证</td><td>16m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>UME影城(勒泰中心店)</td><td>名称互证</td><td>53m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>寰星影城(勒泰中心山也店)</td><td>名称互证</td><td>56m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>迷石云顶沉浸式剧场密室(勒泰中心店)</td><td>名称互证</td><td>63m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>金棕榈国际影城(勒泰中心商场店)</td><td>名称互证</td><td>66m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>异次元密室</td><td>名称互证</td><td>67m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星聚会KTV(石家庄勒泰广场店)</td><td>名称互证</td><td>77m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>迷石公社超级密室(勒泰店)</td><td>名称互证</td><td>89m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>汪庄园猫咖·狗咖·羊驼</td><td>名称互证</td><td>103m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>飞越天下9D球幕裸眼悬空球幕飞行影院(勒泰中心店)</td><td>名称互证</td><td>111m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>胖麻棋牌(勒泰店)</td><td>距离就近</td><td>124m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜宝宠物乐园(勒泰中心店)</td><td>名称互证</td><td>135m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>百慕大冒险(河北首店)</td><td>名称互证</td><td>152m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麻多多·乐麻24H自助棋牌室(勒泰商圈店)</td><td>距离就近</td><td>190m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>哆唻咪量贩式KTV(中山店)</td><td>距离就近</td><td>306m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>帆麦自助KTV(蜂巢购物中心店)</td><td>距离就近</td><td>498m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(石家庄裕华店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城</td><td>名称互证</td><td>119m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>神秘星球沉浸式体验密室(裕华万达店)</td><td>名称互证</td><td>228m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新百广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>谜古屋剧情密室(万象城店)</td><td>距离就近</td><td>139m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万象影城IMAX(万象城激光店)</td><td>距离就近</td><td>338m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(石家庄长安店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>神秘星球沉浸式体验密室(裕华万达店)</td><td>名称互证</td><td>2680m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>万达影城</td><td>名称互证</td><td>2960m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北国商城（34 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鲸与山川</td><td>名称互证</td><td>29m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>耀莱成龙国际影城(北国商城店)</td><td>名称互证</td><td>44m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>盛装 PARTY</td><td>距离就近</td><td>173m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蓝拓雀小仙自助棋牌店</td><td>距离就近</td><td>200m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>娱乐猩KTV(勒泰店)</td><td>距离就近</td><td>204m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长藤鬼校(勒泰店)</td><td>距离就近</td><td>209m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>异次元密室(勒泰店)</td><td>距离就近</td><td>212m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>103密室逃脱</td><td>距离就近</td><td>214m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>长藤密室(勒泰旗舰店)</td><td>距离就近</td><td>218m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麻多多·乐麻24H自助棋牌室(勒泰商圈店)</td><td>名称互证</td><td>223m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>怪奇物语沉浸式超级密室</td><td>距离就近</td><td>243m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>枫禾棋牌·台球(勒泰店)</td><td>距离就近</td><td>247m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麻多多·自助棋牌室(勒泰店)</td><td>距离就近</td><td>250m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>庄里聚点·胖麻棋牌(勒泰二店)</td><td>距离就近</td><td>260m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>问号先生沉浸密室(勒泰店)</td><td>距离就近</td><td>262m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>庄里据点棋牌·茶社(勒泰三店)</td><td>距离就近</td><td>265m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>大三元棋牌茶社(勒泰店)</td><td>距离就近</td><td>274m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>喵爪爪AI智慧KTV(勒泰店)</td><td>距离就近</td><td>303m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>弥钛沉浸式剧情密室(鼎泰中心商务店)</td><td>距离就近</td><td>303m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麻界24小时自助棋牌</td><td>距离就近</td><td>304m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>胡了·24小时自助棋牌·茶室</td><td>距离就近</td><td>306m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>荟友棋牌(勒泰店)</td><td>距离就近</td><td>308m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>幽都实景密室</td><td>距离就近</td><td>311m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>OKBoom唱跳俱乐部</td><td>名称互证</td><td>332m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>微微秀量贩式KTV(勒泰店)</td><td>距离就近</td><td>374m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>欢乐汇100FUN CITY（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>百猴国萌宠乐园(欢乐汇100FUN CITY店)</td><td>名称互证</td><td>14m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>卡皮巴拉萌宠乐园(欢乐汇店)</td><td>名称互证</td><td>45m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>喜宝宠物乐园(欢乐汇店)</td><td>名称互证</td><td>115m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>菇菇星球儿童密室(欢乐汇店)</td><td>距离就近</td><td>280m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>勒泰广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星聚会KTV(石家庄勒泰广场店)</td><td>名称互证</td><td>5946m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北国先天下（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>MINI影院(北国先天下店)</td><td>名称互证</td><td>30m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>金棕榈先天下影城(北国先天下店)</td><td>名称互证</td><td>82m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>宣和棋牌(西大街店)</td><td>距离就近</td><td>524m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>威尼斯水世界（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>威尼斯水世界</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>石家庄市动物园（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>石家庄市动物园</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>石家庄动物园-猴山</td><td>名称互证</td><td>281m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>大熊猫馆</td><td>名称互证</td><td>340m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>儿童动物园-兔子</td><td>名称互证</td><td>349m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>石家庄市动物园-河马馆</td><td>名称互证</td><td>359m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>石家庄市动物园-熊谷</td><td>名称互证</td><td>401m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>大象馆</td><td>名称互证</td><td>426m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>长颈鹿馆</td><td>名称互证</td><td>509m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>中型猛兽区</td><td>名称互证</td><td>568m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>石家庄市动物园湾鳄</td><td>名称互证</td><td>596m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>珍猴馆</td><td>名称互证</td><td>597m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>迷你马</td><td>名称互证</td><td>610m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>两栖爬行动物馆-扬子鳄</td><td>名称互证</td><td>620m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>石家庄动物园狮虎谷</td><td>名称互证</td><td>636m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>石家庄市动物园-两栖爬行动物馆</td><td>名称互证</td><td>665m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>黑猩猩</td><td>名称互证</td><td>696m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>辛玛萌宠乐园</td><td>名称互证</td><td>822m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>73唇K(怀特商业广场)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>73唇K(怀特商业广场)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>五月天量贩式KTV(怀特国际商城店)</td><td>距离就近</td><td>160m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>侏罗纪恐龙主题乐园(怀特商业广场店)</td><td>距离就近</td><td>170m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>千子星影城舒适观影区(怀特商业广场店)</td><td>距离就近</td><td>272m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>千子星未来影城(怀特商业广场店)</td><td>距离就近</td><td>327m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>莱茵河公馆</td><td>距离就近</td><td>540m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>莱茵河公馆（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>莱茵河公馆</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>千子星未来影城(怀特商业广场店)</td><td>距离就近</td><td>214m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>千子星影城舒适观影区(怀特商业广场店)</td><td>距离就近</td><td>268m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>侏罗纪恐龙主题乐园(怀特商业广场店)</td><td>距离就近</td><td>370m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>73唇K(怀特商业广场)</td><td>距离就近</td><td>540m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>好先生KTV聚会馆(湾里庙店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>好先生KTV聚会馆(湾里庙店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>迈凯陇影城(GIMO店)</td><td>距离就近</td><td>18m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>横店电影城(恒大店)</td><td>距离就近</td><td>24m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>汇嘉快捷酒店(新百解放广场店)</td><td>距离就近</td><td>129m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>三五惊奇剧场</td><td>距离就近</td><td>174m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(石家庄湾里庙店)</td><td>距离就近</td><td>181m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金熊国际影城(银座东购店)</td><td>距离就近</td><td>275m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>神秘星球沉浸式体验密室(裕华万达店)</td><td>距离就近</td><td>336m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>奥美国际影城(鑫佑瑞商业广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>奥美国际影城(鑫佑瑞商业广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>金熊国际影城(银座东购店)</td><td>距离就近</td><td>343m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(石家庄湾里庙店)</td><td>距离就近</td><td>443m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>三五惊奇剧场</td><td>距离就近</td><td>444m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>汇嘉快捷酒店(新百解放广场店)</td><td>距离就近</td><td>491m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>红馆长棋牌(旗舰店)（34 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>红馆长棋牌(旗舰店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>深度玩家密室逃脱(勒泰店)</td><td>距离就近</td><td>22m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>喜麻棋牌(勒泰店)</td><td>距离就近</td><td>79m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>雀小仙自助棋牌(滨江商务A座店)</td><td>距离就近</td><td>101m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>音浪熊Ai智慧KTV(休门街店)</td><td>距离就近</td><td>104m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>微微秀量贩式KTV(勒泰店)</td><td>距离就近</td><td>105m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>OKBoom唱跳俱乐部</td><td>距离就近</td><td>168m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>荟友棋牌(勒泰店)</td><td>距离就近</td><td>175m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>胡了·24小时自助棋牌·茶室</td><td>距离就近</td><td>177m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>喵爪爪AI智慧KTV(勒泰店)</td><td>距离就近</td><td>178m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麻界24小时自助棋牌</td><td>距离就近</td><td>179m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>幽都实景密室</td><td>距离就近</td><td>196m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>弥钛沉浸式剧情密室(鼎泰中心商务店)</td><td>距离就近</td><td>198m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大三元棋牌茶社(勒泰店)</td><td>距离就近</td><td>209m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>庄里聚点·胖麻棋牌(勒泰二店)</td><td>距离就近</td><td>230m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>问号先生沉浸密室(勒泰店)</td><td>距离就近</td><td>236m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>庄里据点棋牌·茶社(勒泰三店)</td><td>距离就近</td><td>239m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>麻多多·自助棋牌室(勒泰店)</td><td>距离就近</td><td>245m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>枫禾棋牌·台球(勒泰店)</td><td>距离就近</td><td>253m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>怪奇物语沉浸式超级密室</td><td>距离就近</td><td>256m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>103密室逃脱</td><td>距离就近</td><td>276m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>蓝拓雀小仙自助棋牌店</td><td>距离就近</td><td>277m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>长藤密室(勒泰旗舰店)</td><td>距离就近</td><td>279m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长藤鬼校(勒泰店)</td><td>距离就近</td><td>282m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>异次元密室(勒泰店)</td><td>距离就近</td><td>283m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>信誉楼百货(晋州店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>晋州恒丰宾馆</td><td>距离就近</td><td>258m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>喜缤商务宾馆</td><td>距离就近</td><td>391m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>晋州金冠宾馆</td><td>距离就近</td><td>410m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>信誉楼百货(高柱店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>萌宠奇缘(荣鼎店)</td><td>距离就近</td><td>557m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(勒泰中心店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>音浪熊KTV(勒泰店)</td><td>距离就近</td><td>31m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>迷石云顶沉浸式剧场密室(勒泰中心店)</td><td>距离就近</td><td>48m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>UME影城(勒泰中心店)</td><td>距离就近</td><td>49m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>寰星影城(勒泰中心山也店)</td><td>距离就近</td><td>64m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>异次元密室</td><td>距离就近</td><td>70m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星聚会KTV(石家庄勒泰广场店)</td><td>距离就近</td><td>73m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金棕榈国际影城(勒泰中心商场店)</td><td>距离就近</td><td>78m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>汪庄园猫咖·狗咖·羊驼</td><td>距离就近</td><td>100m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>迷石公社超级密室(勒泰店)</td><td>距离就近</td><td>102m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>飞越天下9D球幕裸眼悬空球幕飞行影院(勒泰中心店)</td><td>距离就近</td><td>106m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>胖麻棋牌(勒泰店)</td><td>距离就近</td><td>109m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜宝宠物乐园(勒泰中心店)</td><td>距离就近</td><td>141m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>百慕大冒险(河北首店)</td><td>距离就近</td><td>144m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麻多多·乐麻24H自助棋牌室(勒泰商圈店)</td><td>距离就近</td><td>203m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>哆唻咪量贩式KTV(中山店)</td><td>距离就近</td><td>321m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>帆麦自助KTV(蜂巢购物中心店)</td><td>距离就近</td><td>512m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北国超市(中环店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>萌宠奇缘(荣鼎店)</td><td>距离就近</td><td>334m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北国未来城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>法米未来动物城</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>海悦天地（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>博纳国际影城</td><td>距离就近</td><td>489m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>怀特商业广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>侏罗纪恐龙主题乐园(怀特商业广场店)</td><td>名称互证</td><td>1m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>千子星影城舒适观影区(怀特商业广场店)</td><td>名称互证</td><td>103m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>千子星未来影城(怀特商业广场店)</td><td>名称互证</td><td>159m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>73唇K(怀特商业广场)</td><td>名称互证</td><td>169m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>五月天量贩式KTV(怀特国际商城店)</td><td>距离就近</td><td>327m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>莱茵河公馆</td><td>距离就近</td><td>371m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>东源宾馆（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>东源宾馆</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>速8酒店(高邑火车站凤中路店)</td><td>距离就近</td><td>274m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（28 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>赵州宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>安济大道111号</td></tr>
+<tr><td>✅A-</td><td>赵县富安旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>308国道与永通路交叉口西30米路南(汽车站北侧)</td></tr>
+<tr><td>✅A-</td><td>铁路招待所(清真寺街店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>宁安街道兴凯路151号铁路体育馆</td></tr>
+<tr><td>✅A-</td><td>瀛洲酒店(辛集兴华路电视塔店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>兴华北路230号</td></tr>
+<tr><td>✅A-</td><td>晋州恒丰宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>中兴路新世纪商城3幢21号</td></tr>
+<tr><td>✅A-</td><td>芒果酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>南环路美院城堡对面</td></tr>
+<tr><td>✅A-</td><td>优客家酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>工业路与十字街交叉口东100米</td></tr>
+<tr><td>✅A-</td><td>速8酒店(高邑火车站凤中路店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.8</td><td>—</td><td>凤中路34号(高邑火车站东100米)</td></tr>
+<tr><td>✅A-</td><td>威尼斯水世界</td><td>住宿服务;宾馆酒店;宾馆酒店｜生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.7</td><td>127.00</td><td>体育南大街19号</td></tr>
+<tr><td>✅A-</td><td>灵寿华夏宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>人民东路93-2号</td></tr>
+<tr><td>✅A-</td><td>荣华快捷酒店(柏林禅寺店)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>永通路25号</td></tr>
+<tr><td>✅A-</td><td>安驿旅馆(永通路店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>永通路与安济大道交叉口西80米</td></tr>
+<tr><td>✅A-</td><td>深泽希伯商务快捷宾馆(文庙店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>府前东路文庙东</td></tr>
+<tr><td>✅A-</td><td>东源宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>高邑大街</td></tr>
+<tr><td>✅A-</td><td>石家庄江南大酒店</td><td>餐饮服务;中餐厅;浙江菜｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>78.00</td><td>九中街与市庄路交叉口西行60米路西东数第1间门脸</td></tr>
+<tr><td>✅A-</td><td>石家庄温馨之家公寓</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>长江街道天山南大街与闽江道交汇处西南角周通家园5号楼1单元301室</td></tr>
+<tr><td>✅A-</td><td>天园酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>241省道南50米</td></tr>
+<tr><td>✅A-</td><td>喜缤商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>喜缤商务宾馆3楼</td></tr>
+<tr><td>✅B</td><td>石家庄鑫源家庭旅馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>汇通街道胜利南街257号东丹庭院14号楼2单元102室</td></tr>
+<tr><td>✅B</td><td>晋州金冠宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>金世纪商城北区3排25号</td></tr>
+<tr><td>✅B</td><td>石家庄拉菲商务公寓</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>新石中路36号水晶郦城1号楼1单元502室</td></tr>
+<tr><td>✅B</td><td>阿英短租公寓(石家庄铁道大学店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>桃园路2号1-402号(胜利大街与桃园路交口工商银行对面)</td></tr>
+<tr><td>⚠️</td><td>铜雀台(城角商业街店)</td><td>体育休闲服务;娱乐场所;KTV｜公司企业;公司;公司｜住宿服务;住宿服务相关;住宿服务相关｜风景名胜;风景名胜相关;旅游景点</td><td>4.2</td><td>340.00</td><td>中山西路422东南方向100米城角商业街</td></tr>
+<tr><td>⚠️</td><td>辛集锦江宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>新垒头镇新垒头村307国道与兴华路交叉口南行150米路东</td></tr>
+<tr><td>⚠️</td><td>石家庄矿区宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>矿市南街西</td></tr>
+<tr><td>⚠️</td><td>汇嘉快捷酒店(新百解放广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>中山西路81号品汇广场F1层</td></tr>
+<tr><td>⚠️</td><td>鹿泉宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>向阳大街75号</td></tr>
+<tr><td>⚠️</td><td>新乐泰华商务酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>南环路南侧美术学院动漫城正对面</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>2</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>7</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/石家庄市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>1 个 POI 无地址</strong>，需人工补：信誉楼百货(元氏店)</li><li><input type="checkbox" disabled> <strong>1 个 POI 无评分</strong>，暂标 ⚠️：北国奥特莱斯B区</li><li><input type="checkbox" disabled> 儿童游乐 39 家，其中场内 1 家、独立 38 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 19 个区县：井陉矿区、元氏县、平山县、新乐市、新华区、晋州市、栾城区、桥西区、正定县、深泽县、灵寿县、藁城区、行唐县、裕华区、赵县、辛集市、长安区、高邑县、鹿泉区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

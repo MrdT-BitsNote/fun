@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>邵阳市 · 湖南省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/湖南省.html">← 返回湖南省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>邵阳市 · 湖南省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 18:58:08  ·  POI 总量：838（去重后）  ·  查询面：49  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>838</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 294 · 商圈 380 · 成人娱乐 293 · 儿童娱乐 142 · 酒店 37 · 特产 40</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>湖南省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>12 个</td></tr>
+<tr><td>街道/镇/乡</td><td>202 个</td></tr>
+<tr><td>区县构成</td><td>县×6、市辖区×3、县级市×2、自治县×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>双清区</td><td>168</td><td>20%</td></tr>
+<tr><td>大祥区</td><td>154</td><td>18%</td></tr>
+<tr><td>邵东市</td><td>121</td><td>14%</td></tr>
+<tr><td>隆回县</td><td>79</td><td>9%</td></tr>
+<tr><td>武冈市</td><td>65</td><td>8%</td></tr>
+<tr><td>新邵县</td><td>49</td><td>6%</td></tr>
+<tr><td>洞口县</td><td>49</td><td>6%</td></tr>
+<tr><td>北塔区</td><td>44</td><td>5%</td></tr>
+<tr><td>新宁县</td><td>39</td><td>5%</td></tr>
+<tr><td>邵阳县</td><td>33</td><td>4%</td></tr>
+<tr><td>城步苗族自治县</td><td>26</td><td>3%</td></tr>
+<tr><td>绥宁县</td><td>11</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（380 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>171</td></tr>
+<tr><td>购物中心/综合体</td><td>64</td></tr>
+<tr><td>商业街</td><td>42</td></tr>
+<tr><td>百货/商场</td><td>39</td></tr>
+<tr><td>步行街</td><td>28</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>夜市</td><td>12</td></tr>
+<tr><td>奥特莱斯</td><td>4</td></tr>
+<tr><td>美食街/小吃街</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（380 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>A</td><td>伊兰顺回民菜(大汉·东风商业步行街店)</td><td>步行街</td><td>4.6</td><td>16</td><td>45</td><td>20</td><td>3</td></tr>
+<tr><td>A</td><td>密码电竞(蜗牛店)</td><td>其他商业载体</td><td>4.6</td><td>13</td><td>42</td><td>16</td><td>3</td></tr>
+<tr><td>A</td><td>友阿国际广场</td><td>百货/商场</td><td>4.7</td><td>12</td><td>10</td><td>8</td><td>0</td></tr>
+<tr><td>A</td><td>沃尔玛(友阿国际广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>12</td><td>10</td><td>8</td><td>0</td></tr>
+<tr><td>A</td><td>泰北客东南亚大排档</td><td>其他商业载体</td><td>4.5</td><td>12</td><td>11</td><td>3</td><td>3</td></tr>
+<tr><td>A</td><td>邵阳市人民电影院</td><td>其他商业载体</td><td>4.7</td><td>11</td><td>12</td><td>3</td><td>3</td></tr>
+<tr><td>A</td><td>回民一餐厅(铖景泰商业街店)</td><td>商业街</td><td>4.6</td><td>10</td><td>44</td><td>13</td><td>3</td></tr>
+<tr><td>A</td><td>亮亮饭店(铖景泰商业街店)</td><td>商业街</td><td>4.6</td><td>10</td><td>44</td><td>13</td><td>3</td></tr>
+<tr><td>A</td><td>华盛堂购物中心(美地公元店)</td><td>购物中心/综合体</td><td>4.6</td><td>10</td><td>11</td><td>3</td><td>3</td></tr>
+<tr><td>B</td><td>0051香辣虾(西湖店)</td><td>其他商业载体</td><td>4.5</td><td>9</td><td>7</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>几多全新鲜食品商店(邵阳步步高店)</td><td>购物中心/综合体</td><td>4.5</td><td>9</td><td>11</td><td>5</td><td>1</td></tr>
+<tr><td>B</td><td>壹号福街</td><td>购物中心/综合体</td><td>4.5</td><td>9</td><td>3</td><td>2</td><td>0</td></tr>
+<tr><td>B</td><td>大汉悦中心</td><td>百货/商场</td><td>4.7</td><td>8</td><td>44</td><td>14</td><td>3</td></tr>
+<tr><td>B</td><td>宝庆夜市</td><td>夜市</td><td>4.6</td><td>8</td><td>1</td><td>2</td><td>0</td></tr>
+<tr><td>B</td><td>步步高超市</td><td>购物中心/综合体</td><td>4.6</td><td>8</td><td>10</td><td>5</td><td>1</td></tr>
+<tr><td>B</td><td>九贝香辣蟹(西湖桥店)</td><td>其他商业载体</td><td>4.5</td><td>8</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>邵东文旅美食城(现代大厦店)</td><td>其他商业载体</td><td>4.5</td><td>8</td><td>6</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>大汉东风商业步行街(淘宝城店)</td><td>步行街</td><td>4.6</td><td>7</td><td>40</td><td>14</td><td>3</td></tr>
+<tr><td>B</td><td>哈哥哥老字号麻辣烫</td><td>其他商业载体</td><td>4.6</td><td>6</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>陈师傅生炒羊肉火锅(桂华路店)</td><td>其他商业载体</td><td>4.5</td><td>6</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>昭阳美食城</td><td>其他商业载体</td><td>4.5</td><td>6</td><td>4</td><td>3</td><td>0</td></tr>
+<tr><td>B</td><td>湾田广场</td><td>购物中心/综合体</td><td>4.7</td><td>5</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>B</td><td>缤纷环球城</td><td>百货/商场</td><td>4.7</td><td>5</td><td>6</td><td>4</td><td>0</td></tr>
+<tr><td>B</td><td>颜记粉面(湾田广场店)</td><td>其他商业载体</td><td>4.6</td><td>5</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>B</td><td>佬邵阳美食城(隆回店)</td><td>其他商业载体</td><td>4.6</td><td>5</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>邵东大汉步行街</td><td>步行街</td><td>4.5</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
+<tr><td>B</td><td>快乐街区(邵东大汉步行街店)</td><td>步行街</td><td>4.5</td><td>5</td><td>6</td><td>8</td><td>0</td></tr>
+<tr><td>C</td><td>东方凤凰城购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>洞口长信宾馆(雪峰广场店)</td><td>其他商业载体</td><td>4.6</td><td>4</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>星光夜市</td><td>夜市</td><td>4.5</td><td>4</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>老瓦屋·乡里土菜(隆回广电大厦店)</td><td>其他商业载体</td><td>4.6</td><td>3</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>快乐街区(邵东百富店)</td><td>商业街</td><td>4.5</td><td>3</td><td>8</td><td>6</td><td>4</td></tr>
+<tr><td>C</td><td>小百花美食城</td><td>其他商业载体</td><td>4.5</td><td>2</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>易湘农家大院</td><td>其他商业载体</td><td>4.6</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>崀山国际商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>2</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>云台岭土菜馆</td><td>其他商业载体</td><td>4.5</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>武冈市步行街</td><td>步行街</td><td>4.5</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>邵东国际商贸城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>泰丰城</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>邵阳步步高广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table></div>
+<h3>伊兰顺回民菜(大汉·东风商业步行街店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 16 家（均分 4.27）+ 4 类业态</li><li><strong>载体类型</strong>：步行街（餐饮服务;中餐厅;清真菜馆）</li><li><strong>地址</strong>：五一南路大汉步行街C区3层(电信局斜对面)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥41（区间 ¥10–66）</li><li><strong>动线主轴</strong>：东风路</li><li><strong>业态分布</strong>：美食 16 · 成人娱乐 45 · 儿童娱乐 20 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>伊兰顺回民菜(大汉·东风商业步行街店)</td></tr>
+<tr><td>美食</td><td>16</td><td>伊兰顺回民菜(大汉·东风商业步行街店)、堂口民谣烧烤酒馆(大汉悦中心店)、嘴莫停·老邵阳大排档(双清店)</td></tr>
+<tr><td>成人娱乐</td><td>45</td><td>千寻电竞、密码电竞(蜗牛店)、万达影城(大汉悦中心店)</td></tr>
+<tr><td>儿童娱乐</td><td>20</td><td>快乐街区(大汉悦中心店)、快乐街区(金百汇店)、游宇电玩</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>和顺大酒店、广场宾馆(东风路)、OYO公路商务酒店</td></tr>
+</tbody></table></div>
+<h3>密码电竞(蜗牛店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.25）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;网吧）</li><li><strong>地址</strong>：五一南路电信局斜对面大汉步行街B区3楼</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥10–60）</li><li><strong>动线主轴</strong>：东风路</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 42 · 儿童娱乐 16 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>密码电竞(蜗牛店)</td></tr>
+<tr><td>美食</td><td>13</td><td>伊兰顺回民菜(大汉·东风商业步行街店)、堂口民谣烧烤酒馆(大汉悦中心店)、嘴莫停·老邵阳大排档(双清店)</td></tr>
+<tr><td>成人娱乐</td><td>42</td><td>密码电竞(大祥店)、密码电竞(蜗牛店)、千寻电竞</td></tr>
+<tr><td>儿童娱乐</td><td>16</td><td>快乐街区(大汉悦中心店)、快乐街区(金百汇店)、游宇电玩</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>和顺大酒店、广场宾馆(东风路)、OYO公路商务酒店</td></tr>
+</tbody></table></div>
+<h3>友阿国际广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.21）+ 3 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;商场）</li><li><strong>地址</strong>：宝庆东路1615号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥52（区间 ¥10–66）</li><li><strong>动线主轴</strong>：宝庆东路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 10 · 儿童娱乐 8 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>友阿国际广场</td></tr>
+<tr><td>美食</td><td>12</td><td>秋月老邵阳、伊兰顺回民菜(大汉·东风商业步行街店)、许记·海鲜蒸汽锅</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>千寻电竞、邵阳骏维影城(友阿国际商业广场店)、樂music bar</td></tr>
+<tr><td>儿童娱乐</td><td>8</td><td>趣途·动漫前线、星世纪(友阿国际商业广场店)、宠园宠物</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(友阿国际广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.21）+ 3 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;沃尔玛）</li><li><strong>地址</strong>：宝庆东路1615号友阿国际广场B1层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥52（区间 ¥10–66）</li><li><strong>动线主轴</strong>：宝庆东路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 10 · 儿童娱乐 8 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沃尔玛(友阿国际广场店)</td></tr>
+<tr><td>美食</td><td>12</td><td>秋月老邵阳、伊兰顺回民菜(大汉·东风商业步行街店)、许记·海鲜蒸汽锅</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>千寻电竞、邵阳骏维影城(友阿国际商业广场店)、樂music bar</td></tr>
+<tr><td>儿童娱乐</td><td>8</td><td>趣途·动漫前线、星世纪(友阿国际商业广场店)、宠园宠物</td></tr>
+</tbody></table></div>
+<h3>泰北客东南亚大排档 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.39）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：红旗路复兴巷</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥21（区间 ¥6–100）</li><li><strong>动线主轴</strong>：红旗路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 11 · 儿童娱乐 3 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>泰北客东南亚大排档</td></tr>
+<tr><td>美食</td><td>12</td><td>回民餐厅(红旗路)、宝隆和(城北路店)、昭阳楼·湘厨</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>邵阳市人民电影院、四方朋友Ai智慧KTV棋牌(红旗路华盛堂店)、三缺一棋牌(华盛堂店)</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>奇乐多儿童乐园、邵阳摩天轮动漫嘉年华、猕你生活超市</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>五彩今天连锁酒店(邵阳红旗路店)、途窝人大宾馆、华龙大酒店(中共邵阳市委员会东)</td></tr>
+</tbody></table></div>
+<h3>邵阳市人民电影院 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.41）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;体育休闲服务场所;体育休闲服务场所）</li><li><strong>地址</strong>：红旗路街道279号(华盛堂购物中心3号门旁)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥18（区间 ¥6–100）</li><li><strong>动线主轴</strong>：红旗路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 12 · 儿童娱乐 3 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>邵阳市人民电影院</td></tr>
+<tr><td>美食</td><td>11</td><td>回民餐厅(红旗路)、昭阳楼·湘厨、宝隆和(城北路店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>邵阳市人民电影院、四方朋友Ai智慧KTV棋牌(红旗路华盛堂店)、三缺一棋牌(华盛堂店)</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>奇乐多儿童乐园、邵阳摩天轮动漫嘉年华、猕你生活超市</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>五彩今天连锁酒店(邵阳红旗路店)、途窝人大宾馆、华龙大酒店(中共邵阳市委员会东)</td></tr>
+</tbody></table></div>
+<h3>回民一餐厅(铖景泰商业街店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.50）+ 4 类业态</li><li><strong>载体类型</strong>：商业街（餐饮服务;中餐厅;清真菜馆）</li><li><strong>地址</strong>：铖景泰商业街</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥41（区间 ¥19–121）</li><li><strong>动线主轴</strong>：东风路</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 44 · 儿童娱乐 13 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>回民一餐厅(铖景泰商业街店)</td></tr>
+<tr><td>美食</td><td>10</td><td>回民一餐厅(铖景泰商业街店)、亮亮饭店(铖景泰商业街店)、堂口民谣烧烤酒馆(大汉悦中心店)</td></tr>
+<tr><td>成人娱乐</td><td>44</td><td>万达影城(大汉悦中心店)、麒麟·光影艺术空间(大汉·悦中心店)、堂口民谣烧烤酒馆(大汉悦中心店)</td></tr>
+<tr><td>儿童娱乐</td><td>13</td><td>快乐街区(大汉悦中心店)、快乐街区(金百汇店)、宠园宠物</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>新贵都大酒店、广场宾馆(东风路)、OYO公路商务酒店</td></tr>
+</tbody></table></div>
+<h3>亮亮饭店(铖景泰商业街店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.50）+ 4 类业态</li><li><strong>载体类型</strong>：商业街（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：通衡街4号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥41（区间 ¥19–121）</li><li><strong>动线主轴</strong>：东风路</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 44 · 儿童娱乐 13 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>亮亮饭店(铖景泰商业街店)</td></tr>
+<tr><td>美食</td><td>10</td><td>亮亮饭店(铖景泰商业街店)、回民一餐厅(铖景泰商业街店)、堂口民谣烧烤酒馆(大汉悦中心店)</td></tr>
+<tr><td>成人娱乐</td><td>44</td><td>万达影城(大汉悦中心店)、麒麟·光影艺术空间(大汉·悦中心店)、堂口民谣烧烤酒馆(大汉悦中心店)</td></tr>
+<tr><td>儿童娱乐</td><td>13</td><td>快乐街区(大汉悦中心店)、快乐街区(金百汇店)、宠园宠物</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>新贵都大酒店、广场宾馆(东风路)、OYO公路商务酒店</td></tr>
+</tbody></table></div>
+<h3>华盛堂购物中心(美地公元店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.40）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：红旗路街道255号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥18（区间 ¥6–100）</li><li><strong>动线主轴</strong>：红旗路</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 11 · 儿童娱乐 3 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>华盛堂购物中心(美地公元店)</td></tr>
+<tr><td>美食</td><td>10</td><td>回民餐厅(红旗路)、昭阳楼·湘厨、宝隆和(城北路店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>邵阳市人民电影院、三缺一棋牌(华盛堂店)、四方朋友Ai智慧KTV棋牌(红旗路华盛堂店)</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>奇乐多儿童乐园、邵阳摩天轮动漫嘉年华、猕你生活超市</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>五彩今天连锁酒店(邵阳红旗路店)、途窝人大宾馆、华龙大酒店(中共邵阳市委员会东)</td></tr>
+</tbody></table></div>
+<h3>0051香辣虾(西湖店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 7 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;海鲜酒楼）</li><li><strong>地址</strong>：城北路四星大厦1-3号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥27（区间 ¥15–100）</li><li><strong>动线主轴</strong>：城北路</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 7 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>0051香辣虾(西湖店)</td></tr>
+<tr><td>美食</td><td>9</td><td>宝隆和(城北路店)、0051香辣虾(西湖店)、九贝香辣蟹(西湖桥店)</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>邵阳市人民电影院、紫萝蓝歌舞厅、金色大帝KTV(资江南路店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>五彩今天连锁酒店(邵阳红旗路店)、民族宾馆(民族路)</td></tr>
+</tbody></table></div>
+<h3>几多全新鲜食品商店(邵阳步步高店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 16 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：建设南路与邵阳大道交叉口步步高新天地1层1030号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥12–132）</li><li><strong>动线主轴</strong>：邵阳大道</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 11 · 儿童娱乐 5 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>几多全新鲜食品商店(邵阳步步高店)</td></tr>
+<tr><td>美食</td><td>9</td><td>几多全新鲜食品商店(邵阳步步高店)、盛香亭转转热卤(邵阳新天地店)、锅司令柴火村(总店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>上海滩CLUB邵阳店、梦迪·炫K 量贩KTV、潮人酒吧(邵阳长城大酒店店)</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>快乐街区(步步高新天地店)、迷你·宠物店、尖峰玩家(邵阳步步高店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>新世界大酒店</td></tr>
+</tbody></table></div>
+<h3>壹号福街 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 5 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：东升路与东升北路四巷交叉口北200米</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥24（区间 ¥7–81）</li><li><strong>动线主轴</strong>：壹号福街</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 3 · 儿童娱乐 2 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>壹号福街</td></tr>
+<tr><td>美食</td><td>9</td><td>嘉宴(壹号福街店)、青春里夜市(壹号福街店)、南门口米粉百年老店(第1分店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>怂人密室逃脱、酒别重逢小酒馆、武冈星空下酒馆</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>兔兔儿童水上乐园、福街游乐场</td></tr>
+</tbody></table></div>
+<h3>大汉悦中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 58 / 酒店 3</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：东风路</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥34（区间 ¥19–60）</li><li><strong>动线主轴</strong>：东风路</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 44 · 儿童娱乐 14 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大汉悦中心</td></tr>
+<tr><td>美食</td><td>8</td><td>堂口民谣烧烤酒馆(大汉悦中心店)、伊兰顺回民菜(大汉·东风商业步行街店)、嘴莫停·老邵阳大排档(双清店)</td></tr>
+<tr><td>成人娱乐</td><td>44</td><td>麒麟·光影艺术空间(大汉·悦中心店)、万达影城(大汉悦中心店)、堂口民谣烧烤酒馆(大汉悦中心店)</td></tr>
+<tr><td>儿童娱乐</td><td>14</td><td>快乐街区(大汉悦中心店)、快乐街区(金百汇店)、游宇电玩</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>和顺大酒店、广场宾馆(东风路)、OYO公路商务酒店</td></tr>
+</tbody></table></div>
+<h3>宝庆夜市 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 3 / 酒店 0</li><li><strong>载体类型</strong>：夜市（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：崀山路82号(邵阳市恒大华府-西区东门南210米)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥46（区间 ¥7–76）</li><li><strong>动线主轴</strong>：状元洲街</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 1 · 儿童娱乐 2 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>宝庆夜市</td></tr>
+<tr><td>美食</td><td>8</td><td>宝庆夜市、农耕社.农家菜(江北店)、三六酒家常菜(资枣安置房店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>十三狼酒吧(邵阳店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>电玩狂潮、奇乐多彩虹滑道运动乐园(恒大华府店)</td></tr>
+</tbody></table></div>
+<h3>步步高超市 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 15 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：邵阳大道与建设南路交汇处西北侧步步高新天地购物中心LG层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥12–132）</li><li><strong>动线主轴</strong>：邵阳大道</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 10 · 儿童娱乐 5 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>步步高超市</td></tr>
+<tr><td>美食</td><td>8</td><td>盛香亭转转热卤(邵阳新天地店)、几多全新鲜食品商店(邵阳步步高店)、锅司令柴火村(总店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>上海滩CLUB邵阳店、梦迪·炫K 量贩KTV、潮人酒吧(邵阳长城大酒店店)</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>快乐街区(步步高新天地店)、迷你·宠物店、尖峰玩家(邵阳步步高店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>新世界大酒店</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（293 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>68</td></tr>
+<tr><td>酒吧/酒馆</td><td>41</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>20</td></tr>
+<tr><td>电影院</td><td>19</td></tr>
+<tr><td>棋牌室</td><td>15</td></tr>
+<tr><td>KTV</td><td>13</td></tr>
+<tr><td>电玩城</td><td>5</td></tr>
+<tr><td>Livehouse</td><td>2</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>十二兽·12 BEAST LAB(邵阳店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.7</td><td>309.00</td><td>田江街道路</td></tr>
+<tr><td>✅A-</td><td>十三狼酒吧(邵阳店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>42.00</td><td>交汇处商业影城1层</td></tr>
+<tr><td>✅A-</td><td>RY club(日夜咖啡吧)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>28.00</td><td>宋家塘街道站前路与紫霞路交叉口32-34号</td></tr>
+<tr><td>✅A-</td><td>密码电竞(大祥店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.7</td><td>—</td><td>恒大未来城东门西南180米</td></tr>
+<tr><td>✅A-</td><td>邵阳市人民电影院</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.7</td><td>22.00</td><td>红旗路街道279号(华盛堂购物中心3号门旁)</td></tr>
+<tr><td>✅A-</td><td>Luna酒吧(资江南路店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>68.00</td><td>城北路街道城北路10号</td></tr>
+<tr><td>✅A-</td><td>SUPRE MONKEY超猴酒吧(邵阳店)</td><td>酒吧/酒馆</td><td>体育休闲服务;运动场馆;健身中心</td><td>4.6</td><td>170.00</td><td>西外街与大祥路交叉口东160米</td></tr>
+<tr><td>✅A-</td><td>潮人酒吧(邵阳长城大酒店店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>198.00</td><td>建设南路67号</td></tr>
+<tr><td>✅A-</td><td>邵阳树村音乐餐清吧</td><td>酒吧/酒馆</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>74.00</td><td>桃园路</td></tr>
+<tr><td>✅A-</td><td>SUPER MAX CLUB</td><td>酒吧/酒馆</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>527.00</td><td>两塘路118号(忆昭阳酒店旁)</td></tr>
+<tr><td>✅A-</td><td>潮人酒吧(邵东店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>225.00</td><td>昭阳大道星沙物流园1C栋102号</td></tr>
+<tr><td>✅A-</td><td>上海滩CLUB邵阳店</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>94.00</td><td>邵阳大道柏林国际9号楼中国建设银行旁</td></tr>
+<tr><td>✅A-</td><td>麒麟·光影艺术空间(大汉·悦中心店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>677.00</td><td>大汉悦中心一楼A101-108</td></tr>
+<tr><td>✅A-</td><td>堂口民谣烧烤酒馆(大汉悦中心店)</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>28.00</td><td>东风路大汉悦中心A区1层</td></tr>
+<tr><td>✅A-</td><td>密码电竞(蜗牛店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>10.00</td><td>五一南路电信局斜对面大汉步行街B区3楼</td></tr>
+<tr><td>✅A-</td><td>千寻电竞</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>31.00</td><td>东风路街道铁砂岭路44-46号维也纳酒店二楼</td></tr>
+<tr><td>✅A-</td><td>天天网咖</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>新华路与新兴路交叉口东南240米</td></tr>
+<tr><td>✅A-</td><td>零距离电竞网咖迪壕店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>邵州路与财富路交叉口和福佳苑小区南门</td></tr>
+<tr><td>✅A-</td><td>魅力人间</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>45.00</td><td>沿江西路</td></tr>
+<tr><td>✅A-</td><td>梦迪·炫K 量贩KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>48.00</td><td>建设南路铂林国际9栋2楼</td></tr>
+<tr><td>✅A-</td><td>万达影城(大汉悦中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>46.00</td><td>东风路大汉悦中心4层</td></tr>
+<tr><td>✅B</td><td>快乐街区(邵东大汉步行街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅/购物服务;特色商业街;特色商业街</td><td>4.5</td><td>29.00</td><td>桃源路与衡宝路交叉口东北60米</td></tr>
+<tr><td>✅B</td><td>Detail 9号P房</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>—</td><td>红旗西路滨江未来城三期S4栋1004-1005</td></tr>
+<tr><td>✅B</td><td>壹号威士忌雪茄吧</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>—</td><td>桃花坪街道伏龙江南路东城新世纪A-2号</td></tr>
+<tr><td>✅B</td><td>SUPER天池CLUB</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>54.00</td><td>宋家塘街道福星御景城会所东头1楼</td></tr>
+<tr><td>✅B</td><td>邵阳市8+1雪茄馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>54.00</td><td>湘中电脑城146号</td></tr>
+<tr><td>✅B</td><td>浮空与河·咖啡民谣酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>43.00</td><td>邵水东路拦河坝旁</td></tr>
+<tr><td>✅B</td><td>芭堤雅小酒馆(邵阳店)</td><td>酒吧/酒馆</td><td>体育休闲服务;休闲场所;休闲场所</td><td>4.5</td><td>27.00</td><td>大汉悦中心B2栋二楼</td></tr>
+<tr><td>✅B</td><td>胭脂江湖·LIVE HOUSE(邵阳旗舰店)</td><td>Livehouse</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>84.00</td><td>雪峰南路与敏州西路交叉口西南角</td></tr>
+<tr><td>✅B</td><td>樂music bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>79.00</td><td>东风路街道友阿滨河荟2001-2006号</td></tr>
+<tr><td>✅B</td><td>清晨小酒馆(南站店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>52.00</td><td>邵州路火车南站40号地第6栋转角</td></tr>
+<tr><td>✅B</td><td>天子湖不夜城</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所/餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>85.00</td><td>塘渡口镇霞塘云乡</td></tr>
+<tr><td>✅B</td><td>百合舞厅</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;迪厅</td><td>4.5</td><td>29.00</td><td>S5商业2002B.2002C号</td></tr>
+<tr><td>✅B</td><td>白天鹅PartyK</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>185.00</td><td>城西街道恒大未来城7栋1013商铺</td></tr>
+<tr><td>✅B</td><td>巅峰电竞网咖</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>北岭路697号云曼酒店二楼</td></tr>
+<tr><td>✅B</td><td>金莎舞厅</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;迪厅</td><td>4.5</td><td>59.00</td><td>市北岭路20号</td></tr>
+<tr><td>✅B</td><td>天天K歌量贩(青城国际店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;运动场馆;运动场所</td><td>4.5</td><td>58.00</td><td>双拥路47号</td></tr>
+<tr><td>✅B</td><td>玛田小镇量贩工厂</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>30.00</td><td>乾元路与永红路交叉口金丽华大酒店背后</td></tr>
+<tr><td>✅B</td><td>紫薇网络会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>东大路虹桥商贸大厦</td></tr>
+<tr><td>✅B</td><td>星际探索未来城</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.5</td><td>51.00</td><td>花门街道横江社区沿江北路凯悦街8号芒果时代广场B幢二层B8018号</td></tr>
+<tr><td>✅B</td><td>快乐街区(大汉悦中心店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.5</td><td>22.00</td><td>东风路街道东风路大汉悦中心B区二层</td></tr>
+<tr><td>✅B</td><td>快乐街区(步步高新天地店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.5</td><td>34.00</td><td>步步高新天地4层</td></tr>
+<tr><td>✅B</td><td>趣途·动漫前线</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.5</td><td>—</td><td>滨江星城综合楼2楼商铺</td></tr>
+<tr><td>✅B</td><td>侠迹LARP(剧本杀推理馆)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>75.00</td><td>昭阳大道432号侠迹推理馆</td></tr>
+<tr><td>✅B</td><td>TTKG派对(大汉步行街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>59.00</td><td>大汉·东风商业步行街B栋3-4层</td></tr>
+<tr><td>✅B</td><td>元亨圆KTV音乐沙龙</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>—</td><td>敏州东路(近倾城国际)</td></tr>
+<tr><td>✅B</td><td>皇朝汇国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>59.00</td><td>火车南站街道青城国际小区</td></tr>
+<tr><td>✅B</td><td>广电影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>31.00</td><td>资江北路东1号广电大厦1层</td></tr>
+<tr><td>✅B</td><td>都汇国际影城邵阳店(原大地影院)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>五一南路湘中文化广场4楼</td></tr>
+<tr><td>✅B</td><td>邵阳骏维影城(友阿国际商业广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>32.00</td><td>友阿国际商城3层</td></tr>
+<tr><td>✅B</td><td>环宇影院(滨江未来城店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>38.00</td><td>恒大未来城东门西南110米</td></tr>
+<tr><td>✅B</td><td>新邵县楚湘影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>29.00</td><td>新汽车总站酿溪大道旁城市花园31栋好又多超市2层</td></tr>
+<tr><td>✅B</td><td>四个朋友·自助棋牌(大汉悦中心店)</td><td>电影院</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>12.00</td><td>东风路大汉悦中心A区四楼402(万达影城对面)</td></tr>
+<tr><td>✅B</td><td>雀语棋牌24h有人服务</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>57.00</td><td>五一南路财富大厦4楼(大汉彩虹路对面)</td></tr>
+<tr><td>✅B</td><td>Nuts酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>64.00</td><td>邵阳大道与桃盘岭路交叉口北140米云玺1009室</td></tr>
+<tr><td>✅B</td><td>升•Lounge</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>53.00</td><td>城西街道宝庆西路162号晨曦悦府2栋</td></tr>
+<tr><td>✅B</td><td>Helens海伦司小酒馆(缤纷环球城店)</td><td>酒吧/酒馆</td><td>餐饮服务;外国餐厅;西餐厅(综合风味)/体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>57.00</td><td>大禾塘街道红岭路与荷花路交叉口缤纷环球城7栋1层50-57室</td></tr>
+<tr><td>✅B</td><td>农林城</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室/购物服务;综合市场;综合市场</td><td>4.4</td><td>—</td><td>金龙大道与建设西路交叉口北100米</td></tr>
+<tr><td>✅B</td><td>星韵·私人订制KTV(邵阳店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>52.00</td><td>东风路街道宝庆东路友阿国际广场2层</td></tr>
+<tr><td>✅B</td><td>星聚会ktv(步步高新天地店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>66.00</td><td>步步高邵阳新天地L3层3045号新光书城旁</td></tr>
+</tbody></table></div>
+<p>（另 123 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（142 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>84</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>29</td></tr>
+<tr><td>亲子乐园</td><td>12</td></tr>
+<tr><td>电玩城</td><td>9</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>5</td></tr>
+<tr><td>淘气堡</td><td>3</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>武冈欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>新东路52号</td></tr>
+<tr><td>✅A-</td><td>悦宝堡亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.6</td><td>建设南路1号</td></tr>
+<tr><td>✅B</td><td>快乐街区(邵东百富店)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>荷田路与金龙大道交汇处威亿大厦德克士二楼</td></tr>
+<tr><td>✅B</td><td>贝贝兔亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>小江湖街道东塔路以北五一北路以东神风动力厂内</td></tr>
+<tr><td>✅B</td><td>星辰潮玩游乐场</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.5</td><td>凰腾新时代广场</td></tr>
+<tr><td>✅B</td><td>星际探索未来城</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>花门街道横江社区沿江北路凯悦街8号芒果时代广场B幢二层B8018号</td></tr>
+<tr><td>✅B</td><td>快乐街区(大汉悦中心店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>东风路街道东风路大汉悦中心B区二层</td></tr>
+<tr><td>✅B</td><td>快乐街区(步步高新天地店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>步步高新天地4层</td></tr>
+<tr><td>✅B</td><td>趣途·动漫前线</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>滨江星城综合楼2楼商铺</td></tr>
+<tr><td>✅B</td><td>电玩狂潮</td><td>电玩城</td><td>独立</td><td>4.5</td><td>龙山路1014号</td></tr>
+<tr><td>✅B</td><td>迷你·宠物(广厦名都店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>广厦名都</td></tr>
+<tr><td>✅B</td><td>向家村彩虹滑道</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>岩口镇向家村牛天岭</td></tr>
+<tr><td>✅B</td><td>电玩狂潮(恒大未来城店)</td><td>电玩城</td><td>独立</td><td>4.4</td><td>红旗西路与马蹄路交叉口西160米</td></tr>
+<tr><td>✅B</td><td>邵阳云来水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>城南街道紫霞社区办公楼后坪</td></tr>
+<tr><td>✅B</td><td>黄茅岭水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>黄茅村长塘坳白宇亭附近</td></tr>
+<tr><td>✅B</td><td>泉水水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>黄家坝</td></tr>
+<tr><td>✅B</td><td>军临娱乐城</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>城西街道西外街恒大未来城二期</td></tr>
+<tr><td>✅B</td><td>天天动漫</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>文体路222、224号中天广场商务楼</td></tr>
+<tr><td>✅B</td><td>仙人桥水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>花古街道江南村(金辉驾校往高沙方向前500米左转)</td></tr>
+<tr><td>✅B</td><td>迷你·宠物店</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>柏林国际东北门旁</td></tr>
+<tr><td>✅B</td><td>乐满池水世界</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>新屋堂</td></tr>
+<tr><td>✅B</td><td>萌宠生活馆(龙湖世纪花园一期店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>春园路87号</td></tr>
+<tr><td>⚠️</td><td>七里嗨乐园</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>桃花坪街道竹山塘社区488号</td></tr>
+<tr><td>⚠️</td><td>悠然亲子农庄</td><td>亲子乐园</td><td>独立</td><td>4.2</td><td>南山牧场梅子坪紫阳峰附近</td></tr>
+<tr><td>⚠️</td><td>骑趣乐园(缤纷环球店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>缤纷环球城4栋3楼</td></tr>
+<tr><td>⚠️</td><td>潘多啦世界(大润发发到家店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>宋家塘街道衡宝路大润发发到家1F潘多啦世界</td></tr>
+<tr><td>⚠️</td><td>快乐星球堡(邵东大汉步行街店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>解放路与衡宝路交叉口东北120米</td></tr>
+<tr><td>⚠️</td><td>春稻田游乐馆(凤凰城一期)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>景秀路17栋</td></tr>
+<tr><td>⚠️</td><td>快乐街区(金百汇店)</td><td>其他儿童场所</td><td>场内</td><td>4.2</td><td>汽车站街道人民广场金百汇地下街</td></tr>
+<tr><td>⚠️</td><td>尖峰玩家(邵阳步步高店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>百合路与建设南路交叉口西南80米</td></tr>
+<tr><td>⚠️</td><td>布丁电玩</td><td>电玩城</td><td>场内</td><td>4.2</td><td>宋家塘街道文旅美食城对面现代大厦6层</td></tr>
+<tr><td>⚠️</td><td>喜乐堡亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.2</td><td>蔡锷大道i88号</td></tr>
+<tr><td>⚠️</td><td>桃林苗寨漂流水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>桃林村</td></tr>
+<tr><td>⚠️</td><td>迷你·宠物(城南公园店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>翠园街李子园49号(翠园派出所旁)</td></tr>
+<tr><td>⚠️</td><td>萌宠宠物医院</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>春园路86号(王府花园A区北门旁)</td></tr>
+<tr><td>⚠️</td><td>奇乐多儿童乐园</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.1</td><td>红旗路街道255号华盛堂购物中心(美地公元店)</td></tr>
+<tr><td>⚠️</td><td>爱宝贝儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.1</td><td>彼岸春天小区1栋</td></tr>
+<tr><td>⚠️</td><td>奇乐多彩虹滑道运动乐园</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>大桥路金茂大厦</td></tr>
+<tr><td>❌</td><td>星世纪(友阿国际商业广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>游宇电玩</td><td>电玩城</td><td>独立</td><td>4.1</td><td>泊富公馆1号商铺,农村商业银行左边巷子进来20米</td></tr>
+<tr><td>⚠️</td><td>动感街区动漫潮玩中心(新邵湾田店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>新邵湾田广场S 6栋2楼</td></tr>
+<tr><td>⚠️</td><td>邵阳长龙水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>化山口大桥与洞新高速交汇处南100米路西</td></tr>
+<tr><td>⚠️</td><td>艺萌舞蹈</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>邵州西路与雪峰路交接处和兴怡景住宅小区三期工程10栋7-14号2楼</td></tr>
+<tr><td>⚠️</td><td>宠园宠物</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>东风路铁砂岭147号1005号门面</td></tr>
+<tr><td>⚠️</td><td>爱宠乐园(河西街宠物店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>河西街174号</td></tr>
+<tr><td>⚠️</td><td>邵阳锦绣恐龙乐园</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>金石镇崀山脚下</td></tr>
+<tr><td>⚠️</td><td>快乐星球游乐城</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>中心南路26号</td></tr>
+<tr><td>⚠️</td><td>欢乐多动漫乐园(威亿大厦店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>荷田路288号威亿大厦F2层</td></tr>
+<tr><td>⚠️</td><td>童趣天润玩国儿童游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>宋家塘北岭路1668号</td></tr>
+<tr><td>⚠️</td><td>邵阳云来梦幻乐园</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>珠江·愉景湾附近</td></tr>
+<tr><td>❌</td><td>洞口新鑫游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>迪乐尼游乐园</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.0</td><td>昭阳大道b区邦盛凤凰城凤凰广场1栋2楼</td></tr>
+<tr><td>⚠️</td><td>吖吖游乐园(高沙商业广场店)</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.0</td><td>栗山路东200米高沙商业广场</td></tr>
+<tr><td>⚠️</td><td>奇乐多彩虹滑道亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.0</td><td>都梁路与跃进路交叉口西北20米</td></tr>
+<tr><td>⚠️</td><td>怡卉园-生态动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>怡卉园景区内</td></tr>
+<tr><td>⚠️</td><td>多乐士(火车站南路店)</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>火车南站金三角布艺城外1栋6-7号</td></tr>
+<tr><td>⚠️</td><td>开心少儿运动中心</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>九龙山小区3期101栋</td></tr>
+<tr><td>⚠️</td><td>龙须塘水上游乐场</td><td>儿童乐园/游乐场</td><td>场内</td><td>3.9</td><td>龙须塘路金锣湾商贸城旁</td></tr>
+<tr><td>⚠️</td><td>童趣玩国(湾田广场店)</td><td>其他儿童场所</td><td>场内</td><td>3.9</td><td>酿溪镇湾田广场S5栋联华超市一楼</td></tr>
+<tr><td>⚠️</td><td>奇乐多彩虹滑道乐园(九盛北海店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>西湖北路与崀山路交叉口西北80米</td></tr>
+</tbody></table></div>
+<p>（另 82 家见 §11 原始数据）</p>
+<h2>5. 综合体与商场（126 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>湾田广场</td><td>购物中心/综合体</td><td>4.7</td><td>6</td><td>5</td><td>新阳路与健康路交叉口东南角</td></tr>
+<tr><td>✅A-</td><td>友阿国际广场</td><td>百货/商场</td><td>4.7</td><td>8</td><td>12</td><td>宝庆东路1615号</td></tr>
+<tr><td>✅A-</td><td>大汉悦中心</td><td>百货/商场</td><td>4.7</td><td>14</td><td>8</td><td>东风路</td></tr>
+<tr><td>✅A-</td><td>缤纷环球城</td><td>百货/商场</td><td>4.7</td><td>4</td><td>5</td><td>红岭路与荷花路交叉口处</td></tr>
+<tr><td>✅A-</td><td>邵东国际商贸城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>昭阳大道20号</td></tr>
+<tr><td>✅A-</td><td>华盛堂购物中心(美地公元店)</td><td>购物中心/综合体</td><td>4.6</td><td>3</td><td>10</td><td>红旗路街道255号</td></tr>
+<tr><td>✅A-</td><td>东方凤凰城购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>4</td><td>渡口路与沿河街交叉口北100米</td></tr>
+<tr><td>✅A-</td><td>崀山国际商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>3</td><td>1</td><td>金石镇舜皇大道与松园路交汇处东南50米</td></tr>
+<tr><td>✅A-</td><td>步步高超市</td><td>购物中心/综合体</td><td>4.6</td><td>5</td><td>8</td><td>邵阳大道与建设南路交汇处西北侧步步高新天地购物中心LG层</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(友阿国际广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>8</td><td>12</td><td>宝庆东路1615号友阿国际广场B1层</td></tr>
+<tr><td>✅B</td><td>几多全新鲜食品商店(邵阳步步高店)</td><td>购物中心/综合体</td><td>4.5</td><td>5</td><td>9</td><td>建设南路与邵阳大道交叉口步步高新天地1层1030号</td></tr>
+<tr><td>✅B</td><td>邵阳步步高广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>迎春亭街道乐洋路28号</td></tr>
+<tr><td>✅B</td><td>壹号福街</td><td>购物中心/综合体</td><td>4.5</td><td>2</td><td>9</td><td>东升路与东升北路四巷交叉口北200米</td></tr>
+<tr><td>✅B</td><td>步步昇(九龙广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>3</td><td>6</td><td>工商街与桃洪中路交叉口西50米</td></tr>
+<tr><td>✅B</td><td>邵阳和盛堂购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>4</td><td>10</td><td>迎春亭街道同保北路</td></tr>
+<tr><td>✅B</td><td>宝庆商贸城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>宝庆东路342号</td></tr>
+<tr><td>✅B</td><td>金罗湾国际商贸城</td><td>百货/商场</td><td>4.5</td><td>1</td><td>0</td><td>龙须塘路与九东路交叉口西北120米</td></tr>
+<tr><td>✅B</td><td>邵阳骏维影城(友阿国际商业广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>友阿国际商城3层</td></tr>
+<tr><td>✅B</td><td>桐江水岸超市(东升桐江水岸店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>宋家塘街道公园路桐江水岸502、503门面</td></tr>
+<tr><td>✅B</td><td>奥特莱斯·理想城</td><td>奥特莱斯</td><td>4.5</td><td>0</td><td>0</td><td>明珠大道与华容路交汇处</td></tr>
+<tr><td>✅B</td><td>江北蔬菜水果批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>X097江北幼儿园南侧约80米</td></tr>
+<tr><td>✅B</td><td>云艳烟酒特产商行(新世界商业广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>石桥街道建设南路57号新世界商业广场C地块2栋1楼1号门面</td></tr>
+<tr><td>✅B</td><td>步步强商贸有限公司</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>236省道与334省道交叉口西北160米</td></tr>
+<tr><td>✅B</td><td>中环国际广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>横冲巷与白虎街交叉口西北60米</td></tr>
+<tr><td>✅B</td><td>大桥百货</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>洞口文昌南路(大桥市场)</td></tr>
+<tr><td>✅B</td><td>几多全新鲜食品商店</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>华悦大厦商铺112-118</td></tr>
+<tr><td>✅B</td><td>友阿家润多(缤纷环球城店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>荷花路缤纷环球城负一楼</td></tr>
+<tr><td>✅B</td><td>新家悦超市(绿景店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>沿江大道与蔡锷南路交叉口西南60米</td></tr>
+<tr><td>✅B</td><td>万里购物广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>宝庆中路547号正北方向40米</td></tr>
+<tr><td>✅B</td><td>金园商贸城</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>崀山大道天下崀山大酒店西南</td></tr>
+<tr><td>✅B</td><td>时代广场</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>解放路与长征街交叉口东100米</td></tr>
+<tr><td>✅B</td><td>洞口国际商贸城</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>G60沪昆高速与洞口互通交叉口西440米</td></tr>
+<tr><td>✅B</td><td>万里购物广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>西湖北路888号</td></tr>
+<tr><td>✅B</td><td>武冈市喜惠泰百货超市</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>迎春亭街道乐洋路28号邵阳步步高广场</td></tr>
+<tr><td>✅B</td><td>衣海洋鞋服百货(国湘商贸大厦店)</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>东风路18号国湘商贸大厦F1层</td></tr>
+<tr><td>⚠️</td><td>邵阳展辉购物中心</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>百姓广场北侧101号</td></tr>
+<tr><td>⚠️</td><td>邵东廉桥三鑫商业广场头道汤养发馆</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>廉桥镇廉邵街</td></tr>
+<tr><td>⚠️</td><td>步步高亿新乐活城商业广场(双龙东路店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>双龙东路洞口县第一中学北校区东北侧约70米</td></tr>
+<tr><td>⚠️</td><td>金冠商贸城</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>崀山大道</td></tr>
+<tr><td>⚠️</td><td>宏锦购物中心</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>宏锦嘉苑一楼</td></tr>
+<tr><td>⚠️</td><td>好又多超市(壹号福街店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>壹号福街东升路西</td></tr>
+<tr><td>⚠️</td><td>万里百货(江北恒大店)</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>湘郡铭志学校对面恒大华府商业广场1层</td></tr>
+<tr><td>⚠️</td><td>新合作·星悦茂</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>桃洪中路第二商业街26号口铺</td></tr>
+<tr><td>⚠️</td><td>新世界商业广场</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>建设南路57号</td></tr>
+<tr><td>⚠️</td><td>邵东富沙国际商业广场</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>公园路与昭阳大道交叉口西北160米</td></tr>
+<tr><td>⚠️</td><td>邵阳县百货大楼新时代商城</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>塘渡口镇天和大酒店后</td></tr>
+<tr><td>❌</td><td>星世纪(友阿国际商业广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>维维超市(西湖南路店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>西湖南路和平公寓</td></tr>
+<tr><td>⚠️</td><td>黄龙商贸城</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>218省道东50米</td></tr>
+<tr><td>⚠️</td><td>金鑫购物中心</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>新邵宾馆对面</td></tr>
+</tbody></table></div>
+<p>（另 76 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（294 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>❌</td><td>爱饭海鲜(世界钰园店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>122.00</td><td>[]</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000754_1763715424606_53408146.jpg"></td></tr>
+<tr><td>✅A</td><td>老厨房私房菜馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>52.00</td><td>宝清东路769号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9ace513a69c5530513fd5798ceef523a"></td></tr>
+<tr><td>✅A-</td><td>回民餐厅(红旗路)</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.7</td><td>17.00</td><td>红旗路195号(工商银行对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100006354_1770172163930_17448113.jpg"></td></tr>
+<tr><td>✅A-</td><td>新邵宏峰大酒店</td><td>餐饮服务;中餐厅;综合酒楼/住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>酿溪镇官冲村村委会附近</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1c0bc7e5113d6618fa1c26fc287d8a52"></td></tr>
+<tr><td>✅A-</td><td>新贵都大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>121.00</td><td>日恒电脑城a栋</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000093100_ss__1770954380139_90392711.jpg"></td></tr>
+<tr><td>✅A-</td><td>阿莲姐妹档烧烤</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>101.00</td><td>资江北路西19号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/90391deb1450a699ab48dbb0f4aa91ca"></td></tr>
+<tr><td>✅A-</td><td>罗市桥土鸡店</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>46.00</td><td>罗市镇新街8号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/628442e18f142132e2d02ea6a648f9f6_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A</td><td>嘴莫停·老邵阳大排档(双清店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.6</td><td>52.00</td><td>桥头街道昭陵西路8-9号附近好评高的美食特色烧烤本地特色菜附近美食好吃的精品夜宵店</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5BFE9E1E_376F_4AA8_81E4_308858597241_L0_001_2016_151_1763654225014_03171284.jpg"></td></tr>
+<tr><td>✅A-</td><td>湘约渔家湾(衡宝店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>20.00</td><td>衡宝路与北岭路交叉口</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a53e22c987c37b5af84e2a97cd4e8b53_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>南门口米粉百年粉店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>25.00</td><td>法相岩街道都梁路101号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000760_1771141923047_87261175.jpg"></td></tr>
+<tr><td>✅A</td><td>贰麻子的饭店·邵阳土菜(海洋明珠店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>44.00</td><td>海洋明珠西门南60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e09fa4130dbbe762bb7fbbe196c1dca9"></td></tr>
+<tr><td>✅A-</td><td>罗记三毛地标大排档(江北店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>82.00</td><td>资江北路西9号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100001371_1755182771977_72266483.jpg"></td></tr>
+<tr><td>✅A</td><td>农耕社.农家菜(大祥店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>55.00</td><td>湘泰九龙城东1门北170米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ad109529f5f670260000004869230308?type=pic"></td></tr>
+<tr><td>✅A-</td><td>嘴莫停·老邵阳大排档(恒大未来城店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.6</td><td>62.00</td><td>城西街道恒大未来城S1栋1007-1009号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1092_1761132140603_65331848.jpg"></td></tr>
+<tr><td>✅A</td><td>君临源土菜馆</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>55.00</td><td>连村村4组31号大和冲进口子100米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000085941_ss__1763880875177_13745837.jpg"></td></tr>
+<tr><td>✅A-</td><td>梅山雅院</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>大禾塘街道红旗社区卿家片民房组1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/419d659ffb5b02577bd1233eab68b941"></td></tr>
+<tr><td>✅A-</td><td>宝隆和(达发楼店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>15.00</td><td>大安路20-2号(青城国际)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000034813_ss__1764408215297_23049426.jpg"></td></tr>
+<tr><td>✅A</td><td>柒号农家庄园</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>58.00</td><td>陈家桥白泥村11组12-13号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000314_1758082785194_76024742.jpg"></td></tr>
+<tr><td>✅A</td><td>农耕社.农家菜(邵阳大道店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>57.00</td><td>邵阳大道碧桂园宝庆府二期1001号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000000369_ss__1739976069213_54784052.jpg"></td></tr>
+<tr><td>✅A</td><td>农耕社.农家菜(江北店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>49.00</td><td>北塔路汽车北站宝城花苑西门对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/dc39265f691630fe0000001613386218?type=pic"></td></tr>
+<tr><td>✅A</td><td>农家味土菜院子(邵阳大道店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>51.00</td><td>佘湖桥东时代公园对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/db3b8ab39f8125b20000003533888217?type=pic"></td></tr>
+<tr><td>✅A-</td><td>嘉宴(壹号福街店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>81.00</td><td>壹号福街</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/E24B4EAC_146A_41C1_B9E3_66231D72AEB6_L0_001_1080_192_1764819606973_08382255.jpg"></td></tr>
+<tr><td>✅A</td><td>味来私房菜(双清店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>59.00</td><td>石桥街道邵阳大道京都世纪城小区107号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b0a1c34c0a4e6a8eba0952b4398e903a"></td></tr>
+<tr><td>✅A</td><td>老瓦屋·乡里土菜(隆回广电大厦店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>44.00</td><td>花门街道富隆社区桃洪东路1号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4B06E347_967B_49DA_B6AF_320B3C5EF07D_L0_001_1080_1440_1737263859432_49714965.jpg"></td></tr>
+<tr><td>✅A-</td><td>君和面馆(敏州西路)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>15.00</td><td>敏州西路百春园46栋104号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3F0FD7D5_2401_4C0E_9830_FB20FA8ADD19_L0_001_2016_1512_1740736303826_55372756.jpg"></td></tr>
+<tr><td>✅A-</td><td>昭阳楼·湘厨</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>40.00</td><td>大信街19号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_2917_1753673592292_06591429.jpg"></td></tr>
+<tr><td>✅A-</td><td>鱿遍天下(戴家坪店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>61.00</td><td>戴家路与电机路交叉口以东</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6b77c1b2acb9c7050000003027828847?type=pic"></td></tr>
+<tr><td>✅A-</td><td>秋月老邵阳</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>66.00</td><td>邵水东路157号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/file_media_Photo_1868_IMG_1770356119_1787_IMG_20260206_133339_jpg_ss__1770356239635_30323809.jpg"></td></tr>
+<tr><td>✅A-</td><td>宝隆和(城北路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>16.00</td><td>城北路356号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4C02C4A6_2803_440E_A48A_A5D9EBE993C8_L0_001_2000_1500_1731772681022_01367243.jpg"></td></tr>
+<tr><td>✅A-</td><td>回民一餐厅(铖景泰商业街店)</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.6</td><td>22.00</td><td>铖景泰商业街</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000053000_ss__1740286802228_74381312.jpg"></td></tr>
+<tr><td>✅A</td><td>哈哥哥老字号麻辣烫</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>16.00</td><td>状元洲街道宜兴路十巷6号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100010116_1747223046509_76325996.jpg"></td></tr>
+<tr><td>✅A-</td><td>亮亮饭店(铖景泰商业街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>29.00</td><td>通衡街4号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5057269C_0148_4C3B_9420_F486830CF918_L0_001_2000_1500_1730658187235_47117823.jpg"></td></tr>
+<tr><td>✅A-</td><td>麦当劳(红旗路店)</td><td>餐饮服务;快餐厅;麦当劳</td><td>4.6</td><td>18.00</td><td>红旗路157号新华书店1楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0b7b2d2ada04dbeb45b89fa775a66ebf"></td></tr>
+<tr><td>✅A-</td><td>鸭霸王(桃洪中路店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>31.00</td><td>桃洪中路160号,华都美食城门口</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000040_1768316215907_98317587.jpg"></td></tr>
+<tr><td>✅A-</td><td>广粥城(名人国际店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>43.00</td><td>火车南站街道邵檀路凤形山戴家片区6-4号地块昊瀚大夏一楼1005-1009号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ae03c029145bd94b0000007765252695?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老马回民粉面馆</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>16.00</td><td>公园路与魏源东路交叉口西240米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/86743c622b64f42f0000004243212284?type=pic"></td></tr>
+<tr><td>✅A-</td><td>资园餐馆(江北市场店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.6</td><td>22.00</td><td>江北大市场9栋</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000017980_ss__1766751953669_81616124.jpg"></td></tr>
+<tr><td>✅A-</td><td>张胖子小笼包(二坊机店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>14.00</td><td>宝庆西路与马蹄路交叉口西180米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1cc59245-0301-4e0d-b0cb-537128506839.png"></td></tr>
+<tr><td>✅A-</td><td>颜记粉面(湾田广场店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>12.00</td><td>酿溪镇湾田广场s19栋1018-1019</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_service__1771419112980_73183247_1771419131121_94569515.jpg"></td></tr>
+<tr><td>✅A</td><td>易湘农家大院</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>69.00</td><td>石桥街道邵阳大道与大塘路交汇处御景园广场3层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/AA9AB026_B67F_4DB9_96DA_0EE94B6DDF1A_L0_001_1632_200_1745465738745_77025224.jpg"></td></tr>
+<tr><td>✅A-</td><td>伊兰顺回民菜(大汉·东风商业步行街店)</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.6</td><td>60.00</td><td>五一南路大汉步行街C区3层(电信局斜对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/file_media_Photo_2168_IMG_1753354469_1968_IMG_20250724_185249_jpg_ss_2.jpg"></td></tr>
+<tr><td>✅A-</td><td>鲜铺(隆回店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>43.00</td><td>桃洪东路92号(隆回县医疗保障局北门东70米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_218636_ss__1766576951668_63801284.jpg"></td></tr>
+<tr><td>✅A-</td><td>宝庆夜市</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>33.00</td><td>崀山路82号(邵阳市恒大华府-西区东门南210米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/B24450E8_53ED_40E0_8D8C_BF7A4B501FC5_L0_001_1500_200_1771679879878_51566566.jpg"></td></tr>
+<tr><td>✅A-</td><td>佬邵阳美食城(隆回店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>47.00</td><td>桃花坪街道紫霞园社区辰河世家四期1258号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d8ba1ab7525b12f80255ddd28f067a88_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>堂口民谣烧烤酒馆(大汉悦中心店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>28.00</td><td>东风路大汉悦中心A区1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000971_1761283751040_63611262.jpg"></td></tr>
+<tr><td>✅B</td><td>新屋农家乐</td><td>餐饮服务;中餐厅;湖南菜(湘菜)/体育休闲服务;休闲场所;休闲场所</td><td>4.5</td><td>81.00</td><td>峦山村</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/61c27b05941c604e62c24267dda1b2b5"></td></tr>
+<tr><td>✅B</td><td>虾湖闹</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>55.00</td><td>昭阳大道435-437号(白云大酒店正对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000114740_ss__1754671509538_43879516.jpg"></td></tr>
+<tr><td>✅B</td><td>实惠酒家(315省道店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>39.00</td><td>315省道三羊网吧南70米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3c688bc92dcb4f138e4a6ded62bd854b"></td></tr>
+<tr><td>✅B</td><td>海上秋天</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>170.00</td><td>邵东市湖南省邵阳市大禾塘邦盛凤凰城1栋1号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bd52f898fb84196ec8be9d9aca72df7b"></td></tr>
+<tr><td>✅B</td><td>江湖大酒店(五一路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>55.00</td><td>五一北路工业街138号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6c53b6ee2f254de1832ee1b20d833521"></td></tr>
+<tr><td>✅B</td><td>仙槎桥湘菜馆</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>36.00</td><td>邵东县仙槎桥镇邵仙北路</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_40415_ss__1744301385932_52085528.jpg"></td></tr>
+<tr><td>✅B</td><td>邵阳一绝烤鱼</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>46.00</td><td>邵石南路993号附近</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0BBD5B6F_7E82_4337_A2D2_AF2160E3E552_L0_001_2000_150_1757099883419_32038471.jpg"></td></tr>
+<tr><td>✅B</td><td>老肖家土菜馆</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>29.00</td><td>陈家坊镇莲荷村第九组</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/05b032b4c47b3e4652b4c674df6df2f3"></td></tr>
+<tr><td>✅B</td><td>生态羊庄(高铁站店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>83.00</td><td>红岭路会议文化中心对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bbb9899bd30c6a1516501f34e0186d37"></td></tr>
+<tr><td>✅B</td><td>畅牛轩鲜牛肉特色火锅(金龙大道店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.5</td><td>50.00</td><td>宋家塘金龙大道102-105号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/73a4973ec6b96b9904972bf594eec079_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>陈师傅生炒羊肉火锅(桂华路店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.5</td><td>94.00</td><td>宏远大厦16号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100001991_1771604720241_25715302.jpg"></td></tr>
+<tr><td>✅B</td><td>锅司令柴火村(总店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.5</td><td>74.00</td><td>邵阳大道(一品家具对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/580dacb2f780fc5e2a7bac0af64ecb32"></td></tr>
+<tr><td>✅B</td><td>0051香辣虾(西湖店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>36.00</td><td>城北路四星大厦1-3号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_949_1658450882142_b2900ee6.jpg"></td></tr>
+<tr><td>✅B</td><td>靓虾二哥·长沙地标小龙虾(邵阳店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>102.00</td><td>魏源路西261号魏源世纪城</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a990413143250fcb09fff570c9e3631d"></td></tr>
+<tr><td>✅B</td><td>虾客闹(邵水桥店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>68.00</td><td>邵水西路164号湖南省邵阳市大祥区宝庆中路2号金马第一层门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1771d80fcaab14c5190f90dceff090dd"></td></tr>
+<tr><td>✅B</td><td>许记·海鲜蒸汽锅</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>54.00</td><td>邵水东路友阿滨河荟1012-1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0a36993d4f65c6e20000003311354317?type=pic"></td></tr>
+<tr><td>✅B</td><td>农耕社·农家菜(新邵店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>54.00</td><td>大塘路与大新街交叉口(新邵雍翠怡景对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/70e2dab3163d30dc0000007929774382?type=pic"></td></tr>
+<tr><td>✅B</td><td>嘴莫停老邵阳大排档(江北中驰店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>45.00</td><td>状元州街道中驰第一城三期1027号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/793218362683a2b80000004841120412?type=pic"></td></tr>
+<tr><td>✅B</td><td>大碗菜(富恒金鹏嘉苑店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>41.00</td><td>金鹏嘉苑迎春路1081-1003门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/CFF7AE19_2D68_462D_84F5_424C009CD270_L0_001_876_87_1771662497261_48989768.jpg"></td></tr>
+<tr><td>✅B</td><td>一担谷·农家菜(大祥店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>32.00</td><td>邵州西路与雪峰路交汇处和兴怡景住宅小区1号楼10001号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/177131782673_1771317830790_60776056.jpg"></td></tr>
+<tr><td>✅B</td><td>小百花美食城</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>67.00</td><td>解放路与箭楼街交叉口东40米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d07b19884dadb6b9876d577b44360225_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>罗记三毛地标大排档(友阿店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>58.00</td><td>宝庆东路1537号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_service__1771907158240_92364072_1771907201990_54244902.jpg"></td></tr>
+<tr><td>✅B</td><td>味来私房菜(中驰店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>49.00</td><td>中驰一城2栋106</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/446957331c8096e51ac3778a71ba3146"></td></tr>
+<tr><td>✅B</td><td>老厨房私房菜馆(大祥店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>57.00</td><td>火车南站街道32号安置地5栋32号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/da6e2ee0db2cd2510000003059692665?type=pic"></td></tr>
+<tr><td>✅B</td><td>味来私房菜(九龙店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>49.00</td><td>雪峰南路9号湘泰九龙城小区3栋1006号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/B866451B_A50A_43BF_A593_8A1E1467900B_L0_001_1320_152_1770870720583_66339032.jpg"></td></tr>
+<tr><td>✅B</td><td>特色土菜馆(辰河世家店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>63.00</td><td>辰河世家三期沿河商铺16栋1208、2208号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100000742_1733468932844_17801364.jpg"></td></tr>
+<tr><td>✅B</td><td>云台岭土菜馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>60.00</td><td>云台山巷29号(和润学府东区南门东南110米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/04c02a126b6afa19029ad89498eebedc_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>三六酒家常菜(资枣安置房店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>76.00</td><td>资枣安置房</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9e3a74d477d23e6087af4d60ba5c8c95_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>李记拌粉店</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>6.00</td><td>立新街综合楼(面对邵阳市四中大门右边进来)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2c470b1c8b8d66570e89663d3b854faa_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>九贝香辣蟹(西湖桥店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>61.00</td><td>城北路四星大厦17号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000032385_ss__1750328125407_92694412.jpg"></td></tr>
+<tr><td>✅B</td><td>南门口米粉百年老店(第1分店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>17.00</td><td>迎春亭街道都梁华府1栋102铺位</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100014096_1772119304637_81764001.jpg"></td></tr>
+<tr><td>✅B</td><td>高兴一锅潮汕鲜牛肉(邵东店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>59.00</td><td>兴和路与衡宝路交汇处</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a5654f1b5a8385c90000006818444774?type=pic"></td></tr>
+<tr><td>✅B</td><td>湘土情酒楼(凤凰街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>52.00</td><td>塘渡口镇凤凰街88号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100002853_1747626473129_20444498.jpg"></td></tr>
+<tr><td>✅B</td><td>牛肚王(达发楼店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>62.00</td><td>双拥路20-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/19e8de0b628a7ce60000004374126164?type=pic"></td></tr>
+<tr><td>✅B</td><td>泰北客东南亚大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>100.00</td><td>红旗路复兴巷</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8D241A95_1289_4E0D_9AA6_B58374EE2F95_L0_001_1500_200_1756346389665_85806489.jpg"></td></tr>
+</tbody></table></div>
+<p>（另 214 家见 §11 原始数据，评分排序后 80 名未列入）</p>
+<h2>7. 苍蝇馆 / 小店候选（57 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>老厨房私房菜馆</td><td>店名小店语义</td><td>4.7</td><td>52.00</td><td>宝清东路769号</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>嘴莫停·老邵阳大排档(双清店)</td><td>店名小店语义</td><td>4.6</td><td>52.00</td><td>桥头街道昭陵西路8-9号附近好评高的美食特色烧烤本地特色菜附近美食好吃的精品夜宵店</td><td></td></tr>
+<tr><td>贰麻子的饭店·邵阳土菜(海洋明珠店)</td><td>店名小店语义</td><td>4.6</td><td>44.00</td><td>海洋明珠西门南60米</td><td></td></tr>
+<tr><td>罗记三毛地标大排档(江北店)</td><td>店名小店语义</td><td>4.6</td><td>82.00</td><td>资江北路西9号</td><td></td></tr>
+<tr><td>农耕社.农家菜(大祥店)</td><td>店名小店语义</td><td>4.6</td><td>55.00</td><td>湘泰九龙城东1门北170米</td><td></td></tr>
+<tr><td>嘴莫停·老邵阳大排档(恒大未来城店)</td><td>店名小店语义</td><td>4.6</td><td>62.00</td><td>城西街道恒大未来城S1栋1007-1009号门面</td><td></td></tr>
+<tr><td>君临源土菜馆</td><td>店名小店语义</td><td>4.6</td><td>55.00</td><td>连村村4组31号大和冲进口子100米</td><td></td></tr>
+<tr><td>柒号农家庄园</td><td>店名小店语义</td><td>4.6</td><td>58.00</td><td>陈家桥白泥村11组12-13号</td><td></td></tr>
+<tr><td>农耕社.农家菜(邵阳大道店)</td><td>店名小店语义</td><td>4.6</td><td>57.00</td><td>邵阳大道碧桂园宝庆府二期1001号门面</td><td></td></tr>
+<tr><td>农耕社.农家菜(江北店)</td><td>店名小店语义</td><td>4.6</td><td>49.00</td><td>北塔路汽车北站宝城花苑西门对面</td><td></td></tr>
+<tr><td>农家味土菜院子(邵阳大道店)</td><td>店名小店语义</td><td>4.6</td><td>51.00</td><td>佘湖桥东时代公园对面</td><td></td></tr>
+<tr><td>味来私房菜(双清店)</td><td>店名小店语义</td><td>4.6</td><td>59.00</td><td>石桥街道邵阳大道京都世纪城小区107号</td><td></td></tr>
+<tr><td>老瓦屋·乡里土菜(隆回广电大厦店)</td><td>店名小店语义</td><td>4.6</td><td>44.00</td><td>花门街道富隆社区桃洪东路1号门面</td><td></td></tr>
+<tr><td>易湘农家大院</td><td>店名小店语义</td><td>4.6</td><td>69.00</td><td>石桥街道邵阳大道与大塘路交汇处御景园广场3层</td><td></td></tr>
+<tr><td>新屋农家乐</td><td>店名小店语义</td><td>4.5</td><td>81.00</td><td>峦山村</td><td></td></tr>
+<tr><td>老肖家土菜馆</td><td>店名小店语义</td><td>4.5</td><td>29.00</td><td>陈家坊镇莲荷村第九组</td><td></td></tr>
+<tr><td>农耕社·农家菜(新邵店)</td><td>店名小店语义</td><td>4.5</td><td>54.00</td><td>大塘路与大新街交叉口(新邵雍翠怡景对面)</td><td></td></tr>
+<tr><td>嘴莫停老邵阳大排档(江北中驰店)</td><td>店名小店语义</td><td>4.5</td><td>45.00</td><td>状元州街道中驰第一城三期1027号门面</td><td></td></tr>
+<tr><td>一担谷·农家菜(大祥店)</td><td>店名小店语义</td><td>4.5</td><td>32.00</td><td>邵州西路与雪峰路交汇处和兴怡景住宅小区1号楼10001号</td><td></td></tr>
+<tr><td>罗记三毛地标大排档(友阿店)</td><td>店名小店语义</td><td>4.5</td><td>58.00</td><td>宝庆东路1537号</td><td></td></tr>
+<tr><td>味来私房菜(中驰店)</td><td>店名小店语义</td><td>4.5</td><td>49.00</td><td>中驰一城2栋106</td><td></td></tr>
+<tr><td>老厨房私房菜馆(大祥店)</td><td>店名小店语义</td><td>4.5</td><td>57.00</td><td>火车南站街道32号安置地5栋32号</td><td></td></tr>
+<tr><td>味来私房菜(九龙店)</td><td>店名小店语义</td><td>4.5</td><td>49.00</td><td>雪峰南路9号湘泰九龙城小区3栋1006号门面</td><td></td></tr>
+<tr><td>特色土菜馆(辰河世家店)</td><td>店名小店语义</td><td>4.5</td><td>63.00</td><td>辰河世家三期沿河商铺16栋1208、2208号</td><td></td></tr>
+<tr><td>云台岭土菜馆</td><td>店名小店语义</td><td>4.5</td><td>60.00</td><td>云台山巷29号(和润学府东区南门东南110米)</td><td></td></tr>
+<tr><td>三六酒家常菜(资枣安置房店)</td><td>店名小店语义</td><td>4.5</td><td>76.00</td><td>资枣安置房</td><td></td></tr>
+<tr><td>泰北客东南亚大排档</td><td>店名小店语义</td><td>4.5</td><td>100.00</td><td>红旗路复兴巷</td><td></td></tr>
+<tr><td>聚鑫楼大排档</td><td>店名小店语义</td><td>4.5</td><td>21.00</td><td>酿溪镇溪江月9栋1019号</td><td></td></tr>
+<tr><td>农家印象土菜院子</td><td>店名小店语义</td><td>4.4</td><td>39.00</td><td>资江北路河边(江北蔬菜批发市场往资江一桥方向东行100米)</td><td></td></tr>
+<tr><td>三菜一汤土菜馆</td><td>店名小店语义</td><td>4.4</td><td>30.00</td><td>双拥路疾控中心对面佳和家园19号门面</td><td></td></tr>
+<tr><td>虾客闹大排档(滨江未来城店)</td><td>店名小店语义</td><td>4.4</td><td>13.00</td><td>恒大未来城三期1栋1002-1006</td><td></td></tr>
+<tr><td>李漂亮超级烧烤大排档</td><td>店名小店语义</td><td>4.4</td><td>43.00</td><td>天水大都汇</td><td></td></tr>
+<tr><td>夜味央大排档</td><td>店名小店语义</td><td>4.4</td><td>36.00</td><td>邵水西路10号</td><td></td></tr>
+<tr><td>大新土菜馆</td><td>店名小店语义</td><td>4.3</td><td>41.00</td><td>大应路44号</td><td></td></tr>
+<tr><td>南山叶子私房菜</td><td>店名小店语义</td><td>4.3</td><td>57.00</td><td>湖南南山风景名胜区管理处西侧160米</td><td></td></tr>
+<tr><td>失眠洞口平价小海鲜大排档</td><td>店名小店语义</td><td>4.3</td><td>56.00</td><td>文昌街道城北新村佳远大厦104室</td><td></td></tr>
+<tr><td>失眠武冈海鲜大排档(龙湖一期店)</td><td>店名小店语义</td><td>4.3</td><td>21.00</td><td>迎春亭街道同保路109号</td><td></td></tr>
+<tr><td>马蹄塘大排档</td><td>店名小店语义</td><td>4.3</td><td>26.00</td><td>百春园街道敏州西路75号</td><td></td></tr>
+<tr><td>苗乡私房菜</td><td>店名小店语义</td><td>4.2</td><td>31.00</td><td>儒林镇青年路129号</td><td></td></tr>
+<tr><td>湘楚人家土菜馆(毛家栗山市场店)</td><td>店名小店语义</td><td>4.2</td><td>41.00</td><td>毛家栗山农贸市场东北门旁</td><td></td></tr>
+<tr><td>湘源府私房菜</td><td>店名小店语义</td><td>4.2</td><td>59.00</td><td>金石镇坤一路与平家塘路交汇处美大学府8栋门面二楼101-105号</td><td></td></tr>
+<tr><td>山海居家常味(欢喜餐饮)</td><td>店名小店语义</td><td>4.2</td><td>65.00</td><td>城南街道桃源路与金山路交汇处乾道南院住宅小区六号楼-</td><td></td></tr>
+<tr><td>黄飞鸿烧烤大排档(王府花园A区店)</td><td>店名小店语义</td><td>4.2</td><td>47.00</td><td>王府花园A区</td><td></td></tr>
+<tr><td>三毛农家乐</td><td>店名小店语义</td><td>4.1</td><td>31.00</td><td>邓家铺镇居委会</td><td></td></tr>
+<tr><td>矮哥土菜馆</td><td>店名小店语义</td><td>4.1</td><td>36.00</td><td>严塘镇高速出口矮哥土菜馆</td><td></td></tr>
+<tr><td>故湘风土菜馆</td><td>店名小店语义</td><td>4.1</td><td>—</td><td>大禾塘街道北岭路中品家天下</td><td></td></tr>
+<tr><td>牧场土菜馆</td><td>店名小店语义</td><td>4.1</td><td>50.00</td><td>瑞牧天酒店正对面</td><td></td></tr>
+<tr><td>潮汕砂锅粥大排档(壹号名邸店)</td><td>店名小店语义</td><td>4.1</td><td>36.00</td><td>壹号名邸S7栋106-107号</td><td></td></tr>
+<tr><td>鑫源土菜馆</td><td>店名小店语义</td><td>4.0</td><td>48.00</td><td>南山镇卫生院东南侧140米</td><td></td></tr>
+<tr><td>袁鲜记烧烤海鲜大排档</td><td>店名小店语义</td><td>4.0</td><td>23.00</td><td>[]</td><td></td></tr>
+<tr><td>教工食堂</td><td>店名小店语义</td><td>3.9</td><td>12.00</td><td>戴家路邵阳学院(李子园校区)</td><td></td></tr>
+<tr><td>惠康家常菜</td><td>店名小店语义</td><td>3.9</td><td>53.00</td><td>药市街</td><td></td></tr>
+<tr><td>叫花鸡夜宵店</td><td>店名小店语义</td><td>3.7</td><td>33.00</td><td>酿溪镇城市花园29栋119号门面</td><td></td></tr>
+<tr><td>樟树土菜馆</td><td>店名小店语义</td><td>3.7</td><td>31.00</td><td>罗马庄园南侧250米</td><td></td></tr>
+<tr><td>原步行街麻辣烫烧烤店</td><td>店名小店语义</td><td>3.7</td><td>29.00</td><td>金石镇凝秀社区长征西路(原北纺大厦8号)</td><td></td></tr>
+<tr><td>佳泽源农家土菜馆</td><td>店名小店语义</td><td>3.5</td><td>—</td><td>017乡道与240省道交叉口东南60米</td><td>评分 3.5 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>大禾塘街道城东长者食堂</td><td>店名小店语义</td><td>3.3</td><td>—</td><td>桃园路大汉步行街6栋2层6210</td><td>评分 3.3 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（40 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>云艳烟酒特产商行(新世界商业广场店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.4</td><td>石桥街道建设南路57号新世界商业广场C地块2栋1楼1号门面</td></tr>
+<tr><td>⚠️</td><td>苗乡特产</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.0</td><td>长安营镇南山社区大坪1组</td></tr>
+<tr><td>⚠️</td><td>曾匠农家土特产(总店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.9</td><td>新邵县大坪大应南路45号门面</td></tr>
+<tr><td>⚠️</td><td>崀之味土特产邵阳总店</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.9</td><td>绍水西路108-109号</td></tr>
+<tr><td>⚠️</td><td>张新发(江北店)</td><td>购物服务;专卖店;专营店</td><td>3.8</td><td>魏源路与蔡锷路交汇处</td></tr>
+<tr><td>⚠️</td><td>邵阳土特产(宝庆中路店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.8</td><td>宝庆中路444号</td></tr>
+<tr><td>⚠️</td><td>邵阳土特产(总部)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.8</td><td>火车南站23-2号地8门面</td></tr>
+<tr><td>⚠️</td><td>隆回山古佬农土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.8</td><td>桃洪西路23号附近</td></tr>
+<tr><td>⚠️</td><td>邵阳土特产礼品城</td><td>购物服务;专卖店;专营店</td><td>3.8</td><td>文体路222、224号</td></tr>
+<tr><td>⚠️</td><td>五环生态土特产(洞口总店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.8</td><td>洞口镇雪峰广场双龙东路122号</td></tr>
+<tr><td>⚠️</td><td>满师傅</td><td>购物服务;专卖店;土特产专卖店</td><td>3.7</td><td>金石镇大兴路2号门面(汽车站西站)</td></tr>
+<tr><td>⚠️</td><td>南山特产专卖店</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>青年路23号</td></tr>
+<tr><td>⚠️</td><td>湘瑶土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.7</td><td>桃花路309号</td></tr>
+<tr><td>⚠️</td><td>隆百汇龙牙百合</td><td>购物服务;综合市场;农副产品市场</td><td>3.7</td><td>道地产业园2-3栋109店铺</td></tr>
+<tr><td>⚠️</td><td>柳山里土特产店</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>高沙镇蓼湄路345号</td></tr>
+<tr><td>⚠️</td><td>小沙江花瑶土特产店</td><td>购物服务;专卖店;土特产专卖店</td><td>3.6</td><td>桃洪西路与横江路交叉口西南100米</td></tr>
+<tr><td>⚠️</td><td>爱卤芳特产批发商行</td><td>餐饮服务;快餐厅;快餐厅</td><td>3.6</td><td>市大禾塘街道明珠小区1栋8号门店</td></tr>
+<tr><td>⚠️</td><td>一家特产店</td><td>购物服务;专卖店;专营店</td><td>3.6</td><td>091县道附近</td></tr>
+<tr><td>⚠️</td><td>多多好呷土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.6</td><td>文昌北路10号</td></tr>
+<tr><td>⚠️</td><td>唐记卤腊特产店(九井湾农贸市场店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.5</td><td>九井湾农贸市场1号</td></tr>
+<tr><td>⚠️</td><td>瑶山哥土特产店</td><td>购物服务;专卖店;专营店</td><td>3.5</td><td>朝阳路与大井巷交叉口南40米</td></tr>
+<tr><td>⚠️</td><td>琦琦土特产店</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.5</td><td>华荣路26号高速出口处</td></tr>
+<tr><td>❌</td><td>湘么么土特产批发</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.4</td><td>迎春路118号</td></tr>
+<tr><td>❌</td><td>宝庆农特馆</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.4</td><td>振羽大道宝庆农特馆</td></tr>
+<tr><td>❌</td><td>崀之味土特产店</td><td>购物服务;专卖店;土特产专卖店</td><td>3.4</td><td>金石镇大兴路丹霞宾馆侧面</td></tr>
+<tr><td>❌</td><td>隆回小沙江土特产店</td><td>购物服务;专卖店;土特产专卖店</td><td>3.4</td><td>城西街道宝庆西路162号纺机新村14栋105号</td></tr>
+<tr><td>❌</td><td>志军烟酒</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.3</td><td>九井湾华龙酒店</td></tr>
+<tr><td>❌</td><td>梅山土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>3.3</td><td>坪上镇坪上大道高铁新城商业街1号栋103一104门面</td></tr>
+<tr><td>❌</td><td>槟榔驿站</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.3</td><td>团山镇</td></tr>
+<tr><td>❌</td><td>舜华湘品堂湖南特产(洞口高铁店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.2</td><td>城管执法局高铁站管理中队东侧110米</td></tr>
+<tr><td>❌</td><td>南山旅游特产超市</td><td>购物服务;超级市场;超市</td><td>3.2</td><td>南山牧场大坪居委会</td></tr>
+<tr><td>❌</td><td>张新发(敏州西路店)</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>3.2</td><td>敏州西路12-5</td></tr>
+<tr><td>❌</td><td>舜华湘品堂临武鸭特产店(隆回站店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.1</td><td>隆回站候车室内</td></tr>
+<tr><td>❌</td><td>峎山土特产随缘批零部</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.1</td><td>220省道东50米</td></tr>
+<tr><td>❌</td><td>南山牛牛酸奶土特产屋</td><td>购物服务;综合市场;农副产品市场</td><td>3.1</td><td>长安营镇大坪居委会二组</td></tr>
+<tr><td>❌</td><td>黄记特产商行(湾田广场店)</td><td>购物服务;专卖店;土特产专卖店/购物服务;专卖店;烟酒专卖店</td><td>3.1</td><td>湾田广场北区南门旁</td></tr>
+<tr><td>❌</td><td>金宝特产店</td><td>购物服务;专卖店;专营店</td><td>3.0</td><td>百春园街道迎春路E号综合楼1005号</td></tr>
+<tr><td>❌</td><td>南山云雾山珍酸奶特产体验店</td><td>餐饮服务;冷饮店;冷饮店</td><td>2.9</td><td>云雾澜庭精品民宿西侧</td></tr>
+<tr><td>❌</td><td>乡巴佬土特产批发超市(白云大厦店)</td><td>购物服务;综合市场;农副产品市场</td><td>2.7</td><td>大应北路43号白云大厦F1层</td></tr>
+<tr><td>❌</td><td>翔翔特产</td><td>购物服务;专卖店;专营店</td><td>2.6</td><td>湖南南山风景名胜区管理处西侧100米</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>湾田广场（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>颜记粉面(湾田广场店)</td><td>名称互证</td><td>23m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>肖记粉面世家(湾田广场店)</td><td>名称互证</td><td>27m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>童趣玩国(湾田广场店)</td><td>名称互证</td><td>81m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>酷儿悦家庭娱乐中心(湾田广场店)</td><td>名称互证</td><td>93m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>动感街区动漫潮玩中心(新邵湾田店)</td><td>名称互证</td><td>101m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>鱿遍天下(湾田广场店)</td><td>名称互证</td><td>116m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>真人版密室逃脱俱乐部(湾田广场店)</td><td>名称互证</td><td>118m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>中影星耀环球影城(大同路店)</td><td>名称互证</td><td>119m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>童梦奇境卡丁车游乐场</td><td>名称互证</td><td>202m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>福盛小鲜牛潮汕牛肉火锅(佳源财富广场店)</td><td>距离就近</td><td>274m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>家佳乐动漫城(佳源财富广场店)</td><td>距离就近</td><td>285m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>家佳乐动漫城(佳源财富广场店)</td><td>距离就近</td><td>285m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>新邵老电影院</td><td>距离就近</td><td>472m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金三角电影院</td><td>距离就近</td><td>473m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>飞达动漫乐园</td><td>距离就近</td><td>478m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>飞达动漫乐园</td><td>距离就近</td><td>478m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>新邵县刘文祥麻辣烫</td><td>距离就近</td><td>547m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>友阿国际广场（30 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星韵·私人订制KTV(邵阳店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星世纪空中乐园</td><td>名称互证</td><td>0m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>小飞侠游乐园(友阿国际广场店)</td><td>名称互证</td><td>0m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>The Green Party(邵阳友阿店)</td><td>名称互证</td><td>2m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>广粥城茶餐厅(友阿广场店)</td><td>名称互证</td><td>29m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>星世纪(友阿国际商业广场店)</td><td>距离就近</td><td>31m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>湘当当·分部位现炒黄牛肉(友阿店)</td><td>距离就近</td><td>37m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>绿草地·湘菜(邵阳友阿店)</td><td>名称互证</td><td>46m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>迪乐尼乐园(友阿店)</td><td>名称互证</td><td>55m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>围辣小火锅(友阿国际广场店)</td><td>名称互证</td><td>64m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>邵阳骏维影城(友阿国际商业广场店)</td><td>距离就近</td><td>102m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>必胜客(友阿国际广场店)</td><td>名称互证</td><td>113m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>私人订制·俱乐部(友阿国际广场店)</td><td>名称互证</td><td>119m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>童欢乐园(友阿国际商业广场店)</td><td>名称互证</td><td>134m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>河马电玩·PS·Switch(友阿国际广场店)</td><td>名称互证</td><td>139m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>河马电玩·PS·Switch(友阿国际广场店)</td><td>名称互证</td><td>139m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>四方朋友·AI智慧KTV(友阿广场店)</td><td>距离就近</td><td>159m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>樂music bar</td><td>距离就近</td><td>163m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>许记·海鲜蒸汽锅</td><td>距离就近</td><td>168m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>几多全新鲜食品商店(邵阳双清区友阿国际广场店)</td><td>名称互证</td><td>173m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>罗记三毛地标大排档(友阿店)</td><td>距离就近</td><td>229m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>鱼头村</td><td>距离就近</td><td>273m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>新华回民餐馆</td><td>距离就近</td><td>299m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>宠园宠物</td><td>距离就近</td><td>414m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>趣途·动漫前线</td><td>距离就近</td><td>502m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大汉悦中心（69 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>四个朋友·自助棋牌(大汉悦中心店)</td><td>名称互证</td><td>7m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>名称互证</td><td>8m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>名称互证</td><td>8m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>名称互证</td><td>9m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>名称互证</td><td>9m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>跃动格子(邵阳大汉悦店)</td><td>名称互证</td><td>14m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>帆麦自助KTV(大汉悦中心店)</td><td>名称互证</td><td>22m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麒麟·光影艺术空间(大汉·悦中心店)</td><td>名称互证</td><td>23m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>快乐街区(大汉悦中心店)</td><td>名称互证</td><td>24m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>快乐街区(大汉悦中心店)</td><td>名称互证</td><td>24m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>湘贝王婆大虾店(大汉悦中心店)</td><td>名称互证</td><td>25m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>LetheBar德扑小酒馆</td><td>名称互证</td><td>32m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>奈斯否德州酒馆</td><td>名称互证</td><td>49m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>花涧艺术无人棋牌(大汉悦中心店)</td><td>名称互证</td><td>50m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>秘镜实景娱乐(大汉悦中心店)</td><td>名称互证</td><td>57m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达影城(大汉悦中心店)</td><td>名称互证</td><td>62m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>蓝山home bar</td><td>距离就近</td><td>66m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>堂口民谣烧烤酒馆(大汉悦中心店)</td><td>名称互证</td><td>69m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>堂口民谣烧烤酒馆(大汉悦中心店)</td><td>名称互证</td><td>69m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>芭堤雅小酒馆(邵阳店)</td><td>名称互证</td><td>88m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(大汉悦中心店)</td><td>名称互证</td><td>90m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>TTKG派对(大汉步行街店)</td><td>距离就近</td><td>112m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>考拉游戏社</td><td>距离就近</td><td>113m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>考拉游戏社</td><td>距离就近</td><td>113m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>天天K歌量贩式KTV(大汉·东风商业步行街店)</td><td>距离就近</td><td>115m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>缤纷环球城（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Helens海伦司小酒馆(缤纷环球城店)</td><td>名称互证</td><td>43m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>奇趣乐园淘气堡</td><td>名称互证</td><td>81m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>MC-HOUSE超级密室逃脱(缤纷环球城店)</td><td>名称互证</td><td>90m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>曾喜欢重庆美蛙鱼火锅(邵东缤纷环球城店)</td><td>名称互证</td><td>113m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麦当劳(缤纷环球城店)</td><td>名称互证</td><td>145m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>骑趣乐园(缤纷环球店)</td><td>名称互证</td><td>149m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>SHUXIA·树下</td><td>距离就近</td><td>306m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欢乐多亲子主题游乐城旗舰店(邵东大汉店)</td><td>距离就近</td><td>329m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>月亮湾旗舰店(百兴路店)</td><td>距离就近</td><td>353m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>极点实景密室(二店)</td><td>距离就近</td><td>398m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>快乐街区(邵东大汉步行街店)</td><td>距离就近</td><td>414m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大汉国潮夜市</td><td>距离就近</td><td>420m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>大禾塘街道城东长者食堂</td><td>距离就近</td><td>486m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>Allin德扑酒馆</td><td>距离就近</td><td>575m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>快乐星球堡(邵东大汉步行街店)</td><td>距离就近</td><td>580m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>邵阳市人民电影院（29 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>邵阳市人民电影院</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>四方朋友Ai智慧KTV棋牌(红旗路华盛堂店)</td><td>距离就近</td><td>60m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>五彩今天连锁酒店(邵阳红旗路店)</td><td>距离就近</td><td>60m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>红旗路商业美食城</td><td>距离就近</td><td>68m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>奇乐多儿童乐园</td><td>距离就近</td><td>81m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>奇乐多儿童乐园</td><td>距离就近</td><td>81m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>三缺一棋牌(华盛堂店)</td><td>距离就近</td><td>84m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>云顶棋牌24h自助棋牌(华盛堂店)</td><td>距离就近</td><td>89m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>泰北客东南亚大排档</td><td>距离就近</td><td>92m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>家乐阳光自助餐(邵阳一分店)</td><td>距离就近</td><td>211m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>回民餐厅(红旗路)</td><td>距离就近</td><td>257m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>昭阳楼·湘厨</td><td>距离就近</td><td>259m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>粒上皇(邵阳大祥红旗路新店)</td><td>距离就近</td><td>265m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>邵阳摩天轮动漫嘉年华</td><td>距离就近</td><td>285m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>宝隆和(城北路店)</td><td>距离就近</td><td>286m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>华龙大酒店(中共邵阳市委员会东)</td><td>距离就近</td><td>342m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>恭喜发财24小时自助棋牌室</td><td>距离就近</td><td>366m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>李记拌粉店</td><td>距离就近</td><td>402m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>品盛恭喜发财24小时自助棋牌室</td><td>距离就近</td><td>445m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>紫萝蓝歌舞厅</td><td>距离就近</td><td>453m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麦当劳(红旗路店)</td><td>距离就近</td><td>474m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>猕你生活超市</td><td>距离就近</td><td>510m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>九龍酒馆(城南大厦店)</td><td>距离就近</td><td>531m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>胡乐棋牌台球俱乐部(红旗路店)</td><td>距离就近</td><td>532m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>途窝人大宾馆</td><td>距离就近</td><td>540m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>老瓦屋·乡里土菜(隆回广电大厦店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>老瓦屋·乡里土菜(隆回广电大厦店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>鲜铺(隆回店)</td><td>距离就近</td><td>74m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>壹号威士忌雪茄吧</td><td>距离就近</td><td>116m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>食全食美公社(惠民店)</td><td>距离就近</td><td>270m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>回民一餐厅(铖景泰商业街店)（70 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>回民一餐厅(铖景泰商业街店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>亮亮饭店(铖景泰商业街店)</td><td>距离就近</td><td>14m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>九洲影城(铖景泰商业街店)</td><td>距离就近</td><td>162m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>雀潮24小时自助棋牌(步行街店)</td><td>距离就近</td><td>195m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雾岛MiniBar</td><td>距离就近</td><td>197m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>迷你服饰(昭东商业城店)</td><td>距离就近</td><td>198m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>粒上皇(邵阳双清东风路店)</td><td>距离就近</td><td>271m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>智娱智乐·24h自助棋牌(东风路店)</td><td>距离就近</td><td>272m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>秘镜实景娱乐(大汉悦中心店)</td><td>距离就近</td><td>305m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达影城(大汉悦中心店)</td><td>距离就近</td><td>307m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>快乐街区(大汉悦中心店)</td><td>距离就近</td><td>320m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>快乐街区(大汉悦中心店)</td><td>距离就近</td><td>320m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麒麟·光影艺术空间(大汉·悦中心店)</td><td>距离就近</td><td>325m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>虫洞沉浸式密室体验馆</td><td>距离就近</td><td>327m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>大众影剧院(东风路店)</td><td>距离就近</td><td>327m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>月下古堡密室逃脱</td><td>距离就近</td><td>327m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>距离就近</td><td>328m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>距离就近</td><td>328m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(大汉悦中心店)</td><td>距离就近</td><td>330m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>331m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>331m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>帆麦自助KTV(大汉悦中心店)</td><td>距离就近</td><td>336m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>跃动格子(邵阳大汉悦店)</td><td>距离就近</td><td>337m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>LetheBar德扑小酒馆</td><td>距离就近</td><td>341m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>湘贝王婆大虾店(大汉悦中心店)</td><td>距离就近</td><td>345m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>哈哥哥老字号麻辣烫（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>哈哥哥老字号麻辣烫</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>资园餐馆(江北市场店)</td><td>距离就近</td><td>73m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>宝隆和(状元路西一巷店)</td><td>距离就近</td><td>116m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>陈师傅生炒羊肉火锅(桂华路店)</td><td>距离就近</td><td>222m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>广电影城</td><td>距离就近</td><td>229m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>罗记三毛地标大排档(江北店)</td><td>距离就近</td><td>259m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>阿莲姐妹档烧烤</td><td>距离就近</td><td>267m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>亮亮饭店(铖景泰商业街店)（70 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>亮亮饭店(铖景泰商业街店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>回民一餐厅(铖景泰商业街店)</td><td>距离就近</td><td>14m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>九洲影城(铖景泰商业街店)</td><td>距离就近</td><td>148m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>雀潮24小时自助棋牌(步行街店)</td><td>距离就近</td><td>181m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>迷你服饰(昭东商业城店)</td><td>距离就近</td><td>184m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>雾岛MiniBar</td><td>距离就近</td><td>205m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>粒上皇(邵阳双清东风路店)</td><td>距离就近</td><td>283m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>智娱智乐·24h自助棋牌(东风路店)</td><td>距离就近</td><td>284m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>秘镜实景娱乐(大汉悦中心店)</td><td>距离就近</td><td>295m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达影城(大汉悦中心店)</td><td>距离就近</td><td>297m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>快乐街区(大汉悦中心店)</td><td>距离就近</td><td>308m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>快乐街区(大汉悦中心店)</td><td>距离就近</td><td>308m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麒麟·光影艺术空间(大汉·悦中心店)</td><td>距离就近</td><td>313m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>距离就近</td><td>317m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>距离就近</td><td>317m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(大汉悦中心店)</td><td>距离就近</td><td>318m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>319m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>319m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>帆麦自助KTV(大汉悦中心店)</td><td>距离就近</td><td>325m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>跃动格子(邵阳大汉悦店)</td><td>距离就近</td><td>325m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>LetheBar德扑小酒馆</td><td>距离就近</td><td>328m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>湘贝王婆大虾店(大汉悦中心店)</td><td>距离就近</td><td>333m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>大众影剧院(东风路店)</td><td>距离就近</td><td>339m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>虫洞沉浸式密室体验馆</td><td>距离就近</td><td>339m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>月下古堡密室逃脱</td><td>距离就近</td><td>340m</td><td>3.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>颜记粉面(湾田广场店)（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>颜记粉面(湾田广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>肖记粉面世家(湾田广场店)</td><td>距离就近</td><td>18m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>酷儿悦家庭娱乐中心(湾田广场店)</td><td>距离就近</td><td>76m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>动感街区动漫潮玩中心(新邵湾田店)</td><td>距离就近</td><td>97m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>真人版密室逃脱俱乐部(湾田广场店)</td><td>距离就近</td><td>98m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>童趣玩国(湾田广场店)</td><td>距离就近</td><td>98m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>中影星耀环球影城(大同路店)</td><td>距离就近</td><td>99m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>鱿遍天下(湾田广场店)</td><td>距离就近</td><td>121m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>童梦奇境卡丁车游乐场</td><td>距离就近</td><td>208m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>福盛小鲜牛潮汕牛肉火锅(佳源财富广场店)</td><td>距离就近</td><td>282m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>家佳乐动漫城(佳源财富广场店)</td><td>距离就近</td><td>289m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>家佳乐动漫城(佳源财富广场店)</td><td>距离就近</td><td>289m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>新邵老电影院</td><td>距离就近</td><td>473m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金三角电影院</td><td>距离就近</td><td>474m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>飞达动漫乐园</td><td>距离就近</td><td>480m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>飞达动漫乐园</td><td>距离就近</td><td>480m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>新邵县刘文祥麻辣烫</td><td>距离就近</td><td>554m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>易湘农家大院（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>易湘农家大院</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>伊兰顺回民菜(大汉·东风商业步行街店)（84 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>伊兰顺回民菜(大汉·东风商业步行街店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>千寻电竞</td><td>距离就近</td><td>46m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>TTKG派对(大汉步行街店)</td><td>距离就近</td><td>86m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>密码电竞(蜗牛店)</td><td>距离就近</td><td>89m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>天天K歌量贩式KTV(大汉·东风商业步行街店)</td><td>距离就近</td><td>94m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>食在有味(大汉·东风商业步行街店)</td><td>距离就近</td><td>111m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>芭堤雅小酒馆(邵阳店)</td><td>距离就近</td><td>112m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>新奇影院(湘中文化广场店)</td><td>距离就近</td><td>139m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>考拉游戏社</td><td>距离就近</td><td>144m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>考拉游戏社</td><td>距离就近</td><td>144m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>都汇国际影城邵阳店(原大地影院)</td><td>距离就近</td><td>146m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>奈斯否德州酒馆</td><td>距离就近</td><td>164m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>游宇电玩</td><td>距离就近</td><td>165m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>游宇电玩</td><td>距离就近</td><td>165m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>雀语棋牌24h有人服务</td><td>距离就近</td><td>168m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万达影城(大汉悦中心店)</td><td>距离就近</td><td>174m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>帆麦自助KTV(大汉悦中心店)</td><td>距离就近</td><td>176m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>秘镜实景娱乐(大汉悦中心店)</td><td>距离就近</td><td>178m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>跃动格子(邵阳大汉悦店)</td><td>距离就近</td><td>184m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>190m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>190m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>距离就近</td><td>190m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>距离就近</td><td>190m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(大汉悦中心店)</td><td>距离就近</td><td>197m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(大汉悦中心店)</td><td>距离就近</td><td>202m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大汉东风商业步行街(淘宝城店)（64 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>欢歌畅AI智慧KTV(大汉悦中心店)</td><td>距离就近</td><td>23m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>酷潮动漫</td><td>距离就近</td><td>24m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>酷潮动漫</td><td>距离就近</td><td>24m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>雀发潮AI智慧KTV·台球(大汉悦中心店)</td><td>距离就近</td><td>36m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>小铁24h自助台球·棋牌(邵阳大汉悦中心店)</td><td>距离就近</td><td>56m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>蓝山home bar</td><td>距离就近</td><td>61m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>花涧艺术无人棋牌(大汉悦中心店)</td><td>距离就近</td><td>64m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>堂口民谣烧烤酒馆(大汉悦中心店)</td><td>距离就近</td><td>69m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>堂口民谣烧烤酒馆(大汉悦中心店)</td><td>距离就近</td><td>69m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>考拉游戏社</td><td>距离就近</td><td>75m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>考拉游戏社</td><td>距离就近</td><td>75m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>奈斯否德州酒馆</td><td>距离就近</td><td>79m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>湘贝王婆大虾店(大汉悦中心店)</td><td>距离就近</td><td>83m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>LetheBar德扑小酒馆</td><td>距离就近</td><td>83m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>818密室逃脱</td><td>距离就近</td><td>92m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>816真人密室逃脱(邵阳店)</td><td>距离就近</td><td>93m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麒麟·光影艺术空间(大汉·悦中心店)</td><td>距离就近</td><td>100m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(大汉悦中心店)</td><td>距离就近</td><td>100m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>快乐街区(大汉悦中心店)</td><td>距离就近</td><td>104m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>快乐街区(大汉悦中心店)</td><td>距离就近</td><td>104m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>跃动格子(邵阳大汉悦店)</td><td>距离就近</td><td>105m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>107m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>107m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>食在有味(大汉·东风商业步行街店)</td><td>距离就近</td><td>109m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>距离就近</td><td>110m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>华盛堂购物中心(美地公元店)（27 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>奇乐多儿童乐园</td><td>名称互证</td><td>31m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>奇乐多儿童乐园</td><td>名称互证</td><td>31m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>三缺一棋牌(华盛堂店)</td><td>距离就近</td><td>60m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>云顶棋牌24h自助棋牌(华盛堂店)</td><td>距离就近</td><td>66m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>邵阳市人民电影院</td><td>名称互证</td><td>78m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>四方朋友Ai智慧KTV棋牌(红旗路华盛堂店)</td><td>距离就近</td><td>87m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>五彩今天连锁酒店(邵阳红旗路店)</td><td>距离就近</td><td>95m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>红旗路商业美食城</td><td>距离就近</td><td>143m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>泰北客东南亚大排档</td><td>距离就近</td><td>167m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>回民餐厅(红旗路)</td><td>距离就近</td><td>184m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>昭阳楼·湘厨</td><td>距离就近</td><td>200m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>家乐阳光自助餐(邵阳一分店)</td><td>距离就近</td><td>284m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>邵阳摩天轮动漫嘉年华</td><td>距离就近</td><td>292m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>华龙大酒店(中共邵阳市委员会东)</td><td>距离就近</td><td>306m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>李记拌粉店</td><td>距离就近</td><td>332m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>宝隆和(城北路店)</td><td>距离就近</td><td>335m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>恭喜发财24小时自助棋牌室</td><td>距离就近</td><td>341m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>粒上皇(邵阳大祥红旗路新店)</td><td>距离就近</td><td>342m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麦当劳(红旗路店)</td><td>距离就近</td><td>400m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>猕你生活超市</td><td>距离就近</td><td>432m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>胡乐棋牌台球俱乐部(红旗路店)</td><td>距离就近</td><td>458m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>品盛恭喜发财24小时自助棋牌室</td><td>距离就近</td><td>471m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>九龍酒馆(城南大厦店)</td><td>距离就近</td><td>479m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>途窝人大宾馆</td><td>距离就近</td><td>493m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>紫萝蓝歌舞厅</td><td>距离就近</td><td>531m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>东方凤凰城购物中心（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鸭匠爪爪火锅(凤凰城店)</td><td>距离就近</td><td>40m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>牛魔系烤串(沿河街店)</td><td>距离就近</td><td>52m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>怂人实景密室逃脱</td><td>名称互证</td><td>97m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>围辣小火锅(邵阳县百货大楼银都购物中心店)</td><td>距离就近</td><td>166m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>湘土情酒楼(凤凰街店)</td><td>距离就近</td><td>279m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>爱宠乐园(河西街宠物店)</td><td>距离就近</td><td>559m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宝庆夜市（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宝庆夜市</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>电玩狂潮</td><td>距离就近</td><td>232m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>三六酒家常菜(资枣安置房店)</td><td>距离就近</td><td>254m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>围辣小火锅(邵阳恒大华府店)</td><td>距离就近</td><td>271m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>街边夜宵</td><td>距离就近</td><td>301m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>刘文祥麻辣烫(恒大华府店)</td><td>距离就近</td><td>367m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>奇乐多彩虹滑道运动乐园(恒大华府店)</td><td>距离就近</td><td>457m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>十三狼酒吧(邵阳店)</td><td>距离就近</td><td>461m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>农耕社.农家菜(江北店)</td><td>距离就近</td><td>496m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>宝庆夜市(中驰第一城店)</td><td>名称互证</td><td>568m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>味来私房菜(中驰店)</td><td>距离就近</td><td>598m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>佬邵阳美食城(隆回店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>佬邵阳美食城(隆回店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>特色土菜馆(辰河世家店)</td><td>距离就近</td><td>91m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>大江美蛙鱼火锅</td><td>距离就近</td><td>161m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星光夜市</td><td>距离就近</td><td>342m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>七里嗨乐园</td><td>距离就近</td><td>356m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>Waiting等风也等你</td><td>距离就近</td><td>357m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>沙巴克美食城(辰河世家店)</td><td>距离就近</td><td>533m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>崀山国际商业广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>弹猪乐</td><td>名称互证</td><td>0m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>嗨玩星空</td><td>名称互证</td><td>23m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>嗨玩星空</td><td>名称互证</td><td>23m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>子洋联盟家庭娱乐中心(崀山国际商业广场店)</td><td>名称互证</td><td>58m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>解忧精酿酒馆</td><td>距离就近</td><td>279m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>森记海鲜城(新宁总店)</td><td>距离就近</td><td>301m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>密码电竞(蜗牛店)（74 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>密码电竞(蜗牛店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>食在有味(大汉·东风商业步行街店)</td><td>距离就近</td><td>54m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>都汇国际影城邵阳店(原大地影院)</td><td>距离就近</td><td>63m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>新奇影院(湘中文化广场店)</td><td>距离就近</td><td>64m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>天天K歌量贩式KTV(大汉·东风商业步行街店)</td><td>距离就近</td><td>71m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>游宇电玩</td><td>距离就近</td><td>76m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>游宇电玩</td><td>距离就近</td><td>76m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>雀语棋牌24h有人服务</td><td>距离就近</td><td>79m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>考拉游戏社</td><td>距离就近</td><td>83m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>考拉游戏社</td><td>距离就近</td><td>83m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>伊兰顺回民菜(大汉·东风商业步行街店)</td><td>距离就近</td><td>89m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>TTKG派对(大汉步行街店)</td><td>距离就近</td><td>95m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>芭堤雅小酒馆(邵阳店)</td><td>距离就近</td><td>101m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>千寻电竞</td><td>距离就近</td><td>111m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>奈斯否德州酒馆</td><td>距离就近</td><td>135m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(大汉悦中心店)</td><td>距离就近</td><td>141m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>816真人密室逃脱(邵阳店)</td><td>距离就近</td><td>150m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>帆麦自助KTV(大汉悦中心店)</td><td>距离就近</td><td>165m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>跃动格子(邵阳大汉悦店)</td><td>距离就近</td><td>168m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>818密室逃脱</td><td>距离就近</td><td>169m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>小铁24h自助台球·棋牌(邵阳大汉悦中心店)</td><td>距离就近</td><td>171m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>175m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>玩刻·手柄游戏(大汉悦店)</td><td>距离就近</td><td>175m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>距离就近</td><td>176m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>潮玩娱乐馆·跳格子·Ps5·桌游剧本杀(大汉悦店)</td><td>距离就近</td><td>176m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>洞口长信宾馆(雪峰广场店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>洞口长信宾馆(雪峰广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>巴蜀布衣火锅店</td><td>距离就近</td><td>222m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>洞口县蒸满竹餐饮店</td><td>距离就近</td><td>355m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>巷往小吃坊</td><td>距离就近</td><td>484m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>塔斯汀中国汉堡(洞口县雪峰广场店)</td><td>距离就近</td><td>493m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>阴阳间沉浸式密室</td><td>距离就近</td><td>508m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>怂人密室逃脱</td><td>距离就近</td><td>555m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>雾岛taproom</td><td>距离就近</td><td>595m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>步步高超市（24 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星聚会ktv(步步高新天地店)</td><td>距离就近</td><td>13m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>中影DSN国际影城(步步高新天地店)</td><td>距离就近</td><td>13m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>哈尼鹿儿童乐园(邵阳步步高新天地店)</td><td>距离就近</td><td>24m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>塔斯汀中国汉堡(邵阳市双清步步高新天地LG层)</td><td>距离就近</td><td>55m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>盛香亭转转热卤(邵阳新天地店)</td><td>距离就近</td><td>67m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>王大乔泡椒米线(步步高新天地店)</td><td>距离就近</td><td>68m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>池奈·咖喱蛋包饭(邵阳步步高店)</td><td>距离就近</td><td>70m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>必胜客(邵阳大道店)</td><td>距离就近</td><td>82m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>MC-HOUSE超级密室(邵阳新天地·步步高店)</td><td>距离就近</td><td>94m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>上海滩CLUB邵阳店</td><td>距离就近</td><td>105m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>几多全新鲜食品商店(邵阳步步高店)</td><td>距离就近</td><td>117m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>梦迪·炫K 量贩KTV</td><td>距离就近</td><td>132m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>快乐街区(步步高新天地店)</td><td>距离就近</td><td>135m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>快乐街区(步步高新天地店)</td><td>距离就近</td><td>135m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>Nuts酒馆</td><td>距离就近</td><td>140m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>尖峰玩家(邵阳步步高店)</td><td>距离就近</td><td>157m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>尖峰玩家(邵阳步步高店)</td><td>距离就近</td><td>157m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>七色猫新奇体验馆</td><td>距离就近</td><td>163m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>七色猫新奇体验馆</td><td>距离就近</td><td>163m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>新世界大酒店</td><td>距离就近</td><td>167m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>潮人酒吧(邵阳长城大酒店店)</td><td>距离就近</td><td>232m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>迷你·宠物店</td><td>距离就近</td><td>335m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>茗港海鲜码头佘湖一品店</td><td>距离就近</td><td>370m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>锅司令柴火村(总店)</td><td>距离就近</td><td>421m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(友阿国际广场店)（30 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>广粥城茶餐厅(友阿广场店)</td><td>距离就近</td><td>28m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>绿草地·湘菜(邵阳友阿店)</td><td>距离就近</td><td>29m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星世纪空中乐园</td><td>距离就近</td><td>40m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>小飞侠游乐园(友阿国际广场店)</td><td>距离就近</td><td>40m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>星韵·私人订制KTV(邵阳店)</td><td>距离就近</td><td>40m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>The Green Party(邵阳友阿店)</td><td>距离就近</td><td>41m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>湘当当·分部位现炒黄牛肉(友阿店)</td><td>距离就近</td><td>51m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>星世纪(友阿国际商业广场店)</td><td>距离就近</td><td>67m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>邵阳骏维影城(友阿国际商业广场店)</td><td>距离就近</td><td>68m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>必胜客(友阿国际广场店)</td><td>距离就近</td><td>77m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>围辣小火锅(友阿国际广场店)</td><td>距离就近</td><td>79m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>迪乐尼乐园(友阿店)</td><td>距离就近</td><td>80m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>童欢乐园(友阿国际商业广场店)</td><td>距离就近</td><td>97m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>河马电玩·PS·Switch(友阿国际广场店)</td><td>距离就近</td><td>99m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>河马电玩·PS·Switch(友阿国际广场店)</td><td>距离就近</td><td>99m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>几多全新鲜食品商店(邵阳双清区友阿国际广场店)</td><td>距离就近</td><td>135m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>私人订制·俱乐部(友阿国际广场店)</td><td>距离就近</td><td>156m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四方朋友·AI智慧KTV(友阿广场店)</td><td>距离就近</td><td>186m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>许记·海鲜蒸汽锅</td><td>距离就近</td><td>194m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>樂music bar</td><td>距离就近</td><td>203m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>鱼头村</td><td>距离就近</td><td>233m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>罗记三毛地标大排档(友阿店)</td><td>距离就近</td><td>262m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>新华回民餐馆</td><td>距离就近</td><td>330m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>宠园宠物</td><td>距离就近</td><td>391m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>秋月老邵阳</td><td>距离就近</td><td>466m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>陈师傅生炒羊肉火锅(桂华路店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>陈师傅生炒羊肉火锅(桂华路店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>广电影城</td><td>距离就近</td><td>50m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>哈哥哥老字号麻辣烫</td><td>距离就近</td><td>222m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>罗记三毛地标大排档(江北店)</td><td>距离就近</td><td>225m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>资园餐馆(江北市场店)</td><td>距离就近</td><td>255m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>阿莲姐妹档烧烤</td><td>距离就近</td><td>258m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>宝隆和(状元路西一巷店)</td><td>距离就近</td><td>272m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>0051香辣虾(西湖店)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>0051香辣虾(西湖店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>九贝香辣蟹(西湖桥店)</td><td>距离就近</td><td>56m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>天籁之音KTV(城北路)</td><td>距离就近</td><td>72m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>肖哥的菜·原上菜啦</td><td>距离就近</td><td>101m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>金色大帝KTV(资江南路店)</td><td>距离就近</td><td>121m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>魅力四射国际商务汇</td><td>距离就近</td><td>122m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>友谊联都影城(联都商城店)</td><td>距离就近</td><td>180m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>紫萝蓝歌舞厅</td><td>距离就近</td><td>197m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>民族宾馆(民族路)</td><td>距离就近</td><td>246m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>粒上皇(邵阳大祥红旗路新店)</td><td>距离就近</td><td>361m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>家乐阳光自助餐(邵阳一分店)</td><td>距离就近</td><td>434m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>宝隆和(城北路店)</td><td>距离就近</td><td>465m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>泰北客东南亚大排档</td><td>距离就近</td><td>523m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>红旗路商业美食城</td><td>距离就近</td><td>535m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>品盛恭喜发财24小时自助棋牌室</td><td>距离就近</td><td>594m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>五彩今天连锁酒店(邵阳红旗路店)</td><td>距离就近</td><td>600m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>邵阳市人民电影院</td><td>距离就近</td><td>600m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>0051香辣虾(邵东店)</td><td>名称互证</td><td>28383m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>小百花美食城（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>小百花美食城</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>淘气宝儿童乐园(广场路店)</td><td>距离就近</td><td>200m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>原步行街麻辣烫烧烤店</td><td>距离就近</td><td>217m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>酒号公社</td><td>距离就近</td><td>525m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（37 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>新贵都大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>121.00</td><td>日恒电脑城a栋</td></tr>
+<tr><td>✅A-</td><td>梅山雅院</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>大禾塘街道红旗社区卿家片民房组1号</td></tr>
+<tr><td>✅A-</td><td>隆回君安宾馆(隆回汽车总站店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>二桥75号</td></tr>
+<tr><td>✅A-</td><td>大城小爱连锁酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>敏州东路诚信家园小区4号楼</td></tr>
+<tr><td>✅A-</td><td>洞口长信宾馆(雪峰广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>蔡锷路128号</td></tr>
+<tr><td>✅B</td><td>丰泽园饭店(金龙大道店)</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>金龙路636号</td></tr>
+<tr><td>✅B</td><td>新宁丹霞宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.5</td><td>—</td><td>金石镇大兴路231号</td></tr>
+<tr><td>✅B</td><td>泓远时代酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.5</td><td>—</td><td>昭阳大道1299号</td></tr>
+<tr><td>✅B</td><td>永义商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>五峰铺镇霞峰路五峰铺汽车站东北20米</td></tr>
+<tr><td>✅B</td><td>栖遇·华悦酒店(邵东高铁站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>宋家塘金龙大道855-861</td></tr>
+<tr><td>✅B</td><td>佳圆宾馆(邵阳县汽车站店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>宇通路金贝贝幼儿园西南50米处</td></tr>
+<tr><td>✅B</td><td>金源大酒店(邵东高铁站店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.4</td><td>—</td><td>兴和大道309号</td></tr>
+<tr><td>✅B</td><td>邵东时尚精品旅馆(邵东一中店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>邵东宋家塘金龙大道图书城7栋8-10号</td></tr>
+<tr><td>⚠️</td><td>悠然亲子农庄</td><td>住宿服务;住宿服务相关;住宿服务相关/体育休闲服务;休闲场所;休闲场所</td><td>4.2</td><td>—</td><td>南山牧场梅子坪紫阳峰附近</td></tr>
+<tr><td>⚠️</td><td>交通宾馆(邵东高铁站汽车西站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>昭阳大道汽车西站出站口旁</td></tr>
+<tr><td>⚠️</td><td>金城宾馆(红岭路)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>红岭路408号(邵东县政府旁)</td></tr>
+<tr><td>⚠️</td><td>恒丰假日酒店</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>—</td><td>桃花路(近恒丰家园)</td></tr>
+<tr><td>⚠️</td><td>洞口大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>文昌北路18号</td></tr>
+<tr><td>⚠️</td><td>途窝人大宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.0</td><td>—</td><td>宝庆中路379号人大常委会院内</td></tr>
+<tr><td>⚠️</td><td>五彩今天连锁酒店(邵阳红旗路店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.0</td><td>—</td><td>红旗路208号</td></tr>
+<tr><td>⚠️</td><td>新世界大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>邵阳大道与建设南路交汇处</td></tr>
+<tr><td>⚠️</td><td>亦爱精品连锁酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>昭阳大道448号</td></tr>
+<tr><td>⚠️</td><td>和顺大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.9</td><td>—</td><td>东大路68号(近五一北路、人民广场)</td></tr>
+<tr><td>⚠️</td><td>华龙大酒店(中共邵阳市委员会东)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.9</td><td>—</td><td>宝庆中路398号</td></tr>
+<tr><td>⚠️</td><td>民族宾馆(民族路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>西湖路民族一巷清真寺内</td></tr>
+<tr><td>⚠️</td><td>武冈金都大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>解放路47号湘运大厦</td></tr>
+<tr><td>⚠️</td><td>宏腾国际大酒店(邵东店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>宋家塘街道建设西路与两塘路交汇处宏腾·龙村花园</td></tr>
+<tr><td>⚠️</td><td>邵阳一嘉一酒店(武冈店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>武强北路路口</td></tr>
+<tr><td>⚠️</td><td>广场宾馆(东风路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>人民广场外贸大楼(工商银行对面)</td></tr>
+<tr><td>⚠️</td><td>武冈宜家精品酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>忠义路87号</td></tr>
+<tr><td>⚠️</td><td>金凤凰风尚宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>金鸡路208号</td></tr>
+<tr><td>⚠️</td><td>邵阳都之都酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>邵水西路188号</td></tr>
+<tr><td>❌</td><td>城步三和宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>中心路汽车南站对面</td></tr>
+<tr><td>❌</td><td>尚橙酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>塘渡口镇大木山振羽广场对面</td></tr>
+<tr><td>❌</td><td>槟榔驿站</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.3</td><td>—</td><td>团山镇</td></tr>
+<tr><td>❌</td><td>OYO公路商务酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>昭陵西路邵阳公路局旁</td></tr>
+<tr><td>❌</td><td>隆回众和神龙国际酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>2.6</td><td>—</td><td>桃洪镇大桥路31号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>food</td><td>类型:中餐厅</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>类型:湘菜/地方菜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:地方风味餐厅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:酒楼/火锅/海鲜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:火锅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:海鲜酒楼</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:特色美食</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:老字号</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:大排档</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:苍蝇馆</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>food</td><td>关键词:小吃</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:本地菜</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:特产</td><td>40</td><td></td></tr>
+<tr><td>product</td><td>关键词:土特产</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:地方特产</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:步行街</td><td>12</td><td></td></tr>
+<tr><td>district</td><td>类型:特色商业街</td><td>36</td><td></td></tr>
+<tr><td>district</td><td>类型:购物中心</td><td>28</td><td></td></tr>
+<tr><td>district</td><td>类型:商场</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:美食街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:夜市</td><td>13</td><td></td></tr>
+<tr><td>district</td><td>关键词:小吃街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:步行街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:购物中心</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:酒吧</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:酒馆</td><td>20</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:LIVEHOUSE</td><td>1</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:娱乐场所</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童乐园</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:电玩城</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:游乐场</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你游乐场</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:亲子乐园</td><td>15</td><td></td></tr>
+<tr><td>kids</td><td>关键词:淘气堡</td><td>3</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童体验</td><td>7</td><td></td></tr>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>8</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>5</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>3</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>2</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>19</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>5</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/邵阳市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>10 个 POI 无地址</strong>，需人工补：爱饭海鲜(世界钰园店)、袁鲜记烧烤海鲜大排档、湘当当·分部位现炒黄牛肉(友阿店)、白马田购物中心、建国购物中心</li><li><input type="checkbox" disabled> <strong>3 个 POI 无评分</strong>，暂标 ⚠️：新宁商贸步行街、奥特莱斯·理想城二工区(建设中)、中铁六局邵东奥特莱斯购物公园项目部</li><li><input type="checkbox" disabled> 儿童游乐 142 家，其中场内 37 家、独立 105 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 12 个区县：北塔区、双清区、城步苗族自治县、大祥区、新宁县、新邵县、武冈市、洞口县、绥宁县、邵东市、邵阳县、隆回县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

@@ -1,0 +1,393 @@
+{
+ "province": "辽宁省",
+ "stats": {
+  "cities": 14,
+  "poi": 10270,
+  "grades": {
+   "S": 5,
+   "A": 165,
+   "B": 179,
+   "C": 211
+  }
+ },
+ "cities": [
+  {
+   "city": "丹东市",
+   "province": "辽宁省",
+   "adcode": "210600",
+   "poi": 710,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:42:53",
+   "page": "cities/210600.html",
+   "json": "api/cities/210600.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E4%B8%B9%E4%B8%9C%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 13,
+    "B": 14,
+    "C": 13
+   },
+   "dims": {
+    "food": 286,
+    "district": 133,
+    "leisure": 189,
+    "kids": 30,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "大连市",
+   "province": "辽宁省",
+   "adcode": "210200",
+   "poi": 910,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:42:13",
+   "page": "cities/210200.html",
+   "json": "api/cities/210200.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E5%A4%A7%E8%BF%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 8,
+    "B": 9,
+    "C": 23
+   },
+   "dims": {
+    "food": 284,
+    "district": 239,
+    "leisure": 230,
+    "kids": 33,
+    "hotel": 32,
+    "product": 41
+   }
+  },
+  {
+   "city": "抚顺市",
+   "province": "辽宁省",
+   "adcode": "210400",
+   "poi": 671,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:48:11",
+   "page": "cities/210400.html",
+   "json": "api/cities/210400.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E6%8A%9A%E9%A1%BA%E5%B8%82.md",
+   "grades": {
+    "S": 3,
+    "A": 16,
+    "B": 12,
+    "C": 9
+   },
+   "dims": {
+    "food": 279,
+    "district": 110,
+    "leisure": 158,
+    "kids": 27,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "朝阳市",
+   "province": "辽宁省",
+   "adcode": "211300",
+   "poi": 678,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:49:40",
+   "page": "cities/211300.html",
+   "json": "api/cities/211300.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E6%9C%9D%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 14,
+    "B": 16,
+    "C": 10
+   },
+   "dims": {
+    "food": 271,
+    "district": 121,
+    "leisure": 169,
+    "kids": 41,
+    "hotel": 26,
+    "product": 40
+   }
+  },
+  {
+   "city": "本溪市",
+   "province": "辽宁省",
+   "adcode": "210500",
+   "poi": 610,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:46:45",
+   "page": "cities/210500.html",
+   "json": "api/cities/210500.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E6%9C%AC%E6%BA%AA%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 19,
+    "B": 11,
+    "C": 10
+   },
+   "dims": {
+    "food": 257,
+    "district": 115,
+    "leisure": 153,
+    "kids": 13,
+    "hotel": 26,
+    "product": 40
+   }
+  },
+  {
+   "city": "沈阳市",
+   "province": "辽宁省",
+   "adcode": "210100",
+   "poi": 958,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:44:30",
+   "page": "cities/210100.html",
+   "json": "api/cities/210100.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E6%B2%88%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 5,
+    "B": 10,
+    "C": 25
+   },
+   "dims": {
+    "food": 282,
+    "district": 237,
+    "leisure": 240,
+    "kids": 59,
+    "hotel": 38,
+    "product": 40
+   }
+  },
+  {
+   "city": "盘锦市",
+   "province": "辽宁省",
+   "adcode": "211100",
+   "poi": 722,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:48:51",
+   "page": "cities/211100.html",
+   "json": "api/cities/211100.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E7%9B%98%E9%94%A6%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 12,
+    "B": 20,
+    "C": 8
+   },
+   "dims": {
+    "food": 279,
+    "district": 133,
+    "leisure": 189,
+    "kids": 34,
+    "hotel": 28,
+    "product": 40
+   }
+  },
+  {
+   "city": "营口市",
+   "province": "辽宁省",
+   "adcode": "210800",
+   "poi": 747,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:51:13",
+   "page": "cities/210800.html",
+   "json": "api/cities/210800.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E8%90%A5%E5%8F%A3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 7,
+    "B": 14,
+    "C": 19
+   },
+   "dims": {
+    "food": 283,
+    "district": 131,
+    "leisure": 211,
+    "kids": 34,
+    "hotel": 36,
+    "product": 40
+   }
+  },
+  {
+   "city": "葫芦岛市",
+   "province": "辽宁省",
+   "adcode": "211400",
+   "poi": 764,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:41:18",
+   "page": "cities/211400.html",
+   "json": "api/cities/211400.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E8%91%AB%E8%8A%A6%E5%B2%9B%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 6,
+    "B": 15,
+    "C": 19
+   },
+   "dims": {
+    "food": 291,
+    "district": 158,
+    "leisure": 182,
+    "kids": 49,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "辽阳市",
+   "province": "辽宁省",
+   "adcode": "211000",
+   "poi": 612,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:47:23",
+   "page": "cities/211000.html",
+   "json": "api/cities/211000.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E8%BE%BD%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 14,
+    "B": 9,
+    "C": 17
+   },
+   "dims": {
+    "food": 268,
+    "district": 100,
+    "leisure": 146,
+    "kids": 16,
+    "hotel": 35,
+    "product": 21
+   }
+  },
+  {
+   "city": "铁岭市",
+   "province": "辽宁省",
+   "adcode": "211200",
+   "poi": 674,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:45:19",
+   "page": "cities/211200.html",
+   "json": "api/cities/211200.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E9%93%81%E5%B2%AD%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 12,
+    "B": 13,
+    "C": 15
+   },
+   "dims": {
+    "food": 262,
+    "district": 129,
+    "leisure": 169,
+    "kids": 32,
+    "hotel": 25,
+    "product": 40
+   }
+  },
+  {
+   "city": "锦州市",
+   "province": "辽宁省",
+   "adcode": "210700",
+   "poi": 761,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:43:43",
+   "page": "cities/210700.html",
+   "json": "api/cities/210700.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E9%94%A6%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 16,
+    "B": 8,
+    "C": 16
+   },
+   "dims": {
+    "food": 287,
+    "district": 132,
+    "leisure": 193,
+    "kids": 32,
+    "hotel": 26,
+    "product": 40
+   }
+  },
+  {
+   "city": "阜新市",
+   "province": "辽宁省",
+   "adcode": "210900",
+   "poi": 638,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:45:57",
+   "page": "cities/210900.html",
+   "json": "api/cities/210900.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E9%98%9C%E6%96%B0%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 14,
+    "B": 15,
+    "C": 10
+   },
+   "dims": {
+    "food": 275,
+    "district": 113,
+    "leisure": 155,
+    "kids": 19,
+    "hotel": 28,
+    "product": 40
+   }
+  },
+  {
+   "city": "鞍山市",
+   "province": "辽宁省",
+   "adcode": "210300",
+   "poi": 815,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:50:22",
+   "page": "cities/210300.html",
+   "json": "api/cities/210300.json",
+   "md": "md/%E8%BE%BD%E5%AE%81%E7%9C%81/%E9%9E%8D%E5%B1%B1%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 9,
+    "B": 13,
+    "C": 17
+   },
+   "dims": {
+    "food": 288,
+    "district": 157,
+    "leisure": 211,
+    "kids": 41,
+    "hotel": 31,
+    "product": 40
+   }
+  }
+ ]
+}

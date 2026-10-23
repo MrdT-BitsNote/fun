@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>邯郸市 · 河北省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/河北省.html">← 返回河北省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>邯郸市 · 河北省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:17:01  ·  POI 总量：205（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>205</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>97%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 5 · 商圈 139 · 成人娱乐 156 · 儿童娱乐 31 · 酒店 29 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>河北省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>18 个</td></tr>
+<tr><td>街道/镇/乡</td><td>242 个</td></tr>
+<tr><td>区县构成</td><td>县×11、市辖区×6、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>丛台区</td><td>102</td><td>50%</td></tr>
+<tr><td>邯山区</td><td>44</td><td>21%</td></tr>
+<tr><td>永年区</td><td>12</td><td>6%</td></tr>
+<tr><td>武安市</td><td>9</td><td>4%</td></tr>
+<tr><td>复兴区</td><td>9</td><td>4%</td></tr>
+<tr><td>魏县</td><td>4</td><td>2%</td></tr>
+<tr><td>临漳县</td><td>4</td><td>2%</td></tr>
+<tr><td>磁县</td><td>4</td><td>2%</td></tr>
+<tr><td>曲周县</td><td>3</td><td>1%</td></tr>
+<tr><td>涉县</td><td>3</td><td>1%</td></tr>
+<tr><td>大名县</td><td>3</td><td>1%</td></tr>
+<tr><td>峰峰矿区</td><td>2</td><td>1%</td></tr>
+<tr><td>成安县</td><td>2</td><td>1%</td></tr>
+<tr><td>鸡泽县</td><td>1</td><td>0%</td></tr>
+<tr><td>邱县</td><td>1</td><td>0%</td></tr>
+</tbody></table></div>
+<p>（另 2 个区县见原始数据）</p>
+<p><strong>商圈载体类型构成</strong>（139 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>70</td></tr>
+<tr><td>购物中心/综合体</td><td>27</td></tr>
+<tr><td>批发城</td><td>17</td></tr>
+<tr><td>百货/商场</td><td>13</td></tr>
+<tr><td>奥特莱斯</td><td>8</td></tr>
+<tr><td>商业街</td><td>4</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（139 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>美乐城(中国邯郸环球中心店)</td><td>百货/商场</td><td>4.9</td><td>2</td><td>11</td><td>2</td><td>0</td></tr>
+<tr><td>B</td><td>中国邯郸环球中心</td><td>其他商业载体</td><td>4.6</td><td>2</td><td>11</td><td>2</td><td>0</td></tr>
+<tr><td>B</td><td>天鸿广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>15</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>欢乐时光KTV</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>11</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>麦颂KTV(新天鸿广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>16</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>美高梅.国际娱乐</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>11</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>银河国际KTV</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>10</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>M.A PARTY国际娱乐</td><td>其他商业载体</td><td>4.6</td><td>1</td><td>7</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>邯郸万象汇</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>新世纪中心</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>江南春大酒店(邯郸店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>中华宾馆</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万达影城</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>工人剧院(邯郸市工人剧院店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>康德商场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>魏县双隆购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>浙江商贸城服装批发基地</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万象汇购物中心北区</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>浙江商贸城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>邯山万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>邯郸悦然广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>武安新世纪广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>宣和时代广场</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中盛国贸广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永年新世纪广场(万钰店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>美嘉快捷宾馆(魏县商贸城店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>林彤影城(颐高智能广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>SFC上影国际影城(邯郸道VLED巨幕店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>百货大楼(政府街店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>雪雷生活超市</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>美食林(新园超市店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>美食林千鑫购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>润发购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>美食林(新城购物广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>2</td><td>1</td></tr>
+<tr><td>C</td><td>邯郸市科程水果批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>天骏商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>圆歌未来石购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>邯郸园博动物园</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>萌兔部落主题乐园广场</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>CEDAR·时钟座·超级密室</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+</tbody></table></div>
+<h3>美乐城(中国邯郸环球中心店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 2 家 / 娱乐 13 / 酒店 0</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：人民东路454号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥34（区间 ¥13–55）</li><li><strong>动线主轴</strong>：人民东路</li><li><strong>业态分布</strong>：美食 2 · 成人娱乐 11 · 儿童娱乐 2 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>美乐城(中国邯郸环球中心店)</td></tr>
+<tr><td>美食</td><td>2</td><td>麦乐汇KTV·Al智慧(美乐城店)、四个朋友·自助棋牌(美乐城店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>云川台球棋牌俱乐部、M.A PARTY国际娱乐、麦乐汇KTV·Al智慧(美乐城店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>嗨九零VR·密室·PS电玩体验店(美乐城店)、萌宠动物园(美乐城店)(暂停营业)</td></tr>
+</tbody></table></div>
+<h3>中国邯郸环球中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 2 家 / 娱乐 13 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;楼宇;商住两用楼宇）</li><li><strong>地址</strong>：人民路456号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥34（区间 ¥13–55）</li><li><strong>动线主轴</strong>：人民东路</li><li><strong>业态分布</strong>：美食 2 · 成人娱乐 11 · 儿童娱乐 2 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>中国邯郸环球中心</td></tr>
+<tr><td>美食</td><td>2</td><td>麦乐汇KTV·Al智慧(美乐城店)、四个朋友·自助棋牌(美乐城店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>云川台球棋牌俱乐部、M.A PARTY国际娱乐、麦乐汇KTV·Al智慧(美乐城店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>嗨九零VR·密室·PS电玩体验店(美乐城店)、萌宠动物园(美乐城店)(暂停营业)</td></tr>
+</tbody></table></div>
+<h3>天鸿广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：联纺东路505号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 15 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>天鸿广场</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>欢乐时光KTV、环球国际影城(天鸿广场店)、麦颂KTV(新天鸿广场店)</td></tr>
+</tbody></table></div>
+<h3>欢乐时光KTV —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：滏东北大街253号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>欢乐时光KTV</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>欢乐时光KTV、美高梅.国际娱乐、银河国际KTV</td></tr>
+</tbody></table></div>
+<h3>麦颂KTV(新天鸿广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：人和街凤桐大厦4层1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 16 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>麦颂KTV(新天鸿广场店)</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>麦颂KTV(新天鸿广场店)、环球国际影城(天鸿广场店)、牛小牛棋牌俱乐部</td></tr>
+</tbody></table></div>
+<h3>美高梅.国际娱乐 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：兼庄乡滏东北大街238号宏海大厦</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>美高梅.国际娱乐</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>欢乐时光KTV、美高梅.国际娱乐、银河国际KTV</td></tr>
+</tbody></table></div>
+<h3>银河国际KTV —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV｜商务住宅;商务住宅相关;商务住宅相关｜生活服务;生活服务场所;生活服务场所）</li><li><strong>地址</strong>：滏东北大街230号宏海大厦3层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>银河国际KTV</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>欢乐时光KTV、银河国际KTV、美高梅.国际娱乐</td></tr>
+</tbody></table></div>
+<h3>M.A PARTY国际娱乐 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室｜餐饮服务;茶艺馆;茶艺馆）</li><li><strong>地址</strong>：人民东路410号锦林大厦负一层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥13（区间 ¥13–13）</li><li><strong>动线主轴</strong>：人民东路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 7 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>M.A PARTY国际娱乐</td></tr>
+<tr><td>美食</td><td>1</td><td>四个朋友·自助棋牌(美乐城店)</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>M.A PARTY国际娱乐、唱吧麦颂KTV(邯郸龙湖公园店)、四个朋友·自助棋牌(美乐城店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宠动物园(美乐城店)(暂停营业)</td></tr>
+</tbody></table></div>
+<h3>邯郸万象汇 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：经济开发区廉颇北大街277号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>邯郸万象汇</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>幸福蓝海影城(邯郸万象汇)、星聚会KTV(邯郸万象汇)、问号先生MINI密室馆(邯郸万象汇店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>问号小侦探·儿童密室(邯郸万象汇店)</td></tr>
+</tbody></table></div>
+<h3>新世纪中心 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：中华北大街29号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>新世纪中心</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>UME国际影城(邯郸新世纪中心店)、唱吧麦颂KTV(新世纪中心店)、玩乐宇宙·探案馆(国贸店)</td></tr>
+</tbody></table></div>
+<h3>江南春大酒店(邯郸店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：中华北大街30号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>江南春大酒店(邯郸店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>工人剧院(邯郸市工人剧院店)、玩乐宇宙·探案馆(国贸店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>江南春大酒店(邯郸店)</td></tr>
+</tbody></table></div>
+<h3>中华宾馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：魏都北大街81号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>中华宾馆</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>中华宾馆</td></tr>
+</tbody></table></div>
+<h3>万达影城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：渚河路街道滏河南大街与陵园路交叉口西南侧万达广场4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>万达影城、星火科技密室(邯山万达广场)、夹博士(邯山万达广场店)</td></tr>
+</tbody></table></div>
+<h3>工人剧院(邯郸市工人剧院店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;剧场）</li><li><strong>地址</strong>：中华北大街13号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>工人剧院(邯郸市工人剧院店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>工人剧院(邯郸市工人剧院店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>江南春大酒店(邯郸店)</td></tr>
+</tbody></table></div>
+<h3>康德商场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：和平路122号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>康德商场</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>新天地电影城(稽山商业街店)、CEDAR·时钟座·超级密室、ESCAPE PLAN逃离计划·超级密室</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>邯郸荣海旅馆</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（156 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>19</td></tr>
+<tr><td>棋牌室</td><td>19</td></tr>
+<tr><td>电影院</td><td>16</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>15</td></tr>
+<tr><td>KTV</td><td>12</td></tr>
+<tr><td>酒吧/酒馆</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>39.00</td><td>渚河路街道滏河南大街与陵园路交叉口西南侧万达广场4层</td></tr>
+<tr><td>✅A-</td><td>工人剧院(邯郸市工人剧院店)</td><td>电影院</td><td>体育休闲服务;影剧院;剧场</td><td>4.7</td><td>44.00</td><td>中华北大街13号</td></tr>
+<tr><td>✅A-</td><td>欢乐时光KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>40.00</td><td>滏东北大街253号</td></tr>
+<tr><td>✅A-</td><td>M.A PARTY国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室｜餐饮服务;茶艺馆;茶艺馆</td><td>4.6</td><td>375.00</td><td>人民东路410号锦林大厦负一层</td></tr>
+<tr><td>✅A-</td><td>林彤影城(颐高智能广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>21.00</td><td>兼庄乡东环路与丛台路交叉路口颐高智能广场A座三层</td></tr>
+<tr><td>✅A-</td><td>邯郸横店电影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>31.00</td><td>人和街179号融富中心B区恒富天地3层</td></tr>
+<tr><td>✅A-</td><td>SFC上影国际影城(邯郸道VLED巨幕店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>52.00</td><td>陵西大街赵王阁负一层SFC上影国际影城</td></tr>
+<tr><td>✅A-</td><td>华录电影乐园(邯郸店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>47.00</td><td>和平路108号东方新天地4层</td></tr>
+<tr><td>✅A-</td><td>云川台球棋牌俱乐部</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.6</td><td>—</td><td>东柳西街98号御道金台20号楼G商业-201号</td></tr>
+<tr><td>✅B</td><td>CEDAR·时钟座·超级密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>199.00</td><td>陵西北大街与城南街交叉路口东北角3楼</td></tr>
+<tr><td>✅B</td><td>麦颂KTV(新天鸿广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>45.00</td><td>人和街凤桐大厦4层1号</td></tr>
+<tr><td>✅B</td><td>美高梅.国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>33.00</td><td>兼庄乡滏东北大街238号宏海大厦</td></tr>
+<tr><td>✅B</td><td>银河国际KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜商务住宅;商务住宅相关;商务住宅相关｜生活服务;生活服务场所;生活服务场所</td><td>4.5</td><td>65.00</td><td>滏东北大街230号宏海大厦3层</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(邯郸龙湖公园店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>20.00</td><td>人民路与滏东大街交叉口龙湖商城B1层东门C040</td></tr>
+<tr><td>✅B</td><td>麦乐汇KTV·Al智慧(美乐城店)</td><td>KTV</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.5</td><td>55.00</td><td>人民东路454号美乐城中国邯郸环球中心店F1层</td></tr>
+<tr><td>✅B</td><td>环球国际影城(天鸿广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>34.00</td><td>联纺东路505号阳光天鸿广场A座F5层</td></tr>
+<tr><td>✅B</td><td>幸福蓝海影城(邯郸万象汇)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>28.00</td><td>廉颇北大街277号邯郸万象汇L4层L444</td></tr>
+<tr><td>✅B</td><td>UME国际影城(邯郸新世纪中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>38.00</td><td>中华北大街29号新世纪商业广场7层</td></tr>
+<tr><td>✅B</td><td>新天地电影城(稽山商业街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>31.00</td><td>邯山街14号康德北门对过稽山商业步行街D1号楼4层</td></tr>
+<tr><td>✅B</td><td>麻友记自助棋牌(安居店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>29.00</td><td>广泰街165号围辣小火锅二楼</td></tr>
+<tr><td>✅B</td><td>牛小牛棋牌俱乐部</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>26.00</td><td>滏河北大街488号乾瑞商务中心</td></tr>
+<tr><td>✅B</td><td>玩乐宇宙·探案馆(国贸店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>101.00</td><td>人民东路208号国贸中心6楼</td></tr>
+<tr><td>✅B</td><td>ESCAPE PLAN逃离计划·超级密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>153.00</td><td>城内中街与北斜街交叉口南100米</td></tr>
+<tr><td>✅B</td><td>星聚会KTV(邯郸天鸿广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>41.00</td><td>联纺东路505号阳光天鸿广场C座F5层</td></tr>
+<tr><td>✅B</td><td>潮乐·音乐会客厅KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>128.00</td><td>联纺东路466号</td></tr>
+<tr><td>✅B</td><td>名人商务俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>12.00</td><td>苏曹乡达康街16号河北电力设备厂河东家属院</td></tr>
+<tr><td>✅B</td><td>星聚会KTV(邯郸万象汇)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>51.00</td><td>经济开发区廉颇北大街217号华润万象汇L333号商铺</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(新世纪中心店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>29.00</td><td>丛台东街道中华北大街29号新世纪中心F8层</td></tr>
+<tr><td>✅B</td><td>华星国际影城(阳光世贸广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>23.00</td><td>陵西大街5号阳光世贸广场9层</td></tr>
+<tr><td>✅B</td><td>星际国际影城(海悦广场DTS:X多维声店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>44.00</td><td>陵西南大街8号海悦广场6层</td></tr>
+<tr><td>✅B</td><td>星辰国际影城(滏瑞特·时代广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>31.00</td><td>渚河路与滏河南大街交叉口东北角滏瑞特时代广场A座6楼</td></tr>
+<tr><td>✅B</td><td>青年影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>—</td><td>四季青街道中华大街与丛台路交叉口路东</td></tr>
+<tr><td>✅B</td><td>邯郸市工人文化宫影剧院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>42.00</td><td>陵园路61号</td></tr>
+<tr><td>✅B</td><td>四个朋友.24小时自助棋牌室(安居东城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>13.00</td><td>兼庄乡东柳北大街安居东城商务楼C座807号</td></tr>
+<tr><td>✅B</td><td>胡来24h自助棋牌社(安居店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>31.00</td><td>安居东城商务楼A座</td></tr>
+<tr><td>✅B</td><td>雀麻公社自助棋牌室(拉德芳斯店)</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>8.00</td><td>新城路55号</td></tr>
+<tr><td>✅B</td><td>麻友社智慧共享棋牌室·茶空间(天泽园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>11.00</td><td>家和路荣盛·锦绣花苑</td></tr>
+<tr><td>✅B</td><td>四个朋友24h自助棋牌(创鑫华城广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>14.00</td><td>兼庄乡人民东路515号创鑫华城广场B座2103号</td></tr>
+<tr><td>✅B</td><td>合盛棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>13.00</td><td>苏曹乡达康街92号二楼</td></tr>
+<tr><td>✅B</td><td>金汇年华国际会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>187.00</td><td>东环路与丛台路交叉口耀荣大厦4层</td></tr>
+<tr><td>✅B</td><td>华文影城(雪驰路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>21.00</td><td>雪驰路1号</td></tr>
+<tr><td>✅B</td><td>中影星美国际影城(亿兆鑫禧商城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>29.00</td><td>和平路亿兆鑫禧商城5层</td></tr>
+<tr><td>✅B</td><td>四个朋友(三龙大厦店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>19.00</td><td>滏东北大街289号河北农信大厦F9层</td></tr>
+<tr><td>✅B</td><td>1688·24H棋牌室(天鸿店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>7.00</td><td>天鸿广场对过美食林旁边门进去电梯上三楼棋牌室</td></tr>
+<tr><td>✅B</td><td>云雀台24小时自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>32.00</td><td>达康街23号门市市</td></tr>
+<tr><td>✅B</td><td>四个朋友·自助棋牌(美乐城店)</td><td>棋牌室</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.3</td><td>13.00</td><td>人民东路452号美乐城塔楼T5东19楼1906室</td></tr>
+<tr><td>⚠️</td><td>欢尚量贩KTV(湘君府店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>41.00</td><td>世纪大街与友谊路交叉口北行200米路西(阳光海岸大酒店6楼)</td></tr>
+<tr><td>⚠️</td><td>金都会.娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;运动场馆;羽毛球场｜体育休闲服务;娱乐场所;KTV｜金融保险服务;金融保险服务机构;金融保险机构</td><td>4.2</td><td>201.00</td><td>金都大厦</td></tr>
+<tr><td>⚠️</td><td>澜亭K歌沐足</td><td>其他娱乐场所</td><td>生活服务;生活服务场所;生活服务场所</td><td>4.2</td><td>88.00</td><td>姚寨乡兼庄村南大街193号</td></tr>
+<tr><td>⚠️</td><td>麦颂KTV(邯郸龙湖公园店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>156.00</td><td>滏东大街与丛台路交叉口龙湖商城负一层C040</td></tr>
+<tr><td>⚠️</td><td>CGV影城(环球中心IMAX店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>49.00</td><td>人民东路456号环球中心第5层</td></tr>
+<tr><td>⚠️</td><td>四合友棋牌俱乐部(连城别苑店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>17.00</td><td>连城别苑逸园</td></tr>
+<tr><td>⚠️</td><td>一筒江湖24小时自助棋牌室(家和店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>—</td><td>家和路38号家和小区A区</td></tr>
+<tr><td>⚠️</td><td>四合友棋牌俱乐部(拉德芳斯店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>30.00</td><td>世嘉名苑2号院1号楼</td></tr>
+<tr><td>⚠️</td><td>怪盒子超级密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>86.00</td><td>中华街道回车巷文化街区E43万宾楼一楼</td></tr>
+<tr><td>⚠️</td><td>玩乐宇宙·超级密室(义乌店)</td><td>密室逃脱/剧本杀</td><td>生活服务;生活服务场所;生活服务场所</td><td>4.1</td><td>103.00</td><td>和平路198号亿兆鑫禧商城五层西区</td></tr>
+<tr><td>⚠️</td><td>麻上发财自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>13.00</td><td>联纺东路劳模文化广场河边南行10米</td></tr>
+<tr><td>⚠️</td><td>GM实景超级密室(美乐城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>108.00</td><td>人民东路美乐城5楼东头(影城南侧通道内)</td></tr>
+<tr><td>⚠️</td><td>嗨九零VR·密室·PS电玩体验店(美乐城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>51.00</td><td>柳林桥街道人民路456号T6塔楼13层1305A</td></tr>
+<tr><td>⚠️</td><td>月奇门·密室逃脱(武安新世纪店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.0</td><td>90.00</td><td>新世纪二期南行10米B1层</td></tr>
+</tbody></table></div>
+<p>（另 22 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（31 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>24</td></tr>
+<tr><td>其他儿童场所</td><td>5</td></tr>
+<tr><td>电玩城</td><td>1</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>邯郸园博动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>齐村东侧(园博园北侧)</td></tr>
+<tr><td>✅B</td><td>萌兔部落主题乐园广场</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>西环路与丛台西路交叉口路西</td></tr>
+<tr><td>✅B</td><td>邯郸佛山野生动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>永年佛山景区内(北侧)</td></tr>
+<tr><td>✅B</td><td>嘟噜噜萌宠王国</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>园博园</td></tr>
+<tr><td>⚠️</td><td>宝可梦萌宠馆(万浩金百合店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>丰收路与天园街交叉口南行一百米路西中海华庭西门对面</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园宠物店(铜雀北大街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>城市花园门口东行150米路南第一家</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园宠物店(御景江山城店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>景明街188号</td></tr>
+<tr><td>⚠️</td><td>知山萌宠宠物服务馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>赵都新城利和园南门西90米</td></tr>
+<tr><td>⚠️</td><td>当狗爱上猫宠物店(百家乐园生活小区店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>百家乐园生活小区B区北门旁</td></tr>
+<tr><td>⚠️</td><td>爱宠乐园宠物店(华信店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>辰翔建安北院西南门旁</td></tr>
+<tr><td>⚠️</td><td>萌宠宠物会馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>洺园小区北门旁</td></tr>
+<tr><td>⚠️</td><td>邯郸森林动物王国</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>振华街305号</td></tr>
+<tr><td>⚠️</td><td>溢泉萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>路村营乡溢泉湖风景区内雁栖园西侧200米</td></tr>
+<tr><td>⚠️</td><td>萌宠之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>太行大道与同安街交叉口北行三百米</td></tr>
+<tr><td>⚠️</td><td>萌宠赶海乐园(万嘉购物中心店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>4.0</td><td>洺园街与洺兴路交叉口东北80米</td></tr>
+<tr><td>⚠️</td><td>嗨九零VR·密室·PS电玩体验店(美乐城店)</td><td>电玩城</td><td>独立</td><td>4.0</td><td>柳林桥街道人民路456号T6塔楼13层1305A</td></tr>
+<tr><td>⚠️</td><td>涉县萌宠乐园宠物店(龙南路店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.8</td><td>涉城镇龙南路枫美广场蓝堡湾44号楼下(宏信广场东200米)</td></tr>
+<tr><td>⚠️</td><td>邯郸野生动物园萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>邯郸佛山野生动物园(东南角)</td></tr>
+<tr><td>⚠️</td><td>邯郸市佛山野生动物园-两栖爬行馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>邯郸佛山野生动物园内(南侧)</td></tr>
+<tr><td>⚠️</td><td>巴克宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.6</td><td>兼庄乡东耒马台一街兴东南街3号</td></tr>
+<tr><td>⚠️</td><td>萌宠动物园(美乐城店)(暂停营业)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.6</td><td>人民东路454号美乐城中国邯郸环球中心店F5层</td></tr>
+<tr><td>⚠️</td><td>彩色鹦鹉乐园</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>邯馆公路与茶常大街交叉口西240米</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园(邯山店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>陵园路623号</td></tr>
+<tr><td>⚠️</td><td>鹦鹉萌宠</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>临漳县第一幼儿园东南门旁</td></tr>
+<tr><td>❌</td><td>56萌宠</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>浴新南大街171号博冠第一幼儿园南侧胡同停车场院内</td></tr>
+<tr><td>❌</td><td>萌宠动物园(邯郸悦然广场店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.3</td><td>邯郸悦然广场</td></tr>
+<tr><td>❌</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>迎宾街与牌坊路交叉口西南100米</td></tr>
+<tr><td>❌</td><td>膨胀动物园</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.1</td><td>武安新世纪广场</td></tr>
+<tr><td>❌</td><td>问号小侦探·儿童密室(邯郸万象汇店)</td><td>儿童乐园/游乐场</td><td>独立</td><td>3.0</td><td>廉颇北大街277号万象汇二楼201儿童乐园</td></tr>
+<tr><td>❌</td><td>河马馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.9</td><td>邯郸佛山野生动物园内(东侧)</td></tr>
+<tr><td>❌</td><td>园博动物园-迷你羊</td><td>迷你动物园/萌宠</td><td>独立</td><td>0.5</td><td>邯郸园博动物园内(西侧)</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（65 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>美乐城(中国邯郸环球中心店)</td><td>百货/商场</td><td>4.9</td><td>2</td><td>2</td><td>人民东路454号</td></tr>
+<tr><td>✅A-</td><td>邯郸万象汇</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>经济开发区廉颇北大街277号</td></tr>
+<tr><td>✅A-</td><td>新世纪中心</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>中华北大街29号</td></tr>
+<tr><td>✅A-</td><td>天鸿广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>联纺东路505号</td></tr>
+<tr><td>✅A-</td><td>康德商场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>和平路122号</td></tr>
+<tr><td>✅A-</td><td>魏县双隆购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>魏州东路与兴源大街交叉口东北80米路东正门</td></tr>
+<tr><td>✅A-</td><td>浙江商贸城服装批发基地</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>邯大路与G4京港澳高速入口交叉口西北400米</td></tr>
+<tr><td>✅A-</td><td>万象汇购物中心北区</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>经济开发区廉颇北大街277号万象汇(邯郸店)</td></tr>
+<tr><td>✅A-</td><td>浙江商贸城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>邯大路146号</td></tr>
+<tr><td>✅A-</td><td>邯山万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>滏河南大街与陵园路交叉口</td></tr>
+<tr><td>✅A-</td><td>邯郸悦然广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>悦然广场1层A1006</td></tr>
+<tr><td>✅A-</td><td>武安新世纪广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>中兴路939号</td></tr>
+<tr><td>✅A-</td><td>中盛国贸广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>磁州镇友谊北大街199号中盛国贸广场</td></tr>
+<tr><td>✅A-</td><td>永年新世纪广场(万钰店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>政府街36号</td></tr>
+<tr><td>✅A-</td><td>美嘉快捷宾馆(魏县商贸城店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>魏城镇魏县商贸城</td></tr>
+<tr><td>✅A-</td><td>百货大楼(政府街店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>临洺关镇政府街3号</td></tr>
+<tr><td>✅A-</td><td>雪雷生活超市</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>美景建别墅东北侧70米</td></tr>
+<tr><td>✅A-</td><td>美食林(新园超市店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>市高开区友谊路1号3S幢</td></tr>
+<tr><td>✅A-</td><td>美食林千鑫购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>光明大街褚河路交叉口千鑫美食林2层</td></tr>
+<tr><td>✅A-</td><td>润发购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>东方国际商业广场</td></tr>
+<tr><td>✅A-</td><td>美食林(新城购物广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>0</td><td>浴新街与水厂路交叉口东行260米</td></tr>
+<tr><td>✅A-</td><td>邯郸市科程水果批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>南迎宾大道</td></tr>
+<tr><td>✅A-</td><td>天骏商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>政府街23号</td></tr>
+<tr><td>✅A-</td><td>圆歌未来石购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>学院北路与陵西南大街西100米路北</td></tr>
+<tr><td>✅B</td><td>鑫港购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>北仓路与人和街交叉路口往东北约100米(人和小区北侧约100米)</td></tr>
+<tr><td>✅B</td><td>千汇百货(美食林御美购物广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>磁州镇友谊南大街与建设西路交叉口</td></tr>
+<tr><td>✅B</td><td>阳光超市(复兴商贸城店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>复兴商贸城西2门旁</td></tr>
+<tr><td>✅B</td><td>美食林(百超滨河店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>滨河路黎明园5号楼</td></tr>
+<tr><td>✅B</td><td>好又多购物中心(临漳店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>邺都大街6号</td></tr>
+<tr><td>✅B</td><td>阳光超市(邯郸万象汇店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>廉颇北大街277号邯郸万象汇B1层B117</td></tr>
+<tr><td>✅B</td><td>赵王城果蔬批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>古城路南十里铺西侧</td></tr>
+<tr><td>✅B</td><td>滏东购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>和平路450号</td></tr>
+<tr><td>✅B</td><td>新赵都购物广场(光明桥店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>光明北大街329号</td></tr>
+<tr><td>✅B</td><td>阳光超市(新世纪中心店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>中华北大街29号新世纪中心二、三期连廊西侧底商</td></tr>
+<tr><td>✅B</td><td>邯鲜生海鲜批发海虾子</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>北绕道与浴新北大街交叉口东100米</td></tr>
+<tr><td>✅B</td><td>新世纪中心东楼</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>人民东路219号附近</td></tr>
+<tr><td>✅B</td><td>新世纪商业广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>称勾集镇中华北大街29号</td></tr>
+<tr><td>✅B</td><td>三合园鲜果批发(鑫港店)</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>滏东大街与富强路交叉口北140米</td></tr>
+<tr><td>⚠️</td><td>春天百货(成安店)</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>新兴东路19-31号</td></tr>
+<tr><td>⚠️</td><td>胡村花卉批发市场</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>南环路与西环街交叉口南320米</td></tr>
+<tr><td>⚠️</td><td>骆驼奥特莱斯(中国邯郸环球中心美乐城店)</td><td>奥特莱斯</td><td>4.1</td><td>0</td><td>0</td><td>人民东路454号美乐城中国邯郸环球中心店F1层</td></tr>
+<tr><td>⚠️</td><td>王氏滏东海鲜水产批发城</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>东柳西街19号</td></tr>
+<tr><td>⚠️</td><td>萌宠赶海乐园(万嘉购物中心店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>洺园街与洺兴路交叉口东北80米</td></tr>
+<tr><td>⚠️</td><td>宣和百货(河北宣荣商业管理有限公司)</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>大名府路宣和时代广场</td></tr>
+<tr><td>⚠️</td><td>鼎顺海鲜综合批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>荀子大街4号</td></tr>
+<tr><td>⚠️</td><td>邯郸王伟海鲜水产批发行(赵苑农贸市场店)</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>联纺西街道联纺西路15号赵苑农贸市场</td></tr>
+<tr><td>⚠️</td><td>新百货大楼</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>光明街247号</td></tr>
+<tr><td>⚠️</td><td>东港海鲜批发行</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>天泉农贸市场北门西50米</td></tr>
+<tr><td>⚠️</td><td>胖哥海鲜水产批发</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>仁达名苑东南门北50米</td></tr>
+<tr><td>⚠️</td><td>振国海鲜水产批发</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>丰收路与华荣街交叉口西北100米</td></tr>
+</tbody></table></div>
+<p>（另 15 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（5 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>新蓝天大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>33.00</td><td>中兴路1716号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000724_1769241875742_83650168.jpg"></td></tr>
+<tr><td>✅B</td><td>麦乐汇KTV·Al智慧(美乐城店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.5</td><td>55.00</td><td>人民东路454号美乐城中国邯郸环球中心店F1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/47E7E084_90B9_4FA1_9F45_334D9CD6413D_L0_001_1179_148_1764240110833_18518331.jpg"></td></tr>
+<tr><td>✅B</td><td>四季青大酒店</td><td>餐饮服务;中餐厅;山东菜(鲁菜)｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>铁西北大街148号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6a3559dde445a2ee458ac4674bcf6de9"></td></tr>
+<tr><td>✅B</td><td>四个朋友·自助棋牌(美乐城店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.3</td><td>13.00</td><td>人民东路452号美乐城塔楼T5东19楼1906室</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9695fc388917154ff1dd5d97110bb829"></td></tr>
+<tr><td>⚠️</td><td>张记-批发手工凉皮 米皮 凉面 凉粉</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.6</td><td>—</td><td>王郎果菜市场西门房2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ee75e4bd534fa366e102b5fef5375cba"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>美乐城(中国邯郸环球中心店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>萌宠动物园(美乐城店)(暂停营业)</td><td>名称互证</td><td>21m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>奇遇邯郸飞行影院(美乐城店)</td><td>名称互证</td><td>39m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(美乐城店)</td><td>名称互证</td><td>158m</td><td>4.3</td><td>§6</td></tr>
+<tr><td>四个朋友·自助棋牌(美乐城店)</td><td>名称互证</td><td>158m</td><td>4.3</td><td>§6</td></tr>
+<tr><td>GM实景超级密室(美乐城店)</td><td>名称互证</td><td>161m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>CGV影城(环球中心IMAX店)</td><td>距离就近</td><td>205m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麦乐汇KTV·Al智慧(美乐城店)</td><td>名称互证</td><td>248m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>麦乐汇KTV·Al智慧(美乐城店)</td><td>名称互证</td><td>248m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>嗨九零VR·密室·PS电玩体验店(美乐城店)</td><td>名称互证</td><td>272m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>嗨九零VR·密室·PS电玩体验店(美乐城店)</td><td>名称互证</td><td>272m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>华语天歌娱乐</td><td>名称互证</td><td>280m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>云川台球棋牌俱乐部</td><td>距离就近</td><td>352m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>M.A PARTY国际娱乐</td><td>距离就近</td><td>385m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麦颂KTV(邯郸龙湖公园店)</td><td>距离就近</td><td>480m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(邯郸龙湖公园店)</td><td>距离就近</td><td>480m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>邯郸万象汇（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>问号先生MINI密室馆(邯郸万象汇店)</td><td>名称互证</td><td>121m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>问号小侦探·儿童密室(邯郸万象汇店)</td><td>名称互证</td><td>133m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>问号小侦探·儿童密室(邯郸万象汇店)</td><td>名称互证</td><td>133m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>星聚会KTV(邯郸万象汇)</td><td>名称互证</td><td>141m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>幸福蓝海影城(邯郸万象汇)</td><td>名称互证</td><td>182m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新世纪中心（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>唱吧麦颂KTV(新世纪中心店)</td><td>名称互证</td><td>57m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>UME国际影城(邯郸新世纪中心店)</td><td>名称互证</td><td>62m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>失控代码GM获奖密室专门店(邯郸新世纪中心店)</td><td>名称互证</td><td>84m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>玩乐宇宙·探案馆(国贸店)</td><td>距离就近</td><td>255m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>幻境密室逃脱体验馆(新世纪店)</td><td>距离就近</td><td>584m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>天鸿广场（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Mr.K(阳光天鸿广场店)</td><td>名称互证</td><td>50m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>环球国际影城(天鸿广场店)</td><td>名称互证</td><td>71m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星聚会KTV(邯郸天鸿广场店)</td><td>名称互证</td><td>81m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麦颂KTV(新天鸿广场店)</td><td>名称互证</td><td>164m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>1688·24H棋牌室(天鸿店)</td><td>名称互证</td><td>269m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友(三龙大厦店)</td><td>距离就近</td><td>276m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>云雀台24小时自助棋牌室</td><td>距离就近</td><td>306m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>名人商务俱乐部</td><td>距离就近</td><td>325m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>潮乐·音乐会客厅KTV</td><td>距离就近</td><td>338m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>仙逸棋牌</td><td>距离就近</td><td>388m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>麻上发财自助棋牌室</td><td>距离就近</td><td>437m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>欢乐时光KTV</td><td>距离就近</td><td>478m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>美高梅.国际娱乐</td><td>距离就近</td><td>480m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>合盛棋牌</td><td>距离就近</td><td>498m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>银河国际KTV</td><td>距离就近</td><td>521m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>江南春大酒店(邯郸店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>江南春大酒店(邯郸店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>工人剧院(邯郸市工人剧院店)</td><td>距离就近</td><td>43m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>玩乐宇宙·探案馆(国贸店)</td><td>距离就近</td><td>581m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中华宾馆（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中华宾馆</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>夹博士(邯山万达广场店)</td><td>距离就近</td><td>78m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>星火科技密室(邯山万达广场)</td><td>距离就近</td><td>79m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>工人剧院(邯郸市工人剧院店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>工人剧院(邯郸市工人剧院店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>江南春大酒店(邯郸店)</td><td>距离就近</td><td>43m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>康德商场（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新天地电影城(稽山商业街店)</td><td>距离就近</td><td>83m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>邯郸荣海旅馆</td><td>距离就近</td><td>150m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>CEDAR·时钟座·超级密室</td><td>距离就近</td><td>233m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>怪盒子超级密室</td><td>距离就近</td><td>340m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>ESCAPE PLAN逃离计划·超级密室</td><td>距离就近</td><td>346m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万象汇购物中心北区（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星聚会KTV(邯郸万象汇)</td><td>距离就近</td><td>45m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>幸福蓝海影城(邯郸万象汇)</td><td>距离就近</td><td>85m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>问号先生MINI密室馆(邯郸万象汇店)</td><td>距离就近</td><td>165m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>问号小侦探·儿童密室(邯郸万象汇店)</td><td>距离就近</td><td>184m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>问号小侦探·儿童密室(邯郸万象汇店)</td><td>距离就近</td><td>184m</td><td>3.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>邯山万达广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星火科技密室(邯山万达广场)</td><td>名称互证</td><td>7m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>夹博士(邯山万达广场店)</td><td>名称互证</td><td>65m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>万达影城</td><td>距离就近</td><td>85m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>邯郸悦然广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>萌宠动物园(邯郸悦然广场店)</td><td>名称互证</td><td>10m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>萌宠动物园(邯郸悦然广场店)</td><td>名称互证</td><td>10m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>武安新世纪广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>膨胀动物园</td><td>名称互证</td><td>25m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>月奇门·密室逃脱(武安新世纪店)</td><td>距离就近</td><td>60m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宣和时代广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>001潮玩体验馆(宣和时代广场店)</td><td>名称互证</td><td>103m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中盛国贸广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>密室逃脱(中盛国贸广场店)</td><td>名称互证</td><td>9m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永年新世纪广场(万钰店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Mr.k密室逃脱(永年新世纪店)</td><td>名称互证</td><td>37m</td><td>2.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美嘉快捷宾馆(魏县商贸城店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美嘉快捷宾馆(魏县商贸城店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>欢乐时光KTV（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>欢乐时光KTV</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>美高梅.国际娱乐</td><td>距离就近</td><td>2m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>银河国际KTV</td><td>距离就近</td><td>55m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友(三龙大厦店)</td><td>距离就近</td><td>201m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>Mr.K(阳光天鸿广场店)</td><td>距离就近</td><td>429m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>四合友棋牌俱乐部(连城别苑店)</td><td>距离就近</td><td>454m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>环球国际影城(天鸿广场店)</td><td>距离就近</td><td>512m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星聚会KTV(邯郸天鸿广场店)</td><td>距离就近</td><td>544m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麻友记自助棋牌(安居店)</td><td>距离就近</td><td>552m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>1688·24H棋牌室(天鸿店)</td><td>距离就近</td><td>567m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>潮乐·音乐会客厅KTV</td><td>距离就近</td><td>591m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>M.A PARTY国际娱乐（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>M.A PARTY国际娱乐</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(邯郸龙湖公园店)</td><td>距离就近</td><td>267m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麦颂KTV(邯郸龙湖公园店)</td><td>距离就近</td><td>270m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>萌宠动物园(美乐城店)(暂停营业)</td><td>距离就近</td><td>371m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>奇遇邯郸飞行影院(美乐城店)</td><td>距离就近</td><td>406m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(美乐城店)</td><td>距离就近</td><td>543m</td><td>4.3</td><td>§6</td></tr>
+<tr><td>四个朋友·自助棋牌(美乐城店)</td><td>距离就近</td><td>543m</td><td>4.3</td><td>§6</td></tr>
+<tr><td>GM实景超级密室(美乐城店)</td><td>距离就近</td><td>546m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>CGV影城(环球中心IMAX店)</td><td>距离就近</td><td>590m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>林彤影城(颐高智能广场店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>林彤影城(颐高智能广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金汇年华国际会所</td><td>距离就近</td><td>151m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>欢尚量贩KTV(湘君府店)</td><td>距离就近</td><td>487m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>SFC上影国际影城(邯郸道VLED巨幕店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>SFC上影国际影城(邯郸道VLED巨幕店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>百货大楼(政府街店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Mr.k密室逃脱(永年新世纪店)</td><td>距离就近</td><td>555m</td><td>2.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美食林(新园超市店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>林彤影城(颐高智能广场店)</td><td>距离就近</td><td>280m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>欢尚量贩KTV(湘君府店)</td><td>距离就近</td><td>400m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>金汇年华国际会所</td><td>距离就近</td><td>431m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>金都会.娱乐</td><td>距离就近</td><td>438m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>1688·24H棋牌室(天鸿店)</td><td>名称互证</td><td>2010m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美食林(新城购物广场店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>56萌宠</td><td>距离就近</td><td>248m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>知山萌宠宠物服务馆</td><td>距离就近</td><td>315m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>来缘宾馆</td><td>距离就近</td><td>403m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>1688·24H棋牌室(天鸿店)</td><td>名称互证</td><td>5744m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中国邯郸环球中心（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>萌宠动物园(美乐城店)(暂停营业)</td><td>名称互证</td><td>20m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>奇遇邯郸飞行影院(美乐城店)</td><td>距离就近</td><td>39m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(美乐城店)</td><td>距离就近</td><td>159m</td><td>4.3</td><td>§6</td></tr>
+<tr><td>四个朋友·自助棋牌(美乐城店)</td><td>距离就近</td><td>159m</td><td>4.3</td><td>§6</td></tr>
+<tr><td>GM实景超级密室(美乐城店)</td><td>距离就近</td><td>161m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>CGV影城(环球中心IMAX店)</td><td>距离就近</td><td>205m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麦乐汇KTV·Al智慧(美乐城店)</td><td>名称互证</td><td>249m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>麦乐汇KTV·Al智慧(美乐城店)</td><td>名称互证</td><td>249m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>嗨九零VR·密室·PS电玩体验店(美乐城店)</td><td>距离就近</td><td>273m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>嗨九零VR·密室·PS电玩体验店(美乐城店)</td><td>距离就近</td><td>273m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>华语天歌娱乐</td><td>名称互证</td><td>281m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>云川台球棋牌俱乐部</td><td>距离就近</td><td>352m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>M.A PARTY国际娱乐</td><td>距离就近</td><td>385m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麦颂KTV(邯郸龙湖公园店)</td><td>距离就近</td><td>479m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(邯郸龙湖公园店)</td><td>距离就近</td><td>480m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（29 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>鸡泽汉都宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>鸡泽镇汽车站西200米丁字路口</td></tr>
+<tr><td>✅A-</td><td>帝豪大酒店(新洺南路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>洺兴路</td></tr>
+<tr><td>✅A-</td><td>邱县良友宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>迎宾街1号</td></tr>
+<tr><td>✅A-</td><td>新宇宾馆(人民东路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>人民路中段海尔专卖店</td></tr>
+<tr><td>✅A-</td><td>邯郸6+1快捷酒店(和平路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>和平路269号</td></tr>
+<tr><td>✅A-</td><td>江南春大酒店(邯郸店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>中华北大街30号</td></tr>
+<tr><td>✅A-</td><td>中华宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>魏都北大街81号</td></tr>
+<tr><td>✅A-</td><td>新蓝天大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>33.00</td><td>中兴路1716号</td></tr>
+<tr><td>✅A-</td><td>美嘉快捷宾馆(魏县商贸城店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>魏城镇魏县商贸城</td></tr>
+<tr><td>✅B</td><td>邯郸五方快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>电厂街29号</td></tr>
+<tr><td>✅B</td><td>魏县平安宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>人民医院南门正对面</td></tr>
+<tr><td>✅B</td><td>新航天宾馆(新华路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>南开街新华书店对面</td></tr>
+<tr><td>✅B</td><td>非凡快捷酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>马头镇107国道邮局北侧5层</td></tr>
+<tr><td>✅B</td><td>比家美宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>中兴路武安市二中对过沧州银行后</td></tr>
+<tr><td>✅B</td><td>四季青大酒店</td><td>餐饮服务;中餐厅;山东菜(鲁菜)｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>铁西北大街148号</td></tr>
+<tr><td>✅B</td><td>武安得意楼宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>富强手机城北行68米路西</td></tr>
+<tr><td>✅B</td><td>邯郸桃园宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>邯郸和平路矿山局职工医院西100米路南</td></tr>
+<tr><td>⚠️</td><td>小蜜蜂影咖酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>陵西南大街127号三层、四层、五层</td></tr>
+<tr><td>⚠️</td><td>邯郸新宇招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>浴新南大街浴新胡同6号</td></tr>
+<tr><td>⚠️</td><td>邯郸教育宾馆(人民东路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>人民东路252号教育局院内(人民东路与滏西北大街交叉口东北角)</td></tr>
+<tr><td>⚠️</td><td>农机宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>振兴路东段100号</td></tr>
+<tr><td>⚠️</td><td>车站宾馆(邯郸峰峰汽车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>后马路</td></tr>
+<tr><td>⚠️</td><td>邯郸新悦快捷酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>陵园路34-4号</td></tr>
+<tr><td>⚠️</td><td>武安宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.0</td><td>—</td><td>塔西路2号(塔西路西侧)</td></tr>
+<tr><td>⚠️</td><td>来缘宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>浴新南大街与渚河路交叉口西南80米</td></tr>
+<tr><td>⚠️</td><td>邯郸荣海旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>邯钢金鹏大厦南门旁</td></tr>
+<tr><td>⚠️</td><td>鑫鑫租房</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>汽车东站宏达汽配城东门北</td></tr>
+<tr><td>⚠️</td><td>馆陶宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>新华街南1号</td></tr>
+<tr><td>⚠️</td><td>邯郸老常旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.6</td><td>—</td><td>雪驰路邯郸县医院南门对面巷内南行100米路东</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>10</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>9</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/邯郸市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>6 个 POI 无评分</strong>，暂标 ⚠️：万浩奥特莱斯东停车场(入口)、万浩奥特莱斯东停车场(出口)、万浩奥特莱斯东停车场、万浩奥特莱斯西停车场(入口)、万浩奥特莱斯西停车场</li><li><input type="checkbox" disabled> 儿童游乐 31 家，其中场内 5 家、独立 26 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 17 个区县：丛台区、临漳县、复兴区、大名县、峰峰矿区、广平县、成安县、曲周县、武安市、永年区、涉县、磁县、邯山区、邱县、馆陶县、魏县、鸡泽县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

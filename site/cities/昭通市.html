@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>昭通市 · 云南省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/云南省.html">← 返回云南省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>昭通市 · 云南省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:35:16  ·  POI 总量：177（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>177</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>98%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 2 · 商圈 103 · 成人娱乐 131 · 儿童娱乐 18 · 酒店 31 · 特产 1</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>云南省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>11 个</td></tr>
+<tr><td>街道/镇/乡</td><td>150 个</td></tr>
+<tr><td>区县构成</td><td>县×9、县级市×1、市辖区×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>昭阳区</td><td>116</td><td>66%</td></tr>
+<tr><td>镇雄县</td><td>19</td><td>11%</td></tr>
+<tr><td>永善县</td><td>7</td><td>4%</td></tr>
+<tr><td>水富市</td><td>7</td><td>4%</td></tr>
+<tr><td>鲁甸县</td><td>6</td><td>3%</td></tr>
+<tr><td>巧家县</td><td>5</td><td>3%</td></tr>
+<tr><td>威信县</td><td>5</td><td>3%</td></tr>
+<tr><td>绥江县</td><td>4</td><td>2%</td></tr>
+<tr><td>大关县</td><td>3</td><td>2%</td></tr>
+<tr><td>彝良县</td><td>3</td><td>2%</td></tr>
+<tr><td>盐津县</td><td>2</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（103 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>43</td></tr>
+<tr><td>购物中心/综合体</td><td>30</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>百货/商场</td><td>7</td></tr>
+<tr><td>步行街</td><td>3</td></tr>
+<tr><td>商业街</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（103 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>皇马A8 KTV(抚镇店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>22</td><td>0</td><td>4</td></tr>
+<tr><td>B</td><td>昭通金池购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>10</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>魔方量贩KTV</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>21</td><td>0</td><td>4</td></tr>
+<tr><td>B</td><td>醉爱KTV民谣集Bar</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>21</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>恒邦购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>15</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>钻石商业广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>11</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>金池影城(昭通金池购物中心店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>10</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>爱尚主题KTV量贩(步行街店)</td><td>步行街</td><td>4.3</td><td>0</td><td>20</td><td>0</td><td>4</td></tr>
+<tr><td>B</td><td>盛代元音国际商务汇</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>21</td><td>0</td><td>4</td></tr>
+<tr><td>C</td><td>九天慧德店(镇雄雄腾广场店)</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>1</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>昭通吾悦广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>昭通海洋大世界</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>昭通欢映影城(合景广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>合景广场</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>观澜湖</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>星轶影城(吾悦广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>吉客隆(合景广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>昭通市水果批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>昭通吉比特农特产品批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>镇雄亿联国际商贸城A区</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>观澜湖悦容匯购物公园</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>洋人街购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>9</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>际桓国际家居建材城</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>皇马A8KTV量贩(国防广场店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>5</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>吉客隆(靖安新区店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>和谐购物中心</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>2</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>新世纪商贸广场</td><td>百货/商场</td><td>4.4</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>天力购物广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>锦都商务酒店</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>0</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>旺角快捷酒店</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>1</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>富善中央激光影城</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>朱泉路水果批发市场</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>开元盛世商业广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>吉祥购物中心</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中贝商业广场</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>龙腾广场超市</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>宇晨超市(碧桂园店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>麦鲜购物广场</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>湾湾超市(观澜湖西区店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>众升生鲜超市</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>5</td><td>1</td><td>0</td></tr>
+</tbody></table></div>
+<h3>皇马A8 KTV(抚镇店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 22 / 酒店 4</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：建设南街抚镇门广场</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 22 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>皇马A8 KTV(抚镇店)</td></tr>
+<tr><td>成人娱乐</td><td>22</td><td>皇马A8 KTV(抚镇店)、魔方量贩KTV、醉爱KTV民谣集Bar</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>居贤宾馆(第一人民医院店)、环城招待所、水晶宾馆(南顺城街)</td></tr>
+</tbody></table></div>
+<h3>昭通金池购物中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场）</li><li><strong>地址</strong>：昭阳大道南侧金融中心AB座</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>昭通金池购物中心</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>金池影城(昭通金池购物中心店)、天空之城·国际娱乐、潮麻CLUB·24h棋牌(金池购物中心店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>昭通文登旅馆、昭通快活林公寓</td></tr>
+</tbody></table></div>
+<h3>魔方量贩KTV —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 21 / 酒店 4</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：朱提步行街14栋</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 21 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>魔方量贩KTV</td></tr>
+<tr><td>成人娱乐</td><td>21</td><td>皇马A8 KTV(抚镇店)、魔方量贩KTV、醉爱KTV民谣集Bar</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>居贤宾馆(第一人民医院店)、环城招待所、水晶宾馆(南顺城街)</td></tr>
+</tbody></table></div>
+<h3>醉爱KTV民谣集Bar —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 21 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：东门步行街</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 21 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>醉爱KTV民谣集Bar</td></tr>
+<tr><td>成人娱乐</td><td>21</td><td>皇马A8 KTV(抚镇店)、醉爱KTV民谣集Bar、魔方量贩KTV</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>居贤宾馆(第一人民医院店)、环城招待所、海魅主题酒店</td></tr>
+</tbody></table></div>
+<h3>恒邦购物广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：青年路170号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 15 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>恒邦购物广场</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>西岳国际影城(青年路店)、金池影城(昭通金池购物中心店)、天空之城·国际娱乐</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>昭通文登旅馆、昭通快活林公寓</td></tr>
+</tbody></table></div>
+<h3>钻石商业广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 3</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;综合市场;综合市场）</li><li><strong>地址</strong>：昭阳大道辅路与南苑街交叉口东北100米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>钻石商业广场</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>天空之城·国际娱乐、金池影城(昭通金池购物中心店)、潮麻CLUB·24h棋牌(金池购物中心店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>金鼎大酒店(沿河岔街)、水晶宾馆(南顺城街)、昭通快活林公寓</td></tr>
+</tbody></table></div>
+<h3>金池影城(昭通金池购物中心店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：昭阳大道150金池购物中心F4</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金池影城(昭通金池购物中心店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>金池影城(昭通金池购物中心店)、天空之城·国际娱乐、潮麻CLUB·24h棋牌(金池购物中心店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>昭通文登旅馆、昭通快活林公寓</td></tr>
+</tbody></table></div>
+<h3>爱尚主题KTV量贩(步行街店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 20 / 酒店 4</li><li><strong>载体类型</strong>：步行街（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：环城东路</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 20 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>爱尚主题KTV量贩(步行街店)</td></tr>
+<tr><td>成人娱乐</td><td>20</td><td>皇马A8 KTV(抚镇店)、魔方量贩KTV、醉爱KTV民谣集Bar</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>居贤宾馆(第一人民医院店)、环城招待所、水晶宾馆(南顺城街)</td></tr>
+</tbody></table></div>
+<h3>盛代元音国际商务汇 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 21 / 酒店 4</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：朱提步行街中段中国农业银行东行20米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 21 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盛代元音国际商务汇</td></tr>
+<tr><td>成人娱乐</td><td>21</td><td>皇马A8 KTV(抚镇店)、魔方量贩KTV、醉爱KTV民谣集Bar</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>居贤宾馆(第一人民医院店)、环城招待所、水晶宾馆(南顺城街)</td></tr>
+</tbody></table></div>
+<h3>九天慧德店(镇雄雄腾广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：祥龙苑西门旁</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>九天慧德店(镇雄雄腾广场店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>九灵真人密室逃脱</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>九天慧德店(镇雄雄腾广场店)、旺角快捷酒店</td></tr>
+</tbody></table></div>
+<h3>昭通吾悦广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：二环南路</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>昭通吾悦广场</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>星轶影城(吾悦广场店)、九灵·真人密室逃脱(吾悦广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宠乐园(吾悦广场店)</td></tr>
+</tbody></table></div>
+<h3>昭通海洋大世界 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（风景名胜;公园广场;水族馆）</li><li><strong>地址</strong>：凤凰街道迎宾大道19号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>昭通海洋大世界</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>昭通海洋大世界</td></tr>
+</tbody></table></div>
+<h3>昭通欢映影城(合景广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：昭通大道与国学路交汇处合景广场3楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>昭通欢映影城(合景广场店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>昭通欢映影城(合景广场店)</td></tr>
+</tbody></table></div>
+<h3>合景广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;楼宇;商住两用楼宇）</li><li><strong>地址</strong>：太平街道办事处昭通大道合景广场海悦106号商铺</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>合景广场</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>昭通欢映影城(合景广场店)</td></tr>
+</tbody></table></div>
+<h3>观澜湖 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;住宅区;住宅小区）</li><li><strong>地址</strong>：旧府街道迎宾大道与芒部路交叉口东南角</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>观澜湖</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（131 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>电影院</td><td>17</td></tr>
+<tr><td>棋牌室</td><td>15</td></tr>
+<tr><td>KTV</td><td>14</td></tr>
+<tr><td>其他娱乐场所</td><td>9</td></tr>
+<tr><td>酒吧/酒馆</td><td>6</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>5</td></tr>
+<tr><td>电玩城</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>皇马A8 KTV(抚镇店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>65.00</td><td>建设南街抚镇门广场</td></tr>
+<tr><td>✅A-</td><td>昭通欢映影城(合景广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>34.00</td><td>昭通大道与国学路交汇处合景广场3楼</td></tr>
+<tr><td>✅B</td><td>魔方量贩KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>49.00</td><td>朱提步行街14栋</td></tr>
+<tr><td>✅B</td><td>醉爱KTV民谣集Bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>56.00</td><td>东门步行街</td></tr>
+<tr><td>✅B</td><td>天籁时代·国际娱乐</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>62.00</td><td>太平街道黑森林酒吧(昭通省耕山水店)省耕山水</td></tr>
+<tr><td>✅B</td><td>西岳国际影城(青年路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>30.00</td><td>青年路112号</td></tr>
+<tr><td>✅B</td><td>星轶影城(吾悦广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>26.00</td><td>二环西路与二环南路交叉口昭通吾悦广场5层Z16号</td></tr>
+<tr><td>✅B</td><td>镇雄县开元影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>58.00</td><td>西环路开元盛世4号楼B栋3层</td></tr>
+<tr><td>✅B</td><td>皇马A8KTV量贩(国防广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>128.00</td><td>珠泉路国防广场2号楼</td></tr>
+<tr><td>✅B</td><td>昭通洲豪派对KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>51.00</td><td>昭阳大道省耕山水综合楼洲豪酒店5-7楼</td></tr>
+<tr><td>✅B</td><td>天空之城·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>56.00</td><td>凤凰街道昭通金融中心C座</td></tr>
+<tr><td>✅B</td><td>太平洋影城(昭通店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>17.00</td><td>建设北街70号</td></tr>
+<tr><td>✅B</td><td>金池影城(昭通金池购物中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>57.00</td><td>昭阳大道150金池购物中心F4</td></tr>
+<tr><td>✅B</td><td>八方国际影城(鲁甸店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>36.00</td><td>龙韵银都正门对面</td></tr>
+<tr><td>✅B</td><td>四方荟棋牌会馆･昭通旗舰店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>63.00</td><td>枫林路22号附18号4楼</td></tr>
+<tr><td>✅B</td><td>天阙阁棋牌公馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>—</td><td>龙泉街道办事处枫园社区枫林路24号3楼</td></tr>
+<tr><td>✅B</td><td>爱尚主题KTV量贩(步行街店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>60.00</td><td>环城东路</td></tr>
+<tr><td>✅B</td><td>富善中央激光影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>36.00</td><td>中央大街4号楼4层</td></tr>
+<tr><td>⚠️</td><td>九灵真人密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.2</td><td>68.00</td><td>南台街道创富鑫都一层A-1-14</td></tr>
+<tr><td>⚠️</td><td>盛代元音国际商务汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>64.00</td><td>朱提步行街中段中国农业银行东行20米</td></tr>
+<tr><td>⚠️</td><td>北大门影院(水富店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>37.00</td><td>临江路云富街道办事处(城市规划展览馆楼下)</td></tr>
+<tr><td>⚠️</td><td>金逸珠江水富紫光与你影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>43.00</td><td>市云天化团结路尾端30米左右紫光与你影城</td></tr>
+<tr><td>⚠️</td><td>太平洋影城(威信店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>22.00</td><td>工厂路中国工商银行4层</td></tr>
+<tr><td>⚠️</td><td>四个朋友·自助棋牌.茶室(昭通省耕山水店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>12.00</td><td>省耕山水3号地块B栋C11号2楼</td></tr>
+<tr><td>⚠️</td><td>品客KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>57.00</td><td>朱提步行街15栋</td></tr>
+<tr><td>⚠️</td><td>歌视达KTV</td><td>KTV</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.1</td><td>56.00</td><td>步行街与建设南街交叉口东40米</td></tr>
+<tr><td>⚠️</td><td>蓝调主题国际商娱汇(KTV)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>70.00</td><td>昭通大道省耕山水76号</td></tr>
+<tr><td>⚠️</td><td>幸福蓝海影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>19.00</td><td>太平街道办事处昭通大道00001号C区3层C-3号</td></tr>
+<tr><td>⚠️</td><td>好多福影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>28.00</td><td>盐井镇文兴街社区居民委员会县大街96号2层</td></tr>
+<tr><td>⚠️</td><td>咔漫一号电玩城</td><td>电玩城</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.0</td><td>60.00</td><td>太平街道办事处省耕山水商业区综合楼附楼1楼</td></tr>
+<tr><td>⚠️</td><td>九灵·真人密室逃脱(吾悦广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>74.00</td><td>吾悦广场四楼4023号</td></tr>
+<tr><td>⚠️</td><td>异空间实景沉浸式密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>95.00</td><td>陡街小吃集二楼互联网眼镜异空间密室</td></tr>
+<tr><td>⚠️</td><td>西岳国际影城(彝良店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>31.00</td><td>角奎街道东正街64号财富中心A区四楼</td></tr>
+<tr><td>⚠️</td><td>幺鸡自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>207.00</td><td>步行街与建设南街交叉口东南40米</td></tr>
+<tr><td>⚠️</td><td>潮麻CLUB·24h棋牌(东门步行街店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>13.00</td><td>龙泉街道办事处东菜园社区东门步行街19号楼A303号内</td></tr>
+<tr><td>⚠️</td><td>潮麻CLUB·24h棋牌(金池购物中心店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>13.00</td><td>凤凰街道办事处金池购物中心五楼F5-01号商铺内</td></tr>
+<tr><td>⚠️</td><td>听胡棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>17.00</td><td>龙泉街道巩固社区枫林路22号三楼室内听胡棋牌室(众升超市右侧)</td></tr>
+<tr><td>⚠️</td><td>诡秘密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>—</td><td>青年路190号华南大厦</td></tr>
+<tr><td>⚠️</td><td>燃情岁月国际商务汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>47.00</td><td>朱提路17号</td></tr>
+<tr><td>⚠️</td><td>天籁韵律KTV歌城</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>59.00</td><td>建设南街108号</td></tr>
+<tr><td>⚠️</td><td>冰荷KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>54.00</td><td>步行街与建设南街交叉口东140米</td></tr>
+<tr><td>⚠️</td><td>潮麻CLUB·24h棋牌(洋人街店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.9</td><td>23.00</td><td>二甲路中段1幢3层1号商铺(洋人街)</td></tr>
+<tr><td>⚠️</td><td>尤喜24小时自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.9</td><td>18.00</td><td>朱提步行街广场2楼7-8号商铺</td></tr>
+<tr><td>⚠️</td><td>大关西岳国际影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>35.00</td><td>文化街21号</td></tr>
+<tr><td>⚠️</td><td>建信坊国际影城(巧家店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>40.00</td><td>天力购物广场6层</td></tr>
+<tr><td>⚠️</td><td>时代凤凰国际影城(金溪广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>42.00</td><td>振兴大街金溪广场4层</td></tr>
+<tr><td>⚠️</td><td>西岳国际影城(县府街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>36.00</td><td>龙行大道(东段)与县府街交叉口东南20米</td></tr>
+<tr><td>⚠️</td><td>麻了个将</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.8</td><td>53.00</td><td>青年路195号福都大厦2栋一单元4楼</td></tr>
+<tr><td>⚠️</td><td>尤喜棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.8</td><td>—</td><td>昭阳大道钻石广场二期6栋225号附294号</td></tr>
+<tr><td>⚠️</td><td>云都俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.7</td><td>142.00</td><td>环城路20号</td></tr>
+<tr><td>⚠️</td><td>希望之星国际商娱汇(KTV)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.7</td><td>203.00</td><td>朱提路13号</td></tr>
+<tr><td>⚠️</td><td>宏钻KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.7</td><td>26.00</td><td>东正街与小河边街交叉口西南100米</td></tr>
+<tr><td>⚠️</td><td>音浪KTV(步行街店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.7</td><td>54.00</td><td>步行街与建设南街交叉口东南60米</td></tr>
+<tr><td>⚠️</td><td>浪音酒吧KTV</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.7</td><td>65.00</td><td>昭阳大道225号附52号</td></tr>
+<tr><td>⚠️</td><td>爱尚来力台球棋牌室(青年路店)</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>3.7</td><td>—</td><td>凤凰街道青年路华南大厦1栋1单元186号附4号</td></tr>
+<tr><td>⚠️</td><td>天听自助棋牌室(金融中心店)</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.7</td><td>16.00</td><td>昭阳大道58号20楼2025室(从紫光精品酒店进入乘1号电梯上)</td></tr>
+<tr><td>⚠️</td><td>来碰棋牌店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.7</td><td>26.00</td><td>红枫水岸小区1栋01号铺</td></tr>
+<tr><td>⚠️</td><td>爆米花影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.6</td><td>35.00</td><td>龙行大道西段4铺二楼</td></tr>
+<tr><td>⚠️</td><td>棋纪·麻友社·棋牌(陡街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.6</td><td>32.00</td><td>龙泉街道办事处崇义街社区陡街68号附58号门面内</td></tr>
+<tr><td>⚠️</td><td>棋圣自助棋牌室(昭通金融中心C座店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.6</td><td>12.00</td><td>凤凰街道昭阳大道金融中心C座817室</td></tr>
+</tbody></table></div>
+<p>（另 7 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（18 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>9</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>8</td></tr>
+<tr><td>电玩城</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>昭通海洋大世界</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>凤凰街道迎宾大道19号</td></tr>
+<tr><td>✅B</td><td>银都欢乐城区</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>桃源回族乡桃源生态旅游度假区一楼106号</td></tr>
+<tr><td>⚠️</td><td>云南狼王宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>太平街道办事处桥通路与二环东路交叉口</td></tr>
+<tr><td>⚠️</td><td>可萌宠物之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>彝曹段与塘仿街交叉口东40米</td></tr>
+<tr><td>⚠️</td><td>银都欢乐城-动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>桃源生态旅游景区</td></tr>
+<tr><td>⚠️</td><td>汪星人乐园宠物用品店(盛世堂琅店)</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>盛世堂琅西苑9栋(柘先生米线隔壁)</td></tr>
+<tr><td>⚠️</td><td>咔漫一号电玩城</td><td>电玩城</td><td>独立</td><td>4.0</td><td>太平街道办事处省耕山水商业区综合楼附楼1楼</td></tr>
+<tr><td>⚠️</td><td>动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>世界彝都·彝族六祖分支景区内</td></tr>
+<tr><td>⚠️</td><td>仙侣峡·仙境动植物园</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>以勒镇以堡村岩上苗寨西边</td></tr>
+<tr><td>⚠️</td><td>萌屿宠物生活馆</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>枫园路枫园小区93号商铺</td></tr>
+<tr><td>⚠️</td><td>永善县爪爪乐园</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>永兴街道金江锦城B4栋2-11号</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园(吾悦广场店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.6</td><td>二环南路昭通吾悦广场</td></tr>
+<tr><td>⚠️</td><td>Daily解忧猫咪乐园</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>老街25号</td></tr>
+<tr><td>❌</td><td>萌卡宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>七里龙湾社区1组1号</td></tr>
+<tr><td>❌</td><td>迷你小土豆</td><td>其他儿童场所</td><td>独立</td><td>3.0</td><td>东正街与文屏北路交叉口东北120米</td></tr>
+<tr><td>❌</td><td>迷你服饰</td><td>其他儿童场所</td><td>独立</td><td>1.3</td><td>昭通大道1号中劲中汇商业中心F1层</td></tr>
+<tr><td>⚠️</td><td>动物园停车点</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>昭大线西南侧</td></tr>
+<tr><td>⚠️</td><td>彝族六祖分支景区动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>动物园</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（56 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>昭通吾悦广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>二环南路</td></tr>
+<tr><td>✅A-</td><td>昭通金池购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>昭阳大道南侧金融中心AB座</td></tr>
+<tr><td>❌</td><td>吉客隆(合景广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅B</td><td>昭通市水果批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>昭麻二级公路与珠泉路交叉口北480米</td></tr>
+<tr><td>✅B</td><td>昭通吉比特农特产品批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>昭麻二级公路</td></tr>
+<tr><td>✅B</td><td>镇雄亿联国际商贸城A区</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>旧府北路与迎宾大道交叉口东200米</td></tr>
+<tr><td>✅B</td><td>观澜湖悦容匯购物公园</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>迎宾大道与官房路交叉口西南120米</td></tr>
+<tr><td>✅B</td><td>恒邦购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>青年路170号</td></tr>
+<tr><td>✅B</td><td>洋人街购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>西街福禄桐275号</td></tr>
+<tr><td>✅B</td><td>钻石商业广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>昭阳大道辅路与南苑街交叉口东北100米</td></tr>
+<tr><td>✅B</td><td>金池影城(昭通金池购物中心店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>昭阳大道150金池购物中心F4</td></tr>
+<tr><td>✅B</td><td>吉客隆(靖安新区店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>靖安镇百顺村民委员会合顺路农贸市场负一楼</td></tr>
+<tr><td>✅B</td><td>和谐购物中心</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>南台街道赤水源大道</td></tr>
+<tr><td>✅B</td><td>新世纪商贸广场</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>龙行大道13号</td></tr>
+<tr><td>✅B</td><td>天力购物广场</td><td>购物中心/综合体</td><td>4.4</td><td>1</td><td>0</td><td>过境路堂琅酒店对面</td></tr>
+<tr><td>✅B</td><td>朱泉路水果批发市场</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>昭大线与母凤段交叉口西160米</td></tr>
+<tr><td>✅B</td><td>开元盛世商业广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>龙街</td></tr>
+<tr><td>✅B</td><td>吉祥购物中心</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>沙坪南路48栋107</td></tr>
+<tr><td>⚠️</td><td>中贝商业广场</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>麒麟盛世1号2号楼</td></tr>
+<tr><td>⚠️</td><td>龙腾广场超市</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>南台街道镇雄图能教育培训学校(龙腾校区)雄腾广场</td></tr>
+<tr><td>⚠️</td><td>宇晨超市(碧桂园店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>碧桂园23栋108号</td></tr>
+<tr><td>⚠️</td><td>麦鲜购物广场</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>文兴街东40米</td></tr>
+<tr><td>⚠️</td><td>湾湾超市(观澜湖西区店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>观澜湖西区</td></tr>
+<tr><td>⚠️</td><td>贝漫超市</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>昭烟线</td></tr>
+<tr><td>⚠️</td><td>中劲中汇商业中心</td><td>百货/商场</td><td>4.2</td><td>2</td><td>0</td><td>昭通大道1号</td></tr>
+<tr><td>⚠️</td><td>新天地购物广场(下排街)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>下排街与北顺城街交叉口北150米</td></tr>
+<tr><td>⚠️</td><td>万嘉生活超市(振兴大道店)</td><td>购物中心/综合体</td><td>4.1</td><td>1</td><td>0</td><td>振兴大道与文兴街交叉口东20米</td></tr>
+<tr><td>⚠️</td><td>洪福超市(外贸巷店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>二环东路与瓦窑村路交叉口东60米</td></tr>
+<tr><td>❌</td><td>衣天下服装批发城(恒邦购物广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>威威家私批发中心</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>国学路与二环西路交叉口东北360米</td></tr>
+<tr><td>⚠️</td><td>潮麻CLUB·24h棋牌(金池购物中心店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>凤凰街道办事处金池购物中心五楼F5-01号商铺内</td></tr>
+<tr><td>⚠️</td><td>天源百货批发</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>天源商贸城</td></tr>
+<tr><td>⚠️</td><td>名创优品(昭通金池购物中心店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>凤凰街道昭阳大道金池购物中心2楼</td></tr>
+<tr><td>⚠️</td><td>昭通市水产批发市场</td><td>批发城</td><td>4.0</td><td>1</td><td>0</td><td>二环东路与瓦窑村路交叉口东320米</td></tr>
+<tr><td>⚠️</td><td>金森副食</td><td>购物中心/综合体</td><td>3.9</td><td>0</td><td>0</td><td>太平街道东煤路58号</td></tr>
+<tr><td>⚠️</td><td>南翔奥特莱斯</td><td>百货/商场</td><td>3.9</td><td>0</td><td>0</td><td>南翔商业广场2F3F</td></tr>
+<tr><td>⚠️</td><td>火狐狸服装批发城(西街店)</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>西街口241(新百大对面)</td></tr>
+<tr><td>⚠️</td><td>阳光超市(缫狗段店)</td><td>购物中心/综合体</td><td>3.7</td><td>0</td><td>0</td><td>开元盛世商业广场南门西60米</td></tr>
+<tr><td>⚠️</td><td>仁乐购超市</td><td>购物中心/综合体</td><td>3.7</td><td>0</td><td>0</td><td>锦海建材城临时菜市场永宁街572号</td></tr>
+<tr><td>⚠️</td><td>全叶家居批发城</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>太平街道办事处永宁街</td></tr>
+<tr><td>⚠️</td><td>嗨聚海鲜批发</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>太平社区15号院98号</td></tr>
+<tr><td>⚠️</td><td>长城家具批发</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>石庄路口</td></tr>
+<tr><td>⚠️</td><td>鑫旺办公家具批发部</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>建环路84号</td></tr>
+<tr><td>⚠️</td><td>老马水产批发零售部</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>富强蔬菜市场淡水鱼批发6号大棚</td></tr>
+<tr><td>⚠️</td><td>林智家具批发城</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>珠泉路245号附2号</td></tr>
+<tr><td>⚠️</td><td>新疆无烟煤批发市场</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>珠泉路与昭麻二级公路交叉口南260米</td></tr>
+<tr><td>⚠️</td><td>华客生活超市</td><td>购物中心/综合体</td><td>3.5</td><td>0</td><td>0</td><td>大都会二期</td></tr>
+<tr><td>⚠️</td><td>大王服装批发城</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>云兴街与朝阳街交叉口西20米</td></tr>
+<tr><td>❌</td><td>永得百货</td><td>百货/商场</td><td>3.4</td><td>0</td><td>0</td><td>文屏镇人工湖二号街罗兰饭店旁</td></tr>
+<tr><td>❌</td><td>南翔奥特莱斯Outlets</td><td>购物中心/综合体</td><td>3.4</td><td>0</td><td>0</td><td>南翔商业广场3F</td></tr>
+</tbody></table></div>
+<p>（另 6 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（2 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>同心圆(威信店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.0</td><td>—</td><td>扎西镇人民路66号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_279006_ss__1766208117335_19405222.jpg"></td></tr>
+<tr><td>❌</td><td>迷你小土豆</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.0</td><td>14.00</td><td>东正街与文屏北路交叉口东北120米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a061863b514daf7b6a2901e9e4520a61"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（1 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>昭通吉比特农特产品批发市场</td><td>购物服务;综合市场;农副产品市场</td><td>4.5</td><td>昭麻二级公路</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>九天慧德店(镇雄雄腾广场店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>九天慧德店(镇雄雄腾广场店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>旺角快捷酒店</td><td>距离就近</td><td>273m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>九灵真人密室逃脱</td><td>距离就近</td><td>490m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>昭通吾悦广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>九灵·真人密室逃脱(吾悦广场店)</td><td>距离就近</td><td>0m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星轶影城(吾悦广场店)</td><td>名称互证</td><td>37m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>萌宠乐园(吾悦广场店)</td><td>名称互证</td><td>131m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>昭通海洋大世界（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>昭通海洋大世界</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>皇马A8 KTV(抚镇店)（26 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>皇马A8 KTV(抚镇店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>歌视达KTV</td><td>距离就近</td><td>46m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>幺鸡自助棋牌室</td><td>距离就近</td><td>61m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>音浪KTV(步行街店)</td><td>距离就近</td><td>66m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(东门步行街店)</td><td>距离就近</td><td>85m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>燃情岁月国际商务汇</td><td>距离就近</td><td>109m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>罗马假日KTV(朱提路)</td><td>距离就近</td><td>135m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>冰荷KTV</td><td>距离就近</td><td>144m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>宏钻KTV</td><td>距离就近</td><td>158m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>品客KTV</td><td>距离就近</td><td>164m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>浪音酒吧KTV</td><td>距离就近</td><td>174m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>盛代元音国际商务汇</td><td>距离就近</td><td>179m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>魔方量贩KTV</td><td>距离就近</td><td>186m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>爱尚主题KTV量贩(步行街店)</td><td>距离就近</td><td>206m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>醉爱KTV民谣集Bar</td><td>距离就近</td><td>215m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蓝爵台球棋牌俱乐部</td><td>距离就近</td><td>247m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>希望之星国际商娱汇(KTV)</td><td>距离就近</td><td>263m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>天籁韵律KTV歌城</td><td>距离就近</td><td>308m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>尤喜24小时自助棋牌室</td><td>距离就近</td><td>343m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(陡街店)</td><td>距离就近</td><td>396m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>水晶宾馆(南顺城街)</td><td>距离就近</td><td>432m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>居贤宾馆(第一人民医院店)</td><td>距离就近</td><td>468m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>海魅主题酒店</td><td>距离就近</td><td>478m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>棋都自助棋牌室</td><td>距离就近</td><td>492m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>异空间实景沉浸式密室逃脱</td><td>距离就近</td><td>547m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>昭通欢映影城(合景广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>昭通欢映影城(合景广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>合景广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>昭通欢映影城(合景广场店)</td><td>名称互证</td><td>166m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>昭通金池购物中心（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金池影城(昭通金池购物中心店)</td><td>名称互证</td><td>31m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(金池购物中心店)</td><td>距离就近</td><td>32m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>昭通快活林公寓</td><td>距离就近</td><td>134m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>天听自助棋牌室(金融中心店)</td><td>距离就近</td><td>142m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>天空之城·国际娱乐</td><td>距离就近</td><td>144m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>叁雀壹自助棋牌室(凤凰街道昭通金融中心C座店)</td><td>距离就近</td><td>145m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>棋圣自助棋牌室(昭通金融中心C座店)</td><td>距离就近</td><td>159m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>爱尚来力台球棋牌室(青年路店)</td><td>距离就近</td><td>319m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>诡秘密室逃脱</td><td>距离就近</td><td>320m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>昭通文登旅馆</td><td>距离就近</td><td>447m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>尤喜棋牌</td><td>距离就近</td><td>493m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>麻了个将</td><td>距离就近</td><td>505m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>魔方量贩KTV（25 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>魔方量贩KTV</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>浪音酒吧KTV</td><td>距离就近</td><td>20m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>盛代元音国际商务汇</td><td>距离就近</td><td>27m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>醉爱KTV民谣集Bar</td><td>距离就近</td><td>33m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>爱尚主题KTV量贩(步行街店)</td><td>距离就近</td><td>35m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>品客KTV</td><td>距离就近</td><td>41m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>蓝爵台球棋牌俱乐部</td><td>距离就近</td><td>65m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>宏钻KTV</td><td>距离就近</td><td>69m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>冰荷KTV</td><td>距离就近</td><td>71m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>罗马假日KTV(朱提路)</td><td>距离就近</td><td>73m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>燃情岁月国际商务汇</td><td>距离就近</td><td>78m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>希望之星国际商娱汇(KTV)</td><td>距离就近</td><td>84m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(东门步行街店)</td><td>距离就近</td><td>103m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>音浪KTV(步行街店)</td><td>距离就近</td><td>131m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>天籁韵律KTV歌城</td><td>距离就近</td><td>137m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>幺鸡自助棋牌室</td><td>距离就近</td><td>138m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>歌视达KTV</td><td>距离就近</td><td>140m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>尤喜24小时自助棋牌室</td><td>距离就近</td><td>160m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>皇马A8 KTV(抚镇店)</td><td>距离就近</td><td>186m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>居贤宾馆(第一人民医院店)</td><td>距离就近</td><td>298m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>海魅主题酒店</td><td>距离就近</td><td>313m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>环城招待所</td><td>距离就近</td><td>535m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>棋都自助棋牌室</td><td>距离就近</td><td>568m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(陡街店)</td><td>距离就近</td><td>575m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>水晶宾馆(南顺城街)</td><td>距离就近</td><td>577m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>醉爱KTV民谣集Bar（24 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>醉爱KTV民谣集Bar</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蓝爵台球棋牌俱乐部</td><td>距离就近</td><td>33m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>魔方量贩KTV</td><td>距离就近</td><td>33m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>爱尚主题KTV量贩(步行街店)</td><td>距离就近</td><td>50m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>希望之星国际商娱汇(KTV)</td><td>距离就近</td><td>51m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>浪音酒吧KTV</td><td>距离就近</td><td>53m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>品客KTV</td><td>距离就近</td><td>55m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>盛代元音国际商务汇</td><td>距离就近</td><td>57m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>宏钻KTV</td><td>距离就近</td><td>77m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>罗马假日KTV(朱提路)</td><td>距离就近</td><td>90m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>冰荷KTV</td><td>距离就近</td><td>104m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>燃情岁月国际商务汇</td><td>距离就近</td><td>108m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>天籁韵律KTV歌城</td><td>距离就近</td><td>130m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(东门步行街店)</td><td>距离就近</td><td>133m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>尤喜24小时自助棋牌室</td><td>距离就近</td><td>141m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>音浪KTV(步行街店)</td><td>距离就近</td><td>163m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>歌视达KTV</td><td>距离就近</td><td>169m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>幺鸡自助棋牌室</td><td>距离就近</td><td>169m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>皇马A8 KTV(抚镇店)</td><td>距离就近</td><td>215m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>居贤宾馆(第一人民医院店)</td><td>距离就近</td><td>265m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>海魅主题酒店</td><td>距离就近</td><td>302m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>环城招待所</td><td>距离就近</td><td>553m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>棋都自助棋牌室</td><td>距离就近</td><td>569m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(陡街店)</td><td>距离就近</td><td>598m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>星轶影城(吾悦广场店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星轶影城(吾悦广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>九灵·真人密室逃脱(吾悦广场店)</td><td>距离就近</td><td>36m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>萌宠乐园(吾悦广场店)</td><td>距离就近</td><td>158m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吉客隆(合景广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>昭通欢映影城(合景广场店)</td><td>距离就近</td><td>133m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>恒邦购物广场（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>麻了个将</td><td>距离就近</td><td>103m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>爱尚来力台球棋牌室(青年路店)</td><td>距离就近</td><td>124m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>诡秘密室逃脱</td><td>距离就近</td><td>125m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>昭通文登旅馆</td><td>距离就近</td><td>181m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>西岳国际影城(青年路店)</td><td>距离就近</td><td>249m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>熊猫牌馆(焕霖)</td><td>距离就近</td><td>270m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>异空间实景沉浸式密室逃脱</td><td>距离就近</td><td>309m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(洋人街店)</td><td>距离就近</td><td>379m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>金池影城(昭通金池购物中心店)</td><td>距离就近</td><td>422m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(金池购物中心店)</td><td>距离就近</td><td>428m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>棋圣自助棋牌室(昭通金融中心C座店)</td><td>距离就近</td><td>441m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>天空之城·国际娱乐</td><td>距离就近</td><td>442m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>叁雀壹自助棋牌室(凤凰街道昭通金融中心C座店)</td><td>距离就近</td><td>442m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>天听自助棋牌室(金融中心店)</td><td>距离就近</td><td>444m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(陡街店)</td><td>距离就近</td><td>454m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>昭通快活林公寓</td><td>距离就近</td><td>565m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>尤喜棋牌</td><td>距离就近</td><td>582m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>洋人街购物中心（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>潮麻CLUB·24h棋牌(洋人街店)</td><td>距离就近</td><td>55m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>异空间实景沉浸式密室逃脱</td><td>距离就近</td><td>182m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>西岳国际影城(青年路店)</td><td>距离就近</td><td>186m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(陡街店)</td><td>距离就近</td><td>302m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>麻了个将</td><td>距离就近</td><td>315m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>熊猫牌馆(焕霖)</td><td>距离就近</td><td>348m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>昭通文登旅馆</td><td>距离就近</td><td>439m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>诡秘密室逃脱</td><td>距离就近</td><td>441m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>爱尚来力台球棋牌室(青年路店)</td><td>距离就近</td><td>444m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>棋都自助棋牌室</td><td>距离就近</td><td>529m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>钻石商业广场（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>尤喜棋牌</td><td>距离就近</td><td>80m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金鼎大酒店(沿河岔街)</td><td>距离就近</td><td>224m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>水晶宾馆(南顺城街)</td><td>距离就近</td><td>257m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>棋圣自助棋牌室(昭通金融中心C座店)</td><td>距离就近</td><td>264m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>叁雀壹自助棋牌室(凤凰街道昭通金融中心C座店)</td><td>距离就近</td><td>278m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>天空之城·国际娱乐</td><td>距离就近</td><td>279m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>天听自助棋牌室(金融中心店)</td><td>距离就近</td><td>282m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(金池购物中心店)</td><td>距离就近</td><td>390m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>金池影城(昭通金池购物中心店)</td><td>距离就近</td><td>394m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>昭通快活林公寓</td><td>距离就近</td><td>418m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>诡秘密室逃脱</td><td>距离就近</td><td>426m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>爱尚来力台球棋牌室(青年路店)</td><td>距离就近</td><td>435m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>异空间实景沉浸式密室逃脱</td><td>距离就近</td><td>538m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(陡街店)</td><td>距离就近</td><td>552m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>皇马A8KTV量贩(国防广场店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>皇马A8KTV量贩(国防广场店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>环球影城(国防广场店)</td><td>距离就近</td><td>114m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>熊猫牌馆(焕霖)</td><td>距离就近</td><td>468m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>白领公寓酒店(昭通古城店)</td><td>距离就近</td><td>524m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>西岳国际影城(青年路店)</td><td>距离就近</td><td>544m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>来碰棋牌店</td><td>距离就近</td><td>555m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>昭通丰壕宾馆(珠泉路店)</td><td>距离就近</td><td>579m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金池影城(昭通金池购物中心店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金池影城(昭通金池购物中心店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(金池购物中心店)</td><td>距离就近</td><td>9m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>天听自助棋牌室(金融中心店)</td><td>距离就近</td><td>119m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>天空之城·国际娱乐</td><td>距离就近</td><td>121m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>叁雀壹自助棋牌室(凤凰街道昭通金融中心C座店)</td><td>距离就近</td><td>122m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>棋圣自助棋牌室(昭通金融中心C座店)</td><td>距离就近</td><td>135m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>昭通快活林公寓</td><td>距离就近</td><td>146m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>爱尚来力台球棋牌室(青年路店)</td><td>距离就近</td><td>297m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>诡秘密室逃脱</td><td>距离就近</td><td>298m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>昭通文登旅馆</td><td>距离就近</td><td>436m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>尤喜棋牌</td><td>距离就近</td><td>467m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>麻了个将</td><td>距离就近</td><td>488m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>和谐购物中心（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>九灵真人密室逃脱</td><td>距离就近</td><td>172m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>镇雄县开元影城</td><td>距离就近</td><td>419m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>九天慧德店(镇雄雄腾广场店)</td><td>距离就近</td><td>423m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>旺角快捷酒店</td><td>距离就近</td><td>516m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新世纪商贸广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>爆米花影院</td><td>距离就近</td><td>366m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>绥江钓鱼岛假日酒店</td><td>距离就近</td><td>574m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>天力购物广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>建信坊国际影城(巧家店)</td><td>名称互证</td><td>19m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>汪星人乐园宠物用品店(盛世堂琅店)</td><td>距离就近</td><td>180m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>巧家莲花宾馆</td><td>距离就近</td><td>268m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>锦都商务酒店（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>锦都商务酒店</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>如家快捷酒店(昭通海楼路店)</td><td>距离就近</td><td>33m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>昭通大酒店(海楼路)</td><td>距离就近</td><td>66m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>昭通朋来大酒店(市中医院店)</td><td>距离就近</td><td>419m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>昭通快活林公寓</td><td>距离就近</td><td>581m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>旺角快捷酒店（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>旺角快捷酒店</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>九天慧德店(镇雄雄腾广场店)</td><td>距离就近</td><td>273m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>云谷剧本娱乐馆密室逃脱</td><td>距离就近</td><td>412m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>爱尚主题KTV量贩(步行街店)（24 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>爱尚主题KTV量贩(步行街店)</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>盛代元音国际商务汇</td><td>距离就近</td><td>27m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>浪音酒吧KTV</td><td>距离就近</td><td>34m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>魔方量贩KTV</td><td>距离就近</td><td>35m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>醉爱KTV民谣集Bar</td><td>距离就近</td><td>50m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蓝爵台球棋牌俱乐部</td><td>距离就近</td><td>70m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>冰荷KTV</td><td>距离就近</td><td>71m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>品客KTV</td><td>距离就近</td><td>75m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>希望之星国际商娱汇(KTV)</td><td>距离就近</td><td>90m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>燃情岁月国际商务汇</td><td>距离就近</td><td>97m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>宏钻KTV</td><td>距离就近</td><td>104m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>罗马假日KTV(朱提路)</td><td>距离就近</td><td>106m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>天籁韵律KTV歌城</td><td>距离就近</td><td>107m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(东门步行街店)</td><td>距离就近</td><td>121m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>尤喜24小时自助棋牌室</td><td>距离就近</td><td>137m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>音浪KTV(步行街店)</td><td>距离就近</td><td>145m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>幺鸡自助棋牌室</td><td>距离就近</td><td>151m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>歌视达KTV</td><td>距离就近</td><td>160m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>皇马A8 KTV(抚镇店)</td><td>距离就近</td><td>206m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>海魅主题酒店</td><td>距离就近</td><td>282m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>居贤宾馆(第一人民医院店)</td><td>距离就近</td><td>301m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>环城招待所</td><td>距离就近</td><td>504m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>水晶宾馆(南顺城街)</td><td>距离就近</td><td>576m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(陡街店)</td><td>距离就近</td><td>599m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>富善中央激光影城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>富善中央激光影城</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>开元盛世商业广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>镇雄县开元影城</td><td>距离就近</td><td>57m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>九灵真人密室逃脱</td><td>距离就近</td><td>246m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盛代元音国际商务汇（25 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>盛代元音国际商务汇</td><td>名称互证</td><td>0m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>浪音酒吧KTV</td><td>距离就近</td><td>10m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>魔方量贩KTV</td><td>距离就近</td><td>27m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>爱尚主题KTV量贩(步行街店)</td><td>距离就近</td><td>27m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>冰荷KTV</td><td>距离就近</td><td>48m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>醉爱KTV民谣集Bar</td><td>距离就近</td><td>57m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>品客KTV</td><td>距离就近</td><td>59m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>燃情岁月国际商务汇</td><td>距离就近</td><td>70m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>罗马假日KTV(朱提路)</td><td>距离就近</td><td>85m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>蓝爵台球棋牌俱乐部</td><td>距离就近</td><td>86m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>宏钻KTV</td><td>距离就近</td><td>88m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>潮麻CLUB·24h棋牌(东门步行街店)</td><td>距离就近</td><td>94m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>希望之星国际商娱汇(KTV)</td><td>距离就近</td><td>106m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>音浪KTV(步行街店)</td><td>距离就近</td><td>118m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>幺鸡自助棋牌室</td><td>距离就近</td><td>125m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>歌视达KTV</td><td>距离就近</td><td>133m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>天籁韵律KTV歌城</td><td>距离就近</td><td>133m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>尤喜24小时自助棋牌室</td><td>距离就近</td><td>164m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>皇马A8 KTV(抚镇店)</td><td>距离就近</td><td>179m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>海魅主题酒店</td><td>距离就近</td><td>308m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>居贤宾馆(第一人民医院店)</td><td>距离就近</td><td>320m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>环城招待所</td><td>距离就近</td><td>510m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>水晶宾馆(南顺城街)</td><td>距离就近</td><td>555m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>棋纪·麻友社·棋牌(陡街店)</td><td>距离就近</td><td>572m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>棋都自助棋牌室</td><td>距离就近</td><td>584m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（31 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>居贤宾馆(第一人民医院店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>环城东路329号附2号内</td></tr>
+<tr><td>✅A-</td><td>昭通丰壕宾馆(珠泉路店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>珠泉路200号附7号</td></tr>
+<tr><td>✅A-</td><td>九天慧德店(镇雄雄腾广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>祥龙苑西门旁</td></tr>
+<tr><td>✅A-</td><td>威信九龙宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>长征路</td></tr>
+<tr><td>✅A-</td><td>水富顺安宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>云富街道温泉大道温泉社区37栋3单元3号门市</td></tr>
+<tr><td>✅A-</td><td>如家快捷酒店(昭通海楼路店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.6</td><td>—</td><td>海楼路118号(与团结路交汇处)</td></tr>
+<tr><td>✅B</td><td>环城招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>环城东路440号</td></tr>
+<tr><td>✅B</td><td>鲁甸锐达主题酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>文屏东路97号</td></tr>
+<tr><td>✅B</td><td>昭通大酒店(海楼路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>海楼路120号</td></tr>
+<tr><td>✅B</td><td>金鼎大酒店(沿河岔街)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>月牙路与昭阳大道交叉口西北角</td></tr>
+<tr><td>✅B</td><td>锦都商务酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>商城大街868号</td></tr>
+<tr><td>✅B</td><td>旺角快捷酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>南大街永安驾校对面</td></tr>
+<tr><td>✅B</td><td>白领公寓酒店(昭通古城店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>珠泉路184门面内</td></tr>
+<tr><td>✅B</td><td>水富仁和宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>水富坝尾槽西部大峡谷温泉社区12栋4单元</td></tr>
+<tr><td>✅B</td><td>水晶宾馆(南顺城街)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>南顺城街248号</td></tr>
+<tr><td>✅B</td><td>东海大酒店(南广路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>乌峰镇南台路2号</td></tr>
+<tr><td>✅B</td><td>水富半月湾假日酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>湖滨路与和谐路交叉口西北120米</td></tr>
+<tr><td>⚠️</td><td>锦泰商务酒店(小大段)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>昭阳区火车站旁</td></tr>
+<tr><td>⚠️</td><td>宏峰宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>云天大道70号</td></tr>
+<tr><td>⚠️</td><td>大关大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>龙洞路16号</td></tr>
+<tr><td>⚠️</td><td>昭通朋来大酒店(市中医院店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>民欣街21号市中医院旁</td></tr>
+<tr><td>⚠️</td><td>洛泽河大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.1</td><td>—</td><td>角奎街道东正街64号</td></tr>
+<tr><td>⚠️</td><td>昭通文登旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.0</td><td>—</td><td>小石桥27号</td></tr>
+<tr><td>⚠️</td><td>巧家莲花宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>白鹤滩镇过境路花桥社区</td></tr>
+<tr><td>⚠️</td><td>明馨大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>海楼路453号</td></tr>
+<tr><td>⚠️</td><td>昭通快活林公寓</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.8</td><td>—</td><td>通贸街70号(近海楼路)</td></tr>
+<tr><td>⚠️</td><td>永善花椒湾大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>溪洛渡镇振兴大道八号</td></tr>
+<tr><td>⚠️</td><td>绥江钓鱼岛假日酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>龙腾大道西段(国土局斜对面)</td></tr>
+<tr><td>⚠️</td><td>海魅主题酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.5</td><td>—</td><td>环城东路22号</td></tr>
+<tr><td>❌</td><td>龙都酒店(龙泉路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>龙泉路66号</td></tr>
+<tr><td>❌</td><td>溪洛渡大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.0</td><td>—</td><td>振兴大街28号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>7</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>10</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>3</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>7</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>2</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/昭通市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>2 个 POI 无地址</strong>，需人工补：吉客隆(合景广场店)、衣天下服装批发城(恒邦购物广场店)</li><li><input type="checkbox" disabled> <strong>4 个 POI 无评分</strong>，暂标 ⚠️：动物园停车点、彝族六祖分支景区动物园售票处、昭通诚辰商贸有限公司、昭通远贵商贸有限公司</li><li><input type="checkbox" disabled> 儿童游乐 18 家，其中场内 1 家、独立 17 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 11 个区县：大关县、威信县、巧家县、彝良县、昭阳区、水富市、永善县、盐津县、绥江县、镇雄县、鲁甸县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

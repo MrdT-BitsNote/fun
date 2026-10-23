@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>临汾市 · 山西省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/山西省.html">← 返回山西省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>临汾市 · 山西省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:30:04  ·  POI 总量：198（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>198</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>98%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 121 · 成人娱乐 138 · 儿童娱乐 36 · 酒店 31 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>山西省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>17 个</td></tr>
+<tr><td>街道/镇/乡</td><td>158 个</td></tr>
+<tr><td>区县构成</td><td>县×14、县级市×2、市辖区×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>尧都区</td><td>133</td><td>67%</td></tr>
+<tr><td>洪洞县</td><td>14</td><td>7%</td></tr>
+<tr><td>侯马市</td><td>10</td><td>5%</td></tr>
+<tr><td>霍州市</td><td>8</td><td>4%</td></tr>
+<tr><td>翼城县</td><td>8</td><td>4%</td></tr>
+<tr><td>襄汾县</td><td>8</td><td>4%</td></tr>
+<tr><td>吉县</td><td>3</td><td>2%</td></tr>
+<tr><td>安泽县</td><td>3</td><td>2%</td></tr>
+<tr><td>乡宁县</td><td>3</td><td>2%</td></tr>
+<tr><td>浮山县</td><td>3</td><td>2%</td></tr>
+<tr><td>曲沃县</td><td>2</td><td>1%</td></tr>
+<tr><td>大宁县</td><td>1</td><td>1%</td></tr>
+<tr><td>隰县</td><td>1</td><td>1%</td></tr>
+<tr><td>蒲县</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（121 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>54</td></tr>
+<tr><td>购物中心/综合体</td><td>34</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>百货/商场</td><td>10</td></tr>
+<tr><td>商业街</td><td>2</td></tr>
+<tr><td>奥特莱斯</td><td>1</td></tr>
+<tr><td>美食街/小吃街</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（121 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>生龙国际时尚广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>15</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>临汾市动物园</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>19</td><td>0</td></tr>
+<tr><td>B</td><td>生龙悦享生活超市(百悦店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>16</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>生龙悦享城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>生龙国际·百悦名店</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>16</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>生龙悠购天地</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>16</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>恒业国际影城(临汾店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>17</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>听江湖自助棋牌(鼓楼广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>12</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>扣点棋牌茶艺(平阳广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>18</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>根生大酒店</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>金都快捷(光明路)</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>临汾舒雅宾馆</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>新百汇商业广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>7</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>临汾尧都万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>悦汇时光颂艺术购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>临汾王府井购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>临汾钟楼宾馆</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>糖果影K</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>优客纯K(悦汇时光颂艺术购物中心店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华翔购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新东城商场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>神农美特好超市(临汾美都汇购物广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>生龙悦享生活超市(常兴店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>火狐狸服装批发城(临汾店)</td><td>批发城</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>山西馨阳农产品批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>王府井·尚城UP TOWN</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>莲花城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>安达圣新天地</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>锦悦城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>泽尧商贸城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>丁陶大卖场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>三琪美悦城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>魅KTV•AI辅唱(临汾时光颂店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>米派对·娱乐</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新浪潮PARTY-K(思麦尔广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>2</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>雀发潮AI智慧KTV·台球·影吧(临汾新百汇店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>6</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>米嗨唱AI智能自助KTV(临汾新百汇店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>6</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>博纳国际影城(临汾尧都万达广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中影国际影城(王府井店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>洪洞横店电影城(莲花城店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+</tbody></table></div>
+<h3>生龙国际时尚广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：解放路33号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 15 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>生龙国际时尚广场</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>恒业国际影城(临汾店)、扣点棋牌茶艺(平阳广场店)、扣点棋牌茶艺(车站西街店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>八达快捷酒店、临汾新华精品酒店</td></tr>
+</tbody></table></div>
+<h3>临汾市动物园 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 19 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（风景名胜;公园广场;动物园）</li><li><strong>地址</strong>：环城南路秦蜀路十字路口西南角</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 19 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>临汾市动物园</td></tr>
+<tr><td>儿童娱乐</td><td>19</td><td>临汾市动物园、临汾市动物园美食游乐广场、动物园户外游乐场</td></tr>
+</tbody></table></div>
+<h3>生龙悦享生活超市(百悦店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：解放西路商会巷37号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 16 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>生龙悦享生活超市(百悦店)</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>听江湖自助棋牌(鼓楼广场店)、恒业国际影城(临汾店)、临汾星阁影城工贸店</td></tr>
+</tbody></table></div>
+<h3>生龙悦享城 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：财神楼北街31号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>生龙悦享城</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>恒业国际影城(临汾店)、扣点棋牌茶艺(车站西街店)、天空之城KTV(临汾工贸购物中心店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>八达快捷酒店</td></tr>
+</tbody></table></div>
+<h3>生龙国际·百悦名店 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：解放路商会巷37号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 16 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>生龙国际·百悦名店</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>听江湖自助棋牌(鼓楼广场店)、恒业国际影城(临汾店)、临汾星阁影城工贸店</td></tr>
+</tbody></table></div>
+<h3>生龙悠购天地 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：解放西路31号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 16 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>生龙悠购天地</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>恒业国际影城(临汾店)、扣点棋牌茶艺(平阳广场店)、扣点棋牌茶艺(车站西街店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>八达快捷酒店、临汾新华精品酒店</td></tr>
+</tbody></table></div>
+<h3>恒业国际影城(临汾店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 17 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：解放路33号生龙国际时尚广场9层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 17 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>恒业国际影城(临汾店)</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>恒业国际影城(临汾店)、扣点棋牌茶艺(平阳广场店)、扣点棋牌茶艺(车站西街店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>八达快捷酒店、临汾新华精品酒店</td></tr>
+</tbody></table></div>
+<h3>听江湖自助棋牌(鼓楼广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：鼓楼步行街3号商铺</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>听江湖自助棋牌(鼓楼广场店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>听江湖自助棋牌(鼓楼广场店)、雀有棋室、和为贵24小时自助棋牌</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>临汾钟楼宾馆</td></tr>
+</tbody></table></div>
+<h3>扣点棋牌茶艺(平阳广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 18 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：临汾市尧都区洪家楼北街20号二院南门斜对面四楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 18 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>扣点棋牌茶艺(平阳广场店)</td></tr>
+<tr><td>成人娱乐</td><td>18</td><td>扣点棋牌茶艺(平阳广场店)、麻小院自助棋牌馆(平阳广场店)、恒业国际影城(临汾店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>八达快捷酒店、临汾新华精品酒店</td></tr>
+</tbody></table></div>
+<h3>根生大酒店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：兴霍路与清泉巷交叉口东北40米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>根生大酒店</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>根生大酒店、霍州瑞隆宾馆(大运公路店)</td></tr>
+</tbody></table></div>
+<h3>金都快捷(光明路) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：翔翼西大街</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金都快捷(光明路)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金都快捷(光明路)</td></tr>
+</tbody></table></div>
+<h3>临汾舒雅宾馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：鼓楼西街街道秦蜀路新南关巷2号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>临汾舒雅宾馆</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>新浪潮PARTY-K(思麦尔广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>临汾舒雅宾馆</td></tr>
+</tbody></table></div>
+<h3>新百汇商业广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;综合市场;综合市场）</li><li><strong>地址</strong>：迎宾大道1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 7 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>新百汇商业广场</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>米嗨唱AI智能自助KTV(临汾新百汇店)、雀发潮AI智慧KTV·台球·影吧(临汾新百汇店)、金逸院线MAX影城临汾店</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宠乐园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金都花园大饭店(暂停营业)</td></tr>
+</tbody></table></div>
+<h3>临汾尧都万达广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：常兴中街与滨河湾中路交汇处东南角</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>临汾尧都万达广场</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>优客纯K(悦汇时光颂艺术购物中心店)、博纳国际影城(临汾尧都万达广场店)、魅KTV•AI辅唱(临汾时光颂店)</td></tr>
+</tbody></table></div>
+<h3>悦汇时光颂艺术购物中心 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场）</li><li><strong>地址</strong>：中大北街与河汾五路交叉口西南300米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>悦汇时光颂艺术购物中心</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>优客纯K(悦汇时光颂艺术购物中心店)、魅KTV•AI辅唱(临汾时光颂店)、米派对·娱乐</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（138 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>棋牌室</td><td>18</td></tr>
+<tr><td>其他娱乐场所</td><td>16</td></tr>
+<tr><td>电影院</td><td>16</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>12</td></tr>
+<tr><td>KTV</td><td>10</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>糖果影K</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>42.00</td><td>贡院街九州商场</td></tr>
+<tr><td>✅A-</td><td>优客纯K(悦汇时光颂艺术购物中心店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>29.00</td><td>向阳西路时光颂5层</td></tr>
+<tr><td>✅A-</td><td>中心城ktv</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>22.00</td><td>常兴中街中心城售楼中心北侧</td></tr>
+<tr><td>✅A-</td><td>N11城市会客厅</td><td>其他娱乐场所</td><td>生活服务;生活服务场所;生活服务场所</td><td>4.6</td><td>107.00</td><td>彩虹龙街红星美凯龙西门正对面</td></tr>
+<tr><td>✅A-</td><td>飞虹影剧院</td><td>电影院</td><td>体育休闲服务;影剧院;剧场</td><td>4.6</td><td>30.00</td><td>朝阳西街6号</td></tr>
+<tr><td>✅B</td><td>魅KTV•AI辅唱(临汾时光颂店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>44.00</td><td>向阳西路与中大街交汇处悦汇时光颂一层西北角1F112</td></tr>
+<tr><td>✅B</td><td>兰晶灵量贩式KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>32.00</td><td>迎春北街44号</td></tr>
+<tr><td>✅B</td><td>米派对·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>198.00</td><td>中大街11号德和优郡商业4层</td></tr>
+<tr><td>✅B</td><td>新浪潮PARTY-K(思麦尔广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>51.00</td><td>福利路24号思麦尔广场F2层</td></tr>
+<tr><td>✅B</td><td>雀发潮AI智慧KTV·台球·影吧(临汾新百汇店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>23.00</td><td>新百汇商业广场南门四区四层</td></tr>
+<tr><td>✅B</td><td>米嗨唱AI智能自助KTV(临汾新百汇店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>19.00</td><td>新百汇商业广场5区-2007-1号</td></tr>
+<tr><td>✅B</td><td>恒业国际影城(临汾店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>29.00</td><td>解放路33号生龙国际时尚广场9层</td></tr>
+<tr><td>✅B</td><td>光影传奇影城(贡院路与体育街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>41.00</td><td>体育南街万家福旁</td></tr>
+<tr><td>✅B</td><td>博纳国际影城(临汾尧都万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>17.00</td><td>万达广场</td></tr>
+<tr><td>✅B</td><td>中影国际影城(王府井店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>21.00</td><td>河汾路中段五洲国际广场5层L503号</td></tr>
+<tr><td>✅B</td><td>洪洞横店电影城(莲花城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>28.00</td><td>莲花城购物中心B馆4层</td></tr>
+<tr><td>✅B</td><td>听江湖自助棋牌(鼓楼广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>22.00</td><td>鼓楼步行街3号商铺</td></tr>
+<tr><td>✅B</td><td>扣点棋牌茶艺(车站西街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>45.00</td><td>解放路街道车站西街3号</td></tr>
+<tr><td>✅B</td><td>扣点棋牌茶艺(平阳广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>19.00</td><td>临汾市尧都区洪家楼北街20号二院南门斜对面四楼</td></tr>
+<tr><td>✅B</td><td>麻小院自助棋牌馆(平阳广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>13.00</td><td>花果城饭店停车场对面</td></tr>
+<tr><td>✅B</td><td>天空之城KTV(临汾工贸购物中心店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>65.00</td><td>解放西路28号临汾工贸购物中心F6层</td></tr>
+<tr><td>✅B</td><td>W-K歌汇</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>287.00</td><td>旋耕南一巷与旋耕巷交叉口东南20米</td></tr>
+<tr><td>✅B</td><td>大美 PARTY-K(新百汇商业广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>60.00</td><td>迎宾大道1号新百汇商业广场</td></tr>
+<tr><td>✅B</td><td>横店电影城(安达圣新天地店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>27.00</td><td>向阳路29号安达圣新天地F6</td></tr>
+<tr><td>✅B</td><td>临汾星阁影城工贸店</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>45.00</td><td>解放路百信工贸中心4层B1001</td></tr>
+<tr><td>✅B</td><td>九州国际影城(平阳南街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>21.00</td><td>平阳南街新明金市场4层(四中对面)</td></tr>
+<tr><td>✅B</td><td>金逸院线MAX影城临汾店</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>43.00</td><td>滨河南路辅路与迎宾大道辅路交叉口东南415米</td></tr>
+<tr><td>✅B</td><td>兰亭户外烧烤影院</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>45.00</td><td>滨河游乐园南200米</td></tr>
+<tr><td>✅B</td><td>星美克国际影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>37.00</td><td>新丽都装饰城北角楼</td></tr>
+<tr><td>✅B</td><td>兰博基尼主题KTV(东城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>—</td><td>东方·亚特兰西北门西南80米</td></tr>
+<tr><td>✅B</td><td>乐圣名仕会KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>—</td><td>尧贤街东50米新东城雅园A1区</td></tr>
+<tr><td>✅B</td><td>星光主题影城(洋洲大厦店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>29.00</td><td>解放东路51号洋洲大厦3层</td></tr>
+<tr><td>✅B</td><td>雀有棋室</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>35.00</td><td>解放路街道万寿巷3号</td></tr>
+<tr><td>✅B</td><td>禧雀24小时自助棋牌室(生龙国际店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>26.00</td><td>青狮北街集美都2层</td></tr>
+<tr><td>⚠️</td><td>丁陶影城(丁陶大卖场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>33.00</td><td>丁陶大道丁陶大卖场四层</td></tr>
+<tr><td>⚠️</td><td>横店电影城(星河新世界广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>31.00</td><td>南大街1号星河新世界购物广场F5层</td></tr>
+<tr><td>⚠️</td><td>和为贵24小时自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>16.00</td><td>贡院街爱尔眼科医院东侧胡同内</td></tr>
+<tr><td>⚠️</td><td>听江湖棋牌馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>20.00</td><td>马尾巷5号院1号</td></tr>
+<tr><td>⚠️</td><td>诡事录实景密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>96.00</td><td>财神楼街51号金旺角购物中心F1层</td></tr>
+<tr><td>⚠️</td><td>藤原·大型沉浸式密室逃脱(新百汇店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>157.00</td><td>新百汇西南门4区2层</td></tr>
+<tr><td>⚠️</td><td>沸点F-PARTYK</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>138.00</td><td>平阳南街88号</td></tr>
+<tr><td>⚠️</td><td>鑫华KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>91.00</td><td>环城南路普国装饰城南门东侧21号</td></tr>
+<tr><td>⚠️</td><td>四方朋友KTV(新百汇店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>59.00</td><td>百汇南路与滨河路辅路交叉口东400米</td></tr>
+<tr><td>⚠️</td><td>视界华艺影城(美悦城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>37.00</td><td>解放西街三琪美悦城三层</td></tr>
+<tr><td>⚠️</td><td>好运棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>22.00</td><td>向阳西路向阳新城3号楼1单元1号门店</td></tr>
+<tr><td>⚠️</td><td>等风来24小时自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>—</td><td>财神楼街51号金旺角购物中心</td></tr>
+<tr><td>⚠️</td><td>雀江湖自助茶吧24小时棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>16.00</td><td>钟楼小区</td></tr>
+<tr><td>⚠️</td><td>聚朋友棋牌(贡院路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>15.00</td><td>南街街道贡院街516号二层</td></tr>
+<tr><td>⚠️</td><td>金碧辉煌国际商务汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>40.00</td><td>临汾市尧都区政府街北一巷福宝酒店坡下</td></tr>
+<tr><td>⚠️</td><td>金麦国际影城(赵城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>33.00</td><td>未来星城6层</td></tr>
+<tr><td>⚠️</td><td>雀掌柜24h自助棋牌(鼓楼北店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>15.00</td><td>孙膑庙街金龙文明小区西南门</td></tr>
+<tr><td>⚠️</td><td>乐在棋中棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>35.00</td><td>科委巷孙膑庙大红袍烧烤后边</td></tr>
+<tr><td>⚠️</td><td>喜乐24小时自助棋牌(工贸店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>21.00</td><td>解放路工贸东楼四层</td></tr>
+<tr><td>⚠️</td><td>约麻棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>21.00</td><td>兵站街与车站路交叉口西南120米</td></tr>
+<tr><td>⚠️</td><td>疯爆真人密室逃脱体验馆(临汾工贸购物中心店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>101.00</td><td>解放西路28号临汾工贸购物中心B1层</td></tr>
+<tr><td>⚠️</td><td>疯爆密室逃脱(财神楼店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>82.00</td><td>财神楼老鼠街2号门,2楼疯爆密室</td></tr>
+<tr><td>⚠️</td><td>魔都密室逃脱(财神楼店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>74.00</td><td>财神楼北街13号</td></tr>
+<tr><td>⚠️</td><td>浮山凤城影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>40.00</td><td>文化活动中心1层</td></tr>
+<tr><td>⚠️</td><td>零动密室逃脱体验馆</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.8</td><td>417.00</td><td>居然之家负一层</td></tr>
+<tr><td>⚠️</td><td>max密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.8</td><td>43.00</td><td>尧都区四中对面温州商贸城北边胡同</td></tr>
+</tbody></table></div>
+<p>（另 12 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（36 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>30</td></tr>
+<tr><td>其他儿童场所</td><td>6</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>临汾市动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>环城南路秦蜀路十字路口西南角</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>场内</td><td>4.2</td><td>迎宾大道1号新百汇商业广场</td></tr>
+<tr><td>⚠️</td><td>侯马程王公园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>侯马市体育局西巷51号</td></tr>
+<tr><td>⚠️</td><td>云丘山朵拉萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>云丘山景区塔尔坡内部</td></tr>
+<tr><td>⚠️</td><td>萌宠小筑(锦绣华府店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>大槐树镇锦绣华府南门宾阳街东方幼儿园对面</td></tr>
+<tr><td>⚠️</td><td>萌宠小屋(八一南路店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>八一南路唐兴政府南边(天台一号)府家园楼下</td></tr>
+<tr><td>⚠️</td><td>临汾市动物园美食游乐广场</td><td>迷你动物园/萌宠</td><td>场内</td><td>4.0</td><td>正元大道9号</td></tr>
+<tr><td>⚠️</td><td>爱宠乐园宠物店</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>新华东街与滨河路交叉口北80米</td></tr>
+<tr><td>⚠️</td><td>侯马萌宠乐园馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>南西庄花卉市场</td></tr>
+<tr><td>⚠️</td><td>宠物乐园贴心宠物店</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>新东城雅园A1区北门旁</td></tr>
+<tr><td>⚠️</td><td>霍州市动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>永和村永和公园</td></tr>
+<tr><td>⚠️</td><td>乡宁县动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>昌宁镇</td></tr>
+<tr><td>⚠️</td><td>岭南动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>小宋网络科技东侧280米</td></tr>
+<tr><td>❌</td><td>康宠乐园宠物服务中心</td><td>其他儿童场所</td><td>场内</td><td>3.4</td><td>广场西街与尧山西路交叉口东北140米</td></tr>
+<tr><td>❌</td><td>康宠乐园服务中心</td><td>其他儿童场所</td><td>独立</td><td>3.4</td><td>神山东路与粮食巷交叉口东南20米</td></tr>
+<tr><td>❌</td><td>动物园美食街</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>环城南路秦蜀路十字路口西南角临汾市动物园(西北角)</td></tr>
+<tr><td>❌</td><td>动物园户外游乐场</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>正元大道9号</td></tr>
+<tr><td>❌</td><td>临汾市动物园-豹子馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>环城南路秦蜀路十字路口西南角临汾市动物园(西北角)</td></tr>
+<tr><td>❌</td><td>熊馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>环城南路秦蜀路十字路口西南角临汾市动物园内(西侧)</td></tr>
+<tr><td>❌</td><td>长颈鹿馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>环城南路秦蜀路十字路口西南角临汾市动物园内(东侧)</td></tr>
+<tr><td>❌</td><td>河马馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>环城南路秦蜀路十字路口西南角临汾市动物园(东南角)</td></tr>
+<tr><td>❌</td><td>动物园爬宠科普馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.0</td><td>环城南路大韩十字路口临汾动物园西侧</td></tr>
+<tr><td>❌</td><td>百鸟园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.9</td><td>环城南路秦蜀路十字路口西南角临汾市动物园(东北角)</td></tr>
+<tr><td>❌</td><td>小动物区</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.9</td><td>环城南路秦蜀路十字路口西南角临汾市动物园</td></tr>
+<tr><td>❌</td><td>袋鼠馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.8</td><td>环城南路秦蜀路十字路口西南角临汾市动物园(东南角)</td></tr>
+<tr><td>❌</td><td>小浣熊馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.7</td><td>环城南路秦蜀路十字路口西南角临汾市动物园内(东侧)</td></tr>
+<tr><td>❌</td><td>动物园操游趑夜消夏</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.6</td><td>秦蜀路辅路</td></tr>
+<tr><td>❌</td><td>动物园圆心广场</td><td>迷你动物园/萌宠</td><td>场内</td><td>2.5</td><td>正元大道9号</td></tr>
+<tr><td>❌</td><td>临汾市动物园-猿猴馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.5</td><td>环城南路秦蜀路十字路口西南角临汾市动物园内(东侧)</td></tr>
+<tr><td>❌</td><td>斑马馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.4</td><td>环城南路秦蜀路十字路口西南角临汾市动物园(东南角)</td></tr>
+<tr><td>❌</td><td>临汾疯狂动物王国</td><td>其他儿童场所</td><td>独立</td><td>1.9</td><td>尧贤街与东关街交叉口南420米</td></tr>
+<tr><td>❌</td><td>临汾森林动物王国原始狂野展</td><td>其他儿童场所</td><td>独立</td><td>1.3</td><td>侯马林下生态观光体验园西北侧</td></tr>
+<tr><td>⚠️</td><td>动物园(公交站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>11路</td></tr>
+<tr><td>⚠️</td><td>临汾市动物园游客中心</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>动物园爬宠科普馆东北侧</td></tr>
+<tr><td>⚠️</td><td>临汾市动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>临汾市动物园游客中心东侧</td></tr>
+<tr><td>⚠️</td><td>霍州市动物园停车点</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>北环路与世纪路交叉口东北460米</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（64 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>生龙国际时尚广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>解放路33号</td></tr>
+<tr><td>✅A-</td><td>新百汇商业广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>迎宾大道1号</td></tr>
+<tr><td>✅A-</td><td>临汾尧都万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>常兴中街与滨河湾中路交汇处东南角</td></tr>
+<tr><td>✅A-</td><td>悦汇时光颂艺术购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>中大北街与河汾五路交叉口西南300米</td></tr>
+<tr><td>✅A-</td><td>临汾王府井购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>河汾路8号</td></tr>
+<tr><td>✅A-</td><td>优客纯K(悦汇时光颂艺术购物中心店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>向阳西路时光颂5层</td></tr>
+<tr><td>✅A-</td><td>华翔购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新田路花园南街18号</td></tr>
+<tr><td>✅A-</td><td>新东城商场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>府东街县人民医院对面</td></tr>
+<tr><td>✅A-</td><td>神农美特好超市(临汾美都汇购物广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>解放东路81号</td></tr>
+<tr><td>✅A-</td><td>生龙悦享生活超市(常兴店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>开发区常兴中街(原中大街)北段63号</td></tr>
+<tr><td>✅A-</td><td>生龙悦享生活超市(百悦店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>解放西路商会巷37号</td></tr>
+<tr><td>✅A-</td><td>火狐狸服装批发城(临汾店)</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>南街街道平阳南街第四中学对面</td></tr>
+<tr><td>✅A-</td><td>山西馨阳农产品批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>屯里镇高河桥往北500米</td></tr>
+<tr><td>✅A-</td><td>生龙悦享城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>财神楼北街31号</td></tr>
+<tr><td>✅A-</td><td>莲花城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>估依街与安流路交叉口北60米</td></tr>
+<tr><td>✅A-</td><td>安达圣新天地</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>向阳路八中对面</td></tr>
+<tr><td>✅A-</td><td>锦悦城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>滨河南路74号</td></tr>
+<tr><td>✅A-</td><td>泽尧商贸城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>南外环路</td></tr>
+<tr><td>✅A-</td><td>生龙国际·百悦名店</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>解放路商会巷37号</td></tr>
+<tr><td>✅A-</td><td>丁陶大卖场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>丁陶大道中段附近</td></tr>
+<tr><td>✅A-</td><td>生龙悠购天地</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>解放西路31号</td></tr>
+<tr><td>✅A-</td><td>三琪美悦城</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>解放西街135号</td></tr>
+<tr><td>✅B</td><td>家和购物广场(锦都店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>程王路与中心街交叉口东140米</td></tr>
+<tr><td>✅B</td><td>美丽家园服装批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>滨河办事处南孝村</td></tr>
+<tr><td>✅B</td><td>美都汇购物广场(临汾店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>解放东路与尧贤街交叉口</td></tr>
+<tr><td>✅B</td><td>香江广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>鼓楼东街与州里街交叉口东南220米</td></tr>
+<tr><td>✅B</td><td>天空之城KTV(临汾工贸购物中心店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>解放西路28号临汾工贸购物中心F6层</td></tr>
+<tr><td>✅B</td><td>大美 PARTY-K(新百汇商业广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>1</td><td>0</td><td>迎宾大道1号新百汇商业广场</td></tr>
+<tr><td>✅B</td><td>家和超市(锦都家和购物广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>家和购物广场(锦都店)</td></tr>
+<tr><td>✅B</td><td>南西庄家和超市</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>浍滨街与文明路交叉口旁(近浍滨街)</td></tr>
+<tr><td>✅B</td><td>新天地购物广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>中大街</td></tr>
+<tr><td>✅B</td><td>华亿百货</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>北大街5号</td></tr>
+<tr><td>✅B</td><td>凯德隆超市(莲花城购物中心C区店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>估依街001号</td></tr>
+<tr><td>⚠️</td><td>德龙优选超市</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>吉昌镇中心商贸城城负一楼</td></tr>
+<tr><td>⚠️</td><td>优+生活超市(平阳南街店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>平阳南街88号</td></tr>
+<tr><td>⚠️</td><td>家家利超市(鼎尚时代广场店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>唐兴镇红旗街鼎尚时代广场B1层</td></tr>
+<tr><td>⚠️</td><td>山西临汾州山水果副食批发市场</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>平阳北街395号</td></tr>
+<tr><td>⚠️</td><td>百汇果品蔬菜批发市场(滨河南路店)</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>滨河南路与百汇南路交叉口西200米</td></tr>
+<tr><td>⚠️</td><td>莲花城购物中心C区</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>估依街与安流路交叉口东北40米</td></tr>
+<tr><td>⚠️</td><td>佳美时尚百货</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>鼓楼南街10号楼</td></tr>
+<tr><td>⚠️</td><td>秦李红日用百货商场(南段店)</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>辛村乡南段信用社往北90米</td></tr>
+<tr><td>⚠️</td><td>印象奥特莱斯广场</td><td>奥特莱斯</td><td>4.0</td><td>0</td><td>0</td><td>花园北街4号</td></tr>
+<tr><td>⚠️</td><td>疯爆真人密室逃脱体验馆(临汾工贸购物中心店)</td><td>购物中心/综合体</td><td>3.9</td><td>0</td><td>0</td><td>解放西路28号临汾工贸购物中心B1层</td></tr>
+<tr><td>⚠️</td><td>天宇商城</td><td>百货/商场</td><td>3.9</td><td>0</td><td>0</td><td>新建路84号</td></tr>
+<tr><td>⚠️</td><td>百货大楼(蒲县店)</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>蒲伊东街1号</td></tr>
+<tr><td>⚠️</td><td>康杰家具批发市场(临汾店)</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>靳家庄信合东路</td></tr>
+<tr><td>⚠️</td><td>万德福超市(涧桥南路店)</td><td>购物中心/综合体</td><td>3.7</td><td>0</td><td>0</td><td>大槐树镇涧桥爱仁医院旁</td></tr>
+<tr><td>⚠️</td><td>粮转站粮油批发市场</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>迎春北街39号粮转站小区</td></tr>
+<tr><td>⚠️</td><td>荣正达批发市场(东关商城小区店)</td><td>百货/商场</td><td>3.6</td><td>0</td><td>0</td><td>东关路2号东关商城小区</td></tr>
+<tr><td>⚠️</td><td>百货公司综合商场</td><td>百货/商场</td><td>3.5</td><td>0</td><td>0</td><td>府北东街2号</td></tr>
+</tbody></table></div>
+<p>（另 14 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>根生大酒店（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>根生大酒店</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>霍州瑞隆宾馆(大运公路店)</td><td>距离就近</td><td>169m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金都快捷(光明路)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金都快捷(光明路)</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>生龙国际时尚广场（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>恒业国际影城(临汾店)</td><td>名称互证</td><td>54m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天空之城KTV(临汾工贸购物中心店)</td><td>距离就近</td><td>109m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>疯爆真人密室逃脱体验馆(临汾工贸购物中心店)</td><td>距离就近</td><td>114m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>临汾星阁影城工贸店</td><td>距离就近</td><td>141m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>盒子探长·儿童密室探案(生龙悦享店)</td><td>距离就近</td><td>142m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>喜乐24小时自助棋牌(工贸店)</td><td>距离就近</td><td>144m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>禧雀24小时自助棋牌室(生龙国际店)</td><td>距离就近</td><td>158m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>魔都密室逃脱(财神楼店)</td><td>距离就近</td><td>249m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>i棋艺24小时自助棋牌</td><td>距离就近</td><td>288m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>八达快捷酒店</td><td>距离就近</td><td>296m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>诡事录实景密室</td><td>距离就近</td><td>429m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>疯爆密室逃脱(财神楼店)</td><td>距离就近</td><td>453m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>扣点棋牌茶艺(平阳广场店)</td><td>距离就近</td><td>462m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>棋子</td><td>距离就近</td><td>483m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>等风来24小时自助棋牌室</td><td>距离就近</td><td>492m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>临汾新华精品酒店</td><td>距离就近</td><td>512m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>扣点棋牌茶艺(车站西街店)</td><td>距离就近</td><td>532m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>临汾舒雅宾馆（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>临汾舒雅宾馆</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>新浪潮PARTY-K(思麦尔广场店)</td><td>距离就近</td><td>595m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新百汇商业广场（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金逸院线MAX影城临汾店</td><td>距离就近</td><td>144m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌宠乐园</td><td>名称互证</td><td>154m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>藤原·大型沉浸式密室逃脱(新百汇店)</td><td>距离就近</td><td>156m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>米嗨唱AI智能自助KTV(临汾新百汇店)</td><td>名称互证</td><td>200m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>雀发潮AI智慧KTV·台球·影吧(临汾新百汇店)</td><td>名称互证</td><td>203m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大美 PARTY-K(新百汇商业广场店)</td><td>名称互证</td><td>240m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四方朋友KTV(新百汇店)</td><td>距离就近</td><td>270m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>金都花园大饭店(暂停营业)</td><td>距离就近</td><td>460m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>兰亭户外烧烤影院</td><td>距离就近</td><td>557m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>临汾尧都万达广场（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>博纳国际影城(临汾尧都万达广场店)</td><td>名称互证</td><td>11m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MAX声光电密室(时光颂店)</td><td>距离就近</td><td>418m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(临汾时光颂店)</td><td>距离就近</td><td>479m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>优客纯K(悦汇时光颂艺术购物中心店)</td><td>距离就近</td><td>490m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>悦汇时光颂艺术购物中心（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>优客纯K(悦汇时光颂艺术购物中心店)</td><td>名称互证</td><td>9m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(临汾时光颂店)</td><td>距离就近</td><td>19m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MAX声光电密室(时光颂店)</td><td>距离就近</td><td>80m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>米派对·娱乐</td><td>距离就近</td><td>132m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博纳国际影城(临汾尧都万达广场店)</td><td>距离就近</td><td>498m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>临汾王府井购物中心（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影国际影城(王府井店)</td><td>距离就近</td><td>23m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>斯慕潮玩</td><td>距离就近</td><td>359m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>米派对·娱乐</td><td>距离就近</td><td>592m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>临汾钟楼宾馆（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>临汾钟楼宾馆</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>雀江湖自助茶吧24小时棋牌</td><td>距离就近</td><td>111m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>听江湖棋牌馆</td><td>距离就近</td><td>161m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>和为贵24小时自助棋牌</td><td>距离就近</td><td>221m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>听江湖自助棋牌(鼓楼广场店)</td><td>距离就近</td><td>385m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>光影传奇影城(贡院路与体育街店)</td><td>距离就近</td><td>559m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>糖果影K</td><td>距离就近</td><td>560m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>临汾市动物园（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>临汾市动物园</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>小浣熊馆</td><td>名称互证</td><td>60m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>小动物区</td><td>名称互证</td><td>67m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>百鸟园</td><td>名称互证</td><td>73m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>临汾市动物园-猿猴馆</td><td>名称互证</td><td>129m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>熊馆</td><td>名称互证</td><td>130m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>动物园圆心广场</td><td>距离就近</td><td>175m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>长颈鹿馆</td><td>名称互证</td><td>201m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>动物园户外游乐场</td><td>距离就近</td><td>204m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>临汾市动物园-豹子馆</td><td>名称互证</td><td>214m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>动物园美食街</td><td>名称互证</td><td>221m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>斑马馆</td><td>名称互证</td><td>235m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>河马馆</td><td>名称互证</td><td>239m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>袋鼠馆</td><td>名称互证</td><td>257m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>临汾市动物园美食游乐广场</td><td>名称互证</td><td>268m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>临汾市动物园售票处</td><td>名称互证</td><td>279m</td><td>—</td><td>§11</td></tr>
+<tr><td>临汾市动物园游客中心</td><td>名称互证</td><td>287m</td><td>—</td><td>§11</td></tr>
+<tr><td>动物园爬宠科普馆</td><td>距离就近</td><td>294m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>动物园(公交站)</td><td>距离就近</td><td>298m</td><td>—</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>糖果影K（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>糖果影K</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>光影传奇影城(贡院路与体育街店)</td><td>距离就近</td><td>22m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>和为贵24小时自助棋牌</td><td>距离就近</td><td>344m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>听江湖棋牌馆</td><td>距离就近</td><td>467m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>聚朋友棋牌(贡院路店)</td><td>距离就近</td><td>530m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>临汾钟楼宾馆</td><td>距离就近</td><td>560m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>雀江湖自助茶吧24小时棋牌</td><td>距离就近</td><td>588m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>优客纯K(悦汇时光颂艺术购物中心店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>优客纯K(悦汇时光颂艺术购物中心店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(临汾时光颂店)</td><td>距离就近</td><td>13m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MAX声光电密室(时光颂店)</td><td>距离就近</td><td>72m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>米派对·娱乐</td><td>距离就近</td><td>137m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博纳国际影城(临汾尧都万达广场店)</td><td>距离就近</td><td>490m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>神农美特好超市(临汾美都汇购物广场店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宠物乐园贴心宠物店</td><td>距离就近</td><td>256m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>乐圣名仕会KTV</td><td>距离就近</td><td>450m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>生龙悦享生活超市(常兴店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>博纳国际影城(临汾尧都万达广场店)</td><td>距离就近</td><td>150m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>MAX声光电密室(时光颂店)</td><td>距离就近</td><td>381m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(临汾时光颂店)</td><td>距离就近</td><td>436m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>优客纯K(悦汇时光颂艺术购物中心店)</td><td>距离就近</td><td>449m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>米派对·娱乐</td><td>距离就近</td><td>584m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>生龙悦享生活超市(百悦店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金樽国际</td><td>距离就近</td><td>143m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>雀有棋室</td><td>距离就近</td><td>183m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>听江湖自助棋牌(鼓楼广场店)</td><td>距离就近</td><td>287m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魔都密室逃脱(财神楼店)</td><td>距离就近</td><td>387m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>i棋艺24小时自助棋牌</td><td>距离就近</td><td>462m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>喜乐24小时自助棋牌(工贸店)</td><td>距离就近</td><td>486m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>临汾星阁影城工贸店</td><td>距离就近</td><td>490m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>疯爆真人密室逃脱体验馆(临汾工贸购物中心店)</td><td>距离就近</td><td>494m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>恒业国际影城(临汾店)</td><td>距离就近</td><td>495m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天空之城KTV(临汾工贸购物中心店)</td><td>距离就近</td><td>497m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>疯爆密室逃脱(财神楼店)</td><td>距离就近</td><td>501m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>诡事录实景密室</td><td>距离就近</td><td>515m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>棋子</td><td>距离就近</td><td>520m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>盒子探长·儿童密室探案(生龙悦享店)</td><td>距离就近</td><td>533m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>等风来24小时自助棋牌室</td><td>距离就近</td><td>538m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>雀江湖自助茶吧24小时棋牌</td><td>距离就近</td><td>557m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>火狐狸服装批发城(临汾店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>九州国际影城(平阳南街店)</td><td>距离就近</td><td>10m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>max密室逃脱</td><td>距离就近</td><td>48m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>沸点F-PARTYK</td><td>距离就近</td><td>327m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>W-K歌汇</td><td>距离就近</td><td>332m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>聚朋友棋牌(贡院路店)</td><td>距离就近</td><td>396m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>扣点棋牌茶艺(平阳广场店)</td><td>距离就近</td><td>541m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>王府井·尚城UP TOWN（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影国际影城(王府井店)</td><td>距离就近</td><td>22m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>斯慕潮玩</td><td>距离就近</td><td>357m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>米派对·娱乐</td><td>距离就近</td><td>595m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>生龙悦享城（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>盒子探长·儿童密室探案(生龙悦享店)</td><td>名称互证</td><td>54m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>恒业国际影城(临汾店)</td><td>距离就近</td><td>163m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天空之城KTV(临汾工贸购物中心店)</td><td>距离就近</td><td>293m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>疯爆真人密室逃脱体验馆(临汾工贸购物中心店)</td><td>距离就近</td><td>298m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>临汾星阁影城工贸店</td><td>距离就近</td><td>325m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>喜乐24小时自助棋牌(工贸店)</td><td>距离就近</td><td>326m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>禧雀24小时自助棋牌室(生龙国际店)</td><td>距离就近</td><td>347m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>八达快捷酒店</td><td>距离就近</td><td>374m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>魔都密室逃脱(财神楼店)</td><td>距离就近</td><td>398m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>乐在棋中棋牌室</td><td>距离就近</td><td>434m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>扣点棋牌茶艺(车站西街店)</td><td>距离就近</td><td>441m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>i棋艺24小时自助棋牌</td><td>距离就近</td><td>462m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>睦邻休闲棋牌馆</td><td>距离就近</td><td>507m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>雀有棋室</td><td>距离就近</td><td>570m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>雀掌柜24h自助棋牌(鼓楼北店)</td><td>距离就近</td><td>589m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>莲花城（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>洪洞横店电影城(莲花城店)</td><td>名称互证</td><td>65m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>疯爆密室逃脱(洪洞店)</td><td>名称互证</td><td>74m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>洪洞中粮宾馆</td><td>距离就近</td><td>122m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>恶魔城堡真人密室逃脱</td><td>距离就近</td><td>166m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>飞虹影剧院</td><td>距离就近</td><td>268m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>安达圣新天地（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(安达圣新天地店)</td><td>名称互证</td><td>18m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>雀掌柜24h自助棋牌(鼓楼北店)</td><td>距离就近</td><td>285m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>好运棋牌室</td><td>距离就近</td><td>317m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>睦邻休闲棋牌馆</td><td>距离就近</td><td>341m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>乐在棋中棋牌室</td><td>距离就近</td><td>440m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雀掌柜自助棋牌室(鼓楼北北门巷店)</td><td>距离就近</td><td>480m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>生龙国际·百悦名店（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金樽国际</td><td>距离就近</td><td>110m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>雀有棋室</td><td>距离就近</td><td>207m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>听江湖自助棋牌(鼓楼广场店)</td><td>距离就近</td><td>237m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魔都密室逃脱(财神楼店)</td><td>距离就近</td><td>414m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>i棋艺24小时自助棋牌</td><td>距离就近</td><td>483m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>疯爆密室逃脱(财神楼店)</td><td>距离就近</td><td>505m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>雀江湖自助茶吧24小时棋牌</td><td>距离就近</td><td>509m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>喜乐24小时自助棋牌(工贸店)</td><td>距离就近</td><td>519m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>棋子</td><td>距离就近</td><td>522m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>诡事录实景密室</td><td>距离就近</td><td>522m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>临汾星阁影城工贸店</td><td>距离就近</td><td>523m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>疯爆真人密室逃脱体验馆(临汾工贸购物中心店)</td><td>距离就近</td><td>529m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>天空之城KTV(临汾工贸购物中心店)</td><td>距离就近</td><td>532m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>恒业国际影城(临汾店)</td><td>距离就近</td><td>538m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>等风来24小时自助棋牌室</td><td>距离就近</td><td>539m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>盒子探长·儿童密室探案(生龙悦享店)</td><td>距离就近</td><td>580m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丁陶大卖场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丁陶影城(丁陶大卖场店)</td><td>名称互证</td><td>63m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>生龙悠购天地（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>恒业国际影城(临汾店)</td><td>距离就近</td><td>112m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>禧雀24小时自助棋牌室(生龙国际店)</td><td>距离就近</td><td>131m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>天空之城KTV(临汾工贸购物中心店)</td><td>距离就近</td><td>137m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>疯爆真人密室逃脱体验馆(临汾工贸购物中心店)</td><td>距离就近</td><td>143m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>临汾星阁影城工贸店</td><td>距离就近</td><td>167m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>喜乐24小时自助棋牌(工贸店)</td><td>距离就近</td><td>171m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>盒子探长·儿童密室探案(生龙悦享店)</td><td>距离就近</td><td>174m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>八达快捷酒店</td><td>距离就近</td><td>237m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>魔都密室逃脱(财神楼店)</td><td>距离就近</td><td>289m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>i棋艺24小时自助棋牌</td><td>距离就近</td><td>312m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>扣点棋牌茶艺(平阳广场店)</td><td>距离就近</td><td>415m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>诡事录实景密室</td><td>距离就近</td><td>448m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>临汾新华精品酒店</td><td>距离就近</td><td>451m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>疯爆密室逃脱(财神楼店)</td><td>距离就近</td><td>475m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>扣点棋牌茶艺(车站西街店)</td><td>距离就近</td><td>499m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>棋子</td><td>距离就近</td><td>504m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>等风来24小时自助棋牌室</td><td>距离就近</td><td>511m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麻小院自助棋牌馆(平阳广场店)</td><td>距离就近</td><td>578m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>三琪美悦城（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>视界华艺影城(美悦城店)</td><td>名称互证</td><td>25m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>八一快捷酒店</td><td>距离就近</td><td>169m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌宠小屋(八一南路店)</td><td>距离就近</td><td>212m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>魅KTV•AI辅唱(临汾时光颂店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>魅KTV•AI辅唱(临汾时光颂店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>优客纯K(悦汇时光颂艺术购物中心店)</td><td>距离就近</td><td>13m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>MAX声光电密室(时光颂店)</td><td>距离就近</td><td>62m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>米派对·娱乐</td><td>距离就近</td><td>149m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>博纳国际影城(临汾尧都万达广场店)</td><td>距离就近</td><td>479m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（31 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>根生大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>兴霍路与清泉巷交叉口东北40米</td></tr>
+<tr><td>✅A-</td><td>金都快捷(光明路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>翔翼西大街</td></tr>
+<tr><td>✅A-</td><td>临汾舒鑫公寓</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>平阳南街与环城南路交叉口泰格玻璃附近</td></tr>
+<tr><td>✅A-</td><td>际华商务酒店(原军需宾馆)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>程王路52号</td></tr>
+<tr><td>✅A-</td><td>大宁君临快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>古乡小学往南50米</td></tr>
+<tr><td>✅A-</td><td>襄汾舒逸宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>龙山路东侧(交通局南50米)</td></tr>
+<tr><td>✅A-</td><td>临汾舒雅宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>鼓楼西街街道秦蜀路新南关巷2号</td></tr>
+<tr><td>✅A-</td><td>滨港生态园大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>迎宾大道平阳大桥西</td></tr>
+<tr><td>✅A-</td><td>洪洞中粮宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>古槐南路31号</td></tr>
+<tr><td>✅A-</td><td>临汾钟楼宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>鼓楼南傻二电脑城对面钟楼巷</td></tr>
+<tr><td>✅B</td><td>家思博尔酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.5</td><td>—</td><td>霍候一级路西北孝公交总公司</td></tr>
+<tr><td>✅B</td><td>临汾锦尚快捷酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>思麦尔信百年茶城北门东150米</td></tr>
+<tr><td>✅B</td><td>龙山宾馆(龙山路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>龙山路</td></tr>
+<tr><td>✅B</td><td>八达快捷酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>广宣街4号(市医院对面)(紧邻解放路)</td></tr>
+<tr><td>✅B</td><td>八一快捷酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>八一南路与解放街交汇处向北100米</td></tr>
+<tr><td>✅B</td><td>襄汾滨河大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.4</td><td>—</td><td>大运商务东南门旁</td></tr>
+<tr><td>✅B</td><td>望岳楼快捷宾馆(荀子文化园店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>沁河桥桥头</td></tr>
+<tr><td>✅B</td><td>苹果快捷酒店(平阳街)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>平阳南街108号</td></tr>
+<tr><td>✅B</td><td>怡鑫大酒店(侯张街)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>呈王路与侯张路十字路口呈王路立交桥西200米</td></tr>
+<tr><td>⚠️</td><td>曲沃太和旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>太和北路超群麻花店南侧巷内</td></tr>
+<tr><td>⚠️</td><td>临汾新华精品酒店</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>平阳北街1号</td></tr>
+<tr><td>⚠️</td><td>洁康商务酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>龙山路28号</td></tr>
+<tr><td>⚠️</td><td>金都花园大饭店(暂停营业)</td><td>住宿服务;宾馆酒店;五星级宾馆</td><td>4.2</td><td>—</td><td>尧庙华门景区迎宾大道1号</td></tr>
+<tr><td>⚠️</td><td>吉县二轻宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>中心广场北(朝阳小区附近)</td></tr>
+<tr><td>⚠️</td><td>霍州瑞隆宾馆(大运公路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>兴霍路与滨河路交叉口东60米</td></tr>
+<tr><td>⚠️</td><td>佳园宾馆(滨河路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>滨河北路</td></tr>
+<tr><td>⚠️</td><td>翼城宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.8</td><td>—</td><td>红旗街668号(经贸大楼旁)</td></tr>
+<tr><td>⚠️</td><td>赵城宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.7</td><td>—</td><td>赵城镇永安街1号</td></tr>
+<tr><td>⚠️</td><td>归格独栋私人影舍(福利巷店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.7</td><td>—</td><td>福利路与尧都路交叉口东60米</td></tr>
+<tr><td>⚠️</td><td>临汾金波快捷酒店</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>临汾火车站往西30米路北</td></tr>
+<tr><td>❌</td><td>临汾鼎悦商务快捷酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.1</td><td>—</td><td>贾得乡乔家庄中大街1号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>9</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>16</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>12</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>1</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/临汾市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>4 个 POI 无评分</strong>，暂标 ⚠️：动物园(公交站)、临汾市动物园游客中心、临汾市动物园售票处、霍州市动物园停车点</li><li><input type="checkbox" disabled> 儿童游乐 36 家，其中场内 4 家、独立 32 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 14 个区县：乡宁县、侯马市、吉县、大宁县、安泽县、尧都区、曲沃县、洪洞县、浮山县、翼城县、蒲县、襄汾县、隰县、霍州市——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

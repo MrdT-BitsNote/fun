@@ -1,0 +1,42 @@
+{
+ "province": "北京市",
+ "stats": {
+  "cities": 1,
+  "poi": 239,
+  "grades": {
+   "S": 0,
+   "A": 0,
+   "B": 1,
+   "C": 39
+  }
+ },
+ "cities": [
+  {
+   "city": "北京市",
+   "province": "北京市",
+   "adcode": "110100",
+   "poi": 239,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:44:13",
+   "page": "cities/110100.html",
+   "json": "api/cities/110100.json",
+   "md": "md/%E5%8C%97%E4%BA%AC%E5%B8%82/%E5%8C%97%E4%BA%AC%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 1,
+    "C": 39
+   },
+   "dims": {
+    "food": 1,
+    "district": 78,
+    "leisure": 84,
+    "kids": 9,
+    "hotel": 39,
+    "product": 0
+   }
+  }
+ ]
+}

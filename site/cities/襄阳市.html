@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>襄阳市 · 湖北省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/湖北省.html">← 返回湖北省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>襄阳市 · 湖北省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 18:34:40  ·  POI 总量：896（去重后）  ·  查询面：49  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>896</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 301 · 商圈 475 · 成人娱乐 268 · 儿童娱乐 164 · 酒店 34 · 特产 41</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>湖北省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>9 个</td></tr>
+<tr><td>街道/镇/乡</td><td>116 个</td></tr>
+<tr><td>区县构成</td><td>县×3、县级市×3、市辖区×3</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>樊城区</td><td>400</td><td>45%</td></tr>
+<tr><td>襄城区</td><td>137</td><td>15%</td></tr>
+<tr><td>襄州区</td><td>96</td><td>11%</td></tr>
+<tr><td>枣阳市</td><td>63</td><td>7%</td></tr>
+<tr><td>宜城市</td><td>61</td><td>7%</td></tr>
+<tr><td>谷城县</td><td>50</td><td>6%</td></tr>
+<tr><td>南漳县</td><td>37</td><td>4%</td></tr>
+<tr><td>老河口市</td><td>28</td><td>3%</td></tr>
+<tr><td>保康县</td><td>24</td><td>3%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（475 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>220</td></tr>
+<tr><td>购物中心/综合体</td><td>82</td></tr>
+<tr><td>百货/商场</td><td>46</td></tr>
+<tr><td>商业街</td><td>42</td></tr>
+<tr><td>夜市</td><td>36</td></tr>
+<tr><td>步行街</td><td>19</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>美食街/小吃街</td><td>10</td></tr>
+<tr><td>奥特莱斯</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（475 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>A</td><td>泛悦Mall</td><td>购物中心/综合体</td><td>4.7</td><td>19</td><td>39</td><td>16</td><td>3</td></tr>
+<tr><td>A</td><td>风华路夜市</td><td>夜市</td><td>4.8</td><td>17</td><td>38</td><td>16</td><td>3</td></tr>
+<tr><td>A</td><td>民发广场(长虹路店)</td><td>购物中心/综合体</td><td>4.7</td><td>14</td><td>40</td><td>18</td><td>3</td></tr>
+<tr><td>A</td><td>腾龙阁·楚菜臻品(风华路店)</td><td>其他商业载体</td><td>4.6</td><td>14</td><td>24</td><td>12</td><td>2</td></tr>
+<tr><td>A</td><td>沃尔玛(民发广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>13</td><td>38</td><td>14</td><td>3</td></tr>
+<tr><td>A</td><td>襄阳武商MALL</td><td>购物中心/综合体</td><td>4.6</td><td>13</td><td>38</td><td>14</td><td>3</td></tr>
+<tr><td>A</td><td>鸭唇王·襄阳特色菜 (鼓楼店)</td><td>其他商业载体</td><td>4.7</td><td>10</td><td>7</td><td>5</td><td>1</td></tr>
+<tr><td>B</td><td>襄阳高新万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>9</td><td>13</td><td>9</td><td>1</td></tr>
+<tr><td>B</td><td>鼓楼商场</td><td>百货/商场</td><td>4.7</td><td>9</td><td>7</td><td>6</td><td>0</td></tr>
+<tr><td>B</td><td>万达影城(樊城店)</td><td>其他商业载体</td><td>4.7</td><td>8</td><td>13</td><td>9</td><td>1</td></tr>
+<tr><td>B</td><td>万达广场(襄阳樊城店)万达影城售票处</td><td>其他商业载体</td><td>4.7</td><td>8</td><td>13</td><td>9</td><td>1</td></tr>
+<tr><td>B</td><td>吾悦广场(襄阳店)</td><td>购物中心/综合体</td><td>4.8</td><td>6</td><td>3</td><td>9</td><td>0</td></tr>
+<tr><td>B</td><td>麦德龙(襄阳商场店)</td><td>百货/商场</td><td>4.7</td><td>6</td><td>3</td><td>9</td><td>0</td></tr>
+<tr><td>B</td><td>海底捞火锅(襄阳吾悦广场店)</td><td>其他商业载体</td><td>4.6</td><td>6</td><td>3</td><td>9</td><td>0</td></tr>
+<tr><td>B</td><td>来财潮汕大排档</td><td>其他商业载体</td><td>4.6</td><td>6</td><td>2</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>中国汉城大汉茂购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>6</td><td>2</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>管家巷文化休闲街区</td><td>商业街</td><td>4.6</td><td>5</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>谷男酒店(裕丰广场店)</td><td>其他商业载体</td><td>4.9</td><td>4</td><td>1</td><td>4</td><td>2</td></tr>
+<tr><td>C</td><td>襄阳古城</td><td>其他商业载体</td><td>4.8</td><td>4</td><td>5</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>民发广场(航空路店)</td><td>购物中心/综合体</td><td>4.7</td><td>4</td><td>5</td><td>8</td><td>1</td></tr>
+<tr><td>C</td><td>幸福路牛肉面馆(总店)</td><td>其他商业载体</td><td>4.6</td><td>4</td><td>2</td><td>2</td><td>4</td></tr>
+<tr><td>C</td><td>水镜广场</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>1</td><td>3</td><td>1</td></tr>
+<tr><td>C</td><td>天元CityPark</td><td>其他商业载体</td><td>4.6</td><td>4</td><td>8</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>悦活荟</td><td>购物中心/综合体</td><td>4.8</td><td>3</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>甬上明录·老宁波海鲜大排档</td><td>其他商业载体</td><td>4.7</td><td>3</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>美联M·PARK购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>3</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>武商老河口购物广场(老河口店)</td><td>购物中心/综合体</td><td>4.6</td><td>3</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>民发世纪广场</td><td>百货/商场</td><td>4.8</td><td>2</td><td>2</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>裕丰·世纪广场</td><td>购物中心/综合体</td><td>4.7</td><td>2</td><td>1</td><td>4</td><td>2</td></tr>
+<tr><td>C</td><td>黄记鹅掌泥鳅庄·襄阳特色菜(西门桥店)</td><td>其他商业载体</td><td>4.6</td><td>2</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>拉美步行街</td><td>步行街</td><td>4.6</td><td>2</td><td>6</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>襄水街</td><td>商业街</td><td>4.6</td><td>2</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>武商江豚生活家</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>汉江商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>爱饭(襄阳绿地店)</td><td>其他商业载体</td><td>4.7</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>襄阳国际商贸城</td><td>百货/商场</td><td>4.7</td><td>1</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>枣阳汇聚广场</td><td>百货/商场</td><td>4.7</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>九隆广场</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>3</td><td>0</td><td>4</td></tr>
+<tr><td>C</td><td>No Cup</td><td>商业街</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万象城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>3</td><td>0</td></tr>
+</tbody></table></div>
+<h3>泛悦Mall —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 19 家（均分 4.45）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场｜购物服务;商场;购物中心）</li><li><strong>地址</strong>：长虹路与人民路交汇处</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥42（区间 ¥13–81）</li><li><strong>动线主轴</strong>：长虹路</li><li><strong>业态分布</strong>：美食 19 · 成人娱乐 39 · 儿童娱乐 16 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>泛悦Mall</td></tr>
+<tr><td>美食</td><td>19</td><td>汪胖子襄阳牛肉面(华丰路店)、黄府面馆(风华路店)、好福记大酒店(长虹路店)</td></tr>
+<tr><td>成人娱乐</td><td>39</td><td>泛悦摩尔国际电影城(泛悦Mall店)、麻吉LiveHouse音乐现场、城谣纪烧烤民谣酒馆</td></tr>
+<tr><td>儿童娱乐</td><td>16</td><td>襄阳猫狗乐园基地、奇奇乐园(泛悦Mall店)、GH游戏室PS5·PS4·Switch(泛悦Mall店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>好福记大酒店(长虹路店)、长虹会务服务中心、一朵宾馆(襄阳沃尔玛民发广场店)</td></tr>
+</tbody></table></div>
+<h3>风华路夜市 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 17 家（均分 4.50）+ 4 类业态</li><li><strong>载体类型</strong>：夜市（购物服务;特色商业街;特色商业街）</li><li><strong>地址</strong>：环卫管理处生活垃圾处置费征收办西门旁</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥42（区间 ¥13–81）</li><li><strong>动线主轴</strong>：长虹路</li><li><strong>业态分布</strong>：美食 17 · 成人娱乐 38 · 儿童娱乐 16 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>风华路夜市</td></tr>
+<tr><td>美食</td><td>17</td><td>黄府面馆(风华路店)、汪胖子襄阳牛肉面(华丰路店)、好福记大酒店(长虹路店)</td></tr>
+<tr><td>成人娱乐</td><td>38</td><td>泛悦摩尔国际电影城(泛悦Mall店)、麻吉LiveHouse音乐现场、城谣纪烧烤民谣酒馆</td></tr>
+<tr><td>儿童娱乐</td><td>16</td><td>襄阳猫狗乐园基地、奇奇乐园(泛悦Mall店)、GH游戏室PS5·PS4·Switch(泛悦Mall店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>好福记大酒店(长虹路店)、长虹会务服务中心、一朵宾馆(襄阳沃尔玛民发广场店)</td></tr>
+</tbody></table></div>
+<h3>民发广场(长虹路店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 14 家（均分 4.46）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;商场;普通商场）</li><li><strong>地址</strong>：长虹路13号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥27（区间 ¥13–75）</li><li><strong>动线主轴</strong>：长虹路</li><li><strong>业态分布</strong>：美食 14 · 成人娱乐 40 · 儿童娱乐 18 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>民发广场(长虹路店)</td></tr>
+<tr><td>美食</td><td>14</td><td>好福记大酒店(长虹路店)、黄府面馆(风华路店)、汪胖子襄阳牛肉面(华丰路店)</td></tr>
+<tr><td>成人娱乐</td><td>40</td><td>V派·国际娱乐、城谣纪烧烤民谣酒馆、歌莱美量贩式KTV(长虹路店)</td></tr>
+<tr><td>儿童娱乐</td><td>18</td><td>奇奇乐园(泛悦Mall店)、你好笨电玩室、风云游侠(长虹路民发广场店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>好福记大酒店(长虹路店)、长虹会务服务中心、一朵宾馆(襄阳沃尔玛民发广场店)</td></tr>
+</tbody></table></div>
+<h3>腾龙阁·楚菜臻品(风华路店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 14 家（均分 4.49）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅｜商务住宅;住宅区;住宅区）</li><li><strong>地址</strong>：谷山大厦东南门旁</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥44（区间 ¥13–74）</li><li><strong>动线主轴</strong>：风华路</li><li><strong>业态分布</strong>：美食 14 · 成人娱乐 24 · 儿童娱乐 12 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>腾龙阁·楚菜臻品(风华路店)</td></tr>
+<tr><td>美食</td><td>14</td><td>味之绝(襄阳水利水电工程团生活区店)、汪胖子襄阳牛肉面(华丰路店)、黄府面馆(风华路店)</td></tr>
+<tr><td>成人娱乐</td><td>24</td><td>泛悦摩尔国际电影城(泛悦Mall店)、四喜24h智慧共享棋牌·茶空间(前进路店)、麻吉LiveHouse音乐现场</td></tr>
+<tr><td>儿童娱乐</td><td>12</td><td>襄阳猫狗乐园基地、仲信宠医康养乐园、奇奇乐园(泛悦Mall店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>长虹会务服务中心、一朵宾馆(襄阳沃尔玛民发广场店)</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(民发广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.50）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;沃尔玛）</li><li><strong>地址</strong>：—</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥27（区间 ¥13–75）</li><li><strong>动线主轴</strong>：长虹路</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 38 · 儿童娱乐 14 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沃尔玛(民发广场店)</td></tr>
+<tr><td>美食</td><td>13</td><td>好福记大酒店(长虹路店)、黄府面馆(风华路店)、汪胖子襄阳牛肉面(华丰路店)</td></tr>
+<tr><td>成人娱乐</td><td>38</td><td>V派·国际娱乐、城谣纪烧烤民谣酒馆、歌莱美量贩式KTV(长虹路店)</td></tr>
+<tr><td>儿童娱乐</td><td>14</td><td>奇奇乐园(泛悦Mall店)、你好笨电玩室、风云游侠(长虹路民发广场店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>好福记大酒店(长虹路店)、长虹会务服务中心、一朵宾馆(襄阳沃尔玛民发广场店)</td></tr>
+</tbody></table></div>
+<h3>襄阳武商MALL —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.50）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;商场;普通商场）</li><li><strong>地址</strong>：将军路街金潭路以北7栋1-12层1室第八层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥27（区间 ¥13–75）</li><li><strong>动线主轴</strong>：长虹路</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 38 · 儿童娱乐 14 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>襄阳武商MALL</td></tr>
+<tr><td>美食</td><td>13</td><td>好福记大酒店(长虹路店)、黄府面馆(风华路店)、汪胖子襄阳牛肉面(华丰路店)</td></tr>
+<tr><td>成人娱乐</td><td>38</td><td>V派·国际娱乐、泡泡唐·花吧(长虹路店)、歌莱美量贩式KTV(长虹路店)</td></tr>
+<tr><td>儿童娱乐</td><td>14</td><td>奇奇乐园(泛悦Mall店)、你好笨电玩室、风云游侠(长虹路民发广场店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>好福记大酒店(长虹路店)、长虹会务服务中心、一朵宾馆(襄阳沃尔玛民发广场店)</td></tr>
+</tbody></table></div>
+<h3>鸭唇王·襄阳特色菜 (鼓楼店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.39）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;综合酒楼）</li><li><strong>地址</strong>：荣安大厦(鼓楼巷24旁)二楼</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥18（区间 ¥6–66）</li><li><strong>动线主轴</strong>：厦(鼓楼巷</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 7 · 儿童娱乐 5 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>鸭唇王·襄阳特色菜 (鼓楼店)</td></tr>
+<tr><td>美食</td><td>10</td><td>鸭唇王·襄阳特色菜 (鼓楼店)、昭明李记红糖饼(襄阳古城店)、老谢家牛肉牛杂面馆</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>小马国际影城(鼓楼商场店)、萤火虫动漫(襄城鼓楼店)、马五黄酒馆</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>萤火虫动漫(襄城鼓楼店)、AIR乐私人影院·电玩(北街店)、酷玩动漫(北街店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>曾欣欣旅店</td></tr>
+</tbody></table></div>
+<h3>襄阳高新万达广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 22 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：紫贞街道长虹北路9号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥11–88）</li><li><strong>动线主轴</strong>：长虹北路</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 13 · 儿童娱乐 9 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>襄阳高新万达广场</td></tr>
+<tr><td>美食</td><td>9</td><td>鸭唇王·襄阳头牌菜·始于1998(中原路店)、王和李海鲜火锅大排档(襄阳高新万达店)、鸿福楼(万家同乐城市广场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达广场(襄阳樊城店)万达影城售票处、万达影城(樊城店)、聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>万达宝贝王(襄阳乐园)、聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)、天天萌宠物乐园(万达店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>乡情小院(紫贞路店)</td></tr>
+</tbody></table></div>
+<h3>鼓楼商场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 13 / 酒店 0</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：西街1号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥23（区间 ¥6–66）</li><li><strong>动线主轴</strong>：街道滨江大道</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 7 · 儿童娱乐 6 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>鼓楼商场</td></tr>
+<tr><td>美食</td><td>9</td><td>鸭唇王·襄阳特色菜 (鼓楼店)、文子·大宜城仔鸡(襄阳古城·北街·西门桥店)、昭明李记红糖饼(襄阳古城店)</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>小马国际影城(鼓楼商场店)、萤火虫动漫(襄城鼓楼店)、马五黄酒馆</td></tr>
+<tr><td>儿童娱乐</td><td>6</td><td>萤火虫动漫(襄城鼓楼店)、迷你宝贝宠物店、AIR乐私人影院·电玩(北街店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(樊城店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 22 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：长虹北路9号万达广场娱乐楼3层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥11–88）</li><li><strong>动线主轴</strong>：长虹北路</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 13 · 儿童娱乐 9 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(樊城店)</td></tr>
+<tr><td>美食</td><td>8</td><td>鸭唇王·襄阳头牌菜·始于1998(中原路店)、鸿福楼(万家同乐城市广场店)、王和李海鲜火锅大排档(襄阳高新万达店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(樊城店)、万达广场(襄阳樊城店)万达影城售票处、聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>万达宝贝王(襄阳乐园)、聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)、天天萌宠物乐园(万达店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>乡情小院(紫贞路店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(襄阳樊城店)万达影城售票处 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 22 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（生活服务;售票处;售票处）</li><li><strong>地址</strong>：长虹北路9号万达广场3F层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥11–88）</li><li><strong>动线主轴</strong>：长虹北路</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 13 · 儿童娱乐 9 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(襄阳樊城店)万达影城售票处</td></tr>
+<tr><td>美食</td><td>8</td><td>鸭唇王·襄阳头牌菜·始于1998(中原路店)、鸿福楼(万家同乐城市广场店)、王和李海鲜火锅大排档(襄阳高新万达店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达广场(襄阳樊城店)万达影城售票处、万达影城(樊城店)、聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>万达宝贝王(襄阳乐园)、聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)、天天萌宠物乐园(万达店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>乡情小院(紫贞路店)</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(襄阳店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：长虹北路77号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥42（区间 ¥14–120）</li><li><strong>动线主轴</strong>：长虹北路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 3 · 儿童娱乐 9 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(襄阳店)</td></tr>
+<tr><td>美食</td><td>6</td><td>海底捞火锅(襄阳吾悦广场店)、曾记宜城烟火大排档、达美乐比萨(襄阳吾悦店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>襄阳高新星轶STARX影城、FLY·电玩·魔幻屋、破局司互动娱乐</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>乐游天下(吾悦广场店)、潮弹社(吾悦广场店)、卓越嘉华(吾悦店)</td></tr>
+</tbody></table></div>
+<h3>麦德龙(襄阳商场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：百货/商场（购物服务;超级市场;麦德龙）</li><li><strong>地址</strong>：邓城大道67号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥42（区间 ¥14–120）</li><li><strong>动线主轴</strong>：长虹北路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 3 · 儿童娱乐 9 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>麦德龙(襄阳商场店)</td></tr>
+<tr><td>美食</td><td>6</td><td>海底捞火锅(襄阳吾悦广场店)、曾记宜城烟火大排档、达美乐比萨(襄阳吾悦店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>襄阳高新星轶STARX影城、FLY·电玩·魔幻屋、破局司互动娱乐</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>乐游天下(吾悦广场店)、潮弹社(吾悦广场店)、卓越嘉华(吾悦店)</td></tr>
+</tbody></table></div>
+<h3>海底捞火锅(襄阳吾悦广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;火锅店）</li><li><strong>地址</strong>：团山大道77号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥42（区间 ¥14–120）</li><li><strong>动线主轴</strong>：长虹北路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 3 · 儿童娱乐 9 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>海底捞火锅(襄阳吾悦广场店)</td></tr>
+<tr><td>美食</td><td>6</td><td>海底捞火锅(襄阳吾悦广场店)、曾记宜城烟火大排档、达美乐比萨(襄阳吾悦店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>襄阳高新星轶STARX影城、FLY·电玩·魔幻屋、破局司互动娱乐</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>乐游天下(吾悦广场店)、潮弹社(吾悦广场店)、FLY·电玩·魔幻屋</td></tr>
+</tbody></table></div>
+<h3>来财潮汕大排档 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 2 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;火锅店）</li><li><strong>地址</strong>：长征路与明晶巷交叉口北40米</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥48（区间 ¥26–88）</li><li><strong>动线主轴</strong>：1号春天大道</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>来财潮汕大排档</td></tr>
+<tr><td>美食</td><td>6</td><td>来财潮汕大排档、傻波小吃、鸭唇王·襄阳头牌菜·始于1998(大庆东路店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>烛屿Candle Island(襄阳店)、华夏国际影城(华洋堂店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>襄金楼宾馆(襄阳长征路华洋堂店)、襄阳百洋大酒店</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（268 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>67</td></tr>
+<tr><td>酒吧/酒馆</td><td>30</td></tr>
+<tr><td>电影院</td><td>22</td></tr>
+<tr><td>KTV</td><td>18</td></tr>
+<tr><td>棋牌室</td><td>14</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>12</td></tr>
+<tr><td>电玩城</td><td>12</td></tr>
+<tr><td>Livehouse</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>No Cup</td><td>其他娱乐场所</td><td>购物服务;服装鞋帽皮具店;服装鞋帽皮具店｜餐饮服务;冷饮店;冷饮店</td><td>4.7</td><td>63.00</td><td>绿洲大道19-33号</td></tr>
+<tr><td>✅A-</td><td>欢喜印象</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.7</td><td>67.00</td><td>虎头山冲路</td></tr>
+<tr><td>✅A-</td><td>V派·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.7</td><td>71.00</td><td>汉江街道喜福荟礼宴(汉水·华城御苑店)汉水·华城御苑</td></tr>
+<tr><td>✅A-</td><td>万达影城(樊城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>48.00</td><td>长虹北路9号万达广场娱乐楼3层</td></tr>
+<tr><td>✅A-</td><td>万达广场(襄阳樊城店)万达影城售票处</td><td>电影院</td><td>生活服务;售票处;售票处</td><td>4.7</td><td>46.00</td><td>长虹北路9号万达广场3F层</td></tr>
+<tr><td>✅A-</td><td>国悦PARTY酒吧(襄阳店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>62.00</td><td>春园路襄阳市妇幼保健院西北侧</td></tr>
+<tr><td>✅A-</td><td>A-MANI阿曼尼襄阳旗舰店</td><td>其他娱乐场所</td><td>购物服务;服装鞋帽皮具店;服装鞋帽皮具店｜体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>67.00</td><td>龙西巷与蓝海巷交叉口东南100米</td></tr>
+<tr><td>✅A-</td><td>麻吉LiveHouse音乐现场</td><td>Livehouse</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>114.00</td><td>民发城市印象苏宁易购1层</td></tr>
+<tr><td>✅A-</td><td>泡泡唐·花吧(长虹路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>101.00</td><td>长虹路民发城市印象1幢2层203室</td></tr>
+<tr><td>✅A-</td><td>天空之城SKY CASTLE</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>61.00</td><td>人民路汉水华城缤纷里三楼</td></tr>
+<tr><td>✅A-</td><td>人间一杯·小酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>77.00</td><td>建设汉江创意园109-110</td></tr>
+<tr><td>✅A-</td><td>七号公路Club</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>28.00</td><td>沿江大道明珠广场西侧</td></tr>
+<tr><td>✅A-</td><td>城谣纪烧烤民谣酒馆</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>54.00</td><td>长虹路20号民发·城市印象</td></tr>
+<tr><td>✅A-</td><td>好声音电音party.KTV(檀溪店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>47.00</td><td>檀溪路178号凯地广场4层</td></tr>
+<tr><td>✅A-</td><td>歌莱美量贩式影吧KTV(三元路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;服装鞋帽皮具店;服装鞋帽皮具店</td><td>4.6</td><td>50.00</td><td>洪沟路与清河路交叉口南50米武商量贩3层</td></tr>
+<tr><td>✅A-</td><td>歌莱美量贩式KTV(长虹路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;购物相关场所;购物相关场所</td><td>4.6</td><td>48.00</td><td>沃尔玛对面2-3楼</td></tr>
+<tr><td>✅A-</td><td>极速电竞(火车站店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>前进路134号</td></tr>
+<tr><td>✅A-</td><td>网鱼电竞(民发世界城店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>民发世界城一期门面2-201商铺(城景假日酒店旁)</td></tr>
+<tr><td>✅A-</td><td>苏宁影城(襄阳苏宁易购广场Suning Pro苏宁易购店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>26.00</td><td>长虹路11号</td></tr>
+<tr><td>✅A-</td><td>中影博克斯影城(原恒大影城)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>41.00</td><td>人民西路58号恒大影城2-3楼</td></tr>
+<tr><td>✅A-</td><td>泛悦摩尔国际电影城(泛悦Mall店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>28.00</td><td>长虹路泛悦购物中心4层</td></tr>
+<tr><td>✅A-</td><td>春天国际影城(拉美步行街激光店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>28.00</td><td>解放路拉美步行街2层</td></tr>
+<tr><td>✅A-</td><td>四喜24h智慧共享棋牌·茶空间(前进路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>15.00</td><td>尚城名门</td></tr>
+<tr><td>✅B</td><td>Tiger Bar(米公祠店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>13.00</td><td>解放路2号(米公祠后门车侨厂家属院对面)</td></tr>
+<tr><td>✅B</td><td>Kosmos Bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>79.00</td><td>赵家巷5号</td></tr>
+<tr><td>✅B</td><td>人间一杯(汉水华城店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>110.00</td><td>汉水华城缤纷里</td></tr>
+<tr><td>✅B</td><td>西河码头酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>44.00</td><td>夫人城下护城河畔西河码头酒吧</td></tr>
+<tr><td>✅B</td><td>Lazytap荔枝</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>55.00</td><td>紫贞街道七里河路全民健身中心1层接待大厅西侧套配用房1-1-06-1层</td></tr>
+<tr><td>✅B</td><td>玖仓国风舞酒馆(长虹甄选店)</td><td>酒吧/酒馆</td><td>公司企业;公司;公司</td><td>4.5</td><td>67.00</td><td>长虹路民发城市印象1栋2层202室</td></tr>
+<tr><td>✅B</td><td>TheTree一棵树Bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>53.00</td><td>沿河路32号</td></tr>
+<tr><td>✅B</td><td>黑鹰电竞网吧</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>航空路127号二楼</td></tr>
+<tr><td>✅B</td><td>CANTINHO·小红门(襄阳店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>90.00</td><td>人民路汉水华城3号地块7栋16号17号</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(长虹路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>44.00</td><td>长虹路270号</td></tr>
+<tr><td>✅B</td><td>电竞蜂网咖(东津民发世纪广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>金源路22号民发世纪广场F3层</td></tr>
+<tr><td>✅B</td><td>魅KTV·AI辅唱(长虹路缤纷里店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>67.00</td><td>人民路7缤纷里A座F2层</td></tr>
+<tr><td>✅B</td><td>电竞蜂网咖(城市印象店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>人民路与长虹路交叉口东北40米</td></tr>
+<tr><td>✅B</td><td>好声音时尚KTV(潮麦店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>54.00</td><td>人民路15号武商量贩2层</td></tr>
+<tr><td>✅B</td><td>空境·派对KTV(襄阳泛悦店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>69.00</td><td>长虹路与人民路交汇处泛悦MALL长虹店8栋-B1层B1-012单元</td></tr>
+<tr><td>✅B</td><td>四方朋友·AI智慧KTV(天元CITYpark店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>12.00</td><td>天元四季城五楼乘坐10,11,12号电梯从欧秀影城这边上</td></tr>
+<tr><td>✅B</td><td>宝丽金·量贩KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>94.00</td><td>卧龙大道8号</td></tr>
+<tr><td>✅B</td><td>新魅力四射(正贤聚大厦店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>229.00</td><td>定中门街道中国农业银行(襄阳大庆西路支行)正贤聚大厦</td></tr>
+<tr><td>✅B</td><td>中影国际影城(襄阳樊城武商店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>42.00</td><td>长虹路13号武商百货5层</td></tr>
+<tr><td>✅B</td><td>东方茶社·24H自助棋牌室(檀溪运动公园店)</td><td>棋牌室</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.5</td><td>20.00</td><td>檀溪路与育才路交叉口东南160米</td></tr>
+<tr><td>✅B</td><td>棋乐无穷24h自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>16.00</td><td>汉江街道建设路翔悦百悦府7栋2楼002号</td></tr>
+<tr><td>✅B</td><td>归隐24H麻舍(襄阳旗舰店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>28.00</td><td>人民路249号亿润嘉超市旁电梯上二楼</td></tr>
+<tr><td>✅B</td><td>肆方阁棋牌(长虹路沃尔玛店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>22.00</td><td>人民路丽枫酒店一楼</td></tr>
+<tr><td>✅B</td><td>聚友24小时智慧棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>16.00</td><td>人民路沃尔玛地下停车场入口对面</td></tr>
+<tr><td>✅B</td><td>KaKa卡卡</td><td>其他娱乐场所</td><td>购物服务;专卖店;专营店</td><td>4.5</td><td>—</td><td>建设路与汉江路交叉口东160米</td></tr>
+<tr><td>✅B</td><td>麻神24h智慧共享棋牌室人民路店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>33.00</td><td>尚城名门</td></tr>
+<tr><td>✅B</td><td>烛屿Candle Island(襄阳店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>—</td><td>中原街道丹江路34号</td></tr>
+<tr><td>✅B</td><td>斑马精酿小酒馆·Zebra Craft Beer</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>52.00</td><td>地中海阳光18号楼</td></tr>
+<tr><td>✅B</td><td>瑰夏Lounge酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>69.00</td><td>泰安路古玩城院内</td></tr>
+<tr><td>✅B</td><td>襄阳洲际酒店·大堂酒廊</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.4</td><td>73.00</td><td>盛丰路1号襄阳洲际酒店2层</td></tr>
+<tr><td>✅B</td><td>YEP bistro·野朴</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>76.00</td><td>立业路1号门(立业路农贸市场院内)</td></tr>
+<tr><td>✅B</td><td>醇酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>86.00</td><td>沿江大道36号汉街夜肆</td></tr>
+<tr><td>✅B</td><td>屿川whisky&amp;cocktail</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>58.00</td><td>全民健身中心东侧配套用房1-1-06-3F</td></tr>
+<tr><td>✅B</td><td>金水湾</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅小区｜体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>—</td><td>泰山路510号1栋1单元一楼</td></tr>
+<tr><td>✅B</td><td>网鱼电竞(襄阳民发广场长虹路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.4</td><td>—</td><td>长虹路民发商业广场A馆3层CHK3013B号</td></tr>
+<tr><td>✅B</td><td>网鱼电竞(东津民发世纪广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.4</td><td>—</td><td>六两河街道金源路22号民发世纪广场4楼067号</td></tr>
+<tr><td>✅B</td><td>异世界沉浸式剧场(万达店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>—</td><td>长虹北路35号建设银行旁</td></tr>
+</tbody></table></div>
+<p>（另 116 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（164 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>73</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>33</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>23</td></tr>
+<tr><td>电玩城</td><td>20</td></tr>
+<tr><td>亲子乐园</td><td>13</td></tr>
+<tr><td>淘气堡</td><td>2</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>襄阳华侨城奇幻度假区</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>东津镇奇幻大道66号</td></tr>
+<tr><td>✅A-</td><td>奇幻度假区奇趣童年亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.7</td><td>东津大道99号</td></tr>
+<tr><td>✅A-</td><td>开心王国亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.6</td><td>沿江大道与杜甫巷交叉口东80米</td></tr>
+<tr><td>✅A-</td><td>襄阳公园</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>古城街道环城东路122号</td></tr>
+<tr><td>✅A-</td><td>襄阳猫狗乐园基地</td><td>其他儿童场所</td><td>场内</td><td>4.6</td><td>米公街道长虹路再尔广场北3层310号</td></tr>
+<tr><td>✅A-</td><td>仲信宠医康养乐园</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>立业市集D栋D01</td></tr>
+<tr><td>✅B</td><td>欢乐王国户外儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.5</td><td>襄阳高新技术开发区富康大道和奔驰大道交汇处</td></tr>
+<tr><td>✅B</td><td>欢乐王国富仕园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>城关镇泰山路568号</td></tr>
+<tr><td>✅B</td><td>欢乐城亲子游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.5</td><td>卧龙路智投思乡园后面100米处(D区2-8号)</td></tr>
+<tr><td>✅B</td><td>狼牙宠物幼儿园·训练·萌宠·洗护·寄养(襄城店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>檀溪街道檀溪路名仕家天下10幢1层002</td></tr>
+<tr><td>✅B</td><td>贵族萌宠幼儿园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>王寨街道黄家二组黄家美食城院</td></tr>
+<tr><td>✅B</td><td>襄阳野生动物世界</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>九集镇双泉村</td></tr>
+<tr><td>✅B</td><td>万达宝贝王(襄阳乐园)</td><td>其他儿童场所</td><td>场内</td><td>4.4</td><td>长虹北路9号万达广场娱乐楼2F-B</td></tr>
+<tr><td>✅B</td><td>襄阳蓝天城儿童职业体验中心(中百广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.4</td><td>邓城大道和卧龙大道交叉口中百广场三楼</td></tr>
+<tr><td>✅B</td><td>龙潭小镇亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.4</td><td>龙潭村龙潭小镇</td></tr>
+<tr><td>✅B</td><td>魔法童世界亲子乐园</td><td>亲子乐园</td><td>场内</td><td>4.4</td><td>襄阳国际商贸城南门西侧广场</td></tr>
+<tr><td>✅B</td><td>莫奈之梦奇幻乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>莫奈热气球小镇北侧</td></tr>
+<tr><td>✅B</td><td>趣奇岛自然乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>航空路30号</td></tr>
+<tr><td>✅B</td><td>松菊苑水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>兴隆镇龙门对面200米</td></tr>
+<tr><td>✅B</td><td>众享宠物寄养乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>黄家湾3组66号</td></tr>
+<tr><td>✅B</td><td>嗨比宠物度假乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>团山镇中国中车嗨比宠物度假乐园</td></tr>
+<tr><td>✅B</td><td>花正在·宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>春园东路春新巷</td></tr>
+<tr><td>✅B</td><td>聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>长虹北路9号万达广场(襄阳樊城店)3F层</td></tr>
+<tr><td>✅B</td><td>舒家大院民宿馆•餐饮•住宿•休闲娱乐</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>盛康镇陈家湾村二组18号</td></tr>
+<tr><td>✅B</td><td>zoolungzoolung动物主题公园(襄阳店)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>民发世纪广场3层3-001、3-002(永辉超市楼上)</td></tr>
+<tr><td>✅B</td><td>萌宠之家宠物店(育才大道店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>育才大七里岗八队146号</td></tr>
+<tr><td>✅B</td><td>嗨比宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>中车社区党员群众服务中心南侧200米</td></tr>
+<tr><td>⚠️</td><td>孩子王(天元CityPark店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>人民路天元四季城3楼</td></tr>
+<tr><td>⚠️</td><td>你的世界亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.2</td><td>人民西路8号月亮湾公园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>汉城童年往事亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.2</td><td>南城中兴大道169号(汉城西市)</td></tr>
+<tr><td>⚠️</td><td>汉城游乐场</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>南城汉城动物园对面场地</td></tr>
+<tr><td>⚠️</td><td>萤火虫动漫(襄城鼓楼店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>鼓楼巷2号鼓楼公寓</td></tr>
+<tr><td>⚠️</td><td>浕水公园</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>书院街84号</td></tr>
+<tr><td>⚠️</td><td>宠杏里萌宠店</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>幸福小区园艺路晨光路1-33号</td></tr>
+<tr><td>⚠️</td><td>萌宠小窝宠物店</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>银河运动公园西北门西南130米</td></tr>
+<tr><td>⚠️</td><td>童星汇(东津民发世纪广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>六两河街道金源路22号民发世纪广场3楼3-052商铺</td></tr>
+<tr><td>⚠️</td><td>谷山游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.1</td><td>城关镇西北</td></tr>
+<tr><td>⚠️</td><td>爱玩亲子运动馆</td><td>亲子乐园</td><td>场内</td><td>4.1</td><td>金源路22号民发世纪广场三楼爱玩亲子运动馆</td></tr>
+<tr><td>⚠️</td><td>超级飞侠儿童主题乐园(星悦茂地下商场店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>谷城县星悦茂地下商场23号口下E091号</td></tr>
+<tr><td>⚠️</td><td>莫奈热气球小镇</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>尹集乡姚庵村</td></tr>
+<tr><td>⚠️</td><td>奇奇乐园(泛悦Mall店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>长虹路泛悦4楼奇奇乐园</td></tr>
+<tr><td>⚠️</td><td>鑫铂悦(绿地店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>龙西巷与中原西路辅路交叉口西南20米</td></tr>
+<tr><td>⚠️</td><td>巴士亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.1</td><td>水镜大道456号院内</td></tr>
+<tr><td>⚠️</td><td>老河口市淘趣宝亲子体验馆</td><td>亲子乐园</td><td>独立</td><td>4.1</td><td>亚兴帝苑乐巢家具后面</td></tr>
+<tr><td>⚠️</td><td>嘟噜嘟噜动物主题公园(民发世纪广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>东津民发3层</td></tr>
+<tr><td>⚠️</td><td>天天萌宠物乐园(万达店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>4.1</td><td>万达广场5-103a</td></tr>
+<tr><td>⚠️</td><td>呆呆萌宠物</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>大庆西路卷烟厂对面</td></tr>
+<tr><td>⚠️</td><td>樊城区中豪水上乐园场游乐场</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.0</td><td>襄阳国际商贸城西门广场</td></tr>
+<tr><td>⚠️</td><td>奇妙熊儿童城</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>水镜大道风神广场3层</td></tr>
+<tr><td>⚠️</td><td>小黄鸭亲子乐园保康店</td><td>亲子乐园</td><td>独立</td><td>4.0</td><td>官山路18号</td></tr>
+<tr><td>⚠️</td><td>你好笨电玩室</td><td>电玩城</td><td>独立</td><td>4.0</td><td>职工街28-68号四楼</td></tr>
+<tr><td>⚠️</td><td>潮π电玩社(天元·四季城店)</td><td>电玩城</td><td>独立</td><td>4.0</td><td>天元四季城公寓1-2号6楼616</td></tr>
+<tr><td>⚠️</td><td>月亮湾公园游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>人民西路</td></tr>
+<tr><td>⚠️</td><td>新华游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>新华公园</td></tr>
+<tr><td>⚠️</td><td>楚都欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>康桥国际城西北200米(育才大道北)</td></tr>
+<tr><td>⚠️</td><td>迷你宝贝宠物店</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>西大街美琦公寓95一8号</td></tr>
+<tr><td>⚠️</td><td>贝佳宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>新建二街与西门街交叉口东120米</td></tr>
+<tr><td>⚠️</td><td>小尾巴宠物乐园(万达广场住宅区北区店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>4.0</td><td>万达中路13-103</td></tr>
+<tr><td>⚠️</td><td>童星汇(民发广场航空路店)</td><td>其他儿童场所</td><td>场内</td><td>3.9</td><td>张湾街道航空路民发广场3楼东侧309商铺</td></tr>
+<tr><td>⚠️</td><td>南漳三棵松儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>3.9</td><td>城关镇鲁家山路一号全民健身中心旁</td></tr>
+</tbody></table></div>
+<p>（另 104 家见 §11 原始数据）</p>
+<h2>5. 综合体与商场（148 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>悦活荟</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>高新区东风汽车大道特28号</td></tr>
+<tr><td>✅A-</td><td>襄阳高新万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>9</td><td>9</td><td>紫贞街道长虹北路9号</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(襄阳店)</td><td>购物中心/综合体</td><td>4.8</td><td>9</td><td>6</td><td>长虹北路77号</td></tr>
+<tr><td>✅A-</td><td>民发世纪广场</td><td>百货/商场</td><td>4.8</td><td>6</td><td>2</td><td>金源路22号</td></tr>
+<tr><td>✅A-</td><td>民发广场(航空路店)</td><td>购物中心/综合体</td><td>4.7</td><td>8</td><td>4</td><td>航空路10号</td></tr>
+<tr><td>✅A-</td><td>民发广场(长虹路店)</td><td>购物中心/综合体</td><td>4.7</td><td>18</td><td>14</td><td>长虹路13号</td></tr>
+<tr><td>✅A-</td><td>裕丰·世纪广场</td><td>购物中心/综合体</td><td>4.7</td><td>4</td><td>2</td><td>银城大道158号</td></tr>
+<tr><td>✅A-</td><td>泛悦Mall</td><td>购物中心/综合体</td><td>4.7</td><td>16</td><td>19</td><td>长虹路与人民路交汇处</td></tr>
+<tr><td>✅A-</td><td>鼓楼商场</td><td>百货/商场</td><td>4.7</td><td>6</td><td>9</td><td>西街1号</td></tr>
+<tr><td>✅A-</td><td>襄阳国际商贸城</td><td>百货/商场</td><td>4.7</td><td>2</td><td>1</td><td>牛首镇</td></tr>
+<tr><td>✅A-</td><td>美联M·PARK购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>3</td><td>檀溪路206号</td></tr>
+<tr><td>✅A-</td><td>枣阳汇聚广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>1</td><td>书院街150号</td></tr>
+<tr><td>❌</td><td>沃尔玛(民发广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>14</td><td>13</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>麦德龙(襄阳商场店)</td><td>百货/商场</td><td>4.7</td><td>9</td><td>6</td><td>邓城大道67号</td></tr>
+<tr><td>✅A-</td><td>九隆广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>中原街道前进路</td></tr>
+<tr><td>✅A-</td><td>武商江豚生活家</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>2</td><td>长虹南路36号武商襄城购物广场2-3层</td></tr>
+<tr><td>✅A-</td><td>中国汉城大汉茂购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>6</td><td>建设路与中兴大道交叉口东南140米</td></tr>
+<tr><td>✅A-</td><td>水镜广场</td><td>购物中心/综合体</td><td>4.6</td><td>3</td><td>4</td><td>便河路与水镜大道交汇处</td></tr>
+<tr><td>✅A-</td><td>汉江商业广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>2</td><td>汉江大道与梨花大道东北角</td></tr>
+<tr><td>✅A-</td><td>襄阳武商MALL</td><td>购物中心/综合体</td><td>4.6</td><td>14</td><td>13</td><td>将军路街金潭路以北7栋1-12层1室第八层</td></tr>
+<tr><td>✅A-</td><td>武商老河口购物广场(老河口店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>3</td><td>武商老河口购物广场1层</td></tr>
+<tr><td>✅A-</td><td>万象城</td><td>百货/商场</td><td>4.6</td><td>3</td><td>0</td><td>光武路28号</td></tr>
+<tr><td>✅A-</td><td>南国城市广场</td><td>购物中心/综合体</td><td>4.6</td><td>16</td><td>22</td><td>长虹路沃尔玛斜对面</td></tr>
+<tr><td>✅A-</td><td>和信·奥特莱斯</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>东风汽车大道东(朱庄)和信奥特莱斯购物公园7号楼201室</td></tr>
+<tr><td>✅A-</td><td>白马广场</td><td>百货/商场</td><td>4.6</td><td>5</td><td>8</td><td>长虹北路</td></tr>
+<tr><td>✅A-</td><td>新天地商业广场(宜城店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>1</td><td>襄沙大道70号</td></tr>
+<tr><td>✅A-</td><td>襄阳商城华洋堂</td><td>百货/商场</td><td>4.6</td><td>0</td><td>6</td><td>长征路140号</td></tr>
+<tr><td>✅A-</td><td>永辉超市(民发世纪广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>6</td><td>2</td><td>六两河街道金源路22号民发世纪广场2层</td></tr>
+<tr><td>✅A-</td><td>好邻居Max(襄阳高新万达广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>9</td><td>8</td><td>长虹北路9号万达广场(襄阳樊城店)B1层</td></tr>
+<tr><td>✅A-</td><td>永辉超市(民发广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>航空路民发广场B1层</td></tr>
+<tr><td>✅A-</td><td>好邻居(乔营店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>云兴路和松鹤路的交叉口附近</td></tr>
+<tr><td>✅A-</td><td>好邻居超市(泛悦店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>长虹路28号南国广场泛悦Mall负1楼</td></tr>
+<tr><td>✅B</td><td>鸿福楼(万家同乐城市广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>长虹路紫贞街道万达广场万家同乐4楼</td></tr>
+<tr><td>✅B</td><td>亚太百货</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>建设路8号</td></tr>
+<tr><td>✅B</td><td>宜城军翔百货</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>襄沙大道46号(近盛景怡家酒店)</td></tr>
+<tr><td>✅B</td><td>张湾义乌商贸城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>钻石大道80号</td></tr>
+<tr><td>✅B</td><td>军翔时代百货</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>长虹路14号</td></tr>
+<tr><td>✅B</td><td>军翔百货</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>张湾办事处航空路167号</td></tr>
+<tr><td>✅B</td><td>好邻居购物广场(宜城店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>新建街11号</td></tr>
+<tr><td>✅B</td><td>武商超市襄阳人民广场店</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>星火路1号</td></tr>
+<tr><td>✅B</td><td>武商超市(东街店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>东街20号</td></tr>
+<tr><td>✅B</td><td>永辉超市(湖北襄阳市襄阳吾悦广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>长虹北路77号吾悦广场(襄阳店)B1层</td></tr>
+<tr><td>✅B</td><td>好邻居购物广场(东风店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>富康大道15号恒业广场</td></tr>
+<tr><td>✅B</td><td>竹叶山水果批发市场徐小兰果行</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>竹叶山粮油批发市场</td></tr>
+<tr><td>✅B</td><td>万家同乐城市广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>长虹北路22号</td></tr>
+<tr><td>✅B</td><td>军翔百货(万象城店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>南城街道光武路28号万象城</td></tr>
+<tr><td>✅B</td><td>襄江商场(大庆东路店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>长征路102号</td></tr>
+<tr><td>✅B</td><td>襄阳竹叶山粮油批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>牛首镇襄阳竹叶山农产品交易中心</td></tr>
+<tr><td>✅B</td><td>四季鲜批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>新华路与民族路交叉口西220米</td></tr>
+<tr><td>✅B</td><td>谷山购物广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>光千路111号</td></tr>
+</tbody></table></div>
+<p>（另 98 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（301 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>爱饭(襄阳绿地店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.7</td><td>57.00</td><td>龙西巷与中原西路交叉口西南80米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4edf3ed39442b6a14da36947e58e100b"></td></tr>
+<tr><td>✅A-</td><td>襄阳福鑫酒楼</td><td>住宿服务;住宿服务相关;住宿服务相关｜餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>—</td><td>花梨木店村二组距离红莲菜馆北50处</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/869b6d4b016cd006e788964d2a73c688"></td></tr>
+<tr><td>✅A-</td><td>宜城食府</td><td>餐饮服务;中餐厅;海鲜酒楼｜餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>141.00</td><td>闸口二路44号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/68ac7d8274f9b7acf1f570a2d7c5d238"></td></tr>
+<tr><td>✅A</td><td>鸭唇王·襄阳特色菜 (鼓楼店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>66.00</td><td>荣安大厦(鼓楼巷24旁)二楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3809d4fb7aa4aa220000002238980007?type=pic"></td></tr>
+<tr><td>✅A-</td><td>牛时代桥头陈家面馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>18.00</td><td>解放路100号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/caab68cb5152746c1f8a76e45b8fe00b_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>张家牛肉面馆(幸福路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>17.00</td><td>幸福路与园艺路交叉口南侧火车站幸福小区48栋1单元</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/84566B99_005E_430D_AB89_A074F353B9CE_L0_001_2000_200_1772297551118_81328366.jpg"></td></tr>
+<tr><td>✅A-</td><td>邓家牛腩</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>22.00</td><td>桥北东路1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bfe5bb9c03ea290b0000003104736370?type=pic"></td></tr>
+<tr><td>✅A-</td><td>东来顺饭庄(襄阳店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>128.00</td><td>沿江大道汉江国际特1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1dbea9ad599386cdabdbe6ceb0648aa4_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>鸭唇王·襄阳头牌菜·始于1998(中原路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>50.00</td><td>紫贞街道中原西路71号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2cc2b8310657856f0000002528382503?type=pic"></td></tr>
+<tr><td>✅A</td><td>襄当年·襄阳土菜院子餐厅(月亮湾公园)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>67.00</td><td>前贾洼工业园区(月亮湾公园后门)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_191458_ss__1743406382275_29711038.jpg"></td></tr>
+<tr><td>✅A-</td><td>黄府面馆(风华路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>13.00</td><td>风华路</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/06b3ee91bce37b9f0000003130800764?type=pic"></td></tr>
+<tr><td>✅A-</td><td>汪胖子襄阳牛肉面(华丰路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>15.00</td><td>风华路宁港人和秀景1栋105号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bb91e9b7ac9e377f0000002986974487?type=pic"></td></tr>
+<tr><td>✅A-</td><td>大襄阳·襄阳菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>63.00</td><td>云湾路光彩雅苑四栋</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/69f9b652e51ce0732e1ac1086d403875"></td></tr>
+<tr><td>✅A-</td><td>襄阳王捌院子餐厅(卧龙大道辅路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>68.00</td><td>卧龙大道辅路与春园路交叉口西北100米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_9766_1771494173871_47999946.jpg"></td></tr>
+<tr><td>✅A-</td><td>腾天阁·礼宴</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>86.00</td><td>骧龙国际B区19号楼1-3层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9b236549fbf159350000009202390768?type=pic"></td></tr>
+<tr><td>✅A-</td><td>赛家喜娃面馆</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.7</td><td>18.00</td><td>桥北东路辅路与沿江大道交叉口西北60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c73f0f7536bd14cb3175841e47ddb01c_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A</td><td>襄当年·襄阳乡野土菜(汉江路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>52.00</td><td>汉江路61号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/680d07822fbbc9b70000004036646488?type=pic"></td></tr>
+<tr><td>✅A-</td><td>刘家简朴菜(刘家菜社)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>52.00</td><td>春园路63号(刑警队对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d0ffa894201e86c50000002370562448?type=pic"></td></tr>
+<tr><td>✅A-</td><td>邓家鱼馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>40.00</td><td>建陶小区西北门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000324_1765547249874_67301207.jpg"></td></tr>
+<tr><td>✅A-</td><td>海棠鹤隐</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>125.00</td><td>檀溪路168号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_9685_1771307462963_25364018.jpg"></td></tr>
+<tr><td>✅A-</td><td>全聚德(襄阳首店)</td><td>餐饮服务;中餐厅;北京菜</td><td>4.7</td><td>117.00</td><td>沿江大道汉江明珠城5号楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1956e70dcc5b30280000007143762510?type=pic"></td></tr>
+<tr><td>✅A-</td><td>广东第一煲总店(丁方正靓汤)</td><td>餐饮服务;中餐厅;广东菜(粤菜)</td><td>4.7</td><td>60.00</td><td>大庆西路清和园1幢1层101-3号4门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_12149_1762947303020_84402525.jpg"></td></tr>
+<tr><td>✅A-</td><td>味之绝(襄阳水利水电工程团生活区店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>74.00</td><td>国家税务总局襄阳市税务局第二税务分局北门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d59c3091393f772d3838b268ef0ad9a7_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>好福记大酒店(长虹路店)</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>民发世纪新城西2门南70米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7368aecb6df9ba600147e9a30ff9944c_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>甬上明录·老宁波海鲜大排档</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>84.00</td><td>汉江街道杜甫巷社区赵家巷与菜越巷交叉口50米处</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_229666_ss__1768525096903_58023748.jpg"></td></tr>
+<tr><td>✅A-</td><td>小四川美食馆(幸福路店)</td><td>餐饮服务;中餐厅;四川菜(川菜)</td><td>4.7</td><td>48.00</td><td>幸福路幸福小区64栋</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/00f354ccf51861473a9dc46285a1af54_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>于家面馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>14.00</td><td>筑梦路与七里河路交叉口南140米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8038876cf1f6dc0930528efe1e8b4c60_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>撮一顿小院</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>119.00</td><td>江山路与汉江北路交叉口东200米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9bf40e7dde08428549f5d6c469251ea5_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>农里·醉美乡村(团山店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>78.00</td><td>团山镇人民政府对面(农机市场右侧)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/43ED546C_D3AB_4AC0_9BA8_64935AB5C2AB_L0_001_1170_1100_1742151901406_31427099.jpg"></td></tr>
+<tr><td>✅A-</td><td>宜城万象大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>—</td><td>鄢城街道振兴路233号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/78606c873ac8e7a5b97ed6edf84e894e"></td></tr>
+<tr><td>✅A-</td><td>湘江食府(江山北路)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>43.00</td><td>江山北路艺苑华庭3号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6ea541af5564ab723672ee85dd2f2b59"></td></tr>
+<tr><td>✅A-</td><td>小食候湘(襄阳店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>49.00</td><td>东津世纪城7区30栋(浩然KTV旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/query_pic?id=stedd51985-07f9-484a-89da-444fab326fc4&amp;user=search&amp;operate=original"></td></tr>
+<tr><td>✅A-</td><td>回家湘老坛剁椒鱼头(卞营路店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>45.00</td><td>襄阳市高新技术开发区邓城大道翰林世家10栋1-2层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_25959_1656674590761_5fc7b582.jpg"></td></tr>
+<tr><td>✅A-</td><td>和悦酒楼</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>49.00</td><td>宝通路38号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000157058_ss__1767282666467_16286984.jpg"></td></tr>
+<tr><td>✅A-</td><td>极品天下(前进路店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>65.00</td><td>前进路64号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100000076_1730048327948_68474677.jpg"></td></tr>
+<tr><td>✅A-</td><td>海之味(沿江大道)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>231.00</td><td>沿江大道特8附近</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_38710_ss__1761564281788_06130639.jpg"></td></tr>
+<tr><td>✅A-</td><td>亲嘴鱼虾(立业路店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>57.00</td><td>远驰立业城西南门东南60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3142ea06972e20190000002237988656?type=pic"></td></tr>
+<tr><td>✅A-</td><td>幸福路牛肉面馆(总店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>16.00</td><td>新嘉苑西南门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_67426_ss__1772094325133_82304011.jpg"></td></tr>
+<tr><td>✅A-</td><td>海底捞火锅(襄阳吾悦广场店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.6</td><td>120.00</td><td>团山大道77号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bcb84a02dd0ebb388d01c309af554414?operate=original"></td></tr>
+<tr><td>✅A</td><td>黄记鹅掌泥鳅庄·襄阳特色菜(西门桥店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>40.00</td><td>襄阳人家商业街</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/35fe3ba4941c67370000003926412557?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老谢家牛肉牛杂面馆总店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>19.00</td><td>汉江街道汉江路与七里河西路交叉路口黄金学校斜对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8fcdacfba6e4a9330000001018674182?type=pic"></td></tr>
+<tr><td>✅A-</td><td>鸭唇王·襄阳头牌菜·始于1998(大庆东路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>50.00</td><td>大庆东路31号春天大道小区底商</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0f8b61334c70a31b0000002240912579?type=pic"></td></tr>
+<tr><td>✅A-</td><td>昭明李记红糖饼(襄阳古城店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.6</td><td>6.00</td><td>北街119-3号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_9675_1771305791575_84623146.jpg"></td></tr>
+<tr><td>✅A-</td><td>青莲植庭·荆沙甲鱼(建设21创意园店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>92.00</td><td>建设路60号建设21创意园内</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6bf131d8935115d60000005873186944?type=pic"></td></tr>
+<tr><td>✅A-</td><td>文子·大宜城仔鸡(襄阳古城·北街·西门桥店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>38.00</td><td>内环路与西街交叉口东南40米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ec81965c47d266d50000005192036323?type=pic"></td></tr>
+<tr><td>✅A-</td><td>黄记鹅掌泥鳅庄·襄阳待客招牌菜(新华路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>34.00</td><td>新华路15号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4c77237db4443cce0000003293244529?type=pic"></td></tr>
+<tr><td>✅A-</td><td>楚系楚留香(宜城菜)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>58.00</td><td>春园路与新华路交汇处(路灯管理处旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d2e51800045e33dd871d3275fb6b8144_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>腾龙阁·家烧小桂鱼(襄城檀溪路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>60.00</td><td>檀溪路171-8号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a158067fac9d6e9d0000003514788487?type=pic"></td></tr>
+<tr><td>✅A-</td><td>肖大厨·湖北菜·唐城·古城美食</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>67.00</td><td>环城东路231号肖大厨酒店</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_2271_1769341400436_42871694.jpg"></td></tr>
+<tr><td>✅A-</td><td>宴襄阳精致湖北菜.礼宴(襄城国际商都店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>69.00</td><td>檀溪路198-1号国际商都A4区</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ab2f74ead87ee7db708fd37eb9aaf977_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>腾龙阁·楚菜臻品(风华路店)</td><td>餐饮服务;中餐厅;中餐厅｜商务住宅;住宅区;住宅区</td><td>4.6</td><td>67.00</td><td>谷山大厦东南门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/67701793ff0e31130000002988078733?type=pic"></td></tr>
+<tr><td>✅A-</td><td>牛十三鲜货烧烤大排档(人民路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>72.00</td><td>米公街道长虹路(城市印象)5幢1层001-1室</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/59a01ad7bed1726f0000003291484860?type=pic"></td></tr>
+<tr><td>✅A-</td><td>鸭唇王(三桥头店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>43.00</td><td>乔营居委会3组102-1</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b11ad237f92ad8d60000002919960252?type=pic"></td></tr>
+<tr><td>✅A-</td><td>襄阳兄弟大虾(闸口总店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>58.00</td><td>闸口二路95、97号(农业银行斜对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5c87667dcea168f76699a3bb8a36c8f0"></td></tr>
+<tr><td>✅A-</td><td>佰人王串串香(三元路店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.6</td><td>50.00</td><td>清河路</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100003292_1760517337614_62839653.jpg"></td></tr>
+<tr><td>✅A-</td><td>大炮面馆(山水檀溪·秀园店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>11.00</td><td>石家营路山水檀溪秀园2幢1层103室</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100001218_1767605386714_74687223.jpg"></td></tr>
+<tr><td>✅A</td><td>正宗老字号谢家面馆(大庆西路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>17.00</td><td>米公街道大庆西路空压机厂对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_95339_ss__1764834534745_55045919.jpg"></td></tr>
+<tr><td>✅A-</td><td>然妹儿·山野小馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>46.00</td><td>立业市集B栋1-1号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2F336F64_3646_4297_B567_35805C13D882_L0_001_2016_113_1771828109644_67025413.jpg"></td></tr>
+<tr><td>✅A-</td><td>三味真火超级大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>65.00</td><td>华明路口汉江一品B区南</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000059166_ss__1756267897058_98820756.jpg"></td></tr>
+<tr><td>✅A-</td><td>发财大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>55.00</td><td>汉江北路王寨市集B区7-10号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6e2e046b02abf4850000003115814850?type=pic"></td></tr>
+<tr><td>✅A-</td><td>渔之鲜排档(嘉豪·城市花园店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.6</td><td>45.00</td><td>泽园·欧典东南门东南50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_4604_1769006509242_27417913.jpg"></td></tr>
+<tr><td>✅A-</td><td>欢谈鲜排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>53.00</td><td>全民健身中心西南门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_77409_ss__1763168002265_67797518.jpg"></td></tr>
+<tr><td>✅A-</td><td>来财潮汕大排档</td><td>餐饮服务;中餐厅;火锅店</td><td>4.6</td><td>88.00</td><td>长征路与明晶巷交叉口北40米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/f630a14080b47ae90000005630240900?type=pic"></td></tr>
+<tr><td>✅A-</td><td>三顾小院•湖北菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>45.00</td><td>江山南路与长虹北路交叉口西200米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000558_1755099625166_38466465.jpg"></td></tr>
+<tr><td>✅A-</td><td>超级大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>63.00</td><td>柿铺东村十组</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7f2931ceacce3a2ac89113b3785f4870_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A</td><td>傻波小吃</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>56.00</td><td>迎旭门小区南门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/E2AAE31F_573E_46D5_ADA2_25FBDDFC4DA6_L0_001_2000_150_1767420212466_35010826.jpg"></td></tr>
+<tr><td>✅A-</td><td>东鑫酸浆面旗舰店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>92.00</td><td>中润梦想城</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e4bcaeec293d04e50000004855474471?type=pic"></td></tr>
+<tr><td>✅A-</td><td>矮子馅饼(襄阳总店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>16.00</td><td>长征路19号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/%5B2026-02-10-17-14-03%5DA7E0AE1D-186F-4AAD-961C-738633A89E5_1770714892681_05731787.jpg"></td></tr>
+<tr><td>✅A-</td><td>友达面馆(春园路店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.6</td><td>43.00</td><td>春园路18号(绝妙正对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/237cca0720192640ba3cef71807c0739_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>小东邪襄阳牛肉面汉水华城店</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>16.00</td><td>汉水华城悦苑13栋1楼12号商铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/76C31C9E_6A75_4F23_AC65_F45229A0CBE9_L0_001_1500_200_1764657878267_76370476.jpg"></td></tr>
+<tr><td>✅A-</td><td>金元小川小馆 重庆江湖菜</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>35.00</td><td>人民路31号供电局家属院内金元小川小馆重庆江湖菜</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4a239c8f160e9fce034b9d1a9fa13d99_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>城谣纪烧烤民谣酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>54.00</td><td>长虹路20号民发·城市印象</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/016d24f9e3dbed040000002119066693?type=pic"></td></tr>
+<tr><td>✅B</td><td>庞公大院</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>46.00</td><td>庞公路172号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/C02310C6_A198_4599_BBA6_E3E6C115CD57_L0_001_1500_2000_1735436507801_35561273.jpg"></td></tr>
+<tr><td>✅B</td><td>宜城市张炜大虾城</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>64.00</td><td>雷河镇新街道雷河卫生院旁边附近美食特色小龙虾朋友聚餐夜宵</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9eeb196c01d92425d7ae103fa7747132"></td></tr>
+<tr><td>✅B</td><td>老干妈粉条汤(东风路总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>27.00</td><td>屏襄门街道东风路东风市场对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0ea0a0b2de7a65400000008285792067?type=pic"></td></tr>
+<tr><td>✅B</td><td>绿野仙踪酒店(二汽店)</td><td>餐饮服务;中餐厅;湖北菜(鄂菜)｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>43.00</td><td>富康大道16号(原新成都大酒店)二汽转盘附近</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/021cd2f9475165bf3c6eb886ec2dbe6b"></td></tr>
+<tr><td>✅B</td><td>罗记秘制烤肉(中山世纪步行街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>33.00</td><td>中山世纪步行街东南门东60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5a4c4ee7fe92cbd8f693f2a7e39d8018"></td></tr>
+<tr><td>✅B</td><td>明记虾皇</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>26.00</td><td>子捷山水传奇13栋</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bf28c02a28214a5569bf4e05144f28ab"></td></tr>
+<tr><td>✅B</td><td>至味·精致湖北菜(檀溪路名仕家店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>54.00</td><td>檀溪路名仕家天下8号楼南门</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/87d3345c2260b1c89b8bb232d148e8da_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>十哩八湘湘菜坊老河口旗舰店</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>13.00</td><td>化工路11号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8dff9a7c-506c-477a-95ab-c8cd22afd540.png"></td></tr>
+</tbody></table></div>
+<p>（另 221 家见 §11 原始数据，评分排序后 80 名未列入）</p>
+<h2>7. 苍蝇馆 / 小店候选（39 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>襄当年·襄阳土菜院子餐厅(月亮湾公园)</td><td>店名小店语义</td><td>4.7</td><td>67.00</td><td>前贾洼工业园区(月亮湾公园后门)</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>襄当年·襄阳乡野土菜(汉江路店)</td><td>店名小店语义</td><td>4.7</td><td>52.00</td><td>汉江路61号</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>甬上明录·老宁波海鲜大排档</td><td>店名小店语义</td><td>4.7</td><td>84.00</td><td>汉江街道杜甫巷社区赵家巷与菜越巷交叉口50米处</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>牛十三鲜货烧烤大排档(人民路店)</td><td>店名小店语义</td><td>4.6</td><td>72.00</td><td>米公街道长虹路(城市印象)5幢1层001-1室</td><td></td></tr>
+<tr><td>然妹儿·山野小馆</td><td>店名小店语义</td><td>4.6</td><td>46.00</td><td>立业市集B栋1-1号门面</td><td></td></tr>
+<tr><td>三味真火超级大排档</td><td>店名小店语义</td><td>4.6</td><td>65.00</td><td>华明路口汉江一品B区南</td><td></td></tr>
+<tr><td>发财大排档</td><td>店名小店语义</td><td>4.6</td><td>55.00</td><td>汉江北路王寨市集B区7-10号门面</td><td></td></tr>
+<tr><td>来财潮汕大排档</td><td>店名小店语义</td><td>4.6</td><td>88.00</td><td>长征路与明晶巷交叉口北40米</td><td></td></tr>
+<tr><td>超级大排档</td><td>店名小店语义</td><td>4.6</td><td>63.00</td><td>柿铺东村十组</td><td></td></tr>
+<tr><td>金元小川小馆 重庆江湖菜</td><td>店名小店语义</td><td>4.6</td><td>35.00</td><td>人民路31号供电局家属院内金元小川小馆重庆江湖菜</td><td></td></tr>
+<tr><td>朴小馆两湖家常菜</td><td>店名小店语义</td><td>4.5</td><td>66.00</td><td>汉江路60号</td><td></td></tr>
+<tr><td>欢喜山野小馆</td><td>店名小店语义</td><td>4.5</td><td>79.00</td><td>虎头山冲路</td><td></td></tr>
+<tr><td>王和李海鲜火锅大排档(襄阳高新万达店)</td><td>店名小店语义</td><td>4.5</td><td>88.00</td><td>长虹北路9号襄阳高新万达广场4F层</td><td></td></tr>
+<tr><td>川妹子干锅大排档(襄大店)</td><td>店名小店语义</td><td>4.5</td><td>30.00</td><td>新建街襄大商业广场E区侧边正门</td><td></td></tr>
+<tr><td>曾记宜城烟火大排档</td><td>店名小店语义</td><td>4.5</td><td>39.00</td><td>桃园路桃园公园门面房22-24号(旺前鞋业对面)</td><td></td></tr>
+<tr><td>三里屯烧烤大排档(东津世纪城7区两江汇店)</td><td>店名小店语义</td><td>4.5</td><td>63.00</td><td>东津新区(经开区)东津世纪城7区22幢1层108室</td><td></td></tr>
+<tr><td>李二鲜私房菜</td><td>店名小店语义</td><td>4.4</td><td>58.00</td><td>石花镇北大街李二鲜私房菜</td><td></td></tr>
+<tr><td>农家小院枣南菜馆</td><td>店名小店语义</td><td>4.4</td><td>35.00</td><td>驾驶人考试中心西门旁</td><td></td></tr>
+<tr><td>光头大排档(襄轴花园店)</td><td>店名小店语义</td><td>4.4</td><td>41.00</td><td>轴承二路22号</td><td></td></tr>
+<tr><td>王和李·海鲜火锅大排档(东津民发店)</td><td>店名小店语义</td><td>4.4</td><td>79.00</td><td>金源路22号民发世纪广场4层(佰人王旁边)</td><td></td></tr>
+<tr><td>食神萍聚大排档(风华路一店)</td><td>店名小店语义</td><td>4.4</td><td>41.00</td><td>风华路与谷山路交叉口东北80米</td><td></td></tr>
+<tr><td>刘阳大排档</td><td>店名小店语义</td><td>4.3</td><td>36.00</td><td>城关镇筑银路14号</td><td></td></tr>
+<tr><td>刚子烧烤大排档</td><td>店名小店语义</td><td>4.3</td><td>102.00</td><td>刘猴镇北街716-717号</td><td></td></tr>
+<tr><td>月夜城大排档(汉江新城1区店)</td><td>店名小店语义</td><td>4.2</td><td>68.00</td><td>牌坊街1-40号</td><td></td></tr>
+<tr><td>红军农家饭店</td><td>店名小店语义</td><td>4.2</td><td>24.00</td><td>白龙大道与303省道交叉口西50米</td><td></td></tr>
+<tr><td>农家老煎饼土稀饭店</td><td>店名小店语义</td><td>4.2</td><td>7.00</td><td>昭明街道宜宾路14-28</td><td></td></tr>
+<tr><td>南街大排档(卧龙店)</td><td>店名小店语义</td><td>4.2</td><td>59.00</td><td>卧龙镇南街路口</td><td></td></tr>
+<tr><td>美洋洋家常菜(化工北院家属区店)</td><td>店名小店语义</td><td>4.1</td><td>38.00</td><td>人民西路11-6号附近</td><td></td></tr>
+<tr><td>张俊农家饭庄</td><td>店名小店语义</td><td>4.1</td><td>—</td><td>吉鑫源加油点东侧220米</td><td></td></tr>
+<tr><td>路记襄阳味道农家菜(古城墙店)</td><td>店名小店语义</td><td>4.1</td><td>39.00</td><td>内环路308号</td><td></td></tr>
+<tr><td>辣不怂·川菜大排档(襄阳航空路民发店)</td><td>店名小店语义</td><td>4.0</td><td>32.00</td><td>航空路10号民发广场负一层HKB020-023号</td><td></td></tr>
+<tr><td>辣不怂·川菜大排档(襄阳吾悦店)</td><td>店名小店语义</td><td>3.9</td><td>36.00</td><td>长虹北路77号吾悦广场4楼4007,4008号商铺</td><td></td></tr>
+<tr><td>胖哥夜市小龙虾·烧烤·家常菜</td><td>店名小店语义</td><td>3.9</td><td>61.00</td><td>航空路与西湾路交叉口南120米</td><td></td></tr>
+<tr><td>小勇夜市大排档(上海路商业步行街)</td><td>店名小店语义</td><td>3.9</td><td>24.00</td><td>前进路83号四季大排档</td><td></td></tr>
+<tr><td>夜市大排档</td><td>店名小店语义</td><td>3.9</td><td>—</td><td>康乐路与银城大道交叉口西南60米</td><td></td></tr>
+<tr><td>杨家大院农家乐(洪山路店)</td><td>店名小店语义</td><td>3.8</td><td>50.00</td><td>洪山路141号</td><td></td></tr>
+<tr><td>黄康农家乐</td><td>店名小店语义</td><td>3.7</td><td>54.00</td><td>启蒙幼儿园东南</td><td></td></tr>
+<tr><td>定中街大排档</td><td>店名小店语义</td><td>3.7</td><td>—</td><td>昭明街道建锦路11号</td><td></td></tr>
+<tr><td>涌泉农家乐</td><td>店名小店语义</td><td>3.3</td><td>50.00</td><td>305省道附近</td><td>评分 3.3 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（41 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>襄阳白菜·襄阳特产·房县黄酒(人民路总店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.5</td><td>人民西路57号御江苑</td></tr>
+<tr><td>✅B</td><td>山药小镇</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>卧龙镇谭庄路168号</td></tr>
+<tr><td>✅B</td><td>刘记老字号红糖饼</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.4</td><td>泰安路泰安粮贸3号创富鑫城市场部门面</td></tr>
+<tr><td>✅B</td><td>襄阳市土特产专卖店</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.4</td><td>前进路247号(南方家俱广场对面)</td></tr>
+<tr><td>✅B</td><td>墨回首·襄阳特产·房县黄酒</td><td>购物服务;专卖店;土特产专卖店</td><td>4.3</td><td>七里河街道中清路56号中清小区对面</td></tr>
+<tr><td>⚠️</td><td>湖北楚味斋·襄阳特产·土特产礼品店</td><td>购物服务;专卖店;土特产专卖店</td><td>4.1</td><td>汉江路55号汉江商务酒店一楼门面房</td></tr>
+<tr><td>⚠️</td><td>卧龙锅巴(北街管家巷店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>古城街道昭明台社区管家巷B3-1</td></tr>
+<tr><td>⚠️</td><td>捞欠襄阳特产伴手礼</td><td>购物服务;专卖店;专营店</td><td>4.0</td><td>中铁十一局中清小区东南门旁</td></tr>
+<tr><td>⚠️</td><td>楚襄情特产礼品超市(荆州街店)</td><td>购物服务;专卖店;土特产专卖店</td><td>4.0</td><td>荆州街宜宾路11号(川惠大酒店西侧)</td></tr>
+<tr><td>⚠️</td><td>溢品轩(乔营小区店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.0</td><td>乔营小区南门旁</td></tr>
+<tr><td>⚠️</td><td>皇凉坡土鸡蛋(七里河店)</td><td>购物服务;综合市场;农副产品市场</td><td>4.0</td><td>七里河路8号1幢1-2层117室</td></tr>
+<tr><td>⚠️</td><td>秦姐茶叶.襄阳特产</td><td>购物服务;专卖店;土特产专卖店</td><td>4.0</td><td>高新区团山镇台子湾路40号</td></tr>
+<tr><td>⚠️</td><td>李方忠直营总店</td><td>购物服务;专卖店;土特产专卖店｜公司企业;公司;公司</td><td>3.9</td><td>襄沙大道(铁湖十三队207国道路东第二家)</td></tr>
+<tr><td>⚠️</td><td>襄也茶庄谷城特产</td><td>购物服务;专卖店;专营店</td><td>3.9</td><td>城内北街襄也茶庄</td></tr>
+<tr><td>⚠️</td><td>湖北省襄阳市襄城区古城街道北街141号山物.原山造物</td><td>风景名胜;风景名胜相关;旅游景点</td><td>3.8</td><td>古城街道北街东巷襄阳古城</td></tr>
+<tr><td>⚠️</td><td>山农妹</td><td>购物服务;专卖店;烟酒专卖店</td><td>3.8</td><td>银城大道108号</td></tr>
+<tr><td>⚠️</td><td>襄阳黄酒·湖北特产店</td><td>购物服务;专卖店;烟酒专卖店</td><td>3.8</td><td>古城街道1幢64号-3-4</td></tr>
+<tr><td>⚠️</td><td>襄阳特产超市</td><td>购物服务;超级市场;超市</td><td>3.8</td><td>春园西路9-14号</td></tr>
+<tr><td>⚠️</td><td>梁坡朱家酒曲</td><td>购物服务;专卖店;烟酒专卖店</td><td>3.8</td><td>人民西路423号</td></tr>
+<tr><td>⚠️</td><td>山沟沟土特产(碧桂园利达·天玺店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.8</td><td>中兴大道碧桂园一期</td></tr>
+<tr><td>⚠️</td><td>襄婷特产超市</td><td>购物服务;专卖店;专营店</td><td>3.8</td><td>红阳家私附近襄婷特产超市</td></tr>
+<tr><td>⚠️</td><td>土特产茶庄</td><td>购物服务;专卖店;土特产专卖店</td><td>3.8</td><td>荆州街122号</td></tr>
+<tr><td>⚠️</td><td>襄阳故里特产超市(风神大厦店)</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.7</td><td>前进路65号火车站旁风神大厦6层</td></tr>
+<tr><td>⚠️</td><td>伊伊烟酒茶土特产礼品超市(民发半山逸品店)</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>胜利街208号民发半山逸品</td></tr>
+<tr><td>⚠️</td><td>襄阳土特产超市</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>航空路124号-23红绿灯路口</td></tr>
+<tr><td>⚠️</td><td>保康绿茶·土特产超市</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>运动场路34-1号</td></tr>
+<tr><td>⚠️</td><td>新疆天润乳业旗舰店(人民路)</td><td>购物服务;综合市场;农副产品市场｜公司企业;公司企业;公司企业</td><td>3.7</td><td>人民路79-5号</td></tr>
+<tr><td>⚠️</td><td>益香缘调料商行(新合作店)</td><td>购物服务;购物相关场所;购物相关场所｜生活服务;生活服务场所;生活服务场所</td><td>3.7</td><td>樊西新合作食品城30栋6-9号</td></tr>
+<tr><td>⚠️</td><td>土特产超市</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.6</td><td>建设路与人民路交叉口东南40米</td></tr>
+<tr><td>⚠️</td><td>老襄阳黄酒特产批发(鼓楼店)</td><td>购物服务;专卖店;专营店</td><td>3.6</td><td>鼓楼巷7号</td></tr>
+<tr><td>⚠️</td><td>小闫土特产(商业街店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.6</td><td>文笔峰路151号农业发展银行旁边</td></tr>
+<tr><td>⚠️</td><td>南漳二姐土特产(皇室名著东门口店)</td><td>购物服务;专卖店;专营店</td><td>3.5</td><td>城关镇皇室名著东大门口9-101号商铺</td></tr>
+<tr><td>⚠️</td><td>大金牛特产坚果(长安市场店)</td><td>购物服务;专卖店;土特产专卖店｜生活服务;生活服务场所;生活服务场所</td><td>3.5</td><td>张湾街办金富士路365号大金牛坚果店</td></tr>
+<tr><td>⚠️</td><td>鱼米之乡特产馆</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.5</td><td>紫阳观南路1-9号</td></tr>
+<tr><td>⚠️</td><td>财源土特产</td><td>购物服务;专卖店;专营店</td><td>3.5</td><td>南天商务宾馆(玉印路北)</td></tr>
+<tr><td>❌</td><td>庙岗副食百货</td><td>购物服务;超级市场;超市｜购物服务;便民商店/便利店;便民商店/便利店</td><td>3.4</td><td>茨河镇庙岗村路口46号</td></tr>
+<tr><td>❌</td><td>襄阳黄酒饮品店</td><td>购物服务;专卖店;烟酒专卖店</td><td>3.3</td><td>七里河街道中清路五洲医院北侧B20</td></tr>
+<tr><td>❌</td><td>漳城榔铺</td><td>购物服务;专卖店;专营店</td><td>3.3</td><td>城关镇便河路18号</td></tr>
+<tr><td>❌</td><td>土特产超市</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.3</td><td>城关镇文庙路164号</td></tr>
+<tr><td>❌</td><td>甜蜜蜂哥土特产经销部</td><td>购物服务;综合市场;农副产品市场</td><td>3.2</td><td>沿堤街农贸市场东门向南100米路口处(宜城蜂哥土特产)</td></tr>
+<tr><td>❌</td><td>乐优特产超市(中原路店)</td><td>购物服务;超级市场;超市</td><td>3.1</td><td>中原路4号</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>谷男酒店(裕丰广场店)（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>谷男酒店(裕丰广场店)</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>谷城大成宾馆</td><td>距离就近</td><td>151m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>萌朵拉(裕丰·世纪广场店)</td><td>距离就近</td><td>318m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>塔比星球(裕丰世纪广场店)</td><td>距离就近</td><td>359m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>迪乐益智乐园(裕丰·世纪广场店)</td><td>距离就近</td><td>360m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>超级飞侠儿童主题乐园(星悦茂地下商场店)</td><td>距离就近</td><td>394m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>爱啤士精酿啤酒(谷城店)</td><td>距离就近</td><td>463m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>夜市大排档</td><td>距离就近</td><td>468m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>万强面条铺饺子皮湿面条(泰山路店)</td><td>距离就近</td><td>484m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>琚记教门街牛肉面(泰山路店)</td><td>距离就近</td><td>486m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>湘小二餐饮店</td><td>距离就近</td><td>560m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>风华路夜市（74 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>黄府面馆(风华路店)</td><td>距离就近</td><td>25m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>汪胖子襄阳牛肉面(华丰路店)</td><td>距离就近</td><td>32m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>蔡林记(襄阳人民路店)</td><td>距离就近</td><td>78m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>牛十三鲜货烧烤大排档(人民路店)</td><td>距离就近</td><td>106m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>奇奇乐园(泛悦Mall店)</td><td>距离就近</td><td>126m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>一朵宾馆(襄阳沃尔玛民发广场店)</td><td>距离就近</td><td>138m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>JOYMARK(襄阳泛悦mall店)</td><td>距离就近</td><td>138m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>泛悦摩尔国际电影城(泛悦Mall店)</td><td>距离就近</td><td>140m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>空境·派对KTV(襄阳泛悦店)</td><td>距离就近</td><td>140m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>钻石人间·国际娱乐</td><td>距离就近</td><td>141m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>雀发潮AI智慧KTV·台球·影吧(泛悦mall店)</td><td>距离就近</td><td>143m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>玄机阁密室(泛悦店)</td><td>距离就近</td><td>179m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>麻吉LiveHouse音乐现场</td><td>距离就近</td><td>184m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>极乐沉浸式密室逃脱(泛悦店)</td><td>距离就近</td><td>193m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>锦梦·小酒窝</td><td>距离就近</td><td>204m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>菜狗电玩PS5·PS4·Switch(悦立方店)</td><td>距离就近</td><td>212m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>电竞蜂网咖(城市印象店)</td><td>距离就近</td><td>214m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光屋电玩(悦立方店)</td><td>距离就近</td><td>215m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>时光屋电玩(悦立方店)</td><td>距离就近</td><td>215m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>小白电玩PS5·PS4·SWITCH·双影奇境(泛悦店)</td><td>距离就近</td><td>219m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>小白电玩PS5·PS4·SWITCH·双影奇境(泛悦店)</td><td>距离就近</td><td>219m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>GH游戏室PS5·PS4·Switch(泛悦Mall店)</td><td>距离就近</td><td>220m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>城谣纪烧烤民谣酒馆</td><td>距离就近</td><td>221m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>城谣纪烧烤民谣酒馆</td><td>距离就近</td><td>221m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>像素次元·ps4pro·ps5电玩主机游戏体验馆(泛悦店)</td><td>距离就近</td><td>229m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>悦活荟（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>襄味美食城(悦活荟店)</td><td>名称互证</td><td>93m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>长辫子湖南人家(富康大市场店)</td><td>距离就近</td><td>356m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>定中街牛肉面(华宇苑店)</td><td>距离就近</td><td>533m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>襄阳高新万达广场（32 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>塔比星球(襄阳万达广场店)</td><td>名称互证</td><td>14m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>塔比星球(襄阳万达广场店)</td><td>名称互证</td><td>14m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td><td>距离就近</td><td>20m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td><td>距离就近</td><td>20m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>万达宝贝王(襄阳乐园)</td><td>距离就近</td><td>69m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>极乐密室(万达金街店)</td><td>距离就近</td><td>79m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>王和李海鲜火锅大排档(襄阳高新万达店)</td><td>名称互证</td><td>87m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万达广场(襄阳樊城店)万达影城售票处</td><td>距离就近</td><td>93m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>万达影城(樊城店)</td><td>距离就近</td><td>98m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>Good Mini闺蜜(万达旗舰店)</td><td>名称互证</td><td>102m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>麦当劳(襄阳万达餐厅)</td><td>距离就近</td><td>111m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>52区密室逃脱(万达店)</td><td>距离就近</td><td>113m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>爽QQ鲜果茶酸辣粉(万达店)</td><td>距离就近</td><td>113m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>杭景元•东北老式麻辣烫(万达店)</td><td>距离就近</td><td>115m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>机械师沉浸密室(襄阳高新万达广场店)</td><td>名称互证</td><td>117m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>沙县小吃万达金街店</td><td>距离就近</td><td>126m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>熊猫密室·探索乐园(襄阳万达店)</td><td>距离就近</td><td>126m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>襄阳富力皇冠假日酒店大堂酒廊</td><td>距离就近</td><td>136m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>失踪者密室逃脱(万达广场襄阳店)</td><td>名称互证</td><td>148m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>天天萌宠物乐园(万达店)</td><td>距离就近</td><td>189m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>玄机阁超级密室(万达胡桃里店)</td><td>距离就近</td><td>201m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>鸿福楼(万家同乐城市广场店)</td><td>距离就近</td><td>210m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光屋电玩PS4·Switch(万达店)</td><td>距离就近</td><td>212m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>时光屋电玩PS4·Switch(万达店)</td><td>距离就近</td><td>212m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>嗨Fun漫游PS5·Switch(万达店)</td><td>距离就近</td><td>215m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(襄阳店)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>绿草地·湘菜(襄阳吾悦店)</td><td>名称互证</td><td>0m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>潮弹社(吾悦广场店)</td><td>名称互证</td><td>0m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>超级小侦探·儿童沉浸式探案馆(襄阳店)</td><td>名称互证</td><td>2m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>辣不怂·川菜大排档(襄阳吾悦店)</td><td>名称互证</td><td>30m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>卓越嘉华(吾悦店)</td><td>名称互证</td><td>32m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>乐游天下(吾悦广场店)</td><td>名称互证</td><td>56m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>FLY·电玩·魔幻屋</td><td>名称互证</td><td>64m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>FLY·电玩·魔幻屋</td><td>名称互证</td><td>64m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>小黄鸭城市乐园(襄阳吾悦广场店)</td><td>名称互证</td><td>70m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>海底捞火锅(襄阳吾悦广场店)</td><td>名称互证</td><td>72m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>多奇妙乐园(襄阳吾悦广场店)</td><td>名称互证</td><td>72m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>襄阳高新星轶STARX影城</td><td>名称互证</td><td>73m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>九州勇士百慕大冒险</td><td>名称互证</td><td>75m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>Lucky Dream电玩</td><td>距离就近</td><td>105m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>达美乐比萨(襄阳吾悦店)</td><td>名称互证</td><td>106m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>吾悦夜市(襄阳吾悦广场店)</td><td>名称互证</td><td>116m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>破局司互动娱乐</td><td>名称互证</td><td>132m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>曾记宜城烟火大排档</td><td>距离就近</td><td>506m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>襄阳古城（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>AA国际动漫(襄阳古城北街店)</td><td>名称互证</td><td>53m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>路记襄阳味道农家菜(古城墙店)</td><td>距离就近</td><td>127m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>小白电玩(北街店)</td><td>距离就近</td><td>180m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>小白电玩(北街店)</td><td>距离就近</td><td>180m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>昭明李记红糖饼(襄阳古城店)</td><td>名称互证</td><td>183m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>AIR乐私人影院·电玩(北街店)</td><td>距离就近</td><td>189m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>AIR乐私人影院·电玩(北街店)</td><td>距离就近</td><td>189m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>暗号电玩ps5·ps4·switch(鼓楼北街店)</td><td>距离就近</td><td>410m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>清心阁茶楼24小时自助棋牌室</td><td>距离就近</td><td>437m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>西河码头酒吧</td><td>距离就近</td><td>505m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>酷玩动漫(北街店)</td><td>名称互证</td><td>570m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>酷玩动漫(北街店)</td><td>名称互证</td><td>570m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>骆记馋鸭(西街店)</td><td>名称互证</td><td>813m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>文子·大宜城仔鸡(襄阳古城·北街·西门桥店)</td><td>名称互证</td><td>988m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>民发世纪广场（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>王和李·海鲜火锅大排档(东津民发店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>网鱼电竞(东津民发世纪广场店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>三道湘(东津民发世纪城广场店)</td><td>名称互证</td><td>7m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>zoolungzoolung动物主题公园(襄阳店)</td><td>名称互证</td><td>21m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>爱玩亲子运动馆</td><td>名称互证</td><td>58m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>风云游侠(东津民发世纪广场店)</td><td>名称互证</td><td>82m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>梦幻搭档弹珠派对潮玩弹珠堂</td><td>名称互证</td><td>97m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>童星汇(东津民发世纪广场店)</td><td>名称互证</td><td>116m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>嘟噜嘟噜动物主题公园(民发世纪广场店)</td><td>名称互证</td><td>119m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>电竞蜂网咖(东津民发世纪广场店)</td><td>名称互证</td><td>159m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>爱饭(襄阳绿地店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>爱饭(襄阳绿地店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>鑫铂悦(绿地店)</td><td>距离就近</td><td>32m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>A-MANI阿曼尼襄阳旗舰店</td><td>距离就近</td><td>256m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>鸭唇王·襄阳特色菜 (鼓楼店)（23 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鸭唇王·襄阳特色菜 (鼓楼店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>萤火虫动漫(襄城鼓楼店)</td><td>距离就近</td><td>71m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>萤火虫动漫(襄城鼓楼店)</td><td>距离就近</td><td>71m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>老谢家牛肉牛杂面馆</td><td>距离就近</td><td>90m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>马五黄酒馆</td><td>距离就近</td><td>145m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>酷玩动漫(北街店)</td><td>距离就近</td><td>184m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>酷玩动漫(北街店)</td><td>距离就近</td><td>184m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>蔡林记(襄阳鼓楼店)</td><td>距离就近</td><td>212m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>小马国际影城(鼓楼商场店)</td><td>距离就近</td><td>227m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>襄阳特色南漳猪油饼</td><td>距离就近</td><td>244m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麦当劳(襄阳鼓楼餐厅)</td><td>距离就近</td><td>256m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>清心阁茶楼24小时自助棋牌室</td><td>距离就近</td><td>309m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>暗号电玩ps5·ps4·switch(鼓楼北街店)</td><td>距离就近</td><td>311m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>骆记馋鸭(西街店)</td><td>距离就近</td><td>340m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>骆记馋鸭(东街店)</td><td>距离就近</td><td>471m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>曾欣欣旅店</td><td>距离就近</td><td>492m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>红瓦房(鼓楼店)</td><td>距离就近</td><td>495m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>AIR乐私人影院·电玩(北街店)</td><td>距离就近</td><td>501m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>AIR乐私人影院·电玩(北街店)</td><td>距离就近</td><td>501m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>昭明李记红糖饼(襄阳古城店)</td><td>距离就近</td><td>506m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>小白电玩(北街店)</td><td>距离就近</td><td>508m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>小白电玩(北街店)</td><td>距离就近</td><td>508m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>农家老煎饼土稀饭店</td><td>距离就近</td><td>527m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>甬上明录·老宁波海鲜大排档（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>甬上明录·老宁波海鲜大排档</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>三味真火超级大排档</td><td>距离就近</td><td>75m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>Kosmos Bar</td><td>距离就近</td><td>171m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>棋乐无穷24h自助棋牌</td><td>距离就近</td><td>346m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>开心王国亲子乐园</td><td>距离就近</td><td>379m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>KaKa卡卡</td><td>距离就近</td><td>417m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>青莲植庭·荆沙甲鱼(建设21创意园店)</td><td>距离就近</td><td>504m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>七号公路Club</td><td>距离就近</td><td>597m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>民发广场(航空路店)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>童星汇(民发广场航空路店)</td><td>名称互证</td><td>8m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>嗨凡童趣儿童乐园(民发广场店)</td><td>名称互证</td><td>12m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>风云游侠(民发广场航空路店)</td><td>名称互证</td><td>27m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>风云游侠(民发广场航空路店)</td><td>名称互证</td><td>27m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>塔比星球(航空路民发店)</td><td>名称互证</td><td>34m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>辣不怂·川菜大排档(襄阳航空路民发店)</td><td>名称互证</td><td>35m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>中影星美国际影城(民发广场店)</td><td>名称互证</td><td>115m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>胖哥夜市小龙虾·烧烤·家常菜</td><td>距离就近</td><td>146m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>趣奇岛自然乐园</td><td>距离就近</td><td>436m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>一朵宾馆(襄阳沃尔玛民发广场店)</td><td>名称互证</td><td>5577m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>童星汇(长虹路民发广场店)</td><td>名称互证</td><td>5845m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>潮弹社(民发长虹店)</td><td>名称互证</td><td>5866m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>音浪来袭AI智慧KTV(襄阳民发广场长虹路店)</td><td>名称互证</td><td>5868m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>风云游侠(长虹路民发广场店)</td><td>名称互证</td><td>5882m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>风云游侠(长虹路民发广场店)</td><td>名称互证</td><td>5882m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>网鱼电竞(襄阳民发广场长虹路店)</td><td>名称互证</td><td>5905m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>三道湘(民发广场店)</td><td>名称互证</td><td>5912m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>米村拌饭(民发广场长虹路店)</td><td>名称互证</td><td>5982m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>民发广场(长虹路店)（75 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>网鱼电竞(襄阳民发广场长虹路店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>三道湘(民发广场店)</td><td>名称互证</td><td>7m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>音浪来袭AI智慧KTV(襄阳民发广场长虹路店)</td><td>名称互证</td><td>39m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>风云游侠(长虹路民发广场店)</td><td>名称互证</td><td>49m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>风云游侠(长虹路民发广场店)</td><td>名称互证</td><td>49m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>潮弹社(民发长虹店)</td><td>名称互证</td><td>55m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>童星汇(长虹路民发广场店)</td><td>名称互证</td><td>60m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>达美乐比萨(襄阳民发店)</td><td>距离就近</td><td>68m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麦当劳(襄阳长虹路餐厅)</td><td>距离就近</td><td>69m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>米村拌饭(民发广场长虹路店)</td><td>名称互证</td><td>84m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>必胜客(襄阳民发店)</td><td>距离就近</td><td>88m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>城谣纪烧烤民谣酒馆</td><td>距离就近</td><td>118m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>城谣纪烧烤民谣酒馆</td><td>距离就近</td><td>118m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>电竞蜂网咖(城市印象店)</td><td>距离就近</td><td>120m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>歌莱美量贩式KTV(长虹路店)</td><td>距离就近</td><td>121m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>泡泡唐·花吧(长虹路店)</td><td>距离就近</td><td>127m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>聚友24小时智慧棋牌室</td><td>距离就近</td><td>136m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>中影国际影城(襄阳樊城武商店)</td><td>距离就近</td><td>136m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麻吉LiveHouse音乐现场</td><td>距离就近</td><td>146m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>玖仓国风舞酒馆(长虹甄选店)</td><td>距离就近</td><td>157m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长虹会务服务中心</td><td>距离就近</td><td>165m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>天空之城SKY CASTLE</td><td>距离就近</td><td>179m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(长虹路缤纷里店)</td><td>距离就近</td><td>188m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>钻石人间·国际娱乐</td><td>距离就近</td><td>190m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>小东邪襄阳牛肉面汉水华城店</td><td>距离就近</td><td>197m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>裕丰·世纪广场（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>塔比星球(裕丰世纪广场店)</td><td>名称互证</td><td>3m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>迪乐益智乐园(裕丰·世纪广场店)</td><td>名称互证</td><td>9m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>萌朵拉(裕丰·世纪广场店)</td><td>名称互证</td><td>43m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>谷男酒店(裕丰广场店)</td><td>距离就近</td><td>361m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>谷城大成宾馆</td><td>距离就近</td><td>366m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>超级飞侠儿童主题乐园(星悦茂地下商场店)</td><td>距离就近</td><td>453m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>夜市大排档</td><td>距离就近</td><td>467m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>刘阳大排档</td><td>距离就近</td><td>507m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>爱啤士精酿啤酒(谷城店)</td><td>距离就近</td><td>583m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>泛悦Mall（77 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>玄机阁密室(泛悦店)</td><td>距离就近</td><td>18m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>泛悦摩尔国际电影城(泛悦Mall店)</td><td>名称互证</td><td>25m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>雀发潮AI智慧KTV·台球·影吧(泛悦mall店)</td><td>距离就近</td><td>55m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>JOYMARK(襄阳泛悦mall店)</td><td>距离就近</td><td>56m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>锦梦·小酒窝</td><td>距离就近</td><td>56m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>奇奇乐园(泛悦Mall店)</td><td>名称互证</td><td>73m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>菜狗电玩PS5·PS4·Switch(悦立方店)</td><td>名称互证</td><td>74m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>空境·派对KTV(襄阳泛悦店)</td><td>距离就近</td><td>76m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>GH游戏室PS5·PS4·Switch(泛悦Mall店)</td><td>名称互证</td><td>80m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>时光屋电玩(悦立方店)</td><td>距离就近</td><td>82m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>时光屋电玩(悦立方店)</td><td>距离就近</td><td>82m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>极乐沉浸式密室逃脱(泛悦店)</td><td>距离就近</td><td>83m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>小白电玩PS5·PS4·SWITCH·双影奇境(泛悦店)</td><td>名称互证</td><td>84m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>小白电玩PS5·PS4·SWITCH·双影奇境(泛悦店)</td><td>名称互证</td><td>84m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>像素次元·ps4pro·ps5电玩主机游戏体验馆(泛悦店)</td><td>距离就近</td><td>90m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>像素次元·ps4pro·ps5电玩主机游戏体验馆(泛悦店)</td><td>距离就近</td><td>90m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>猫猫电玩</td><td>距离就近</td><td>101m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>猫猫电玩</td><td>距离就近</td><td>101m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>长虹会务服务中心</td><td>距离就近</td><td>138m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>汪胖子襄阳牛肉面(华丰路店)</td><td>距离就近</td><td>141m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>黄府面馆(风华路店)</td><td>距离就近</td><td>144m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>牛十三鲜货烧烤大排档(人民路店)</td><td>距离就近</td><td>163m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>湖北祥胜银兴娱乐管理有限公司襄阳摩尔电影城</td><td>距离就近</td><td>170m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>钻石人间·国际娱乐</td><td>距离就近</td><td>171m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>麻吉LiveHouse音乐现场</td><td>距离就近</td><td>187m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>鼓楼商场（22 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>小马国际影城(鼓楼商场店)</td><td>名称互证</td><td>32m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麦当劳(襄阳鼓楼餐厅)</td><td>距离就近</td><td>45m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>骆记馋鸭(西街店)</td><td>距离就近</td><td>129m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>襄阳特色南漳猪油饼</td><td>距离就近</td><td>132m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>萤火虫动漫(襄城鼓楼店)</td><td>距离就近</td><td>144m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>萤火虫动漫(襄城鼓楼店)</td><td>距离就近</td><td>144m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>酷玩动漫(北街店)</td><td>距离就近</td><td>203m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>酷玩动漫(北街店)</td><td>距离就近</td><td>203m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>鸭唇王·襄阳特色菜 (鼓楼店)</td><td>距离就近</td><td>214m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>蔡林记(襄阳鼓楼店)</td><td>距离就近</td><td>257m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>老谢家牛肉牛杂面馆</td><td>距离就近</td><td>281m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>清心阁茶楼24小时自助棋牌室</td><td>距离就近</td><td>337m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>红瓦房(鼓楼店)</td><td>距离就近</td><td>351m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>马五黄酒馆</td><td>距离就近</td><td>359m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>暗号电玩ps5·ps4·switch(鼓楼北街店)</td><td>距离就近</td><td>362m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>迷你宝贝宠物店</td><td>距离就近</td><td>481m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>文子·大宜城仔鸡(襄阳古城·北街·西门桥店)</td><td>距离就近</td><td>500m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>AIR乐私人影院·电玩(北街店)</td><td>距离就近</td><td>583m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>AIR乐私人影院·电玩(北街店)</td><td>距离就近</td><td>583m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>昭明李记红糖饼(襄阳古城店)</td><td>距离就近</td><td>590m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>小白电玩(北街店)</td><td>距离就近</td><td>593m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>小白电玩(北街店)</td><td>距离就近</td><td>593m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>襄阳国际商贸城（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>豪美味美食城(1店)</td><td>距离就近</td><td>194m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>樊城区中豪水上乐园场游乐场</td><td>名称互证</td><td>245m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>魔法童世界亲子乐园</td><td>名称互证</td><td>361m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美联M·PARK购物中心（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星梦园儿童游乐馆(美联M·PARK购物中心店)</td><td>名称互证</td><td>30m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>中影数字影城(美联M·PARK购物中心店)</td><td>名称互证</td><td>48m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>禧尚戏台棋牌(美联Pank店)</td><td>距离就近</td><td>142m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>Cross爵士情报屋</td><td>距离就近</td><td>367m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>宴襄阳精致湖北菜.礼宴(襄城国际商都店)</td><td>距离就近</td><td>422m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>清一舍24小时自助棋牌室(山水华府美联店)</td><td>距离就近</td><td>515m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>至味·精致湖北菜(檀溪路名仕家店)</td><td>距离就近</td><td>580m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>壹家臻品·地道襄阳菜(襄城三桥店)</td><td>距离就近</td><td>586m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>枣阳汇聚广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>极乐密室(枣阳汇聚广场店)</td><td>名称互证</td><td>5m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>巧味面馆(书院街店)</td><td>距离就近</td><td>461m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>No Cup（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>No Cup</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(樊城店)（31 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(樊城店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>万达广场(襄阳樊城店)万达影城售票处</td><td>名称互证</td><td>9m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>机械师沉浸密室(襄阳高新万达广场店)</td><td>名称互证</td><td>39m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>万达宝贝王(襄阳乐园)</td><td>距离就近</td><td>46m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>熊猫密室·探索乐园(襄阳万达店)</td><td>距离就近</td><td>49m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>塔比星球(襄阳万达广场店)</td><td>距离就近</td><td>86m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>塔比星球(襄阳万达广场店)</td><td>距离就近</td><td>86m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td><td>距离就近</td><td>99m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td><td>距离就近</td><td>99m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>玄机阁超级密室(万达胡桃里店)</td><td>距离就近</td><td>109m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>麦当劳(襄阳万达餐厅)</td><td>距离就近</td><td>110m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>鸿福楼(万家同乐城市广场店)</td><td>距离就近</td><td>113m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>王和李海鲜火锅大排档(襄阳高新万达店)</td><td>距离就近</td><td>123m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>Good Mini闺蜜(万达旗舰店)</td><td>距离就近</td><td>124m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>嗨Fun漫游PS5·Switch(万达店)</td><td>距离就近</td><td>158m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>嗨Fun漫游PS5·Switch(万达店)</td><td>距离就近</td><td>158m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>失踪者密室逃脱(万达广场襄阳店)</td><td>距离就近</td><td>164m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>时光屋电玩PS4·Switch(万达店)</td><td>距离就近</td><td>169m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>时光屋电玩PS4·Switch(万达店)</td><td>距离就近</td><td>169m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>极乐密室(万达金街店)</td><td>距离就近</td><td>176m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>襄阳富力皇冠假日酒店大堂酒廊</td><td>距离就近</td><td>199m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>爽QQ鲜果茶酸辣粉(万达店)</td><td>距离就近</td><td>202m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>52区密室逃脱(万达店)</td><td>距离就近</td><td>209m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>杭景元•东北老式麻辣烫(万达店)</td><td>距离就近</td><td>212m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>沙县小吃万达金街店</td><td>距离就近</td><td>222m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(襄阳樊城店)万达影城售票处（31 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达广场(襄阳樊城店)万达影城售票处</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>万达影城(樊城店)</td><td>名称互证</td><td>9m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>机械师沉浸密室(襄阳高新万达广场店)</td><td>名称互证</td><td>35m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>万达宝贝王(襄阳乐园)</td><td>名称互证</td><td>38m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>熊猫密室·探索乐园(襄阳万达店)</td><td>名称互证</td><td>45m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>塔比星球(襄阳万达广场店)</td><td>名称互证</td><td>81m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>塔比星球(襄阳万达广场店)</td><td>名称互证</td><td>81m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td><td>名称互证</td><td>92m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>聚玩堂动漫游戏体验中心(万达广场襄阳樊城店)</td><td>名称互证</td><td>92m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麦当劳(襄阳万达餐厅)</td><td>距离就近</td><td>101m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>Good Mini闺蜜(万达旗舰店)</td><td>名称互证</td><td>116m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>玄机阁超级密室(万达胡桃里店)</td><td>距离就近</td><td>117m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>鸿福楼(万家同乐城市广场店)</td><td>名称互证</td><td>120m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>王和李海鲜火锅大排档(襄阳高新万达店)</td><td>名称互证</td><td>124m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>嗨Fun漫游PS5·Switch(万达店)</td><td>距离就近</td><td>153m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>嗨Fun漫游PS5·Switch(万达店)</td><td>距离就近</td><td>153m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>失踪者密室逃脱(万达广场襄阳店)</td><td>名称互证</td><td>155m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>时光屋电玩PS4·Switch(万达店)</td><td>距离就近</td><td>163m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>时光屋电玩PS4·Switch(万达店)</td><td>距离就近</td><td>163m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>极乐密室(万达金街店)</td><td>距离就近</td><td>172m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>爽QQ鲜果茶酸辣粉(万达店)</td><td>距离就近</td><td>195m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>襄阳富力皇冠假日酒店大堂酒廊</td><td>距离就近</td><td>200m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>52区密室逃脱(万达店)</td><td>距离就近</td><td>204m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>杭景元•东北老式麻辣烫(万达店)</td><td>距离就近</td><td>207m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>沙县小吃万达金街店</td><td>距离就近</td><td>216m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(民发广场店)（68 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>网鱼电竞(襄阳民发广场长虹路店)</td><td>距离就近</td><td>5m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>三道湘(民发广场店)</td><td>距离就近</td><td>11m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>音浪来袭AI智慧KTV(襄阳民发广场长虹路店)</td><td>距离就近</td><td>38m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>风云游侠(长虹路民发广场店)</td><td>名称互证</td><td>51m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>风云游侠(长虹路民发广场店)</td><td>名称互证</td><td>51m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>潮弹社(民发长虹店)</td><td>距离就近</td><td>56m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>童星汇(长虹路民发广场店)</td><td>距离就近</td><td>57m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>达美乐比萨(襄阳民发店)</td><td>距离就近</td><td>64m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麦当劳(襄阳长虹路餐厅)</td><td>距离就近</td><td>72m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>米村拌饭(民发广场长虹路店)</td><td>距离就近</td><td>88m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>必胜客(襄阳民发店)</td><td>距离就近</td><td>92m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>城谣纪烧烤民谣酒馆</td><td>距离就近</td><td>118m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>城谣纪烧烤民谣酒馆</td><td>距离就近</td><td>118m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>电竞蜂网咖(城市印象店)</td><td>距离就近</td><td>120m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>歌莱美量贩式KTV(长虹路店)</td><td>名称互证</td><td>122m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>泡泡唐·花吧(长虹路店)</td><td>距离就近</td><td>129m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>聚友24小时智慧棋牌室</td><td>名称互证</td><td>139m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>中影国际影城(襄阳樊城武商店)</td><td>距离就近</td><td>140m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麻吉LiveHouse音乐现场</td><td>距离就近</td><td>145m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>长虹会务服务中心</td><td>距离就近</td><td>160m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>玖仓国风舞酒馆(长虹甄选店)</td><td>距离就近</td><td>160m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天空之城SKY CASTLE</td><td>距离就近</td><td>178m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(长虹路缤纷里店)</td><td>距离就近</td><td>187m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>钻石人间·国际娱乐</td><td>距离就近</td><td>189m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>小东邪襄阳牛肉面汉水华城店</td><td>距离就近</td><td>200m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>麦德龙(襄阳商场店)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>襄阳高新星轶STARX影城</td><td>距离就近</td><td>124m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>多奇妙乐园(襄阳吾悦广场店)</td><td>距离就近</td><td>126m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>吾悦夜市(襄阳吾悦广场店)</td><td>距离就近</td><td>131m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>海底捞火锅(襄阳吾悦广场店)</td><td>距离就近</td><td>136m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>九州勇士百慕大冒险</td><td>距离就近</td><td>147m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>辣不怂·川菜大排档(襄阳吾悦店)</td><td>距离就近</td><td>166m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>超级小侦探·儿童沉浸式探案馆(襄阳店)</td><td>距离就近</td><td>195m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>绿草地·湘菜(襄阳吾悦店)</td><td>距离就近</td><td>195m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>潮弹社(吾悦广场店)</td><td>距离就近</td><td>195m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>卓越嘉华(吾悦店)</td><td>距离就近</td><td>210m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>乐游天下(吾悦广场店)</td><td>距离就近</td><td>229m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>FLY·电玩·魔幻屋</td><td>距离就近</td><td>233m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>FLY·电玩·魔幻屋</td><td>距离就近</td><td>233m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>小黄鸭城市乐园(襄阳吾悦广场店)</td><td>距离就近</td><td>242m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>Lucky Dream电玩</td><td>距离就近</td><td>278m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>达美乐比萨(襄阳吾悦店)</td><td>距离就近</td><td>301m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>破局司互动娱乐</td><td>距离就近</td><td>323m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>曾记宜城烟火大排档</td><td>距离就近</td><td>398m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>幸福路牛肉面馆(总店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幸福路牛肉面馆(总店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>小四川美食馆(幸福路店)</td><td>距离就近</td><td>43m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>星程酒店(襄阳火车站店)</td><td>距离就近</td><td>77m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>张家牛肉面馆(幸福路店)</td><td>距离就近</td><td>87m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>宠杏里萌宠店</td><td>距离就近</td><td>155m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>宠恋里萌宠店</td><td>距离就近</td><td>162m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>歌莱美量贩式影吧KTV(三元路店)</td><td>距离就近</td><td>358m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>佰人王串串香(三元路店)</td><td>距离就近</td><td>359m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>康乐宾馆(襄阳火车站)</td><td>距离就近</td><td>381m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>襄阳一家宾馆</td><td>距离就近</td><td>419m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>极速电竞(火车站店)</td><td>距离就近</td><td>477m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>襄阳阳光宾馆</td><td>距离就近</td><td>493m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>海底捞火锅(襄阳吾悦广场店)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>海底捞火锅(襄阳吾悦广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>襄阳高新星轶STARX影城</td><td>距离就近</td><td>43m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>辣不怂·川菜大排档(襄阳吾悦店)</td><td>距离就近</td><td>45m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>多奇妙乐园(襄阳吾悦广场店)</td><td>距离就近</td><td>48m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>绿草地·湘菜(襄阳吾悦店)</td><td>距离就近</td><td>72m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>潮弹社(吾悦广场店)</td><td>距离就近</td><td>72m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>超级小侦探·儿童沉浸式探案馆(襄阳店)</td><td>距离就近</td><td>72m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>九州勇士百慕大冒险</td><td>距离就近</td><td>82m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>FLY·电玩·魔幻屋</td><td>距离就近</td><td>97m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>FLY·电玩·魔幻屋</td><td>距离就近</td><td>97m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>卓越嘉华(吾悦店)</td><td>距离就近</td><td>98m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>小黄鸭城市乐园(襄阳吾悦广场店)</td><td>距离就近</td><td>106m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>吾悦夜市(襄阳吾悦广场店)</td><td>距离就近</td><td>112m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>乐游天下(吾悦广场店)</td><td>距离就近</td><td>122m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>Lucky Dream电玩</td><td>距离就近</td><td>143m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>达美乐比萨(襄阳吾悦店)</td><td>距离就近</td><td>170m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>破局司互动娱乐</td><td>距离就近</td><td>189m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>曾记宜城烟火大排档</td><td>距离就近</td><td>439m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（34 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>谷男酒店(裕丰广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>双雄路130号</td></tr>
+<tr><td>✅A-</td><td>农发宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>马桥镇中心学校西南侧约200米</td></tr>
+<tr><td>✅A-</td><td>襄阳虹清宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>中清路6号</td></tr>
+<tr><td>✅A-</td><td>特科精品酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>城关镇粉阳路82号</td></tr>
+<tr><td>✅A-</td><td>襄阳福鑫酒楼</td><td>住宿服务;住宿服务相关;住宿服务相关｜餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>—</td><td>花梨木店村二组距离红莲菜馆北50处</td></tr>
+<tr><td>✅A-</td><td>好福记大酒店(长虹路店)</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>民发世纪新城西2门南70米</td></tr>
+<tr><td>✅A-</td><td>襄金楼宾馆(襄阳长征路华洋堂店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>长征路58号</td></tr>
+<tr><td>✅A-</td><td>蓝天商务酒店(襄阳火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>前进路48号</td></tr>
+<tr><td>✅A-</td><td>襄阳百洋大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>长征路与丹江路交叉口</td></tr>
+<tr><td>✅A-</td><td>宜城万象大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>—</td><td>鄢城街道振兴路233号</td></tr>
+<tr><td>✅A-</td><td>桃园国际酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>新华北路28号(科技馆斜对面)</td></tr>
+<tr><td>✅B</td><td>乡情小院(紫贞路店)</td><td>餐饮服务;中餐厅;中餐厅｜住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>58.00</td><td>樊城区高新区紫贞街道紫贞路</td></tr>
+<tr><td>✅B</td><td>美易美家城市酒店(襄阳火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>春园路10-2号</td></tr>
+<tr><td>✅B</td><td>汉城酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>中兴大道中国汉城文化广场南侧</td></tr>
+<tr><td>✅B</td><td>长虹会务服务中心</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>长虹会务服务中心东门旁</td></tr>
+<tr><td>✅B</td><td>汉江国际大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.4</td><td>—</td><td>建华路9号</td></tr>
+<tr><td>✅B</td><td>和美酒店(襄城店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>滨江大道66号</td></tr>
+<tr><td>✅B</td><td>襄阳e家风尚酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>建新路中带64号</td></tr>
+<tr><td>✅B</td><td>星程酒店(襄阳火车站店)</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.3</td><td>—</td><td>前进路71号</td></tr>
+<tr><td>✅B</td><td>城市便捷酒店(老河口客运站店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.3</td><td>—</td><td>大桥路65号</td></tr>
+<tr><td>✅B</td><td>南漳君洋宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>水镜路458-5号</td></tr>
+<tr><td>⚠️</td><td>襄阳阳光宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>卧龙新港2写字楼三楼310</td></tr>
+<tr><td>⚠️</td><td>嘉禾大酒店(人民路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>人民路44号</td></tr>
+<tr><td>⚠️</td><td>宜城蓝波湾温泉假日酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>自忠路126号</td></tr>
+<tr><td>⚠️</td><td>秀明酒店</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.1</td><td>—</td><td>抱玉岩路49号</td></tr>
+<tr><td>⚠️</td><td>一朵宾馆(襄阳沃尔玛民发广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>冠通上城东门附近</td></tr>
+<tr><td>⚠️</td><td>曾欣欣旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>宜宾路14号</td></tr>
+<tr><td>⚠️</td><td>城市之家快捷酒店(襄阳春园东路左岸春天店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.1</td><td>—</td><td>春园东路左岸春天门面1号</td></tr>
+<tr><td>⚠️</td><td>襄阳团北宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>团山镇团山大道156号</td></tr>
+<tr><td>⚠️</td><td>襄阳红光宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>大庆东路12号与丹江路交叉口</td></tr>
+<tr><td>⚠️</td><td>谷城大成宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>三七九道中断与腾飞路22号</td></tr>
+<tr><td>⚠️</td><td>康乐宾馆(襄阳火车站)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>前进路火车站出站口旁</td></tr>
+<tr><td>❌</td><td>兴宜大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.3</td><td>—</td><td>襄沙大道68号</td></tr>
+<tr><td>❌</td><td>襄阳一家宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>中原路2号卧龙新港3幢1层106室</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>food</td><td>类型:中餐厅</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>类型:湘菜/地方菜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:地方风味餐厅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:酒楼/火锅/海鲜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:火锅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:海鲜酒楼</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:特色美食</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:老字号</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:大排档</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:苍蝇馆</td><td>2</td><td></td></tr>
+<tr><td>food</td><td>关键词:小吃</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:本地菜</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:特产</td><td>40</td><td></td></tr>
+<tr><td>product</td><td>关键词:土特产</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:地方特产</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:步行街</td><td>10</td><td></td></tr>
+<tr><td>district</td><td>类型:特色商业街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>类型:购物中心</td><td>49</td><td></td></tr>
+<tr><td>district</td><td>类型:商场</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:美食街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:夜市</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:小吃街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:步行街</td><td>18</td><td></td></tr>
+<tr><td>district</td><td>关键词:购物中心</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:酒吧</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:酒馆</td><td>20</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:LIVEHOUSE</td><td>2</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:娱乐场所</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童乐园</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:电玩城</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:游乐场</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你游乐场</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:亲子乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:淘气堡</td><td>2</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童体验</td><td>11</td><td></td></tr>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>1</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/襄阳市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>7 个 POI 无地址</strong>，需人工补：王府面馆(总店)、三顾人家步行街、管家巷文化休闲街区、唐城唐人街、琚记教门街牛肉面(泰山路店)</li><li><input type="checkbox" disabled> <strong>1 个 POI 无评分</strong>，暂标 ⚠️：野生动物园(公交站)</li><li><input type="checkbox" disabled> 儿童游乐 164 家，其中场内 51 家、独立 113 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 9 个区县：保康县、南漳县、宜城市、枣阳市、樊城区、老河口市、襄城区、襄州区、谷城县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

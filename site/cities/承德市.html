@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>承德市 · 河北省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/河北省.html">← 返回河北省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>承德市 · 河北省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:18:18  ·  POI 总量：193（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>193</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>98%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 113 · 成人娱乐 148 · 儿童娱乐 25 · 酒店 32 · 特产 1</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>河北省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>11 个</td></tr>
+<tr><td>街道/镇/乡</td><td>219 个</td></tr>
+<tr><td>区县构成</td><td>县×4、自治县×3、市辖区×3、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>双桥区</td><td>116</td><td>60%</td></tr>
+<tr><td>围场满族蒙古族自治县</td><td>15</td><td>8%</td></tr>
+<tr><td>丰宁满族自治县</td><td>14</td><td>7%</td></tr>
+<tr><td>承德县</td><td>10</td><td>5%</td></tr>
+<tr><td>双滦区</td><td>8</td><td>4%</td></tr>
+<tr><td>平泉市</td><td>8</td><td>4%</td></tr>
+<tr><td>隆化县</td><td>7</td><td>4%</td></tr>
+<tr><td>宽城满族自治县</td><td>6</td><td>3%</td></tr>
+<tr><td>滦平县</td><td>4</td><td>2%</td></tr>
+<tr><td>兴隆县</td><td>4</td><td>2%</td></tr>
+<tr><td>鹰手营子矿区</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（113 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>42</td></tr>
+<tr><td>购物中心/综合体</td><td>27</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>百货/商场</td><td>16</td></tr>
+<tr><td>商业街</td><td>7</td></tr>
+<tr><td>奥特莱斯</td><td>2</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（113 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>金龙购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>11</td><td>2</td><td>4</td></tr>
+<tr><td>B</td><td>承德双百购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>15</td><td>1</td><td>4</td></tr>
+<tr><td>B</td><td>名都广场(马市街)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>15</td><td>1</td><td>2</td></tr>
+<tr><td>B</td><td>承德商厦</td><td>百货/商场</td><td>4.6</td><td>0</td><td>25</td><td>2</td><td>3</td></tr>
+<tr><td>B</td><td>永兴商业中心</td><td>百货/商场</td><td>4.6</td><td>0</td><td>23</td><td>1</td><td>5</td></tr>
+<tr><td>B</td><td>群众电影院(南营子大街店)</td><td>商业街</td><td>4.5</td><td>0</td><td>24</td><td>2</td><td>3</td></tr>
+<tr><td>B</td><td>宽广超市(德汇大厦店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>19</td><td>2</td><td>2</td></tr>
+<tr><td>B</td><td>宽广超市(承德双百购物广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>16</td><td>0</td><td>4</td></tr>
+<tr><td>B</td><td>德汇大厦</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>16</td><td>2</td><td>2</td></tr>
+<tr><td>B</td><td>顺凯达量贩式KTV(避暑山庄店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>12</td><td>2</td><td>4</td></tr>
+<tr><td>C</td><td>承德鸿运旅馆</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>兆吉烟酒超市</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>承德万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宜佳旺购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>仟禧龙大酒店</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>万达影城(承德双桥万达广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>美承影院IMAX(凤凰城店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宽广超市(丽水店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宽广超市(京北新城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>温州商品批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>5</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>宽广时代购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>鸿兆商城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>北雁商城(承德县店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>华晨购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>美承影院(金龙广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>9</td><td>2</td><td>4</td></tr>
+<tr><td>C</td><td>福满家超市(富顺诚店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>3</td><td>2</td><td>1</td></tr>
+<tr><td>C</td><td>宽广超市(凤凰国际店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宽广超市</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宽广超市(隆化店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宽广超市(平泉华墅庄园店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>承德市蔬菜果品批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>北雁商城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>3</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>木兰新天地</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>福满家生活广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>千润购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新天地宾馆</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>承德迷你宾馆(避暑山庄店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>8</td><td>2</td><td>4</td></tr>
+<tr><td>C</td><td>工人文化宫影院</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宽广超市(承德万达广场店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>卓艺花卉批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>金龙购物广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 4</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：都统府大街1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 2 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金龙购物广场</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>承德大剧院畅达影城、美承影院(金龙广场店)、顺凯达量贩式KTV(避暑山庄店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>承德迷你宾馆(避暑山庄店)、迷你童装(德汇大厦店)</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>承德迷你宾馆(避暑山庄店)、承德市德祥宾馆、承德馨尚主题酒店(避暑山庄店)</td></tr>
+</tbody></table></div>
+<h3>承德双百购物广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 4</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：新华路北侧1号楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 15 · 儿童娱乐 1 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>承德双百购物广场</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>麦霸量贩式KTV、唱吧麦颂KTV(承德佳佳购物店)、明月KTV(裕华路店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>鱼宠乐园</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>新华饭店(新华路店)、竹间居、芭芭啦恋屋快捷酒店(承德避暑山庄店)</td></tr>
+</tbody></table></div>
+<h3>名都广场(马市街) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：火神庙二仙居步行西街</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 15 · 儿童娱乐 1 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>名都广场(马市街)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>群众电影院(南营子大街店)、花都KTV(东兴路店)、顺凯达量贩式KTV(避暑山庄店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>迷你童装(德汇大厦店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>承德翔通宾馆、承德馨尚主题酒店(避暑山庄店)</td></tr>
+</tbody></table></div>
+<h3>承德商厦 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 27 / 酒店 3</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：南营子大街123号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 25 · 儿童娱乐 2 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>承德商厦</td></tr>
+<tr><td>成人娱乐</td><td>25</td><td>群众电影院(南营子大街店)、乐翻天游乐城、花都KTV(东兴路店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>乐翻天游乐城、迷你童装(德汇大厦店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>承德盈佳旅馆、竹间居、承德馨尚主题酒店(避暑山庄店)</td></tr>
+</tbody></table></div>
+<h3>永兴商业中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 24 / 酒店 5</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：南营子大街19号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 23 · 儿童娱乐 1 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>永兴商业中心</td></tr>
+<tr><td>成人娱乐</td><td>23</td><td>乐翻天游乐城、群众电影院(南营子大街店)、明月KTV(裕华路店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>乐翻天游乐城</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>新华饭店(新华路店)、承德盈佳旅馆、竹间居</td></tr>
+</tbody></table></div>
+<h3>群众电影院(南营子大街店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 26 / 酒店 3</li><li><strong>载体类型</strong>：商业街（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：南营子大街文化大厦B1层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 24 · 儿童娱乐 2 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>群众电影院(南营子大街店)</td></tr>
+<tr><td>成人娱乐</td><td>24</td><td>群众电影院(南营子大街店)、乐翻天游乐城、花都KTV(东兴路店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>乐翻天游乐城、迷你童装(德汇大厦店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>承德盈佳旅馆、竹间居、承德馨尚主题酒店(避暑山庄店)</td></tr>
+</tbody></table></div>
+<h3>宽广超市(德汇大厦店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 21 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：南营子大街1号德汇大厦负一层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 19 · 儿童娱乐 2 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>宽广超市(德汇大厦店)</td></tr>
+<tr><td>成人娱乐</td><td>19</td><td>群众电影院(南营子大街店)、美承影院(金龙广场店)、花都KTV(东兴路店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>承德迷你宾馆(避暑山庄店)、迷你童装(德汇大厦店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>承德迷你宾馆(避暑山庄店)、承德馨尚主题酒店(避暑山庄店)</td></tr>
+</tbody></table></div>
+<h3>宽广超市(承德双百购物广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 4</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：新华路北侧1号楼承德双百购物广场负一层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 16 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>宽广超市(承德双百购物广场店)</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>麦霸量贩式KTV、唱吧麦颂KTV(承德佳佳购物店)、明月KTV(裕华路店)</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>新华饭店(新华路店)、竹间居、芭芭啦恋屋快捷酒店(承德避暑山庄店)</td></tr>
+</tbody></table></div>
+<h3>德汇大厦 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 18 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;住宅区;住宅小区）</li><li><strong>地址</strong>：南营子大街2号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 16 · 儿童娱乐 2 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>德汇大厦</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>群众电影院(南营子大街店)、美承影院(金龙广场店)、花都KTV(东兴路店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>承德迷你宾馆(避暑山庄店)、迷你童装(德汇大厦店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>承德迷你宾馆(避暑山庄店)、承德馨尚主题酒店(避暑山庄店)</td></tr>
+</tbody></table></div>
+<h3>顺凯达量贩式KTV(避暑山庄店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 4</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：丽正门大街九号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 2 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>顺凯达量贩式KTV(避暑山庄店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>承德大剧院畅达影城、美承影院(金龙广场店)、顺凯达量贩式KTV(避暑山庄店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>承德迷你宾馆(避暑山庄店)、迷你童装(德汇大厦店)</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>承德迷你宾馆(避暑山庄店)、承德馨尚主题酒店(避暑山庄店)、承德市德祥宾馆</td></tr>
+</tbody></table></div>
+<h3>承德鸿运旅馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：西大街万成小区1号楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>承德鸿运旅馆</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>承德鸿运旅馆</td></tr>
+</tbody></table></div>
+<h3>兆吉烟酒超市 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;专卖店;烟酒专卖店）</li><li><strong>地址</strong>：铂悦山四期二号公寓第栋1层119房</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>兆吉烟酒超市</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>美承影院IMAX(凤凰城店)</td></tr>
+</tbody></table></div>
+<h3>承德万达广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：高新区金宝大厦</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>承德万达广场</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>万达影城(承德双桥万达广场店)、玩客飞行影院(承德万达店)</td></tr>
+</tbody></table></div>
+<h3>宜佳旺购物广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;商场）</li><li><strong>地址</strong>：锦绣城</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>宜佳旺购物广场</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>中影麦田影院、双子密室逃脱(宜佳旺店)</td></tr>
+</tbody></table></div>
+<h3>仟禧龙大酒店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;三星级宾馆）</li><li><strong>地址</strong>：西关大街红绿灯北(中国银行附近)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>仟禧龙大酒店</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>兴隆宠物乐园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>仟禧龙大酒店</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（148 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>19</td></tr>
+<tr><td>KTV</td><td>16</td></tr>
+<tr><td>棋牌室</td><td>16</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>13</td></tr>
+<tr><td>电影院</td><td>11</td></tr>
+<tr><td>酒吧/酒馆</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>承德大剧院畅达影城</td><td>电影院</td><td>体育休闲服务;影剧院;剧场</td><td>4.6</td><td>36.00</td><td>武烈路3号</td></tr>
+<tr><td>✅A-</td><td>万达影城(承德双桥万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院｜购物服务;购物相关场所;购物相关场所</td><td>4.6</td><td>41.00</td><td>金宝大厦A座四楼4F</td></tr>
+<tr><td>✅A-</td><td>美承影院IMAX(凤凰城店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>55.00</td><td>广场西路与冠峰路交叉口西南460米</td></tr>
+<tr><td>✅B</td><td>乐翻天游乐城</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅｜体育休闲服务;休闲场所;游乐场</td><td>4.5</td><td>71.00</td><td>酒仙庙路2号(祥业小区西门旁)</td></tr>
+<tr><td>✅B</td><td>群众电影院(南营子大街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>34.00</td><td>南营子大街文化大厦B1层</td></tr>
+<tr><td>✅B</td><td>美承影院(金龙广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>56.00</td><td>都统府大街1号金龙购物广场A座B1层北门</td></tr>
+<tr><td>✅B</td><td>时代激光影城(承德店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>44.00</td><td>承德奥体中心F口3层</td></tr>
+<tr><td>✅B</td><td>乐巢汇KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;棋牌室｜体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>70.00</td><td>福隆商业楼西北门东南80米</td></tr>
+<tr><td>✅B</td><td>麦霸量贩式KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>39.00</td><td>武烈路21号</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(承德佳佳购物店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>13.00</td><td>新华路街道东兴路19号佳佳购物二楼</td></tr>
+<tr><td>✅B</td><td>明月KTV(裕华路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>20.00</td><td>总工会旁</td></tr>
+<tr><td>✅B</td><td>花都KTV(东兴路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;棋牌室｜体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>79.00</td><td>中兴路10号</td></tr>
+<tr><td>✅B</td><td>顺凯达量贩式KTV(避暑山庄店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>187.00</td><td>丽正门大街九号</td></tr>
+<tr><td>✅B</td><td>日不落影城富华店(万达院线)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>32.00</td><td>石洞子沟日不落商街二层东侧</td></tr>
+<tr><td>✅B</td><td>工人文化宫影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>37.00</td><td>滨河大街88号(实验中学东侧)</td></tr>
+<tr><td>✅B</td><td>四个朋友双桥世纪城店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>16.00</td><td>世纪城二期车站路50-20号</td></tr>
+<tr><td>✅B</td><td>盘古实景恐怖密室(市中心广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>85.00</td><td>东方红幼儿园东门旁</td></tr>
+<tr><td>✅B</td><td>密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>54.00</td><td>佟温路乐翻天2层</td></tr>
+<tr><td>✅B</td><td>亨利KTV(名都广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;棋牌室｜体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>56.00</td><td>南营子大街名都广场6层601号</td></tr>
+<tr><td>✅B</td><td>中影麦田影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>48.00</td><td>隆基泰和国际广场A区商业701铺</td></tr>
+<tr><td>✅B</td><td>柒久八台球棋牌</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.3</td><td>—</td><td>翠桥路华城府二层</td></tr>
+<tr><td>✅B</td><td>红楼娱乐自助棋牌(五条店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>21.00</td><td>东兴路东兴商贸城18号底商</td></tr>
+<tr><td>✅B</td><td>竹间居</td><td>其他娱乐场所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>广安商场与建行大厦胡同内</td></tr>
+<tr><td>⚠️</td><td>盘古超级密室(永兴店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>72.00</td><td>永兴写字楼北门旁</td></tr>
+<tr><td>⚠️</td><td>大咖沉浸式密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.2</td><td>110.00</td><td>温家沟小区底商4-1(广安购物后门)</td></tr>
+<tr><td>⚠️</td><td>嘉和国际饭店兰烨KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>296.00</td><td>迎宾路23号嘉和国际饭店1-3层</td></tr>
+<tr><td>⚠️</td><td>唱吧麦颂KTV(金龙购物广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>55.00</td><td>都统府大街1号金龙购物广场F6层</td></tr>
+<tr><td>⚠️</td><td>嗨唱自助KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>65.00</td><td>冯营子镇凤凰山大街中诚百乐汇2楼</td></tr>
+<tr><td>⚠️</td><td>新时代影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>28.00</td><td>瑞地财富广场西南门旁</td></tr>
+<tr><td>⚠️</td><td>中影星美国际影城(承德县店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>23.00</td><td>华时悦里购物中心3层</td></tr>
+<tr><td>⚠️</td><td>欢朋自助棋牌(双桥福地店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>77.00</td><td>福地综合楼A楼3楼</td></tr>
+<tr><td>⚠️</td><td>四宝自助茶牌室</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室｜餐饮服务;茶艺馆;茶艺馆</td><td>4.2</td><td>31.00</td><td>新华路街道裕华路肃顺府商业楼310-2号</td></tr>
+<tr><td>⚠️</td><td>顺天河商务会馆(东大街店)</td><td>其他娱乐场所</td><td>生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.2</td><td>—</td><td>武烈路11号</td></tr>
+<tr><td>⚠️</td><td>四个朋友·自助棋牌(双桥永兴大厦店)</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.2</td><td>13.00</td><td>南营子大街天成永兴大厦一期1002-5</td></tr>
+<tr><td>⚠️</td><td>第9街区密室(天山桃李源店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>90.00</td><td>翠桥路20号天山桃李源F3层</td></tr>
+<tr><td>⚠️</td><td>四方朋友KTV(承德商城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>28.00</td><td>南营子大街承德商城</td></tr>
+<tr><td>⚠️</td><td>唱吧麦颂KTV(富华商贸城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>20.00</td><td>石洞子沟富华山庄二期0号楼8204商业二层北街西20号</td></tr>
+<tr><td>⚠️</td><td>达乐国际影城(车站路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>58.00</td><td>双桥区火车站路南承市之光A座304</td></tr>
+<tr><td>⚠️</td><td>乔星台球·棋牌娱乐体验馆</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.1</td><td>—</td><td>车站路31号附1号3楼(承德市中医院对面)</td></tr>
+<tr><td>⚠️</td><td>四个朋友自助棋牌(双桥露露花园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>13.00</td><td>新华里街道翠桥路南6号露露花园综合楼7层-2</td></tr>
+<tr><td>⚠️</td><td>麻团团24h智慧共享棋牌茶空间</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>28.00</td><td>新华路街道五云桥商业综合楼202号-1</td></tr>
+<tr><td>⚠️</td><td>四个朋友24共享棋牌(迎宾佳苑店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>14.00</td><td>大石庙镇迎宾佳苑公寓楼0栋</td></tr>
+<tr><td>⚠️</td><td>银桥汇国际商务汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>—</td><td>承德市双桥区武烈路101号</td></tr>
+<tr><td>⚠️</td><td>喜洋洋练歌(承德市住建局建筑市场综合楼店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>49.00</td><td>东兴路7号承德市住建局建筑市场综合楼F1层</td></tr>
+<tr><td>⚠️</td><td>月缘练歌</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>54.00</td><td>中兴路28号</td></tr>
+<tr><td>⚠️</td><td>金亨练歌</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>55.00</td><td>马市街8号西南方向190米陕西营小区</td></tr>
+<tr><td>⚠️</td><td>上影国际影城(承德悦美店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>37.00</td><td>团瓢悦美生活广场3层</td></tr>
+<tr><td>⚠️</td><td>牌友轩棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>—</td><td>承市之光C座</td></tr>
+<tr><td>⚠️</td><td>欢朋自助棋牌(双桥南营子大街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>27.00</td><td>温家沟沟口亿兆百货大楼写字课2楼</td></tr>
+<tr><td>⚠️</td><td>梦幻KTV(流水沟路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;棋牌室｜体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>276.00</td><td>流水沟路13号3f</td></tr>
+<tr><td>⚠️</td><td>百盛KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>44.00</td><td>陕西营小区9号楼底商</td></tr>
+<tr><td>⚠️</td><td>乾星KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>52.00</td><td>陕西营小区9号楼底商</td></tr>
+<tr><td>⚠️</td><td>四个朋友24H自助棋牌(世纪城府前路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.9</td><td>16.00</td><td>府前路22号</td></tr>
+<tr><td>⚠️</td><td>喜麻会棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.9</td><td>54.00</td><td>福地花园西区5号楼房北北二楼</td></tr>
+<tr><td>⚠️</td><td>四个朋友智慧共享棋牌茶空间(承德双桥福地店)</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>23.00</td><td>福地综合楼A楼三楼</td></tr>
+<tr><td>⚠️</td><td>双子密室逃脱(名都店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.8</td><td>75.00</td><td>火神庙二仙居步行西街名都广场4层</td></tr>
+<tr><td>⚠️</td><td>雀发潮24h自助棋牌(天山旺角广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.8</td><td>18.00</td><td>翠桥路水榭花都商业街南201号</td></tr>
+<tr><td>⚠️</td><td>和诡推理club·沉浸式互动剧场</td><td>酒吧/酒馆</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.7</td><td>—</td><td>新华路东兴路康乐园楼11号</td></tr>
+<tr><td>⚠️</td><td>国生练歌KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.7</td><td>45.00</td><td>翠桥路与南园路交汇处</td></tr>
+<tr><td>⚠️</td><td>飞越世界球幕悬空飞行影院(承德金龙店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.7</td><td>69.00</td><td>都统府大街25号飞越世界球幕飞行影院</td></tr>
+</tbody></table></div>
+<p>（另 16 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（25 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>14</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>10</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>乐翻天游乐城</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>酒仙庙路2号(祥业小区西门旁)</td></tr>
+<tr><td>✅B</td><td>承德迷你宾馆(避暑山庄店)</td><td>其他儿童场所</td><td>场内</td><td>4.4</td><td>金龙购物广场A座北门西120米</td></tr>
+<tr><td>⚠️</td><td>萌宠社(港湾店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>大石庙镇港湾花园S2(B段)幢117号</td></tr>
+<tr><td>⚠️</td><td>萌宠之家(康泰嘉园店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>建设北街康泰家园底商A座汉庭酒店楼下</td></tr>
+<tr><td>⚠️</td><td>清河源萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>S251(出海路)</td></tr>
+<tr><td>⚠️</td><td>文泽萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>文泽度假山庄附近</td></tr>
+<tr><td>⚠️</td><td>兴隆宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>兴开街与西横街交叉口西南240米</td></tr>
+<tr><td>⚠️</td><td>爱宠宠物寄养乐园</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>牛圈子沟镇水泉村东北沟台子下</td></tr>
+<tr><td>⚠️</td><td>森林轻语异宠动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>华墅庄园南区s32-4</td></tr>
+<tr><td>⚠️</td><td>迷你商店</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>丽景家园小区南门东北50米</td></tr>
+<tr><td>⚠️</td><td>隆承动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.6</td><td>双峰寺镇小井村大庙一组</td></tr>
+<tr><td>⚠️</td><td>动物科普游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>3.6</td><td>金山街金山公园西北</td></tr>
+<tr><td>⚠️</td><td>承德侏罗纪恐龙森林动物王国</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>平泉镇兴林街88号</td></tr>
+<tr><td>⚠️</td><td>猕猴乐园</td><td>其他儿童场所</td><td>独立</td><td>3.5</td><td>茶棚路21号</td></tr>
+<tr><td>❌</td><td>木兰围场民族文化园-动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>西北部(靠近河北省与内蒙古自治区交界处)木兰围场御道口草原森林风景区木兰围场民族文化园内</td></tr>
+<tr><td>❌</td><td>梅花鹿饲养区</td><td>其他儿童场所</td><td>独立</td><td>3.2</td><td>大滩镇神仙谷七彩森林国际旅游度假区内(东侧)</td></tr>
+<tr><td>❌</td><td>骆驼园</td><td>其他儿童场所</td><td>独立</td><td>3.1</td><td>LG8省道</td></tr>
+<tr><td>❌</td><td>鱼宠乐园</td><td>其他儿童场所</td><td>独立</td><td>3.0</td><td>桥东便民市场</td></tr>
+<tr><td>❌</td><td>云枫岭</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.8</td><td>毛毛民宿(隆承动物园店)东侧</td></tr>
+<tr><td>❌</td><td>迷你童装(德汇大厦店)</td><td>其他儿童场所</td><td>场内</td><td>2.7</td><td>德汇大厦3楼</td></tr>
+<tr><td>❌</td><td>京北草原湿地公园-动物表演</td><td>其他儿童场所</td><td>独立</td><td>2.7</td><td>S244(半虎线)京北草原湿地公园内</td></tr>
+<tr><td>❌</td><td>迷</td><td>其他儿童场所</td><td>独立</td><td>2.2</td><td>新丰路街道新丰路90-10</td></tr>
+<tr><td>❌</td><td>迷你橙子</td><td>其他儿童场所</td><td>独立</td><td>1.9</td><td>新丰路与红桥东街交叉口东20米</td></tr>
+<tr><td>⚠️</td><td>惠和园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>魁星路与南园街交叉口南120米</td></tr>
+<tr><td>⚠️</td><td>隆承动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>双峰寺镇小井村大庙一组隆承动物园</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（64 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>承德万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>高新区金宝大厦</td></tr>
+<tr><td>✅A-</td><td>金龙购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>2</td><td>0</td><td>都统府大街1号</td></tr>
+<tr><td>✅A-</td><td>承德双百购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>新华路北侧1号楼</td></tr>
+<tr><td>✅A-</td><td>名都广场(马市街)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>火神庙二仙居步行西街</td></tr>
+<tr><td>✅A-</td><td>宜佳旺购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>锦绣城</td></tr>
+<tr><td>✅A-</td><td>宽广超市(丽水店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>普乐路与普善街交叉口南180米</td></tr>
+<tr><td>✅A-</td><td>宽广超市(京北新城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新丰路街道滨河路京北新城28号楼</td></tr>
+<tr><td>✅A-</td><td>温州商品批发市场</td><td>批发城</td><td>4.6</td><td>1</td><td>0</td><td>车站路1号</td></tr>
+<tr><td>✅A-</td><td>宽广时代购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>高新区南区B-1-7地块华峰酒店B座地上商业房101铺</td></tr>
+<tr><td>✅A-</td><td>承德商厦</td><td>百货/商场</td><td>4.6</td><td>2</td><td>0</td><td>南营子大街123号</td></tr>
+<tr><td>✅A-</td><td>永兴商业中心</td><td>百货/商场</td><td>4.6</td><td>1</td><td>0</td><td>南营子大街19号</td></tr>
+<tr><td>✅A-</td><td>鸿兆商城</td><td>百货/商场</td><td>4.6</td><td>1</td><td>0</td><td>隆化镇安洲街</td></tr>
+<tr><td>✅A-</td><td>北雁商城(承德县店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>板城大街与珠源路交汇处(农行东侧)</td></tr>
+<tr><td>✅A-</td><td>华晨购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>八沟大街与兴林街交叉口</td></tr>
+<tr><td>✅B</td><td>福满家超市(富顺诚店)</td><td>购物中心/综合体</td><td>4.5</td><td>2</td><td>0</td><td>车站路东园林富顺诚小区5号楼底商</td></tr>
+<tr><td>✅B</td><td>宽广超市(凤凰国际店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>凤凰山大街与学院路交叉路口凤凰国际B1层</td></tr>
+<tr><td>✅B</td><td>宽广超市</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>东南山中街与冠峰路交叉口华峰酒店B座2层</td></tr>
+<tr><td>✅B</td><td>宽广超市(德汇大厦店)</td><td>购物中心/综合体</td><td>4.5</td><td>2</td><td>0</td><td>南营子大街1号德汇大厦负一层</td></tr>
+<tr><td>❌</td><td>宽广超市(隆化店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅B</td><td>宽广超市(承德双百购物广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>新华路北侧1号楼承德双百购物广场负一层</td></tr>
+<tr><td>✅B</td><td>宽广超市(平泉华墅庄园店)</td><td>购物中心/综合体</td><td>4.5</td><td>2</td><td>0</td><td>华创大厦1层</td></tr>
+<tr><td>✅B</td><td>承德市蔬菜果品批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>蔬菜果品批发市场(狮子园路)</td></tr>
+<tr><td>✅B</td><td>北雁商城</td><td>百货/商场</td><td>4.5</td><td>2</td><td>0</td><td>大阁镇庆丰街48号</td></tr>
+<tr><td>✅B</td><td>木兰新天地</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>围场镇木兰时代城B区商业综合体1-11号商业</td></tr>
+<tr><td>✅B</td><td>福满家生活广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>围场镇凤凰北路118号</td></tr>
+<tr><td>✅B</td><td>千润购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>隆化镇利民路与安洲街交叉口龙骧小区对面</td></tr>
+<tr><td>✅B</td><td>卓艺花卉批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>畅远东路与滨河路交叉口东南200米</td></tr>
+<tr><td>✅B</td><td>万荣商业广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>迎宾路</td></tr>
+<tr><td>✅B</td><td>物恋便利</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>大滩镇大滩村海流图大街52号</td></tr>
+<tr><td>✅B</td><td>平泉三联农副产品批发市场</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>平泉镇</td></tr>
+<tr><td>✅B</td><td>金龙购物广场B座</td><td>购物中心/综合体</td><td>4.3</td><td>2</td><td>0</td><td>都统府大街23号</td></tr>
+<tr><td>⚠️</td><td>唱吧麦颂KTV(金龙购物广场店)</td><td>购物中心/综合体</td><td>4.2</td><td>2</td><td>0</td><td>都统府大街1号金龙购物广场F6层</td></tr>
+<tr><td>⚠️</td><td>围场百货商场(妇幼保健院东南)</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>木兰中路与通祥街交叉口北200米</td></tr>
+<tr><td>⚠️</td><td>宽广超市(承德市民族中学安定里校区店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>西大街路64号</td></tr>
+<tr><td>⚠️</td><td>平泉市榆树林子蔬菜果品批发市场</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>兴榆线与天山线交叉口东南220米</td></tr>
+<tr><td>⚠️</td><td>四方朋友KTV(承德商城店)</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>南营子大街承德商城</td></tr>
+<tr><td>⚠️</td><td>唱吧麦颂KTV(富华商贸城店)</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>石洞子沟富华山庄二期0号楼8204商业二层北街西20号</td></tr>
+<tr><td>⚠️</td><td>玉兴百货大楼</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>京鹰超市(中医院西南)</td></tr>
+<tr><td>⚠️</td><td>新一百百货大楼</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>南营子大街30-8号</td></tr>
+<tr><td>⚠️</td><td>火狐狸服装批发城(兴洲商厦店)</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>存瑞小学旁</td></tr>
+<tr><td>⚠️</td><td>围场农副产品批发市场</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>111国道北50米</td></tr>
+<tr><td>⚠️</td><td>一百购物中心(新一百百货大楼店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>南营子大街30-8号新一百百货大楼</td></tr>
+<tr><td>⚠️</td><td>鑫宏泰百货</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>大阁镇庆丰街97号</td></tr>
+<tr><td>⚠️</td><td>万泽农贸批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>滦平兴顺通机动车检测有限公司北侧150米</td></tr>
+<tr><td>⚠️</td><td>隆基泰和广场</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>锦绣大街与康平路交叉口西300米</td></tr>
+<tr><td>⚠️</td><td>战云台球俱乐部(尚都奥特莱斯购物中心店)</td><td>购物中心/综合体</td><td>3.9</td><td>0</td><td>0</td><td>尚都奥特莱斯一楼</td></tr>
+<tr><td>⚠️</td><td>火狐狸服装批发城(木兰中路店)</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>围场镇木兰中路远大2楼</td></tr>
+<tr><td>⚠️</td><td>万和隆购物城</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>安州北街2号</td></tr>
+<tr><td>⚠️</td><td>利民海鲜批发零售超市(新华路店)</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>佳佳购物西门旁</td></tr>
+<tr><td>⚠️</td><td>佟温水产批发</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>祥业小区西1门西北50米</td></tr>
+</tbody></table></div>
+<p>（另 14 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（1 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>老张干果土特产批发零售店(五云桥综合楼店)</td><td>购物服务;综合市场;果品市场</td><td>3.5</td><td>新华路街道肃顺府路南侧五云桥市场1楼C14-C16号摊位</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>承德鸿运旅馆（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>承德鸿运旅馆</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>兆吉烟酒超市（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美承影院IMAX(凤凰城店)</td><td>距离就近</td><td>353m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>承德万达广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>玩客飞行影院(承德万达店)</td><td>距离就近</td><td>9m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>万达影城(承德双桥万达广场店)</td><td>距离就近</td><td>10m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金龙购物广场（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>飞越世界球幕悬空飞行影院(承德金龙店)</td><td>距离就近</td><td>44m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(金龙购物广场店)</td><td>名称互证</td><td>83m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>美承影院(金龙广场店)</td><td>名称互证</td><td>104m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>承德大剧院畅达影城</td><td>距离就近</td><td>146m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>承德迷你宾馆(避暑山庄店)</td><td>名称互证</td><td>154m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>承德迷你宾馆(避暑山庄店)</td><td>名称互证</td><td>154m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>顺天河商务会馆(东大街店)</td><td>距离就近</td><td>182m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>顺天河宾馆(避暑山庄店)</td><td>距离就近</td><td>214m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>顺凯达量贩式KTV(避暑山庄店)</td><td>距离就近</td><td>305m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>承德市德祥宾馆</td><td>距离就近</td><td>318m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>花都KTV(东兴路店)</td><td>距离就近</td><td>499m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>承德馨尚主题酒店(避暑山庄店)</td><td>距离就近</td><td>516m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>梦幻KTV(流水沟路店)</td><td>距离就近</td><td>517m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>迷你童装(德汇大厦店)</td><td>距离就近</td><td>563m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>月缘练歌</td><td>距离就近</td><td>575m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>喜洋洋练歌(承德市住建局建筑市场综合楼店)</td><td>距离就近</td><td>585m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>盘古实景恐怖密室(市中心广场店)</td><td>距离就近</td><td>589m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>承德双百购物广场（20 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>日不落影城</td><td>距离就近</td><td>109m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>麻团团24h智慧共享棋牌茶空间</td><td>距离就近</td><td>159m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>赢佳自助棋牌室</td><td>距离就近</td><td>163m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>麦霸量贩式KTV</td><td>距离就近</td><td>167m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(承德佳佳购物店)</td><td>距离就近</td><td>275m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>芭芭啦恋屋快捷酒店(承德避暑山庄店)</td><td>距离就近</td><td>275m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>新华饭店(新华路店)</td><td>距离就近</td><td>281m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四宝自助茶牌室</td><td>距离就近</td><td>316m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>明月KTV(裕华路店)</td><td>距离就近</td><td>318m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(双桥永兴大厦店)</td><td>距离就近</td><td>383m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>盘古超级密室(永兴店)</td><td>距离就近</td><td>391m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>红楼娱乐自助棋牌(五条店)</td><td>距离就近</td><td>448m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>竹间居</td><td>距离就近</td><td>453m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>竹间居</td><td>距离就近</td><td>453m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>柒久八台球棋牌</td><td>距离就近</td><td>458m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>时尚睡吧快捷宾馆(避暑山庄店)</td><td>距离就近</td><td>480m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>欢朋自助棋牌(双桥南营子大街店)</td><td>距离就近</td><td>480m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>大咖沉浸式密室逃脱</td><td>距离就近</td><td>481m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四方朋友KTV(承德商城店)</td><td>距离就近</td><td>556m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>鱼宠乐园</td><td>距离就近</td><td>596m</td><td>3.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>名都广场(马市街)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>亨利KTV(名都广场店)</td><td>名称互证</td><td>10m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>双子密室逃脱(名都店)</td><td>名称互证</td><td>13m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>迷你童装(德汇大厦店)</td><td>距离就近</td><td>122m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>乾星KTV</td><td>距离就近</td><td>154m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>金亨练歌</td><td>距离就近</td><td>163m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>百盛KTV</td><td>距离就近</td><td>184m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>梦幻KTV(流水沟路店)</td><td>距离就近</td><td>225m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>承德馨尚主题酒店(避暑山庄店)</td><td>距离就近</td><td>269m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>花都KTV(东兴路店)</td><td>距离就近</td><td>338m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>群众电影院(南营子大街店)</td><td>距离就近</td><td>348m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>冰瞳影院俱乐部(文化大厦店)</td><td>距离就近</td><td>395m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>月缘练歌</td><td>距离就近</td><td>395m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>喜洋洋练歌(承德市住建局建筑市场综合楼店)</td><td>距离就近</td><td>424m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>顺凯达量贩式KTV(避暑山庄店)</td><td>距离就近</td><td>472m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>承德翔通宾馆</td><td>距离就近</td><td>506m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>和诡推理club·沉浸式互动剧场</td><td>距离就近</td><td>514m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>盘古实景恐怖密室(市中心广场店)</td><td>距离就近</td><td>518m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四方朋友KTV(承德商城店)</td><td>距离就近</td><td>570m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宜佳旺购物广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影麦田影院</td><td>距离就近</td><td>54m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>双子密室逃脱(宜佳旺店)</td><td>距离就近</td><td>75m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>仟禧龙大酒店（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>仟禧龙大酒店</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>兴隆宠物乐园</td><td>距离就近</td><td>218m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(承德双桥万达广场店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(承德双桥万达广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>玩客飞行影院(承德万达店)</td><td>距离就近</td><td>5m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美承影院IMAX(凤凰城店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美承影院IMAX(凤凰城店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>温州商品批发市场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鱼宠乐园</td><td>距离就近</td><td>155m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>日不落影城</td><td>距离就近</td><td>403m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>麦霸量贩式KTV</td><td>距离就近</td><td>410m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乔星台球·棋牌娱乐体验馆</td><td>距离就近</td><td>543m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>赢佳自助棋牌室</td><td>距离就近</td><td>584m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>麻团团24h智慧共享棋牌茶空间</td><td>距离就近</td><td>586m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宽广时代购物广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美承影院IMAX(凤凰城店)</td><td>距离就近</td><td>565m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>承德商厦（30 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>群众电影院(南营子大街店)</td><td>距离就近</td><td>84m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>冰瞳影院俱乐部(文化大厦店)</td><td>距离就近</td><td>131m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>月缘练歌</td><td>距离就近</td><td>187m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>梦幻KTV(流水沟路店)</td><td>距离就近</td><td>194m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>花都KTV(东兴路店)</td><td>距离就近</td><td>205m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>喜洋洋练歌(承德市住建局建筑市场综合楼店)</td><td>距离就近</td><td>208m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>双子密室逃脱(名都店)</td><td>距离就近</td><td>251m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>亨利KTV(名都广场店)</td><td>距离就近</td><td>274m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>和诡推理club·沉浸式互动剧场</td><td>距离就近</td><td>276m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>迷你童装(德汇大厦店)</td><td>距离就近</td><td>279m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>乾星KTV</td><td>距离就近</td><td>298m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>盘古实景恐怖密室(市中心广场店)</td><td>距离就近</td><td>298m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>百盛KTV</td><td>距离就近</td><td>303m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>四方朋友KTV(承德商城店)</td><td>距离就近</td><td>309m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>金亨练歌</td><td>距离就近</td><td>345m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>乐翻天游乐城</td><td>距离就近</td><td>376m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>乐翻天游乐城</td><td>距离就近</td><td>376m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>密室逃脱</td><td>距离就近</td><td>390m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>承德盈佳旅馆</td><td>距离就近</td><td>403m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>红楼娱乐自助棋牌(五条店)</td><td>距离就近</td><td>434m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>承德馨尚主题酒店(避暑山庄店)</td><td>距离就近</td><td>468m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欢朋自助棋牌(双桥南营子大街店)</td><td>距离就近</td><td>482m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>盘古超级密室(永兴店)</td><td>距离就近</td><td>513m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(双桥永兴大厦店)</td><td>距离就近</td><td>534m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四宝自助茶牌室</td><td>距离就近</td><td>566m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永兴商业中心（29 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>四个朋友·自助棋牌(双桥永兴大厦店)</td><td>距离就近</td><td>40m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>盘古超级密室(永兴店)</td><td>距离就近</td><td>64m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四宝自助茶牌室</td><td>距离就近</td><td>90m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>欢朋自助棋牌(双桥南营子大街店)</td><td>距离就近</td><td>116m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>竹间居</td><td>距离就近</td><td>122m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>竹间居</td><td>距离就近</td><td>122m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>明月KTV(裕华路店)</td><td>距离就近</td><td>138m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>大咖沉浸式密室逃脱</td><td>距离就近</td><td>139m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(承德佳佳购物店)</td><td>距离就近</td><td>188m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新华饭店(新华路店)</td><td>距离就近</td><td>238m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>密室逃脱</td><td>距离就近</td><td>255m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麻团团24h智慧共享棋牌茶空间</td><td>距离就近</td><td>263m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>乐翻天游乐城</td><td>距离就近</td><td>265m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>乐翻天游乐城</td><td>距离就近</td><td>265m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>赢佳自助棋牌室</td><td>距离就近</td><td>266m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>四方朋友KTV(承德商城店)</td><td>距离就近</td><td>276m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>红楼娱乐自助棋牌(五条店)</td><td>距离就近</td><td>295m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>承德盈佳旅馆</td><td>距离就近</td><td>307m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>柒久八台球棋牌</td><td>距离就近</td><td>356m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>芭芭啦恋屋快捷酒店(承德避暑山庄店)</td><td>距离就近</td><td>367m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>和诡推理club·沉浸式互动剧场</td><td>距离就近</td><td>383m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>时尚睡吧快捷宾馆(避暑山庄店)</td><td>距离就近</td><td>400m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>盘古实景恐怖密室(市中心广场店)</td><td>距离就近</td><td>422m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>冰瞳影院俱乐部(文化大厦店)</td><td>距离就近</td><td>440m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>麦霸量贩式KTV</td><td>距离就近</td><td>443m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>鸿兆商城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>萌宠之家(康泰嘉园店)</td><td>距离就近</td><td>545m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北雁商城(承德县店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>飞越天下全景飞行影院</td><td>名称互证</td><td>33m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>中影星美国际影城(承德县店)</td><td>距离就近</td><td>206m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>鸿雁宾馆(板城大街)</td><td>距离就近</td><td>404m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>谜路真人实景密室</td><td>名称互证</td><td>136921m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>群众电影院(南营子大街店)（29 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>群众电影院(南营子大街店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>冰瞳影院俱乐部(文化大厦店)</td><td>距离就近</td><td>47m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>月缘练歌</td><td>距离就近</td><td>166m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>喜洋洋练歌(承德市住建局建筑市场综合楼店)</td><td>距离就近</td><td>175m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>和诡推理club·沉浸式互动剧场</td><td>距离就近</td><td>217m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>花都KTV(东兴路店)</td><td>距离就近</td><td>224m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四方朋友KTV(承德商城店)</td><td>距离就近</td><td>228m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>盘古实景恐怖密室(市中心广场店)</td><td>距离就近</td><td>252m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>梦幻KTV(流水沟路店)</td><td>距离就近</td><td>254m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>乐翻天游乐城</td><td>距离就近</td><td>298m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>乐翻天游乐城</td><td>距离就近</td><td>298m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>密室逃脱</td><td>距离就近</td><td>312m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>承德盈佳旅馆</td><td>距离就近</td><td>331m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>双子密室逃脱(名都店)</td><td>距离就近</td><td>335m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>亨利KTV(名都广场店)</td><td>距离就近</td><td>358m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>迷你童装(德汇大厦店)</td><td>距离就近</td><td>359m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>红楼娱乐自助棋牌(五条店)</td><td>距离就近</td><td>367m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>乾星KTV</td><td>距离就近</td><td>370m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>百盛KTV</td><td>距离就近</td><td>371m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欢朋自助棋牌(双桥南营子大街店)</td><td>距离就近</td><td>399m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>金亨练歌</td><td>距离就近</td><td>420m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>盘古超级密室(永兴店)</td><td>距离就近</td><td>429m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(双桥永兴大厦店)</td><td>距离就近</td><td>450m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四宝自助茶牌室</td><td>距离就近</td><td>484m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>大咖沉浸式密室逃脱</td><td>距离就近</td><td>497m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美承影院(金龙广场店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美承影院(金龙广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>承德迷你宾馆(避暑山庄店)</td><td>距离就近</td><td>74m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>承德迷你宾馆(避暑山庄店)</td><td>距离就近</td><td>74m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>飞越世界球幕悬空飞行影院(承德金龙店)</td><td>距离就近</td><td>76m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(金龙购物广场店)</td><td>距离就近</td><td>183m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>承德大剧院畅达影城</td><td>距离就近</td><td>186m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>顺凯达量贩式KTV(避暑山庄店)</td><td>距离就近</td><td>268m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>顺天河商务会馆(东大街店)</td><td>距离就近</td><td>286m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>承德市德祥宾馆</td><td>距离就近</td><td>304m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>顺天河宾馆(避暑山庄店)</td><td>距离就近</td><td>316m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>承德馨尚主题酒店(避暑山庄店)</td><td>距离就近</td><td>500m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>梦幻KTV(流水沟路店)</td><td>距离就近</td><td>560m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>花都KTV(东兴路店)</td><td>距离就近</td><td>562m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>迷你童装(德汇大厦店)</td><td>距离就近</td><td>580m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>美承影院IMAX(凤凰城店)</td><td>名称互证</td><td>10454m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>福满家超市(富顺诚店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>乔星台球·棋牌娱乐体验馆</td><td>距离就近</td><td>227m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>鱼宠乐园</td><td>距离就近</td><td>344m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>承德环城宾馆(普乐南路)</td><td>距离就近</td><td>368m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>牌友轩棋牌室</td><td>距离就近</td><td>415m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>达乐国际影城(车站路店)</td><td>距离就近</td><td>468m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>惠和园</td><td>距离就近</td><td>502m</td><td>—</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宽广超市(凤凰国际店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>嗨唱自助KTV</td><td>距离就近</td><td>153m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>时代激光影城(承德店)</td><td>距离就近</td><td>555m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宽广超市（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美承影院IMAX(凤凰城店)</td><td>距离就近</td><td>565m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宽广超市(德汇大厦店)（23 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>迷你童装(德汇大厦店)</td><td>距离就近</td><td>21m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>双子密室逃脱(名都店)</td><td>距离就近</td><td>145m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>亨利KTV(名都广场店)</td><td>距离就近</td><td>145m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>梦幻KTV(流水沟路店)</td><td>距离就近</td><td>150m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>承德馨尚主题酒店(避暑山庄店)</td><td>距离就近</td><td>175m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>花都KTV(东兴路店)</td><td>距离就近</td><td>269m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乾星KTV</td><td>距离就近</td><td>296m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>金亨练歌</td><td>距离就近</td><td>303m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>百盛KTV</td><td>距离就近</td><td>324m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>顺凯达量贩式KTV(避暑山庄店)</td><td>距离就近</td><td>338m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>月缘练歌</td><td>距离就近</td><td>354m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>群众电影院(南营子大街店)</td><td>距离就近</td><td>371m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜洋洋练歌(承德市住建局建筑市场综合楼店)</td><td>距离就近</td><td>384m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>冰瞳影院俱乐部(文化大厦店)</td><td>距离就近</td><td>413m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>盘古实景恐怖密室(市中心广场店)</td><td>距离就近</td><td>470m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>和诡推理club·沉浸式互动剧场</td><td>距离就近</td><td>481m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>承德迷你宾馆(避暑山庄店)</td><td>距离就近</td><td>510m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>承德迷你宾馆(避暑山庄店)</td><td>距离就近</td><td>510m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>美承影院(金龙广场店)</td><td>距离就近</td><td>560m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四方朋友KTV(承德商城店)</td><td>距离就近</td><td>565m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>顺天河商务会馆(东大街店)</td><td>距离就近</td><td>572m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>飞越世界球幕悬空飞行影院(承德金龙店)</td><td>距离就近</td><td>575m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(金龙购物广场店)</td><td>距离就近</td><td>576m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宽广超市(承德双百购物广场店)（20 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>日不落影城</td><td>距离就近</td><td>109m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>麻团团24h智慧共享棋牌茶空间</td><td>距离就近</td><td>192m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>赢佳自助棋牌室</td><td>距离就近</td><td>198m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>麦霸量贩式KTV</td><td>距离就近</td><td>209m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>芭芭啦恋屋快捷酒店(承德避暑山庄店)</td><td>距离就近</td><td>236m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>新华饭店(新华路店)</td><td>距离就近</td><td>257m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(承德佳佳购物店)</td><td>距离就近</td><td>302m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>明月KTV(裕华路店)</td><td>距离就近</td><td>307m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四宝自助茶牌室</td><td>距离就近</td><td>331m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(双桥永兴大厦店)</td><td>距离就近</td><td>393m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>盘古超级密室(永兴店)</td><td>距离就近</td><td>403m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>柒久八台球棋牌</td><td>距离就近</td><td>428m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>时尚睡吧快捷宾馆(避暑山庄店)</td><td>距离就近</td><td>447m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>竹间居</td><td>距离就近</td><td>450m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>竹间居</td><td>距离就近</td><td>450m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>大咖沉浸式密室逃脱</td><td>距离就近</td><td>478m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>红楼娱乐自助棋牌(五条店)</td><td>距离就近</td><td>480m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>欢朋自助棋牌(双桥南营子大街店)</td><td>距离就近</td><td>487m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>四个朋友自助棋牌(双桥露露花园店)</td><td>距离就近</td><td>570m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>四方朋友KTV(承德商城店)</td><td>距离就近</td><td>580m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宽广超市(平泉华墅庄园店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>森林轻语异宠动物园</td><td>距离就近</td><td>117m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>承德侏罗纪恐龙森林动物王国</td><td>距离就近</td><td>143m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北雁商城（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>谜路真人实景密室</td><td>名称互证</td><td>112m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>真人超级密室</td><td>距离就近</td><td>113m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>迷你橙子</td><td>距离就近</td><td>402m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>迷</td><td>距离就近</td><td>422m</td><td>2.2</td><td>§11</td></tr>
+<tr><td>飞越天下全景飞行影院</td><td>名称互证</td><td>136966m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（32 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>承德环城宾馆(普乐南路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>双桥区火车站武阳小区彩虹桥旁</td></tr>
+<tr><td>✅A-</td><td>承德祥合宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>双峰寺镇安远路银和福星园小区40号楼底商</td></tr>
+<tr><td>✅A-</td><td>承德鸿运旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>西大街万成小区1号楼</td></tr>
+<tr><td>✅A-</td><td>围场中天假日酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.7</td><td>—</td><td>御道口牧场场部</td></tr>
+<tr><td>✅A-</td><td>东晨宾馆(瀑河桥路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>瀑河桥路与育才路交叉口西北60米</td></tr>
+<tr><td>✅A-</td><td>仟禧龙大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.6</td><td>—</td><td>西关大街红绿灯北(中国银行附近)</td></tr>
+<tr><td>✅B</td><td>承德盈佳旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>石洞子沟街道广电路祥业2期2号楼1单元102室</td></tr>
+<tr><td>✅B</td><td>丰宁中国马镇白马酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.5</td><td>—</td><td>中国马镇白马酒店北40米</td></tr>
+<tr><td>✅B</td><td>新华饭店(新华路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>新华路北4号</td></tr>
+<tr><td>✅B</td><td>御堡轩宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>西街火车桥西侧</td></tr>
+<tr><td>✅B</td><td>新天地宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>东大街</td></tr>
+<tr><td>✅B</td><td>承德迷你宾馆(避暑山庄店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>金龙购物广场A座北门西120米</td></tr>
+<tr><td>✅B</td><td>聚贤楼宾馆(聚贤街)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>聚贤路建设银行旁(北大街居委会)</td></tr>
+<tr><td>✅B</td><td>围场金秋御园酒店(御道口牧场草原森林风景区店)</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.3</td><td>—</td><td>御克公路附近</td></tr>
+<tr><td>✅B</td><td>竹间居</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>广安商场与建行大厦胡同内</td></tr>
+<tr><td>⚠️</td><td>金凤凰宾馆(新丰路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>新丰路202号</td></tr>
+<tr><td>⚠️</td><td>承德翔通宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>万华a区1号楼b座</td></tr>
+<tr><td>⚠️</td><td>鸿雁宾馆(板城大街)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>板城大街邮政局4楼内</td></tr>
+<tr><td>⚠️</td><td>时尚睡吧快捷宾馆(避暑山庄店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>翠桥西路2号安业大厦4层</td></tr>
+<tr><td>⚠️</td><td>芭芭啦恋屋快捷酒店(承德避暑山庄店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.0</td><td>—</td><td>翠桥路10号银星丽苑</td></tr>
+<tr><td>⚠️</td><td>承德市德祥宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>柴场胡同内兴业花园小区5-1(近避暑山庄)</td></tr>
+<tr><td>⚠️</td><td>木兰围场东方宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>围场镇木兰中路迎宾大厦5层508-509室</td></tr>
+<tr><td>⚠️</td><td>承德馨尚主题酒店(避暑山庄店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>丽正门大街火神庙新华保险旁,近避暑山庄</td></tr>
+<tr><td>⚠️</td><td>福来招待所(凤凰南路店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>凤凰南路天骄功勋冰煮羊旁</td></tr>
+<tr><td>⚠️</td><td>黄金宾馆(乐达园西南)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>老虎沟路口旅游桥东侧</td></tr>
+<tr><td>⚠️</td><td>顺天河宾馆(避暑山庄店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.8</td><td>—</td><td>武烈路1号</td></tr>
+<tr><td>⚠️</td><td>凌云度假酒店(围场塞罕坝店)</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>3.8</td><td>—</td><td>塞罕坝机械林场LFX号</td></tr>
+<tr><td>⚠️</td><td>宏江商务酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>大阁镇宁丰路215号(近长途汽车站)</td></tr>
+<tr><td>⚠️</td><td>富豪商务酒店(林业街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>围场镇木兰中路移动公司北侧</td></tr>
+<tr><td>⚠️</td><td>承德假日福隆酒店(承德火车站店)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>桥东小学北门旁</td></tr>
+<tr><td>❌</td><td>承德金巷里宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>双塔山镇元宝山大街75号(顺发·鑫顺家园2期东南门西南140米)</td></tr>
+<tr><td>❌</td><td>围场塞罕金鼎假日酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>3.2</td><td>—</td><td>塞罕坝机械林场总厂</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>12</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>7</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>6</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>8</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>16</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>3</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/承德市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>2 个 POI 无地址</strong>，需人工补：宽广超市(隆化店)、名都百货商城</li><li><input type="checkbox" disabled> <strong>4 个 POI 无评分</strong>，暂标 ⚠️：惠和园、隆承动物园售票处、蓝岛奥特莱斯停车场、蓝岛奥特莱斯停车场(出入口)</li><li><input type="checkbox" disabled> 儿童游乐 25 家，其中场内 2 家、独立 23 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 11 个区县：丰宁满族自治县、兴隆县、双桥区、双滦区、围场满族蒙古族自治县、宽城满族自治县、平泉市、承德县、滦平县、隆化县、鹰手营子矿区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

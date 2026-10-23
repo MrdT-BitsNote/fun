@@ -1,0 +1,258 @@
+{
+ "province": "福建省",
+ "stats": {
+  "cities": 9,
+  "poi": 7523,
+  "grades": {
+   "S": 6,
+   "A": 57,
+   "B": 100,
+   "C": 197
+  }
+ },
+ "cities": [
+  {
+   "city": "三明市",
+   "province": "福建省",
+   "adcode": "350400",
+   "poi": 746,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:31:37",
+   "page": "cities/350400.html",
+   "json": "api/cities/350400.json",
+   "md": "md/%E7%A6%8F%E5%BB%BA%E7%9C%81/%E4%B8%89%E6%98%8E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 10,
+    "B": 17,
+    "C": 13
+   },
+   "dims": {
+    "food": 291,
+    "district": 145,
+    "leisure": 186,
+    "kids": 30,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "南平市",
+   "province": "福建省",
+   "adcode": "350700",
+   "poi": 765,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:32:19",
+   "page": "cities/350700.html",
+   "json": "api/cities/350700.json",
+   "md": "md/%E7%A6%8F%E5%BB%BA%E7%9C%81/%E5%8D%97%E5%B9%B3%E5%B8%82.md",
+   "grades": {
+    "S": 4,
+    "A": 7,
+    "B": 10,
+    "C": 19
+   },
+   "dims": {
+    "food": 290,
+    "district": 151,
+    "leisure": 201,
+    "kids": 19,
+    "hotel": 33,
+    "product": 40
+   }
+  },
+  {
+   "city": "厦门市",
+   "province": "福建省",
+   "adcode": "350200",
+   "poi": 939,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:30:03",
+   "page": "cities/350200.html",
+   "json": "api/cities/350200.json",
+   "md": "md/%E7%A6%8F%E5%BB%BA%E7%9C%81/%E5%8E%A6%E9%97%A8%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 1,
+    "B": 7,
+    "C": 31
+   },
+   "dims": {
+    "food": 272,
+    "district": 235,
+    "leisure": 246,
+    "kids": 37,
+    "hotel": 40,
+    "product": 40
+   }
+  },
+  {
+   "city": "宁德市",
+   "province": "福建省",
+   "adcode": "350900",
+   "poi": 760,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:26:44",
+   "page": "cities/350900.html",
+   "json": "api/cities/350900.json",
+   "md": "md/%E7%A6%8F%E5%BB%BA%E7%9C%81/%E5%AE%81%E5%BE%B7%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 10,
+    "B": 11,
+    "C": 19
+   },
+   "dims": {
+    "food": 267,
+    "district": 173,
+    "leisure": 209,
+    "kids": 29,
+    "hotel": 25,
+    "product": 41
+   }
+  },
+  {
+   "city": "泉州市",
+   "province": "福建省",
+   "adcode": "350500",
+   "poi": 915,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:29:07",
+   "page": "cities/350500.html",
+   "json": "api/cities/350500.json",
+   "md": "md/%E7%A6%8F%E5%BB%BA%E7%9C%81/%E6%B3%89%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 14,
+    "C": 25
+   },
+   "dims": {
+    "food": 277,
+    "district": 225,
+    "leisure": 235,
+    "kids": 58,
+    "hotel": 29,
+    "product": 41
+   }
+  },
+  {
+   "city": "漳州市",
+   "province": "福建省",
+   "adcode": "350600",
+   "poi": 878,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:30:46",
+   "page": "cities/350600.html",
+   "json": "api/cities/350600.json",
+   "md": "md/%E7%A6%8F%E5%BB%BA%E7%9C%81/%E6%BC%B3%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 1,
+    "A": 4,
+    "B": 8,
+    "C": 27
+   },
+   "dims": {
+    "food": 306,
+    "district": 182,
+    "leisure": 221,
+    "kids": 37,
+    "hotel": 31,
+    "product": 40
+   }
+  },
+  {
+   "city": "福州市",
+   "province": "福建省",
+   "adcode": "350100",
+   "poi": 952,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:27:30",
+   "page": "cities/350100.html",
+   "json": "api/cities/350100.json",
+   "md": "md/%E7%A6%8F%E5%BB%BA%E7%9C%81/%E7%A6%8F%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 4,
+    "B": 8,
+    "C": 28
+   },
+   "dims": {
+    "food": 287,
+    "district": 234,
+    "leisure": 228,
+    "kids": 40,
+    "hotel": 33,
+    "product": 41
+   }
+  },
+  {
+   "city": "莆田市",
+   "province": "福建省",
+   "adcode": "350300",
+   "poi": 808,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:28:22",
+   "page": "cities/350300.html",
+   "json": "api/cities/350300.json",
+   "md": "md/%E7%A6%8F%E5%BB%BA%E7%9C%81/%E8%8E%86%E7%94%B0%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 10,
+    "B": 11,
+    "C": 19
+   },
+   "dims": {
+    "food": 296,
+    "district": 159,
+    "leisure": 209,
+    "kids": 30,
+    "hotel": 36,
+    "product": 40
+   }
+  },
+  {
+   "city": "龙岩市",
+   "province": "福建省",
+   "adcode": "350800",
+   "poi": 760,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:33:42",
+   "page": "cities/350800.html",
+   "json": "api/cities/350800.json",
+   "md": "md/%E7%A6%8F%E5%BB%BA%E7%9C%81/%E9%BE%99%E5%B2%A9%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 10,
+    "B": 14,
+    "C": 16
+   },
+   "dims": {
+    "food": 289,
+    "district": 134,
+    "leisure": 192,
+    "kids": 34,
+    "hotel": 31,
+    "product": 43
+   }
+  }
+ ]
+}

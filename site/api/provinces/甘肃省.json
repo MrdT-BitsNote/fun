@@ -1,0 +1,393 @@
+{
+ "province": "甘肃省",
+ "stats": {
+  "cities": 14,
+  "poi": 2230,
+  "grades": {
+   "S": 0,
+   "A": 0,
+   "B": 50,
+   "C": 506
+  }
+ },
+ "cities": [
+  {
+   "city": "临夏回族自治州",
+   "province": "甘肃省",
+   "adcode": "622900",
+   "poi": 159,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:14",
+   "page": "cities/622900.html",
+   "json": "api/cities/622900.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E4%B8%B4%E5%A4%8F%E5%9B%9E%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 3,
+    "C": 37
+   },
+   "dims": {
+    "food": 3,
+    "district": 56,
+    "leisure": 61,
+    "kids": 2,
+    "hotel": 31,
+    "product": 0
+   }
+  },
+  {
+   "city": "兰州市",
+   "province": "甘肃省",
+   "adcode": "620100",
+   "poi": 231,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:19:50",
+   "page": "cities/620100.html",
+   "json": "api/cities/620100.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E5%85%B0%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 2,
+    "C": 38
+   },
+   "dims": {
+    "food": 1,
+    "district": 61,
+    "leisure": 82,
+    "kids": 10,
+    "hotel": 32,
+    "product": 0
+   }
+  },
+  {
+   "city": "嘉峪关市",
+   "province": "甘肃省",
+   "adcode": "620200",
+   "poi": 121,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:19:36",
+   "page": "cities/620200.html",
+   "json": "api/cities/620200.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E5%98%89%E5%B3%AA%E5%85%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 2,
+    "C": 34
+   },
+   "dims": {
+    "food": 1,
+    "district": 36,
+    "leisure": 48,
+    "kids": 2,
+    "hotel": 28,
+    "product": 0
+   }
+  },
+  {
+   "city": "天水市",
+   "province": "甘肃省",
+   "adcode": "620500",
+   "poi": 169,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:31",
+   "page": "cities/620500.html",
+   "json": "api/cities/620500.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E5%A4%A9%E6%B0%B4%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 7,
+    "C": 33
+   },
+   "dims": {
+    "food": 0,
+    "district": 59,
+    "leisure": 63,
+    "kids": 6,
+    "hotel": 34,
+    "product": 0
+   }
+  },
+  {
+   "city": "定西市",
+   "province": "甘肃省",
+   "adcode": "621100",
+   "poi": 158,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:34",
+   "page": "cities/621100.html",
+   "json": "api/cities/621100.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E5%AE%9A%E8%A5%BF%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 2,
+    "C": 38
+   },
+   "dims": {
+    "food": 1,
+    "district": 60,
+    "leisure": 63,
+    "kids": 2,
+    "hotel": 25,
+    "product": 0
+   }
+  },
+  {
+   "city": "平凉市",
+   "province": "甘肃省",
+   "adcode": "620800",
+   "poi": 162,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:04",
+   "page": "cities/620800.html",
+   "json": "api/cities/620800.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E5%B9%B3%E5%87%89%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 0,
+    "C": 40
+   },
+   "dims": {
+    "food": 3,
+    "district": 54,
+    "leisure": 62,
+    "kids": 8,
+    "hotel": 28,
+    "product": 0
+   }
+  },
+  {
+   "city": "庆阳市",
+   "province": "甘肃省",
+   "adcode": "621000",
+   "poi": 151,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:01",
+   "page": "cities/621000.html",
+   "json": "api/cities/621000.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E5%BA%86%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 1,
+    "C": 39
+   },
+   "dims": {
+    "food": 0,
+    "district": 58,
+    "leisure": 62,
+    "kids": 1,
+    "hotel": 24,
+    "product": 0
+   }
+  },
+  {
+   "city": "张掖市",
+   "province": "甘肃省",
+   "adcode": "620700",
+   "poi": 151,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:20",
+   "page": "cities/620700.html",
+   "json": "api/cities/620700.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E5%BC%A0%E6%8E%96%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 11,
+    "C": 29
+   },
+   "dims": {
+    "food": 0,
+    "district": 59,
+    "leisure": 63,
+    "kids": 3,
+    "hotel": 25,
+    "product": 0
+   }
+  },
+  {
+   "city": "武威市",
+   "province": "甘肃省",
+   "adcode": "620600",
+   "poi": 171,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:07",
+   "page": "cities/620600.html",
+   "json": "api/cities/620600.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E6%AD%A6%E5%A8%81%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 10,
+    "C": 30
+   },
+   "dims": {
+    "food": 0,
+    "district": 57,
+    "leisure": 57,
+    "kids": 0,
+    "hotel": 24,
+    "product": 0
+   }
+  },
+  {
+   "city": "甘南藏族自治州",
+   "province": "甘肃省",
+   "adcode": "623000",
+   "poi": 144,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:21:47",
+   "page": "cities/623000.html",
+   "json": "api/cities/623000.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E7%94%98%E5%8D%97%E8%97%8F%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 3,
+    "C": 37
+   },
+   "dims": {
+    "food": 5,
+    "district": 45,
+    "leisure": 51,
+    "kids": 1,
+    "hotel": 38,
+    "product": 0
+   }
+  },
+  {
+   "city": "白银市",
+   "province": "甘肃省",
+   "adcode": "620400",
+   "poi": 147,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:53",
+   "page": "cities/620400.html",
+   "json": "api/cities/620400.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E7%99%BD%E9%93%B6%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 1,
+    "C": 39
+   },
+   "dims": {
+    "food": 0,
+    "district": 55,
+    "leisure": 55,
+    "kids": 0,
+    "hotel": 27,
+    "product": 0
+   }
+  },
+  {
+   "city": "酒泉市",
+   "province": "甘肃省",
+   "adcode": "620900",
+   "poi": 173,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:19:23",
+   "page": "cities/620900.html",
+   "json": "api/cities/620900.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E9%85%92%E6%B3%89%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 7,
+    "C": 33
+   },
+   "dims": {
+    "food": 0,
+    "district": 54,
+    "leisure": 63,
+    "kids": 5,
+    "hotel": 32,
+    "product": 0
+   }
+  },
+  {
+   "city": "金昌市",
+   "province": "甘肃省",
+   "adcode": "620300",
+   "poi": 137,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:20:17",
+   "page": "cities/620300.html",
+   "json": "api/cities/620300.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E9%87%91%E6%98%8C%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 0,
+    "C": 40
+   },
+   "dims": {
+    "food": 1,
+    "district": 47,
+    "leisure": 52,
+    "kids": 1,
+    "hotel": 32,
+    "product": 0
+   }
+  },
+  {
+   "city": "陇南市",
+   "province": "甘肃省",
+   "adcode": "621200",
+   "poi": 156,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:22:36",
+   "page": "cities/621200.html",
+   "json": "api/cities/621200.json",
+   "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E9%99%87%E5%8D%97%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 0,
+    "B": 1,
+    "C": 39
+   },
+   "dims": {
+    "food": 1,
+    "district": 60,
+    "leisure": 60,
+    "kids": 2,
+    "hotel": 26,
+    "product": 0
+   }
+  }
+ ]
+}

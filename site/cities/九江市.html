@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>九江市 · 江西省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/江西省.html">← 返回江西省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>九江市 · 江西省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:49:12  ·  POI 总量：188（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>188</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 2 · 商圈 102 · 成人娱乐 137 · 儿童娱乐 23 · 酒店 29 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>江西省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>13 个</td></tr>
+<tr><td>街道/镇/乡</td><td>218 个</td></tr>
+<tr><td>区县构成</td><td>县×7、市辖区×3、县级市×3</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>浔阳区</td><td>80</td><td>43%</td></tr>
+<tr><td>濂溪区</td><td>49</td><td>26%</td></tr>
+<tr><td>修水县</td><td>10</td><td>5%</td></tr>
+<tr><td>永修县</td><td>10</td><td>5%</td></tr>
+<tr><td>柴桑区</td><td>10</td><td>5%</td></tr>
+<tr><td>瑞昌市</td><td>7</td><td>4%</td></tr>
+<tr><td>共青城市</td><td>6</td><td>3%</td></tr>
+<tr><td>庐山市</td><td>4</td><td>2%</td></tr>
+<tr><td>彭泽县</td><td>4</td><td>2%</td></tr>
+<tr><td>德安县</td><td>2</td><td>1%</td></tr>
+<tr><td>湖口县</td><td>2</td><td>1%</td></tr>
+<tr><td>都昌县</td><td>2</td><td>1%</td></tr>
+<tr><td>武宁县</td><td>2</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（102 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>33</td></tr>
+<tr><td>购物中心/综合体</td><td>31</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>百货/商场</td><td>9</td></tr>
+<tr><td>商业街</td><td>9</td></tr>
+<tr><td>步行街</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（102 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>九江·联盛快乐城</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>11</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>招商花园城</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>7</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>麦德龙(九江商场)</td><td>百货/商场</td><td>4.6</td><td>1</td><td>7</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>万达影城(九江十里万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>8</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万达影城(万达广场九江濂溪店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(九江十里店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>7</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万达广场(九江濂溪店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>共青城学府广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>铜锣湾广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>大泽泰时代广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>联盛·九龙广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>铜锣湾·SIONE新湾天地</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>联盛广场(修水店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>广寒宫K歌沐足</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>9</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>K歌之王</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>天幕影城(八里湖IM乐盈广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>四坊桌·24h自助棋牌(十里人民大厦店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>大中大</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>大润发(九江店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>雅斯·联盛超市(瑞昌店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>大润发(浔南店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>柴桑好又多店</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>美宜佳(浔南名邸店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>联盛奥特莱斯</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>天虹商场(共青店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>景程·新天地购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>乐盈广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>欢乐海岸购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>联盛武宁快乐城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>联盛购物广场东区</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>云水间K歌·沐足</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>星光派对自助KTV(十里老街店)</td><td>商业街</td><td>4.5</td><td>0</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>水都名园汤泉·K歌·沐足·SPA(昌平大厦店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>7</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>九江濂溪区万达影城</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中影玖龍影城(九龙广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>唛迪森时代影城(信华城市广场5号楼店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>中影庐山国际影城(沙河店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>瑞昌市电影院</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华纳兄弟影城(大润发店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>叶波大润发(立信城市广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>九江·联盛快乐城 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：京九路9号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>九江·联盛快乐城</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>广寒宫K歌沐足、水都名园汤泉·K歌·沐足·SPA(昌平大厦店)、星光之夜·K歌·沐足</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>噜哩派萌宠乐园(九江·联盛快乐城店)</td></tr>
+</tbody></table></div>
+<h3>招商花园城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：长虹西大道101号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥13（区间 ¥13–13）</li><li><strong>动线主轴</strong>：九方商业街</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 7 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>招商花园城</td></tr>
+<tr><td>美食</td><td>1</td><td>四个朋友·九方商业街店</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>四个朋友·自助棋牌(中航城店)、星聚会KTV(招商花园城店)、中发白24h无人自助麻将馆</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>满分萌宠·24h自助洗宠站(招商花园城店)</td></tr>
+</tbody></table></div>
+<h3>麦德龙(九江商场) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;超级市场;麦德龙｜购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：长虹西大道101号九江招商花园城B1层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥13（区间 ¥13–13）</li><li><strong>动线主轴</strong>：九方商业街</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 7 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>麦德龙(九江商场)</td></tr>
+<tr><td>美食</td><td>1</td><td>四个朋友·九方商业街店</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>四个朋友·自助棋牌(中航城店)、星聚会KTV(招商花园城店)、中发白24h无人自助麻将馆</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>满分萌宠·24h自助洗宠站(招商花园城店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(九江十里万达广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：前进东路818号万达广场九江十里店F5层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 8 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(九江十里万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>万达影城(九江十里万达广场店)、万达影城(万达广场九江濂溪店)、四方朋友·AI智慧KTV(九江学院店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>馨悦宾馆(九江学院店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(万达广场九江濂溪店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：万达广场</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(万达广场九江濂溪店)</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>万达影城(万达广场九江濂溪店)、万达影城(九江十里万达广场店)、九江濂溪区万达影城</td></tr>
+</tbody></table></div>
+<h3>万达广场(九江十里店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：前进东路818号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 7 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(九江十里店)</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>万达影城(九江十里万达广场店)、万达影城(万达广场九江濂溪店)、四方朋友·AI智慧KTV(九江学院店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>馨悦宾馆(九江学院店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(九江濂溪店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：德化东路666号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(九江濂溪店)</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>万达影城(万达广场九江濂溪店)、万达影城(九江十里万达广场店)、唛迪森Party KTV</td></tr>
+</tbody></table></div>
+<h3>共青城学府广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：—</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>共青城学府广场</td></tr>
+</tbody></table></div>
+<h3>铜锣湾广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：建昌大道消防大队斜对面</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>铜锣湾广场</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>Timi宠物医疗中心(信南·山水美地店)</td></tr>
+</tbody></table></div>
+<h3>大泽泰时代广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：茶山街道南湖大道与耀华街交叉路口往南约50米(财富广场北侧)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大泽泰时代广场</td></tr>
+</tbody></table></div>
+<h3>联盛·九龙广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;商场;普通商场）</li><li><strong>地址</strong>：龙开河路与浔阳西路交汇处西北角</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>联盛·九龙广场</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>中影玖龍影城(九龙广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>开心萌宠.猫狗馆(银龙苑店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>九江新桥宾馆</td></tr>
+</tbody></table></div>
+<h3>铜锣湾·SIONE新湾天地 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：港西路与庐山大道交叉口</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>铜锣湾·SIONE新湾天地</td></tr>
+</tbody></table></div>
+<h3>联盛广场(修水店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;商场;普通商场）</li><li><strong>地址</strong>：梯云路2号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>联盛广场(修水店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>MY超级密室</td></tr>
+</tbody></table></div>
+<h3>广寒宫K歌沐足 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：长江大道与南海路交界处南海大厦5号楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 9 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>广寒宫K歌沐足</td></tr>
+<tr><td>成人娱乐</td><td>9</td><td>广寒宫K歌沐足、星光之夜·K歌·沐足、麻小将棋牌(快乐城店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>噜哩派萌宠乐园(九江·联盛快乐城店)</td></tr>
+</tbody></table></div>
+<h3>K歌之王 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：京九路柴桑大巿场东A 97号(柴桑美食街旁)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>K歌之王</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>K歌之王、林雨堂K歌足浴.九龙店、星光之夜·K歌·沐足</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>山水国际大酒店、九江鑫奥商务宾馆</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（137 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>24</td></tr>
+<tr><td>电影院</td><td>18</td></tr>
+<tr><td>棋牌室</td><td>15</td></tr>
+<tr><td>KTV</td><td>9</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>9</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(九江十里万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>38.00</td><td>前进东路818号万达广场九江十里店F5层</td></tr>
+<tr><td>✅A-</td><td>万达影城(万达广场九江濂溪店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>53.00</td><td>万达广场</td></tr>
+<tr><td>✅A-</td><td>广寒宫K歌沐足</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>120.00</td><td>长江大道与南海路交界处南海大厦5号楼</td></tr>
+<tr><td>✅A-</td><td>好声音商务(K歌)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>34.00</td><td>前进东路333号(十里恒大御景附近金樽国际旁)</td></tr>
+<tr><td>✅A-</td><td>K歌之王</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>74.00</td><td>京九路柴桑大巿场东A 97号(柴桑美食街旁)</td></tr>
+<tr><td>✅A-</td><td>林雨堂K歌足浴.九龙店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.6</td><td>290.00</td><td>龙开河路与九瑞大道交叉口南80米</td></tr>
+<tr><td>✅A-</td><td>天幕影城(八里湖IM乐盈广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>27.00</td><td>濂溪区八里湖新区IM乐盈广场4层(交通银行楼上)</td></tr>
+<tr><td>✅A-</td><td>红旗电影院(孤溪埂路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>25.00</td><td>孤溪埂路78号</td></tr>
+<tr><td>✅A-</td><td>SFC上影影城(铜锣湾LUXE店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>26.00</td><td>浔南大道8号九江国际奥特莱斯F3层</td></tr>
+<tr><td>✅A-</td><td>四坊桌·24h自助棋牌(十里人民大厦店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>14.00</td><td>前进东路137号人民大厦2楼东户</td></tr>
+<tr><td>✅B</td><td>云水间K歌·沐足</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.5</td><td>98.00</td><td>八里湖大道5号乐盈广场B1层</td></tr>
+<tr><td>✅B</td><td>星光派对自助KTV(十里老街店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>39.00</td><td>十里街道十里大道1499号联盛十里老街C2座5层</td></tr>
+<tr><td>✅B</td><td>遇见·水瑶·影视K歌沐足·幻境SPA</td><td>其他娱乐场所</td><td>生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.5</td><td>268.00</td><td>长虹西路与长江大道交汇处华东市场F栋105-106.401-445号</td></tr>
+<tr><td>✅B</td><td>四方朋友·AI智慧KTV(九江学院店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>32.00</td><td>新天地公馆西门南50米</td></tr>
+<tr><td>✅B</td><td>星光之夜·K歌·沐足</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>231.00</td><td>人民路街道经开区南海路7号柴桑国际A栋</td></tr>
+<tr><td>✅B</td><td>水都名园汤泉·K歌·沐足·SPA(昌平大厦店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>208.00</td><td>向阳街道九瑞大道80号水都名园</td></tr>
+<tr><td>✅B</td><td>海盛湾量贩式KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>35.00</td><td>九颂山河·博园</td></tr>
+<tr><td>✅B</td><td>九江濂溪区万达影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>48.00</td><td>十里大道1499号联盛十里老街商业C区5层</td></tr>
+<tr><td>✅B</td><td>金马影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>31.00</td><td>前进东路686号莱茵美郡2号楼</td></tr>
+<tr><td>✅B</td><td>中影玖龍影城(九龙广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>35.00</td><td>浔阳西路666号联盛九龙广场1号楼6楼</td></tr>
+<tr><td>✅B</td><td>南湖时代影城(南湖国际店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>46.00</td><td>南湖路108号南湖国际3层</td></tr>
+<tr><td>✅B</td><td>唛迪森时代影城(信华城市广场5号楼店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>大中路500号信华广场5号楼3层</td></tr>
+<tr><td>✅B</td><td>中影庐山国际影城(沙河店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>43.00</td><td>庐山东路60号柴桑购物广场4层</td></tr>
+<tr><td>✅B</td><td>金逸影城(九江当代店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>37.00</td><td>花果园路当代九江朝阳里MOMA22栋3-4层</td></tr>
+<tr><td>✅B</td><td>瑞昌市电影院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>23.00</td><td>杨林湖大街瑞昌市文化艺术中心2层</td></tr>
+<tr><td>✅B</td><td>华纳兄弟影城(大润发店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>29.00</td><td>立信城市广场3层</td></tr>
+<tr><td>✅B</td><td>四个朋友·自助棋牌(中航城店)</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>15.00</td><td>九江中航城东区北门西70米</td></tr>
+<tr><td>✅B</td><td>四个朋友·自助棋牌(绿地大都会店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>15.00</td><td>绿地ICC大都会东南门西北110米</td></tr>
+<tr><td>✅B</td><td>雀发潮AI智慧KTV·影吧(柴桑国际店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>22.00</td><td>浔阳区经开区南海路7号柴桑国际1、2、3栋不分单元109</td></tr>
+<tr><td>✅B</td><td>四方朋友Ai智慧KTV(267文创园店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>28.00</td><td>向阳街道九瑞大道75号千艺267文创园A栋501室</td></tr>
+<tr><td>✅B</td><td>美乐迪音乐K吧(九江学院店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>29.00</td><td>前进东路666号派拉蒙广场3楼(九江学院对面)</td></tr>
+<tr><td>✅B</td><td>迪卡乐连锁KTV(龙开河路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;购物相关场所;购物相关场所</td><td>4.4</td><td>45.00</td><td>龙开河路46号(近九龙世纪苑)</td></tr>
+<tr><td>✅B</td><td>唛迪森Party KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>65.00</td><td>前进东路818号万达广场九江十里店F3层</td></tr>
+<tr><td>✅B</td><td>横店电影城(九江快乐城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>42.00</td><td>京九路9号联盛快乐城4层</td></tr>
+<tr><td>✅B</td><td>海棠影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>26.00</td><td>庐山大道82号</td></tr>
+<tr><td>✅B</td><td>四个朋友·自助棋牌(奥林匹克花园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>12.00</td><td>八里湖大道155号奥林匹克花园</td></tr>
+<tr><td>✅B</td><td>三雀一棋牌娱乐</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>236.00</td><td>联发碧桂园天璞西门北80米</td></tr>
+<tr><td>✅B</td><td>四个朋友自助棋牌(江州府店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>21.00</td><td>八里湖新区八里湖大道80号九江碧桂园江州府州府锦园19幢不分单元107二层</td></tr>
+<tr><td>✅B</td><td>维克特·主题棋牌(联盛·十里老街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>154.00</td><td>十里大楼联盛十里老街1299号A5栋(十里卫校正对面)</td></tr>
+<tr><td>✅B</td><td>浔麻自助棋牌(十里花旗店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>101.00</td><td>十里花旗假日大酒店3楼(从花旗酒店旁巷子进)</td></tr>
+<tr><td>✅B</td><td>玖号牌社24小时自助棋牌(慧龙新城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>26.00</td><td>十里大道与长江路之间慧龙新城1A1B2栋不分单元3-1</td></tr>
+<tr><td>✅B</td><td>麻小将棋牌(快乐城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>27.00</td><td>杭州路与御景支巷交叉口</td></tr>
+<tr><td>✅B</td><td>青莲阁沉浸式剧场(九江·联盛快乐城店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.3</td><td>87.00</td><td>经济技术开发区京九路联盛快乐城3栋不分单元1804号</td></tr>
+<tr><td>✅B</td><td>星聚会KTV(招商花园城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>53.00</td><td>向阳街道长虹西大道101号招商花园城5楼海底捞旁边</td></tr>
+<tr><td>✅B</td><td>庐阳国际影城(庐阳国际广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>33.00</td><td>南康镇秀峰大道庐阳国际商城3层</td></tr>
+<tr><td>✅B</td><td>中发白24h无人自助麻将馆</td><td>棋牌室</td><td>生活服务;美容美发店;美容美发店</td><td>4.3</td><td>11.00</td><td>八里湖新区长虹西大道北侧长江大道西侧九江中航城45幢商业不分单元106</td></tr>
+<tr><td>✅B</td><td>乐在棋中(文博大道店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>19.00</td><td>文博大道2号联泰万泰城三期(天颂)7栋103商铺</td></tr>
+<tr><td>✅B</td><td>碰碰胡24小时自助棋牌(南山公园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>15.00</td><td>南山名苑1-207、1-208(南山公园旁)</td></tr>
+<tr><td>✅B</td><td>清茶棋语(园艺小区店)</td><td>其他娱乐场所</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.3</td><td>14.00</td><td>园艺小区三期7号楼7-2-1</td></tr>
+<tr><td>⚠️</td><td>对角巷沉浸式真人密室(快乐城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>107.00</td><td>向阳街道长江大道383号</td></tr>
+<tr><td>⚠️</td><td>麦欢畅自助KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>30.00</td><td>永宁大道与勤路交叉口东200米</td></tr>
+<tr><td>⚠️</td><td>中影国际影城(九方店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>35.00</td><td>长虹西大道101号九江招商花园城4层</td></tr>
+<tr><td>⚠️</td><td>身临棋竞棋牌娱乐</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>16.00</td><td>八里湖东路5号九江IM乐盈广场20栋1A01B-1号(九江银行后面)</td></tr>
+<tr><td>⚠️</td><td>四个朋友自助棋牌(乐盈广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>14.00</td><td>八里湖大道5号乐盈广场</td></tr>
+<tr><td>⚠️</td><td>四个朋友·九方商业街店</td><td>其他娱乐场所</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.1</td><td>13.00</td><td>中航城九方商业街138号</td></tr>
+<tr><td>⚠️</td><td>画灵真人密室(浪井广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>115.00</td><td>四码头大中路信华广场2号楼2层(季季红旁)</td></tr>
+<tr><td>⚠️</td><td>对角巷超级密室(万达店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>58.00</td><td>濂溪万达商场2楼2003铺</td></tr>
+<tr><td>⚠️</td><td>潮酷幻境·9D悬空飞行影院(九江店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>58.00</td><td>向阳街道京九路9号九江·联盛快乐城3楼</td></tr>
+<tr><td>⚠️</td><td>对角巷真人密室逃脱(烟水亭店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>80.00</td><td>湓浦街道浔阳路红旗电影院旁巷内30米银河网咖对面3楼</td></tr>
+<tr><td>⚠️</td><td>画灵沉浸密室(新潮商厦店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>98.00</td><td>四码头庾亮北路125号新潮商厦8楼</td></tr>
+</tbody></table></div>
+<p>（另 15 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（23 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>14</td></tr>
+<tr><td>其他儿童场所</td><td>8</td></tr>
+<tr><td>亲子乐园</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>诺琴宠物猫狗舍犬猫批发</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>信华城市花园一期39栋M101商铺</td></tr>
+<tr><td>✅B</td><td>九江野生动物世界</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>柴桑区沙黄路057乡</td></tr>
+<tr><td>✅B</td><td>濂溪区猴萌萌动物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>濂溪大道科技六路</td></tr>
+<tr><td>✅B</td><td>Timi宠物医疗中心(信南·山水美地店)</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>新城湖东区开发大道信南山水美地16栋1009室</td></tr>
+<tr><td>✅B</td><td>湖口县水族馆</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>266县道</td></tr>
+<tr><td>✅B</td><td>HYの萌宠乐园·猫馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>莲花镇九莲南路贺家垅二期2栋门面M113</td></tr>
+<tr><td>✅B</td><td>萌宠之家宠物店(江州华府一期店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>渊明大道江州华府11栋113号门面</td></tr>
+<tr><td>⚠️</td><td>奇异森林室内动物园</td><td>迷你动物园/萌宠</td><td>场内</td><td>4.1</td><td>向阳街道向阳街道八里湖新区东路5号乐盈IM广场18-3层3003号商铺</td></tr>
+<tr><td>⚠️</td><td>迷你宠物诊疗中心</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>宝塔大道永安苑1号(国税局旁)</td></tr>
+<tr><td>⚠️</td><td>宠屿宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>凤凰村三组</td></tr>
+<tr><td>⚠️</td><td>鹿境森林动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>蔓谷景区综合体旅游风景区内(西侧)</td></tr>
+<tr><td>⚠️</td><td>有点东西宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>五里街道五里村十一组</td></tr>
+<tr><td>⚠️</td><td>修水疯狂动物王国</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>竹坪乡</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>鹿鸣谷景区游客中心南侧200米(景区内)</td></tr>
+<tr><td>⚠️</td><td>开心萌宠.猫狗馆(银龙苑店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>九龙街龙跃花园A栋09号门面</td></tr>
+<tr><td>⚠️</td><td>甜心宠物生活馆</td><td>亲子乐园</td><td>独立</td><td>3.8</td><td>前进西路童乐谷亲子乐园旁甜心宠物生活馆</td></tr>
+<tr><td>⚠️</td><td>满分萌宠·24h自助洗宠站(招商花园城店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>陈伟八里湖新区中航城一期2幢不分单元九方街A2109店铺</td></tr>
+<tr><td>⚠️</td><td>萌宠之家宠物店</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>北司路2号中房浔阳城11栋不分单元107</td></tr>
+<tr><td>⚠️</td><td>华南梅花鹿馆</td><td>其他儿童场所</td><td>独立</td><td>3.5</td><td>明通建材东北侧210米</td></tr>
+<tr><td>❌</td><td>噜哩派萌宠乐园(九江·联盛快乐城店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>京九路9号九江·联盛快乐城2F层</td></tr>
+<tr><td>❌</td><td>迷你超市(乐业南路店)</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>姑塘镇化纤厂</td></tr>
+<tr><td>❌</td><td>鹿鸣谷鹿鸣动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>黄庭坚大道东南侧200米鹿鸣谷景区(东南角)</td></tr>
+<tr><td>❌</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.0</td><td>306省道庐山西海风景区内</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（59 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>九江·联盛快乐城</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>京九路9号</td></tr>
+<tr><td>✅A-</td><td>招商花园城</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>1</td><td>长虹西大道101号</td></tr>
+<tr><td>✅A-</td><td>万达广场(九江十里店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>前进东路818号</td></tr>
+<tr><td>✅A-</td><td>万达广场(九江濂溪店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>德化东路666号</td></tr>
+<tr><td>❌</td><td>共青城学府广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>铜锣湾广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>建昌大道消防大队斜对面</td></tr>
+<tr><td>✅A-</td><td>大泽泰时代广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>茶山街道南湖大道与耀华街交叉路口往南约50米(财富广场北侧)</td></tr>
+<tr><td>✅A-</td><td>联盛·九龙广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>龙开河路与浔阳西路交汇处西北角</td></tr>
+<tr><td>✅A-</td><td>铜锣湾·SIONE新湾天地</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>港西路与庐山大道交叉口</td></tr>
+<tr><td>✅A-</td><td>联盛广场(修水店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>梯云路2号</td></tr>
+<tr><td>✅A-</td><td>大中大</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>浔阳路356号</td></tr>
+<tr><td>✅A-</td><td>大润发(九江店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>九江市开发区九瑞大道53号</td></tr>
+<tr><td>✅A-</td><td>麦德龙(九江商场)</td><td>百货/商场</td><td>4.6</td><td>1</td><td>1</td><td>长虹西大道101号九江招商花园城B1层</td></tr>
+<tr><td>✅A-</td><td>雅斯·联盛超市(瑞昌店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>赤乌中路16号联盛购物广场B1层</td></tr>
+<tr><td>✅A-</td><td>大润发(浔南店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>浔南大道8号</td></tr>
+<tr><td>✅A-</td><td>柴桑好又多店</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>渊明大道江洲华府一期2号3号4号商业区栋</td></tr>
+<tr><td>✅A-</td><td>美宜佳(浔南名邸店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>德化路与新湖北路交叉口东北300米</td></tr>
+<tr><td>✅A-</td><td>联盛奥特莱斯</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>庐山大道</td></tr>
+<tr><td>✅A-</td><td>天虹商场(共青店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>高尔夫大道与富华大道交汇处</td></tr>
+<tr><td>✅A-</td><td>景程·新天地购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>东风大道328号</td></tr>
+<tr><td>✅A-</td><td>乐盈广场</td><td>百货/商场</td><td>4.6</td><td>1</td><td>0</td><td>八里湖大道5号</td></tr>
+<tr><td>✅A-</td><td>欢乐海岸购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>义宁镇宁红大道133号</td></tr>
+<tr><td>✅A-</td><td>联盛武宁快乐城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>九宫山大道</td></tr>
+<tr><td>✅A-</td><td>联盛购物广场东区</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>散原路45号</td></tr>
+<tr><td>✅B</td><td>唛迪森时代影城(信华城市广场5号楼店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>大中路500号信华广场5号楼3层</td></tr>
+<tr><td>✅B</td><td>叶波大润发(立信城市广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>立信广场A三楼负一层</td></tr>
+<tr><td>✅B</td><td>家家乐超市(九江十里万达广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>十里街道前进东路818号万达广场九江十里店负一楼</td></tr>
+<tr><td>✅B</td><td>万福超市(九江万达店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>德化东路666号万达广场2楼</td></tr>
+<tr><td>✅B</td><td>联盛购物广场西区</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>梯云路与义宁大道交叉口南120米</td></tr>
+<tr><td>✅B</td><td>叶波大润发(修水店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>宁红大道与老虎洞路交叉口东160米</td></tr>
+<tr><td>✅B</td><td>九江奥特莱斯购物广场(暂停营业)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>浔南大道8号</td></tr>
+<tr><td>✅B</td><td>九江水果批发市场祥盛精品果业(九江果品交易中心店)</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>九瑞大道九江水果批发市场</td></tr>
+<tr><td>✅B</td><td>联盛武宁快乐城A区(武宁联盛快乐城店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>月田路武宁联盛快乐城</td></tr>
+<tr><td>✅B</td><td>铜锣湾百货(永修铜锣湾广场店)</td><td>百货/商场</td><td>4.3</td><td>1</td><td>0</td><td>建昌大道与铜锣湾路交叉口永修铜锣湾广场F2层</td></tr>
+<tr><td>⚠️</td><td>家家乐超市(南湖国际店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>南湖路108号113号</td></tr>
+<tr><td>⚠️</td><td>龙开河批发中心</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>湓浦路5号</td></tr>
+<tr><td>⚠️</td><td>衣广汇服装批发城</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>大中路784号</td></tr>
+<tr><td>⚠️</td><td>舒衣库服装批发城</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>大中路591号(四码头步行街)</td></tr>
+<tr><td>⚠️</td><td>鹏泰超市(景程·新天地购物中心)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>东风大道328号景程新天地购物中心1层</td></tr>
+<tr><td>⚠️</td><td>大雄海鲜批发</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>星辉豪庭20A</td></tr>
+<tr><td>⚠️</td><td>和诚衣库服装批发城(柴桑路店)</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>柴桑路119号</td></tr>
+<tr><td>⚠️</td><td>1号新旧厨具电器批发市场</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>庐山北路85-1至85-8号凯旋城西区</td></tr>
+<tr><td>⚠️</td><td>新世纪百货精品生活馆(悠然路店)</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>仁和路与悠然路交叉口东40米</td></tr>
+<tr><td>⚠️</td><td>杨氏家具批发城</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>庐峰国学幼儿园南门南70米</td></tr>
+<tr><td>⚠️</td><td>飞虎家具批发城</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>滨江路569号</td></tr>
+<tr><td>⚠️</td><td>新世纪百货(彭泽体育馆店)</td><td>百货/商场</td><td>3.6</td><td>0</td><td>0</td><td>龙城镇龙城大道体育馆</td></tr>
+<tr><td>⚠️</td><td>汇鑫干菜批发市场</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>美庐大厦</td></tr>
+<tr><td>⚠️</td><td>新联水产批发零售(天海公寓店)</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>利江市场14栋236号</td></tr>
+<tr><td>⚠️</td><td>小喻家具批发广场(天福花园店)</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>天福路16号天福花园</td></tr>
+<tr><td>⚠️</td><td>九江市水果批发交易市场B4栋</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>九瑞大道与武汉巷交叉口西220米</td></tr>
+</tbody></table></div>
+<p>（另 9 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（2 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>阳光家园大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>59.00</td><td>庐山路435-439号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ab9ed24a57c0ab47b0c126e04cc37e58"></td></tr>
+<tr><td>⚠️</td><td>四个朋友·九方商业街店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.1</td><td>13.00</td><td>中航城九方商业街138号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/dae91840af326c06c629aad558e03cd3_2048_2048_80.jpg"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>九江·联盛快乐城（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>潮酷幻境·9D悬空飞行影院(九江店)</td><td>名称互证</td><td>25m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>噜哩派萌宠乐园(九江·联盛快乐城店)</td><td>名称互证</td><td>81m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>横店电影城(九江快乐城店)</td><td>距离就近</td><td>110m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>青莲阁沉浸式剧场(九江·联盛快乐城店)</td><td>名称互证</td><td>111m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>对角巷沉浸式真人密室(快乐城店)</td><td>距离就近</td><td>144m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>okk密室逃脱</td><td>距离就近</td><td>153m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>四方朋友Ai智慧KTV(267文创园店)</td><td>距离就近</td><td>266m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>水都名园汤泉·K歌·沐足·SPA(昌平大厦店)</td><td>距离就近</td><td>347m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>广寒宫K歌沐足</td><td>距离就近</td><td>348m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麻小将棋牌(快乐城店)</td><td>距离就近</td><td>390m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星光之夜·K歌·沐足</td><td>距离就近</td><td>477m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>雀发潮AI智慧KTV·影吧(柴桑国际店)</td><td>距离就近</td><td>483m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>招商花园城（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星聚会KTV(招商花园城店)</td><td>名称互证</td><td>65m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>嘻游吧</td><td>距离就近</td><td>89m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>中发白24h无人自助麻将馆</td><td>距离就近</td><td>119m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友·九方商业街店</td><td>距离就近</td><td>136m</td><td>4.1</td><td>§6</td></tr>
+<tr><td>四个朋友·九方商业街店</td><td>距离就近</td><td>136m</td><td>4.1</td><td>§6</td></tr>
+<tr><td>中影国际影城(九方店)</td><td>名称互证</td><td>138m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>满分萌宠·24h自助洗宠站(招商花园城店)</td><td>名称互证</td><td>242m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(中航城店)</td><td>距离就近</td><td>298m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>清茶棋语(园艺小区店)</td><td>距离就近</td><td>483m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(九江十里万达广场店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(九江十里万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>唛迪森Party KTV</td><td>距离就近</td><td>67m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>馨悦宾馆(九江学院店)</td><td>距离就近</td><td>138m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四方朋友·AI智慧KTV(九江学院店)</td><td>距离就近</td><td>173m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>美乐迪音乐K吧(九江学院店)</td><td>距离就近</td><td>181m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>疗斋密室</td><td>距离就近</td><td>262m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金马影院</td><td>距离就近</td><td>316m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>九江濂溪区万达影城</td><td>名称互证</td><td>1701m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万达影城(万达广场九江濂溪店)</td><td>名称互证</td><td>2306m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(万达广场九江濂溪店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(万达广场九江濂溪店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>对角巷超级密室(万达店)</td><td>距离就近</td><td>53m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>一诺潮玩新奇体验馆</td><td>距离就近</td><td>162m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>万达影城(九江十里万达广场店)</td><td>名称互证</td><td>2306m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>九江濂溪区万达影城</td><td>名称互证</td><td>3630m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(九江十里店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(九江十里万达广场店)</td><td>名称互证</td><td>64m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>唛迪森Party KTV</td><td>名称互证</td><td>81m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四方朋友·AI智慧KTV(九江学院店)</td><td>距离就近</td><td>119m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>馨悦宾馆(九江学院店)</td><td>距离就近</td><td>187m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>美乐迪音乐K吧(九江学院店)</td><td>距离就近</td><td>245m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>疗斋密室</td><td>距离就近</td><td>297m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金马影院</td><td>距离就近</td><td>379m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万达影城(万达广场九江濂溪店)</td><td>名称互证</td><td>2242m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(九江濂溪店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(万达广场九江濂溪店)</td><td>名称互证</td><td>62m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>对角巷超级密室(万达店)</td><td>距离就近</td><td>83m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>一诺潮玩新奇体验馆</td><td>距离就近</td><td>180m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>唛迪森Party KTV</td><td>名称互证</td><td>2298m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达影城(九江十里万达广场店)</td><td>名称互证</td><td>2304m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>铜锣湾广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Timi宠物医疗中心(信南·山水美地店)</td><td>距离就近</td><td>560m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>联盛·九龙广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影玖龍影城(九龙广场店)</td><td>距离就近</td><td>34m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>九江新桥宾馆</td><td>距离就近</td><td>290m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>开心萌宠.猫狗馆(银龙苑店)</td><td>距离就近</td><td>379m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>联盛广场(修水店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>MY超级密室</td><td>距离就近</td><td>306m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>广寒宫K歌沐足（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>广寒宫K歌沐足</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>对角巷沉浸式真人密室(快乐城店)</td><td>距离就近</td><td>259m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>okk密室逃脱</td><td>距离就近</td><td>272m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>噜哩派萌宠乐园(九江·联盛快乐城店)</td><td>距离就近</td><td>338m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>青莲阁沉浸式剧场(九江·联盛快乐城店)</td><td>距离就近</td><td>340m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星光之夜·K歌·沐足</td><td>距离就近</td><td>343m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>潮酷幻境·9D悬空飞行影院(九江店)</td><td>距离就近</td><td>365m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>麻小将棋牌(快乐城店)</td><td>距离就近</td><td>368m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>雀发潮AI智慧KTV·影吧(柴桑国际店)</td><td>距离就近</td><td>372m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>横店电影城(九江快乐城店)</td><td>距离就近</td><td>384m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>K歌之王（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>K歌之王</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>林雨堂K歌足浴.九龙店</td><td>距离就近</td><td>331m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>迪卡乐连锁KTV(龙开河路店)</td><td>距离就近</td><td>347m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>九江鑫奥商务宾馆</td><td>距离就近</td><td>405m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>雀发潮AI智慧KTV·影吧(柴桑国际店)</td><td>距离就近</td><td>495m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>山水国际大酒店</td><td>距离就近</td><td>506m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星光之夜·K歌·沐足</td><td>距离就近</td><td>529m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>天幕影城(八里湖IM乐盈广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>天幕影城(八里湖IM乐盈广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>奇异森林室内动物园</td><td>距离就近</td><td>51m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>四个朋友自助棋牌(乐盈广场店)</td><td>距离就近</td><td>136m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>身临棋竞棋牌娱乐</td><td>距离就近</td><td>156m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>云水间K歌·沐足</td><td>距离就近</td><td>210m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>四坊桌·24h自助棋牌(十里人民大厦店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>四坊桌·24h自助棋牌(十里人民大厦店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>浔麻自助棋牌(十里花旗店)</td><td>距离就近</td><td>187m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>花旗假日大酒店</td><td>距离就近</td><td>202m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>九江市容招待所</td><td>距离就近</td><td>285m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>维克特·主题棋牌(联盛·十里老街店)</td><td>距离就近</td><td>375m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>九江城市客栈</td><td>距离就近</td><td>405m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大中大（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>画灵沉浸密室(新潮商厦店)</td><td>距离就近</td><td>566m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(九江店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>林雨堂K歌足浴.九龙店</td><td>距离就近</td><td>168m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>迪卡乐连锁KTV(龙开河路店)</td><td>距离就近</td><td>234m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>九龙宾馆(天缘小区店)</td><td>距离就近</td><td>336m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>K歌之王</td><td>距离就近</td><td>359m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>九江鑫奥商务宾馆</td><td>距离就近</td><td>390m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>山水国际大酒店</td><td>距离就近</td><td>460m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>水都名园汤泉·K歌·沐足·SPA(昌平大厦店)</td><td>距离就近</td><td>554m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>华纳兄弟影城(大润发店)</td><td>名称互证</td><td>28615m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>麦德龙(九江商场)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影国际影城(九方店)</td><td>距离就近</td><td>74m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四个朋友·九方商业街店</td><td>距离就近</td><td>111m</td><td>4.1</td><td>§6</td></tr>
+<tr><td>四个朋友·九方商业街店</td><td>距离就近</td><td>111m</td><td>4.1</td><td>§6</td></tr>
+<tr><td>嘻游吧</td><td>距离就近</td><td>125m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>星聚会KTV(招商花园城店)</td><td>距离就近</td><td>163m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>中发白24h无人自助麻将馆</td><td>距离就近</td><td>205m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>满分萌宠·24h自助洗宠站(招商花园城店)</td><td>距离就近</td><td>265m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(中航城店)</td><td>距离就近</td><td>291m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>清茶棋语(园艺小区店)</td><td>距离就近</td><td>402m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>雅斯·联盛超市(瑞昌店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>华娱国际影城(人民北路店)</td><td>距离就近</td><td>94m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>皇朝大酒店(人民北路店)</td><td>距离就近</td><td>197m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(浔南店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>SFC上影影城(铜锣湾LUXE店)</td><td>距离就近</td><td>22m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>华纳兄弟影城(大润发店)</td><td>名称互证</td><td>32412m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>柴桑好又多店（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>萌宠之家宠物店(江州华府一期店)</td><td>距离就近</td><td>200m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>美宜佳(浔南名邸店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>SFC上影影城(铜锣湾LUXE店)</td><td>距离就近</td><td>357m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>海棠影城</td><td>距离就近</td><td>549m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>天虹商场(共青店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大千秘境·XR大空间</td><td>名称互证</td><td>29m</td><td>3.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>乐盈广场（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>身临棋竞棋牌娱乐</td><td>名称互证</td><td>67m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四个朋友自助棋牌(乐盈广场店)</td><td>名称互证</td><td>78m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>云水间K歌·沐足</td><td>名称互证</td><td>97m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天幕影城(八里湖IM乐盈广场店)</td><td>名称互证</td><td>115m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>奇异森林室内动物园</td><td>距离就近</td><td>141m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>联盛购物广场东区（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>MY超级密室</td><td>距离就近</td><td>101m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>云水间K歌·沐足（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>云水间K歌·沐足</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>身临棋竞棋牌娱乐</td><td>距离就近</td><td>110m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>四个朋友自助棋牌(乐盈广场店)</td><td>距离就近</td><td>143m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>天幕影城(八里湖IM乐盈广场店)</td><td>距离就近</td><td>210m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>奇异森林室内动物园</td><td>距离就近</td><td>238m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>星光派对自助KTV(十里老街店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星光派对自助KTV(十里老街店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>九江濂溪区万达影城</td><td>距离就近</td><td>162m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>维克特·主题棋牌(联盛·十里老街店)</td><td>距离就近</td><td>420m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>九江市容招待所</td><td>距离就近</td><td>467m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（29 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>金城宾馆(环城路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>环城北路38号</td></tr>
+<tr><td>✅A-</td><td>龙翔酒店(九江庐山高铁站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>庐山南路299附近</td></tr>
+<tr><td>✅A-</td><td>阳光家园大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>59.00</td><td>庐山路435-439号</td></tr>
+<tr><td>✅B</td><td>城市快捷海棠酒店(九江火车站七中店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>浔阳东路252号</td></tr>
+<tr><td>✅B</td><td>九江市容招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>十里大楼卫校旁1268号</td></tr>
+<tr><td>✅B</td><td>山水国际大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.4</td><td>—</td><td>十里大道202号</td></tr>
+<tr><td>✅B</td><td>花旗假日大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.4</td><td>—</td><td>前进东路9号</td></tr>
+<tr><td>✅B</td><td>永修阿里山宾馆(永修站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>白莲中路179号</td></tr>
+<tr><td>✅B</td><td>馨悦宾馆(九江学院店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>前进东路598号(九江学院对面)</td></tr>
+<tr><td>✅B</td><td>小中房四季酒店(九江火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>长虹大道59号(火车站对面)</td></tr>
+<tr><td>⚠️</td><td>九江庐峰鼎盛宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>庐峰东路27号</td></tr>
+<tr><td>⚠️</td><td>庐山安定宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>白鹿大道205号(庐山市第三中学东门南90米)</td></tr>
+<tr><td>⚠️</td><td>诚信商务宾馆(南湖公园长虹大道店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>长虹大道58号(火车站右手边斜对面)</td></tr>
+<tr><td>⚠️</td><td>九江和味商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>龙开河路步红花园东区14-18栋201-209号</td></tr>
+<tr><td>⚠️</td><td>九江林芳宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>富华小区2栋2单元202</td></tr>
+<tr><td>⚠️</td><td>九江富安宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>富华小区2栋8号门面(公安局后门)</td></tr>
+<tr><td>⚠️</td><td>九江新桥宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>环河东路九龙街龙禧楼17号</td></tr>
+<tr><td>⚠️</td><td>麗枫酒店(九江浔阳路步行街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>浔阳东路111号</td></tr>
+<tr><td>⚠️</td><td>九龙宾馆(天缘小区店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>湓浦街道天缘小区3栋7-202室</td></tr>
+<tr><td>⚠️</td><td>九江蓝海商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>滨江东路113号</td></tr>
+<tr><td>⚠️</td><td>修水金都宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>鹦鹉街258号</td></tr>
+<tr><td>⚠️</td><td>九江城市客栈</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>十里大道1085号</td></tr>
+<tr><td>⚠️</td><td>九江市顺源宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.7</td><td>—</td><td>三里街292号</td></tr>
+<tr><td>⚠️</td><td>银河商务宾馆(古艾大道店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>3.6</td><td>—</td><td>艾城高速收费站对面150米</td></tr>
+<tr><td>⚠️</td><td>永修银海宾馆(永修店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>新城发达路</td></tr>
+<tr><td>⚠️</td><td>九江鑫奥商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>十里大道237号</td></tr>
+<tr><td>❌</td><td>庐山茅盾别墅</td><td>住宿服务;住宿服务相关;住宿服务相关｜商务住宅;住宅区;别墅</td><td>3.3</td><td>—</td><td>牯岭镇中十路</td></tr>
+<tr><td>❌</td><td>皇朝大酒店(人民北路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>人民北路46号</td></tr>
+<tr><td>❌</td><td>永修双华旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>2.9</td><td>—</td><td>建昌东路(江西银行对面)</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>9</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>16</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>9</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>15</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>2</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/九江市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>1 个 POI 无地址</strong>，需人工补：共青城学府广场</li><li><input type="checkbox" disabled> 儿童游乐 23 家，其中场内 1 家、独立 22 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 13 个区县：修水县、共青城市、庐山市、彭泽县、德安县、柴桑区、武宁县、永修县、浔阳区、湖口县、濂溪区、瑞昌市、都昌县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

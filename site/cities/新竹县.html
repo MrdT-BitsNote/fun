@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>新竹县 · 台湾省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/台湾省.html">← 返回台湾省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>新竹县 · 台湾省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:41:55  ·  POI 总量：117（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>117</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>99%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 1 · 商圈 52 · 成人娱乐 50 · 儿童娱乐 23 · 酒店 27 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>台湾省 · 县</td></tr>
+<tr><td>下级区县</td><td>13 个</td></tr>
+<tr><td>街道/镇/乡</td><td>0 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×12、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>竹北市</td><td>46</td><td>39%</td></tr>
+<tr><td>关西镇</td><td>13</td><td>11%</td></tr>
+<tr><td>湖口乡</td><td>11</td><td>9%</td></tr>
+<tr><td>北埔乡</td><td>10</td><td>9%</td></tr>
+<tr><td>新丰乡</td><td>7</td><td>6%</td></tr>
+<tr><td>新埔镇</td><td>7</td><td>6%</td></tr>
+<tr><td>竹东镇</td><td>7</td><td>6%</td></tr>
+<tr><td>宝山乡</td><td>5</td><td>4%</td></tr>
+<tr><td>五峰乡</td><td>3</td><td>3%</td></tr>
+<tr><td>芎林乡</td><td>3</td><td>3%</td></tr>
+<tr><td>尖石乡</td><td>2</td><td>2%</td></tr>
+<tr><td>横山乡</td><td>2</td><td>2%</td></tr>
+<tr><td>峨眉乡</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（52 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>27</td></tr>
+<tr><td>百货/商场</td><td>14</td></tr>
+<tr><td>购物中心/综合体</td><td>11</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（52 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>C</td><td>7-11义山门市</td><td>购物中心/综合体</td><td>2.5</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>馥橙芳园</td><td>其他商业载体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>莫内花园民宿</td><td>其他商业载体</td><td>4.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>东海花园城</td><td>其他商业载体</td><td>3.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>6+Plaza广场</td><td>其他商业载体</td><td>3.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>芯宝宠物乐园/宠物礼仪</td><td>其他商业载体</td><td>3.5</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>小北百货-新竹自强南店SHOWBA</td><td>百货/商场</td><td>3.3</td><td>0</td><td>6</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>全家便利商店新埔新文山店</td><td>购物中心/综合体</td><td>3.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>PUMA远东百货竹北门市</td><td>百货/商场</td><td>3.2</td><td>0</td><td>7</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>全家便利商店峨眉台山线店</td><td>其他商业载体</td><td>3.1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店竹北泰和店</td><td>购物中心/综合体</td><td>3.0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>采鑫会馆</td><td>其他商业载体</td><td>2.9</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店竹北新嘉丰店</td><td>购物中心/综合体</td><td>2.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>喜洋洋五金百货食品大卖场</td><td>百货/商场</td><td>2.9</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>全家便利商店明新大店</td><td>其他商业载体</td><td>2.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>天虹</td><td>购物中心/综合体</td><td>2.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>绿世界-鸟类生态公园</td><td>其他商业载体</td><td>2.7</td><td>0</td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>Metro T远东百货竹北店</td><td>百货/商场</td><td>2.6</td><td>0</td><td>7</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>源大百货有限公司</td><td>百货/商场</td><td>2.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>岩浆宅配购物商城</td><td>百货/商场</td><td>2.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>Elifemall</td><td>其他商业载体</td><td>2.5</td><td>0</td><td>9</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>Family mart</td><td>购物中心/综合体</td><td>2.4</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>MIN MIN百货</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>MACY’S</td><td>百货/商场</td><td>2.2</td><td>0</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>可爱动物区</td><td>其他商业载体</td><td>2.1</td><td>0</td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店-关西宏义店</td><td>其他商业载体</td><td>1.9</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>7-ELEVEN P8厂北门市</td><td>购物中心/综合体</td><td>1.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>金典文化广场竹北店</td><td>其他商业载体</td><td>1.9</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>白老虎White Tigers</td><td>其他商业载体</td><td>1.8</td><td>0</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>森坂百货竹北店</td><td>百货/商场</td><td>1.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>红毛猩猩园区</td><td>其他商业载体</td><td>1.7</td><td>0</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>SECRET CASTLE秘密城堡竹北远百店</td><td>百货/商场</td><td>1.7</td><td>0</td><td>7</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>伯菲特礼品百货有限公司</td><td>百货/商场</td><td>1.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>阿婆个杂货店</td><td>购物中心/综合体</td><td>1.7</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>东兴莳光APM</td><td>其他商业载体</td><td>1.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>梅兰购物中心</td><td>购物中心/综合体</td><td>1.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宠物公园(竹东快闪店)</td><td>其他商业载体</td><td>1.4</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>巨嘴鸟</td><td>其他商业载体</td><td>1.4</td><td>0</td><td>0</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>春源便利商店</td><td>购物中心/综合体</td><td>1.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>德盛天地</td><td>其他商业载体</td><td>1.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>7-11义山门市 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：302台湾新竹县竹北市十兴路318号1楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：和里中山路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 0 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>7-11义山门市</td></tr>
+<tr><td>美食</td><td>1</td><td>Queena Cat｜预约制-撸猫乐园&amp;布偶猫舍</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>Queena Cat｜预约制-撸猫乐园&amp;布偶猫舍</td></tr>
+</tbody></table></div>
+<h3>馥橙芳园 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：南平路277巷111弄159号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>馥橙芳园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>馥橙芳园</td></tr>
+</tbody></table></div>
+<h3>莫内花园民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：五仙路2段288巷136号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>莫内花园民宿</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>莫内花园民宿</td></tr>
+</tbody></table></div>
+<h3>东海花园城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;商务住宅相关;商务住宅相关）</li><li><strong>地址</strong>：310台湾新竹县竹东镇头重里中兴路四段1008号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>东海花园城</td></tr>
+</tbody></table></div>
+<h3>6+Plaza广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：隘口里复兴三路二段168号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>6+Plaza广场</td></tr>
+</tbody></table></div>
+<h3>芯宝宠物乐园/宠物礼仪 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（生活服务;丧葬设施;丧葬设施）</li><li><strong>地址</strong>：308台湾新竹县宝山乡三峰路二段329巷56号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>芯宝宠物乐园/宠物礼仪</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>芯宝宠物乐园/宠物礼仪</td></tr>
+</tbody></table></div>
+<h3>小北百货-新竹自强南店SHOWBA —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：302台湾新竹县竹北市鹿场里自强南路166号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>小北百货-新竹自强南店SHOWBA</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>Broadway Cinemas百老汇影城竹北店、YouBike百老汇影城、Cocobar-(享平方Shown Square)电话亭KTV</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>竹北享平方GonnaEat</td></tr>
+</tbody></table></div>
+<h3>全家便利商店新埔新文山店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：305台湾新竹县新埔镇文山里文山路犁头山段865号1楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>全家便利商店新埔新文山店</td></tr>
+</tbody></table></div>
+<h3>PUMA远东百货竹北门市 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;体育用品店;体育用品店）</li><li><strong>地址</strong>：新竹县竹北市十兴里庄敬北路18号4楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 7 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>PUMA远东百货竹北门市</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>Broadway Cinemas百老汇影城竹北店、YouBike百老汇影城、Cocobar-(享平方Shown Square)电话亭KTV</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>竹北享平方GonnaEat</td></tr>
+</tbody></table></div>
+<h3>全家便利商店峨眉台山线店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：315台湾新竹县峨眉乡石井村石井19</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>全家便利商店峨眉台山线店</td></tr>
+</tbody></table></div>
+<h3>全家便利商店竹北泰和店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：302台湾新竹县竹北市泰和里泰和路169号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>全家便利商店竹北泰和店</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>如意歌友会</td></tr>
+</tbody></table></div>
+<h3>采鑫会馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;体育休闲服务场所;体育休闲服务场所）</li><li><strong>地址</strong>：303台湾新竹县湖口乡德和路210巷38号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>采鑫会馆</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>采鑫会馆</td></tr>
+</tbody></table></div>
+<h3>全家便利商店竹北新嘉丰店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：302台湾新竹县竹北市东平里六家七路40号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>全家便利商店竹北新嘉丰店</td></tr>
+</tbody></table></div>
+<h3>喜洋洋五金百货食品大卖场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;家居建材市场;建材五金市场）</li><li><strong>地址</strong>：304台湾新竹县新丰乡山崎村文昌街95号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>喜洋洋五金百货食品大卖场</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>春城汽车旅馆</td></tr>
+</tbody></table></div>
+<h3>全家便利商店明新大店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：304台湾新竹县新丰乡松柏村明新街100号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>全家便利商店明新大店</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（50 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>19</td></tr>
+<tr><td>KTV</td><td>7</td></tr>
+<tr><td>电影院</td><td>3</td></tr>
+<tr><td>棋牌室</td><td>2</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>喵喵交响音乐中心</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>—</td><td>302台湾新竹县竹北市东平里嘉丰南路二段93号</td></tr>
+<tr><td>⚠️</td><td>Broadway Cinemas百老汇影城竹北店</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.7</td><td>—</td><td>302台湾新竹县竹北市鹿场里自强南路36号3F</td></tr>
+<tr><td>⚠️</td><td>音乐·嘉</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.5</td><td>—</td><td>302台湾新竹县竹北市中仑里光明九路254号1楼</td></tr>
+<tr><td>❌</td><td>帝王至尊</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅区</td><td>3.4</td><td>—</td><td>302台湾新竹县竹北市竹仁里仁义路126号</td></tr>
+<tr><td>❌</td><td>YouBike百老汇影城</td><td>电影院</td><td>购物服务;专卖店;自行车专卖店</td><td>3.1</td><td>—</td><td>302,Taiwan,Hsinchu County,Zhubei City,Ziqiang S Rd,8号9号</td></tr>
+<tr><td>❌</td><td>Cocobar-(享平方Shown Square)电话亭KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>3.0</td><td>—</td><td>302台湾新竹县竹北市鹿场里自强南路36号</td></tr>
+<tr><td>❌</td><td>微醺卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.0</td><td>—</td><td>302台湾新竹县竹北市白地里中正西路1676号</td></tr>
+<tr><td>❌</td><td>敦煌尊爵</td><td>其他娱乐场所</td><td>汽车销售;汽车销售;汽车销售</td><td>2.9</td><td>—</td><td>310台湾新竹县竹东镇二重里民族路27号</td></tr>
+<tr><td>❌</td><td>采鑫会馆</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.9</td><td>—</td><td>303台湾新竹县湖口乡德和路210巷38号</td></tr>
+<tr><td>❌</td><td>幸子卡拉ok</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.7</td><td>—</td><td>新竹县竹北市新国里302</td></tr>
+<tr><td>❌</td><td>大四囍｜自助麻将｜无人麻将｜自助桌游｜电动麻将馆-竹北麻将会馆｜棋牌会馆｜麻将馆推荐｜棋牌休闲馆｜热门麻将馆｜自助麻将｜电动麻将馆｜休闲棋牌社</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.7</td><td>—</td><td>302台湾新竹县竹北市新国里中央路297号</td></tr>
+<tr><td>❌</td><td>星光派对KTV-竹北店</td><td>KTV</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.6</td><td>—</td><td>302台湾新竹县竹北市鹿场里自强南路36号6楼</td></tr>
+<tr><td>❌</td><td>台湾麻将协会(竹北会馆)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.5</td><td>—</td><td>302台湾新竹县竹北市鹿场里成功三路139号3楼</td></tr>
+<tr><td>❌</td><td>TEV台湾之音</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.4</td><td>—</td><td>新竹县台湾302</td></tr>
+<tr><td>❌</td><td>天新小吃店+KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.3</td><td>—</td><td>No.355,No.303光复东路胜利村湖口乡新竹县台湾303</td></tr>
+<tr><td>❌</td><td>鑫山复合式KTV(2F)</td><td>KTV</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>2.3</td><td>—</td><td>308台湾新竹县宝山乡大崎村双园路二段32号2楼</td></tr>
+<tr><td>❌</td><td>台湾麻将馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.3</td><td>—</td><td>303台湾新竹县湖口乡凤凰村仁兴路130号</td></tr>
+<tr><td>❌</td><td>小爱麻将宾果</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>2.1</td><td>—</td><td>Zhonglun Village,Xinfeng Township,Hsinchu County,台湾304</td></tr>
+<tr><td>❌</td><td>如意歌友会</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.0</td><td>—</td><td>302台湾新竹县竹北市泰和里泰和路169-1号</td></tr>
+<tr><td>❌</td><td>茶楼道馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>1.8</td><td>—</td><td>北埔乡新竹县台湾314</td></tr>
+<tr><td>❌</td><td>SECRET CASTLE秘密城堡竹北远百店</td><td>其他娱乐场所</td><td>购物服务;商场;普通商场</td><td>1.7</td><td>—</td><td>302台湾新竹县竹北市庄敬北路18号2楼</td></tr>
+<tr><td>❌</td><td>黑金会所</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>1.7</td><td>—</td><td>305台湾新竹县新埔镇福德街正兴段709号</td></tr>
+<tr><td>❌</td><td>关西第一戏院</td><td>其他娱乐场所</td><td>风景名胜;风景名胜相关;旅游景点</td><td>1.7</td><td>—</td><td>之2号,No.18惠爱路西安里关西镇新竹县台湾306</td></tr>
+<tr><td>❌</td><td>绿光电影院</td><td>电影院</td><td>公司企业;公司;公司</td><td>1.7</td><td>—</td><td>306台湾Hsinchu County,Guanxi Township</td></tr>
+<tr><td>❌</td><td>晶点音乐坊</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>1.5</td><td>—</td><td>No.936号,Fuxing Rd,Zhubei City,Hsinchu County,Taiwan 302</td></tr>
+<tr><td>❌</td><td>CHAMPION PALACE</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅小区</td><td>1.4</td><td>—</td><td>302台湾新竹县竹北市</td></tr>
+<tr><td>❌</td><td>MEKENI KTV HOUSE</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>1.4</td><td>—</td><td>Yongxing,新丰乡新竹县台湾304</td></tr>
+<tr><td>❌</td><td>金顺欢唱联盟</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;夜总会</td><td>1.3</td><td>—</td><td>307,Taiwan,Hsinchu County,Qionglin,Sanmin Rd,279号307号</td></tr>
+<tr><td>❌</td><td>鑫利旺旺来早午餐/东南亚美食/卡拉OK</td><td>KTV</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>1.1</td><td>—</td><td>304台湾新竹县新丰乡崎顶村建兴路二段428号</td></tr>
+<tr><td>❌</td><td>健康麻将快乐打</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>1.1</td><td>—</td><td>303台湾新竹县湖口乡中兴街</td></tr>
+<tr><td>❌</td><td>178会馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>0.3</td><td>—</td><td>307台湾新竹县芎林乡芎林村德一街一号</td></tr>
+</tbody></table></div>
+<h2>4. 儿童与亲子娱乐（23 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>20</td></tr>
+<tr><td>亲子乐园</td><td>2</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>iNEED精品汽车旅馆-新竹旗舰店｜新竹休息｜新竹住宿｜新竹亲子住宿｜新竹唯一海景｜新竹旅游首选｜周六下午休息2.5小时｜hotels</td><td>亲子乐园</td><td>独立</td><td>4.4</td><td>304台湾新竹县新丰乡上坑村3邻坑子口379号</td></tr>
+<tr><td>⚠️</td><td>早苗庄园民宿-新竹新埔推荐必住民宿渡假包栋民宿首选人气亲子住宿热门烤肉近六福村小人国附近民宿庭园家庭亲子网友高CP值价格好评评价平价情侣多人住宿团体旅游休闲轻旅行</td><td>亲子乐园</td><td>独立</td><td>4.1</td><td>305台湾新竹县新埔镇照门里5-3号</td></tr>
+<tr><td>⚠️</td><td>芯宝宠物乐园/宠物礼仪</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>308台湾新竹县宝山乡三峰路二段329巷56号</td></tr>
+<tr><td>❌</td><td>森林鸟乐园</td><td>其他儿童场所</td><td>独立</td><td>3.1</td><td>97、,新埔镇新竹县台湾305</td></tr>
+<tr><td>❌</td><td>六福村野生动物王国</td><td>其他儿童场所</td><td>独立</td><td>3.1</td><td>关西镇仁安里拱子沟60号</td></tr>
+<tr><td>❌</td><td>加里山登山口鹿场</td><td>其他儿童场所</td><td>独立</td><td>2.9</td><td>[]</td></tr>
+<tr><td>❌</td><td>绿世界-鸟类生态公园</td><td>其他儿童场所</td><td>独立</td><td>2.7</td><td>314台湾新竹县北埔乡大湖村20号</td></tr>
+<tr><td>❌</td><td>宠物公园(竹雅店)</td><td>其他儿童场所</td><td>独立</td><td>2.6</td><td>302台湾新竹县竹北市竹仁里三民路218号</td></tr>
+<tr><td>❌</td><td>绿世界动物生态解说中心</td><td>其他儿童场所</td><td>独立</td><td>2.6</td><td>314,Taiwan,Hsinchu County,Beipu Township,隘子7邻20号</td></tr>
+<tr><td>❌</td><td>猴园</td><td>其他儿童场所</td><td>独立</td><td>2.5</td><td>308台湾新竹县宝山乡</td></tr>
+<tr><td>❌</td><td>可爱动物区</td><td>其他儿童场所</td><td>独立</td><td>2.1</td><td>Dahu Village,Beipu Township,Hsinchu County,台湾314</td></tr>
+<tr><td>❌</td><td>萌乐园鲜食馆</td><td>其他儿童场所</td><td>独立</td><td>1.9</td><td>30264台湾新竹县竹北市斗仑里县政二路南段118号</td></tr>
+<tr><td>❌</td><td>白老虎White Tigers</td><td>其他儿童场所</td><td>独立</td><td>1.8</td><td>306,Taiwan,Hsinchu County,Guanxi Township</td></tr>
+<tr><td>❌</td><td>红毛猩猩园区</td><td>其他儿童场所</td><td>独立</td><td>1.7</td><td>Ren'an Village,Guanxi Township,Hsinchu County,台湾306</td></tr>
+<tr><td>❌</td><td>Queena Cat｜预约制-撸猫乐园&amp;布偶猫舍</td><td>其他儿童场所</td><td>独立</td><td>1.4</td><td>302台湾新竹县竹北市泰和里中山路6-3号</td></tr>
+<tr><td>❌</td><td>宠物公园(竹东快闪店)</td><td>其他儿童场所</td><td>独立</td><td>1.4</td><td>竹东镇五丰里长春路三段315号</td></tr>
+<tr><td>❌</td><td>金刚鹦鹉岛</td><td>其他儿童场所</td><td>独立</td><td>1.4</td><td>314台湾新竹县北埔乡隘子7邻20号</td></tr>
+<tr><td>❌</td><td>巨嘴鸟</td><td>其他儿童场所</td><td>独立</td><td>1.4</td><td>306,Taiwan,Hsinchu County,Guanxi Township</td></tr>
+<tr><td>❌</td><td>鸟禽方舟探索馆</td><td>其他儿童场所</td><td>独立</td><td>1.3</td><td>Ren'an Village,Guanxi Township,Hsinchu County,台湾306</td></tr>
+<tr><td>❌</td><td>Leofoo Habitat Zoo</td><td>其他儿童场所</td><td>独立</td><td>1.1</td><td>Ren'an Village,Guanxi Township,Hsinchu County,台湾306</td></tr>
+<tr><td>❌</td><td>鸭鸭-宠物园</td><td>其他儿童场所</td><td>独立</td><td>0.3</td><td>302台湾新竹县竹北市东兴路一段1380号</td></tr>
+<tr><td>❌</td><td>小姊姊の秘密鹿园</td><td>其他儿童场所</td><td>独立</td><td>0.3</td><td>No.37号,Lane 1202,Wenshan Rd,Qionglin,Hsinchu County,Taiwan</td></tr>
+<tr><td>❌</td><td>生物多样性探索馆</td><td>其他儿童场所</td><td>独立</td><td>0.3</td><td>314台湾新竹县北埔乡大湖村七邻20号</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（25 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>❌</td><td>小北百货-新竹自强南店SHOWBA</td><td>百货/商场</td><td>3.3</td><td>0</td><td>0</td><td>302台湾新竹县竹北市鹿场里自强南路166号</td></tr>
+<tr><td>❌</td><td>全家便利商店新埔新文山店</td><td>购物中心/综合体</td><td>3.3</td><td>0</td><td>0</td><td>305台湾新竹县新埔镇文山里文山路犁头山段865号1楼</td></tr>
+<tr><td>❌</td><td>PUMA远东百货竹北门市</td><td>百货/商场</td><td>3.2</td><td>0</td><td>0</td><td>新竹县竹北市十兴里庄敬北路18号4楼</td></tr>
+<tr><td>❌</td><td>全家便利商店竹北泰和店</td><td>购物中心/综合体</td><td>3.0</td><td>0</td><td>0</td><td>302台湾新竹县竹北市泰和里泰和路169号</td></tr>
+<tr><td>❌</td><td>全家便利商店竹北新嘉丰店</td><td>购物中心/综合体</td><td>2.9</td><td>0</td><td>0</td><td>302台湾新竹县竹北市东平里六家七路40号</td></tr>
+<tr><td>❌</td><td>喜洋洋五金百货食品大卖场</td><td>百货/商场</td><td>2.9</td><td>0</td><td>0</td><td>304台湾新竹县新丰乡山崎村文昌街95号</td></tr>
+<tr><td>❌</td><td>天虹</td><td>购物中心/综合体</td><td>2.8</td><td>0</td><td>0</td><td>310台湾新竹县竹东镇</td></tr>
+<tr><td>❌</td><td>Metro T远东百货竹北店</td><td>百货/商场</td><td>2.6</td><td>0</td><td>0</td><td>302台湾新竹县竹北市十兴里庄敬北路18号</td></tr>
+<tr><td>❌</td><td>源大百货有限公司</td><td>百货/商场</td><td>2.6</td><td>1</td><td>0</td><td>[]</td></tr>
+<tr><td>❌</td><td>7-11义山门市</td><td>购物中心/综合体</td><td>2.5</td><td>1</td><td>1</td><td>302台湾新竹县竹北市十兴路318号1楼</td></tr>
+<tr><td>❌</td><td>岩浆宅配购物商城</td><td>百货/商场</td><td>2.5</td><td>0</td><td>0</td><td>310台湾新竹县竹东镇二重里明星一路110号4楼</td></tr>
+<tr><td>❌</td><td>Family mart</td><td>购物中心/综合体</td><td>2.4</td><td>0</td><td>0</td><td>302台湾新竹县竹北市新仑里中华路2-51号</td></tr>
+<tr><td>❌</td><td>MIN MIN百货</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>303台湾新竹县湖口乡凤山村新兴路446号</td></tr>
+<tr><td>❌</td><td>MACY’S</td><td>百货/商场</td><td>2.2</td><td>1</td><td>0</td><td>No.65,Minquan St,Zhubei City,Hsinchu County,Taiwan 302</td></tr>
+<tr><td>❌</td><td>7-ELEVEN P8厂北门市</td><td>购物中心/综合体</td><td>1.9</td><td>0</td><td>0</td><td>308台湾新竹县宝山乡科环路168号B1楼</td></tr>
+<tr><td>❌</td><td>森坂百货竹北店</td><td>百货/商场</td><td>1.8</td><td>0</td><td>0</td><td>302台湾新竹县竹北市环北路三段520号</td></tr>
+<tr><td>❌</td><td>SECRET CASTLE秘密城堡竹北远百店</td><td>百货/商场</td><td>1.7</td><td>0</td><td>0</td><td>302台湾新竹县竹北市庄敬北路18号2楼</td></tr>
+<tr><td>❌</td><td>伯菲特礼品百货有限公司</td><td>百货/商场</td><td>1.7</td><td>0</td><td>0</td><td>302台湾新竹县竹北市东平里六家五路一段103号</td></tr>
+<tr><td>❌</td><td>阿婆个杂货店</td><td>购物中心/综合体</td><td>1.7</td><td>0</td><td>0</td><td>314台湾新竹县北埔乡南兴村北埔街1号之1号</td></tr>
+<tr><td>❌</td><td>梅兰购物中心</td><td>购物中心/综合体</td><td>1.6</td><td>0</td><td>0</td><td>303台湾新竹县湖口乡中正村中正路二段358号</td></tr>
+<tr><td>❌</td><td>春源便利商店</td><td>购物中心/综合体</td><td>1.4</td><td>0</td><td>0</td><td>303台湾新竹县湖口乡成功路1066号</td></tr>
+<tr><td>❌</td><td>UNIACE Crocodile鳄鱼皮件竹北远东百货门市</td><td>百货/商场</td><td>1.3</td><td>0</td><td>0</td><td>302台湾新竹县竹北市十兴里庄敬北路18号4F</td></tr>
+<tr><td>❌</td><td>SK-II远东百货竹北店</td><td>百货/商场</td><td>1.1</td><td>0</td><td>0</td><td>203台湾新竹县竹北市十兴里庄敬北路18号竹北区</td></tr>
+<tr><td>❌</td><td>大昇百货行/泳装专卖店</td><td>百货/商场</td><td>0.3</td><td>0</td><td>0</td><td>310台湾新竹县竹东镇商华里东宁路三段42号</td></tr>
+<tr><td>❌</td><td>森坂百货/吉祥天联合有限公司</td><td>百货/商场</td><td>0.3</td><td>0</td><td>0</td><td>302台湾新竹县竹北市溪州里溪州路246巷20号</td></tr>
+</tbody></table></div>
+<h2>6. 本地美食与特色美食（1 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>❌</td><td>Queena Cat｜预约制-撸猫乐园&amp;布偶猫舍</td><td>餐饮服务;咖啡厅;咖啡厅</td><td>1.4</td><td>—</td><td>302台湾新竹县竹北市泰和里中山路6-3号</td><td></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>馥橙芳园（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>馥橙芳园</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>莫内花园民宿（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>莫内花园民宿</td><td>名称互证</td><td>0m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>芯宝宠物乐园/宠物礼仪（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>芯宝宠物乐园/宠物礼仪</td><td>名称互证</td><td>0m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>小北百货-新竹自强南店SHOWBA（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>台湾麻将协会(竹北会馆)</td><td>距离就近</td><td>329m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>Cocobar-(享平方Shown Square)电话亭KTV</td><td>距离就近</td><td>398m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>Broadway Cinemas百老汇影城竹北店</td><td>距离就近</td><td>428m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>竹北享平方GonnaEat</td><td>距离就近</td><td>431m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星光派对KTV-竹北店</td><td>距离就近</td><td>438m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>YouBike百老汇影城</td><td>距离就近</td><td>447m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>CHAMPION PALACE</td><td>距离就近</td><td>452m</td><td>1.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>PUMA远东百货竹北门市（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>SECRET CASTLE秘密城堡竹北远百店</td><td>距离就近</td><td>24m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>台湾麻将协会(竹北会馆)</td><td>距离就近</td><td>469m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>Cocobar-(享平方Shown Square)电话亭KTV</td><td>距离就近</td><td>492m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>星光派对KTV-竹北店</td><td>距离就近</td><td>495m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>竹北享平方GonnaEat</td><td>距离就近</td><td>535m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>Broadway Cinemas百老汇影城竹北店</td><td>距离就近</td><td>538m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>YouBike百老汇影城</td><td>距离就近</td><td>547m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>CHAMPION PALACE</td><td>距离就近</td><td>585m</td><td>1.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>全家便利商店竹北泰和店（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>如意歌友会</td><td>距离就近</td><td>70m</td><td>2.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>采鑫会馆（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>采鑫会馆</td><td>名称互证</td><td>0m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>喜洋洋五金百货食品大卖场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>春城汽车旅馆</td><td>距离就近</td><td>194m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>绿世界-鸟类生态公园（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>绿世界-鸟类生态公园</td><td>名称互证</td><td>0m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>生物多样性探索馆</td><td>距离就近</td><td>205m</td><td>0.3</td><td>§11</td></tr>
+<tr><td>可爱动物区</td><td>距离就近</td><td>240m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>绿世界动物生态解说中心</td><td>距离就近</td><td>264m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>金刚鹦鹉岛</td><td>距离就近</td><td>362m</td><td>1.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>Metro T远东百货竹北店（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>SECRET CASTLE秘密城堡竹北远百店</td><td>距离就近</td><td>2m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>台湾麻将协会(竹北会馆)</td><td>距离就近</td><td>471m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>Cocobar-(享平方Shown Square)电话亭KTV</td><td>距离就近</td><td>489m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>星光派对KTV-竹北店</td><td>距离就近</td><td>489m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>竹北享平方GonnaEat</td><td>距离就近</td><td>530m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>Broadway Cinemas百老汇影城竹北店</td><td>距离就近</td><td>533m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>YouBike百老汇影城</td><td>距离就近</td><td>541m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>CHAMPION PALACE</td><td>距离就近</td><td>579m</td><td>1.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>源大百货有限公司（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>加里山登山口鹿场</td><td>距离就近</td><td>121m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>7-11义山门市（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Queena Cat｜预约制-撸猫乐园&amp;布偶猫舍</td><td>距离就近</td><td>306m</td><td>1.4</td><td>§6</td></tr>
+<tr><td>Queena Cat｜预约制-撸猫乐园&amp;布偶猫舍</td><td>距离就近</td><td>306m</td><td>1.4</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>岩浆宅配购物商城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>敦煌尊爵</td><td>距离就近</td><td>563m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>Elifemall（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>帝王至尊</td><td>距离就近</td><td>187m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>宠物公园(竹雅店)</td><td>距离就近</td><td>199m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>台湾麻将协会(竹北会馆)</td><td>距离就近</td><td>256m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>Cocobar-(享平方Shown Square)电话亭KTV</td><td>距离就近</td><td>318m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>Broadway Cinemas百老汇影城竹北店</td><td>距离就近</td><td>346m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>竹北享平方GonnaEat</td><td>距离就近</td><td>349m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星光派对KTV-竹北店</td><td>距离就近</td><td>358m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>YouBike百老汇影城</td><td>距离就近</td><td>364m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>CHAMPION PALACE</td><td>距离就近</td><td>369m</td><td>1.4</td><td>§11</td></tr>
+<tr><td>TEV台湾之音</td><td>距离就近</td><td>422m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>健康麻将快乐打</td><td>距离就近</td><td>487m</td><td>1.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>Family mart（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>晶点音乐坊</td><td>距离就近</td><td>558m</td><td>1.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>MACY’S（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>TEV台湾之音</td><td>距离就近</td><td>94m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>宠物公园(竹雅店)</td><td>距离就近</td><td>145m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>帝王至尊</td><td>距离就近</td><td>398m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>可爱动物区（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>可爱动物区</td><td>名称互证</td><td>0m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>绿世界动物生态解说中心</td><td>距离就近</td><td>51m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>生物多样性探索馆</td><td>距离就近</td><td>101m</td><td>0.3</td><td>§11</td></tr>
+<tr><td>金刚鹦鹉岛</td><td>距离就近</td><td>135m</td><td>1.4</td><td>§11</td></tr>
+<tr><td>绿世界-鸟类生态公园</td><td>距离就近</td><td>240m</td><td>2.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>全家便利商店-关西宏义店（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美好关西民宿</td><td>距离就近</td><td>121m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>关西第一戏院</td><td>距离就近</td><td>180m</td><td>1.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金典文化广场竹北店（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大四囍｜自助麻将｜无人麻将｜自助桌游｜电动麻将馆-竹北麻将会馆｜棋牌会馆｜麻将馆推荐｜棋牌休闲馆｜热门麻将馆｜自助麻将｜电动麻将馆｜休闲棋牌社</td><td>距离就近</td><td>355m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>Hmotel佳缇国际精品旅馆</td><td>距离就近</td><td>382m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>白老虎White Tigers（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>白老虎White Tigers</td><td>名称互证</td><td>0m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>红毛猩猩园区</td><td>距离就近</td><td>77m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>六福村野生动物王国</td><td>距离就近</td><td>79m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>Leofoo Habitat Zoo</td><td>距离就近</td><td>121m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>鸟禽方舟探索馆</td><td>距离就近</td><td>259m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>巨嘴鸟</td><td>距离就近</td><td>367m</td><td>1.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>红毛猩猩园区（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>红毛猩猩园区</td><td>名称互证</td><td>0m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>白老虎White Tigers</td><td>距离就近</td><td>77m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>六福村野生动物王国</td><td>距离就近</td><td>150m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>Leofoo Habitat Zoo</td><td>距离就近</td><td>181m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>鸟禽方舟探索馆</td><td>距离就近</td><td>182m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>巨嘴鸟</td><td>距离就近</td><td>325m</td><td>1.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>SECRET CASTLE秘密城堡竹北远百店（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>SECRET CASTLE秘密城堡竹北远百店</td><td>名称互证</td><td>0m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>台湾麻将协会(竹北会馆)</td><td>距离就近</td><td>472m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>Cocobar-(享平方Shown Square)电话亭KTV</td><td>距离就近</td><td>491m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>星光派对KTV-竹北店</td><td>距离就近</td><td>491m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>竹北享平方GonnaEat</td><td>距离就近</td><td>532m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>Broadway Cinemas百老汇影城竹北店</td><td>距离就近</td><td>535m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>YouBike百老汇影城</td><td>距离就近</td><td>543m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>CHAMPION PALACE</td><td>距离就近</td><td>581m</td><td>1.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>阿婆个杂货店（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>或者山旅OR Inn Beipu</td><td>距离就近</td><td>319m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>茶楼道馆</td><td>距离就近</td><td>595m</td><td>1.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>东兴莳光APM（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>喵喵交响音乐中心</td><td>距离就近</td><td>596m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宠物公园(竹东快闪店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宠物公园(竹东快闪店)</td><td>名称互证</td><td>0m</td><td>1.4</td><td>§11</td></tr>
+<tr><td>宠物公园(竹雅店)</td><td>名称互证</td><td>11926m</td><td>2.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（27 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>馥橙芳园</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.9</td><td>—</td><td>南平路277巷111弄159号</td></tr>
+<tr><td>✅A-</td><td>拇指园生态民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>关西镇上林里15邻号58号之6号</td></tr>
+<tr><td>✅A-</td><td>The One南园人文客栈</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>305台湾新竹县新埔镇照门里九芎湖32号</td></tr>
+<tr><td>✅B</td><td>雪霸休闲农场(交通资讯-请参考官网说明)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>桃山村民石380号</td></tr>
+<tr><td>✅B</td><td>爱上喜翁民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>No.93,忠兴,竹林村五峰乡新竹县台湾311</td></tr>
+<tr><td>✅B</td><td>iNEED精品汽车旅馆-新竹旗舰店｜新竹休息｜新竹住宿｜新竹亲子住宿｜新竹唯一海景｜新竹旅游首选｜周六下午休息2.5小时｜hotels</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>304台湾新竹县新丰乡上坑村3邻坑子口379号</td></tr>
+<tr><td>✅B</td><td>筑梦咖啡民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>310台湾新竹县竹东镇瑞峰里26号</td></tr>
+<tr><td>✅B</td><td>竹北享平方GonnaEat</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>Ziqiang S Rd,Zhubei City,Hsinchu County,Taiwan 302</td></tr>
+<tr><td>✅B</td><td>美好关西民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>30641台湾新竹县关西镇北斗里中兴路2-3号</td></tr>
+<tr><td>✅B</td><td>托斯卡尼田间民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>坪林56-12号</td></tr>
+<tr><td>⚠️</td><td>Hmotel佳缇国际精品旅馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.2</td><td>—</td><td>302台湾新竹县竹北市泰和里中华路439-1号</td></tr>
+<tr><td>⚠️</td><td>关西六福庄生态渡假旅馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.2</td><td>—</td><td>306台湾新竹县关西镇仁安里60号</td></tr>
+<tr><td>⚠️</td><td>早苗庄园民宿-新竹新埔推荐必住民宿渡假包栋民宿首选人气亲子住宿热门烤肉近六福村小人国附近民宿庭园家庭亲子网友高CP值价格好评评价平价情侣多人住宿团体旅游休闲轻旅行</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.1</td><td>—</td><td>305台湾新竹县新埔镇照门里5-3号</td></tr>
+<tr><td>⚠️</td><td>大义山庄</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.0</td><td>—</td><td>314台湾新竹县北埔乡大林村大林村二寮8邻14号</td></tr>
+<tr><td>⚠️</td><td>莫内花园民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.0</td><td>—</td><td>五仙路2段288巷136号</td></tr>
+<tr><td>⚠️</td><td>新大竹北商旅</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.9</td><td>—</td><td>302台湾新竹县竹北市斗仑里光明九路1号</td></tr>
+<tr><td>⚠️</td><td>会来尖石温泉渡假村</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.9</td><td>—</td><td>嘉乐村3邻麦树仁177-1号</td></tr>
+<tr><td>⚠️</td><td>半亩院子(会员预约制)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.8</td><td>—</td><td>302台湾新竹县竹北市隘口里光明六路东二段381号</td></tr>
+<tr><td>⚠️</td><td>良茂New Park</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.8</td><td>—</td><td>30274台湾新竹县隘口里隘口一街260号</td></tr>
+<tr><td>⚠️</td><td>尖石天空小木屋露营区</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.7</td><td>—</td><td>新乐村10邻煤源140之7临</td></tr>
+<tr><td>⚠️</td><td>春城汽车旅馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.6</td><td>—</td><td>304台湾新竹县新丰乡忠孝村中兴路176号</td></tr>
+<tr><td>⚠️</td><td>拾阶庄园(内湾露营)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.5</td><td>—</td><td>312台湾新竹县横山乡内湾村38-1号</td></tr>
+<tr><td>❌</td><td>万瑞渡假村</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.2</td><td>—</td><td>横山村23邻23号</td></tr>
+<tr><td>❌</td><td>空军一号民宿露营</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>2.9</td><td>—</td><td>31141台湾新竹县五峰乡花园村天湖219-17号</td></tr>
+<tr><td>❌</td><td>或者山旅OR Inn Beipu</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>1.1</td><td>—</td><td>31441台湾新竹县北埔乡埔尾村长兴街5号</td></tr>
+<tr><td>❌</td><td>骏腾新天地</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>0.3</td><td>—</td><td>303台湾新竹县湖口乡凤山村荣光一路288号</td></tr>
+<tr><td>❌</td><td>北埔冷泉印象民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>—</td><td>—</td><td>[]</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>5</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>3</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>15</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>1</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>4</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>6</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/新竹县.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>3 个 POI 无地址</strong>，需人工补：北埔冷泉印象民宿、加里山登山口鹿场、源大百货有限公司</li><li><input type="checkbox" disabled> <strong>1 个 POI 无评分</strong>，暂标 ⚠️：北埔冷泉印象民宿</li><li><input type="checkbox" disabled> 儿童游乐 23 家，其中场内 0 家、独立 23 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 13 个区县：五峰乡、关西镇、北埔乡、宝山乡、尖石乡、峨眉乡、新丰乡、新埔镇、横山乡、湖口乡、竹东镇、竹北市、芎林乡——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

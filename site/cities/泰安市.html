@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>泰安市 · 山东省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/山东省.html">← 返回山东省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>泰安市 · 山东省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 18:58:27  ·  POI 总量：911（去重后）  ·  查询面：49  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>911</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>99%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 304 · 商圈 564 · 成人娱乐 298 · 儿童娱乐 162 · 酒店 31 · 特产 43</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>山东省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>6 个</td></tr>
+<tr><td>街道/镇/乡</td><td>88 个</td></tr>
+<tr><td>区县构成</td><td>县×2、县级市×2、市辖区×2</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>泰山区</td><td>422</td><td>46%</td></tr>
+<tr><td>岱岳区</td><td>179</td><td>20%</td></tr>
+<tr><td>新泰市</td><td>96</td><td>11%</td></tr>
+<tr><td>肥城市</td><td>93</td><td>10%</td></tr>
+<tr><td>东平县</td><td>71</td><td>8%</td></tr>
+<tr><td>宁阳县</td><td>50</td><td>5%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（564 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>286</td></tr>
+<tr><td>购物中心/综合体</td><td>85</td></tr>
+<tr><td>商业街</td><td>58</td></tr>
+<tr><td>百货/商场</td><td>55</td></tr>
+<tr><td>步行街</td><td>19</td></tr>
+<tr><td>奥特莱斯</td><td>19</td></tr>
+<tr><td>夜市</td><td>18</td></tr>
+<tr><td>批发城</td><td>15</td></tr>
+<tr><td>美食街/小吃街</td><td>9</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（564 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>S</td><td>偏爱炒鸡店(淘你欢店)</td><td>其他商业载体</td><td>4.7</td><td>24</td><td>30</td><td>10</td><td>0</td></tr>
+<tr><td>S</td><td>鲁菜根·泰安菜(万达店)</td><td>其他商业载体</td><td>4.7</td><td>20</td><td>22</td><td>8</td><td>0</td></tr>
+<tr><td>A</td><td>中百大厦(财源大街)</td><td>商业街</td><td>4.7</td><td>18</td><td>11</td><td>1</td><td>3</td></tr>
+<tr><td>A</td><td>泰安万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>17</td><td>29</td><td>10</td><td>0</td></tr>
+<tr><td>A</td><td>万达影城(泰安万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>17</td><td>30</td><td>10</td><td>0</td></tr>
+<tr><td>A</td><td>偏爱炒鸡店(迎胜路店)</td><td>其他商业载体</td><td>4.7</td><td>13</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>A</td><td>偏爱炒鸡店(财源街店)</td><td>其他商业载体</td><td>4.7</td><td>12</td><td>12</td><td>2</td><td>3</td></tr>
+<tr><td>A</td><td>银座商城(泰安店)</td><td>购物中心/综合体</td><td>4.7</td><td>11</td><td>12</td><td>5</td><td>4</td></tr>
+<tr><td>A</td><td>泰山夜市</td><td>夜市</td><td>4.7</td><td>11</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>A</td><td>老泰安·泰安菜(南湖店)</td><td>其他商业载体</td><td>4.7</td><td>10</td><td>8</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>偏爱炒鸡店(泰安老街店)</td><td>商业街</td><td>4.7</td><td>8</td><td>6</td><td>4</td><td>0</td></tr>
+<tr><td>B</td><td>泰安宴·泰安菜</td><td>其他商业载体</td><td>4.7</td><td>7</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>巨鼎鲁菜(岱宗大街店)</td><td>商业街</td><td>4.7</td><td>7</td><td>0</td><td>2</td><td>1</td></tr>
+<tr><td>B</td><td>吾悦广场(泰安肥城店)</td><td>百货/商场</td><td>4.7</td><td>5</td><td>20</td><td>25</td><td>1</td></tr>
+<tr><td>B</td><td>吾悦广场(泰安泰山店)</td><td>百货/商场</td><td>4.8</td><td>4</td><td>20</td><td>25</td><td>0</td></tr>
+<tr><td>B</td><td>吾悦广场(泰安泰汶店)</td><td>购物中心/综合体</td><td>4.8</td><td>4</td><td>20</td><td>25</td><td>0</td></tr>
+<tr><td>B</td><td>吾悦广场(泰安市新泰市店)</td><td>购物中心/综合体</td><td>4.8</td><td>4</td><td>20</td><td>25</td><td>0</td></tr>
+<tr><td>C</td><td>和平饭店(泰安岱宗大街店)</td><td>商业街</td><td>4.7</td><td>4</td><td>1</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>泰安宝龙广场</td><td>百货/商场</td><td>4.7</td><td>4</td><td>5</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>新合作购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>4</td><td>3</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>鲁菜根·泰安菜(龙泉店)</td><td>其他商业载体</td><td>4.7</td><td>4</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>小江南(宝龙店)</td><td>其他商业载体</td><td>4.7</td><td>4</td><td>5</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>爱琴海购物公园</td><td>购物中心/综合体</td><td>4.8</td><td>3</td><td>6</td><td>4</td><td>0</td></tr>
+<tr><td>C</td><td>五矿泰安·LIVE购物中心</td><td>购物中心/综合体</td><td>4.8</td><td>3</td><td>4</td><td>4</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(泰安爱琴海购物公园店)</td><td>购物中心/综合体</td><td>4.7</td><td>3</td><td>6</td><td>4</td><td>0</td></tr>
+<tr><td>C</td><td>盒马鲜生(泰安泰山吾悦广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>3</td><td>7</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>小马扎大排档小核桃碳烤肉(泰安店)</td><td>其他商业载体</td><td>4.7</td><td>3</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>红门靠山苑</td><td>步行街</td><td>4.7</td><td>3</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>万达影城(盘古天地IMAX店)</td><td>其他商业载体</td><td>4.7</td><td>2</td><td>5</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>信业商厦(中心店)</td><td>购物中心/综合体</td><td>4.7</td><td>2</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>儒原生活广场</td><td>购物中心/综合体</td><td>4.7</td><td>2</td><td>3</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>盘古天地</td><td>其他商业载体</td><td>4.7</td><td>2</td><td>3</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>泰山情泰山菜(岱阳高铁地标店)</td><td>其他商业载体</td><td>4.7</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>鼎盛财源酒店</td><td>其他商业载体</td><td>4.9</td><td>1</td><td>6</td><td>9</td><td>1</td></tr>
+<tr><td>C</td><td>新汶新零点宾馆</td><td>其他商业载体</td><td>4.8</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>小李子烧烤(枣行烧烤园)</td><td>其他商业载体</td><td>4.7</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>哈贝(长城路店)</td><td>其他商业载体</td><td>4.7</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>牧原宾馆(新泰店)</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>泰安诺达宾馆</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>儒原超市(北上高店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>偏爱炒鸡店(淘你欢店) —— 评级 S</h3>
+<ul><li><strong>评级判据</strong>：美食 24 家（均分 4.43）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：淘你欢购物广场西门旁</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥45（区间 ¥12–108）</li><li><strong>动线主轴</strong>：泰山大街</li><li><strong>业态分布</strong>：美食 24 · 成人娱乐 30 · 儿童娱乐 10 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>偏爱炒鸡店(淘你欢店)</td></tr>
+<tr><td>美食</td><td>24</td><td>偏爱炒鸡店(淘你欢店)、鲁菜根·泰安菜(万达店)、偏爱炒鸡店(迎胜路店)</td></tr>
+<tr><td>成人娱乐</td><td>30</td><td>NB电竞(泰安万达广场店)、万达影城(泰安万达广场店)、民谣集烧烤酒馆(山东泰安万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>10</td><td>孩子王童乐园(山东泰安万达店)、叮咚电玩、泡泡电玩·PS5·Switch·Xbox(万达店)</td></tr>
+</tbody></table></div>
+<h3>鲁菜根·泰安菜(万达店) —— 评级 S</h3>
+<ul><li><strong>评级判据</strong>：美食 20 家（均分 4.38）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：泰山大街333号传媒大厦F1层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥56（区间 ¥12–108）</li><li><strong>动线主轴</strong>：泰山大街</li><li><strong>业态分布</strong>：美食 20 · 成人娱乐 22 · 儿童娱乐 8 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>鲁菜根·泰安菜(万达店)</td></tr>
+<tr><td>美食</td><td>20</td><td>鲁菜根·泰安菜(万达店)、偏爱炒鸡店(淘你欢店)、鲁菜根·泰安菜(岱岳店)</td></tr>
+<tr><td>成人娱乐</td><td>22</td><td>NB电竞(泰安万达广场店)、万达影城(泰安万达广场店)、民谣集烧烤酒馆(山东泰安万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>8</td><td>孩子王童乐园(山东泰安万达店)、叮咚电玩、娱乐侠(万达广场泰安泰山店)</td></tr>
+</tbody></table></div>
+<h3>中百大厦(财源大街) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 18 家（均分 4.50）+ 4 类业态</li><li><strong>载体类型</strong>：商业街（购物服务;商场;购物中心）</li><li><strong>地址</strong>：财源大街90号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥35（区间 ¥13–70）</li><li><strong>动线主轴</strong>：岱庙街</li><li><strong>业态分布</strong>：美食 18 · 成人娱乐 11 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>中百大厦(财源大街)</td></tr>
+<tr><td>美食</td><td>18</td><td>北新夜市服务办公室、偏爱炒鸡店(财源街店)、老泰安·泰安菜(南湖店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>泰安市星秀丽Party KTV、山边咖啡馆酒馆(青年路店)、雷石娱乐</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宝儿童游乐园</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>鲁科88快捷酒店(泰安火车站财源街店)、居庭酒店(泰安泰山岱庙店)、陌舒连锁酒店(泰安火车站农业大学店)</td></tr>
+</tbody></table></div>
+<h3>泰安万达广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 17 家（均分 4.38）+ 3 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：泰山大街566号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥12–108）</li><li><strong>动线主轴</strong>：泰山大街</li><li><strong>业态分布</strong>：美食 17 · 成人娱乐 29 · 儿童娱乐 10 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>泰安万达广场</td></tr>
+<tr><td>美食</td><td>17</td><td>偏爱炒鸡店(淘你欢店)、鲁菜根·泰安菜(万达店)、民谣集烧烤酒馆(山东泰安万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>29</td><td>万达影城(泰安万达广场店)、NB电竞(泰安万达广场店)、魅KTV·AI辅唱(万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>10</td><td>叮咚电玩、孩子王童乐园(山东泰安万达店)、泡泡电玩·PS5·Switch·Xbox(万达店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(泰安万达广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 17 家（均分 4.38）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：泰山大街566号万达广场4层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥12–108）</li><li><strong>动线主轴</strong>：泰山大街</li><li><strong>业态分布</strong>：美食 17 · 成人娱乐 30 · 儿童娱乐 10 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(泰安万达广场店)</td></tr>
+<tr><td>美食</td><td>17</td><td>偏爱炒鸡店(淘你欢店)、鲁菜根·泰安菜(万达店)、民谣集烧烤酒馆(山东泰安万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>30</td><td>万达影城(泰安万达广场店)、NB电竞(泰安万达广场店)、万达影城(盘古天地IMAX店)</td></tr>
+<tr><td>儿童娱乐</td><td>10</td><td>孩子王童乐园(山东泰安万达店)、叮咚电玩、泡泡电玩·PS5·Switch·Xbox(万达店)</td></tr>
+</tbody></table></div>
+<h3>偏爱炒鸡店(迎胜路店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.64）+ 2 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：擂鼓石大街666号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥50（区间 ¥17–86）</li><li><strong>动线主轴</strong>：迎胜路</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>偏爱炒鸡店(迎胜路店)</td></tr>
+<tr><td>美食</td><td>13</td><td>偏爱炒鸡店(迎胜路店)、老泰安·泰安菜(迎胜路店)、泰山第一笼(兴元·科山麓店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>雷石自助KTV(方圆店)、音乐HOME</td></tr>
+</tbody></table></div>
+<h3>偏爱炒鸡店(财源街店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.59）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：财源大街143号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥46（区间 ¥20–59）</li><li><strong>动线主轴</strong>：东岳大街</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 12 · 儿童娱乐 2 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>偏爱炒鸡店(财源街店)</td></tr>
+<tr><td>美食</td><td>12</td><td>偏爱炒鸡店(财源街店)、偏爱炒鸡店(迎胜路店)、偏爱炒鸡店(淘你欢店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>OPUS·A(泰安店)、巷往·HOME PARTY、响袋24小时自助棋牌台球(泰安中百店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>萌宝儿童游乐园、世外星空电玩城(银座商城店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>鲁科88快捷酒店(泰安火车站财源街店)、陌舒连锁酒店(泰安火车站农业大学店)、居庭酒店(泰安泰山岱庙店)</td></tr>
+</tbody></table></div>
+<h3>银座商城(泰安店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.38）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：东岳大街318号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥32（区间 ¥15–60）</li><li><strong>动线主轴</strong>：东岳大街</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 12 · 儿童娱乐 5 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>银座商城(泰安店)</td></tr>
+<tr><td>美食</td><td>11</td><td>泰安府.泰山菜、伯爵泰山家常菜(校场街店)、必胜客(东岳店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>先锋电影城(银座商城店)、OPUS·A(泰安店)、云端电竞(银座城市广场店)·忆楚管理</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>婴贝儿(泰安银座店)、海贝儿儿童室内游乐中心(银座商城店)、英迈儿童英语(银座商城店)</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>泰安聚鑫宾馆(泰安火车站店)、鲁科88快捷酒店(泰安火车站财源街店)、陌舒连锁酒店(泰安火车站农业大学店)</td></tr>
+</tbody></table></div>
+<h3>泰山夜市 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.44）+ 2 类业态</li><li><strong>载体类型</strong>：夜市（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：奈河东路8号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥28（区间 ¥6–65）</li><li><strong>动线主轴</strong>：奈河东路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>泰山夜市</td></tr>
+<tr><td>美食</td><td>11</td><td>泰山夜市、北新夜市服务办公室、一品糁汤</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>喜鹊派对、对吧Tippler's Garden(岱庙店)、阿咪果 娱乐</td></tr>
+</tbody></table></div>
+<h3>老泰安·泰安菜(南湖店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.39）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：灵山大街283号南湖公园北门对面</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥35（区间 ¥13–108）</li><li><strong>动线主轴</strong>：灵山大街</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 8 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>老泰安·泰安菜(南湖店)</td></tr>
+<tr><td>美食</td><td>10</td><td>老泰安·泰安菜(南湖店)、老泰安·泰安菜(普照寺路店)、老泰安·泰安菜(迎胜路店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>泰安市星秀丽Party KTV、屋顶酿造、雷石娱乐</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宝儿童游乐园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>居庭酒店(泰安泰山岱庙店)</td></tr>
+</tbody></table></div>
+<h3>偏爱炒鸡店(泰安老街店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 10 / 酒店 0</li><li><strong>载体类型</strong>：商业街（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：泰安爱琴海购物公园</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥46（区间 ¥18–59）</li><li><strong>动线主轴</strong>：区天平湖路</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 6 · 儿童娱乐 4 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>偏爱炒鸡店(泰安老街店)</td></tr>
+<tr><td>美食</td><td>8</td><td>偏爱炒鸡店(泰安老街店)、偏爱炒鸡店(淘你欢店)、偏爱炒鸡店(迎胜路店)</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>一网亦家网咖(泰安爱琴海店)、华曼PARTY KTV(泰安爱琴海购物公园店)、魅KTV·AI辅唱(爱琴海店)</td></tr>
+<tr><td>儿童娱乐</td><td>4</td><td>宝贝王成长乐园(泰安爱琴海店)、喜洋洋冰上运动中心(爱琴海购物公园店)、一起玩家年华(爱琴海店)</td></tr>
+</tbody></table></div>
+<h3>泰安宴·泰安菜 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 7 家 / 娱乐 2 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：泮河大街温泉路交叉路口西北角</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥33（区间 ¥19–88）</li><li><strong>动线主轴</strong>：泮河大街</li><li><strong>业态分布</strong>：美食 7 · 成人娱乐 1 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>泰安宴·泰安菜</td></tr>
+<tr><td>美食</td><td>7</td><td>泰安宴·泰安菜、顺鑫菜馆(农大店)、吴佰亿烧烤大排档</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>酒座音乐酒馆</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>泰山文旅小镇梦幻童话亲子乐园</td></tr>
+</tbody></table></div>
+<h3>巨鼎鲁菜(岱宗大街店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 7 家 / 娱乐 2 / 酒店 1</li><li><strong>载体类型</strong>：商业街（餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：岱宗大街369号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥49（区间 ¥30–93）</li><li><strong>动线主轴</strong>：岱宗大街</li><li><strong>业态分布</strong>：美食 7 · 成人娱乐 0 · 儿童娱乐 2 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>巨鼎鲁菜(岱宗大街店)</td></tr>
+<tr><td>美食</td><td>7</td><td>巨鼎鲁菜(岱宗大街店)、天仙竹荪鹅(岱宗大街店)、巨鼎鲁菜乐园店</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>松鼠Ai人工智能学习体验中心、A1国际动漫专营店</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>泰安市泰山区赵记煎饼卷大葱酒店</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(泰安肥城店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 5 家 / 娱乐 45 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;商场）</li><li><strong>地址</strong>：肥桃路与泰西大街交叉口东北200米</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥44（区间 ¥19–71）</li><li><strong>动线主轴</strong>：阳镇凤山大街</li><li><strong>业态分布</strong>：美食 5 · 成人娱乐 20 · 儿童娱乐 25 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(泰安肥城店)</td></tr>
+<tr><td>美食</td><td>5</td><td>鼎盛财源酒店、龍歌自助小火锅(泰汶吾悦店5楼)、米村拌饭(泰安吾悦广场店)</td></tr>
+<tr><td>成人娱乐</td><td>20</td><td>巅峰电竞(泰汶吾悦广场店)、魅KTV(吾悦广场店)、星轶影城(吾悦广场泰安泰山店)</td></tr>
+<tr><td>儿童娱乐</td><td>25</td><td>多奇妙超乐场Dookimore(肥城吾悦广场店)、七彩天空(泰安新泰吾悦广场店)、小黄鸭主题游乐园(吾悦广场泰安肥城店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>鼎盛财源酒店</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(泰安泰山店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 4 家 / 娱乐 45 / 酒店 0</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：天烛峰路388号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥44（区间 ¥19–71）</li><li><strong>动线主轴</strong>：道天烛峰路</li><li><strong>业态分布</strong>：美食 4 · 成人娱乐 20 · 儿童娱乐 25 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(泰安泰山店)</td></tr>
+<tr><td>美食</td><td>4</td><td>龍歌自助小火锅(泰汶吾悦店5楼)、米村拌饭(泰安吾悦广场店)、比格比萨自助(泰安泰山吾悦店)</td></tr>
+<tr><td>成人娱乐</td><td>20</td><td>魅KTV(吾悦广场店)、巅峰电竞(泰汶吾悦广场店)、星轶影城(吾悦广场泰安泰山店)</td></tr>
+<tr><td>儿童娱乐</td><td>25</td><td>多奇妙超乐场Dookimore(肥城吾悦广场店)、七彩天空(泰安新泰吾悦广场店)、乐动主题儿童乐园</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（298 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>74</td></tr>
+<tr><td>酒吧/酒馆</td><td>30</td></tr>
+<tr><td>电影院</td><td>18</td></tr>
+<tr><td>KTV</td><td>16</td></tr>
+<tr><td>棋牌室</td><td>15</td></tr>
+<tr><td>电玩城</td><td>15</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>14</td></tr>
+<tr><td>Livehouse</td><td>5</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(泰安万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>53.00</td><td>泰山大街566号万达广场4层</td></tr>
+<tr><td>✅A-</td><td>万达影城(盘古天地IMAX店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>46.00</td><td>东岳大街80-2号盘古天地三楼</td></tr>
+<tr><td>✅A-</td><td>梦泰山啤酒城</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧｜购物服务;购物相关场所;购物相关场所</td><td>4.7</td><td>—</td><td>龙潭路201号</td></tr>
+<tr><td>✅A-</td><td>NB电竞(泰安万达广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.7</td><td>—</td><td>万达广场购物中心1号门1层-03-CB</td></tr>
+<tr><td>✅A-</td><td>天娱电竞</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.7</td><td>—</td><td>东平街道东岳广场A栋二层北部</td></tr>
+<tr><td>✅A-</td><td>头号玩家电竞</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.7</td><td>—</td><td>望岳广场A1003</td></tr>
+<tr><td>✅A-</td><td>魅KTV·AI辅唱(万达广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>61.00</td><td>泰山大街566号万达商场2层2062</td></tr>
+<tr><td>✅A-</td><td>泰安市星秀丽Party KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜生活服务;美容美发店;美容美发店</td><td>4.6</td><td>27.00</td><td>青年路25-1号</td></tr>
+<tr><td>✅A-</td><td>华曼PARTY KTV(泰安爱琴海购物公园店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>40.00</td><td>泰安老街2-1-107</td></tr>
+<tr><td>✅A-</td><td>圣大电影城(市政广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>31.00</td><td>市政广场金座旅游文化广场D座1号</td></tr>
+<tr><td>✅A-</td><td>星茂影城(泰山三里屯店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>51.00</td><td>三里屯商场B3-8号、C3-1号</td></tr>
+<tr><td>✅A-</td><td>泰山影剧院(金山路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>21.00</td><td>金山路24号</td></tr>
+<tr><td>✅A-</td><td>泰安万达广场万达影城售票</td><td>电影院</td><td>生活服务;售票处;售票处</td><td>4.6</td><td>42.00</td><td>泰山大街566号泰安万达广场4F层</td></tr>
+<tr><td>✅A-</td><td>横店影城(泰山云集文化商业街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>31.00</td><td>泰山云集文化商业街</td></tr>
+<tr><td>✅A-</td><td>华鑫影城(华新.时代广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>29.00</td><td>华新时代广场C座三层C309商铺</td></tr>
+<tr><td>✅A-</td><td>时光影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>26.00</td><td>泰山云谷</td></tr>
+<tr><td>✅A-</td><td>不夜城</td><td>其他娱乐场所</td><td>购物服务;特色商业街;特色商业街｜体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>—</td><td>府前街38号</td></tr>
+<tr><td>✅A-</td><td>WASAI CLUB·哇噻</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>107.00</td><td>徐家街道龙潭路201号梦泰山啤酒城D3D5</td></tr>
+<tr><td>✅A-</td><td>对吧Tippler's Garden(泰园店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>71.00</td><td>迎胜南路382号泰园熙地2号楼1层A07号美居酒店西南侧</td></tr>
+<tr><td>✅A-</td><td>屋顶酿造</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>60.00</td><td>通天街4-1号</td></tr>
+<tr><td>✅A-</td><td>民谣集烧烤酒馆(山东泰安万达广场店)</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>108.00</td><td>万达广场1层03-CA</td></tr>
+<tr><td>✅A-</td><td>发财小酒馆</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>38.00</td><td>泰安街与泰山路交叉口西北180米</td></tr>
+<tr><td>✅A-</td><td>魅KTV(吾悦广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>46.00</td><td>上高街道华郡社区天烛峰路388号吾悦广场3层z303号</td></tr>
+<tr><td>✅A-</td><td>一网亦家网咖(泰安爱琴海店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>粥店街道民俗小镇9号楼一单元201-204室</td></tr>
+<tr><td>✅A-</td><td>巅峰电竞(泰汶吾悦广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>泰汶吾悦广场3楼巅峰电竞</td></tr>
+<tr><td>✅B</td><td>雷石自助KTV(方圆店)</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>77.00</td><td>擂鼓石大街与科山路交叉口西80米</td></tr>
+<tr><td>✅B</td><td>台北唛田KTV(泰安店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>50.00</td><td>粥店街道凤凰路农贸市场4层北侧</td></tr>
+<tr><td>✅B</td><td>环声游记(万达店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>26.00</td><td>泰安金街b区一楼b108号</td></tr>
+<tr><td>✅B</td><td>喜鹊派对</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所｜生活服务;生活服务场所;生活服务场所</td><td>4.5</td><td>40.00</td><td>东岳大街197号西数第八间营业房一楼</td></tr>
+<tr><td>✅B</td><td>雷石娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>35.00</td><td>青年路28号银泰中心3层</td></tr>
+<tr><td>✅B</td><td>魅KTV·AI辅唱(爱琴海店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>64.00</td><td>粥店街道堰东社区天平湖路与梅山西路交汇处泰安爱琴海购物公园F5层F5018-F5019</td></tr>
+<tr><td>✅B</td><td>阿咪果 娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>23.00</td><td>青年路48号新昕大厦F3层</td></tr>
+<tr><td>✅B</td><td>先锋电影城(银座商城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>东岳大街与龙潭路交叉口东120米银座商城6楼</td></tr>
+<tr><td>✅B</td><td>泰山剧院(财源大街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>30.00</td><td>财源大街65-1号</td></tr>
+<tr><td>✅B</td><td>圣大电影城(东湖银座店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>灵山大街276号 泰安佳宜嘉生活超市5层</td></tr>
+<tr><td>✅B</td><td>星轶影城(吾悦广场泰安泰山店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>42.00</td><td>天烛峰路388号新城吾悦广场6层Z601号商铺</td></tr>
+<tr><td>✅B</td><td>喜雀来财泰安万达一店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>13.00</td><td>万达金街2层西首C203室</td></tr>
+<tr><td>✅B</td><td>喜雀来财万达二店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>13.00</td><td>万达金街A区237.238室</td></tr>
+<tr><td>✅B</td><td>Helens小酒馆(泰安万达金街店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>53.00</td><td>财源街道泰安万达金街c区252号楼2楼</td></tr>
+<tr><td>✅B</td><td>AEVUMPURUM醇境雪茄</td><td>其他娱乐场所</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.5</td><td>149.00</td><td>泰前街道岱道庵路20号宝龙城市广场</td></tr>
+<tr><td>✅B</td><td>山边咖啡馆酒馆(青年路店)</td><td>酒吧/酒馆</td><td>餐饮服务;咖啡厅;咖啡厅</td><td>4.5</td><td>28.00</td><td>灵芝街与财源大街交叉口北80米</td></tr>
+<tr><td>✅B</td><td>对吧Tippler's Garden(岱庙店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>46.00</td><td>东岳大街197号喜鹊派对KTV2层西户</td></tr>
+<tr><td>✅B</td><td>东城往事小酒馆(桑家疃店)</td><td>酒吧/酒馆</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>48.00</td><td>创业大街桑家瞳小区A-1</td></tr>
+<tr><td>✅B</td><td>梦田MTstarLIVE(泰安店)</td><td>Livehouse</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>—</td><td>龙潭路201号</td></tr>
+<tr><td>✅B</td><td>OPUS·A(泰安店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>53.00</td><td>校场街132号</td></tr>
+<tr><td>✅B</td><td>泰安麦浪PARTY·KTV(光彩店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;服装鞋帽皮具店;服装鞋帽皮具店</td><td>4.4</td><td>34.00</td><td>光彩大市场鎏光溢彩3层</td></tr>
+<tr><td>✅B</td><td>竺葛尚PARTY·KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>30.00</td><td>上高街道创业大街中段超越广场一期三四层</td></tr>
+<tr><td>✅B</td><td>沃美影城(泰安爱琴海购物公园店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>36.00</td><td>粥店街道天平湖路与梅山西路交汇处爱琴海购物公园四至五层(F4003+F5003)号</td></tr>
+<tr><td>✅B</td><td>保利万和影城(宝龙广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>39.00</td><td>泰前街道向阳社区温泉路北段路西环山路以南宝龙广场B区6号楼2层028-2户</td></tr>
+<tr><td>✅B</td><td>中影泰得影城(五矿泰安·LIVE购物中心店)</td><td>Livehouse</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>41.00</td><td>五矿泰安.Live商场4F01</td></tr>
+<tr><td>✅B</td><td>一筒江湖24h自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>23.00</td><td>迎盛路贤德苑牌坊北约100米166-1号一筒江湖</td></tr>
+<tr><td>✅B</td><td>出来玩麻棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>27.00</td><td>迎胜路358号</td></tr>
+<tr><td>✅B</td><td>牌友聚集地</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>—</td><td>财源街道财源居商业H楼-14号</td></tr>
+<tr><td>✅B</td><td>响袋24小时自助棋牌台球(泰安中百店)</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.4</td><td>10.00</td><td>奈河东路27号营业楼3楼(泰山原浆旁)</td></tr>
+<tr><td>✅B</td><td>南野酒馆(泰安市东平县店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>65.00</td><td>须昌路16号</td></tr>
+<tr><td>✅B</td><td>酒座音乐酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>106.00</td><td>温泉路与泮河大街交叉口北140米</td></tr>
+<tr><td>✅B</td><td>V8俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>—</td><td>东平县体育馆国际公馆东门北66米</td></tr>
+<tr><td>✅B</td><td>白日梦想家酒bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>82.00</td><td>义乌灯具市场东二排1号</td></tr>
+<tr><td>✅B</td><td>巷往·HOME PARTY</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>19.00</td><td>财源大街110号</td></tr>
+<tr><td>✅B</td><td>Roymond戎·曼世界啤酒</td><td>其他娱乐场所</td><td>购物服务;专卖店;烟酒专卖店</td><td>4.4</td><td>104.00</td><td>东岳大街与东太尉街交叉口南40米</td></tr>
+</tbody></table></div>
+<p>（另 127 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（162 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>101</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>29</td></tr>
+<tr><td>电玩城</td><td>18</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>8</td></tr>
+<tr><td>亲子乐园</td><td>5</td></tr>
+<tr><td>淘气堡</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>泰安太阳部落</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>金虹街11号</td></tr>
+<tr><td>✅A-</td><td>宠森堡动物医院</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>龙潭路55号擂鼓石花园沿街商业楼8</td></tr>
+<tr><td>✅A-</td><td>泰山文旅小镇梦幻童话亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.6</td><td>宁家结庄村南段168号</td></tr>
+<tr><td>✅A-</td><td>泰安方特欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>碧霞大街与明堂路交汇处</td></tr>
+<tr><td>✅A-</td><td>昆仑山景区</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>东平湖风景名胜区</td></tr>
+<tr><td>✅B</td><td>IGO山涧宠旅</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>徐家楼街道宅子村中段温泉路东</td></tr>
+<tr><td>✅B</td><td>酷奇宠物诊所</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>乐园街130号月季花园小区北门西邻沿街商铺</td></tr>
+<tr><td>✅B</td><td>婴贝儿(泰安银座店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>龙潭路3-4号天庭园东侧</td></tr>
+<tr><td>✅B</td><td>梦幻桃花源</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>潮泉镇下寨村百福街888号</td></tr>
+<tr><td>✅B</td><td>豆瓣乐园(暂停开放)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>梅山东路与堰堤南街交叉口</td></tr>
+<tr><td>✅B</td><td>爪印狗狗宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>Y282附近</td></tr>
+<tr><td>✅B</td><td>泰安桃花源度假村(泰山桃花峪登山口店)</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>泰山西大门桃花源路26号</td></tr>
+<tr><td>✅B</td><td>孩子王童乐园(山东泰安万达店)</td><td>其他儿童场所</td><td>场内</td><td>4.4</td><td>泰山大街566号泰安万达广场2F层</td></tr>
+<tr><td>✅B</td><td>叮咚电玩</td><td>电玩城</td><td>独立</td><td>4.4</td><td>万达金街D217</td></tr>
+<tr><td>✅B</td><td>泡泡电玩·PS5·Switch·Xbox(万达店)</td><td>电玩城</td><td>独立</td><td>4.4</td><td>万达金街南头2层路东A219</td></tr>
+<tr><td>❌</td><td>知云小镇宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>[]</td></tr>
+<tr><td>✅B</td><td>乐园宠物(乐园小区店)</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>御碑楼路与乐园街交叉口北60米</td></tr>
+<tr><td>✅B</td><td>有来有趣桌游电玩麻将</td><td>电玩城</td><td>独立</td><td>4.3</td><td>粥店街道货场路苹果园小区沿街104-2层</td></tr>
+<tr><td>✅B</td><td>万达宝贝王(泰安乐园)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>泰山大街泰安万达广场娱乐2F-A商铺万达宝贝王</td></tr>
+<tr><td>✅B</td><td>天平湖嘉年华儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.3</td><td>天平湖景区内(西侧)</td></tr>
+<tr><td>✅B</td><td>婴贝儿(泰安泰山广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>望岳东路银座市集(泰安市政广场店)里面商铺-婴贝儿泰安泰山广场店</td></tr>
+<tr><td>✅B</td><td>乐掌门夹机同学</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>泰山大街566号泰安万达广场F3</td></tr>
+<tr><td>✅B</td><td>娱乐侠(万达广场泰安泰山店)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>万达3层</td></tr>
+<tr><td>✅B</td><td>酷乐电玩城</td><td>电玩城</td><td>独立</td><td>4.3</td><td>盘古天地4号楼2楼207</td></tr>
+<tr><td>⚠️</td><td>汪小布宠物生活乐园</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>财源街道中心国际C1商业楼101户</td></tr>
+<tr><td>⚠️</td><td>久久爱宠宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>大官庄街25号</td></tr>
+<tr><td>⚠️</td><td>磁窑萌宠宠物之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>磁窑镇西太平村卫生室东南侧180米</td></tr>
+<tr><td>⚠️</td><td>喜洋洋冰上运动中心(爱琴海购物公园店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>泰安爱琴海购物公园4楼中心</td></tr>
+<tr><td>⚠️</td><td>宝贝王成长乐园(泰安爱琴海店)</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>粥店街道天平湖路与梅山西路交汇处爱琴海购物公园3层F3026</td></tr>
+<tr><td>⚠️</td><td>秀·童心乐园</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>泰山秀城铁道游击战东北侧200米</td></tr>
+<tr><td>⚠️</td><td>多奇妙超乐场Dookimore(肥城吾悦广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.2</td><td>新城街道办事处肥桃路109号吾悦广场购物中心Z303商铺</td></tr>
+<tr><td>⚠️</td><td>七彩天空(泰安新泰吾悦广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.2</td><td>向阳路666号吾悦广场泰安市新泰市店B1层</td></tr>
+<tr><td>⚠️</td><td>风车拼豆</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>杏山路与东周路交叉口西200米</td></tr>
+<tr><td>⚠️</td><td>天平湖游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.2</td><td>天平湖嘉年华儿童乐园南侧</td></tr>
+<tr><td>⚠️</td><td>洪沟七彩游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.2</td><td>正阳门大街22号</td></tr>
+<tr><td>⚠️</td><td>肥城大风车游乐园</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.1</td><td>仪阳街道仪阳街道仪阳街道仪阳街道仪阳街道仪兴街义乌商贸城A区西广场</td></tr>
+<tr><td>⚠️</td><td>咪哆派萌宠</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>盛和家园西面子门头房从南往北数第六家</td></tr>
+<tr><td>⚠️</td><td>乐动主题儿童乐园</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.1</td><td>徐家楼街道青年路556号泰汶吾悦广场1号楼3F-3030</td></tr>
+<tr><td>⚠️</td><td>小黄鸭主题游乐园(吾悦广场泰安肥城店)</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.1</td><td>吾悦广场(泰安肥城店)</td></tr>
+<tr><td>⚠️</td><td>星河电玩城</td><td>电玩城</td><td>独立</td><td>4.1</td><td>岱道庵路50号</td></tr>
+<tr><td>⚠️</td><td>天空之城(吾悦广场新泰市店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>榆山路151号吾悦广场(新泰市店)F2层</td></tr>
+<tr><td>⚠️</td><td>塔塔电玩</td><td>电玩城</td><td>独立</td><td>4.1</td><td>赵桥社区须昌路辅路</td></tr>
+<tr><td>⚠️</td><td>太阳部落动物欢乐王国</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>满庄镇太阳部落东侧</td></tr>
+<tr><td>⚠️</td><td>阳光亲子小镇(格林商城店)</td><td>亲子乐园</td><td>独立</td><td>4.0</td><td>岱宗大街格林商城阳光贝贝2层(齐鲁银座东)</td></tr>
+<tr><td>⚠️</td><td>羊祜古城亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.0</td><td>羊祜公园西侧</td></tr>
+<tr><td>⚠️</td><td>海贝儿儿童室内游乐中心(银座商城店)</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>银座商城3层</td></tr>
+<tr><td>⚠️</td><td>客悦·youland优乐达亲子乐园</td><td>亲子乐园</td><td>场内</td><td>4.0</td><td>泰前街道东岳大街泰山广场南侧银座市政广场店东区一层</td></tr>
+<tr><td>⚠️</td><td>萌宝儿童游乐园</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.0</td><td>岱庙街道财源大街90号中百大厦四层东区</td></tr>
+<tr><td>⚠️</td><td>圈圈乐</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>泰汶吾悦广场1号楼3F-3005</td></tr>
+<tr><td>⚠️</td><td>一起玩家年华(爱琴海店)</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>天平湖路与梅山西路交汇处的泰山爱琴海购物公园二楼中庭右区</td></tr>
+<tr><td>⚠️</td><td>天空之城(泰汶吾悦店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>徐家楼街道青年路泰汶吾悦广场二楼</td></tr>
+<tr><td>⚠️</td><td>豆包电玩·ps5·switch·xbox(泰汶吾悦店)</td><td>电玩城</td><td>场内</td><td>4.0</td><td>泰汶吾悦广场金街二楼蜜雪冰城东扶梯上二楼</td></tr>
+<tr><td>⚠️</td><td>寻游乐屿电玩城</td><td>电玩城</td><td>场内</td><td>4.0</td><td>新城街道办事处吾悦广场桃花印巷1-110</td></tr>
+<tr><td>⚠️</td><td>时刻玩家24小时无人自助游戏室</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>新城街道办事处吾悦广场步行街3层2-347号</td></tr>
+<tr><td>⚠️</td><td>肥城头号玩家娱乐综合体</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>长山街038号</td></tr>
+<tr><td>⚠️</td><td>抱走娃娃抓娃娃(宁阳店)</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>世纪城F区115号</td></tr>
+<tr><td>⚠️</td><td>泰安·疯狂海洋欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>夏张镇王士店村北泰山天鹅湖景区(东南角)</td></tr>
+<tr><td>⚠️</td><td>十里童话游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>新安路十里童话</td></tr>
+<tr><td>⚠️</td><td>彩山汶水景区</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>蒋集镇镇政府东600米蒙馆公路南</td></tr>
+<tr><td>⚠️</td><td>迷你金农场</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>西尚村肥桃路寿星广场左边往上路西灰色板房</td></tr>
+</tbody></table></div>
+<p>（另 102 家见 §11 原始数据）</p>
+<h2>5. 综合体与商场（174 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>吾悦广场(泰安泰山店)</td><td>百货/商场</td><td>4.8</td><td>25</td><td>4</td><td>天烛峰路388号</td></tr>
+<tr><td>✅A-</td><td>泰安万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>10</td><td>17</td><td>泰山大街566号</td></tr>
+<tr><td>✅A-</td><td>爱琴海购物公园</td><td>购物中心/综合体</td><td>4.8</td><td>4</td><td>3</td><td>天平湖路与梅山西路交汇处</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(泰安泰汶店)</td><td>购物中心/综合体</td><td>4.8</td><td>25</td><td>4</td><td>青年路556号</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(泰安市新泰市店)</td><td>购物中心/综合体</td><td>4.8</td><td>25</td><td>4</td><td>向阳路666号</td></tr>
+<tr><td>✅A-</td><td>五矿泰安·LIVE购物中心</td><td>购物中心/综合体</td><td>4.8</td><td>4</td><td>3</td><td>高新区长城路136号</td></tr>
+<tr><td>✅A-</td><td>信业商厦(中心店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>2</td><td>新城路196号</td></tr>
+<tr><td>✅A-</td><td>永辉超市(泰安爱琴海购物公园店)</td><td>购物中心/综合体</td><td>4.7</td><td>4</td><td>3</td><td>天平湖路与梅山西路交叉口</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(泰安泰山吾悦广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>5</td><td>3</td><td>上高街道天烛峰路388号吾悦广场(泰安泰山店)B1层</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(泰安肥城店)</td><td>百货/商场</td><td>4.7</td><td>25</td><td>5</td><td>肥桃路与泰西大街交叉口东北200米</td></tr>
+<tr><td>✅A-</td><td>儒原生活广场</td><td>购物中心/综合体</td><td>4.7</td><td>2</td><td>2</td><td>西山路</td></tr>
+<tr><td>✅A-</td><td>银座商城(泰安店)</td><td>购物中心/综合体</td><td>4.7</td><td>5</td><td>11</td><td>东岳大街318号</td></tr>
+<tr><td>✅A-</td><td>泰安宝龙广场</td><td>百货/商场</td><td>4.7</td><td>1</td><td>4</td><td>温泉路777号</td></tr>
+<tr><td>✅A-</td><td>新合作购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>2</td><td>4</td><td>新城路99号</td></tr>
+<tr><td>✅A-</td><td>万达·泰山1545</td><td>百货/商场</td><td>4.7</td><td>10</td><td>13</td><td>万达广场公寓</td></tr>
+<tr><td>✅A-</td><td>新时代商厦(五马店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>灵山大街216号附近</td></tr>
+<tr><td>✅A-</td><td>大润发(泰安店)</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>10</td><td>东岳大街333号</td></tr>
+<tr><td>✅A-</td><td>新时代生活超市(泮河小镇店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>新时代百货商场泮河小镇店东门旁</td></tr>
+<tr><td>✅A-</td><td>儒原城市广场超市</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>2</td><td>城西山路47号</td></tr>
+<tr><td>✅A-</td><td>家家悦(泰安岱岳五矿万境水岸店)</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>3</td><td>北集坡街道办事处长城路五矿万境水岸136号</td></tr>
+<tr><td>✅A-</td><td>东平百货大楼</td><td>百货/商场</td><td>4.6</td><td>2</td><td>2</td><td>西山路47号</td></tr>
+<tr><td>✅A-</td><td>银座·奥特莱斯(泰山店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>泰山大街130号</td></tr>
+<tr><td>✅A-</td><td>望岳广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>高铁北街36号</td></tr>
+<tr><td>✅A-</td><td>亿丰时代广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>海力大道1888号</td></tr>
+<tr><td>✅A-</td><td>盛合购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>泰山大街1908号</td></tr>
+<tr><td>✅A-</td><td>凌云大厦</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>北关路38号</td></tr>
+<tr><td>✅A-</td><td>新泰青云购物中心有限公司</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>青云路130号金斗路338号</td></tr>
+<tr><td>✅A-</td><td>青云购物中心(新矿店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新矿路</td></tr>
+<tr><td>✅A-</td><td>新泰银座商城</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新华街9号街心花园北侧</td></tr>
+<tr><td>✅A-</td><td>金桥城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>财源大街48号</td></tr>
+<tr><td>✅A-</td><td>高巛国际商贸城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>新兴路999号</td></tr>
+<tr><td>✅A-</td><td>肥城信业商厦(东城分店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>凤山大街132号</td></tr>
+<tr><td>✅A-</td><td>新时代商厦(宁阳店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>文庙街道办事处东关社区欣街与杏岗路交汇处</td></tr>
+<tr><td>✅A-</td><td>新泰好运商贸城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>金斗路337号</td></tr>
+<tr><td>✅A-</td><td>银座超市(泰安齐鲁店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>岱宗大街249号</td></tr>
+<tr><td>✅A-</td><td>银座商城(花园店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>东湖路2088号</td></tr>
+<tr><td>✅B</td><td>先锋电影城(银座商城店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>东岳大街与龙潭路交叉口东120米银座商城6楼</td></tr>
+<tr><td>✅B</td><td>新时代百货商场(泮河小镇店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>德泮路与泮河西路交叉口西南100米</td></tr>
+<tr><td>✅B</td><td>中百超市(泰安店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>财源大街90号</td></tr>
+<tr><td>✅B</td><td>新时代生活超市(万达店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>财源街道泰山大街566号万达广场负1楼B1号</td></tr>
+<tr><td>✅B</td><td>飞牛大润发购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>高铁广场对面红星美凯龙负一层</td></tr>
+<tr><td>✅B</td><td>泰安天平钢材批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>泰肥一级公路与振华路交叉口泰安天平钢材大市场</td></tr>
+<tr><td>✅B</td><td>新华城国际广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>岱阳大街与龙潭路交叉口西240米</td></tr>
+<tr><td>✅B</td><td>泰山国际采购中心(331省道)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>326省道与金牛山北路交叉口西220米</td></tr>
+<tr><td>✅B</td><td>鲁百商厦(新泰店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>府前街</td></tr>
+<tr><td>✅B</td><td>东顺新时代广场</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>须昌路与佛山街交汇处</td></tr>
+<tr><td>✅B</td><td>中影泰得影城(五矿泰安·LIVE购物中心店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>五矿泰安.Live商场4F01</td></tr>
+<tr><td>✅B</td><td>叶波大润发时代购物广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>磁窑镇S333佳和新苑附近</td></tr>
+<tr><td>✅B</td><td>中国联通(泰安市七里奥特莱斯营业厅)</td><td>奥特莱斯</td><td>4.4</td><td>0</td><td>0</td><td>泰山大街辅路与荣院东路交叉口东北80米</td></tr>
+<tr><td>✅B</td><td>纳吉馆韩国料理(银座商城店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>东岳大街银座金街D1-5号</td></tr>
+</tbody></table></div>
+<p>（另 124 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（304 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>鼎盛财源酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>仪阳镇凤山大街189号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3d6a00170dc00561f7a41b715f510212"></td></tr>
+<tr><td>✅A-</td><td>小山羊功夫串(啤酒厂店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>74.00</td><td>龙潭路201号、老啤酒厂院内</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8ae3c75741a3851c0338e07b1664db75"></td></tr>
+<tr><td>✅A-</td><td>小李子烧烤(枣行烧烤园)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>78.00</td><td>东岳大街粥店办事处枣行村烧烤园4去3号商铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ecf9e4115bdee9c396de2ea1cb8e71e8"></td></tr>
+<tr><td>✅A-</td><td>偏爱炒鸡店(财源街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>50.00</td><td>财源大街143号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d71baf1c358882a40000005516284266"></td></tr>
+<tr><td>✅A-</td><td>老泰安·泰安菜(迎胜路店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>56.00</td><td>迎胜路50号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000052850_ss__1761716396436_58876896.jpg"></td></tr>
+<tr><td>✅A-</td><td>老泰安·泰安菜(南湖店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>70.00</td><td>灵山大街283号南湖公园北门对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/D8925AD0_DE54_4045_AD48_5CB09EFAA2D4_L0_001_2000_150_1761560532199_08654712.jpg"></td></tr>
+<tr><td>✅A-</td><td>老山东·山东菜(鲁菜名店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>66.00</td><td>花园路268号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100007382_1761098145898_98478917.jpg"></td></tr>
+<tr><td>✅A-</td><td>老泰安·泰安菜(普照寺路店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>108.00</td><td>普照寺路49号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d67c8d865b638e37946498aea19ced01_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>偏爱炒鸡(盘古天地店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>60.00</td><td>东湖路与永福路交叉口北140米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/97fc235c5105eff8e9756d0647c8641a_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>偏爱炒鸡店(泰安老街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>48.00</td><td>泰安爱琴海购物公园</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000008618_ss__1760960587524_62962657.jpg"></td></tr>
+<tr><td>✅A-</td><td>鲁菜根·泰山菜(普照店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>60.00</td><td>普照寺路24-6号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000003889_ss__1736802893041_02977237.jpg"></td></tr>
+<tr><td>✅A-</td><td>泙阳嘉宴</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>84.00</td><td>西关小区南</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100025947_1759504927688_76869147.jpg"></td></tr>
+<tr><td>✅A-</td><td>炒鸡友趣·炒鸡·泰安菜(岱庙店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>32.00</td><td>运舟街6栋1层(运舟街与青年路交叉路口拐弯往东39米路南)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1748d4aa7518d66e0e835a06401ec54d_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>偏爱炒鸡店(迎胜路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>57.00</td><td>擂鼓石大街666号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000034080_ss__1764426524217_81099617.jpg"></td></tr>
+<tr><td>✅A-</td><td>鲁菜根·泰安菜(岱岳店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>65.00</td><td>天平街道办事处大河路以北、十二中以东岱岳市政建设综合楼1号楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100001616_1766854895156_40623814.jpg"></td></tr>
+<tr><td>✅A</td><td>忆蓉城成都名小吃(老县衙店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>43.00</td><td>岱庙街道通天社区老县衙福座G1</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2b9f19ae40cc7c1a275fb720c9a8574e_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>蘇河湾·新鲁菜·泰山宴(泰山店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>99.00</td><td>红门进山口泰山正门东470米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/507ac60865cf96110000002625410752?type=pic"></td></tr>
+<tr><td>✅A-</td><td>泰安宴·泰安菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>88.00</td><td>泮河大街温泉路交叉路口西北角</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/CA17D288_F959_4DB4_B3A9_F2CFA0DB0596_L0_001_2000_1500_1742558164054_61299225.jpg"></td></tr>
+<tr><td>✅A-</td><td>海棠餐厅I(长城路店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>72.00</td><td>山景尚宅南门东北70米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bac66d381aa162bd9543b6b8dc380c1d_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>偏爱炒鸡店(淘你欢店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>59.00</td><td>淘你欢购物广场西门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8546b1cb2527812d9bd09f0521ce76d4"></td></tr>
+<tr><td>✅A-</td><td>鲁菜根·泰安菜(万达店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>60.00</td><td>泰山大街333号传媒大厦F1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/49b05d655be0ad000000002325624863?type=pic"></td></tr>
+<tr><td>✅A-</td><td>海棠餐厅(世纪康城店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>88.00</td><td>永盛世纪康城</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2476D73F_F35E_44BA_A3CD_6FD60C0C6447_L0_001_1279_170_1767857289570_71215939.jpg"></td></tr>
+<tr><td>✅A-</td><td>苏河湾·臻宴·新鲁菜(区政府店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.7</td><td>80.00</td><td>天平湖公园南侧</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/DE5C4234_98C0_4423_860C_2614AE04FEEB_L0_001_1512_2016_1743572815102_00761874.jpg"></td></tr>
+<tr><td>✅A-</td><td>鲁菜根·泰安菜(龙泉店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>59.00</td><td>龙泉路与洪沟街东邻南天门大街19号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100007456_1757216685033_54329079.jpg"></td></tr>
+<tr><td>✅A-</td><td>王老三火锅烧烤(啤酒厂店)</td><td>餐饮服务;中餐厅;火锅店｜餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>79.00</td><td>龙潭路南(老啤酒厂)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a681cfe6d2cec52b0000003168340698?type=pic"></td></tr>
+<tr><td>✅A-</td><td>泰山第一笼(兴元·科山麓店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>17.00</td><td>兴元·科山麓西门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4a5b77dfe8c851b30000003406334137?type=pic"></td></tr>
+<tr><td>✅A-</td><td>巨鼎鲁菜(岱宗大街店)</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>83.00</td><td>岱宗大街369号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3AE2603C_F1F5_4CD1_A6F7_E4539AF1903B_L0_001_2000_150_1766038140840_47434273.jpg"></td></tr>
+<tr><td>✅A-</td><td>哈贝(长城路店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>29.00</td><td>长城路78号时代明珠商务大厦F1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9f80d301fb215e389cac5f7fc0a7b902"></td></tr>
+<tr><td>✅A-</td><td>小马扎大排档小核桃碳烤肉(泰安店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>80.00</td><td>上旺商业街B3号商业楼一层14号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/28427F2E_5448_4D4C_B4EE_3EB19565DB09_L0_001_1500_2000_1736836388884_30908078.jpg"></td></tr>
+<tr><td>✅A-</td><td>泰山夜市</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>31.00</td><td>奈河东路8号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a06c967640d5f04c01d5b5ca84903793_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>小江南(宝龙店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>48.00</td><td>宝龙城市广场777号1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a050e1536585c44a0000000700076383?type=pic"></td></tr>
+<tr><td>✅A-</td><td>泰山情泰山菜(岱阳高铁地标店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>50.00</td><td>岱阳大街222-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000049975_ss__1770949120929_52055597.jpg"></td></tr>
+<tr><td>✅A-</td><td>新泰万家灯火.江南小镇饭店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>50.00</td><td>云湖观邸东南门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8aec1cd30d9180c70000007218134277"></td></tr>
+<tr><td>✅A-</td><td>北新夜市服务办公室</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>22.00</td><td>奈河东路10-1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000006919_ss__1753339078587_97410867.jpg"></td></tr>
+<tr><td>✅A-</td><td>胶东一锅鲜(泰安总店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>67.00</td><td>-泰山区-迎胜路277号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_171_1767105481424_89735677.jpg"></td></tr>
+<tr><td>✅A-</td><td>泰山金如意酒店(岱岳店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>52.00</td><td>岱岳区法院西邻200米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000024698_ss__1755342456732_04893894.jpg"></td></tr>
+<tr><td>✅A-</td><td>湘味坊</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>49.00</td><td>泰山大街285号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/56cd9c499ad26f6e28271fa8f06ae066_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>陈小狗湘菜小炒</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>45.00</td><td>迎胜路华泰大酒店南邻</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/53044AEA_BA36_43ED_BD7D_48529501D83F_L0_001_1133_151_1764605262687_10354524.jpg"></td></tr>
+<tr><td>✅A-</td><td>甄下饭</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>35.00</td><td>泰山大街万达广场金街南区C142</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_5451_1764391238018_73064669.jpg"></td></tr>
+<tr><td>✅A</td><td>楚湘村土菜馆</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>48.00</td><td>财源街道长城路78号时代明珠商务大厦一层6号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100005758_1760740188657_85512089.jpg"></td></tr>
+<tr><td>✅A-</td><td>老家菜园子</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>52.00</td><td>新城街道办事处新城路祥惠时代广场1幢102号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000919_1772495269285_55143526.jpg"></td></tr>
+<tr><td>✅A-</td><td>家和大排档(祥和佳苑店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>60.00</td><td>汶河街西端明湖中学南门斜对过</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d1b90b322ab43ab2c124f97fd4fb306d_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>海鲜舫</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>73.00</td><td>青龙路中段与平阳路交叉口(近体育馆)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/D658C4F3_D9C5_461E_B874_88D4D83EFB29_L0_001_1290_948_1739337288833_61261299.jpg"></td></tr>
+<tr><td>✅A-</td><td>小渔庄海鲜(泰山乐园店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>68.00</td><td>东岳大街御碑楼路71号市政广场西联通大厦西邻乐园小区北门</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/fe98f6c6df4469fe0000006120456320?type=pic"></td></tr>
+<tr><td>✅A-</td><td>吉情友渔.泰山炒鸡.泰安菜</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>29.00</td><td>老县衙大院西北门进门左手边第一间</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000019886_ss__1761574292690_58898817.jpg"></td></tr>
+<tr><td>✅A-</td><td>山边边·泰山炒鸡(岱庙老县衙店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>35.00</td><td>运舟街4号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e9ad7ef7bc66c7650000002421666157?type=pic"></td></tr>
+<tr><td>✅A</td><td>吴家私房菜(泰玻店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>63.00</td><td>泰玻大街中段峪龙佳苑6号商业楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/40b3868f5171e3d81c9fd38cd663255d"></td></tr>
+<tr><td>✅A-</td><td>东岳财兴羊肉馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>47.00</td><td>岱宗大街259-3号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8EE957B2_9139_4B34_9287_9A82A2BDD2B9_L0_001_1512_201_1745139076298_99403945.jpg"></td></tr>
+<tr><td>✅A-</td><td>偏爱炒鸡店(温州步行街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>45.00</td><td>荣院东路53-3号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8546b1cb2527812d9bd09f0521ce76d4"></td></tr>
+<tr><td>✅A-</td><td>国华糁馆</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.6</td><td>13.00</td><td>全福街1-3号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e79f0a65aada4c6fbc3648dad361812e_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>魁盛居百年鲁菜馆(泰安盘古天地店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.6</td><td>97.00</td><td>东岳大街68号盘古天地西端</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c83bcde9af14ec2fd1df672ff0454cce_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>醉桃都疙瘩汤(康诚丽都西区店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>53.00</td><td>新城街道办事处康诚丽都西区28幢1层106铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_17790_ss__1751780466968_47478512.jpg"></td></tr>
+<tr><td>✅A-</td><td>一品糁汤</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>15.00</td><td>岱庙街道顺河东路01号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3a7167a63a4489340000002701166937?type=pic"></td></tr>
+<tr><td>✅A-</td><td>偏爱炒鸡店(南开发区店)</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.6</td><td>39.00</td><td>龙潭路龙泉农贸市场一号二号商铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/13d2264804dd470329de6116cbd9b726_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>巨鼎鲁菜乐园店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>61.00</td><td>东岳大街458号(兴业银行院内)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9cb433c4e5b9aea20000009214014683?type=pic"></td></tr>
+<tr><td>✅A-</td><td>伯爵泰山家常菜(校场街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>39.00</td><td>东岳大街教场街75号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d1fa14d1f9d204052bcdeb8d46cc268a_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>天地家常菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>55.00</td><td>老县衙大院南门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_718249_ss__1761467008224_78312014.jpg"></td></tr>
+<tr><td>✅A-</td><td>泰安府.泰山菜</td><td>餐饮服务;中餐厅;山东菜(鲁菜)</td><td>4.6</td><td>60.00</td><td>龙潭路9号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_17300_ss__1764758290685_16615677.jpg"></td></tr>
+<tr><td>✅A-</td><td>鲁菜根·泰山菜(建国店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>61.00</td><td>环山路与天烛峰路交叉口泰安建国璞隐酒店院内</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8c1f0d3205cfaad30000002309050472?type=pic"></td></tr>
+<tr><td>✅A-</td><td>海棠花开</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>86.00</td><td>交运集团北邻迎胜路1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_60928_ss__1772161558423_80695961.jpg"></td></tr>
+<tr><td>✅A-</td><td>真如意喜宴(山水名园店)</td><td>餐饮服务;糕饼店;糕饼店｜餐饮服务;中餐厅;中餐厅｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>68.00</td><td>龙山路北山水名园便民市场综合楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/E4B1F5B4_4CE5_4417_BFD5_E75D4BEB6870_L0_001_1179_72_1769133204346_36704778.jpg"></td></tr>
+<tr><td>✅A-</td><td>真如意喜宴酒店</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>—</td><td>泰西大街40号(汽车站对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/611920423de6af04e8b86d9f9c3aed50"></td></tr>
+<tr><td>✅A-</td><td>高第街56号餐厅</td><td>餐饮服务;中餐厅;广东菜(粤菜)</td><td>4.6</td><td>71.00</td><td>宝龙城市广场北区A2-1017号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a8b35422709fbfaa76bd5de183f3c7e6"></td></tr>
+<tr><td>✅A-</td><td>有滋有味老菜馆(银河路)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>55.00</td><td>银河路217号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bfa9476a33f7691ad8bf2aa52583a985_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>康师傅烧烤火锅</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>67.00</td><td>山口镇供电局斜对过</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/030c154072e7779e4b8ffc2bb10840cc_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>仁盛饭店(康复路总店)</td><td>餐饮服务;中餐厅;东北菜</td><td>4.6</td><td>49.00</td><td>康复路16-5号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/39e7ceb9c66bdea50000002480912435?type=pic"></td></tr>
+<tr><td>✅A-</td><td>金山糕点(金山路店)</td><td>餐饮服务;糕饼店;糕饼店</td><td>4.6</td><td>24.00</td><td>金山路32-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100071220_1761952429428_72257875.jpg"></td></tr>
+<tr><td>✅A-</td><td>大碗聚面馆(创业大街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>13.00</td><td>创业大街187号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_service__1772956058650_13653172_1772956191602_79362371.jpg"></td></tr>
+<tr><td>✅A-</td><td>天仙竹荪鹅(岱宗大街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>48.00</td><td>岱宗大街403号(泰安老气象局)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_12319_ss__1761348146858_10904977.jpg"></td></tr>
+<tr><td>✅A-</td><td>李家味炒鸡大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>50.00</td><td>北集坡街道凤凰支路</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/41e8ce54ed8dd8c90000002749490762?type=pic"></td></tr>
+<tr><td>✅A-</td><td>楼上楼山東大排檔</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>56.00</td><td>万达金街D164号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1229_1773186894650_04589557.jpg"></td></tr>
+<tr><td>✅A-</td><td>小马扎大排档小核桃碳烤肉(二店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>91.00</td><td>岱宗大街与虎山路交叉口东南40米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6c20a13e78dc9e0e0000003056176235?type=pic"></td></tr>
+<tr><td>✅A-</td><td>箱货大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>21.00</td><td>擂鼓石大街与金凤路交叉口西北100米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3f46afa1f1991098589748c63f3b7c07_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>清真老麻烧烤铜火锅大排档</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>24.00</td><td>三里南村北门西160米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/81fb45324f3ad00aa14743fb5f67fd49"></td></tr>
+<tr><td>✅A-</td><td>麦当劳(泰安餐厅)</td><td>餐饮服务;快餐厅;麦当劳</td><td>4.6</td><td>28.00</td><td>青年路62号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d9eb6b33b3ff5dc1d16060e55b6bb03a_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>打牙砂锅(泰安总店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>37.00</td><td>财源街道万达广场A区商业街128户</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a2ad043b06a0c5f5d6f944726b343e39_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A</td><td>忆之味乐山钵钵鸡·成都小吃(老县衙南门店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.6</td><td>35.00</td><td>岱庙街道府前街8号万力商业楼龙座西部2号老县衙南门慈恩医养院门口西侧第二个门头</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000073419_ss__1768105651875_26714089.jpg"></td></tr>
+<tr><td>✅A-</td><td>李先生牛肉面大王(泰安站第1停车场店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.6</td><td>32.00</td><td>粥店街道高铁出站口B-3号商铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/O1CN01SSftMD1GNt7827d6J_!!6000000000611-0-tps-600-600.jpg"></td></tr>
+<tr><td>✅A-</td><td>熊猫串串钵钵鸡</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>46.00</td><td>岱庙街道万力商业楼坤福座北1层11号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/547370f097bf0ede5161f6b3fc1d11bf_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>超意兴快餐(新一中店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.6</td><td>11.00</td><td>北集坡街道凤祥路大安书香世家沿街1号公建楼自西向东2号-5号商铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/34d98cad6d716781de908377fbc9f9df"></td></tr>
+</tbody></table></div>
+<p>（另 224 家见 §11 原始数据，评分排序后 80 名未列入）</p>
+<h2>7. 苍蝇馆 / 小店候选（32 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>小马扎大排档小核桃碳烤肉(泰安店)</td><td>店名小店语义</td><td>4.7</td><td>80.00</td><td>上旺商业街B3号商业楼一层14号</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>楚湘村土菜馆</td><td>店名小店语义</td><td>4.6</td><td>48.00</td><td>财源街道长城路78号时代明珠商务大厦一层6号</td><td></td></tr>
+<tr><td>家和大排档(祥和佳苑店)</td><td>店名小店语义</td><td>4.6</td><td>60.00</td><td>汶河街西端明湖中学南门斜对过</td><td></td></tr>
+<tr><td>吴家私房菜(泰玻店)</td><td>店名小店语义</td><td>4.6</td><td>63.00</td><td>泰玻大街中段峪龙佳苑6号商业楼</td><td></td></tr>
+<tr><td>伯爵泰山家常菜(校场街店)</td><td>店名小店语义</td><td>4.6</td><td>39.00</td><td>东岳大街教场街75号</td><td></td></tr>
+<tr><td>天地家常菜</td><td>店名小店语义</td><td>4.6</td><td>55.00</td><td>老县衙大院南门旁</td><td></td></tr>
+<tr><td>李家味炒鸡大排档</td><td>店名小店语义</td><td>4.6</td><td>50.00</td><td>北集坡街道凤凰支路</td><td></td></tr>
+<tr><td>小马扎大排档小核桃碳烤肉(二店)</td><td>店名小店语义</td><td>4.6</td><td>91.00</td><td>岱宗大街与虎山路交叉口东南40米</td><td></td></tr>
+<tr><td>箱货大排档</td><td>店名小店语义</td><td>4.6</td><td>21.00</td><td>擂鼓石大街与金凤路交叉口西北100米</td><td></td></tr>
+<tr><td>清真老麻烧烤铜火锅大排档</td><td>店名小店语义</td><td>4.6</td><td>24.00</td><td>三里南村北门西160米</td><td></td></tr>
+<tr><td>吴家私房菜(迎胜东路店)</td><td>店名小店语义</td><td>4.6</td><td>81.00</td><td>迎胜东路与东岳小路交叉口东200米</td><td></td></tr>
+<tr><td>吴家私房菜七号院</td><td>店名小店语义</td><td>4.6</td><td>55.00</td><td>泰山风景名胜区泰前办事处老观光路77号</td><td></td></tr>
+<tr><td>儒湘阁湖南土菜馆</td><td>店名小店语义</td><td>4.5</td><td>50.00</td><td>岱道庵路202号</td><td></td></tr>
+<tr><td>老后厨·土菜</td><td>店名小店语义</td><td>4.5</td><td>56.00</td><td>新城街道新城凤山西街80号B幢</td><td></td></tr>
+<tr><td>西北鲜羊肉馆大排档</td><td>店名小店语义</td><td>4.5</td><td>50.00</td><td>擂鼓石大街662-6号</td><td></td></tr>
+<tr><td>米果大排档</td><td>店名小店语义</td><td>4.5</td><td>54.00</td><td>高铁前路与英才南街交叉口东南60米</td><td></td></tr>
+<tr><td>吴佰亿烧烤大排档</td><td>店名小店语义</td><td>4.5</td><td>33.00</td><td>泮河大街20号雍锦府小区东</td><td></td></tr>
+<tr><td>哈尔滨海鲜烧烤大排档</td><td>店名小店语义</td><td>4.5</td><td>53.00</td><td>洪沟街与紫云路交叉口东北60米</td><td></td></tr>
+<tr><td>山亭私房菜(岩庄社区店)</td><td>店名小店语义</td><td>4.4</td><td>53.00</td><td>泰山大街西段天平岩庄社区沿街门头房</td><td></td></tr>
+<tr><td>小马扎小核桃碳·烤肉大排档(迎胜路店)</td><td>店名小店语义</td><td>4.4</td><td>79.00</td><td>财源街道迎胜路311号</td><td></td></tr>
+<tr><td>水河船农家院</td><td>店名小店语义</td><td>4.4</td><td>50.00</td><td>255省道(老湖镇中心小学斜对面)</td><td></td></tr>
+<tr><td>吴家私房菜(光彩店)</td><td>店名小店语义</td><td>4.4</td><td>76.00</td><td>泰山大街388-4号光彩市场东邻</td><td></td></tr>
+<tr><td>泰山味道私房菜</td><td>店名小店语义</td><td>4.4</td><td>40.00</td><td>宝盛广场3号楼01-25</td><td></td></tr>
+<tr><td>湘妹子土菜馆</td><td>店名小店语义</td><td>4.3</td><td>43.00</td><td>泰前街道温泉路180号</td><td></td></tr>
+<tr><td>半日闲·莳味居家常菜</td><td>店名小店语义</td><td>4.3</td><td>55.00</td><td>岱阳大街229号院内1号院</td><td></td></tr>
+<tr><td>华顺农家饭店</td><td>店名小店语义</td><td>4.1</td><td>31.00</td><td>故县店村</td><td></td></tr>
+<tr><td>天天海鲜大排档(膏城花园店)</td><td>店名小店语义</td><td>4.0</td><td>43.00</td><td>膏城花园东1门南70米</td><td></td></tr>
+<tr><td>烟火巷烧烤大排档</td><td>店名小店语义</td><td>4.0</td><td>32.00</td><td>财源街道办事处中南财源门十二帝街1层85号</td><td></td></tr>
+<tr><td>永祥快餐烧烤大排档(小堰堤社区店)</td><td>店名小店语义</td><td>4.0</td><td>18.00</td><td>小堰堤商业街25楼52号门头</td><td></td></tr>
+<tr><td>阿彬家常菜馆</td><td>店名小店语义</td><td>4.0</td><td>31.00</td><td>擂鼓石路616转播台路口</td><td></td></tr>
+<tr><td>颐高夜市大排档</td><td>店名小店语义</td><td>4.0</td><td>—</td><td>向阳街与工业二路交叉口东南20米</td><td></td></tr>
+<tr><td>泰山大排档(夜市店)</td><td>店名小店语义</td><td>3.8</td><td>49.00</td><td>奈何东路2-2号</td><td></td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（43 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>Tai集(泰集)文创特产仓工人文化宫店</td><td>购物服务;专卖店;专营店</td><td>4.5</td><td>普照寺泰安市工人文化宫院内北头Tai集文创特产仓</td></tr>
+<tr><td>✅B</td><td>贝嘉鲁-山东特产(泰山旗舰店)</td><td>公司企业;公司;公司</td><td>4.5</td><td>东岳大街217号-2号</td></tr>
+<tr><td>✅B</td><td>菱米窝头老店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>通湖路089号</td></tr>
+<tr><td>✅B</td><td>黄乾美食园.乡村特产</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.4</td><td>楼德镇黄泉沟村9胡同16号</td></tr>
+<tr><td>✅B</td><td>泰山名优特产平价超市(泰山旗舰店)</td><td>购物服务;专卖店;专营店｜购物服务;超级市场;超市</td><td>4.3</td><td>龙潭路13号新梅村酒店隔壁,沃尔停车场门进口处</td></tr>
+<tr><td>✅B</td><td>贝嘉鲁山东特产(宝盛广场店)</td><td>购物服务;专卖店;专营店</td><td>4.3</td><td>宝盛广场3号楼1-23号</td></tr>
+<tr><td>⚠️</td><td>九品贡煎饼山东特产店(泰山店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.2</td><td>东岳大街18-1号</td></tr>
+<tr><td>⚠️</td><td>亚奥特牛奶专卖店恒大城保利爱琴海店</td><td>购物服务;综合市场;农副产品市场</td><td>4.1</td><td>万官大街567号</td></tr>
+<tr><td>⚠️</td><td>韩太医泰山黄精(擂鼓石店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.1</td><td>擂鼓石大街633-1号</td></tr>
+<tr><td>❌</td><td>鲁御泰·山东特产(望岳广场店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.1</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>Tai集(泰集)文创特产仓红门店</td><td>购物服务;专卖店;专营店</td><td>4.0</td><td>观光路81号</td></tr>
+<tr><td>⚠️</td><td>泰山特产店</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.0</td><td>科山路与擂鼓石大街交叉口南200米</td></tr>
+<tr><td>⚠️</td><td>刘氏湖特产超市(总店)</td><td>购物服务;专卖店;土特产专卖店</td><td>4.0</td><td>银山街九鑫花园大门东94号</td></tr>
+<tr><td>⚠️</td><td>东平湖特产国丹食品直营店</td><td>购物服务;专卖店;专营店</td><td>4.0</td><td>东原路678号</td></tr>
+<tr><td>⚠️</td><td>慧儿山货土特产</td><td>购物服务;专卖店;专营店</td><td>4.0</td><td>金斗路408号</td></tr>
+<tr><td>⚠️</td><td>皮家香油</td><td>购物服务;综合市场;农副产品市场</td><td>3.9</td><td>岱庙北门往东50米路北岱北街89号</td></tr>
+<tr><td>⚠️</td><td>东平特产(东原店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.9</td><td>东原路</td></tr>
+<tr><td>⚠️</td><td>泰山特产</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.9</td><td>迎春路11号</td></tr>
+<tr><td>⚠️</td><td>泰山礼物(红门店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.8</td><td>红门路39-9号</td></tr>
+<tr><td>⚠️</td><td>泰山特产小城超市</td><td>购物服务;专卖店;专营店｜购物服务;便民商店/便利店;便民商店/便利店</td><td>3.8</td><td>龙潭路14一3号</td></tr>
+<tr><td>⚠️</td><td>泰上礼-山东特产礼品旗舰店</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.8</td><td>红门路79号</td></tr>
+<tr><td>⚠️</td><td>东平湖特产超市(X073店)</td><td>购物服务;超级市场;超市</td><td>3.7</td><td>银山镇卧牛山村王庄环湖路西</td></tr>
+<tr><td>⚠️</td><td>东平湖特产鱼</td><td>购物服务;综合市场;水产海鲜市场</td><td>3.7</td><td>戴庙镇东金山社区向东300你路北</td></tr>
+<tr><td>⚠️</td><td>孔庄庆辉绿豆粉皮</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.7</td><td>S243演马小学往西50米路南</td></tr>
+<tr><td>⚠️</td><td>山东特产(东岳大街店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.7</td><td>东岳大街大润发西335号山东特产</td></tr>
+<tr><td>⚠️</td><td>泰如意名烟名酒香肠(圣源美郡店)</td><td>购物服务;专卖店;烟酒专卖店</td><td>3.7</td><td>圣源美郡南1门旁</td></tr>
+<tr><td>⚠️</td><td>九品贡煎饼虎山路直营店</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.7</td><td>东岳大街与虎山路红绿灯北38米希岸酒店门口</td></tr>
+<tr><td>⚠️</td><td>东平湖特产(东岳大街泰安总店)</td><td>购物服务;专卖店;专营店</td><td>3.7</td><td>东岳大街87-1号</td></tr>
+<tr><td>⚠️</td><td>肥城演马陈峰牛肉</td><td>餐饮服务;中餐厅;清真菜馆</td><td>3.6</td><td>河西小学十字路口往南188米路东</td></tr>
+<tr><td>⚠️</td><td>雅兰煎饼特产</td><td>购物服务;购物相关场所;购物相关场所｜餐饮服务;餐饮相关场所;餐饮相关</td><td>3.6</td><td>岱庙北街原岱北市场雅兰煎饼特产</td></tr>
+<tr><td>⚠️</td><td>演马陈峰牛肉</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.6</td><td>龙山大街第二实验小学西邻路北</td></tr>
+<tr><td>⚠️</td><td>省庄富民土产部</td><td>购物服务;家居建材市场;建材五金市场</td><td>3.5</td><td>S330省道南50米</td></tr>
+<tr><td>⚠️</td><td>惠升平价特产寄存超市</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.5</td><td>高铁出站口A-02</td></tr>
+<tr><td>⚠️</td><td>泰山玉镇宅桃木剑超市</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.5</td><td>龙潭路69-2号</td></tr>
+<tr><td>❌</td><td>山东特产美食城</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.4</td><td>环山路与黄金巷交叉口东北140米</td></tr>
+<tr><td>❌</td><td>韩国现代特产有机肥</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.3</td><td>桃园镇潘庄村湖王路路东</td></tr>
+<tr><td>❌</td><td>寄存特产超市</td><td>购物服务;超级市场;超市</td><td>3.3</td><td>站前派出所东北门西南280米</td></tr>
+<tr><td>❌</td><td>成林土产批发</td><td>购物服务;家居建材市场;建材五金市场</td><td>3.2</td><td>大汶口镇新城街86号</td></tr>
+<tr><td>❌</td><td>老张土产</td><td>购物服务;家居建材市场;建材五金市场</td><td>3.2</td><td>唐王街与繁荣大街交叉口东220米</td></tr>
+<tr><td>❌</td><td>盛宏干鲜果土特产</td><td>购物服务;综合市场;农副产品市场</td><td>3.1</td><td>岱北街85号</td></tr>
+<tr><td>❌</td><td>吉市口土产</td><td>购物服务;家居建材市场;建材五金市场</td><td>3.1</td><td>冯氏酒楼西北侧</td></tr>
+<tr><td>❌</td><td>玉芳干果土特产店</td><td>购物服务;购物相关场所;购物相关场所</td><td>2.8</td><td>朝阳市场南门路东</td></tr>
+<tr><td>❌</td><td>东平湖特产粮油</td><td>购物服务;综合市场;农副产品市场</td><td>2.7</td><td>交通稽查大队南50米(龙山大街南)</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>鼎盛财源酒店（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鼎盛财源酒店</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§6</td></tr>
+<tr><td>鼎盛财源酒店</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§6</td></tr>
+<tr><td>三更密室逃脱(肥城吾悦金街店)</td><td>距离就近</td><td>313m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>潮乐派对电玩城(肥城吾悦店)</td><td>距离就近</td><td>370m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>黑魔法密室逃脱(肥城吾悦店)</td><td>距离就近</td><td>370m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>潮乐派对电玩城(肥城吾悦店)</td><td>距离就近</td><td>370m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>多奇妙超乐场Dookimore(肥城吾悦广场店)</td><td>距离就近</td><td>371m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>百慕大冒险·新奇体验(吾悦广场店)</td><td>距离就近</td><td>374m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>百慕大冒险·新奇体验(吾悦广场店)</td><td>距离就近</td><td>374m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>E时空电玩城(肥城吾悦店)</td><td>距离就近</td><td>409m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>时刻玩家24小时无人自助游戏室</td><td>距离就近</td><td>414m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>时刻玩家24小时无人自助游戏室</td><td>距离就近</td><td>414m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>玩萌堡萌宠赶海乐园</td><td>距离就近</td><td>440m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>天空之城游乐体验世界(肥城吾悦广场店)</td><td>距离就近</td><td>462m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>寻游乐屿电玩城</td><td>距离就近</td><td>490m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>寻游乐屿电玩城</td><td>距离就近</td><td>490m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>小黄鸭主题游乐园(吾悦广场泰安肥城店)</td><td>距离就近</td><td>564m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>牧原宾馆(新泰店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>牧原宾馆(新泰店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新汶新零点宾馆（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新汶新零点宾馆</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>鑫意火锅</td><td>距离就近</td><td>151m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>泰安诺达宾馆（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>泰安诺达宾馆</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(泰安泰山店)（49 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>柳州肥姨妈大骨螺蛳粉(天烛峰吾悦广场店)</td><td>名称互证</td><td>0m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>魅KTV(吾悦广场店)</td><td>名称互证</td><td>34m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>米村拌饭(泰安吾悦广场店)</td><td>名称互证</td><td>38m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星轶影城(吾悦广场泰安泰山店)</td><td>名称互证</td><td>58m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>多奇妙儿童乐园(泰安吾悦广场店)</td><td>名称互证</td><td>63m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机</td><td>名称互证</td><td>65m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机</td><td>名称互证</td><td>65m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>奇点电玩吧(泰安吾悦广场店)</td><td>名称互证</td><td>69m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>奇点电玩吧(泰安吾悦广场店)</td><td>名称互证</td><td>69m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>真人密室沉浸式体验馆(泰安泰山吾悦广场店)</td><td>名称互证</td><td>79m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>飞越中国(泰山吾悦店)</td><td>名称互证</td><td>81m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>飞越中国(泰山吾悦店)</td><td>名称互证</td><td>81m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>比格比萨自助(泰安泰山吾悦店)</td><td>名称互证</td><td>82m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>黑魔法密室逃脱(泰安吾悦广场店)</td><td>名称互证</td><td>117m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>邦邦和小言游乐园</td><td>名称互证</td><td>190m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>豆包电玩·ps5·switch·xbox(泰汶吾悦店)</td><td>名称互证</td><td>6406m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>豆包电玩·ps5·switch·xbox(泰汶吾悦店)</td><td>名称互证</td><td>6406m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>巅峰电竞(泰汶吾悦广场店)</td><td>名称互证</td><td>6450m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>乐动主题儿童乐园</td><td>名称互证</td><td>6471m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>圈圈乐</td><td>名称互证</td><td>6472m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>次元的站(泰汶吾悦广场青年路店)</td><td>名称互证</td><td>6483m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>甜蜜戏雪奇缘</td><td>名称互证</td><td>6486m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>壹加大密室逃脱(泰汶吾悦广场店)</td><td>名称互证</td><td>6488m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>龍歌自助小火锅(泰汶吾悦店5楼)</td><td>名称互证</td><td>6493m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天空之城(泰汶吾悦店)</td><td>名称互证</td><td>6495m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>泰安万达广场（56 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>乐掌门夹机同学</td><td>名称互证</td><td>17m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>乐掌门夹机同学</td><td>名称互证</td><td>17m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>娱乐侠(万达广场泰安泰山店)</td><td>距离就近</td><td>25m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>棂笼沉浸式密室逃脱(万达广场店)</td><td>距离就近</td><td>29m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达宝贝王(泰安乐园)</td><td>名称互证</td><td>39m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>万达影城(泰安万达广场店)</td><td>名称互证</td><td>41m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>米村拌饭(泰安万达店)</td><td>距离就近</td><td>45m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>比格比萨自助(泰安万达店)</td><td>距离就近</td><td>64m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(万达广场店)</td><td>距离就近</td><td>67m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>泰安万达广场万达影城售票</td><td>名称互证</td><td>67m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>NB电竞(泰安万达广场店)</td><td>名称互证</td><td>69m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>雀发潮AI智慧KTV(泰安万达广场店)</td><td>名称互证</td><td>70m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>民谣集烧烤酒馆(山东泰安万达广场店)</td><td>名称互证</td><td>77m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>民谣集烧烤酒馆(山东泰安万达广场店)</td><td>名称互证</td><td>77m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麻将·棋牌公馆</td><td>名称互证</td><td>85m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>黑珍珠台球棋牌(万达店)</td><td>名称互证</td><td>86m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>抓小鱼</td><td>距离就近</td><td>86m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>抓小鱼</td><td>距离就近</td><td>86m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>叮咚电玩</td><td>距离就近</td><td>91m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>叮咚电玩</td><td>距离就近</td><td>91m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>十七街干锅鸡公煲(万达金街店)</td><td>距离就近</td><td>92m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>孩子王童乐园(山东泰安万达店)</td><td>名称互证</td><td>93m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>指尖战场电玩</td><td>距离就近</td><td>99m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>指尖战场电玩</td><td>距离就近</td><td>99m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>金街小吃(泰安万达店)</td><td>名称互证</td><td>100m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>爱琴海购物公园（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>一网亦家网咖(泰安爱琴海店)</td><td>距离就近</td><td>27m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>喜洋洋冰上运动中心(爱琴海购物公园店)</td><td>名称互证</td><td>78m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>沃美影城(泰安爱琴海购物公园店)</td><td>名称互证</td><td>88m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>一起玩家年华(爱琴海店)</td><td>名称互证</td><td>88m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(泰安老街店)</td><td>距离就近</td><td>96m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>小黄鸭主题乐园</td><td>距离就近</td><td>115m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>奇幻橙沉浸式飞跃剧场(爱琴海店)</td><td>距离就近</td><td>136m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(爱琴海店)</td><td>名称互证</td><td>162m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>片场酒吧(泰安爱琴海购物公园店)</td><td>名称互证</td><td>162m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>宝贝王成长乐园(泰安爱琴海店)</td><td>名称互证</td><td>165m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>华曼PARTY KTV(泰安爱琴海购物公园店)</td><td>名称互证</td><td>201m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>偏爱炒鸡店(泰安老街店)</td><td>名称互证</td><td>223m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>必胜客(泰安爱琴海店)</td><td>距离就近</td><td>283m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(泰安泰汶店)（49 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>龍歌自助小火锅(泰汶吾悦店5楼)</td><td>名称互证</td><td>18m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>云阙动漫</td><td>名称互证</td><td>25m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>云阙动漫</td><td>名称互证</td><td>25m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>次元的站(泰汶吾悦广场青年路店)</td><td>名称互证</td><td>28m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>乐动主题儿童乐园</td><td>名称互证</td><td>39m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>壹加大密室逃脱(泰汶吾悦广场店)</td><td>名称互证</td><td>39m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>LEDONG PARK(泰汶吾悦广场青年路店)</td><td>名称互证</td><td>71m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>LEDONG PARK(泰汶吾悦广场青年路店)</td><td>名称互证</td><td>71m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>圈圈乐</td><td>名称互证</td><td>73m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>巅峰电竞(泰汶吾悦广场店)</td><td>名称互证</td><td>84m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>豆包电玩·ps5·switch·xbox(泰汶吾悦店)</td><td>名称互证</td><td>108m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>豆包电玩·ps5·switch·xbox(泰汶吾悦店)</td><td>名称互证</td><td>108m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>天空之城(泰汶吾悦店)</td><td>名称互证</td><td>110m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>甜蜜戏雪奇缘</td><td>名称互证</td><td>193m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>多奇妙儿童乐园(泰安吾悦广场店)</td><td>名称互证</td><td>6446m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>星轶影城(吾悦广场泰安泰山店)</td><td>名称互证</td><td>6451m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机</td><td>名称互证</td><td>6471m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机</td><td>名称互证</td><td>6471m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>米村拌饭(泰安吾悦广场店)</td><td>名称互证</td><td>6486m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>比格比萨自助(泰安泰山吾悦店)</td><td>名称互证</td><td>6496m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>魅KTV(吾悦广场店)</td><td>名称互证</td><td>6498m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(天烛峰吾悦广场店)</td><td>名称互证</td><td>6508m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>真人密室沉浸式体验馆(泰安泰山吾悦广场店)</td><td>名称互证</td><td>6533m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>飞越中国(泰山吾悦店)</td><td>名称互证</td><td>6540m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>飞越中国(泰山吾悦店)</td><td>名称互证</td><td>6540m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(泰安市新泰市店)（49 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>小猪泰德梦幻乐园·淘气堡(新泰吾悦广场泰安新泰店)</td><td>名称互证</td><td>16m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>天空之城(吾悦广场新泰市店)</td><td>名称互证</td><td>36m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>谜幻师·沉浸式密室逃脱</td><td>名称互证</td><td>57m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>七彩天空(泰安新泰吾悦广场店)</td><td>名称互证</td><td>65m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>蜂芒超级密室(新泰吾悦店)</td><td>名称互证</td><td>68m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机</td><td>名称互证</td><td>62115m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机</td><td>名称互证</td><td>62115m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>奇点电玩吧(泰安吾悦广场店)</td><td>名称互证</td><td>62136m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>奇点电玩吧(泰安吾悦广场店)</td><td>名称互证</td><td>62136m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(天烛峰吾悦广场店)</td><td>名称互证</td><td>62152m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>多奇妙儿童乐园(泰安吾悦广场店)</td><td>名称互证</td><td>62181m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>星轶影城(吾悦广场泰安泰山店)</td><td>名称互证</td><td>62182m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魅KTV(吾悦广场店)</td><td>名称互证</td><td>62186m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>米村拌饭(泰安吾悦广场店)</td><td>名称互证</td><td>62189m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>飞越中国(泰山吾悦店)</td><td>名称互证</td><td>62212m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>飞越中国(泰山吾悦店)</td><td>名称互证</td><td>62212m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>真人密室沉浸式体验馆(泰安泰山吾悦广场店)</td><td>名称互证</td><td>62215m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>比格比萨自助(泰安泰山吾悦店)</td><td>名称互证</td><td>62233m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>黑魔法密室逃脱(泰安吾悦广场店)</td><td>名称互证</td><td>62234m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>邦邦和小言游乐园</td><td>名称互证</td><td>62310m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>天空之城(泰汶吾悦店)</td><td>名称互证</td><td>64515m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>乐动主题儿童乐园</td><td>名称互证</td><td>64596m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>次元的站(泰汶吾悦广场青年路店)</td><td>名称互证</td><td>64598m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>龍歌自助小火锅(泰汶吾悦店5楼)</td><td>名称互证</td><td>64604m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>豆包电玩·ps5·switch·xbox(泰汶吾悦店)</td><td>名称互证</td><td>64609m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>五矿泰安·LIVE购物中心（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Z先生超级密室(五矿泰安·LIVE购物中心店)</td><td>名称互证</td><td>37m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>捞鱼侠</td><td>距离就近</td><td>37m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>捞鱼侠</td><td>距离就近</td><td>37m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>裸眼9D沉浸式飞跃剧场</td><td>名称互证</td><td>54m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>中影泰得影城(五矿泰安·LIVE购物中心店)</td><td>名称互证</td><td>56m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>泰安柳记旺厨美食城</td><td>距离就近</td><td>68m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>双人成行Ps·Switch·观影主机游戏屋(五矿live购物中心店)</td><td>名称互证</td><td>75m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>宝贝王成长乐园(五矿店)</td><td>距离就近</td><td>77m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>星梦佳成长乐园</td><td>距离就近</td><td>113m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>燃pro24h自助健身</td><td>距离就近</td><td>113m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>李家味炒鸡大排档</td><td>距离就近</td><td>502m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>和平饭店(泰安岱宗大街店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>和平饭店(泰安岱宗大街店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>东岳财兴羊肉馆</td><td>距离就近</td><td>138m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>阳光亲子小镇(格林商城店)</td><td>距离就近</td><td>221m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>阳光亲子小镇(格林商城店)</td><td>距离就近</td><td>221m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>小马扎大排档小核桃碳烤肉(二店)</td><td>距离就近</td><td>306m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>泰安市泰山区赵记煎饼卷大葱酒店</td><td>距离就近</td><td>313m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>泰安市泰山区赵记煎饼卷大葱酒店</td><td>距离就近</td><td>313m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>得膳斋中式糕点(虎山路店)</td><td>距离就近</td><td>589m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(泰安万达广场店)（57 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(泰安万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>棂笼沉浸式密室逃脱(万达广场店)</td><td>距离就近</td><td>15m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(万达广场店)</td><td>距离就近</td><td>39m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>NB电竞(泰安万达广场店)</td><td>距离就近</td><td>40m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>万达宝贝王(泰安乐园)</td><td>距离就近</td><td>41m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>娱乐侠(万达广场泰安泰山店)</td><td>距离就近</td><td>43m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>民谣集烧烤酒馆(山东泰安万达广场店)</td><td>距离就近</td><td>47m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>民谣集烧烤酒馆(山东泰安万达广场店)</td><td>距离就近</td><td>47m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>泰安万达广场万达影城售票</td><td>名称互证</td><td>48m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>乐掌门夹机同学</td><td>距离就近</td><td>49m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>乐掌门夹机同学</td><td>距离就近</td><td>49m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>孩子王童乐园(山东泰安万达店)</td><td>距离就近</td><td>83m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>米村拌饭(泰安万达店)</td><td>距离就近</td><td>85m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>比格比萨自助(泰安万达店)</td><td>距离就近</td><td>91m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>必胜客(泰山大街店)</td><td>距离就近</td><td>106m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>雀发潮AI智慧KTV(泰安万达广场店)</td><td>距离就近</td><td>110m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>黑珍珠台球棋牌(万达店)</td><td>距离就近</td><td>122m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>麻将·棋牌公馆</td><td>距离就近</td><td>123m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>十七街干锅鸡公煲(万达金街店)</td><td>距离就近</td><td>123m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>抓小鱼</td><td>距离就近</td><td>124m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>抓小鱼</td><td>距离就近</td><td>124m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>叮咚电玩</td><td>距离就近</td><td>132m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>叮咚电玩</td><td>距离就近</td><td>132m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>金街小吃(泰安万达店)</td><td>距离就近</td><td>133m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>指尖战场电玩</td><td>距离就近</td><td>135m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(盘古天地IMAX店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(盘古天地IMAX店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>魁盛居百年鲁菜馆(泰安盘古天地店)</td><td>距离就近</td><td>75m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>来咯电玩城</td><td>距离就近</td><td>78m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>来咯电玩城</td><td>距离就近</td><td>78m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>酷乐电玩城</td><td>距离就近</td><td>82m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>酷乐电玩城</td><td>距离就近</td><td>82m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>盘古天地儿童乐园</td><td>距离就近</td><td>90m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>偏爱炒鸡(盘古天地店)</td><td>距离就近</td><td>135m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>松鼠Ai人工智能学习体验中心</td><td>距离就近</td><td>434m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>A1国际动漫专营店</td><td>距离就近</td><td>576m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>泰安万达广场万达影城售票</td><td>名称互证</td><td>5442m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(泰安万达广场店)</td><td>名称互证</td><td>5442m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>信业商厦(中心店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>安姬酸奶负一美食城</td><td>距离就近</td><td>63m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>信业商厦美食城(中心肥城信业商厦店)</td><td>名称互证</td><td>76m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>梦幻宝贝乐园(东城分肥城信业商厦店)</td><td>名称互证</td><td>3862m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永辉超市(泰安爱琴海购物公园店)（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>一网亦家网咖(泰安爱琴海店)</td><td>距离就近</td><td>29m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>喜洋洋冰上运动中心(爱琴海购物公园店)</td><td>距离就近</td><td>86m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>一起玩家年华(爱琴海店)</td><td>距离就近</td><td>96m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>沃美影城(泰安爱琴海购物公园店)</td><td>距离就近</td><td>96m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(泰安老街店)</td><td>距离就近</td><td>142m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>奇幻橙沉浸式飞跃剧场(爱琴海店)</td><td>距离就近</td><td>149m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>小黄鸭主题乐园</td><td>距离就近</td><td>153m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>宝贝王成长乐园(泰安爱琴海店)</td><td>距离就近</td><td>175m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>片场酒吧(泰安爱琴海购物公园店)</td><td>距离就近</td><td>182m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>华曼PARTY KTV(泰安爱琴海购物公园店)</td><td>距离就近</td><td>183m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(爱琴海店)</td><td>距离就近</td><td>184m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>偏爱炒鸡店(泰安老街店)</td><td>距离就近</td><td>251m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>必胜客(泰安爱琴海店)</td><td>距离就近</td><td>289m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(泰安泰山吾悦广场店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>魅KTV(吾悦广场店)</td><td>距离就近</td><td>4m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>米村拌饭(泰安吾悦广场店)</td><td>距离就近</td><td>12m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(天烛峰吾悦广场店)</td><td>距离就近</td><td>31m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星轶影城(吾悦广场泰安泰山店)</td><td>距离就近</td><td>50m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>比格比萨自助(泰安泰山吾悦店)</td><td>距离就近</td><td>52m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>多奇妙儿童乐园(泰安吾悦广场店)</td><td>距离就近</td><td>56m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>真人密室沉浸式体验馆(泰安泰山吾悦广场店)</td><td>距离就近</td><td>58m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>飞越中国(泰山吾悦店)</td><td>距离就近</td><td>62m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>飞越中国(泰山吾悦店)</td><td>距离就近</td><td>62m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>奇点电玩吧(泰安吾悦广场店)</td><td>距离就近</td><td>82m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>奇点电玩吧(泰安吾悦广场店)</td><td>距离就近</td><td>82m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机</td><td>距离就近</td><td>86m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机</td><td>距离就近</td><td>86m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>黑魔法密室逃脱(泰安吾悦广场店)</td><td>距离就近</td><td>98m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>邦邦和小言游乐园</td><td>距离就近</td><td>166m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(泰安肥城店)（51 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>潮乐派对电玩城(肥城吾悦店)</td><td>名称互证</td><td>3m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>黑魔法密室逃脱(肥城吾悦店)</td><td>名称互证</td><td>3m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>潮乐派对电玩城(肥城吾悦店)</td><td>名称互证</td><td>3m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>百慕大冒险·新奇体验(吾悦广场店)</td><td>名称互证</td><td>5m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>百慕大冒险·新奇体验(吾悦广场店)</td><td>名称互证</td><td>5m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>多奇妙超乐场Dookimore(肥城吾悦广场店)</td><td>名称互证</td><td>20m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>E时空电玩城(肥城吾悦店)</td><td>名称互证</td><td>40m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>时刻玩家24小时无人自助游戏室</td><td>名称互证</td><td>64m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>时刻玩家24小时无人自助游戏室</td><td>名称互证</td><td>64m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>三更密室逃脱(肥城吾悦金街店)</td><td>名称互证</td><td>75m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>玩萌堡萌宠赶海乐园</td><td>名称互证</td><td>82m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>天空之城游乐体验世界(肥城吾悦广场店)</td><td>名称互证</td><td>94m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>寻游乐屿电玩城</td><td>名称互证</td><td>132m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>寻游乐屿电玩城</td><td>名称互证</td><td>132m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>小黄鸭主题游乐园(吾悦广场泰安肥城店)</td><td>名称互证</td><td>198m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>鼎盛财源酒店</td><td>距离就近</td><td>370m</td><td>4.9</td><td>§6</td></tr>
+<tr><td>鼎盛财源酒店</td><td>距离就近</td><td>370m</td><td>4.9</td><td>§6</td></tr>
+<tr><td>甜蜜戏雪奇缘</td><td>名称互证</td><td>30202m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>LEDONG PARK(泰汶吾悦广场青年路店)</td><td>名称互证</td><td>30296m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>LEDONG PARK(泰汶吾悦广场青年路店)</td><td>名称互证</td><td>30296m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>圈圈乐</td><td>名称互证</td><td>30299m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>云阙动漫</td><td>名称互证</td><td>30307m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>云阙动漫</td><td>名称互证</td><td>30307m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>壹加大密室逃脱(泰汶吾悦广场店)</td><td>名称互证</td><td>30308m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>巅峰电竞(泰汶吾悦广场店)</td><td>名称互证</td><td>30316m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>儒原生活广场（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宝贝王成长乐园(儒原城市广场店)</td><td>距离就近</td><td>53m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>嘻哈传奇游艺体验中心(儒原城市广场店)</td><td>距离就近</td><td>59m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>嘻哈传奇游艺体验中心(儒原城市广场店)</td><td>距离就近</td><td>59m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>HONGKONGSTREET东平美食街(香港街)</td><td>距离就近</td><td>125m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>酒号公社(汇河街店)</td><td>距离就近</td><td>244m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>天娱电竞</td><td>距离就近</td><td>259m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>莫七姐傣味鲜米线</td><td>距离就近</td><td>272m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>银座商城(泰安店)（32 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>先锋电影城(银座商城店)</td><td>名称互证</td><td>23m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>必胜客(东岳店)</td><td>名称互证</td><td>48m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>世外星空电玩城(银座商城店)</td><td>名称互证</td><td>64m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>世外星空电玩城(银座商城店)</td><td>名称互证</td><td>64m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>Mr.Beer啤酒先生精酿啤酒馆(银座城市广场店)</td><td>距离就近</td><td>71m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>云端电竞(银座城市广场店)·忆楚管理</td><td>名称互证</td><td>81m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>纳吉馆韩国料理(银座商城店)</td><td>名称互证</td><td>94m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>德克士(泰安财源店)</td><td>距离就近</td><td>145m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>婴贝儿(泰安银座店)</td><td>距离就近</td><td>159m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>牌友聚集地</td><td>距离就近</td><td>159m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>贰贰山伍酒吧馆</td><td>距离就近</td><td>166m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>樱落·顶美私影</td><td>距离就近</td><td>197m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>天下第一笼•小笼包研究院(总店)</td><td>距离就近</td><td>203m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>烟火巷烧烤大排档</td><td>距离就近</td><td>206m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>泰安府.泰山菜</td><td>距离就近</td><td>206m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>天庭园酒馆</td><td>距离就近</td><td>258m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>天庭园酒馆</td><td>距离就近</td><td>258m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>新疆阿达西美食城</td><td>距离就近</td><td>383m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>味千拉面(泰安大润发店)</td><td>距离就近</td><td>438m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>陌舒连锁酒店(泰安火车站农业大学店)</td><td>距离就近</td><td>443m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>美厨鸡匠·泰山炒鸡·泰山菜(大润发店)</td><td>距离就近</td><td>455m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>伯爵泰山家常菜(校场街店)</td><td>距离就近</td><td>486m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>胡同里酒馆</td><td>距离就近</td><td>513m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>响指棋牌(财源店)</td><td>距离就近</td><td>521m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>OPUS·A(泰安店)</td><td>距离就近</td><td>560m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盘古天地（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(盘古天地IMAX店)</td><td>名称互证</td><td>23m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>魁盛居百年鲁菜馆(泰安盘古天地店)</td><td>名称互证</td><td>57m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>盘古天地儿童乐园</td><td>名称互证</td><td>71m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>来咯电玩城</td><td>名称互证</td><td>88m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>来咯电玩城</td><td>名称互证</td><td>88m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>酷乐电玩城</td><td>名称互证</td><td>90m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>酷乐电玩城</td><td>名称互证</td><td>90m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>偏爱炒鸡(盘古天地店)</td><td>名称互证</td><td>141m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>松鼠Ai人工智能学习体验中心</td><td>距离就近</td><td>454m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>A1国际动漫专营店</td><td>距离就近</td><td>595m</td><td>3.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>泰安宝龙广场（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>巷往酒吧</td><td>距离就近</td><td>24m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>星河电玩城</td><td>距离就近</td><td>70m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>星河电玩城</td><td>距离就近</td><td>70m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>保利万和影城(宝龙广场店)</td><td>距离就近</td><td>75m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>锈迹酒吧</td><td>距离就近</td><td>108m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>小江南(宝龙店)</td><td>距离就近</td><td>131m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>AEVUMPURUM醇境雪茄</td><td>距离就近</td><td>171m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>高第街56号餐厅</td><td>距离就近</td><td>175m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>儒湘阁湖南土菜馆</td><td>距离就近</td><td>223m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>小地方火焰甲鱼(泰安总店)</td><td>距离就近</td><td>390m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中百大厦(财源大街)（33 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>萌宝儿童游乐园</td><td>名称互证</td><td>37m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>响袋24小时自助棋牌台球(泰安中百店)</td><td>距离就近</td><td>107m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>居庭酒店(泰安泰山岱庙店)</td><td>距离就近</td><td>115m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>巷往·HOME PARTY</td><td>距离就近</td><td>201m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(泰山财源大街店)</td><td>距离就近</td><td>250m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>湘遇·现炒下饭菜(财源店)</td><td>距离就近</td><td>251m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>独角兽电竞(财源大街店)</td><td>距离就近</td><td>328m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>山边咖啡馆酒馆(青年路店)</td><td>距离就近</td><td>349m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>山边咖啡馆酒馆(青年路店)</td><td>距离就近</td><td>349m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>方中山胡辣汤(泰安店)</td><td>距离就近</td><td>362m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>北新夜市服务办公室</td><td>距离就近</td><td>396m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>偏爱炒鸡店(财源街店)</td><td>距离就近</td><td>422m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>雷石娱乐</td><td>距离就近</td><td>447m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>OPUS·A(泰安店)</td><td>距离就近</td><td>451m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>泰安市星秀丽Party KTV</td><td>距离就近</td><td>461m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>名仕 KTV</td><td>距离就近</td><td>461m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>阿咪果 娱乐</td><td>距离就近</td><td>465m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>泰山剧院(财源大街店)</td><td>距离就近</td><td>475m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>伯爵泰山家常菜(校场街店)</td><td>距离就近</td><td>480m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>老泰安·泰安菜(南湖店)</td><td>距离就近</td><td>488m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>四通餐馆(清真寺小区店)</td><td>距离就近</td><td>492m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>国华糁馆</td><td>距离就近</td><td>495m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>炒鸡友趣·炒鸡·泰安菜(岱庙店)</td><td>距离就近</td><td>505m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>麦当劳(泰安餐厅)</td><td>距离就近</td><td>513m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>鲁科88快捷酒店(泰安火车站财源街店)</td><td>距离就近</td><td>521m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新合作购物中心（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>乐动电玩</td><td>距离就近</td><td>118m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>乐动电玩</td><td>距离就近</td><td>118m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>UFO密室逃脱(尚海城店)</td><td>距离就近</td><td>262m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>肥城头号玩家娱乐综合体</td><td>距离就近</td><td>286m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>肥城头号玩家娱乐综合体</td><td>距离就近</td><td>286m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>小红帽小吃</td><td>距离就近</td><td>476m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>眼镜夜市美食店</td><td>距离就近</td><td>487m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>刘庄街槐香缘酒家</td><td>距离就近</td><td>537m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>一品海鲜楼(新城路店)</td><td>距离就近</td><td>566m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>小李子烧烤(枣行烧烤园)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>小李子烧烤(枣行烧烤园)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>火火量贩KTV</td><td>距离就近</td><td>70m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>偏爱炒鸡店(财源街店)（29 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>偏爱炒鸡店(财源街店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>OPUS·A(泰安店)</td><td>距离就近</td><td>54m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>独角兽电竞(财源大街店)</td><td>距离就近</td><td>95m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>鲁科88快捷酒店(泰安火车站财源街店)</td><td>距离就近</td><td>112m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(泰山财源大街店)</td><td>距离就近</td><td>185m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>响指棋牌(财源店)</td><td>距离就近</td><td>194m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>伯爵泰山家常菜(校场街店)</td><td>距离就近</td><td>195m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>巷往·HOME PARTY</td><td>距离就近</td><td>221m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>陌舒连锁酒店(泰安火车站农业大学店)</td><td>距离就近</td><td>271m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>居庭酒店(泰安泰山岱庙店)</td><td>距离就近</td><td>344m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>名仕 KTV</td><td>距离就近</td><td>351m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>响袋24小时自助棋牌台球(泰安中百店)</td><td>距离就近</td><td>420m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>牌友聚集地</td><td>距离就近</td><td>453m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌宝儿童游乐园</td><td>距离就近</td><td>456m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>纳吉馆韩国料理(银座商城店)</td><td>距离就近</td><td>545m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>贰贰山伍酒吧馆</td><td>距离就近</td><td>546m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>世外星空电玩城(银座商城店)</td><td>距离就近</td><td>547m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>世外星空电玩城(银座商城店)</td><td>距离就近</td><td>547m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>樱落·顶美私影</td><td>距离就近</td><td>551m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>云端电竞(银座城市广场店)·忆楚管理</td><td>距离就近</td><td>557m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>Mr.Beer啤酒先生精酿啤酒馆(银座城市广场店)</td><td>距离就近</td><td>564m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>台湾面馆(农大本部店)</td><td>距离就近</td><td>568m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>必胜客(东岳店)</td><td>距离就近</td><td>573m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>德克士(泰安财源店)</td><td>距离就近</td><td>596m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>偏爱炒鸡店(温州步行街店)</td><td>名称互证</td><td>1800m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（31 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>家和酒店(泰山钢材大市场南路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>满庄镇钢材市场中路</td></tr>
+<tr><td>✅A-</td><td>鼎盛财源酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>仪阳镇凤山大街189号</td></tr>
+<tr><td>✅A-</td><td>牧原宾馆(新泰店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>新汶大街(新泰市第二人民医院向西100米路南)</td></tr>
+<tr><td>✅A-</td><td>新汶新零点宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>新汶街道新汶大街(新汶花园正对面路北)</td></tr>
+<tr><td>✅A-</td><td>鸿盛宾馆(牛石线)</td><td>购物服务;专卖店;眼镜店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>白马山路石莱镇中心小学西南侧约30米</td></tr>
+<tr><td>✅A-</td><td>明金珠宾馆(电视塔店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>园西路与青云路交叉口南240米</td></tr>
+<tr><td>✅A-</td><td>泰安诺达宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>上高街道泮河大街速恒物流园7号楼5号门面房</td></tr>
+<tr><td>✅A-</td><td>宁阳福安宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>八仙桥街道办事处七贤路东(凌云家电对过)</td></tr>
+<tr><td>✅A-</td><td>泰安福田商务宾馆(山东服装学院店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>佛光路309号(区防疫站西门对面)</td></tr>
+<tr><td>✅A-</td><td>和平饭店(泰安岱宗大街店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.7</td><td>—</td><td>岱宗大街275号</td></tr>
+<tr><td>✅A-</td><td>万福园酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>佛山街中顺时代广场东往南八十八米</td></tr>
+<tr><td>✅A-</td><td>泰安聚鑫宾馆(泰安火车站店)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>泰安泰山区桥洞子南青山西街</td></tr>
+<tr><td>✅B</td><td>鲁科88快捷酒店(泰安火车站财源街店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.5</td><td>—</td><td>校场街131号(校场街与财源大街交汇处)</td></tr>
+<tr><td>✅B</td><td>居庭酒店(泰安泰山岱庙店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.4</td><td>—</td><td>财源街133号</td></tr>
+<tr><td>✅B</td><td>陌舒连锁酒店(泰安火车站农业大学店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>校场街51号</td></tr>
+<tr><td>✅B</td><td>易佰酒店(泰安高铁店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>桃花源路119号泰山高铁商业中心B2层</td></tr>
+<tr><td>✅B</td><td>银座佳驿酒店(泰安国际会展中心万达广场店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.4</td><td>—</td><td>泰山大街370号</td></tr>
+<tr><td>✅B</td><td>泰安桃花源度假村(泰山桃花峪登山口店)</td><td>住宿服务;住宿服务相关;住宿服务相关｜体育休闲服务;度假疗养场所;度假村</td><td>4.4</td><td>—</td><td>泰山西大门桃花源路26号</td></tr>
+<tr><td>✅B</td><td>府苑宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.3</td><td>—</td><td>粥店街道长城路中段(足莫停北邻)</td></tr>
+<tr><td>✅B</td><td>泰安市泰山区赵记煎饼卷大葱酒店</td><td>餐饮服务;中餐厅;中餐厅｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>49.00</td><td>迎春路40号(东关加油站对面)</td></tr>
+<tr><td>✅B</td><td>天庭园酒馆</td><td>体育休闲服务;娱乐场所;酒吧｜住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.3</td><td>—</td><td>财源街道办事处天庭园北门6号(天庭园内)</td></tr>
+<tr><td>✅B</td><td>福来特商务宾馆(创业大街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>上高街道创业大街51号</td></tr>
+<tr><td>✅B</td><td>都市118连锁酒店(宁阳七贤路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>阳光景园北区西1门旁</td></tr>
+<tr><td>⚠️</td><td>泰安青山假日酒店(泰山火车站汽车站店)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>龙潭路126-1号</td></tr>
+<tr><td>⚠️</td><td>新泰银都宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>银河东路(银河市场北30米)</td></tr>
+<tr><td>⚠️</td><td>7天连锁酒店(泰安市政广场店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.0</td><td>—</td><td>东岳大街西段</td></tr>
+<tr><td>⚠️</td><td>泰安好客君安宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>温州步行街祥泰B座73号</td></tr>
+<tr><td>⚠️</td><td>泰安光彩山水宾馆(光彩大市场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>光彩大市场6栋3层13-15号</td></tr>
+<tr><td>⚠️</td><td>胜家时尚宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>一中南门对面</td></tr>
+<tr><td>⚠️</td><td>新泰恒丰大酒店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.5</td><td>—</td><td>青云路36号</td></tr>
+<tr><td>❌</td><td>东平湖度假山庄</td><td>住宿服务;住宿服务相关;住宿服务相关｜体育休闲服务;度假疗养场所;度假村</td><td>3.2</td><td>—</td><td>银山镇森林公园东首</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>17</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>7</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>16</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>19</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:中餐厅</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>类型:湘菜/地方菜</td><td>16</td><td></td></tr>
+<tr><td>food</td><td>类型:地方风味餐厅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:酒楼/火锅/海鲜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:火锅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:海鲜酒楼</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:特色美食</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:老字号</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:大排档</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:苍蝇馆</td><td>2</td><td></td></tr>
+<tr><td>food</td><td>关键词:小吃</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:本地菜</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:特产</td><td>40</td><td></td></tr>
+<tr><td>product</td><td>关键词:土特产</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:地方特产</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:步行街</td><td>10</td><td></td></tr>
+<tr><td>district</td><td>类型:特色商业街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>类型:购物中心</td><td>59</td><td></td></tr>
+<tr><td>district</td><td>类型:商场</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:美食街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:夜市</td><td>19</td><td></td></tr>
+<tr><td>district</td><td>关键词:小吃街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:步行街</td><td>16</td><td></td></tr>
+<tr><td>district</td><td>关键词:购物中心</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:酒吧</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:酒馆</td><td>20</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:LIVEHOUSE</td><td>1</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:娱乐场所</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童乐园</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:电玩城</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:游乐场</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你游乐场</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:亲子乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:淘气堡</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童体验</td><td>10</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/泰安市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>4 个 POI 无地址</strong>，需人工补：知云小镇宠物乐园、一品液宋城美食烧烤王、鲁御泰·山东特产(望岳广场店)、董白塔购物中心</li><li><input type="checkbox" disabled> <strong>13 个 POI 无评分</strong>，暂标 ⚠️：南湖颐心园、银座·奥特莱斯泰山店停车场、银座奥特莱斯/奥特莱斯、银座奥特莱斯-电动汽车充电桩、银座奥特莱斯(泰山店)-男洗手间</li><li><input type="checkbox" disabled> 儿童游乐 162 家，其中场内 54 家、独立 108 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 6 个区县：东平县、宁阳县、岱岳区、新泰市、泰山区、肥城市——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

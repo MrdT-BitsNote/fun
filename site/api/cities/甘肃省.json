@@ -1,0 +1,38 @@
+{
+ "city": "甘肃省",
+ "province": "甘肃省",
+ "poi_total": null,
+ "waves": [],
+ "updated": null,
+ "credibility": {},
+ "overview": {},
+ "districts": [],
+ "district_count": 0,
+ "leisure": {
+  "subcats": [],
+  "list": []
+ },
+ "kids": {
+  "subcats": [],
+  "list": []
+ },
+ "malls": [],
+ "food": [],
+ "xiaocan": [],
+ "specialties": [],
+ "hotels": [],
+ "assoc": [],
+ "queries": [],
+ "external": {
+  "meituan_search": "https://www.meituan.com/s/%E7%94%98%E8%82%83%E7%9C%81%E7%BE%8E%E9%A3%9F",
+  "meituan_home": "https://www.meituan.com/",
+  "dianping_food": "https://www.dianping.com/gansusheng/ch10",
+  "dianping_search": "https://www.dianping.com/search/keyword/2/0_%E7%94%98%E8%82%83%E7%9C%81"
+ },
+ "adcode": "",
+ "urls": {
+  "page": "cities/%E7%94%98%E8%82%83%E7%9C%81.html",
+  "json": "api/cities/甘肃省.json",
+  "md": "md/%E7%94%98%E8%82%83%E7%9C%81/%E7%94%98%E8%82%83%E7%9C%81.md"
+ }
+}

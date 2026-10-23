@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>沈阳市 · 辽宁省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/辽宁省.html">← 返回辽宁省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>沈阳市 · 辽宁省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 18:44:30  ·  POI 总量：958（去重后）  ·  查询面：49  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>958</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>98%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 282 · 商圈 456 · 成人娱乐 292 · 儿童娱乐 217 · 酒店 38 · 特产 40</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>辽宁省 · 省会市</td></tr>
+<tr><td>下级区县</td><td>13 个</td></tr>
+<tr><td>街道/镇/乡</td><td>183 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×10、县×2、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>沈河区</td><td>168</td><td>18%</td></tr>
+<tr><td>浑南区</td><td>163</td><td>17%</td></tr>
+<tr><td>和平区</td><td>156</td><td>16%</td></tr>
+<tr><td>铁西区</td><td>135</td><td>14%</td></tr>
+<tr><td>大东区</td><td>92</td><td>10%</td></tr>
+<tr><td>皇姑区</td><td>68</td><td>7%</td></tr>
+<tr><td>沈北新区</td><td>56</td><td>6%</td></tr>
+<tr><td>于洪区</td><td>52</td><td>5%</td></tr>
+<tr><td>苏家屯区</td><td>25</td><td>3%</td></tr>
+<tr><td>辽中区</td><td>15</td><td>2%</td></tr>
+<tr><td>新民市</td><td>14</td><td>1%</td></tr>
+<tr><td>法库县</td><td>8</td><td>1%</td></tr>
+<tr><td>康平县</td><td>6</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（456 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>172</td></tr>
+<tr><td>购物中心/综合体</td><td>104</td></tr>
+<tr><td>商业街</td><td>50</td></tr>
+<tr><td>夜市</td><td>39</td></tr>
+<tr><td>百货/商场</td><td>36</td></tr>
+<tr><td>批发城</td><td>18</td></tr>
+<tr><td>步行街</td><td>16</td></tr>
+<tr><td>奥特莱斯</td><td>15</td></tr>
+<tr><td>美食街/小吃街</td><td>6</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（456 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>A</td><td>万达广场(沈阳太原街店)</td><td>购物中心/综合体</td><td>4.8</td><td>13</td><td>15</td><td>8</td><td>2</td></tr>
+<tr><td>A</td><td>大悦城C馆</td><td>购物中心/综合体</td><td>4.8</td><td>10</td><td>12</td><td>11</td><td>1</td></tr>
+<tr><td>A</td><td>沈阳中街吾悦广场</td><td>购物中心/综合体</td><td>4.8</td><td>10</td><td>12</td><td>11</td><td>1</td></tr>
+<tr><td>A</td><td>大悦城(沈阳中街店)</td><td>购物中心/综合体</td><td>4.8</td><td>10</td><td>12</td><td>11</td><td>1</td></tr>
+<tr><td>A</td><td>渝宗巷子重庆市井火锅(沈阳市沈河区三经小区店)</td><td>商业街</td><td>4.8</td><td>10</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>沈阳中街步行街</td><td>步行街</td><td>4.9</td><td>9</td><td>14</td><td>7</td><td>0</td></tr>
+<tr><td>B</td><td>彩电塔夜市</td><td>夜市</td><td>4.9</td><td>8</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>中兴-沈阳商业大厦(兰州北街)</td><td>购物中心/综合体</td><td>4.8</td><td>8</td><td>7</td><td>1</td><td>3</td></tr>
+<tr><td>B</td><td>皇城恒隆广场</td><td>购物中心/综合体</td><td>4.8</td><td>7</td><td>11</td><td>5</td><td>0</td></tr>
+<tr><td>B</td><td>万达广场(沈阳沈辽路店)</td><td>购物中心/综合体</td><td>4.8</td><td>7</td><td>8</td><td>7</td><td>1</td></tr>
+<tr><td>B</td><td>万达广场(沈阳沈北店)</td><td>购物中心/综合体</td><td>4.8</td><td>6</td><td>8</td><td>8</td><td>0</td></tr>
+<tr><td>B</td><td>万达广场(沈阳奥体店)</td><td>购物中心/综合体</td><td>4.8</td><td>6</td><td>13</td><td>9</td><td>0</td></tr>
+<tr><td>B</td><td>万达广场(沈阳北一路店)</td><td>购物中心/综合体</td><td>4.8</td><td>6</td><td>8</td><td>7</td><td>0</td></tr>
+<tr><td>B</td><td>万达广场(沈阳文化路店)</td><td>购物中心/综合体</td><td>4.8</td><td>6</td><td>9</td><td>7</td><td>0</td></tr>
+<tr><td>B</td><td>京东MALL(沈阳大东龙之梦店)</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>1</td><td>11</td><td>0</td></tr>
+<tr><td>B</td><td>龙之梦购物中心(沈阳店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>1</td><td>11</td><td>0</td></tr>
+<tr><td>C</td><td>龙湖沈阳浑南天街</td><td>购物中心/综合体</td><td>4.9</td><td>4</td><td>8</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>大东副食品商场</td><td>百货/商场</td><td>4.8</td><td>4</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>开心农场A会员店(金牛店)</td><td>购物中心/综合体</td><td>4.8</td><td>3</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>铁西万象汇</td><td>购物中心/综合体</td><td>4.9</td><td>2</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>西关美食街</td><td>美食街/小吃街</td><td>4.8</td><td>2</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>星摩尔购物广场</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>吾悦广场(沈阳沈北店)</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>1</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>如家快捷酒店</td><td>其他商业载体</td><td>5.0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>山姆会员商店(沈阳和平店)</td><td>购物中心/综合体</td><td>4.9</td><td>1</td><td>2</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>沈阳K11 购物艺术中心</td><td>购物中心/综合体</td><td>4.9</td><td>1</td><td>2</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>沈阳盛京大奥莱</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>6</td><td>4</td><td>0</td></tr>
+<tr><td>C</td><td>荷花之夏夜市</td><td>夜市</td><td>4.8</td><td>1</td><td>2</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>皇姑万象汇(北塔店)</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>沈阳市府恒隆广场</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>沈阳香格里拉大堂</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>杉杉奥特莱斯广场(沈阳店)</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>沈阳万象城</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>开心农场A会员店(建筑大学店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>王府井奥莱棋盘山小镇</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>沈阳三台子万象汇</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>塔湾·兴顺国际夜市</td><td>夜市</td><td>4.8</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>嘉里城(沈阳金廊店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>2</td><td>2</td><td>1</td></tr>
+<tr><td>C</td><td>尚柏奥莱</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>沈阳长白万象汇</td><td>百货/商场</td><td>4.8</td><td>0</td><td>2</td><td>4</td><td>0</td></tr>
+</tbody></table></div>
+<h3>万达广场(沈阳太原街店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.52）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：太原南街2号(沈阳站地铁站D口步行200米)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥52（区间 ¥18–120）</li><li><strong>动线主轴</strong>：太原南街</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 15 · 儿童娱乐 8 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(沈阳太原街店)</td></tr>
+<tr><td>美食</td><td>13</td><td>海底捞火锅(印象城店)、螺三岁螺蛳粉、野人部落(太原街旗舰店)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>Et外星人音乐现场、万达影城(奥体万达广场店)、万达影城(沈阳全运万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>8</td><td>嗨森汇潮玩俱乐部、晨飞儿童成长中心、捞鱼侠游乐园</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>永利汇洗浴休闲中心、沈阳优尚精品民宿(沈阳站太原街步行街店)</td></tr>
+</tbody></table></div>
+<h3>大悦城C馆 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.47）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：小东路9号(东中街地铁站B4口旁)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥51（区间 ¥26–87）</li><li><strong>动线主轴</strong>：小东路</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 12 · 儿童娱乐 11 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大悦城C馆</td></tr>
+<tr><td>美食</td><td>10</td><td>萍姐火锅·公路夜市(中街大悦城店)、桦楠川香 · 黏糊麻辣烫(品牌首店)、夕阳红小吃</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>谜语人密室逃脱(大悦城店)、818密室逃脱剧本杀(大悦城店)、THE GUNDAM BASE高达基地(沈阳大悦城店)</td></tr>
+<tr><td>儿童娱乐</td><td>11</td><td>玩美攻略潮玩街区、八岐爬宠工作室·互动、金色年华潮玩中心(中街店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>自然醒影音公寓(沈阳中街故宫店)</td></tr>
+</tbody></table></div>
+<h3>沈阳中街吾悦广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.47）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：津桥路7号(东中街地铁站B口步行320米)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥51（区间 ¥26–87）</li><li><strong>动线主轴</strong>：小东路</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 12 · 儿童娱乐 11 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沈阳中街吾悦广场</td></tr>
+<tr><td>美食</td><td>10</td><td>桦楠川香 · 黏糊麻辣烫(品牌首店)、夕阳红小吃、萍姐火锅·公路夜市(中街大悦城店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>谜语人密室逃脱(大悦城店)、THE GUNDAM BASE高达基地(沈阳大悦城店)、818密室逃脱剧本杀(大悦城店)</td></tr>
+<tr><td>儿童娱乐</td><td>11</td><td>玩美攻略潮玩街区、八岐爬宠工作室·互动、金色年华潮玩中心(中街店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>自然醒影音公寓(沈阳中街故宫店)</td></tr>
+</tbody></table></div>
+<h3>大悦城(沈阳中街店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.47）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：大悦城A馆4楼奉天小馆对面</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥51（区间 ¥26–87）</li><li><strong>动线主轴</strong>：小东路</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 12 · 儿童娱乐 11 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大悦城(沈阳中街店)</td></tr>
+<tr><td>美食</td><td>10</td><td>萍姐火锅·公路夜市(中街大悦城店)、桦楠川香 · 黏糊麻辣烫(品牌首店)、夕阳红小吃</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>THE GUNDAM BASE高达基地(沈阳大悦城店)、谜语人密室逃脱(大悦城店)、818密室逃脱剧本杀(大悦城店)</td></tr>
+<tr><td>儿童娱乐</td><td>11</td><td>玩美攻略潮玩街区、八岐爬宠工作室·互动、金色年华潮玩中心(中街店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>自然醒影音公寓(沈阳中街故宫店)</td></tr>
+</tbody></table></div>
+<h3>渝宗巷子重庆市井火锅(沈阳市沈河区三经小区店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 10 家（均分 4.65）+ 2 类业态</li><li><strong>载体类型</strong>：商业街（餐饮服务;中餐厅;火锅店）</li><li><strong>地址</strong>：会武街35号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥64（区间 ¥21–111）</li><li><strong>动线主轴</strong>：会武街</li><li><strong>业态分布</strong>：美食 10 · 成人娱乐 8 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>渝宗巷子重庆市井火锅(沈阳市沈河区三经小区店)</td></tr>
+<tr><td>美食</td><td>10</td><td>渝宗巷子重庆市井火锅(沈阳市沈河区三经小区店)、老四季(沈阳总店)、老四季(十三纬路店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>加班酒馆、詠LIVEHOUSE、FOUR PLAY</td></tr>
+</tbody></table></div>
+<h3>沈阳中街步行街 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 9 家 / 娱乐 21 / 酒店 0</li><li><strong>载体类型</strong>：步行街（购物服务;特色商业街;步行街）</li><li><strong>地址</strong>：中街路</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥48（区间 ¥13–87）</li><li><strong>动线主轴</strong>：中街路</li><li><strong>业态分布</strong>：美食 9 · 成人娱乐 14 · 儿童娱乐 7 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沈阳中街步行街</td></tr>
+<tr><td>美食</td><td>9</td><td>八大碗(故宫店)、中街吊炉饼鸡蛋糕小吃部、老边饺子馆(总店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>三艾小酒馆San Ai(中街店)、梵高星空艺术馆(中街益田旗舰店)、白狗酒咖WhiteDog</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>诗画中国(益田假日世界店)、欢乐城市嘉年华、Free Time潮玩街区</td></tr>
+</tbody></table></div>
+<h3>彩电塔夜市 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 3 / 酒店 0</li><li><strong>载体类型</strong>：夜市（购物服务;特色商业街;特色商业街）</li><li><strong>地址</strong>：西滨河路64号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥22（区间 ¥14–85）</li><li><strong>动线主轴</strong>：西滨河路</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>彩电塔夜市</td></tr>
+<tr><td>美食</td><td>8</td><td>彩电塔夜市、老四季(沈阳总店)、老四季(十三纬路店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>FOUR PLAY、Blooom、LAZYBEE小酒馆</td></tr>
+</tbody></table></div>
+<h3>中兴-沈阳商业大厦(兰州北街) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 8 家 / 娱乐 8 / 酒店 3</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜商务住宅;楼宇;商住两用楼宇｜购物服务;商场;普通商场｜购物服务;超级市场;超市）</li><li><strong>地址</strong>：太原北街86号(太原街步行街西侧)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥41（区间 ¥18–120）</li><li><strong>动线主轴</strong>：中华路</li><li><strong>业态分布</strong>：美食 8 · 成人娱乐 7 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>中兴-沈阳商业大厦(兰州北街)</td></tr>
+<tr><td>美食</td><td>8</td><td>海底捞火锅(印象城店)、螺三岁螺蛳粉、蘸小院铁锅炖·蘸酱菜·东北菜(和平店)</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>Et外星人音乐现场、小布电竞(太原街店)、叫破电台Jump Radio</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>嗨森汇潮玩俱乐部</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>永利汇洗浴休闲中心、沈阳优尚精品民宿(沈阳站太原街步行街店)、锦江之星(沈阳站太原街医大一院店)</td></tr>
+</tbody></table></div>
+<h3>皇城恒隆广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 7 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：中街路128号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥68（区间 ¥21–75）</li><li><strong>动线主轴</strong>：中街路</li><li><strong>业态分布</strong>：美食 7 · 成人娱乐 11 · 儿童娱乐 5 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>皇城恒隆广场</td></tr>
+<tr><td>美食</td><td>7</td><td>王厚元饺子(故宫店)、达美乐比萨(沈阳中街盛京大家庭店)、金乐活美食</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>幡灵迷境(中街·盛京龙城店)、谜语人密室逃脱获奖主题店(中街店)、白狗酒咖WhiteDog</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>金色年华潮玩中心(恒隆店)、Free Time潮玩街区、密室阿姨儿童探索中心(沈阳益田假日店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(沈阳沈辽路店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 7 家 / 娱乐 15 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：兴华南街89-1号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥52（区间 ¥26–120）</li><li><strong>动线主轴</strong>：北一中路</li><li><strong>业态分布</strong>：美食 7 · 成人娱乐 8 · 儿童娱乐 7 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(沈阳沈辽路店)</td></tr>
+<tr><td>美食</td><td>7</td><td>那家老院子东北菜(艳粉店)、海底捞火锅(北一路店)、时尚地下美食广场(万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>万达影城(奥体万达广场店)、万达影城(沈阳全运万达广场店)、光阴的故事音乐酒吧(1905店)</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>晨飞儿童成长中心、欢乐猩球嘉年华(铁西店)、捞鱼侠游乐园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>沈阳朋远旅馆</td></tr>
+</tbody></table></div>
+<h3>万达广场(沈阳沈北店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：七星大街11号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥53（区间 ¥26–120）</li><li><strong>动线主轴</strong>：北一中路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 8 · 儿童娱乐 8 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(沈阳沈北店)</td></tr>
+<tr><td>美食</td><td>6</td><td>那家老院子东北菜(艳粉店)、海底捞火锅(北一路店)、时尚地下美食广场(万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>万达影城(奥体万达广场店)、万达影城(沈阳全运万达广场店)、奇趣联萌潮玩运动中心</td></tr>
+<tr><td>儿童娱乐</td><td>8</td><td>GIGGLE顽笑潮流运动工厂、晨飞儿童成长中心、捞鱼侠游乐园</td></tr>
+</tbody></table></div>
+<h3>万达广场(沈阳奥体店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 22 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：营盘西街17号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥53（区间 ¥26–120）</li><li><strong>动线主轴</strong>：北一中路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 13 · 儿童娱乐 9 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(沈阳奥体店)</td></tr>
+<tr><td>美食</td><td>6</td><td>那家老院子东北菜(艳粉店)、海底捞火锅(北一路店)、时尚地下美食广场(万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(奥体万达广场店)、万达影城(沈阳全运万达广场店)、中影国际影城(浑南居然之家店)</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>京游动漫、晨飞儿童成长中心、万达宝贝王(沈阳文化路万达广场店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(沈阳北一路店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 15 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：北一中路1号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥53（区间 ¥26–120）</li><li><strong>动线主轴</strong>：北一中路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 8 · 儿童娱乐 7 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(沈阳北一路店)</td></tr>
+<tr><td>美食</td><td>6</td><td>那家老院子东北菜(艳粉店)、海底捞火锅(北一路店)、时尚地下美食广场(万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>万达影城(奥体万达广场店)、万达影城(沈阳全运万达广场店)、奇趣联萌潮玩运动中心</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>晨飞儿童成长中心、捞鱼侠游乐园、欢乐猩球嘉年华(铁西店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(沈阳文化路店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 6 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：文化路81号(工业展览馆地铁站C口步行240米)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥53（区间 ¥26–120）</li><li><strong>动线主轴</strong>：北一中路</li><li><strong>业态分布</strong>：美食 6 · 成人娱乐 9 · 儿童娱乐 7 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(沈阳文化路店)</td></tr>
+<tr><td>美食</td><td>6</td><td>那家老院子东北菜(艳粉店)、海底捞火锅(北一路店)、时尚地下美食广场(万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>9</td><td>芝音Kitchen&amp;Bar、万达影城(奥体万达广场店)、万达影城(沈阳全运万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>晨飞儿童成长中心、万达宝贝王(沈阳文化路万达广场店)、欢乐猩球嘉年华(铁西店)</td></tr>
+</tbody></table></div>
+<h3>京东MALL(沈阳大东龙之梦店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：滂江街28号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 11 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>京东MALL(沈阳大东龙之梦店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>主角儿古风演艺城</td></tr>
+<tr><td>儿童娱乐</td><td>11</td><td>主角儿古风演艺城、星动领域101PARTYWORLD超乐场、沈阳龙之梦动物科普乐园</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（292 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>75</td></tr>
+<tr><td>酒吧/酒馆</td><td>28</td></tr>
+<tr><td>棋牌室</td><td>21</td></tr>
+<tr><td>电影院</td><td>19</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>17</td></tr>
+<tr><td>KTV</td><td>16</td></tr>
+<tr><td>电玩城</td><td>8</td></tr>
+<tr><td>Livehouse</td><td>3</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>原料库live house</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.8</td><td>129.00</td><td>卫工北街44号红梅文创园负1楼</td></tr>
+<tr><td>✅A-</td><td>梦田音乐Live House(沈阳旗舰店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.8</td><td>66.00</td><td>青年大街304巷9号</td></tr>
+<tr><td>✅A-</td><td>优乐唱跳俱乐部(保税商场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.8</td><td>110.00</td><td>三好街67号保税商场F1层</td></tr>
+<tr><td>✅A-</td><td>主角儿古风演艺城</td><td>其他娱乐场所</td><td>体育休闲服务;休闲场所;游乐场</td><td>4.7</td><td>89.00</td><td>龙之梦购物中心7-8层红中厅</td></tr>
+<tr><td>✅A-</td><td>梵高星空艺术馆(中街益田旗舰店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.7</td><td>—</td><td>中街路268号益田假日世界F3层</td></tr>
+<tr><td>✅A-</td><td>纯K(K11 店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.7</td><td>131.00</td><td>博览路2甲1号L1号L1层A4006c商铺</td></tr>
+<tr><td>✅A-</td><td>辽宁省科技馆特效影院(辽宁省科学技术馆店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>82.00</td><td>智慧三街159号</td></tr>
+<tr><td>✅A-</td><td>万达影城(沈阳全运万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>58.00</td><td>智慧三街33-25号万达广场4层</td></tr>
+<tr><td>✅A-</td><td>万达影城(奥体万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>49.00</td><td>营盘西街17号万达广场4层</td></tr>
+<tr><td>✅A-</td><td>REX(南三马路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>168.00</td><td>南三马路21号(南五马路地铁站D1口步行400米)</td></tr>
+<tr><td>✅A-</td><td>Et外星人音乐现场</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.7</td><td>143.00</td><td>太原街中华路9号(沃尔玛)</td></tr>
+<tr><td>✅A-</td><td>FOUR PLAY</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧｜购物服务;购物相关场所;购物相关场所</td><td>4.7</td><td>138.00</td><td>南二经街62号</td></tr>
+<tr><td>✅A-</td><td>詠LIVEHOUSE</td><td>Livehouse</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>106.00</td><td>十三纬路58号一楼</td></tr>
+<tr><td>✅A-</td><td>樂LIVE SHOW音乐现场·酒馆(保税商场店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>106.00</td><td>三好街67甲及1号门市2楼</td></tr>
+<tr><td>✅A-</td><td>TIMES Music Club</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>78.00</td><td>哈尔滨路西2号(皇寺路地铁站A口步行200米)</td></tr>
+<tr><td>✅A-</td><td>芝音Kitchen&amp;Bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>130.00</td><td>五里河街道青年大街嘉里城东区歇马台102商铺</td></tr>
+<tr><td>✅A-</td><td>CAT'S EYE猫眼酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>117.00</td><td>三好街72-9号(51艺术区内)</td></tr>
+<tr><td>✅A-</td><td>三艾小酒馆San Ai(中街店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>56.00</td><td>皇城街道中街路235号璟星美食汇4楼</td></tr>
+<tr><td>✅A-</td><td>有局儿江湖菜烧烤酒馆(浑南三店)</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>97.00</td><td>南堤中路20号(中一东北国际医院东门西北70米)</td></tr>
+<tr><td>✅A-</td><td>加班酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>72.00</td><td>南三经街25号(叁工厂音乐文化主题文创园院内)</td></tr>
+<tr><td>✅A-</td><td>潮粥记·海鲜砂锅粥·生腌酒馆(南市场店)</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>61.00</td><td>十一纬路53号(南市场地铁站B口步行90米)</td></tr>
+<tr><td>✅A-</td><td>夜色歌舞厅</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;迪厅</td><td>4.7</td><td>44.00</td><td>兴顺街50号友谊奥莱</td></tr>
+<tr><td>✅A-</td><td>百花歌舞厅</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;迪厅</td><td>4.7</td><td>18.00</td><td>兴业路13号(建大三小区北门东50米)</td></tr>
+<tr><td>✅A-</td><td>谜语人密室逃脱获奖主题店(中街店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所｜体育休闲服务;休闲场所;休闲场所</td><td>4.6</td><td>86.00</td><td>北中街路142-2号(中街地铁站B2口步行420米)</td></tr>
+<tr><td>✅A-</td><td>818密室逃脱剧本杀(大悦城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>101.00</td><td>大什字街107-1号(东中街地铁站D3口步行340米)</td></tr>
+<tr><td>✅A-</td><td>幡灵迷境(中街·盛京龙城店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>423.00</td><td>北中街路118号BE-112(中街盛京龙城东区L1、B1层)</td></tr>
+<tr><td>✅A-</td><td>谜语人密室逃脱(大悦城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>99.00</td><td>大什字街197-1号(东中街地铁站B口步行340米)</td></tr>
+<tr><td>✅A-</td><td>铂金瀚</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>234.00</td><td>五三街道汇泉东路文澜苑</td></tr>
+<tr><td>✅A-</td><td>魅KTV·AI辅唱(奥体花园城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>54.00</td><td>营盘北街7号招商花园城二楼L-201商铺</td></tr>
+<tr><td>✅A-</td><td>正播影城(龙湖沈阳浑南天街)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>36.00</td><td>沈中大街与高深东路交汇处龙湖沈阳浑南天街3F层A-3F-Z02</td></tr>
+<tr><td>✅A-</td><td>中影国际影城(浑南居然之家店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>47.00</td><td>金卡路16号居然之家5层</td></tr>
+<tr><td>✅A-</td><td>今世界影城(会展中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>41.00</td><td>南京南街1019-46号17门</td></tr>
+<tr><td>✅A-</td><td>保利国际影城( 沈阳K11 购物艺术中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>47.00</td><td>博览路2号甲1号沈阳K11购物艺术中心L4层</td></tr>
+<tr><td>✅A-</td><td>小麻雀棋牌(全运路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>21.00</td><td>智慧三街55-25-23门</td></tr>
+<tr><td>✅A-</td><td>建赏欧洲酒吧街(酒吧一条街店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>42.00</td><td>长江街138-1-3号(近辽大)</td></tr>
+<tr><td>✅A-</td><td>輪迴SAMSARABAR</td><td>电影院</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>90.00</td><td>大南街184号(近胜利电影院)</td></tr>
+<tr><td>✅A-</td><td>UP HOUSE BAR巷尚酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>78.00</td><td>北四中路与齐贤北街交叉口东80米</td></tr>
+<tr><td>✅A-</td><td>清迈阳光·东南亚餐厅(北二经街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>102.00</td><td>北二经街98号清迈阳光</td></tr>
+<tr><td>✅A-</td><td>盛轩小酒馆(金穗花园店)</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;清真菜馆｜体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>98.00</td><td>黄河大街宁山路56号</td></tr>
+<tr><td>✅A-</td><td>鱼儿COFFEE&amp;BAR</td><td>其他娱乐场所</td><td>餐饮服务;外国餐厅;西餐厅(综合风味)｜体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>123.00</td><td>仙岛北路160号</td></tr>
+<tr><td>✅A-</td><td>夜金莎商务公馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧｜体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>323.00</td><td>津桥街道超越球吧沈阳市公安交通管理支队大东大队车辆管理所</td></tr>
+<tr><td>✅A-</td><td>Blooom</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>317.00</td><td>彩塔街5号1层1号</td></tr>
+<tr><td>✅A-</td><td>白狗酒咖WhiteDog</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>69.00</td><td>北中街133号(中街地铁站B2口步行280米)</td></tr>
+<tr><td>✅A-</td><td>Lens r&amp;b bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>89.00</td><td>十一纬路107号</td></tr>
+<tr><td>✅A-</td><td>光阴的故事音乐酒吧(1905店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>120.00</td><td>兴华北街8号铁西1905创意文化园A入口处(北一路万达广场)</td></tr>
+<tr><td>✅A-</td><td>叫破电台Jump Radio</td><td>其他娱乐场所</td><td>体育休闲服务;休闲场所;休闲场所</td><td>4.6</td><td>33.00</td><td>咸阳路与太原南街交叉口东南60米</td></tr>
+<tr><td>✅A-</td><td>鑫丽都舞厅</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;迪厅</td><td>4.6</td><td>31.00</td><td>乌江街六盘山路21号</td></tr>
+<tr><td>✅A-</td><td>小布电竞(太原街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>15.00</td><td>兰州北街48甲(沈阳站地铁站D口步行430米)</td></tr>
+<tr><td>✅A-</td><td>奇趣联萌潮玩运动中心</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.6</td><td>78.00</td><td>北一中路1号万达广场沈阳北一路店F2层</td></tr>
+<tr><td>✅A-</td><td>THE GUNDAM BASE高达基地(沈阳大悦城店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>163.00</td><td>万泉街道大什字街80-1号大悦城B先锋馆B112/B212号</td></tr>
+<tr><td>✅A-</td><td>图兰朵</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;运动场馆;运动场所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>399.00</td><td>南市场街道总统大厦A座预定</td></tr>
+<tr><td>✅A-</td><td>金驰电玩游乐场</td><td>电玩城</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.6</td><td>35.00</td><td>飞翔路八号</td></tr>
+<tr><td>✅B</td><td>谜语人密室逃脱(春天里店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.5</td><td>93.00</td><td>朝阳街66号120栋6-1(中街春天里文创园6楼)</td></tr>
+<tr><td>✅B</td><td>邪门实景密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>179.00</td><td>北中街路144-2号甲6号</td></tr>
+<tr><td>✅B</td><td>囧囧桃真人实景超级密室(中街·盛京龙城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>178.00</td><td>盛京龙城负1楼囧囧桃真人实景超级密室</td></tr>
+<tr><td>✅B</td><td>IU密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>114.00</td><td>大什字街105-1号(东中街地铁站D3口步行400米)</td></tr>
+<tr><td>✅B</td><td>寻密·实景演绎密室逃脱(太原街店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>97.00</td><td>民主路10号(沈阳站地铁站D口步行260米)</td></tr>
+<tr><td>✅B</td><td>喜剧推理社·血染钟楼·密室(沈阳春天-北区店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>99.00</td><td>北中街路123-2号(中街地铁站B2口步行230米)</td></tr>
+<tr><td>✅B</td><td>快逃先锋密室逃脱(旗舰店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>99.00</td><td>益田假日世界西2门西110米</td></tr>
+<tr><td>✅B</td><td>麦粒空间24小时自助KTV·影咖(城建学院店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>25.00</td><td>沈营大街941号</td></tr>
+</tbody></table></div>
+<p>（另 127 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（217 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>110</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>38</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>30</td></tr>
+<tr><td>淘气堡</td><td>18</td></tr>
+<tr><td>亲子乐园</td><td>12</td></tr>
+<tr><td>电玩城</td><td>9</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>和平湾考拉一百亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.8</td><td>悦融路108号(曹仲地铁站D口步行270米)</td></tr>
+<tr><td>✅A-</td><td>沈阳森林动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.7</td><td>棋盘山国际风景旅游区内</td></tr>
+<tr><td>✅A-</td><td>沈阳市铁西区劳动公园</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>肇工街南12号</td></tr>
+<tr><td>✅A-</td><td>主角儿古风演艺城</td><td>其他儿童场所</td><td>场内</td><td>4.7</td><td>龙之梦购物中心7-8层红中厅</td></tr>
+<tr><td>✅A-</td><td>奈尔宝·儿童乐园·亲子餐厅(沈阳和平环宇城店)</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.7</td><td>南京南街368号L3层L3-05L3-06L3-08L3-09单元</td></tr>
+<tr><td>✅A-</td><td>丁香湖公园</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>造化街道白山路</td></tr>
+<tr><td>✅A-</td><td>沈阳方特欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>盛京大街55号</td></tr>
+<tr><td>✅A-</td><td>长白岛森林公园</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>南堤西路附近</td></tr>
+<tr><td>✅A-</td><td>GIGGLE顽笑潮流运动工厂</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>七星大街6-1号</td></tr>
+<tr><td>✅A-</td><td>沈阳火山岛欢腾王国游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.6</td><td>景星北街38号</td></tr>
+<tr><td>✅A-</td><td>星动领域101PARTYWORLD超乐场</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>时尚奥莱北中庭3层(滂江街地铁站G口步行160米)</td></tr>
+<tr><td>✅A-</td><td>TIWOOKI太屋凯潮玩运动中心</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>沈本大街28号沈阳环球港动感城(月星国际城店)3层</td></tr>
+<tr><td>✅A-</td><td>童咚咚亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.6</td><td>榆林南路与柳林街交叉口西180米</td></tr>
+<tr><td>✅A-</td><td>MELAND CLUB(沈阳皇姑万象汇店)</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>崇山东路18号华润万象汇L3层320号</td></tr>
+<tr><td>✅A-</td><td>吉米王国</td><td>其他儿童场所</td><td>场内</td><td>4.6</td><td>星摩尔购物广场二层3号门正上方</td></tr>
+<tr><td>✅A-</td><td>玩元素</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>长白四街217号外滩叁号商业门店</td></tr>
+<tr><td>✅A-</td><td>嗨皮源亲子游乐中心</td><td>亲子乐园</td><td>独立</td><td>4.6</td><td>丽江街恒大城星汇力游泳健身一楼</td></tr>
+<tr><td>✅A-</td><td>怪兽大弹跳</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>沈水湾公园北门停车场西行50米</td></tr>
+<tr><td>✅A-</td><td>诗画中国(益田假日世界店)</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>中街路268号益田假日世界L1-B35</td></tr>
+<tr><td>✅A-</td><td>图兰朵</td><td>其他儿童场所</td><td>场内</td><td>4.6</td><td>南市场街道总统大厦A座预定</td></tr>
+<tr><td>✅A-</td><td>玩美攻略潮玩街区</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>小东路9号大悦城中街D馆4F层(东中街地铁站C口旁)</td></tr>
+<tr><td>✅A-</td><td>七星海世界亲子主题乐园</td><td>亲子乐园</td><td>独立</td><td>4.6</td><td>七星大街51号盛京绿洲北侧</td></tr>
+<tr><td>✅A-</td><td>快乐专加(沈阳铁西店)</td><td>其他儿童场所</td><td>场内</td><td>4.6</td><td>景星北街星摩尔南行300米(Z广场文化产业园)</td></tr>
+<tr><td>✅A-</td><td>喜马大陆·儿童沉浸式短旅中心</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>重工街道重工北街66-1号铁西体育场东门</td></tr>
+<tr><td>✅A-</td><td>棋盘山自在童野</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>秀湖亭附近</td></tr>
+<tr><td>✅A-</td><td>金驰电玩游乐场</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.6</td><td>飞翔路八号</td></tr>
+<tr><td>✅A-</td><td>看我成长儿童行为指导中心(龙湖校区)</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>沈辽路北龙湖·西府原著2-80号</td></tr>
+<tr><td>✅A-</td><td>小海龟·自闭症·语言训练·感统·发育迟缓</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>珠江街201号</td></tr>
+<tr><td>✅B</td><td>沈阳龙之梦动物科普乐园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>京东Mall北门7层</td></tr>
+<tr><td>✅B</td><td>长白岛森林公园-长白岛动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>南堤西路</td></tr>
+<tr><td>✅B</td><td>伴宠岛毛孩子创想国</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>总站路23号(皇寺路地铁站D1口步行260米)</td></tr>
+<tr><td>✅B</td><td>八岐爬宠工作室·互动</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>小东路10-1号大悦城C1座21层10号</td></tr>
+<tr><td>✅B</td><td>鑫添宠物度假庄园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>胜利南街金家湾村一组三号</td></tr>
+<tr><td>✅B</td><td>聚宝盆宠物寄养乐园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>浑河站西街道下河湾</td></tr>
+<tr><td>✅B</td><td>嗨森汇潮玩俱乐部</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>太原北街84甲7号苏宁广场4楼</td></tr>
+<tr><td>✅B</td><td>MELAND(沈阳吾悦广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>蒲河路33吾悦广场沈阳沈北店F3层</td></tr>
+<tr><td>✅B</td><td>MELAND(沈阳三台子万象汇)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>黄河北大街33号沈阳三台子万象汇L3层</td></tr>
+<tr><td>✅B</td><td>荷塘月色亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>东陵路210号</td></tr>
+<tr><td>✅B</td><td>飞奇梦想城(阳光新生活广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>长青街121号新生活广场2层</td></tr>
+<tr><td>✅B</td><td>爱游专业儿童游泳俱乐部</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>兴顺街道建设中路52号TX-52新生活广场一楼</td></tr>
+<tr><td>✅B</td><td>反内卷电玩俱乐部(中街大悦城店)</td><td>电玩城</td><td>独立</td><td>4.5</td><td>大什字街99-1号(东中街地铁站B口步行490米)</td></tr>
+<tr><td>✅B</td><td>沈阳子夜时光商务公馆</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>城东湖街道年丰园紫郡城</td></tr>
+<tr><td>✅B</td><td>欢乐城市嘉年华</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>中街路268号益田假日世界1楼</td></tr>
+<tr><td>✅B</td><td>Free Time潮玩街区</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>中街第一大道负一层</td></tr>
+<tr><td>✅B</td><td>金色年华潮玩中心(恒隆店)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>中街路128号皇城恒隆广场3楼</td></tr>
+<tr><td>✅B</td><td>金色年华潮玩中心(中街店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>万泉街道小东路5号大悦城B馆4楼</td></tr>
+<tr><td>✅B</td><td>集酷探险岛(长白岛店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>长白三街1-4号</td></tr>
+<tr><td>✅B</td><td>乐优欧亚菲温泉水世界</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>张家屯镇230国道南</td></tr>
+<tr><td>✅B</td><td>甜野亲子农场</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>财落街道2号(锡伯大街与永丰路交叉路口西北)</td></tr>
+<tr><td>✅B</td><td>迷你小熊校服园旗舰店</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>霁虹街道云峰北街14号-1门</td></tr>
+<tr><td>✅B</td><td>萌宠日记宠物会馆(沈阳雅居乐花园B区店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>蒲南路3-31号1门</td></tr>
+<tr><td>✅B</td><td>好日子宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>北三经街30-2号</td></tr>
+<tr><td>✅B</td><td>萌宠之家宠物店</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>全运五路108-20号</td></tr>
+<tr><td>✅B</td><td>大琦萌宠店(和景嘉园店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>二期北门西北90米(皇寺路地铁站C口步行470米)</td></tr>
+<tr><td>✅B</td><td>哈尼兔儿童游戏乐园(沈阳大东龙之梦店)</td><td>其他儿童场所</td><td>场内</td><td>4.4</td><td>滂江街龙之梦购物中心3层(滂江街地铁站G口步行80米)</td></tr>
+<tr><td>✅B</td><td>飞奇梦想城(于洪新玛特店)</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>新玛特二层西侧飞奇梦想城</td></tr>
+<tr><td>✅B</td><td>京游动漫</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>营盘街17-9(31门)</td></tr>
+<tr><td>✅B</td><td>新星耀电玩城</td><td>电玩城</td><td>独立</td><td>4.4</td><td>沈营路9-2号</td></tr>
+<tr><td>✅B</td><td>卡奇部落家庭娱乐中心(大悦城店)</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>小东路9号大悦城D馆1号门3F层</td></tr>
+<tr><td>✅B</td><td>彩隆娱乐城</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>海棠街34号7门</td></tr>
+</tbody></table></div>
+<p>（另 157 家见 §11 原始数据）</p>
+<h2>5. 综合体与商场（173 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>山姆会员商店(沈阳和平店)</td><td>购物中心/综合体</td><td>4.9</td><td>3</td><td>1</td><td>长白南路279号(长白南地铁站A口步行390米)</td></tr>
+<tr><td>✅A-</td><td>杉杉奥特莱斯广场(沈阳店)</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>开发二十五号路7号</td></tr>
+<tr><td>✅A-</td><td>铁西万象汇</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>2</td><td>建设东路158号(铁西广场地铁站G口步行100米)</td></tr>
+<tr><td>✅A-</td><td>沈阳万象城</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>青年大街288号</td></tr>
+<tr><td>✅A-</td><td>沈阳K11 购物艺术中心</td><td>购物中心/综合体</td><td>4.9</td><td>2</td><td>1</td><td>博览路2号甲1号(五里河地铁站B1口步行120米)</td></tr>
+<tr><td>✅A-</td><td>龙湖沈阳浑南天街</td><td>购物中心/综合体</td><td>4.9</td><td>3</td><td>4</td><td>智慧四街5-25号(沈中大街地铁站C口步行160米)</td></tr>
+<tr><td>✅A-</td><td>开心农场A会员店(金牛店)</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>3</td><td>艳华街27号(沈辽路地铁站B口步行230米)</td></tr>
+<tr><td>✅A-</td><td>开心农场A会员店(建筑大学店)</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>0</td><td>浑南东路18号(建筑大学地铁站B口步行210米)</td></tr>
+<tr><td>✅A-</td><td>沈阳盛京大奥莱</td><td>购物中心/综合体</td><td>4.8</td><td>4</td><td>1</td><td>营盘北街5号</td></tr>
+<tr><td>✅A-</td><td>王府井奥莱棋盘山小镇</td><td>百货/商场</td><td>4.8</td><td>0</td><td>0</td><td>双园路36号</td></tr>
+<tr><td>✅A-</td><td>沈阳三台子万象汇</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>黄河北大街33号</td></tr>
+<tr><td>✅A-</td><td>大悦城C馆</td><td>购物中心/综合体</td><td>4.8</td><td>11</td><td>10</td><td>小东路9号(东中街地铁站B4口旁)</td></tr>
+<tr><td>✅A-</td><td>万达广场(沈阳太原街店)</td><td>购物中心/综合体</td><td>4.8</td><td>8</td><td>13</td><td>太原南街2号(沈阳站地铁站D口步行200米)</td></tr>
+<tr><td>✅A-</td><td>沈阳中街吾悦广场</td><td>购物中心/综合体</td><td>4.8</td><td>11</td><td>10</td><td>津桥路7号(东中街地铁站B口步行320米)</td></tr>
+<tr><td>✅A-</td><td>大悦城(沈阳中街店)</td><td>购物中心/综合体</td><td>4.8</td><td>11</td><td>10</td><td>大悦城A馆4楼奉天小馆对面</td></tr>
+<tr><td>✅A-</td><td>皇城恒隆广场</td><td>购物中心/综合体</td><td>4.8</td><td>5</td><td>7</td><td>中街路128号</td></tr>
+<tr><td>✅A-</td><td>万达广场(沈阳沈辽路店)</td><td>购物中心/综合体</td><td>4.8</td><td>7</td><td>7</td><td>兴华南街89-1号</td></tr>
+<tr><td>✅A-</td><td>星摩尔购物广场</td><td>购物中心/综合体</td><td>4.8</td><td>5</td><td>2</td><td>北二中路6号</td></tr>
+<tr><td>✅A-</td><td>嘉里城(沈阳金廊店)</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>0</td><td>青年大街123号</td></tr>
+<tr><td>✅A-</td><td>吾悦广场(沈阳沈北店)</td><td>购物中心/综合体</td><td>4.8</td><td>6</td><td>2</td><td>蒲河路33-1号(蒲河路地铁站D口步行370米)</td></tr>
+<tr><td>✅A-</td><td>皇姑万象汇(北塔店)</td><td>购物中心/综合体</td><td>4.8</td><td>2</td><td>1</td><td>崇山东路18号(北塔地铁站A口步行220米)</td></tr>
+<tr><td>✅A-</td><td>万达广场(沈阳沈北店)</td><td>购物中心/综合体</td><td>4.8</td><td>8</td><td>6</td><td>七星大街11号</td></tr>
+<tr><td>✅A-</td><td>尚柏奥莱</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>蒲河路98号</td></tr>
+<tr><td>✅A-</td><td>中兴-沈阳商业大厦(兰州北街)</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>8</td><td>太原北街86号(太原街步行街西侧)</td></tr>
+<tr><td>✅A-</td><td>龙之梦购物中心(沈阳店)</td><td>购物中心/综合体</td><td>4.8</td><td>11</td><td>0</td><td>滂江街18号(滂江街地铁站H口步行140米)</td></tr>
+<tr><td>✅A-</td><td>万达广场(沈阳奥体店)</td><td>购物中心/综合体</td><td>4.8</td><td>9</td><td>6</td><td>营盘西街17号</td></tr>
+<tr><td>✅A-</td><td>万达广场(沈阳北一路店)</td><td>购物中心/综合体</td><td>4.8</td><td>7</td><td>6</td><td>北一中路1号</td></tr>
+<tr><td>✅A-</td><td>沈阳长白万象汇</td><td>百货/商场</td><td>4.8</td><td>4</td><td>0</td><td>长白北路199号(南京桥地铁站C口步行340米)</td></tr>
+<tr><td>✅A-</td><td>大东副食品商场</td><td>百货/商场</td><td>4.8</td><td>1</td><td>4</td><td>东顺城街100号</td></tr>
+<tr><td>✅A-</td><td>沈阳市府恒隆广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>1</td><td>青年大街1号(市府广场地铁站A口旁)</td></tr>
+<tr><td>✅A-</td><td>万达广场(沈阳文化路店)</td><td>购物中心/综合体</td><td>4.8</td><td>7</td><td>6</td><td>文化路81号(工业展览馆地铁站C口步行240米)</td></tr>
+<tr><td>✅A-</td><td>龙之梦大都汇</td><td>百货/商场</td><td>4.8</td><td>3</td><td>1</td><td>建设西路2号(启工街地铁站A口旁)</td></tr>
+<tr><td>✅A-</td><td>优乐唱跳俱乐部(保税商场店)</td><td>百货/商场</td><td>4.8</td><td>1</td><td>1</td><td>三好街67号保税商场F1层</td></tr>
+<tr><td>✅A-</td><td>盛京百货大家庭</td><td>购物中心/综合体</td><td>4.7</td><td>4</td><td>8</td><td>中街路115号</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(沈阳太原街店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>10</td><td>中华路9号(沈阳站地铁站D口步行90米)</td></tr>
+<tr><td>✅A-</td><td>韩百商场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>6</td><td>西塔街48号</td></tr>
+<tr><td>✅A-</td><td>盛京大东城</td><td>百货/商场</td><td>4.7</td><td>1</td><td>0</td><td>东陵西路37号</td></tr>
+<tr><td>✅A-</td><td>铁西百货大楼</td><td>百货/商场</td><td>4.7</td><td>0</td><td>2</td><td>建设东路7-1号</td></tr>
+<tr><td>✅A-</td><td>盛京大天地</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>沈辽西路27号</td></tr>
+<tr><td>✅A-</td><td>和平大润发</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>南京南街78号(南五马路地铁站A2口旁)</td></tr>
+<tr><td>✅A-</td><td>佳梦达购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>沈辽路141号新隆嘉对面</td></tr>
+<tr><td>✅A-</td><td>大润发(苏家屯店)</td><td>购物中心/综合体</td><td>4.7</td><td>7</td><td>1</td><td>迎春街141号</td></tr>
+<tr><td>✅A-</td><td>大润发(皇姑店)</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>昆山西路2号12门</td></tr>
+<tr><td>✅A-</td><td>大悦城B先锋馆</td><td>百货/商场</td><td>4.7</td><td>11</td><td>10</td><td>大什字街80-1号(东中街地铁站B口步行240米)</td></tr>
+<tr><td>✅A-</td><td>大悦城中街D馆</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>小东路9号(东中街地铁站D口旁)</td></tr>
+<tr><td>✅A-</td><td>沈阳大悦城E馆</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>小东路6号大悦城(沈阳中街店)</td></tr>
+<tr><td>✅A-</td><td>师任堂韩国打糕(韩百商场店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>西塔街48号韩百商场A座1F层</td></tr>
+<tr><td>✅A-</td><td>上亿广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>沈营大街587号</td></tr>
+<tr><td>✅A-</td><td>积家购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>道义南大街33号</td></tr>
+<tr><td>✅A-</td><td>沈阳花园城购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>营盘北街7号(奥体中心地铁站B2口步行80米)</td></tr>
+</tbody></table></div>
+<p>（另 123 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（282 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>彩电塔夜市</td><td>购物服务;特色商业街;特色商业街</td><td>4.9</td><td>21.00</td><td>西滨河路64号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/043fd5bc8c9f90c348d3d2f52984b352"></td></tr>
+<tr><td>✅A-</td><td>老四季(沈阳总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>22.00</td><td>十三纬路88号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/59a917e83adb79ea0000003453690751?type=pic"></td></tr>
+<tr><td>✅A-</td><td>群乐饭店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>36.00</td><td>南六中路25号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/O1CN012CVAa01dDYok5fljD_!!2200807543702-0-koubei.jpg"></td></tr>
+<tr><td>✅A-</td><td>王厚元饺子(浑南店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.8</td><td>74.00</td><td>富民南街8-14号(天成街地铁站C口步行380米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1464_1764488237822_41875358.jpg"></td></tr>
+<tr><td>✅A-</td><td>惠德坊肘子饭东北菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>50.00</td><td>奉天街北热闹路49号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/29545b49d2129ab50000000714904655?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老四季 (万科新榆店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>21.00</td><td>万科新榆公馆门市</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_2126_1751842113171_12141183.jpg"></td></tr>
+<tr><td>✅A-</td><td>富龙快餐店(云峰店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.8</td><td>13.00</td><td>云峰北街45号-1</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/69d64ab9ecdf1c19819b23bbfd5c52aa"></td></tr>
+<tr><td>✅A-</td><td>沈辽涮肉(三经街店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.8</td><td>96.00</td><td>南三经街与西滨河路交叉口西北80米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000036691_ss__1767096225696_63782296.jpg"></td></tr>
+<tr><td>✅A-</td><td>渝宗巷子重庆市井火锅(沈阳市沈河区三经小区店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.8</td><td>111.00</td><td>会武街35号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260320-0c40297e61e57649c363b374-7rwNOGeT1HS8nxtqvEJAOA.jpg"></td></tr>
+<tr><td>✅A-</td><td>富龙快餐(大南店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.8</td><td>17.00</td><td>大南街106号(原潮州城)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/27ce7d161408a7a00000002750070291?type=pic"></td></tr>
+<tr><td>✅A-</td><td>春祥辽菜楼•满汉全席传承店(皇姑庭院店)</td><td>餐饮服务;中餐厅;东北菜</td><td>4.8</td><td>108.00</td><td>白龙江街60号(中医药大学地铁站H口步行460米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/79fc0e3b66e3050b0000002358826623?type=pic"></td></tr>
+<tr><td>✅A-</td><td>魏家驴肉</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>99.00</td><td>锡伯大街</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/44dc72e1662f39540000008433468404?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老隋饭店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>46.00</td><td>高坎镇(化工厂加油站东侧)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/file_media_Photo_5544_IMG_1772950022_4405_image_1772949922855_jpg_ss__1772974501972_99801369.jpg"></td></tr>
+<tr><td>✅A-</td><td>新洪记丽久饭店</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>76.00</td><td>兴工北街128号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d42d8e7d9a9952a46a15f8a2d24e2718_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>南湖春色海鲜食府</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>145.00</td><td>中兴街38-1号(南湖公园西门旁,120急救中心对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7fda949ca4919e490000000977998272?type=pic"></td></tr>
+<tr><td>✅A-</td><td>新林酒店(兴顺街店)</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>73.00</td><td>兴顺街道南十一路9号8号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/53566bd605861a9582bf310044d7bdd8"></td></tr>
+<tr><td>✅A-</td><td>大谊园</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>115.00</td><td>贵和街52号,八路九路之间兴华公园西面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e64e0c4e08b8acdf7d6023c9e63689b5"></td></tr>
+<tr><td>✅A-</td><td>都来福海鲜大酒店(大东店)</td><td>餐饮服务;中餐厅;海鲜酒楼｜餐饮服务;中餐厅;东北菜</td><td>4.7</td><td>96.00</td><td>东北大马路148号(东北大马路地铁站D口步行350米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/A786CCDD_D06B_4BD1_A44A_83A45BB61322_L0_001_1320_94_1772616079140_87905293.jpg"></td></tr>
+<tr><td>✅A-</td><td>乐山海鲜酒家(明华欣居园店)</td><td>餐饮服务;中餐厅;海鲜酒楼｜餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>129.00</td><td>黄河北大街86号(近松山路三台子地铁站)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4a7f86b5df505d3c0000000716912636?type=pic"></td></tr>
+<tr><td>✅A-</td><td>王厚元饺子(高登店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>76.00</td><td>青年大街52号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/f10cd4bf31cf5dfb0000008830022005?type=pic"></td></tr>
+<tr><td>✅A-</td><td>海底捞火锅(印象城店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>120.00</td><td>中华路15号印象城4楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bcb84a02dd0ebb388d01c309af554414?operate=original"></td></tr>
+<tr><td>✅A-</td><td>那家老院子(三经街店)</td><td>餐饮服务;中餐厅;东北菜</td><td>4.7</td><td>64.00</td><td>北三经街67号(沈阳日报楼下)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/70adc6518f2eb3110000002899726385?type=pic"></td></tr>
+<tr><td>✅A-</td><td>百富源海鲜辽菜(黄河大街店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.7</td><td>96.00</td><td>黄河南大街与崇山中路35号(2门3门)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/%5B2026-01-18-22-10-04%5D7F20F4B3-6D86-48D1-B49F-966B2D6527C_1768745405516_16491758.jpg"></td></tr>
+<tr><td>✅A-</td><td>老四季(云峰街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>18.00</td><td>云峰北街30号(云峰北街地铁站D口步行280米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000003183_ss__1766924224302_21741252.jpg"></td></tr>
+<tr><td>✅A-</td><td>那家老院子(云峰店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>67.00</td><td>云峰北街(云峰北街地铁站D口步行280米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a2769232380593100000002332830043?type=pic"></td></tr>
+<tr><td>✅A-</td><td>猪尔屯·非遗杀猪菜·东北菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>46.00</td><td>金沙江街16号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000048793_ss__1763874494884_57136726.jpg"></td></tr>
+<tr><td>✅A-</td><td>王厚元饺子(黄河南大街店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>67.00</td><td>黄河南大街93号11门</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/81449422fe727cf9086a9fceafdc4c9d_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>非遗·美食佳坛肉馆(沈阳总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>30.00</td><td>昆山中路51号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/cadc9cbe393255d10000007820416364?type=pic"></td></tr>
+<tr><td>✅A-</td><td>奉天小馆·非遗东北菜(文安路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>94.00</td><td>文安路18号B7</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/E6EE226F_F071_4755_9060_6A2CE11722E2_L0_001_2000_1500_1743827809756_85380378.jpg"></td></tr>
+<tr><td>✅A-</td><td>老四季(南市场店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>13.00</td><td>南四经街60号(南市场地铁站B口步行340米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/128140f8fc6bc44aee1738b16799099b"></td></tr>
+<tr><td>✅A-</td><td>那家老院子(宁山店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>63.00</td><td>宁山中路1号门市房</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000015297_ss__1764992281346_32103442.jpg"></td></tr>
+<tr><td>✅A-</td><td>炆艺乳鸽大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>134.00</td><td>北四经街2-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7148cb47fca571b8cb9680227f2b1acc_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>王厚元饺子(辽宁工会大厦店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>80.00</td><td>崇山东路40号辽宁工会大厦</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000032114_ss__1759446236064_29838283.jpg"></td></tr>
+<tr><td>✅A-</td><td>老奉天焦火鸡架</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.7</td><td>10.00</td><td>白云山路26号老奉天焦火鸡架</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/886de5059ebab0761d616d408fda2a2b_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>老四季(富民店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>15.00</td><td>富民街1号4门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_service__1771499612600_71604952_1771499614816_23406866.jpg"></td></tr>
+<tr><td>✅A-</td><td>小桃红春饼烤鸭(昆山路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>52.00</td><td>荣盛·昆山豪庭西南门东50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b00469a761d0de7f0000003385020468?type=pic"></td></tr>
+<tr><td>✅A-</td><td>王厚元饺子(大东店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>69.00</td><td>东北大马路151号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/06392acde1121c2d7d1147edbe92686f"></td></tr>
+<tr><td>✅A-</td><td>老四季(光荣街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>15.00</td><td>光荣街42号(东来顺斜对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/78df4179f1903405045641bb561a9c9c_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>桦楠川香 · 黏糊麻辣烫(品牌首店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>26.00</td><td>小东路山东馆巷25号甲7门大悦城西塔B区门对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000242_1750392380129_37572717.jpg"></td></tr>
+<tr><td>✅A-</td><td>东北大院(三台子店)</td><td>餐饮服务;中餐厅;东北菜</td><td>4.7</td><td>50.00</td><td>黄河北大街96号(国奥现代城)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3b846d5082e9261cea2a3f545535b1c7"></td></tr>
+<tr><td>✅A-</td><td>宋家菜馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>60.00</td><td>白塔河路57-49号4门</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000174_1750340011765_56450281.jpg"></td></tr>
+<tr><td>✅A-</td><td>老四季(十三纬路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>22.00</td><td>十三纬路116号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a19da2c6a039435840be802a3f0ea3ad_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>千品香美食(浑南店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>67.00</td><td>临波路11-60号D2(彩霞街地铁站A口步行260米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/D07CD25B_0732_4D99_B1C9_67989D9F308D_L0_001_1080_192_1761026852927_46017067.jpg"></td></tr>
+<tr><td>✅A-</td><td>韩麦大冷面(中街旗舰店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>18.00</td><td>大西路238号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9fcfdbea44fa83090000006326048414?type=pic"></td></tr>
+<tr><td>✅A-</td><td>王厚元饺子(沈北店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>66.00</td><td>蒲昌路1-33号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000070274_ss__1764414211958_40465134.jpg"></td></tr>
+<tr><td>✅A-</td><td>一顿烧烤(八经街店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>74.00</td><td>八经街72号3门</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8b5b378e55ec1010372621ddf5266f2f_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>诚意小厨(中山路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>67.00</td><td>桂林街51号3门(鑫家福超市旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/79af3b62cbb66bdc56cd45f43cb78e23_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>王厚元饺子(故宫店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>68.00</td><td>正阳街134号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/A7A65354_53D9_46EC_B405_F9183A3D590B_L0_001_2000_150_1768879255822_55434222.jpg"></td></tr>
+<tr><td>✅A-</td><td>西塔老太太泥炉烤肉(沈阳店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>78.00</td><td>安图街3号12门</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/117d8d30d5a3b47c22e250790c3ff8a7?operate=original"></td></tr>
+<tr><td>✅A-</td><td>野人部落(太原街旗舰店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>69.00</td><td>同泽南街14号正大广场1-2-3-4-5层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bdc8269ff32dc8990000006578006523?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老四季(帅府店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>18.00</td><td>南顺城路37号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/O1CN011IydfqbsAzjHHKs_!!3695320962-0-kbcontentapng.jpg"></td></tr>
+<tr><td>✅A-</td><td>王厚元饺子(三好街店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>76.00</td><td>五里河商务大厦北门西50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8D26CCC6_9EDC_446C_99A5_D3B93A20024F_L0_001_2016_151_1767144964569_34774172.jpg"></td></tr>
+<tr><td>✅A-</td><td>小渔船焖鱼馆</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>88.00</td><td>北热闹路57号411-412</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8bf1e6ba6fcca0020000002619918996?type=pic"></td></tr>
+<tr><td>✅A-</td><td>师任堂韩国打糕(韩百商场店)</td><td>餐饮服务;外国餐厅;韩国料理</td><td>4.7</td><td>25.00</td><td>西塔街48号韩百商场A座1F层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/cf9caca3143d650d547fac60a66af843"></td></tr>
+<tr><td>✅A-</td><td>王厚元饺子(兴工北街店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>77.00</td><td>兴工北街96号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/B8CF5D79_D15E_46D0_B8A2_B2AB02D6CB50_L0_001_2000_150_1764375877992_85394034.jpg"></td></tr>
+<tr><td>✅A-</td><td>小广西大排档</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>52.00</td><td>奉天街185号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/003BD8C4_B488_41B3_9D85_D251BFD2585B_L0_001_2000_150_1766156236477_88704743.jpg"></td></tr>
+<tr><td>✅A-</td><td>草芥夜档(领事馆店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>85.00</td><td>十四纬路53号(每之购对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d3f0f5ed3c73374d0000002995822295?type=pic"></td></tr>
+<tr><td>✅A-</td><td>布车POCHA BOOM(韩国新城店)</td><td>汽车服务;汽车服务相关;汽车服务相关</td><td>4.7</td><td>71.00</td><td>长江南街3号1门</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4e8ed8cb3484563c862f90ce354ca3ab_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>五柳面馆(十一纬路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>27.00</td><td>会武街1号1-1-1</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100010728_1770280277925_94929135.jpg"></td></tr>
+<tr><td>✅A</td><td>夕阳红小吃</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.7</td><td>33.00</td><td>小东路山东馆巷6号(中街地铁站A口步行340米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000471_1768888437691_47657365.jpg"></td></tr>
+<tr><td>✅A-</td><td>螺三岁螺蛳粉</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>23.00</td><td>扬谷创业大厦东北门旁(沈阳站地铁站D口步行380米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/162b1b6d809fbac20000000968084645?type=pic"></td></tr>
+<tr><td>✅A-</td><td>麦当劳(长白西路得来速餐厅)</td><td>餐饮服务;快餐厅;麦当劳</td><td>4.7</td><td>33.00</td><td>长白西路万科城对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0b7b2d2ada04dbeb45b89fa775a66ebf"></td></tr>
+<tr><td>✅A-</td><td>富龙快餐店(小北店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.7</td><td>17.00</td><td>山东堡路59号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/cdf38503d50c61dd0000003176194054?type=pic"></td></tr>
+<tr><td>✅A-</td><td>回锦轩包子铺(人民广场店)</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.7</td><td>77.00</td><td>市府大路262-6号新华国金中心</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/B0806FA6_F694_48AF_A021_70C8F22B616E_L0_001_1500_200_1759825998891_47101858.jpg"></td></tr>
+<tr><td>✅A-</td><td>五柳面馆(文安路店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>28.00</td><td>文安路10-2-412号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100003423_1766452637604_22502425.jpg"></td></tr>
+<tr><td>✅A-</td><td>方中山胡辣汤(奉天街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>19.00</td><td>奉天街328号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/E54717FA_5BE1_48C2_9E7A_9FC9BC748281_L0_001_2000_130_1762475647518_66030064.jpg"></td></tr>
+<tr><td>✅A-</td><td>老铁老式麻辣烫手工炸串总店(南八中路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>26.00</td><td>南八中路75号甲号5门(德工街八马路路口)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/O1CN01XGch411Iydi1tbwjZ_!!3695320962-0-kbcontentapng.jpg"></td></tr>
+<tr><td>✅A-</td><td>西落舌冒菜(总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>21.00</td><td>会武街53号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e01bba6b86811b1d0000005113156441?type=pic"></td></tr>
+<tr><td>✅A-</td><td>小红车炸蛋葱油饼(怀远门店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>11.00</td><td>西顺城内街48号(大尾巴羊旁路口)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/B3478EBB_8421_4F46_B9C2_DA6FB8416DC4_L0_001_1500_200_1757061595985_58048071.jpg"></td></tr>
+<tr><td>✅A-</td><td>廣银砂锅粥石磨肠粉</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>21.00</td><td>碧流河街77-17</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/222c4d1853b5e74955c92f8bafdc2383_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>老四季(沈阳大学店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>20.00</td><td>联合路与取意一巷交叉口西南120米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/43e6ac9b26cffab3c97ef4a4f54a30d9_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>王奋斗贵州酸汤牛肉火锅(南堤中路店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>100.00</td><td>南提中路8号C区59轴至64一层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ED346C0B_412A_447F_99F5_BC8ED017283E_L0_001_1284_64_1766896534907_33922977.jpg"></td></tr>
+<tr><td>✅A-</td><td>东北大院·东北菜(沈北店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>56.00</td><td>道义南大街(辽宁大学地铁站D口步行400米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/86BE34A6_D9BC_4FA2_93D7_E69AD20D23BE_L0_001_1290_145_1763693904353_91693777.jpg"></td></tr>
+<tr><td>✅A-</td><td>那家老院子东北菜(艳粉店)</td><td>餐饮服务;中餐厅;东北菜</td><td>4.7</td><td>51.00</td><td>艳华街16号(铁西万达广场南行500米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/73843f009752aecd134a39377a57c381_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>蘸小院铁锅炖·蘸酱菜·东北菜(怀远门店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>69.00</td><td>大西路180号(怀远门地铁站A口步行430米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1e3fb2d0a2a2d5270000003369284384?type=pic"></td></tr>
+<tr><td>✅A-</td><td>蘸小院铁锅炖·蘸酱菜·东北菜(奥体店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>59.00</td><td>浑南二路1-G新华国际公寓</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0dee9459243e00d40000002247378909?type=pic"></td></tr>
+<tr><td>✅A-</td><td>百富源·海鲜辽菜(和平北大街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>96.00</td><td>和平北大街57号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/83ef8d757551dff5f63346e785e91f1c"></td></tr>
+<tr><td>✅A-</td><td>蘸小院铁锅炖·蘸酱菜·东北菜(和平店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>67.00</td><td>北二马路14号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260312-95030e545cc7c37cc64b2674-3pTCm5pltKFAUDLtdP3Xh3.jpg"></td></tr>
+<tr><td>✅A-</td><td>莲花炖鱼馆新店(棋盘山店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>40.00</td><td>平望线252号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100004159_1759389078094_83125127.jpg"></td></tr>
+<tr><td>✅A-</td><td>百富源·海鲜辽菜(浑南喜来登店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>96.00</td><td>全运三路沈中大街101-1号1号楼二楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/83ef8d757551dff5f63346e785e91f1c"></td></tr>
+</tbody></table></div>
+<p>（另 202 家见 §11 原始数据，评分排序后 80 名未列入）</p>
+<h2>7. 苍蝇馆 / 小店候选（21 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>奉天小馆·非遗东北菜(文安路店)</td><td>店名小店语义</td><td>4.7</td><td>94.00</td><td>文安路18号B7</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>炆艺乳鸽大排档</td><td>店名小店语义</td><td>4.7</td><td>134.00</td><td>北四经街2-2号</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>小广西大排档</td><td>店名小店语义</td><td>4.7</td><td>52.00</td><td>奉天街185号</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>西贡海鲜大排档</td><td>店名小店语义</td><td>4.6</td><td>183.00</td><td>凌空二街43号</td><td></td></tr>
+<tr><td>奉天小馆·非遗东北菜(沈阳大悦城店)</td><td>店名小店语义</td><td>4.6</td><td>87.00</td><td>小东路6号中街大悦城A馆A416-418号商铺</td><td></td></tr>
+<tr><td>喜三胖韩国自助烤肉大排档(星摩尔购物广场店)</td><td>店名小店语义</td><td>4.6</td><td>65.00</td><td>北二中路6号星摩尔购物广场L3层E303-2</td><td></td></tr>
+<tr><td>恭喜上岸·潮州大排档(沈阳首店)·生腌·海鲜粥</td><td>店名小店语义</td><td>4.6</td><td>183.00</td><td>临波路与临波路2巷交叉口东南140米</td><td></td></tr>
+<tr><td>匠小匠烧烤·江湖菜大排档(太原街店)</td><td>店名小店语义</td><td>4.6</td><td>55.00</td><td>南二马路35号(太原街地铁站F口步行480米)</td><td></td></tr>
+<tr><td>匠小匠烧烤·江湖菜大排档(上园店)</td><td>店名小店语义</td><td>4.6</td><td>63.00</td><td>北大营街一号(北大营地铁站C口步行90米)</td><td></td></tr>
+<tr><td>张箐箐大排档·江西景德菜</td><td>店名小店语义</td><td>4.6</td><td>65.00</td><td>会武街59号</td><td></td></tr>
+<tr><td>你好湘椒小馆</td><td>店名小店语义</td><td>4.5</td><td>63.00</td><td>南六中路与吉工一街交叉口西北60米</td><td></td></tr>
+<tr><td>滑翔东港海鲜大排档(凌空二街店)</td><td>店名小店语义</td><td>4.5</td><td>83.00</td><td>凌空二街21号(滑翔公园北门)</td><td></td></tr>
+<tr><td>馋二烧烤大排档(沈北正良店)</td><td>店名小店语义</td><td>4.5</td><td>53.00</td><td>道义二街18-6-2门</td><td></td></tr>
+<tr><td>铁亭烧烤大排档(沈新园店)</td><td>店名小店语义</td><td>4.5</td><td>50.00</td><td>洪湖一街沈新园12栋底商</td><td></td></tr>
+<tr><td>兄弟烧烤大排档</td><td>店名小店语义</td><td>4.5</td><td>28.00</td><td>振兴五街17-8号商业s1-1门</td><td></td></tr>
+<tr><td>桥头海鲜大排档</td><td>店名小店语义</td><td>4.4</td><td>78.00</td><td>滑翔路2号212(近砂阳桥)</td><td></td></tr>
+<tr><td>沈阳天天好日子农家院</td><td>店名小店语义</td><td>4.3</td><td>—</td><td>棋盘山正门交通岗南80米(森林路)或清韵百园前行100米</td><td></td></tr>
+<tr><td>大自然农家院(平罗东街)</td><td>店名小店语义</td><td>4.1</td><td>64.00</td><td>平罗东街南50米</td><td></td></tr>
+<tr><td>真善美烧烤店</td><td>店名小店语义</td><td>4.0</td><td>62.00</td><td>满融街22号6门</td><td></td></tr>
+<tr><td>火炉旺首尔烤肉大排档(中街吾悦广场店)</td><td>店名小店语义</td><td>4.0</td><td>44.00</td><td>津桥路7号吾悦广场4楼4015号</td><td></td></tr>
+<tr><td>火炉旺韩式烤肉大排档(中街益田假日店)</td><td>店名小店语义</td><td>3.7</td><td>81.00</td><td>中街路268号益田假日世界B1层</td><td></td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（40 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>野翠花·沈阳新特产(中街店)</td><td>购物服务;专卖店;专营店</td><td>4.6</td><td>朝阳街168号星汇广场L1-A17号商铺</td></tr>
+<tr><td>✅B</td><td>蟹状元·大闸蟹(沈阳铁西店)</td><td>购物服务;综合市场;水产海鲜市场｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>兴工北街46号2门蟹状元(富雅豪林底商)</td></tr>
+<tr><td>✅B</td><td>野翠花·沈阳伴手礼(彩塔夜市店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.5</td><td>十三纬路123甲</td></tr>
+<tr><td>✅B</td><td>包哥风干牛肉干现烤现卖(沈河总店)</td><td>购物服务;综合市场;农副产品市场｜购物服务;专卖店;专营店｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>南塔街道文化东路75号</td></tr>
+<tr><td>✅B</td><td>蟹状元·大闸蟹(沈阳浑南店)</td><td>购物服务;综合市场;水产海鲜市场｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.4</td><td>浑南中路19-7号(江南水乡西门)蟹状元</td></tr>
+<tr><td>✅B</td><td>蟹状元·大闸蟹(沈阳长白店)</td><td>购物服务;综合市场;水产海鲜市场</td><td>4.4</td><td>新加坡城半岛半城南门东90米</td></tr>
+<tr><td>✅B</td><td>孙丽丽烤猪蹄旗舰店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.4</td><td>中街路75号1-2层</td></tr>
+<tr><td>✅B</td><td>盛京有鸣沈阳特产零食礼品总汇(铁西总店)</td><td>购物服务;专卖店;专营店</td><td>4.4</td><td>南六东路42-2号</td></tr>
+<tr><td>✅B</td><td>北京稻香村(沈阳总店)</td><td>餐饮服务;糕饼店;糕饼店</td><td>4.4</td><td>十一纬路150号142门</td></tr>
+<tr><td>✅B</td><td>盛京炒场坚果｜特产｜炒货工厂店</td><td>购物服务;综合市场;果品市场</td><td>4.3</td><td>北二经街91号门市</td></tr>
+<tr><td>✅B</td><td>蟹状元·大闸蟹(沈阳皇姑店)</td><td>购物服务;综合市场;水产海鲜市场｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.3</td><td>黄河南大街59号沈阳数字经济产业大厦北侧(蟹状元)</td></tr>
+<tr><td>✅B</td><td>蟹状元·大闸蟹(沈阳沈河店)</td><td>购物服务;综合市场;水产海鲜市场</td><td>4.3</td><td>奉天街229号(蟹状元)</td></tr>
+<tr><td>✅B</td><td>蟹状元·大闸蟹(沈阳大东店)</td><td>购物服务;综合市场;水产海鲜市场｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.3</td><td>八王寺街39-2号1门</td></tr>
+<tr><td>✅B</td><td>陆歌牛肉干(八家子小区店)</td><td>购物服务;专卖店;土特产专卖店</td><td>4.3</td><td>八家子小区北2门西170米</td></tr>
+<tr><td>✅B</td><td>宗华东北土特产(滂江街店)</td><td>购物服务;综合市场;果品市场</td><td>4.3</td><td>滂江街183号</td></tr>
+<tr><td>⚠️</td><td>山东水果干果土特产超市</td><td>购物服务;综合市场;果品市场</td><td>4.2</td><td>光荣街15号</td></tr>
+<tr><td>⚠️</td><td>三禾北京稻香村(欧亚长青城店)</td><td>餐饮服务;糕饼店;糕饼店</td><td>4.2</td><td>五三街道长青南街6甲号欧亚长青生活广场一层</td></tr>
+<tr><td>⚠️</td><td>宝之林东北土特产超市(东中街店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.2</td><td>银元街25号1门道边门市</td></tr>
+<tr><td>⚠️</td><td>森蓝松鼠东北特产(中街路店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.2</td><td>正阳街88号112室</td></tr>
+<tr><td>⚠️</td><td>稻香村东北分公司</td><td>餐饮服务;糕饼店;糕饼店｜购物服务;购物相关场所;购物相关场所</td><td>4.2</td><td>仙岛北路与和安街交叉口东240米</td></tr>
+<tr><td>⚠️</td><td>山林王东北特产城北陵大街店</td><td>购物服务;专卖店;土特产专卖店</td><td>4.2</td><td>北陵大街六号11门(岐山路地铁站A口步行230米)</td></tr>
+<tr><td>⚠️</td><td>森蓝松鼠东北特产超市(小西路店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.1</td><td>小西路43-2门</td></tr>
+<tr><td>⚠️</td><td>山林王东北特产城(崇山东路店)</td><td>购物服务;专卖店;专营店</td><td>4.1</td><td>崇山东路69号-1门(陵东街地铁站B口步行290米)</td></tr>
+<tr><td>⚠️</td><td>喜芝楼沈阳特产 伴手礼</td><td>购物服务;专卖店;专营店</td><td>4.1</td><td>南湖街道三好街96号同方广场众创空间二层218室</td></tr>
+<tr><td>⚠️</td><td>奉天老吴盘锦大米河蟹(总店)</td><td>购物服务;综合市场;农副产品市场</td><td>4.1</td><td>奉天街37号客人车可停路边</td></tr>
+<tr><td>⚠️</td><td>和田大枣(南三经街店)</td><td>购物服务;专卖店;专营店</td><td>4.0</td><td>南三经街10号</td></tr>
+<tr><td>⚠️</td><td>老红帽土特产(亿丰南奥国际店)</td><td>购物服务;专卖店;土特产专卖店｜购物服务;超级市场;超市</td><td>4.0</td><td>浑河站东街道浑南新区金卡路6-7号2门</td></tr>
+<tr><td>⚠️</td><td>农家果园东北特产生鲜超市</td><td>购物服务;综合市场;农副产品市场</td><td>4.0</td><td>文化路153楼东面农家果园</td></tr>
+<tr><td>⚠️</td><td>南山榛子特产城(南京南街店)</td><td>医疗保健服务;医药保健销售店;医疗保健用品</td><td>3.9</td><td>南京南街南十一马路60-1</td></tr>
+<tr><td>⚠️</td><td>盛京有鸣沈阳特产零食礼品总汇(沈河总店)</td><td>购物服务;专卖店;专营店</td><td>3.8</td><td>先农坛路17巷14号</td></tr>
+<tr><td>⚠️</td><td>小胖小鲜生绿色特产超市</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.7</td><td>昆山中路131号4门东屋</td></tr>
+<tr><td>⚠️</td><td>兴奇利特产便利店(桃仙机场店)</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.7</td><td>机场路沈阳桃仙国际机场T3航站楼2F层S-M-A25</td></tr>
+<tr><td>⚠️</td><td>国涛榛子东北特产(奉天街店)</td><td>购物服务;综合市场;果品市场</td><td>3.7</td><td>奉天街208号(盛京白记小骨头隔壁)</td></tr>
+<tr><td>⚠️</td><td>致良知·牛肉干(七中店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.6</td><td>奉天街与热闹路交叉口西南40米</td></tr>
+<tr><td>⚠️</td><td>东北土特产海参(南寺回民小区北区店)</td><td>购物服务;综合市场;水产海鲜市场</td><td>3.5</td><td>小西路84号南寺回民小区北区</td></tr>
+<tr><td>⚠️</td><td>致良知牛肉干(皇寺广场店)</td><td>购物服务;综合市场;农副产品市场</td><td>3.5</td><td>南京北街25号甲4甲5(皇寺路地铁站C口步行100米)</td></tr>
+<tr><td>⚠️</td><td>致良知·牛肉干(青年大街店)</td><td>购物服务;专卖店;专营店</td><td>3.5</td><td>大西路303号(青年大街地铁站D口步行160米)</td></tr>
+<tr><td>❌</td><td>小康丹东草莓特产店(汇馨家园店)</td><td>购物服务;综合市场;果品市场</td><td>3.3</td><td>中学堂路8号4门</td></tr>
+<tr><td>❌</td><td>棒棒牛风干牛肉干(和平大润发店)</td><td>购物服务;专卖店;专营店</td><td>3.1</td><td>南京南街和平大润发(南五马路地铁站A2口步行220米)</td></tr>
+<tr><td>⚠️</td><td>獐子岛海珍品专卖店(北陵大街店)</td><td>医疗保健服务;医药保健销售店;医疗保健用品</td><td>—</td><td>北陵大街24号(岐山路地铁站B口步行280米)</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>如家快捷酒店（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>如家快捷酒店</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>大谊园</td><td>距离就近</td><td>214m</td><td>4.7</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>沈阳香格里拉大堂（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>沈阳香格里拉大堂</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>沈阳香格里拉大酒店豪华阁贵宾酒廊</td><td>距离就近</td><td>33m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>芝音Kitchen&amp;Bar</td><td>距离就近</td><td>281m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>Blooom</td><td>距离就近</td><td>478m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>山姆会员商店(沈阳和平店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>奈尔宝·儿童乐园·亲子餐厅(沈阳和平环宇城店)</td><td>距离就近</td><td>207m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>环宇夜市(沈阳和平环宇城店)</td><td>名称互证</td><td>250m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>萌萌探亲子互动探案馆(沈阳中海环宇城店)</td><td>距离就近</td><td>279m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>探跃影城(沈阳和平环宇城店)</td><td>距离就近</td><td>307m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星际传奇(沈阳和平环宇城店)</td><td>距离就近</td><td>319m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>星际传奇(沈阳和平环宇城店)</td><td>距离就近</td><td>319m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>铁西万象汇（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>海伦酒吧</td><td>距离就近</td><td>373m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>富龙快餐店(云峰店)</td><td>距离就近</td><td>532m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>你好湘椒小馆</td><td>距离就近</td><td>579m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沈阳万象城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Amy Music Lab</td><td>距离就近</td><td>589m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沈阳K11 购物艺术中心（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>玩计划家庭娱乐中心(沈阳K11店)</td><td>距离就近</td><td>119m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>星际传奇(沈阳K11店)</td><td>距离就近</td><td>151m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>保利国际影城( 沈阳K11 购物艺术中心店)</td><td>名称互证</td><td>168m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>纯K(K11 店)</td><td>距离就近</td><td>189m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>香江火锅</td><td>距离就近</td><td>547m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>龙湖沈阳浑南天街（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>红篱笆·赣南客家菜(沈阳浑南龙湖天街店)</td><td>距离就近</td><td>76m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>正播影城(龙湖沈阳浑南天街)</td><td>名称互证</td><td>87m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>哈尼兔家庭乐园(龙湖沈阳浑南天街店)</td><td>名称互证</td><td>99m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>双人成行主机游戏体验馆(龙湖天街店)</td><td>距离就近</td><td>101m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>双人成行主机游戏体验馆(龙湖天街店)</td><td>距离就近</td><td>101m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>欢乐猩球嘉年华(浑南天街店)</td><td>距离就近</td><td>107m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>欢乐猩球嘉年华(浑南天街店)</td><td>距离就近</td><td>107m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>赢麻了棋牌馆</td><td>距离就近</td><td>140m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>独牙台球棋牌</td><td>距离就近</td><td>186m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>妖姬24小时自助棋牌会馆</td><td>距离就近</td><td>190m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>汇赢自助棋牌龙湖云里店</td><td>距离就近</td><td>257m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>雀神24h自助棋牌空间</td><td>距离就近</td><td>405m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>湘钵钵·湖南乡里菜(全运路店)</td><td>距离就近</td><td>436m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>菜小湘·辣椒炒肉(全运路万达店)</td><td>距离就近</td><td>565m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>王厚元饺子(全运路万达店)</td><td>距离就近</td><td>593m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>彩电塔夜市（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>彩电塔夜市</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§6</td></tr>
+<tr><td>彩塔炒焖子(总店)</td><td>距离就近</td><td>49m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>双福记熏酱店</td><td>距离就近</td><td>273m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>LAZYBEE小酒馆</td><td>距离就近</td><td>306m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>FOUR PLAY</td><td>距离就近</td><td>350m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>Blooom</td><td>距离就近</td><td>360m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>老四季(十三纬路店)</td><td>距离就近</td><td>406m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>西落舌冒菜(总店)</td><td>距离就近</td><td>421m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>张箐箐大排档·江西景德菜</td><td>距离就近</td><td>448m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>老四季(沈阳总店)</td><td>距离就近</td><td>460m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>草芥夜档(领事馆店)</td><td>距离就近</td><td>470m</td><td>4.7</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>沈阳中街步行街（30 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>淘气堡</td><td>距离就近</td><td>73m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>老边饺子馆(总店)</td><td>距离就近</td><td>79m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魔法屋儿童DIY体验店</td><td>距离就近</td><td>103m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>麦当劳(地铁中街站B2口朝阳街店)</td><td>距离就近</td><td>118m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>三艾小酒馆San Ai(中街店)</td><td>距离就近</td><td>124m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长藤鬼校(中街店)</td><td>距离就近</td><td>139m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>火炉旺韩式烤肉大排档(中街益田假日店)</td><td>距离就近</td><td>186m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>梵高星空艺术馆(中街益田旗舰店)</td><td>距离就近</td><td>203m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>诡道密室惊悚体验馆</td><td>距离就近</td><td>204m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>金乐活美食</td><td>距离就近</td><td>211m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>谜语人密室逃脱(春天里店)</td><td>距离就近</td><td>223m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>白狗酒咖WhiteDog</td><td>距离就近</td><td>248m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>诗画中国(益田假日世界店)</td><td>距离就近</td><td>254m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>大十面</td><td>距离就近</td><td>279m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(沈阳益田假日店)</td><td>距离就近</td><td>306m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(沈阳益田假日店)</td><td>距离就近</td><td>306m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>快逃先锋密室逃脱(旗舰店)</td><td>距离就近</td><td>308m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>布勒门儿童探索中心</td><td>距离就近</td><td>313m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>喜剧推理社·血染钟楼·密室(沈阳春天-北区店)</td><td>距离就近</td><td>326m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>欢乐城市嘉年华</td><td>距离就近</td><td>343m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>邪门实景密室</td><td>距离就近</td><td>344m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>谜语人密室逃脱获奖主题店(中街店)</td><td>距离就近</td><td>419m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>幡灵迷境(中街·盛京龙城店)</td><td>距离就近</td><td>450m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>八大碗(故宫店)</td><td>距离就近</td><td>452m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>DO.Livehouse整点现场</td><td>距离就近</td><td>492m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>开心农场A会员店(金牛店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>欢乐猩球嘉年华(铁西店)</td><td>距离就近</td><td>167m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>兰湘子·湘菜小炒(沈阳铁西万达店)</td><td>距离就近</td><td>228m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>那家老院子东北菜(艳粉店)</td><td>距离就近</td><td>313m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>非遗·美食佳坛肉馆(滑翔店)</td><td>距离就近</td><td>461m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>沈阳朋远旅馆</td><td>距离就近</td><td>586m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>开心农场A会员店(建筑大学店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>NPC电玩俱乐部(建大店)</td><td>距离就近</td><td>130m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麦趴自助KTV(建筑大学店)</td><td>距离就近</td><td>165m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>金唐电玩城</td><td>距离就近</td><td>589m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>金唐电玩城</td><td>距离就近</td><td>589m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>京东MALL(沈阳大东龙之梦店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>沈阳龙之梦动物科普乐园</td><td>距离就近</td><td>22m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>未来乐园淘气堡</td><td>名称互证</td><td>62m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>太空历险游乐场(龙之梦购物中心店)</td><td>距离就近</td><td>227m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>主角儿古风演艺城</td><td>距离就近</td><td>233m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>主角儿古风演艺城</td><td>距离就近</td><td>233m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>墨帕·萌乐园(龙之梦购物中心店)</td><td>距离就近</td><td>269m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星动领域101PARTYWORLD超乐场</td><td>距离就近</td><td>294m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>丁丁舞蹈(龙之梦购物中心店)</td><td>距离就近</td><td>326m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>地球宝藏探索乐园(龙之梦店)</td><td>距离就近</td><td>355m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>哈尼兔儿童游戏乐园(沈阳大东龙之梦店)</td><td>距离就近</td><td>356m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>布梦侦探社·亲子探索体验馆</td><td>距离就近</td><td>363m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>汤姆熊欢乐世界(龙之梦购物中心店)</td><td>距离就近</td><td>364m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沈阳盛京大奥莱（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>弹珠时光机(沈阳浑南大奥莱店)</td><td>距离就近</td><td>57m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>嘿棒潮玩星球游乐中心(盛京大奥莱店)</td><td>距离就近</td><td>70m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>海乐星量贩KTV(沈阳盛京大奥莱店)</td><td>名称互证</td><td>107m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>可可小朋友乐园(盛京大奥莱B座店)</td><td>距离就近</td><td>110m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>今世界影城</td><td>距离就近</td><td>133m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>筋斗云主机游戏俱乐部PS5·Switch(钻石山店)</td><td>距离就近</td><td>248m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>筋斗云主机游戏俱乐部PS5·Switch(钻石山店)</td><td>距离就近</td><td>248m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(奥体花园城店)</td><td>距离就近</td><td>271m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>保利万和国际影城(奥体花园城店)</td><td>距离就近</td><td>316m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>UL城市影院(花园城店)</td><td>距离就近</td><td>323m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>蘸小院铁锅炖·蘸酱菜·东北菜(奥体店)</td><td>距离就近</td><td>343m</td><td>4.7</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>沈阳三台子万象汇（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>童话星球魔法密室(三台子万象汇店)</td><td>名称互证</td><td>74m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>MELAND(沈阳三台子万象汇)</td><td>名称互证</td><td>120m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大悦城C馆（34 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>谜语人密室逃脱(大悦城店)</td><td>距离就近</td><td>87m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>自然醒影音公寓(沈阳中街故宫店)</td><td>距离就近</td><td>98m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>卡奇部落家庭娱乐中心(大悦城店)</td><td>距离就近</td><td>104m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>卡奇部落家庭娱乐中心(大悦城店)</td><td>距离就近</td><td>104m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>八岐爬宠工作室·互动</td><td>距离就近</td><td>110m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>玩美攻略潮玩街区</td><td>距离就近</td><td>118m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>梦噬界沉浸式战栗体验馆(沈阳大悦城E馆店)</td><td>距离就近</td><td>147m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>悟空电玩俱乐部ps5主机</td><td>距离就近</td><td>156m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>悟空电玩俱乐部ps5主机</td><td>距离就近</td><td>156m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>双人成行主机游戏体验馆(中街大悦城店)</td><td>距离就近</td><td>160m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>双人成行主机游戏体验馆(中街大悦城店)</td><td>距离就近</td><td>160m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>哇塞主机游戏馆Ps5 Switch PSVR2(大悦城店)</td><td>距离就近</td><td>165m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>哇塞主机游戏馆Ps5 Switch PSVR2(大悦城店)</td><td>距离就近</td><td>165m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>喜三胖韩国自助烤肉(中街大悦城A馆L5店)</td><td>距离就近</td><td>171m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>汪旺萌宠乐园·狗咖</td><td>距离就近</td><td>196m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>818密室逃脱剧本杀(大悦城店)</td><td>距离就近</td><td>198m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>火炉旺首尔烤肉大排档(中街吾悦广场店)</td><td>距离就近</td><td>206m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>菜小湘·辣椒炒肉(大悦城店)</td><td>距离就近</td><td>209m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>奉天小馆·非遗东北菜(沈阳大悦城店)</td><td>距离就近</td><td>222m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>THE GUNDAM BASE高达基地(沈阳大悦城店)</td><td>距离就近</td><td>223m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金色年华潮玩中心(中街店)</td><td>距离就近</td><td>257m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>金色年华潮玩中心(中街店)</td><td>距离就近</td><td>257m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长藤密室(中街吾悦广场店)</td><td>距离就近</td><td>261m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>IU密室逃脱</td><td>距离就近</td><td>265m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>萍姐火锅·公路夜市(中街大悦城店)</td><td>距离就近</td><td>276m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(沈阳太原街店)（38 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>兰湘子·湘菜小炒(沈阳太原街万达店)</td><td>名称互证</td><td>3m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>时尚地下美食广场(万达广场店)</td><td>名称互证</td><td>93m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>拾光密室逃脱(太原街店)</td><td>距离就近</td><td>107m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>寻密·实景演绎密室逃脱(太原街店)</td><td>距离就近</td><td>152m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>海底捞火锅(印象城店)</td><td>距离就近</td><td>152m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>叫破电台Jump Radio</td><td>距离就近</td><td>160m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麦当劳(沃尔玛店)</td><td>距离就近</td><td>220m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>太原街夜市</td><td>距离就近</td><td>227m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>螺三岁螺蛳粉</td><td>距离就近</td><td>243m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>Et外星人音乐现场</td><td>距离就近</td><td>246m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>野人部落(太原街旗舰店)</td><td>距离就近</td><td>307m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>太原街时尚地下美食广场</td><td>距离就近</td><td>343m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>匠小匠烧烤·江湖菜大排档(太原街店)</td><td>距离就近</td><td>371m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>永利汇洗浴休闲中心</td><td>距离就近</td><td>403m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>正风舞厅(沈阳通用机电大厦店)</td><td>距离就近</td><td>409m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>沈阳优尚精品民宿(沈阳站太原街步行街店)</td><td>距离就近</td><td>418m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>小布电竞(太原街店)</td><td>距离就近</td><td>429m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>鑫农垦舞厅</td><td>距离就近</td><td>492m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>嗨森汇潮玩俱乐部</td><td>距离就近</td><td>566m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>光阴的故事音乐酒吧(1905店)</td><td>名称互证</td><td>2693m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>捞鱼侠游乐园</td><td>名称互证</td><td>2849m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>菜小湘·辣椒炒肉(北一路万达店)</td><td>名称互证</td><td>2940m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>奇趣联萌潮玩运动中心</td><td>名称互证</td><td>2943m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>海底捞火锅(北一路店)</td><td>名称互证</td><td>3016m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>欢乐猩球嘉年华(铁西店)</td><td>名称互证</td><td>3546m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沈阳中街吾悦广场（34 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>火炉旺首尔烤肉大排档(中街吾悦广场店)</td><td>距离就近</td><td>42m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>红篱笆·赣南客家菜(吾悦中街店)</td><td>距离就近</td><td>53m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>汪旺萌宠乐园·狗咖</td><td>名称互证</td><td>56m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>爱尚运动城(沈阳中街吾悦广场店)</td><td>名称互证</td><td>70m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>长藤密室(中街吾悦广场店)</td><td>距离就近</td><td>94m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>菜小湘·辣椒炒肉(大悦城店)</td><td>距离就近</td><td>138m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>谜语人密室逃脱(大悦城店)</td><td>距离就近</td><td>161m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>八岐爬宠工作室·互动</td><td>距离就近</td><td>169m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜三胖韩国自助烤肉(中街大悦城A馆L5店)</td><td>距离就近</td><td>170m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>奉天小馆·非遗东北菜(沈阳大悦城店)</td><td>距离就近</td><td>175m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>THE GUNDAM BASE高达基地(沈阳大悦城店)</td><td>距离就近</td><td>224m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>梦噬界沉浸式战栗体验馆(沈阳大悦城E馆店)</td><td>距离就近</td><td>226m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>大自然萌宠乐园</td><td>距离就近</td><td>237m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>金色年华潮玩中心(中街店)</td><td>距离就近</td><td>242m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>金色年华潮玩中心(中街店)</td><td>距离就近</td><td>242m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>哇塞主机游戏馆Ps5 Switch PSVR2(大悦城店)</td><td>距离就近</td><td>283m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>哇塞主机游戏馆Ps5 Switch PSVR2(大悦城店)</td><td>距离就近</td><td>283m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>双人成行主机游戏体验馆(中街大悦城店)</td><td>距离就近</td><td>293m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>双人成行主机游戏体验馆(中街大悦城店)</td><td>距离就近</td><td>293m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>悟空电玩俱乐部ps5主机</td><td>距离就近</td><td>318m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>悟空电玩俱乐部ps5主机</td><td>距离就近</td><td>318m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>自然醒影音公寓(沈阳中街故宫店)</td><td>距离就近</td><td>321m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>桦楠川香 · 黏糊麻辣烫(品牌首店)</td><td>距离就近</td><td>324m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>夕阳红小吃</td><td>距离就近</td><td>325m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>三顺麻辣烫筋饼拌粉</td><td>距离就近</td><td>335m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大悦城(沈阳中街店)（34 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>梦噬界沉浸式战栗体验馆(沈阳大悦城E馆店)</td><td>名称互证</td><td>37m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>八岐爬宠工作室·互动</td><td>名称互证</td><td>52m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>哇塞主机游戏馆Ps5 Switch PSVR2(大悦城店)</td><td>名称互证</td><td>75m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>哇塞主机游戏馆Ps5 Switch PSVR2(大悦城店)</td><td>名称互证</td><td>75m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>喜三胖韩国自助烤肉(中街大悦城A馆L5店)</td><td>名称互证</td><td>76m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>双人成行主机游戏体验馆(中街大悦城店)</td><td>名称互证</td><td>80m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>双人成行主机游戏体验馆(中街大悦城店)</td><td>名称互证</td><td>80m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>悟空电玩俱乐部ps5主机</td><td>名称互证</td><td>99m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>悟空电玩俱乐部ps5主机</td><td>名称互证</td><td>99m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>THE GUNDAM BASE高达基地(沈阳大悦城店)</td><td>名称互证</td><td>114m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>谜语人密室逃脱(大悦城店)</td><td>名称互证</td><td>116m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>自然醒影音公寓(沈阳中街故宫店)</td><td>名称互证</td><td>120m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>奉天小馆·非遗东北菜(沈阳大悦城店)</td><td>名称互证</td><td>123m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>菜小湘·辣椒炒肉(大悦城店)</td><td>名称互证</td><td>124m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>818密室逃脱剧本杀(大悦城店)</td><td>名称互证</td><td>130m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金色年华潮玩中心(中街店)</td><td>名称互证</td><td>148m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>金色年华潮玩中心(中街店)</td><td>名称互证</td><td>148m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>玩美攻略潮玩街区</td><td>名称互证</td><td>154m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>卡奇部落家庭娱乐中心(大悦城店)</td><td>名称互证</td><td>162m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>卡奇部落家庭娱乐中心(大悦城店)</td><td>名称互证</td><td>162m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>汪旺萌宠乐园·狗咖</td><td>距离就近</td><td>162m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>火炉旺首尔烤肉大排档(中街吾悦广场店)</td><td>距离就近</td><td>178m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>萍姐火锅·公路夜市(中街大悦城店)</td><td>名称互证</td><td>179m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>IU密室逃脱</td><td>距离就近</td><td>190m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长藤密室(中街吾悦广场店)</td><td>距离就近</td><td>193m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>皇城恒隆广场（23 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金色年华潮玩中心(恒隆店)</td><td>名称互证</td><td>74m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>金色年华潮玩中心(恒隆店)</td><td>名称互证</td><td>74m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>Free Time潮玩街区</td><td>距离就近</td><td>119m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>孙丽丽烤猪蹄旗舰店</td><td>距离就近</td><td>138m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>MR.ZOO小小动物元室内动物园(沈阳沈河盛京中心)</td><td>距离就近</td><td>140m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>DO.Livehouse整点现场</td><td>距离就近</td><td>164m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>囧囧桃真人实景超级密室(中街·盛京龙城店)</td><td>距离就近</td><td>172m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>幡灵迷境(中街·盛京龙城店)</td><td>距离就近</td><td>201m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>达美乐比萨(沈阳中街盛京大家庭店)</td><td>距离就近</td><td>203m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜剧推理社·血染钟楼·密室(沈阳春天-北区店)</td><td>距离就近</td><td>245m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大十面</td><td>距离就近</td><td>286m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>谜语人密室逃脱获奖主题店(中街店)</td><td>距离就近</td><td>299m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金乐活美食</td><td>距离就近</td><td>390m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>邪门实景密室</td><td>距离就近</td><td>397m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>王厚元饺子(故宫店)</td><td>距离就近</td><td>399m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>白狗酒咖WhiteDog</td><td>距离就近</td><td>414m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>谜语人密室逃脱(春天里店)</td><td>距离就近</td><td>427m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麦当劳(地铁中街站B2口朝阳街店)</td><td>距离就近</td><td>434m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>老边饺子馆(总店)</td><td>距离就近</td><td>470m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>淘气堡</td><td>距离就近</td><td>557m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>快逃先锋密室逃脱(旗舰店)</td><td>距离就近</td><td>557m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(沈阳益田假日店)</td><td>距离就近</td><td>577m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(沈阳益田假日店)</td><td>距离就近</td><td>577m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(沈阳沈辽路店)（23 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>兰湘子·湘菜小炒(沈阳铁西万达店)</td><td>距离就近</td><td>88m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>欢乐猩球嘉年华(铁西店)</td><td>名称互证</td><td>106m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>沈阳朋远旅馆</td><td>距离就近</td><td>510m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>那家老院子东北菜(艳粉店)</td><td>名称互证</td><td>522m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>兰湘子·湘菜小炒(沈阳太原街万达店)</td><td>名称互证</td><td>3451m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>时尚地下美食广场(万达广场店)</td><td>名称互证</td><td>3478m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>菜小湘·辣椒炒肉(北一路万达店)</td><td>名称互证</td><td>3906m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>捞鱼侠游乐园</td><td>名称互证</td><td>3935m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>光阴的故事音乐酒吧(1905店)</td><td>名称互证</td><td>3936m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>海底捞火锅(北一路店)</td><td>名称互证</td><td>3963m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>奇趣联萌潮玩运动中心</td><td>名称互证</td><td>3973m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>蓝猫精灵潮玩中心(万达广场店)</td><td>名称互证</td><td>6597m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达宝贝王(沈阳文化路万达广场店)</td><td>名称互证</td><td>6613m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>晨飞儿童成长中心</td><td>名称互证</td><td>6628m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>曼莎主题·娱乐俱乐部</td><td>名称互证</td><td>9738m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>万达影城(奥体万达广场店)</td><td>名称互证</td><td>9746m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>弹珠小达</td><td>名称互证</td><td>9797m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>弹珠小达</td><td>名称互证</td><td>9797m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(沈阳奥体万达店)</td><td>名称互证</td><td>9884m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(沈阳奥体万达店)</td><td>名称互证</td><td>9884m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>沫屿影城</td><td>名称互证</td><td>13636m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>万达影城(沈阳全运万达广场店)</td><td>名称互证</td><td>13640m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>菜小湘·辣椒炒肉(全运路万达店)</td><td>名称互证</td><td>13661m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>渝宗巷子重庆市井火锅(沈阳市沈河区三经小区店)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>渝宗巷子重庆市井火锅(沈阳市沈河区三经小区店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>加班酒馆</td><td>距离就近</td><td>37m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>詠LIVEHOUSE</td><td>距离就近</td><td>138m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>老四季(沈阳总店)</td><td>距离就近</td><td>208m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>FOUR PLAY</td><td>距离就近</td><td>320m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>老四季(十三纬路店)</td><td>距离就近</td><td>328m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>西落舌冒菜(总店)</td><td>距离就近</td><td>334m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>五柳面馆(十一纬路店)</td><td>距离就近</td><td>353m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>11号酒吧·餐厅</td><td>距离就近</td><td>361m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>Temple酒吧</td><td>距离就近</td><td>393m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>Lens r&amp;b bar</td><td>距离就近</td><td>394m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>LAZYBEE小酒馆</td><td>距离就近</td><td>395m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>张箐箐大排档·江西景德菜</td><td>距离就近</td><td>427m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>草芥夜档(领事馆店)</td><td>距离就近</td><td>430m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>双福记熏酱店</td><td>距离就近</td><td>443m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>赵家麻辣龙虾店(总店)</td><td>距离就近</td><td>473m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>清迈阳光·东南亚餐厅(北二经街店)</td><td>距离就近</td><td>494m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>辣牛儿老成都冷锅串串香(北二经街总店)</td><td>距离就近</td><td>525m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>塔湾·兴顺国际夜市（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>兴顺夜市集主题游乐场(塔湾店)</td><td>距离就近</td><td>174m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>大森林酒店公寓(塔湾兴顺夜市店)</td><td>距离就近</td><td>478m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>西关美食街（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>方中山胡辣汤(奉天街店)</td><td>距离就近</td><td>382m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>非遗·美食佳坛肉馆(中街店)</td><td>距离就近</td><td>475m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>荷花之夏夜市（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>沈阳盛品游乐场</td><td>距离就近</td><td>26m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>米莱星球潮玩</td><td>距离就近</td><td>367m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>米莱星球潮玩</td><td>距离就近</td><td>367m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>彩隆娱乐城</td><td>距离就近</td><td>477m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>永盛儿童嘉年华(永盛休闲购物广场店)</td><td>距离就近</td><td>539m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>JOYMARK(苏家屯永盛购物中心店)</td><td>距离就近</td><td>561m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>淘气堡(永盛休闲购物广场店)</td><td>距离就近</td><td>584m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>淘气堡(永盛休闲购物广场店)</td><td>距离就近</td><td>584m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>3S超能运动空间(永盛休闲购物广场店)</td><td>距离就近</td><td>598m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>星摩尔购物广场（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>快乐小象萌宠乐园</td><td>距离就近</td><td>4m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>喜三胖韩国自助烤肉大排档(星摩尔购物广场店)</td><td>名称互证</td><td>86m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>淘气堡乐园(星摩尔购物广场店)</td><td>名称互证</td><td>91m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>吉米王国</td><td>名称互证</td><td>134m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>菜小湘·辣椒炒肉(北一路万达店)</td><td>距离就近</td><td>582m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>沈阳火山岛欢腾王国游乐园</td><td>距离就近</td><td>585m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>沈阳火山岛欢腾王国游乐园售票处</td><td>距离就近</td><td>587m</td><td>—</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（38 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>如家快捷酒店</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>5.0</td><td>—</td><td>惠和大厦东南门旁(兴华公园地铁站B口步行120米)</td></tr>
+<tr><td>✅A-</td><td>沈阳香格里拉大堂</td><td>住宿服务;宾馆酒店;五星级宾馆</td><td>5.0</td><td>—</td><td>青年大街115号沈阳香格里拉</td></tr>
+<tr><td>✅A-</td><td>自然醒影音公寓(沈阳中街故宫店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>小东路9-1号中街大悦城D1座20层(东中街地铁口西口处左转5米中国银行)</td></tr>
+<tr><td>✅A-</td><td>海联商务酒店(重工南街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>重工南街128号(近长途客运西站)</td></tr>
+<tr><td>✅A-</td><td>新民天塬旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>工人街33号</td></tr>
+<tr><td>✅A-</td><td>新弘扬快捷宾馆(九部)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>辽河大街16甲号2-3轴</td></tr>
+<tr><td>✅A-</td><td>永利汇洗浴休闲中心</td><td>生活服务;洗浴推拿场所;洗浴推拿场所｜住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>145.00</td><td>南一马路91号</td></tr>
+<tr><td>✅A-</td><td>康平康乐商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>康乐家电东50米</td></tr>
+<tr><td>✅A-</td><td>鑫辉旅馆(五里河街店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>五里河街29-1号距市图书馆地铁站704米</td></tr>
+<tr><td>✅A-</td><td>汉庭酒店(巴山路店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.6</td><td>—</td><td>巴山路71-1号(长江街苏宁电器斜对面)</td></tr>
+<tr><td>✅A-</td><td>太阳城大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>135.00</td><td>南五马路218号(近和平广场)</td></tr>
+<tr><td>✅A-</td><td>沈阳新兴旅社</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>新兴北街28号</td></tr>
+<tr><td>✅A-</td><td>沈阳朋远旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>小十三路2号</td></tr>
+<tr><td>✅A-</td><td>沈阳糖果公寓·住宿·民宿(保利香槟公寓店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>东陵路28-5号</td></tr>
+<tr><td>✅B</td><td>环城大酒店(莲花街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>莲花街1-9号(近万柳塘路)</td></tr>
+<tr><td>✅B</td><td>新世纪酒店(桂花街)</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>桂花街180号(雪松路向北200米)</td></tr>
+<tr><td>✅B</td><td>好日子大酒店(大桥小区店)</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>43.00</td><td>虎石台镇兴明街10号兴明小区1号楼</td></tr>
+<tr><td>✅B</td><td>富瑶大酒店二部</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>重工北街</td></tr>
+<tr><td>✅B</td><td>香云阁酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>65.00</td><td>东北大马路176号万和顺景</td></tr>
+<tr><td>✅B</td><td>OYO布拉格旅馆(沈阳大学八王寺街店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>八王寺街122号(沈阳大学南门附近)</td></tr>
+<tr><td>✅B</td><td>晚庭旅馆(沈北新区店)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>人和街108-15号1-1门</td></tr>
+<tr><td>✅B</td><td>沈阳清河半岛温泉度假酒店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>蒲南路20号</td></tr>
+<tr><td>✅B</td><td>沈阳好家宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>沈营路29-20号4门</td></tr>
+<tr><td>✅B</td><td>沈阳优尚精品民宿(沈阳站太原街步行街店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>太原北街84-2号11楼</td></tr>
+<tr><td>✅B</td><td>沈阳鑫玥公寓</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.4</td><td>—</td><td>兴工北街73-1号</td></tr>
+<tr><td>✅B</td><td>沈阳美景旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>华山路47号(大家购生鲜连锁超市东30米)</td></tr>
+<tr><td>✅B</td><td>大森林酒店公寓(塔湾兴顺夜市店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.3</td><td>—</td><td>昆山西路85-11号中海天钻公寓1单元9楼15室</td></tr>
+<tr><td>✅B</td><td>辽野生态园酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>中心街34号</td></tr>
+<tr><td>✅B</td><td>沈阳兆隆旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>金融中心地铁站A口步行140米</td></tr>
+<tr><td>✅B</td><td>沈阳东东旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.3</td><td>—</td><td>长青南街15-1北3门东东旅店</td></tr>
+<tr><td>✅B</td><td>沈阳喜乐汇假日酒店</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.3</td><td>—</td><td>沈新西路407号</td></tr>
+<tr><td>⚠️</td><td>沈阳金色阳光旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>南山东堡路山东堡八巷4号4甲号</td></tr>
+<tr><td>⚠️</td><td>锦江之星(沈阳站太原街医大一院店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.1</td><td>—</td><td>北二马路35号</td></tr>
+<tr><td>⚠️</td><td>沈阳鑫海旅社</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>阜新三街11号(和平国税局后面)</td></tr>
+<tr><td>⚠️</td><td>沈阳乐享快捷旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>令闻街48号(晓春社区东门旁)</td></tr>
+<tr><td>⚠️</td><td>沈阳九龙上河温泉度假村</td><td>住宿服务;住宿服务相关;住宿服务相关｜体育休闲服务;度假疗养场所;度假村</td><td>4.1</td><td>129.00</td><td>九龙河南岸1号</td></tr>
+<tr><td>⚠️</td><td>鑫盛快捷旅馆(山东堡路店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.0</td><td>—</td><td>团结路52-1(金融中心地铁站B口步行500米)</td></tr>
+<tr><td>⚠️</td><td>沈阳红楼茂源旅社</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.8</td><td>—</td><td>福州路45-6号3门</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>2</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:中餐厅</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>类型:湘菜/地方菜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:地方风味餐厅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:酒楼/火锅/海鲜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:火锅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:海鲜酒楼</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:特色美食</td><td>39</td><td></td></tr>
+<tr><td>food</td><td>关键词:老字号</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:大排档</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:苍蝇馆</td><td>3</td><td></td></tr>
+<tr><td>food</td><td>关键词:小吃</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:本地菜</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:特产</td><td>40</td><td></td></tr>
+<tr><td>product</td><td>关键词:土特产</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:地方特产</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:步行街</td><td>9</td><td></td></tr>
+<tr><td>district</td><td>类型:特色商业街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>类型:购物中心</td><td>60</td><td></td></tr>
+<tr><td>district</td><td>类型:商场</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:美食街</td><td>39</td><td></td></tr>
+<tr><td>district</td><td>关键词:夜市</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:小吃街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:步行街</td><td>16</td><td></td></tr>
+<tr><td>district</td><td>关键词:购物中心</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:酒吧</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:酒馆</td><td>20</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:LIVEHOUSE</td><td>5</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:娱乐场所</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童乐园</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:电玩城</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:游乐场</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你游乐场</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:亲子乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:淘气堡</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童体验</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/沈阳市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>5 个 POI 无地址</strong>，需人工补：时尚地下街(民主广场西)、吉祥街(东北大马路)、陵东街、丰泽白塔购物中心、百姓生活购物中心</li><li><input type="checkbox" disabled> <strong>15 个 POI 无评分</strong>，暂标 ⚠️：沈阳中山公园动物园售票处、沈阳森林动物园-游客服务中心、沈阳森林动物园售票处、动物园(公交站)、沈阳森林动物园停车点</li><li><input type="checkbox" disabled> 儿童游乐 217 家，其中场内 44 家、独立 173 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 13 个区县：于洪区、和平区、大东区、康平县、新民市、沈北新区、沈河区、法库县、浑南区、皇姑区、苏家屯区、辽中区、铁西区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

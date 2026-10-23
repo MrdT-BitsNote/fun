@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>屏东县 · 台湾省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/台湾省.html">← 返回台湾省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>屏东县 · 台湾省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:40:50  ·  POI 总量：138（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>138</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 58 · 成人娱乐 66 · 儿童娱乐 23 · 酒店 36 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>台湾省 · 县</td></tr>
+<tr><td>下级区县</td><td>33 个</td></tr>
+<tr><td>街道/镇/乡</td><td>0 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×32、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>屏东市</td><td>56</td><td>41%</td></tr>
+<tr><td>恒春镇</td><td>40</td><td>29%</td></tr>
+<tr><td>潮州镇</td><td>12</td><td>9%</td></tr>
+<tr><td>东港镇</td><td>8</td><td>6%</td></tr>
+<tr><td>内埔乡</td><td>5</td><td>4%</td></tr>
+<tr><td>万丹乡</td><td>4</td><td>3%</td></tr>
+<tr><td>九如乡</td><td>2</td><td>1%</td></tr>
+<tr><td>车城乡</td><td>2</td><td>1%</td></tr>
+<tr><td>琉球乡</td><td>1</td><td>1%</td></tr>
+<tr><td>盐埔乡</td><td>1</td><td>1%</td></tr>
+<tr><td>竹田乡</td><td>1</td><td>1%</td></tr>
+<tr><td>麟洛乡</td><td>1</td><td>1%</td></tr>
+<tr><td>万峦乡</td><td>1</td><td>1%</td></tr>
+<tr><td>高树乡</td><td>1</td><td>1%</td></tr>
+<tr><td>南州乡</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+<p>（另 2 个区县见原始数据）</p>
+<p><strong>商圈载体类型构成</strong>（58 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>百货/商场</td><td>25</td></tr>
+<tr><td>其他商业载体</td><td>21</td></tr>
+<tr><td>购物中心/综合体</td><td>9</td></tr>
+<tr><td>批发城</td><td>3</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（58 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>垦丁橘月民宿</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>19</td></tr>
+<tr><td>B</td><td>布列塔尼民宿</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>19</td></tr>
+<tr><td>B</td><td>清吉明山庄</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>12</td></tr>
+<tr><td>B</td><td>垦丁旅店(包栋Villa)</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>0</td><td>0</td><td>19</td></tr>
+<tr><td>B</td><td>南海旅店</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>0</td><td>0</td><td>19</td></tr>
+<tr><td>C</td><td>垦丁爱丁堡十六民宿</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>S·9旅宿</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>屏东美好垦丁旅阁民宿</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>4</td></tr>
+<tr><td>C</td><td>屏东环球国宾影城</td><td>其他商业载体</td><td>3.7</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>巴西集品屏东太平洋百货</td><td>百货/商场</td><td>3.6</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>环球购物中心屏东市</td><td>购物中心/综合体</td><td>3.5</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>太平洋百货屏东驿站商场</td><td>百货/商场</td><td>3.5</td><td>0</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>真便宜汽车百货屏东忠孝店</td><td>百货/商场</td><td>3.4</td><td>0</td><td>4</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>垦丁小径民宿</td><td>其他商业载体</td><td>3.3</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>GU屏东太平洋百货店</td><td>百货/商场</td><td>3.3</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>屏东太平洋</td><td>购物中心/综合体</td><td>3.2</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>恒春镇农会农民购物中心</td><td>购物中心/综合体</td><td>3.1</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>上好购物中心</td><td>购物中心/综合体</td><td>3.1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>小北百货-屏东东港明德店SHOWBA</td><td>百货/商场</td><td>3.0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>主幼商场潮州火车站前店</td><td>百货/商场</td><td>2.9</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>胜利动物溜滑梯公园</td><td>其他商业载体</td><td>2.6</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>太平洋百货潮州驿站商场</td><td>百货/商场</td><td>2.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>娇滴滴宠物运动园</td><td>其他商业载体</td><td>2.5</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>威泽娱乐广场</td><td>其他商业载体</td><td>2.3</td><td>0</td><td>7</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>垦草趣亲子园区</td><td>其他商业载体</td><td>2.2</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店-屏东武成店</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宠物公园(屏东潮州店)</td><td>其他商业载体</td><td>2.1</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>新万丹鸟园</td><td>其他商业载体</td><td>2.1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>小蜗牛妇婴用品百货</td><td>百货/商场</td><td>2.1</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>主幼商场延平店</td><td>百货/商场</td><td>2.1</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>芙玉宝赠品百货</td><td>百货/商场</td><td>2.0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>亿家具批发仓库屏东</td><td>批发城</td><td>2.0</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>恒春黄昏批发市场</td><td>批发城</td><td>2.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>A1商城-屏东总店</td><td>百货/商场</td><td>2.0</td><td>0</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宁隆精品百货</td><td>百货/商场</td><td>1.9</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>Pink屏东太平洋驿站商场</td><td>百货/商场</td><td>1.9</td><td>0</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>京泰百货有限公司</td><td>百货/商场</td><td>1.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>DAISO大创百货屏东驿站店</td><td>百货/商场</td><td>1.8</td><td>0</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>木木卖vuvu mind自然永续卖店</td><td>其他商业载体</td><td>1.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>21世纪生活百货广场复兴店</td><td>百货/商场</td><td>1.8</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>垦丁橘月民宿 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 0 / 酒店 19</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：屏东县恒春镇垦丁路和平巷77号之2号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 19</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>垦丁橘月民宿</td></tr>
+<tr><td>酒店配套</td><td>19</td><td>海的垦丁旅店(Ocean KT Inn)、垦丁橘月民宿、福乐渡假旅店</td></tr>
+</tbody></table></div>
+<h3>布列塔尼民宿 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 0 / 酒店 19</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：垦丁路文化巷22号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 19</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>布列塔尼民宿</td></tr>
+<tr><td>酒店配套</td><td>19</td><td>海的垦丁旅店(Ocean KT Inn)、垦丁橘月民宿、布列塔尼民宿</td></tr>
+</tbody></table></div>
+<h3>清吉明山庄 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 0 / 酒店 12</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：垦丁路兴南巷13号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 12</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>清吉明山庄</td></tr>
+<tr><td>酒店配套</td><td>12</td><td>海的垦丁旅店(Ocean KT Inn)、垦丁橘月民宿、垦丁长禧旅店</td></tr>
+</tbody></table></div>
+<h3>垦丁旅店(包栋Villa) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 0 / 酒店 19</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：946台湾屏东县恒春镇垦丁里垦丁路海滨巷5号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 19</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>垦丁旅店(包栋Villa)</td></tr>
+<tr><td>酒店配套</td><td>19</td><td>海的垦丁旅店(Ocean KT Inn)、垦丁橘月民宿、垦丁欣欣渡假旅店二馆</td></tr>
+</tbody></table></div>
+<h3>南海旅店 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 0 / 酒店 19</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：垦丁里通海巷37号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 19</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>南海旅店</td></tr>
+<tr><td>酒店配套</td><td>19</td><td>海的垦丁旅店(Ocean KT Inn)、垦丁橘月民宿、布列塔尼民宿</td></tr>
+</tbody></table></div>
+<h3>垦丁爱丁堡十六民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：946台湾屏东县恒春镇城北里中正路232巷15弄16号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>垦丁爱丁堡十六民宿</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>垦丁爱丁堡十六民宿、垦丁脚踏车旅店、S·9旅宿</td></tr>
+</tbody></table></div>
+<h3>S·9旅宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：省北路93巷1弄9号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 1 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>S·9旅宿</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>Paradise of deer</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>Paradise of deer</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>垦丁爱丁堡十六民宿、S·9旅宿</td></tr>
+</tbody></table></div>
+<h3>屏东美好垦丁旅阁民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：946台湾屏东县恒春镇船帆路846巷70号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>屏东美好垦丁旅阁民宿</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>圣亚旅店、屏东美好垦丁旅阁民宿、垦丁福容大饭店</td></tr>
+</tbody></table></div>
+<h3>屏东环球国宾影城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：台湾屏东县屏东市仁爱路90号环球购物中心6楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>屏东环球国宾影城</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>屏东环球国宾影城、享温馨KTV屏东店、中影屏东影城</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>座东鲔鱼饭汤</td></tr>
+</tbody></table></div>
+<h3>巴西集品屏东太平洋百货 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：900台湾屏东县屏东市大同里中正路72号2楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>巴西集品屏东太平洋百货</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>屏东环球国宾影城、享温馨KTV屏东店、中影屏东影城</td></tr>
+</tbody></table></div>
+<h3>环球购物中心屏东市 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：900台湾屏东县屏东市仁爱路90号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>环球购物中心屏东市</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>屏东环球国宾影城、享温馨KTV屏东店、中影屏东影城</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>座东鲔鱼饭汤</td></tr>
+</tbody></table></div>
+<h3>太平洋百货屏东驿站商场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：900台湾屏东县屏东市建国里公勇路62号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 8 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>太平洋百货屏东驿站商场</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>毅大师(24H自助屏东旗舰店)电动麻将桌贩售维修麻将用品零售、中影屏东影城、龙旺KTV</td></tr>
+</tbody></table></div>
+<h3>真便宜汽车百货屏东忠孝店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（汽车服务;汽车配件销售;汽车配件销售）</li><li><strong>地址</strong>：900台湾屏东县屏东市北兴里忠孝路198号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>真便宜汽车百货屏东忠孝店</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>金梦、新十三番町KTV热炒&amp;欢唱&amp;饮品、美美卡拉OK</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>中山鸟园</td></tr>
+</tbody></table></div>
+<h3>垦丁小径民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：船帆路846巷65-1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>垦丁小径民宿</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>屏东美好垦丁旅阁民宿、垦丁福容大饭店、垦丁小径民宿</td></tr>
+</tbody></table></div>
+<h3>GU屏东太平洋百货店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;服装鞋帽皮具店;服装鞋帽皮具店）</li><li><strong>地址</strong>：台湾屏东县屏东市中正路72号三楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>GU屏东太平洋百货店</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>屏东环球国宾影城、享温馨KTV屏东店、中影屏东影城</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（66 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>22</td></tr>
+<tr><td>KTV</td><td>10</td></tr>
+<tr><td>棋牌室</td><td>7</td></tr>
+<tr><td>电影院</td><td>2</td></tr>
+<tr><td>酒吧/酒馆</td><td>2</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>屏东环球国宾影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.7</td><td>—</td><td>台湾屏东县屏东市仁爱路90号环球购物中心6楼</td></tr>
+<tr><td>❌</td><td>毅大师麻将餐饮馆(潮州24H自助旗舰店)电动麻将桌贩售维修麻将用品零售</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.3</td><td>—</td><td>920台湾屏东县潮州镇光春里光复路58号</td></tr>
+<tr><td>❌</td><td>享温馨KTV屏东店</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>3.2</td><td>—</td><td>90074台湾屏东县屏东市大同里北平路7-7号</td></tr>
+<tr><td>❌</td><td>毅大师(24H自助屏东旗舰店)电动麻将桌贩售维修麻将用品零售</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.2</td><td>—</td><td>90081台湾屏东县屏东市建国里自由路94号</td></tr>
+<tr><td>❌</td><td>Paradise of deer</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>3.0</td><td>—</td><td>[]</td></tr>
+<tr><td>❌</td><td>中影屏东影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.0</td><td>—</td><td>900台湾屏东县屏东市楠树里民生路248号</td></tr>
+<tr><td>❌</td><td>金梦</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.9</td><td>—</td><td>900台湾屏东县屏东市北兴里公裕街239号</td></tr>
+<tr><td>❌</td><td>OAK POKER CLUB&amp;BAR屏东店</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.9</td><td>—</td><td>900台湾屏东县屏东市大武路136号</td></tr>
+<tr><td>❌</td><td>Pot.Poker Room德州扑克｜合法竞技场所｜锦标赛｜限时锦标赛｜屏东市｜现场打牌｜</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>2.7</td><td>—</td><td>90058台湾屏东县屏东市华山里瑞光路三段120-1号</td></tr>
+<tr><td>❌</td><td>龙旺KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;夜总会</td><td>2.5</td><td>—</td><td>900台湾屏东县屏东市金泉里民权路6号2楼</td></tr>
+<tr><td>❌</td><td>云水KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.4</td><td>—</td><td>90065台湾屏东县屏东市胜利里太原路17号</td></tr>
+<tr><td>❌</td><td>幸运草卡拉ok</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.4</td><td>—</td><td>900台湾屏东县屏东市华山里瑞光路三段86号</td></tr>
+<tr><td>❌</td><td>A-COW阿靠大三元二馆(24H自助麻将桌游棋牌馆)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.4</td><td>—</td><td>912台湾屏东县内埔乡老埤村寿比路191号</td></tr>
+<tr><td>❌</td><td>遥KARAOKE</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.3</td><td>—</td><td>900台湾屏东县屏东市永光里和平路265号之2号</td></tr>
+<tr><td>❌</td><td>威泽娱乐广场</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.3</td><td>—</td><td>900台湾屏东县屏东市永光里民族路440号</td></tr>
+<tr><td>❌</td><td>天香卡拉ok</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>2.2</td><td>—</td><td>900台湾屏东县屏东市永光里和平路261号之1号</td></tr>
+<tr><td>❌</td><td>新十三番町KTV热炒&amp;欢唱&amp;饮品</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.1</td><td>—</td><td>900台湾屏东县屏东市北势里广东路765号</td></tr>
+<tr><td>❌</td><td>香缇附设歌唱坊</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.1</td><td>—</td><td>900台湾屏东县屏东</td></tr>
+<tr><td>❌</td><td>唱不停投币</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>2.0</td><td>—</td><td>900台湾屏东县屏东市大埔里信义路8-3号</td></tr>
+<tr><td>❌</td><td>大女人卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>2.0</td><td>—</td><td>900台湾屏东县屏东市永光里和平路225号</td></tr>
+<tr><td>❌</td><td>美美卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>1.9</td><td>—</td><td>900台湾屏东县屏东市信义路357-2号</td></tr>
+<tr><td>❌</td><td>好韵欢唱天地</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;夜总会</td><td>1.9</td><td>—</td><td>900台湾屏东县屏东市光荣里信义路58号</td></tr>
+<tr><td>❌</td><td>银河音乐坊卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>1.9</td><td>—</td><td>900台湾屏东县屏东市建国里建华一街158号</td></tr>
+<tr><td>❌</td><td>出棋不艺麻将竞技馆(屏东旗舰店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.9</td><td>—</td><td>900台湾屏东县屏东市一心里复兴路180号</td></tr>
+<tr><td>❌</td><td>吉吉麻将摊</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>1.8</td><td>—</td><td>东港镇长春二路</td></tr>
+<tr><td>❌</td><td>快乐城2.0卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>1.7</td><td>—</td><td>胜利路与忠孝路交叉口东140米</td></tr>
+<tr><td>❌</td><td>歆情卡拉Ok</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>1.7</td><td>—</td><td>900台湾屏东县屏东市胜利东路88号</td></tr>
+<tr><td>❌</td><td>正义德州扑克竞技俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.7</td><td>—</td><td>900台湾屏东县屏东市瑞光里民生东路50-2号</td></tr>
+<tr><td>❌</td><td>OAK POKER CLUB</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.7</td><td>—</td><td>920台湾屏东县潮州镇光春里光复路225号</td></tr>
+<tr><td>❌</td><td>真虹卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>1.5</td><td>—</td><td>900台湾屏东县屏东市光荣里忠孝路37号之4号</td></tr>
+<tr><td>❌</td><td>谊缘坊麻将棋艺馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>1.5</td><td>—</td><td>900台湾屏东县屏东市光荣里博爱路40号</td></tr>
+<tr><td>❌</td><td>A-COW阿靠大三元(24H自助麻将桌游棋牌馆)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.4</td><td>—</td><td>912台湾屏东县内埔乡老埤村南山路16号</td></tr>
+<tr><td>❌</td><td>胡麻达人自助麻将餐饮馆</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>1.1</td><td>—</td><td>900台湾屏东县屏东市瑞光里民生路4-9号</td></tr>
+<tr><td>❌</td><td>小珠好忙-麻将馆-东港店</td><td>棋牌室</td><td>体育休闲服务;休闲场所;游乐场</td><td>1.1</td><td>—</td><td>东港镇新胜里新胜街143号</td></tr>
+<tr><td>❌</td><td>常青棋牌休闲东港馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.1</td><td>—</td><td>928台湾屏东县东港镇船头里船头路附2号</td></tr>
+<tr><td>❌</td><td>云雀苑</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>1.1</td><td>—</td><td>Xinzhi Village,Wanluan Township,Pingtung County,台湾923</td></tr>
+<tr><td>❌</td><td>东港桌游棋牌会馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.1</td><td>—</td><td>[]</td></tr>
+<tr><td>❌</td><td>猫谜密室逃脱</td><td>密室逃脱/剧本杀</td><td>风景名胜;风景名胜相关;旅游景点</td><td>0.3</td><td>—</td><td>900台湾屏东县屏东市大埔里民族路二一七号三楼</td></tr>
+<tr><td>❌</td><td>水当当卡拉ok</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>0.3</td><td>—</td><td>900台湾屏东县屏东市北势里信义路357-2号</td></tr>
+<tr><td>❌</td><td>雅歌卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>0.3</td><td>—</td><td>900台湾Pingtung County,Pingtung City</td></tr>
+<tr><td>❌</td><td>杜鹃窝麻将馆</td><td>棋牌室</td><td>体育休闲服务;休闲场所;游乐场</td><td>0.3</td><td>—</td><td>900台湾屏东县屏东市丰年里丰年街196号</td></tr>
+<tr><td>❌</td><td>星技棋艺桌游休闲馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>0.3</td><td>—</td><td>900台湾屏东县屏东市崇武里永大路37号</td></tr>
+<tr><td>❌</td><td>田洛钓虾场桌游竞技麻将会馆风味餐厅美食</td><td>其他娱乐场所</td><td>体育休闲服务;休闲场所;休闲场所</td><td>0.3</td><td>—</td><td>909台湾屏东县麟洛乡麟趾村中华路农田巷17号之5号</td></tr>
+<tr><td>❌</td><td>花语蝶棋牌休闲馆</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>0.3</td><td>—</td><td>912台湾屏东县内埔乡中林村中林路1号</td></tr>
+</tbody></table></div>
+<h2>4. 儿童与亲子娱乐（23 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>19</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>2</td></tr>
+<tr><td>亲子乐园</td><td>1</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>❌</td><td>社顶梅花鹿复育区</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>[]</td></tr>
+<tr><td>❌</td><td>毛宝摇摇宠物庄园</td><td>其他儿童场所</td><td>独立</td><td>3.1</td><td>912台湾屏东县内埔乡大新村信义路1068-1号</td></tr>
+<tr><td>❌</td><td>Paradise of deer</td><td>其他儿童场所</td><td>独立</td><td>3.0</td><td>[]</td></tr>
+<tr><td>❌</td><td>菩提宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.7</td><td>90744台湾屏东县盐埔乡永隆村永乐路7-22号</td></tr>
+<tr><td>❌</td><td>胜利动物溜滑梯公园</td><td>其他儿童场所</td><td>独立</td><td>2.6</td><td>900台湾屏东县屏东市胜利里兰州街4-1号</td></tr>
+<tr><td>❌</td><td>娇滴滴宠物运动园</td><td>其他儿童场所</td><td>独立</td><td>2.5</td><td>913台湾屏东县万丹乡香内路331号巷</td></tr>
+<tr><td>❌</td><td>毛宝宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.3</td><td>900台湾屏东县屏东市九如乡玉泉村玉新街20-1号</td></tr>
+<tr><td>❌</td><td>垦草趣亲子园区</td><td>亲子乐园</td><td>独立</td><td>2.2</td><td>946台湾屏东县恒春镇山脚里恒公路21-3号</td></tr>
+<tr><td>❌</td><td>宠物游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>2.1</td><td>台湾屏东县竹田乡58号</td></tr>
+<tr><td>❌</td><td>宠物公园(屏东潮州店)</td><td>其他儿童场所</td><td>独立</td><td>2.1</td><td>台湾屏东县潮州镇三和里延平路37号</td></tr>
+<tr><td>❌</td><td>屏东科技大学屏东保育类野生动物收容中心</td><td>其他儿童场所</td><td>独立</td><td>2.1</td><td>[]</td></tr>
+<tr><td>❌</td><td>新万丹鸟园</td><td>其他儿童场所</td><td>独立</td><td>2.1</td><td>900台湾屏东县屏东市大湖里广官路107巷102号</td></tr>
+<tr><td>❌</td><td>中国城鸟园</td><td>其他儿童场所</td><td>独立</td><td>2.0</td><td>900台湾屏东县屏东市华山里广东路568号之1号</td></tr>
+<tr><td>❌</td><td>海神水族馆</td><td>其他儿童场所</td><td>独立</td><td>1.8</td><td>中山路与中正路交叉口南320米</td></tr>
+<tr><td>❌</td><td>爱鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.6</td><td>900台湾屏东县屏东市龙华里龙华路151号</td></tr>
+<tr><td>❌</td><td>牛伯伯牧场</td><td>其他儿童场所</td><td>独立</td><td>1.3</td><td>904台湾屏东县九如乡玉泉村荣泉街26号</td></tr>
+<tr><td>❌</td><td>小珠好忙-麻将馆-东港店</td><td>其他儿童场所</td><td>独立</td><td>1.1</td><td>东港镇新胜里新胜街143号</td></tr>
+<tr><td>❌</td><td>中山鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.0</td><td>900台湾屏东县屏东市胜利里中山路328号</td></tr>
+<tr><td>❌</td><td>万丹陆龟小栈</td><td>其他儿童场所</td><td>独立</td><td>1.0</td><td>913台湾屏东县万丹乡万全村万荣街146巷10号</td></tr>
+<tr><td>❌</td><td>零界线鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.0</td><td>913台湾屏东县万丹乡四维村万丹路二段142号</td></tr>
+<tr><td>❌</td><td>潮福鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.0</td><td>920台湾屏东县潮州镇潮州里南进路41号</td></tr>
+<tr><td>❌</td><td>快乐鸟天堂-四重溪</td><td>其他儿童场所</td><td>独立</td><td>1.0</td><td>No.1号,Wenhua Rd,Checheng Township,Pingtung County,Taiwan 944</td></tr>
+<tr><td>❌</td><td>杜鹃窝麻将馆</td><td>其他儿童场所</td><td>独立</td><td>0.3</td><td>900台湾屏东县屏东市丰年里丰年街196号</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（37 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>巴西集品屏东太平洋百货</td><td>百货/商场</td><td>3.6</td><td>0</td><td>0</td><td>900台湾屏东县屏东市大同里中正路72号2楼</td></tr>
+<tr><td>⚠️</td><td>环球购物中心屏东市</td><td>购物中心/综合体</td><td>3.5</td><td>0</td><td>0</td><td>900台湾屏东县屏东市仁爱路90号</td></tr>
+<tr><td>⚠️</td><td>太平洋百货屏东驿站商场</td><td>百货/商场</td><td>3.5</td><td>0</td><td>0</td><td>900台湾屏东县屏东市建国里公勇路62号</td></tr>
+<tr><td>❌</td><td>真便宜汽车百货屏东忠孝店</td><td>百货/商场</td><td>3.4</td><td>1</td><td>0</td><td>900台湾屏东县屏东市北兴里忠孝路198号</td></tr>
+<tr><td>❌</td><td>GU屏东太平洋百货店</td><td>百货/商场</td><td>3.3</td><td>0</td><td>0</td><td>台湾屏东县屏东市中正路72号三楼</td></tr>
+<tr><td>❌</td><td>屏东太平洋</td><td>购物中心/综合体</td><td>3.2</td><td>0</td><td>0</td><td>No.73号,Dawu Rd,Pingtung City,Pingtung County,Taiwan 900</td></tr>
+<tr><td>❌</td><td>恒春镇农会农民购物中心</td><td>购物中心/综合体</td><td>3.1</td><td>0</td><td>0</td><td>946台湾屏东县恒春镇山脚里恒南路11巷2弄8号</td></tr>
+<tr><td>❌</td><td>上好购物中心</td><td>购物中心/综合体</td><td>3.1</td><td>0</td><td>0</td><td>932台湾屏东县新园乡盐洲路73号</td></tr>
+<tr><td>❌</td><td>小北百货-屏东东港明德店SHOWBA</td><td>百货/商场</td><td>3.0</td><td>0</td><td>0</td><td>928台湾屏东县东港镇明德二街57号</td></tr>
+<tr><td>❌</td><td>主幼商场潮州火车站前店</td><td>百货/商场</td><td>2.9</td><td>2</td><td>0</td><td>920台湾屏东县潮州镇新荣里中山路181号</td></tr>
+<tr><td>❌</td><td>太平洋百货潮州驿站商场</td><td>百货/商场</td><td>2.6</td><td>1</td><td>0</td><td>920台湾屏东县潮州镇信义路111号1楼</td></tr>
+<tr><td>❌</td><td>全家便利商店-屏东武成店</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>900台湾屏东县屏东市大武里武成街82-5号号</td></tr>
+<tr><td>❌</td><td>小蜗牛妇婴用品百货</td><td>百货/商场</td><td>2.1</td><td>0</td><td>0</td><td>900台湾屏东县屏东市金泉里仁爱路7号-3号</td></tr>
+<tr><td>❌</td><td>主幼商场延平店</td><td>百货/商场</td><td>2.1</td><td>2</td><td>0</td><td>920台湾屏东县潮州镇三和里延平路115号</td></tr>
+<tr><td>❌</td><td>芙玉宝赠品百货</td><td>百货/商场</td><td>2.0</td><td>0</td><td>0</td><td>926台湾屏东县南州乡溪洲村三民路75号</td></tr>
+<tr><td>❌</td><td>亿家具批发仓库屏东</td><td>批发城</td><td>2.0</td><td>0</td><td>0</td><td>900台湾屏东县屏东市华山里华富路108号</td></tr>
+<tr><td>❌</td><td>恒春黄昏批发市场</td><td>批发城</td><td>2.0</td><td>0</td><td>0</td><td>946台湾屏东县恒春镇山脚里恒南路1巷</td></tr>
+<tr><td>❌</td><td>A1商城-屏东总店</td><td>百货/商场</td><td>2.0</td><td>0</td><td>0</td><td>900台湾屏东县屏东市上海路48号</td></tr>
+<tr><td>❌</td><td>宁隆精品百货</td><td>百货/商场</td><td>1.9</td><td>0</td><td>0</td><td>900台湾屏东县屏东市楠树里民权路32号</td></tr>
+<tr><td>❌</td><td>Pink屏东太平洋驿站商场</td><td>百货/商场</td><td>1.9</td><td>0</td><td>0</td><td>900台湾屏东县屏东市建国里公勇路62号1楼</td></tr>
+<tr><td>❌</td><td>京泰百货有限公司</td><td>百货/商场</td><td>1.9</td><td>0</td><td>0</td><td>913台湾屏东县万丹乡加社路36-1号1楼</td></tr>
+<tr><td>❌</td><td>DAISO大创百货屏东驿站店</td><td>百货/商场</td><td>1.8</td><td>0</td><td>0</td><td>900台湾屏东县屏东市建国里公勇路62号2F</td></tr>
+<tr><td>❌</td><td>21世纪生活百货广场复兴店</td><td>百货/商场</td><td>1.8</td><td>0</td><td>0</td><td>900台湾屏东县屏东市一心里复兴路132号</td></tr>
+<tr><td>❌</td><td>上发百货广场</td><td>百货/商场</td><td>1.6</td><td>0</td><td>0</td><td>906台湾屏东县高树乡高树村南兴路51号</td></tr>
+<tr><td>❌</td><td>DAISO大创百货潮州光春乐家康-店中店门市</td><td>百货/商场</td><td>1.6</td><td>0</td><td>0</td><td>920台湾屏东县潮州镇光春里光春路216号</td></tr>
+<tr><td>❌</td><td>屏东团购飞轩百货</td><td>百货/商场</td><td>1.5</td><td>0</td><td>0</td><td>900台湾屏东县屏东市北兴里公裕街310号</td></tr>
+<tr><td>❌</td><td>祥源超商</td><td>购物中心/综合体</td><td>1.4</td><td>0</td><td>0</td><td>944台湾屏东县车城乡福兴村中山路11号</td></tr>
+<tr><td>❌</td><td>新发百货</td><td>百货/商场</td><td>1.4</td><td>0</td><td>0</td><td>900台湾屏东县屏东市斯文里中正路316号</td></tr>
+<tr><td>❌</td><td>富源高丽菜/蔬菜批发买卖</td><td>批发城</td><td>1.3</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>❌</td><td>大东港汽车材料百货行</td><td>百货/商场</td><td>1.2</td><td>1</td><td>0</td><td>928台湾屏东县东港镇新街里中正路一段32号</td></tr>
+<tr><td>❌</td><td>正统百货五金行</td><td>百货/商场</td><td>1.1</td><td>1</td><td>0</td><td>946台湾屏东县恒春镇城西里西门路128号</td></tr>
+<tr><td>❌</td><td>晶采文具生活百货</td><td>百货/商场</td><td>1.1</td><td>0</td><td>0</td><td>905台湾屏东县里港乡春林村里中路35-3号</td></tr>
+<tr><td>❌</td><td>金申百货</td><td>百货/商场</td><td>1.1</td><td>0</td><td>0</td><td>900台湾屏东县屏东市玉成里公兴路661号</td></tr>
+<tr><td>❌</td><td>中山鸟园</td><td>购物中心/综合体</td><td>1.0</td><td>1</td><td>0</td><td>900台湾屏东县屏东市胜利里中山路328号</td></tr>
+<tr><td>❌</td><td>全家便利商店潮州乐活店</td><td>购物中心/综合体</td><td>0.3</td><td>0</td><td>0</td><td>185甲与187乙交叉口西北40米</td></tr>
+<tr><td>❌</td><td>联发百货行(小黑丸)</td><td>百货/商场</td><td>0.3</td><td>2</td><td>0</td><td>928台湾屏东县东港镇延平路90号</td></tr>
+<tr><td>❌</td><td>屏东五折天</td><td>购物中心/综合体</td><td>0.3</td><td>0</td><td>0</td><td>900台湾屏东县屏东市楠树里杭州街1-17号</td></tr>
+</tbody></table></div>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>垦丁爱丁堡十六民宿（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>垦丁爱丁堡十六民宿</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>垦丁脚踏车旅店</td><td>距离就近</td><td>343m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>S·9旅宿</td><td>距离就近</td><td>466m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>垦丁橘月民宿（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>垦丁橘月民宿</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>美芳旅店</td><td>距离就近</td><td>195m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>垦丁星栈888旅店</td><td>距离就近</td><td>197m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>福乐渡假旅店</td><td>距离就近</td><td>203m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁南国之梦(原垦丁俪山林会馆)</td><td>距离就近</td><td>229m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>垦丁157精品时尚会馆</td><td>距离就近</td><td>236m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>布列塔尼民宿</td><td>距离就近</td><td>321m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>南海旅店</td><td>距离就近</td><td>333m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>垦丁欣欣渡假旅店二馆</td><td>距离就近</td><td>341m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁旅店(包栋Villa)</td><td>距离就近</td><td>341m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>垦丁长禧旅店</td><td>距离就近</td><td>343m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁高山青饭店</td><td>距离就近</td><td>359m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>顶佳旅栈</td><td>距离就近</td><td>368m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>泽信旅店</td><td>距离就近</td><td>371m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大尖山饭店</td><td>距离就近</td><td>453m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>海的垦丁旅店(Ocean KT Inn)</td><td>距离就近</td><td>458m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>垦丁旅店-大湾馆</td><td>距离就近</td><td>489m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>垦丁金洋丽舍旅店</td><td>距离就近</td><td>506m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>清吉明山庄</td><td>距离就近</td><td>560m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>S·9旅宿（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>S·9旅宿</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>Paradise of deer</td><td>距离就近</td><td>251m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>Paradise of deer</td><td>距离就近</td><td>251m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>垦丁爱丁堡十六民宿</td><td>距离就近</td><td>466m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>布列塔尼民宿（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>布列塔尼民宿</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁南国之梦(原垦丁俪山林会馆)</td><td>距离就近</td><td>97m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>垦丁157精品时尚会馆</td><td>距离就近</td><td>111m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>南海旅店</td><td>距离就近</td><td>112m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>福乐渡假旅店</td><td>距离就近</td><td>118m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁长禧旅店</td><td>距离就近</td><td>119m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>顶佳旅栈</td><td>距离就近</td><td>148m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>美芳旅店</td><td>距离就近</td><td>150m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>海的垦丁旅店(Ocean KT Inn)</td><td>距离就近</td><td>234m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>垦丁星栈888旅店</td><td>距离就近</td><td>264m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>清吉明山庄</td><td>距离就近</td><td>285m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>垦丁橘月民宿</td><td>距离就近</td><td>321m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>泽信旅店</td><td>距离就近</td><td>337m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁旅店(包栋Villa)</td><td>距离就近</td><td>368m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>垦丁欣欣渡假旅店二馆</td><td>距离就近</td><td>391m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁高山青饭店</td><td>距离就近</td><td>411m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>大尖山饭店</td><td>距离就近</td><td>518m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>垦丁金洋丽舍旅店</td><td>距离就近</td><td>547m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>垦丁旅店-大湾馆</td><td>距离就近</td><td>561m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>屏东美好垦丁旅阁民宿（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>屏东美好垦丁旅阁民宿</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>圣亚旅店</td><td>距离就近</td><td>386m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>垦丁小径民宿</td><td>距离就近</td><td>484m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>垦丁福容大饭店</td><td>距离就近</td><td>581m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>清吉明山庄（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>清吉明山庄</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>海的垦丁旅店(Ocean KT Inn)</td><td>距离就近</td><td>122m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>顶佳旅栈</td><td>距离就近</td><td>193m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>垦丁长禧旅店</td><td>距离就近</td><td>217m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>布列塔尼民宿</td><td>距离就近</td><td>285m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁南国之梦(原垦丁俪山林会馆)</td><td>距离就近</td><td>373m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>南海旅店</td><td>距离就近</td><td>376m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>福乐渡假旅店</td><td>距离就近</td><td>381m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁157精品时尚会馆</td><td>距离就近</td><td>394m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>美芳旅店</td><td>距离就近</td><td>428m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>垦丁星栈888旅店</td><td>距离就近</td><td>547m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>垦丁橘月民宿</td><td>距离就近</td><td>560m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>垦丁旅店(包栋Villa)（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>垦丁旅店(包栋Villa)</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>垦丁欣欣渡假旅店二馆</td><td>距离就近</td><td>29m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁高山青饭店</td><td>距离就近</td><td>43m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>泽信旅店</td><td>距离就近</td><td>68m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大尖山饭店</td><td>距离就近</td><td>149m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>垦丁星栈888旅店</td><td>距离就近</td><td>155m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>垦丁金洋丽舍旅店</td><td>距离就近</td><td>186m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>垦丁旅店-大湾馆</td><td>名称互证</td><td>193m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>美芳旅店</td><td>距离就近</td><td>259m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>垦丁157精品时尚会馆</td><td>距离就近</td><td>273m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>南海旅店</td><td>距离就近</td><td>274m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>垦丁南国之梦(原垦丁俪山林会馆)</td><td>距离就近</td><td>305m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>福乐渡假旅店</td><td>距离就近</td><td>317m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁橘月民宿</td><td>距离就近</td><td>341m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>布列塔尼民宿</td><td>距离就近</td><td>368m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>兴吉2馆</td><td>距离就近</td><td>453m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁长禧旅店</td><td>距离就近</td><td>475m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>顶佳旅栈</td><td>距离就近</td><td>506m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>海的垦丁旅店(Ocean KT Inn)</td><td>名称互证</td><td>600m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南海旅店（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>南海旅店</td><td>名称互证</td><td>0m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>垦丁157精品时尚会馆</td><td>距离就近</td><td>100m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>布列塔尼民宿</td><td>距离就近</td><td>112m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁南国之梦(原垦丁俪山林会馆)</td><td>距离就近</td><td>122m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>美芳旅店</td><td>距离就近</td><td>139m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>福乐渡假旅店</td><td>距离就近</td><td>153m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁星栈888旅店</td><td>距离就近</td><td>208m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>垦丁长禧旅店</td><td>距离就近</td><td>231m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>泽信旅店</td><td>距离就近</td><td>232m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>顶佳旅栈</td><td>距离就近</td><td>260m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>垦丁旅店(包栋Villa)</td><td>距离就近</td><td>274m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>垦丁欣欣渡假旅店二馆</td><td>距离就近</td><td>300m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>垦丁高山青饭店</td><td>距离就近</td><td>317m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>垦丁橘月民宿</td><td>距离就近</td><td>333m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>海的垦丁旅店(Ocean KT Inn)</td><td>距离就近</td><td>342m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>清吉明山庄</td><td>距离就近</td><td>376m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>大尖山饭店</td><td>距离就近</td><td>420m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>垦丁金洋丽舍旅店</td><td>距离就近</td><td>445m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>垦丁旅店-大湾馆</td><td>距离就近</td><td>463m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>屏东环球国宾影城（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>屏东环球国宾影城</td><td>名称互证</td><td>0m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>中影屏东影城</td><td>距离就近</td><td>360m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>享温馨KTV屏东店</td><td>距离就近</td><td>495m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>龙旺KTV</td><td>距离就近</td><td>547m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>座东鲔鱼饭汤</td><td>距离就近</td><td>565m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>歆情卡拉Ok</td><td>距离就近</td><td>586m</td><td>1.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>巴西集品屏东太平洋百货（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>享温馨KTV屏东店</td><td>距离就近</td><td>160m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>屏东环球国宾影城</td><td>距离就近</td><td>376m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>中影屏东影城</td><td>距离就近</td><td>487m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>快乐城2.0卡拉OK</td><td>距离就近</td><td>563m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>好韵欢唱天地</td><td>距离就近</td><td>584m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>龙旺KTV</td><td>距离就近</td><td>594m</td><td>2.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>环球购物中心屏东市（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>屏东环球国宾影城</td><td>距离就近</td><td>0m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>中影屏东影城</td><td>距离就近</td><td>360m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>享温馨KTV屏东店</td><td>距离就近</td><td>495m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>龙旺KTV</td><td>距离就近</td><td>547m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>座东鲔鱼饭汤</td><td>距离就近</td><td>565m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>歆情卡拉Ok</td><td>距离就近</td><td>586m</td><td>1.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>太平洋百货屏东驿站商场（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>毅大师(24H自助屏东旗舰店)电动麻将桌贩售维修麻将用品零售</td><td>距离就近</td><td>228m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>猫谜密室逃脱</td><td>距离就近</td><td>288m</td><td>0.3</td><td>§11</td></tr>
+<tr><td>银河音乐坊卡拉OK</td><td>距离就近</td><td>325m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>龙旺KTV</td><td>距离就近</td><td>448m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>出棋不艺麻将竞技馆(屏东旗舰店)</td><td>距离就近</td><td>452m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>好韵欢唱天地</td><td>距离就近</td><td>455m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>唱不停投币</td><td>距离就近</td><td>539m</td><td>2.0</td><td>§11</td></tr>
+<tr><td>中影屏东影城</td><td>距离就近</td><td>590m</td><td>3.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>真便宜汽车百货屏东忠孝店（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>水当当卡拉ok</td><td>距离就近</td><td>370m</td><td>0.3</td><td>§11</td></tr>
+<tr><td>美美卡拉OK</td><td>距离就近</td><td>381m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>新十三番町KTV热炒&amp;欢唱&amp;饮品</td><td>距离就近</td><td>397m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>金梦</td><td>距离就近</td><td>492m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>中山鸟园</td><td>距离就近</td><td>526m</td><td>1.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>垦丁小径民宿（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>垦丁小径民宿</td><td>名称互证</td><td>0m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>垦丁福容大饭店</td><td>距离就近</td><td>351m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>屏东美好垦丁旅阁民宿</td><td>距离就近</td><td>484m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>GU屏东太平洋百货店（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>享温馨KTV屏东店</td><td>距离就近</td><td>156m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>屏东环球国宾影城</td><td>距离就近</td><td>382m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>中影屏东影城</td><td>距离就近</td><td>492m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>快乐城2.0卡拉OK</td><td>距离就近</td><td>560m</td><td>1.7</td><td>§11</td></tr>
+<tr><td>好韵欢唱天地</td><td>距离就近</td><td>579m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>龙旺KTV</td><td>距离就近</td><td>597m</td><td>2.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>屏东太平洋（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>OAK POKER CLUB&amp;BAR屏东店</td><td>距离就近</td><td>173m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>恒春镇农会农民购物中心（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>沐林会馆</td><td>距离就近</td><td>319m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>垦丁脚踏车旅店</td><td>距离就近</td><td>417m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>小北百货-屏东东港明德店SHOWBA（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>吉吉麻将摊</td><td>距离就近</td><td>328m</td><td>1.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>主幼商场潮州火车站前店（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宠物公园(屏东潮州店)</td><td>距离就近</td><td>422m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>潮福鸟园</td><td>距离就近</td><td>549m</td><td>1.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>胜利动物溜滑梯公园（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>胜利动物溜滑梯公园</td><td>名称互证</td><td>0m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>雅歌卡拉OK</td><td>距离就近</td><td>247m</td><td>0.3</td><td>§11</td></tr>
+<tr><td>云水KTV</td><td>距离就近</td><td>348m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>快乐城2.0卡拉OK</td><td>距离就近</td><td>495m</td><td>1.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>太平洋百货潮州驿站商场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宠物公园(屏东潮州店)</td><td>距离就近</td><td>495m</td><td>2.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>娇滴滴宠物运动园（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>娇滴滴宠物运动园</td><td>名称互证</td><td>0m</td><td>2.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>威泽娱乐广场（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>威泽娱乐广场</td><td>名称互证</td><td>0m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>大女人卡拉OK</td><td>距离就近</td><td>127m</td><td>2.0</td><td>§11</td></tr>
+<tr><td>天香卡拉ok</td><td>距离就近</td><td>175m</td><td>2.2</td><td>§11</td></tr>
+<tr><td>遥KARAOKE</td><td>距离就近</td><td>181m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>唱不停投币</td><td>距离就近</td><td>507m</td><td>2.0</td><td>§11</td></tr>
+<tr><td>谊缘坊麻将棋艺馆</td><td>距离就近</td><td>510m</td><td>1.5</td><td>§11</td></tr>
+<tr><td>真虹卡拉OK</td><td>距离就近</td><td>546m</td><td>1.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>垦草趣亲子园区（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>垦草趣亲子园区</td><td>名称互证</td><td>0m</td><td>2.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>全家便利商店-屏东武成店（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>OAK POKER CLUB&amp;BAR屏东店</td><td>距离就近</td><td>185m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（36 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>海的垦丁旅店(Ocean KT Inn)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.8</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路38号</td></tr>
+<tr><td>✅A-</td><td>Chateau Beach Resort垦丁夏都沙滩酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路451号</td></tr>
+<tr><td>✅A-</td><td>垦丁爱丁堡十六民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>946台湾屏东县恒春镇城北里中正路232巷15弄16号</td></tr>
+<tr><td>✅A-</td><td>垦丁脚踏车旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>946台湾屏东县恒春镇城北里新兴路24号</td></tr>
+<tr><td>✅A-</td><td>垦丁橘月民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>屏东县恒春镇垦丁路和平巷77号之2号</td></tr>
+<tr><td>✅A-</td><td>垦丁亚维侬庄园民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>946台湾屏东县恒春镇网纱里大埔路50号</td></tr>
+<tr><td>✅A-</td><td>圣亚旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>946台湾屏东县恒春镇船帆路682号</td></tr>
+<tr><td>✅A-</td><td>S·9旅宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>省北路93巷1弄9号</td></tr>
+<tr><td>✅A-</td><td>沐林会馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>946台湾屏东县恒春镇山脚里恒公路230号</td></tr>
+<tr><td>✅B</td><td>布列塔尼民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>垦丁路文化巷22号</td></tr>
+<tr><td>✅B</td><td>屏东美好垦丁旅阁民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>946台湾屏东县恒春镇船帆路846巷70号</td></tr>
+<tr><td>✅B</td><td>福乐渡假旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路128号</td></tr>
+<tr><td>✅B</td><td>小琉球星月旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>929台湾屏东县琉球乡本福村中山路116号</td></tr>
+<tr><td>✅B</td><td>垦丁欣欣渡假旅店二馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>946台湾屏东县恒春镇垦丁路259号</td></tr>
+<tr><td>✅B</td><td>兴吉2馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>94644台湾屏东县恒春镇垦丁里垦丁路402-13号</td></tr>
+<tr><td>✅B</td><td>垦丁长禧旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路98号</td></tr>
+<tr><td>✅B</td><td>泽信旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>946台湾屏东县恒春镇垦丁里大湾路260号</td></tr>
+<tr><td>✅B</td><td>座东鲔鱼饭汤</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>900台湾屏东县屏东市桥北里民和路12号</td></tr>
+<tr><td>✅B</td><td>屏东垦丁夏漾旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>南湾路202号</td></tr>
+<tr><td>✅B</td><td>清吉明山庄</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>垦丁路兴南巷13号</td></tr>
+<tr><td>✅B</td><td>垦丁157精品时尚会馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路157号</td></tr>
+<tr><td>✅B</td><td>顶佳旅栈</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>946台湾屏东县恒春镇垦丁路80号之1号</td></tr>
+<tr><td>✅B</td><td>垦丁福容大饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>946台湾屏东县恒春镇鹅銮里船帆路1000号</td></tr>
+<tr><td>✅B</td><td>垦丁旅店(包栋Villa)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路海滨巷5号</td></tr>
+<tr><td>✅B</td><td>垦丁南国之梦(原垦丁俪山林会馆)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路137号</td></tr>
+<tr><td>✅B</td><td>北坪民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>946台湾屏东县恒春镇南湾路402号</td></tr>
+<tr><td>⚠️</td><td>垦丁高山青饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.2</td><td>—</td><td>946台湾屏东县恒春镇垦丁路271号</td></tr>
+<tr><td>⚠️</td><td>垦丁星栈888旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.2</td><td>—</td><td>946台湾屏东县恒春镇垦丁路210-16号</td></tr>
+<tr><td>⚠️</td><td>垦丁旅店-大湾馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.2</td><td>—</td><td>恒春镇大湾路108号</td></tr>
+<tr><td>⚠️</td><td>南海旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.2</td><td>—</td><td>垦丁里通海巷37号</td></tr>
+<tr><td>⚠️</td><td>美芳旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.0</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路152号</td></tr>
+<tr><td>⚠️</td><td>垦丁金洋丽舍旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.9</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路336号</td></tr>
+<tr><td>⚠️</td><td>大尖山饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.7</td><td>—</td><td>946台湾屏东县恒春镇垦丁里垦丁路302号</td></tr>
+<tr><td>⚠️</td><td>屏东家欧风海景民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.6</td><td>—</td><td>灯塔路206号</td></tr>
+<tr><td>⚠️</td><td>椰道翠林屋</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.5</td><td>—</td><td>946台湾屏东县恒春镇龙水里南光路35号</td></tr>
+<tr><td>❌</td><td>垦丁小径民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.3</td><td>—</td><td>船帆路846巷65-1号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>5</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>7</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>13</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>1</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>2</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>3</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/屏东县.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>5 个 POI 无地址</strong>，需人工补：屏东科技大学屏东保育类野生动物收容中心、Paradise of deer、社顶梅花鹿复育区、东港桌游棋牌会馆、富源高丽菜/蔬菜批发买卖</li><li><input type="checkbox" disabled> 儿童游乐 23 家，其中场内 0 家、独立 23 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 17 个区县：万丹乡、万峦乡、东港镇、九如乡、内埔乡、南州乡、屏东市、恒春镇、新园乡、潮州镇、琉球乡、盐埔乡、竹田乡、车城乡、里港乡、高树乡、麟洛乡——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

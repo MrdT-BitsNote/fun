@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>新北市 · 台湾省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/台湾省.html">← 返回台湾省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>新北市 · 台湾省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:43:58  ·  POI 总量：173（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>173</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>99%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 69 · 成人娱乐 99 · 儿童娱乐 47 · 酒店 27 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>台湾省 · 直辖市</td></tr>
+<tr><td>下级区县</td><td>29 个</td></tr>
+<tr><td>街道/镇/乡</td><td>0 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×29</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>板桥区</td><td>43</td><td>25%</td></tr>
+<tr><td>新庄区</td><td>21</td><td>12%</td></tr>
+<tr><td>中和区</td><td>21</td><td>12%</td></tr>
+<tr><td>三重区</td><td>14</td><td>8%</td></tr>
+<tr><td>林口区</td><td>11</td><td>6%</td></tr>
+<tr><td>新店区</td><td>10</td><td>6%</td></tr>
+<tr><td>永和区</td><td>10</td><td>6%</td></tr>
+<tr><td>淡水区</td><td>7</td><td>4%</td></tr>
+<tr><td>瑞芳区</td><td>7</td><td>4%</td></tr>
+<tr><td>汐止区</td><td>6</td><td>3%</td></tr>
+<tr><td>土城区</td><td>5</td><td>3%</td></tr>
+<tr><td>泰山区</td><td>3</td><td>2%</td></tr>
+<tr><td>深坑区</td><td>2</td><td>1%</td></tr>
+<tr><td>乌来区</td><td>2</td><td>1%</td></tr>
+<tr><td>金山区</td><td>2</td><td>1%</td></tr>
+</tbody></table></div>
+<p>（另 6 个区县见原始数据）</p>
+<p><strong>商圈载体类型构成</strong>（69 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>30</td></tr>
+<tr><td>购物中心/综合体</td><td>16</td></tr>
+<tr><td>百货/商场</td><td>11</td></tr>
+<tr><td>批发城</td><td>7</td></tr>
+<tr><td>商业街</td><td>4</td></tr>
+<tr><td>夜市</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（69 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>单人房台北馆</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>13</td><td>1</td><td>3</td></tr>
+<tr><td>B</td><td>Sing!Go聚唱KTV板桥店</td><td>其他商业载体</td><td>3.2</td><td>0</td><td>12</td><td>1</td><td>3</td></tr>
+<tr><td>B</td><td>宠物公园(新月桥)</td><td>其他商业载体</td><td>2.5</td><td>0</td><td>0</td><td>19</td><td>0</td></tr>
+<tr><td>C</td><td>福容大饭店淡水渔人码头</td><td>商业街</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>幸福赞精品饭店</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>九份龙门客栈Easy Stay丨近老街</td><td>商业街</td><td>4.3</td><td>0</td><td>0</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>九份缘忆民宿</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>0</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>林口三井OUTLET二馆</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>2</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>iFG远雄广场</td><td>其他商业载体</td><td>4.1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>日月光广场</td><td>其他商业载体</td><td>4.0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>宏汇广场B2</td><td>其他商业载体</td><td>4.0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>海洋都心2</td><td>其他商业载体</td><td>4.0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>鸿金宝麻吉影城</td><td>其他商业载体</td><td>3.9</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>Hang Ten汐止远雄广场</td><td>商业街</td><td>3.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>林口昕境国宾影城</td><td>其他商业载体</td><td>3.7</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>介寿广场</td><td>购物中心/综合体</td><td>3.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>环球购物中心林口A9</td><td>购物中心/综合体</td><td>3.6</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>宠物乐园</td><td>其他商业载体</td><td>3.5</td><td>0</td><td>1</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>三重区天台广场</td><td>购物中心/综合体</td><td>3.4</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>日月民宿</td><td>其他商业载体</td><td>3.3</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>中园国小mini Zoo</td><td>其他商业载体</td><td>3.3</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>鸿金宝百货商场万念福开发事业股份有限公司</td><td>百货/商场</td><td>3.3</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>南山威力购物广场</td><td>购物中心/综合体</td><td>3.3</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>动物公园夜市</td><td>夜市</td><td>3.2</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店土城海山店</td><td>购物中心/综合体</td><td>3.2</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>永和成功办公商场</td><td>百货/商场</td><td>3.2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宇利实业社/A摩市购物商城</td><td>百货/商场</td><td>3.2</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>全家便利商店中和新忠店</td><td>购物中心/综合体</td><td>3.1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>好邻居生活百货-汐止忠孝店</td><td>百货/商场</td><td>3.1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>小北百货-新北中和安平店SHOWBA</td><td>百货/商场</td><td>3.1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>来自台湾Outlet Store</td><td>其他商业载体</td><td>3.1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店(中和胜华店)</td><td>购物中心/综合体</td><td>3.0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>好朋友百货商场西盛店</td><td>百货/商场</td><td>3.0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>Porter International三井Outlet</td><td>百货/商场</td><td>2.9</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店新店新安店</td><td>购物中心/综合体</td><td>2.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>财元广场(财元戏院)</td><td>其他商业载体</td><td>2.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店汐止勤进店</td><td>购物中心/综合体</td><td>2.5</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>有米百货有限公司</td><td>百货/商场</td><td>2.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>亿家具批发仓库泰山(门口可停车)</td><td>批发城</td><td>2.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>土城日月光木球场</td><td>其他商业载体</td><td>2.5</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+</tbody></table></div>
+<h3>单人房台北馆 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：明德街1巷12号3楼至6楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>单人房台北馆</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>麻赛客24H自助桌游麻将-板桥包厢麻将｜麻将会馆｜棋牌会馆｜麻将馆首选｜桌游店推荐｜热门麻将馆｜电动麻将馆｜休闲棋牌社、凯悦YESKTV板桥店、好乐迪板后店</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>宠物公园-新雅店</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>单人房台北馆、THE COLE HOTEL品川商旅、板桥王旅馆</td></tr>
+</tbody></table></div>
+<h3>Sing!Go聚唱KTV板桥店 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;娱乐场所）</li><li><strong>地址</strong>：220台湾新北市板桥区乡云里中山路一段50巷22号3楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>Sing!Go聚唱KTV板桥店</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>麻赛客24H自助桌游麻将-板桥包厢麻将｜麻将会馆｜棋牌会馆｜麻将馆首选｜桌游店推荐｜热门麻将馆｜电动麻将馆｜休闲棋牌社、好乐迪板后店、Sing!Go聚唱KTV板桥店</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>宠物公园(板庆店)-专业宠物用品&amp;宠物美容</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>单人房台北馆、THE COLE HOTEL品川商旅、板桥王旅馆</td></tr>
+</tbody></table></div>
+<h3>宠物公园(新月桥) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 19 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（风景名胜;公园广场;公园）</li><li><strong>地址</strong>：242台湾新北市新庄区琼林里环汉路二段13号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 19 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>宠物公园(新月桥)</td></tr>
+<tr><td>儿童娱乐</td><td>19</td><td>宠物公园-文化店、宠物公园(兴南店)-专业宠物用品&amp;宠物美容、宠物公园</td></tr>
+</tbody></table></div>
+<h3>福容大饭店淡水渔人码头 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：251台湾新北市淡水区沙仑里观海路83号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>福容大饭店淡水渔人码头</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>福容大饭店淡水渔人码头</td></tr>
+</tbody></table></div>
+<h3>幸福赞精品饭店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：242台湾新北市新庄区头前里思源路332巷9号1楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>幸福赞精品饭店</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>叩叩鱼德州扑克竞技协会Call Call Fish Poker</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>幸福赞精品饭店</td></tr>
+</tbody></table></div>
+<h3>九份龙门客栈Easy Stay丨近老街 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：224台湾新北市瑞芳区崇文里仑顶路110号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>九份龙门客栈Easy Stay丨近老街</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>九份慢慢民宿、九份龙门客栈Easy Stay丨近老街、琚九屋民宿</td></tr>
+</tbody></table></div>
+<h3>九份缘忆民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：224台湾新北市瑞芳区永庆里乌势巷52号1楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>九份缘忆民宿</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>九份慢慢民宿、九份缘忆民宿、琚九屋民宿</td></tr>
+</tbody></table></div>
+<h3>林口三井OUTLET二馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：244台湾新北市林口区南势里文化二路一段123号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>林口三井OUTLET二馆</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>林口三井威秀影城、CocoBar-(林口三井威秀影城)电话亭KTV</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>林口亚昕福朋喜来登酒店</td></tr>
+</tbody></table></div>
+<h3>iFG远雄广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：221台湾新北市汐止区文化里新台五路一段93-99号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>iFG远雄广场</td></tr>
+</tbody></table></div>
+<h3>日月光广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;家电电子卖场;数码电子）</li><li><strong>地址</strong>：236台湾新北市土城区员林里学府路二段210号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>日月光广场</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>宠物公园</td></tr>
+</tbody></table></div>
+<h3>宏汇广场B2 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：242台湾新北市新庄区新北大道四段3号B2</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>宏汇广场B2</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>美丽新宏汇影城(暂停营业)</td></tr>
+</tbody></table></div>
+<h3>海洋都心2 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;商务住宅相关;商务住宅相关）</li><li><strong>地址</strong>：251台湾新北市淡水区崁顶里新市三路二段181-307号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>海洋都心2</td></tr>
+</tbody></table></div>
+<h3>鸿金宝麻吉影城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：242台湾新北市新庄区八德里民安路188巷5号4 F</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>鸿金宝麻吉影城</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>鸿金宝麻吉影城</td></tr>
+</tbody></table></div>
+<h3>Hang Ten汐止远雄广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（购物服务;服装鞋帽皮具店;服装鞋帽皮具店）</li><li><strong>地址</strong>：221台湾新北市汐止区新台五路一段99号号2楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>Hang Ten汐止远雄广场</td></tr>
+</tbody></table></div>
+<h3>林口昕境国宾影城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：南势里文化三路一段402巷2号四楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>林口昕境国宾影城</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>林口三井威秀影城、林口昕境国宾影城、CocoBar-(林口三井威秀影城)电话亭KTV</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>丽园动物医院</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（99 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>31</td></tr>
+<tr><td>棋牌室</td><td>11</td></tr>
+<tr><td>电影院</td><td>8</td></tr>
+<tr><td>KTV</td><td>5</td></tr>
+<tr><td>酒吧/酒馆</td><td>4</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>3</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>鸿金宝麻吉影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>—</td><td>242台湾新北市新庄区八德里民安路188巷5号4 F</td></tr>
+<tr><td>⚠️</td><td>三重天台影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>—</td><td>241台湾新北市三重区仁德里重新路二段78号4F</td></tr>
+<tr><td>⚠️</td><td>淡水礼莱国宾影城</td><td>电影院</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.9</td><td>—</td><td>25172文化里中正路一段2号1楼</td></tr>
+<tr><td>⚠️</td><td>新庄晶冠国宾影城</td><td>电影院</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>242台湾新北市新庄区福兴里五工路66号3F、4F</td></tr>
+<tr><td>⚠️</td><td>林口三井威秀影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>—</td><td>244台湾新北市林口区南势里文化三路一段356号3楼</td></tr>
+<tr><td>⚠️</td><td>林口昕境国宾影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.7</td><td>—</td><td>南势里文化三路一段402巷2号四楼</td></tr>
+<tr><td>⚠️</td><td>麻赛客24H自助桌游麻将-板桥包厢麻将｜麻将会馆｜棋牌会馆｜麻将馆首选｜桌游店推荐｜热门麻将馆｜电动麻将馆｜休闲棋牌社</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.7</td><td>—</td><td>220台湾新北市板桥区馆前东路8号号地下室</td></tr>
+<tr><td>⚠️</td><td>好乐迪板后店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.5</td><td>—</td><td>220台湾新北市板桥区后埔里馆前东路106号</td></tr>
+<tr><td>⚠️</td><td>凯悦YESKTV板桥店</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>3.5</td><td>—</td><td>220台湾新北市板桥区赤松里府中路126号b1</td></tr>
+<tr><td>⚠️</td><td>国门巨星星悦馆</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅小区</td><td>3.5</td><td>—</td><td>241台湾新北市三重区新北大道一段63-77号</td></tr>
+<tr><td>❌</td><td>长江七号会所</td><td>其他娱乐场所</td><td>生活服务;生活服务场所;生活服务场所</td><td>3.4</td><td>—</td><td>220台湾新北市板桥区长江路一段七号三楼</td></tr>
+<tr><td>❌</td><td>One桌游中和圆通店-中和棋牌休闲馆｜棋牌会馆｜麻将馆首选｜桌游店推荐｜桌游租借｜热门麻将馆｜电动麻将馆｜休闲棋牌社</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;酒吧</td><td>3.4</td><td>—</td><td>235台湾新北市中和区德行里圆通路293号2楼</td></tr>
+<tr><td>❌</td><td>常青棋牌休闲馆土城馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.4</td><td>—</td><td>236台湾新北市土城区廷寮里永丰路143号</td></tr>
+<tr><td>❌</td><td>板桥大远百威秀影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.3</td><td>—</td><td>220台湾新北市板桥区福丘里新站路28号10楼</td></tr>
+<tr><td>❌</td><td>Sing!Go聚唱KTV板桥店</td><td>KTV</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.2</td><td>—</td><td>220台湾新北市板桥区乡云里中山路一段50巷22号3楼</td></tr>
+<tr><td>❌</td><td>好乐迪KTV埔墘店</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>3.2</td><td>—</td><td>220台湾新北市板桥区埔墘里三民路一段183号B1</td></tr>
+<tr><td>❌</td><td>美丽新宏汇影城(暂停营业)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.2</td><td>—</td><td>新庄区中原里新北大道四段3号8楼</td></tr>
+<tr><td>❌</td><td>Holiday KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.1</td><td>—</td><td>220台湾新北市板桥区新兴里南雅南路一段8号</td></tr>
+<tr><td>❌</td><td>谜鹿实境游戏工作室</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>3.0</td><td>—</td><td>234台湾新北市永和区店街里福和路297号b1</td></tr>
+<tr><td>❌</td><td>27o Poker Club</td><td>其他娱乐场所</td><td>体育休闲服务;休闲场所;游乐场</td><td>2.9</td><td>—</td><td>235台湾新北市中和区平河里中正路746之1号1楼</td></tr>
+<tr><td>❌</td><td>全家FIVE歌唱视听卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.8</td><td>—</td><td>220台湾新北市板桥区流芳里南门街61号</td></tr>
+<tr><td>❌</td><td>风情音乐坊</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.8</td><td>—</td><td>220台湾新北市板桥区湳兴里南雅西路二段101号</td></tr>
+<tr><td>❌</td><td>白柳感官设计有限公司Studio Salix White</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>2.8</td><td>—</td><td>239台湾新北市莺歌区同庆里重庆街32号</td></tr>
+<tr><td>❌</td><td>板桥新富客大舞场</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;夜总会</td><td>2.7</td><td>—</td><td>220台湾新北市板桥区流芳里南门街61号6楼</td></tr>
+<tr><td>❌</td><td>巨星卡拉ok</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.7</td><td>—</td><td>220台湾新北市板桥区吉翠里裕民街134号</td></tr>
+<tr><td>❌</td><td>疯密工作室FunMe-密室逃脱沉浸式实境游戏</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;休闲场所;休闲场所</td><td>2.6</td><td>—</td><td>235,New Taipei City,Zhonghe District,Jingping Rd,770号1楼</td></tr>
+<tr><td>❌</td><td>全家2卡拉ok</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.6</td><td>—</td><td>220台湾新北市板桥区和平里和平路27号</td></tr>
+<tr><td>❌</td><td>财元广场(财元戏院)</td><td>其他娱乐场所</td><td>购物服务;购物相关场所;购物相关场所</td><td>2.6</td><td>—</td><td>242台湾新北市新庄区中华里中华路二段16号</td></tr>
+<tr><td>❌</td><td>LoGin登入密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.4</td><td>—</td><td>23553连和里连城路52号4楼</td></tr>
+<tr><td>❌</td><td>浮生半日沉浸式剧场</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;剧场</td><td>2.4</td><td>—</td><td>220台湾新北市板桥区松翠里双十路二段174号4楼</td></tr>
+<tr><td>❌</td><td>民权二期歌友会</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>2.4</td><td>—</td><td>220台湾新北市板桥区民权路27号</td></tr>
+<tr><td>❌</td><td>四个朋友24H娱乐休闲馆</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.4</td><td>—</td><td>220台湾新北市板桥区景星里重庆路12巷8号</td></tr>
+<tr><td>❌</td><td>麻将先生-板桥发财店</td><td>其他娱乐场所</td><td>购物服务;购物相关场所;购物相关场所</td><td>2.4</td><td>—</td><td>22047台湾板桥区松江街28号</td></tr>
+<tr><td>❌</td><td>板桥长江麻将会馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.4</td><td>—</td><td>环河西路四段与新海路交叉口东340米</td></tr>
+<tr><td>❌</td><td>豪韵卡啦OK</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>2.3</td><td>—</td><td>220台湾新北市板桥区挹秀里东门街14号</td></tr>
+<tr><td>❌</td><td>叩叩鱼德州扑克竞技协会Call Call Fish Poker</td><td>其他娱乐场所</td><td>体育休闲服务;运动场馆;运动场所</td><td>2.3</td><td>—</td><td>24252头前里头前路168号</td></tr>
+<tr><td>❌</td><td>LoGin密室逃脱-利维德酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.2</td><td>—</td><td>235台湾新北市中和区福善里景平路730号1楼</td></tr>
+<tr><td>❌</td><td>1949眷村人物志</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>2.2</td><td>—</td><td>和平里中山路137号9楼之12号</td></tr>
+<tr><td>❌</td><td>台北天外天</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅小区</td><td>2.2</td><td>—</td><td>244台湾新北市林口区中湖里竹林路606巷36号</td></tr>
+<tr><td>❌</td><td>FTP新庄德州扑克协会</td><td>其他娱乐场所</td><td>体育休闲服务;运动场馆;运动场所</td><td>2.2</td><td>—</td><td>242台湾新北市新庄区中华路一段71号2楼</td></tr>
+<tr><td>❌</td><td>揪咖桌游永和旗舰店自助桌游I24HI包厢出租I聚会I电动麻将I永和桌游租借｜麻将会馆｜麻将馆首选｜桌游店推荐｜热门麻将馆｜桌游教学｜电动麻将馆｜康娱乐</td><td>棋牌室</td><td>体育休闲服务;休闲场所;游乐场</td><td>2.2</td><td>—</td><td>234台湾新北市永和区保安里中山路一段162号二楼</td></tr>
+<tr><td>❌</td><td>H2O</td><td>其他娱乐场所</td><td>购物服务;服装鞋帽皮具店;服装鞋帽皮具店</td><td>2.1</td><td>—</td><td>220台湾新北市板桥区中山路一段152号4楼</td></tr>
+<tr><td>❌</td><td>CocoBar-(板桥大远百)电话亭KTV</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.1</td><td>—</td><td>220台湾新北市板桥区福丘里新站路28号10楼</td></tr>
+<tr><td>❌</td><td>非唱不可视听歌唱</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>2.1</td><td>—</td><td>220台湾新北市板桥区南门街61号5f</td></tr>
+<tr><td>❌</td><td>大三元桌游棋牌社四维店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;酒吧</td><td>2.1</td><td>—</td><td>220台湾新北市板桥区明翠里四维路144号1楼</td></tr>
+<tr><td>❌</td><td>聚汇复合式卡拉酒吧/板桥美食/restaurants/酒吧/聚会/唱歌/夜店/热炒</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>2.0</td><td>—</td><td>220台湾新北市板桥区乡云里中山路一段二号2楼</td></tr>
+<tr><td>❌</td><td>辅又赢棋牌馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;酒吧</td><td>2.0</td><td>—</td><td>242台湾新北市新庄区中正路516之41号2楼</td></tr>
+<tr><td>❌</td><td>鸿运贵族</td><td>其他娱乐场所</td><td>商务住宅;住宅区;住宅区</td><td>1.8</td><td>—</td><td>235台湾新北市中和区自强里国光街127号</td></tr>
+<tr><td>❌</td><td>CocoBar-(林口三井威秀影城)电话亭KTV</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>1.8</td><td>—</td><td>244台湾新北市林口区南势里文化三路一段356号3楼</td></tr>
+<tr><td>❌</td><td>麻上发24H自助桌游麻将</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.8</td><td>—</td><td>235台湾新北市中和区积穗里中山路二段662号一楼</td></tr>
+<tr><td>❌</td><td>歌王歌坊</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>1.7</td><td>—</td><td>220台湾新北市板桥区龙翠里双十路二段6-5号</td></tr>
+<tr><td>❌</td><td>板桥大三元麻将棋牌会馆-民生店</td><td>棋牌室</td><td>体育休闲服务;休闲场所;游乐场</td><td>1.7</td><td>—</td><td>220台湾新北市板桥区满翠里民生路三段213号</td></tr>
+<tr><td>❌</td><td>视读好莱坞</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>1.6</td><td>—</td><td>220台湾新北市板桥区文化路二段285号24楼</td></tr>
+<tr><td>❌</td><td>乐华好好运麻将</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>1.6</td><td>—</td><td>23444永和区协和里永平路51号</td></tr>
+<tr><td>❌</td><td>未竟之旅-实境解谜游戏</td><td>其他娱乐场所</td><td>体育休闲服务;休闲场所;游乐场</td><td>1.5</td><td>—</td><td>234台湾新北市永和区保安里中山路一段236号7楼</td></tr>
+<tr><td>❌</td><td>City Poker Zhonghe</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.5</td><td>—</td><td>235台湾新北市中和区民享街4号</td></tr>
+<tr><td>❌</td><td>大福乐活空间麻将馆新庄头前分店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.5</td><td>—</td><td>242台湾新北市新庄区化成里化成路19号1楼</td></tr>
+<tr><td>❌</td><td>1234聚乐部</td><td>其他娱乐场所</td><td>医疗保健服务;医疗保健服务场所;医疗保健服务场所</td><td>1.1</td><td>—</td><td>220台湾新北市板桥区九如里民享街116巷8号,1</td></tr>
+<tr><td>❌</td><td>掌门人-(密室逃脱)板桥店</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>0.3</td><td>—</td><td>220台湾新北市板桥区松翠里松柏街79号2楼</td></tr>
+<tr><td>❌</td><td>龙扬棋牌社</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>0.3</td><td>—</td><td>中正路与建国一路交叉口西南120米</td></tr>
+</tbody></table></div>
+<p>（另 2 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（47 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>38</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>8</td></tr>
+<tr><td>亲子乐园</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>234台湾新北市永和区永安里永贞路147巷1号</td></tr>
+<tr><td>⚠️</td><td>台北小奈良-淡水亲子农场｜梅花鹿｜动物农场｜人气农场｜亲子景点｜推荐农场｜观光农场｜好玩的亲子景点/玩水</td><td>亲子乐园</td><td>独立</td><td>3.5</td><td>251,Taiwan,New Taipei City,Tamsui District,3号之8号</td></tr>
+<tr><td>❌</td><td>宠物公园-文化店</td><td>其他儿童场所</td><td>独立</td><td>3.4</td><td>220台湾新北市板桥区柏翠里文化路二段501号</td></tr>
+<tr><td>❌</td><td>中园国小mini Zoo</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>237台湾新北市三峡区中埔里弘园街22号</td></tr>
+<tr><td>❌</td><td>动物公园夜市</td><td>其他儿童场所</td><td>独立</td><td>3.2</td><td>[]</td></tr>
+<tr><td>❌</td><td>宠物公园(兴南店)-专业宠物用品&amp;宠物美容</td><td>其他儿童场所</td><td>独立</td><td>3.1</td><td>235台湾新北市中和区兴南里兴南路一段45号</td></tr>
+<tr><td>❌</td><td>宠物公园</td><td>其他儿童场所</td><td>独立</td><td>2.9</td><td>236台湾新北市土城区明德里明德路二段62号</td></tr>
+<tr><td>❌</td><td>鳄鱼岛</td><td>其他儿童场所</td><td>独立</td><td>2.9</td><td>223台湾新北市石碇区北宜路五段</td></tr>
+<tr><td>❌</td><td>27o Poker Club</td><td>其他儿童场所</td><td>独立</td><td>2.9</td><td>235台湾新北市中和区平河里中正路746之1号1楼</td></tr>
+<tr><td>❌</td><td>宠物公园(国光店)-专业宠物用品&amp;宠物美容</td><td>其他儿童场所</td><td>独立</td><td>2.8</td><td>220台湾新北市板桥区国光里国光路61号</td></tr>
+<tr><td>❌</td><td>宠物乐园新店中正店</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.7</td><td>231台湾新北市新店区复兴里中正路510-1号</td></tr>
+<tr><td>❌</td><td>宠物乐园中和店</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.7</td><td>235台湾新北市中和区平河里建一路146号</td></tr>
+<tr><td>❌</td><td>宠物公园(板桥金门店)</td><td>其他儿童场所</td><td>独立</td><td>2.7</td><td>220台湾新北市板桥区溪福里金门街357号</td></tr>
+<tr><td>❌</td><td>宠物公园</td><td>其他儿童场所</td><td>独立</td><td>2.7</td><td>234台湾新北市永和区和平里永贞路420号</td></tr>
+<tr><td>❌</td><td>丽园动物医院</td><td>其他儿童场所</td><td>独立</td><td>2.7</td><td>244台湾新北市林口区仁爱里文化一路一段119号</td></tr>
+<tr><td>❌</td><td>宠物公园(福德店)-专业宠物用品&amp;宠物美容</td><td>其他儿童场所</td><td>独立</td><td>2.6</td><td>24148光华里福德北路74号</td></tr>
+<tr><td>❌</td><td>观音山猛禽展示馆</td><td>其他儿童场所</td><td>独立</td><td>2.6</td><td>248台湾新北市五股区观音里凌云路三段130号</td></tr>
+<tr><td>❌</td><td>宠物公园(芦洲店)</td><td>其他儿童场所</td><td>独立</td><td>2.5</td><td>247台湾新北市芦洲区忠义里长荣路71号</td></tr>
+<tr><td>❌</td><td>臭猫动物园宠物店-新庄双凤店</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.5</td><td>242台湾新北市新庄区祥凤里双凤路128号</td></tr>
+<tr><td>❌</td><td>宠物公园(新月桥)</td><td>其他儿童场所</td><td>独立</td><td>2.5</td><td>242台湾新北市新庄区琼林里环汉路二段13号</td></tr>
+<tr><td>❌</td><td>美光鸟园</td><td>其他儿童场所</td><td>独立</td><td>2.5</td><td>221台湾新北市汐止区大同里大同路二段318号</td></tr>
+<tr><td>❌</td><td>宠物公园(新阳店)-专业宠物用品&amp;宠物美容</td><td>其他儿童场所</td><td>独立</td><td>2.4</td><td>幸福里重阳路三段152号</td></tr>
+<tr><td>❌</td><td>宠物公园(新庄复兴店)</td><td>其他儿童场所</td><td>独立</td><td>2.3</td><td>立功里复兴路一段39、41号</td></tr>
+<tr><td>❌</td><td>宠物公园-新雅店</td><td>其他儿童场所</td><td>独立</td><td>2.3</td><td>22060台湾新北市板桥区新兴里南雅南路一段40号近南雅夜市口旁</td></tr>
+<tr><td>❌</td><td>臭猫动物园中和景平店</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.3</td><td>235台湾新北市中和区连城里景平路547号</td></tr>
+<tr><td>❌</td><td>美光鸟园</td><td>其他儿童场所</td><td>独立</td><td>2.2</td><td>220台湾新北市板桥区文化里民生路三段152号</td></tr>
+<tr><td>❌</td><td>揪咖桌游永和旗舰店自助桌游I24HI包厢出租I聚会I电动麻将I永和桌游租借｜麻将会馆｜麻将馆首选｜桌游店推荐｜热门麻将馆｜桌游教学｜电动麻将馆｜康娱乐</td><td>其他儿童场所</td><td>独立</td><td>2.2</td><td>234台湾新北市永和区保安里中山路一段162号二楼</td></tr>
+<tr><td>❌</td><td>民有公园(宠物公园)</td><td>其他儿童场所</td><td>独立</td><td>2.0</td><td>235台湾新北市中和区员山里中山路三段122号</td></tr>
+<tr><td>❌</td><td>宠物公园(板庆店)-专业宠物用品&amp;宠物美容</td><td>其他儿童场所</td><td>独立</td><td>1.9</td><td>220台湾新北市板桥区景星里重庆路110号</td></tr>
+<tr><td>❌</td><td>板桥可爱动物园区</td><td>迷你动物园/萌宠</td><td>独立</td><td>1.9</td><td>22060板桥区华东街</td></tr>
+<tr><td>❌</td><td>永安公园动物彩绘墙</td><td>其他儿童场所</td><td>独立</td><td>1.9</td><td>220台湾新北市板桥区永安里双十路一段25号</td></tr>
+<tr><td>❌</td><td>宠物公园(汐止店)</td><td>其他儿童场所</td><td>独立</td><td>1.8</td><td>22163复兴里新兴路26号</td></tr>
+<tr><td>❌</td><td>永昌公园宠物游乐区</td><td>其他儿童场所</td><td>独立</td><td>1.8</td><td>96号,尖山埔路二段永昌里莺歌区新北市台湾239</td></tr>
+<tr><td>❌</td><td>韦氏鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.7</td><td>[]</td></tr>
+<tr><td>❌</td><td>板桥大三元麻将棋牌会馆-民生店</td><td>其他儿童场所</td><td>独立</td><td>1.7</td><td>220台湾新北市板桥区满翠里民生路三段213号</td></tr>
+<tr><td>❌</td><td>宠物公园(淡水中正店)-专业宠物用品&amp;宠物美容</td><td>其他儿童场所</td><td>独立</td><td>1.6</td><td>251台湾新北市淡水区八势里中正东路77号</td></tr>
+<tr><td>❌</td><td>未竟之旅-实境解谜游戏</td><td>其他儿童场所</td><td>独立</td><td>1.5</td><td>234台湾新北市永和区保安里中山路一段236号7楼</td></tr>
+<tr><td>❌</td><td>雪球宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>1.3</td><td>235台湾新北市中和区平河里中正路839巷5号</td></tr>
+<tr><td>❌</td><td>新店鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.2</td><td>231台湾新北市新店区光明街89号</td></tr>
+<tr><td>❌</td><td>熙猫乐园宠物训练&amp;到府照护</td><td>其他儿童场所</td><td>独立</td><td>1.1</td><td>244台湾新北市林口区湖南里文化三路二段62号</td></tr>
+<tr><td>❌</td><td>宠物公园(新海店)-专业宠物用品&amp;宠物美容</td><td>其他儿童场所</td><td>独立</td><td>1.1</td><td>220台湾新北市板桥区新翠里英士路74号</td></tr>
+<tr><td>❌</td><td>宠物公园(新中店)-专业宠物用品&amp;宠物美容</td><td>其他儿童场所</td><td>独立</td><td>0.3</td><td>231台湾新北市新店区中正里中正路255号</td></tr>
+<tr><td>❌</td><td>甜甜宝贝乐园宠物贸易有限公司</td><td>其他儿童场所</td><td>独立</td><td>0.3</td><td>县民大道二段与民生路二段交叉口西南80米</td></tr>
+<tr><td>❌</td><td>小富室内宠物乐园(本店预约制)</td><td>迷你动物园/萌宠</td><td>独立</td><td>0.3</td><td>中正路与北91交叉口东南180米</td></tr>
+<tr><td>❌</td><td>宠物公园(淡北店)</td><td>其他儿童场所</td><td>独立</td><td>0.3</td><td>新义里中山北路一段65号</td></tr>
+<tr><td>❌</td><td>社团法人好好善待动物协会</td><td>其他儿童场所</td><td>独立</td><td>0.3</td><td>234台湾新北市永和区永乐里自由街55号9楼</td></tr>
+<tr><td>⚠️</td><td>敦园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>238台湾新北市树林区柑园里学勤路231号</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（34 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>介寿广场</td><td>购物中心/综合体</td><td>3.6</td><td>0</td><td>0</td><td>241台湾新北市三重区尚德里正义北路337号</td></tr>
+<tr><td>⚠️</td><td>环球购物中心林口A9</td><td>购物中心/综合体</td><td>3.6</td><td>0</td><td>0</td><td>南势里文化三路一段2号3F</td></tr>
+<tr><td>❌</td><td>三重区天台广场</td><td>购物中心/综合体</td><td>3.4</td><td>0</td><td>0</td><td>241台湾新北市三重区重新路二段78号</td></tr>
+<tr><td>❌</td><td>鸿金宝百货商场万念福开发事业股份有限公司</td><td>百货/商场</td><td>3.3</td><td>0</td><td>0</td><td>242台湾新北市新庄区四维路</td></tr>
+<tr><td>❌</td><td>南山威力购物广场</td><td>购物中心/综合体</td><td>3.3</td><td>1</td><td>0</td><td>235台湾新北市中和区连和里中山路二段291号</td></tr>
+<tr><td>❌</td><td>全家便利商店土城海山店</td><td>购物中心/综合体</td><td>3.2</td><td>1</td><td>0</td><td>236台湾新北市土城区明德里学府路一段294号</td></tr>
+<tr><td>❌</td><td>永和成功办公商场</td><td>百货/商场</td><td>3.2</td><td>0</td><td>0</td><td>234台湾新北市永和区秀得里成功路二段28号B1</td></tr>
+<tr><td>❌</td><td>宇利实业社/A摩市购物商城</td><td>百货/商场</td><td>3.2</td><td>0</td><td>0</td><td>24887福兴里五权一路12巷9弄26号</td></tr>
+<tr><td>❌</td><td>全家便利商店中和新忠店</td><td>购物中心/综合体</td><td>3.1</td><td>0</td><td>0</td><td>235台湾新北市中和区忠孝里忠孝街27号</td></tr>
+<tr><td>❌</td><td>好邻居生活百货-汐止忠孝店</td><td>百货/商场</td><td>3.1</td><td>0</td><td>0</td><td>221台湾新北市汐止区新昌里忠孝东路218号</td></tr>
+<tr><td>❌</td><td>小北百货-新北中和安平店SHOWBA</td><td>百货/商场</td><td>3.1</td><td>0</td><td>0</td><td>235台湾新北市中和区安乐里安平路109号1-2楼</td></tr>
+<tr><td>❌</td><td>全家便利商店(中和胜华店)</td><td>购物中心/综合体</td><td>3.0</td><td>0</td><td>0</td><td>235台湾新北市中和区景文里南华路67号</td></tr>
+<tr><td>❌</td><td>好朋友百货商场西盛店</td><td>百货/商场</td><td>3.0</td><td>0</td><td>0</td><td>242台湾新北市新庄区民有里西盛街167号</td></tr>
+<tr><td>❌</td><td>Porter International三井Outlet</td><td>百货/商场</td><td>2.9</td><td>0</td><td>0</td><td>文化三路一段与忠孝路交叉口西南440米</td></tr>
+<tr><td>❌</td><td>全家便利商店新店新安店</td><td>购物中心/综合体</td><td>2.7</td><td>0</td><td>0</td><td>231台湾新北市新店区永安里新和街60号1楼</td></tr>
+<tr><td>❌</td><td>全家便利商店汐止勤进店</td><td>购物中心/综合体</td><td>2.5</td><td>1</td><td>0</td><td>221台湾新北市汐止区秀峰路119号</td></tr>
+<tr><td>❌</td><td>有米百货有限公司</td><td>百货/商场</td><td>2.5</td><td>0</td><td>0</td><td>243台湾新北市泰山区贵子里工专路41号1楼</td></tr>
+<tr><td>❌</td><td>亿家具批发仓库泰山(门口可停车)</td><td>批发城</td><td>2.5</td><td>0</td><td>0</td><td>243台湾新北市泰山区枫树里明志路一段19巷5弄9号</td></tr>
+<tr><td>❌</td><td>台产进口水果批发</td><td>批发城</td><td>2.3</td><td>1</td><td>0</td><td>241台湾新北市三重区六福里中正北路111号</td></tr>
+<tr><td>❌</td><td>全家便利商店-新庄状元店</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>No.268号,Zhongping Rd,Xinzhuang District,New Taipei City,242</td></tr>
+<tr><td>❌</td><td>全家便利商店</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>231台湾新北市新店区安康路三段361号</td></tr>
+<tr><td>❌</td><td>全家便利商店永和永林店</td><td>购物中心/综合体</td><td>2.1</td><td>0</td><td>0</td><td>234台湾新北市永和区复兴里竹林路37号</td></tr>
+<tr><td>❌</td><td>新远芳百货</td><td>百货/商场</td><td>2.1</td><td>0</td><td>0</td><td>241台湾新北市三重区三民街94号1楼</td></tr>
+<tr><td>❌</td><td>雪霸草莓双北批发处</td><td>批发城</td><td>2.1</td><td>1</td><td>0</td><td>241台湾新北市三重区立德里大智街202号</td></tr>
+<tr><td>❌</td><td>全家便利商店-中和捷胜店</td><td>购物中心/综合体</td><td>1.9</td><td>0</td><td>0</td><td>235台湾新北市中和区景安路128号</td></tr>
+<tr><td>❌</td><td>全家便利商店林口乐活店</td><td>购物中心/综合体</td><td>1.9</td><td>1</td><td>0</td><td>244台湾新北市林口区仁爱里文化二路一段269号</td></tr>
+<tr><td>❌</td><td>全家便利商店-中和秀吉店</td><td>购物中心/综合体</td><td>1.9</td><td>0</td><td>0</td><td>235台湾新北市中和区秀福里自立路17号</td></tr>
+<tr><td>❌</td><td>国际通百货广场</td><td>百货/商场</td><td>1.9</td><td>1</td><td>0</td><td>241台湾新北市三重区锦通里中央北路8号</td></tr>
+<tr><td>❌</td><td>京美百货公司</td><td>百货/商场</td><td>1.9</td><td>0</td><td>0</td><td>242台湾新北市新庄区西盛里新树路679-685号</td></tr>
+<tr><td>❌</td><td>宏嘉水果批发团购</td><td>批发城</td><td>1.8</td><td>0</td><td>0</td><td>Xingfu Village,Sanchong District,New Taipei City,台湾241</td></tr>
+<tr><td>❌</td><td>58活海产大卖场批发</td><td>批发城</td><td>1.5</td><td>0</td><td>0</td><td>243,Taiwan,New Taipei City,Taishan District</td></tr>
+<tr><td>❌</td><td>全家便利商店永和新乐新店</td><td>购物中心/综合体</td><td>1.2</td><td>0</td><td>0</td><td>234台湾新北市永和区大新里大新街3号</td></tr>
+<tr><td>❌</td><td>佳升水产股份有限公司台北营业所-海鲜水产食品批发</td><td>批发城</td><td>0.5</td><td>0</td><td>0</td><td>24887兴珍里五工一路132号1楼</td></tr>
+<tr><td>❌</td><td>大圣家具批发卖场</td><td>批发城</td><td>0.3</td><td>0</td><td>0</td><td>247台湾新北市芦洲区水河里复兴路323巷338号</td></tr>
+</tbody></table></div>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>福容大饭店淡水渔人码头（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>福容大饭店淡水渔人码头</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>单人房台北馆（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>单人房台北馆</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>豪韵卡啦OK</td><td>距离就近</td><td>202m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>板桥王旅馆</td><td>距离就近</td><td>305m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>板桥新富客大舞场</td><td>距离就近</td><td>308m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>非唱不可视听歌唱</td><td>距离就近</td><td>308m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>Sing!Go聚唱KTV板桥店</td><td>距离就近</td><td>319m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>全家FIVE歌唱视听卡拉OK</td><td>距离就近</td><td>320m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>民权二期歌友会</td><td>距离就近</td><td>338m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>四个朋友24H娱乐休闲馆</td><td>距离就近</td><td>341m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>聚汇复合式卡拉酒吧/板桥美食/restaurants/酒吧/聚会/唱歌/夜店/热炒</td><td>距离就近</td><td>349m</td><td>2.0</td><td>§11</td></tr>
+<tr><td>麻赛客24H自助桌游麻将-板桥包厢麻将｜麻将会馆｜棋牌会馆｜麻将馆首选｜桌游店推荐｜热门麻将馆｜电动麻将馆｜休闲棋牌社</td><td>距离就近</td><td>389m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>THE COLE HOTEL品川商旅</td><td>距离就近</td><td>413m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>凯悦YESKTV板桥店</td><td>距离就近</td><td>443m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>Holiday KTV</td><td>距离就近</td><td>517m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>好乐迪板后店</td><td>距离就近</td><td>520m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>H2O</td><td>距离就近</td><td>552m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>宠物公园-新雅店</td><td>距离就近</td><td>575m</td><td>2.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>幸福赞精品饭店（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幸福赞精品饭店</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>叩叩鱼德州扑克竞技协会Call Call Fish Poker</td><td>距离就近</td><td>178m</td><td>2.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>九份龙门客栈Easy Stay丨近老街（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>九份龙门客栈Easy Stay丨近老街</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>琚九屋民宿</td><td>距离就近</td><td>197m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>九份缘忆民宿</td><td>距离就近</td><td>228m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>九份爱琴海民宿</td><td>距离就近</td><td>243m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>九份慢慢民宿</td><td>距离就近</td><td>312m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>九份缘忆民宿（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>九份缘忆民宿</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>琚九屋民宿</td><td>距离就近</td><td>201m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>九份龙门客栈Easy Stay丨近老街</td><td>距离就近</td><td>228m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>九份爱琴海民宿</td><td>距离就近</td><td>229m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>九份慢慢民宿</td><td>距离就近</td><td>504m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>林口三井OUTLET二馆（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>林口三井威秀影城</td><td>距离就近</td><td>178m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>CocoBar-(林口三井威秀影城)电话亭KTV</td><td>距离就近</td><td>178m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>林口亚昕福朋喜来登酒店</td><td>距离就近</td><td>571m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>日月光广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宠物公园</td><td>距离就近</td><td>594m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宏汇广场B2（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>美丽新宏汇影城(暂停营业)</td><td>距离就近</td><td>46m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>鸿金宝麻吉影城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鸿金宝麻吉影城</td><td>名称互证</td><td>0m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>林口昕境国宾影城（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>林口昕境国宾影城</td><td>名称互证</td><td>0m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>CocoBar-(林口三井威秀影城)电话亭KTV</td><td>距离就近</td><td>450m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>林口三井威秀影城</td><td>距离就近</td><td>450m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>丽园动物医院</td><td>距离就近</td><td>512m</td><td>2.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>环球购物中心林口A9（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>林口亚昕福朋喜来登酒店</td><td>距离就近</td><td>57m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宠物乐园（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宠物乐园</td><td>名称互证</td><td>0m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>社团法人好好善待动物协会</td><td>距离就近</td><td>292m</td><td>0.3</td><td>§11</td></tr>
+<tr><td>谜鹿实境游戏工作室</td><td>距离就近</td><td>361m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>宠物乐园中和店</td><td>名称互证</td><td>2890m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>宠物乐园新店中正店</td><td>名称互证</td><td>2915m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>雪球宠物乐园</td><td>名称互证</td><td>3206m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>小富室内宠物乐园(本店预约制)</td><td>名称互证</td><td>3689m</td><td>0.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>三重区天台广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>三重天台影城</td><td>距离就近</td><td>14m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>台北桥黑熊好眠站</td><td>距离就近</td><td>256m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>日月民宿（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>日月民宿</td><td>名称互证</td><td>0m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>山水妍温泉会馆新北馆</td><td>距离就近</td><td>488m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中园国小mini Zoo（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中园国小mini Zoo</td><td>名称互证</td><td>0m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>鸿金宝百货商场万念福开发事业股份有限公司（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鸿金宝麻吉影城</td><td>距离就近</td><td>7m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南山威力购物广场（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>LoGin登入密室逃脱</td><td>距离就近</td><td>201m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>LoGin密室逃脱-利维德酒吧</td><td>距离就近</td><td>252m</td><td>2.2</td><td>§11</td></tr>
+<tr><td>臭猫动物园中和景平店</td><td>距离就近</td><td>348m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>疯密工作室FunMe-密室逃脱沉浸式实境游戏</td><td>距离就近</td><td>389m</td><td>2.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>动物公园夜市（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>动物公园夜市</td><td>名称互证</td><td>0m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>Sing!Go聚唱KTV板桥店（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Sing!Go聚唱KTV板桥店</td><td>名称互证</td><td>0m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>THE COLE HOTEL品川商旅</td><td>距离就近</td><td>112m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>四个朋友24H娱乐休闲馆</td><td>距离就近</td><td>142m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>好乐迪板后店</td><td>距离就近</td><td>200m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>聚汇复合式卡拉酒吧/板桥美食/restaurants/酒吧/聚会/唱歌/夜店/热炒</td><td>距离就近</td><td>216m</td><td>2.0</td><td>§11</td></tr>
+<tr><td>麻赛客24H自助桌游麻将-板桥包厢麻将｜麻将会馆｜棋牌会馆｜麻将馆首选｜桌游店推荐｜热门麻将馆｜电动麻将馆｜休闲棋牌社</td><td>距离就近</td><td>247m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>民权二期歌友会</td><td>距离就近</td><td>257m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>单人房台北馆</td><td>距离就近</td><td>319m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>豪韵卡啦OK</td><td>距离就近</td><td>353m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>宠物公园(板庆店)-专业宠物用品&amp;宠物美容</td><td>距离就近</td><td>368m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>H2O</td><td>距离就近</td><td>405m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>板桥王旅馆</td><td>距离就近</td><td>429m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>全家FIVE歌唱视听卡拉OK</td><td>距离就近</td><td>429m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>板桥新富客大舞场</td><td>距离就近</td><td>432m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>非唱不可视听歌唱</td><td>距离就近</td><td>432m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>Holiday KTV</td><td>距离就近</td><td>583m</td><td>3.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>全家便利商店土城海山店（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宠物公园</td><td>距离就近</td><td>121m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宇利实业社/A摩市购物商城（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新庄晶冠国宾影城</td><td>距离就近</td><td>167m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>新庄晶冠国宾影城</td><td>距离就近</td><td>167m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>来自台湾Outlet Store（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宠物公园(新中店)-专业宠物用品&amp;宠物美容</td><td>距离就近</td><td>108m</td><td>0.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>Porter International三井Outlet（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>CocoBar-(林口三井威秀影城)电话亭KTV</td><td>距离就近</td><td>224m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>林口三井威秀影城</td><td>距离就近</td><td>224m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>林口昕境国宾影城</td><td>距离就近</td><td>596m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>财元广场(财元戏院)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>财元广场(财元戏院)</td><td>名称互证</td><td>0m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>FTP新庄德州扑克协会</td><td>距离就近</td><td>592m</td><td>2.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宠物公园(新月桥)（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>宠物公园(新月桥)</td><td>名称互证</td><td>0m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>宠物公园(新海店)-专业宠物用品&amp;宠物美容</td><td>名称互证</td><td>1556m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>宠物公园(国光店)-专业宠物用品&amp;宠物美容</td><td>名称互证</td><td>1641m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>宠物公园(新庄复兴店)</td><td>名称互证</td><td>1822m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>宠物公园-新雅店</td><td>名称互证</td><td>2453m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>宠物公园(板庆店)-专业宠物用品&amp;宠物美容</td><td>名称互证</td><td>2861m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>宠物公园-文化店</td><td>名称互证</td><td>3260m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>民有公园(宠物公园)</td><td>名称互证</td><td>3545m</td><td>2.0</td><td>§11</td></tr>
+<tr><td>宠物公园</td><td>名称互证</td><td>4760m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>宠物公园(板桥金门店)</td><td>名称互证</td><td>4832m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>宠物公园(新阳店)-专业宠物用品&amp;宠物美容</td><td>名称互证</td><td>6451m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>宠物公园(芦洲店)</td><td>名称互证</td><td>6642m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>宠物公园</td><td>名称互证</td><td>6714m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>宠物公园(福德店)-专业宠物用品&amp;宠物美容</td><td>名称互证</td><td>7246m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>宠物公园(兴南店)-专业宠物用品&amp;宠物美容</td><td>名称互证</td><td>7734m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>宠物公园(新中店)-专业宠物用品&amp;宠物美容</td><td>名称互证</td><td>11104m</td><td>0.3</td><td>§11</td></tr>
+<tr><td>宠物公园(淡水中正店)-专业宠物用品&amp;宠物美容</td><td>名称互证</td><td>15743m</td><td>1.6</td><td>§11</td></tr>
+<tr><td>宠物公园(淡北店)</td><td>名称互证</td><td>16683m</td><td>0.3</td><td>§11</td></tr>
+<tr><td>宠物公园(汐止店)</td><td>名称互证</td><td>21705m</td><td>1.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（27 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>林口亚昕福朋喜来登酒店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>文化三路一段一号</td></tr>
+<tr><td>✅A-</td><td>新北北海温泉洲际酒店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>金美里环金路210号</td></tr>
+<tr><td>✅A-</td><td>福容大饭店台北二馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>北深路三段236号</td></tr>
+<tr><td>✅A-</td><td>九份慢慢民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>224台湾新北市瑞芳区颂德里基山街267号</td></tr>
+<tr><td>✅B</td><td>福容大饭店淡水渔人码头</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>251台湾新北市淡水区沙仑里观海路83号</td></tr>
+<tr><td>✅B</td><td>肯特商务饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>241台湾新北市三重区福民里成功路75号</td></tr>
+<tr><td>✅B</td><td>金瓜石艺栈景观渡假别墅</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>224台湾新北市瑞芳区石山里山尖路2号</td></tr>
+<tr><td>✅B</td><td>台北旅人国际青年旅馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>251台湾新北市淡水区民安里三民街22号</td></tr>
+<tr><td>✅B</td><td>单人房台北馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>明德街1巷12号3楼至6楼</td></tr>
+<tr><td>✅B</td><td>幸福赞精品饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>242台湾新北市新庄区头前里思源路332巷9号1楼</td></tr>
+<tr><td>✅B</td><td>琚九屋民宿</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>224台湾新北市瑞芳区崇文里轻便路121号</td></tr>
+<tr><td>✅B</td><td>九份龙门客栈Easy Stay丨近老街</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>224台湾新北市瑞芳区崇文里仑顶路110号</td></tr>
+<tr><td>✅B</td><td>九份缘忆民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>224台湾新北市瑞芳区永庆里乌势巷52号1楼</td></tr>
+<tr><td>⚠️</td><td>台北桥黑熊好眠站</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>241台湾新北市三重区文化里重新路二段1号8、9楼</td></tr>
+<tr><td>⚠️</td><td>海湾假日酒店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.1</td><td>—</td><td>222台湾新北市深坑区万顺里北深路三段265号</td></tr>
+<tr><td>⚠️</td><td>新北市九份兰樱居</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.1</td><td>—</td><td>九滨公路汽车路9-14号</td></tr>
+<tr><td>⚠️</td><td>九份爱琴海民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.1</td><td>—</td><td>224台湾新北市瑞芳区崇文里汽车路79-1号</td></tr>
+<tr><td>⚠️</td><td>富康精彩旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.0</td><td>—</td><td>220台湾新北市板桥区文化里文化路二段171号</td></tr>
+<tr><td>⚠️</td><td>安盛商务旅馆(住宿不含早餐)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.0</td><td>—</td><td>231台湾新北市新店区大同里二十张路31号</td></tr>
+<tr><td>⚠️</td><td>探索汽车旅馆-新北中和馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.0</td><td>—</td><td>235台湾新北市中和区平河里建八路3号</td></tr>
+<tr><td>⚠️</td><td>THE COLE HOTEL品川商旅</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.8</td><td>—</td><td>220台湾新北市板桥区福丘里重庆路37-1号</td></tr>
+<tr><td>⚠️</td><td>新庄晶冠国宾影城</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>242台湾新北市新庄区福兴里五工路66号3F、4F</td></tr>
+<tr><td>⚠️</td><td>远东金山海湾温泉HOTEL</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>208台湾新北市金山区万寿里磺港路326号</td></tr>
+<tr><td>⚠️</td><td>山水妍温泉会馆新北馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.5</td><td>—</td><td>233台湾新北市乌来区乌来里环山路125号</td></tr>
+<tr><td>⚠️</td><td>板桥王旅馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.5</td><td>—</td><td>220台湾新北市板桥区流芳里南门街61号13楼</td></tr>
+<tr><td>❌</td><td>日月民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.3</td><td>—</td><td>233台湾新北市乌来区乌来里乌来街85巷1号</td></tr>
+<tr><td>⚠️</td><td>敦园</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>—</td><td>—</td><td>238台湾新北市树林区柑园里学勤路231号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>15</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>11</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>7</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>15</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>1</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>7</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/新北市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>3 个 POI 无地址</strong>，需人工补：动物公园夜市、韦氏鸟园、大三元棋牌娱乐会馆-新庄A馆</li><li><input type="checkbox" disabled> <strong>1 个 POI 无评分</strong>，暂标 ⚠️：敦园</li><li><input type="checkbox" disabled> 儿童游乐 47 家，其中场内 0 家、独立 47 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 21 个区县：三峡区、三重区、中和区、乌来区、五股区、土城区、新庄区、新店区、板桥区、林口区、树林区、永和区、汐止区、泰山区、淡水区、深坑区、瑞芳区、石碇区、芦洲区、莺歌区、金山区——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

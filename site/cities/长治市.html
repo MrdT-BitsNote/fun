@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>长治市 · 山西省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/山西省.html">← 返回山西省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>长治市 · 山西省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:30:18  ·  POI 总量：187（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>187</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>99%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 3 · 商圈 106 · 成人娱乐 130 · 儿童娱乐 23 · 酒店 36 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>山西省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>12 个</td></tr>
+<tr><td>街道/镇/乡</td><td>133 个</td></tr>
+<tr><td>区县构成</td><td>县×8、市辖区×4</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>潞州区</td><td>140</td><td>75%</td></tr>
+<tr><td>襄垣县</td><td>11</td><td>6%</td></tr>
+<tr><td>潞城区</td><td>7</td><td>4%</td></tr>
+<tr><td>上党区</td><td>6</td><td>3%</td></tr>
+<tr><td>屯留区</td><td>6</td><td>3%</td></tr>
+<tr><td>长子县</td><td>4</td><td>2%</td></tr>
+<tr><td>壶关县</td><td>4</td><td>2%</td></tr>
+<tr><td>武乡县</td><td>3</td><td>2%</td></tr>
+<tr><td>平顺县</td><td>2</td><td>1%</td></tr>
+<tr><td>沁源县</td><td>2</td><td>1%</td></tr>
+<tr><td>沁县</td><td>1</td><td>1%</td></tr>
+<tr><td>黎城县</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（106 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>39</td></tr>
+<tr><td>百货/商场</td><td>21</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>购物中心/综合体</td><td>17</td></tr>
+<tr><td>商业街</td><td>8</td></tr>
+<tr><td>奥特莱斯</td><td>2</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（106 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>云桂酒店</td><td>其他商业载体</td><td>4.6</td><td>1</td><td>12</td><td>0</td><td>4</td></tr>
+<tr><td>B</td><td>华夏国际4D影城(长治店)</td><td>其他商业载体</td><td>4.6</td><td>1</td><td>16</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>金威商城</td><td>百货/商场</td><td>4.6</td><td>1</td><td>17</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>金威名店</td><td>百货/商场</td><td>4.5</td><td>1</td><td>16</td><td>0</td><td>4</td></tr>
+<tr><td>B</td><td>东南购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>18</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>君悦·新天地</td><td>百货/商场</td><td>4.5</td><td>1</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>嘉汇购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>好声音KTV(天马商场店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>13</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>天马商场(英雄中路)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>12</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>悦玺汇KTV</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>博源超市(城东路店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>四个朋友·自助棋牌(农校东门店)</td><td>其他商业载体</td><td>4.5</td><td>1</td><td>9</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>鑫源旅馆</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>4</td><td>0</td><td>8</td></tr>
+<tr><td>C</td><td>幸福旅店(角沿窑背后街店)</td><td>商业街</td><td>5.0</td><td>0</td><td>4</td><td>0</td><td>8</td></tr>
+<tr><td>C</td><td>德景旅店</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>4</td><td>0</td><td>8</td></tr>
+<tr><td>C</td><td>长治祥瑞旅馆</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>3</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>乐居旅馆(长治医学院店)</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万达广场(长治高新店)</td><td>百货/商场</td><td>4.8</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>鑫鑫宾馆(东大街)</td><td>商业街</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>财苑大厦(长兴中路)(暂停营业)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>5</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>万达影城(长治高新万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>潞鼎广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>金威购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>八一百货大楼(英雄中路)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>金威超市(长钢店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>沁芳汇生活广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>凯德世家广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华丽港购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>书苑宾馆(八一广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>星聚派KTV</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>3</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>东南雀国粹技艺馆</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>6</td><td>0</td><td>8</td></tr>
+<tr><td>C</td><td>华诺百货</td><td>百货/商场</td><td>4.5</td><td>0</td><td>2</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>金威超市(城南店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>华丽港生活超市</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>家家利超市(武乡店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>百佳购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>6</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>路古里</td><td>商业街</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>萌宠乐园(漳沂店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>2</td><td>4</td><td>0</td></tr>
+<tr><td>C</td><td>客都购物广场(潞城店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华联福美超市</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>云桂酒店 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 1 家 / 娱乐 12 / 酒店 4</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：英雄南路街道炉坊巷11号炉坊小区南区</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥44（区间 ¥44–44）</li><li><strong>动线主轴</strong>：英雄南路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>云桂酒店</td></tr>
+<tr><td>美食</td><td>1</td><td>云桂酒店</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>中影星美国际影城(长治店)、华夏国际4D影城(长治店)、天宝纯K量贩</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>云桂酒店、云山宾馆(长兴南路)、太行宾馆</td></tr>
+</tbody></table></div>
+<h3>华夏国际4D影城(长治店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 1 家 / 娱乐 16 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：东大街森日春天购物中心L6-06号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥44（区间 ¥44–44）</li><li><strong>动线主轴</strong>：英雄南路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 16 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>华夏国际4D影城(长治店)</td></tr>
+<tr><td>美食</td><td>1</td><td>云桂酒店</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>华夏国际4D影城(长治店)、中影星美国际影城(长治店)、镁乐国际影城</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>云桂酒店、太行宾馆</td></tr>
+</tbody></table></div>
+<h3>金威商城 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 1 家 / 娱乐 17 / 酒店 3</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：东大街35号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥44（区间 ¥44–44）</li><li><strong>动线主轴</strong>：英雄南路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 17 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金威商城</td></tr>
+<tr><td>美食</td><td>1</td><td>云桂酒店</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>华夏国际4D影城(长治店)、中影星美国际影城(长治店)、镁乐国际影城</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>云桂酒店、云山宾馆(长兴南路)、太行宾馆</td></tr>
+</tbody></table></div>
+<h3>金威名店 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 1 家 / 娱乐 16 / 酒店 4</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场｜生活服务;生活服务场所;生活服务场所）</li><li><strong>地址</strong>：东大街8号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥44（区间 ¥44–44）</li><li><strong>动线主轴</strong>：英雄南路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 16 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金威名店</td></tr>
+<tr><td>美食</td><td>1</td><td>云桂酒店</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>华夏国际4D影城(长治店)、中影星美国际影城(长治店)、镁乐国际影城</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>云桂酒店、云山宾馆(长兴南路)、太行宾馆</td></tr>
+</tbody></table></div>
+<h3>东南购物中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 1 家 / 娱乐 18 / 酒店 3</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：东大街80号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥44（区间 ¥44–44）</li><li><strong>动线主轴</strong>：英雄南路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 18 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>东南购物中心</td></tr>
+<tr><td>美食</td><td>1</td><td>云桂酒店</td></tr>
+<tr><td>成人娱乐</td><td>18</td><td>华夏国际4D影城(长治店)、中影星美国际影城(长治店)、镁乐国际影城</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>云桂酒店、云山宾馆(长兴南路)、太行宾馆</td></tr>
+</tbody></table></div>
+<h3>君悦·新天地 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 1 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：长兴中路619号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥13（区间 ¥13–13）</li><li><strong>动线主轴</strong>：延安中路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>君悦·新天地</td></tr>
+<tr><td>美食</td><td>1</td><td>四个朋友·自助棋牌(农校东门店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>华夏国际4D影城(长治店)、镁乐国际影城、好声音KTV(天马商场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>鹏宇国际大酒店</td></tr>
+</tbody></table></div>
+<h3>嘉汇购物广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场｜购物服务;超级市场;超市）</li><li><strong>地址</strong>：英雄中路东侧336号(英雄台公交站台对面)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>嘉汇购物广场</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>华夏国际4D影城(长治店)、好声音KTV(天马商场店)、镁乐国际影城</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>鹏宇国际大酒店</td></tr>
+</tbody></table></div>
+<h3>好声音KTV(天马商场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：天马商场4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>好声音KTV(天马商场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>华夏国际4D影城(长治店)、好声音KTV(天马商场店)、镁乐国际影城</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>鹏宇国际大酒店</td></tr>
+</tbody></table></div>
+<h3>天马商场(英雄中路) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;商场）</li><li><strong>地址</strong>：—</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>天马商场(英雄中路)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>华夏国际4D影城(长治店)、好声音KTV(天马商场店)、镁乐国际影城</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>鹏宇国际大酒店</td></tr>
+</tbody></table></div>
+<h3>悦玺汇KTV —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：英雄中路389号百盛莲市巷店F4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>悦玺汇KTV</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>华夏国际4D影城(长治店)、好声音KTV(天马商场店)、镁乐国际影城</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>鹏宇国际大酒店</td></tr>
+</tbody></table></div>
+<h3>博源超市(城东路店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：潞阳门中路198号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥34（区间 ¥34–34）</li><li><strong>动线主轴</strong>：云步街</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>博源超市(城东路店)</td></tr>
+<tr><td>美食</td><td>1</td><td>大四喜24H自助棋牌休闲空间(云步街店)</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>花姐四郎·24H自助棋牌室(永盛润景苑店)、喜悦荟24小时棋牌茶舍、大四喜24H自助棋牌休闲空间(云步街店)</td></tr>
+</tbody></table></div>
+<h3>四个朋友·自助棋牌(农校东门店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：延安中路与庙道巷交叉口东北120米</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥13（区间 ¥13–13）</li><li><strong>动线主轴</strong>：延安中路</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 9 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>四个朋友·自助棋牌(农校东门店)</td></tr>
+<tr><td>美食</td><td>1</td><td>四个朋友·自助棋牌(农校东门店)</td></tr>
+<tr><td>成人娱乐</td><td>9</td><td>四个朋友·自助棋牌(农校东门店)、镁乐国际影城、小麻雀24H自助棋牌室</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>金宠园动物门诊</td></tr>
+</tbody></table></div>
+<h3>鑫源旅馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：角沿村南街东巷3号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 8</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>鑫源旅馆</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>东南雀国粹技艺馆、新元素KTV(城西路店)、小白的麻将小屋</td></tr>
+<tr><td>酒店配套</td><td>8</td><td>鑫源旅馆、心相印旅店、德景旅店</td></tr>
+</tbody></table></div>
+<h3>幸福旅店(角沿窑背后街店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：角沿窑背后街与工农巷交叉口西240米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 8</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>幸福旅店(角沿窑背后街店)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>东南雀国粹技艺馆、新元素KTV(城西路店)、小白的麻将小屋</td></tr>
+<tr><td>酒店配套</td><td>8</td><td>幸福旅店(角沿窑背后街店)、德景旅店、鑫源旅馆</td></tr>
+</tbody></table></div>
+<h3>德景旅店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：城西路与紫金西街交叉口北200米巷内</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 8</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>德景旅店</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>东南雀国粹技艺馆、新元素KTV(城西路店)、小白的麻将小屋</td></tr>
+<tr><td>酒店配套</td><td>8</td><td>德景旅店、幸福旅店(角沿窑背后街店)、客来福旅店</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（130 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>22</td></tr>
+<tr><td>棋牌室</td><td>16</td></tr>
+<tr><td>KTV</td><td>14</td></tr>
+<tr><td>电影院</td><td>11</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>6</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(长治高新万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>33.00</td><td>英雄北路222号长治万达广场</td></tr>
+<tr><td>✅A-</td><td>SOHO天空影城(天空之城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>46.00</td><td>太行东街2号</td></tr>
+<tr><td>✅A-</td><td>观华国际影城(长治店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>26.00</td><td>太行西街66号潞鼎国际金融中心A座</td></tr>
+<tr><td>✅A-</td><td>华夏国际4D影城(长治店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>39.00</td><td>东大街森日春天购物中心L6-06号</td></tr>
+<tr><td>✅A-</td><td>中影星美国际影城(长治店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>23.00</td><td>英雄南路96号</td></tr>
+<tr><td>✅A-</td><td>中影乐成影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>41.00</td><td>保宁门西街309号世纪城F4层</td></tr>
+<tr><td>✅B</td><td>K8 Blue K eightfz</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>14.00</td><td>英雄中路与紫金西街交叉口西北80米</td></tr>
+<tr><td>✅B</td><td>佰嘉乐KTV(永盛苑店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV｜购物服务;超级市场;超市</td><td>4.5</td><td>44.00</td><td>长邯路永盛小区7号楼3号地下室</td></tr>
+<tr><td>✅B</td><td>好声音KTV(天马商场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>17.00</td><td>天马商场4层</td></tr>
+<tr><td>✅B</td><td>苏荷汇KTV(天空之城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>67.00</td><td>太行东路2号天空之城4号</td></tr>
+<tr><td>✅B</td><td>非凡量贩式KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>54.00</td><td>英雄北路51号</td></tr>
+<tr><td>✅B</td><td>天宝纯K量贩</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>28.00</td><td>长兴街51号综合楼地下一层</td></tr>
+<tr><td>✅B</td><td>同一首歌·纯K PARTY(城西北路)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>41.00</td><td>城西北路34号</td></tr>
+<tr><td>✅B</td><td>潞州区悦歌汇派对空间</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>298.00</td><td>潞阳门东关十字北50米路东578号新民农贸市场</td></tr>
+<tr><td>✅B</td><td>云熙KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>21.00</td><td>英雄南路街道解放西街温馨家园B区42号</td></tr>
+<tr><td>✅B</td><td>星聚派KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>42.00</td><td>潞阳门北路与捉马东大街东南侧往南200米</td></tr>
+<tr><td>✅B</td><td>我还年轻音乐火锅KTV</td><td>KTV</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>62.00</td><td>紫坊新建西街31号</td></tr>
+<tr><td>✅B</td><td>镁乐国际影城</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>39.00</td><td>长兴中路717号1层</td></tr>
+<tr><td>✅B</td><td>汉鼎宇佑影城(淮海街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>21.00</td><td>延安南路街道淮海街4号</td></tr>
+<tr><td>✅B</td><td>四个朋友·自助棋牌(农校东门店)</td><td>棋牌室</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>13.00</td><td>延安中路与庙道巷交叉口东北120米</td></tr>
+<tr><td>✅B</td><td>东南雀国粹技艺馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>—</td><td>常青街道角沿村工农巷一排一号</td></tr>
+<tr><td>✅B</td><td>悦玺汇KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>15.00</td><td>英雄中路389号百盛莲市巷店F4层</td></tr>
+<tr><td>✅B</td><td>星聚派KTV(科创城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>37.00</td><td>科创城·上寓4号楼</td></tr>
+<tr><td>✅B</td><td>长治海底两万里球幕影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>43.00</td><td>天空之城86号(钱占里烤肉旁)</td></tr>
+<tr><td>✅B</td><td>长治妖姬棋牌·茶饮</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>17.00</td><td>英雄中路与西营街交叉口正西方向180米</td></tr>
+<tr><td>✅B</td><td>四个朋友自助棋牌(广电小区店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>17.00</td><td>广电小区西南门东南80米</td></tr>
+<tr><td>✅B</td><td>新元素KTV(城西路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>71.00</td><td>城西路20号(近检察院)</td></tr>
+<tr><td>✅B</td><td>壶关星光影城(新建南路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>29.00</td><td>龙泉镇新建路日月星辰3层</td></tr>
+<tr><td>✅B</td><td>木溪小院自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>66.00</td><td>紫金街道北关二巷16号</td></tr>
+<tr><td>✅B</td><td>喜雀24小时自助棋牌馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>47.00</td><td>延安中路田甜粥屋对面</td></tr>
+<tr><td>✅B</td><td>喜悦荟24小时棋牌茶舍</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>69.00</td><td>云步街5号</td></tr>
+<tr><td>✅B</td><td>小麻雀24H自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>13.00</td><td>东街街道延安中路庙道巷160号和谐花园8号楼1-2层9B号</td></tr>
+<tr><td>✅B</td><td>麻卡卡棋牌24小时自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>13.00</td><td>西大街12号小飞象二楼</td></tr>
+<tr><td>✅B</td><td>四个朋友.自助棋牌(西大街长城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>18.00</td><td>潞州区西大街21号</td></tr>
+<tr><td>✅B</td><td>花姐四郎·24H自助棋牌室(永盛润景苑店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>11.00</td><td>永盛·润景苑(东北门)旁边</td></tr>
+<tr><td>⚠️</td><td>776实景密室逃脱(润发大厦店)(暂停营业)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>78.00</td><td>解放西街28号润发大厦17楼</td></tr>
+<tr><td>⚠️</td><td>迪斯迪KTV(华龙国际广场店)</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.2</td><td>41.00</td><td>西大街2号华龙国际广场4层</td></tr>
+<tr><td>⚠️</td><td>芒果KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>31.00</td><td>解放东街307号</td></tr>
+<tr><td>⚠️</td><td>雀侠24小时自助棋牌(长治城市生活家店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>14.00</td><td>城市生活家C2号楼1-2层62号</td></tr>
+<tr><td>⚠️</td><td>白日梦想家沉浸式体验剧场</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>—</td><td>潞州区西大街look长城商圈</td></tr>
+<tr><td>⚠️</td><td>鲸娱游戏沉浸式密室(君悦广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.0</td><td>93.00</td><td>长兴中路619号B1层</td></tr>
+<tr><td>⚠️</td><td>越狱猫密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>26.00</td><td>英雄中路378号2层摩登时代南侧旁</td></tr>
+<tr><td>⚠️</td><td>776实景真人密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>107.00</td><td>潞鼎广场</td></tr>
+<tr><td>⚠️</td><td>金莎娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>59.00</td><td>西街街道府西街金德利大厦A座负一层</td></tr>
+<tr><td>⚠️</td><td>小白的麻将小屋</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>16.00</td><td>紫金西街83号环保局对面</td></tr>
+<tr><td>⚠️</td><td>酷影密室逃脱(东大街城隍庙店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>100.00</td><td>东大街与长兴南路交叉口东北100米</td></tr>
+<tr><td>⚠️</td><td>金钻商务会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>—</td><td>长治市潞州区威远门中路18号</td></tr>
+<tr><td>⚠️</td><td>有局儿台球麻将茶饮休闲</td><td>其他娱乐场所</td><td>体育休闲服务;运动场馆;台球厅</td><td>3.9</td><td>—</td><td>太行西街街道太行公园东门地下库房</td></tr>
+<tr><td>⚠️</td><td>大四喜24H自助棋牌休闲空间(云步街店)</td><td>棋牌室</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.9</td><td>34.00</td><td>云步街与松树街交叉口北140米</td></tr>
+<tr><td>⚠️</td><td>桌球射箭麻将(君悦·新天地店)</td><td>其他娱乐场所</td><td>体育休闲服务;运动场馆;台球厅</td><td>3.9</td><td>—</td><td>长兴中路619号君悦·新天地B1层</td></tr>
+<tr><td>⚠️</td><td>酷影密室逃脱(阳光假日城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.8</td><td>82.00</td><td>东街街道东大街阳光假日城南区二楼</td></tr>
+<tr><td>⚠️</td><td>星月国际商务俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.8</td><td>251.00</td><td>景里街99号长治睿柏云酒店</td></tr>
+<tr><td>⚠️</td><td>华龙国际影城(英雄南路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>55.00</td><td>英雄南路1号华龙国际5层</td></tr>
+<tr><td>⚠️</td><td>胡麻自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.8</td><td>—</td><td>角沿街22号物资小区</td></tr>
+<tr><td>⚠️</td><td>新濠自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.7</td><td>29.00</td><td>紫金街道云步街10号楼22号房2楼1户</td></tr>
+<tr><td>⚠️</td><td>雀神·24小时棋牌馆(君悦·新天地店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.7</td><td>13.00</td><td>长兴中路619号君悦·新天地B1层</td></tr>
+<tr><td>⚠️</td><td>长子县雀友奇人休闲娱乐店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.6</td><td>19.00</td><td>皓瑜新天地一楼186号</td></tr>
+<tr><td>⚠️</td><td>星光大道KTV(紫坊村校前街)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.6</td><td>61.00</td><td>紫坊村校前街与太行南路交叉口西北20米</td></tr>
+<tr><td>⚠️</td><td>手痒痒24小时自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.6</td><td>24.00</td><td>延安中路267号</td></tr>
+<tr><td>⚠️</td><td>阳光假日影城(东大街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.5</td><td>33.00</td><td>阳光假日城B2-5</td></tr>
+</tbody></table></div>
+<p>（另 9 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（23 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>15</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>8</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>金宠园动物门诊</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>英雄中路街道府后东街丰裕苑小区</td></tr>
+<tr><td>✅B</td><td>长治有它萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>翟店镇西天贡村西头大舞台侧面</td></tr>
+<tr><td>✅B</td><td>萌宠乐园(漳沂店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>漳沂村南6巷妈妈驿站隔壁</td></tr>
+<tr><td>⚠️</td><td>FREE室内滑板公园</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>太行西街159号双创梦工厂13号文化区三楼西</td></tr>
+<tr><td>⚠️</td><td>迷你发型(桃园店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>紫金东街桃园村桃园幼儿园往南20米</td></tr>
+<tr><td>⚠️</td><td>口袋萌兽宠物园(潞鼎广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>太行西街街道太行西街潞鼎广场1层1012B</td></tr>
+<tr><td>⚠️</td><td>狗德猫宁宠物店</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>府东街146号</td></tr>
+<tr><td>⚠️</td><td>百果园(景苑华府店)</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>景里街59号景苑华府1号楼</td></tr>
+<tr><td>⚠️</td><td>老爷山景区动物参观区</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>上莲开发区695县道屯留老爷山风景区</td></tr>
+<tr><td>⚠️</td><td>欢乐太行谷动物岛</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>李东线欢乐太行谷内(东侧)</td></tr>
+<tr><td>⚠️</td><td>欢笑动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>石泉海田园艺术庄园东北侧220米</td></tr>
+<tr><td>⚠️</td><td>有间萌宠店</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>西大街人民公园东北侧约50米</td></tr>
+<tr><td>⚠️</td><td>A+室内蹦极</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>大辛庄街道捉马东大街91号长治职业技术学院(北校区)</td></tr>
+<tr><td>⚠️</td><td>迷你发型(景家庄店)</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>桃源村桃园后街博园幼儿园旁</td></tr>
+<tr><td>❌</td><td>仙堂山萌宠园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.6</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园(东营街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>东营街</td></tr>
+<tr><td>❌</td><td>迷你服饰(桃园中街)</td><td>其他儿童场所</td><td>独立</td><td>3.0</td><td>桃园中街与桃园庙后路交叉口西50米</td></tr>
+<tr><td>❌</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.0</td><td>沁河镇闫寨村山西·沁源水漾年华(西北角)</td></tr>
+<tr><td>❌</td><td>乐趣多</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.7</td><td>人民公园254号(原动物园东南角)</td></tr>
+<tr><td>❌</td><td>迷你超市(商贸街店)</td><td>其他儿童场所</td><td>独立</td><td>2.5</td><td>丹朱镇精卫中路商贸街教师进修校附近</td></tr>
+<tr><td>❌</td><td>迷你服饰</td><td>其他儿童场所</td><td>独立</td><td>2.1</td><td>五福巷与昌福巷交叉口北80米</td></tr>
+<tr><td>❌</td><td>迷你服饰(襄垣华丽港店)</td><td>其他儿童场所</td><td>独立</td><td>1.3</td><td>西街与府前路交叉口西100米</td></tr>
+<tr><td>⚠️</td><td>嘉园(保宁门西街)</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>城北西街116号</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（59 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达广场(长治高新店)</td><td>百货/商场</td><td>4.8</td><td>1</td><td>0</td><td>英雄北路222号</td></tr>
+<tr><td>✅A-</td><td>潞鼎广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>工农巷与太行西街交叉口西南100米</td></tr>
+<tr><td>✅A-</td><td>金威购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>潞华街道新华路(山水生活区对面)</td></tr>
+<tr><td>✅A-</td><td>八一百货大楼(英雄中路)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>英雄中路2号(近八一广场)</td></tr>
+<tr><td>✅A-</td><td>金威超市(长钢店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>钢城大街南华百姓大药房旁</td></tr>
+<tr><td>✅A-</td><td>博源超市(城东路店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>潞阳门中路198号</td></tr>
+<tr><td>✅A-</td><td>嘉汇购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>英雄中路东侧336号(英雄台公交站台对面)</td></tr>
+<tr><td>✅A-</td><td>金威商城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>1</td><td>东大街35号</td></tr>
+<tr><td>✅A-</td><td>沁芳汇生活广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>捉马西大街123号(沁芳苑南门23号楼)</td></tr>
+<tr><td>✅A-</td><td>凯德世家广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>凯德北巷与凯德中巷交叉口东南80米</td></tr>
+<tr><td>✅A-</td><td>华丽港购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>社区管理服务中心社区管理服务中心府前路</td></tr>
+<tr><td>✅B</td><td>好声音KTV(天马商场店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>天马商场4层</td></tr>
+<tr><td>✅B</td><td>华诺百货</td><td>百货/商场</td><td>4.5</td><td>1</td><td>0</td><td>英雄中路中营街3号</td></tr>
+<tr><td>✅B</td><td>金威超市(城南店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>英雄南路与五针路交叉口城南国际花园</td></tr>
+<tr><td>✅B</td><td>华丽港生活超市</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>新建路135号日月星辰小区</td></tr>
+<tr><td>✅B</td><td>家家利超市(武乡店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>丰州镇太行街140号</td></tr>
+<tr><td>❌</td><td>天马商场(英雄中路)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅B</td><td>金威名店</td><td>百货/商场</td><td>4.5</td><td>0</td><td>1</td><td>东大街8号</td></tr>
+<tr><td>✅B</td><td>百佳购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>英雄中路146号-204号</td></tr>
+<tr><td>✅B</td><td>东南购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>东大街80号</td></tr>
+<tr><td>✅B</td><td>君悦·新天地</td><td>百货/商场</td><td>4.5</td><td>0</td><td>1</td><td>长兴中路619号</td></tr>
+<tr><td>✅B</td><td>客都购物广场(潞城店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>中华街406客都超市1楼正西方向10米</td></tr>
+<tr><td>✅B</td><td>华联福美超市</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>羿神西大街与建设北路交叉口西北60米</td></tr>
+<tr><td>✅B</td><td>好又多超市(武乡店)</td><td>购物中心/综合体</td><td>4.4</td><td>1</td><td>0</td><td>太行街158号(佳禾购物广场)</td></tr>
+<tr><td>✅B</td><td>华丽港生活超市(客都店)</td><td>购物中心/综合体</td><td>4.4</td><td>1</td><td>0</td><td>古韩镇县西街29号</td></tr>
+<tr><td>✅B</td><td>长治市金鑫瓜果批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>府后西街265号(果品公司)院内左边</td></tr>
+<tr><td>✅B</td><td>华龙国际广场</td><td>百货/商场</td><td>4.4</td><td>0</td><td>1</td><td>东西大街与英雄路交叉口西南角</td></tr>
+<tr><td>✅B</td><td>龙兴超市(颐龙湾·世纪罗马城店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>西环路65号</td></tr>
+<tr><td>✅B</td><td>亚太奥特莱斯广场(亚太时尚广场店)</td><td>百货/商场</td><td>4.3</td><td>0</td><td>1</td><td>东大街1号</td></tr>
+<tr><td>⚠️</td><td>潮衣库2元精品百货(盛源商城店)</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>英雄中路韩国城西走50米潮衣库</td></tr>
+<tr><td>⚠️</td><td>襄垣百货大楼</td><td>百货/商场</td><td>4.1</td><td>1</td><td>0</td><td>古韩镇上寺南路8号</td></tr>
+<tr><td>⚠️</td><td>建宏五金电料建材日用百货</td><td>百货/商场</td><td>4.1</td><td>1</td><td>0</td><td>保宁门西街与防爆巷交叉口西南20米</td></tr>
+<tr><td>⚠️</td><td>虹桥家居奥特莱斯店</td><td>奥特莱斯</td><td>4.1</td><td>0</td><td>0</td><td>东外环路光大养殖园</td></tr>
+<tr><td>⚠️</td><td>万吉大厦服装批发城</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>莲市巷万吉大厦</td></tr>
+<tr><td>⚠️</td><td>大自然花卉批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>太行路94号交警队对面</td></tr>
+<tr><td>⚠️</td><td>开心购物商场</td><td>百货/商场</td><td>3.9</td><td>0</td><td>0</td><td>鲍店镇(农商银行对面)</td></tr>
+<tr><td>⚠️</td><td>海超水产海鲜冷冻批发</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>和谐北路与迎宾东街交叉口北200米</td></tr>
+<tr><td>⚠️</td><td>长治木材方木模板批发市场</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>凯丰市场钢材区三排2号-8号</td></tr>
+<tr><td>⚠️</td><td>蔬菜批发区</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>紫金西街长治农产品紫坊综合交易市场</td></tr>
+<tr><td>⚠️</td><td>金威商城B区</td><td>百货/商场</td><td>3.7</td><td>0</td><td>0</td><td>东大街8号</td></tr>
+<tr><td>⚠️</td><td>神隆生活广场</td><td>百货/商场</td><td>3.7</td><td>0</td><td>0</td><td>龙泉镇奋进大街神隆生活广场</td></tr>
+<tr><td>⚠️</td><td>上党区钢材批发市场</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>韩店镇韩川村村口南50米路东</td></tr>
+<tr><td>⚠️</td><td>义乌小商品批发城(长治市上党区)</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>韩店街道迎宾西街百货大楼负一楼</td></tr>
+<tr><td>⚠️</td><td>长钢钢材批发城</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>208国道与309国道交叉口东南100米</td></tr>
+<tr><td>⚠️</td><td>顺发钢材批发</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>麟降镇河北脑村国道309与省道228交叉口浩宇KTV南10米院内</td></tr>
+<tr><td>❌</td><td>新宇百货(兴华东街店)</td><td>百货/商场</td><td>3.4</td><td>0</td><td>0</td><td>兴华东街与东关路交叉口西40米</td></tr>
+<tr><td>❌</td><td>石圪节第一百货商场</td><td>百货/商场</td><td>3.4</td><td>0</td><td>0</td><td>故县街道中兴小区</td></tr>
+<tr><td>❌</td><td>东海海鲜批发部</td><td>批发城</td><td>3.4</td><td>0</td><td>0</td><td>紫坊农产品市场</td></tr>
+<tr><td>❌</td><td>长治市木材批发市场钢管租赁市场</td><td>批发城</td><td>3.4</td><td>0</td><td>0</td><td>西环路与长安街交叉口北200米</td></tr>
+<tr><td>❌</td><td>新建西街李芳蔬菜批发部</td><td>批发城</td><td>3.4</td><td>0</td><td>0</td><td>新建西街30号</td></tr>
+</tbody></table></div>
+<p>（另 9 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（3 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>云桂酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>44.00</td><td>英雄南路街道炉坊巷11号炉坊小区南区</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/DD08CCFB_A437_4420_BB27_F53624ECAFA7_L0_001_831_67_1772786586062_81146692.jpg"></td></tr>
+<tr><td>✅B</td><td>四个朋友·自助棋牌(农校东门店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>13.00</td><td>延安中路与庙道巷交叉口东北120米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/17eacc5a0c55639d933de9a754d0a5a1"></td></tr>
+<tr><td>⚠️</td><td>大四喜24H自助棋牌休闲空间(云步街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.9</td><td>34.00</td><td>云步街与松树街交叉口北140米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e54438fdaac4e34876f4062a2291f468"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>鑫源旅馆（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鑫源旅馆</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>心相印旅店</td><td>距离就近</td><td>16m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>德景旅店</td><td>距离就近</td><td>35m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>幸福旅店(角沿窑背后街店)</td><td>距离就近</td><td>35m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>客来福旅店</td><td>距离就近</td><td>57m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>地球村旅馆</td><td>距离就近</td><td>79m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>聚佳人旅店</td><td>距离就近</td><td>81m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>瑞祥旅店</td><td>距离就近</td><td>88m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>东南雀国粹技艺馆</td><td>距离就近</td><td>250m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>小白的麻将小屋</td><td>距离就近</td><td>380m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>新元素KTV(城西路店)</td><td>距离就近</td><td>449m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>金钻商务会所</td><td>距离就近</td><td>450m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>幸福旅店(角沿窑背后街店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幸福旅店(角沿窑背后街店)</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>德景旅店</td><td>距离就近</td><td>11m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>鑫源旅馆</td><td>距离就近</td><td>35m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>客来福旅店</td><td>距离就近</td><td>42m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>心相印旅店</td><td>距离就近</td><td>44m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>聚佳人旅店</td><td>距离就近</td><td>48m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>地球村旅馆</td><td>距离就近</td><td>48m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>瑞祥旅店</td><td>距离就近</td><td>66m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>东南雀国粹技艺馆</td><td>距离就近</td><td>242m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>小白的麻将小屋</td><td>距离就近</td><td>354m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>新元素KTV(城西路店)</td><td>距离就近</td><td>482m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>金钻商务会所</td><td>距离就近</td><td>484m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>德景旅店（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>德景旅店</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>幸福旅店(角沿窑背后街店)</td><td>距离就近</td><td>11m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>客来福旅店</td><td>距离就近</td><td>32m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>鑫源旅馆</td><td>距离就近</td><td>35m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>心相印旅店</td><td>距离就近</td><td>47m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>聚佳人旅店</td><td>距离就近</td><td>54m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>地球村旅馆</td><td>距离就近</td><td>56m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>瑞祥旅店</td><td>距离就近</td><td>76m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>东南雀国粹技艺馆</td><td>距离就近</td><td>232m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>小白的麻将小屋</td><td>距离就近</td><td>348m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>新元素KTV(城西路店)</td><td>距离就近</td><td>478m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>金钻商务会所</td><td>距离就近</td><td>479m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>长治祥瑞旅馆（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>长治祥瑞旅馆</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>非凡量贩式KTV</td><td>距离就近</td><td>407m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>嘉园(保宁门西街)</td><td>距离就近</td><td>524m</td><td>—</td><td>§11</td></tr>
+<tr><td>苏荷汇KTV(天空之城店)</td><td>距离就近</td><td>532m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>书苑宾馆(八一广场店)</td><td>距离就近</td><td>542m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>SOHO天空影城(天空之城店)</td><td>距离就近</td><td>563m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>乐居旅馆(长治医学院店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>乐居旅馆(长治医学院店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>潞州区悦歌汇派对空间</td><td>距离就近</td><td>150m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(长治高新店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(长治高新万达广场店)</td><td>名称互证</td><td>83m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>A+室内蹦极</td><td>距离就近</td><td>589m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>鑫鑫宾馆(东大街)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鑫鑫宾馆(东大街)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长子县雀友奇人休闲娱乐店</td><td>距离就近</td><td>398m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>财苑大厦(长兴中路)(暂停营业)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>财苑大厦(长兴中路)(暂停营业)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>木溪小院自助棋牌室</td><td>距离就近</td><td>160m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>萌宠乐园(东营街店)</td><td>距离就近</td><td>215m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>手痒痒24小时自助棋牌</td><td>距离就近</td><td>364m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>喜雀24小时自助棋牌馆</td><td>距离就近</td><td>486m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>鹏宇国际大酒店</td><td>距离就近</td><td>534m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>雀侠24小时自助棋牌(长治城市生活家店)</td><td>距离就近</td><td>567m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>喜悦荟24小时棋牌茶舍</td><td>距离就近</td><td>595m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(长治高新万达广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(长治高新万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>潞鼎广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>776实景真人密室逃脱</td><td>名称互证</td><td>34m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>口袋萌兽宠物园(潞鼎广场店)</td><td>名称互证</td><td>37m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>观华国际影城(长治店)</td><td>距离就近</td><td>47m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>金钻商务会所</td><td>距离就近</td><td>326m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>新元素KTV(城西路店)</td><td>距离就近</td><td>327m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>东南雀国粹技艺馆</td><td>距离就近</td><td>575m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>云桂酒店（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>云桂酒店</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>云桂酒店</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>迪斯迪KTV(华龙国际广场店)</td><td>距离就近</td><td>194m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>华龙国际影城(英雄南路店)</td><td>距离就近</td><td>207m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>中影星美国际影城(长治店)</td><td>距离就近</td><td>231m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>华夏国际4D影城(长治店)</td><td>距离就近</td><td>258m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麻卡卡棋牌24小时自助棋牌</td><td>距离就近</td><td>281m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>天宝纯K量贩</td><td>距离就近</td><td>338m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友.自助棋牌(西大街长城店)</td><td>距离就近</td><td>340m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>太行宾馆</td><td>距离就近</td><td>360m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>山竹独栋影舍</td><td>距离就近</td><td>390m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>山竹独栋影舍</td><td>距离就近</td><td>390m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>白日梦想家沉浸式体验剧场</td><td>距离就近</td><td>411m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>越狱猫密室逃脱</td><td>距离就近</td><td>425m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>云山宾馆(长兴南路)</td><td>距离就近</td><td>457m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>酷影密室逃脱(东大街城隍庙店)</td><td>距离就近</td><td>490m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>镁乐国际影城</td><td>距离就近</td><td>502m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>华夏国际4D影城(长治店)（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>华夏国际4D影城(长治店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>华龙国际影城(英雄南路店)</td><td>距离就近</td><td>103m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>迪斯迪KTV(华龙国际广场店)</td><td>距离就近</td><td>122m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>越狱猫密室逃脱</td><td>距离就近</td><td>173m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>麻卡卡棋牌24小时自助棋牌</td><td>距离就近</td><td>195m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>白日梦想家沉浸式体验剧场</td><td>距离就近</td><td>250m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>四个朋友.自助棋牌(西大街长城店)</td><td>距离就近</td><td>251m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>云桂酒店</td><td>距离就近</td><td>258m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>云桂酒店</td><td>距离就近</td><td>258m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>镁乐国际影城</td><td>距离就近</td><td>283m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>酷影密室逃脱(东大街城隍庙店)</td><td>距离就近</td><td>335m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>悦玺汇KTV</td><td>距离就近</td><td>372m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>天宝纯K量贩</td><td>距离就近</td><td>414m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>桌球射箭麻将(君悦·新天地店)</td><td>距离就近</td><td>442m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>鲸娱游戏沉浸式密室(君悦广场店)</td><td>距离就近</td><td>455m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雀神·24小时棋牌馆(君悦·新天地店)</td><td>距离就近</td><td>486m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>中影星美国际影城(长治店)</td><td>距离就近</td><td>486m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>好声音KTV(天马商场店)</td><td>距离就近</td><td>529m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>太行宾馆</td><td>距离就近</td><td>544m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>八一百货大楼(英雄中路)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>有局儿台球麻将茶饮休闲</td><td>距离就近</td><td>264m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>书苑宾馆(八一广场店)</td><td>距离就近</td><td>387m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>SOHO天空影城(天空之城店)</td><td>距离就近</td><td>457m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>K8 Blue K eightfz</td><td>距离就近</td><td>461m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>金广快捷酒店(长治八一广场店)</td><td>距离就近</td><td>489m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>苏荷汇KTV(天空之城店)</td><td>距离就近</td><td>523m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长治海底两万里球幕影院</td><td>距离就近</td><td>542m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>博源超市(城东路店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新濠自助棋牌</td><td>距离就近</td><td>486m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>大四喜24H自助棋牌休闲空间(云步街店)</td><td>距离就近</td><td>501m</td><td>3.9</td><td>§6</td></tr>
+<tr><td>大四喜24H自助棋牌休闲空间(云步街店)</td><td>距离就近</td><td>501m</td><td>3.9</td><td>§6</td></tr>
+<tr><td>花姐四郎·24H自助棋牌室(永盛润景苑店)</td><td>距离就近</td><td>505m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>喜悦荟24小时棋牌茶舍</td><td>距离就近</td><td>538m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>山西千文影业</td><td>距离就近</td><td>554m</td><td>1.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>嘉汇购物广场（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>好声音KTV(天马商场店)</td><td>距离就近</td><td>137m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>悦玺汇KTV</td><td>距离就近</td><td>143m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>越狱猫密室逃脱</td><td>距离就近</td><td>227m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>桌球射箭麻将(君悦·新天地店)</td><td>距离就近</td><td>229m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>鲸娱游戏沉浸式密室(君悦广场店)</td><td>距离就近</td><td>243m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雀神·24小时棋牌馆(君悦·新天地店)</td><td>距离就近</td><td>265m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>镁乐国际影城</td><td>距离就近</td><td>317m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>白日梦想家沉浸式体验剧场</td><td>距离就近</td><td>362m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>华夏国际4D影城(长治店)</td><td>距离就近</td><td>395m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>华龙国际影城(英雄南路店)</td><td>距离就近</td><td>457m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>麻卡卡棋牌24小时自助棋牌</td><td>距离就近</td><td>460m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友.自助棋牌(西大街长城店)</td><td>距离就近</td><td>460m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>酷影密室逃脱(东大街城隍庙店)</td><td>距离就近</td><td>460m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>鹏宇国际大酒店</td><td>距离就近</td><td>471m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>迪斯迪KTV(华龙国际广场店)</td><td>距离就近</td><td>477m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金威商城（21 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>华夏国际4D影城(长治店)</td><td>距离就近</td><td>95m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>华龙国际影城(英雄南路店)</td><td>距离就近</td><td>155m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>迪斯迪KTV(华龙国际广场店)</td><td>距离就近</td><td>165m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>云桂酒店</td><td>距离就近</td><td>215m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>云桂酒店</td><td>距离就近</td><td>215m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>越狱猫密室逃脱</td><td>距离就近</td><td>256m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>麻卡卡棋牌24小时自助棋牌</td><td>距离就近</td><td>264m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>镁乐国际影城</td><td>距离就近</td><td>287m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>酷影密室逃脱(东大街城隍庙店)</td><td>距离就近</td><td>296m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>天宝纯K量贩</td><td>距离就近</td><td>319m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友.自助棋牌(西大街长城店)</td><td>距离就近</td><td>327m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>白日梦想家沉浸式体验剧场</td><td>距离就近</td><td>341m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>中影星美国际影城(长治店)</td><td>距离就近</td><td>427m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>太行宾馆</td><td>距离就近</td><td>455m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>悦玺汇KTV</td><td>距离就近</td><td>460m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>桌球射箭麻将(君悦·新天地店)</td><td>距离就近</td><td>474m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>鲸娱游戏沉浸式密室(君悦广场店)</td><td>距离就近</td><td>486m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雀神·24小时棋牌馆(君悦·新天地店)</td><td>距离就近</td><td>514m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>云山宾馆(长兴南路)</td><td>距离就近</td><td>518m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>酷影密室逃脱(阳光假日城店)</td><td>距离就近</td><td>559m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>阳光假日影城(东大街店)</td><td>距离就近</td><td>578m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沁芳汇生活广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大隐独栋影院(府秀江南店)</td><td>距离就近</td><td>395m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>华丽港购物广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>迷你服饰(襄垣华丽港店)</td><td>距离就近</td><td>68m</td><td>1.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>书苑宾馆(八一广场店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>书苑宾馆(八一广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>SOHO天空影城(天空之城店)</td><td>距离就近</td><td>248m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>苏荷汇KTV(天空之城店)</td><td>距离就近</td><td>296m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长治海底两万里球幕影院</td><td>距离就近</td><td>371m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>非凡量贩式KTV</td><td>距离就近</td><td>450m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长治祥瑞旅馆</td><td>距离就近</td><td>542m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>有局儿台球麻将茶饮休闲</td><td>距离就近</td><td>577m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>好声音KTV(天马商场店)（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>好声音KTV(天马商场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>悦玺汇KTV</td><td>距离就近</td><td>208m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>桌球射箭麻将(君悦·新天地店)</td><td>距离就近</td><td>301m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>鲸娱游戏沉浸式密室(君悦广场店)</td><td>距离就近</td><td>310m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雀神·24小时棋牌馆(君悦·新天地店)</td><td>距离就近</td><td>320m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>越狱猫密室逃脱</td><td>距离就近</td><td>358m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>鹏宇国际大酒店</td><td>距离就近</td><td>398m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>镁乐国际影城</td><td>距离就近</td><td>440m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>白日梦想家沉浸式体验剧场</td><td>距离就近</td><td>458m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>华夏国际4D影城(长治店)</td><td>距离就近</td><td>529m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>四个朋友.自助棋牌(西大街长城店)</td><td>距离就近</td><td>563m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麻卡卡棋牌24小时自助棋牌</td><td>距离就近</td><td>573m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>酷影密室逃脱(东大街城隍庙店)</td><td>距离就近</td><td>581m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>华龙国际影城(英雄南路店)</td><td>距离就近</td><td>584m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>星聚派KTV（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星聚派KTV</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>1993自助式影院</td><td>距离就近</td><td>286m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>萌宠乐园(漳沂店)</td><td>距离就近</td><td>542m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星聚派KTV(科创城店)</td><td>名称互证</td><td>3228m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>四个朋友·自助棋牌(农校东门店)（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>四个朋友·自助棋牌(农校东门店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>四个朋友·自助棋牌(农校东门店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>小麻雀24H自助棋牌室</td><td>距离就近</td><td>163m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>阳光假日影城(东大街店)</td><td>距离就近</td><td>345m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>酷影密室逃脱(东大街城隍庙店)</td><td>距离就近</td><td>445m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>酷影密室逃脱(阳光假日城店)</td><td>距离就近</td><td>489m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>雀神·24小时棋牌馆(君悦·新天地店)</td><td>距离就近</td><td>489m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>鲸娱游戏沉浸式密室(君悦广场店)</td><td>距离就近</td><td>504m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>镁乐国际影城</td><td>距离就近</td><td>512m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>桌球射箭麻将(君悦·新天地店)</td><td>距离就近</td><td>516m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>金宠园动物门诊</td><td>距离就近</td><td>584m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>东南雀国粹技艺馆（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>东南雀国粹技艺馆</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>客来福旅店</td><td>距离就近</td><td>200m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>小白的麻将小屋</td><td>距离就近</td><td>214m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>德景旅店</td><td>距离就近</td><td>232m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>幸福旅店(角沿窑背后街店)</td><td>距离就近</td><td>242m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>鑫源旅馆</td><td>距离就近</td><td>250m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>聚佳人旅店</td><td>距离就近</td><td>254m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>心相印旅店</td><td>距离就近</td><td>265m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>地球村旅馆</td><td>距离就近</td><td>267m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>瑞祥旅店</td><td>距离就近</td><td>296m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>新元素KTV(城西路店)</td><td>距离就近</td><td>514m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>金钻商务会所</td><td>距离就近</td><td>514m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>胡麻自助棋牌室</td><td>距离就近</td><td>536m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>观华国际影城(长治店)</td><td>距离就近</td><td>553m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>华诺百货（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>长治妖姬棋牌·茶饮</td><td>距离就近</td><td>305m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>财苑大厦(长兴中路)(暂停营业)</td><td>距离就近</td><td>380m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>鹏宇国际大酒店</td><td>距离就近</td><td>435m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>萌宠乐园(东营街店)</td><td>距离就近</td><td>454m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>木溪小院自助棋牌室</td><td>距离就近</td><td>540m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金威超市(城南店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金伯爵主题婚礼酒店(长治店)</td><td>距离就近</td><td>56m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（36 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>瑞祥旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>角沿村上街14号</td></tr>
+<tr><td>✅A-</td><td>鑫源旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>角沿村南街东巷3号</td></tr>
+<tr><td>✅A-</td><td>幸福旅店(角沿窑背后街店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>角沿窑背后街与工农巷交叉口西240米</td></tr>
+<tr><td>✅A-</td><td>客来福旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>常青街道角沿村花园街4号</td></tr>
+<tr><td>✅A-</td><td>德景旅店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>城西路与紫金西街交叉口北200米巷内</td></tr>
+<tr><td>✅A-</td><td>聚佳人旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>紫金西街与威远门中路交叉口东200米</td></tr>
+<tr><td>✅A-</td><td>地球村旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>常青街道角沿村窑背前街</td></tr>
+<tr><td>✅A-</td><td>心相印旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>角沿村上街28号</td></tr>
+<tr><td>✅A-</td><td>长治源源贤居旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>紫坊村东街35号</td></tr>
+<tr><td>✅A-</td><td>长治祥瑞旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>高新区捉马村飞龙巷90号</td></tr>
+<tr><td>✅A-</td><td>乐居旅馆(长治医学院店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.8</td><td>—</td><td>东关街北二巷5号</td></tr>
+<tr><td>✅A-</td><td>爱情公寓</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>紫坊村村委会旁</td></tr>
+<tr><td>✅A-</td><td>鑫鑫宾馆(东大街)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>东大街东关岗楼东50米</td></tr>
+<tr><td>✅A-</td><td>财苑大厦(长兴中路)(暂停营业)</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.7</td><td>—</td><td>长兴中路305号(市中心市政府后门)</td></tr>
+<tr><td>✅A-</td><td>云桂酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>44.00</td><td>英雄南路街道炉坊巷11号炉坊小区南区</td></tr>
+<tr><td>✅A-</td><td>襄垣皇都宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>新建西路1号</td></tr>
+<tr><td>✅B</td><td>裕龙快捷酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>店上镇裕龙快捷酒店</td></tr>
+<tr><td>✅B</td><td>书苑宾馆(八一广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>潞州区潞州区太行西街省建巷6号</td></tr>
+<tr><td>✅B</td><td>尚客优酒店(黎城黎侯古城店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.5</td><td>—</td><td>黎侯古城96栋</td></tr>
+<tr><td>✅B</td><td>长治有家客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>淮海街165号邮政储蓄银行旁边</td></tr>
+<tr><td>✅B</td><td>长治紫明旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>紫金西街紫坊东街39号</td></tr>
+<tr><td>✅B</td><td>云山宾馆(长兴南路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>长兴南路62号</td></tr>
+<tr><td>✅B</td><td>振东宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>国税局旁</td></tr>
+<tr><td>⚠️</td><td>金伯爵主题婚礼酒店(长治店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜体育休闲服务;娱乐场所;娱乐场所｜餐饮服务;中餐厅;中餐厅</td><td>4.2</td><td>—</td><td>英雄南路360号</td></tr>
+<tr><td>⚠️</td><td>天脊宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>中华大街895号</td></tr>
+<tr><td>⚠️</td><td>鹏宇国际大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>—</td><td>长兴中路509号</td></tr>
+<tr><td>⚠️</td><td>沁源明日旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>北园村桃园街</td></tr>
+<tr><td>⚠️</td><td>国瑞宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.0</td><td>—</td><td>威远门北路35号</td></tr>
+<tr><td>⚠️</td><td>金广快捷酒店(长治八一广场店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.0</td><td>—</td><td>紫金西街5号</td></tr>
+<tr><td>⚠️</td><td>潞安宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.9</td><td>—</td><td>侯堡镇潞安大街(潞安集团办公大楼西侧)</td></tr>
+<tr><td>⚠️</td><td>长治春城旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>和平西街60号</td></tr>
+<tr><td>⚠️</td><td>云上四季酒店(平顺文卫路店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.7</td><td>—</td><td>如家华驿酒店</td></tr>
+<tr><td>⚠️</td><td>新兴旅馆(长治柏后村店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.7</td><td>—</td><td>柏后村新西街208号</td></tr>
+<tr><td>⚠️</td><td>沁州宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>东风街53号</td></tr>
+<tr><td>❌</td><td>太行宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>长兴南路61号院内</td></tr>
+<tr><td>❌</td><td>山竹独栋影舍</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.2</td><td>—</td><td>上南街小学南门正对面</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>11</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>7</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>6</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>4</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>8</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>3</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/长治市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>2 个 POI 无地址</strong>，需人工补：仙堂山萌宠园、天马商场(英雄中路)</li><li><input type="checkbox" disabled> <strong>2 个 POI 无评分</strong>，暂标 ⚠️：嘉园(保宁门西街)、山西虹桥奥特莱斯商贸有限公司</li><li><input type="checkbox" disabled> 儿童游乐 23 家，其中场内 1 家、独立 22 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 12 个区县：上党区、壶关县、屯留区、平顺县、武乡县、沁县、沁源县、潞城区、潞州区、襄垣县、长子县、黎城县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

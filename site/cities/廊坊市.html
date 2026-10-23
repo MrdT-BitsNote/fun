@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>廊坊市 · 河北省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/河北省.html">← 返回河北省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>廊坊市 · 河北省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:17:37  ·  POI 总量：217（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>217</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>98%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 115 · 成人娱乐 158 · 儿童娱乐 47 · 酒店 25 · 特产 2</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>河北省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>10 个</td></tr>
+<tr><td>街道/镇/乡</td><td>110 个</td></tr>
+<tr><td>区县构成</td><td>县×5、县级市×2、市辖区×2、自治县×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>广阳区</td><td>95</td><td>44%</td></tr>
+<tr><td>安次区</td><td>41</td><td>19%</td></tr>
+<tr><td>三河市</td><td>35</td><td>16%</td></tr>
+<tr><td>固安县</td><td>16</td><td>7%</td></tr>
+<tr><td>香河县</td><td>8</td><td>4%</td></tr>
+<tr><td>霸州市</td><td>7</td><td>3%</td></tr>
+<tr><td>大厂回族自治县</td><td>6</td><td>3%</td></tr>
+<tr><td>大城县</td><td>4</td><td>2%</td></tr>
+<tr><td>永清县</td><td>4</td><td>2%</td></tr>
+<tr><td>文安县</td><td>1</td><td>0%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（115 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>50</td></tr>
+<tr><td>购物中心/综合体</td><td>29</td></tr>
+<tr><td>批发城</td><td>17</td></tr>
+<tr><td>百货/商场</td><td>9</td></tr>
+<tr><td>商业街</td><td>5</td></tr>
+<tr><td>奥特莱斯</td><td>3</td></tr>
+<tr><td>步行街</td><td>2</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（115 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>万达广场(廊坊广阳店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>15</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>万达影城(廊坊万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>15</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>明珠超市(总店百货)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>13</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>燕郊永旺梦乐城</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>三河金廷宾馆</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>信誉楼百货(大城店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>沃尔玛超市</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(廊坊燕郊上上城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>固安永定城</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>鑫乐汇购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>天洋广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>廊坊安次万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新朝阳购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万向城商场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>燕郊明润广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宝德购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>尚京广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>尚街时代广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>星罗城购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>富达购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>燕达东方广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>固安悦涞汇购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>盛世金柜KTV(新世纪步行街第八大街)</td><td>步行街</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>蓝色火焰(k歌)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华谊兄弟影院(廊坊万向城店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中都影城(廊坊店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>7+影城(格林时代广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达影城(廊坊安次万达广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万汇广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华联香百超市(香百店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>保龙仓超市(廊坊总店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>京客隆超市(廊坊店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>京东折扣超市(固安尚品爱购店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>元辰超市(北昌店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>物美超市(天洋城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>明珠超市(金源店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>物美超市(固安宝德店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>廊坊新发地农贸产品批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>廊坊北方农贸批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>行宫农贸批发市场(行宫西大街)</td><td>商业街</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>万达广场(廊坊广阳店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：新华路50号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 15 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(廊坊广阳店)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>万达影城(廊坊万达广场店)、廊坊明珠影剧院(新华路店)、万达影城(廊坊安次万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>塔罗动物园</td></tr>
+</tbody></table></div>
+<h3>万达影城(廊坊万达广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 16 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：新华路50号万达广场F座4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 15 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(廊坊万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>万达影城(廊坊万达广场店)、廊坊明珠影剧院(新华路店)、万达影城(廊坊安次万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>塔罗动物园</td></tr>
+</tbody></table></div>
+<h3>明珠超市(总店百货) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 2</li><li><strong>载体类型</strong>：百货/商场（购物服务;超级市场;超市｜购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：新华路43号明珠大厦1层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 1 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>明珠超市(总店百货)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>万达影城(廊坊万达广场店)、廊坊明珠影剧院(新华路店)、酷秀KTV·派对(廊坊万达店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>塔罗动物园</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>廊坊宾馆、华美旅馆(廊坊新华路店)</td></tr>
+</tbody></table></div>
+<h3>燕郊永旺梦乐城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：102国道27号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>燕郊永旺梦乐城</td></tr>
+</tbody></table></div>
+<h3>三河金廷宾馆 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：燕郊镇海油大街华北科技学院北门东200米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>三河金廷宾馆</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>三河金廷宾馆、三河贝美旅店</td></tr>
+</tbody></table></div>
+<h3>信誉楼百货(大城店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;商场｜餐饮服务;餐饮相关场所;餐饮相关）</li><li><strong>地址</strong>：正大街与东环北路交叉口东北100米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>信誉楼百货(大城店)</td></tr>
+</tbody></table></div>
+<h3>沃尔玛超市 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;沃尔玛）</li><li><strong>地址</strong>：爱民东道111号新朝阳购物中心F2</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沃尔玛超市</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>中影影城、廊坊市唐汇文化娱乐有限公司、万达影城(新朝阳店)</td></tr>
+</tbody></table></div>
+<h3>永辉超市(廊坊燕郊上上城店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：燕郊开发区学院大街北侧成福澜苑44号楼商贸</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>永辉超市(廊坊燕郊上上城店)</td></tr>
+</tbody></table></div>
+<h3>固安永定城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（购物服务;综合市场;综合市场）</li><li><strong>地址</strong>：廊涿高速东湾出口</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>固安永定城</td></tr>
+</tbody></table></div>
+<h3>鑫乐汇购物广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;商场）</li><li><strong>地址</strong>：燕郊开发区神威北路与燕灵路交叉口</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>鑫乐汇购物广场</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>神密实景密室逃脱</td></tr>
+</tbody></table></div>
+<h3>天洋广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：燕郊规划路北侧汉王路西侧</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>天洋广场</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>Poker Face剧本杀密室(天洋广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>星贝萌宠园</td></tr>
+</tbody></table></div>
+<h3>廊坊安次万达广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：常甫路139号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>廊坊安次万达广场</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>万达影城(廊坊安次万达广场店)、答麦量贩式KTV(安次万达店)</td></tr>
+</tbody></table></div>
+<h3>新朝阳购物中心 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：爱民东道111号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>新朝阳购物中心</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>中影影城、廊坊市唐汇文化娱乐有限公司、万达影城(新朝阳店)</td></tr>
+</tbody></table></div>
+<h3>万向城商场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场｜购物服务;商场;购物中心）</li><li><strong>地址</strong>：裕华路145号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万向城商场</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>华谊兄弟影院(廊坊万向城店)、嗨度·品唱量贩式KTV、东喜发财棋牌</td></tr>
+</tbody></table></div>
+<h3>燕郊明润广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜购物服务;商场;普通商场）</li><li><strong>地址</strong>：燕顺路与华堂街交叉口西南角</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>燕郊明润广场</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（158 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>密室逃脱/剧本杀</td><td>20</td></tr>
+<tr><td>其他娱乐场所</td><td>17</td></tr>
+<tr><td>棋牌室</td><td>17</td></tr>
+<tr><td>电影院</td><td>15</td></tr>
+<tr><td>KTV</td><td>11</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(廊坊万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>41.00</td><td>新华路50号万达广场F座4层</td></tr>
+<tr><td>✅A-</td><td>盛世金柜KTV(新世纪步行街第八大街)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>43.00</td><td>廊万路25号</td></tr>
+<tr><td>✅A-</td><td>蓝色火焰(k歌)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>56.00</td><td>新世纪步行街第四大街北外街(肯德基往东50米)</td></tr>
+<tr><td>✅A-</td><td>酷秀KTV·派对(嘉华港湾店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;棋牌室｜体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>61.00</td><td>北凤道新开路交口嘉华港湾1层1-1-102(星巴克旁)</td></tr>
+<tr><td>✅A-</td><td>华谊兄弟影院(廊坊万向城店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>46.00</td><td>广阳道与裕华路交口万向城商场4层</td></tr>
+<tr><td>✅A-</td><td>香格俪舍影城(永兴明珠店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>41.00</td><td>永兴路幸福天地润园S1-4层</td></tr>
+<tr><td>✅A-</td><td>廊坊明珠影剧院(新华路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>27.00</td><td>新华路45号</td></tr>
+<tr><td>✅A-</td><td>中都影城(廊坊店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>24.00</td><td>北凤道与新开路交叉口盛德金地商场3层</td></tr>
+<tr><td>✅A-</td><td>7+影城(格林时代广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>21.00</td><td>解放道格林时代广场3层</td></tr>
+<tr><td>✅A-</td><td>金棕榈国际影城(大学城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>22.00</td><td>毕升路东方商厦2层</td></tr>
+<tr><td>✅A-</td><td>万达影城(廊坊安次万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>52.00</td><td>北史家务镇常甫路139号安次万达广场4层</td></tr>
+<tr><td>✅B</td><td>Poker Face剧本杀密室(天洋广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>111.00</td><td>亚泰大街天洋广场B馆2层</td></tr>
+<tr><td>✅B</td><td>嗨度·品唱量贩式KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>55.00</td><td>廊坊市广阳区华夏幸福城雅园26-1-120(原大合唱三楼)</td></tr>
+<tr><td>✅B</td><td>K米K歌·派对KTV(北昌店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>85.00</td><td>育才路122号</td></tr>
+<tr><td>✅B</td><td>酷秀KTV·派对(廊坊万达店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>30.00</td><td>新华路50号万达广场2号门优衣库旁电梯3层</td></tr>
+<tr><td>✅B</td><td>壹佰影城(壹佰文创大厦店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>31.00</td><td>光明西道196号壹佰剧院5层</td></tr>
+<tr><td>✅B</td><td>金棕榈国际影城(狮子城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>18.00</td><td>狮子城S5</td></tr>
+<tr><td>✅B</td><td>横店电影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>尚品爱购城市广场四楼</td></tr>
+<tr><td>✅B</td><td>鑫苑星空影城(固安店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>33.00</td><td>新中东街102号宝德购物中心5层</td></tr>
+<tr><td>✅B</td><td>久雀棋牌室幸福城欣园运营中心店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>17.00</td><td>幸福城欣园临街商铺3号楼4楼101E</td></tr>
+<tr><td>✅B</td><td>十三幺棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>30.00</td><td>新世纪步行街第五大街商业街坊H101号商铺二层</td></tr>
+<tr><td>✅B</td><td>番喜24小时自助棋牌室(五大街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>14.00</td><td>第五大街创意广场2楼H108,H115</td></tr>
+<tr><td>✅B</td><td>番喜24H自助棋牌(丹枫园店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>14.00</td><td>南尖塔镇孔雀丹枫园25号楼底商二层</td></tr>
+<tr><td>✅B</td><td>魅KTV·AI辅唱(月色广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>52.00</td><td>新华路与康宁道交叉口东南80米</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(月色广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>55.00</td><td>新华路57号月色广场地下B1层</td></tr>
+<tr><td>✅B</td><td>廊坊天洛</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>—</td><td>新源道街道北凤道203号</td></tr>
+<tr><td>✅B</td><td>廊坊市唐汇文化娱乐有限公司</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>55.00</td><td>新开路街道和平路138号乐晟广场3楼</td></tr>
+<tr><td>✅B</td><td>中影影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>32.00</td><td>新朝阳广场二期地下一层</td></tr>
+<tr><td>✅B</td><td>东喜发财棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>29.00</td><td>燕青大厦2层</td></tr>
+<tr><td>✅B</td><td>麻哦24H自助棋牌(幸福城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>12.00</td><td>幸福城雅园23号楼北侧底商(丽枫酒店南50米浩鲨游泳馆进门左拐)</td></tr>
+<tr><td>✅B</td><td>番喜24小时自助棋牌(幸福城店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>12.00</td><td>永兴北路幸福城润园S5B-1-102</td></tr>
+<tr><td>✅B</td><td>麻上发财24小时棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>15.00</td><td>北凤道99号凯悦花园15-16-113</td></tr>
+<tr><td>✅B</td><td>临熙沉浸式演绎密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.3</td><td>109.00</td><td>万达金街北外街A1-5</td></tr>
+<tr><td>✅B</td><td>熊猫先生密室逃脱(方舟店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>86.00</td><td>燕郊经济开发区方舟广场172号(麦当劳南门西行100米)</td></tr>
+<tr><td>✅B</td><td>熊猫先生密室逃脱(33号街区店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>117.00</td><td>燕郊经济技术开发区迎宾路33号商业街三层</td></tr>
+<tr><td>✅B</td><td>神密实景密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>105.00</td><td>燕灵路燕郊壹号2楼</td></tr>
+<tr><td>✅B</td><td>答麦量贩式KTV(安次万达店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>96.00</td><td>常甫路139号廊坊安次万达广场F4层</td></tr>
+<tr><td>✅B</td><td>橙天威丽斯影城(月色广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>41.00</td><td>月色广场4层东北角</td></tr>
+<tr><td>✅B</td><td>育鑫影视城</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>37.00</td><td>内裕华街98号</td></tr>
+<tr><td>✅B</td><td>逐麓24小时自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>33.00</td><td>永兴北路126号幸福城雅园23号楼写字楼708室</td></tr>
+<tr><td>⚠️</td><td>谜局密室逃脱(二店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.2</td><td>85.00</td><td>文明路万达广场南区底商-1-1(万达嘉华酒店后身)</td></tr>
+<tr><td>⚠️</td><td>四方朋友KTV(廊坊师范学院店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>18.00</td><td>爱民西道与大庆路交叉口东北40米</td></tr>
+<tr><td>⚠️</td><td>第六频道主题密室(一店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>87.00</td><td>万达金街北外街A1-30号</td></tr>
+<tr><td>⚠️</td><td>迷雾·沉浸式超级密室逃脱(固安店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>87.00</td><td>尚品馨界14栋</td></tr>
+<tr><td>⚠️</td><td>万达影城(新朝阳店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>—</td><td>新朝阳购物中心2期B1层</td></tr>
+<tr><td>⚠️</td><td>出来玩麻24小时自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>23.00</td><td>燕青大厦五楼503</td></tr>
+<tr><td>⚠️</td><td>胡上乐24h自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>36.00</td><td>第六大街4号楼1单元403室</td></tr>
+<tr><td>⚠️</td><td>响袋24小时自助台球棋牌(银河领域店)</td><td>棋牌室</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.1</td><td>—</td><td>银河领域西门南60米</td></tr>
+<tr><td>⚠️</td><td>彼岸密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.0</td><td>74.00</td><td>芳清道53号</td></tr>
+<tr><td>⚠️</td><td>天马汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>500.00</td><td>新安里与解放道交叉口西南120米</td></tr>
+<tr><td>⚠️</td><td>妖姬24小时自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>24.00</td><td>峰尚中心</td></tr>
+<tr><td>⚠️</td><td>伍合俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>25.00</td><td>幸福城润园22-1-103</td></tr>
+<tr><td>⚠️</td><td>雀跃24h自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>14.00</td><td>西昌路与新源道交叉口东北180米</td></tr>
+<tr><td>⚠️</td><td>悦麻24h共享棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>—</td><td>六大街南外街痘院长上大步梯二楼东侧第一家</td></tr>
+<tr><td>⚠️</td><td>神密·密室逃脱(潘神三店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>88.00</td><td>新华路50号万达广场廊坊广阳店1F层</td></tr>
+<tr><td>⚠️</td><td>第六频道主题密室(二店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>91.00</td><td>廊坊金街A1-20号</td></tr>
+<tr><td>⚠️</td><td>宙斯密室(荣美购物店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>84.00</td><td>文安镇永定路荣美购物中心6楼</td></tr>
+<tr><td>⚠️</td><td>6号街区真人密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>56.00</td><td>霸州镇建设东道中心市场东侧街南口往里66米</td></tr>
+<tr><td>⚠️</td><td>魔法猫密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>54.00</td><td>裕丰街76号</td></tr>
+<tr><td>⚠️</td><td>咪果儿主题私人影院第九街区密室逃脱(胜芳店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>95.00</td><td>胜芳镇北环路良环里第一排</td></tr>
+</tbody></table></div>
+<p>（另 20 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（47 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>31</td></tr>
+<tr><td>其他儿童场所</td><td>11</td></tr>
+<tr><td>亲子乐园</td><td>4</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>京廊七彩童话亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.7</td><td>廊万路168号</td></tr>
+<tr><td>✅A-</td><td>东玺亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.6</td><td>夏垫镇北坞四村西东玺庄园</td></tr>
+<tr><td>✅A-</td><td>乐宠森林-遛狗公园</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>燕郊镇东柳河屯村</td></tr>
+<tr><td>✅B</td><td>科林探秘乐园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>蒋谭路81号</td></tr>
+<tr><td>✅B</td><td>儿童公园</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>固安镇剑桥郡万和园</td></tr>
+<tr><td>✅B</td><td>梦想家儿童乐园</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.5</td><td>燕福达建材家居广场南侧</td></tr>
+<tr><td>✅B</td><td>宜宠宠物寄养中心</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>发盖子村</td></tr>
+<tr><td>✅B</td><td>抓马宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>廊坊市经济技术开发区凤舞道</td></tr>
+<tr><td>✅B</td><td>众乐亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>燕郊镇亿丰大街31号</td></tr>
+<tr><td>✅B</td><td>丁木鹦鹉</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>小曹庄西855米</td></tr>
+<tr><td>✅B</td><td>行华宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>双马路与和谐路交叉口东380米</td></tr>
+<tr><td>⚠️</td><td>域见颐和萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>大香线与福寿街交叉口西460米</td></tr>
+<tr><td>⚠️</td><td>嘉友萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>祁各庄镇大小辛村西151号</td></tr>
+<tr><td>⚠️</td><td>宠悦乐园宠物生活馆</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>银河南路371号</td></tr>
+<tr><td>⚠️</td><td>萌宠星级店(新源西街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>金海太阳公园二期西区南门东南200米</td></tr>
+<tr><td>⚠️</td><td>宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>裕丰中街127号花苑小区(裕丰街)</td></tr>
+<tr><td>⚠️</td><td>欢乐动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>广阳道与西昌路交汇处自然公园东区</td></tr>
+<tr><td>⚠️</td><td>六北定植物园动物区</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>泃阳镇六道曹村西南</td></tr>
+<tr><td>⚠️</td><td>靓宠乐园(东安店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>东安商城东门南90米</td></tr>
+<tr><td>⚠️</td><td>塔罗动物园</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.8</td><td>新华路万达广场6楼</td></tr>
+<tr><td>⚠️</td><td>猛兽区</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>⚠️</td><td>杨家寨动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.6</td><td>渠庆线</td></tr>
+<tr><td>⚠️</td><td>艺童年亲子乐园</td><td>亲子乐园</td><td>独立</td><td>3.5</td><td>蒋谭线与幸福路交叉口东</td></tr>
+<tr><td>❌</td><td>孔雀园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>欢乐动物园</td></tr>
+<tr><td>❌</td><td>星贝萌宠园</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.3</td><td>天洋广场C馆东侧</td></tr>
+<tr><td>❌</td><td>白化孟加拉虎</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>缅甸蟒</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>鹦鹉乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.0</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>陆龟(苏卡达龟)</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.9</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>欢乐动物园-标本展区</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.8</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>鸵鸟</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.8</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>羊驼</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.8</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>狒狒</td><td>其他儿童场所</td><td>独立</td><td>2.8</td><td>广阳道与西昌路交汇处自然公园东区猴岛内(北侧)</td></tr>
+<tr><td>❌</td><td>虎皮鹦鹉</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.7</td><td>欢乐动物园内</td></tr>
+<tr><td>❌</td><td>丹顶鹤</td><td>其他儿童场所</td><td>独立</td><td>2.7</td><td>广阳道与西昌路交汇处自然公园东区猴岛内(南侧)</td></tr>
+<tr><td>❌</td><td>小阳阳小小宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.6</td><td>京丰花鸟鱼虫基地西1门旁</td></tr>
+<tr><td>❌</td><td>鳄鱼馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.6</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>秃鹫</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.5</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>海豹表演</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.5</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>扬子鳄</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.3</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>泰鳄</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.3</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>红尾</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.0</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>玳瑁</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.0</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>❌</td><td>金龟赐福</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.0</td><td>广阳道与西昌路交汇处自然公园东区欢乐动物园</td></tr>
+<tr><td>⚠️</td><td>廊坊市自然公园-欢乐动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>欢乐动物园</td></tr>
+<tr><td>⚠️</td><td>廊坊市自然公园-欢乐动物园停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>欢乐动物园</td></tr>
+<tr><td>⚠️</td><td>K2狮子城海棠园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>常青路k2号</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（58 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达广场(廊坊广阳店)</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>新华路50号</td></tr>
+<tr><td>✅A-</td><td>燕郊永旺梦乐城</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>102国道27号</td></tr>
+<tr><td>✅A-</td><td>信誉楼百货(大城店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>正大街与东环北路交叉口东北100米</td></tr>
+<tr><td>✅A-</td><td>沃尔玛超市</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>爱民东道111号新朝阳购物中心F2</td></tr>
+<tr><td>✅A-</td><td>永辉超市(廊坊燕郊上上城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>燕郊开发区学院大街北侧成福澜苑44号楼商贸</td></tr>
+<tr><td>✅A-</td><td>鑫乐汇购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>燕郊开发区神威北路与燕灵路交叉口</td></tr>
+<tr><td>✅A-</td><td>天洋广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>燕郊规划路北侧汉王路西侧</td></tr>
+<tr><td>✅A-</td><td>廊坊安次万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>常甫路139号</td></tr>
+<tr><td>✅A-</td><td>新朝阳购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>爱民东道111号</td></tr>
+<tr><td>✅A-</td><td>万向城商场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>裕华路145号</td></tr>
+<tr><td>✅A-</td><td>燕郊明润广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>燕顺路与华堂街交叉口西南角</td></tr>
+<tr><td>✅A-</td><td>宝德购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>新中东街102号宝德购物中心6层</td></tr>
+<tr><td>✅A-</td><td>尚京广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>学院大街与燕昌路交汇处</td></tr>
+<tr><td>✅A-</td><td>尚街时代广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>学院大街与燕昌路交叉口东220米</td></tr>
+<tr><td>✅A-</td><td>星罗城购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>燕顺路99号</td></tr>
+<tr><td>✅A-</td><td>富达购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>迎宾北路2号</td></tr>
+<tr><td>✅A-</td><td>燕达东方广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>燕顺路与化工大街交叉口</td></tr>
+<tr><td>✅A-</td><td>固安悦涞汇购物中心</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>高新区孔雀大道与国泰路交叉口东200米路南</td></tr>
+<tr><td>✅A-</td><td>万汇广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>新中街与106国道交汇处</td></tr>
+<tr><td>✅A-</td><td>华联香百超市(香百店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新开街38号</td></tr>
+<tr><td>✅A-</td><td>保龙仓超市(廊坊总店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新开路13号</td></tr>
+<tr><td>✅A-</td><td>京客隆超市(廊坊店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新华路100号</td></tr>
+<tr><td>✅A-</td><td>京东折扣超市(固安尚品爱购店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>固安镇永定路25号尚品爱购店地下一层</td></tr>
+<tr><td>✅A-</td><td>元辰超市(北昌店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>爱民西道86号</td></tr>
+<tr><td>✅A-</td><td>明珠超市(总店百货)</td><td>百货/商场</td><td>4.6</td><td>1</td><td>0</td><td>新华路43号明珠大厦1层</td></tr>
+<tr><td>✅A-</td><td>物美超市(天洋城店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>燕郊开发区迎宾路东侧规划路天洋广场南楼C座B1层</td></tr>
+<tr><td>✅A-</td><td>明珠超市(金源店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>金源道艾力枫社A幢</td></tr>
+<tr><td>✅A-</td><td>物美超市(固安宝德店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新中东街102号宝德购物中心B1层</td></tr>
+<tr><td>✅A-</td><td>廊坊新发地农贸产品批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>新开路与光明东道交叉口西南300米</td></tr>
+<tr><td>✅A-</td><td>廊坊北方农贸批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>南龙道与和平路交叉口</td></tr>
+<tr><td>✅A-</td><td>刘园蔬菜批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>永定路东</td></tr>
+<tr><td>✅B</td><td>明珠超市(永兴店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>南尖塔镇永兴北路与新源道交叉口明珠大厦3层</td></tr>
+<tr><td>✅B</td><td>明珠超市(霸州店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>兴华南路74号</td></tr>
+<tr><td>✅B</td><td>明珠超市(广阳店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>银河北路98号明珠大厦F1层</td></tr>
+<tr><td>✅B</td><td>明珠超市(兴安店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>银河南路118号</td></tr>
+<tr><td>✅B</td><td>马公庄农副产品批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>371省道</td></tr>
+<tr><td>✅B</td><td>悦汇购物广场(万汇商场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>固安镇新中街天照万汇购物广场西侧胡同底商</td></tr>
+<tr><td>✅B</td><td>晨光百货</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>西外环路东侧永安路西侧8号</td></tr>
+<tr><td>✅B</td><td>百侬花鸟批发电商基地</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>北尖塔村20号</td></tr>
+<tr><td>✅B</td><td>城美韦斯特服装批发城</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>京哈公路102国道144号</td></tr>
+<tr><td>⚠️</td><td>汇聚奥特莱斯(汉王路店)(装修中)</td><td>奥特莱斯</td><td>4.0</td><td>0</td><td>0</td><td>汇聚奥特莱斯汉王路店东南门旁</td></tr>
+<tr><td>⚠️</td><td>黄金奥特莱斯</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>草场路以东六间房街以南高辛庄路以西</td></tr>
+<tr><td>⚠️</td><td>船鲜升海鲜批发</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>广阳道205号锦绣花苑</td></tr>
+<tr><td>⚠️</td><td>廊坊市批发木方模板木材市场</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>北环道374号</td></tr>
+<tr><td>⚠️</td><td>陆军木业批发木方模板木材市场</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>北环道374号</td></tr>
+<tr><td>⚠️</td><td>新品界服装批发商城(万采路店)</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>万采路东福隆超市北50米</td></tr>
+<tr><td>⚠️</td><td>奥特莱斯名品汇&amp;喜临门新渠道运营中心</td><td>奥特莱斯</td><td>3.7</td><td>0</td><td>0</td><td>唐能加油站西南侧230米</td></tr>
+<tr><td>⚠️</td><td>玛娃奥特莱斯(润旭商城店)(装修中)</td><td>百货/商场</td><td>3.7</td><td>0</td><td>0</td><td>燕郊经济开发区润旭商城2层</td></tr>
+<tr><td>⚠️</td><td>云鹏冷冻(廊坊市蔬源农副产品批发市场店)</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>北旺乡爱民东路蔬源蔬菜批发市场水产厅西门</td></tr>
+<tr><td>⚠️</td><td>小芳蔬菜-批发零售</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>北方农贸批发市场二期</td></tr>
+</tbody></table></div>
+<p>（另 8 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（2 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>春燕干鲜果品批发部</td><td>购物服务;专卖店;土特产专卖店</td><td>3.5</td><td>北方农贸批发市场</td></tr>
+<tr><td>❌</td><td>丰双蔬菜批发厂</td><td>公司企业;公司企业;公司企业</td><td>3.1</td><td>光明东道25号新发地智慧农港菌菇特产厅027号</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>万达广场(廊坊广阳店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>飞越世界球幕悬空飞行影院</td><td>距离就近</td><td>68m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>塔罗动物园</td><td>名称互证</td><td>76m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>万达影城(廊坊万达广场店)</td><td>名称互证</td><td>95m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>酷秀KTV·派对(廊坊万达店)</td><td>名称互证</td><td>122m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>第六频道主题密室(一店)</td><td>距离就近</td><td>151m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>神密·密室逃脱(潘神三店)</td><td>名称互证</td><td>152m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>梦想空间点播影院(廊坊万达店)</td><td>距离就近</td><td>156m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>第六频道主题密室(二店)</td><td>距离就近</td><td>156m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>临熙沉浸式演绎密室逃脱</td><td>距离就近</td><td>156m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(月色广场店)</td><td>距离就近</td><td>162m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>橙天威丽斯影城(月色广场店)</td><td>距离就近</td><td>175m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>谜局密室逃脱(二店)</td><td>名称互证</td><td>209m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(月色广场店)</td><td>距离就近</td><td>241m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>廊坊明珠影剧院(新华路店)</td><td>距离就近</td><td>296m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>答麦量贩式KTV(安次万达店)</td><td>名称互证</td><td>3362m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>万达影城(廊坊安次万达广场店)</td><td>名称互证</td><td>3380m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>三河金廷宾馆（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>三河金廷宾馆</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>三河贝美旅店</td><td>距离就近</td><td>371m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(廊坊万达广场店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(廊坊万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>塔罗动物园</td><td>距离就近</td><td>40m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>酷秀KTV·派对(廊坊万达店)</td><td>距离就近</td><td>45m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>飞越世界球幕悬空飞行影院</td><td>距离就近</td><td>92m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>临熙沉浸式演绎密室逃脱</td><td>距离就近</td><td>99m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>神密·密室逃脱(潘神三店)</td><td>距离就近</td><td>120m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>第六频道主题密室(一店)</td><td>距离就近</td><td>126m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>第六频道主题密室(二店)</td><td>距离就近</td><td>131m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(月色广场店)</td><td>距离就近</td><td>140m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>梦想空间点播影院(廊坊万达店)</td><td>距离就近</td><td>143m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>橙天威丽斯影城(月色广场店)</td><td>距离就近</td><td>166m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(月色广场店)</td><td>距离就近</td><td>237m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>谜局密室逃脱(二店)</td><td>距离就近</td><td>298m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>廊坊明珠影剧院(新华路店)</td><td>距离就近</td><td>312m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(新朝阳店)</td><td>名称互证</td><td>1524m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>万达影城(廊坊安次万达广场店)</td><td>名称互证</td><td>3440m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沃尔玛超市（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(新朝阳店)</td><td>距离就近</td><td>176m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>中影影城</td><td>距离就近</td><td>177m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>廊坊市唐汇文化娱乐有限公司</td><td>距离就近</td><td>184m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>鑫乐汇购物广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>神密实景密室逃脱</td><td>距离就近</td><td>121m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>天洋广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Poker Face剧本杀密室(天洋广场店)</td><td>名称互证</td><td>51m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星贝萌宠园</td><td>名称互证</td><td>81m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>廊坊安次万达广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>答麦量贩式KTV(安次万达店)</td><td>名称互证</td><td>66m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>万达影城(廊坊安次万达广场店)</td><td>名称互证</td><td>78m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新朝阳购物中心（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(新朝阳店)</td><td>名称互证</td><td>172m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>中影影城</td><td>距离就近</td><td>173m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>廊坊市唐汇文化娱乐有限公司</td><td>距离就近</td><td>188m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万向城商场（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>华谊兄弟影院(廊坊万向城店)</td><td>名称互证</td><td>42m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>东喜发财棋牌</td><td>距离就近</td><td>263m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>出来玩麻24小时自助棋牌</td><td>距离就近</td><td>263m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>嗨度·品唱量贩式KTV</td><td>距离就近</td><td>600m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宝德购物中心（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鑫苑星空影城(固安店)</td><td>名称互证</td><td>38m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>逃梦·Player超级密室剧场(固安店)</td><td>距离就近</td><td>486m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盛世金柜KTV(新世纪步行街第八大街)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>盛世金柜KTV(新世纪步行街第八大街)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>妖姬24小时自助棋牌室</td><td>距离就近</td><td>358m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>麻友娱乐中心</td><td>距离就近</td><td>363m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>蓝色火焰(k歌)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>蓝色火焰(k歌)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>华谊兄弟影院(廊坊万向城店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>华谊兄弟影院(廊坊万向城店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>东喜发财棋牌</td><td>距离就近</td><td>228m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>出来玩麻24小时自助棋牌</td><td>距离就近</td><td>228m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中都影城(廊坊店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中都影城(廊坊店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>酷秀KTV·派对(嘉华港湾店)</td><td>距离就近</td><td>12m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>咕密咕谜沉浸式实景密室剧场</td><td>距离就近</td><td>21m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>廊坊天洛</td><td>距离就近</td><td>326m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新动批幻都·娱乐</td><td>距离就近</td><td>351m</td><td>3.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>7+影城(格林时代广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>7+影城(格林时代广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(廊坊安次万达广场店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(廊坊安次万达广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>答麦量贩式KTV(安次万达店)</td><td>距离就近</td><td>144m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>万达影城(廊坊万达广场店)</td><td>名称互证</td><td>3440m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>万达影城(新朝阳店)</td><td>名称互证</td><td>4054m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万汇广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>逃梦·Player超级密室剧场(固安店)</td><td>名称互证</td><td>84m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>鑫苑星空影城(固安店)</td><td>距离就近</td><td>539m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>华联香百超市(香百店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>香河县智游密室逃脱DIY手作店</td><td>距离就近</td><td>201m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>迷客密室剧本杀(凯荟广场店)</td><td>距离就近</td><td>440m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>京客隆超市(廊坊店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>蓝色火焰(k歌)</td><td>距离就近</td><td>203m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>番喜24小时自助棋牌室(五大街店)</td><td>距离就近</td><td>585m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(盒作社店)</td><td>距离就近</td><td>599m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>京东折扣超市(固安尚品爱购店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城</td><td>距离就近</td><td>44m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>迷雾·沉浸式超级密室逃脱(固安店)</td><td>距离就近</td><td>126m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>元辰超市(北昌店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>四方朋友KTV(廊坊师范学院店)</td><td>距离就近</td><td>168m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>廊坊学苑宾馆(永兴路店)</td><td>距离就近</td><td>532m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>明珠超市(总店百货)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>廊坊明珠影剧院(新华路店)</td><td>距离就近</td><td>99m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(月色广场店)</td><td>距离就近</td><td>184m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>橙天威丽斯影城(月色广场店)</td><td>距离就近</td><td>239m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>魅KTV·AI辅唱(月色广场店)</td><td>距离就近</td><td>269m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>飞越世界球幕悬空飞行影院</td><td>距离就近</td><td>309m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>塔罗动物园</td><td>距离就近</td><td>353m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>万达影城(廊坊万达广场店)</td><td>距离就近</td><td>393m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>酷秀KTV·派对(廊坊万达店)</td><td>距离就近</td><td>438m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>谜局密室逃脱(二店)</td><td>距离就近</td><td>446m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>临熙沉浸式演绎密室逃脱</td><td>距离就近</td><td>491m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>神密·密室逃脱(潘神三店)</td><td>距离就近</td><td>502m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>第六频道主题密室(一店)</td><td>距离就近</td><td>504m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>第六频道主题密室(二店)</td><td>距离就近</td><td>509m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>梦想空间点播影院(廊坊万达店)</td><td>距离就近</td><td>513m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>廊坊宾馆</td><td>距离就近</td><td>578m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>华美旅馆(廊坊新华路店)</td><td>距离就近</td><td>588m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>物美超市(天洋城店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>Poker Face剧本杀密室(天洋广场店)</td><td>距离就近</td><td>90m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星贝萌宠园</td><td>距离就近</td><td>123m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>物美超市(固安宝德店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鑫苑星空影城(固安店)</td><td>距离就近</td><td>36m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>逃梦·Player超级密室剧场(固安店)</td><td>距离就近</td><td>489m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>廊坊新发地农贸产品批发市场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>千百惠·娱乐</td><td>距离就近</td><td>597m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（25 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>三河梦享宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>燕郊燕灵路327号</td></tr>
+<tr><td>✅A-</td><td>阳光快捷宾馆(裕华西道)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>裕华西道北88号</td></tr>
+<tr><td>✅A-</td><td>大城津保旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>平舒镇老汽车站</td></tr>
+<tr><td>✅A-</td><td>星之河旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>常甫路长富吉第A5-5</td></tr>
+<tr><td>✅A-</td><td>大方旅馆(新开街店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>新开街65-4号</td></tr>
+<tr><td>✅A-</td><td>大城慕嘉快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>大城汽车站南门西80米</td></tr>
+<tr><td>✅A-</td><td>廊坊学苑宾馆(永兴路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>永兴路廊坊市公安局安次区分局向北70米路东</td></tr>
+<tr><td>✅A-</td><td>金福宾馆(人民医院店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>永清镇医院对过</td></tr>
+<tr><td>✅A-</td><td>三河金廷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>燕郊镇海油大街华北科技学院北门东200米</td></tr>
+<tr><td>✅A-</td><td>香河新开街顺吉宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>新开街东段1-9号</td></tr>
+<tr><td>✅A-</td><td>荣华和家宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>东马圈集贸市场东南方向200米</td></tr>
+<tr><td>✅B</td><td>宝池旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>津保西路88号</td></tr>
+<tr><td>✅B</td><td>三河历子宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>燕灵路民政管理学院东门</td></tr>
+<tr><td>✅B</td><td>顺安宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>淑阳镇新开街3-6号北广A座</td></tr>
+<tr><td>⚠️</td><td>固安坤丰快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>新昌街107号</td></tr>
+<tr><td>⚠️</td><td>廊坊天意旅馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>新华路华阳小区2号楼</td></tr>
+<tr><td>⚠️</td><td>三河贝美旅店</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>燕郊金燕大街金燕农贸市场对面</td></tr>
+<tr><td>⚠️</td><td>廊坊幸福旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>曙光道12号市印刷厂院内</td></tr>
+<tr><td>⚠️</td><td>凯歌宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>开发区东方大学城一期张衡路51号</td></tr>
+<tr><td>⚠️</td><td>廊坊宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.9</td><td>—</td><td>解放道118号</td></tr>
+<tr><td>⚠️</td><td>廊坊顺华旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>新华路4号广阳站东广场南侧</td></tr>
+<tr><td>⚠️</td><td>和利宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>新世纪步行街2街A座72号</td></tr>
+<tr><td>⚠️</td><td>八亿宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>正隆嘉园小区西门</td></tr>
+<tr><td>⚠️</td><td>霸州平安商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>3.6</td><td>—</td><td>益津中路315号</td></tr>
+<tr><td>⚠️</td><td>华美旅馆(廊坊新华路店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.6</td><td>—</td><td>新华路6号服装一条街南1号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>5</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/廊坊市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>1 个 POI 无地址</strong>，需人工补：果悠悠水果批发(黄金城道步行街店)</li><li><input type="checkbox" disabled> <strong>5 个 POI 无评分</strong>，暂标 ⚠️：廊坊市自然公园-欢乐动物园售票处、廊坊市自然公园-欢乐动物园停车场、K2狮子城海棠园、奥特莱斯(凯撒工厂店)地面停车场(出入口)、海悦广场</li><li><input type="checkbox" disabled> 儿童游乐 47 家，其中场内 3 家、独立 44 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 10 个区县：三河市、固安县、大厂回族自治县、大城县、安次区、广阳区、文安县、永清县、霸州市、香河县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>锦州市 · 辽宁省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/辽宁省.html">← 返回辽宁省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>锦州市 · 辽宁省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 18:43:43  ·  POI 总量：761（去重后）  ·  查询面：49  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>761</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>99%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 287 · 商圈 323 · 成人娱乐 256 · 儿童娱乐 139 · 酒店 26 · 特产 40</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>辽宁省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>7 个</td></tr>
+<tr><td>街道/镇/乡</td><td>101 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×3、县级市×2、县×2</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>太和区</td><td>192</td><td>25%</td></tr>
+<tr><td>凌河区</td><td>178</td><td>23%</td></tr>
+<tr><td>古塔区</td><td>161</td><td>21%</td></tr>
+<tr><td>凌海市</td><td>70</td><td>9%</td></tr>
+<tr><td>北镇市</td><td>68</td><td>9%</td></tr>
+<tr><td>黑山县</td><td>58</td><td>8%</td></tr>
+<tr><td>义县</td><td>34</td><td>4%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（323 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>167</td></tr>
+<tr><td>百货/商场</td><td>40</td></tr>
+<tr><td>购物中心/综合体</td><td>38</td></tr>
+<tr><td>夜市</td><td>30</td></tr>
+<tr><td>商业街</td><td>24</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>步行街</td><td>3</td></tr>
+<tr><td>美食街/小吃街</td><td>2</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（323 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>A</td><td>凌河夜市</td><td>夜市</td><td>4.8</td><td>17</td><td>8</td><td>8</td><td>1</td></tr>
+<tr><td>A</td><td>锦州百货大楼(中央大街店)</td><td>商业街</td><td>4.6</td><td>16</td><td>11</td><td>8</td><td>0</td></tr>
+<tr><td>A</td><td>锦州茂业中心</td><td>其他商业载体</td><td>4.6</td><td>15</td><td>10</td><td>7</td><td>1</td></tr>
+<tr><td>A</td><td>老街粘食店(总店)</td><td>商业街</td><td>4.6</td><td>14</td><td>17</td><td>14</td><td>5</td></tr>
+<tr><td>A</td><td>大润发(古塔店)</td><td>购物中心/综合体</td><td>4.7</td><td>13</td><td>19</td><td>3</td><td>0</td></tr>
+<tr><td>A</td><td>莫想螺蛳粉</td><td>其他商业载体</td><td>4.6</td><td>13</td><td>9</td><td>6</td><td>1</td></tr>
+<tr><td>A</td><td>大润发(体育场店)</td><td>购物中心/综合体</td><td>4.7</td><td>12</td><td>2</td><td>3</td><td>0</td></tr>
+<tr><td>A</td><td>比优特超市(大商锦绣前程店)</td><td>其他商业载体</td><td>4.6</td><td>12</td><td>15</td><td>13</td><td>1</td></tr>
+<tr><td>A</td><td>万达广场(锦州店)</td><td>购物中心/综合体</td><td>4.8</td><td>11</td><td>14</td><td>9</td><td>0</td></tr>
+<tr><td>A</td><td>锦绣前程</td><td>百货/商场</td><td>4.8</td><td>11</td><td>15</td><td>11</td><td>1</td></tr>
+<tr><td>A</td><td>万达影城(锦州万达广场店)</td><td>其他商业载体</td><td>4.7</td><td>11</td><td>14</td><td>9</td><td>0</td></tr>
+<tr><td>A</td><td>中影国际影城(银河广场店)</td><td>其他商业载体</td><td>4.6</td><td>11</td><td>5</td><td>3</td><td>0</td></tr>
+<tr><td>A</td><td>辽西郡文商旅综合体</td><td>购物中心/综合体</td><td>4.6</td><td>11</td><td>15</td><td>11</td><td>1</td></tr>
+<tr><td>A</td><td>金凌商厦</td><td>百货/商场</td><td>4.6</td><td>11</td><td>16</td><td>10</td><td>0</td></tr>
+<tr><td>A</td><td>德品佳水饺(体育场大润发店)</td><td>其他商业载体</td><td>4.6</td><td>11</td><td>2</td><td>2</td><td>0</td></tr>
+<tr><td>A</td><td>古塔夜市(锦华街)</td><td>夜市</td><td>4.7</td><td>10</td><td>15</td><td>10</td><td>0</td></tr>
+<tr><td>A</td><td>锦州家乐汇</td><td>购物中心/综合体</td><td>4.6</td><td>10</td><td>3</td><td>2</td><td>0</td></tr>
+<tr><td>B</td><td>凌水小镇购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>6</td><td>3</td><td>7</td><td>0</td></tr>
+<tr><td>B</td><td>重庆酸菜鱼(上海路店)</td><td>其他商业载体</td><td>4.6</td><td>6</td><td>6</td><td>5</td><td>3</td></tr>
+<tr><td>B</td><td>星光宾馆(锦州火车站店)</td><td>其他商业载体</td><td>4.8</td><td>5</td><td>3</td><td>2</td><td>6</td></tr>
+<tr><td>B</td><td>万年里美食街</td><td>美食街/小吃街</td><td>4.8</td><td>5</td><td>3</td><td>2</td><td>0</td></tr>
+<tr><td>B</td><td>凌海盛隆商城</td><td>百货/商场</td><td>4.6</td><td>5</td><td>1</td><td>2</td><td>1</td></tr>
+<tr><td>B</td><td>名购广场(金融中心店)</td><td>百货/商场</td><td>4.6</td><td>4</td><td>13</td><td>3</td><td>0</td></tr>
+<tr><td>B</td><td>锦州动物园</td><td>其他商业载体</td><td>4.6</td><td>2</td><td>0</td><td>26</td><td>1</td></tr>
+<tr><td>C</td><td>亦家快捷宾馆</td><td>其他商业载体</td><td>4.7</td><td>4</td><td>4</td><td>4</td><td>3</td></tr>
+<tr><td>C</td><td>千盛购物广场(中央大街)</td><td>商业街</td><td>4.7</td><td>4</td><td>7</td><td>4</td><td>3</td></tr>
+<tr><td>C</td><td>千盛百货(千盛购物广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>7</td><td>4</td><td>2</td></tr>
+<tr><td>C</td><td>堃和广场</td><td>百货/商场</td><td>4.6</td><td>4</td><td>4</td><td>3</td><td>3</td></tr>
+<tr><td>C</td><td>金三角商业城</td><td>其他商业载体</td><td>4.6</td><td>4</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>刘记水豆腐</td><td>其他商业载体</td><td>4.6</td><td>4</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>布达拉宫广场</td><td>其他商业载体</td><td>4.7</td><td>3</td><td>3</td><td>5</td><td>0</td></tr>
+<tr><td>C</td><td>西安街批发市场(宜昌路)</td><td>批发城</td><td>4.6</td><td>3</td><td>1</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>沟帮子商业城</td><td>百货/商场</td><td>4.6</td><td>3</td><td>2</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>老庞家水馅包子馆</td><td>其他商业载体</td><td>4.8</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>太和夜市(新民街店)</td><td>夜市</td><td>4.7</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>锦州光彩批发市场</td><td>批发城</td><td>4.6</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>辽西小商品批发市场(安达街店)</td><td>批发城</td><td>4.6</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>北镇庙夜市</td><td>夜市</td><td>4.7</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>九华山公园</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>锦州双明旅社(南站店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody></table></div>
+<h3>凌河夜市 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 17 家（均分 4.28）+ 4 类业态</li><li><strong>载体类型</strong>：夜市（购物服务;特色商业街;特色商业街）</li><li><strong>地址</strong>：中央新街地一大道13g-19号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥24（区间 ¥11–86）</li><li><strong>动线主轴</strong>：南宁路</li><li><strong>业态分布</strong>：美食 17 · 成人娱乐 8 · 儿童娱乐 8 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>凌河夜市</td></tr>
+<tr><td>美食</td><td>17</td><td>蜀道山冒菜冒肚、柳州肥姨妈大骨螺蛳粉(凌河夜市店)、八万融合小串(果木碳烤·凌河夜市店)</td></tr>
+<tr><td>成人娱乐</td><td>8</td><td>博纳国际影城(茂业天地店)、爱尚电玩城、挚Whiskey&amp;Cocktail</td></tr>
+<tr><td>儿童娱乐</td><td>8</td><td>喜马大陆(锦州店)、喜马大陆儿童沉浸式短旅中心(锦州店)、爱尚电玩城</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金凯隆商务宾馆(凌河夜市店)</td></tr>
+</tbody></table></div>
+<h3>锦州百货大楼(中央大街店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 16 家（均分 4.31）+ 3 类业态</li><li><strong>载体类型</strong>：商业街（购物服务;商场;普通商场）</li><li><strong>地址</strong>：解放路和中央大街交汇处</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥26（区间 ¥11–86）</li><li><strong>动线主轴</strong>：南宁路</li><li><strong>业态分布</strong>：美食 16 · 成人娱乐 11 · 儿童娱乐 8 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>锦州百货大楼(中央大街店)</td></tr>
+<tr><td>美食</td><td>16</td><td>蜀道山冒菜冒肚、莫想螺蛳粉、柳州肥姨妈大骨螺蛳粉(凌河夜市店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>博纳国际影城(茂业天地店)、SRC影城(千盛购物广场店)、挚Whiskey&amp;Cocktail</td></tr>
+<tr><td>儿童娱乐</td><td>8</td><td>喜马大陆(锦州店)、喜马大陆儿童沉浸式短旅中心(锦州店)、爱尚电玩城</td></tr>
+</tbody></table></div>
+<h3>锦州茂业中心 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 15 家（均分 4.29）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;楼宇;商务写字楼）</li><li><strong>地址</strong>：锦铁街道中央大街三段3号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥24（区间 ¥11–86）</li><li><strong>动线主轴</strong>：南宁路</li><li><strong>业态分布</strong>：美食 15 · 成人娱乐 10 · 儿童娱乐 7 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>锦州茂业中心</td></tr>
+<tr><td>美食</td><td>15</td><td>蜀道山冒菜冒肚、莫想螺蛳粉、柳州肥姨妈大骨螺蛳粉(凌河夜市店)</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>博纳国际影城(茂业天地店)、SRC影城(千盛购物广场店)、挚Whiskey&amp;Cocktail</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>喜马大陆(锦州店)、喜马大陆儿童沉浸式短旅中心(锦州店)、友聚游戏屋ps5·switch体验馆</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>好家旅馆(和平路店)</td></tr>
+</tbody></table></div>
+<h3>老街粘食店(总店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 14 家（均分 4.24）+ 4 类业态</li><li><strong>载体类型</strong>：商业街（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：宜昌路三段19-97号(近英特购物广场)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥26（区间 ¥13–89）</li><li><strong>动线主轴</strong>：中央大街</li><li><strong>业态分布</strong>：美食 14 · 成人娱乐 17 · 儿童娱乐 14 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>老街粘食店(总店)</td></tr>
+<tr><td>美食</td><td>14</td><td>老街粘食店(总店)、辽西杜记馄饨、古塔区杨宁风味铁板烧(老店)</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>ez电竞、中影国际影城(新玛特店)、麦感自助KTV(锦绣前程店)</td></tr>
+<tr><td>儿童娱乐</td><td>14</td><td>极速翼电玩城、乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)、嗨宝淘气堡(英特购物店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>锦州荣昌宾馆、交通宾馆(锦华街)、锦州和平路宾馆</td></tr>
+</tbody></table></div>
+<h3>大润发(古塔店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.39）+ 3 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：北二里锦州华庭18号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥44（区间 ¥14–90）</li><li><strong>动线主轴</strong>：人民街</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 19 · 儿童娱乐 3 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(古塔店)</td></tr>
+<tr><td>美食</td><td>13</td><td>锦伊味麻辣香锅(人民街店)、阿亮烤生蚝、许家食府(人民街店)</td></tr>
+<tr><td>成人娱乐</td><td>19</td><td>米高美KTV(东一里店)、塔边酒馆、雀实赢24小时自助棋牌(福德店)</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>锦州秋园动物医院总院、小天鹅舞蹈、爱琳淘气堡</td></tr>
+</tbody></table></div>
+<h3>莫想螺蛳粉 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.27）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：宜昌路与中央大街交叉口东40米</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥24（区间 ¥11–86）</li><li><strong>动线主轴</strong>：南宁路</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 9 · 儿童娱乐 6 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>莫想螺蛳粉</td></tr>
+<tr><td>美食</td><td>13</td><td>蜀道山冒菜冒肚、莫想螺蛳粉、柳州肥姨妈大骨螺蛳粉(凌河夜市店)</td></tr>
+<tr><td>成人娱乐</td><td>9</td><td>博纳国际影城(茂业天地店)、SRC影城(千盛购物广场店)、挚Whiskey&amp;Cocktail</td></tr>
+<tr><td>儿童娱乐</td><td>6</td><td>喜马大陆(锦州店)、喜马大陆儿童沉浸式短旅中心(锦州店)、儿童乐园(茂业天地店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>好家旅馆(和平路店)</td></tr>
+</tbody></table></div>
+<h3>大润发(体育场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.39）+ 3 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：解放路五段26号银河广场1号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥47（区间 ¥18–123）</li><li><strong>动线主轴</strong>：解放路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 2 · 儿童娱乐 3 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(体育场店)</td></tr>
+<tr><td>美食</td><td>12</td><td>秦三驴(铁东店)、清真伊烧烤(上海路总店)、德品佳水饺(体育场大润发店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>中影国际影城(银河广场店)、中影北方巨幕影城(家乐汇比优特店)</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>小天鹅舞蹈、爱琳淘气堡、冠军乐融融儿童游乐场</td></tr>
+</tbody></table></div>
+<h3>比优特超市(大商锦绣前程店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.23）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（购物服务;专卖店;烟酒专卖店｜购物服务;超级市场;超市）</li><li><strong>地址</strong>：中央大街锦绣前程负一层比优特超市出口处</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥31（区间 ¥13–58）</li><li><strong>动线主轴</strong>：中央大街</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 15 · 儿童娱乐 13 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>比优特超市(大商锦绣前程店)</td></tr>
+<tr><td>美食</td><td>12</td><td>古塔区杨宁风味铁板烧(老店)、周家小炒(南宁路店)、老街粘食店(总店)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>ez电竞、麦感自助KTV(锦绣前程店)、布车POCHA BOOM(锦绣前程店)</td></tr>
+<tr><td>儿童娱乐</td><td>13</td><td>极速翼电玩城、乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)、终极梦想电玩城</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金凯隆商务宾馆(凌河夜市店)</td></tr>
+</tbody></table></div>
+<h3>万达广场(锦州店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.30）+ 3 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：科技路21号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥57（区间 ¥25–95）</li><li><strong>动线主轴</strong>：科技路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 14 · 儿童娱乐 9 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(锦州店)</td></tr>
+<tr><td>美食</td><td>11</td><td>The Fun.凡食家庭料理、肯德基(锦州万达店)、麦当劳(锦州万达餐厅)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>万达影城(锦州万达广场店)、名仕国际宴会中心(书香门第店)、星聚会KTV(锦州万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>飞奇梦想城、玩家来也(锦州万达店)、漫玩游戏屋</td></tr>
+</tbody></table></div>
+<h3>锦绣前程 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.20）+ 4 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：中央大街二段138号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥32（区间 ¥13–58）</li><li><strong>动线主轴</strong>：中央大街</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 15 · 儿童娱乐 11 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>锦绣前程</td></tr>
+<tr><td>美食</td><td>11</td><td>周家小炒(南宁路店)、古塔区杨宁风味铁板烧(老店)、辽西杜记馄饨</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>ez电竞、麦感自助KTV(锦绣前程店)、中影国际影城(辽西郡文商旅综合体店)</td></tr>
+<tr><td>儿童娱乐</td><td>11</td><td>极速翼电玩城、乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)、侏罗纪两栖爬行馆</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金凯隆商务宾馆(凌河夜市店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(锦州万达广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.30）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：锦州万达广场F4层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥57（区间 ¥25–95）</li><li><strong>动线主轴</strong>：科技路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 14 · 儿童娱乐 9 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(锦州万达广场店)</td></tr>
+<tr><td>美食</td><td>11</td><td>The Fun.凡食家庭料理、肯德基(锦州万达店)、麦当劳(锦州万达餐厅)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>万达影城(锦州万达广场店)、名仕国际宴会中心(书香门第店)、星聚会KTV(锦州万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>飞奇梦想城、玩家来也(锦州万达店)、漫玩游戏屋</td></tr>
+</tbody></table></div>
+<h3>中影国际影城(银河广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.38）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：解放路46号宝地银河广场3层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥42（区间 ¥11–123）</li><li><strong>动线主轴</strong>：解放路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 5 · 儿童娱乐 3 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>中影国际影城(银河广场店)</td></tr>
+<tr><td>美食</td><td>11</td><td>秦三驴(铁东店)、德品佳水饺(体育场大润发店)、杭州街炸串(上海路店)</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>中影国际影城(银河广场店)、中影北方巨幕影城(家乐汇比优特店)、中影国际影城(新玛特店)</td></tr>
+<tr><td>儿童娱乐</td><td>3</td><td>小天鹅舞蹈、HLK 海陆空动漫、冠军乐融融儿童游乐场</td></tr>
+</tbody></table></div>
+<h3>辽西郡文商旅综合体 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.20）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场）</li><li><strong>地址</strong>：中央大街二段136-266号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥32（区间 ¥13–58）</li><li><strong>动线主轴</strong>：中央大街</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 15 · 儿童娱乐 11 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>辽西郡文商旅综合体</td></tr>
+<tr><td>美食</td><td>11</td><td>周家小炒(南宁路店)、古塔区杨宁风味铁板烧(老店)、辽西杜记馄饨</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>ez电竞、麦感自助KTV(锦绣前程店)、中影国际影城(辽西郡文商旅综合体店)</td></tr>
+<tr><td>儿童娱乐</td><td>11</td><td>极速翼电玩城、乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)、侏罗纪两栖爬行馆</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金凯隆商务宾馆(凌河夜市店)</td></tr>
+</tbody></table></div>
+<h3>金凌商厦 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.25）+ 3 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场｜商务住宅;楼宇;商务写字楼）</li><li><strong>地址</strong>：南宁路</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥37（区间 ¥18–58）</li><li><strong>动线主轴</strong>：中央大街</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 16 · 儿童娱乐 10 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>金凌商厦</td></tr>
+<tr><td>美食</td><td>11</td><td>周家小炒(南宁路店)、辽西杜记馄饨、古塔区杨宁风味铁板烧(老店)</td></tr>
+<tr><td>成人娱乐</td><td>16</td><td>ez电竞、麦感自助KTV(锦绣前程店)、雀实赢24小时自助棋牌(福德店)</td></tr>
+<tr><td>儿童娱乐</td><td>10</td><td>极速翼电玩城、乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)、侏罗纪两栖爬行馆</td></tr>
+</tbody></table></div>
+<h3>德品佳水饺(体育场大润发店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.40）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;综合酒楼）</li><li><strong>地址</strong>：解放路五段银行广场1-24号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥52（区间 ¥18–123）</li><li><strong>动线主轴</strong>：解放路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 2 · 儿童娱乐 2 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>德品佳水饺(体育场大润发店)</td></tr>
+<tr><td>美食</td><td>11</td><td>秦三驴(铁东店)、清真伊烧烤(上海路总店)、德品佳水饺(体育场大润发店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>中影国际影城(银河广场店)、中影北方巨幕影城(家乐汇比优特店)</td></tr>
+<tr><td>儿童娱乐</td><td>2</td><td>小天鹅舞蹈、冠军乐融融儿童游乐场</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（256 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>54</td></tr>
+<tr><td>酒吧/酒馆</td><td>33</td></tr>
+<tr><td>棋牌室</td><td>19</td></tr>
+<tr><td>KTV</td><td>17</td></tr>
+<tr><td>电影院</td><td>16</td></tr>
+<tr><td>电玩城</td><td>16</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>10</td></tr>
+<tr><td>Livehouse</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(锦州万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>33.00</td><td>锦州万达广场F4层</td></tr>
+<tr><td>✅A-</td><td>思思KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>30.00</td><td>土英南街滨河花园1-67号(南街街道南门社区卫生服务站对面)</td></tr>
+<tr><td>✅A-</td><td>中影国际影城(银河广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>21.00</td><td>解放路46号宝地银河广场3层</td></tr>
+<tr><td>✅A-</td><td>HYGGE-灰格子西餐酒吧(水墨林溪店)</td><td>酒吧/酒馆</td><td>餐饮服务;外国餐厅;西餐厅(综合风味)</td><td>4.6</td><td>80.00</td><td>锦兴路与成都街交叉口西60米</td></tr>
+<tr><td>✅A-</td><td>唐·Made in China国潮酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>30.00</td><td>科技路宝地·铂宫小区东门</td></tr>
+<tr><td>✅A-</td><td>HYGGE-灰格子西餐酒吧(人民街店)</td><td>酒吧/酒馆</td><td>餐饮服务;外国餐厅;西餐厅(综合风味)</td><td>4.6</td><td>80.00</td><td>人民街二段3-129号</td></tr>
+<tr><td>✅A-</td><td>百千家小酒馆(城市嘉园店)</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>79.00</td><td>卫东街城市嘉园1-51号</td></tr>
+<tr><td>✅A-</td><td>圣迭戈南京路酒馆</td><td>酒吧/酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>76.00</td><td>南京路四段22-10号</td></tr>
+<tr><td>✅A-</td><td>鼎晟之嘉国际俱乐部(上海路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.6</td><td>92.00</td><td>上海路6段-9号-1号</td></tr>
+<tr><td>✅A-</td><td>ez电竞</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>59.00</td><td>中央大街60号辽西郡3层</td></tr>
+<tr><td>✅A-</td><td>名仕国际宴会中心(书香门第店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所｜餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>—</td><td>科技路德胜里10-97号</td></tr>
+<tr><td>✅B</td><td>大地飞歌KTV(锦州古塔区)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>78.00</td><td>士英南街12-62号</td></tr>
+<tr><td>✅B</td><td>米高美KTV(东一里店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>63.00</td><td>北一里鑫诚园1-25对过</td></tr>
+<tr><td>✅B</td><td>星瀚·国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>101.00</td><td>古城街道星瀚国际</td></tr>
+<tr><td>✅B</td><td>华夏星悦汇影城(名购未来城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>33.00</td><td>中央南街与市府路交叉口爱一方四楼</td></tr>
+<tr><td>✅B</td><td>博纳国际影城(茂业天地店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>21.00</td><td>锦州茂业天地9层</td></tr>
+<tr><td>✅B</td><td>中影国际影城(新玛特店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>26.00</td><td>人民街三段3号新玛特购物广场5层</td></tr>
+<tr><td>✅B</td><td>中影北方巨幕影城(家乐汇比优特店)</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>58.00</td><td>解放路33锦州家乐汇F5层</td></tr>
+<tr><td>✅B</td><td>棋聚·四喜棋牌会所</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>50.00</td><td>武汉街94-35号</td></tr>
+<tr><td>✅B</td><td>麻卡棋牌会馆(古塔旗舰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>35.00</td><td>南一里4-4号</td></tr>
+<tr><td>✅B</td><td>四个朋友(古塔公园店)</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>16.00</td><td>西街里9-74号(王府酒店斜对面)</td></tr>
+<tr><td>✅B</td><td>喜鼎棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>21.00</td><td>南二里星汇园3-4号</td></tr>
+<tr><td>✅B</td><td>雀实赢24小时自助棋牌(福德店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>14.00</td><td>南一里西3门东北140米</td></tr>
+<tr><td>✅B</td><td>佰乐顺棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>28.00</td><td>吉祥街天成雅典30-224号</td></tr>
+<tr><td>✅B</td><td>1109Cocktail&amp;Beer·Bar(锦绣天地店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>69.00</td><td>凌南西里绵绣天第D区4-96号</td></tr>
+<tr><td>✅B</td><td>彩虹酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>70.00</td><td>武汉街锦绣天地D区33-14号</td></tr>
+<tr><td>✅B</td><td>茉莉酒馆</td><td>酒吧/酒馆</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>54.00</td><td>景观步行街与科技路交叉口东北80米</td></tr>
+<tr><td>✅B</td><td>yolo Live show boxx</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>80.00</td><td>市府路凌南西里24号</td></tr>
+<tr><td>✅B</td><td>烟火里民谣酒馆(锦州店)</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>50.00</td><td>兰花里12号</td></tr>
+<tr><td>✅B</td><td>塔边酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>60.00</td><td>西街里19-6号</td></tr>
+<tr><td>✅B</td><td>绿野仙踪网咖(解放路店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>24.00</td><td>解放路三段12-129号妇婴医院东门</td></tr>
+<tr><td>✅B</td><td>小明和伙伴儿娱乐策划中心</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>92.00</td><td>凌西大街48号</td></tr>
+<tr><td>✅B</td><td>麦感自助KTV(锦绣前程店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>28.00</td><td>锦绣前程9层8号(夜间走北门进商场里面走观光梯)</td></tr>
+<tr><td>✅B</td><td>超越时空网咖(兴桐店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>保安里51-76号</td></tr>
+<tr><td>✅B</td><td>聚乐派网咖-腾讯电竞体验馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>14.00</td><td>博大雅居25号楼30号门市</td></tr>
+<tr><td>✅B</td><td>小航电竞</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.5</td><td>—</td><td>太和区开发区金城帝景5-88号</td></tr>
+<tr><td>✅B</td><td>星聚会KTV(锦州万达广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>37.00</td><td>科技路21号万达广场商业广场1F-A2号</td></tr>
+<tr><td>✅B</td><td>帆麦自助KTV(渤海大学店)</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>30.00</td><td>科技路1-65号</td></tr>
+<tr><td>✅B</td><td>麻公馆棋牌娱乐会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>14.00</td><td>吉祥新家园20-59号</td></tr>
+<tr><td>✅B</td><td>中影国际影城(辽西郡文商旅综合体店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>26.00</td><td>宝地太阳广场八楼</td></tr>
+<tr><td>✅B</td><td>SRC影城(千盛购物广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>31.00</td><td>千盛购物广场六楼</td></tr>
+<tr><td>✅B</td><td>星感觉巨幕影城(凌海店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>38.00</td><td>人民路13号凌水小镇购物广场F1层</td></tr>
+<tr><td>✅B</td><td>壹加影城(锦州大学城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>45.00</td><td>天桥街道珠江街52-86号天街橙购物中心4楼</td></tr>
+<tr><td>✅B</td><td>小麻雀棋牌馆24小时</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>14.00</td><td>典逸心洲58-156号</td></tr>
+<tr><td>✅B</td><td>布车POCHA BOOM(锦绣前程店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>74.00</td><td>中央大街138号二段锦绣前程2层s02号</td></tr>
+<tr><td>✅B</td><td>K-one Night Club</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>59.00</td><td>上海路三段14-27-1号</td></tr>
+<tr><td>✅B</td><td>听見Coffee&amp;Bar日咖夜酒</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>52.00</td><td>南郡天下步行街29-156号</td></tr>
+<tr><td>✅B</td><td>THE ONE酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>157.00</td><td>东湖凤还巢一期东门北行100</td></tr>
+<tr><td>✅B</td><td>绿野仙踪云飞店-腾讯电竞体验馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧｜体育休闲服务;休闲场所;休闲场所</td><td>4.4</td><td>12.00</td><td>洛阳路5段1-53号</td></tr>
+<tr><td>✅B</td><td>麦感自助KTV影咖</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>26.00</td><td>科技路21号万达广场锦州店F2层</td></tr>
+<tr><td>✅B</td><td>滨河KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>29.00</td><td>南京路与南街交叉口南60米</td></tr>
+<tr><td>✅B</td><td>璀璨星光KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>231.00</td><td>吉祥街9-47号(状元城南2门西60米)</td></tr>
+<tr><td>✅B</td><td>东方明珠KTV(南一里店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>24.00</td><td>古城街道南街南一里12-18号</td></tr>
+<tr><td>✅B</td><td>26小时棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>14.00</td><td>德新里康居园2-73号车棚</td></tr>
+<tr><td>✅B</td><td>雀后棋牌娱乐会馆(南桥店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>13.00</td><td>凯旋家园西门南150米</td></tr>
+<tr><td>✅B</td><td>Black Store黑店精酿</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>57.00</td><td>洛阳路女儿里</td></tr>
+<tr><td>✅B</td><td>怪兽酒窝(锦州店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>—</td><td>晟丽花园3甲-1</td></tr>
+<tr><td>✅B</td><td>桃子酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>46.00</td><td>凌南里24-2-8</td></tr>
+<tr><td>✅B</td><td>卓耿Dragon.Cocktail酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>21.00</td><td>凌南街道曼哈顿凌南东里3-14-15</td></tr>
+<tr><td>✅B</td><td>挚Whiskey&amp;Cocktail</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>100.00</td><td>国和里74-7号</td></tr>
+</tbody></table></div>
+<p>（另 106 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（139 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>60</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>32</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>19</td></tr>
+<tr><td>电玩城</td><td>18</td></tr>
+<tr><td>亲子乐园</td><td>5</td></tr>
+<tr><td>淘气堡</td><td>5</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>特来电超级充电站(锦州加能北湖公园特来电充电站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>5.0</td><td>石桥子街道人民北街66号锦州动物园(西北角)</td></tr>
+<tr><td>✅A-</td><td>神奇世界0-14岁儿童图画书借阅馆(锦州店)</td><td>其他儿童场所</td><td>独立</td><td>5.0</td><td>万兆·典逸心洲东3门北200米</td></tr>
+<tr><td>✅A-</td><td>九华山公园</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>商业街与环城路交汇处以南</td></tr>
+<tr><td>✅A-</td><td>布达拉宫广场</td><td>其他儿童场所</td><td>场内</td><td>4.7</td><td>九华山</td></tr>
+<tr><td>✅A-</td><td>锦州动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>石桥子街道人民街5段11号</td></tr>
+<tr><td>✅A-</td><td>益多乐亲子乐园(英城子店)</td><td>亲子乐园</td><td>独立</td><td>4.6</td><td>益多乐智慧生态牧场东北侧160米</td></tr>
+<tr><td>✅A-</td><td>凌河公园水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>云飞街一段1-1号</td></tr>
+<tr><td>✅A-</td><td>喜马大陆(锦州店)</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>中央大街三段1号(京百茂3层)</td></tr>
+<tr><td>✅A-</td><td>东方欢乐王国水世界(暂停营业)</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>滨海大街二段1号(笔架山景区东侧)</td></tr>
+<tr><td>✅B</td><td>超零重力运动潮玩馆</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>厚生艺术工厂A15</td></tr>
+<tr><td>✅B</td><td>海星乐园·亲子露营地</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>滨河路上锦凌水库方向外环桥洞下西行2公里</td></tr>
+<tr><td>✅B</td><td>喜马大陆儿童沉浸式短旅中心(锦州店)</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>锦州百货大楼(中央大街店)</td></tr>
+<tr><td>✅B</td><td>童话城堡亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.4</td><td>锦娘路68号</td></tr>
+<tr><td>✅B</td><td>鲸奇世界主题乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>滨海大街2号</td></tr>
+<tr><td>✅B</td><td>6+1天的游戏小屋</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>北安路聚基馨湖b区1-47</td></tr>
+<tr><td>✅B</td><td>丑娃家(龙南花苑店)</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>卫东街8-162号</td></tr>
+<tr><td>✅B</td><td>欢乐王国</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>长白山路与漓江街交叉口西北220米</td></tr>
+<tr><td>✅B</td><td>问水浴道洗浴汗蒸广场</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>凌云里宝地东湖湾B区40-1奥体中心1楼(东湖湾转盘)</td></tr>
+<tr><td>✅B</td><td>爱尚电玩城</td><td>电玩城</td><td>独立</td><td>4.3</td><td>古城街道地一大道23号出口18区18A-02号</td></tr>
+<tr><td>✅B</td><td>清沟湾亲子游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.3</td><td>渔人码头旁</td></tr>
+<tr><td>✅B</td><td>锦州滨海人家农家院</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>太行山路与滨海大街交叉路口南100米道西(清沟湾浴场正对面)</td></tr>
+<tr><td>⚠️</td><td>飞奇梦想城</td><td>其他儿童场所</td><td>场内</td><td>4.2</td><td>科技路21-1号万达广场3层东北侧</td></tr>
+<tr><td>⚠️</td><td>童梦场(锦州)游乐场有限公司</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.2</td><td>吉祥宝贝星河幼儿园对面</td></tr>
+<tr><td>⚠️</td><td>锦州秋园动物医院总院</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>南街里17-1号</td></tr>
+<tr><td>⚠️</td><td>宠乐园宠物用品店(水墨林溪西郡北区店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>和乐里34-51号</td></tr>
+<tr><td>⚠️</td><td>缅宠乐园撸猫馆·宠物DIY</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>万年里123-25号</td></tr>
+<tr><td>⚠️</td><td>名门汪族宠物店</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>中兴街中兴园小区门口49号</td></tr>
+<tr><td>⚠️</td><td>玩家来也(锦州万达店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>科技路21号3F-B</td></tr>
+<tr><td>⚠️</td><td>漫玩游戏屋</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>松山新区昆明街17-31号渤大小区德伦堡啤酒下方地下室</td></tr>
+<tr><td>⚠️</td><td>极速翼电玩城</td><td>电玩城</td><td>场内</td><td>4.1</td><td>锦绣前程购物中心3层</td></tr>
+<tr><td>⚠️</td><td>锦程互娱</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>延安路六段15号儒林宫馆4-129号</td></tr>
+<tr><td>⚠️</td><td>头号玩家</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>松坡路四段9号105门市</td></tr>
+<tr><td>⚠️</td><td>欢乐三客游家庭娱乐中心</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>九华山小商品批发城B座一楼</td></tr>
+<tr><td>⚠️</td><td>福源电玩城</td><td>电玩城</td><td>独立</td><td>4.1</td><td>东大街与石铁路交叉口西南100米</td></tr>
+<tr><td>⚠️</td><td>小袁舞蹈工作室</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>中央南街与市府路交叉口北120米</td></tr>
+<tr><td>⚠️</td><td>萌宠之家宠物店(士英街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>士英街49-34号回民小学对面</td></tr>
+<tr><td>⚠️</td><td>乖乖萌宠(春熙嘉园店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>锦朝路五号</td></tr>
+<tr><td>⚠️</td><td>万达宝贝王(锦州万达广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>凌南街道科技路21号万达广场3楼</td></tr>
+<tr><td>⚠️</td><td>永荣牧羊宝贝儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>舒馨豪苑E区门市</td></tr>
+<tr><td>⚠️</td><td>乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)</td><td>电玩城</td><td>场内</td><td>4.0</td><td>中央大街二段136-266号辽西郡文商旅综合体7楼</td></tr>
+<tr><td>⚠️</td><td>友聚游戏屋ps5·switch体验馆</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>洛阳路四段36-2号</td></tr>
+<tr><td>⚠️</td><td>星跃电玩城</td><td>电玩城</td><td>独立</td><td>4.0</td><td>锦娘路37-4</td></tr>
+<tr><td>⚠️</td><td>小天鹅舞蹈</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>银河广场大润发学籽都荟教育小镇三层</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园(主场店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>沟帮子街道河畔花园C区32号</td></tr>
+<tr><td>⚠️</td><td>萌宠之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>大虎山市场,萌宠之家宠物店,林西路10-11号</td></tr>
+<tr><td>⚠️</td><td>依婷萌宠</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>河畔花园B区北门旁</td></tr>
+<tr><td>⚠️</td><td>爱宠乐园(上海路店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>上海路二段74-14号</td></tr>
+<tr><td>⚠️</td><td>侏罗纪两栖爬行馆</td><td>其他儿童场所</td><td>场内</td><td>3.9</td><td>中央大街二段136号楼C区商场三楼331.332.333号</td></tr>
+<tr><td>⚠️</td><td>终极梦想电玩城</td><td>电玩城</td><td>场内</td><td>3.9</td><td>锦绣前程购物中心八楼</td></tr>
+<tr><td>⚠️</td><td>欢乐岛</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>卫东街8号东湖公园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>九华山游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>3.9</td><td>大凌河街道308省道东100米九华山公园旁</td></tr>
+<tr><td>⚠️</td><td>嗨宝淘气堡(英特购物店)</td><td>淘气堡</td><td>独立</td><td>3.9</td><td>站前街道站前街道站前街道站前街道站前街道锦华街122号英特购物F3层</td></tr>
+<tr><td>⚠️</td><td>喵汪乐园</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>理发一条街红月亮公寓西边第一家</td></tr>
+<tr><td>⚠️</td><td>欧乐淘气堡</td><td>淘气堡</td><td>场内</td><td>3.8</td><td>古城街道中央大街二段138号锦绣前程购物中心三楼</td></tr>
+<tr><td>⚠️</td><td>欢乐谷(分中心)</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>阳光海岸西2门南80米</td></tr>
+<tr><td>⚠️</td><td>锦州动物园游乐场</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>石桥子街道人民街5段11号锦州动物园</td></tr>
+<tr><td>⚠️</td><td>快乐星(锦州万达广场店)</td><td>其他儿童场所</td><td>场内</td><td>3.7</td><td>科技路21号万达广场锦州店F3层</td></tr>
+<tr><td>⚠️</td><td>HLK 海陆空动漫</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>锦绣前程8楼中影国际影城检票口旁边</td></tr>
+<tr><td>⚠️</td><td>星晨电玩城</td><td>电玩城</td><td>独立</td><td>3.7</td><td>义老线与东兴街交叉口东南180米</td></tr>
+<tr><td>⚠️</td><td>南山疯狂动物城</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>宝锦线与南山路交叉口东南300米</td></tr>
+</tbody></table></div>
+<p>（另 79 家见 §11 原始数据）</p>
+<h2>5. 综合体与商场（97 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达广场(锦州店)</td><td>购物中心/综合体</td><td>4.8</td><td>9</td><td>11</td><td>科技路21号</td></tr>
+<tr><td>✅A-</td><td>锦绣前程</td><td>百货/商场</td><td>4.8</td><td>11</td><td>11</td><td>中央大街二段138号</td></tr>
+<tr><td>✅A-</td><td>大润发(古塔店)</td><td>购物中心/综合体</td><td>4.7</td><td>3</td><td>13</td><td>北二里锦州华庭18号</td></tr>
+<tr><td>✅A-</td><td>大润发(体育场店)</td><td>购物中心/综合体</td><td>4.7</td><td>3</td><td>12</td><td>解放路五段26号银河广场1号</td></tr>
+<tr><td>✅A-</td><td>千盛百货(千盛购物广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>4</td><td>上海路4千盛购物广场F4层</td></tr>
+<tr><td>❌</td><td>锦州光彩批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>1</td><td>[]</td></tr>
+<tr><td>✅A-</td><td>西安街批发市场(宜昌路)</td><td>批发城</td><td>4.6</td><td>2</td><td>3</td><td>乐安里83-11号</td></tr>
+<tr><td>✅A-</td><td>辽西小商品批发市场(安达街店)</td><td>批发城</td><td>4.6</td><td>0</td><td>1</td><td>重庆路三段24-12号</td></tr>
+<tr><td>✅A-</td><td>沟帮子商业城</td><td>百货/商场</td><td>4.6</td><td>2</td><td>3</td><td>中央路与育才路交叉口西160米</td></tr>
+<tr><td>✅A-</td><td>堃和广场</td><td>百货/商场</td><td>4.6</td><td>3</td><td>4</td><td>解放南街27号</td></tr>
+<tr><td>✅A-</td><td>锦州家乐汇</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>10</td><td>解放路33-7号</td></tr>
+<tr><td>✅A-</td><td>凌海盛隆商城</td><td>百货/商场</td><td>4.6</td><td>2</td><td>5</td><td>振安路北侧</td></tr>
+<tr><td>✅A-</td><td>名购广场(金融中心店)</td><td>百货/商场</td><td>4.6</td><td>3</td><td>4</td><td>中央南街与市府路交叉口金融中心A-12号</td></tr>
+<tr><td>✅A-</td><td>辽西郡文商旅综合体</td><td>购物中心/综合体</td><td>4.6</td><td>11</td><td>11</td><td>中央大街二段136-266号</td></tr>
+<tr><td>✅A-</td><td>金凌商厦</td><td>百货/商场</td><td>4.6</td><td>10</td><td>11</td><td>南宁路</td></tr>
+<tr><td>✅A-</td><td>凌水小镇购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>7</td><td>6</td><td>人民路13号九华山二号A区商场</td></tr>
+<tr><td>✅A-</td><td>新玛特(宜昌路店)</td><td>购物中心/综合体</td><td>4.6</td><td>4</td><td>14</td><td>人民街三段3号</td></tr>
+<tr><td>✅A-</td><td>青山购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>3</td><td>5</td><td>中央大街三段36号付2号</td></tr>
+<tr><td>✅A-</td><td>广厦电子商场(上海路店)</td><td>百货/商场</td><td>4.6</td><td>6</td><td>7</td><td>民权里27号</td></tr>
+<tr><td>✅B</td><td>家得乐超市</td><td>购物中心/综合体</td><td>4.5</td><td>2</td><td>3</td><td>迎宾路38号</td></tr>
+<tr><td>✅B</td><td>辽西小商品批发市场西大厅</td><td>批发城</td><td>4.5</td><td>0</td><td>1</td><td>路三段21-22号</td></tr>
+<tr><td>✅B</td><td>茂业天地</td><td>百货/商场</td><td>4.5</td><td>7</td><td>15</td><td>中央大街3段-3号</td></tr>
+<tr><td>✅B</td><td>英特购物</td><td>购物中心/综合体</td><td>4.5</td><td>11</td><td>12</td><td>锦华街122号</td></tr>
+<tr><td>✅B</td><td>大商集团锦华商场</td><td>百货/商场</td><td>4.5</td><td>5</td><td>9</td><td>上海路三段24号</td></tr>
+<tr><td>✅B</td><td>林西路综合市场</td><td>百货/商场</td><td>4.5</td><td>5</td><td>13</td><td>宜昌路9号三段</td></tr>
+<tr><td>✅B</td><td>中影国际影城(辽西郡文商旅综合体店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>宝地太阳广场八楼</td></tr>
+<tr><td>✅B</td><td>SRC影城(千盛购物广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>千盛购物广场六楼</td></tr>
+<tr><td>✅B</td><td>百货大楼(广宁东路)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>什字街</td></tr>
+<tr><td>✅B</td><td>棒棒糖儿童百货(上海路店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>站前街道上海路3段33号</td></tr>
+<tr><td>✅B</td><td>单洞小商品批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>正大街道重庆路三段28-8号嘉多客商场</td></tr>
+<tr><td>✅B</td><td>北联百货集团沟帮子商场</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>沟帮子街道中央路</td></tr>
+<tr><td>✅B</td><td>LAWSON罗森(锦州万达广场店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>科技路21号万达广场锦州店F1层</td></tr>
+<tr><td>✅B</td><td>LAWSON罗森(武汉街分店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>中央南街锦绣天第C区32-109号锦绣天第锦绣乐庭</td></tr>
+<tr><td>✅B</td><td>凌海商贸城</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>大凌河镇集贸街</td></tr>
+<tr><td>✅B</td><td>太和商贸城(西宁街)</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>西宁里35号</td></tr>
+<tr><td>⚠️</td><td>和悦广场</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>宝地铂金大厦</td></tr>
+<tr><td>⚠️</td><td>明珠广场</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>健康路30号</td></tr>
+<tr><td>⚠️</td><td>万隆广场</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>太和街与干石桥胡同交叉口西80米</td></tr>
+<tr><td>⚠️</td><td>百惠生活购物中心</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>中央北街锦州电力高级技工学校南侧约40米</td></tr>
+<tr><td>⚠️</td><td>酷玩台球(千盛购物广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>上海路4-2号千盛购物广场F6层</td></tr>
+<tr><td>⚠️</td><td>大商集团锦州百货大楼A座</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>中央大街与解放路交叉口东南60米</td></tr>
+<tr><td>⚠️</td><td>王屯新村超市</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>正安镇中国石油北宁王屯加油站东侧</td></tr>
+<tr><td>⚠️</td><td>大商超市(新玛特店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>人民街三段3号新玛特宜昌路店B1层</td></tr>
+<tr><td>⚠️</td><td>名创优品(辽宁锦州中央新街购物广场2店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>锦铁街道中央大街地一大道7A-02</td></tr>
+<tr><td>⚠️</td><td>锦州光彩批发市场1厅</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>209省道与光彩立交桥交叉口西北100米</td></tr>
+<tr><td>⚠️</td><td>小商品批发服装商城</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>重庆路4-24号附近</td></tr>
+<tr><td>⚠️</td><td>皇家贝贝孕婴童一站式购物中心(锦州店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>南京路六段兴大都30-136 号</td></tr>
+<tr><td>⚠️</td><td>天街·橙购物中心</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>经济技术开发区52-86号</td></tr>
+<tr><td>⚠️</td><td>锦州地下商场</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>中央大街三段21号</td></tr>
+<tr><td>⚠️</td><td>大商集团中驰温州商城</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>沟帮子街道中央路商业城北侧</td></tr>
+</tbody></table></div>
+<p>（另 47 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（287 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>老庞家水馅包子馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>62.00</td><td>沙子河街道富国社区立康医院路西904-180-3591(西大街10-45)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b5ebcba7d009a9cf4b889cba691001cc_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>沟帮子尹家熏鸡总店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>57.00</td><td>沟帮子经济开发区102国道西50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4f0bae576f62d4bf44b42be745ec5612_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>清真伊烧烤(上海路总店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>58.00</td><td>上海路六段7-71号(近锦州市档案局)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/DA321B4C_20A7_475E_ADA8_3654B01CF827_L0_001_1500_200_1767090532664_78479199.jpg"></td></tr>
+<tr><td>✅A-</td><td>娜娜海鲜饭店</td><td>餐饮服务;中餐厅;火锅店｜餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>104.00</td><td>龙栖湾大道与S209交汇处往娘娘宫方向</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/13fafd1f66a5b433e173d1688dd63bb2"></td></tr>
+<tr><td>✅A-</td><td>典逸心州水沐堂洗浴(宝地庭南小居店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>103.00</td><td>德新里东方庭院40-80号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000650_1763951024861_73752435.jpg"></td></tr>
+<tr><td>✅A-</td><td>懋楼饭店</td><td>餐饮服务;中餐厅;清真菜馆</td><td>4.7</td><td>50.00</td><td>东街路北38-4号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000010890_ss__1771641156991_55616831.jpg"></td></tr>
+<tr><td>✅A-</td><td>断片烧烤(锦州烧烤)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>55.00</td><td>长沙街14号-42号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/390098c22c46c2a60000000723772405?type=pic"></td></tr>
+<tr><td>✅A-</td><td>秦三驴(云飞街店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.7</td><td>77.00</td><td>宝地城b区24-4号云飞大桥桥南100米路西</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000995_1769906680332_23602683.jpg"></td></tr>
+<tr><td>✅A-</td><td>老实鱼(锦绣天第店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>145.00</td><td>凌南西里锦绣天第C区7-29号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260306-cd55460471d06ea536b8a084-A9brj2ZLRfS8F466kbPhhP.jpg"></td></tr>
+<tr><td>✅A-</td><td>大震烧烤(和平路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>68.00</td><td>惠安社区北区南1门东南80米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000081652_ss__1763950847030_89813944.jpg"></td></tr>
+<tr><td>✅A-</td><td>老实鱼渔家宴(笔架山店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>120.00</td><td>天兴·海逸半岛34-87号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1b3e4d38aef16ac60000002637728556?type=pic"></td></tr>
+<tr><td>✅A-</td><td>蜀道山冒菜冒肚</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>43.00</td><td>南宁路四段62号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100003040_1765940307871_96061977.jpg"></td></tr>
+<tr><td>✅A-</td><td>大灯肥瘦盒饭(老干部局店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>21.00</td><td>安和里34号楼东门西210米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2f2fddccd220a8790000004460362169?type=pic"></td></tr>
+<tr><td>✅A-</td><td>秦三驴(铁东店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.7</td><td>77.00</td><td>解放路六段3-81号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_8055_ss__1773521397091_18146537.jpg"></td></tr>
+<tr><td>✅A-</td><td>北镇龙岗子生态园</td><td>体育休闲服务;休闲场所;休闲场所｜餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>56.00</td><td>龙岗子村北镇党校路口里走约五公里(原龙岗子山庄)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7acad33f3926d72f0000000738992162?type=pic"></td></tr>
+<tr><td>✅A-</td><td>牛牛大块烤肉(紫明街店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>57.00</td><td>紫明街与解放路交叉口东北角(锦纺医院西侧)电视大学斜对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_6373_1762257628047_10902233.jpg"></td></tr>
+<tr><td>✅A-</td><td>尹记驴肉馆(士英南街店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>96.00</td><td>星桥花园东门南70米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000017470_ss__1774396060509_90317276.jpg"></td></tr>
+<tr><td>✅A-</td><td>凌海市杨家烧烤</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>47.00</td><td>育人路</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/19E2D19C_D274_43B7_AAB1_AC1DA30B4C0A_L0_001_2000_150_1772157614038_29476459.jpg"></td></tr>
+<tr><td>✅A-</td><td>武记熏肉大饼(典逸心洲店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>56.00</td><td>老平四熏肉大饼店</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_5370_1756997502040_44663569.jpg"></td></tr>
+<tr><td>✅A-</td><td>金海岸渔家宴</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>112.00</td><td>商业路花园新村门市61-7号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8f61b9ced50ae5fc5085b3f3dc9bf0b0_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>兴北菜馆</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>75.00</td><td>敬业街道北京路7-83</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_166094_ss__1760175728011_26274313.jpg"></td></tr>
+<tr><td>✅A-</td><td>德品佳水饺(体育场大润发店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>20.00</td><td>解放路五段银行广场1-24号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100014045_1760238051492_84425404.jpg"></td></tr>
+<tr><td>✅A-</td><td>嗨辣私厨(锦州港总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>50.00</td><td>鑫海园甲3-16</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_4728_1741677102523_86942758.jpg"></td></tr>
+<tr><td>✅A-</td><td>老万烧烤(典逸心洲店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>72.00</td><td>德富里小区2-72号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b8c1a00dd98017c3a4dce31101341721_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>许家食府(人民街店)</td><td>餐饮服务;中餐厅;东北菜</td><td>4.6</td><td>43.00</td><td>人民街二段19-1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/266cc03c91ca9420b530c49458481d77"></td></tr>
+<tr><td>✅A-</td><td>周家小炒(南宁路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>34.00</td><td>丰乐里18-37</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1001072846_ss__1750047537102_77217592.jpg"></td></tr>
+<tr><td>✅A-</td><td>荣盛家常菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>71.00</td><td>洛阳路五段54-102号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100010440_1767659215681_09654479.jpg"></td></tr>
+<tr><td>✅A-</td><td>刘记水豆腐</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>18.00</td><td>凌河大街与奉国寺路交叉口北行200米路西</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ce8a4453865732248f9e82cce925be1f_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>四斤烤肉店(渤大店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>70.00</td><td>松山新区商大里59-63号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/92342d7ba4a59f10a66fe3e0c6747307_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>十二峒创意菜餐厅</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>79.00</td><td>南京路四段18-4号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/36D07B7C_AD64_431A_976D_79C14898BD86_L0_001_1500_200_1765697412503_28147546.jpg"></td></tr>
+<tr><td>✅A-</td><td>重庆酸菜鱼(上海路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>63.00</td><td>上海路与人民街交叉口东60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a631430a42ce1bf4acd18e669299a45f_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>The Fun.凡食家庭料理</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>95.00</td><td>凌南街道昆明街7-36号(渤大小区底商)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d26e79fd517e1c69da03d14430140b3e_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>品味小厨家常菜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>31.00</td><td>·莱茵华庭东门东南170米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5d6c993384823dec8b83b2eca24d1a73_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>锦州御烧烤</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>80.00</td><td>人民街三段16号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e9e31a14a82e6b80f5d9e2de558be710_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A</td><td>小闯农家菜(北安路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>36.00</td><td>文治里北安路32-43号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/cd50874e5d29ac7f1892a6c968ccbf8d"></td></tr>
+<tr><td>✅A-</td><td>刘胖小炒(北安路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>40.00</td><td>北安路工学里24-49号(辽工东苑南1门旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100013342_1771418033739_57732423.jpg"></td></tr>
+<tr><td>✅A-</td><td>廖家川菜馆(龙江北里店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>82.00</td><td>龙江中街龙江北里98-21516号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/908A380C_6242_478E_B6E9_DE9ECA539F92_L0_001_2000_150_1759331164772_13196478.jpg"></td></tr>
+<tr><td>✅A-</td><td>锦伊味麻辣香锅(人民街店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>44.00</td><td>阜康路东一里166-107号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_53651_ss__1767613417118_86117373.jpg"></td></tr>
+<tr><td>✅A-</td><td>东梅烧烤(辽工店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>72.00</td><td>工学里322-36号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b656e64ac0f1d50ea11e7e228e70ebb0_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>老街粘食店(总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>13.00</td><td>宜昌路三段19-97号(近英特购物广场)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/fc82d6c517593aaa0000008061948160?type=pic"></td></tr>
+<tr><td>✅A-</td><td>小国凤爪烧烤(南京路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>80.00</td><td>南京路四段10-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/f8fb254d34a947a6702f4a309f25bdbf_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>阿亮烤生蚝</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>68.00</td><td>东一里162-6号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100000848_1770045072890_83992132.jpg"></td></tr>
+<tr><td>✅A-</td><td>新千里烤肉城(曼哈顿店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>94.00</td><td>凌云里东湖湾G区8-92号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4814156E_0B0E_4C22_BE89_5BC6114F4096_L0_001_1284_71_1758544547056_15147533.jpg"></td></tr>
+<tr><td>✅A-</td><td>蜀留香火锅(吉祥街店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.6</td><td>55.00</td><td>吉祥新家园东3门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/4d1a3336ec95e745753b1c271453da07_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>遇见·杜尚(万兆·典逸心洲店)</td><td>餐饮服务;咖啡厅;咖啡厅</td><td>4.6</td><td>77.00</td><td>市府路万兆典逸心洲4-115号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e9193adabe74a4d50000000671708836?type=pic"></td></tr>
+<tr><td>✅A-</td><td>古塔区杨宁风味铁板烧(老店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>42.00</td><td>广西街5-30号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/15b8e6b8a1154350716075267472b10a"></td></tr>
+<tr><td>✅A-</td><td>辽西杜记馄饨</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>18.00</td><td>解放路三段13-77号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7963da0b57417cc220e8860185046680_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>胡军特味烧烤</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>77.00</td><td>锦凌路22-2号附近</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/D3B1415F_7B70_4214_B886_427B31BBC80E_L0_001_1500_200_1771810765338_59034384.jpg"></td></tr>
+<tr><td>✅A-</td><td>莫想螺蛳粉</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>18.00</td><td>宜昌路与中央大街交叉口东40米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7BFD6F88_10E0_4220_901B_EABC8D7AD753_L0_001_2016_1512_1743215499452_20560819.jpg"></td></tr>
+<tr><td>❌</td><td>赵记鸡架(府畔花园店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>33.00</td><td>[]</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/BE7EF886_FF0C_4C48_80A5_7F84C5ECF34C_L0_001_1500_200_1746279903656_93707923.jpg"></td></tr>
+<tr><td>✅A-</td><td>杭州街炸串(上海路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>35.00</td><td>上海路科技嘉园1-13号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/174571858731_1745718620839_91093057.jpg"></td></tr>
+<tr><td>✅A-</td><td>双义五味馅饼(太和店)</td><td>餐饮服务;中餐厅;东北菜</td><td>4.6</td><td>50.00</td><td>凌西大街溪林苑11-103,11-104,11-105</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/638b93ccb3a14e462e3c853d8c3625bd"></td></tr>
+<tr><td>✅A-</td><td>柳爷面馆(锦州首创店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>33.00</td><td>菊花里时代家园7-64号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000072436_ss__1764061499132_35505793.jpg"></td></tr>
+<tr><td>✅A-</td><td>厚远兴老油饼砂锅居(人民东路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>17.00</td><td>凌海大街84号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/816f1c7ae1fa915f215b8b3ff509a06a_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>常香聚家常菜饺子馆(水墨林溪西郡华府店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>34.00</td><td>和乐里3-51号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000082594_ss__1760521770928_54620097.jpg"></td></tr>
+<tr><td>✅A-</td><td>柳州肥姨妈大骨螺蛳粉(凌河夜市店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>21.00</td><td>中央大街二段47-8号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000101257_ss__1766112009719_59006324.jpg"></td></tr>
+<tr><td>✅A-</td><td>小铁盆老式麻辣烫手工炸串(宝地城C区店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>26.00</td><td>凌南东里宝地城c区长沙街41-53号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/E058460E_CFA8_46A6_B766_7C78E0F4D901_L0_001_1502_200_1768948247951_01806335.jpg"></td></tr>
+<tr><td>✅A-</td><td>彬仔鸡排小串(总店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>49.00</td><td>天成雅典北区南门西100米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ff2dfea3827300bf0000003353620605?type=pic"></td></tr>
+<tr><td>✅A-</td><td>闯关东铁锅炖菜馆(吉祥新家园店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>58.00</td><td>吉祥街吉祥新家园东门南走50米路西13-44号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/d51d1f847416229e70a38b14c107a062_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>八万融合小串(果木碳烤·凌河夜市店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>77.00</td><td>南宁路四段16-3(南阳路与山东街交叉口东北角)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/64d827fd0e38c5d53a3da66cd411eb58_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>百千家小酒馆(城市嘉园店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>79.00</td><td>卫东街城市嘉园1-51号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5d9fa626-4bfe-440e-ab4e-689a2a5318fc.png"></td></tr>
+<tr><td>✅A-</td><td>圣迭戈南京路酒馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>76.00</td><td>南京路四段22-10号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_14752_1768698238742_65674953.jpg"></td></tr>
+<tr><td>✅B</td><td>锦食丰饭店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>71.00</td><td>凌海市石山镇102国道旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/38f389b5a9631371d26b3cade3f518e7"></td></tr>
+<tr><td>✅B</td><td>祥来饭庄</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>59.00</td><td>314省道附近</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b7eff735221cd4790000008997754893?type=pic"></td></tr>
+<tr><td>✅B</td><td>刘家小炒</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>26.00</td><td>凌海大街15-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/6a8c6464ff79ad5ea2f3485ab199be3d_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>义县海宾饭店</td><td>餐饮服务;中餐厅;中餐厅｜汽车服务;汽车服务相关;汽车服务相关</td><td>4.5</td><td>50.00</td><td>凌北新区前窑村34号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/16d5025a5b9070302f11100cd3ba7df9"></td></tr>
+<tr><td>✅B</td><td>宝华烧烤(集兴路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>59.00</td><td>集兴路16号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/039F3AE5_426F_41B5_960A_E603CCA3716B_L0_001_1080_192_1762907569795_98172082.jpg"></td></tr>
+<tr><td>✅B</td><td>小伟烧烤(解放路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>67.00</td><td>八一公园北门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/19f3665a0e7edfd98b51321763afe312_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>龙飞烧烤(苹果园店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>62.00</td><td>南广路1-12苹果园小区光彩市场</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/454f203cf8a1b7490000002479152658?type=pic"></td></tr>
+<tr><td>✅B</td><td>小君酒楼(紫光豪苑店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>73.00</td><td>紫光豪苑门市楼13-16号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/76235ea21d34ce56e3586e524db69b02"></td></tr>
+<tr><td>✅B</td><td>春秋港式火锅</td><td>餐饮服务;中餐厅;火锅店</td><td>4.5</td><td>57.00</td><td>人民街福德转盘西100米海洋之星旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1F532BD6_31FF_4149_9191_690160B23410_L0_001_1260_1671_1738395475706_83058195.jpg"></td></tr>
+<tr><td>✅B</td><td>重庆老街火锅(人民街店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.5</td><td>90.00</td><td>人民街与解放路交叉口南50米路东</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000026819_ss__1771143611085_02668801.jpg"></td></tr>
+<tr><td>✅B</td><td>乾隆大火锅</td><td>餐饮服务;中餐厅;火锅店</td><td>4.5</td><td>28.00</td><td>鑫盛源小区1号(鑫盛源小区西南)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260321-8236f0ae4d0d7bdc7ead4b7f-80KrDjvmYu46JHIA2UByUo.jpg"></td></tr>
+<tr><td>✅B</td><td>雨林海鲜自助汇(凌海店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>76.00</td><td>大凌河街道中兴大街30号兴旺小区1号楼</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/684d94fcfe8ff0e20000003173078980?type=pic"></td></tr>
+<tr><td>✅B</td><td>渤海特色海鲜酒店</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>110.00</td><td>锦州市经济开发区娘娘宫镇市场南100米西</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1749559b629287e20000008933636740?type=pic"></td></tr>
+<tr><td>✅B</td><td>新千里烤肉城(新安里店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>50.00</td><td>汉口街55-1号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5D0BDB05_4C28_42C8_B130_95A8464BCA33_L0_001_1500_2000_1738395659805_02803976.jpg"></td></tr>
+<tr><td>✅B</td><td>渝乡人家(人民街店)</td><td>餐饮服务;中餐厅;四川菜(川菜)</td><td>4.5</td><td>66.00</td><td>南京路3段19-1号(大凌小区中区北1门旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3ab8950473c4e8d60000001534330239?type=pic"></td></tr>
+<tr><td>✅B</td><td>晓光家常菜(敬业北里店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>37.00</td><td>敬业北里68号105</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100006036_1759026503599_95844567.jpg"></td></tr>
+<tr><td>✅B</td><td>佳佳烀饼(龙江北里店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>37.00</td><td>龙江北里102-44号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000063196_ss__1727424454749_71577447.jpg"></td></tr>
+<tr><td>✅B</td><td>聚点蚝友汇大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>67.00</td><td>厚生艺术工厂b11-1</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b30bcb3baea5ec210000001282250994?type=pic"></td></tr>
+</tbody></table></div>
+<p>（另 207 家见 §11 原始数据，评分排序后 80 名未列入）</p>
+<h2>7. 苍蝇馆 / 小店候选（30 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>荣盛家常菜</td><td>店名小店语义</td><td>4.6</td><td>71.00</td><td>洛阳路五段54-102号</td><td></td></tr>
+<tr><td>品味小厨家常菜</td><td>店名小店语义</td><td>4.6</td><td>31.00</td><td>·莱茵华庭东门东南170米</td><td></td></tr>
+<tr><td>小闯农家菜(北安路店)</td><td>店名小店语义</td><td>4.6</td><td>36.00</td><td>文治里北安路32-43号</td><td></td></tr>
+<tr><td>常香聚家常菜饺子馆(水墨林溪西郡华府店)</td><td>店名小店语义</td><td>4.6</td><td>34.00</td><td>和乐里3-51号</td><td></td></tr>
+<tr><td>晓光家常菜(敬业北里店)</td><td>店名小店语义</td><td>4.5</td><td>37.00</td><td>敬业北里68号105</td><td></td></tr>
+<tr><td>聚点蚝友汇大排档</td><td>店名小店语义</td><td>4.5</td><td>67.00</td><td>厚生艺术工厂b11-1</td><td></td></tr>
+<tr><td>傅火火江湖大排档</td><td>店名小店语义</td><td>4.5</td><td>47.00</td><td>南郡天下皇城4-131</td><td></td></tr>
+<tr><td>锦禧小馆精致东北菜(安富里店)</td><td>店名小店语义</td><td>4.5</td><td>59.00</td><td>安富里7号楼东门东60米</td><td></td></tr>
+<tr><td>陈记家常菜(丰润世家东区店)</td><td>店名小店语义</td><td>4.5</td><td>54.00</td><td>丰润世家西门北80米</td><td></td></tr>
+<tr><td>一家人手工饺子家常菜</td><td>店名小店语义</td><td>4.5</td><td>66.00</td><td>龙江街道南京路碧桂园繁华汇</td><td></td></tr>
+<tr><td>六子小馆</td><td>店名小店语义</td><td>4.4</td><td>59.00</td><td>国家税务总局锦州高新技术产业开发区税务局松山税务分局西南侧70米</td><td></td></tr>
+<tr><td>董记火锅家常菜</td><td>店名小店语义</td><td>4.4</td><td>57.00</td><td>魏家胡同与鱼市胡同交叉口东100米</td><td></td></tr>
+<tr><td>长流水家常菜(九华山二号院B区店)</td><td>店名小店语义</td><td>4.4</td><td>58.00</td><td>人民路17号九华山二号院B区2号楼9号门市</td><td></td></tr>
+<tr><td>鑫鸿兴家常菜(山西街店)</td><td>店名小店语义</td><td>4.4</td><td>31.00</td><td>丰乐里18号39号</td><td></td></tr>
+<tr><td>万年红家常菜(万年里)</td><td>店名小店语义</td><td>4.3</td><td>26.00</td><td>万年里37-90号</td><td></td></tr>
+<tr><td>喜三胖韩国自助烤肉大排档(万达广场锦州店)</td><td>店名小店语义</td><td>4.3</td><td>65.00</td><td>科技路21-1号万达广场F4</td><td></td></tr>
+<tr><td>疙瘩汤湘土菜馆(女儿里店)</td><td>店名小店语义</td><td>4.3</td><td>52.00</td><td>洛阳路三段80-5号</td><td></td></tr>
+<tr><td>火宴山烧烤大排档</td><td>店名小店语义</td><td>4.3</td><td>66.00</td><td>凌海市二号院A区9-18门市</td><td></td></tr>
+<tr><td>虾肥肥·小龙虾大排档</td><td>店名小店语义</td><td>4.2</td><td>65.00</td><td>南二里星2-1号</td><td></td></tr>
+<tr><td>张记大排档(总店)</td><td>店名小店语义</td><td>4.1</td><td>42.00</td><td>锦铁街道延安路61-26号</td><td></td></tr>
+<tr><td>香里香亲农家菜馆</td><td>店名小店语义</td><td>4.0</td><td>27.00</td><td>镇安镇胜稍线黑山驾校训练场东北</td><td></td></tr>
+<tr><td>金师傅烧烤大排档</td><td>店名小店语义</td><td>3.8</td><td>59.00</td><td>商业路47号福兴家园12号楼49号门市</td><td></td></tr>
+<tr><td>呲花烤肉辣炒海鲜大排档(御景新城B区店)</td><td>店名小店语义</td><td>3.8</td><td>69.00</td><td>御景新城B区南门东50米</td><td></td></tr>
+<tr><td>大虎山街道西居红宇家常小吃</td><td>店名小店语义</td><td>3.8</td><td>16.00</td><td>中共锦州医科大学附属第三医院大虎山分院总支部委员会西南侧200米</td><td></td></tr>
+<tr><td>焦雷海鲜大排档</td><td>店名小店语义</td><td>3.7</td><td>57.00</td><td>锦汤路88号</td><td></td></tr>
+<tr><td>一煎到底小吃店</td><td>店名小店语义</td><td>3.6</td><td>27.00</td><td>士英街四段72号</td><td></td></tr>
+<tr><td>农家院美食城</td><td>店名小店语义</td><td>3.5</td><td>35.00</td><td>河南街与青岩路交叉口东南20米</td><td>评分 3.5 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>海鲜烧烤大排档</td><td>店名小店语义</td><td>3.2</td><td>—</td><td>北安路与红星街交叉口北40米</td><td>评分 3.2 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>苍蝇小馆</td><td>店名小店语义</td><td>3.0</td><td>29.00</td><td>启发路与东关校西胡同交叉口西南160米</td><td>评分 3.0 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>好哥海鲜烧烤大排档</td><td>店名小店语义</td><td>1.8</td><td>—</td><td>南内环路龙腾嘉源</td><td>评分 1.8 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（40 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>虹螺岘虹豆香干豆腐(豪绅家园店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.4</td><td>安达街38-21号</td></tr>
+<tr><td>❌</td><td>同盛居杨启泰直营店</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.0</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>藏源青藏特产(市府路店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.0</td><td>市府路93-3号</td></tr>
+<tr><td>⚠️</td><td>姚艳丽熏鸡工厂店</td><td>公司企业;公司企业;公司企业</td><td>3.9</td><td>立交桥头铝制品街</td></tr>
+<tr><td>⚠️</td><td>姚艳丽古法熏鸡(上海路店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.9</td><td>上海路5段科技嘉园1-11号</td></tr>
+<tr><td>⚠️</td><td>隆昊锦州特产店</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.9</td><td>东湖湾G区4-107号</td></tr>
+<tr><td>⚠️</td><td>干哥俩牛肉干(锦州店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.8</td><td>路三段1-92号</td></tr>
+<tr><td>⚠️</td><td>锦州特产(沟帮子熏鸡老店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>3.8</td><td>安和里12-105号</td></tr>
+<tr><td>⚠️</td><td>速运鲜海产品礼品特产(科技路店)</td><td>购物服务;综合市场;水产海鲜市场</td><td>3.8</td><td>凌南东里153号楼</td></tr>
+<tr><td>⚠️</td><td>辽西特产虹豆香(兴华里新区店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.8</td><td>兴华里新区东北门旁</td></tr>
+<tr><td>⚠️</td><td>善门聚山福东北特产店</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.8</td><td>南二里一号16-184</td></tr>
+<tr><td>⚠️</td><td>堰鑫湲锦州特产超市</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.7</td><td>洛阳路三段34-158号</td></tr>
+<tr><td>⚠️</td><td>祥淳烟酒特产店(海逸半岛店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.7</td><td>海逸半岛南门旁</td></tr>
+<tr><td>⚠️</td><td>郝云杉熏鸡猪蹄东北土特产店(福德店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.6</td><td>锦华街2-11号</td></tr>
+<tr><td>⚠️</td><td>张记干果特产行</td><td>购物服务;综合市场;果品市场</td><td>3.6</td><td>站前街道和平路三段42-9</td></tr>
+<tr><td>⚠️</td><td>八方特产超市(吉庆里店)</td><td>购物服务;专卖店;专营店</td><td>3.5</td><td>邮政大厦斜对面</td></tr>
+<tr><td>⚠️</td><td>礼礼记烟酒茶礼特产</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>3.5</td><td>典逸心洲西门吉祥街24-24门市(老万烧烤典逸心洲店对面)</td></tr>
+<tr><td>⚠️</td><td>圣泉干豆腐</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.5</td><td>石油东街与重庆路交叉口东北80米</td></tr>
+<tr><td>❌</td><td>锦州特产(鑫恒天百货商行)</td><td>购物服务;专卖店;专营店</td><td>3.4</td><td>武汉街26-51号</td></tr>
+<tr><td>❌</td><td>渤海家乡特产</td><td>购物服务;专卖店;专营店</td><td>3.4</td><td>凌海大街84号弘福家园3-69号</td></tr>
+<tr><td>❌</td><td>沟帮子特产熏鸡</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.4</td><td>民治里南门东南50米</td></tr>
+<tr><td>❌</td><td>成哥高粱经营部</td><td>购物服务;专卖店;土特产专卖店</td><td>3.4</td><td>新立屯镇荒地村</td></tr>
+<tr><td>❌</td><td>黑山县东北山林野味土特产店</td><td>购物服务;专卖店;土特产专卖店</td><td>3.3</td><td>光荣路与西内环路交叉口东140米</td></tr>
+<tr><td>❌</td><td>干海鲜特产店</td><td>购物服务;综合市场;水产海鲜市场</td><td>3.3</td><td>武夷山路开发区综合市场(滨海豪庭西南)</td></tr>
+<tr><td>❌</td><td>香飘草原蒙古特产食品店(东方庭院店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.2</td><td>光明园北门东60米</td></tr>
+<tr><td>❌</td><td>绿贡农珍土特产品专营店</td><td>购物服务;专卖店;专营店</td><td>3.2</td><td>市府花园小区1-4号楼7号</td></tr>
+<tr><td>❌</td><td>北镇闾山特产超市</td><td>购物服务;专卖店;专营店</td><td>3.2</td><td>南环西路7-51</td></tr>
+<tr><td>❌</td><td>福泰粮油特产(富源城堡店)</td><td>购物服务;综合市场;农副产品市场</td><td>3.2</td><td>北镇市富源城堡南2门</td></tr>
+<tr><td>❌</td><td>榔天下</td><td>购物服务;专卖店;专营店</td><td>3.2</td><td>沟帮子镇中平社区晨光二期901-196-3907门市</td></tr>
+<tr><td>❌</td><td>香飘草原蒙古特产店</td><td>购物服务;专卖店;土特产专卖店</td><td>3.1</td><td>康宁里29号</td></tr>
+<tr><td>❌</td><td>腾达牛肉干</td><td>购物服务;专卖店;专营店</td><td>3.1</td><td>文家胡同与太和街交叉口西60米</td></tr>
+<tr><td>❌</td><td>优品乐汇土特产(芙蓉园小区店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.1</td><td>芙蓉园小区</td></tr>
+<tr><td>❌</td><td>锦州特产食品超市(锦州南站)</td><td>购物服务;专卖店;专营店</td><td>3.0</td><td>东海大道与中山路交叉口东南320米</td></tr>
+<tr><td>❌</td><td>蒙原香炭烤牛肉干</td><td>购物服务;专卖店;专营店</td><td>3.0</td><td>南宁街4段15号之122号</td></tr>
+<tr><td>❌</td><td>海养堂海南土特产(恒升现代城店)</td><td>购物服务;专卖店;专营店</td><td>3.0</td><td>徐州街恒生现代城29甲</td></tr>
+<tr><td>❌</td><td>天绿专营店</td><td>购物服务;专卖店;土特产专卖店</td><td>2.9</td><td>中兴街与振兴路交叉口南100米</td></tr>
+<tr><td>❌</td><td>百汇特产(宝地东湖湾C区店)</td><td>购物服务;专卖店;专营店</td><td>2.8</td><td>宝地东湖湾C区22-40号</td></tr>
+<tr><td>❌</td><td>华美共好</td><td>生活服务;美容美发店;美容美发店</td><td>2.7</td><td>东二里38-20号</td></tr>
+<tr><td>❌</td><td>宜州好物馆</td><td>科教文化服务;博物馆;博物馆</td><td>2.2</td><td>义州镇东北街东街路北20-7号</td></tr>
+<tr><td>❌</td><td>惠芝园地标溯源特产生活馆</td><td>购物服务;专卖店;专营店</td><td>2.1</td><td>[]</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>星光宾馆(锦州火车站店)（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星光宾馆(锦州火车站店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>动力特色烧烤(古塔店)</td><td>距离就近</td><td>166m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>交通宾馆(锦华街)</td><td>距离就近</td><td>252m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>和谐宾馆(锦华街)</td><td>距离就近</td><td>255m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>K-one Night Club</td><td>距离就近</td><td>335m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>重庆酸菜鱼(上海路店)</td><td>距离就近</td><td>392m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>莫哥电玩</td><td>距离就近</td><td>412m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>莫哥电玩</td><td>距离就近</td><td>412m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>锦州和平路宾馆</td><td>距离就近</td><td>431m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>甜七锅包肉</td><td>距离就近</td><td>495m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>诡抉剧情密室(鼎沐大厦店)</td><td>距离就近</td><td>497m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>嗨宝淘气堡(英特购物店)</td><td>距离就近</td><td>516m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>锦州御烧烤</td><td>距离就近</td><td>537m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>锦州荣昌宾馆</td><td>距离就近</td><td>555m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>米村拌饭(锦州新玛特店)</td><td>距离就近</td><td>590m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>锦州大厦宾馆(火车站店)</td><td>距离就近</td><td>591m</td><td>3.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(锦州店)（34 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>赛百味(锦州万达广场店)</td><td>名称互证</td><td>9m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玩家来也(锦州万达店)</td><td>距离就近</td><td>9m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>玩家来也(锦州万达店)</td><td>距离就近</td><td>9m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>比格比萨自助(锦州万达店)</td><td>名称互证</td><td>30m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>星聚会KTV(锦州万达广场店)</td><td>名称互证</td><td>36m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达宝贝王(锦州万达广场店)</td><td>名称互证</td><td>57m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>蛋糕新语(锦州万达广场店)</td><td>名称互证</td><td>88m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(锦州万达店)</td><td>名称互证</td><td>90m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(锦州万达店)</td><td>名称互证</td><td>90m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>肯德基(锦州万达店)</td><td>名称互证</td><td>90m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>TheGreenParty锦州万达店</td><td>名称互证</td><td>93m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>熊猫密室探索乐园</td><td>名称互证</td><td>101m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>快乐星(锦州万达广场店)</td><td>名称互证</td><td>104m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>veepapo哈哈公园</td><td>名称互证</td><td>110m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>麦当劳(锦州万达餐厅)</td><td>名称互证</td><td>111m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>米村拌饭(太和区万达店)</td><td>名称互证</td><td>115m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>神盾局科技密室(锦州万达店)</td><td>名称互证</td><td>117m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>万达影城(锦州万达广场店)</td><td>名称互证</td><td>121m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>飞奇梦想城</td><td>名称互证</td><td>122m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>第九街区密室逃脱(锦州万达广场店)</td><td>名称互证</td><td>123m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>必胜客(锦州万达店)</td><td>名称互证</td><td>131m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>小玩游戏厅·抓娃娃</td><td>名称互证</td><td>135m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>小玩游戏厅·抓娃娃</td><td>名称互证</td><td>135m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>喜三胖韩国自助烤肉大排档(万达广场锦州店)</td><td>名称互证</td><td>135m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>扶摇树下·椒麻鲜活虾(锦州万达店)</td><td>名称互证</td><td>136m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>锦绣前程（38 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>侏罗纪两栖爬行馆</td><td>距离就近</td><td>0m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>小木屋拌饭(锦绣前程店)</td><td>名称互证</td><td>9m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>视线之外超级密室(锦绣前程店)</td><td>名称互证</td><td>59m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>终极梦想电玩城</td><td>名称互证</td><td>59m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>中影国际影城(辽西郡文商旅综合体店)</td><td>距离就近</td><td>65m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>米村拌饭(大商锦绣店)</td><td>名称互证</td><td>66m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>麦感自助KTV(锦绣前程店)</td><td>名称互证</td><td>76m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>HLK 海陆空动漫</td><td>名称互证</td><td>77m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>HLK 海陆空动漫</td><td>名称互证</td><td>77m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>欧乐淘气堡</td><td>名称互证</td><td>77m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)</td><td>距离就近</td><td>84m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)</td><td>距离就近</td><td>84m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>浪LONG LIVEHOUSE</td><td>距离就近</td><td>91m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>布车POCHA BOOM(锦绣前程店)</td><td>名称互证</td><td>93m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>捞鱼大师(大商锦绣前程购物中心店)</td><td>名称互证</td><td>100m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>捞鱼大师(大商锦绣前程购物中心店)</td><td>名称互证</td><td>100m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>秘境世纪(锦绣前程店)</td><td>名称互证</td><td>105m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>小鲤鱼欢乐赶海乐园</td><td>距离就近</td><td>105m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>奇奥恐龙乐园(大商锦绣前程购物中心店)</td><td>名称互证</td><td>109m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>极速翼电玩城</td><td>名称互证</td><td>112m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>BLKpartytime小酒馆</td><td>名称互证</td><td>115m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>秋鹿睡衣(中央大街店)</td><td>名称互证</td><td>124m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>ez电竞</td><td>距离就近</td><td>127m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>捷安特·锦州(解放路店)</td><td>距离就近</td><td>176m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>鑫鸿兴家常菜(山西街店)</td><td>距离就近</td><td>204m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>老庞家水馅包子馆（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>老庞家水馅包子馆</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>旺角电玩城</td><td>距离就近</td><td>538m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>旺角电玩城</td><td>距离就近</td><td>538m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>凌河夜市（34 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>柳州肥姨妈大骨螺蛳粉(凌河夜市店)</td><td>名称互证</td><td>31m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>呱呱爽美食</td><td>距离就近</td><td>78m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>幸运精灵</td><td>距离就近</td><td>160m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>AA国际动漫五中店(南宁路店)</td><td>距离就近</td><td>165m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>西落舌冒菜冒肚(锦州首店)</td><td>距离就近</td><td>202m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>锦禧小馆精致东北菜(安富里店)</td><td>距离就近</td><td>235m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>友聚游戏屋ps5·switch体验馆</td><td>距离就近</td><td>235m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>友聚游戏屋ps5·switch体验馆</td><td>距离就近</td><td>235m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>爱尚电玩城</td><td>距离就近</td><td>257m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>爱尚电玩城</td><td>距离就近</td><td>257m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>安小鱼轻食麻辣烫(锦州五中形象店)</td><td>名称互证</td><td>275m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蜀道山冒菜冒肚</td><td>距离就近</td><td>294m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>锦州烧烤(中央大街店)</td><td>距离就近</td><td>298m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>喜马大陆(锦州店)</td><td>距离就近</td><td>318m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>喜马大陆儿童沉浸式短旅中心(锦州店)</td><td>距离就近</td><td>318m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>Sunyea·山山野云南菜(锦州店)</td><td>距离就近</td><td>345m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>八万融合小串(果木碳烤·凌河夜市店)</td><td>名称互证</td><td>345m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>熊喵来了火锅(锦州凌河夜市店)</td><td>名称互证</td><td>347m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>挚Whiskey&amp;Cocktail</td><td>距离就近</td><td>380m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>怪奇物语密室逃脱(茂业天地店)</td><td>距离就近</td><td>385m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>老地方酒吧(南宁路店)</td><td>距离就近</td><td>388m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>儿童乐园(茂业天地店)</td><td>距离就近</td><td>432m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋(茂业中心店)</td><td>距离就近</td><td>437m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋(茂业中心店)</td><td>距离就近</td><td>437m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>博纳国际影城(茂业天地店)</td><td>距离就近</td><td>442m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万年里美食街（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>头号玩家</td><td>距离就近</td><td>101m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>头号玩家</td><td>距离就近</td><td>101m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>万年红家常菜(万年里)</td><td>距离就近</td><td>140m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>万年里夜市</td><td>距离就近</td><td>183m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>景子街羊杂面(万年里小区店)</td><td>距离就近</td><td>256m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>刘文祥麻辣烫麻辣拌(万年屋店)</td><td>距离就近</td><td>293m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>渔世酒咖</td><td>距离就近</td><td>364m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>9697bar</td><td>距离就近</td><td>415m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>佳佳烀饼店(马家店)</td><td>距离就近</td><td>551m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>缅宠乐园撸猫馆·宠物DIY</td><td>距离就近</td><td>577m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>亦家快捷宾馆（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>亦家快捷宾馆</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>超级星座益智乐园(堃和广场店)</td><td>距离就近</td><td>153m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>JOYMARK(黑山县堃和广场店)</td><td>距离就近</td><td>158m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>电玩吧台</td><td>距离就近</td><td>158m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>电玩吧台</td><td>距离就近</td><td>158m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>无解·nosolution</td><td>距离就近</td><td>169m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>淘淘萌堡游乐场</td><td>距离就近</td><td>179m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>好哥海鲜烧烤大排档</td><td>距离就近</td><td>208m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>茂源商务旅馆</td><td>距离就近</td><td>248m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>醉屿微醺小酒馆</td><td>距离就近</td><td>250m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>迷糊王重庆鸡公煲(黑山店)</td><td>距离就近</td><td>323m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>黑山宏达旅社</td><td>距离就近</td><td>326m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>喵汪乐园</td><td>距离就近</td><td>511m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>老四川火锅(金鼎桃园店)</td><td>距离就近</td><td>580m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>乾隆大火锅</td><td>距离就近</td><td>586m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>万达影城(锦州万达广场店)（34 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(锦州万达广场店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>红魔坊·超级密室(锦州万达店)</td><td>距离就近</td><td>23m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>麦感自助KTV影咖</td><td>距离就近</td><td>23m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>神盾局科技密室(锦州万达店)</td><td>距离就近</td><td>26m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雾镜·超级密室剧场</td><td>距离就近</td><td>29m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>肯德基(锦州万达店)</td><td>距离就近</td><td>36m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜三胖韩国自助烤肉大排档(万达广场锦州店)</td><td>距离就近</td><td>37m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>小玩游戏厅·抓娃娃</td><td>距离就近</td><td>40m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>小玩游戏厅·抓娃娃</td><td>距离就近</td><td>40m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>玩偶城堡(锦州万达店)</td><td>距离就近</td><td>40m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>米村拌饭(太和区万达店)</td><td>距离就近</td><td>60m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>赛百味(锦州万达广场店)</td><td>距离就近</td><td>122m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玩家来也(锦州万达店)</td><td>距离就近</td><td>122m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>玩家来也(锦州万达店)</td><td>距离就近</td><td>122m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>星聚会KTV(锦州万达广场店)</td><td>距离就近</td><td>130m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋</td><td>距离就近</td><td>131m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋</td><td>距离就近</td><td>131m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>比格比萨自助(锦州万达店)</td><td>距离就近</td><td>143m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>万达宝贝王(锦州万达广场店)</td><td>距离就近</td><td>162m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>蛋糕新语(锦州万达广场店)</td><td>距离就近</td><td>195m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>TheGreenParty锦州万达店</td><td>距离就近</td><td>201m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(锦州万达店)</td><td>距离就近</td><td>203m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>密室阿姨儿童探索中心(锦州万达店)</td><td>距离就近</td><td>203m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>熊猫密室探索乐园</td><td>距离就近</td><td>218m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>麦当劳(锦州万达餐厅)</td><td>距离就近</td><td>222m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(古塔店)（35 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>爱琳淘气堡</td><td>名称互证</td><td>66m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>肯德基(古塔店)</td><td>名称互证</td><td>75m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>米高美KTV(东一里店)</td><td>距离就近</td><td>157m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>德伦堡啤酒厂(古塔店)</td><td>距离就近</td><td>202m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>锦伊味麻辣香锅(人民街店)</td><td>距离就近</td><td>204m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>南街肉蛋汉堡</td><td>距离就近</td><td>303m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>东方明珠KTV(南一里店)</td><td>距离就近</td><td>344m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>兆明清真烧烤(古塔公园店)</td><td>距离就近</td><td>345m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>塔边酒馆</td><td>距离就近</td><td>346m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>盛世欢歌</td><td>距离就近</td><td>349m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>春秋港式火锅</td><td>距离就近</td><td>355m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>好声音KTV</td><td>距离就近</td><td>366m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>天王KTV</td><td>距离就近</td><td>368m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>新千里烤肉城(新安里店)</td><td>距离就近</td><td>378m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>阿亮烤生蚝</td><td>距离就近</td><td>385m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>起点ktv</td><td>距离就近</td><td>396m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>音浪KTV</td><td>距离就近</td><td>425m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>泷飞KTV</td><td>距离就近</td><td>428m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>抖动之音国际商务汇</td><td>距离就近</td><td>429m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>杜记馄饨</td><td>距离就近</td><td>451m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>凡花FMAX KTV</td><td>距离就近</td><td>451m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>锦州秋园动物医院总院</td><td>距离就近</td><td>462m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>许家食府(人民街店)</td><td>距离就近</td><td>472m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>雀实赢24小时自助棋牌(福德店)</td><td>距离就近</td><td>477m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>十二先生酒吧(暂停营业)</td><td>距离就近</td><td>479m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大润发(体育场店)（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影国际影城(银河广场店)</td><td>距离就近</td><td>57m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>冠军乐融融儿童游乐场</td><td>距离就近</td><td>73m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>德品佳水饺(体育场大润发店)</td><td>名称互证</td><td>78m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>小天鹅舞蹈</td><td>名称互证</td><td>92m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>必胜客(家乐汇店)</td><td>距离就近</td><td>132m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>中影北方巨幕影城(家乐汇比优特店)</td><td>距离就近</td><td>200m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>李家小饭馆</td><td>距离就近</td><td>299m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>秦三驴(铁东店)</td><td>距离就近</td><td>334m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>华莱士·全鸡汉堡(恒升现代城店)</td><td>距离就近</td><td>336m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>荣盛家常菜</td><td>距离就近</td><td>418m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>海鲜餐馆(解放路)</td><td>距离就近</td><td>449m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>杭州街炸串(上海路店)</td><td>距离就近</td><td>473m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>微利板筋烧烤屋(榴花北里西区店)</td><td>距离就近</td><td>494m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>盈达海鲜</td><td>距离就近</td><td>512m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>清真伊烧烤(上海路总店)</td><td>距离就近</td><td>594m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>肯德基(古塔店)</td><td>名称互证</td><td>2802m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>爱琳淘气堡</td><td>名称互证</td><td>2861m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>千盛购物广场(中央大街)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>SRC影城(千盛购物广场店)</td><td>名称互证</td><td>2m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>酷玩台球(千盛购物广场店)</td><td>名称互证</td><td>37m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>肯德基(上海路店)</td><td>距离就近</td><td>55m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>莫想螺蛳粉</td><td>距离就近</td><td>261m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>麦当劳(锦州中央大街餐厅)</td><td>距离就近</td><td>295m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>博纳国际影城(茂业天地店)</td><td>距离就近</td><td>304m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋(茂业中心店)</td><td>距离就近</td><td>309m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋(茂业中心店)</td><td>距离就近</td><td>309m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>儿童乐园(茂业天地店)</td><td>距离就近</td><td>313m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>怪奇物语密室逃脱(茂业天地店)</td><td>距离就近</td><td>359m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>好家旅馆(和平路店)</td><td>距离就近</td><td>374m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>喜马大陆儿童沉浸式短旅中心(锦州店)</td><td>距离就近</td><td>427m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜马大陆(锦州店)</td><td>距离就近</td><td>427m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>锦州市凌河区垚垚湘里人家乡菜馆</td><td>距离就近</td><td>482m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>新炎旭小酒馆</td><td>距离就近</td><td>491m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>锦州宏大旅社(锦州火车站店)</td><td>距离就近</td><td>495m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>星恋影城(文化宫店)</td><td>距离就近</td><td>543m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>锦州铁西宾馆</td><td>距离就近</td><td>593m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>古塔夜市(锦华街)（35 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>ez电竞</td><td>距离就近</td><td>48m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>捞鱼大师(大商锦绣前程购物中心店)</td><td>距离就近</td><td>63m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>捞鱼大师(大商锦绣前程购物中心店)</td><td>距离就近</td><td>63m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)</td><td>距离就近</td><td>84m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)</td><td>距离就近</td><td>84m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>浪LONG LIVEHOUSE</td><td>距离就近</td><td>89m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>麦感自助KTV(锦绣前程店)</td><td>距离就近</td><td>106m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>中影国际影城(辽西郡文商旅综合体店)</td><td>距离就近</td><td>108m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>米村拌饭(大商锦绣店)</td><td>距离就近</td><td>126m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>小木屋拌饭(锦绣前程店)</td><td>距离就近</td><td>147m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>侏罗纪两栖爬行馆</td><td>距离就近</td><td>155m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>视线之外超级密室(锦绣前程店)</td><td>距离就近</td><td>172m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欧乐淘气堡</td><td>距离就近</td><td>178m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>HLK 海陆空动漫</td><td>距离就近</td><td>184m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>HLK 海陆空动漫</td><td>距离就近</td><td>184m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>终极梦想电玩城</td><td>距离就近</td><td>187m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>秘境世纪(锦绣前程店)</td><td>距离就近</td><td>190m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>小鲤鱼欢乐赶海乐园</td><td>距离就近</td><td>190m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>奇奥恐龙乐园(大商锦绣前程购物中心店)</td><td>距离就近</td><td>214m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>秋鹿睡衣(中央大街店)</td><td>距离就近</td><td>220m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>北极星动漫嘉年华</td><td>距离就近</td><td>225m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>北极星动漫嘉年华</td><td>距离就近</td><td>225m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>BLKpartytime小酒馆</td><td>距离就近</td><td>228m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>极速翼电玩城</td><td>距离就近</td><td>228m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>布车POCHA BOOM(锦绣前程店)</td><td>距离就近</td><td>233m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>太和夜市(新民街店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>麦匠手工精酿啤酒(太和店)</td><td>距离就近</td><td>235m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>袁记盒饭二部美食城</td><td>距离就近</td><td>507m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北镇庙夜市（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>北镇庙游乐场</td><td>距离就近</td><td>107m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>九华山公园（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>九华山公园</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>九华山游乐园</td><td>名称互证</td><td>299m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>布达拉宫广场（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>布达拉宫广场</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长流水家常菜(九华山二号院B区店)</td><td>距离就近</td><td>250m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>强子地摊烧烤</td><td>距离就近</td><td>376m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>八达空间</td><td>距离就近</td><td>487m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>趣玩淘气堡</td><td>距离就近</td><td>493m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>宙斯密室逃脱</td><td>距离就近</td><td>493m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>火宴山烧烤大排档</td><td>距离就近</td><td>524m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>九华山游乐园</td><td>距离就近</td><td>535m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>江湖酒馆</td><td>距离就近</td><td>539m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>星感觉巨幕影城(凌海店)</td><td>距离就近</td><td>547m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>欢乐三客游家庭娱乐中心</td><td>距离就近</td><td>584m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>锦州双明旅社(南站店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>锦州双明旅社(南站店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>锦州动物园（29 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>锦州动物园</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>锦州动物园游乐场</td><td>名称互证</td><td>52m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>动物园(公交站)</td><td>距离就近</td><td>125m</td><td>—</td><td>§11</td></tr>
+<tr><td>锦州动物园停车场</td><td>名称互证</td><td>140m</td><td>—</td><td>§11</td></tr>
+<tr><td>特来电超级充电站(锦州加能北湖公园特来电充电站)</td><td>名称互证</td><td>158m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>锦州市动物园办公区</td><td>名称互证</td><td>164m</td><td>—</td><td>§11</td></tr>
+<tr><td>锦州动物园停车场(出口)</td><td>名称互证</td><td>195m</td><td>—</td><td>§11</td></tr>
+<tr><td>锦州动物园-白孔雀</td><td>名称互证</td><td>281m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>锦州动物园-白腹锦鸡</td><td>名称互证</td><td>281m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>鸣禽馆-蓝孔雀</td><td>名称互证</td><td>292m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>锦州动物园草食区-麋鹿</td><td>名称互证</td><td>307m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>锦州动物园-草食区</td><td>名称互证</td><td>322m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>鸟语林-丹顶鹤</td><td>名称互证</td><td>338m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>锦州动物园草食区-原驼</td><td>名称互证</td><td>354m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>锦州动物园-环尾狐猴</td><td>名称互证</td><td>367m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>锦州动物园-白眉长臂猿</td><td>名称互证</td><td>370m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>锦州动物园-松鼠猴</td><td>名称互证</td><td>371m</td><td>1.2</td><td>§11</td></tr>
+<tr><td>锦州动物园-绿猴</td><td>名称互证</td><td>376m</td><td>1.0</td><td>§11</td></tr>
+<tr><td>锦州动物园草食区-黇鹿</td><td>名称互证</td><td>378m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>猴馆-黑帽悬猴</td><td>名称互证</td><td>379m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>猛禽馆-秃鹫</td><td>名称互证</td><td>389m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>锦州动物园草食区-欧洲盘羊</td><td>名称互证</td><td>389m</td><td>2.2</td><td>§11</td></tr>
+<tr><td>锦州动物园草食区-白牦牛</td><td>名称互证</td><td>403m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>熊馆-棕熊</td><td>名称互证</td><td>424m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>北美新生活连锁超市(北宁路店)</td><td>名称互证</td><td>441m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中影国际影城(银河广场店)（19 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影国际影城(银河广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>冠军乐融融儿童游乐场</td><td>距离就近</td><td>82m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>德品佳水饺(体育场大润发店)</td><td>距离就近</td><td>127m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>小天鹅舞蹈</td><td>距离就近</td><td>132m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>必胜客(家乐汇店)</td><td>距离就近</td><td>190m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>中影北方巨幕影城(家乐汇比优特店)</td><td>距离就近</td><td>256m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>李家小饭馆</td><td>距离就近</td><td>341m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>秦三驴(铁东店)</td><td>距离就近</td><td>386m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>华莱士·全鸡汉堡(恒升现代城店)</td><td>距离就近</td><td>388m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>海鲜餐馆(解放路)</td><td>距离就近</td><td>409m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>杭州街炸串(上海路店)</td><td>距离就近</td><td>416m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>荣盛家常菜</td><td>距离就近</td><td>435m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>微利板筋烧烤屋(榴花北里西区店)</td><td>距离就近</td><td>504m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>盈达海鲜</td><td>距离就近</td><td>566m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>凤影八中土豆豆皮</td><td>距离就近</td><td>575m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>HLK 海陆空动漫</td><td>名称互证</td><td>1607m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>HLK 海陆空动漫</td><td>名称互证</td><td>1607m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>中影国际影城(辽西郡文商旅综合体店)</td><td>名称互证</td><td>1613m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>中影国际影城(新玛特店)</td><td>名称互证</td><td>2364m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>锦州百货大楼(中央大街店)（35 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>喜马大陆(锦州店)</td><td>距离就近</td><td>59m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>喜马大陆儿童沉浸式短旅中心(锦州店)</td><td>名称互证</td><td>59m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>怪奇物语密室逃脱(茂业天地店)</td><td>距离就近</td><td>126m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>儿童乐园(茂业天地店)</td><td>距离就近</td><td>172m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋(茂业中心店)</td><td>距离就近</td><td>176m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋(茂业中心店)</td><td>距离就近</td><td>176m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>博纳国际影城(茂业天地店)</td><td>距离就近</td><td>185m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麦当劳(锦州中央大街餐厅)</td><td>距离就近</td><td>191m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>呱呱爽美食</td><td>距离就近</td><td>216m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>莫想螺蛳粉</td><td>距离就近</td><td>225m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>AA国际动漫五中店(南宁路店)</td><td>距离就近</td><td>249m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>幸运精灵</td><td>距离就近</td><td>251m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(凌河夜市店)</td><td>距离就近</td><td>259m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>安小鱼轻食麻辣烫(锦州五中形象店)</td><td>距离就近</td><td>314m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蜀道山冒菜冒肚</td><td>距离就近</td><td>329m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>挚Whiskey&amp;Cocktail</td><td>距离就近</td><td>347m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>Sunyea·山山野云南菜(锦州店)</td><td>距离就近</td><td>348m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>锦州烧烤(中央大街店)</td><td>距离就近</td><td>350m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>星恋影城(文化宫店)</td><td>距离就近</td><td>351m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>八万融合小串(果木碳烤·凌河夜市店)</td><td>距离就近</td><td>355m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>熊喵来了火锅(锦州凌河夜市店)</td><td>距离就近</td><td>363m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>老地方酒吧(南宁路店)</td><td>距离就近</td><td>377m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>肯德基(上海路店)</td><td>距离就近</td><td>430m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>西落舌冒菜冒肚(锦州首店)</td><td>距离就近</td><td>431m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>友聚游戏屋ps5·switch体验馆</td><td>距离就近</td><td>446m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>千盛百货(千盛购物广场店)（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>酷玩台球(千盛购物广场店)</td><td>距离就近</td><td>9m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>SRC影城(千盛购物广场店)</td><td>距离就近</td><td>27m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>肯德基(上海路店)</td><td>距离就近</td><td>27m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>莫想螺蛳粉</td><td>距离就近</td><td>233m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>麦当劳(锦州中央大街餐厅)</td><td>距离就近</td><td>266m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>博纳国际影城(茂业天地店)</td><td>距离就近</td><td>276m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋(茂业中心店)</td><td>距离就近</td><td>281m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>漫玩游戏屋(茂业中心店)</td><td>距离就近</td><td>281m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>儿童乐园(茂业天地店)</td><td>距离就近</td><td>284m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>怪奇物语密室逃脱(茂业天地店)</td><td>距离就近</td><td>331m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>好家旅馆(和平路店)</td><td>距离就近</td><td>379m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>喜马大陆儿童沉浸式短旅中心(锦州店)</td><td>距离就近</td><td>398m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜马大陆(锦州店)</td><td>距离就近</td><td>398m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>锦州市凌河区垚垚湘里人家乡菜馆</td><td>距离就近</td><td>468m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>新炎旭小酒馆</td><td>距离就近</td><td>477m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>锦州宏大旅社(锦州火车站店)</td><td>距离就近</td><td>519m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>星恋影城(文化宫店)</td><td>距离就近</td><td>522m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>比优特超市(大商锦绣前程店)（41 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>布车POCHA BOOM(锦绣前程店)</td><td>距离就近</td><td>11m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>极速翼电玩城</td><td>距离就近</td><td>36m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>终极梦想电玩城</td><td>距离就近</td><td>36m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>BLKpartytime小酒馆</td><td>距离就近</td><td>40m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>奇奥恐龙乐园(大商锦绣前程购物中心店)</td><td>距离就近</td><td>46m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>HLK 海陆空动漫</td><td>距离就近</td><td>47m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>HLK 海陆空动漫</td><td>距离就近</td><td>47m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>视线之外超级密室(锦绣前程店)</td><td>距离就近</td><td>52m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欧乐淘气堡</td><td>距离就近</td><td>54m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>秋鹿睡衣(中央大街店)</td><td>距离就近</td><td>63m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>秘境世纪(锦绣前程店)</td><td>距离就近</td><td>67m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>小鲤鱼欢乐赶海乐园</td><td>距离就近</td><td>67m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>侏罗纪两栖爬行馆</td><td>距离就近</td><td>88m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>小木屋拌饭(锦绣前程店)</td><td>距离就近</td><td>92m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>米村拌饭(大商锦绣店)</td><td>距离就近</td><td>100m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>中影国际影城(辽西郡文商旅综合体店)</td><td>距离就近</td><td>116m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麦感自助KTV(锦绣前程店)</td><td>距离就近</td><td>120m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>浪LONG LIVEHOUSE</td><td>距离就近</td><td>139m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)</td><td>距离就近</td><td>140m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>乐翻天电玩城锦州辽西郡店7楼(宝地·新天地时尚购物广场店)</td><td>距离就近</td><td>140m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>捷安特·锦州(解放路店)</td><td>距离就近</td><td>157m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>捞鱼大师(大商锦绣前程购物中心店)</td><td>距离就近</td><td>161m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>捞鱼大师(大商锦绣前程购物中心店)</td><td>距离就近</td><td>161m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>ez电竞</td><td>距离就近</td><td>184m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>古塔区杨宁风味铁板烧(老店)</td><td>距离就近</td><td>217m</td><td>4.6</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>锦州光彩批发市场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>龙飞烧烤(苹果园店)</td><td>距离就近</td><td>278m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>西安街批发市场(宜昌路)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>景子街羊杂面(锦州总店)</td><td>距离就近</td><td>151m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>凌河夜市集合店</td><td>距离就近</td><td>215m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>大震烧烤(和平路店)</td><td>距离就近</td><td>273m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>萌宠之家宠物店(士英街店)</td><td>距离就近</td><td>298m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>爱宠乐园(上海路店)</td><td>距离就近</td><td>340m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>超越时空网咖(兴桐店)</td><td>距离就近</td><td>441m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>辽西小商品批发市场(安达街店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>三鲜包子铺(铁北店)</td><td>距离就近</td><td>304m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（26 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>锦州铁西宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>延安路三段14-37号</td></tr>
+<tr><td>✅A-</td><td>茂源商务旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>南内环路黑山客运站西北方向约60米</td></tr>
+<tr><td>✅A-</td><td>锦州荣昌宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>广西街32-3号</td></tr>
+<tr><td>✅A-</td><td>星光宾馆(锦州火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>延安路三段7号(近金都商务大厦)</td></tr>
+<tr><td>✅A-</td><td>义县鑫兴旅社(奉国寺店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>金三角西南环路南1-3号</td></tr>
+<tr><td>✅A-</td><td>亦家快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>解放街时代购物广场北侧</td></tr>
+<tr><td>✅A-</td><td>锦州圆缘客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>吉祥新家园1-80号</td></tr>
+<tr><td>✅A-</td><td>永乐汇</td><td>住宿服务;住宿服务相关;住宿服务相关｜体育休闲服务;娱乐场所;夜总会｜生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.6</td><td>—</td><td>人民路与陵园路交叉口东北200米</td></tr>
+<tr><td>✅A-</td><td>锦州双明旅社(南站店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>东海大街与中山路交汇处北100米</td></tr>
+<tr><td>✅A-</td><td>锦州宏大旅社(锦州火车站店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>延安路4段10号楼</td></tr>
+<tr><td>✅B</td><td>义县阳光招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>西南环路1-2号</td></tr>
+<tr><td>✅B</td><td>交通宾馆(锦华街)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>锦华街129-68号</td></tr>
+<tr><td>✅B</td><td>凌海好再来商务宾馆(国庆路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>国庆路40号</td></tr>
+<tr><td>✅B</td><td>锦州逸庭商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>士英街102号</td></tr>
+<tr><td>✅B</td><td>锦州源泉商务宾馆(石桥子早市店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>北京路三段4-43号</td></tr>
+<tr><td>✅B</td><td>好家旅馆(和平路店)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>和平路4段17-7号</td></tr>
+<tr><td>✅B</td><td>锦州和平路宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>和平路三段29号</td></tr>
+<tr><td>✅B</td><td>锦州滨海人家农家院</td><td>住宿服务;住宿服务相关;住宿服务相关｜体育休闲服务;休闲场所;休闲场所</td><td>4.3</td><td>—</td><td>太行山路与滨海大街交叉路口南100米道西(清沟湾浴场正对面)</td></tr>
+<tr><td>⚠️</td><td>姜城宾馆(光荣路)(暂停营业)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>光荣街70号</td></tr>
+<tr><td>⚠️</td><td>锦州开心旅店(辽宁工业大学石桥子早市店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>汉口街100-81号</td></tr>
+<tr><td>⚠️</td><td>汉思顿精品客栈</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>锦义路121号</td></tr>
+<tr><td>⚠️</td><td>锦州清逸商务宾馆(辽沈战役纪念馆店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>松坡路关单新村1-61号</td></tr>
+<tr><td>⚠️</td><td>金凯隆商务宾馆(凌河夜市店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>广西街14号</td></tr>
+<tr><td>⚠️</td><td>黑山宏达旅社</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.8</td><td>—</td><td>南广场旅店一条街</td></tr>
+<tr><td>⚠️</td><td>和谐宾馆(锦华街)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>锦华街127-71号</td></tr>
+<tr><td>❌</td><td>锦州大厦宾馆(火车站店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.1</td><td>—</td><td>中央大街3段58号(火车站对面)</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>13</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>17</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>11</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:中餐厅</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>类型:湘菜/地方菜</td><td>4</td><td></td></tr>
+<tr><td>food</td><td>类型:地方风味餐厅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:酒楼/火锅/海鲜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:火锅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:海鲜酒楼</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:特色美食</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:老字号</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:大排档</td><td>16</td><td></td></tr>
+<tr><td>food</td><td>关键词:苍蝇馆</td><td>1</td><td></td></tr>
+<tr><td>food</td><td>关键词:小吃</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:本地菜</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:特产</td><td>40</td><td></td></tr>
+<tr><td>product</td><td>关键词:土特产</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:地方特产</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:步行街</td><td>1</td><td></td></tr>
+<tr><td>district</td><td>类型:特色商业街</td><td>22</td><td></td></tr>
+<tr><td>district</td><td>类型:购物中心</td><td>11</td><td></td></tr>
+<tr><td>district</td><td>类型:商场</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:美食街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:夜市</td><td>28</td><td></td></tr>
+<tr><td>district</td><td>关键词:小吃街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:步行街</td><td>4</td><td></td></tr>
+<tr><td>district</td><td>关键词:购物中心</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:酒吧</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:酒馆</td><td>20</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:LIVEHOUSE</td><td>2</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:娱乐场所</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童乐园</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:电玩城</td><td>37</td><td></td></tr>
+<tr><td>kids</td><td>关键词:游乐场</td><td>19</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你游乐场</td><td>1</td><td></td></tr>
+<tr><td>kids</td><td>关键词:亲子乐园</td><td>4</td><td></td></tr>
+<tr><td>kids</td><td>关键词:淘气堡</td><td>5</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童体验</td><td>3</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/锦州市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>8 个 POI 无地址</strong>，需人工补：锦州光彩批发市场、锦州松山农贸批发市场、赵记鸡架(府畔花园店)、同盛居杨启泰直营店、惠芝园地标溯源特产生活馆</li><li><input type="checkbox" disabled> <strong>5 个 POI 无评分</strong>，暂标 ⚠️：锦州动物园售票处、锦州动物园停车场、动物园(公交站)、锦州动物园停车场(出口)、锦州市动物园办公区</li><li><input type="checkbox" disabled> 儿童游乐 139 家，其中场内 29 家、独立 110 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 7 个区县：义县、凌河区、凌海市、北镇市、古塔区、太和区、黑山县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

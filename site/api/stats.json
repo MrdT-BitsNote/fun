@@ -1,0 +1,20 @@
+{
+ "generated": "2026-10-23 21:20:08",
+ "provinces": 32,
+ "cities": 389,
+ "poi_total": 220162,
+ "full_dim_cities": 70,
+ "districts_total": 15228,
+ "grades": {
+  "S": 137,
+  "A": 2282,
+  "B": 3635,
+  "C": 9174
+ },
+ "sources": [
+  "高德地图 Web 服务 POI（restapi.amap.com）",
+  "美团",
+  "大众点评"
+ ],
+ "site": "https://fun.worldstip.com"
+}

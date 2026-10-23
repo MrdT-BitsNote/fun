@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>丽江市 · 云南省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/云南省.html">← 返回云南省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>丽江市 · 云南省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:37:16  ·  POI 总量：156（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>156</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>98%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 90 · 成人娱乐 108 · 儿童娱乐 9 · 酒店 35 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>云南省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>5 个</td></tr>
+<tr><td>街道/镇/乡</td><td>66 个</td></tr>
+<tr><td>区县构成</td><td>自治县×2、县×2、市辖区×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>古城区</td><td>133</td><td>85%</td></tr>
+<tr><td>玉龙纳西族自治县</td><td>15</td><td>10%</td></tr>
+<tr><td>宁蒗彝族自治县</td><td>5</td><td>3%</td></tr>
+<tr><td>华坪县</td><td>2</td><td>1%</td></tr>
+<tr><td>永胜县</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（90 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>33</td></tr>
+<tr><td>购物中心/综合体</td><td>21</td></tr>
+<tr><td>批发城</td><td>16</td></tr>
+<tr><td>百货/商场</td><td>13</td></tr>
+<tr><td>商业街</td><td>7</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（90 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>花开彼岸客栈(文华巷分店)</td><td>商业街</td><td>4.9</td><td>0</td><td>0</td><td>1</td><td>10</td></tr>
+<tr><td>B</td><td>丽江国际购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>10</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>沃尔玛(丽江香格里拉大道分店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>12</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>祥和商业广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>12</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>上影国际影城(丽江祥和商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>12</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>丽江金甲综合批发交易市场</td><td>批发城</td><td>4.6</td><td>0</td><td>11</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>紫悦城商务</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>13</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>丽客隆超市(大研广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>13</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>会龙百晓客栈</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>2</td><td>1</td><td>5</td></tr>
+<tr><td>C</td><td>丽江古城城南旧事客栈</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>8</td></tr>
+<tr><td>C</td><td>丽江古城桃源雅居客栈(义尚街文林巷分店)</td><td>商业街</td><td>5.0</td><td>0</td><td>1</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>丽江束河央金玛庄园</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>丽江十二星花园度假美宿</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>7</td></tr>
+<tr><td>C</td><td>束河古镇见明月民宿</td><td>商业街</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>丽江无名雅院客栈</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>1</td><td>6</td></tr>
+<tr><td>C</td><td>丽江古城一城楼客栈</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>1</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>大研古城飞天涯客栈(光义街光碧巷分店)</td><td>商业街</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>过街楼客栈(丽江古城木府店)</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>1</td><td>7</td></tr>
+<tr><td>C</td><td>东山雅居客栈(丽江古城大水车店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>1</td><td>5</td></tr>
+<tr><td>C</td><td>小肥·猫咖</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>9</td></tr>
+<tr><td>C</td><td>玉水坊中影国际影城(民主路店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>盛丰便利店(丽江古城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>8</td></tr>
+<tr><td>C</td><td>丽客隆超市(锦泰旗舰店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>7</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>丽客隆超市(玉龙县店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>名创优品(丽江古城店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>1</td><td>7</td></tr>
+<tr><td>C</td><td>丽客隆超市(束河店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>富达便利店</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>1</td><td>9</td></tr>
+<tr><td>C</td><td>金凯广场</td><td>商业街</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>吉祥商贸城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>丽江草屋居客栈</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>朵儿观景客栈(丽江古城大水车店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>2</td><td>1</td><td>5</td></tr>
+<tr><td>C</td><td>丽江青荷·田园风情客栈</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>7</td></tr>
+<tr><td>C</td><td>星空全景国际商务</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达影城(丽江古城店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>3</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>丽客隆超市(总店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>4</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>古城区开运便利店</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>麒麟商行</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>6</td></tr>
+<tr><td>C</td><td>鱼龙杂货铺</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>1</td><td>9</td></tr>
+<tr><td>C</td><td>闽旺平价超市(金虹路店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>玉龙县丽客隆商业广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>花开彼岸客栈(文华巷分店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 1 / 酒店 10</li><li><strong>载体类型</strong>：商业街（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：大研街道五一社区王家庄巷22号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 1 · 酒店 10</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>花开彼岸客栈(文华巷分店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>小肥·猫咖</td></tr>
+<tr><td>酒店配套</td><td>10</td><td>丽江古城城南旧事客栈、丽江十二星花园度假美宿、花开彼岸客栈(文华巷分店)</td></tr>
+</tbody></table></div>
+<h3>丽江国际购物广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 3</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：福慧路618号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽江国际购物广场</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>玉水坊中影国际影城(民主路店)、5596顶峰商务会客厅(K歌)、万达影城(丽江古城店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>会龙百晓客栈、丽江新江源酒店、7天优品酒店(丽江古城大水车机场大巴站店)</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(丽江香格里拉大道分店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;沃尔玛）</li><li><strong>地址</strong>：玉雪大道祥和商业广场A栋2-3层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沃尔玛(丽江香格里拉大道分店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>上影国际影城(丽江祥和商业广场店)、异空间主题纯K商务(K歌)、鑫丽PARTY·娱乐</td></tr>
+</tbody></table></div>
+<h3>祥和商业广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：吉庆路与祥云路交叉口西南120米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>祥和商业广场</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>上影国际影城(丽江祥和商业广场店)、异空间主题纯K商务(K歌)、鑫丽PARTY·娱乐</td></tr>
+</tbody></table></div>
+<h3>上影国际影城(丽江祥和商业广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：祥和商业广场A栋4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>上影国际影城(丽江祥和商业广场店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>上影国际影城(丽江祥和商业广场店)、异空间主题纯K商务(K歌)、鑫丽PARTY·娱乐</td></tr>
+</tbody></table></div>
+<h3>丽江金甲综合批发交易市场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 2</li><li><strong>载体类型</strong>：批发城（购物服务;综合市场;综合市场）</li><li><strong>地址</strong>：香格里拉大道</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽江金甲综合批发交易市场</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>5596顶峰商务会客厅(K歌)、钻石国际娱乐会所、大富豪商务公馆</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>喜来福酒店、和木酒店(丽江古城大水车店)</td></tr>
+</tbody></table></div>
+<h3>紫悦城商务 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV｜住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：祥和路大研广场4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>紫悦城商务</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>紫悦城商务、四个朋友·自助棋牌(柏龙水榭和风苑店)、久雀自助棋牌茶室康仲村46号</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宠乐园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>丽江圆明商务酒店</td></tr>
+</tbody></table></div>
+<h3>丽客隆超市(大研广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：大研广场</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽客隆超市(大研广场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>紫悦城商务、四个朋友·自助棋牌(柏龙水榭和风苑店)、久雀自助棋牌茶室康仲村46号</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宠乐园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>丽江圆明商务酒店</td></tr>
+</tbody></table></div>
+<h3>会龙百晓客栈 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：大研街道北门街玉河商场34号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 1 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>会龙百晓客栈</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>玉水坊中影国际影城(民主路店)、万达影城(丽江古城店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>小肥·猫咖</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>会龙百晓客栈、丽江无名雅院客栈、东山雅居客栈(丽江古城大水车店)</td></tr>
+</tbody></table></div>
+<h3>丽江古城城南旧事客栈 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：南门街依古巷3号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 8</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽江古城城南旧事客栈</td></tr>
+<tr><td>酒店配套</td><td>8</td><td>丽江古城城南旧事客栈、丽江十二星花园度假美宿、花开彼岸客栈(文华巷分店)</td></tr>
+</tbody></table></div>
+<h3>丽江古城桃源雅居客栈(义尚街文林巷分店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：五一街文生巷30-2号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽江古城桃源雅居客栈(义尚街文林巷分店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>沄汐沉浸式剧场</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>丽江古城桃源雅居客栈(义尚街文林巷分店)、丽江古城一城楼客栈、丽江普拉格客栈</td></tr>
+</tbody></table></div>
+<h3>丽江束河央金玛庄园 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：丽江束河古镇石莲巷松云村1组22号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽江束河央金玛庄园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>丽江束河央金玛庄园</td></tr>
+</tbody></table></div>
+<h3>丽江十二星花园度假美宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：光义街忠义巷32号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 7</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽江十二星花园度假美宿</td></tr>
+<tr><td>酒店配套</td><td>7</td><td>丽江十二星花园度假美宿、丽江古城城南旧事客栈、花开彼岸客栈(文华巷分店)</td></tr>
+</tbody></table></div>
+<h3>束河古镇见明月民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（住宿服务;宾馆酒店;经济型连锁酒店）</li><li><strong>地址</strong>：松园路松云村2号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>束河古镇见明月民宿</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>束河古镇见明月民宿、丽江纳西明珠居客栈</td></tr>
+</tbody></table></div>
+<h3>丽江无名雅院客栈 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;四星级宾馆）</li><li><strong>地址</strong>：东岳巷5号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 1 · 酒店 6</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>丽江无名雅院客栈</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>小肥·猫咖</td></tr>
+<tr><td>酒店配套</td><td>6</td><td>会龙百晓客栈、丽江无名雅院客栈、东山雅居客栈(丽江古城大水车店)</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（108 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>24</td></tr>
+<tr><td>棋牌室</td><td>18</td></tr>
+<tr><td>电影院</td><td>8</td></tr>
+<tr><td>KTV</td><td>3</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>2</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>异空间主题纯K商务(K歌)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>45.00</td><td>吉祥路83号</td></tr>
+<tr><td>✅A-</td><td>5596顶峰商务会客厅(K歌)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>85.00</td><td>七星街上段70号(近七星街西门)</td></tr>
+<tr><td>✅A-</td><td>上影国际影城(丽江祥和商业广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>23.00</td><td>祥和商业广场A栋4层</td></tr>
+<tr><td>✅A-</td><td>玉水坊中影国际影城(民主路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>47.00</td><td>民主路新大街玉水坊</td></tr>
+<tr><td>✅B</td><td>紫悦城商务</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>109.00</td><td>祥和路大研广场4层</td></tr>
+<tr><td>✅B</td><td>名仕汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜商务住宅;住宅区;住宅小区｜商务住宅;楼宇;商务写字楼</td><td>4.5</td><td>54.00</td><td>庆云东路18号</td></tr>
+<tr><td>✅B</td><td>鑫丽PARTY·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;旅馆招待所;旅馆招待所｜购物服务;购物相关场所;购物相关场所</td><td>4.5</td><td>188.00</td><td>吉祥路百味坊40栋</td></tr>
+<tr><td>✅B</td><td>大富豪商务公馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>喜鱼古客栈南门西100米</td></tr>
+<tr><td>✅B</td><td>丽江丽都国际</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>81.00</td><td>西安街道长水路770号卿云综合楼</td></tr>
+<tr><td>✅B</td><td>星空全景国际商务</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>54.00</td><td>黄山街道遥遥邻鲜海鲜大排档嘉和广场</td></tr>
+<tr><td>✅B</td><td>钻石国际娱乐会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜生活服务;生活服务场所;生活服务场所｜商务住宅;商务住宅相关;商务住宅相关</td><td>4.5</td><td>90.00</td><td>西安街道金甲街下段27号丽江国际大酒店</td></tr>
+<tr><td>✅B</td><td>丽江纯K(量贩KTV)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>121.00</td><td>丽水路与玉雪大道交汇处南150米路西</td></tr>
+<tr><td>✅B</td><td>万达影城(丽江古城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>32.00</td><td>民主路191号红太阳商业广场1-5层</td></tr>
+<tr><td>✅B</td><td>中数新丽江影城(荣城金街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>39.00</td><td>玉泉路512号荣城金街5栋3楼</td></tr>
+<tr><td>✅B</td><td>礼乐纯K商务(K歌)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>77.00</td><td>长水路金凯广场</td></tr>
+<tr><td>✅B</td><td>顶峰娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>99.00</td><td>西安街道七星街上段金鹰酒店(七星街上段店)</td></tr>
+<tr><td>✅B</td><td>丽江KK·夜泊国际商务俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>86.00</td><td>西安街道鱼米河停车场内</td></tr>
+<tr><td>✅B</td><td>四个朋友·自助棋牌(柏龙水榭和风苑店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>22.00</td><td>柏龙水榭和风苑72号商铺</td></tr>
+<tr><td>✅B</td><td>大唐盛世·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>127.00</td><td>祥和街道吉祥路83号</td></tr>
+<tr><td>✅B</td><td>哥斯拉量贩KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>—</td><td>金凯街与长水路交叉口西北180米</td></tr>
+<tr><td>✅B</td><td>久雀自助棋牌茶室康仲村46号</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>18.00</td><td>祥和街道办太和社区康仲村46号</td></tr>
+<tr><td>✅B</td><td>四个朋友24h自助棋牌室(祥和商业广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>18.00</td><td>祥和街道吉庆路58号祥和商业广场三楼</td></tr>
+<tr><td>✅B</td><td>嘻游记24小时自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>—</td><td>太和路51号</td></tr>
+<tr><td>⚠️</td><td>人民公社KTV量贩</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>87.00</td><td>七星街下段37号</td></tr>
+<tr><td>⚠️</td><td>一家人商务(K歌)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>323.00</td><td>玉龙金色家园西南</td></tr>
+<tr><td>⚠️</td><td>四个朋友24h自助棋牌室(兴龙元小区店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>12.00</td><td>西安街道办事处太和路兴龙元小区A9号</td></tr>
+<tr><td>⚠️</td><td>约麻公馆·棋牌·茶楼·商务会议(祥和路店)</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.2</td><td>22.00</td><td>祥和路北王宝器麻椒鱼旁二楼</td></tr>
+<tr><td>⚠️</td><td>久雀自助棋牌茶室柏龙水榭东店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>16.00</td><td>祥和街道祥和路416号柏龙水榭东区</td></tr>
+<tr><td>⚠️</td><td>沄汐沉浸式剧场</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>117.00</td><td>五一街文生巷34号</td></tr>
+<tr><td>⚠️</td><td>古城区星悦城量贩卡拉厅</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>81.00</td><td>香格里大道1087号文笔峰大酒店临街大楼4楼</td></tr>
+<tr><td>⚠️</td><td>白沙里9D飞行影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>57.00</td><td>白沙段010乡</td></tr>
+<tr><td>⚠️</td><td>久雀.自助棋牌茶室(太和路53号店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>17.00</td><td>太和路53号二、三楼</td></tr>
+<tr><td>⚠️</td><td>三缺一·太和</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.1</td><td>—</td><td>祥和街道太和路太和苑</td></tr>
+<tr><td>⚠️</td><td>久雀自助棋牌茶室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>17.00</td><td>祥和街道太和路太和西村21号</td></tr>
+<tr><td>⚠️</td><td>四个朋友(祥和B区店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室｜餐饮服务;中餐厅;中餐厅</td><td>4.1</td><td>12.00</td><td>吉庆路180号轩佳海鲜总汇三楼</td></tr>
+<tr><td>⚠️</td><td>久雀棋牌茶室祥和商业广场店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>19.00</td><td>吉祥百味坊24栋</td></tr>
+<tr><td>⚠️</td><td>8号当铺灵魂密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>121.00</td><td>香格里大道712号</td></tr>
+<tr><td>⚠️</td><td>谜之乐·谜踪密室逃脱(丽江古城店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>91.00</td><td>丽江古城内(西侧)</td></tr>
+<tr><td>⚠️</td><td>秀都时代音乐汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>61.00</td><td>西安街道金甲街下段27号丽江国际大酒店</td></tr>
+<tr><td>⚠️</td><td>嗨麻棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>—</td><td>祥和街道中泰苑小区s9号</td></tr>
+<tr><td>❌</td><td>十亿棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>60.00</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>雀侠24h自助棋牌饮茶室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>14.00</td><td>祥和街道现云村2号永逸酒店一楼</td></tr>
+<tr><td>⚠️</td><td>久雀自助棋牌室文荣二组店</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>17.00</td><td>白华路139号</td></tr>
+<tr><td>⚠️</td><td>永胜电影城</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>26.00</td><td>辕门路1号</td></tr>
+<tr><td>⚠️</td><td>宁蒗县梦幻影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>37.00</td><td>大兴镇泸沽湖大道三古大厦4楼</td></tr>
+<tr><td>⚠️</td><td>华坪星耀影城</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>34.00</td><td>迎宾路与建华路交叉口东南100米</td></tr>
+<tr><td>⚠️</td><td>好声音(七星街下段店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.8</td><td>117.00</td><td>七星街下段与金星街交叉口东北40米</td></tr>
+<tr><td>⚠️</td><td>秀棋艺24小时棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.8</td><td>15.00</td><td>祥和街道办事处彩云社区现云村5号A栋103(2楼及3楼)</td></tr>
+<tr><td>⚠️</td><td>古城区一筒江湖棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.6</td><td>—</td><td>兴龙元小区A10号二楼三楼</td></tr>
+<tr><td>⚠️</td><td>宏宇电影院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.5</td><td>31.00</td><td>中心镇东街56号宏宇酒店3层</td></tr>
+<tr><td>⚠️</td><td>雀侠24h自助棋牌饮茶室(丽江-太和路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.5</td><td>16.00</td><td>祥和街道办事处太和路61号二楼</td></tr>
+<tr><td>❌</td><td>喔里来棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.3</td><td>—</td><td>祥和领域13号商铺</td></tr>
+<tr><td>❌</td><td>私享影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.2</td><td>81.00</td><td>长水路与雪山路交叉口东北60米</td></tr>
+<tr><td>❌</td><td>丽合私影(古城区店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>2.9</td><td>—</td><td>吉祥商贸城</td></tr>
+<tr><td>❌</td><td>天乙乡村数字电影院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>2.5</td><td>—</td><td>巨甸镇人民政府东南侧170米</td></tr>
+</tbody></table></div>
+<h2>4. 儿童与亲子娱乐（9 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>7</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>2</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>三顾猫庐观雪山花园猫咖</td><td>其他儿童场所</td><td>独立</td><td>4.7</td><td>白沙段010乡</td></tr>
+<tr><td>✅A-</td><td>小肥·猫咖</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>大研花巷玉龙花园4012二楼</td></tr>
+<tr><td>⚠️</td><td>丽江森林动物王国</td><td>其他儿童场所</td><td>独立</td><td>3.8</td><td>猎鹰谷景区</td></tr>
+<tr><td>⚠️</td><td>丽江Amore优宠家庭犬训练·寄养乐园</td><td>其他儿童场所</td><td>独立</td><td>3.7</td><td>红山村林园种植基地对面</td></tr>
+<tr><td>⚠️</td><td>喜噜噜动物爱心园</td><td>其他儿童场所</td><td>独立</td><td>3.6</td><td>旅游环线</td></tr>
+<tr><td>❌</td><td>乐美乐乡村动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.4</td><td>海北段丽江拉市海湿地公园</td></tr>
+<tr><td>❌</td><td>鳄鱼馆</td><td>其他儿童场所</td><td>独立</td><td>3.0</td><td>泸沽湖大道与省小路交叉口西北80米</td></tr>
+<tr><td>❌</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>1.6</td><td>太白路与太和路交叉口东北160米</td></tr>
+<tr><td>⚠️</td><td>是园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>玉福路61号</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（50 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>丽江国际购物广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>福慧路618号</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(丽江香格里拉大道分店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>玉雪大道祥和商业广场A栋2-3层</td></tr>
+<tr><td>✅A-</td><td>祥和商业广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>吉庆路与祥云路交叉口西南120米</td></tr>
+<tr><td>✅A-</td><td>上影国际影城(丽江祥和商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>祥和商业广场A栋4层</td></tr>
+<tr><td>✅A-</td><td>盛丰便利店(丽江古城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>D线出入口旁</td></tr>
+<tr><td>✅A-</td><td>丽客隆超市(锦泰旗舰店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>康仲路60号锦泰商业广场</td></tr>
+<tr><td>✅A-</td><td>丽客隆超市(玉龙县店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>丽客隆商业广场</td></tr>
+<tr><td>✅A-</td><td>丽客隆超市(束河店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>束河古镇龙泉路5号附1号</td></tr>
+<tr><td>✅A-</td><td>富达便利店</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>金虹路94号富达便利店</td></tr>
+<tr><td>✅A-</td><td>丽江金甲综合批发交易市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>香格里拉大道</td></tr>
+<tr><td>✅A-</td><td>吉祥商贸城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>吉祥商贸中心A北-002</td></tr>
+<tr><td>✅B</td><td>丽客隆超市(总店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>香格里大道936号(丽房商厦东北)</td></tr>
+<tr><td>✅B</td><td>丽客隆超市(大研广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>大研广场</td></tr>
+<tr><td>✅B</td><td>古城区开运便利店</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>金虹路与义尚街文明巷交叉口东400米</td></tr>
+<tr><td>✅B</td><td>闽旺平价超市(金虹路店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>义尚社区居委会东北侧60米</td></tr>
+<tr><td>✅B</td><td>玉龙县丽客隆商业广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>丽水路与玉兴西路交叉口</td></tr>
+<tr><td>✅B</td><td>大研广场</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>祥和街道王福炭火楼烧烤烤肉(总店)龙鑫苑</td></tr>
+<tr><td>✅B</td><td>嘉兴超市(南门店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>祥和路163号</td></tr>
+<tr><td>✅B</td><td>丽江衣海洋服装批发城</td><td>批发城</td><td>4.4</td><td>1</td><td>0</td><td>民主路349号(维也纳酒店旁)衣海洋服装批发城</td></tr>
+<tr><td>❌</td><td>荣城商业综合体</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅B</td><td>四个朋友24h自助棋牌室(祥和商业广场店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>祥和街道吉庆路58号祥和商业广场三楼</td></tr>
+<tr><td>✅B</td><td>金诚建材批发城</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>团山南路与青山南路交叉口西北360米</td></tr>
+<tr><td>✅B</td><td>太和商业广场</td><td>购物中心/综合体</td><td>4.3</td><td>1</td><td>0</td><td>玉雪大道118号</td></tr>
+<tr><td>✅B</td><td>丽江火车站商业广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>站前路与进站路交叉口西北120米</td></tr>
+<tr><td>⚠️</td><td>红太阳商业广场</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>民主路191号</td></tr>
+<tr><td>⚠️</td><td>丽江百货大楼</td><td>百货/商场</td><td>4.2</td><td>1</td><td>0</td><td>民主路337号</td></tr>
+<tr><td>⚠️</td><td>春天百货·优选超市</td><td>百货/商场</td><td>4.2</td><td>1</td><td>0</td><td>光义街新苑巷34号</td></tr>
+<tr><td>⚠️</td><td>中心商贸城</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>丽水路与玉兴西路交叉口西北380米</td></tr>
+<tr><td>⚠️</td><td>锦天商贸城</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>长水路224号</td></tr>
+<tr><td>⚠️</td><td>金甲财源商城</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>金甲路295号d区a10</td></tr>
+<tr><td>⚠️</td><td>久雀棋牌茶室祥和商业广场店</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>吉祥百味坊24栋</td></tr>
+<tr><td>⚠️</td><td>泰完美百货服装批发城(七星街店)</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>七星街与步行街交叉口西40米</td></tr>
+<tr><td>⚠️</td><td>丽江震星野生菌批发市场(丽江福慧综合集贸市场店)</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>福慧路336号福慧市场内</td></tr>
+<tr><td>⚠️</td><td>双龙商场</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>长水路三合时代广场367号</td></tr>
+<tr><td>⚠️</td><td>米睐(丽江水果蔬菜批发市场店)</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>忠义东村31号</td></tr>
+<tr><td>⚠️</td><td>古城区昭庆综合农贸批发市场</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>祥和路与南苑路交叉口西南20米</td></tr>
+<tr><td>⚠️</td><td>批发市场</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>丽江福慧综合集贸市场</td></tr>
+<tr><td>⚠️</td><td>简熙女装批发档口旗舰店</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>福慧路396号</td></tr>
+<tr><td>⚠️</td><td>丽江·罗达水产批发市场</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>存信路与团山北路交叉口东北200米</td></tr>
+<tr><td>⚠️</td><td>长水沥青冷补料建材批发</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>束河街道</td></tr>
+<tr><td>⚠️</td><td>吉祥商贸城</td><td>百货/商场</td><td>3.6</td><td>0</td><td>0</td><td>庆云路与关丽路交叉口东北180米</td></tr>
+<tr><td>⚠️</td><td>纳西冻品批发部(吉祥商贸城店)</td><td>百货/商场</td><td>3.5</td><td>0</td><td>0</td><td>吉祥商贸城纳西冻品批发部</td></tr>
+<tr><td>❌</td><td>丽锦坊民族服饰批发零售</td><td>批发城</td><td>3.4</td><td>0</td><td>0</td><td>西安街道办事处香格里大道1180-1号附3号</td></tr>
+<tr><td>❌</td><td>皇泰广东佛山软体家具批发中心一菲梵空间</td><td>批发城</td><td>3.4</td><td>0</td><td>0</td><td>金港门窗城西南门东北320米</td></tr>
+<tr><td>❌</td><td>宁蒗三窝树平惠鱼店批发零售点</td><td>批发城</td><td>3.4</td><td>0</td><td>0</td><td>下仁河活畜市场</td></tr>
+<tr><td>❌</td><td>福建海鲜玖鼎冻品批发广场(吉祥商贸城店)</td><td>百货/商场</td><td>3.2</td><td>0</td><td>0</td><td>南口路与庆云路交叉路口往西北约50米</td></tr>
+<tr><td>❌</td><td>洪杨调料批发</td><td>批发城</td><td>3.2</td><td>0</td><td>0</td><td>金甲综合农贸市场内</td></tr>
+<tr><td>❌</td><td>宸希新鲜蔬菜粮油批发配送</td><td>批发城</td><td>3.1</td><td>0</td><td>0</td><td>象山路298号</td></tr>
+<tr><td>❌</td><td>深鲜来海鲜批发</td><td>批发城</td><td>2.7</td><td>0</td><td>0</td><td>吉祥商贸城</td></tr>
+<tr><td>❌</td><td>稔杰百货批发部</td><td>百货/商场</td><td>2.7</td><td>0</td><td>0</td><td>大研街道凡言鸭头三分店(丽慧店)</td></tr>
+</tbody></table></div>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>会龙百晓客栈（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>会龙百晓客栈</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>7天连锁酒店(丽江古城正门大水车中心店)</td><td>距离就近</td><td>70m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>朵儿观景客栈(丽江古城大水车店)</td><td>距离就近</td><td>164m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>东山雅居客栈(丽江古城大水车店)</td><td>距离就近</td><td>168m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>丽江无名雅院客栈</td><td>距离就近</td><td>219m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>小肥·猫咖</td><td>距离就近</td><td>376m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>玉水坊中影国际影城(民主路店)</td><td>距离就近</td><td>448m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(丽江古城店)</td><td>距离就近</td><td>504m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽江古城城南旧事客栈（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽江古城城南旧事客栈</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>汉邦豪苑酒店</td><td>距离就近</td><td>270m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>丽江草屋居客栈</td><td>距离就近</td><td>278m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>花开彼岸客栈(文华巷分店)</td><td>距离就近</td><td>297m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>碧云天客栈(丽江古城南门店)</td><td>距离就近</td><td>333m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>丽江青荷·田园风情客栈</td><td>距离就近</td><td>459m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>丽江十二星花园度假美宿</td><td>距离就近</td><td>514m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>过街楼客栈(丽江古城木府店)</td><td>距离就近</td><td>599m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽江古城桃源雅居客栈(义尚街文林巷分店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽江古城桃源雅居客栈(义尚街文林巷分店)</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>丽江古城一城楼客栈</td><td>距离就近</td><td>30m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>沄汐沉浸式剧场</td><td>距离就近</td><td>148m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>丽江普拉格客栈</td><td>距离就近</td><td>259m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽江束河央金玛庄园（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽江束河央金玛庄园</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽江十二星花园度假美宿（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽江十二星花园度假美宿</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>丽江青荷·田园风情客栈</td><td>距离就近</td><td>61m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>过街楼客栈(丽江古城木府店)</td><td>距离就近</td><td>107m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>第三极国际青旅(丽江古城四方街店)</td><td>距离就近</td><td>230m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>大研古城飞天涯客栈(光义街光碧巷分店)</td><td>距离就近</td><td>266m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>丽江古城城南旧事客栈</td><td>距离就近</td><td>514m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>花开彼岸客栈(文华巷分店)</td><td>距离就近</td><td>556m</td><td>4.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>花开彼岸客栈(文华巷分店)（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>花开彼岸客栈(文华巷分店)</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>丽江古城城南旧事客栈</td><td>距离就近</td><td>297m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>碧云天客栈(丽江古城南门店)</td><td>距离就近</td><td>431m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>丽江普拉格客栈</td><td>距离就近</td><td>473m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>丽江草屋居客栈</td><td>距离就近</td><td>480m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>丽江青荷·田园风情客栈</td><td>距离就近</td><td>496m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>汉邦豪苑酒店</td><td>距离就近</td><td>538m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>小肥·猫咖</td><td>距离就近</td><td>545m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>第三极国际青旅(丽江古城四方街店)</td><td>距离就近</td><td>546m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>丽江十二星花园度假美宿</td><td>距离就近</td><td>556m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>过街楼客栈(丽江古城木府店)</td><td>距离就近</td><td>598m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>束河古镇见明月民宿（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>束河古镇见明月民宿</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>丽江纳西明珠居客栈</td><td>距离就近</td><td>533m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽江无名雅院客栈（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽江无名雅院客栈</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>7天连锁酒店(丽江古城正门大水车中心店)</td><td>距离就近</td><td>157m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>小肥·猫咖</td><td>距离就近</td><td>199m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>会龙百晓客栈</td><td>距离就近</td><td>219m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>东山雅居客栈(丽江古城大水车店)</td><td>距离就近</td><td>229m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>朵儿观景客栈(丽江古城大水车店)</td><td>距离就近</td><td>259m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>丽江普拉格客栈</td><td>距离就近</td><td>563m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽江古城一城楼客栈（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽江古城一城楼客栈</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>丽江古城桃源雅居客栈(义尚街文林巷分店)</td><td>距离就近</td><td>30m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>沄汐沉浸式剧场</td><td>距离就近</td><td>126m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>丽江普拉格客栈</td><td>距离就近</td><td>286m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>大研古城飞天涯客栈(光义街光碧巷分店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大研古城飞天涯客栈(光义街光碧巷分店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>过街楼客栈(丽江古城木府店)</td><td>距离就近</td><td>226m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>丽江十二星花园度假美宿</td><td>距离就近</td><td>266m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>丽江青荷·田园风情客栈</td><td>距离就近</td><td>327m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>第三极国际青旅(丽江古城四方街店)</td><td>距离就近</td><td>350m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>大富豪商务公馆</td><td>距离就近</td><td>531m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>谜之乐·谜踪密室逃脱(丽江古城店)</td><td>距离就近</td><td>588m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>过街楼客栈(丽江古城木府店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>过街楼客栈(丽江古城木府店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>丽江十二星花园度假美宿</td><td>距离就近</td><td>107m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>丽江青荷·田园风情客栈</td><td>距离就近</td><td>144m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>第三极国际青旅(丽江古城四方街店)</td><td>距离就近</td><td>151m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>大研古城飞天涯客栈(光义街光碧巷分店)</td><td>距离就近</td><td>226m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>小肥·猫咖</td><td>距离就近</td><td>589m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>谜之乐·谜踪密室逃脱(丽江古城店)</td><td>距离就近</td><td>592m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>花开彼岸客栈(文华巷分店)</td><td>距离就近</td><td>598m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>丽江古城城南旧事客栈</td><td>距离就近</td><td>599m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽江国际购物广场（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽江KK·夜泊国际商务俱乐部</td><td>距离就近</td><td>287m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>谜之乐·谜踪密室逃脱(丽江古城店)</td><td>距离就近</td><td>393m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>玉水坊中影国际影城(民主路店)</td><td>距离就近</td><td>413m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(丽江古城店)</td><td>距离就近</td><td>435m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>丽江新江源酒店</td><td>距离就近</td><td>471m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>钻石国际娱乐会所</td><td>距离就近</td><td>482m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>秀都时代音乐汇</td><td>距离就近</td><td>491m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>好声音(七星街下段店)</td><td>距离就近</td><td>510m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>5596顶峰商务会客厅(K歌)</td><td>距离就近</td><td>519m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>顶峰娱乐</td><td>距离就近</td><td>537m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>会龙百晓客栈</td><td>距离就近</td><td>556m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>人民公社KTV量贩</td><td>距离就近</td><td>598m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>7天优品酒店(丽江古城大水车机场大巴站店)</td><td>距离就近</td><td>600m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(丽江香格里拉大道分店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>上影国际影城(丽江祥和商业广场店)</td><td>距离就近</td><td>50m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌室(祥和商业广场店)</td><td>距离就近</td><td>141m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友(祥和B区店)</td><td>距离就近</td><td>214m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>久雀棋牌茶室祥和商业广场店</td><td>距离就近</td><td>398m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>大唐盛世·娱乐</td><td>距离就近</td><td>428m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>鑫丽PARTY·娱乐</td><td>距离就近</td><td>441m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>三缺一·太和</td><td>距离就近</td><td>492m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>喔里来棋牌室</td><td>距离就近</td><td>496m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>名仕汇</td><td>距离就近</td><td>547m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>雀侠24h自助棋牌饮茶室</td><td>距离就近</td><td>554m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>异空间主题纯K商务(K歌)</td><td>距离就近</td><td>574m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>秀棋艺24小时棋牌室</td><td>距离就近</td><td>590m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>祥和商业广场（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>上影国际影城(丽江祥和商业广场店)</td><td>名称互证</td><td>50m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌室(祥和商业广场店)</td><td>名称互证</td><td>142m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友(祥和B区店)</td><td>距离就近</td><td>214m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>久雀棋牌茶室祥和商业广场店</td><td>名称互证</td><td>399m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>大唐盛世·娱乐</td><td>距离就近</td><td>429m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>鑫丽PARTY·娱乐</td><td>距离就近</td><td>442m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>三缺一·太和</td><td>距离就近</td><td>492m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>喔里来棋牌室</td><td>距离就近</td><td>496m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>名仕汇</td><td>距离就近</td><td>548m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>雀侠24h自助棋牌饮茶室</td><td>距离就近</td><td>554m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>异空间主题纯K商务(K歌)</td><td>距离就近</td><td>575m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>秀棋艺24小时棋牌室</td><td>距离就近</td><td>590m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>东山雅居客栈(丽江古城大水车店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>东山雅居客栈(丽江古城大水车店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>朵儿观景客栈(丽江古城大水车店)</td><td>距离就近</td><td>37m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>7天连锁酒店(丽江古城正门大水车中心店)</td><td>距离就近</td><td>132m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>会龙百晓客栈</td><td>距离就近</td><td>168m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>丽江无名雅院客栈</td><td>距离就近</td><td>229m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>小肥·猫咖</td><td>距离就近</td><td>427m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>玉水坊中影国际影城(民主路店)</td><td>距离就近</td><td>572m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>小肥·猫咖（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>小肥·猫咖</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>丽江无名雅院客栈</td><td>距离就近</td><td>199m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>7天连锁酒店(丽江古城正门大水车中心店)</td><td>距离就近</td><td>333m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>会龙百晓客栈</td><td>距离就近</td><td>376m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>东山雅居客栈(丽江古城大水车店)</td><td>距离就近</td><td>427m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>第三极国际青旅(丽江古城四方街店)</td><td>距离就近</td><td>440m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>朵儿观景客栈(丽江古城大水车店)</td><td>距离就近</td><td>455m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>花开彼岸客栈(文华巷分店)</td><td>距离就近</td><td>545m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>过街楼客栈(丽江古城木府店)</td><td>距离就近</td><td>589m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>丽江普拉格客栈</td><td>距离就近</td><td>599m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>上影国际影城(丽江祥和商业广场店)（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>上影国际影城(丽江祥和商业广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助棋牌室(祥和商业广场店)</td><td>距离就近</td><td>99m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友(祥和B区店)</td><td>距离就近</td><td>184m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>久雀棋牌茶室祥和商业广场店</td><td>距离就近</td><td>350m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>大唐盛世·娱乐</td><td>距离就近</td><td>383m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>鑫丽PARTY·娱乐</td><td>距离就近</td><td>392m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>名仕汇</td><td>距离就近</td><td>498m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>异空间主题纯K商务(K歌)</td><td>距离就近</td><td>527m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>喔里来棋牌室</td><td>距离就近</td><td>529m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>三缺一·太和</td><td>距离就近</td><td>541m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>雀侠24h自助棋牌饮茶室</td><td>距离就近</td><td>563m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>秀棋艺24小时棋牌室</td><td>距离就近</td><td>598m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>玉水坊中影国际影城(民主路店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>玉水坊中影国际影城(民主路店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(丽江古城店)</td><td>距离就近</td><td>57m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>丽江KK·夜泊国际商务俱乐部</td><td>距离就近</td><td>263m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>会龙百晓客栈</td><td>距离就近</td><td>448m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>7天连锁酒店(丽江古城正门大水车中心店)</td><td>距离就近</td><td>518m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>朵儿观景客栈(丽江古城大水车店)</td><td>距离就近</td><td>544m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>东山雅居客栈(丽江古城大水车店)</td><td>距离就近</td><td>572m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>多米连锁酒店(花马街店)</td><td>距离就近</td><td>582m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盛丰便利店(丽江古城店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>碧云天客栈(丽江古城南门店)</td><td>距离就近</td><td>224m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>丽江草屋居客栈</td><td>距离就近</td><td>374m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>花开彼岸客栈(文华巷分店)</td><td>距离就近</td><td>402m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>丽江古城城南旧事客栈</td><td>距离就近</td><td>462m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>丽江普拉格客栈</td><td>距离就近</td><td>500m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>汉邦豪苑酒店</td><td>距离就近</td><td>509m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>丽江古城桃源雅居客栈(义尚街文林巷分店)</td><td>距离就近</td><td>528m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>丽江古城一城楼客栈</td><td>距离就近</td><td>549m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽客隆超市(锦泰旗舰店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>四个朋友·自助棋牌(柏龙水榭和风苑店)</td><td>距离就近</td><td>158m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>久雀自助棋牌茶室柏龙水榭东店</td><td>距离就近</td><td>194m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>约麻公馆·棋牌·茶楼·商务会议(祥和路店)</td><td>距离就近</td><td>352m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>紫悦城商务</td><td>距离就近</td><td>453m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大唐盛世·娱乐</td><td>距离就近</td><td>496m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>嗨麻棋牌</td><td>距离就近</td><td>538m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>丽江圣达酒店(古城店)</td><td>距离就近</td><td>571m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>异空间主题纯K商务(K歌)</td><td>距离就近</td><td>578m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>丽江玉星酒店(丽江古城南门忠义市场店)</td><td>距离就近</td><td>582m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>名创优品(丽江古城店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>小肥·猫咖</td><td>距离就近</td><td>163m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>丽江无名雅院客栈</td><td>距离就近</td><td>265m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>7天连锁酒店(丽江古城正门大水车中心店)</td><td>距离就近</td><td>333m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>会龙百晓客栈</td><td>距离就近</td><td>346m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>第三极国际青旅(丽江古城四方街店)</td><td>距离就近</td><td>446m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>东山雅居客栈(丽江古城大水车店)</td><td>距离就近</td><td>457m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>朵儿观景客栈(丽江古城大水车店)</td><td>距离就近</td><td>475m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>谜之乐·谜踪密室逃脱(丽江古城店)</td><td>距离就近</td><td>501m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>过街楼客栈(丽江古城木府店)</td><td>距离就近</td><td>595m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>富达便利店（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽江普拉格客栈</td><td>距离就近</td><td>215m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>丽江无名雅院客栈</td><td>距离就近</td><td>349m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>小肥·猫咖</td><td>距离就近</td><td>409m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>东山雅居客栈(丽江古城大水车店)</td><td>距离就近</td><td>433m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>丽江古城桃源雅居客栈(义尚街文林巷分店)</td><td>距离就近</td><td>455m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>7天连锁酒店(丽江古城正门大水车中心店)</td><td>距离就近</td><td>463m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>朵儿观景客栈(丽江古城大水车店)</td><td>距离就近</td><td>469m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>丽江古城一城楼客栈</td><td>距离就近</td><td>478m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>花开彼岸客栈(文华巷分店)</td><td>距离就近</td><td>492m</td><td>4.9</td><td>§11</td></tr>
+<tr><td>沄汐沉浸式剧场</td><td>距离就近</td><td>510m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>会龙百晓客栈</td><td>距离就近</td><td>533m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>丽江金甲综合批发交易市场（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>和木酒店(丽江古城大水车店)</td><td>距离就近</td><td>201m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>礼乐纯K商务(K歌)</td><td>距离就近</td><td>318m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>好声音(七星街下段店)</td><td>距离就近</td><td>358m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>人民公社KTV量贩</td><td>距离就近</td><td>373m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>秀都时代音乐汇</td><td>距离就近</td><td>421m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>钻石国际娱乐会所</td><td>距离就近</td><td>428m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜来福酒店</td><td>距离就近</td><td>518m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>顶峰娱乐</td><td>距离就近</td><td>522m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>哥斯拉量贩KTV</td><td>距离就近</td><td>525m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>5596顶峰商务会客厅(K歌)</td><td>距离就近</td><td>527m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>古城区星悦城量贩卡拉厅</td><td>距离就近</td><td>554m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>大富豪商务公馆</td><td>距离就近</td><td>585m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>谜之乐·谜踪密室逃脱(丽江古城店)</td><td>距离就近</td><td>588m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金凯广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大富豪商务公馆</td><td>距离就近</td><td>54m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>哥斯拉量贩KTV</td><td>距离就近</td><td>58m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>礼乐纯K商务(K歌)</td><td>名称互证</td><td>228m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>私享影院</td><td>距离就近</td><td>508m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>大研古城飞天涯客栈(光义街光碧巷分店)</td><td>距离就近</td><td>563m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>丽江丽都国际</td><td>距离就近</td><td>585m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吉祥商贸城（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>丽合私影(古城区店)</td><td>名称互证</td><td>100m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>异空间主题纯K商务(K歌)</td><td>距离就近</td><td>284m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>名仕汇</td><td>距离就近</td><td>332m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>鑫丽PARTY·娱乐</td><td>距离就近</td><td>408m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大唐盛世·娱乐</td><td>距离就近</td><td>438m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>久雀棋牌茶室祥和商业广场店</td><td>距离就近</td><td>500m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>丽江玉星酒店(丽江古城南门忠义市场店)</td><td>距离就近</td><td>522m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>丽江圣达酒店(古城店)</td><td>距离就近</td><td>544m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（35 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>会龙百晓客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>大研街道北门街玉河商场34号</td></tr>
+<tr><td>✅A-</td><td>丽江古城城南旧事客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>南门街依古巷3号</td></tr>
+<tr><td>✅A-</td><td>丽江古城桃源雅居客栈(义尚街文林巷分店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>五一街文生巷30-2号</td></tr>
+<tr><td>✅A-</td><td>丽江束河央金玛庄园</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>丽江束河古镇石莲巷松云村1组22号</td></tr>
+<tr><td>✅A-</td><td>丽江十二星花园度假美宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>光义街忠义巷32号</td></tr>
+<tr><td>✅A-</td><td>花开彼岸客栈(文华巷分店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>大研街道五一社区王家庄巷22号</td></tr>
+<tr><td>✅A-</td><td>古城假日酒店(丽江南门店)</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.9</td><td>—</td><td>南苑路122-142号</td></tr>
+<tr><td>✅A-</td><td>丽江新江源酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>福慧路福慧村143号古城区政府对面</td></tr>
+<tr><td>✅A-</td><td>束河古镇见明月民宿</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.9</td><td>—</td><td>松园路松云村2号</td></tr>
+<tr><td>✅A-</td><td>汉邦豪苑酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.8</td><td>—</td><td>祥和路南门下八河路西72号</td></tr>
+<tr><td>✅A-</td><td>丽江纳西明珠居客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>束河街道龙泉居委会荣华五组62号</td></tr>
+<tr><td>✅A-</td><td>丽江无名雅院客栈</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.8</td><td>—</td><td>东岳巷5号</td></tr>
+<tr><td>✅A-</td><td>丽江古城一城楼客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>五一街文生巷156号</td></tr>
+<tr><td>✅A-</td><td>大研古城飞天涯客栈(光义街光碧巷分店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>光义街光碧巷丽江飞天涯客栈</td></tr>
+<tr><td>✅A-</td><td>过街楼客栈(丽江古城木府店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>光义街光碧巷9号(木府后门旁)</td></tr>
+<tr><td>✅A-</td><td>丽江玉星酒店(丽江古城南门忠义市场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>南口路忠义村59号</td></tr>
+<tr><td>✅A-</td><td>东山雅居客栈(丽江古城大水车店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>玉河商场75号东山雅居客栈</td></tr>
+<tr><td>✅B</td><td>玉龙蓝天酒店(丽江高铁站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>黄山镇五台社区中和村60号</td></tr>
+<tr><td>✅B</td><td>丽江草屋居客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>南门古佑巷151号</td></tr>
+<tr><td>✅B</td><td>朵儿观景客栈(丽江古城大水车店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>北门街玉河商场111号</td></tr>
+<tr><td>✅B</td><td>丽江青荷·田园风情客栈</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.5</td><td>—</td><td>光义街忠义巷94号</td></tr>
+<tr><td>✅B</td><td>喜来福酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>七星街西门延长线清溪河边107号</td></tr>
+<tr><td>✅B</td><td>爱丽思大酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.4</td><td>—</td><td>西安街道义正社区玉河中村86号</td></tr>
+<tr><td>✅B</td><td>泸沽湖悦湖精品酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>泸沽湖风景区大洛水村湖边纳古大酒店西侧100米</td></tr>
+<tr><td>✅B</td><td>第三极国际青旅(丽江古城四方街店)</td><td>住宿服务;旅馆招待所;青年旅舍</td><td>4.4</td><td>—</td><td>光义街金星巷18-1号</td></tr>
+<tr><td>✅B</td><td>多米连锁酒店(花马街店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.4</td><td>—</td><td>花马街玉河中村98号</td></tr>
+<tr><td>⚠️</td><td>丽江普拉格客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>五一街文生巷17-18号</td></tr>
+<tr><td>❌</td><td>和木酒店(丽江古城大水车店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>碧云天客栈(丽江古城南门店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.2</td><td>—</td><td>七一街八一下段99号</td></tr>
+<tr><td>⚠️</td><td>丽江圆明商务酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>太和西村2号</td></tr>
+<tr><td>⚠️</td><td>宁蒗凯旋大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>粮贸街162号</td></tr>
+<tr><td>⚠️</td><td>丽江圣达酒店(古城店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>康仲路与关丽路交叉口(新客运站旁)</td></tr>
+<tr><td>⚠️</td><td>7天优品酒店(丽江古城大水车机场大巴站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>福慧路328号附15号</td></tr>
+<tr><td>⚠️</td><td>丽江双福酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>义正街古路坞上段73号</td></tr>
+<tr><td>⚠️</td><td>7天连锁酒店(丽江古城正门大水车中心店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>3.7</td><td>—</td><td>玉缘路中段古城北门停车场入口对面</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>3</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>4</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>3</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>4</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>3</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>12</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>1</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/丽江市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>3 个 POI 无地址</strong>，需人工补：和木酒店(丽江古城大水车店)、十亿棋牌室、荣城商业综合体</li><li><input type="checkbox" disabled> <strong>3 个 POI 无评分</strong>，暂标 ⚠️：是园、菜鲜先商贸有限公司、丽江天仁商贸有限公司</li><li><input type="checkbox" disabled> 儿童游乐 9 家，其中场内 0 家、独立 9 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 5 个区县：华坪县、古城区、宁蒗彝族自治县、永胜县、玉龙纳西族自治县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

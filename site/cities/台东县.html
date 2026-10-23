@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>台东县 · 台湾省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/台湾省.html">← 返回台湾省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>台东县 · 台湾省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:41:16  ·  POI 总量：78（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>78</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>97%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 39 · 成人娱乐 48 · 儿童娱乐 4 · 酒店 22 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>台湾省 · 县</td></tr>
+<tr><td>下级区县</td><td>16 个</td></tr>
+<tr><td>街道/镇/乡</td><td>0 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×15、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>台东市</td><td>51</td><td>65%</td></tr>
+<tr><td>鹿野乡</td><td>7</td><td>9%</td></tr>
+<tr><td>卑南乡</td><td>5</td><td>6%</td></tr>
+<tr><td>绿岛乡</td><td>2</td><td>3%</td></tr>
+<tr><td>池上乡</td><td>2</td><td>3%</td></tr>
+<tr><td>金峰乡</td><td>2</td><td>3%</td></tr>
+<tr><td>太麻里乡</td><td>2</td><td>3%</td></tr>
+<tr><td>东河乡</td><td>1</td><td>1%</td></tr>
+<tr><td>延平乡</td><td>1</td><td>1%</td></tr>
+<tr><td>达仁乡</td><td>1</td><td>1%</td></tr>
+<tr><td>大武乡</td><td>1</td><td>1%</td></tr>
+<tr><td>海端乡</td><td>1</td><td>1%</td></tr>
+<tr><td>关山镇</td><td>1</td><td>1%</td></tr>
+<tr><td>兰屿乡</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（39 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>20</td></tr>
+<tr><td>购物中心/综合体</td><td>13</td></tr>
+<tr><td>百货/商场</td><td>5</td></tr>
+<tr><td>商业街</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（39 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>C</td><td>有人在家民宿</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>友爱自然民宿</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>融舍民宿</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>爱上玛黛民宿</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>铁道旅人民宿</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>米多丽民宿</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>二高轻旅K2 Hostel</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>兰雅购物中心</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>枫雅商旅</td><td>其他商业载体</td><td>3.9</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>衣世代商场</td><td>百货/商场</td><td>2.8</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>家歌卡拉OK</td><td>其他商业载体</td><td>2.5</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>卡拉罗商店</td><td>购物中心/综合体</td><td>2.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>台东地区农会太平购物中心</td><td>购物中心/综合体</td><td>2.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>阳光KTV</td><td>其他商业载体</td><td>2.3</td><td>0</td><td>6</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>台东大学校本部实习商店</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>鹿野地区农会购物中心</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店台东金块店</td><td>购物中心/综合体</td><td>2.0</td><td>0</td><td>3</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>码头卡拉OK</td><td>商业街</td><td>1.9</td><td>0</td><td>7</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>向金当百货</td><td>百货/商场</td><td>1.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>主幼商场台东店</td><td>百货/商场</td><td>1.9</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>部落诚实商店</td><td>其他商业载体</td><td>1.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>日日满</td><td>购物中心/综合体</td><td>1.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>全家便利商店台东博爱店</td><td>其他商业载体</td><td>1.6</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华山未来市</td><td>其他商业载体</td><td>1.6</td><td>0</td><td>6</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>大石头商号</td><td>其他商业载体</td><td>1.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>甘泉商号</td><td>其他商业载体</td><td>1.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>珍珍商号</td><td>购物中心/综合体</td><td>1.4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>艾米婚礼百货</td><td>百货/商场</td><td>1.3</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>三元商号</td><td>购物中心/综合体</td><td>1.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宏全汽车隔热纸百货行车记录器测速器装璜行</td><td>百货/商场</td><td>1.2</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>好事日常</td><td>其他商业载体</td><td>1.1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永财商店</td><td>购物中心/综合体</td><td>1.1</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>东林商行(冬瓜茶)</td><td>其他商业载体</td><td>1.1</td><td>0</td><td>2</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>福源商店(柑仔店)</td><td>其他商业载体</td><td>0.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>豫隆商店</td><td>购物中心/综合体</td><td>0.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>丰益商号</td><td>购物中心/综合体</td><td>0.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>来兴商号</td><td>购物中心/综合体</td><td>0.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>东升商行</td><td>其他商业载体</td><td>0.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>动物园民宿</td><td>其他商业载体</td><td>—</td><td>0</td><td>1</td><td>1</td><td>2</td></tr>
+</tbody></table></div>
+<h3>有人在家民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：954台湾台东县卑南乡利嘉村利嘉路661巷35号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>有人在家民宿</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>有人在家民宿</td></tr>
+</tbody></table></div>
+<h3>友爱自然民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：954台湾台东县卑南乡东兴村东园二街96巷5号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>友爱自然民宿</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>蝴蝶谷欢唱坊(预约便当需提前预约)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>友爱自然民宿</td></tr>
+</tbody></table></div>
+<h3>融舍民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：950台湾台东县台东市兴安路一段200巷21弄70号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>融舍民宿</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>融舍民宿、二高轻旅K2 Hostel、台东LOVE乐芙民宿</td></tr>
+</tbody></table></div>
+<h3>爱上玛黛民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：950台湾台东县台东市吉泰路599巷28号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>爱上玛黛民宿</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>爱上玛黛民宿</td></tr>
+</tbody></table></div>
+<h3>铁道旅人民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：950台湾台东县台东市新站路14巷2号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>铁道旅人民宿</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>铁道旅人民宿</td></tr>
+</tbody></table></div>
+<h3>米多丽民宿 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：95058台湾台东县台东市民航路998巷106号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>米多丽民宿</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>米多丽民宿</td></tr>
+</tbody></table></div>
+<h3>二高轻旅K2 Hostel —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：新兴路101巷100弄5号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>二高轻旅K2 Hostel</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>融舍民宿、二高轻旅K2 Hostel、台东LOVE乐芙民宿</td></tr>
+</tbody></table></div>
+<h3>兰雅购物中心 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：952台湾台东县兰屿乡</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>兰雅购物中心</td></tr>
+</tbody></table></div>
+<h3>枫雅商旅 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;住宿服务相关;住宿服务相关）</li><li><strong>地址</strong>：中兴路三段639巷3号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>枫雅商旅</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>枫雅商旅</td></tr>
+</tbody></table></div>
+<h3>衣世代商场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;服装鞋帽皮具店;服装鞋帽皮具店）</li><li><strong>地址</strong>：950台湾台东县台东市中山里中华路一段528号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>衣世代商场</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>台东秀泰影城、好乐迪KTV台东店、爱妮KTV</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>台东旅行家商务会馆</td></tr>
+</tbody></table></div>
+<h3>家歌卡拉OK —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：950台湾台东县台东市更生路886巷27号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>家歌卡拉OK</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>家歌卡拉OK、音乐情人卡拉Ok、台东春天卡啦OK</td></tr>
+</tbody></table></div>
+<h3>卡拉罗商店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：964台湾台东县金峰乡新兴村3邻53-1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>卡拉罗商店</td></tr>
+</tbody></table></div>
+<h3>台东地区农会太平购物中心 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：954台湾台东县卑南乡太平村太平路148号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>台东地区农会太平购物中心</td></tr>
+</tbody></table></div>
+<h3>阳光KTV —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：950台湾台东县台东市文化里中山路296巷7号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>阳光KTV</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>台东秀泰影城、好乐迪KTV台东店、爱妮KTV</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>台东旅行家商务会馆</td></tr>
+</tbody></table></div>
+<h3>台东大学校本部实习商店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;便民商店/便利店;便民商店/便利店）</li><li><strong>地址</strong>：950台湾台东县台东市建农里大学路二段369号图书资讯馆2楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>台东大学校本部实习商店</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（48 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>14</td></tr>
+<tr><td>KTV</td><td>10</td></tr>
+<tr><td>棋牌室</td><td>2</td></tr>
+<tr><td>电影院</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>❌</td><td>台东秀泰影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.3</td><td>—</td><td>950台湾台东县台东市中山里新生路93号2F</td></tr>
+<tr><td>❌</td><td>好乐迪KTV台东店</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.2</td><td>—</td><td>950台湾台东县台东市中山里中华路一段572号</td></tr>
+<tr><td>❌</td><td>钱柜组合屋-台东总公司</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.0</td><td>—</td><td>950台湾台东县台东市丰谷里丰谷南路276号</td></tr>
+<tr><td>❌</td><td>爱妮KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.8</td><td>—</td><td>950台湾台东县台东市中正里光明路89号</td></tr>
+<tr><td>❌</td><td>台东鲤鱼山KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.5</td><td>—</td><td>950台湾台东县台东市民族里博爱路486号号</td></tr>
+<tr><td>❌</td><td>家歌卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.5</td><td>—</td><td>950台湾台东县台东市更生路886巷27号</td></tr>
+<tr><td>❌</td><td>阳光KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.3</td><td>—</td><td>950台湾台东县台东市文化里中山路296巷7号</td></tr>
+<tr><td>❌</td><td>音乐情人卡拉Ok</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.3</td><td>—</td><td>950台湾台东县台东市马兰里新生路847号</td></tr>
+<tr><td>❌</td><td>海滨卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.3</td><td>—</td><td>950,Taiwan,Taitung County,Taitung City</td></tr>
+<tr><td>❌</td><td>Check raise德州竞技馆</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>2.3</td><td>—</td><td>台东县台东市中心里开封街703号</td></tr>
+<tr><td>❌</td><td>台东春天卡啦OK</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.1</td><td>—</td><td>950台湾台东县台东市马兰里新生路780号</td></tr>
+<tr><td>❌</td><td>伟哥卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.1</td><td>—</td><td>No.41-11,Chengdu N Rd,Taitung City,Taitung County,Taiwan 950</td></tr>
+<tr><td>❌</td><td>秘密桐花大道</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>2.1</td><td>—</td><td>[]</td></tr>
+<tr><td>❌</td><td>金星戏院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>2.1</td><td>—</td><td>950台湾台东县台东市知本里知本路三段270-316号</td></tr>
+<tr><td>❌</td><td>码头卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>1.9</td><td>—</td><td>95044台湾台东县台东市文化里新生路168巷8号</td></tr>
+<tr><td>❌</td><td>圆圆卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>1.8</td><td>—</td><td>Bo'ai Rd,Taitung City,Taitung County,Taiwan 950</td></tr>
+<tr><td>❌</td><td>马揪棋牌休闲会馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;酒吧</td><td>1.8</td><td>—</td><td>950台湾台东县台东市杭州街107-1号</td></tr>
+<tr><td>❌</td><td>小辣椒卡拉ok</td><td>其他娱乐场所</td><td>公司企业;公司;公司</td><td>1.5</td><td>—</td><td>950台湾台东县台东市新生里开封街363号</td></tr>
+<tr><td>❌</td><td>日光堂视听音响</td><td>其他娱乐场所</td><td>购物服务;家电电子卖场;数码电子</td><td>1.5</td><td>—</td><td>950台湾台东县台东市丰荣里文心街28号</td></tr>
+<tr><td>❌</td><td>蝴蝶谷欢唱坊(预约便当需提前预约)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>1.5</td><td>—</td><td>954台湾台东县卑南乡达鲁玛克外环道右岸</td></tr>
+<tr><td>❌</td><td>五洲戏院</td><td>其他娱乐场所</td><td>风景名胜;风景名胜相关;旅游景点</td><td>1.5</td><td>—</td><td>958,Taiwan,Taitung County,Chishang Township</td></tr>
+<tr><td>❌</td><td>发发棋牌休闲会馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>1.4</td><td>—</td><td>950台湾台东县台东市仁和里传广路498号</td></tr>
+<tr><td>❌</td><td>兰花姐热炒卡拉OK</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>1.3</td><td>—</td><td>953台湾台东县延平乡桃源村昇平路7邻139号</td></tr>
+<tr><td>❌</td><td>凤凰阁音乐会馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>1.1</td><td>—</td><td>950台湾台东县台东市南荣里更生路795号</td></tr>
+<tr><td>❌</td><td>良文居会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>1.1</td><td>—</td><td>No.192号,Hudi Rd,Luye Township,Taitung County,Taiwan 955</td></tr>
+<tr><td>❌</td><td>OK台东景屹行店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>0.3</td><td>—</td><td>[]</td></tr>
+<tr><td>❌</td><td>大嘴练歌坊</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>0.3</td><td>—</td><td>959,Taiwan,Taitung County,Donghe Township</td></tr>
+</tbody></table></div>
+<h2>4. 儿童与亲子娱乐（4 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>3</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>❌</td><td>池上牧野渡假村木栅动物区</td><td>其他儿童场所</td><td>独立</td><td>2.7</td><td>958台湾台东县池上乡新兴村</td></tr>
+<tr><td>❌</td><td>百雀鸟园</td><td>其他儿童场所</td><td>独立</td><td>1.8</td><td>950台湾台东县台东市中正里中华路一段194号</td></tr>
+<tr><td>⚠️</td><td>动物园民宿</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>950台湾台东县台东市自强里开封街811巷9号</td></tr>
+<tr><td>⚠️</td><td>文旅行民宿-庄园馆-宠物友善</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>大业路与正气北路交叉口西南400米</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（18 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>⚠️</td><td>兰雅购物中心</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>952台湾台东县兰屿乡</td></tr>
+<tr><td>❌</td><td>衣世代商场</td><td>百货/商场</td><td>2.8</td><td>0</td><td>0</td><td>950台湾台东县台东市中山里中华路一段528号</td></tr>
+<tr><td>❌</td><td>卡拉罗商店</td><td>购物中心/综合体</td><td>2.5</td><td>0</td><td>0</td><td>964台湾台东县金峰乡新兴村3邻53-1号</td></tr>
+<tr><td>❌</td><td>台东地区农会太平购物中心</td><td>购物中心/综合体</td><td>2.5</td><td>0</td><td>0</td><td>954台湾台东县卑南乡太平村太平路148号</td></tr>
+<tr><td>❌</td><td>台东大学校本部实习商店</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>950台湾台东县台东市建农里大学路二段369号图书资讯馆2楼</td></tr>
+<tr><td>❌</td><td>鹿野地区农会购物中心</td><td>购物中心/综合体</td><td>2.2</td><td>0</td><td>0</td><td>955台湾台东县鹿野乡瑞源村瑞景路二段2号</td></tr>
+<tr><td>❌</td><td>全家便利商店台东金块店</td><td>购物中心/综合体</td><td>2.0</td><td>1</td><td>0</td><td>950台湾台东县台东市中正里中华路一段276号</td></tr>
+<tr><td>❌</td><td>向金当百货</td><td>百货/商场</td><td>1.9</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>❌</td><td>主幼商场台东店</td><td>百货/商场</td><td>1.9</td><td>0</td><td>0</td><td>950台湾台东县台东市中山里中华路一段505号</td></tr>
+<tr><td>❌</td><td>日日满</td><td>购物中心/综合体</td><td>1.6</td><td>0</td><td>0</td><td>963台湾台东县太麻里乡村9邻14号</td></tr>
+<tr><td>❌</td><td>珍珍商号</td><td>购物中心/综合体</td><td>1.4</td><td>0</td><td>0</td><td>965台湾台东县大武乡南兴村129号</td></tr>
+<tr><td>❌</td><td>艾米婚礼百货</td><td>百货/商场</td><td>1.3</td><td>1</td><td>0</td><td>950台湾台东县台东市丰安里汉阳北路372号1楼</td></tr>
+<tr><td>❌</td><td>三元商号</td><td>购物中心/综合体</td><td>1.3</td><td>0</td><td>0</td><td>954台湾台东县卑南乡明峰村文泰路8号</td></tr>
+<tr><td>❌</td><td>宏全汽车隔热纸百货行车记录器测速器装璜行</td><td>百货/商场</td><td>1.2</td><td>0</td><td>0</td><td>950台湾台东县台东市马兰里新生路772号</td></tr>
+<tr><td>❌</td><td>永财商店</td><td>购物中心/综合体</td><td>1.1</td><td>0</td><td>0</td><td>950台湾台东县台东市新生里更生路744号</td></tr>
+<tr><td>❌</td><td>豫隆商店</td><td>购物中心/综合体</td><td>0.3</td><td>0</td><td>0</td><td>966台湾台东县达仁乡土坂村2邻32号</td></tr>
+<tr><td>❌</td><td>丰益商号</td><td>购物中心/综合体</td><td>0.3</td><td>0</td><td>0</td><td>957台湾台东县海端乡广原村初来部落联络道路25号</td></tr>
+<tr><td>❌</td><td>来兴商号</td><td>购物中心/综合体</td><td>0.3</td><td>0</td><td>0</td><td>955台湾台东县鹿野乡鹿野村中正路1号</td></tr>
+</tbody></table></div>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>有人在家民宿（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>有人在家民宿</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>友爱自然民宿（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>友爱自然民宿</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>蝴蝶谷欢唱坊(预约便当需提前预约)</td><td>距离就近</td><td>542m</td><td>1.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>融舍民宿（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>融舍民宿</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>二高轻旅K2 Hostel</td><td>距离就近</td><td>70m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>台东LOVE乐芙民宿</td><td>距离就近</td><td>473m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>爱上玛黛民宿（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>爱上玛黛民宿</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>铁道旅人民宿（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>铁道旅人民宿</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>米多丽民宿（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>米多丽民宿</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>二高轻旅K2 Hostel（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>二高轻旅K2 Hostel</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>融舍民宿</td><td>距离就近</td><td>70m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>台东LOVE乐芙民宿</td><td>距离就近</td><td>518m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>枫雅商旅（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>枫雅商旅</td><td>名称互证</td><td>0m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>衣世代商场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>好乐迪KTV台东店</td><td>距离就近</td><td>124m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>台东旅行家商务会馆</td><td>距离就近</td><td>207m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>台东秀泰影城</td><td>距离就近</td><td>218m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>码头卡拉OK</td><td>距离就近</td><td>345m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>阳光KTV</td><td>距离就近</td><td>397m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>爱妮KTV</td><td>距离就近</td><td>558m</td><td>2.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>家歌卡拉OK（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>家歌卡拉OK</td><td>名称互证</td><td>0m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>凤凰阁音乐会馆</td><td>距离就近</td><td>159m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>台东春天卡啦OK</td><td>距离就近</td><td>566m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>音乐情人卡拉Ok</td><td>距离就近</td><td>571m</td><td>2.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>阳光KTV（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>阳光KTV</td><td>名称互证</td><td>0m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>台东旅行家商务会馆</td><td>距离就近</td><td>239m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>码头卡拉OK</td><td>距离就近</td><td>283m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>爱妮KTV</td><td>距离就近</td><td>315m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>台东秀泰影城</td><td>距离就近</td><td>370m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>好乐迪KTV台东店</td><td>距离就近</td><td>487m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>圆圆卡拉OK</td><td>距离就近</td><td>546m</td><td>1.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>全家便利商店台东金块店（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>爱妮KTV</td><td>距离就近</td><td>190m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>百雀鸟园</td><td>距离就近</td><td>207m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>台东旅行家商务会馆</td><td>距离就近</td><td>483m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>阳光KTV</td><td>距离就近</td><td>501m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>日光堂视听音响</td><td>距离就近</td><td>555m</td><td>1.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>码头卡拉OK（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>码头卡拉OK</td><td>名称互证</td><td>0m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>台东秀泰影城</td><td>距离就近</td><td>167m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>阳光KTV</td><td>距离就近</td><td>283m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>圆圆卡拉OK</td><td>距离就近</td><td>304m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>台东旅行家商务会馆</td><td>距离就近</td><td>349m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>好乐迪KTV台东店</td><td>距离就近</td><td>360m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>台东鲤鱼山KTV</td><td>距离就近</td><td>458m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>爱妮KTV</td><td>距离就近</td><td>589m</td><td>2.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>主幼商场台东店（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>台东旅行家商务会馆</td><td>距离就近</td><td>162m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>好乐迪KTV台东店</td><td>距离就近</td><td>185m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>台东秀泰影城</td><td>距离就近</td><td>265m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>码头卡拉OK</td><td>距离就近</td><td>372m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>阳光KTV</td><td>距离就近</td><td>377m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>爱妮KTV</td><td>距离就近</td><td>507m</td><td>2.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>全家便利商店台东博爱店（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>圆圆卡拉OK</td><td>距离就近</td><td>49m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>台东鲤鱼山KTV</td><td>距离就近</td><td>212m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>码头卡拉OK</td><td>距离就近</td><td>257m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>台东秀泰影城</td><td>距离就近</td><td>364m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>阳光KTV</td><td>距离就近</td><td>498m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>好乐迪KTV台东店</td><td>距离就近</td><td>554m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>华山未来市（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>台东秀泰影城</td><td>距离就近</td><td>87m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>码头卡拉OK</td><td>距离就近</td><td>164m</td><td>1.9</td><td>§11</td></tr>
+<tr><td>好乐迪KTV台东店</td><td>距离就近</td><td>259m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>圆圆卡拉OK</td><td>距离就近</td><td>331m</td><td>1.8</td><td>§11</td></tr>
+<tr><td>台东旅行家商务会馆</td><td>距离就近</td><td>400m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>阳光KTV</td><td>距离就近</td><td>420m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>台东鲤鱼山KTV</td><td>距离就近</td><td>444m</td><td>2.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>艾米婚礼百货（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>文旅行民宿-庄园馆-宠物友善</td><td>距离就近</td><td>314m</td><td>—</td><td>§11</td></tr>
+<tr><td>文旅行民宿-庄园馆-宠物友善</td><td>距离就近</td><td>314m</td><td>—</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宏全汽车隔热纸百货行车记录器测速器装璜行（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>台东春天卡啦OK</td><td>距离就近</td><td>27m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>音乐情人卡拉Ok</td><td>距离就近</td><td>53m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>台东包栋童年时光六人包栋民宿</td><td>距离就近</td><td>103m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>凤凰阁音乐会馆</td><td>距离就近</td><td>421m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>家歌卡拉OK</td><td>距离就近</td><td>580m</td><td>2.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永财商店（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>凤凰阁音乐会馆</td><td>距离就近</td><td>233m</td><td>1.1</td><td>§11</td></tr>
+<tr><td>家歌卡拉OK</td><td>距离就近</td><td>340m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>台东包栋童年时光六人包栋民宿</td><td>距离就近</td><td>348m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>台东春天卡啦OK</td><td>距离就近</td><td>362m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>音乐情人卡拉Ok</td><td>距离就近</td><td>383m</td><td>2.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>东林商行(冬瓜茶)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>小辣椒卡拉ok</td><td>距离就近</td><td>495m</td><td>1.5</td><td>§11</td></tr>
+<tr><td>Check raise德州竞技馆</td><td>距离就近</td><td>538m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>Star House 101</td><td>距离就近</td><td>581m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>动物园民宿（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>动物园民宿</td><td>名称互证</td><td>0m</td><td>—</td><td>§11</td></tr>
+<tr><td>动物园民宿</td><td>名称互证</td><td>0m</td><td>—</td><td>§11</td></tr>
+<tr><td>Check raise德州竞技馆</td><td>距离就近</td><td>317m</td><td>2.3</td><td>§11</td></tr>
+<tr><td>Star House 101</td><td>距离就近</td><td>559m</td><td>5.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（22 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>台东包栋童年时光六人包栋民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>950台湾台东县台东市马兰里新社三街75号</td></tr>
+<tr><td>✅A-</td><td>有人在家民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>954台湾台东县卑南乡利嘉村利嘉路661巷35号</td></tr>
+<tr><td>✅A-</td><td>友爱自然民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>954台湾台东县卑南乡东兴村东园二街96巷5号</td></tr>
+<tr><td>✅A-</td><td>Star House 101</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>950台湾台东县台东市新生路349号</td></tr>
+<tr><td>✅A-</td><td>放空的日子民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>950台湾台东县台东市志航路一段390号</td></tr>
+<tr><td>✅A-</td><td>融舍民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>950台湾台东县台东市兴安路一段200巷21弄70号</td></tr>
+<tr><td>✅A-</td><td>爱上玛黛民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>950台湾台东县台东市吉泰路599巷28号</td></tr>
+<tr><td>✅A-</td><td>金樽饭店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>950台湾台东县台东市富贵街69号</td></tr>
+<tr><td>✅A-</td><td>御来光民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>955台湾台东县鹿野乡永安村高台路136号</td></tr>
+<tr><td>✅A-</td><td>铁道旅人民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>5.0</td><td>—</td><td>950台湾台东县台东市新站路14巷2号</td></tr>
+<tr><td>✅A-</td><td>米多丽民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>95058台湾台东县台东市民航路998巷106号</td></tr>
+<tr><td>✅A-</td><td>二高轻旅K2 Hostel</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>新兴路101巷100弄5号</td></tr>
+<tr><td>✅B</td><td>台东LOVE乐芙民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>新站二街80号</td></tr>
+<tr><td>✅B</td><td>绿岛好望角渡假海景民宿(台东县合法民宿:800号)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>951台湾台东县绿岛乡公馆村公馆33号</td></tr>
+<tr><td>✅B</td><td>云海湾海景民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>950台湾台东县台东市富冈里吉林路二段578号</td></tr>
+<tr><td>✅B</td><td>绮丽温泉渡假村</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>—</td><td>955台湾台东县鹿野乡鹿野村中华路一段260号</td></tr>
+<tr><td>✅B</td><td>台东旅游民宿</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.3</td><td>—</td><td>台东台东市兴盛路21号</td></tr>
+<tr><td>⚠️</td><td>幸福月光</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.2</td><td>—</td><td>951台湾台东县绿岛乡公馆村温泉路41号</td></tr>
+<tr><td>⚠️</td><td>台东旅行家商务会馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.1</td><td>—</td><td>950台湾台东县台东市中山里安庆街42号</td></tr>
+<tr><td>⚠️</td><td>枫雅商旅</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.9</td><td>—</td><td>中兴路三段639巷3号</td></tr>
+<tr><td>⚠️</td><td>动物园民宿</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>—</td><td>—</td><td>950台湾台东县台东市自强里开封街811巷9号</td></tr>
+<tr><td>⚠️</td><td>文旅行民宿-庄园馆-宠物友善</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>—</td><td>—</td><td>大业路与正气北路交叉口西南400米</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>3</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>2</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>3</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>4</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>7</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/台东县.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>3 个 POI 无地址</strong>，需人工补：OK台东景屹行店、秘密桐花大道、向金当百货</li><li><input type="checkbox" disabled> <strong>2 个 POI 无评分</strong>，暂标 ⚠️：动物园民宿、文旅行民宿-庄园馆-宠物友善</li><li><input type="checkbox" disabled> 儿童游乐 4 家，其中场内 0 家、独立 4 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 14 个区县：东河乡、兰屿乡、关山镇、卑南乡、台东市、大武乡、太麻里乡、延平乡、池上乡、海端乡、绿岛乡、达仁乡、金峰乡、鹿野乡——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

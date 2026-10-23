@@ -1,0 +1,42 @@
+{
+ "province": "上海市",
+ "stats": {
+  "cities": 1,
+  "poi": 977,
+  "grades": {
+   "S": 0,
+   "A": 3,
+   "B": 2,
+   "C": 35
+  }
+ },
+ "cities": [
+  {
+   "city": "上海市",
+   "province": "上海市",
+   "adcode": "310100",
+   "poi": 977,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 19:05:10",
+   "page": "cities/310100.html",
+   "json": "api/cities/310100.json",
+   "md": "md/%E4%B8%8A%E6%B5%B7%E5%B8%82/%E4%B8%8A%E6%B5%B7%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 3,
+    "B": 2,
+    "C": 35
+   },
+   "dims": {
+    "food": 287,
+    "district": 282,
+    "leisure": 248,
+    "kids": 38,
+    "hotel": 39,
+    "product": 41
+   }
+  }
+ ]
+}

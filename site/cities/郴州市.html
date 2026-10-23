@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>郴州市 · 湖南省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/湖南省.html">← 返回湖南省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>郴州市 · 湖南省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 18:57:04  ·  POI 总量：847（去重后）  ·  查询面：49  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>847</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>100%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 317 · 商圈 401 · 成人娱乐 253 · 儿童娱乐 152 · 酒店 30 · 特产 40</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>湖南省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>11 个</td></tr>
+<tr><td>街道/镇/乡</td><td>159 个</td></tr>
+<tr><td>区县构成</td><td>县×8、市辖区×2、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>北湖区</td><td>327</td><td>39%</td></tr>
+<tr><td>苏仙区</td><td>149</td><td>18%</td></tr>
+<tr><td>资兴市</td><td>68</td><td>8%</td></tr>
+<tr><td>桂阳县</td><td>66</td><td>8%</td></tr>
+<tr><td>宜章县</td><td>49</td><td>6%</td></tr>
+<tr><td>永兴县</td><td>48</td><td>6%</td></tr>
+<tr><td>嘉禾县</td><td>33</td><td>4%</td></tr>
+<tr><td>临武县</td><td>33</td><td>4%</td></tr>
+<tr><td>汝城县</td><td>32</td><td>4%</td></tr>
+<tr><td>安仁县</td><td>25</td><td>3%</td></tr>
+<tr><td>桂东县</td><td>17</td><td>2%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（401 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>164</td></tr>
+<tr><td>购物中心/综合体</td><td>56</td></tr>
+<tr><td>百货/商场</td><td>48</td></tr>
+<tr><td>商业街</td><td>42</td></tr>
+<tr><td>夜市</td><td>39</td></tr>
+<tr><td>步行街</td><td>27</td></tr>
+<tr><td>批发城</td><td>18</td></tr>
+<tr><td>美食街/小吃街</td><td>4</td></tr>
+<tr><td>奥特莱斯</td><td>3</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（401 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>A</td><td>裕后街</td><td>商业街</td><td>4.8</td><td>18</td><td>5</td><td>9</td><td>1</td></tr>
+<tr><td>A</td><td>郴州家宴</td><td>其他商业载体</td><td>4.5</td><td>18</td><td>6</td><td>7</td><td>0</td></tr>
+<tr><td>A</td><td>生源时代广场</td><td>百货/商场</td><td>4.7</td><td>14</td><td>7</td><td>7</td><td>0</td></tr>
+<tr><td>A</td><td>肯德基(五岭广场店)</td><td>其他商业载体</td><td>4.6</td><td>14</td><td>17</td><td>7</td><td>2</td></tr>
+<tr><td>A</td><td>万达影城(生源购物中心店)</td><td>购物中心/综合体</td><td>4.6</td><td>13</td><td>5</td><td>5</td><td>0</td></tr>
+<tr><td>A</td><td>沃尔玛(五岭新天地店)</td><td>购物中心/综合体</td><td>4.6</td><td>13</td><td>17</td><td>7</td><td>2</td></tr>
+<tr><td>A</td><td>步步高·新天地</td><td>购物中心/综合体</td><td>4.7</td><td>12</td><td>23</td><td>15</td><td>3</td></tr>
+<tr><td>A</td><td>盛香亭转转热卤(郴州北湖步步高新天地店)</td><td>其他商业载体</td><td>4.6</td><td>12</td><td>20</td><td>14</td><td>3</td></tr>
+<tr><td>A</td><td>兴隆步行街</td><td>步行街</td><td>4.6</td><td>12</td><td>23</td><td>15</td><td>3</td></tr>
+<tr><td>A</td><td>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>12</td><td>21</td><td>11</td><td>2</td></tr>
+<tr><td>A</td><td>见飞排档(五岭广场店)</td><td>其他商业载体</td><td>4.5</td><td>12</td><td>17</td><td>8</td><td>1</td></tr>
+<tr><td>A</td><td>五岭新天地二期新天地名汇城</td><td>百货/商场</td><td>4.5</td><td>12</td><td>15</td><td>8</td><td>2</td></tr>
+<tr><td>A</td><td>松花江饺子馆(兴隆步行街店)</td><td>步行街</td><td>4.6</td><td>11</td><td>13</td><td>15</td><td>3</td></tr>
+<tr><td>A</td><td>秀秀砍肉粉(创始店)</td><td>其他商业载体</td><td>4.5</td><td>11</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>A</td><td>京东电器城市旗舰店(郴州店)</td><td>百货/商场</td><td>4.5</td><td>11</td><td>22</td><td>17</td><td>3</td></tr>
+<tr><td>A</td><td>悦点坊·老广粥铺(裕后街店)</td><td>商业街</td><td>4.5</td><td>10</td><td>5</td><td>5</td><td>0</td></tr>
+<tr><td>B</td><td>桂阳商业步行街</td><td>步行街</td><td>4.6</td><td>12</td><td>5</td><td>3</td><td>0</td></tr>
+<tr><td>B</td><td>上海滩酒吧筹备处</td><td>其他商业载体</td><td>4.6</td><td>8</td><td>19</td><td>11</td><td>1</td></tr>
+<tr><td>B</td><td>鑫东泰酒吧</td><td>其他商业载体</td><td>4.6</td><td>8</td><td>18</td><td>11</td><td>1</td></tr>
+<tr><td>B</td><td>栖凤渡烧鸡公</td><td>其他商业载体</td><td>4.5</td><td>8</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>新成广场</td><td>购物中心/综合体</td><td>4.5</td><td>8</td><td>19</td><td>11</td><td>1</td></tr>
+<tr><td>B</td><td>杨婆鱼粉(骆仙路店)</td><td>其他商业载体</td><td>4.5</td><td>7</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>麦当劳(郴州湘南学院餐厅)</td><td>其他商业载体</td><td>4.6</td><td>6</td><td>6</td><td>2</td><td>1</td></tr>
+<tr><td>B</td><td>中华神农步行街</td><td>步行街</td><td>4.5</td><td>6</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>郴州友阿国际广场</td><td>购物中心/综合体</td><td>4.7</td><td>5</td><td>17</td><td>16</td><td>4</td></tr>
+<tr><td>B</td><td>纽约城NYC Night Club</td><td>其他商业载体</td><td>4.6</td><td>5</td><td>17</td><td>16</td><td>3</td></tr>
+<tr><td>B</td><td>金龙夜市广场</td><td>夜市</td><td>4.5</td><td>5</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>湘村往事·永兴本地菜(龙山路店)</td><td>其他商业载体</td><td>4.6</td><td>4</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>粥王店(香雪旗舰店)</td><td>其他商业载体</td><td>4.5</td><td>4</td><td>2</td><td>4</td><td>0</td></tr>
+<tr><td>C</td><td>汇利广场</td><td>百货/商场</td><td>4.5</td><td>4</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>夏之恋特色美食城</td><td>其他商业载体</td><td>4.5</td><td>4</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新渔夫记(苏仙传奇店)</td><td>其他商业载体</td><td>4.6</td><td>3</td><td>4</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>土不土私房菜馆</td><td>其他商业载体</td><td>4.6</td><td>3</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>老街家常菜</td><td>商业街</td><td>4.6</td><td>3</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宝蓝广场购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>2</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>兴惠步行街</td><td>步行街</td><td>4.5</td><td>2</td><td>1</td><td>3</td><td>0</td></tr>
+<tr><td>C</td><td>永兴中心商城</td><td>百货/商场</td><td>4.5</td><td>2</td><td>2</td><td>6</td><td>0</td></tr>
+<tr><td>C</td><td>安仁宾馆</td><td>其他商业载体</td><td>5.0</td><td>1</td><td>0</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>汝城太阳城</td><td>百货/商场</td><td>4.6</td><td>1</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>高码头大排档(时代新城店)</td><td>商业街</td><td>4.5</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>裕后街 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 18 家（均分 4.23）+ 4 类业态</li><li><strong>载体类型</strong>：商业街（购物服务;特色商业街;特色商业街）</li><li><strong>地址</strong>：中山东街兴旺楼小区西南侧约40米</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥50（区间 ¥8–371）</li><li><strong>动线主轴</strong>：曹家坪路</li><li><strong>业态分布</strong>：美食 18 · 成人娱乐 5 · 儿童娱乐 9 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>裕后街</td></tr>
+<tr><td>美食</td><td>18</td><td>郴州家宴、郴州裕后街山咕咕烧鸡公、胖婆捆鸭裕后街店</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>THIRTEENWOLF十三狼酒吧、画Twelve Strokes Bar、环游星际动漫电玩城·儿童乐园·台球</td></tr>
+<tr><td>儿童娱乐</td><td>9</td><td>环游星际动漫电玩城·儿童乐园·台球、郴州欢乐世界、摩天轮</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>新鸿扬宾馆(郴州裕后街店)</td></tr>
+</tbody></table></div>
+<h3>郴州家宴 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 18 家（均分 4.22）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：曹家坪路18号(裕后里商业广场东南门北90米)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥50（区间 ¥8–371）</li><li><strong>动线主轴</strong>：曹家坪路</li><li><strong>业态分布</strong>：美食 18 · 成人娱乐 6 · 儿童娱乐 7 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>郴州家宴</td></tr>
+<tr><td>美食</td><td>18</td><td>郴州家宴、郴州裕后街山咕咕烧鸡公、胖婆捆鸭裕后街店</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>THIRTEENWOLF十三狼酒吧、画Twelve Strokes Bar、囍蕃·X FUN</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>环游星际动漫电玩城·儿童乐园·台球、郴州欢乐世界、摩天轮</td></tr>
+</tbody></table></div>
+<h3>生源时代广场 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 14 家（均分 4.26）+ 3 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：八一路</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥18（区间 ¥8–371）</li><li><strong>动线主轴</strong>：南塔街</li><li><strong>业态分布</strong>：美食 14 · 成人娱乐 7 · 儿童娱乐 7 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>生源时代广场</td></tr>
+<tr><td>美食</td><td>14</td><td>真正米饺店(桔井路店)、悦点坊·老广粥铺(裕后街店)、五玩小汤圆店</td></tr>
+<tr><td>成人娱乐</td><td>7</td><td>万达影城(生源购物中心店)、THIRTEENWOLF十三狼酒吧、快乐街区(动漫游戏厅)</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>快乐街区(动漫游戏厅)、环游星际动漫电玩城·儿童乐园·台球、彩虹玩国(生源时代广场店)</td></tr>
+</tbody></table></div>
+<h3>肯德基(五岭广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 14 家（均分 4.30）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;快餐厅;肯德基）</li><li><strong>地址</strong>：五岭广场北侧五岭路6号1层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥49（区间 ¥15–120）</li><li><strong>动线主轴</strong>：南岭大道</li><li><strong>业态分布</strong>：美食 14 · 成人娱乐 17 · 儿童娱乐 7 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>肯德基(五岭广场店)</td></tr>
+<tr><td>美食</td><td>14</td><td>肯德基(五岭广场店)、乐滋味大排档、郴州市北湖区田小丫土菜院子</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>约个麻休闲吧、雾饮清吧 SHISHA(郴州店)、中影数字时代影城</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>super101潮漫电玩(郴州店)、阳光儿童城(隆昌巷店)、哚拉星球亲子乐园</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>邮电迎宾馆、如家公寓</td></tr>
+</tbody></table></div>
+<h3>万达影城(生源购物中心店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.24）+ 3 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：八一路生源时代广场5层(靠近八一步行街)</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥21（区间 ¥8–371）</li><li><strong>动线主轴</strong>：南塔街</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 5 · 儿童娱乐 5 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(生源购物中心店)</td></tr>
+<tr><td>美食</td><td>13</td><td>悦点坊·老广粥铺(裕后街店)、五玩小汤圆店、举古包子</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>万达影城(生源购物中心店)、四方朋友AI智慧KTV(生源时代广场店)、快乐街区(动漫游戏厅)</td></tr>
+<tr><td>儿童娱乐</td><td>5</td><td>快乐街区(动漫游戏厅)、彩虹玩国(生源时代广场店)、童幻天地游乐园(生源时代广场店)</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(五岭新天地店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 13 家（均分 4.31）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;沃尔玛）</li><li><strong>地址</strong>：五岭路五岭新天地2-3层</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥51（区间 ¥15–120）</li><li><strong>动线主轴</strong>：南岭大道</li><li><strong>业态分布</strong>：美食 13 · 成人娱乐 17 · 儿童娱乐 7 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>沃尔玛(五岭新天地店)</td></tr>
+<tr><td>美食</td><td>13</td><td>肯德基(五岭广场店)、乐滋味大排档、郴州市北湖区田小丫土菜院子</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>约个麻休闲吧、雾饮清吧 SHISHA(郴州店)、中影数字时代影城</td></tr>
+<tr><td>儿童娱乐</td><td>7</td><td>super101潮漫电玩(郴州店)、哚拉星球亲子乐园、阳光儿童城(隆昌巷店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>邮电迎宾馆、如家公寓</td></tr>
+</tbody></table></div>
+<h3>步步高·新天地 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.33）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心｜商务住宅;楼宇;商务写字楼）</li><li><strong>地址</strong>：国庆北路12号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥9–120）</li><li><strong>动线主轴</strong>：国庆北路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 23 · 儿童娱乐 15 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>步步高·新天地</td></tr>
+<tr><td>美食</td><td>12</td><td>海底捞火锅(步步高新天地店)、盛香亭转转热卤(郴州北湖步步高新天地店)、松花江饺子馆(兴隆步行街店)</td></tr>
+<tr><td>成人娱乐</td><td>23</td><td>星聚会KTV(郴州步步高店)、绿里奇迹酒社、郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>15</td><td>party one运动超级游乐场(步步高店)、郴州布丁猫咖猫舍(北湖公园店)、萌宠之家</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>苏园宾馆、新鸿扬宾馆(郴州裕后街店)、锦和园宾馆(郴州人民西路店)</td></tr>
+</tbody></table></div>
+<h3>盛香亭转转热卤(郴州北湖步步高新天地店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.36）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;餐饮相关场所;餐饮相关）</li><li><strong>地址</strong>：国庆北路12号步步高新天地街区2055号商铺</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥40（区间 ¥9–120）</li><li><strong>动线主轴</strong>：国庆北路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 20 · 儿童娱乐 14 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盛香亭转转热卤(郴州北湖步步高新天地店)</td></tr>
+<tr><td>美食</td><td>12</td><td>海底捞火锅(步步高新天地店)、盛香亭转转热卤(郴州北湖步步高新天地店)、松花江饺子馆(兴隆步行街店)</td></tr>
+<tr><td>成人娱乐</td><td>20</td><td>星聚会KTV(郴州步步高店)、绿里奇迹酒社、郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>14</td><td>party one运动超级游乐场(步步高店)、郴州布丁猫咖猫舍(北湖公园店)、萌宠之家</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>苏园宾馆、新鸿扬宾馆(郴州裕后街店)、锦和园宾馆(郴州人民西路店)</td></tr>
+</tbody></table></div>
+<h3>兴隆步行街 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.27）+ 4 类业态</li><li><strong>载体类型</strong>：步行街（购物服务;特色商业街;步行街）</li><li><strong>地址</strong>：国庆北路</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥32（区间 ¥9–120）</li><li><strong>动线主轴</strong>：国庆北路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 23 · 儿童娱乐 15 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>兴隆步行街</td></tr>
+<tr><td>美食</td><td>12</td><td>海底捞火锅(步步高新天地店)、盛香亭转转热卤(郴州北湖步步高新天地店)、松花江饺子馆(兴隆步行街店)</td></tr>
+<tr><td>成人娱乐</td><td>23</td><td>星聚会KTV(郴州步步高店)、郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)、上海滩酒吧筹备处</td></tr>
+<tr><td>儿童娱乐</td><td>15</td><td>party one运动超级游乐场(步步高店)、郴州布丁猫咖猫舍(北湖公园店)、郴州市北湖区百福儿童游乐城(百福商业中心广场店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>苏园宾馆、新鸿扬宾馆(郴州裕后街店)、锦和园宾馆(郴州人民西路店)</td></tr>
+</tbody></table></div>
+<h3>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.38）+ 4 类业态</li><li><strong>载体类型</strong>：购物中心/综合体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：人民路街道人民西路美美世界商业广场7层B7001号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥54（区间 ¥11–120）</li><li><strong>动线主轴</strong>：国庆北路</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 21 · 儿童娱乐 11 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td></tr>
+<tr><td>美食</td><td>12</td><td>海底捞火锅(步步高新天地店)、盛香亭转转热卤(郴州北湖步步高新天地店)、老莫排档(东风路)</td></tr>
+<tr><td>成人娱乐</td><td>21</td><td>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)、上海滩酒吧筹备处、鑫东泰酒吧</td></tr>
+<tr><td>儿童娱乐</td><td>11</td><td>party one运动超级游乐场(步步高店)、郴州布丁猫咖猫舍(北湖公园店)、酷洛潮漫(郴州步步高广场店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>新鸿扬宾馆(郴州裕后街店)、锦和园宾馆(郴州人民西路店)</td></tr>
+</tbody></table></div>
+<h3>见飞排档(五岭广场店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.42）+ 4 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：南岭大道肛肠医院对面</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥49（区间 ¥15–60）</li><li><strong>动线主轴</strong>：南岭大道</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 17 · 儿童娱乐 8 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>见飞排档(五岭广场店)</td></tr>
+<tr><td>美食</td><td>12</td><td>乐滋味大排档、郴州市北湖区田小丫土菜院子、肯德基(五岭广场店)</td></tr>
+<tr><td>成人娱乐</td><td>17</td><td>雾饮清吧 SHISHA(郴州店)、约个麻休闲吧、中影数字时代影城</td></tr>
+<tr><td>儿童娱乐</td><td>8</td><td>心芽自然成长营地、super101潮漫电玩(郴州店)、哚拉星球亲子乐园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>邮电迎宾馆</td></tr>
+</tbody></table></div>
+<h3>五岭新天地二期新天地名汇城 —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 12 家（均分 4.29）+ 4 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场｜商务住宅;楼宇;商住两用楼宇｜商务住宅;楼宇;商务写字楼）</li><li><strong>地址</strong>：五岭广场5号天一华府</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥52（区间 ¥15–120）</li><li><strong>动线主轴</strong>：南岭大道</li><li><strong>业态分布</strong>：美食 12 · 成人娱乐 15 · 儿童娱乐 8 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>五岭新天地二期新天地名汇城</td></tr>
+<tr><td>美食</td><td>12</td><td>肯德基(五岭广场店)、乐滋味大排档、我家川菜(文星路店)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>约个麻休闲吧、雾饮清吧 SHISHA(郴州店)、中影数字时代影城</td></tr>
+<tr><td>儿童娱乐</td><td>8</td><td>super101潮漫电玩(郴州店)、阳光儿童城(隆昌巷店)、哚拉星球亲子乐园</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>邮电迎宾馆、如家公寓</td></tr>
+</tbody></table></div>
+<h3>松花江饺子馆(兴隆步行街店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.28）+ 4 类业态</li><li><strong>载体类型</strong>：步行街（餐饮服务;中餐厅;特色/地方风味餐厅）</li><li><strong>地址</strong>：北湖路4号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥36（区间 ¥9–120）</li><li><strong>动线主轴</strong>：国庆北路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 13 · 儿童娱乐 15 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>松花江饺子馆(兴隆步行街店)</td></tr>
+<tr><td>美食</td><td>11</td><td>海底捞火锅(步步高新天地店)、松花江饺子馆(兴隆步行街店)、盛香亭转转热卤(郴州北湖步步高新天地店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>星聚会KTV(郴州步步高店)、SKYPOOL天池CLUB、制躁计划酒馆</td></tr>
+<tr><td>儿童娱乐</td><td>15</td><td>party one运动超级游乐场(步步高店)、郴州布丁猫咖猫舍(北湖公园店)、萌宠之家</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>苏园宾馆、新鸿扬宾馆(郴州裕后街店)、郴州长虹宾馆</td></tr>
+</tbody></table></div>
+<h3>秀秀砍肉粉(创始店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.35）+ 3 类业态</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅）</li><li><strong>地址</strong>：东江街道水电路社区幸福巷63号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥54（区间 ¥11–79）</li><li><strong>动线主轴</strong>：街道水电路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 1 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>秀秀砍肉粉(创始店)</td></tr>
+<tr><td>美食</td><td>11</td><td>壹湖两岸·鱼鲜山里菜(东江湖店)、渔美人三文鱼餐厅(东江湖总店)、秀秀砍肉粉(创始店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>Dauber大白Cocktail&amp;Whisky Bar</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>迷你包</td></tr>
+</tbody></table></div>
+<h3>京东电器城市旗舰店(郴州店) —— 评级 A</h3>
+<ul><li><strong>评级判据</strong>：美食 11 家（均分 4.29）+ 4 类业态</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场｜商务住宅;商务住宅相关;商务住宅相关）</li><li><strong>地址</strong>：国庆北路18号</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥29（区间 ¥9–120）</li><li><strong>动线主轴</strong>：国庆北路</li><li><strong>业态分布</strong>：美食 11 · 成人娱乐 22 · 儿童娱乐 17 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>京东电器城市旗舰店(郴州店)</td></tr>
+<tr><td>美食</td><td>11</td><td>海底捞火锅(步步高新天地店)、松花江饺子馆(兴隆步行街店)、盛香亭转转热卤(郴州北湖步步高新天地店)</td></tr>
+<tr><td>成人娱乐</td><td>22</td><td>星聚会KTV(郴州步步高店)、上海滩酒吧筹备处、郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>17</td><td>郴州布丁猫咖猫舍(北湖公园店)、party one运动超级游乐场(步步高店)、马家坪梦幻乐园</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>苏园宾馆、新鸿扬宾馆(郴州裕后街店)、锦和园宾馆(郴州人民西路店)</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（253 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>60</td></tr>
+<tr><td>酒吧/酒馆</td><td>35</td></tr>
+<tr><td>电影院</td><td>18</td></tr>
+<tr><td>棋牌室</td><td>15</td></tr>
+<tr><td>KTV</td><td>12</td></tr>
+<tr><td>电玩城</td><td>11</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>11</td></tr>
+<tr><td>Livehouse</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>W PARTY HOUSE酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>112.00</td><td>青年大道南侧10号汇添乐活天地B9栋3楼</td></tr>
+<tr><td>✅A-</td><td>十二兽·12 BEAST LAB(郴州店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.7</td><td>115.00</td><td>欢乐海岸25栋3层</td></tr>
+<tr><td>✅A-</td><td>唐潮汇(万宝国际店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>231.00</td><td>南湖路万宝国际B9栋2楼</td></tr>
+<tr><td>✅A-</td><td>Timewarp·TM露天餐酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>54.00</td><td>涌泉街道拥军路198医院对面停车场内右转上坡51栋</td></tr>
+<tr><td>✅A-</td><td>上海滩酒吧筹备处</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>49.00</td><td>人民西路15-21号新成广场</td></tr>
+<tr><td>✅A-</td><td>绿里奇迹酒社</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>73.00</td><td>国庆南路2号</td></tr>
+<tr><td>✅A-</td><td>纽约城NYC Night Club</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>147.00</td><td>北湖街道国庆北路17号友阿国际广场综合商业体1F1020号</td></tr>
+<tr><td>✅A-</td><td>鑫东泰酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.6</td><td>109.00</td><td>人民西路15新成广场F1层</td></tr>
+<tr><td>✅A-</td><td>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>43.00</td><td>人民路街道人民西路美美世界商业广场7层B7001号</td></tr>
+<tr><td>✅A-</td><td>Geek·怪咖电竞馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;网吧</td><td>4.6</td><td>—</td><td>燕泉街道香雪路复兴金都益森综合楼203</td></tr>
+<tr><td>✅A-</td><td>星聚会KTV(郴州步步高店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>55.00</td><td>北湖路步步高新大地B馆4楼4006号(6号-7号直上3A楼)</td></tr>
+<tr><td>✅A-</td><td>万达影城(生源购物中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>43.00</td><td>八一路生源时代广场5层(靠近八一步行街)</td></tr>
+<tr><td>✅B</td><td>超级玩家(宜章店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>132.00</td><td>玉溪镇马尔冲社区阳光财富7栋1楼</td></tr>
+<tr><td>✅B</td><td>SKYPOOL天池CLUB</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>37.00</td><td>人民东路120号</td></tr>
+<tr><td>✅B</td><td>THIRTEENWOLF十三狼酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>102.00</td><td>南塔街道裕后街东街桥综合楼3-4层</td></tr>
+<tr><td>✅B</td><td>胭脂江湖(郴州店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>81.00</td><td>南湖路136号万宝雅居1栋113-117号</td></tr>
+<tr><td>✅B</td><td>雾饮清吧 SHISHA(郴州店)</td><td>酒吧/酒馆</td><td>餐饮服务;冷饮店;冷饮店</td><td>4.5</td><td>78.00</td><td>燕泉街道南岭大道891号玖樾府沿街商业105</td></tr>
+<tr><td>✅B</td><td>Boss星辰俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>—</td><td>便江街道人民路270号201室</td></tr>
+<tr><td>✅B</td><td>画Twelve Strokes Bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>53.00</td><td>裕后街郭家巷二号苑S115</td></tr>
+<tr><td>✅B</td><td>江湖Livehouse</td><td>Livehouse</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>47.00</td><td>人民路街道人民西路10号新成广场2号楼1035</td></tr>
+<tr><td>✅B</td><td>乌拉PARTY</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>106.00</td><td>新城区嘉滨湖商业街1期栋102A-105商铺</td></tr>
+<tr><td>✅B</td><td>制躁计划酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.5</td><td>58.00</td><td>人民中路8号门面电梯3层</td></tr>
+<tr><td>✅B</td><td>玛莎V吧量贩KTV(国庆南路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>30.00</td><td>国庆南路5号2-3层(希顿大酒店旁)</td></tr>
+<tr><td>✅B</td><td>觅KTV(友阿国际店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>67.00</td><td>北湖街道同心路1号友阿国际广场6楼</td></tr>
+<tr><td>✅B</td><td>C位咖PARTY.K</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>69.00</td><td>郴江街道万宝国际城3期-东区</td></tr>
+<tr><td>✅B</td><td>博皇KTV台球俱乐部</td><td>KTV</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.5</td><td>61.00</td><td>御泉城市花园附近</td></tr>
+<tr><td>✅B</td><td>凤舞九天·中文国潮俱乐部</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>165.00</td><td>人民路街道人民西路15-21号新成广场2楼</td></tr>
+<tr><td>✅B</td><td>星汇影院(维多利亚商场店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>32.00</td><td>南湖路13号新贵华城三期维多利亚中心四楼</td></tr>
+<tr><td>✅B</td><td>中影寰球影城(人才创新园店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>42.00</td><td>郴县路177号人才创新园综合楼3楼</td></tr>
+<tr><td>✅B</td><td>约个麻休闲吧</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>42.00</td><td>燕泉路35号湘南地质勘查院</td></tr>
+<tr><td>❌</td><td>碰碰发24小时自助棋牌室(南湖路万宝店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>11.00</td><td>[]</td></tr>
+<tr><td>✅B</td><td>囍蕃·X FUN</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>64.00</td><td>白鹿洞街道东塔路社区曹家坪石桥组张静房屋1层商业门面</td></tr>
+<tr><td>✅B</td><td>77Seven R&amp;B-BAR小酒馆</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.4</td><td>59.00</td><td>郴州友阿国际广场7层5号电梯旁</td></tr>
+<tr><td>✅B</td><td>閊窖酒鎏</td><td>其他娱乐场所</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.4</td><td>81.00</td><td>飞虹路29-14号宏润华庭</td></tr>
+<tr><td>✅B</td><td>皇轩假日娱乐休闲会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>134.00</td><td>青年大道21号颐豪福邸J K L栋201号</td></tr>
+<tr><td>✅B</td><td>城市英雄郴州友阿店</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>26.00</td><td>郴桂路1号郴州友阿国际广场1层</td></tr>
+<tr><td>✅B</td><td>我是歌手量贩式KTV(五岭大道)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>52.00</td><td>五岭大道府前华厦3层</td></tr>
+<tr><td>✅B</td><td>维尼亚(郴州店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>62.00</td><td>香雪路天润天城商业广场7栋4层</td></tr>
+<tr><td>✅B</td><td>快乐街区(动漫游戏厅)</td><td>电玩城</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.4</td><td>29.00</td><td>八一北路生源时代广场五楼</td></tr>
+<tr><td>✅B</td><td>京豪汇K歌沐足</td><td>其他娱乐场所</td><td>购物服务;服装鞋帽皮具店;服装鞋帽皮具店</td><td>4.4</td><td>109.00</td><td>福城国际拥军路2号龙泽福城国际</td></tr>
+<tr><td>✅B</td><td>四方朋友·AI智慧KTV(万宝国际店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>19.00</td><td>青年大道4号(万宝国际城)</td></tr>
+<tr><td>✅B</td><td>巢乐KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>81.00</td><td>中伟盈丰国际</td></tr>
+<tr><td>✅B</td><td>金沐澜K歌沐足</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>113.00</td><td>南湖路益鑫楼帝国大酒店三楼302室</td></tr>
+<tr><td>✅B</td><td>新悦汇商务K歌沐足</td><td>其他娱乐场所</td><td>生活服务;洗浴推拿场所;洗浴推拿场所</td><td>4.4</td><td>223.00</td><td>涌泉街道万华路国富综合楼鼎和大酒店二楼</td></tr>
+<tr><td>✅B</td><td>君乐汇商务K歌沐足(青城美林店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>133.00</td><td>骆仙街道寒溪路51号青城美林12栋201号</td></tr>
+<tr><td>✅B</td><td>四方朋友AI智慧KTV(生源时代广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>27.00</td><td>八一路生源时代广场</td></tr>
+<tr><td>✅B</td><td>中影数字时代影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>44.00</td><td>郴州市北湖区燕泉街道燕泉南路锦马时代中心4楼</td></tr>
+<tr><td>✅B</td><td>人民电影院(人民东路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>40.00</td><td>人民东路12号(天翼大厦北门旁)</td></tr>
+<tr><td>✅B</td><td>爱莲湖影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>31.00</td><td>王仙岭街道欢乐海岸商业街25栋三楼</td></tr>
+<tr><td>✅B</td><td>乐活台球棋牌俱乐部</td><td>酒吧/酒馆</td><td>体育休闲服务;运动场馆;台球厅</td><td>4.4</td><td>—</td><td>万宝国际城乐活金街10-1-107号处入口唐潮酒吧旁</td></tr>
+<tr><td>✅B</td><td>友趣自助24小时娱乐室(五岭国际金桂园店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>15.00</td><td>民权路19号五岭国际·金桂园</td></tr>
+<tr><td>✅B</td><td>雀碰雀24h自助棋牌室(南湖路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>13.00</td><td>南湖路37号</td></tr>
+<tr><td>✅B</td><td>V+PARTY·派对KTV(永兴店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>84.00</td><td>大桥路中心商城4楼</td></tr>
+<tr><td>✅B</td><td>叁叁得酒BAR</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>67.00</td><td>骆仙东路与山川塘巷交叉口</td></tr>
+<tr><td>✅B</td><td>CD Banana Live古堡酒吧</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>17.00</td><td>友阿国际广场7层悠哉游哉里</td></tr>
+<tr><td>✅B</td><td>唐潮俱乐部(万宝国际城店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>270.00</td><td>南湖路万宝国际B9栋1F</td></tr>
+<tr><td>✅B</td><td>Dauber大白Cocktail&amp;Whisky Bar</td><td>酒吧/酒馆</td><td>体育休闲服务;娱乐场所;酒吧</td><td>4.3</td><td>55.00</td><td>东江大道161-1</td></tr>
+<tr><td>✅B</td><td>百乐汇商业广场</td><td>其他娱乐场所</td><td>购物服务;商场;普通商场/体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>—</td><td>七一西路百乐汇A栋3层</td></tr>
+<tr><td>✅B</td><td>环游星际动漫电玩城·儿童乐园·台球</td><td>电玩城</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>4.3</td><td>—</td><td>南塔街道裕后街生源超市一楼环游星际</td></tr>
+<tr><td>✅B</td><td>名侦探·青川鬼校密室轰趴馆(步步高店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>47.00</td><td>人民路街道国庆北路12号步步高广场郴州店B1层</td></tr>
+</tbody></table></div>
+<p>（另 103 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（152 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>83</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>32</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>12</td></tr>
+<tr><td>电玩城</td><td>12</td></tr>
+<tr><td>亲子乐园</td><td>10</td></tr>
+<tr><td>淘气堡</td><td>3</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>望湖庄园·童话镇</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>樟市镇望湖山庄</td></tr>
+<tr><td>✅A-</td><td>阳光儿童城</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>阳光瑞城</td></tr>
+<tr><td>✅A-</td><td>马家坪未来城</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>国庆北路42-5号</td></tr>
+<tr><td>✅A-</td><td>沐野星空营地</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>东湖欢乐世界郴州动物园旁</td></tr>
+<tr><td>✅B</td><td>party one运动超级游乐场(步步高店)</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.5</td><td>国庆北路12号步步高·新天地F8层</td></tr>
+<tr><td>✅B</td><td>海上会广场乐园</td><td>其他儿童场所</td><td>场内</td><td>4.5</td><td>海上会</td></tr>
+<tr><td>✅B</td><td>郴州布丁猫咖猫舍(北湖公园店)</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>国庆北路11号(衣博汇右侧面友谊中皇城正对面北湖公园东门旁)一楼</td></tr>
+<tr><td>✅B</td><td>上好家宠物寄养游泳洗护基地</td><td>其他儿童场所</td><td>独立</td><td>4.5</td><td>协作路25号</td></tr>
+<tr><td>✅B</td><td>竹山里亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.4</td><td>锁石路与东岭路交叉口西南140米</td></tr>
+<tr><td>✅B</td><td>苏仙岭游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.4</td><td>苏仙岭景区内</td></tr>
+<tr><td>✅B</td><td>马家坪梦幻乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>国庆北路30-w01</td></tr>
+<tr><td>✅B</td><td>快乐街区(动漫游戏厅)</td><td>电玩城</td><td>场内</td><td>4.4</td><td>八一北路生源时代广场五楼</td></tr>
+<tr><td>✅B</td><td>汝城暖水温泉游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.4</td><td>罗泉村</td></tr>
+<tr><td>✅B</td><td>逸景冲浪郴州水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>郴州东江湖逸景营地东侧</td></tr>
+<tr><td>✅B</td><td>安信狂欢鸭乐园</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>文明南路105号</td></tr>
+<tr><td>❌</td><td>郴州东湖欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>[]</td></tr>
+<tr><td>✅B</td><td>奇妙之城(宜章天润购物广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>玉溪镇罗家山村16组天润购物广场</td></tr>
+<tr><td>✅B</td><td>心芽自然成长营地</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>南岭大道1012号</td></tr>
+<tr><td>✅B</td><td>赛克斯switch·ps5·xbox·游戏体验馆(友阿店)</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>建设里路126号201</td></tr>
+<tr><td>✅B</td><td>环游星际动漫电玩城·儿童乐园·台球</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.3</td><td>南塔街道裕后街生源超市一楼环游星际</td></tr>
+<tr><td>✅B</td><td>020街区家庭娱乐中心</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>唐洞街道汉宁路383号</td></tr>
+<tr><td>✅B</td><td>郴州太空之旅体验馆</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>郴县路与桂园路交叉路口东北侧(郴州市文化中心)</td></tr>
+<tr><td>⚠️</td><td>郴州市北湖区百福儿童游乐城(百福商业中心广场店)</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.2</td><td>健康路百福中心购物广场c106号</td></tr>
+<tr><td>⚠️</td><td>望湖山庄亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.2</td><td>望湖生态庄园北侧290米</td></tr>
+<tr><td>⚠️</td><td>胜斗士动漫城</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>李家坝路与龙泉路交叉口西南60米</td></tr>
+<tr><td>⚠️</td><td>希望水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>永乐江镇黄泥村</td></tr>
+<tr><td>⚠️</td><td>萌宠之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>古玩街c21-22号</td></tr>
+<tr><td>⚠️</td><td>哆哆乐园(资兴店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>罗围瑞泰时代广场AB栋综合楼1126-1136的门面</td></tr>
+<tr><td>⚠️</td><td>七彩阳光亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.1</td><td>天坪苑廉租房西南侧140米</td></tr>
+<tr><td>⚠️</td><td>super101潮漫电玩(郴州店)</td><td>电玩城</td><td>独立</td><td>4.1</td><td>锦马时代3楼</td></tr>
+<tr><td>⚠️</td><td>酷洛潮漫(郴州步步高广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>人民路街道国庆北路步步高置业新天地商场B馆一楼1002A商铺</td></tr>
+<tr><td>⚠️</td><td>汤姆熊动漫乐园</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>唐洞街道资兴市秀流公园旁</td></tr>
+<tr><td>⚠️</td><td>郴州欢乐世界</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>南塔街道南塔街道南塔街道香雪东路(近裕后街)南塔公园内(东北角)</td></tr>
+<tr><td>⚠️</td><td>七彩阳光亲子游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.1</td><td>龙溪大道与银都大道交叉口东南160米</td></tr>
+<tr><td>⚠️</td><td>郴州东湖动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>郴州大道13组</td></tr>
+<tr><td>⚠️</td><td>哆萌宠物(湘域中央花园店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>拥军路湘域中央花园南区S1栋107底商</td></tr>
+<tr><td>⚠️</td><td>怪事镇密室逃脱(友阿广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.1</td><td>友阿国际广场天幕街1号门4楼</td></tr>
+<tr><td>⚠️</td><td>酷洛小镇(郴州北湖步步高超市店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>国庆北路10号步步高广场F1</td></tr>
+<tr><td>⚠️</td><td>牧羊宝贝高端儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>民生路与康家塘路交叉口南160米</td></tr>
+<tr><td>⚠️</td><td>树袋熊儿童乐园(海上会广场乐园店)</td><td>儿童乐园/游乐场</td><td>场内</td><td>4.0</td><td>骆仙西路海上会郴州营销中心3楼</td></tr>
+<tr><td>⚠️</td><td>彩虹玩国(生源时代广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>南塔街道八一路生源时代广场3楼</td></tr>
+<tr><td>⚠️</td><td>临武新世界家庭娱乐中心</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>舜峰镇东云路人健国贸中心建设银行旁自编1号门面</td></tr>
+<tr><td>⚠️</td><td>哚拉星球亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.0</td><td>锦马时代第一高楼三楼</td></tr>
+<tr><td>⚠️</td><td>阳光儿童城(隆昌巷店)</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>五岭路6号</td></tr>
+<tr><td>⚠️</td><td>玩未莱潮玩运动街区(友阿店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>北湖街道国庆北路17号友阿国际商业广场天幕街4楼</td></tr>
+<tr><td>⚠️</td><td>快乐街区(宝蓝广场购物中心店)</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>龙潭东路与文化路交汇处宝蓝广场购物中心F3</td></tr>
+<tr><td>⚠️</td><td>永乐翻天潮玩店</td><td>其他儿童场所</td><td>场内</td><td>4.0</td><td>永兴广场碧水嘉苑商用二层</td></tr>
+<tr><td>⚠️</td><td>潇湘国际影城(安仁店)</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>永乐江镇七一西路百乐汇4层</td></tr>
+<tr><td>⚠️</td><td>锦何水上乐园</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>桂阳新职中对面路口直行290米</td></tr>
+<tr><td>⚠️</td><td>欢乐谷淘气堡(步步高新天地店)</td><td>淘气堡</td><td>独立</td><td>4.0</td><td>人民路街道国庆北路10号步步高新天地三楼</td></tr>
+<tr><td>⚠️</td><td>迷你包</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>东江街道竹圆路647号</td></tr>
+<tr><td>⚠️</td><td>萌奇探MOKITAN闯关密室.萌宠乐园(郴州店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.9</td><td>友阿国际广场7楼</td></tr>
+<tr><td>⚠️</td><td>探险阳光乐园(步步高店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>国庆北路10号步步高新天地5楼</td></tr>
+<tr><td>⚠️</td><td>星童乐园(永兴中心商城店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>便江街道大桥路320号永兴中心商城二楼</td></tr>
+<tr><td>⚠️</td><td>探索视界飞越中国(锦马时代店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>燕泉街锦马时代中心3楼探索视界飞越中国</td></tr>
+<tr><td>⚠️</td><td>马戏团乐园(湖南省郴州市北湖区同心路1号店)</td><td>其他儿童场所</td><td>场内</td><td>3.9</td><td>郴州友阿国际广场</td></tr>
+<tr><td>⚠️</td><td>潮玩动漫游戏体验中心(五岭新天地二期新天地名汇城店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>新天地名汇城3层</td></tr>
+<tr><td>⚠️</td><td>潮弹社(郴州锦马时代城店)</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>燕泉南路41号锦马时代城3楼</td></tr>
+<tr><td>⚠️</td><td>城市之星动漫城</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>寒溪路与骆仙西路交叉口西40米</td></tr>
+<tr><td>⚠️</td><td>玩刻PS5·switch电玩游戏馆</td><td>电玩城</td><td>场内</td><td>3.9</td><td>人民路街道国庆北路29号步步高新天地购物广场负一楼</td></tr>
+</tbody></table></div>
+<p>（另 92 家见 §11 原始数据）</p>
+<h2>5. 综合体与商场（125 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>郴州友阿国际广场</td><td>购物中心/综合体</td><td>4.7</td><td>16</td><td>5</td><td>国庆北路与同心路交汇处(原汽车总站)</td></tr>
+<tr><td>✅A-</td><td>步步高·新天地</td><td>购物中心/综合体</td><td>4.7</td><td>15</td><td>12</td><td>国庆北路12号</td></tr>
+<tr><td>✅A-</td><td>生源时代广场</td><td>百货/商场</td><td>4.7</td><td>7</td><td>14</td><td>八一路</td></tr>
+<tr><td>✅A-</td><td>汝城太阳城</td><td>百货/商场</td><td>4.6</td><td>0</td><td>1</td><td>卢阳大道与义昌路交汇处</td></tr>
+<tr><td>✅A-</td><td>宝蓝广场购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>2</td><td>2</td><td>龙潭东路与文化路交汇处</td></tr>
+<tr><td>✅A-</td><td>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>11</td><td>12</td><td>人民路街道人民西路美美世界商业广场7层B7001号</td></tr>
+<tr><td>✅A-</td><td>万达影城(生源购物中心店)</td><td>购物中心/综合体</td><td>4.6</td><td>5</td><td>13</td><td>八一路生源时代广场5层(靠近八一步行街)</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(五岭新天地店)</td><td>购物中心/综合体</td><td>4.6</td><td>7</td><td>13</td><td>五岭路五岭新天地2-3层</td></tr>
+<tr><td>✅B</td><td>新成广场</td><td>购物中心/综合体</td><td>4.5</td><td>11</td><td>8</td><td>人民西路15-21号</td></tr>
+<tr><td>✅B</td><td>永兴中心商城</td><td>百货/商场</td><td>4.5</td><td>6</td><td>2</td><td>建安巷与城郊巷交叉口北60米</td></tr>
+<tr><td>✅B</td><td>汇利广场</td><td>百货/商场</td><td>4.5</td><td>1</td><td>4</td><td>园艺路汇利购物广场一楼(荟宝芦荟妆园)</td></tr>
+<tr><td>✅B</td><td>五岭新天地二期新天地名汇城</td><td>百货/商场</td><td>4.5</td><td>8</td><td>12</td><td>五岭广场5号天一华府</td></tr>
+<tr><td>✅B</td><td>京东电器城市旗舰店(郴州店)</td><td>百货/商场</td><td>4.5</td><td>17</td><td>11</td><td>国庆北路18号</td></tr>
+<tr><td>✅B</td><td>步步高新天地购物广场-会员中心</td><td>购物中心/综合体</td><td>4.5</td><td>15</td><td>12</td><td>国庆北路12号步步高·新天地F1层</td></tr>
+<tr><td>✅B</td><td>资兴·湘中城市广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>资兴大道林海广场旁</td></tr>
+<tr><td>✅B</td><td>嘉禾生源时代广场</td><td>百货/商场</td><td>4.5</td><td>1</td><td>2</td><td>珠泉镇人民北路45号</td></tr>
+<tr><td>✅B</td><td>新世界购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>3</td><td>解放北路与解放北路1巷交叉口东80米</td></tr>
+<tr><td>✅B</td><td>乐活天地(万宝国际城店)</td><td>百货/商场</td><td>4.5</td><td>2</td><td>8</td><td>郴州青滢健康管理中心</td></tr>
+<tr><td>✅B</td><td>星汇影院(维多利亚商场店)</td><td>百货/商场</td><td>4.5</td><td>4</td><td>11</td><td>南湖路13号新贵华城三期维多利亚中心四楼</td></tr>
+<tr><td>✅B</td><td>5爱闲置新旧货二手批发市场(金苑阁店)</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>五岭大道81号正东方向70米金苑阁</td></tr>
+<tr><td>✅B</td><td>成龙烧烤(白薇商业广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>资兴市新区秀流路白薇商业广场成龙烧烤</td></tr>
+<tr><td>✅B</td><td>豪廷商业广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>郴州大道2336号</td></tr>
+<tr><td>✅B</td><td>鑫地购物广场(金地广场)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>东江中路与晋宁路交叉口东北角(公安局旁)</td></tr>
+<tr><td>✅B</td><td>新天地广场</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>内五一南路3号</td></tr>
+<tr><td>✅B</td><td>嘉禾联海国际商贸城</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>珠泉镇和谐路与215省道交叉口北100米</td></tr>
+<tr><td>✅B</td><td>锦相百货(郴州购物广场店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>龙泉路与香雪路交汇处天润天城裙楼1-3层</td></tr>
+<tr><td>✅B</td><td>新天地商业城</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>五岭广场青年大道29号</td></tr>
+<tr><td>✅B</td><td>天润购物广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>玉溪镇罗家山村16组</td></tr>
+<tr><td>✅B</td><td>郴州美美世界城市商业广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>人民西路15号(与国庆路交汇处北湖公园南门)</td></tr>
+<tr><td>✅B</td><td>桂阳商贸城</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>向阳路23号</td></tr>
+<tr><td>✅B</td><td>百福中心购物广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>健康路第三人民医院对面</td></tr>
+<tr><td>✅B</td><td>永誉百货(安仁店)</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>城关镇五一南路8号</td></tr>
+<tr><td>✅B</td><td>海汇国际商贸城</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>便江镇永兴大道碧塘广场</td></tr>
+<tr><td>✅B</td><td>百乐汇商业广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>七一西路百乐汇A栋3层</td></tr>
+<tr><td>✅B</td><td>奇妙之城(宜章天润购物广场店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>玉溪镇罗家山村16组天润购物广场</td></tr>
+<tr><td>✅B</td><td>郴州湘翼国际影城(豪廷商业广场店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>观山洞街道郴州大道2336号(与桂园路交叉口东北角)豪廷商业广场裙楼一楼</td></tr>
+<tr><td>✅B</td><td>公平超市(桂园路店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>美的·仁大铂悦府西南门北100米</td></tr>
+<tr><td>✅B</td><td>衣博汇服装批发城(天湖花园店)</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>国庆北路11号天湖花园</td></tr>
+<tr><td>✅B</td><td>郴州市北湖区七鑫家禽批发市场</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>旭辉路东100米</td></tr>
+<tr><td>⚠️</td><td>海澄商贸物联网购物中心</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>晋宁路244-1号</td></tr>
+<tr><td>⚠️</td><td>星云汇·奥特莱斯</td><td>奥特莱斯</td><td>4.2</td><td>0</td><td>0</td><td>增湖路10号</td></tr>
+<tr><td>⚠️</td><td>北湖商业城</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>郴桂路1号</td></tr>
+<tr><td>⚠️</td><td>城东央商业广场</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>郴县路与白水路交汇处</td></tr>
+<tr><td>⚠️</td><td>红房子小卖部</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>五岭大道联通公司对面</td></tr>
+<tr><td>⚠️</td><td>湘品一家便利店</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>增福街道兴城路</td></tr>
+<tr><td>⚠️</td><td>衣世界服装批发城</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>西街与卢阳大道交叉口东20米</td></tr>
+<tr><td>⚠️</td><td>悦润佳超市(罗家井店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>燕泉路7号</td></tr>
+<tr><td>⚠️</td><td>维多利亚中心</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>南湖路新贵华城-三期</td></tr>
+<tr><td>⚠️</td><td>鑫欣休闲购物广场</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>鲤鱼江路128附近</td></tr>
+<tr><td>⚠️</td><td>白薇商业广场</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>政协大门口旁</td></tr>
+</tbody></table></div>
+<p>（另 75 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（317 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>年丰大酒店</td><td>餐饮服务;中餐厅;中餐厅</td><td>5.0</td><td>—</td><td>212省道与320省道交叉口西100米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ea7d2c0fd3fca054ed59efa3229d9852"></td></tr>
+<tr><td>✅A-</td><td>高子烧鸡公(五里堆路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>76.00</td><td>五里堆路11号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a6ea0b73de0c74a00000003587984920?type=pic"></td></tr>
+<tr><td>✅A-</td><td>白露塘粮站胖婆杀猪粉(创始店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.8</td><td>18.00</td><td>白露大道郴州市鹏程石材加工厂斜对面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/cc5c6dd9a2cd931f4965977b972c5fb4"></td></tr>
+<tr><td>✅A-</td><td>阿福海鲜局(万宝国际城店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.7</td><td>80.00</td><td>万宝国际C1栋(万宝幼儿园对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b8183673fcac8b53f9fb006fbd282725_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>火车头食堂·郴州味道</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>45.00</td><td>郴江街道梨树山村堆上组爱莲路136号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7260186c0f8448090000002636634062?type=pic"></td></tr>
+<tr><td>✅A-</td><td>海底捞火锅(步步高新天地店)</td><td>餐饮服务;中餐厅;火锅店</td><td>4.7</td><td>120.00</td><td>国庆北路10号步步高新天地7层7005号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/bcb84a02dd0ebb388d01c309af554414?operate=original"></td></tr>
+<tr><td>✅A-</td><td>金国鱼粉</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>14.00</td><td>协作路火车站南侧(广源幼儿园旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000012612_ss__1767258254401_30589073.jpg"></td></tr>
+<tr><td>✅A</td><td>圆圆家私房美食(翰林西苑店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>50.00</td><td>翰林西苑东1门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a0ce56755ac424b6a33051e495bdf8a6_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>佳兴鱼粉王(南湖路总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>20.00</td><td>南湖路郴江花园1004门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_69490_ss__1762586262202_95323933.jpg"></td></tr>
+<tr><td>✅A-</td><td>顶家家(船洞路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>51.00</td><td>船洞路竹园新城南苑20栋101</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000063985_ss__1769929275019_24340501.jpg"></td></tr>
+<tr><td>✅A-</td><td>柴火人家(爱莲湖店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>74.00</td><td>郴江街道梨树山村堆上组</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/22b537600ad31e5d6ec6426f77a49ee9"></td></tr>
+<tr><td>✅A-</td><td>微拾味(爱莲湖店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>70.00</td><td>堆上路与郴江路交叉路口往西约50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/737d3a92c7108681c7c861df0c717d38"></td></tr>
+<tr><td>✅A-</td><td>南茗湾茶餐厅(磨心塘旗舰店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.7</td><td>51.00</td><td>青年大道38号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c8ac3eabf45616f40000000688586125?type=pic"></td></tr>
+<tr><td>✅A-</td><td>竹山里生态餐厅(总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>58.00</td><td>锁石路中段</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100006415_1772846553596_67209437.jpg"></td></tr>
+<tr><td>✅A-</td><td>妈妈乡里味</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.7</td><td>41.00</td><td>杉杉大道59号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/C74ECE17_C267_4F61_A79F_23F556478CC7_L0_001_2000_1500_1748007756816_49612862.jpg"></td></tr>
+<tr><td>✅A</td><td>矮哥土菜馆</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.7</td><td>35.00</td><td>枧渡村十四组</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000005626_ss__1759810837132_31563133.jpg"></td></tr>
+<tr><td>✅A-</td><td>郴州苏仙宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆/餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>—</td><td>苏仙南路38号(近苏仙岭)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1037f0f011c4d2cca34a50966aea824c"></td></tr>
+<tr><td>✅A-</td><td>莽山黑豚馆(郴州莽山店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>84.00</td><td>莽山瑶族乡西岭村跳石子组</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/20260217-7be0e1a81a0552cdd407be71-3J1MJyi9hHT6frS4JvshSj.jpg"></td></tr>
+<tr><td>✅A-</td><td>宜章莽山舒心酒楼</td><td>餐饮服务;中餐厅;综合酒楼/住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>莽山公园境内(离莽山公园一公里)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9eb05ee27cdb01a97da4a5752bea91d7"></td></tr>
+<tr><td>✅A-</td><td>我家川菜(文星路店)</td><td>餐饮服务;中餐厅;四川菜(川菜)/餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>54.00</td><td>文星路16号(都市华庭侧门右30米)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/05a56d4f509078eebe4f4af989d69e20_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>真正米饺店(桔井路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>12.00</td><td>桔井路9号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/82D4651B_6CBE_47A0_B03C_572EAAA5E6DD_L0_001_1138_83_1768976332415_73189284.jpg"></td></tr>
+<tr><td>✅A-</td><td>江边湾柴火鸭</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>50.00</td><td>江边村</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/85a58ec237b46ab20000000669458674?type=pic"></td></tr>
+<tr><td>✅A-</td><td>帝都海鲜酒楼</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>99.00</td><td>国庆南路595号与香雪路交汇处南塔公园旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/EE16270E_9BF0_4953_850E_01FC5717EA4C_L0_001_1170_85_1753189771027_49987851.jpg"></td></tr>
+<tr><td>✅A-</td><td>新渔夫记(苏仙传奇店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>86.00</td><td>飞虹路龙腾广场4期2-3栋108号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c70add3ec19ce25f0000000958196691?type=pic"></td></tr>
+<tr><td>✅A-</td><td>福城渔都湘菜饭馆(长房金宸府店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>61.00</td><td>观山洞街道郴县路149号金宸府1112栋商业门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/41b463fee71c3c588732f70c6f372793_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A-</td><td>轩记海鲜(王仙岭店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.6</td><td>371.00</td><td>王仙岭街道城际大巴101号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/36e9a9af49cd98df0000003146546688"></td></tr>
+<tr><td>✅A-</td><td>万家乐烧鸡公(五里堆路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>65.00</td><td>五里堆路10号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/D1A4E99A_D6A2_4ED7_ACBE_E7DD99ACD203_L0_001_1472_1728_1730771081246_31912444.jpg"></td></tr>
+<tr><td>✅A-</td><td>杨婆白露塘杀猪粉</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>17.00</td><td>白露大道045县</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/277cf4206964aa070000002396494717?type=pic"></td></tr>
+<tr><td>✅A-</td><td>渔美人三文鱼餐厅(东江湖总店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>73.00</td><td>东江街道东江迎宾路270号三湘四水1-4号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/fd94e0c39f806d5302d1bb7b71248d82_2048_2048_80.jpg"></td></tr>
+<tr><td>✅A</td><td>郴州市北湖区田小丫土菜院子</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>60.00</td><td>南岭大道113号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000003411_ss__1738930512905_84362105.jpg"></td></tr>
+<tr><td>✅A-</td><td>老邓栖凤渡鱼粉</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>12.00</td><td>火车站达康美食城1043号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000236928_ss__1760107011334_40099078.jpg"></td></tr>
+<tr><td>✅A</td><td>土不土私房菜馆</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>65.00</td><td>唐洞街道阳安路中泰广场408-1号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000054426_ss__1759382450888_86213912.jpg"></td></tr>
+<tr><td>✅A-</td><td>笨大厨·永兴家常菜(人民东路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>30.00</td><td>便江街道人民东路48号(银都花园小区对面)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100001531_1769350835003_90190455.jpg"></td></tr>
+<tr><td>✅A</td><td>仰天湖乡村香味农家乐</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>42.00</td><td>鲁塘镇仰天湖乡村香味农家乐</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/f4bec5a0e982d8520000004293678458?type=pic"></td></tr>
+<tr><td>✅A-</td><td>顶家家(永兴宴)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>53.00</td><td>永兴大道</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100001523_1769349005955_48424341.jpg"></td></tr>
+<tr><td>✅A-</td><td>乐滋味大排档</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.6</td><td>53.00</td><td>燕泉街道南岭大道92号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/FBC0AD6C_DC6B_44A3_9A8C_4CB3EDEA9B3A_L0_001_2000_150_1759686687915_38039134.jpg"></td></tr>
+<tr><td>✅A-</td><td>钳先生·湘派海鲜(都市华庭店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>54.00</td><td>燕泉街道南湖路都市华庭116、216号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c689782943da64ca0000003623690863?type=pic"></td></tr>
+<tr><td>✅A-</td><td>盛香亭转转热卤(郴州北湖步步高新天地店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>40.00</td><td>国庆北路12号步步高新天地街区2055号商铺</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/da895c2ba7bf1c3dac27ce8da3a324b8"></td></tr>
+<tr><td>✅A-</td><td>松花江饺子馆(兴隆步行街店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.6</td><td>49.00</td><td>北湖路4号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ce50dc74edd5033a0000006133936491?type=pic"></td></tr>
+<tr><td>✅A-</td><td>麦当劳(郴州湘南学院餐厅)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.6</td><td>28.00</td><td>郴州大道2336号豪廷商业广场1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_2278_ss__1768962657383_40465474.jpg"></td></tr>
+<tr><td>✅A-</td><td>肯德基(五岭广场店)</td><td>餐饮服务;快餐厅;肯德基</td><td>4.6</td><td>22.00</td><td>五岭广场北侧五岭路6号1层</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/62e8c0ce15bcc103e31e666dae763967"></td></tr>
+<tr><td>✅A-</td><td>壹湖两岸·鱼鲜山里菜(东江湖店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>76.00</td><td>东江大道272号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1cfa504d7c88df84a25edcceabc8fe5e"></td></tr>
+<tr><td>✅A</td><td>湘村往事·永兴本地菜(龙山路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>45.00</td><td>丰尚国际广场</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_service__1773312003806_87049156_1773312040462_87861681.jpg"></td></tr>
+<tr><td>✅A-</td><td>东江湖有枫庭院</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.6</td><td>55.00</td><td>东江大道枫树下中立石化加油站后300米处</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000021781_ss__1748322617956_92978715.jpg"></td></tr>
+<tr><td>✅A-</td><td>长桂饭店(大市场店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.6</td><td>36.00</td><td>迎宾路大市场106-13号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/525bae3be3f7c9170000002264600478?type=pic"></td></tr>
+<tr><td>✅A-</td><td>老街家常菜</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.6</td><td>30.00</td><td>沙田镇第一军规广场</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3767441D_D19B_4E48_9754_5544728E4BFA_L0_001_2000_150_1750475090274_10602734.jpg"></td></tr>
+<tr><td>✅B</td><td>胡子烧烤(劳动路店)</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>32.00</td><td>新世纪花园北门西110米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/0d43e3f7027a819e913f43128b0111cf"></td></tr>
+<tr><td>✅B</td><td>虾说了蒜</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>71.00</td><td>堆上安置小区西南门东北70米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a9b93426da4b18ad0000006150678009?type=pic"></td></tr>
+<tr><td>✅B</td><td>宜章老杨猪脚粉</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>16.00</td><td>六角坝一区6栋2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ecb7bb0c6edacd620000003074138691?type=pic"></td></tr>
+<tr><td>✅B</td><td>雄雄饭店</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>53.00</td><td>双塘村S346省道许广高速临武互通出口往西600米处</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_100001492_1756307474669_65599531.jpg"></td></tr>
+<tr><td>✅B</td><td>毛家正宗烧鸡公(老牌店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>28.00</td><td>黄沙坪镇周台村大队办公楼旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ea194706965a8ceec690b8e8a7eb1865"></td></tr>
+<tr><td>✅B</td><td>乡村人家(郴永大道店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>44.00</td><td>郴永大道S215旅游战备路口</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_1000101890_ss__1759928121281_51980358.jpg"></td></tr>
+<tr><td>✅B</td><td>基古土菜馆</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>66.00</td><td>增福街道塘尾村十二组</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_84045_1665236597845_c430dc28.jpg"></td></tr>
+<tr><td>✅B</td><td>谢记烧鸡公</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>38.00</td><td>唐洞街道阳安路130-1-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1b09857a6e50acf00000009191780518?type=pic"></td></tr>
+<tr><td>✅B</td><td>李记柴火狗肉馆</td><td>餐饮服务;中餐厅;特色/地方风味餐厅</td><td>4.5</td><td>81.00</td><td>骆仙北路与骆仙西路交叉口东南100米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/5ee4af32c4330ba8a58905ae88cc093c"></td></tr>
+<tr><td>✅B</td><td>老桂东土菜馆(南岭山庄店)</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>89.00</td><td>唐洞街道一社区郴山路六角亭七组东端一号2号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/721957cffa8412b49e1820acc4b46244"></td></tr>
+<tr><td>✅B</td><td>大宝土菜馆</td><td>餐饮服务;中餐厅;综合酒楼</td><td>4.5</td><td>61.00</td><td>许家洞镇中国邮政往前50米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b352e3076c7ab7518405e026d24d144d_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>忆口香(宜章佳友店)</td><td>餐饮服务;中餐厅;海鲜酒楼</td><td>4.5</td><td>45.00</td><td>玉溪镇中夏公园忆口香</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/2dcc56b8bf9f4a5ae1fdc1f61511778e_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>农民伯伯屋里菜(郴州大道店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>67.00</td><td>鹏洋集团东南门西南150米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_1000007170_ss__1726073615933_70525051.jpg"></td></tr>
+<tr><td>✅B</td><td>华兰家柴火鱼(旗舰店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>92.00</td><td>寿佛路旺角龙庭</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/96D8FF53_71BD_48E5_9E2E_B8B573944940_L0_001_1280_1505_1726976647165_05396312.jpg"></td></tr>
+<tr><td>✅B</td><td>笼上·剁椒鱼头·粥王美食</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>46.00</td><td>北湖街道同心路5号西苑商住楼E-A栋</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/C0B72260_4A46_4EEE_879E_D024DF45BBD5_L0_001_1290_164_1765438141099_59826666.jpg"></td></tr>
+<tr><td>✅B</td><td>江边老粉馆米粉</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.5</td><td>18.00</td><td>东江街道沿江路410-2号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/8ae53a148d3608770000002467400807?type=pic"></td></tr>
+<tr><td>✅B</td><td>郴厨别院·山野土菜</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>59.00</td><td>白鹿洞街道龙门池社区青年大道明珠花园1栋131-3房</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/e1680e897badcb8c0000004246006954?type=pic"></td></tr>
+<tr><td>✅B</td><td>喜如院</td><td>商务住宅;商务住宅相关;商务住宅相关/餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>65.00</td><td>唐洞街道阳安路辅路</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7CB7AB2A_20E8_44FA_A049_E690037F89C3_L0_001_1440_1711_1726834842903_54250186.jpg"></td></tr>
+<tr><td>✅B</td><td>秀秀砍肉粉(创始店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>11.00</td><td>东江街道水电路社区幸福巷63号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100006996_1732506392423_56320166.jpg"></td></tr>
+<tr><td>✅B</td><td>农家土菜馆(白廊大酒店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>39.00</td><td>东江湖景区白廊景区南侧90米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/a9e12e364088789c0000003277820828?type=pic"></td></tr>
+<tr><td>❌</td><td>老白露塘杀猪粉(冲口路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>17.00</td><td>[]</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/3749EBA1_5E3C_4DC8_8906_AC4F4CFFF10E_L0_001_2016_151_1765092169151_94832466.jpg"></td></tr>
+<tr><td>✅B</td><td>杨婆鱼粉(骆仙路店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>13.00</td><td>骆仙西路26号门面(碧水云天旁,燕泉广场)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/12dcb7891b374281961dc55943533733"></td></tr>
+<tr><td>✅B</td><td>瑶家土菜馆(文化路)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>53.00</td><td>煤矿设计院东门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/7889EC26_CC6E_4F8C_A4A6_99F88F937E42_L0_001_1500_200_1767442666378_20496144.jpg"></td></tr>
+<tr><td>✅B</td><td>栖凤渡烧鸡公</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>58.00</td><td>五里堆路商业街1017-1019号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c3314838c695be860000008354624300?type=pic"></td></tr>
+<tr><td>✅B</td><td>陈厨老味·老派郴州菜(临武店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>55.00</td><td>武水镇官山路蒲公英幼儿园</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/1a6ddf59a0feb1da2dd8808f8a67632d_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>顶家家(宜章店)</td><td>生活服务;生活服务场所;生活服务场所/餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>51.00</td><td>民主西路芙蓉义府一期1栋</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/dee04dec740745a74692bb8301c2860b"></td></tr>
+<tr><td>✅B</td><td>胖婆捆鸭(爱莲湖店)</td><td>餐饮服务;中餐厅;湖南菜(湘菜)</td><td>4.5</td><td>61.00</td><td>林邑翰庭北门西110米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100008840_1729130354551_29685178.jpg"></td></tr>
+<tr><td>✅B</td><td>五玩小汤圆店</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.5</td><td>8.00</td><td>南塔街道南塔社区正一街南正新村4栋108号-7号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_file_29563_ss__1773036280938_32545517.jpg"></td></tr>
+<tr><td>✅B</td><td>举古包子</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>10.00</td><td>南正新村西门旁</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/ee5419142a915cccb2f46981a70f641b_2048_2048_80.jpg"></td></tr>
+<tr><td>✅B</td><td>明哥烧鸡大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>38.00</td><td>白鹿洞街道龙门池社区磨心塘69号黄裕生自建房</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/23F51AF0_2C50_49E3_8B2E_2B83DC63DCA7_L0_001_1179_87_1750432541598_78446693.jpg"></td></tr>
+<tr><td>✅B</td><td>金圆宝大排档(永兴店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>49.00</td><td>水南村陈宏鹏卫生室东侧60米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/38154a4041fcef2e403563f9bf81de37"></td></tr>
+<tr><td>✅B</td><td>郴州阿弟仔粤菜大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>53.00</td><td>白鹿洞街道龙门池社区磨心塘路地块二2栋107、108、109</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/b885e12eadbd2a470000003111720840?type=pic"></td></tr>
+<tr><td>✅B</td><td>老莫排档(东风路)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>57.00</td><td>东风路7-9号</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_service__1770205588327_58019257_1770205606862_59354467.jpg"></td></tr>
+<tr><td>✅B</td><td>桂阳大排档</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.5</td><td>12.00</td><td>鹿峰街道陶瓷岭路6-号门面</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/9c2cb7353b23b274d6642ee2562e9254_2048_2048_80.jpg"></td></tr>
+</tbody></table></div>
+<p>（另 237 家见 §11 原始数据，评分排序后 80 名未列入）</p>
+<h2>7. 苍蝇馆 / 小店候选（46 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<div class="tw"><table><thead><tr><th>店名</th><th>来源查询面</th><th>评分</th><th>人均</th><th>地址</th><th>备注</th></tr></thead><tbody>
+<tr><td>火车头食堂·郴州味道</td><td>店名小店语义</td><td>4.7</td><td>45.00</td><td>郴江街道梨树山村堆上组爱莲路136号</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>圆圆家私房美食(翰林西苑店)</td><td>店名小店语义</td><td>4.7</td><td>50.00</td><td>翰林西苑东1门旁</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>矮哥土菜馆</td><td>店名小店语义</td><td>4.7</td><td>35.00</td><td>枧渡村十四组</td><td>评分 4.7 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>郴州市北湖区田小丫土菜院子</td><td>店名小店语义</td><td>4.6</td><td>60.00</td><td>南岭大道113号</td><td></td></tr>
+<tr><td>土不土私房菜馆</td><td>店名小店语义</td><td>4.6</td><td>65.00</td><td>唐洞街道阳安路中泰广场408-1号门面</td><td></td></tr>
+<tr><td>笨大厨·永兴家常菜(人民东路店)</td><td>店名小店语义</td><td>4.6</td><td>30.00</td><td>便江街道人民东路48号(银都花园小区对面)</td><td></td></tr>
+<tr><td>仰天湖乡村香味农家乐</td><td>店名小店语义</td><td>4.6</td><td>42.00</td><td>鲁塘镇仰天湖乡村香味农家乐</td><td></td></tr>
+<tr><td>乐滋味大排档</td><td>店名小店语义</td><td>4.6</td><td>53.00</td><td>燕泉街道南岭大道92号</td><td></td></tr>
+<tr><td>老街家常菜</td><td>店名小店语义</td><td>4.6</td><td>30.00</td><td>沙田镇第一军规广场</td><td></td></tr>
+<tr><td>基古土菜馆</td><td>店名小店语义</td><td>4.5</td><td>66.00</td><td>增福街道塘尾村十二组</td><td></td></tr>
+<tr><td>老桂东土菜馆(南岭山庄店)</td><td>店名小店语义</td><td>4.5</td><td>89.00</td><td>唐洞街道一社区郴山路六角亭七组东端一号2号门面</td><td></td></tr>
+<tr><td>大宝土菜馆</td><td>店名小店语义</td><td>4.5</td><td>61.00</td><td>许家洞镇中国邮政往前50米</td><td></td></tr>
+<tr><td>郴厨别院·山野土菜</td><td>店名小店语义</td><td>4.5</td><td>59.00</td><td>白鹿洞街道龙门池社区青年大道明珠花园1栋131-3房</td><td></td></tr>
+<tr><td>农家土菜馆(白廊大酒店)</td><td>店名小店语义</td><td>4.5</td><td>39.00</td><td>东江湖景区白廊景区南侧90米</td><td></td></tr>
+<tr><td>瑶家土菜馆(文化路)</td><td>店名小店语义</td><td>4.5</td><td>53.00</td><td>煤矿设计院东门旁</td><td></td></tr>
+<tr><td>明哥烧鸡大排档</td><td>店名小店语义</td><td>4.5</td><td>38.00</td><td>白鹿洞街道龙门池社区磨心塘69号黄裕生自建房</td><td></td></tr>
+<tr><td>金圆宝大排档(永兴店)</td><td>店名小店语义</td><td>4.5</td><td>49.00</td><td>水南村陈宏鹏卫生室东侧60米</td><td></td></tr>
+<tr><td>郴州阿弟仔粤菜大排档</td><td>店名小店语义</td><td>4.5</td><td>53.00</td><td>白鹿洞街道龙门池社区磨心塘路地块二2栋107、108、109</td><td></td></tr>
+<tr><td>桂阳大排档</td><td>店名小店语义</td><td>4.5</td><td>12.00</td><td>鹿峰街道陶瓷岭路6-号门面</td><td></td></tr>
+<tr><td>高码头大排档(时代新城店)</td><td>店名小店语义</td><td>4.5</td><td>52.00</td><td>龙潭街道骏马大道东侧(茶红路旁)时代新城C座1-4号门面</td><td></td></tr>
+<tr><td>牛杂王 乡野家常菜</td><td>店名小店语义</td><td>4.5</td><td>40.00</td><td>拥军路肖家组路口向北30米</td><td></td></tr>
+<tr><td>海波土菜馆</td><td>店名小店语义</td><td>4.4</td><td>41.00</td><td>解放南路174号</td><td></td></tr>
+<tr><td>大树下柴火土菜院</td><td>店名小店语义</td><td>4.4</td><td>52.00</td><td>珠江桥三组</td><td></td></tr>
+<tr><td>粤兴食堂</td><td>店名小店语义</td><td>4.4</td><td>54.00</td><td>东江街道东江大道</td><td></td></tr>
+<tr><td>裕后里有味平价海鲜大排档</td><td>店名小店语义</td><td>4.4</td><td>52.00</td><td>东街桥头裕后里2001-2004</td><td></td></tr>
+<tr><td>萬三贵州炭烤鲜鸡大排档</td><td>店名小店语义</td><td>4.4</td><td>48.00</td><td>新贵华城一二期西2门西北170米</td><td></td></tr>
+<tr><td>恒丰大排档</td><td>店名小店语义</td><td>4.4</td><td>39.00</td><td>东江街道鲤鱼江大兴东路127-1</td><td></td></tr>
+<tr><td>刘有友开心小排挡</td><td>店名小店语义</td><td>4.4</td><td>35.00</td><td>白鹿洞街道东塔路社区龙门池石桥101号</td><td></td></tr>
+<tr><td>瑶妹子土菜馆</td><td>店名小店语义</td><td>4.4</td><td>78.00</td><td>x88莽山森林公园对面的瑶溪谷商业街</td><td></td></tr>
+<tr><td>大勺院子·本地特色私房菜</td><td>店名小店语义</td><td>4.4</td><td>60.00</td><td>东江街道寿佛路水电八局东江基地原机械厂(海贸钢材院内)</td><td></td></tr>
+<tr><td>优优土菜馆</td><td>店名小店语义</td><td>4.3</td><td>54.00</td><td>永兴大道北50米</td><td></td></tr>
+<tr><td>城南烧烤店(解放路店)</td><td>店名小店语义</td><td>4.3</td><td>26.00</td><td>解放路1-7号</td><td></td></tr>
+<tr><td>胡老二土菜馆夜市</td><td>店名小店语义</td><td>4.3</td><td>53.00</td><td>曹家坪路湘化厂小区东北侧约110米</td><td></td></tr>
+<tr><td>河西走廊得色大排档</td><td>店名小店语义</td><td>4.2</td><td>57.00</td><td>沿江路3东河西走廊</td><td></td></tr>
+<tr><td>东乡土菜馆</td><td>店名小店语义</td><td>4.2</td><td>55.00</td><td>东江街道水电路72-3号</td><td></td></tr>
+<tr><td>吊桥大排档(一线江景店)</td><td>店名小店语义</td><td>4.2</td><td>62.00</td><td>东江镇水电路枫情酒吧街c1-1</td><td></td></tr>
+<tr><td>蟹老板超级大排档</td><td>店名小店语义</td><td>4.2</td><td>20.00</td><td>永乐江镇安仁大道豪庭酒店对面</td><td></td></tr>
+<tr><td>兄弟大排档(东泉路店)</td><td>店名小店语义</td><td>4.2</td><td>110.00</td><td>卢阳大道与东泉路交绘路口</td><td></td></tr>
+<tr><td>猛搞夜市大排档</td><td>店名小店语义</td><td>4.2</td><td>31.00</td><td>便江街道大桥路(汇邦商业街521号)</td><td></td></tr>
+<tr><td>如意土菜馆(本地烧鸡公)</td><td>店名小店语义</td><td>4.1</td><td>59.00</td><td>南岭大道辅路五岭广场</td><td></td></tr>
+<tr><td>南极海鲜大排档(裕后里店)</td><td>店名小店语义</td><td>4.1</td><td>85.00</td><td>曹家坪裕后里2105-2107</td><td></td></tr>
+<tr><td>山俚俏农家乐</td><td>店名小店语义</td><td>4.0</td><td>51.00</td><td>三洞乡坪水村</td><td></td></tr>
+<tr><td>京珠私房土菜馆</td><td>店名小店语义</td><td>3.9</td><td>—</td><td>G4京港澳高速与良田互通交叉口西500米</td><td></td></tr>
+<tr><td>凯子大排档(火车站店)</td><td>店名小店语义</td><td>3.9</td><td>25.00</td><td>火车站达康美食城111-112号</td><td></td></tr>
+<tr><td>初味大排档(裕后里店)</td><td>店名小店语义</td><td>3.5</td><td>61.00</td><td>南塔街道曹家坪社区曹家坪路裕后里7105-7106号门面</td><td>评分 3.5 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+<tr><td>桂阳县黑白电视步行街小吃店</td><td>店名小店语义</td><td>3.5</td><td>28.00</td><td>鹿峰街道十字街社区居委会体育路步行街小区东正街38-1号</td><td>评分 3.5 超出苍蝇馆常见区间，仅登记不推荐</td></tr>
+</tbody></table></div>
+<h2>8. 知名特产（40 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>湘当经典湖南特产连锁(东江湖店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.5</td><td>东江街道东江大道267-2号</td></tr>
+<tr><td>✅B</td><td>特产零食舜华临武鸭(沃尔玛店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.3</td><td>青年大道新天地商业一楼17号门面</td></tr>
+<tr><td>✅B</td><td>特产零食舜华临武鸭(北湖公园湘品堂店)</td><td>购物服务;专卖店;土特产专卖店</td><td>4.3</td><td>北湖公园东北门东南310米</td></tr>
+<tr><td>✅B</td><td>特产零食舜华临武鸭(人民东路)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.3</td><td>郴州市创业培训大楼南门旁</td></tr>
+<tr><td>✅B</td><td>特产零食舜华临武鸭(奥米茄店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.3</td><td>郴江路爱莲名城101号</td></tr>
+<tr><td>✅B</td><td>特产零食舜华临武鸭(高铁华盛世纪店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.3</td><td>华盛·世纪新城二期西门东南170米</td></tr>
+<tr><td>⚠️</td><td>舜华临武鸭(嘉禾店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.2</td><td>珠泉西路86号</td></tr>
+<tr><td>⚠️</td><td>东江湘水土特产</td><td>购物服务;专卖店;土特产专卖店</td><td>4.2</td><td>东江镇水电路浦发银行旁</td></tr>
+<tr><td>⚠️</td><td>特产零食舜华临武鸭(温德姆店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.2</td><td>观山洞街道豪庭商业广场(麦当劳隔壁)</td></tr>
+<tr><td>⚠️</td><td>郴州特产金牌四件宝</td><td>购物服务;专卖店;土特产专卖店</td><td>4.2</td><td>人民东路28号(皇晨大酒店对面)</td></tr>
+<tr><td>⚠️</td><td>特产零食舜华临武鸭(裕后里店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.1</td><td>曹家坪路18号舜华临武鸭专卖店</td></tr>
+<tr><td>⚠️</td><td>郴州特产临武鸭专卖店一店</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>国庆南路12号郴州特产临武鸭</td></tr>
+<tr><td>⚠️</td><td>舜华临武鸭(扬生大厦店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>国庆北路44号扬升大厦6号</td></tr>
+<tr><td>⚠️</td><td>舜华临武鸭(瑞际店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.1</td><td>南岭大道长沙银行旁(郴州店)北侧约50米</td></tr>
+<tr><td>⚠️</td><td>特产零食舜华临武鸭(郴州西站店)</td><td>餐饮服务;快餐厅;快餐厅</td><td>4.1</td><td>增福街道增湖村郴州西高铁站候车厅</td></tr>
+<tr><td>⚠️</td><td>舜华临武鸭(丰尚国际广场店)</td><td>餐饮服务;中餐厅;中餐厅</td><td>4.1</td><td>永康路丰尚国际广场</td></tr>
+<tr><td>⚠️</td><td>舜华临武鸭(民权店)</td><td>生活服务;生活服务场所;生活服务场所</td><td>4.1</td><td>民权路3-1号</td></tr>
+<tr><td>⚠️</td><td>福城四件宝特产(南岭大道辅路店)</td><td>购物服务;专卖店;专营店</td><td>4.1</td><td>郴州市政府机关东湾院住宅北门东60米</td></tr>
+<tr><td>⚠️</td><td>老郴州特产(南岭大道店)</td><td>购物服务;专卖店;专营店</td><td>4.1</td><td>南岭大道紫金豪园A栋1012号</td></tr>
+<tr><td>⚠️</td><td>舜华临武鸭(人民西路店)</td><td>购物服务;专卖店;土特产专卖店/餐饮服务;餐饮相关场所;餐饮相关</td><td>4.0</td><td>人民西路17号</td></tr>
+<tr><td>⚠️</td><td>酒酒米酒铺</td><td>购物服务;专卖店;烟酒专卖店</td><td>4.0</td><td>沿江西路403-1号</td></tr>
+<tr><td>⚠️</td><td>舜华临武鸭(永兴友阿店)</td><td>购物服务;专卖店;专营店</td><td>4.0</td><td>大桥路217号</td></tr>
+<tr><td>⚠️</td><td>九农人郴州特产高铁西站店</td><td>购物服务;专卖店;土特产专卖店</td><td>4.0</td><td>月中路1-8-119号120号</td></tr>
+<tr><td>⚠️</td><td>郴州特产城(嘉禾店)</td><td>购物服务;专卖店;专营店</td><td>3.9</td><td>珠泉镇珠泉东路劳动大厦1楼</td></tr>
+<tr><td>⚠️</td><td>特产零食舜华临武鸭(长卷店)</td><td>购物服务;购物相关场所;购物相关场所/餐饮服务;餐饮相关场所;餐饮相关</td><td>3.9</td><td>郴州市苏仙区长卷文旅城9栋108-111号铺面</td></tr>
+<tr><td>⚠️</td><td>好想你枣土特产(郴州特产)</td><td>购物服务;综合市场;果品市场/购物服务;专卖店;专营店</td><td>3.8</td><td>人民东路28-8号好想你枣店</td></tr>
+<tr><td>⚠️</td><td>特产零食舜华临武鸭(国庆南路店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.8</td><td>国庆南路与东风路交叉口北160米</td></tr>
+<tr><td>⚠️</td><td>沙洲小妹特产店</td><td>购物服务;专卖店;专营店</td><td>3.8</td><td>庐阳镇津江村陈家园</td></tr>
+<tr><td>⚠️</td><td>四季东江湖生态农产品特产店</td><td>购物服务;综合市场;农副产品市场</td><td>3.7</td><td>唐洞街道东江中路交警大队正对面鼎泰丰城1号门面</td></tr>
+<tr><td>⚠️</td><td>郴州特产(升平路店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.7</td><td>解放路与协作路交叉口东40米</td></tr>
+<tr><td>⚠️</td><td>湘南侬家土特产(龙头港店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.6</td><td>迎宾路东江湖假日酒店西70米路北</td></tr>
+<tr><td>⚠️</td><td>张新发(同心路店)</td><td>购物服务;专卖店;专营店</td><td>3.6</td><td>晶泰大楼114号</td></tr>
+<tr><td>⚠️</td><td>舜华临武鸭(金江镇店)</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>3.5</td><td>金兴路19号</td></tr>
+<tr><td>❌</td><td>郴州市老曹南北土产行</td><td>购物服务;综合市场;农副产品市场</td><td>3.4</td><td>中国供销社郴州农副产品物流园南4栋113号</td></tr>
+<tr><td>❌</td><td>郴州市利源粮油批发部</td><td>购物服务;综合市场;农副产品市场</td><td>3.4</td><td>兴义粮油交易市场海泉路313-315号</td></tr>
+<tr><td>❌</td><td>祝福特产商行(阳光丽苑B区店)</td><td>购物服务;专卖店;土特产专卖店</td><td>3.2</td><td>卢阳镇卢阳大道凡人谷大酒店1楼隔壁</td></tr>
+<tr><td>❌</td><td>小王土特产</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.2</td><td>东江大道与桅缨路交叉口东南40米</td></tr>
+<tr><td>❌</td><td>五岭农人土产</td><td>购物服务;购物相关场所;购物相关场所</td><td>3.0</td><td>东江大道与文化南路交叉口东140米</td></tr>
+<tr><td>❌</td><td>福鑫优选土特产(东江店)</td><td>购物服务;购物相关场所;购物相关场所</td><td>2.9</td><td>东江街道沿江西路与迎宾路交汇处东江花园二期105</td></tr>
+<tr><td>❌</td><td>李成特产超市(惠泽路)</td><td>购物服务;便民商店/便利店;便民商店/便利店</td><td>2.7</td><td>惠泽园1区西北门旁</td></tr>
+</tbody></table></div>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>安仁宾馆（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>安仁宾馆</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>丁家足称海鲜店(红太阳商贸城店)</td><td>距离就近</td><td>416m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>安仁金诚大酒店</td><td>距离就近</td><td>470m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>亲子乐园</td><td>距离就近</td><td>539m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>裕后街（33 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>THIRTEENWOLF十三狼酒吧</td><td>名称互证</td><td>24m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>环游星际动漫电玩城·儿童乐园·台球</td><td>名称互证</td><td>36m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>环游星际动漫电玩城·儿童乐园·台球</td><td>名称互证</td><td>36m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>MC唐德电影公园(裕后街店)</td><td>名称互证</td><td>67m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>东街老字号鱼粉</td><td>距离就近</td><td>89m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>裕后里有味平价海鲜大排档</td><td>距离就近</td><td>107m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>好酒不见酒馆</td><td>距离就近</td><td>125m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>雷记金牌羊肉粉东街一店</td><td>距离就近</td><td>134m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>南极海鲜大排档(裕后里店)</td><td>距离就近</td><td>138m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>郴州家宴</td><td>距离就近</td><td>176m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>特产零食舜华临武鸭(裕后里店)</td><td>距离就近</td><td>191m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>初味大排档(裕后里店)</td><td>距离就近</td><td>209m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>郴州裕后街山咕咕烧鸡公</td><td>名称互证</td><td>219m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>胖婆捆鸭裕后街店</td><td>名称互证</td><td>228m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>五玩小汤圆店</td><td>距离就近</td><td>247m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>画Twelve Strokes Bar</td><td>名称互证</td><td>251m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>举古包子</td><td>距离就近</td><td>261m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>亚西亚数码电玩</td><td>距离就近</td><td>280m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>正一街米饺</td><td>距离就近</td><td>285m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>钓鱼岛(裕后街店)</td><td>名称互证</td><td>293m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>南街老杨鱼粉店</td><td>距离就近</td><td>313m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>梁记脆皮狗肉馆</td><td>距离就近</td><td>322m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>张家巷老杨烧鸡公</td><td>距离就近</td><td>326m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>北街麻辣烫</td><td>距离就近</td><td>424m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>摩天轮</td><td>名称互证</td><td>605m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>郴州友阿国际广场（42 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>名侦探超级密室(友阿广场店)</td><td>距离就近</td><td>0m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>探险阳光乐园(郴州友阿国际广场店)</td><td>名称互证</td><td>0m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>迪吉象脑力全开益童王国(友阿店)</td><td>距离就近</td><td>1m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>77Seven R&amp;B-BAR小酒馆</td><td>名称互证</td><td>2m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>城市英雄郴州友阿店</td><td>名称互证</td><td>5m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌奇探MOKITAN闯关密室.萌宠乐园(郴州店)</td><td>距离就近</td><td>6m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>萌奇探MOKITAN闯关密室.萌宠乐园(郴州店)</td><td>距离就近</td><td>6m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>觅KTV(友阿国际店)</td><td>距离就近</td><td>9m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>玩未莱潮玩运动街区(友阿店)</td><td>距离就近</td><td>22m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>纽约城NYC Night Club</td><td>距离就近</td><td>26m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>博纳国际影城(郴州友阿国际广场店)</td><td>名称互证</td><td>32m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>CD Banana Live古堡酒吧</td><td>距离就近</td><td>37m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>创世纪乐园(郴州友阿国际广场店)</td><td>名称互证</td><td>40m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>创世纪乐园(郴州友阿国际广场店)</td><td>名称互证</td><td>40m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机(博纳国际影城友阿国际广场店)</td><td>名称互证</td><td>41m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机(博纳国际影城友阿国际广场店)</td><td>名称互证</td><td>41m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>探险e号(友阿店)</td><td>名称互证</td><td>42m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>马戏团乐园(湖南省郴州市北湖区同心路1号店)</td><td>名称互证</td><td>48m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>孤勇者游戏体验店</td><td>距离就近</td><td>57m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>孤勇者游戏体验店</td><td>距离就近</td><td>57m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>贝贝娃娃屋(郴州友阿店)</td><td>距离就近</td><td>62m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>怪事镇密室逃脱(友阿广场店)</td><td>距离就近</td><td>73m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>怪事镇密室逃脱(友阿广场店)</td><td>距离就近</td><td>73m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>必胜客(郴州国庆路店)</td><td>距离就近</td><td>75m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>柏图斯Petrus酒吧(北湖商业城店)</td><td>距离就近</td><td>123m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>步步高·新天地（53 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>酷洛潮漫(郴州步步高广场店)</td><td>距离就近</td><td>0m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>迪迪玛特弹珠堂(郴州步步高新天地店)</td><td>距离就近</td><td>0m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>探险阳光乐园(步步高店)</td><td>距离就近</td><td>16m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>中影数字国际影城</td><td>距离就近</td><td>31m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>酷洛小镇(郴州北湖步步高超市店)</td><td>距离就近</td><td>33m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>忘忧空间Switch体验屋</td><td>名称互证</td><td>38m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>名侦探·青川鬼校密室轰趴馆(步步高店)</td><td>距离就近</td><td>39m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>party one运动超级游乐场(步步高店)</td><td>名称互证</td><td>45m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>玩刻PS5·switch电玩游戏馆</td><td>距离就近</td><td>47m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>玩刻PS5·switch电玩游戏馆</td><td>距离就近</td><td>47m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欢乐谷淘气堡(步步高新天地店)</td><td>距离就近</td><td>82m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星聚会KTV(郴州步步高店)</td><td>距离就近</td><td>89m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>海底捞火锅(步步高新天地店)</td><td>距离就近</td><td>91m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>97m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>97m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>麦当劳(郴州麦当劳步步高餐厅)</td><td>距离就近</td><td>109m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>盛香亭转转热卤(郴州北湖步步高新天地店)</td><td>距离就近</td><td>143m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>十二宫沉浸式剧本推理馆·桌游·剧本杀·血染钟楼(步步高店)</td><td>距离就近</td><td>173m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>栖凤渡杨婆鱼粉(兴隆步行街店)</td><td>距离就近</td><td>183m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>金旋风交谊舞厅</td><td>距离就近</td><td>197m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>老爹酸辣粉店</td><td>距离就近</td><td>205m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>肯德基(国庆店)</td><td>距离就近</td><td>207m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>爆炸熊密室沉浸剧场</td><td>距离就近</td><td>210m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>制躁计划酒馆</td><td>距离就近</td><td>217m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>兴隆步行街小吃区</td><td>距离就近</td><td>218m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>生源时代广场（28 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>小达游乐园</td><td>名称互证</td><td>3m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>绿茵小镇(生源店)</td><td>名称互证</td><td>57m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>快乐街区(动漫游戏厅)</td><td>名称互证</td><td>62m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>快乐街区(动漫游戏厅)</td><td>名称互证</td><td>62m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>Mini Peace(生源时代广场店)</td><td>名称互证</td><td>63m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>万达影城(生源购物中心店)</td><td>名称互证</td><td>68m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>黄记煌三汁焖锅(郴州生源店)</td><td>名称互证</td><td>68m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>童幻天地游乐园(生源时代广场店)</td><td>名称互证</td><td>70m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>四方朋友AI智慧KTV(生源时代广场店)</td><td>名称互证</td><td>75m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>彩虹玩国(生源时代广场店)</td><td>名称互证</td><td>75m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(生源时代广场店)</td><td>名称互证</td><td>114m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>悦点坊·老广粥铺(裕后街店)</td><td>距离就近</td><td>148m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>北街麻辣烫</td><td>距离就近</td><td>187m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>张家巷老杨烧鸡公</td><td>距离就近</td><td>314m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>梁记脆皮狗肉馆</td><td>距离就近</td><td>406m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>雷记金牌羊肉粉东街一店</td><td>距离就近</td><td>481m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>东街老字号鱼粉</td><td>距离就近</td><td>522m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>五玩小汤圆店</td><td>距离就近</td><td>522m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>举古包子</td><td>距离就近</td><td>535m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>真正米饺店(桔井路店)</td><td>距离就近</td><td>545m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>正一街米饺</td><td>距离就近</td><td>545m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>MC唐德电影公园(裕后街店)</td><td>距离就近</td><td>548m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>好酒不见酒馆</td><td>距离就近</td><td>554m</td><td>2.5</td><td>§11</td></tr>
+<tr><td>南街老杨鱼粉店</td><td>距离就近</td><td>573m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>环游星际动漫电玩城·儿童乐园·台球</td><td>距离就近</td><td>584m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新渔夫记(苏仙传奇店)（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新渔夫记(苏仙传奇店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>丰源国际影城</td><td>距离就近</td><td>23m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>云逸宝游戏厅(丰源国际影城龙腾店)</td><td>距离就近</td><td>36m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>云逸宝游戏厅(丰源国际影城龙腾店)</td><td>距离就近</td><td>36m</td><td>2.8</td><td>§11</td></tr>
+<tr><td>红莲海鲜酒楼(苏仙传奇店)</td><td>距离就近</td><td>62m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>閊窖酒鎏</td><td>距离就近</td><td>399m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>福城影剧院</td><td>距离就近</td><td>473m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>凌橙游乐场</td><td>距离就近</td><td>491m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>状元美食城(苏仙林语店)</td><td>距离就近</td><td>545m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>郴州市小红本人工智能英语训练体验中心</td><td>距离就近</td><td>580m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>土不土私房菜馆（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>土不土私房菜馆</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>成龙烧烤(白薇商业广场店)</td><td>距离就近</td><td>229m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>020街区家庭娱乐中心</td><td>距离就近</td><td>465m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>喜如院</td><td>距离就近</td><td>543m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>盛香亭转转热卤(郴州北湖步步高新天地店)（49 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>盛香亭转转热卤(郴州北湖步步高新天地店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>星聚会KTV(郴州步步高店)</td><td>距离就近</td><td>70m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>酷洛小镇(郴州北湖步步高超市店)</td><td>距离就近</td><td>120m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>酷洛潮漫(郴州步步高广场店)</td><td>距离就近</td><td>143m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>迪迪玛特弹珠堂(郴州步步高新天地店)</td><td>距离就近</td><td>143m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>探险阳光乐园(步步高店)</td><td>距离就近</td><td>155m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>制躁计划酒馆</td><td>距离就近</td><td>165m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>忘忧空间Switch体验屋</td><td>距离就近</td><td>170m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>中影数字国际影城</td><td>距离就近</td><td>172m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>玩刻PS5·switch电玩游戏馆</td><td>距离就近</td><td>178m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>玩刻PS5·switch电玩游戏馆</td><td>距离就近</td><td>178m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>名侦探·青川鬼校密室轰趴馆(步步高店)</td><td>距离就近</td><td>182m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>party one运动超级游乐场(步步高店)</td><td>距离就近</td><td>186m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>新鸿扬宾馆(郴州裕后街店)</td><td>距离就近</td><td>201m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>欢乐谷淘气堡(步步高新天地店)</td><td>距离就近</td><td>222m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>十二宫沉浸式剧本推理馆·桌游·剧本杀·血染钟楼(步步高店)</td><td>距离就近</td><td>227m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>兴隆步行街小吃区</td><td>距离就近</td><td>232m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>老爹酸辣粉店</td><td>距离就近</td><td>232m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>海底捞火锅(步步高新天地店)</td><td>距离就近</td><td>234m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>235m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>235m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>寻味夜市广场(妙街店)</td><td>距离就近</td><td>240m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>肯德基(国庆店)</td><td>距离就近</td><td>246m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>金旋风交谊舞厅</td><td>距离就近</td><td>249m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麦当劳(郴州麦当劳步步高餐厅)</td><td>距离就近</td><td>251m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>松花江饺子馆(兴隆步行街店)（42 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>松花江饺子馆(兴隆步行街店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>迷你猫屋</td><td>距离就近</td><td>106m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>苏园宾馆</td><td>距离就近</td><td>116m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>萌宠之家</td><td>距离就近</td><td>151m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>兴隆步行街小吃区</td><td>距离就近</td><td>174m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>老爹酸辣粉店</td><td>距离就近</td><td>189m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>星聚会KTV(郴州步步高店)</td><td>距离就近</td><td>345m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>郴州市北湖区百福儿童游乐城(百福商业中心广场店)</td><td>距离就近</td><td>353m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>酷洛小镇(郴州北湖步步高超市店)</td><td>距离就近</td><td>365m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>玩刻PS5·switch电玩游戏馆</td><td>距离就近</td><td>369m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>玩刻PS5·switch电玩游戏馆</td><td>距离就近</td><td>369m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>星城战记电玩城(友阿国际广场店)</td><td>距离就近</td><td>371m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>星城战记电玩城(友阿国际广场店)</td><td>距离就近</td><td>371m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>忘忧空间Switch体验屋</td><td>距离就近</td><td>371m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>盛香亭转转热卤(郴州北湖步步高新天地店)</td><td>距离就近</td><td>382m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>探险阳光乐园(步步高店)</td><td>距离就近</td><td>384m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>战将电玩</td><td>距离就近</td><td>389m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>战将电玩</td><td>距离就近</td><td>389m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>party one运动超级游乐场(步步高店)</td><td>距离就近</td><td>390m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>迪迪玛特弹珠堂(郴州步步高新天地店)</td><td>距离就近</td><td>391m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>酷洛潮漫(郴州步步高广场店)</td><td>距离就近</td><td>392m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>名侦探·青川鬼校密室轰趴馆(步步高店)</td><td>距离就近</td><td>404m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>中影数字国际影城</td><td>距离就近</td><td>411m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>栖凤渡杨婆鱼粉(兴隆步行街店)</td><td>距离就近</td><td>411m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>海底捞火锅(步步高新天地店)</td><td>距离就近</td><td>434m</td><td>4.7</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>麦当劳(郴州湘南学院餐厅)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>麦当劳(郴州湘南学院餐厅)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>迷你世界潮玩时代</td><td>距离就近</td><td>26m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>迷你世界潮玩时代</td><td>距离就近</td><td>26m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>潇湘豪廷国际影城(豪廷商业广场店)</td><td>距离就近</td><td>34m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>郴州湘翼国际影城(豪廷商业广场店)</td><td>距离就近</td><td>36m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>乐享PS5·switch电玩私影馆(湘南学院店)</td><td>距离就近</td><td>172m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>乐享PS5·switch电玩私影馆(湘南学院店)</td><td>距离就近</td><td>172m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>黔糖记贵州地摊火锅(湘南学院店)</td><td>距离就近</td><td>215m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>夜猫酒吧(nightcatbar)</td><td>距离就近</td><td>218m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>福城渔都湘菜饭馆(长房金宸府店)</td><td>距离就近</td><td>317m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>郴州湘南宾馆</td><td>距离就近</td><td>349m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>灵蛇·Viper·日咖夜酒(湘南学院店)</td><td>距离就近</td><td>427m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麦当劳(郴州麦当劳步步高餐厅)</td><td>名称互证</td><td>7137m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麦当劳(郴州北湖餐厅)</td><td>名称互证</td><td>7590m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麦当劳(郴州南岭大道餐厅)</td><td>名称互证</td><td>9091m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>肯德基(五岭广场店)（40 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>肯德基(五岭广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>阳光儿童城(隆昌巷店)</td><td>距离就近</td><td>25m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>潮玩动漫游戏体验中心(五岭新天地二期新天地名汇城店)</td><td>距离就近</td><td>31m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>潮玩动漫游戏体验中心(五岭新天地二期新天地名汇城店)</td><td>距离就近</td><td>31m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>盛香亭转转热卤(五岭新天地店)</td><td>距离就近</td><td>42m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>必胜客(五岭广场店)</td><td>距离就近</td><td>59m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>粒上皇(郴州北湖五岭路店)</td><td>距离就近</td><td>76m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>碰碰发24H自助棋牌室(五岭新天地店)</td><td>距离就近</td><td>85m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>爱麻仕棋牌俱乐部(郴中心店)</td><td>距离就近</td><td>89m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>麻否自助棋牌俱乐部</td><td>距离就近</td><td>113m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>哚拉星球亲子乐园</td><td>距离就近</td><td>131m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>笑傲将胡24h智慧棋牌茶室</td><td>距离就近</td><td>133m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>特产零食舜华临武鸭(沃尔玛店)</td><td>距离就近</td><td>136m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助共享棋牌茶空间</td><td>距离就近</td><td>138m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>赢麻乐24h自助棋牌室</td><td>距离就近</td><td>142m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>中影数字时代影城</td><td>距离就近</td><td>159m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>探索视界飞越中国(锦马时代店)</td><td>距离就近</td><td>173m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>潮弹社(郴州锦马时代城店)</td><td>距离就近</td><td>175m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>super101潮漫电玩(郴州店)</td><td>距离就近</td><td>208m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>super101潮漫电玩(郴州店)</td><td>距离就近</td><td>208m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>约个麻休闲吧</td><td>距离就近</td><td>294m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>邮电迎宾馆</td><td>距离就近</td><td>317m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>快乐童年亲子乐园(博物馆路店)</td><td>距离就近</td><td>326m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>舜华临武鸭(瑞际店)</td><td>距离就近</td><td>337m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>粤港海鲜城(五岭大道店)</td><td>距离就近</td><td>356m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>湘村往事·永兴本地菜(龙山路店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>湘村往事·永兴本地菜(龙山路店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>舜华临武鸭(丰尚国际广场店)</td><td>距离就近</td><td>310m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>巴香驴汤锅城绿色生态火锅</td><td>距离就近</td><td>410m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>湘村往事·永兴本地菜(沙子江路店)</td><td>名称互证</td><td>2214m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>老街家常菜（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>老街家常菜</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>福圆酒楼</td><td>距离就近</td><td>139m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>醉仙酒楼</td><td>距离就近</td><td>582m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>兴隆步行街（53 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>栖凤渡杨婆鱼粉(兴隆步行街店)</td><td>名称互证</td><td>34m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麦当劳(郴州麦当劳步步高餐厅)</td><td>距离就近</td><td>126m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>海底捞火锅(步步高新天地店)</td><td>距离就近</td><td>126m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>玩刻PS5·switch电玩游戏馆</td><td>距离就近</td><td>139m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>玩刻PS5·switch电玩游戏馆</td><td>距离就近</td><td>139m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>party one运动超级游乐场(步步高店)</td><td>距离就近</td><td>139m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>欢乐谷淘气堡(步步高新天地店)</td><td>距离就近</td><td>143m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>忘忧空间Switch体验屋</td><td>距离就近</td><td>147m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>152m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>152m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>名侦探·青川鬼校密室轰趴馆(步步高店)</td><td>距离就近</td><td>152m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>郴州布丁猫咖猫舍(北湖公园店)</td><td>距离就近</td><td>153m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>中影数字国际影城</td><td>距离就近</td><td>168m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>探险阳光乐园(步步高店)</td><td>距离就近</td><td>168m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>郴州市北湖区百福儿童游乐城(百福商业中心广场店)</td><td>距离就近</td><td>170m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>迪迪玛特弹珠堂(郴州步步高新天地店)</td><td>距离就近</td><td>183m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>酷洛潮漫(郴州步步高广场店)</td><td>距离就近</td><td>183m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>酷洛小镇(郴州北湖步步高超市店)</td><td>距离就近</td><td>196m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>老爹酸辣粉店</td><td>名称互证</td><td>213m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>星城战记电玩城(友阿国际广场店)</td><td>距离就近</td><td>227m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>星城战记电玩城(友阿国际广场店)</td><td>距离就近</td><td>227m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>兴隆步行街小吃区</td><td>名称互证</td><td>235m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>萌宠之家</td><td>距离就近</td><td>238m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>星聚会KTV(郴州步步高店)</td><td>距离就近</td><td>246m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>迷你猫屋</td><td>距离就近</td><td>279m</td><td>3.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>桂阳商业步行街（20 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>新濠动漫电玩城</td><td>名称互证</td><td>81m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>新濠动漫电玩城</td><td>名称互证</td><td>81m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>桂阳县黑白电视步行街小吃店</td><td>距离就近</td><td>95m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>旋转木马(老体育馆)</td><td>距离就近</td><td>104m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>轻雾酒馆</td><td>距离就近</td><td>138m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>桂阳大排档</td><td>距离就近</td><td>228m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>优布劳精酿酒馆(桂阳夜宵城店)</td><td>距离就近</td><td>238m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>水浪烧烤夜市</td><td>距离就近</td><td>243m</td><td>1.3</td><td>§11</td></tr>
+<tr><td>青岛啤酒鲜酒吧(陶瓷岭街店)</td><td>距离就近</td><td>244m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>胖子夜市晚餐夜宵烧烤(陶瓷岭街店)</td><td>距离就近</td><td>263m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>老龙狗肉店</td><td>距离就近</td><td>283m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>流峰夜市</td><td>距离就近</td><td>286m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>旺角夜市(向阳路店)</td><td>距离就近</td><td>286m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>华华夜市晚餐夜宵</td><td>距离就近</td><td>289m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>老伍夜市</td><td>距离就近</td><td>291m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>城南烧烤店(解放路店)</td><td>距离就近</td><td>385m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>索克猫弹珠星球</td><td>距离就近</td><td>453m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>邓记海鲜</td><td>距离就近</td><td>502m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>自然之声助听器(桂阳县店)</td><td>距离就近</td><td>517m</td><td>—</td><td>§11</td></tr>
+<tr><td>光头强夜市</td><td>距离就近</td><td>553m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>汝城太阳城（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>尊嘟民谣</td><td>距离就近</td><td>107m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>汝城西施酒馆</td><td>距离就近</td><td>398m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>贵州正宗花江狗肉火锅(卢阳大道店)</td><td>距离就近</td><td>399m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宝蓝广场购物中心（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>敢探号密室逃脱(文化路店)</td><td>距离就近</td><td>8m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>快乐街区(宝蓝广场购物中心店)</td><td>名称互证</td><td>25m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>恐龙世界游乐场(宝蓝广场购物)</td><td>距离就近</td><td>47m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>Funpi酒馆</td><td>距离就近</td><td>168m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>每日鲜炭烤夜市</td><td>距离就近</td><td>217m</td><td>2.7</td><td>§11</td></tr>
+<tr><td>功夫煲仔(时代广场店)</td><td>距离就近</td><td>300m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>上海滩酒吧筹备处（39 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>上海滩酒吧筹备处</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>凤舞九天·中文国潮俱乐部</td><td>距离就近</td><td>30m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>唱享季AI智慧KTV(郴州新城广场店)</td><td>距离就近</td><td>38m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>鑫东泰酒吧</td><td>距离就近</td><td>44m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>FOULPLAY沉浸游戏(人民西路店)</td><td>距离就近</td><td>52m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>江湖Livehouse</td><td>距离就近</td><td>55m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>新疆美食城(人民西路店)</td><td>距离就近</td><td>89m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td><td>距离就近</td><td>156m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>锦和园宾馆(郴州人民西路店)</td><td>距离就近</td><td>281m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>FOULPLAY沉浸式实景密室</td><td>距离就近</td><td>322m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>爆炸熊密室沉浸剧场</td><td>距离就近</td><td>356m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金旋风交谊舞厅</td><td>距离就近</td><td>366m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>肯德基(国庆店)</td><td>距离就近</td><td>379m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>十二宫沉浸式剧本推理馆·桌游·剧本杀·血染钟楼(步步高店)</td><td>距离就近</td><td>383m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>406m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>406m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>麦当劳(郴州麦当劳步步高餐厅)</td><td>距离就近</td><td>411m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>欢乐谷淘气堡(步步高新天地店)</td><td>距离就近</td><td>425m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>海底捞火锅(步步高新天地店)</td><td>距离就近</td><td>427m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>玛莎V吧量贩KTV(国庆南路店)</td><td>距离就近</td><td>433m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>郴州布丁猫咖猫舍(北湖公园店)</td><td>距离就近</td><td>438m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>绿里奇迹酒社</td><td>距离就近</td><td>443m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>莫记排档</td><td>距离就近</td><td>445m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>彪哥烤肉(郴州和平夜市店)</td><td>距离就近</td><td>452m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>七彩游乐园</td><td>距离就近</td><td>458m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>纽约城NYC Night Club（41 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>纽约城NYC Night Club</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机(博纳国际影城友阿国际广场店)</td><td>距离就近</td><td>15m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>云逸宝摇杆游戏机(博纳国际影城友阿国际广场店)</td><td>距离就近</td><td>15m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>77Seven R&amp;B-BAR小酒馆</td><td>距离就近</td><td>24m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>CD Banana Live古堡酒吧</td><td>距离就近</td><td>24m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>迪吉象脑力全开益童王国(友阿店)</td><td>距离就近</td><td>25m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>名侦探超级密室(友阿广场店)</td><td>距离就近</td><td>26m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>探险阳光乐园(郴州友阿国际广场店)</td><td>距离就近</td><td>26m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>觅KTV(友阿国际店)</td><td>距离就近</td><td>26m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>城市英雄郴州友阿店</td><td>距离就近</td><td>29m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌奇探MOKITAN闯关密室.萌宠乐园(郴州店)</td><td>距离就近</td><td>30m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>萌奇探MOKITAN闯关密室.萌宠乐园(郴州店)</td><td>距离就近</td><td>30m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>创世纪乐园(郴州友阿国际广场店)</td><td>距离就近</td><td>34m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>创世纪乐园(郴州友阿国际广场店)</td><td>距离就近</td><td>34m</td><td>2.4</td><td>§11</td></tr>
+<tr><td>玩未莱潮玩运动街区(友阿店)</td><td>距离就近</td><td>42m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>博纳国际影城(郴州友阿国际广场店)</td><td>距离就近</td><td>50m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>马戏团乐园(湖南省郴州市北湖区同心路1号店)</td><td>距离就近</td><td>54m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>探险e号(友阿店)</td><td>距离就近</td><td>63m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>孤勇者游戏体验店</td><td>距离就近</td><td>78m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>孤勇者游戏体验店</td><td>距离就近</td><td>78m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>贝贝娃娃屋(郴州友阿店)</td><td>距离就近</td><td>82m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>必胜客(郴州国庆路店)</td><td>距离就近</td><td>93m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>怪事镇密室逃脱(友阿广场店)</td><td>距离就近</td><td>94m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>怪事镇密室逃脱(友阿广场店)</td><td>距离就近</td><td>94m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>柏图斯Petrus酒吧(北湖商业城店)</td><td>距离就近</td><td>102m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>鑫东泰酒吧（38 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鑫东泰酒吧</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>凤舞九天·中文国潮俱乐部</td><td>距离就近</td><td>22m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>上海滩酒吧筹备处</td><td>距离就近</td><td>44m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>新疆美食城(人民西路店)</td><td>距离就近</td><td>50m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>唱享季AI智慧KTV(郴州新城广场店)</td><td>距离就近</td><td>52m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>江湖Livehouse</td><td>距离就近</td><td>74m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>FOULPLAY沉浸游戏(人民西路店)</td><td>距离就近</td><td>82m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td><td>距离就近</td><td>166m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>锦和园宾馆(郴州人民西路店)</td><td>距离就近</td><td>308m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>FOULPLAY沉浸式实景密室</td><td>距离就近</td><td>344m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>爆炸熊密室沉浸剧场</td><td>距离就近</td><td>384m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金旋风交谊舞厅</td><td>距离就近</td><td>395m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>肯德基(国庆店)</td><td>距离就近</td><td>407m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>十二宫沉浸式剧本推理馆·桌游·剧本杀·血染钟楼(步步高店)</td><td>距离就近</td><td>413m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>莫记排档</td><td>距离就近</td><td>416m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>玛莎V吧量贩KTV(国庆南路店)</td><td>距离就近</td><td>444m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>447m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>447m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>绿里奇迹酒社</td><td>距离就近</td><td>453m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麦当劳(郴州麦当劳步步高餐厅)</td><td>距离就近</td><td>453m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>老莫排档(东风路)</td><td>距离就近</td><td>459m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>欢乐谷淘气堡(步步高新天地店)</td><td>距离就近</td><td>465m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>海底捞火锅(步步高新天地店)</td><td>距离就近</td><td>468m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>彪哥烤肉(郴州和平夜市店)</td><td>距离就近</td><td>469m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>郴州布丁猫咖猫舍(北湖公园店)</td><td>距离就近</td><td>482m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)（46 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>郴州梦之声时尚主题KTV(郴州美美世界城市商业广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>江湖Livehouse</td><td>距离就近</td><td>102m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>FOULPLAY沉浸游戏(人民西路店)</td><td>距离就近</td><td>110m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>唱享季AI智慧KTV(郴州新城广场店)</td><td>距离就近</td><td>120m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>凤舞九天·中文国潮俱乐部</td><td>距离就近</td><td>148m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>上海滩酒吧筹备处</td><td>距离就近</td><td>156m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>锦和园宾馆(郴州人民西路店)</td><td>距离就近</td><td>162m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>鑫东泰酒吧</td><td>距离就近</td><td>166m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>FOULPLAY沉浸式实景密室</td><td>距离就近</td><td>185m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>新疆美食城(人民西路店)</td><td>距离就近</td><td>211m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>爆炸熊密室沉浸剧场</td><td>距离就近</td><td>239m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>金旋风交谊舞厅</td><td>距离就近</td><td>252m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>肯德基(国庆店)</td><td>距离就近</td><td>259m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>十二宫沉浸式剧本推理馆·桌游·剧本杀·血染钟楼(步步高店)</td><td>距离就近</td><td>274m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>玛莎V吧量贩KTV(国庆南路店)</td><td>距离就近</td><td>278m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>绿里奇迹酒社</td><td>距离就近</td><td>287m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>彪哥烤肉(郴州和平夜市店)</td><td>距离就近</td><td>303m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>354m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>海洋球主题乐园(步步高新天地购物广场店)</td><td>距离就近</td><td>354m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>莫记排档</td><td>距离就近</td><td>361m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麦当劳(郴州麦当劳步步高餐厅)</td><td>距离就近</td><td>369m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>欢乐谷淘气堡(步步高新天地店)</td><td>距离就近</td><td>372m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>海底捞火锅(步步高新天地店)</td><td>距离就近</td><td>380m</td><td>4.7</td><td>§6</td></tr>
+<tr><td>老莫排档(东风路)</td><td>距离就近</td><td>385m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>制躁计划酒馆</td><td>距离就近</td><td>389m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(生源购物中心店)（23 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(生源购物中心店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>黄记煌三汁焖锅(郴州生源店)</td><td>距离就近</td><td>9m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>四方朋友AI智慧KTV(生源时代广场店)</td><td>距离就近</td><td>26m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>Mini Peace(生源时代广场店)</td><td>距离就近</td><td>39m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>快乐街区(动漫游戏厅)</td><td>距离就近</td><td>41m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>快乐街区(动漫游戏厅)</td><td>距离就近</td><td>41m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>童幻天地游乐园(生源时代广场店)</td><td>距离就近</td><td>60m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>彩虹玩国(生源时代广场店)</td><td>距离就近</td><td>63m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>小达游乐园</td><td>距离就近</td><td>65m</td><td>2.1</td><td>§11</td></tr>
+<tr><td>绿茵小镇(生源店)</td><td>距离就近</td><td>125m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>柳州肥姨妈大骨螺蛳粉(生源时代广场店)</td><td>距离就近</td><td>147m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>北街麻辣烫</td><td>距离就近</td><td>212m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>悦点坊·老广粥铺(裕后街店)</td><td>距离就近</td><td>214m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>张家巷老杨烧鸡公</td><td>距离就近</td><td>351m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>梁记脆皮狗肉馆</td><td>距离就近</td><td>451m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>雷记金牌羊肉粉东街一店</td><td>距离就近</td><td>493m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>五玩小汤圆店</td><td>距离就近</td><td>510m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>举古包子</td><td>距离就近</td><td>521m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>正一街米饺</td><td>距离就近</td><td>529m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>东街老字号鱼粉</td><td>距离就近</td><td>537m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>南街老杨鱼粉店</td><td>距离就近</td><td>553m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>MC唐德电影公园(裕后街店)</td><td>距离就近</td><td>567m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>好酒不见酒馆</td><td>距离就近</td><td>581m</td><td>2.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(五岭新天地店)（39 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>特产零食舜华临武鸭(沃尔玛店)</td><td>名称互证</td><td>14m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>麻否自助棋牌俱乐部</td><td>距离就近</td><td>43m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>哚拉星球亲子乐园</td><td>距离就近</td><td>62m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>粒上皇(郴州北湖五岭路店)</td><td>距离就近</td><td>75m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>探索视界飞越中国(锦马时代店)</td><td>距离就近</td><td>97m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>潮弹社(郴州锦马时代城店)</td><td>距离就近</td><td>101m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>中影数字时代影城</td><td>距离就近</td><td>109m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>阳光儿童城(隆昌巷店)</td><td>距离就近</td><td>116m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>super101潮漫电玩(郴州店)</td><td>距离就近</td><td>126m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>super101潮漫电玩(郴州店)</td><td>距离就近</td><td>126m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>肯德基(五岭广场店)</td><td>距离就近</td><td>140m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>盛香亭转转热卤(五岭新天地店)</td><td>距离就近</td><td>156m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>潮玩动漫游戏体验中心(五岭新天地二期新天地名汇城店)</td><td>距离就近</td><td>171m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>潮玩动漫游戏体验中心(五岭新天地二期新天地名汇城店)</td><td>距离就近</td><td>171m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>爱麻仕棋牌俱乐部(郴中心店)</td><td>距离就近</td><td>172m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>邮电迎宾馆</td><td>距离就近</td><td>191m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>碰碰发24H自助棋牌室(五岭新天地店)</td><td>距离就近</td><td>193m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>必胜客(五岭广场店)</td><td>距离就近</td><td>198m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>约个麻休闲吧</td><td>距离就近</td><td>216m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>笑傲将胡24h智慧棋牌茶室</td><td>距离就近</td><td>218m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>四个朋友24h自助共享棋牌茶空间</td><td>距离就近</td><td>224m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>赢麻乐24h自助棋牌室</td><td>距离就近</td><td>255m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>如意土菜馆(本地烧鸡公)</td><td>距离就近</td><td>259m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>乐滋味大排档</td><td>距离就近</td><td>261m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>舜华临武鸭(瑞际店)</td><td>距离就近</td><td>268m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>秀秀砍肉粉(创始店)（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>秀秀砍肉粉(创始店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>东乡土菜馆</td><td>距离就近</td><td>122m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>迷你包</td><td>距离就近</td><td>123m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>东江老字号栖枫渡鱼粉</td><td>距离就近</td><td>163m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>老资兴传统手工粉</td><td>距离就近</td><td>356m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>老字号活鱼馆</td><td>距离就近</td><td>373m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>二厨·吊桥小院</td><td>距离就近</td><td>374m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>江边老粉馆米粉</td><td>距离就近</td><td>410m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>吊桥大排档(一线江景店)</td><td>距离就近</td><td>438m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>粤兴食堂</td><td>距离就近</td><td>515m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>壹湖两岸·鱼鲜山里菜(东江湖店)</td><td>距离就近</td><td>527m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>渔美人三文鱼餐厅(东江湖总店)</td><td>距离就近</td><td>530m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>Dauber大白Cocktail&amp;Whisky Bar</td><td>距离就近</td><td>576m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>杨婆鱼粉(骆仙路店)（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>杨婆鱼粉(骆仙路店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>咸鱼小酒馆(冯家小区店)</td><td>距离就近</td><td>191m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>福沐K歌足浴</td><td>距离就近</td><td>293m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>浆小白豆浆夜市(新贵华城店)</td><td>距离就近</td><td>438m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>日益森老烧鸡公(燕泉北路店)</td><td>距离就近</td><td>446m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>星汇影院(维多利亚商场店)</td><td>距离就近</td><td>579m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>万家乐烧鸡公(五里堆路店)</td><td>距离就近</td><td>586m</td><td>4.6</td><td>§6</td></tr>
+<tr><td>高子烧鸡公(五里堆路店)</td><td>距离就近</td><td>588m</td><td>4.8</td><td>§6</td></tr>
+<tr><td>栖凤渡烧鸡公</td><td>距离就近</td><td>595m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>栖凤渡杨婆鱼粉(兴隆步行街店)</td><td>名称互证</td><td>2203m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（30 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>安仁宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>永乐江镇凤岗路31号文商阁步行街</td></tr>
+<tr><td>✅A-</td><td>郴州湘南宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>5.0</td><td>—</td><td>观山洞街道下白水村五组</td></tr>
+<tr><td>✅A-</td><td>新城便捷酒店(政务中心店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>5.0</td><td>—</td><td>景观大道和嘉园路交汇处新城农博港A1栋</td></tr>
+<tr><td>✅A-</td><td>嘉禾天福商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>人民北路25号三楼</td></tr>
+<tr><td>✅A-</td><td>郴州金香主题宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>南岭大道238号17栋1单元</td></tr>
+<tr><td>✅B</td><td>维尼亚(郴州店)</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;住宿服务相关;住宿服务相关</td><td>4.4</td><td>62.00</td><td>香雪路天润天城商业广场7栋4层</td></tr>
+<tr><td>✅B</td><td>邮电迎宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>燕泉街道南岭大道与青年大道交口五岭广场邮政大楼2楼206房</td></tr>
+<tr><td>✅B</td><td>宏泰宾馆(人民东路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>苏石路7号(政务中心斜对面)</td></tr>
+<tr><td>✅B</td><td>安仁金诚大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>五一中路粥王美食殿楼上</td></tr>
+<tr><td>✅B</td><td>银河宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>大桥路193号</td></tr>
+<tr><td>⚠️</td><td>郴州如意招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>五岭大道五岭大市场南院对面</td></tr>
+<tr><td>⚠️</td><td>郴州枫情园宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>龙泉路40号</td></tr>
+<tr><td>⚠️</td><td>天华旅馆(解放路店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.0</td><td>—</td><td>解放路5号</td></tr>
+<tr><td>⚠️</td><td>郴州佳源宾馆(国庆北路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>国庆北路45-7号</td></tr>
+<tr><td>⚠️</td><td>郴州老兵商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>升平路五交化小区6号楼(近火车站)</td></tr>
+<tr><td>⚠️</td><td>潇湘宾馆(郴州火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>解放路10号</td></tr>
+<tr><td>⚠️</td><td>鼎天宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>卢阳大道78-1</td></tr>
+<tr><td>⚠️</td><td>新华泰宾馆</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.8</td><td>—</td><td>升平路27号(火车站附近)</td></tr>
+<tr><td>⚠️</td><td>芙蓉宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>舜峰镇解放北路17号</td></tr>
+<tr><td>⚠️</td><td>苏园宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>苏园西路17号</td></tr>
+<tr><td>⚠️</td><td>郴州长野宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>郴州大道槐树下五星新村2栋</td></tr>
+<tr><td>⚠️</td><td>如家公寓</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>五岭大道9号附近</td></tr>
+<tr><td>⚠️</td><td>资兴红太阳酒店</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>3.5</td><td>—</td><td>新区东江南路219-3号东江南路加油站对面</td></tr>
+<tr><td>⚠️</td><td>新鸿扬宾馆(郴州裕后街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>人民东路15号(近金雀大厦)</td></tr>
+<tr><td>⚠️</td><td>郴州八天宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>升平路06号</td></tr>
+<tr><td>❌</td><td>郴州长虹宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>北湖街道解放路16-3号门面</td></tr>
+<tr><td>❌</td><td>郴州兴龙宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>同心路94号</td></tr>
+<tr><td>❌</td><td>金华御宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>升平路9号</td></tr>
+<tr><td>❌</td><td>玉湖宾馆(万华路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.1</td><td>—</td><td>开发区万华路15号滨湖大厦</td></tr>
+<tr><td>❌</td><td>锦和园宾馆(郴州人民西路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.1</td><td>—</td><td>人民路街道人民西路2号郴州大厦6层</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>food</td><td>类型:中餐厅</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>类型:湘菜/地方菜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:地方风味餐厅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:酒楼/火锅/海鲜</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:火锅</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>类型:海鲜酒楼</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:特色美食</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:老字号</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:大排档</td><td>20</td><td></td></tr>
+<tr><td>food</td><td>关键词:苍蝇馆</td><td>0</td><td>该查询面无结果（count=0）</td></tr>
+<tr><td>food</td><td>关键词:小吃</td><td>40</td><td></td></tr>
+<tr><td>food</td><td>关键词:本地菜</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:特产</td><td>40</td><td></td></tr>
+<tr><td>product</td><td>关键词:土特产</td><td>20</td><td></td></tr>
+<tr><td>product</td><td>关键词:地方特产</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:步行街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>类型:特色商业街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>类型:购物中心</td><td>18</td><td></td></tr>
+<tr><td>district</td><td>类型:商场</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:美食街</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:夜市</td><td>40</td><td></td></tr>
+<tr><td>district</td><td>关键词:小吃街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:步行街</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:购物中心</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:酒吧</td><td>40</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:酒馆</td><td>20</td><td></td></tr>
+<tr><td>nightlife</td><td>关键词:LIVEHOUSE</td><td>1</td><td></td></tr>
+<tr><td>nightlife</td><td>类型:娱乐场所</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童乐园</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:电玩城</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:游乐场</td><td>40</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你游乐场</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:亲子乐园</td><td>13</td><td></td></tr>
+<tr><td>kids</td><td>关键词:淘气堡</td><td>3</td><td></td></tr>
+<tr><td>kids</td><td>关键词:儿童体验</td><td>7</td><td></td></tr>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>11</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>11</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>6</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>3</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>12</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>3</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/郴州市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>7 个 POI 无地址</strong>，需人工补：老白露塘杀猪粉(冲口路店)、五一南路商业街、五岭超市(南岭大道辅路店)、老友夜市(桂阳夜宵城店)、郴州东湖欢乐世界</li><li><input type="checkbox" disabled> <strong>4 个 POI 无评分</strong>，暂标 ⚠️：文化路、自然之声助听器(桂阳县店)、四清湖动物园停车场、郴州四清湖下凤农耕体验园停车场</li><li><input type="checkbox" disabled> 儿童游乐 152 家，其中场内 44 家、独立 108 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 11 个区县：临武县、北湖区、嘉禾县、安仁县、宜章县、桂东县、桂阳县、永兴县、汝城县、苏仙区、资兴市——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

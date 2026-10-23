@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>渭南市 · 陕西省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/陕西省.html">← 返回陕西省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>渭南市 · 陕西省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:33:20  ·  POI 总量：187（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>187</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>98%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 3 · 商圈 116 · 成人娱乐 140 · 儿童娱乐 26 · 酒店 30 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>陕西省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>11 个</td></tr>
+<tr><td>街道/镇/乡</td><td>135 个</td></tr>
+<tr><td>区县构成</td><td>县×7、县级市×2、市辖区×2</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>临渭区</td><td>101</td><td>54%</td></tr>
+<tr><td>富平县</td><td>21</td><td>11%</td></tr>
+<tr><td>蒲城县</td><td>19</td><td>10%</td></tr>
+<tr><td>韩城市</td><td>11</td><td>6%</td></tr>
+<tr><td>华阴市</td><td>9</td><td>5%</td></tr>
+<tr><td>大荔县</td><td>8</td><td>4%</td></tr>
+<tr><td>华州区</td><td>6</td><td>3%</td></tr>
+<tr><td>澄城县</td><td>6</td><td>3%</td></tr>
+<tr><td>白水县</td><td>3</td><td>2%</td></tr>
+<tr><td>合阳县</td><td>2</td><td>1%</td></tr>
+<tr><td>潼关县</td><td>1</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（116 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>54</td></tr>
+<tr><td>百货/商场</td><td>21</td></tr>
+<tr><td>购物中心/综合体</td><td>19</td></tr>
+<tr><td>批发城</td><td>17</td></tr>
+<tr><td>商业街</td><td>4</td></tr>
+<tr><td>奥特莱斯</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（116 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>圣安雅辰酒店(渭南信达广场店)</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>13</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>吾悦广场(渭南店)</td><td>百货/商场</td><td>4.8</td><td>0</td><td>11</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>华润万家(渭南前进路店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>渭南宏帆广场</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>12</td><td>0</td><td>4</td></tr>
+<tr><td>B</td><td>魅KTV•AI辅唱(宏帆广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>14</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>14</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>13</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>星期八式·轰趴馆(鑫博大时尚广场店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>13</td><td>1</td><td>1</td></tr>
+<tr><td>B</td><td>雀拾壹棋牌</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>11</td><td>0</td><td>0</td></tr>
+<tr><td>B</td><td>Z库老实人旗下仓储店(渭南店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>14</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>老实人超市(富平店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>志成关中品道(富平总店)</td><td>其他商业载体</td><td>4.5</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>一呆公寓(渭南万达广场店)</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>华山驿loft青年山居(华山景区店)</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>盒马鲜生(渭南万达广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(渭南高新店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>渭南临渭万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>光运·恒基商业中心</td><td>百货/商场</td><td>4.7</td><td>0</td><td>9</td><td>1</td><td>3</td></tr>
+<tr><td>C</td><td>铜锣湾雅荷时代广场</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>2</td><td>0</td></tr>
+<tr><td>C</td><td>澄城宾馆</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>万达影城(临渭店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达影城(渭南高新万达广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>4</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>三秦王国百货</td><td>百货/商场</td><td>4.6</td><td>0</td><td>2</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>老实人超市(美华商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>贸易广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>尚映国际影城(居然之家店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>文投国际影城(渭南店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中影星光影城(豪布斯卡店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>肆方荟棋牌会所</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宜品联华</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>渭南市曙光农副产品综合批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>富平秦正商业广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>渭南国际商贸城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>惠欧财富广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>兴悦汇购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>百富商城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>海兴购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>金辉尚悦城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>新华酒店(新华大街)</td><td>商业街</td><td>4.4</td><td>0</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>澄城金纪源宾馆</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+</tbody></table></div>
+<h3>圣安雅辰酒店(渭南信达广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;三星级宾馆）</li><li><strong>地址</strong>：前进路与朝阳大街交叉口北260米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>圣安雅辰酒店(渭南信达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>星璨火吧KTV聚会餐厅(渭南店)、乐尚纯K KTV(渭南宏帆广场店)、魅KTV•AI辅唱(宏帆广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>圣安雅辰酒店(渭南信达广场店)</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(渭南店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 1</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：仓程路与西华街十字西北角</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>吾悦广场(渭南店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>幺零幺棋牌会馆、奥斯卡影城(渭南吾悦广场店)、喜·上番棋牌室</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>迷你英语学校</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>渭南鸿祥瑞宾馆</td></tr>
+</tbody></table></div>
+<h3>华润万家(渭南前进路店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（购物服务;超级市场;华润）</li><li><strong>地址</strong>：前进路信达购物中心商业楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>华润万家(渭南前进路店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>星璨火吧KTV聚会餐厅(渭南店)、乐尚纯K KTV(渭南宏帆广场店)、魅KTV•AI辅唱(宏帆广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>圣安雅辰酒店(渭南信达广场店)</td></tr>
+</tbody></table></div>
+<h3>渭南宏帆广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 4</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;楼宇;商住两用楼宇）</li><li><strong>地址</strong>：前进路</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>渭南宏帆广场</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>乐尚纯K KTV(渭南宏帆广场店)、魅KTV•AI辅唱(宏帆广场店)、星璨火吧KTV聚会餐厅(渭南店)</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>圣安雅辰酒店(渭南信达广场店)、渭南香山宾馆、宝利来宾馆(福乐新村小区西)</td></tr>
+</tbody></table></div>
+<h3>魅KTV•AI辅唱(宏帆广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：杜桥街道前进路宏帆广场A馆3F</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>魅KTV•AI辅唱(宏帆广场店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>魅KTV•AI辅唱(宏帆广场店)、乐尚纯K KTV(渭南宏帆广场店)、星璨火吧KTV聚会餐厅(渭南店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>圣安雅辰酒店(渭南信达广场店)、渭南香山宾馆、卧龙阁旅馆(福乐新村小区北)</td></tr>
+</tbody></table></div>
+<h3>星璨火吧KTV聚会餐厅(渭南店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：前进路华润万家购物中心四层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>星璨火吧KTV聚会餐厅(渭南店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>星璨火吧KTV聚会餐厅(渭南店)、乐尚纯K KTV(渭南宏帆广场店)、魅KTV•AI辅唱(宏帆广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>圣安雅辰酒店(渭南信达广场店)</td></tr>
+</tbody></table></div>
+<h3>乐尚纯K KTV(渭南宏帆广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：宏帆广场B馆2楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>乐尚纯K KTV(渭南宏帆广场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>乐尚纯K KTV(渭南宏帆广场店)、魅KTV•AI辅唱(宏帆广场店)、星璨火吧KTV聚会餐厅(渭南店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>圣安雅辰酒店(渭南信达广场店)、渭南香山宾馆</td></tr>
+</tbody></table></div>
+<h3>星期八式·轰趴馆(鑫博大时尚广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：东风大街中段229号鑫博大3-4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>星期八式·轰趴馆(鑫博大时尚广场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>星期八式·轰趴馆(鑫博大时尚广场店)、星璨火吧KTV聚会餐厅(渭南店)、魅KTV•AI辅唱(宏帆广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宠宫(前进路龙泉福苑店)(暂停开放)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>圣安雅辰酒店(渭南信达广场店)</td></tr>
+</tbody></table></div>
+<h3>雀拾壹棋牌 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：胜利大街与杜化路十字海兴城一号楼商业二层202</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>雀拾壹棋牌</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>雀拾壹棋牌、久雀自助棋牌·茶楼(海兴城旗舰店)、幺零幺棋牌会馆</td></tr>
+</tbody></table></div>
+<h3>Z库老实人旗下仓储店(渭南店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：渭南宏帆广场A馆B1层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>Z库老实人旗下仓储店(渭南店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>乐尚纯K KTV(渭南宏帆广场店)、魅KTV•AI辅唱(宏帆广场店)、星璨火吧KTV聚会餐厅(渭南店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>圣安雅辰酒店(渭南信达广场店)、渭南香山宾馆</td></tr>
+</tbody></table></div>
+<h3>老实人超市(富平店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：莲湖大街与富昌路辅路交叉口西80米</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥35（区间 ¥35–35）</li><li><strong>动线主轴</strong>：莲湖大街</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>老实人超市(富平店)</td></tr>
+<tr><td>美食</td><td>1</td><td>志成关中品道(富平总店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>志成关中品道(富平总店)</td></tr>
+</tbody></table></div>
+<h3>志成关中品道(富平总店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（餐饮服务;中餐厅;中餐厅｜住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：莲湖大街东段</li><li><strong>消费带宽</strong>：关联美食人均中位数 ¥35（区间 ¥35–35）</li><li><strong>动线主轴</strong>：莲湖大街</li><li><strong>业态分布</strong>：美食 1 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>志成关中品道(富平总店)</td></tr>
+<tr><td>美食</td><td>1</td><td>志成关中品道(富平总店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>爱迪声KTV(富平店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>志成关中品道(富平总店)</td></tr>
+</tbody></table></div>
+<h3>一呆公寓(渭南万达广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：新区东路与东兴路交汇处万达广场1号公寓楼21-25、27层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>一呆公寓(渭南万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>万达影城(渭南高新万达广场店)、音秀KTV(万达店)、ACMEROOM极速零异密室逃脱</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>一呆公寓(渭南万达广场店)</td></tr>
+</tbody></table></div>
+<h3>华山驿loft青年山居(华山景区店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;旅馆招待所;青年旅舍）</li><li><strong>地址</strong>：华山景区金色年华酒店东侧巷子向南200米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>华山驿loft青年山居(华山景区店)</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>华山驿loft青年山居(华山景区店)、兴和度假山庄、华山金穗宾馆</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(渭南万达广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：临渭万达广场</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>盒马鲜生(渭南万达广场店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>万达影城(临渭店)、GOGO PARTY KTV(渭南店)、超级元宇宙裸眼9D环幕轨道影院</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（140 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>17</td></tr>
+<tr><td>棋牌室</td><td>17</td></tr>
+<tr><td>电影院</td><td>15</td></tr>
+<tr><td>KTV</td><td>11</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>11</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(临渭店)</td><td>电影院</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.6</td><td>41.00</td><td>渭河大街与仓程路十字西北角临渭万达5楼</td></tr>
+<tr><td>✅A-</td><td>万达影城(渭南高新万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>32.00</td><td>新区东路与敬贤大街十字万达广场1号门4层</td></tr>
+<tr><td>✅B</td><td>魅KTV•AI辅唱(宏帆广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>71.00</td><td>杜桥街道前进路宏帆广场A馆3F</td></tr>
+<tr><td>✅B</td><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>72.00</td><td>前进路华润万家购物中心四层</td></tr>
+<tr><td>✅B</td><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>43.00</td><td>宏帆广场B馆2楼</td></tr>
+<tr><td>✅B</td><td>星期八式·轰趴馆(鑫博大时尚广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>56.00</td><td>东风大街中段229号鑫博大3-4层</td></tr>
+<tr><td>✅B</td><td>爱迪声KTV(富平店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>60.00</td><td>东新街118号富平富尔大酒店二层</td></tr>
+<tr><td>✅B</td><td>尚映国际影城(居然之家店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>30.00</td><td>东风大街41号居然之家5楼</td></tr>
+<tr><td>✅B</td><td>文投国际影城(渭南店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>35.00</td><td>民生路94号荣发2049街区F区</td></tr>
+<tr><td>✅B</td><td>中影星光影城(豪布斯卡店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>32.00</td><td>车站大街东段秦正商业广场内中都影城中影星光影城</td></tr>
+<tr><td>✅B</td><td>久雀自助棋牌·茶楼(海兴城旗舰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>24.00</td><td>海兴城东门中国银行隔壁2号入口三楼久雀棋牌室</td></tr>
+<tr><td>✅B</td><td>幺零幺棋牌会馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>25.00</td><td>仓程路中段景园国际临街商铺403号</td></tr>
+<tr><td>✅B</td><td>肆方荟棋牌会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>—</td><td>胜利大街上上国风一期西门右侧上四楼</td></tr>
+<tr><td>✅B</td><td>雀拾壹棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>56.00</td><td>胜利大街与杜化路十字海兴城一号楼商业二层202</td></tr>
+<tr><td>✅B</td><td>上茶-商务棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>46.00</td><td>锦绣巴黎</td></tr>
+<tr><td>✅B</td><td>GOGO PARTY KTV(渭南店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>30.00</td><td>双王街道渭河大街与仓程路十字西北角渭南临渭万达广场5F-B铺位</td></tr>
+<tr><td>✅B</td><td>放夏派对音乐餐吧</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>20.00</td><td>前进路125号信达·世纪城</td></tr>
+<tr><td>✅B</td><td>四季·会客厅</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.4</td><td>169.00</td><td>杜桥街道前进路辅路渭南洲豪大酒店</td></tr>
+<tr><td>✅B</td><td>新濠天地国际商务汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>—</td><td>朝阳大街47号</td></tr>
+<tr><td>✅B</td><td>威尼斯影城(恒基商业中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>27.00</td><td>东风大街中段光运·恒基商业中心4层</td></tr>
+<tr><td>✅B</td><td>奥斯卡国际影城(华润万家商场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>27.00</td><td>前进路中段华润万家商场3层</td></tr>
+<tr><td>✅B</td><td>苏宁影城(渭南信达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>19.00</td><td>前进路338号信达广场苏宁易购3楼</td></tr>
+<tr><td>✅B</td><td>久雀自助棋牌·茶楼(天斗小区旗舰店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>12.00</td><td>天斗小区南商铺三层(停车场烧烤旁正业电梯)</td></tr>
+<tr><td>✅B</td><td>清三根棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>—</td><td>天斗小区</td></tr>
+<tr><td>✅B</td><td>传棋坊·茶颜雀舍棋牌(渭南店)</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>24.00</td><td>西岳路西段与金山路交汇处往西100米</td></tr>
+<tr><td>✅B</td><td>韵唐汇影院·K歌·沐足SPA(胜利大街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>184.00</td><td>金水路与胜利大街十字西南角2号商铺五层</td></tr>
+<tr><td>✅B</td><td>喜来乐会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>18.00</td><td>仓城路与胜利大街十字西北角紫兰新都荟小区南门口</td></tr>
+<tr><td>✅B</td><td>奥斯卡影城(渭南吾悦广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>24.00</td><td>仓程路中段吾悦广场购物中心5层</td></tr>
+<tr><td>✅B</td><td>牧星影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>47.00</td><td>乐天大街兴华大厦一层108</td></tr>
+<tr><td>✅B</td><td>富平县电影院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>29.00</td><td>杜村镇车站大街西段274号</td></tr>
+<tr><td>✅B</td><td>喜·上番棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>22.00</td><td>杜桥街道城上城小区北门东150米左右</td></tr>
+<tr><td>✅B</td><td>缘聚阁棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>57.00</td><td>杜桥街道办金水路与胜利大街十字九溪庭院2号楼纳兰顿酒店上电梯2楼缘聚阁棋牌室</td></tr>
+<tr><td>✅B</td><td>源聚贤阁(西南京街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>23.00</td><td>西二路与西南京路十字东南角</td></tr>
+<tr><td>⚠️</td><td>爵畅轻氧国际商娱汇(KTV)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>72.00</td><td>新秦路46号</td></tr>
+<tr><td>⚠️</td><td>华夏永安国际影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>31.00</td><td>华州街道盛世永安购物中心4楼</td></tr>
+<tr><td>⚠️</td><td>环球激光影城(王国百货店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>38.00</td><td>车站大街中段三秦王国百货五楼</td></tr>
+<tr><td>⚠️</td><td>雀小仙自助棋牌(渭南金水路店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>16.00</td><td>西南京街52号4楼</td></tr>
+<tr><td>⚠️</td><td>雀小仙自助棋牌(渭南吾悦广场店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>14.00</td><td>新洲国际B座</td></tr>
+<tr><td>⚠️</td><td>37度2KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>—</td><td>西华街108-1号</td></tr>
+<tr><td>⚠️</td><td>金帝KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>60.00</td><td>108省道与焦赵路交叉口西南460米</td></tr>
+<tr><td>⚠️</td><td>富馨苑KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>115.00</td><td>频阳大道108号</td></tr>
+<tr><td>⚠️</td><td>水云天茶馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>51.00</td><td>乐天大街与金水路交叉口西240米</td></tr>
+<tr><td>⚠️</td><td>超级盒子密室剧场</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>85.00</td><td>西华街怡惠园商业楼1号楼302室</td></tr>
+<tr><td>⚠️</td><td>新濠天地·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>134.00</td><td>朝阳大街47号</td></tr>
+<tr><td>⚠️</td><td>中都影城(富平秦正广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>24.00</td><td>车站大街东段秦正商业广场内</td></tr>
+<tr><td>⚠️</td><td>蒙悦自助无人自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>16.00</td><td>西南京街37号</td></tr>
+<tr><td>⚠️</td><td>樱奈密室.沉浸恐怖体验馆(信达梧桐里荣耀店店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>85.00</td><td>信达广场梧桐里C-2-209号华润万家北门对面二楼</td></tr>
+<tr><td>⚠️</td><td>头号玩家超级密室(信达广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>72.00</td><td>前进路信达广场c11潮街负一层</td></tr>
+<tr><td>⚠️</td><td>头号玩家密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>60.00</td><td>奉先街道尧山街24号</td></tr>
+<tr><td>⚠️</td><td>欢歌畅AI智慧KTV(宏帆广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>—</td><td>前进路渭南宏帆广场</td></tr>
+<tr><td>⚠️</td><td>银溪休闲会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;休闲场所;休闲场所</td><td>3.9</td><td>107.00</td><td>天门路中段</td></tr>
+<tr><td>⚠️</td><td>烛影·密室剧场(居然之家店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.8</td><td>71.00</td><td>居然之家5楼(尚映影城同一层)</td></tr>
+<tr><td>⚠️</td><td>音秀KTV(万达店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.8</td><td>65.00</td><td>新区东路28号万达广场渭南高新店3F层</td></tr>
+<tr><td>⚠️</td><td>四个伙伴24小时棋牌茶空间</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.8</td><td>14.00</td><td>通达朗郡北门泰山原浆啤酒西邻居上二楼</td></tr>
+<tr><td>⚠️</td><td>兰朵棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.8</td><td>—</td><td>仓程路与西华街交叉口东北40米</td></tr>
+<tr><td>⚠️</td><td>密室逃脱(渭南吾悦广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.7</td><td>64.00</td><td>渭南吾悦广场五楼</td></tr>
+<tr><td>⚠️</td><td>源代码密室逃脱(大荔西环路店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.7</td><td>57.00</td><td>西环路6号台铃电动车北临</td></tr>
+<tr><td>⚠️</td><td>鸿运轩棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.6</td><td>—</td><td>苏园丰景小区沿街商铺12号楼102商铺</td></tr>
+<tr><td>⚠️</td><td>牌神胡同里社区棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.6</td><td>—</td><td>碧桂园翡翠传奇西门北边15米104商铺</td></tr>
+<tr><td>⚠️</td><td>ACMEROOM极速零异密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.5</td><td>72.00</td><td>高新万达3层</td></tr>
+</tbody></table></div>
+<p>（另 11 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（26 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>14</td></tr>
+<tr><td>其他儿童场所</td><td>11</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>爱尚·汪汪宠物店</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>城关镇朝阳街20号</td></tr>
+<tr><td>⚠️</td><td>渭南桃花源动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>阎村镇马铁路7号</td></tr>
+<tr><td>⚠️</td><td>中华郡动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>阎富友谊路东侧中华郡文化旅游景区内(北侧)</td></tr>
+<tr><td>⚠️</td><td>韩城市萌宠主题乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>司马迁祠游客中心东</td></tr>
+<tr><td>⚠️</td><td>它萌宠物生活馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>王良巷祥和园20号</td></tr>
+<tr><td>⚠️</td><td>悦萌之家宠物医院</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>古征街八路口交通局门面房五号悦萌之家宠物诊所</td></tr>
+<tr><td>⚠️</td><td>萌宠之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>东宫新村9-4号铺</td></tr>
+<tr><td>⚠️</td><td>熊甜甜游乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.1</td><td>创新创业基地创新公园西北角2号</td></tr>
+<tr><td>⚠️</td><td>迷你英语学校</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>西四路凯宾酒店四楼</td></tr>
+<tr><td>⚠️</td><td>迷你宠物生活会馆</td><td>其他儿童场所</td><td>独立</td><td>4.0</td><td>S201(仓颉路南段)</td></tr>
+<tr><td>⚠️</td><td>萌宠宫(前进路龙泉福苑店)(暂停开放)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>龙泉福苑</td></tr>
+<tr><td>⚠️</td><td>完美宠物乐园(胜利大街店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>前进路与胜利大街十字西200米路北</td></tr>
+<tr><td>⚠️</td><td>爱狗乐园</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>迎宾路与长安街交叉口南120米</td></tr>
+<tr><td>⚠️</td><td>爱犬乐园</td><td>其他儿童场所</td><td>独立</td><td>3.9</td><td>洛润街与西六路交叉口南140米</td></tr>
+<tr><td>⚠️</td><td>渭南圣都乐园动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>朝阳大街渭南圣都乐园</td></tr>
+<tr><td>⚠️</td><td>星宠奇遇动物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>迎宾路66号</td></tr>
+<tr><td>⚠️</td><td>柠萌宠物</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>朝阳街与卉园巷交叉口西60米</td></tr>
+<tr><td>❌</td><td>迷你宠物</td><td>其他儿童场所</td><td>独立</td><td>3.4</td><td>大庆街与永乐路交叉口东北20米</td></tr>
+<tr><td>❌</td><td>一只驴萌宠乐园(蒲京雅荷店)</td><td>迷你动物园/萌宠</td><td>场内</td><td>3.4</td><td>铜锣湾时代雅荷广场二楼</td></tr>
+<tr><td>❌</td><td>迷你便利店(解放路店)</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>解放路南段三管局家属院隔壁</td></tr>
+<tr><td>❌</td><td>韩城金贝熊萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>芝川镇芝马路西南司马迁祠景区(东北角)</td></tr>
+<tr><td>❌</td><td>英考鸵鸟观光园</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>官池镇242国道与官八路交叉口东南</td></tr>
+<tr><td>❌</td><td>宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.0</td><td>二环东路与202县道交叉口东南100米</td></tr>
+<tr><td>⚠️</td><td>新添园</td><td>其他儿童场所</td><td>场内</td><td>—</td><td>西三环东府广场南侧</td></tr>
+<tr><td>⚠️</td><td>怡心园</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>盘河北路北段</td></tr>
+<tr><td>⚠️</td><td>公共厕所</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>大峪河景区动物园旁</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（58 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>吾悦广场(渭南店)</td><td>百货/商场</td><td>4.8</td><td>1</td><td>0</td><td>仓程路与西华街十字西北角</td></tr>
+<tr><td>✅A-</td><td>盒马鲜生(渭南万达广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>临渭万达广场</td></tr>
+<tr><td>✅A-</td><td>万达广场(渭南高新店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>高新技术产业开发区新区东路28号</td></tr>
+<tr><td>✅A-</td><td>渭南临渭万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>渭河大街与仓程路十字西北角</td></tr>
+<tr><td>✅A-</td><td>光运·恒基商业中心</td><td>百货/商场</td><td>4.7</td><td>1</td><td>0</td><td>东风大街与西一路东北角</td></tr>
+<tr><td>✅A-</td><td>三秦王国百货</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>车站大街</td></tr>
+<tr><td>✅A-</td><td>老实人超市(富平店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>莲湖大街与富昌路辅路交叉口西80米</td></tr>
+<tr><td>✅A-</td><td>老实人超市(美华商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>美华广场</td></tr>
+<tr><td>✅A-</td><td>贸易广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>东风大街5号</td></tr>
+<tr><td>✅B</td><td>Z库老实人旗下仓储店(渭南店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>渭南宏帆广场A馆B1层</td></tr>
+<tr><td>✅B</td><td>宜品联华</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>大韩路与202县道交叉口西北320米</td></tr>
+<tr><td>❌</td><td>渭南市曙光农副产品综合批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>[]</td></tr>
+<tr><td>✅B</td><td>富平秦正商业广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>东新街105号</td></tr>
+<tr><td>✅B</td><td>渭南国际商贸城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>解放路</td></tr>
+<tr><td>✅B</td><td>惠欧财富广场</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>华岳路10号</td></tr>
+<tr><td>✅B</td><td>兴悦汇购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>S106(万泉街北段)</td></tr>
+<tr><td>✅B</td><td>百富商城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>宣化路与招二路交叉口南150米</td></tr>
+<tr><td>✅B</td><td>海兴购物广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>民生路与老城街交叉路口北侧(海兴·水岸新城)</td></tr>
+<tr><td>✅B</td><td>金辉尚悦城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>黄河路12号</td></tr>
+<tr><td>✅B</td><td>奥斯卡国际影城(华润万家商场店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>前进路中段华润万家商场3层</td></tr>
+<tr><td>✅B</td><td>秦楚百货</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>金龙大道南段附近</td></tr>
+<tr><td>✅B</td><td>惠欧精品超市(华阴店)</td><td>购物中心/综合体</td><td>4.4</td><td>1</td><td>0</td><td>东岳路(中段)中国银行东120米</td></tr>
+<tr><td>✅B</td><td>文汇家福乐超市</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>延安路</td></tr>
+<tr><td>✅B</td><td>火狐狸服装批发城(渭南店)</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>杜桥街道东风大街中段207号开泰百货大楼</td></tr>
+<tr><td>✅B</td><td>惠源农副产品批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>洛滨大道西段</td></tr>
+<tr><td>✅B</td><td>马家巷综合批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>西环路71号</td></tr>
+<tr><td>✅B</td><td>新洲新悦天地</td><td>百货/商场</td><td>4.4</td><td>1</td><td>0</td><td>仓程路中段</td></tr>
+<tr><td>✅B</td><td>中环·丽都购物广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>复兴路与西峙路十字东北角</td></tr>
+<tr><td>✅B</td><td>国阳百货</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>太史大街中段83号</td></tr>
+<tr><td>✅B</td><td>龙阳瓜果菜批发市场</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>朝蒲路与蔡龙路交叉口东南300米</td></tr>
+<tr><td>✅B</td><td>万象城市广场</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>迎宾大道南段东府广场西北角</td></tr>
+<tr><td>⚠️</td><td>环球激光影城(王国百货店)</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>车站大街中段三秦王国百货五楼</td></tr>
+<tr><td>⚠️</td><td>华元购物中心(大厦店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>古徵街七路华元大厦B1层</td></tr>
+<tr><td>⚠️</td><td>爱家生活广场</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>中心广场东侧</td></tr>
+<tr><td>⚠️</td><td>惠万家购物广场(秦楚杰座店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>城关镇金龙大道秦楚百货1楼</td></tr>
+<tr><td>⚠️</td><td>金马百货(合阳店)</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>城街道金马百货2层</td></tr>
+<tr><td>⚠️</td><td>金马百货(蒲城店)</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>古镇巷与紫金路交叉口东南100米</td></tr>
+<tr><td>⚠️</td><td>金马百货(韩城店)</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>金塔路52号</td></tr>
+<tr><td>⚠️</td><td>奥特莱斯(人民路(中段)店)</td><td>奥特莱斯</td><td>4.0</td><td>0</td><td>0</td><td>人民路(中段)与粮北巷交叉口西北60米</td></tr>
+<tr><td>⚠️</td><td>万佳汇服装批发城(天斗商业大厦店)</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>东风街221号天斗商业大厦F4层</td></tr>
+<tr><td>⚠️</td><td>金三角蔬菜瓜果农贸综合批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>金城大道老四面馆对面</td></tr>
+<tr><td>⚠️</td><td>国际贸易商厦</td><td>百货/商场</td><td>4.0</td><td>0</td><td>0</td><td>东风大街中段1号</td></tr>
+<tr><td>⚠️</td><td>百货大楼</td><td>百货/商场</td><td>3.9</td><td>0</td><td>0</td><td>东风大街东段83号</td></tr>
+<tr><td>⚠️</td><td>临渭区粮油批发市场</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>银花小区</td></tr>
+<tr><td>⚠️</td><td>陈氏家具批发城</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>双酒村121号</td></tr>
+<tr><td>⚠️</td><td>潮衣库服饰批发城(金马百货店)</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>金马百货三四楼</td></tr>
+<tr><td>⚠️</td><td>沋西瓜果蔬菜综合批发市场</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>滨河大道(沋河湿地公园北侧约50米)</td></tr>
+<tr><td>⚠️</td><td>华州区蔬菜(水果)批发市场</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>咸林街与龙山路中段交叉口东140米</td></tr>
+<tr><td>⚠️</td><td>浩洋海鲜水产批发</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>望湖大道与昌平大街交叉口西南20米</td></tr>
+<tr><td>⚠️</td><td>景润购物广场(富平县宫里店)</td><td>购物中心/综合体</td><td>3.6</td><td>0</td><td>0</td><td>222县道宫里镇政府南100米</td></tr>
+</tbody></table></div>
+<p>（另 8 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（3 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>店名</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th><th>图片</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>华龙大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>32.00</td><td>三马路(海兴都市花园旁)</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/c17f22e32448ad08ab1d0d5cd285a15d"></td></tr>
+<tr><td>✅B</td><td>志成关中品道(富平总店)</td><td>餐饮服务;中餐厅;中餐厅｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>35.00</td><td>莲湖大街东段</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/content_media_external_images_media_100000857_1741791459288_03975523.jpg"></td></tr>
+<tr><td>⚠️</td><td>浩洋海鲜水产批发</td><td>餐饮服务;中餐厅;中餐厅</td><td>3.7</td><td>—</td><td>望湖大道与昌平大街交叉口西南20米</td><td><img loading="lazy" alt="图" src="https://store.is.autonavi.com/showpic/40d4b2a52b2e901ee8a5b2d914bc2215"></td></tr>
+</tbody></table></div>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>圣安雅辰酒店(渭南信达广场店)（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>圣安雅辰酒店(渭南信达广场店)</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>苏宁影城(渭南信达广场店)</td><td>距离就近</td><td>36m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>距离就近</td><td>53m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(华润万家商场店)</td><td>距离就近</td><td>64m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>距离就近</td><td>102m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>头号玩家超级密室(信达广场店)</td><td>距离就近</td><td>126m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>樱奈密室.沉浸恐怖体验馆(信达梧桐里荣耀店店)</td><td>距离就近</td><td>148m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(宏帆广场店)</td><td>距离就近</td><td>157m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(宏帆广场店)</td><td>距离就近</td><td>172m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>放夏派对音乐餐吧</td><td>距离就近</td><td>229m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地国际商务汇</td><td>距离就近</td><td>315m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地·娱乐</td><td>距离就近</td><td>316m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星期八式·轰趴馆(鑫博大时尚广场店)</td><td>距离就近</td><td>485m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>威尼斯影城(恒基商业中心店)</td><td>距离就近</td><td>576m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>一呆公寓(渭南万达广场店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>一呆公寓(渭南万达广场店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>音秀KTV(万达店)</td><td>距离就近</td><td>20m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>万达影城(渭南高新万达广场店)</td><td>距离就近</td><td>99m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>ACMEROOM极速零异密室逃脱</td><td>距离就近</td><td>137m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>华山驿loft青年山居(华山景区店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>华山驿loft青年山居(华山景区店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>华山金穗宾馆</td><td>距离就近</td><td>247m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>兴和度假山庄</td><td>距离就近</td><td>483m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>吾悦广场(渭南店)（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>密室逃脱(渭南吾悦广场店)</td><td>名称互证</td><td>0m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>奥斯卡影城(渭南吾悦广场店)</td><td>名称互证</td><td>56m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>兰朵棋牌</td><td>距离就近</td><td>151m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>超级盒子密室剧场</td><td>距离就近</td><td>154m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>37度2KTV</td><td>距离就近</td><td>187m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>四个伙伴24小时棋牌茶空间</td><td>距离就近</td><td>315m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>雀小仙自助棋牌(渭南吾悦广场店)</td><td>名称互证</td><td>335m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>幺零幺棋牌会馆</td><td>距离就近</td><td>354m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>喜·上番棋牌室</td><td>距离就近</td><td>397m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>迷你英语学校</td><td>距离就近</td><td>425m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星空影院</td><td>距离就近</td><td>451m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>喜来乐会所</td><td>距离就近</td><td>473m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>渭南鸿祥瑞宾馆</td><td>距离就近</td><td>484m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>盒马鲜生(渭南万达广场店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>超级元宇宙裸眼9D环幕轨道影院</td><td>距离就近</td><td>45m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>万达影城(临渭店)</td><td>距离就近</td><td>59m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>GOGO PARTY KTV(渭南店)</td><td>距离就近</td><td>149m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(渭南高新店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>ACMEROOM极速零异密室逃脱</td><td>距离就近</td><td>8m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>万达影城(渭南高新万达广场店)</td><td>名称互证</td><td>49m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>音秀KTV(万达店)</td><td>名称互证</td><td>128m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>一呆公寓(渭南万达广场店)</td><td>名称互证</td><td>145m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>GOGO PARTY KTV(渭南店)</td><td>名称互证</td><td>2895m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>超级元宇宙裸眼9D环幕轨道影院</td><td>名称互证</td><td>2965m</td><td>2.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>渭南临渭万达广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(临渭店)</td><td>距离就近</td><td>16m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>超级元宇宙裸眼9D环幕轨道影院</td><td>名称互证</td><td>25m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>GOGO PARTY KTV(渭南店)</td><td>名称互证</td><td>81m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>光运·恒基商业中心（13 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>威尼斯影城(恒基商业中心店)</td><td>名称互证</td><td>65m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四季·会客厅</td><td>距离就近</td><td>405m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>传棋坊·茶颜雀舍棋牌(渭南店)</td><td>距离就近</td><td>413m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>卧龙阁旅馆(福乐新村小区北)</td><td>距离就近</td><td>418m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>渭南香山宾馆</td><td>距离就近</td><td>448m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(宏帆广场店)</td><td>距离就近</td><td>457m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(宏帆广场店)</td><td>距离就近</td><td>468m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>宝利来宾馆(福乐新村小区西)</td><td>距离就近</td><td>485m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>源聚贤阁(西南京街店)</td><td>距离就近</td><td>522m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(华润万家商场店)</td><td>距离就近</td><td>579m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>距离就近</td><td>581m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>萌宠宫(前进路龙泉福苑店)(暂停开放)</td><td>距离就近</td><td>590m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>距离就近</td><td>597m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>铜锣湾雅荷时代广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>一只驴萌宠乐园(蒲京雅荷店)</td><td>距离就近</td><td>12m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>棱镜密室逃脱</td><td>名称互证</td><td>44m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>星宠奇遇动物乐园</td><td>距离就近</td><td>207m</td><td>3.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>澄城宾馆（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>澄城宾馆</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>爱犬乐园</td><td>距离就近</td><td>397m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(临渭店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(临渭店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>超级元宇宙裸眼9D环幕轨道影院</td><td>距离就近</td><td>24m</td><td>2.9</td><td>§11</td></tr>
+<tr><td>GOGO PARTY KTV(渭南店)</td><td>距离就近</td><td>92m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>万达影城(渭南高新万达广场店)</td><td>名称互证</td><td>2893m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(渭南高新万达广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(渭南高新万达广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>ACMEROOM极速零异密室逃脱</td><td>距离就近</td><td>41m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>音秀KTV(万达店)</td><td>距离就近</td><td>83m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>一呆公寓(渭南万达广场店)</td><td>距离就近</td><td>99m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>万达影城(临渭店)</td><td>名称互证</td><td>2893m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>三秦王国百货（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>环球激光影城(王国百货店)</td><td>名称互证</td><td>41m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>梦园宾馆(杜村西街店)</td><td>距离就近</td><td>411m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>富平县电影院</td><td>距离就近</td><td>532m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>老实人超市(富平店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>志成关中品道(富平总店)</td><td>距离就近</td><td>526m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>志成关中品道(富平总店)</td><td>距离就近</td><td>526m</td><td>4.5</td><td>§6</td></tr>
+</tbody></table></div>
+<h3>华润万家(渭南前进路店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>名称互证</td><td>52m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(华润万家商场店)</td><td>名称互证</td><td>66m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>樱奈密室.沉浸恐怖体验馆(信达梧桐里荣耀店店)</td><td>名称互证</td><td>70m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>圣安雅辰酒店(渭南信达广场店)</td><td>距离就近</td><td>83m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>头号玩家超级密室(信达广场店)</td><td>距离就近</td><td>98m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>苏宁影城(渭南信达广场店)</td><td>距离就近</td><td>119m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>放夏派对音乐餐吧</td><td>距离就近</td><td>146m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>距离就近</td><td>180m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(宏帆广场店)</td><td>距离就近</td><td>187m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(宏帆广场店)</td><td>距离就近</td><td>207m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>新濠天地国际商务汇</td><td>距离就近</td><td>298m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地·娱乐</td><td>距离就近</td><td>298m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星期八式·轰趴馆(鑫博大时尚广场店)</td><td>距离就近</td><td>404m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四季·会客厅</td><td>距离就近</td><td>570m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>威尼斯影城(恒基商业中心店)</td><td>距离就近</td><td>593m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>渭南宏帆广场（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>名称互证</td><td>192m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(宏帆广场店)</td><td>距离就近</td><td>224m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(宏帆广场店)</td><td>名称互证</td><td>242m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>苏宁影城(渭南信达广场店)</td><td>距离就近</td><td>266m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>圣安雅辰酒店(渭南信达广场店)</td><td>距离就近</td><td>294m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(华润万家商场店)</td><td>距离就近</td><td>313m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>距离就近</td><td>321m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>渭南香山宾馆</td><td>距离就近</td><td>336m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>头号玩家超级密室(信达广场店)</td><td>距离就近</td><td>413m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>樱奈密室.沉浸恐怖体验馆(信达梧桐里荣耀店店)</td><td>距离就近</td><td>417m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>威尼斯影城(恒基商业中心店)</td><td>距离就近</td><td>473m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>卧龙阁旅馆(福乐新村小区北)</td><td>距离就近</td><td>490m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>宝利来宾馆(福乐新村小区西)</td><td>距离就近</td><td>507m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>放夏派对音乐餐吧</td><td>距离就近</td><td>511m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地国际商务汇</td><td>距离就近</td><td>568m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地·娱乐</td><td>距离就近</td><td>570m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>贸易广场（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>ACMEROOM极速零异密室逃脱</td><td>距离就近</td><td>480m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>万达影城(渭南高新万达广场店)</td><td>距离就近</td><td>498m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>音秀KTV(万达店)</td><td>距离就近</td><td>572m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>一呆公寓(渭南万达广场店)</td><td>距离就近</td><td>580m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>志成关中品道(富平总店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>志成关中品道(富平总店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>志成关中品道(富平总店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§6</td></tr>
+<tr><td>爱迪声KTV(富平店)</td><td>距离就近</td><td>342m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>魅KTV•AI辅唱(宏帆广场店)（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>魅KTV•AI辅唱(宏帆广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(宏帆广场店)</td><td>距离就近</td><td>22m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>距离就近</td><td>132m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(华润万家商场店)</td><td>距离就近</td><td>141m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>距离就近</td><td>157m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>圣安雅辰酒店(渭南信达广场店)</td><td>距离就近</td><td>172m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>苏宁影城(渭南信达广场店)</td><td>距离就近</td><td>173m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>樱奈密室.沉浸恐怖体验馆(信达梧桐里荣耀店店)</td><td>距离就近</td><td>225m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>头号玩家超级密室(信达广场店)</td><td>距离就近</td><td>290m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>放夏派对音乐餐吧</td><td>距离就近</td><td>321m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>威尼斯影城(恒基商业中心店)</td><td>距离就近</td><td>406m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>渭南香山宾馆</td><td>距离就近</td><td>473m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>新濠天地国际商务汇</td><td>距离就近</td><td>486m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地·娱乐</td><td>距离就近</td><td>487m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>四季·会客厅</td><td>距离就近</td><td>514m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星期八式·轰趴馆(鑫博大时尚广场店)</td><td>距离就近</td><td>515m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>卧龙阁旅馆(福乐新村小区北)</td><td>距离就近</td><td>590m</td><td>3.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>星璨火吧KTV聚会餐厅(渭南店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(华润万家商场店)</td><td>距离就近</td><td>18m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>圣安雅辰酒店(渭南信达广场店)</td><td>距离就近</td><td>53m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>苏宁影城(渭南信达广场店)</td><td>距离就近</td><td>87m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>樱奈密室.沉浸恐怖体验馆(信达梧桐里荣耀店店)</td><td>距离就近</td><td>101m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>距离就近</td><td>135m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>头号玩家超级密室(信达广场店)</td><td>距离就近</td><td>135m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(宏帆广场店)</td><td>距离就近</td><td>138m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(宏帆广场店)</td><td>距离就近</td><td>157m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>放夏派对音乐餐吧</td><td>距离就近</td><td>191m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地国际商务汇</td><td>距离就近</td><td>335m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地·娱乐</td><td>距离就近</td><td>336m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>星期八式·轰趴馆(鑫博大时尚广场店)</td><td>距离就近</td><td>437m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>威尼斯影城(恒基商业中心店)</td><td>距离就近</td><td>552m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>四季·会客厅</td><td>距离就近</td><td>562m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>乐尚纯K KTV(渭南宏帆广场店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>苏宁影城(渭南信达广场店)</td><td>距离就近</td><td>76m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>圣安雅辰酒店(渭南信达广场店)</td><td>距离就近</td><td>102m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(华润万家商场店)</td><td>距离就近</td><td>132m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(宏帆广场店)</td><td>距离就近</td><td>132m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(宏帆广场店)</td><td>距离就近</td><td>132m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>距离就近</td><td>135m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>头号玩家超级密室(信达广场店)</td><td>距离就近</td><td>223m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>樱奈密室.沉浸恐怖体验馆(信达梧桐里荣耀店店)</td><td>距离就近</td><td>235m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>放夏派对音乐餐吧</td><td>距离就近</td><td>325m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地国际商务汇</td><td>距离就近</td><td>396m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>新濠天地·娱乐</td><td>距离就近</td><td>397m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>渭南香山宾馆</td><td>距离就近</td><td>511m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>威尼斯影城(恒基商业中心店)</td><td>距离就近</td><td>526m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星期八式·轰趴馆(鑫博大时尚广场店)</td><td>距离就近</td><td>567m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>星期八式·轰趴馆(鑫博大时尚广场店)（15 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>星期八式·轰趴馆(鑫博大时尚广场店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>放夏派对音乐餐吧</td><td>距离就近</td><td>270m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>樱奈密室.沉浸恐怖体验馆(信达梧桐里荣耀店店)</td><td>距离就近</td><td>337m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>四季·会客厅</td><td>距离就近</td><td>413m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>奥斯卡国际影城(华润万家商场店)</td><td>距离就近</td><td>436m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>星璨火吧KTV聚会餐厅(渭南店)</td><td>距离就近</td><td>437m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>头号玩家超级密室(信达广场店)</td><td>距离就近</td><td>444m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>圣安雅辰酒店(渭南信达广场店)</td><td>距离就近</td><td>485m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>欢歌畅AI智慧KTV(宏帆广场店)</td><td>距离就近</td><td>494m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(宏帆广场店)</td><td>距离就近</td><td>515m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>苏宁影城(渭南信达广场店)</td><td>距离就近</td><td>521m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>萌宠宫(前进路龙泉福苑店)(暂停开放)</td><td>距离就近</td><td>522m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>新濠天地·娱乐</td><td>距离就近</td><td>544m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>新濠天地国际商务汇</td><td>距离就近</td><td>546m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>乐尚纯K KTV(渭南宏帆广场店)</td><td>距离就近</td><td>567m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>尚映国际影城(居然之家店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>尚映国际影城(居然之家店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>烛影·密室剧场(居然之家店)</td><td>距离就近</td><td>13m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>宝利来宾馆(福乐新村小区西)</td><td>距离就近</td><td>300m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>卧龙阁旅馆(福乐新村小区北)</td><td>距离就近</td><td>310m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>源聚贤阁(西南京街店)</td><td>距离就近</td><td>406m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>蒙悦自助无人自助棋牌室</td><td>距离就近</td><td>445m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>渭南香山宾馆</td><td>距离就近</td><td>467m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>威尼斯影城(恒基商业中心店)</td><td>距离就近</td><td>597m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>文投国际影城(渭南店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>文投国际影城(渭南店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中影星光影城(豪布斯卡店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影星光影城(豪布斯卡店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>中都影城(富平秦正广场店)</td><td>距离就近</td><td>43m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（30 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>168宾馆(药厂医院东)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>华山西站北侧(紧邻310国道)</td></tr>
+<tr><td>✅A-</td><td>渭南军绿宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>5.0</td><td>—</td><td>新盛路麻李1组151号</td></tr>
+<tr><td>✅A-</td><td>圣安雅辰酒店(渭南信达广场店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>5.0</td><td>—</td><td>前进路与朝阳大街交叉口北260米</td></tr>
+<tr><td>✅A-</td><td>一呆公寓(渭南万达广场店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>新区东路与东兴路交汇处万达广场1号公寓楼21-25、27层</td></tr>
+<tr><td>✅A-</td><td>华山驿loft青年山居(华山景区店)</td><td>住宿服务;旅馆招待所;青年旅舍</td><td>4.8</td><td>—</td><td>华山景区金色年华酒店东侧巷子向南200米</td></tr>
+<tr><td>✅A-</td><td>渭南樵塬宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>辛市街道南头</td></tr>
+<tr><td>✅A-</td><td>梦园宾馆(杜村西街店)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.7</td><td>—</td><td>杜村西街20号</td></tr>
+<tr><td>✅A-</td><td>荆家酒店(华山景区游客中心店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.7</td><td>—</td><td>310国道华山游客中心西300米</td></tr>
+<tr><td>✅A-</td><td>渭南香山宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>西一路中段五里铺三组</td></tr>
+<tr><td>✅A-</td><td>华龙大酒店</td><td>餐饮服务;中餐厅;综合酒楼｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>32.00</td><td>三马路(海兴都市花园旁)</td></tr>
+<tr><td>✅A-</td><td>蒲城四海宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.6</td><td>—</td><td>渭清路中石化加油站西南200米</td></tr>
+<tr><td>✅A-</td><td>宝利来宾馆(福乐新村小区西)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>金水路五里铺三组13号</td></tr>
+<tr><td>✅A-</td><td>澄城宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>城关街道青正街与东六路交汇处东北角澄城商贸大厦2楼</td></tr>
+<tr><td>✅B</td><td>兴和度假山庄</td><td>住宿服务;宾馆酒店;五星级宾馆</td><td>4.5</td><td>—</td><td>华山镇华山协和医院旁</td></tr>
+<tr><td>✅B</td><td>志成关中品道(富平总店)</td><td>餐饮服务;中餐厅;中餐厅｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>35.00</td><td>莲湖大街东段</td></tr>
+<tr><td>✅B</td><td>新华酒店(新华大街)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>新华路</td></tr>
+<tr><td>✅B</td><td>渭南新时代宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>西潼路师院南门西50米</td></tr>
+<tr><td>✅B</td><td>澄城金纪源宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>长宁街与丰盛路八路西北侧南关八巷2号</td></tr>
+<tr><td>✅B</td><td>蓝宝石SOHO酒店(韩城火车站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>百合园小区南门旁</td></tr>
+<tr><td>✅B</td><td>尚居快捷酒店(西潼路店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.3</td><td>—</td><td>前进路与华山大街交叉口西180米</td></tr>
+<tr><td>⚠️</td><td>异域风情宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>西北路与四马路十字路西北方</td></tr>
+<tr><td>⚠️</td><td>祥龙宾馆(蒲城店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>延安路51号</td></tr>
+<tr><td>⚠️</td><td>韩城盛龙宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>下峪口玉镜街</td></tr>
+<tr><td>❌</td><td>华阴凯帝亚宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>巴厘岛温泉会馆</td><td>风景名胜;风景名胜;省级景点｜住宿服务;宾馆酒店;三星级宾馆</td><td>3.9</td><td>—</td><td>孙镇常乐村</td></tr>
+<tr><td>⚠️</td><td>渭南鸿祥瑞宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>玉德路馨苑居东南门南侧(近妇幼保健院、永德顺涮羊肉)</td></tr>
+<tr><td>⚠️</td><td>华山金穗宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.7</td><td>—</td><td>华山310国道玉泉路什字西50米路南</td></tr>
+<tr><td>❌</td><td>盛泰酒店</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>3.4</td><td>—</td><td>仓颉路63号</td></tr>
+<tr><td>❌</td><td>卧龙阁旅馆(福乐新村小区北)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.3</td><td>—</td><td>东风大街祥和小区东北侧约70米</td></tr>
+<tr><td>❌</td><td>渭南网缘小宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.0</td><td>—</td><td>四马路临渭分局对面(杨刘村村口)</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>10</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>14</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>7</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>4</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>12</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>1</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/渭南市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>2 个 POI 无地址</strong>，需人工补：华阴凯帝亚宾馆、渭南市曙光农副产品综合批发市场</li><li><input type="checkbox" disabled> <strong>3 个 POI 无评分</strong>，暂标 ⚠️：新添园、怡心园、公共厕所</li><li><input type="checkbox" disabled> 儿童游乐 26 家，其中场内 2 家、独立 24 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 11 个区县：临渭区、华州区、华阴市、合阳县、大荔县、富平县、潼关县、澄城县、白水县、蒲城县、韩城市——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

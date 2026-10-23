@@ -1,0 +1,394 @@
+{
+ "province": "湖南省",
+ "stats": {
+  "cities": 14,
+  "poi": 11628,
+  "grades": {
+   "S": 6,
+   "A": 115,
+   "B": 169,
+   "C": 270
+  }
+ },
+ "cities": [
+  {
+   "city": "娄底市",
+   "province": "湖南省",
+   "adcode": "431300",
+   "poi": 786,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:58:22",
+   "page": "cities/431300.html",
+   "json": "api/cities/431300.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E5%A8%84%E5%BA%95%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 12,
+    "B": 13,
+    "C": 15
+   },
+   "dims": {
+    "food": 305,
+    "district": 158,
+    "leisure": 207,
+    "kids": 28,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "岳阳市",
+   "province": "湖南省",
+   "adcode": "430600",
+   "poi": 1018,
+   "waves": [
+    2,
+    3
+   ],
+   "updated": "2026-10-23 20:07:00",
+   "page": "cities/430600.html",
+   "json": "api/cities/430600.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E5%B2%B3%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 11,
+    "B": 9,
+    "C": 20
+   },
+   "dims": {
+    "food": 311,
+    "district": 184,
+    "leisure": 386,
+    "kids": 40,
+    "hotel": 32,
+    "product": 41
+   }
+  },
+  {
+   "city": "常德市",
+   "province": "湖南省",
+   "adcode": "430700",
+   "poi": 868,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:56:37",
+   "page": "cities/430700.html",
+   "json": "api/cities/430700.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E5%B8%B8%E5%BE%B7%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 13,
+    "C": 26
+   },
+   "dims": {
+    "food": 311,
+    "district": 198,
+    "leisure": 224,
+    "kids": 35,
+    "hotel": 35,
+    "product": 40
+   }
+  },
+  {
+   "city": "张家界市",
+   "province": "湖南省",
+   "adcode": "430800",
+   "poi": 707,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:56:09",
+   "page": "cities/430800.html",
+   "json": "api/cities/430800.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E5%BC%A0%E5%AE%B6%E7%95%8C%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 22,
+    "B": 9,
+    "C": 9
+   },
+   "dims": {
+    "food": 309,
+    "district": 140,
+    "leisure": 160,
+    "kids": 18,
+    "hotel": 41,
+    "product": 41
+   }
+  },
+  {
+   "city": "怀化市",
+   "province": "湖南省",
+   "adcode": "431200",
+   "poi": 832,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:55:19",
+   "page": "cities/431200.html",
+   "json": "api/cities/431200.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E6%80%80%E5%8C%96%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 10,
+    "B": 9,
+    "C": 21
+   },
+   "dims": {
+    "food": 320,
+    "district": 171,
+    "leisure": 226,
+    "kids": 23,
+    "hotel": 29,
+    "product": 40
+   }
+  },
+  {
+   "city": "株洲市",
+   "province": "湖南省",
+   "adcode": "430200",
+   "poi": 822,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:57:26",
+   "page": "cities/430200.html",
+   "json": "api/cities/430200.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E6%A0%AA%E6%B4%B2%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 15,
+    "B": 11,
+    "C": 14
+   },
+   "dims": {
+    "food": 302,
+    "district": 179,
+    "leisure": 201,
+    "kids": 35,
+    "hotel": 34,
+    "product": 42
+   }
+  },
+  {
+   "city": "永州市",
+   "province": "湖南省",
+   "adcode": "431100",
+   "poi": 826,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:56:23",
+   "page": "cities/431100.html",
+   "json": "api/cities/431100.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E6%B0%B8%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 6,
+    "B": 16,
+    "C": 18
+   },
+   "dims": {
+    "food": 313,
+    "district": 184,
+    "leisure": 208,
+    "kids": 38,
+    "hotel": 29,
+    "product": 40
+   }
+  },
+  {
+   "city": "湘潭市",
+   "province": "湖南省",
+   "adcode": "430300",
+   "poi": 771,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:56:50",
+   "page": "cities/430300.html",
+   "json": "api/cities/430300.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E6%B9%98%E6%BD%AD%E5%B8%82.md",
+   "grades": {
+    "S": 3,
+    "A": 8,
+    "B": 13,
+    "C": 16
+   },
+   "dims": {
+    "food": 291,
+    "district": 155,
+    "leisure": 209,
+    "kids": 24,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "湘西土家族苗族自治州",
+   "province": "湖南省",
+   "adcode": "433100",
+   "poi": 754,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:55:56",
+   "page": "cities/433100.html",
+   "json": "api/cities/433100.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E6%B9%98%E8%A5%BF%E5%9C%9F%E5%AE%B6%E6%97%8F%E8%8B%97%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E.md",
+   "grades": {
+    "S": 0,
+    "A": 8,
+    "B": 21,
+    "C": 11
+   },
+   "dims": {
+    "food": 303,
+    "district": 146,
+    "leisure": 190,
+    "kids": 24,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "益阳市",
+   "province": "湖南省",
+   "adcode": "430900",
+   "poi": 767,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:58:35",
+   "page": "cities/430900.html",
+   "json": "api/cities/430900.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E7%9B%8A%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 21,
+    "C": 18
+   },
+   "dims": {
+    "food": 290,
+    "district": 153,
+    "leisure": 194,
+    "kids": 33,
+    "hotel": 29,
+    "product": 40
+   }
+  },
+  {
+   "city": "衡阳市",
+   "province": "湖南省",
+   "adcode": "430400",
+   "poi": 851,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:57:54",
+   "page": "cities/430400.html",
+   "json": "api/cities/430400.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E8%A1%A1%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 1,
+    "B": 10,
+    "C": 29
+   },
+   "dims": {
+    "food": 295,
+    "district": 189,
+    "leisure": 230,
+    "kids": 34,
+    "hotel": 32,
+    "product": 40
+   }
+  },
+  {
+   "city": "邵阳市",
+   "province": "湖南省",
+   "adcode": "430500",
+   "poi": 838,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:58:08",
+   "page": "cities/430500.html",
+   "json": "api/cities/430500.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E9%82%B5%E9%98%B3%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 6,
+    "B": 13,
+    "C": 21
+   },
+   "dims": {
+    "food": 294,
+    "district": 178,
+    "leisure": 239,
+    "kids": 35,
+    "hotel": 37,
+    "product": 40
+   }
+  },
+  {
+   "city": "郴州市",
+   "province": "湖南省",
+   "adcode": "431000",
+   "poi": 847,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:57:04",
+   "page": "cities/431000.html",
+   "json": "api/cities/431000.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E9%83%B4%E5%B7%9E%E5%B8%82.md",
+   "grades": {
+    "S": 0,
+    "A": 13,
+    "B": 7,
+    "C": 20
+   },
+   "dims": {
+    "food": 317,
+    "district": 176,
+    "leisure": 214,
+    "kids": 38,
+    "hotel": 30,
+    "product": 40
+   }
+  },
+  {
+   "city": "长沙市",
+   "province": "湖南省",
+   "adcode": "430100",
+   "poi": 941,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:57:41",
+   "page": "cities/430100.html",
+   "json": "api/cities/430100.json",
+   "md": "md/%E6%B9%96%E5%8D%97%E7%9C%81/%E9%95%BF%E6%B2%99%E5%B8%82.md",
+   "grades": {
+    "S": 3,
+    "A": 1,
+    "B": 4,
+    "C": 32
+   },
+   "dims": {
+    "food": 272,
+    "district": 245,
+    "leisure": 238,
+    "kids": 52,
+    "hotel": 34,
+    "product": 42
+   }
+  }
+ ]
+}

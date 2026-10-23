@@ -1,0 +1,38 @@
+{
+ "city": "吉林省",
+ "province": "吉林省",
+ "poi_total": null,
+ "waves": [],
+ "updated": null,
+ "credibility": {},
+ "overview": {},
+ "districts": [],
+ "district_count": 0,
+ "leisure": {
+  "subcats": [],
+  "list": []
+ },
+ "kids": {
+  "subcats": [],
+  "list": []
+ },
+ "malls": [],
+ "food": [],
+ "xiaocan": [],
+ "specialties": [],
+ "hotels": [],
+ "assoc": [],
+ "queries": [],
+ "external": {
+  "meituan_search": "https://www.meituan.com/s/%E5%90%89%E6%9E%97%E7%9C%81%E7%BE%8E%E9%A3%9F",
+  "meituan_home": "https://www.meituan.com/",
+  "dianping_food": "https://www.dianping.com/jilinsheng/ch10",
+  "dianping_search": "https://www.dianping.com/search/keyword/2/0_%E5%90%89%E6%9E%97%E7%9C%81"
+ },
+ "adcode": "",
+ "urls": {
+  "page": "cities/%E5%90%89%E6%9E%97%E7%9C%81.html",
+  "json": "api/cities/吉林省.json",
+  "md": "md/%E5%90%89%E6%9E%97%E7%9C%81/%E5%90%89%E6%9E%97%E7%9C%81.md"
+ }
+}

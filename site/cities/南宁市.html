@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>南宁市 · 广西壮族自治区</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/广西壮族自治区.html">← 返回广西壮族自治区</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>南宁市 · 广西壮族自治区 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:11:28  ·  POI 总量：230（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>230</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>96%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 117 · 成人娱乐 156 · 儿童娱乐 54 · 酒店 31 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>广西壮族自治区 · 省会市</td></tr>
+<tr><td>下级区县</td><td>12 个</td></tr>
+<tr><td>街道/镇/乡</td><td>129 个</td></tr>
+<tr><td>区县构成</td><td>市辖区×7、县×4、县级市×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>青秀区</td><td>99</td><td>43%</td></tr>
+<tr><td>西乡塘区</td><td>61</td><td>27%</td></tr>
+<tr><td>兴宁区</td><td>36</td><td>16%</td></tr>
+<tr><td>江南区</td><td>15</td><td>7%</td></tr>
+<tr><td>武鸣区</td><td>7</td><td>3%</td></tr>
+<tr><td>良庆区</td><td>6</td><td>3%</td></tr>
+<tr><td>马山县</td><td>2</td><td>1%</td></tr>
+<tr><td>邕宁区</td><td>2</td><td>1%</td></tr>
+<tr><td>上林县</td><td>1</td><td>0%</td></tr>
+<tr><td>横州市</td><td>1</td><td>0%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（117 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>45</td></tr>
+<tr><td>购物中心/综合体</td><td>34</td></tr>
+<tr><td>批发城</td><td>17</td></tr>
+<tr><td>百货/商场</td><td>12</td></tr>
+<tr><td>步行街</td><td>4</td></tr>
+<tr><td>商业街</td><td>3</td></tr>
+<tr><td>奥特莱斯</td><td>2</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（117 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>南宁动物园</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>1</td><td>34</td><td>0</td></tr>
+<tr><td>B</td><td>南宁百货大楼</td><td>百货/商场</td><td>4.7</td><td>0</td><td>10</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>雀公馆(金湖广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>12</td><td>0</td><td>2</td></tr>
+<tr><td>B</td><td>大润发(西乡塘店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>17</td><td>1</td></tr>
+<tr><td>C</td><td>精通101酒店南宁葛村店大堂</td><td>其他商业载体</td><td>5.0</td><td>0</td><td>3</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>南宁初见酒店(南宁北站康和城商业广场店)</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>汇豪轻奢公寓(安吉万达广场店)</td><td>其他商业载体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>山姆会员商店(南宁青秀店)</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>祖龙ACMALL购物中心</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>南宁万象城</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>纯K(绿地中央广场店)</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>杉杉奥特莱斯购物广场·南宁店</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(南宁江南店)</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>3</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>会展航洋城</td><td>其他商业载体</td><td>4.8</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>南宁安吉万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中影环球影城(百盛步行街店)</td><td>步行街</td><td>4.7</td><td>0</td><td>8</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>沃尔玛(印象城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>8</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>沃尔玛(正恒国际广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>沃尔玛(民族大道分店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>南宁首创奥特莱斯</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>广西金桥国际农产品批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万达广场(青秀店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>9</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万达茂(南宁店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中山路万象汇</td><td>百货/商场</td><td>4.7</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>南宁朝阳印象城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>8</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>南宁蓝鲸世界</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>万茂广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>1</td><td>3</td></tr>
+<tr><td>C</td><td>大唐天城</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>南宁华丰城爱琴海城市广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>五象航洋城</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>南宁朝鑫宾馆(富德商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>万达影城(南宁青秀万达广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>8</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>民族影城(289上海天地店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>雀悦鲤·高端棋牌茶馆(绿地店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>KKV(西关路店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>9</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>南宁华星·城市奥特莱斯</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>南百·NGS</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>2</td><td>1</td><td>3</td></tr>
+<tr><td>C</td><td>沃尔玛(望州南路店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(大唐天城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>南宁杉杉奥特莱斯购物广场顾客服务中心(杉杉奥特莱斯购物广场·南宁店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>南宁动物园 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 35 / 酒店 0</li><li><strong>载体类型</strong>：其他商业载体（风景名胜;公园广场;动物园）</li><li><strong>地址</strong>：大学东路73号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 34 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>南宁动物园</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>南宁动物园木偶剧场</td></tr>
+<tr><td>儿童娱乐</td><td>34</td><td>南宁动物园、南宁动物园主题游乐园、南宁动物园-海洋馆</td></tr>
+</tbody></table></div>
+<h3>南宁百货大楼 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 10 / 酒店 2</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：朝阳路39号(朝阳广场地铁站出入口步行50米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 10 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>南宁百货大楼</td></tr>
+<tr><td>成人娱乐</td><td>10</td><td>中影环球影城(百盛步行街店)、青川鬼校·沉浸式探灵屋、自由空间(民生路步行街店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>自由空间(民生路步行街店)、宇通酒店(南宁朝阳火车站地铁站店)</td></tr>
+</tbody></table></div>
+<h3>雀公馆(金湖广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：金湖北路52东方曼哈顿F6层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>雀公馆(金湖广场店)</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>雀里雀雀24h棋牌馆、百分百HC电音派对.量贩KTV、雀公馆(金湖广场店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>南宁天利宾馆(广西医大开元琅东医院金湖广场地铁站店)、桂景大酒店</td></tr>
+</tbody></table></div>
+<h3>大润发(西乡塘店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 18 / 酒店 1</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：大学东路75号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 17 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>大润发(西乡塘店)</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>南宁动物园木偶剧场</td></tr>
+<tr><td>儿童娱乐</td><td>17</td><td>南宁动物园主题游乐园、南宁动物园-海洋馆、南宁动物园木偶剧场</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>金凯商务宾馆(大学东路店)</td></tr>
+</tbody></table></div>
+<h3>精通101酒店南宁葛村店大堂 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;四星级宾馆）</li><li><strong>地址</strong>：精通101酒店(南宁朝阳广场东葛路店)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>精通101酒店南宁葛村店大堂</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>唯派KTV、V PARTY 俱乐部·娱乐、中影·纵百汇国际影城(东葛店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>精通101酒店南宁葛村店大堂</td></tr>
+</tbody></table></div>
+<h3>南宁初见酒店(南宁北站康和城商业广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：灵源路80号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>南宁初见酒店(南宁北站康和城商业广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>南宁初见酒店(南宁北站康和城商业广场店)</td></tr>
+</tbody></table></div>
+<h3>汇豪轻奢公寓(安吉万达广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;经济型连锁酒店）</li><li><strong>地址</strong>：丰达一支路汇豪公馆1栋20楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>汇豪轻奢公寓(安吉万达广场店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>汇豪轻奢公寓(安吉万达广场店)</td></tr>
+</tbody></table></div>
+<h3>山姆会员商店(南宁青秀店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：高坡岭路12号(百花岭地铁站D口步行210米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>山姆会员商店(南宁青秀店)</td></tr>
+</tbody></table></div>
+<h3>祖龙ACMALL购物中心 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;普通商场）</li><li><strong>地址</strong>：玉洞街道银海大道975-1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>祖龙ACMALL购物中心</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>南宁鸿进酒店</td></tr>
+</tbody></table></div>
+<h3>南宁万象城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：民族大道136号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>南宁万象城</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>南宁沃美影城万象城店(CINITY LED)</td></tr>
+</tbody></table></div>
+<h3>纯K(绿地中央广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：东葛路161号绿地中央广场A1栋1楼(东葛路滨湖北路口)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>纯K(绿地中央广场店)</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>纯K(绿地中央广场店)、雀悦鲤·高端棋牌茶馆(绿地店)、民族影城(289上海天地店)</td></tr>
+</tbody></table></div>
+<h3>杉杉奥特莱斯购物广场·南宁店 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;购物相关场所;购物相关场所）</li><li><strong>地址</strong>：上津路6号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>杉杉奥特莱斯购物广场·南宁店</td></tr>
+</tbody></table></div>
+<h3>万达广场(南宁江南店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：亭洪路48-1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 1 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达广场(南宁江南店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>万达影城(南宁青秀万达广场店)、密语超级密室(江南万达店)、第九街区密室逃脱(大学东路万达广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>派特宠物乐园</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>汇豪轻奢公寓(安吉万达广场店)</td></tr>
+</tbody></table></div>
+<h3>会展航洋城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;楼宇;商务写字楼）</li><li><strong>地址</strong>：民族大道131号(会展中心地铁站D口旁)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>会展航洋城</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>耀KTV、中影国际影城(会展航洋城)、汇航国际娱乐</td></tr>
+</tbody></table></div>
+<h3>南宁安吉万达广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：高新大道55号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>南宁安吉万达广场</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（156 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>26</td></tr>
+<tr><td>电影院</td><td>18</td></tr>
+<tr><td>棋牌室</td><td>18</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>16</td></tr>
+<tr><td>KTV</td><td>5</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>纯K(绿地中央广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.8</td><td>84.00</td><td>东葛路161号绿地中央广场A1栋1楼(东葛路滨湖北路口)</td></tr>
+<tr><td>✅A-</td><td>民族影城(民族大道店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.8</td><td>12.00</td><td>民族大道150号(东盟商务区地铁站C口旁)</td></tr>
+<tr><td>✅A-</td><td>百分百HC电音派对.量贩KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.7</td><td>95.00</td><td>金湖北路58-2号琅东九号组综合楼AC栋2、3、4层</td></tr>
+<tr><td>✅A-</td><td>金座·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室｜商务住宅;楼宇;楼宇相关</td><td>4.7</td><td>536.00</td><td>长湖路50号</td></tr>
+<tr><td>✅A-</td><td>中影环球影城(百盛步行街店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.7</td><td>42.00</td><td>朝阳路9号步行街广场6层L6-015-024</td></tr>
+<tr><td>✅A-</td><td>雀里雀雀24h棋牌馆</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.7</td><td>27.00</td><td>金湖路55号亚航财富中心2层</td></tr>
+<tr><td>✅A-</td><td>歌迷时代量贩KTV(金湖店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>37.00</td><td>金湖北路55号亚航财富中心3-4楼</td></tr>
+<tr><td>✅A-</td><td>温菲派对娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>117.00</td><td>金湖路59号大洋城F5</td></tr>
+<tr><td>✅A-</td><td>佰豪汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>78.00</td><td>厢竹大道13号桂中家居三楼</td></tr>
+<tr><td>✅A-</td><td>耀KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>70.00</td><td>民族大道131号会展航洋城L5层</td></tr>
+<tr><td>✅A-</td><td>金樽</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>62.00</td><td>祥宾路20号</td></tr>
+<tr><td>✅A-</td><td>艾菲尔·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室｜餐饮服务;茶艺馆;茶艺馆｜体育休闲服务;运动场馆;运动场所</td><td>4.6</td><td>172.00</td><td>天龙湾璞悦酒店一楼</td></tr>
+<tr><td>✅A-</td><td>万达影城(南宁青秀万达广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>53.00</td><td>东葛路延长线118号万达广场5层</td></tr>
+<tr><td>✅A-</td><td>民族影城(289上海天地店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>38.00</td><td>建政街道东葛路163号289上海天地南宁绿地中央广场3层</td></tr>
+<tr><td>✅A-</td><td>南宁沃美影城万象城店(CINITY LED)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>47.00</td><td>民族大道136号万象城L5层595号</td></tr>
+<tr><td>✅A-</td><td>实验电影院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>110.00</td><td>建政路19号</td></tr>
+<tr><td>✅A-</td><td>永恒·星湖影城(青秀巨幕店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>34.00</td><td>星湖路1号</td></tr>
+<tr><td>✅A-</td><td>中影天际影城(丽原天际店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>110.00</td><td>共和路与民族大道辅路交叉口东南20米</td></tr>
+<tr><td>✅A-</td><td>棋有棋里智能棋牌室(金湖店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>19.00</td><td>祥宾路63号4楼</td></tr>
+<tr><td>✅A-</td><td>雀公馆(金湖广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>19.00</td><td>金湖北路52东方曼哈顿F6层</td></tr>
+<tr><td>✅A-</td><td>喜雀里棋牌·無老板自助(东葛店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>18.00</td><td>华城商厦5层501号房</td></tr>
+<tr><td>✅A-</td><td>雀悦鲤·高端棋牌茶馆(绿地店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.6</td><td>46.00</td><td>东葛路延长线绿地中央广场A6栋110号铺</td></tr>
+<tr><td>✅B</td><td>自由空间(民生路步行街店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>51.00</td><td>民生路110号竹篱笆</td></tr>
+<tr><td>✅B</td><td>青川鬼校·沉浸式探灵屋</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>60.00</td><td>民生街道新华路百佳汇流行前线地下商业街中庭M05商铺</td></tr>
+<tr><td>✅B</td><td>星城国际会所·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>211.00</td><td>祥宾路63号广州美术大厦F1层</td></tr>
+<tr><td>✅B</td><td>好声音(南宁东葛路旗舰店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>91.00</td><td>长湖路10号博石丰商厦4层01室</td></tr>
+<tr><td>✅B</td><td>PANS PARTY畔山派对·音乐汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;运动场馆;运动场所</td><td>4.5</td><td>573.00</td><td>竹溪大道98号会展山商业L3层桥底停车场入口上坡前行100米L3层停车场</td></tr>
+<tr><td>✅B</td><td>金盛音乐汇娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.5</td><td>327.00</td><td>三月花国际大酒店正门北80米</td></tr>
+<tr><td>✅B</td><td>中影国际影城(水晶城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>金湖路61号梦之岛水晶城3楼</td></tr>
+<tr><td>✅B</td><td>中影国际影城(会展航洋城)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>36.00</td><td>民族大道131号会展航洋城5/6楼</td></tr>
+<tr><td>✅B</td><td>广影国际影城(新梦店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>55.00</td><td>民族大道79号</td></tr>
+<tr><td>✅B</td><td>南宁时代电影大世界(华星时代广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>19.00</td><td>新民路4号华星·城市奥特莱斯6层</td></tr>
+<tr><td>✅B</td><td>中影交昱国际影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>47.00</td><td>中柬路8号青秀蓝鲸天地L2层-09号商铺</td></tr>
+<tr><td>✅B</td><td>万达影城(长虹路万科广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>41.00</td><td>长虹路10号万科广场4楼万达影城</td></tr>
+<tr><td>✅B</td><td>幸福蓝海国际影城(南宁店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>37.00</td><td>民主路20号南宁百货2号电梯3楼</td></tr>
+<tr><td>✅B</td><td>中影融创国际影城(路桥融创茂店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>49.00</td><td>望州路269号路桥融创茂商业中心四层主力店商铺</td></tr>
+<tr><td>✅B</td><td>竹也棋牌(金湖店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>29.00</td><td>金湖广场金浦路3号巢鸿商业中心3楼</td></tr>
+<tr><td>✅B</td><td>雀语24H智能棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>18.00</td><td>祥宾路埌东五组45栋6号楼4层</td></tr>
+<tr><td>✅B</td><td>小雀24H新奢智能棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>19.00</td><td>汇春路2号三楼02号03号</td></tr>
+<tr><td>✅B</td><td>喜雀坊高端棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>23.00</td><td>双拥路南湖财富中心4楼406号</td></tr>
+<tr><td>✅B</td><td>雀悦鲤·高端棋牌茶馆(埌西店)</td><td>棋牌室</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.5</td><td>37.00</td><td>津头街道金湖南路39号金悦大厦A座501</td></tr>
+<tr><td>✅B</td><td>长胡棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>—</td><td>长湖路15号中鼎温馨家园10号楼3层</td></tr>
+<tr><td>✅B</td><td>长藤鬼校(百盛步行街店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.4</td><td>90.00</td><td>朝阳路9号百盛步行街广场负一楼</td></tr>
+<tr><td>✅B</td><td>密语超级密室(盛天地旗舰店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>97.00</td><td>中越路8号盛天华府地下室B3316B3317B3318号</td></tr>
+<tr><td>✅B</td><td>密语超级密室(南宁旗舰店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>115.00</td><td>新竹街道民族大道41号国贸中心A座5楼501室</td></tr>
+<tr><td>✅B</td><td>四方朋友KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>25.00</td><td>新竹街道东葛路长线茅桥路1号内街文化创意园1号楼3层09-12号商铺</td></tr>
+<tr><td>✅B</td><td>霆聚5D·音乐汇</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>—</td><td>建政街道东葛路延长线伟豪广场A栋2号电梯6F</td></tr>
+<tr><td>✅B</td><td>V PARTY 俱乐部·娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>71.00</td><td>东葛路72号</td></tr>
+<tr><td>✅B</td><td>汇航国际娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>—</td><td>民族大道131号航洋国际购物中心F5层</td></tr>
+<tr><td>✅B</td><td>唯派KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>165.00</td><td>东葛路72号同开大厦F1层</td></tr>
+<tr><td>✅B</td><td>中影·纵百汇国际影城(东葛店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>41.00</td><td>东葛路82号永凯现代城5层</td></tr>
+<tr><td>✅B</td><td>泰和民族宫电影城(梦之岛百货店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>56.00</td><td>民族大道49-2号新梦百货A馆1号门5层</td></tr>
+<tr><td>✅B</td><td>胡牌乐棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>15.00</td><td>汇东国际F座29楼2906</td></tr>
+<tr><td>✅B</td><td>云雀茶社.高端棋牌(琅西店)</td><td>棋牌室</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.4</td><td>21.00</td><td>建政街道汇春路6号壮圆大厦十楼1826号房</td></tr>
+<tr><td>✅B</td><td>喜雀里·無老板24小时智能麻将棋牌馆(埌西店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>18.00</td><td>桂春路10号嗨时代美食城3层</td></tr>
+<tr><td>✅B</td><td>诡谈密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>67.00</td><td>国贸中心4楼4B029</td></tr>
+<tr><td>✅B</td><td>灵柒柒妖沉浸密室旗舰店</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>211.00</td><td>星光大道4号星光万科里B1层04</td></tr>
+<tr><td>✅B</td><td>幻境空间(南宁万达茂店)</td><td>其他娱乐场所</td><td>体育休闲服务;休闲场所;休闲场所</td><td>4.3</td><td>62.00</td><td>良堤路6号万达茂3楼3002号</td></tr>
+<tr><td>✅B</td><td>中影·纵百汇国际影城(医科大店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>39.00</td><td>双拥路东一巷国立又商城4楼</td></tr>
+<tr><td>✅B</td><td>雀悦汇棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>21.00</td><td>南湖街道金浦路7号</td></tr>
+</tbody></table></div>
+<p>（另 23 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（54 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>47</td></tr>
+<tr><td>其他儿童场所</td><td>6</td></tr>
+<tr><td>亲子乐园</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>南宁动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.7</td><td>大学东路73号</td></tr>
+<tr><td>✅A-</td><td>凤岭儿童公园</td><td>其他儿童场所</td><td>独立</td><td>4.6</td><td>云景路25号</td></tr>
+<tr><td>✅A-</td><td>五象湖金孔雀萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.6</td><td>玉洞大道五象湖公园内(西南角)</td></tr>
+<tr><td>✅B</td><td>南宁之夜·枫枫萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>中央公园北1门</td></tr>
+<tr><td>✅B</td><td>爪爪宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>三塘镇东虹路兴宁东郡盛天地负二楼B209号商铺</td></tr>
+<tr><td>✅B</td><td>派特宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>亭洪路商业16-6号</td></tr>
+<tr><td>✅B</td><td>狐猴萌境亲子乐园</td><td>亲子乐园</td><td>独立</td><td>4.5</td><td>和安村2队32号</td></tr>
+<tr><td>✅B</td><td>厅哥萌宠兽医诊所</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>科园西七路荷塘月色1栋A单元102商铺</td></tr>
+<tr><td>✅B</td><td>南宁市极素光宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>北投明月荟9栋极素光宠物乐园</td></tr>
+<tr><td>✅B</td><td>嬉猫所猫舍犬舍宠物基地萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>大学东路98号世贸西城C座1407号</td></tr>
+<tr><td>✅B</td><td>欢欢宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>仙葫莺歌路莺歌旧村龙潭岭</td></tr>
+<tr><td>✅B</td><td>南宁小喜兔萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.4</td><td>金浦路24号城市花园30号4-1号铺小喜兔萌宠乐园</td></tr>
+<tr><td>✅B</td><td>南宁动物园主题游乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>大化路南宁动物园(西北角)</td></tr>
+<tr><td>✅B</td><td>南宁宠物基地宠物生活馆</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>东葛路135号岭南家园F座1层2号商铺</td></tr>
+<tr><td>✅B</td><td>千宇千驯宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.3</td><td>昆仑大道三塘考试中心滕村</td></tr>
+<tr><td>✅B</td><td>如一宠物</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>大沙田街道五象大道339号阳光新城春江苑4栋壹街区步行街4-8号铺</td></tr>
+<tr><td>⚠️</td><td>南宁动物园-海洋馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>大学西路3号</td></tr>
+<tr><td>⚠️</td><td>哈基咪宠物馆</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>横州市云星钱隆御园一栋101铺哈基咪宠物馆</td></tr>
+<tr><td>⚠️</td><td>广西南宁动物园猛兽区</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>大学东路73号南宁动物园</td></tr>
+<tr><td>⚠️</td><td>南宁动物园木偶剧场</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>大学东路73号南宁动物园(西北角)</td></tr>
+<tr><td>⚠️</td><td>猫狗日记萌宠生活馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>香山大道1号恒泰丽园1号楼</td></tr>
+<tr><td>⚠️</td><td>黒猩猩</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>大学东路3号南宁动物园内(西侧)</td></tr>
+<tr><td>⚠️</td><td>南宁动物园-熊园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>大化路南宁动物园(西南角)</td></tr>
+<tr><td>⚠️</td><td>南宁动物园-鹦鹉园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>大学东路与科园大道交叉口西200米</td></tr>
+<tr><td>⚠️</td><td>南宁动物园-海洋动物表演场</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>大化路8-1号附近</td></tr>
+<tr><td>⚠️</td><td>鳄鱼湖</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>大学东路3号南宁动物园内</td></tr>
+<tr><td>⚠️</td><td>长颈鹿</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>大学东路3号南宁动物园内(西南角)</td></tr>
+<tr><td>⚠️</td><td>南宁动物园-蛇园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>大学东路与科园大道交叉口西南140米</td></tr>
+<tr><td>⚠️</td><td>猩猩馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>大学东路3号(动物园地铁站C口步行370米)</td></tr>
+<tr><td>⚠️</td><td>白虎</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>大学东路3号南宁动物园内(西南角)</td></tr>
+<tr><td>⚠️</td><td>南宁动物园-浣熊</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>大学东路3号南宁动物园内</td></tr>
+<tr><td>⚠️</td><td>萌宠城堡宠物用品店</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>紫罗兰庄园15栋210</td></tr>
+<tr><td>⚠️</td><td>南宁动物园主题游乐园-吃奶鱼</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>南宁动物园(西北角)</td></tr>
+<tr><td>⚠️</td><td>亚洲象</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>大学东路3号南宁动物园内(南侧)</td></tr>
+<tr><td>⚠️</td><td>南宁动物园-两栖爬行馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.6</td><td>大学东路与科园大道交叉口西340米</td></tr>
+<tr><td>⚠️</td><td>南宁动物园-河马</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.6</td><td>大学东路3号南宁动物园内(东南角)</td></tr>
+<tr><td>⚠️</td><td>南宁动物园-海豚跳跃</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>大学西路3号南宁动物园(西北角)</td></tr>
+<tr><td>⚠️</td><td>拾料萌宠乐园(南宁蓝鲸世界店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>金凯街道金凯路8号南宁蓝鲸世界3楼321室</td></tr>
+<tr><td>⚠️</td><td>平原斑马</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.5</td><td>大学东路3号南宁动物园内(东南角)</td></tr>
+<tr><td>❌</td><td>南宁动物园-赤猴</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>大学东路3号南宁动物园内(北侧)</td></tr>
+<tr><td>❌</td><td>宠乐园</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>南梧路广西花鸟交易市场23栋</td></tr>
+<tr><td>❌</td><td>南宁动物园-水獭</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>大学东路3号南宁动物园内(西北角)</td></tr>
+<tr><td>❌</td><td>南宁动物园-猕猴</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.3</td><td>大学东路3号南宁动物园内</td></tr>
+<tr><td>❌</td><td>南宁动物园萌宠集市</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.0</td><td>大学东路73号南宁动物园</td></tr>
+<tr><td>❌</td><td>南宁动物园休息区</td><td>迷你动物园/萌宠</td><td>独立</td><td>2.6</td><td>南宁动物园内东北侧</td></tr>
+<tr><td>⚠️</td><td>迷你居小区</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>东葛路121号</td></tr>
+<tr><td>⚠️</td><td>动物园(地铁站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>1号线</td></tr>
+<tr><td>⚠️</td><td>南宁动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>大学西路3号(动物园地铁站C口步行250米)</td></tr>
+<tr><td>⚠️</td><td>南宁动物园第2停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>大学西路73号南宁动物园(东北角)</td></tr>
+<tr><td>⚠️</td><td>动物园(公交站)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>222路;53路;54路;58路;76路;机场巴士3号线</td></tr>
+<tr><td>⚠️</td><td>南宁动物园游客服务中心</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>大学西路3号动物园大门</td></tr>
+<tr><td>⚠️</td><td>南宁动物园办公区停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>大学东路辅路与科园大道交叉口东南120米</td></tr>
+<tr><td>⚠️</td><td>南宁动物园北门停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>大学东路73号南宁动物园内(北侧)</td></tr>
+<tr><td>⚠️</td><td>南宁动物园第2停车场(出入口)</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>南宁动物园第2停车场</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（65 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>南宁初见酒店(南宁北站康和城商业广场店)</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>灵源路80号</td></tr>
+<tr><td>✅A-</td><td>山姆会员商店(南宁青秀店)</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>高坡岭路12号(百花岭地铁站D口步行210米)</td></tr>
+<tr><td>✅A-</td><td>祖龙ACMALL购物中心</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>玉洞街道银海大道975-1号</td></tr>
+<tr><td>✅A-</td><td>南宁万象城</td><td>购物中心/综合体</td><td>4.9</td><td>0</td><td>0</td><td>民族大道136号</td></tr>
+<tr><td>✅A-</td><td>杉杉奥特莱斯购物广场·南宁店</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>上津路6号</td></tr>
+<tr><td>✅A-</td><td>万达广场(南宁江南店)</td><td>购物中心/综合体</td><td>4.8</td><td>1</td><td>0</td><td>亭洪路48-1号</td></tr>
+<tr><td>✅A-</td><td>南宁安吉万达广场</td><td>购物中心/综合体</td><td>4.8</td><td>0</td><td>0</td><td>高新大道55号</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(印象城店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>青云街18号印象城A座2-3层</td></tr>
+<tr><td>✅A-</td><td>南宁百货大楼</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>朝阳路39号(朝阳广场地铁站出入口步行50米)</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(正恒国际广场店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>明秀西路111号正恒国际广场B1层</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(民族大道分店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>民族大道131号航洋国际购物中心B2层</td></tr>
+<tr><td>✅A-</td><td>南宁首创奥特莱斯</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>昆仑大道406号</td></tr>
+<tr><td>✅A-</td><td>广西金桥国际农产品批发市场</td><td>批发城</td><td>4.7</td><td>0</td><td>0</td><td>昆仑大道169号</td></tr>
+<tr><td>✅A-</td><td>万达广场(青秀店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>东葛路延长线118号(东葛滨湖路口)</td></tr>
+<tr><td>✅A-</td><td>万达茂(南宁店)</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>良堤路6号</td></tr>
+<tr><td>✅A-</td><td>中山路万象汇</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>民族路与中山路交叉口南120米</td></tr>
+<tr><td>✅A-</td><td>南宁朝阳印象城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>青云街18号(朝阳广场地铁站G口步行230米)</td></tr>
+<tr><td>✅A-</td><td>南宁蓝鲸世界</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>金凯路8号</td></tr>
+<tr><td>✅A-</td><td>万茂广场</td><td>购物中心/综合体</td><td>4.7</td><td>1</td><td>0</td><td>大学东路35-72号</td></tr>
+<tr><td>✅A-</td><td>南宁华丰城爱琴海城市广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>民族大道195号</td></tr>
+<tr><td>✅A-</td><td>南宁朝鑫宾馆(富德商业广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>五一西路今朝大厦斜对面</td></tr>
+<tr><td>✅A-</td><td>南宁华星·城市奥特莱斯</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>新民路4号</td></tr>
+<tr><td>✅A-</td><td>南百·NGS</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>大学东路98号</td></tr>
+<tr><td>✅A-</td><td>大润发(西乡塘店)</td><td>购物中心/综合体</td><td>4.6</td><td>17</td><td>0</td><td>大学东路75号</td></tr>
+<tr><td>✅A-</td><td>沃尔玛(望州南路店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>望州南路90号时代茗城B1层</td></tr>
+<tr><td>✅A-</td><td>永辉超市(大唐天城店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>北湖南路4大唐天城购物中心B1层</td></tr>
+<tr><td>✅A-</td><td>南宁杉杉奥特莱斯购物广场顾客服务中心(杉杉奥特莱斯购物广场·南宁店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>沙井街道上津路6号南宁杉杉奥特莱斯购物广场三楼A302室</td></tr>
+<tr><td>✅A-</td><td>华南城4号广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>沙井大道仁和路66号</td></tr>
+<tr><td>✅A-</td><td>快环建材装饰机电批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>秀厢大道99号</td></tr>
+<tr><td>✅A-</td><td>棒棒堂一站式小商品批发市场</td><td>批发城</td><td>4.6</td><td>0</td><td>0</td><td>人民西路67号新水街市场二楼</td></tr>
+<tr><td>✅A-</td><td>南宁市肉联厂批发市场</td><td>批发城</td><td>4.6</td><td>1</td><td>0</td><td>鲁班路1号</td></tr>
+<tr><td>✅B</td><td>梦之岛百货(水晶城店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>金湖路61号梦之岛水晶城百货3层</td></tr>
+<tr><td>✅B</td><td>南宁百货大楼北楼</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>朝阳路39-41号</td></tr>
+<tr><td>✅B</td><td>南宁百货大楼-南楼(新华路店)</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>朝阳路39号(朝阳广场地铁站出入口步行70米)</td></tr>
+<tr><td>✅B</td><td>梦之岛购物中心</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>古城路5号</td></tr>
+<tr><td>✅B</td><td>粤客隆购物广场(宗信大帽天街店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>安平路68号</td></tr>
+<tr><td>✅B</td><td>南百MMGO</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>民主路20号(朝阳广场地铁站D口步行490米)</td></tr>
+<tr><td>✅B</td><td>王府井百货奥特莱斯</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>新民路4号华星时代广场1-5层</td></tr>
+<tr><td>✅B</td><td>海陆丰水产批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>秀厢大道42-1号</td></tr>
+<tr><td>✅B</td><td>悦荟广场C座</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>青云街18号(朝阳广场地铁站G口步行170米)</td></tr>
+<tr><td>✅B</td><td>泰和民族宫电影城(梦之岛百货店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>民族大道49-2号新梦百货A馆1号门5层</td></tr>
+<tr><td>✅B</td><td>南宁百货大楼(南百·NGS店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>大学东路98号(广西大学地铁站G口旁)</td></tr>
+<tr><td>✅B</td><td>南宁华盛奥特莱斯</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>沙井大道华南城4号广场1-2层</td></tr>
+<tr><td>✅B</td><td>广西六之合小商品批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>中华路120号(瀚德嘉诚综合批发市场)</td></tr>
+<tr><td>✅B</td><td>印象城D座</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>兴达街与青云街交叉口西60米</td></tr>
+<tr><td>✅B</td><td>南宁百货大楼(新世界店)B区</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>0</td><td>大学东路98号(广西大学地铁站F口旁)</td></tr>
+<tr><td>✅B</td><td>FruitSky水果天空城市水果批发中心(永凯店)</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>东葛路86号皓月大厦F1层</td></tr>
+<tr><td>✅B</td><td>淡村海鲜批发城(嘉荟城百货店)</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>五一东路7号淡村商贸城F1层</td></tr>
+<tr><td>⚠️</td><td>第六空间密玩城密室逃脱(西关新天地商业广场店)</td><td>购物中心/综合体</td><td>4.2</td><td>0</td><td>0</td><td>西关路2号西关新天地商业广场5楼第六空间密室逃脱</td></tr>
+<tr><td>⚠️</td><td>瀚德嘉诚综合批发市场</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>朝阳街道中华路120号</td></tr>
+</tbody></table></div>
+<p>（另 15 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>精通101酒店南宁葛村店大堂（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>精通101酒店南宁葛村店大堂</td><td>名称互证</td><td>0m</td><td>5.0</td><td>§11</td></tr>
+<tr><td>唯派KTV</td><td>距离就近</td><td>136m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>V PARTY 俱乐部·娱乐</td><td>距离就近</td><td>143m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>中影·纵百汇国际影城(东葛店)</td><td>距离就近</td><td>462m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南宁初见酒店(南宁北站康和城商业广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>南宁初见酒店(南宁北站康和城商业广场店)</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>汇豪轻奢公寓(安吉万达广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>汇豪轻奢公寓(安吉万达广场店)</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>祖龙ACMALL购物中心（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>南宁鸿进酒店</td><td>距离就近</td><td>358m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南宁万象城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>南宁沃美影城万象城店(CINITY LED)</td><td>距离就近</td><td>59m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>纯K(绿地中央广场店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>纯K(绿地中央广场店)</td><td>名称互证</td><td>0m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>雀悦鲤·高端棋牌茶馆(绿地店)</td><td>距离就近</td><td>93m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>御萝阁私影</td><td>距离就近</td><td>120m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>民族影城(289上海天地店)</td><td>距离就近</td><td>258m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(南宁青秀万达广场店)</td><td>距离就近</td><td>316m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>好声音(凯业花园店)</td><td>距离就近</td><td>593m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(南宁江南店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>密语超级密室(江南万达店)</td><td>名称互证</td><td>25m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>派特宠物乐园</td><td>距离就近</td><td>493m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>第九街区密室逃脱(大学东路万达广场店)</td><td>名称互证</td><td>5442m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>万达影城(南宁青秀万达广场店)</td><td>名称互证</td><td>7370m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>汇豪轻奢公寓(安吉万达广场店)</td><td>名称互证</td><td>10663m</td><td>4.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>会展航洋城（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>耀KTV</td><td>名称互证</td><td>60m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>汇航国际娱乐</td><td>距离就近</td><td>89m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>第九街区真人NPC密室(航洋城店)</td><td>名称互证</td><td>89m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>中影国际影城(会展航洋城)</td><td>名称互证</td><td>111m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南宁动物园（35 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>南宁动物园</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>南宁动物园-浣熊</td><td>名称互证</td><td>91m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>南宁动物园-猕猴</td><td>名称互证</td><td>96m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>鳄鱼湖</td><td>名称互证</td><td>114m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>猩猩馆</td><td>距离就近</td><td>150m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>南宁动物园-蛇园</td><td>名称互证</td><td>152m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>南宁动物园-两栖爬行馆</td><td>名称互证</td><td>154m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>广西南宁动物园猛兽区</td><td>名称互证</td><td>161m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>南宁动物园-赤猴</td><td>名称互证</td><td>168m</td><td>3.3</td><td>§11</td></tr>
+<tr><td>南宁动物园-熊园</td><td>名称互证</td><td>185m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>南宁动物园-河马</td><td>名称互证</td><td>208m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>黒猩猩</td><td>名称互证</td><td>217m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>亚洲象</td><td>名称互证</td><td>237m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>南宁动物园北门停车场</td><td>名称互证</td><td>241m</td><td>—</td><td>§11</td></tr>
+<tr><td>南宁动物园售票处</td><td>名称互证</td><td>252m</td><td>—</td><td>§11</td></tr>
+<tr><td>白虎</td><td>名称互证</td><td>266m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>南宁动物园游客服务中心</td><td>名称互证</td><td>267m</td><td>—</td><td>§11</td></tr>
+<tr><td>南宁动物园-鹦鹉园</td><td>名称互证</td><td>274m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>平原斑马</td><td>名称互证</td><td>303m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>南宁动物园主题游乐园-吃奶鱼</td><td>名称互证</td><td>310m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>南宁动物园休息区</td><td>名称互证</td><td>312m</td><td>2.6</td><td>§11</td></tr>
+<tr><td>南宁动物园第2停车场</td><td>名称互证</td><td>314m</td><td>—</td><td>§11</td></tr>
+<tr><td>南宁动物园第2停车场(出入口)</td><td>名称互证</td><td>315m</td><td>—</td><td>§11</td></tr>
+<tr><td>南宁动物园木偶剧场</td><td>名称互证</td><td>317m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>南宁动物园木偶剧场</td><td>名称互证</td><td>317m</td><td>4.0</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中影环球影城(百盛步行街店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影环球影城(百盛步行街店)</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>长藤鬼校(百盛步行街店)</td><td>距离就近</td><td>10m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>幻境空间(步行街广场店)</td><td>距离就近</td><td>18m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>谜阁剧情密室逃脱(新朝阳商业广场店)</td><td>距离就近</td><td>204m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>364m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>364m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天局实景密室逃脱(朝阳广场店)</td><td>距离就近</td><td>413m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>第六空间密玩城密室逃脱(西关新天地商业广场店)</td><td>距离就近</td><td>454m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>青川鬼校·沉浸式探灵屋</td><td>距离就近</td><td>466m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(印象城店)（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>长藤鬼校(百盛步行街店)</td><td>距离就近</td><td>127m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>幻境空间(步行街广场店)</td><td>距离就近</td><td>133m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影环球影城(百盛步行街店)</td><td>距离就近</td><td>135m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>谜阁剧情密室逃脱(新朝阳商业广场店)</td><td>距离就近</td><td>202m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>天局实景密室逃脱(朝阳广场店)</td><td>距离就近</td><td>447m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>498m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>498m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>青川鬼校·沉浸式探灵屋</td><td>距离就近</td><td>510m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>第六空间密玩城密室逃脱(西关新天地商业广场店)</td><td>距离就近</td><td>534m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南宁百货大楼（12 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>第六空间密玩城密室逃脱(西关新天地商业广场店)</td><td>距离就近</td><td>86m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>青川鬼校·沉浸式探灵屋</td><td>距离就近</td><td>89m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>天局实景密室逃脱(朝阳广场店)</td><td>距离就近</td><td>104m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>谜阁剧情密室逃脱(新朝阳商业广场店)</td><td>距离就近</td><td>285m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>402m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>402m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长藤鬼校(百盛步行街店)</td><td>距离就近</td><td>404m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>中影环球影城(百盛步行街店)</td><td>距离就近</td><td>407m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>幻境空间(步行街广场店)</td><td>距离就近</td><td>425m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>宇通酒店(南宁朝阳火车站地铁站店)</td><td>距离就近</td><td>515m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>幸福蓝海国际影城(南宁店)</td><td>距离就近</td><td>516m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>密语联盟密室逃脱(广西大学店)</td><td>名称互证</td><td>3409m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>沃尔玛(民族大道分店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>第九街区真人NPC密室(航洋城店)</td><td>距离就近</td><td>46m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>汇航国际娱乐</td><td>距离就近</td><td>47m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>中影国际影城(会展航洋城)</td><td>距离就近</td><td>70m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>耀KTV</td><td>距离就近</td><td>102m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达广场(青秀店)（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(南宁青秀万达广场店)</td><td>名称互证</td><td>37m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>纯K(绿地中央广场店)</td><td>距离就近</td><td>303m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>好声音(凯业花园店)</td><td>距离就近</td><td>333m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>雀悦鲤·高端棋牌茶馆(绿地店)</td><td>距离就近</td><td>382m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>御萝阁私影</td><td>距离就近</td><td>401m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>民族影城(289上海天地店)</td><td>距离就近</td><td>553m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>长胡棋牌室</td><td>距离就近</td><td>553m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>密语超级密室(江南万达店)</td><td>名称互证</td><td>7392m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>第九街区密室逃脱(大学东路万达广场店)</td><td>名称互证</td><td>8607m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>汇豪轻奢公寓(安吉万达广场店)</td><td>名称互证</td><td>10652m</td><td>4.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达茂(南宁店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幻境空间(南宁万达茂店)</td><td>名称互证</td><td>205m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中山路万象汇（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影天际影城(丽原天际店)</td><td>距离就近</td><td>315m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>诡谈密室逃脱</td><td>距离就近</td><td>442m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>囹圄实景剧情密室逃脱(国贸店)</td><td>距离就近</td><td>452m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>真叫人头大密室剧本杀(国贸店)</td><td>距离就近</td><td>453m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>零点实景密室体验馆(国贸店)</td><td>距离就近</td><td>453m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>密语超级密室(南宁旗舰店)</td><td>距离就近</td><td>458m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南宁朝阳印象城（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>长藤鬼校(百盛步行街店)</td><td>距离就近</td><td>153m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>谜阁剧情密室逃脱(新朝阳商业广场店)</td><td>距离就近</td><td>154m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>中影环球影城(百盛步行街店)</td><td>距离就近</td><td>163m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>幻境空间(步行街广场店)</td><td>距离就近</td><td>167m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>天局实景密室逃脱(朝阳广场店)</td><td>距离就近</td><td>400m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>青川鬼校·沉浸式探灵屋</td><td>距离就近</td><td>465m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>第六空间密玩城密室逃脱(西关新天地商业广场店)</td><td>距离就近</td><td>503m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>513m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>513m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南宁蓝鲸世界（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>南宁蓝鲸世界</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>拾料萌宠乐园(南宁蓝鲸世界店)</td><td>名称互证</td><td>74m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>南宁吉庆旅馆(江南客运站地铁站店)</td><td>距离就近</td><td>593m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万茂广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>第九街区密室逃脱(大学东路万达广场店)</td><td>名称互证</td><td>24m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>牧野繁星女生青年旅舍(广西大学店)</td><td>距离就近</td><td>186m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>南宁美蓝太空舱青年公寓(广西大学店)</td><td>距离就近</td><td>275m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>南宁鑫海宾馆(广西大学地铁站店)</td><td>距离就近</td><td>464m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>密语联盟密室逃脱(广西大学店)</td><td>距离就近</td><td>488m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>嬉猫所猫舍犬舍宠物基地萌宠乐园</td><td>距离就近</td><td>497m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>南宁朝鑫宾馆(富德商业广场店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>南宁朝鑫宾馆(富德商业广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(南宁青秀万达广场店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(南宁青秀万达广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>好声音(凯业花园店)</td><td>距离就近</td><td>302m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>纯K(绿地中央广场店)</td><td>距离就近</td><td>316m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>雀悦鲤·高端棋牌茶馆(绿地店)</td><td>距离就近</td><td>399m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>御萝阁私影</td><td>距离就近</td><td>419m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>长胡棋牌室</td><td>距离就近</td><td>565m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>民族影城(289上海天地店)</td><td>距离就近</td><td>570m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(长虹路万科广场店)</td><td>名称互证</td><td>2136m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>民族影城(289上海天地店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>民族影城(289上海天地店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>御萝阁私影</td><td>距离就近</td><td>153m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>雀悦鲤·高端棋牌茶馆(绿地店)</td><td>距离就近</td><td>170m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>纯K(绿地中央广场店)</td><td>距离就近</td><td>258m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>万达影城(南宁青秀万达广场店)</td><td>距离就近</td><td>570m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>民族影城(民族大道店)</td><td>名称互证</td><td>3285m</td><td>4.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>雀公馆(金湖广场店)（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>雀公馆(金湖广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>浪速雀庄·立直麻将·雀魂(南宁店)</td><td>距离就近</td><td>12m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>温菲派对娱乐</td><td>距离就近</td><td>218m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>歌迷时代量贩KTV(金湖店)</td><td>距离就近</td><td>254m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>雀次元棋牌室</td><td>距离就近</td><td>261m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>雀里雀雀24h棋牌馆</td><td>距离就近</td><td>265m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>竹也棋牌(金湖店)</td><td>距离就近</td><td>304m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>雀悦汇棋牌室</td><td>距离就近</td><td>306m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>无忧公社24h自助棋牌研究院</td><td>距离就近</td><td>310m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>中影国际影城(水晶城店)</td><td>距离就近</td><td>320m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>桂景大酒店</td><td>距离就近</td><td>359m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>胡牌乐棋牌室</td><td>距离就近</td><td>370m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>南宁天利宾馆(广西医大开元琅东医院金湖广场地铁站店)</td><td>距离就近</td><td>521m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>百分百HC电音派对.量贩KTV</td><td>距离就近</td><td>541m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>雀悦鲤·高端棋牌茶馆(绿地店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>雀悦鲤·高端棋牌茶馆(绿地店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>御萝阁私影</td><td>距离就近</td><td>29m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>纯K(绿地中央广场店)</td><td>距离就近</td><td>93m</td><td>4.8</td><td>§11</td></tr>
+<tr><td>民族影城(289上海天地店)</td><td>距离就近</td><td>170m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>万达影城(南宁青秀万达广场店)</td><td>距离就近</td><td>399m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>雀悦鲤·高端棋牌茶馆(埌西店)</td><td>名称互证</td><td>2820m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>KKV(西关路店)（11 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>青川鬼校·沉浸式探灵屋</td><td>距离就近</td><td>54m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>第六空间密玩城密室逃脱(西关新天地商业广场店)</td><td>距离就近</td><td>98m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>天局实景密室逃脱(朝阳广场店)</td><td>距离就近</td><td>112m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>谜阁剧情密室逃脱(新朝阳商业广场店)</td><td>距离就近</td><td>337m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>宇通酒店(南宁朝阳火车站地铁站店)</td><td>距离就近</td><td>449m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>457m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>自由空间(民生路步行街店)</td><td>距离就近</td><td>457m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>长藤鬼校(百盛步行街店)</td><td>距离就近</td><td>469m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>中影环球影城(百盛步行街店)</td><td>距离就近</td><td>472m</td><td>4.7</td><td>§11</td></tr>
+<tr><td>幸福蓝海国际影城(南宁店)</td><td>距离就近</td><td>480m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>幻境空间(步行街广场店)</td><td>距离就近</td><td>490m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（31 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>精通101酒店南宁葛村店大堂</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>5.0</td><td>—</td><td>精通101酒店(南宁朝阳广场东葛路店)</td></tr>
+<tr><td>✅A-</td><td>南宁初见酒店(南宁北站康和城商业广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>灵源路80号</td></tr>
+<tr><td>✅A-</td><td>武鸣区锦华旅馆(南宁)</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.9</td><td>—</td><td>五岭路85号</td></tr>
+<tr><td>✅A-</td><td>汇豪轻奢公寓(安吉万达广场店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.9</td><td>—</td><td>丰达一支路汇豪公馆1栋20楼</td></tr>
+<tr><td>✅A-</td><td>南宁锦都旅馆(武鸣东盟经济技术开发区店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.8</td><td>—</td><td>人民路43号</td></tr>
+<tr><td>✅A-</td><td>城市便捷酒店(南宁火车站店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.8</td><td>—</td><td>衡阳街道中华路72号(南宁火车站旁边)</td></tr>
+<tr><td>✅A-</td><td>通泰宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.8</td><td>—</td><td>仙葫大道西184号f区5号</td></tr>
+<tr><td>✅A-</td><td>南宁聖翔公寓(师范大学武鸣校区店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.7</td><td>—</td><td>城厢镇红岭社区五里路126号</td></tr>
+<tr><td>✅A-</td><td>南宁鸿进酒店</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>玉龙一里一号(玉洞地铁站A口步行320米)</td></tr>
+<tr><td>✅A-</td><td>南宁吉庆旅馆(江南客运站地铁站店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>江南路烟墩岭22号</td></tr>
+<tr><td>✅A-</td><td>牧野繁星女生青年旅舍(广西大学店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.6</td><td>—</td><td>大学东路35号瀚林学府二期19栋B单元十四层1402号房</td></tr>
+<tr><td>✅A-</td><td>万里行宾馆(马山县汽车总站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>白山镇同富街10号(原汽车站旁)</td></tr>
+<tr><td>✅A-</td><td>南宁朝鑫宾馆(富德商业广场店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>五一西路今朝大厦斜对面</td></tr>
+<tr><td>✅B</td><td>自由空间(民生路步行街店)</td><td>体育休闲服务;娱乐场所;KTV｜住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>51.00</td><td>民生路110号竹篱笆</td></tr>
+<tr><td>✅B</td><td>南宁美蓝太空舱青年公寓(广西大学店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>大学东路31号时代天骄A座20楼</td></tr>
+<tr><td>✅B</td><td>天海宾馆(思贤路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>思贤路5-2号(阳光100城市广场)</td></tr>
+<tr><td>✅B</td><td>圣展酒店A座</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.3</td><td>—</td><td>金湖南路49号</td></tr>
+<tr><td>⚠️</td><td>华星酒店(暂停营业)</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>4.1</td><td>—</td><td>七星路125号</td></tr>
+<tr><td>⚠️</td><td>来客宾馆(友爱北路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>友爱北路水利局对面</td></tr>
+<tr><td>⚠️</td><td>南宁天利宾馆(广西医大开元琅东医院金湖广场地铁站店)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>琅东金湖路11组11栋1号</td></tr>
+<tr><td>⚠️</td><td>桂景大酒店</td><td>住宿服务;宾馆酒店;五星级宾馆</td><td>4.0</td><td>—</td><td>文信路1号桂林大厦</td></tr>
+<tr><td>⚠️</td><td>优程八桂酒店(南宁桃源路店)</td><td>住宿服务;宾馆酒店;经济型连锁酒店</td><td>4.0</td><td>—</td><td>桃源路70-3号(近市第六职业学校)</td></tr>
+<tr><td>⚠️</td><td>宇通酒店(南宁朝阳火车站地铁站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>朝阳街道朝阳路72-1号新上海大厦12楼</td></tr>
+<tr><td>⚠️</td><td>南宁市武鸣区佳恒旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.0</td><td>—</td><td>城厢镇东鸣路345号</td></tr>
+<tr><td>⚠️</td><td>南宁鑫海宾馆(广西大学地铁站店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>大学东路29号一号线地铁广西大学站K出口</td></tr>
+<tr><td>⚠️</td><td>祥龙旅馆(虎邱路)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.0</td><td>—</td><td>明秀路虎邱村7-1号</td></tr>
+<tr><td>⚠️</td><td>圆子酒店(南宁金湖广场琅西地铁口店)</td><td>住宿服务;宾馆酒店;四星级宾馆</td><td>3.9</td><td>—</td><td>金湖南路49号</td></tr>
+<tr><td>⚠️</td><td>上林东方宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>明山路190号</td></tr>
+<tr><td>⚠️</td><td>马山雅馨宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>白山镇银峰大道6号</td></tr>
+<tr><td>⚠️</td><td>金凯商务宾馆(大学东路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>大学东路168号2层</td></tr>
+<tr><td>❌</td><td>里仁宾馆(平西支一路店)</td><td>住宿服务;旅馆招待所;旅馆招待所｜住宿服务;宾馆酒店;宾馆酒店</td><td>3.3</td><td>—</td><td>平西村平西一支路26号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>9</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/南宁市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>10 个 POI 无评分</strong>，暂标 ⚠️：迷你居小区、动物园(地铁站)、南宁动物园售票处、南宁动物园第2停车场、动物园(公交站)</li><li><input type="checkbox" disabled> 儿童游乐 54 家，其中场内 0 家、独立 54 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 10 个区县：上林县、兴宁区、横州市、武鸣区、江南区、良庆区、西乡塘区、邕宁区、青秀区、马山县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

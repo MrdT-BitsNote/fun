@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>酒泉市 · 甘肃省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/甘肃省.html">← 返回甘肃省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>酒泉市 · 甘肃省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:19:23  ·  POI 总量：173（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>173</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>94%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 103 · 成人娱乐 120 · 儿童娱乐 15 · 酒店 32 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>甘肃省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>7 个</td></tr>
+<tr><td>街道/镇/乡</td><td>89 个</td></tr>
+<tr><td>区县构成</td><td>县级市×2、自治县×2、县×2、市辖区×1</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>肃州区</td><td>109</td><td>63%</td></tr>
+<tr><td>敦煌市</td><td>23</td><td>13%</td></tr>
+<tr><td>瓜州县</td><td>16</td><td>9%</td></tr>
+<tr><td>玉门市</td><td>14</td><td>8%</td></tr>
+<tr><td>金塔县</td><td>8</td><td>5%</td></tr>
+<tr><td>阿克塞哈萨克族自治县</td><td>3</td><td>2%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（103 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>37</td></tr>
+<tr><td>购物中心/综合体</td><td>24</td></tr>
+<tr><td>批发城</td><td>19</td></tr>
+<tr><td>百货/商场</td><td>11</td></tr>
+<tr><td>商业街</td><td>3</td></tr>
+<tr><td>夜市</td><td>3</td></tr>
+<tr><td>奥特莱斯</td><td>3</td></tr>
+<tr><td>步行街</td><td>2</td></tr>
+<tr><td>美食街/小吃街</td><td>1</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（103 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>东方广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>13</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>唯秀量贩式KTV(大明步行街店)</td><td>步行街</td><td>4.4</td><td>0</td><td>15</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>酒泉新华宾馆(汉唐美食街店)</td><td>美食街/小吃街</td><td>4.3</td><td>0</td><td>14</td><td>1</td><td>3</td></tr>
+<tr><td>B</td><td>横店电影城(东方广场店)</td><td>其他商业载体</td><td>4.3</td><td>0</td><td>13</td><td>1</td><td>3</td></tr>
+<tr><td>B</td><td>鑫利新天地</td><td>百货/商场</td><td>4.3</td><td>0</td><td>13</td><td>0</td><td>3</td></tr>
+<tr><td>B</td><td>欢乐颂KTV派对</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>12</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>富康购物中心(富康路)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>酒泉万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>党校宾馆(乐园巷)</td><td>商业街</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>4</td></tr>
+<tr><td>C</td><td>万达影城(广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>益旺国际购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>4</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>敦煌宏鑫商务酒店(沙州夜市风情城店)</td><td>夜市</td><td>4.5</td><td>0</td><td>2</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>乐都KTV(广场东路店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>6</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>酒泉飞天数字影院</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>敦煌国际影城(阳关中路店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>3</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>益旺综超(益旺国际购物广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>3</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>好想来省钱超市(敦煌富森广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>4</td></tr>
+<tr><td>C</td><td>零食有鸣批发超市(益旺国际购物广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>3</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>彩虹桥批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>5</td><td>1</td><td>4</td></tr>
+<tr><td>C</td><td>福华综合批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>洪洋商业广场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>6</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>上亿西部商贸城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>光明·印象城</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>富森时代影城(敦煌店)</td><td>其他商业载体</td><td>4.4</td><td>0</td><td>1</td><td>0</td><td>3</td></tr>
+<tr><td>C</td><td>北京华联生活超市(富康购物中心店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>宏泰市场</td><td>百货/商场</td><td>4.4</td><td>0</td><td>2</td><td>0</td><td>7</td></tr>
+<tr><td>C</td><td>新天地</td><td>百货/商场</td><td>4.4</td><td>0</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>玉门益旺国际购物广场</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>商联超市(肃州市场店)</td><td>购物中心/综合体</td><td>4.3</td><td>0</td><td>9</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>奥特莱斯丝路小镇营销中心</td><td>奥特莱斯</td><td>4.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>奥特莱斯丝路小镇(建设中)</td><td>奥特莱斯</td><td>4.3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>飞天数字影城(阳关中路店)</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>3</td><td>0</td><td>7</td></tr>
+<tr><td>C</td><td>玉门益旺国际影城</td><td>其他商业载体</td><td>4.2</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>C</td><td>火狐狸服装批发城(建国路店)</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>1</td><td>2</td></tr>
+<tr><td>C</td><td>敦煌商城</td><td>百货/商场</td><td>4.2</td><td>0</td><td>3</td><td>0</td><td>5</td></tr>
+<tr><td>C</td><td>敦煌新华客栈</td><td>其他商业载体</td><td>4.1</td><td>0</td><td>4</td><td>0</td><td>7</td></tr>
+<tr><td>C</td><td>玉海快捷商务宾馆(瓜州夜市店)</td><td>夜市</td><td>4.1</td><td>0</td><td>1</td><td>0</td><td>4</td></tr>
+<tr><td>C</td><td>萌宠之家</td><td>其他商业载体</td><td>4.1</td><td>0</td><td>7</td><td>1</td><td>4</td></tr>
+<tr><td>C</td><td>百幕(洪洋商业广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>6</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>迷歌纯k(洪洋商业广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>6</td><td>1</td><td>0</td></tr>
+</tbody></table></div>
+<h3>东方广场 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 3</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：东大街1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>东方广场</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>唯秀量贩式KTV(大明步行街店)、横店电影城(东方广场店)、欢乐颂KTV派对</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>酒泉新华宾馆(汉唐美食街店)、酒泉航天饭店、酒泉福星宾馆</td></tr>
+</tbody></table></div>
+<h3>唯秀量贩式KTV(大明步行街店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 3</li><li><strong>载体类型</strong>：步行街（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：仓门街与大明步行街交叉口西南40米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 15 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>唯秀量贩式KTV(大明步行街店)</td></tr>
+<tr><td>成人娱乐</td><td>15</td><td>唯秀量贩式KTV(大明步行街店)、横店电影城(东方广场店)、欢乐颂KTV派对</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>酒泉航天饭店、酒泉新华宾馆(汉唐美食街店)、酒泉福星宾馆</td></tr>
+</tbody></table></div>
+<h3>酒泉新华宾馆(汉唐美食街店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 3</li><li><strong>载体类型</strong>：美食街/小吃街（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：西南街道酒泉新华宾馆</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>酒泉新华宾馆(汉唐美食街店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>唯秀量贩式KTV(大明步行街店)、横店电影城(东方广场店)、欢乐颂KTV派对</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宠之家</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>酒泉新华宾馆(汉唐美食街店)、酒泉航天饭店、酒泉福星宾馆</td></tr>
+</tbody></table></div>
+<h3>横店电影城(东方广场店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：北大街东方广场4层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>横店电影城(东方广场店)</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>唯秀量贩式KTV(大明步行街店)、横店电影城(东方广场店)、欢乐颂KTV派对</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>萌宠之家</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>酒泉新华宾馆(汉唐美食街店)、酒泉航天饭店、酒泉福星宾馆</td></tr>
+</tbody></table></div>
+<h3>鑫利新天地 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 13 / 酒店 3</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：北大街2号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 0 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>鑫利新天地</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>唯秀量贩式KTV(大明步行街店)、横店电影城(东方广场店)、欢乐颂KTV派对</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>酒泉新华宾馆(汉唐美食街店)、酒泉航天饭店、酒泉福星宾馆</td></tr>
+</tbody></table></div>
+<h3>欢乐颂KTV派对 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 12 / 酒店 2</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：东大街1号东方广场F2层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 12 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>欢乐颂KTV派对</td></tr>
+<tr><td>成人娱乐</td><td>12</td><td>唯秀量贩式KTV(大明步行街店)、横店电影城(东方广场店)、欢乐颂KTV派对</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>酒泉新华宾馆(汉唐美食街店)、酒泉航天饭店</td></tr>
+</tbody></table></div>
+<h3>富康购物中心(富康路) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：富康路4号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>富康购物中心(富康路)</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>酒泉飞天数字影院、魅KTV•AI辅唱(酒泉富康店)、四个朋友·自助棋牌(中天城苑店)</td></tr>
+</tbody></table></div>
+<h3>酒泉万达广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：富康西路1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>酒泉万达广场</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>万达影城(广场店)、雀掌门24h自助棋牌茶室、茗仕庄园(棋牌茶座)</td></tr>
+</tbody></table></div>
+<h3>党校宾馆(乐园巷) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：沙州镇乐园巷106号中段沙州乐园东口</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 4</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>党校宾馆(乐园巷)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>敦煌国际影城(阳关中路店)、飞天数字影城(阳关中路店)、大地影院(益旺国际购物广场店)</td></tr>
+<tr><td>酒店配套</td><td>4</td><td>党校宾馆(乐园巷)、驼铃餐厅、敦煌金龙精品酒店(敦煌夜市店)</td></tr>
+</tbody></table></div>
+<h3>万达影城(广场店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：酒泉万达广场</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万达影城(广场店)</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>万达影城(广场店)、雀掌门24h自助棋牌茶室、茗仕庄园(棋牌茶座)</td></tr>
+</tbody></table></div>
+<h3>益旺国际购物广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：沙州镇阳关中路400号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 4 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>益旺国际购物广场</td></tr>
+<tr><td>成人娱乐</td><td>4</td><td>敦煌国际影城(阳关中路店)、飞天数字影城(阳关中路店)、玉门益旺国际影城</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>党校宾馆(乐园巷)、敦煌宏鑫商务酒店(沙州夜市风情城店)、驼铃餐厅</td></tr>
+</tbody></table></div>
+<h3>敦煌宏鑫商务酒店(沙州夜市风情城店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：夜市（住宿服务;宾馆酒店;三星级宾馆）</li><li><strong>地址</strong>：文昌南路277号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>敦煌宏鑫商务酒店(沙州夜市风情城店)</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>敦煌国际影城(阳关中路店)、大地影院(益旺国际购物广场店)</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>敦煌宏鑫商务酒店(沙州夜市风情城店)、敦煌新华客栈</td></tr>
+</tbody></table></div>
+<h3>乐都KTV(广场东路店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：世纪广场东路11号洪洋商业广场3号楼3层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 6 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>乐都KTV(广场东路店)</td></tr>
+<tr><td>成人娱乐</td><td>6</td><td>乐都KTV(广场东路店)、魅KTV•AI辅唱(酒泉富康店)、迷歌纯k(洪洋商业广场店)</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>玉兰园(敦煌路)</td></tr>
+</tbody></table></div>
+<h3>酒泉飞天数字影院 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：肃州路19号富康购物中心9号3层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>酒泉飞天数字影院</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>酒泉飞天数字影院、魅KTV•AI辅唱(酒泉富康店)、四个朋友·自助棋牌(中天城苑店)</td></tr>
+</tbody></table></div>
+<h3>敦煌国际影城(阳关中路店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：益旺国际购物广场9层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 3 · 儿童娱乐 0 · 酒店 5</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>敦煌国际影城(阳关中路店)</td></tr>
+<tr><td>成人娱乐</td><td>3</td><td>敦煌国际影城(阳关中路店)、飞天数字影城(阳关中路店)、大地影院(益旺国际购物广场店)</td></tr>
+<tr><td>酒店配套</td><td>5</td><td>党校宾馆(乐园巷)、敦煌宏鑫商务酒店(沙州夜市风情城店)、驼铃餐厅</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（120 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他娱乐场所</td><td>16</td></tr>
+<tr><td>棋牌室</td><td>15</td></tr>
+<tr><td>电影院</td><td>14</td></tr>
+<tr><td>KTV</td><td>14</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>4</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>万达影城(广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>31.00</td><td>酒泉万达广场</td></tr>
+<tr><td>✅B</td><td>乐都KTV(广场东路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>53.00</td><td>世纪广场东路11号洪洋商业广场3号楼3层</td></tr>
+<tr><td>✅B</td><td>魅KTV•AI辅唱(酒泉富康店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>59.00</td><td>富康家世界6号楼1层3号店铺飞天艺术宫北侧通道向内50米(富康新质城6号楼1层)</td></tr>
+<tr><td>✅B</td><td>酒泉飞天数字影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>46.00</td><td>肃州路19号富康购物中心9号3层</td></tr>
+<tr><td>✅B</td><td>敦煌国际影城(阳关中路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>42.00</td><td>益旺国际购物广场9层</td></tr>
+<tr><td>✅B</td><td>唯秀量贩式KTV(大明步行街店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>43.00</td><td>仓门街与大明步行街交叉口西南40米</td></tr>
+<tr><td>✅B</td><td>千禧汇KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>73.00</td><td>文体路与金塔路交叉口北120米</td></tr>
+<tr><td>✅B</td><td>富森时代影城(敦煌店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>44.00</td><td>党河东路南769号富森时代广场B1层</td></tr>
+<tr><td>✅B</td><td>歌百汇KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>308.00</td><td>瑞馨苑9-1-5</td></tr>
+<tr><td>✅B</td><td>横店电影城(东方广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>21.00</td><td>北大街东方广场4层</td></tr>
+<tr><td>✅B</td><td>元通电影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>—</td><td>渊泉镇公园路元通市场40号楼二楼</td></tr>
+<tr><td>✅B</td><td>肆方荟棋牌(新天地店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>78.00</td><td>油田生活基地街道世纪大道68号新天地2号楼2-1-10</td></tr>
+<tr><td>✅B</td><td>胡筒里24小时自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>27.00</td><td>宝泉西路18号1-1-6号</td></tr>
+<tr><td>⚠️</td><td>壹号KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>80.00</td><td>西峰镇瓜州路中天岁月魔方8幢</td></tr>
+<tr><td>⚠️</td><td>欢乐颂KTV派对</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>52.00</td><td>东大街1号东方广场F2层</td></tr>
+<tr><td>⚠️</td><td>上影国际影城(金塔店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>18.00</td><td>文化活动中心(航天大道58号)</td></tr>
+<tr><td>⚠️</td><td>飞天数字影城(阳关中路店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>45.00</td><td>阳关中路777号(市政广场对面德克士3层)</td></tr>
+<tr><td>⚠️</td><td>玉门益旺国际影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>33.00</td><td>新市区街道玉关路1号玉门益旺国际购物广场4楼</td></tr>
+<tr><td>⚠️</td><td>雀掌门24h自助棋牌茶室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>13.00</td><td>飞天路金屋雅苑</td></tr>
+<tr><td>⚠️</td><td>四个朋友24小时智慧共享棋牌茶空间(紫瑞苑店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>14.00</td><td>阳关路紫瑞苑北门向东80米42号</td></tr>
+<tr><td>⚠️</td><td>福运茶楼(欧洲苑店)</td><td>其他娱乐场所</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.2</td><td>16.00</td><td>欧洲园小区南边第一个门店</td></tr>
+<tr><td>⚠️</td><td>茗仕庄园(棋牌茶座)</td><td>棋牌室</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.2</td><td>27.00</td><td>正大路12号紫苑居小区东门4-1</td></tr>
+<tr><td>⚠️</td><td>把把胡自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>21.00</td><td>东北街街道邮电街11号东方名都景苑1号楼1-11号门店2层</td></tr>
+<tr><td>⚠️</td><td>百幕(洪洋商业广场店)</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.1</td><td>47.00</td><td>洪洋商业广场南门四楼</td></tr>
+<tr><td>⚠️</td><td>迷歌纯k(洪洋商业广场店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>78.00</td><td>洪洋广场东南门4号楼4层</td></tr>
+<tr><td>⚠️</td><td>芒果AI智助KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>—</td><td>西北街街道仓门街38号新阳国际</td></tr>
+<tr><td>⚠️</td><td>卡莎CASA量贩KTV(仓门街店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>92.00</td><td>西北街道大明步行街啤酒广场西侧</td></tr>
+<tr><td>⚠️</td><td>建安时代国际影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>27.00</td><td>建安商贸大楼</td></tr>
+<tr><td>⚠️</td><td>光明印象影院(光明印象城店)</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.1</td><td>38.00</td><td>光明印象城3楼(可从益禾堂对面北门进去)</td></tr>
+<tr><td>⚠️</td><td>四个朋友·自助棋牌(中天城苑店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>15.00</td><td>西南街街道解放路22号中天城苑3号楼2层2-2B号商铺</td></tr>
+<tr><td>⚠️</td><td>雀逍遥24小时自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>17.00</td><td>世博庭院北门东侧2-1-3号</td></tr>
+<tr><td>⚠️</td><td>四个朋友·自助棋牌(月太佳苑店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>16.00</td><td>东南街街道祁连路16号月太佳苑1号楼1-1-2号门店</td></tr>
+<tr><td>⚠️</td><td>头号玩家剧场密室(成林店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>119.00</td><td>西南街街道盘旋西路1号成林大厦B1层西2号</td></tr>
+<tr><td>⚠️</td><td>肃州区艾瑞娱乐火吧</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>68.00</td><td>飞天路24号鑫龙国际电子商贸中心2号楼2层</td></tr>
+<tr><td>⚠️</td><td>解放门电影院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>—</td><td>玉润花园西侧90米</td></tr>
+<tr><td>⚠️</td><td>铁人数字影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>31.00</td><td>铁人大道南侧文化三馆1层</td></tr>
+<tr><td>⚠️</td><td>时光对面</td><td>其他娱乐场所</td><td>餐饮服务;餐饮相关场所;餐饮相关</td><td>4.0</td><td>30.00</td><td>西南街街道敦煌路3号惠泽苑2-1-15号门店</td></tr>
+<tr><td>⚠️</td><td>麻喜24小时棋牌自助</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>20.00</td><td>文体路8号金领广场</td></tr>
+<tr><td>⚠️</td><td>雀舍棋牌娱乐会所</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>52.00</td><td>建设路3号楼建设路3楼1-4号</td></tr>
+<tr><td>⚠️</td><td>梦星谷·沉浸式密室逃脱(东方广场店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>84.00</td><td>东方广场负一层(6号电梯旁)</td></tr>
+<tr><td>⚠️</td><td>好声音KTV(洪洋商业广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>58.00</td><td>洪洋商业广场3号楼二层(阳光汇门口观光电梯上二楼)</td></tr>
+<tr><td>⚠️</td><td>友唱AI智慧歌咏亭·KTV(肃州万达广场店)</td><td>KTV</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.9</td><td>24.00</td><td>富康西路1号酒泉万达广场F4层</td></tr>
+<tr><td>⚠️</td><td>铭都KTV(西环南路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.9</td><td>23.00</td><td>西大街与西环北路交叉处向南50米路西</td></tr>
+<tr><td>⚠️</td><td>大禹娱乐会所</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.9</td><td>240.00</td><td>西环南路1号市医院西侧</td></tr>
+<tr><td>⚠️</td><td>昱华国际</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.8</td><td>86.00</td><td>肃州路与玉门东路交叉口北260米</td></tr>
+<tr><td>⚠️</td><td>宏兴国会量贩KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.8</td><td>69.00</td><td>新城街道盘旋西路7号宏兴国际大酒店</td></tr>
+<tr><td>⚠️</td><td>嘉禾私享影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>156.00</td><td>卫生街东方名都翠园3-39号门店</td></tr>
+<tr><td>⚠️</td><td>阿克塞县数字影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>3.8</td><td>27.00</td><td>和平路4号(文体广电大楼西侧)</td></tr>
+<tr><td>⚠️</td><td>雀圣财阁</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.8</td><td>16.00</td><td>紫瑞苑北门东侧10米2号楼2-2门店</td></tr>
+<tr><td>⚠️</td><td>太平洋影城(元通市场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.7</td><td>44.00</td><td>公园路元通市场4层</td></tr>
+<tr><td>⚠️</td><td>肃州区雀境休闲娱乐室</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;游戏厅</td><td>3.7</td><td>13.00</td><td>西南街街道霞飞路2号14号楼1-6号门店</td></tr>
+<tr><td>⚠️</td><td>约麻棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.7</td><td>17.00</td><td>东北街街道东大街与邮电街交叉口东北60米</td></tr>
+<tr><td>⚠️</td><td>极昼真人剧场密室·剧本(东方新天地店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.6</td><td>111.00</td><td>新阳国际三楼</td></tr>
+<tr><td>⚠️</td><td>千寻密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>3.6</td><td>93.00</td><td>南大街与肃园街交叉口南约100米</td></tr>
+<tr><td>⚠️</td><td>听雀阁24小时自助棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.6</td><td>17.00</td><td>西峰镇宝泉西路红豆庭院</td></tr>
+<tr><td>⚠️</td><td>约麻24h自助棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.6</td><td>36.00</td><td>敦煌路31号</td></tr>
+<tr><td>⚠️</td><td>老电影院</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.5</td><td>—</td><td>县府大道与榆林路交叉口东100米</td></tr>
+<tr><td>⚠️</td><td>棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.5</td><td>18.00</td><td>南城巷与西文化街交叉口南80米</td></tr>
+<tr><td>⚠️</td><td>茗月轩(飞翔路店)</td><td>其他娱乐场所</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>3.5</td><td>—</td><td>解放路85号广源小区综合楼1号门店</td></tr>
+<tr><td>❌</td><td>麦霸KTV(洪洋商业广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>3.4</td><td>64.00</td><td>广场东路11号洪洋商业广场</td></tr>
+</tbody></table></div>
+<p>（另 3 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（15 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>迷你动物园/萌宠</td><td>11</td></tr>
+<tr><td>其他儿童场所</td><td>4</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>一萌宠医</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>雄关路紫藤家园2号门店</td></tr>
+<tr><td>⚠️</td><td>迷你造型</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>街道玉关南路东侧玉门云返生活超市益旺国际店外租区南侧1号</td></tr>
+<tr><td>⚠️</td><td>爱德康宠物生活馆(瓜州店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>新洲里市场新洲里超市南侧新日电动车对面</td></tr>
+<tr><td>⚠️</td><td>萌宠之家</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>南环东路与南小巷交叉口北20米</td></tr>
+<tr><td>⚠️</td><td>西汉酒泉胜迹-动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>公园路27号向东400米西汉酒泉胜迹景区</td></tr>
+<tr><td>⚠️</td><td>阿克塞野生动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.0</td><td>282县道</td></tr>
+<tr><td>⚠️</td><td>北郊动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>酒银路1公里处北郊公园(东北角)</td></tr>
+<tr><td>⚠️</td><td>心屿萌宠宠物店</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>阳光路田园居北门五号楼5-1-8</td></tr>
+<tr><td>⚠️</td><td>酒泉动物园(建设中)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.7</td><td>清泉路东侧园林西路北侧</td></tr>
+<tr><td>❌</td><td>酒泉市迷你超市(西环北路店)</td><td>其他儿童场所</td><td>独立</td><td>3.2</td><td>西环北路51-3号</td></tr>
+<tr><td>❌</td><td>西汉酒泉胜迹景区动物园-非洲狮馆</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>西汉酒泉胜迹-动物园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>西汉酒泉胜迹-动物园售票处</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>西汉酒泉胜迹-动物园内(东侧)</td></tr>
+<tr><td>⚠️</td><td>玉兰园(敦煌路)</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>敦煌路与神舟路交叉口西南200米</td></tr>
+<tr><td>⚠️</td><td>甘肃工会户外劳动者驿站阿克塞县野生动物保护站站点</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>野生动物园</td></tr>
+<tr><td>⚠️</td><td>酒泉市动物园生态停车场</td><td>迷你动物园/萌宠</td><td>独立</td><td>—</td><td>园林西路与瓜州路交叉口西南80米</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（57 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>富康购物中心(富康路)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>富康路4号</td></tr>
+<tr><td>✅A-</td><td>酒泉万达广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>富康西路1号</td></tr>
+<tr><td>✅A-</td><td>东方广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>东大街1号</td></tr>
+<tr><td>✅A-</td><td>益旺国际购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>沙州镇阳关中路400号</td></tr>
+<tr><td>✅B</td><td>益旺综超(益旺国际购物广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>阳关中路400号</td></tr>
+<tr><td>✅B</td><td>好想来省钱超市(敦煌富森广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>党河东路南769号富森时代广场2号楼F1层</td></tr>
+<tr><td>✅B</td><td>零食有鸣批发超市(益旺国际购物广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>关中路400号益旺国际购物广场</td></tr>
+<tr><td>✅B</td><td>彩虹桥批发市场</td><td>批发城</td><td>4.5</td><td>1</td><td>0</td><td>南大街46号</td></tr>
+<tr><td>✅B</td><td>福华综合批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>祁连路4号瑞祥花园5号楼5单元</td></tr>
+<tr><td>✅B</td><td>洪洋商业广场</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>广场东路11号</td></tr>
+<tr><td>✅B</td><td>上亿西部商贸城</td><td>百货/商场</td><td>4.5</td><td>0</td><td>0</td><td>祁连路102号</td></tr>
+<tr><td>✅B</td><td>光明·印象城</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>新城巷与南市街交叉口东北160米</td></tr>
+<tr><td>✅B</td><td>北京华联生活超市(富康购物中心店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>肃州路19号</td></tr>
+<tr><td>✅B</td><td>宏泰市场</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>阳关中路27号</td></tr>
+<tr><td>✅B</td><td>新天地</td><td>百货/商场</td><td>4.4</td><td>1</td><td>0</td><td>世纪大道68号</td></tr>
+<tr><td>✅B</td><td>玉门益旺国际购物广场</td><td>购物中心/综合体</td><td>4.4</td><td>1</td><td>0</td><td>南环中路1号</td></tr>
+<tr><td>✅B</td><td>商联超市(肃州市场店)</td><td>购物中心/综合体</td><td>4.3</td><td>1</td><td>0</td><td>尚武街肃州市场B1层</td></tr>
+<tr><td>✅B</td><td>奥特莱斯丝路小镇营销中心</td><td>奥特莱斯</td><td>4.3</td><td>0</td><td>0</td><td>三期风电大道与肃北路交汇处</td></tr>
+<tr><td>✅B</td><td>奥特莱斯丝路小镇(建设中)</td><td>奥特莱斯</td><td>4.3</td><td>0</td><td>0</td><td>玉关街与南滨河西路交叉口南400米</td></tr>
+<tr><td>✅B</td><td>鑫利新天地</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>北大街2号</td></tr>
+<tr><td>⚠️</td><td>火狐狸服装批发城(建国路店)</td><td>批发城</td><td>4.2</td><td>1</td><td>0</td><td>南门大众街与建国路交叉口西南50米</td></tr>
+<tr><td>⚠️</td><td>敦煌商城</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>阳关中路389号</td></tr>
+<tr><td>⚠️</td><td>百幕(洪洋商业广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>1</td><td>0</td><td>洪洋商业广场南门四楼</td></tr>
+<tr><td>⚠️</td><td>迷歌纯k(洪洋商业广场店)</td><td>购物中心/综合体</td><td>4.1</td><td>1</td><td>0</td><td>洪洋广场东南门4号楼4层</td></tr>
+<tr><td>⚠️</td><td>佳门口生活超市</td><td>购物中心/综合体</td><td>4.1</td><td>0</td><td>0</td><td>肃州区经济技术开发区(西园)光泽路共享中心1号楼一层-2室</td></tr>
+<tr><td>⚠️</td><td>零食有鸣批发超市(油田基地店)</td><td>批发城</td><td>4.1</td><td>1</td><td>0</td><td>广场东路11号洪洋商业广场F1层</td></tr>
+<tr><td>⚠️</td><td>鑫昌临火狐狸服装批发城</td><td>批发城</td><td>4.1</td><td>0</td><td>0</td><td>北大街西侧大明步行街负一层</td></tr>
+<tr><td>⚠️</td><td>飞天商场</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>阳关东路1号</td></tr>
+<tr><td>⚠️</td><td>鸿瑞超市(纬一路店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>公寓小区2号楼附属1号</td></tr>
+<tr><td>⚠️</td><td>汇悦超市(万达广场酒泉店)</td><td>购物中心/综合体</td><td>4.0</td><td>0</td><td>0</td><td>酒泉万达广场</td></tr>
+<tr><td>⚠️</td><td>义乌商贸城</td><td>百货/商场</td><td>4.0</td><td>1</td><td>0</td><td>卫生街与民意街交叉口东南50米</td></tr>
+<tr><td>⚠️</td><td>好声音KTV(洪洋商业广场店)</td><td>购物中心/综合体</td><td>3.9</td><td>1</td><td>0</td><td>洪洋商业广场3号楼二层(阳光汇门口观光电梯上二楼)</td></tr>
+<tr><td>⚠️</td><td>千家汇服装批发城</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>北大街与大明步行街交叉口西南20米</td></tr>
+<tr><td>⚠️</td><td>华泰批发市场</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>新华街公路段小区西南侧约50米</td></tr>
+<tr><td>⚠️</td><td>大周百货</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>向阳路157号</td></tr>
+<tr><td>⚠️</td><td>瑞景生活超市</td><td>购物中心/综合体</td><td>3.8</td><td>0</td><td>0</td><td>金瑞科创城(中核华辰生活基地)西侧230米</td></tr>
+<tr><td>⚠️</td><td>唯佳五金百货超市</td><td>百货/商场</td><td>3.8</td><td>0</td><td>0</td><td>柳园镇南大街10号</td></tr>
+<tr><td>⚠️</td><td>向阳超市</td><td>购物中心/综合体</td><td>3.8</td><td>0</td><td>0</td><td>生地湾农场三队</td></tr>
+<tr><td>⚠️</td><td>十九号综合超市</td><td>购物中心/综合体</td><td>3.8</td><td>0</td><td>0</td><td>矿区汽车站对面</td></tr>
+<tr><td>⚠️</td><td>万盛花卉批发</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>泉湖镇永久村六组千卉阁花卉对面</td></tr>
+<tr><td>⚠️</td><td>衣世界服装批发城(义乌商贸城店)</td><td>百货/商场</td><td>3.7</td><td>0</td><td>0</td><td>东50米义乌商贸城负一楼</td></tr>
+<tr><td>⚠️</td><td>鹏鸿商贸家具酒店用品批发城</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>新城街道雄关路118号互联网贸易中心12号楼二楼卖场</td></tr>
+<tr><td>⚠️</td><td>金塔县农产品综合批发市场</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>航天大道100号</td></tr>
+<tr><td>⚠️</td><td>火狐狸批发服装城(国汇商务快捷宾馆店)</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>西部天地瓜州时代购物中心西门旁</td></tr>
+<tr><td>⚠️</td><td>敦煌壹品鲜海鲜水产批发</td><td>批发城</td><td>3.7</td><td>0</td><td>0</td><td>沙州镇文昌北路127号</td></tr>
+<tr><td>⚠️</td><td>玉门市赤金镇韭菜批发市场</td><td>批发城</td><td>3.6</td><td>0</td><td>0</td><td>赤金镇</td></tr>
+<tr><td>⚠️</td><td>新大新小商品批发城</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>南大街与西大街交叉口南60米</td></tr>
+<tr><td>⚠️</td><td>中豪石材批发市场</td><td>批发城</td><td>3.5</td><td>0</td><td>0</td><td>酒泉经济技术开发区西郊工业园区闽发建材城</td></tr>
+<tr><td>❌</td><td>麦霸KTV(洪洋商业广场店)</td><td>购物中心/综合体</td><td>3.4</td><td>0</td><td>0</td><td>广场东路11号洪洋商业广场</td></tr>
+<tr><td>❌</td><td>肃州区小义乌百货城</td><td>百货/商场</td><td>3.4</td><td>0</td><td>0</td><td>南大街69-1-10号门店(负一楼)</td></tr>
+</tbody></table></div>
+<p>（另 7 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>富康购物中心(富康路)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>酒泉飞天数字影院</td><td>名称互证</td><td>107m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光对面</td><td>距离就近</td><td>256m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(酒泉富康店)</td><td>距离就近</td><td>306m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(中天城苑店)</td><td>距离就近</td><td>596m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>酒泉万达广场（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>友唱AI智慧歌咏亭·KTV(肃州万达广场店)</td><td>名称互证</td><td>52m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>万达影城(广场店)</td><td>名称互证</td><td>98m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>肃州区艾瑞娱乐火吧</td><td>距离就近</td><td>351m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雀掌门24h自助棋牌茶室</td><td>距离就近</td><td>428m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>茗仕庄园(棋牌茶座)</td><td>距离就近</td><td>583m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>东方广场（16 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>梦星谷·沉浸式密室逃脱(东方广场店)</td><td>名称互证</td><td>4m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>横店电影城(东方广场店)</td><td>名称互证</td><td>69m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>欢乐颂KTV派对</td><td>名称互证</td><td>72m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>酒泉新华宾馆(汉唐美食街店)</td><td>距离就近</td><td>235m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>约麻棋牌室</td><td>距离就近</td><td>256m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>嘉禾私享影院</td><td>距离就近</td><td>270m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>把把胡自助棋牌</td><td>距离就近</td><td>282m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>芒果AI智助KTV</td><td>距离就近</td><td>287m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>唯秀量贩式KTV(大明步行街店)</td><td>距离就近</td><td>288m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>卡莎CASA量贩KTV(仓门街店)</td><td>距离就近</td><td>291m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>极昼真人剧场密室·剧本(东方新天地店)</td><td>距离就近</td><td>309m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>酒泉航天饭店</td><td>距离就近</td><td>338m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>千寻密室</td><td>距离就近</td><td>347m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>横店电影城(酒泉店)</td><td>距离就近</td><td>458m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>酒泉福星宾馆</td><td>距离就近</td><td>579m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>棋牌室</td><td>距离就近</td><td>581m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>党校宾馆(乐园巷)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>党校宾馆(乐园巷)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>飞天数字影城(阳关中路店)</td><td>距离就近</td><td>371m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>驼铃餐厅</td><td>距离就近</td><td>458m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>敦煌金龙精品酒店(敦煌夜市店)</td><td>距离就近</td><td>481m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>大地影院(益旺国际购物广场店)</td><td>距离就近</td><td>484m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>通达酒店</td><td>距离就近</td><td>486m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>敦煌国际影城(阳关中路店)</td><td>距离就近</td><td>489m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万达影城(广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>万达影城(广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>友唱AI智慧歌咏亭·KTV(肃州万达广场店)</td><td>距离就近</td><td>132m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>肃州区艾瑞娱乐火吧</td><td>距离就近</td><td>442m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>雀掌门24h自助棋牌茶室</td><td>距离就近</td><td>513m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>茗仕庄园(棋牌茶座)</td><td>距离就近</td><td>584m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>益旺国际购物广场（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大地影院(益旺国际购物广场店)</td><td>名称互证</td><td>20m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>敦煌国际影城(阳关中路店)</td><td>名称互证</td><td>25m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>飞天数字影城(阳关中路店)</td><td>距离就近</td><td>382m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>敦煌宏鑫商务酒店(沙州夜市风情城店)</td><td>距离就近</td><td>399m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>党校宾馆(乐园巷)</td><td>距离就近</td><td>464m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>敦煌新华客栈</td><td>距离就近</td><td>479m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>驼铃餐厅</td><td>距离就近</td><td>509m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>莫高宾馆</td><td>距离就近</td><td>590m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>玉门益旺国际影城</td><td>名称互证</td><td>201479m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>敦煌宏鑫商务酒店(沙州夜市风情城店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>敦煌宏鑫商务酒店(沙州夜市风情城店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>敦煌国际影城(阳关中路店)</td><td>距离就近</td><td>375m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大地影院(益旺国际购物广场店)</td><td>距离就近</td><td>380m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>敦煌新华客栈</td><td>距离就近</td><td>542m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>乐都KTV(广场东路店)（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>乐都KTV(广场东路店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>好声音KTV(洪洋商业广场店)</td><td>距离就近</td><td>24m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>迷歌纯k(洪洋商业广场店)</td><td>距离就近</td><td>82m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>百幕(洪洋商业广场店)</td><td>距离就近</td><td>99m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麦霸KTV(洪洋商业广场店)</td><td>距离就近</td><td>105m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>玉兰园(敦煌路)</td><td>距离就近</td><td>288m</td><td>—</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(酒泉富康店)</td><td>距离就近</td><td>416m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>酒泉飞天数字影院（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>酒泉飞天数字影院</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光对面</td><td>距离就近</td><td>152m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(酒泉富康店)</td><td>距离就近</td><td>274m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>四个朋友·自助棋牌(中天城苑店)</td><td>距离就近</td><td>491m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>麦霸KTV(洪洋商业广场店)</td><td>距离就近</td><td>600m</td><td>3.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>敦煌国际影城(阳关中路店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>敦煌国际影城(阳关中路店)</td><td>名称互证</td><td>0m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>大地影院(益旺国际购物广场店)</td><td>距离就近</td><td>5m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>敦煌宏鑫商务酒店(沙州夜市风情城店)</td><td>距离就近</td><td>375m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>飞天数字影城(阳关中路店)</td><td>距离就近</td><td>397m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>敦煌新华客栈</td><td>距离就近</td><td>480m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>党校宾馆(乐园巷)</td><td>距离就近</td><td>489m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>驼铃餐厅</td><td>距离就近</td><td>522m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>莫高宾馆</td><td>距离就近</td><td>596m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>益旺综超(益旺国际购物广场店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大地影院(益旺国际购物广场店)</td><td>距离就近</td><td>32m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>敦煌国际影城(阳关中路店)</td><td>距离就近</td><td>36m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>飞天数字影城(阳关中路店)</td><td>距离就近</td><td>364m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>敦煌宏鑫商务酒店(沙州夜市风情城店)</td><td>距离就近</td><td>401m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>党校宾馆(乐园巷)</td><td>距离就近</td><td>457m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>敦煌新华客栈</td><td>距离就近</td><td>462m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>驼铃餐厅</td><td>距离就近</td><td>491m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>莫高宾馆</td><td>距离就近</td><td>572m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>好想来省钱超市(敦煌富森广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>富森时代影城(敦煌店)</td><td>距离就近</td><td>65m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>丽都国际大酒店(暂停营业)</td><td>距离就近</td><td>241m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>莫高宾馆</td><td>距离就近</td><td>426m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>敦煌新华客栈</td><td>距离就近</td><td>490m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>驼铃餐厅</td><td>距离就近</td><td>596m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>零食有鸣批发超市(益旺国际购物广场店)（8 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>大地影院(益旺国际购物广场店)</td><td>距离就近</td><td>94m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>敦煌国际影城(阳关中路店)</td><td>距离就近</td><td>97m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>飞天数字影城(阳关中路店)</td><td>距离就近</td><td>314m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>党校宾馆(乐园巷)</td><td>距离就近</td><td>399m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>敦煌新华客栈</td><td>距离就近</td><td>442m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>驼铃餐厅</td><td>距离就近</td><td>444m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>敦煌宏鑫商务酒店(沙州夜市风情城店)</td><td>距离就近</td><td>453m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>莫高宾馆</td><td>距离就近</td><td>539m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>彩虹桥批发市场（10 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>西北宾馆(盘旋中路)</td><td>距离就近</td><td>261m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>棋牌室</td><td>距离就近</td><td>269m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>酒泉丝路神舟大酒店</td><td>距离就近</td><td>274m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>虹钻(西部天地时代国际购物中心店)</td><td>距离就近</td><td>321m</td><td>3.0</td><td>§11</td></tr>
+<tr><td>萌宠之家</td><td>距离就近</td><td>346m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>酒泉福星宾馆</td><td>距离就近</td><td>369m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>千寻密室</td><td>距离就近</td><td>452m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>福运茶楼(欧洲苑店)</td><td>距离就近</td><td>460m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>雀舍棋牌娱乐会所</td><td>距离就近</td><td>574m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>酒泉新华宾馆(汉唐美食街店)</td><td>距离就近</td><td>587m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>福华综合批发市场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>四个朋友·自助棋牌(月太佳苑店)</td><td>距离就近</td><td>275m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>OYO农垦宾馆</td><td>距离就近</td><td>419m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>洪洋商业广场（7 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>好声音KTV(洪洋商业广场店)</td><td>名称互证</td><td>60m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>乐都KTV(广场东路店)</td><td>名称互证</td><td>62m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>麦霸KTV(洪洋商业广场店)</td><td>名称互证</td><td>102m</td><td>3.4</td><td>§11</td></tr>
+<tr><td>迷歌纯k(洪洋商业广场店)</td><td>名称互证</td><td>109m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>百幕(洪洋商业广场店)</td><td>名称互证</td><td>120m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>玉兰园(敦煌路)</td><td>距离就近</td><td>333m</td><td>—</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(酒泉富康店)</td><td>距离就近</td><td>369m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>光明·印象城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>光明印象影院(光明印象城店)</td><td>距离就近</td><td>0m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>唯秀量贩式KTV(大明步行街店)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>唯秀量贩式KTV(大明步行街店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>芒果AI智助KTV</td><td>距离就近</td><td>12m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>极昼真人剧场密室·剧本(东方新天地店)</td><td>距离就近</td><td>22m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>酒泉航天饭店</td><td>距离就近</td><td>61m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>卡莎CASA量贩KTV(仓门街店)</td><td>距离就近</td><td>105m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>横店电影城(酒泉店)</td><td>距离就近</td><td>258m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>梦星谷·沉浸式密室逃脱(东方广场店)</td><td>距离就近</td><td>290m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>酒泉新华宾馆(汉唐美食街店)</td><td>距离就近</td><td>301m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>横店电影城(东方广场店)</td><td>距离就近</td><td>301m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>欢乐颂KTV派对</td><td>距离就近</td><td>360m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>嘉禾私享影院</td><td>距离就近</td><td>410m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>千寻密室</td><td>距离就近</td><td>443m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>把把胡自助棋牌</td><td>距离就近</td><td>531m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>酒泉福星宾馆</td><td>距离就近</td><td>532m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>铭都KTV(西环南路店)</td><td>距离就近</td><td>543m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>约麻棋牌室</td><td>距离就近</td><td>544m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>大禹娱乐会所</td><td>距离就近</td><td>589m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>棋牌室</td><td>距离就近</td><td>592m</td><td>3.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>富森时代影城(敦煌店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>富森时代影城(敦煌店)</td><td>名称互证</td><td>0m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>丽都国际大酒店(暂停营业)</td><td>距离就近</td><td>290m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>莫高宾馆</td><td>距离就近</td><td>467m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>敦煌新华客栈</td><td>距离就近</td><td>544m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>北京华联生活超市(富康购物中心店)（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>酒泉飞天数字影院</td><td>距离就近</td><td>167m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>时光对面</td><td>距离就近</td><td>304m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>魅KTV•AI辅唱(酒泉富康店)</td><td>距离就近</td><td>371m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>昱华国际</td><td>距离就近</td><td>588m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>宏泰市场（9 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金山宾馆(阳关中路店)</td><td>距离就近</td><td>128m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>敦煌金龙精品酒店(敦煌夜市店)</td><td>距离就近</td><td>192m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>驼铃餐厅</td><td>距离就近</td><td>237m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>莫高宾馆</td><td>距离就近</td><td>292m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>飞天数字影城(阳关中路店)</td><td>距离就近</td><td>356m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>丽都国际大酒店(暂停营业)</td><td>距离就近</td><td>416m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>敦煌新华客栈</td><td>距离就近</td><td>437m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>党校宾馆(乐园巷)</td><td>距离就近</td><td>569m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>富森时代影城(敦煌店)</td><td>距离就近</td><td>594m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>新天地（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>肆方荟棋牌(新天地店)</td><td>名称互证</td><td>123m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>玉兰园(敦煌路)</td><td>距离就近</td><td>529m</td><td>—</td><td>§11</td></tr>
+<tr><td>极昼真人剧场密室·剧本(东方新天地店)</td><td>名称互证</td><td>2951m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>玉门益旺国际购物广场（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>迷你造型</td><td>距离就近</td><td>27m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>玉门益旺国际影城</td><td>名称互证</td><td>63m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>环宇宾馆(玉门)</td><td>距离就近</td><td>70m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>酒泉新华宾馆(汉唐美食街店)（18 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>酒泉新华宾馆(汉唐美食街店)</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>千寻密室</td><td>距离就近</td><td>145m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>横店电影城(东方广场店)</td><td>距离就近</td><td>174m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>梦星谷·沉浸式密室逃脱(东方广场店)</td><td>距离就近</td><td>239m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欢乐颂KTV派对</td><td>距离就近</td><td>270m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>唯秀量贩式KTV(大明步行街店)</td><td>距离就近</td><td>301m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>芒果AI智助KTV</td><td>距离就近</td><td>308m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>极昼真人剧场密室·剧本(东方新天地店)</td><td>距离就近</td><td>308m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>横店电影城(酒泉店)</td><td>距离就近</td><td>310m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>酒泉福星宾馆</td><td>距离就近</td><td>345m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>棋牌室</td><td>距离就近</td><td>350m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>酒泉航天饭店</td><td>距离就近</td><td>360m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>卡莎CASA量贩KTV(仓门街店)</td><td>距离就近</td><td>374m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>约麻棋牌室</td><td>距离就近</td><td>404m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>嘉禾私享影院</td><td>距离就近</td><td>500m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>把把胡自助棋牌</td><td>距离就近</td><td>504m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>萌宠之家</td><td>距离就近</td><td>508m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>福运茶楼(欧洲苑店)</td><td>距离就近</td><td>578m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>横店电影城(东方广场店)（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(东方广场店)</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>梦星谷·沉浸式密室逃脱(东方广场店)</td><td>距离就近</td><td>73m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>欢乐颂KTV派对</td><td>距离就近</td><td>97m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>酒泉新华宾馆(汉唐美食街店)</td><td>距离就近</td><td>174m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>约麻棋牌室</td><td>距离就近</td><td>261m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>千寻密室</td><td>距离就近</td><td>278m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>唯秀量贩式KTV(大明步行街店)</td><td>距离就近</td><td>301m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>芒果AI智助KTV</td><td>距离就近</td><td>302m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>极昼真人剧场密室·剧本(东方新天地店)</td><td>距离就近</td><td>319m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>卡莎CASA量贩KTV(仓门街店)</td><td>距离就近</td><td>326m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>把把胡自助棋牌</td><td>距离就近</td><td>331m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>嘉禾私享影院</td><td>距离就近</td><td>339m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>酒泉航天饭店</td><td>距离就近</td><td>356m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>横店电影城(酒泉店)</td><td>名称互证</td><td>431m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>棋牌室</td><td>距离就近</td><td>515m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>酒泉福星宾馆</td><td>距离就近</td><td>519m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>萌宠之家</td><td>距离就近</td><td>576m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（32 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>党校宾馆(乐园巷)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>沙州镇乐园巷106号中段沙州乐园东口</td></tr>
+<tr><td>✅A-</td><td>福华快捷酒店(南环西路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>雄关路7A号(西关汽车站向南200米红绿灯处)</td></tr>
+<tr><td>✅B</td><td>迎宾大酒店(119专道)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.5</td><td>—</td><td>迎宾大道2号</td></tr>
+<tr><td>✅B</td><td>水利商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>府街83号</td></tr>
+<tr><td>✅B</td><td>敦煌宏鑫商务酒店(沙州夜市风情城店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.5</td><td>—</td><td>文昌南路277号</td></tr>
+<tr><td>✅B</td><td>瓜州宾馆(瓜州县博物馆人民政府店)</td><td>住宿服务;宾馆酒店;三星级宾馆｜餐饮服务;餐饮相关场所;餐饮相关</td><td>4.5</td><td>—</td><td>县府街53号</td></tr>
+<tr><td>✅B</td><td>中国酒泉卫星发射中心办事处招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>西关路18号</td></tr>
+<tr><td>✅B</td><td>凯悦商务宾馆(向阳路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>向阳路162号</td></tr>
+<tr><td>✅B</td><td>驼铃餐厅</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.3</td><td>—</td><td>沙洲镇鸣山路5号</td></tr>
+<tr><td>✅B</td><td>酒泉航天饭店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>仓门街42号</td></tr>
+<tr><td>✅B</td><td>瓜州榆林快捷宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.3</td><td>—</td><td>瓜州大道84-6号</td></tr>
+<tr><td>✅B</td><td>酒泉新华宾馆(汉唐美食街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>西南街道酒泉新华宾馆</td></tr>
+<tr><td>⚠️</td><td>敦煌新华客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.1</td><td>—</td><td>沙洲镇新敦巷25号(近小吃街、敦煌夜市)</td></tr>
+<tr><td>⚠️</td><td>酒泉福星宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>西文化街9号</td></tr>
+<tr><td>⚠️</td><td>玉海快捷商务宾馆(瓜州夜市店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>瓜州大道287号鑫利达商厦3层</td></tr>
+<tr><td>⚠️</td><td>西北宾馆(盘旋中路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>西南街道盘旋中路3号</td></tr>
+<tr><td>⚠️</td><td>OYO农垦宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>4.1</td><td>—</td><td>南环东路31号(南关加油站东侧,酒泉一中对面)</td></tr>
+<tr><td>⚠️</td><td>大禹宾馆(酒中店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.1</td><td>—</td><td>西环南路1号</td></tr>
+<tr><td>⚠️</td><td>金山宾馆(阳关中路店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>阳关中路29号</td></tr>
+<tr><td>⚠️</td><td>东方大酒店(赤金路)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>昌盛路与赤金路交叉口</td></tr>
+<tr><td>⚠️</td><td>丽都国际大酒店(暂停营业)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>鸣山路470号体育场院内</td></tr>
+<tr><td>⚠️</td><td>酒泉华盛宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>雄关路9号(紫藤家园)</td></tr>
+<tr><td>⚠️</td><td>敦煌金龙精品酒店(敦煌夜市店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.0</td><td>—</td><td>党河北路1号</td></tr>
+<tr><td>⚠️</td><td>环宇宾馆(玉门)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>兰新东路</td></tr>
+<tr><td>⚠️</td><td>莫高宾馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.9</td><td>—</td><td>鸣山北路248号</td></tr>
+<tr><td>⚠️</td><td>瓜州鸿云快捷宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>柳园镇南大街1-3-62号</td></tr>
+<tr><td>⚠️</td><td>酒泉丝路神舟大酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>解放路2号(电信大楼西侧)</td></tr>
+<tr><td>⚠️</td><td>柳园宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>柳园镇南大街11号</td></tr>
+<tr><td>❌</td><td>通达酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>滨河路</td></tr>
+<tr><td>❌</td><td>同福源宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.4</td><td>—</td><td>215国道柳园镇5公里加气站南</td></tr>
+<tr><td>❌</td><td>酒泉世博大酒店(第二人民医院店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.2</td><td>—</td><td>酒金东路13号(酒泉市市二院对面)</td></tr>
+<tr><td>❌</td><td>金塔金都宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.2</td><td>—</td><td>新华街151号</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>10</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>4</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>7</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>5</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>4</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>19</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>3</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/酒泉市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>10 个 POI 无评分</strong>，暂标 ⚠️：西汉酒泉胜迹-动物园售票处、玉兰园(敦煌路)、甘肃工会户外劳动者驿站阿克塞县野生动物保护站站点、酒泉市动物园生态停车场、奥特莱斯丝路小镇城市会客厅</li><li><input type="checkbox" disabled> 儿童游乐 15 家，其中场内 0 家、独立 15 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 6 个区县：敦煌市、玉门市、瓜州县、肃州区、金塔县、阿克塞哈萨克族自治县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>

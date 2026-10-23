@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>张家口市 · 河北省</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<div class="brand">fun.worldstip.com<small>全国美食 × 商圈 × 娱乐 数据站</small></div>
+<nav><a href="index.html">首页</a><a href="index.html#prov">省份</a>
+<a href="data.json">数据 JSON</a><a href="README.html">使用说明</a></nav>
+</div></header>
+<main><div class="wrap"><p><a href="../provinces/河北省.html">← 返回河北省</a> · <a href="../index.html">全国总览</a></p><article class="doc"><h1>张家口市 · 河北省 美食与商圈档案</h1>
+<blockquote>数据来源：高德地图 Web 服务 POI（restapi.amap.com）<br>采集时间：2026-10-23 19:17:51  ·  POI 总量：198（去重后）  ·  查询面：14  ·  查询波次：2<br>文件用途：本 skill 的城市级数据可查与人工校对底稿。</blockquote>
+<h2>0. 数据可信度</h2>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th><th>说明</th></tr></thead><tbody>
+<tr><td>POI 总数（去重）</td><td>198</td><td>高德 POI id 去重</td></tr>
+<tr><td>有评分的比例</td><td>99%</td><td>无评分者标 ⚠️，不强行推荐</td></tr>
+<tr><td>维度覆盖</td><td>美食 0 · 商圈 117 · 成人娱乐 155 · 儿童娱乐 26 · 酒店 31 · 特产 0</td><td>各维度去重计数</td></tr>
+<tr><td>采集告警</td><td>0</td><td>本次采集无配额或接口错误</td></tr>
+</tbody></table></div>
+<h2>1. 城市总览</h2>
+<h3>1.1 行政层级</h3>
+<div class="tw"><table><thead><tr><th>项</th><th>值</th></tr></thead><tbody>
+<tr><td>所属</td><td>河北省 · 地级市</td></tr>
+<tr><td>下级区县</td><td>16 个</td></tr>
+<tr><td>街道/镇/乡</td><td>240 个</td></tr>
+<tr><td>区县构成</td><td>县×10、市辖区×6</td></tr>
+</tbody></table></div>
+<p>（村级数据高德不提供，未列入；行政层级详见 <code>data/行政层级总览.md</code>）</p>
+<h3>1.2 商圈与业态分布</h3>
+<div class="tw"><table><thead><tr><th>区县</th><th>POI 数</th><th>占比</th></tr></thead><tbody>
+<tr><td>桥东区</td><td>86</td><td>43%</td></tr>
+<tr><td>桥西区</td><td>36</td><td>18%</td></tr>
+<tr><td>宣化区</td><td>22</td><td>11%</td></tr>
+<tr><td>蔚县</td><td>11</td><td>6%</td></tr>
+<tr><td>张北县</td><td>10</td><td>5%</td></tr>
+<tr><td>万全区</td><td>8</td><td>4%</td></tr>
+<tr><td>怀来县</td><td>8</td><td>4%</td></tr>
+<tr><td>怀安县</td><td>6</td><td>3%</td></tr>
+<tr><td>阳原县</td><td>3</td><td>2%</td></tr>
+<tr><td>下花园区</td><td>2</td><td>1%</td></tr>
+<tr><td>沽源县</td><td>2</td><td>1%</td></tr>
+<tr><td>涿鹿县</td><td>2</td><td>1%</td></tr>
+<tr><td>崇礼区</td><td>2</td><td>1%</td></tr>
+</tbody></table></div>
+<p><strong>商圈载体类型构成</strong>（117 处商圈锚点）：</p>
+<div class="tw"><table><thead><tr><th>载体类型</th><th>数量</th></tr></thead><tbody>
+<tr><td>其他商业载体</td><td>51</td></tr>
+<tr><td>购物中心/综合体</td><td>23</td></tr>
+<tr><td>批发城</td><td>18</td></tr>
+<tr><td>百货/商场</td><td>14</td></tr>
+<tr><td>商业街</td><td>9</td></tr>
+<tr><td>奥特莱斯</td><td>2</td></tr>
+</tbody></table></div>
+<h2>2. 商圈档案（117 处，按评级排序）</h2>
+<p>商圈评级判据（借鉴必吃榜维度化评选，可复算）：</p>
+<div class="tw"><table><thead><tr><th>评级</th><th>判据</th></tr></thead><tbody>
+<tr><td>S</td><td>关联美食 ≥20 家且均分 ≥4.3，覆盖 ≥3 类业态（美食/娱乐/儿童/酒店）</td></tr>
+<tr><td>A</td><td>关联美食 ≥10 家且均分 ≥4.0，覆盖 ≥2 类业态</td></tr>
+<tr><td>B</td><td>关联美食 ≥5 家，或任一业态 ≥10 家</td></tr>
+<tr><td>C</td><td>其余（数据稀薄，仅登记待人工补充）</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>评级</th><th>商圈名</th><th>载体类型</th><th>评分</th><th>关联美食</th><th>成人娱乐</th><th>儿童娱乐</th><th>酒店</th></tr></thead><tbody>
+<tr><td>B</td><td>时代购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>13</td><td>1</td><td>0</td></tr>
+<tr><td>B</td><td>家家悦超市(张家口纬二路莲花店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>14</td><td>1</td><td>2</td></tr>
+<tr><td>B</td><td>唱吧麦颂KTV(张家口高新店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>11</td><td>0</td><td>1</td></tr>
+<tr><td>B</td><td>友乐迪(时代购物中心店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>14</td><td>1</td><td>2</td></tr>
+<tr><td>B</td><td>奥斯卡国际娱乐公馆</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>18</td><td>1</td><td>3</td></tr>
+<tr><td>C</td><td>鑫源宾馆(109乡道)</td><td>其他商业载体</td><td>4.9</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>蔚县暖泉古镇客栈</td><td>商业街</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>永辉超市(崇礼店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>尚峰广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>银座</td><td>其他商业载体</td><td>4.7</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>乐享城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>阳原国际裘皮城</td><td>商业街</td><td>4.7</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>光大新天地</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>万悦广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>中影熹禾影城(原大地影院财富中心店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>金熊国际影城</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>横店电影城(新五一广场店)</td><td>其他商业载体</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(尚峰广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(宣化店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>永辉超市(张家口市容辰广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>超市发(北方学院店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>3</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>超市发(大新门店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>中泰万合·奥特莱斯</td><td>百货/商场</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>容辰广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>百盛购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>唯佰广场(张北三店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>2</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>金鼎购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>唯佰广场(蔚县店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>冠垣生活广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>泰宇购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>华文酒店</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td>C</td><td>阳光假日民宿(高柳路店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>3</td><td>1</td><td>4</td></tr>
+<tr><td>C</td><td>童话里动物乐园</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>0</td><td>4</td><td>1</td></tr>
+<tr><td>C</td><td>第九街区惊梦超级密室</td><td>商业街</td><td>4.5</td><td>0</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>C</td><td>林彤影城(张家口金鼎店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>C</td><td>聚聚棋牌室(富强路北方学院东校区店)</td><td>其他商业载体</td><td>4.5</td><td>0</td><td>8</td><td>1</td><td>3</td></tr>
+<tr><td>C</td><td>万全百货</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>佳美大卖场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>永辉超市(张家口市元都广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>C</td><td>佰悦生活超市</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<h3>时代购物中心 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 14 / 酒店 0</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：胜利中路西150米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 13 · 儿童娱乐 1 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>时代购物中心</td></tr>
+<tr><td>成人娱乐</td><td>13</td><td>音浪熊AI智慧KTV(金鹰悦城店)、友乐迪(时代购物中心店)、T-ONE量贩式KTV</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>塔罗动物城</td></tr>
+</tbody></table></div>
+<h3>家家悦超市(张家口纬二路莲花店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：长城西大街与胜利中路交叉口莲花茶城</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 1 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>家家悦超市(张家口纬二路莲花店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>音浪熊AI智慧KTV(金鹰悦城店)、T-ONE量贩式KTV、奥斯卡国际娱乐公馆</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>塔罗动物城</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>睡吧宾馆、张家口久又久宾馆</td></tr>
+</tbody></table></div>
+<h3>唱吧麦颂KTV(张家口高新店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 11 / 酒店 1</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：经济开发区中兴北路11号(长江时代广场)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 11 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>唱吧麦颂KTV(张家口高新店)</td></tr>
+<tr><td>成人娱乐</td><td>11</td><td>中影熹禾影城(原大地影院财富中心店)、唱吧麦颂KTV(张家口高新店)、奥斯卡国际娱乐公馆</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>张家口盛源商务宾馆</td></tr>
+</tbody></table></div>
+<h3>友乐迪(时代购物中心店) —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 15 / 酒店 2</li><li><strong>载体类型</strong>：购物中心/综合体（体育休闲服务;娱乐场所;KTV）</li><li><strong>地址</strong>：纬一路时代金茂四层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 14 · 儿童娱乐 1 · 酒店 2</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>友乐迪(时代购物中心店)</td></tr>
+<tr><td>成人娱乐</td><td>14</td><td>音浪熊AI智慧KTV(金鹰悦城店)、友乐迪(时代购物中心店)、T-ONE量贩式KTV</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>塔罗动物城</td></tr>
+<tr><td>酒店配套</td><td>2</td><td>睡吧宾馆、张家口久又久宾馆</td></tr>
+</tbody></table></div>
+<h3>奥斯卡国际娱乐公馆 —— 评级 B</h3>
+<ul><li><strong>评级判据</strong>：美食 0 家 / 娱乐 19 / 酒店 3</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室）</li><li><strong>地址</strong>：锦程大厦东北门旁</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 18 · 儿童娱乐 1 · 酒店 3</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>奥斯卡国际娱乐公馆</td></tr>
+<tr><td>成人娱乐</td><td>18</td><td>音浪熊AI智慧KTV(金鹰悦城店)、奥斯卡国际娱乐公馆、T-ONE量贩式KTV</td></tr>
+<tr><td>儿童娱乐</td><td>1</td><td>塔罗动物城</td></tr>
+<tr><td>酒店配套</td><td>3</td><td>睡吧宾馆、张家口久又久宾馆、张家口盛源商务宾馆</td></tr>
+</tbody></table></div>
+<h3>鑫源宾馆(109乡道) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（住宿服务;宾馆酒店;宾馆酒店）</li><li><strong>地址</strong>：柴沟堡镇马王庙巷(109乡道县图书馆东100米)</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>鑫源宾馆(109乡道)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>鑫源宾馆(109乡道)</td></tr>
+</tbody></table></div>
+<h3>蔚县暖泉古镇客栈 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（住宿服务;旅馆招待所;旅馆招待所）</li><li><strong>地址</strong>：暖泉古镇树花广场西行</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>蔚县暖泉古镇客栈</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>蔚县暖泉古镇客栈</td></tr>
+</tbody></table></div>
+<h3>永辉超市(崇礼店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;超级市场;超市）</li><li><strong>地址</strong>：东广南街与奥雪西路交叉口东40米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>永辉超市(崇礼店)</td></tr>
+</tbody></table></div>
+<h3>尚峰广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：至善街1号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>尚峰广场</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>中影百誉影城、迷城实景密室逃脱(尚峰店)、零叁幺叁超级密室(武城街店)</td></tr>
+</tbody></table></div>
+<h3>银座 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（商务住宅;楼宇;商务写字楼）</li><li><strong>地址</strong>：胜利北路与胜建北街交叉口东南100米</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>银座</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>横店电影城(张家口银座商城店)、迷城实景密室(红旗楼创始店)、迷城实景密室(银座聚核店)</td></tr>
+</tbody></table></div>
+<h3>乐享城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：百货/商场（购物服务;商场;普通商场）</li><li><strong>地址</strong>：胜利中路14号</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>乐享城</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>张家口金石国际影城(乐享城店)、夜魅KTV(乐享城店)</td></tr>
+</tbody></table></div>
+<h3>阳原国际裘皮城 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：商业街（购物服务;服装鞋帽皮具店;服装鞋帽皮具店）</li><li><strong>地址</strong>：西宁路东侧</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 0 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>阳原国际裘皮城</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>阳原福月楼宾馆</td></tr>
+</tbody></table></div>
+<h3>光大新天地 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：宣府大街178号光大新天地二楼</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 2 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>光大新天地</td></tr>
+<tr><td>成人娱乐</td><td>2</td><td>横店电影城(宣化店)、无忧岛密室逃脱</td></tr>
+</tbody></table></div>
+<h3>万悦广场 —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：购物中心/综合体（购物服务;商场;购物中心）</li><li><strong>地址</strong>：董存瑞东街与长城路交汇处</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 1 · 儿童娱乐 0 · 酒店 0</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>万悦广场</td></tr>
+<tr><td>成人娱乐</td><td>1</td><td>无忧岛·沉浸式密室逃脱(沙城店)</td></tr>
+</tbody></table></div>
+<h3>中影熹禾影城(原大地影院财富中心店) —— 评级 C</h3>
+<ul><li><strong>评级判据</strong>：关联数据稀薄，仅登记待人工补充</li><li><strong>载体类型</strong>：其他商业载体（体育休闲服务;影剧院;电影院）</li><li><strong>地址</strong>：市府西大街3号财富中心B1座负一层</li><li><strong>消费带宽</strong>：待人工校对（高德未收录人均）</li><li><strong>动线主轴</strong>：待人工校对（关联 POI 地址无道路词）</li><li><strong>业态分布</strong>：美食 0 · 成人娱乐 5 · 儿童娱乐 0 · 酒店 1</li></ul>
+<div class="tw"><table><thead><tr><th>业态</th><th>家数</th><th>代表（按评分）</th></tr></thead><tbody>
+<tr><td>步行街/商业街载体</td><td>1</td><td>中影熹禾影城(原大地影院财富中心店)</td></tr>
+<tr><td>成人娱乐</td><td>5</td><td>中影熹禾影城(原大地影院财富中心店)、唱吧麦颂KTV(张家口高新店)、麻省鲤恭24H自助棋牌(财富中心店)</td></tr>
+<tr><td>酒店配套</td><td>1</td><td>张家口盛源商务宾馆</td></tr>
+</tbody></table></div>
+<h2>3. 成人娱乐（155 家）</h2>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>电影院</td><td>18</td></tr>
+<tr><td>密室逃脱/剧本杀</td><td>18</td></tr>
+<tr><td>其他娱乐场所</td><td>17</td></tr>
+<tr><td>棋牌室</td><td>14</td></tr>
+<tr><td>KTV</td><td>13</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>音浪熊AI智慧KTV(金鹰悦城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.6</td><td>57.00</td><td>金鹰悦城</td></tr>
+<tr><td>✅A-</td><td>中影熹禾影城(原大地影院财富中心店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>34.00</td><td>市府西大街3号财富中心B1座负一层</td></tr>
+<tr><td>✅A-</td><td>金熊国际影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院｜餐饮服务;快餐厅;快餐厅</td><td>4.6</td><td>31.00</td><td>站前西大街帝达世博6层</td></tr>
+<tr><td>✅A-</td><td>横店电影城(新五一广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.6</td><td>32.00</td><td>新五一广场3层</td></tr>
+<tr><td>✅B</td><td>第九街区惊梦超级密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.5</td><td>145.00</td><td>东安大街45.46号负1层</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(张家口高新店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>154.00</td><td>经济开发区中兴北路11号(长江时代广场)</td></tr>
+<tr><td>✅B</td><td>友乐迪(时代购物中心店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>53.00</td><td>纬一路时代金茂四层</td></tr>
+<tr><td>✅B</td><td>T-ONE量贩式KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>38.00</td><td>胜利中路245号</td></tr>
+<tr><td>✅B</td><td>奥斯卡国际娱乐公馆</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV｜体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>33.00</td><td>锦程大厦东北门旁</td></tr>
+<tr><td>✅B</td><td>威尼斯PARTY K</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>41.00</td><td>新村南街16号楼</td></tr>
+<tr><td>✅B</td><td>麦浪KTV(远大盛和苑店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.5</td><td>60.00</td><td>西苑中路21号</td></tr>
+<tr><td>✅B</td><td>张家口金石国际影城(乐享城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>41.00</td><td>胜利中路14号乐享城F5层</td></tr>
+<tr><td>✅B</td><td>横店电影城(张家口银座商城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>24.00</td><td>胜利北路银座商城5层</td></tr>
+<tr><td>✅B</td><td>林彤影城(张家口金鼎店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>41.00</td><td>金鼎购物广场4层</td></tr>
+<tr><td>✅B</td><td>星耀影城(宣化店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>39.00</td><td>西城前街</td></tr>
+<tr><td>✅B</td><td>横店电影城(宣化店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.5</td><td>35.00</td><td>人民东路2号光大新天地副楼4层</td></tr>
+<tr><td>✅B</td><td>聚聚棋牌室(富强路北方学院东校区店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>85.00</td><td>胜利中路241号时代广场小区30号楼1层30-2</td></tr>
+<tr><td>✅B</td><td>四个朋友自助-棋牌(凤凰城一期店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.5</td><td>25.00</td><td>凤凰城一期南门底商最西侧四个朋友</td></tr>
+<tr><td>✅B</td><td>911超级密室</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>93.00</td><td>911沉浸推理社</td></tr>
+<tr><td>✅B</td><td>北爵娱乐会所KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>41.00</td><td>长城西大街与东泽路交叉口东140米</td></tr>
+<tr><td>✅B</td><td>地垣标娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>—</td><td>张家口市经济开发区盛华东大街3号奥林星城商住小区23号楼负2号</td></tr>
+<tr><td>✅B</td><td>红磨坊KTV(滨河南路店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.4</td><td>348.00</td><td>滨河南路22号</td></tr>
+<tr><td>✅B</td><td>凯爵娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>—</td><td>朝阳西大街京润现代城六号院</td></tr>
+<tr><td>✅B</td><td>豪门KTV(金鹰悦城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>87.00</td><td>马路东街道胜利中路172号金鹰悦城C3栋54-56号商铺</td></tr>
+<tr><td>✅B</td><td>夜魅KTV(乐享城店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>33.00</td><td>胜利中路14号乐享城F5层</td></tr>
+<tr><td>✅B</td><td>唱吧麦颂KTV(张家口冠恒广场店)</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.4</td><td>156.00</td><td>胜利中路2号冠恒广场</td></tr>
+<tr><td>✅B</td><td>中影百誉影城</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>25.00</td><td>至善街尚峰广场5层</td></tr>
+<tr><td>✅B</td><td>嘉悦电影城(中泰生活广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.4</td><td>32.00</td><td>宣府大街同盛大厦5层</td></tr>
+<tr><td>✅B</td><td>麻省鲤恭24H自助棋牌(财富中心店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>58.00</td><td>和谐东路财富中心B-1-22号</td></tr>
+<tr><td>✅B</td><td>九龙棋牌茶室(纬一路店)</td><td>棋牌室</td><td>餐饮服务;茶艺馆;茶艺馆</td><td>4.4</td><td>12.00</td><td>高柳路与盛华西大街交叉口北40米</td></tr>
+<tr><td>✅B</td><td>铜雀台(前屯新天地小区店)</td><td>其他娱乐场所</td><td>风景名胜;风景名胜相关;旅游景点</td><td>4.4</td><td>19.00</td><td>新天地小区15号商业楼7号商业</td></tr>
+<tr><td>✅B</td><td>雀悦24小时棋牌</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.4</td><td>12.00</td><td>府街庭院南门东120米</td></tr>
+<tr><td>✅B</td><td>有间密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.3</td><td>137.00</td><td>红旗楼街道胜利中路2号冠垣生活广场F4层020号铺</td></tr>
+<tr><td>✅B</td><td>吸引力ATT KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.3</td><td>84.00</td><td>新天地小区13号金三角楼(市环保局北)</td></tr>
+<tr><td>✅B</td><td>完美世界影城(金茂店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>33.00</td><td>胜利中路241号时代广场金茂购物中心4层</td></tr>
+<tr><td>✅B</td><td>中乐影城(百盛店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.3</td><td>25.00</td><td>五一路街道滨河中路2号百盛4层</td></tr>
+<tr><td>✅B</td><td>跃朗台球棋牌俱乐部</td><td>棋牌室</td><td>体育休闲服务;体育休闲服务场所;体育休闲服务场所</td><td>4.3</td><td>13.00</td><td>长城西大街5号凤凰城北区21号楼04号底商3楼</td></tr>
+<tr><td>✅B</td><td>8893囍雀</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.3</td><td>—</td><td>经开区新天地北门二号楼01底商</td></tr>
+<tr><td>⚠️</td><td>蘭桂坊融晖娱乐</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.2</td><td>99.00</td><td>张家口市经济开发区胜利中路241号时代广场小区1号楼4层001-07室</td></tr>
+<tr><td>⚠️</td><td>幸福蓝海国际影城(中泰城店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>39.00</td><td>五号楼128号商铺</td></tr>
+<tr><td>⚠️</td><td>华凯国际影城(万全时代广场店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>4.2</td><td>39.00</td><td>华凯·时代购物广场北门西南50米</td></tr>
+<tr><td>⚠️</td><td>会友24小时棋牌(永兴西大街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>20.00</td><td>朝阳西大街12号世纪豪园20号楼1层04室</td></tr>
+<tr><td>⚠️</td><td>麻哩雀匠(金鹰悦城店)</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.2</td><td>61.00</td><td>金鹰悦城C1栋,白天从丁果家水果店进入,夜间绕行至后门进入</td></tr>
+<tr><td>⚠️</td><td>麻哩雀匠(瑞麟轩店)</td><td>其他娱乐场所</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.2</td><td>58.00</td><td>富强路瑞麟轩小区西门底商元小牛二楼</td></tr>
+<tr><td>⚠️</td><td>迷城实景密室(红旗楼创始店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>68.00</td><td>红旗楼铂金时代广场步行街1楼</td></tr>
+<tr><td>⚠️</td><td>无忧岛密室逃脱</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.1</td><td>86.00</td><td>光大新天地四楼东侧无忧岛密室逃脱</td></tr>
+<tr><td>⚠️</td><td>Z炙感KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.1</td><td>49.00</td><td>西苑中路与高家屯南街交叉口西南200米</td></tr>
+<tr><td>⚠️</td><td>工人影剧院(五一路店)</td><td>电影院</td><td>体育休闲服务;影剧院;影剧院相关</td><td>4.1</td><td>—</td><td>五一路79号</td></tr>
+<tr><td>⚠️</td><td>铜雀楼自助棋牌(北方学院店)</td><td>棋牌室</td><td>商务住宅;楼宇;商务写字楼</td><td>4.1</td><td>38.00</td><td>砖石南路伊梅园小区西侧底商</td></tr>
+<tr><td>⚠️</td><td>麻哩雀匠24小时自助棋牌(时代金茂-乐购店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>54.00</td><td>胜利中路241号时代金茂购物中心4层D4-013</td></tr>
+<tr><td>⚠️</td><td>麻哩雀匠(龙山水郡店)</td><td>其他娱乐场所</td><td>购物服务;购物相关场所;购物相关场所</td><td>4.1</td><td>40.00</td><td>工业路街道钻石中路63号龙山水郡小区外街14号楼10号底商</td></tr>
+<tr><td>⚠️</td><td>雀家自助棋牌(朝阳西大街店)</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.1</td><td>17.00</td><td>朝阳西大街15号锦绣园底商</td></tr>
+<tr><td>⚠️</td><td>迷城实景密室逃脱(尚峰店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>71.00</td><td>尚峰民俗风情街5-7号(云端唱享KTV向西20米)</td></tr>
+<tr><td>⚠️</td><td>迷城实景密室(时代金茂店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;娱乐场所;娱乐场所</td><td>4.0</td><td>66.00</td><td>时代金茂商场南区4楼</td></tr>
+<tr><td>⚠️</td><td>淼淼KTV</td><td>KTV</td><td>体育休闲服务;娱乐场所;KTV</td><td>4.0</td><td>—</td><td>广济医院西南侧</td></tr>
+<tr><td>⚠️</td><td>万全区滨河数字影院</td><td>其他娱乐场所</td><td>体育休闲服务;影剧院;电影院</td><td>4.0</td><td>31.00</td><td>滨河西路与永安东街交叉口南240米</td></tr>
+<tr><td>⚠️</td><td>胡一天棋牌室</td><td>棋牌室</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>4.0</td><td>—</td><td>富强路与永兴西大街交叉口北140米</td></tr>
+<tr><td>⚠️</td><td>零叁幺叁超级密室(武城街店)</td><td>密室逃脱/剧本杀</td><td>体育休闲服务;运动场馆;台球厅</td><td>3.9</td><td>129.00</td><td>北武城街76号3层</td></tr>
+<tr><td>⚠️</td><td>中数国际电影城(张家口店)</td><td>电影院</td><td>体育休闲服务;影剧院;电影院</td><td>3.9</td><td>176.00</td><td>胜利中路2号</td></tr>
+<tr><td>❌</td><td>满园茶牌</td><td>其他娱乐场所</td><td>体育休闲服务;娱乐场所;棋牌室</td><td>3.9</td><td>14.00</td><td>[]</td></tr>
+</tbody></table></div>
+<p>（另 20 家见 §11 原始数据）</p>
+<h2>4. 儿童与亲子娱乐（26 家）</h2>
+<p><strong>载体区分</strong>：<code>场内</code> = 位于商场/购物中心/广场内（可顺路，与逛吃同动线）；<code>独立</code> = 独立门店或园区点位（需单独规划）。两者可靠性、可达性完全不同，混表会导致跑空。</p>
+<div class="tw"><table><thead><tr><th>子类</th><th>家数</th></tr></thead><tbody>
+<tr><td>其他儿童场所</td><td>14</td></tr>
+<tr><td>迷你动物园/萌宠</td><td>11</td></tr>
+<tr><td>儿童乐园/游乐场</td><td>1</td></tr>
+</tbody></table></div>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>子类</th><th>载体</th><th>评分</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅B</td><td>童话里动物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>人民公园</td></tr>
+<tr><td>✅B</td><td>咪兔萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.5</td><td>河子西上八里西郊加油站西200米南侧1号</td></tr>
+<tr><td>✅B</td><td>UU迷你球房</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>平安商务会馆底商</td></tr>
+<tr><td>✅B</td><td>和健动物医院</td><td>其他儿童场所</td><td>独立</td><td>4.4</td><td>京西江南小区南门3号商8</td></tr>
+<tr><td>✅B</td><td>环首都猫岛(宣化喵坞)</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>清远路53号宣化人民公园</td></tr>
+<tr><td>✅B</td><td>辛巴未来王国(金鼎购物广场店)</td><td>其他儿童场所</td><td>场内</td><td>4.3</td><td>金鼎购物广场·A区F3-B211</td></tr>
+<tr><td>✅B</td><td>明星宠乐园</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>宣平堡乡政府路</td></tr>
+<tr><td>✅B</td><td>趣宠乐园</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>柳川河东路21号院</td></tr>
+<tr><td>✅B</td><td>猫狗乐园</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>锦绣城北区西门</td></tr>
+<tr><td>✅B</td><td>萌它宠物(永安中街店)</td><td>其他儿童场所</td><td>独立</td><td>4.3</td><td>沙城镇京西汽车城商业楼第一栋5号楼4</td></tr>
+<tr><td>⚠️</td><td>太舞萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>四台嘴乡营岔村太舞度假小镇(东北角)</td></tr>
+<tr><td>⚠️</td><td>萌宠小筑宠物店(阳原分店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.2</td><td>青春嘉园7号楼4号</td></tr>
+<tr><td>⚠️</td><td>德唯动物医院</td><td>其他儿童场所</td><td>独立</td><td>4.2</td><td>工业大街铁道北街鑫苑小区一号楼底商</td></tr>
+<tr><td>⚠️</td><td>宣化人民公园动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>清远路53附近</td></tr>
+<tr><td>❌</td><td>迷你时尚造型(下东营路店)</td><td>其他儿童场所</td><td>独立</td><td>4.1</td><td>[]</td></tr>
+<tr><td>⚠️</td><td>萌宠乐园宠物美容宠物用品</td><td>迷你动物园/萌宠</td><td>独立</td><td>4.1</td><td>张家口高新区沈家屯国华路奥林清河壹号</td></tr>
+<tr><td>⚠️</td><td>迷你岛儿童乐园</td><td>儿童乐园/游乐场</td><td>独立</td><td>4.0</td><td>京都南大街天保新城二期7号楼底商二层</td></tr>
+<tr><td>⚠️</td><td>萌宠之家(财苑小区店)</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>财神庙街财苑小区南9号底商</td></tr>
+<tr><td>⚠️</td><td>比奇堡宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.9</td><td>张宣公路与G6京藏高速出口交叉路口西北206米</td></tr>
+<tr><td>⚠️</td><td>塔罗动物城</td><td>其他儿童场所</td><td>场内</td><td>3.8</td><td>南站街道胜利中路时代广场小区1号楼商城三层</td></tr>
+<tr><td>⚠️</td><td>LIKE PET宠物乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.8</td><td>西辛堡村官厅水库国家湿地公园</td></tr>
+<tr><td>⚠️</td><td>观澜动物园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.6</td><td>康祁公路观澜墅小区内</td></tr>
+<tr><td>❌</td><td>LOOKLOOK鹿客</td><td>其他儿童场所</td><td>独立</td><td>3.3</td><td>塔儿村乡窑子头村东假日绿岛入口南</td></tr>
+<tr><td>❌</td><td>迷你商城</td><td>其他儿童场所</td><td>独立</td><td>3.2</td><td>明川家园西侧220米</td></tr>
+<tr><td>❌</td><td>萌宠乐园</td><td>迷你动物园/萌宠</td><td>独立</td><td>3.1</td><td>342省道</td></tr>
+<tr><td>⚠️</td><td>园中园小区</td><td>其他儿童场所</td><td>独立</td><td>—</td><td>车站北路1号</td></tr>
+</tbody></table></div>
+<h2>5. 综合体与商场（57 家）</h2>
+<p>口径：060100 商场 / 060101 购物中心 / 060200 百货 等类型码，或名称含购物中心/百货/奥莱/批发。</p>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>载体类型</th><th>评分</th><th>场内儿童娱乐</th><th>关联美食</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>永辉超市(崇礼店)</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>东广南街与奥雪西路交叉口东40米</td></tr>
+<tr><td>✅A-</td><td>尚峰广场</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>至善街1号</td></tr>
+<tr><td>✅A-</td><td>乐享城</td><td>百货/商场</td><td>4.7</td><td>0</td><td>0</td><td>胜利中路14号</td></tr>
+<tr><td>✅A-</td><td>光大新天地</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>宣府大街178号光大新天地二楼</td></tr>
+<tr><td>✅A-</td><td>万悦广场</td><td>购物中心/综合体</td><td>4.7</td><td>0</td><td>0</td><td>董存瑞东街与长城路交汇处</td></tr>
+<tr><td>✅A-</td><td>时代购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>胜利中路西150米</td></tr>
+<tr><td>✅A-</td><td>永辉超市(尚峰广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>明德南路3号尚峰广场B1层</td></tr>
+<tr><td>✅A-</td><td>永辉超市(宣化店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>宣府大街99号</td></tr>
+<tr><td>✅A-</td><td>永辉超市(张家口市容辰广场店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>张家口桥东区胜利北路东侧容辰庄园广场负一层</td></tr>
+<tr><td>✅A-</td><td>家家悦超市(张家口纬二路莲花店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>长城西大街与胜利中路交叉口莲花茶城</td></tr>
+<tr><td>✅A-</td><td>超市发(北方学院店)</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>高新区钻石南路11号</td></tr>
+<tr><td>✅A-</td><td>超市发(大新门店)</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>钟楼大街9号院9号楼</td></tr>
+<tr><td>✅A-</td><td>中泰万合·奥特莱斯</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>工业东街8号</td></tr>
+<tr><td>✅A-</td><td>容辰广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>胜利北路56号</td></tr>
+<tr><td>✅A-</td><td>百盛购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>滨河中路2号百盛购物广场一楼F1-2L-2室</td></tr>
+<tr><td>✅A-</td><td>唯佰广场(张北三店)</td><td>百货/商场</td><td>4.6</td><td>1</td><td>0</td><td>中都南大街与兴和东路交汇处</td></tr>
+<tr><td>✅A-</td><td>金鼎购物广场</td><td>购物中心/综合体</td><td>4.6</td><td>1</td><td>0</td><td>新华街街道西坝岗路53号</td></tr>
+<tr><td>✅A-</td><td>唯佰广场(蔚县店)</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>前进路55号</td></tr>
+<tr><td>✅A-</td><td>冠垣生活广场</td><td>百货/商场</td><td>4.6</td><td>0</td><td>0</td><td>红旗楼街道胜利中路2号</td></tr>
+<tr><td>✅A-</td><td>泰宇购物中心</td><td>购物中心/综合体</td><td>4.6</td><td>0</td><td>0</td><td>前进路42号</td></tr>
+<tr><td>✅B</td><td>友乐迪(时代购物中心店)</td><td>购物中心/综合体</td><td>4.5</td><td>1</td><td>0</td><td>纬一路时代金茂四层</td></tr>
+<tr><td>✅B</td><td>万全百货</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>万全百货大楼负一层</td></tr>
+<tr><td>✅B</td><td>佳美大卖场</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>正和路2号</td></tr>
+<tr><td>✅B</td><td>永辉超市(张家口市元都广场店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>光华北大街与兴华东路交口</td></tr>
+<tr><td>✅B</td><td>佰悦生活超市</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>新合作广场小区北门东230米</td></tr>
+<tr><td>✅B</td><td>超市发(下花园店)</td><td>购物中心/综合体</td><td>4.5</td><td>0</td><td>0</td><td>菜园街与菜园南路路口东侧</td></tr>
+<tr><td>✅B</td><td>中泰奥特莱斯招商中心</td><td>奥特莱斯</td><td>4.5</td><td>0</td><td>0</td><td>铁道西路12号忠昊物业服务有限公司2楼</td></tr>
+<tr><td>✅B</td><td>武城街批发市场</td><td>批发城</td><td>4.5</td><td>0</td><td>0</td><td>武城街25号</td></tr>
+<tr><td>✅B</td><td>金鹰悦城</td><td>百货/商场</td><td>4.5</td><td>1</td><td>0</td><td>经济开发区金鹰花园</td></tr>
+<tr><td>✅B</td><td>百货大楼(龙潭东街店)</td><td>百货/商场</td><td>4.4</td><td>0</td><td>0</td><td>长城北路国美电器旁</td></tr>
+<tr><td>✅B</td><td>超市发(沙城店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>沙城镇长城北路西侧5号</td></tr>
+<tr><td>✅B</td><td>超市发(容辰商街店)</td><td>购物中心/综合体</td><td>4.4</td><td>0</td><td>0</td><td>胜利北路53-45号</td></tr>
+<tr><td>✅B</td><td>东安批发市场</td><td>批发城</td><td>4.4</td><td>0</td><td>0</td><td>东安大街69号</td></tr>
+<tr><td>✅B</td><td>朝阳购物中心</td><td>购物中心/综合体</td><td>4.4</td><td>1</td><td>0</td><td>宣府大街82号</td></tr>
+<tr><td>✅B</td><td>辛巴未来王国(金鼎购物广场店)</td><td>购物中心/综合体</td><td>4.3</td><td>1</td><td>0</td><td>金鼎购物广场·A区F3-B211</td></tr>
+<tr><td>✅B</td><td>张家口亿安建材批发市场</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>老鸦庄镇玉宝墩村南茶榆路居然之家北100米</td></tr>
+<tr><td>✅B</td><td>鑫南北蔬菜水果批发市场</td><td>批发城</td><td>4.3</td><td>0</td><td>0</td><td>张家口市鑫南北蔬菜有限公司西北门旁</td></tr>
+<tr><td>✅B</td><td>世纪商城(蔚县唯佰广场店)</td><td>百货/商场</td><td>4.3</td><td>0</td><td>0</td><td>前进路55号唯佰广场(蔚县店)</td></tr>
+<tr><td>⚠️</td><td>百货大楼</td><td>百货/商场</td><td>4.2</td><td>0</td><td>0</td><td>宣化路15号</td></tr>
+<tr><td>⚠️</td><td>郭记海鲜批发(钻石花园店)</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>朝阳西大街32号</td></tr>
+<tr><td>⚠️</td><td>张家口市冷饮批发市场</td><td>批发城</td><td>4.2</td><td>0</td><td>0</td><td>西苑北路19号</td></tr>
+<tr><td>⚠️</td><td>百货大楼</td><td>百货/商场</td><td>4.1</td><td>0</td><td>0</td><td>宣府大街79号</td></tr>
+<tr><td>⚠️</td><td>鑫南北农产品批发市场</td><td>批发城</td><td>4.0</td><td>0</td><td>0</td><td>沈孔路8号</td></tr>
+<tr><td>⚠️</td><td>百货大楼(河北省张北县文化局东)</td><td>百货/商场</td><td>3.9</td><td>0</td><td>0</td><td>兴华东路1号</td></tr>
+<tr><td>⚠️</td><td>大地副食批发市场</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>西苑中路37号-2、-1号</td></tr>
+<tr><td>⚠️</td><td>桥西区鱼虾蟹海鲜批发</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>南茶坊街与西坝岗路交叉口北20米</td></tr>
+<tr><td>⚠️</td><td>众农升农副产品批发市场</td><td>批发城</td><td>3.9</td><td>0</td><td>0</td><td>夸父路与沈孔路交叉口北20米</td></tr>
+<tr><td>⚠️</td><td>广东陶瓷奥特莱斯店(茶榆路店)</td><td>奥特莱斯</td><td>3.8</td><td>0</td><td>0</td><td>茶榆路玉宝墩村北口南50米众合仓储院内</td></tr>
+<tr><td>⚠️</td><td>船奇海鲜批发零售</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>永兴西大街2号前屯新天地小区2号楼</td></tr>
+<tr><td>⚠️</td><td>花世界(彩青综合批发市场店)</td><td>批发城</td><td>3.8</td><td>0</td><td>0</td><td>经济开发区纬一中路彩青综合市场正东2号</td></tr>
+</tbody></table></div>
+<p>（另 7 家见 §11 原始数据）</p>
+<h2>6. 本地美食与特色美食（0 家）</h2>
+<p>标记口径：✅A 评分≥4.6 且带本地/老字号语义；✅A- 评分≥4.6；✅B 评分 4.3–4.6；⚠️ 3.5–4.3 或无评分；❌ &lt;3.5 或无地址。</p>
+<p>（本城未采集到餐饮 POI）</p>
+<h2>7. 苍蝇馆 / 小店候选（0 家）</h2>
+<p><strong>判定纪律</strong>：不凭空判定「苍蝇馆」。仅当命中高德「苍蝇馆」关键词，或店名含 小馆/排挡/家常/私房/土菜/大排档 等小店语义时列为候选；「苍蝇馆」本意是环境朴素但味道好的小店，与评分无必然关系，因此评分区间放宽到 3.6–4.6。</p>
+<p>（未命中苍蝇馆关键词或小店语义——需人工补充）</p>
+<h2>8. 知名特产（0 家）</h2>
+<p>（本城未采集到特产类 POI）</p>
+<h2>9. 美食 × 商圈 关联</h2>
+<p>关联方式：① 名称互证（美食店名/地址含商圈核心词）；② 距离就近（≤600m 且同区县）。仅靠距离的关联标 ⚠️，因为景区边界、跨街区的误配都靠距离无法排除。</p>
+<h3>鑫源宾馆(109乡道)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>鑫源宾馆(109乡道)</td><td>名称互证</td><td>0m</td><td>4.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>蔚县暖泉古镇客栈（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>蔚县暖泉古镇客栈</td><td>名称互证</td><td>0m</td><td>4.7</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>尚峰广场（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幸运盒子密室逃脱(尚峰店)</td><td>名称互证</td><td>29m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>中影百誉影城</td><td>名称互证</td><td>62m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>斯芬克斯密室逃脱(尚峰店)</td><td>名称互证</td><td>93m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>迷城实景密室逃脱(尚峰店)</td><td>距离就近</td><td>103m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>零叁幺叁超级密室(武城街店)</td><td>距离就近</td><td>269m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>银座（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>迷城实景密室(银座聚核店)</td><td>名称互证</td><td>2m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>横店电影城(张家口银座商城店)</td><td>名称互证</td><td>69m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>斯芬克斯实景密室·考拉授权店(容辰店)</td><td>距离就近</td><td>254m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>M16星云工作室密室逃脱</td><td>距离就近</td><td>335m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>迷城实景密室(红旗楼创始店)</td><td>距离就近</td><td>366m</td><td>4.1</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>乐享城（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>夜魅KTV(乐享城店)</td><td>名称互证</td><td>59m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>张家口金石国际影城(乐享城店)</td><td>名称互证</td><td>63m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>阳原国际裘皮城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>阳原福月楼宾馆</td><td>距离就近</td><td>353m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>光大新天地（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>无忧岛密室逃脱</td><td>名称互证</td><td>61m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>横店电影城(宣化店)</td><td>名称互证</td><td>108m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>万悦广场（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>无忧岛·沉浸式密室逃脱(沙城店)</td><td>名称互证</td><td>35m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中影熹禾影城(原大地影院财富中心店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影熹禾影城(原大地影院财富中心店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>麻省鲤恭24H自助棋牌(财富中心店)</td><td>距离就近</td><td>25m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(张家口高新店)</td><td>距离就近</td><td>309m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>张家口盛源商务宾馆</td><td>距离就近</td><td>394m</td><td>3.5</td><td>§11</td></tr>
+<tr><td>8893囍雀</td><td>距离就近</td><td>513m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>会友24小时棋牌(永兴西大街店)</td><td>距离就近</td><td>577m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金熊国际影城（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>金熊国际影城</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>横店电影城(新五一广场店)（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(新五一广场店)</td><td>名称互证</td><td>0m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>工人影剧院(五一路店)</td><td>距离就近</td><td>158m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>第九街区惊梦超级密室</td><td>距离就近</td><td>450m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>中乐影城(百盛店)</td><td>距离就近</td><td>464m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>横店电影城(张家口银座商城店)</td><td>名称互证</td><td>2395m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>横店电影城(宣化店)</td><td>名称互证</td><td>29568m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>时代购物中心（14 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>完美世界影城(金茂店)</td><td>距离就近</td><td>50m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>迷城实景密室(时代金茂店)</td><td>距离就近</td><td>54m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>麻哩雀匠24小时自助棋牌(时代金茂-乐购店)</td><td>距离就近</td><td>58m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>塔罗动物城</td><td>距离就近</td><td>65m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>友乐迪(时代购物中心店)</td><td>名称互证</td><td>107m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>蘭桂坊融晖娱乐</td><td>距离就近</td><td>111m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>熊猫棋牌文化室</td><td>距离就近</td><td>270m</td><td>3.7</td><td>§11</td></tr>
+<tr><td>麻哩雀匠(金鹰悦城店)</td><td>距离就近</td><td>291m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>T-ONE量贩式KTV</td><td>距离就近</td><td>330m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>豪门KTV(金鹰悦城店)</td><td>距离就近</td><td>377m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>音浪熊AI智慧KTV(金鹰悦城店)</td><td>距离就近</td><td>392m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>聚聚棋牌室(富强路北方学院东校区店)</td><td>距离就近</td><td>421m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>地垣标娱乐</td><td>距离就近</td><td>567m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>8893囍雀</td><td>距离就近</td><td>571m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永辉超市(尚峰广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中影百誉影城</td><td>距离就近</td><td>28m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>幸运盒子密室逃脱(尚峰店)</td><td>距离就近</td><td>70m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>斯芬克斯密室逃脱(尚峰店)</td><td>距离就近</td><td>125m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>迷城实景密室逃脱(尚峰店)</td><td>距离就近</td><td>162m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>零叁幺叁超级密室(武城街店)</td><td>距离就近</td><td>208m</td><td>3.9</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>永辉超市(张家口市容辰广场店)（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(张家口银座商城店)</td><td>距离就近</td><td>13m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>迷城实景密室(银座聚核店)</td><td>距离就近</td><td>57m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>斯芬克斯实景密室·考拉授权店(容辰店)</td><td>距离就近</td><td>203m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>迷城实景密室(红旗楼创始店)</td><td>距离就近</td><td>315m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>M16星云工作室密室逃脱</td><td>距离就近</td><td>374m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>家家悦超市(张家口纬二路莲花店)（17 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>睡吧宾馆</td><td>距离就近</td><td>18m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>张家口久又久宾馆</td><td>距离就近</td><td>37m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>雀悦24小时棋牌</td><td>距离就近</td><td>281m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>满园茶牌</td><td>距离就近</td><td>323m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>T-ONE量贩式KTV</td><td>距离就近</td><td>327m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>豪门KTV(金鹰悦城店)</td><td>距离就近</td><td>342m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>胡一天棋牌室</td><td>距离就近</td><td>345m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>音浪熊AI智慧KTV(金鹰悦城店)</td><td>距离就近</td><td>357m</td><td>4.6</td><td>§11</td></tr>
+<tr><td>摸阿麻自助棋牌</td><td>距离就近</td><td>378m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>奥斯卡国际娱乐公馆</td><td>距离就近</td><td>423m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>吸引力ATT KTV</td><td>距离就近</td><td>442m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>铜雀台(前屯新天地小区店)</td><td>距离就近</td><td>469m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>麻哩雀匠(金鹰悦城店)</td><td>距离就近</td><td>494m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>麻哩雀匠(瑞麟轩店)</td><td>距离就近</td><td>498m</td><td>4.2</td><td>§11</td></tr>
+<tr><td>8893囍雀</td><td>距离就近</td><td>547m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>友乐迪(时代购物中心店)</td><td>距离就近</td><td>562m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>塔罗动物城</td><td>距离就近</td><td>595m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>超市发(北方学院店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>铜雀楼自助棋牌(北方学院店)</td><td>距离就近</td><td>81m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>北爵娱乐会所KTV</td><td>距离就近</td><td>558m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>跃朗台球棋牌俱乐部</td><td>距离就近</td><td>591m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>超市发(大新门店)（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>和健动物医院</td><td>距离就近</td><td>258m</td><td>4.4</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>中泰万合·奥特莱斯（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>幸福蓝海国际影城(中泰城店)</td><td>距离就近</td><td>166m</td><td>4.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>容辰广场（5 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>横店电影城(张家口银座商城店)</td><td>距离就近</td><td>61m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>迷城实景密室(银座聚核店)</td><td>距离就近</td><td>101m</td><td>3.8</td><td>§11</td></tr>
+<tr><td>斯芬克斯实景密室·考拉授权店(容辰店)</td><td>名称互证</td><td>153m</td><td>3.2</td><td>§11</td></tr>
+<tr><td>迷城实景密室(红旗楼创始店)</td><td>距离就近</td><td>265m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>M16星云工作室密室逃脱</td><td>距离就近</td><td>364m</td><td>3.8</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>百盛购物广场（4 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>中乐影城(百盛店)</td><td>距离就近</td><td>37m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>第九街区惊梦超级密室</td><td>距离就近</td><td>278m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>工人影剧院(五一路店)</td><td>距离就近</td><td>279m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>横店电影城(新五一广场店)</td><td>距离就近</td><td>436m</td><td>4.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>唯佰广场(张北三店)（3 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>零叁幺叁密室俱乐部(张北分店)</td><td>距离就近</td><td>4m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>迷你岛儿童乐园</td><td>距离就近</td><td>332m</td><td>4.0</td><td>§11</td></tr>
+<tr><td>卡卡超级密室逃脱(唯佰店)</td><td>名称互证</td><td>146326m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>金鼎购物广场（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>林彤影城(张家口金鼎店)</td><td>名称互证</td><td>39m</td><td>4.5</td><td>§11</td></tr>
+<tr><td>辛巴未来王国(金鼎购物广场店)</td><td>名称互证</td><td>64m</td><td>4.3</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>唯佰广场(蔚县店)（2 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>卡卡超级密室逃脱(唯佰店)</td><td>名称互证</td><td>29m</td><td>3.6</td><td>§11</td></tr>
+<tr><td>华文酒店</td><td>距离就近</td><td>588m</td><td>4.5</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>冠垣生活广场（6 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>有间密室逃脱</td><td>名称互证</td><td>0m</td><td>4.3</td><td>§11</td></tr>
+<tr><td>猫探长(冠垣生活广场店)</td><td>名称互证</td><td>4m</td><td>3.1</td><td>§11</td></tr>
+<tr><td>唱吧麦颂KTV(张家口冠恒广场店)</td><td>距离就近</td><td>29m</td><td>4.4</td><td>§11</td></tr>
+<tr><td>中数国际电影城(张家口店)</td><td>距离就近</td><td>41m</td><td>3.9</td><td>§11</td></tr>
+<tr><td>迷城实景密室(红旗楼创始店)</td><td>距离就近</td><td>364m</td><td>4.1</td><td>§11</td></tr>
+<tr><td>斯芬克斯实景密室·考拉授权店(容辰店)</td><td>距离就近</td><td>475m</td><td>3.2</td><td>§11</td></tr>
+</tbody></table></div>
+<h3>泰宇购物中心（1 家）</h3>
+<div class="tw"><table><thead><tr><th>店名</th><th>关联方式</th><th>直线距离</th><th>评分</th><th>数据位置</th></tr></thead><tbody>
+<tr><td>卡卡超级密室逃脱(唯佰店)</td><td>距离就近</td><td>531m</td><td>3.6</td><td>§11</td></tr>
+</tbody></table></div>
+<h2>10. 酒店配套（31 家）</h2>
+<div class="tw"><table><thead><tr><th>标记</th><th>名称</th><th>类型</th><th>评分</th><th>人均</th><th>地址</th></tr></thead><tbody>
+<tr><td>✅A-</td><td>鑫源宾馆(109乡道)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.9</td><td>—</td><td>柴沟堡镇马王庙巷(109乡道县图书馆东100米)</td></tr>
+<tr><td>✅A-</td><td>蔚县暖泉古镇客栈</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>暖泉古镇树花广场西行</td></tr>
+<tr><td>✅A-</td><td>怀安金源宾馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.7</td><td>—</td><td>职教中心底商西100米</td></tr>
+<tr><td>✅A-</td><td>万全宾馆(新华东街店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>新华东街31号</td></tr>
+<tr><td>✅A-</td><td>怀安广安宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.6</td><td>—</td><td>柴沟堡镇广安街怀远路供电公司斜对面</td></tr>
+<tr><td>✅B</td><td>华文酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.5</td><td>—</td><td>和平东路与建设南大街交叉口东北260米</td></tr>
+<tr><td>✅B</td><td>阳光假日民宿(高柳路店)</td><td>住宿服务;住宿服务相关;住宿服务相关</td><td>4.5</td><td>—</td><td>张家口桥东区盛华西大街北荣庆商贸街6号楼</td></tr>
+<tr><td>✅B</td><td>张家口金汇宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.5</td><td>—</td><td>纬一路万博斜对面旅馆一条街4号</td></tr>
+<tr><td>✅B</td><td>睡吧宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.4</td><td>—</td><td>纬二路府街庭院24号楼莲花楼底商</td></tr>
+<tr><td>✅B</td><td>恒通城市酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.4</td><td>—</td><td>五一路19号(五一路与建国路路口)</td></tr>
+<tr><td>✅B</td><td>同顺旅馆(宣化火车站店)</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>南关西马道公交公司底商2号</td></tr>
+<tr><td>✅B</td><td>怀安宾馆(县政府店)</td><td>住宿服务;宾馆酒店;宾馆酒店｜住宿服务;旅馆招待所;旅馆招待所</td><td>4.4</td><td>—</td><td>德政街怀安县人民政府西侧约130米</td></tr>
+<tr><td>✅B</td><td>沽源速发商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>平定堡镇桥西富源住宅小区9幢118号商铺速发快捷宾馆</td></tr>
+<tr><td>✅B</td><td>张家口鑫光大宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>牌楼北街4号鑫光大商厦5层</td></tr>
+<tr><td>✅B</td><td>京冀酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.3</td><td>—</td><td>小南辛堡镇康祁公路派出所东150米路北</td></tr>
+<tr><td>⚠️</td><td>7号国际宫馆</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>张北镇西梁村207线北永青钢材市场</td></tr>
+<tr><td>⚠️</td><td>亿豪酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>4.2</td><td>—</td><td>盛华西大街20号(万博市场对面)</td></tr>
+<tr><td>⚠️</td><td>阳原福月楼宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.2</td><td>—</td><td>皮毛大市场南100米</td></tr>
+<tr><td>⚠️</td><td>蔚县豪源宾馆(古城店)</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>4.1</td><td>—</td><td>康居南大街4号(康居嘉园东区西门旁)</td></tr>
+<tr><td>⚠️</td><td>政府招待所</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.9</td><td>—</td><td>张北镇花园街2号</td></tr>
+<tr><td>⚠️</td><td>张家口鑫煊宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.9</td><td>—</td><td>明德北街383号(老四医院对面)</td></tr>
+<tr><td>⚠️</td><td>隆豪大酒店</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.9</td><td>—</td><td>胜利北路13号</td></tr>
+<tr><td>⚠️</td><td>金鼎宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>工业北街</td></tr>
+<tr><td>⚠️</td><td>香江酒店(平门店)</td><td>住宿服务;宾馆酒店;三星级宾馆</td><td>3.8</td><td>—</td><td>古宏大街10号</td></tr>
+<tr><td>⚠️</td><td>张家口久又久宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.8</td><td>—</td><td>胜利中路府街庭院13号底商</td></tr>
+<tr><td>⚠️</td><td>聚仙楼大酒店(公路街)</td><td>住宿服务;宾馆酒店;宾馆酒店｜餐饮服务;中餐厅;中餐厅</td><td>3.7</td><td>—</td><td>公路街15号</td></tr>
+<tr><td>⚠️</td><td>蔚县中盛宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.7</td><td>—</td><td>建设南大街中国银行隔壁</td></tr>
+<tr><td>⚠️</td><td>华蒙酒店</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.6</td><td>—</td><td>白山路16号</td></tr>
+<tr><td>⚠️</td><td>蔚县六街旅馆</td><td>住宿服务;旅馆招待所;旅馆招待所</td><td>3.5</td><td>—</td><td>牌楼西街20号</td></tr>
+<tr><td>⚠️</td><td>张家口盛源商务宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.5</td><td>—</td><td>经济开发区长城西大街新天地小区北门西50米</td></tr>
+<tr><td>❌</td><td>张家口鑫涛宾馆</td><td>住宿服务;宾馆酒店;宾馆酒店</td><td>3.3</td><td>—</td><td>荣庆商贸街7号(纬一路万博大市场对面)</td></tr>
+</tbody></table></div>
+<h2>11. 原始查询清单与原始数据</h2>
+<div class="tw"><table><thead><tr><th>维度</th><th>查询面</th><th>命中</th><th>备注</th></tr></thead><tbody>
+<tr><td>hotel</td><td>类型:住宿服务</td><td>20</td><td></td></tr>
+<tr><td>hotel</td><td>关键词:酒店</td><td>20</td><td></td></tr>
+<tr><td>kids</td><td>关键词:迷你动物园</td><td>8</td><td></td></tr>
+<tr><td>kids</td><td>关键词:萌宠乐园</td><td>14</td><td></td></tr>
+<tr><td>kids</td><td>关键词:室内动物园</td><td>7</td><td></td></tr>
+<tr><td>kids</td><td>关键词:动物园</td><td>4</td><td></td></tr>
+<tr><td>adult</td><td>关键词:密室逃脱</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:KTV</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:电影院</td><td>20</td><td></td></tr>
+<tr><td>adult</td><td>关键词:棋牌室</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:百货</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:奥特莱斯</td><td>3</td><td></td></tr>
+<tr><td>district</td><td>关键词:批发市场</td><td>20</td><td></td></tr>
+<tr><td>district</td><td>关键词:商贸城</td><td>20</td><td></td></tr>
+</tbody></table></div>
+<p>原始 JSON：<code>.cache/amap/raw/张家口市.json</code>（含高德返回全字段，含照片 URL、电话、营业时间）。</p>
+<h2>12. 校对待办</h2>
+<ul class="todo"><li><input type="checkbox" disabled> <strong>2 个 POI 无地址</strong>，需人工补：迷你时尚造型(下东营路店)、满园茶牌</li><li><input type="checkbox" disabled> <strong>1 个 POI 无评分</strong>，暂标 ⚠️：园中园小区</li><li><input type="checkbox" disabled> 儿童游乐 26 家，其中场内 2 家、独立 24 家——需确认场内点位是否仍在营业（商场撤柜率高）。</li><li><input type="checkbox" disabled> §2 商圈画像中「动线主轴」由地址道路词频推导，「高峰时段 / 本地客成分 / 可跳过商业段」待人工校对。</li><li><input type="checkbox" disabled> §9 关联中，仅靠距离就近的条目需逐条确认（防止景区/跨街区误配）。</li><li><input type="checkbox" disabled> 本城 POI 覆盖 13 个区县：万全区、下花园区、宣化区、崇礼区、张北县、怀安县、怀来县、桥东区、桥西区、沽源县、涿鹿县、蔚县、阳原县——缺区县的需补充采集。</li></ul></article></div></main>
+<footer><div class="wrap">数据来源：高德地图 Web 服务 POI ·
+本地美食探索 skill 数据层 v0.7.0 · 页面由 md 自动生成</div></footer>
+<script src="assets/app.js"></script>
+</body></html>
