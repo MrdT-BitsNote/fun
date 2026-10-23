@@ -3,9 +3,9 @@
  "source": "高德地图 Web 服务 POI",
  "skill": "本地美食探索 v0.7.0",
  "cities_total": 389,
- "cities_built": 104,
- "cities_full_dims": 67,
- "poi_total": 70418,
+ "cities_built": 114,
+ "cities_full_dims": 97,
+ "poi_total": 79624,
  "cities": [
   {
    "city": "洛阳市",
@@ -737,254 +737,298 @@
    "city": "北屯市",
    "province": "新疆维吾尔自治区",
    "adcode": "659005",
-   "poi": 255,
+   "poi": 326,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:12:31",
+   "updated": "2026-10-23 18:28:11",
    "url": "cities/北屯市.html"
   },
   {
    "city": "塔城地区",
    "province": "新疆维吾尔自治区",
    "adcode": "654200",
-   "poi": 487,
+   "poi": 612,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:13:19",
+   "updated": "2026-10-23 18:28:25",
    "url": "cities/塔城地区.html"
   },
   {
    "city": "昆玉市",
    "province": "新疆维吾尔自治区",
    "adcode": "659009",
-   "poi": 136,
+   "poi": 183,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:13:51",
+   "updated": "2026-10-23 18:28:38",
    "url": "cities/昆玉市.html"
   },
   {
    "city": "和田地区",
    "province": "新疆维吾尔自治区",
    "adcode": "653200",
-   "poi": 486,
+   "poi": 612,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:14:40",
+   "updated": "2026-10-23 18:28:51",
    "url": "cities/和田地区.html"
   },
   {
    "city": "阿勒泰地区",
    "province": "新疆维吾尔自治区",
    "adcode": "654300",
-   "poi": 479,
+   "poi": 590,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:15:19",
+   "updated": "2026-10-23 18:29:05",
    "url": "cities/阿勒泰地区.html"
   },
   {
    "city": "石河子市",
    "province": "新疆维吾尔自治区",
    "adcode": "659001",
-   "poi": 413,
+   "poi": 532,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:16:04",
+   "updated": "2026-10-23 18:29:18",
    "url": "cities/石河子市.html"
   },
   {
    "city": "可克达拉市",
    "province": "新疆维吾尔自治区",
    "adcode": "659008",
-   "poi": 209,
+   "poi": 270,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:16:39",
+   "updated": "2026-10-23 18:29:31",
    "url": "cities/可克达拉市.html"
   },
   {
    "city": "博尔塔拉蒙古自治州",
    "province": "新疆维吾尔自治区",
    "adcode": "652700",
-   "poi": 423,
+   "poi": 530,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:17:17",
+   "updated": "2026-10-23 18:29:54",
    "url": "cities/博尔塔拉蒙古自治州.html"
   },
   {
    "city": "昌吉回族自治州",
    "province": "新疆维吾尔自治区",
    "adcode": "652300",
-   "poi": 567,
+   "poi": 702,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:18:07",
+   "updated": "2026-10-23 18:30:07",
    "url": "cities/昌吉回族自治州.html"
   },
   {
    "city": "伊犁哈萨克自治州",
    "province": "新疆维吾尔自治区",
    "adcode": "654000",
-   "poi": 619,
+   "poi": 767,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:18:53",
+   "updated": "2026-10-23 18:30:21",
    "url": "cities/伊犁哈萨克自治州.html"
   },
   {
    "city": "阿拉尔市",
    "province": "新疆维吾尔自治区",
    "adcode": "659002",
-   "poi": 346,
+   "poi": 455,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:19:39",
+   "updated": "2026-10-23 18:30:34",
    "url": "cities/阿拉尔市.html"
   },
   {
    "city": "喀什地区",
    "province": "新疆维吾尔自治区",
    "adcode": "653100",
-   "poi": 647,
+   "poi": 798,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:20:23",
+   "updated": "2026-10-23 18:30:48",
    "url": "cities/喀什地区.html"
   },
   {
    "city": "克拉玛依市",
    "province": "新疆维吾尔自治区",
    "adcode": "650200",
-   "poi": 449,
+   "poi": 563,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:21:10",
+   "updated": "2026-10-23 18:31:01",
    "url": "cities/克拉玛依市.html"
   },
   {
    "city": "吐鲁番市",
    "province": "新疆维吾尔自治区",
    "adcode": "650400",
-   "poi": 425,
+   "poi": 533,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:21:48",
+   "updated": "2026-10-23 18:31:14",
    "url": "cities/吐鲁番市.html"
   },
   {
    "city": "哈密市",
    "province": "新疆维吾尔自治区",
    "adcode": "650500",
-   "poi": 471,
+   "poi": 594,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:22:37",
+   "updated": "2026-10-23 18:31:36",
    "url": "cities/哈密市.html"
   },
   {
    "city": "新星市",
    "province": "新疆维吾尔自治区",
    "adcode": "659011",
-   "poi": 108,
+   "poi": 153,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:23:09",
+   "updated": "2026-10-23 18:31:49",
    "url": "cities/新星市.html"
   },
   {
    "city": "图木舒克市",
    "province": "新疆维吾尔自治区",
    "adcode": "659003",
-   "poi": 270,
+   "poi": 348,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:23:42",
+   "updated": "2026-10-23 18:32:02",
    "url": "cities/图木舒克市.html"
   },
   {
    "city": "阿克苏地区",
    "province": "新疆维吾尔自治区",
    "adcode": "652900",
-   "poi": 633,
+   "poi": 793,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:24:33",
+   "updated": "2026-10-23 18:32:15",
    "url": "cities/阿克苏地区.html"
   },
   {
    "city": "乌鲁木齐市",
    "province": "新疆维吾尔自治区",
    "adcode": "650100",
-   "poi": 701,
+   "poi": 892,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:25:19",
+   "updated": "2026-10-23 18:32:29",
    "url": "cities/乌鲁木齐市.html"
   },
   {
    "city": "胡杨河市",
    "province": "新疆维吾尔自治区",
    "adcode": "659010",
-   "poi": 93,
+   "poi": 135,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:25:58",
+   "updated": "2026-10-23 18:32:42",
    "url": "cities/胡杨河市.html"
   },
   {
    "city": "五家渠市",
    "province": "新疆维吾尔自治区",
    "adcode": "659004",
-   "poi": 254,
+   "poi": 329,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:26:31",
+   "updated": "2026-10-23 18:33:05",
    "url": "cities/五家渠市.html"
   },
   {
    "city": "巴音郭楞蒙古自治州",
    "province": "新疆维吾尔自治区",
    "adcode": "652800",
-   "poi": 578,
+   "poi": 719,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:27:22",
+   "updated": "2026-10-23 18:33:18",
    "url": "cities/巴音郭楞蒙古自治州.html"
   },
   {
    "city": "白杨市",
    "province": "新疆维吾尔自治区",
    "adcode": "659012",
-   "poi": 67,
+   "poi": 98,
    "waves": [
-    1
+    2
    ],
-   "updated": "2026-10-23 18:27:52",
+   "updated": "2026-10-23 18:33:31",
    "url": "cities/白杨市.html"
+  },
+  {
+   "city": "克孜勒苏柯尔克孜自治州",
+   "province": "新疆维吾尔自治区",
+   "adcode": "653000",
+   "poi": 376,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:33:44",
+   "url": "cities/克孜勒苏柯尔克孜自治州.html"
+  },
+  {
+   "city": "襄阳市",
+   "province": "湖北省",
+   "adcode": "420600",
+   "poi": 896,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:34:40",
+   "url": "cities/襄阳市.html"
+  },
+  {
+   "city": "十堰市",
+   "province": "湖北省",
+   "adcode": "420300",
+   "poi": 814,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:34:53",
+   "url": "cities/十堰市.html"
+  },
+  {
+   "city": "宜昌市",
+   "province": "湖北省",
+   "adcode": "420500",
+   "poi": 840,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:35:07",
+   "url": "cities/宜昌市.html"
   },
   {
    "city": "武汉市",
@@ -996,6 +1040,72 @@
    ],
    "updated": "2026-10-23 18:09:32",
    "url": "cities/武汉市.html"
+  },
+  {
+   "city": "黄冈市",
+   "province": "湖北省",
+   "adcode": "421100",
+   "poi": 878,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:35:30",
+   "url": "cities/黄冈市.html"
+  },
+  {
+   "city": "荆门市",
+   "province": "湖北省",
+   "adcode": "420800",
+   "poi": 774,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:35:45",
+   "url": "cities/荆门市.html"
+  },
+  {
+   "city": "潜江市",
+   "province": "湖北省",
+   "adcode": "429005",
+   "poi": 586,
+   "waves": [
+    2
+   ],
+   "updated": "2026-10-23 18:35:58",
+   "url": "cities/潜江市.html"
+  },
+  {
+   "city": "天门市",
+   "province": "湖北省",
+   "adcode": "429006",
+   "poi": 454,
+   "waves": [
+    1
+   ],
+   "updated": "2026-10-23 18:33:55",
+   "url": "cities/天门市.html"
+  },
+  {
+   "city": "孝感市",
+   "province": "湖北省",
+   "adcode": "420900",
+   "poi": 685,
+   "waves": [
+    1
+   ],
+   "updated": "2026-10-23 18:34:38",
+   "url": "cities/孝感市.html"
+  },
+  {
+   "city": "仙桃市",
+   "province": "湖北省",
+   "adcode": "429004",
+   "poi": 485,
+   "waves": [
+    1
+   ],
+   "updated": "2026-10-23 18:35:27",
+   "url": "cities/仙桃市.html"
   },
   {
    "city": "怀化市",

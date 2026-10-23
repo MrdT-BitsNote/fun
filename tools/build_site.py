@@ -278,11 +278,15 @@ def main():
     ap.add_argument("--out", default=SITE)
     args = ap.parse_args()
     site = args.out
+    # 先尝试清空重建；若目录被占用（如本地预览服务锁文件），
+    # 降级为原地覆盖——文件按城市名键控，旧文件不影响正确性
     if os.path.exists(site):
-        shutil.rmtree(site)
-    os.makedirs(os.path.join(site, "assets"))
-    os.makedirs(os.path.join(site, "provinces"))
-    os.makedirs(os.path.join(site, "cities"))
+        try:
+            shutil.rmtree(site)
+        except OSError as e:
+            print("⚠️ 清空 %s 失败（%s），改为原地覆盖" % (site, str(e)[:60]))
+    for sub in ("assets", "provinces", "cities"):
+        os.makedirs(os.path.join(site, sub), exist_ok=True)
 
     with open(os.path.join(site, "assets", "style.css"), "w",
               encoding="utf-8") as f:
