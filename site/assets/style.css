@@ -1,0 +1,74 @@
+
+:root{--bg:#faf7f2;--card:#fff;--ink:#2b2620;--sub:#7a7064;--line:#e8e0d5;
+--acc:#c2540a;--acc2:#0a7c5a;--chip:#f3ece1;--red:#c0392b;--green:#1e7d4f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);
+font:15px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header.top{background:var(--card);border-bottom:1px solid var(--line);
+position:sticky;top:0;z-index:50}
+header.top .wrap{display:flex;align-items:center;gap:16px;
+height:56px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:17px;white-space:nowrap}
+.brand small{color:var(--sub);font-weight:400;margin-left:8px;font-size:12px}
+nav{display:flex;gap:14px;font-size:14px;margin-left:auto;flex-wrap:wrap}
+.search{flex:1;min-width:180px;max-width:420px}
+.search input{width:100%;height:34px;border:1px solid var(--line);
+border-radius:17px;padding:0 14px;background:var(--bg);font-size:14px;
+outline:none}
+.search input:focus{border-color:var(--acc)}
+.hero{padding:36px 0 8px}
+.hero h1{font-size:26px;letter-spacing:.5px}
+.hero p{color:var(--sub);margin-top:6px;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:12px;margin:20px 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:14px 16px}
+.stat b{font-size:22px;display:block;color:var(--acc)}
+.stat span{color:var(--sub);font-size:12.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+gap:14px;margin:18px 0 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:16px;display:block;color:inherit;transition:box-shadow .15s}
+.card:hover{box-shadow:0 4px 18px rgba(60,40,10,.10);text-decoration:none}
+.card h3{font-size:16px;margin-bottom:6px}
+.card .meta{color:var(--sub);font-size:12.5px;line-height:1.9}
+.chips{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+.chip{background:var(--chip);border-radius:10px;padding:1px 9px;font-size:11.5px;
+color:#6b5a3e}
+.chip.w2{background:#e2f2ea;color:var(--green)}
+.chip.part{background:#fdf0e2;color:var(--acc)}
+main{padding:26px 0 60px}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:14px;
+padding:28px 32px;margin-top:18px}
+.doc h1{font-size:24px;margin:6px 0 14px}
+.doc h2{font-size:19px;margin:26px 0 10px;padding-bottom:8px;
+border-bottom:2px solid var(--line)}
+.doc h3{font-size:16px;margin:18px 0 8px;color:#8a4a12}
+.doc p{margin:8px 0}
+.doc blockquote{background:var(--chip);border-left:4px solid var(--acc);
+border-radius:0 8px 8px 0;padding:10px 16px;margin:12px 0;color:#6b5a3e;
+font-size:13.5px}
+.doc hr{border:none;border-top:1px solid var(--line);margin:22px 0}
+.tw{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th{background:var(--chip);text-align:left;font-weight:600}
+th,td{border:1px solid var(--line);padding:6px 10px;vertical-align:top}
+tbody tr:nth-child(even){background:#fcfaf6}
+img{border-radius:8px;max-width:100%;height:auto}
+ul{padding-left:22px;margin:8px 0}
+ul.todo{list-style:none;padding-left:4px}
+ul.todo li{margin:4px 0;color:#5a5044}
+code{background:var(--chip);border-radius:5px;padding:1px 6px;font-size:12.5px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.filters button{background:var(--card);border:1px solid var(--line);
+border-radius:16px;padding:4px 14px;font-size:13px;cursor:pointer;color:var(--sub)}
+.filters button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--sub);
+font-size:12.5px;text-align:center}
+.badge{display:inline-block;border-radius:6px;padding:0 8px;font-size:12px;
+font-weight:700}
+.badge.S{background:#c2540a;color:#fff}.badge.A{background:#0a7c5a;color:#fff}
+.badge.B{background:#8a6d3b;color:#fff}.badge.C{background:#b8aea0;color:#fff}
+@media(max-width:640px){.doc{padding:18px 16px}.hero h1{font-size:21px}}
