@@ -35,24 +35,39 @@
 <pre class="code"><code>site/
 ├── index.html              <span class="cm"># FUN hero + 主站</span>
 ├── assets/                 <span class="cm"># style.css / app.js（零依赖）</span>
-├── cities/&lt;adcode&gt;.html   <span class="cm"># 城市页</span>
-├── provinces/&lt;省&gt;.html    <span class="cm"># 省份页</span>
+├── cities/&lt;adcode&gt;.html   <span class="cm"># 城市页（389）</span>
+├── cities/&lt;市名&gt;.html     <span class="cm"># 城市名 URL 兼容存根 → 跳转 adcode 页</span>
+├── provinces/&lt;省&gt;.html    <span class="cm"># 省份页（32）</span>
 ├── api.html                <span class="cm"># 数据接口文档</span>
 ├── sources.html            <span class="cm"># 数据来源</span>
 ├── api/                    <span class="cm"># JSON 数据接口层</span>
 │   ├── index.json / stats.json / data.json
-│   ├── cities/&lt;adcode&gt;.json
+│   ├── cities/&lt;adcode&gt;.json（389 + index.json 轻索引）
 │   ├── provinces/&lt;省&gt;.json
 │   ├── food/top.json · districts/top.json
-├── md/&lt;省&gt;/&lt;市&gt;.md         <span class="cm"># Markdown 档案副本</span>
+├── md/                     <span class="cm"># Markdown 内容全量（skill 直读）</span>
+│   ├── README.md · API.md · SOURCES.md · 行政层级总览.md
+│   └── &lt;省&gt;/&lt;市&gt;.md（389 城档案 + 32 省级索引）
+├── 404.html                <span class="cm"># FUN 风格错误页</span>
+├── robots.txt · sitemap.xml  <span class="cm"># SEO（389 城 + 省页 + 文档页）</span>
+├── _headers                <span class="cm"># Cloudflare Pages 缓存规则</span>
+├── CNAME                   <span class="cm"># fun.worldstip.com</span>
 └── README.html             <span class="cm"># 本页</span></code></pre>
 
 <h2>fun.worldstip.com 部署（Cloudflare Pages）</h2>
 <ul>
 <li>构建命令：留空（纯静态）；输出目录：<code>site</code>。</li>
 <li>DNS：<code>fun</code> CNAME 到 Cloudflare Pages 域名，橙色云 proxied。</li>
-<li>缓存：<code>/api/*.json</code> 与 <code>/md/*.md</code> 设 <code>Cache-Control: public, max-age=86400</code>；HTML 走默认。</li>
-<li>备选：GitHub Pages（本仓库 <code>/docs</code> 或根目录 + Actions）、Netlify Drop、任意 Nginx。</li>
+<li>缓存规则已随站交付（<code>_headers</code>）：<code>/api/*</code> 与 <code>/md/*</code> 24h、<code>/assets/*</code> 一年 immutable、HTML 1h。</li>
+<li>备选：GitHub Pages（本仓库根目录 + Actions）、Netlify Drop、任意 Nginx。</li>
+</ul>
+
+<h2>直接上传产品（零配置上线）</h2>
+<ul>
+<li>交付物 <code>fun-site-upload.zip</code> 为 <code>site/</code> 的完整打包（含 CNAME / _headers / robots / sitemap / 404），<b>解压即传、无需构建</b>。</li>
+<li><b>Netlify Drop</b>：app.netlify.com/drop 拖入 zip 或解压后的文件夹 → 秒级上线，自定义域名绑定 fun.worldstip.com。</li>
+<li><b>Cloudflare Pages 直传</b>：Direct Upload 选该目录；<b>GitHub Pages</b>：推送本仓库后 Settings → Pages 选 main 分支根目录。</li>
+<li><b>任意 Nginx/宝塔</b>：解压到站点根目录，<code>try_files $uri $uri/ /404.html</code> 即可。</li>
 </ul>
 
 <h2>GitHub 备份</h2>
@@ -63,8 +78,8 @@
 </ul>
 
 <h2>重新生成</h2>
-<pre class="code"><code>python tools/build_api.py        <span class="cm"># md 档案 → JSON 数据层（site/api + site/md）</span>
-python tools/build_fun_site.py  <span class="cm"># JSON → 网站（site/*.html + assets）</span>
+<pre class="code"><code>python tools/build_api.py        <span class="cm"># md 档案 → JSON 数据层（site/api + site/md 全量内容）</span>
+python tools/build_fun_site.py  <span class="cm"># JSON → 网站（site/*.html + assets + 部署资产）</span>
 python tools/validate_data.py   <span class="cm"># C1–C10 数据校验</span></code></pre>
 </div></main><footer class="footer"><div class="foot-in">
 <div><div class="foot-brand">FUN<i></i></div>
@@ -75,7 +90,7 @@ python tools/validate_data.py   <span class="cm"># C1–C10 数据校验</span><
 <div class="foot-col"><h4>数据</h4>
 <a href="api.html">数据接口</a><a href="sources.html">数据来源</a>
 <a href="data.json">data.json</a><a href="https://github.com/MrdT-BitsNote/fun" target="_blank" rel="noopener">GitHub 仓库</a></div>
-</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-23 22:14<br>
+</div><div class="foot-base">数据来源：高德地图 Web 服务 POI（restapi.amap.com）· 美团 · 大众点评 · 生成时间 2026-10-24 01:31<br>
 数据仅供探索参考，营业状态与评分以各平台实时信息为准。FUN · fun.worldstip.com</div></footer>
 <script src="assets/app.js"></script>
 </body></html>

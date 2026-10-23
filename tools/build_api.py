@@ -569,9 +569,188 @@ def main():
                     "url": c["page"]} for c in light],
     })
 
+    # 站点级 Markdown 文档（内容全量 md 化：省级索引 / 全国索引 / 层级总览 / API / SOURCES）
+    build_site_docs(light, cities)
+
     dt = (datetime.now() - t0).total_seconds()
     print(f"[build_api] {len(light)} cities / {len(prov_summary)} provinces / "
           f"poi={sum(c['poi'] or 0 for c in light)} / {dt:.1f}s")
+
+
+# ================================================================ 站点级 Markdown 文档
+
+def _copy_if_newer(src, dst):
+    if not os.path.isfile(src):
+        return False
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    if not os.path.exists(dst) or os.path.getmtime(src) > os.path.getmtime(dst):
+        with open(src, encoding="utf-8") as a, open(dst, "w", encoding="utf-8") as b:
+            b.write(a.read())
+        return True
+    return False
+
+
+def build_site_docs(light, cities):
+    """把站点全部内容拆分为 Markdown：省级索引副本、全国索引、行政层级总览、API/SOURCES 文档。"""
+    # 1. 省级索引 md 副本（data/<省>/<省>.md → site/md/<省>/<省>.md）
+    n_prov = 0
+    for prov in sorted(os.listdir(DATA)):
+        pdir = os.path.join(DATA, prov)
+        if not os.path.isdir(pdir):
+            continue
+        if _copy_if_newer(os.path.join(pdir, prov + ".md"),
+                          os.path.join(MD_OUT, prov, prov + ".md")):
+            n_prov += 1
+    # 2. 全国索引 + 行政层级总览
+    n_root = sum(_copy_if_newer(os.path.join(DATA, name), os.path.join(MD_OUT, name))
+                 for name in ("README.md", "行政层级总览.md"))
+
+    poi_total = sum(c["poi"] or 0 for c in light)
+    gen = datetime.now().strftime("%Y-%m-%d %H:%M")
+    full3 = sum(1 for c in light if 3 in (c.get("waves") or []))
+
+    # 3. API.md —— 数据接口文档（与 api.html 同源）
+    api_md = f"""# FUN 数据接口文档
+
+> 站点：https://fun.worldstip.com  ·  生成时间：{gen}
+> 所有端点只读、无鉴权、无速率限制，可被 CDN 缓存。JSON 与 Markdown 由同一数据层生成，同源同值。
+
+## 端点总览
+
+| 端点 | 格式 | 内容 | 体积量级 |
+|---|---|---|---|
+| `/api/index.json` | JSON | 全国总索引：省 → 市 → 轻量 meta + 评级统计 | ~150 KB |
+| `/api/stats.json` | JSON | 全站统计快照 | < 1 KB |
+| `/api/cities/index.json` | JSON | 城市轻索引数组（含页面/JSON/MD 三地址） | ~120 KB |
+| `/api/cities/<adcode>.json` | JSON | 城市全量结构化数据（见下方 Schema） | 50–500 KB/城 |
+| `/api/provinces/<省>.json` | JSON | 省级汇总：城市列表 + 聚合统计 | ~10–60 KB |
+| `/api/food/top.json` | JSON | 全国美食榜（按评分降序，含图与城市跳转） | ~600 KB |
+| `/api/districts/top.json` | JSON | 全国 S/A 级商圈榜（按关联美食数） | ~400 KB |
+| `/md/<省>/<市>.md` | Markdown | 城市档案原文（13 章），skill 直读 | 20–80 KB/城 |
+| `/data.json` | JSON | 兼容旧版轻量总索引 | ~100 KB |
+
+## 城市 JSON Schema（`/api/cities/<adcode>.json`）
+
+```json
+{{
+  "city": "岳阳市",                  // 城市名
+  "province": "湖南省",              // 所属省级单位
+  "adcode": "430600",                // 高德区划代码
+  "poi_total": 1018,                 // 去重 POI 总数
+  "waves": [2, 3],                   // 采集波次
+  "updated": "2026-10-23 20:07:00",  // 采集时间
+  "credibility": {{                  // §0 可信度
+    "poi_total": 1018, "rated_ratio": "99%", "warnings": 0,
+    "dims": {{"美食": 311, "商圈": 184, "休闲娱乐": 386, "儿童娱乐": 40, "酒店": 32, "特产": 41}}
+  }},
+  "overview": {{                     // §1 总览
+    "admin": {{"下级区县": "9", "街道/镇/乡": "134"}},
+    "district_poi": [{{"district": "岳阳楼区", "poi": 534, "ratio": "52%"}}],
+    "carrier_types": [{{"type": "购物中心/综合体", "count": 59}}]
+  }},
+  "districts": [{{                   // §2 商圈档案（含 S/A/B/C 评级与详情）
+    "name": "步步高新天地", "grade": "A", "carrier": "购物中心/综合体",
+    "rating": 4.7, "food": 21, "leisure": 51, "kids": 1, "hotel": 3,
+    "detail": {{"address": "东茅岭路1号", "bandwidth": "¥45（8–81）", "axis": "东茅岭街", "mixes": [...]}}
+  }}],
+  "leisure":  {{"subcats": [...], "list": [...]}},   // §4 休闲娱乐（14 子类）
+  "kids":     {{"subcats": [...], "list": [...]}},   // 儿童亲子
+  "malls":    [...],                  // §5 综合体与商场
+  "food":     [...],                  // §6 美食（image 为高德实拍图 URL）
+  "xiaocan":  [...],                  // §7 苍蝇馆/小店候选
+  "specialties": [...],               // §8 特产
+  "assoc":    [...],                  // §9 美食×商圈关联
+  "hotels":   [...],                  // §10 酒店
+  "queries":  [...],                  // §11 原始查询面
+  "external": {{                      // 美团 / 大众点评外链
+    "meituan_search": "https://www.meituan.com/s/...",
+    "dianping_food": "https://www.dianping.com/yueyang/ch10"
+  }}
+}}
+```
+
+## 调用示例
+
+```bash
+# 1. 拿全国索引，筛出目标城市
+curl -s https://fun.worldstip.com/api/index.json | jq '.city_index[] | select(.province=="湖南省")'
+
+# 2. 取城市全量数据
+curl -s https://fun.worldstip.com/api/cities/430600.json
+
+# 3. 只取 S 级商圈
+curl -s https://fun.worldstip.com/api/cities/430600.json | jq '.districts[] | select(.grade=="S")'
+
+# 4. 取带图的美食 TOP10
+curl -s https://fun.worldstip.com/api/cities/430600.json | jq '[.food[] | select(.image)][:10]'
+
+# 5. Markdown 原文（skill 直读，零解析成本）
+curl -s https://fun.worldstip.com/md/湖南省/岳阳市.md
+```
+
+```python
+# 6. Python 一行读取
+import json, urllib.request
+data = json.load(urllib.request.urlopen("https://fun.worldstip.com/api/cities/430600.json"))
+```
+
+## 使用约定
+
+- **一致性承诺**：JSON 与 Markdown 由同一数据层（`build_api.py`）生成，同源同值；任一字段都能在对应城市的 md 档案中找到出处。
+- **无鉴权无限率**：静态托管 + CDN 缓存，请合理使用（建议客户端侧缓存 24h）。
+- **评分口径**：高德快照评分（0–5），采集时间见城市 JSON 的 `updated` 字段；人均单位元。
+- **标记口径**：✅ 优质 / ⚠️ 待核 / ❌ 不推荐；派生规则见各城市页说明。
+- **许可**：数据仅可正当使用，不得整库转售；请保留来源标注（高德/美团/大众点评）。
+
+## Markdown 内容索引（/md/）
+
+| 路径 | 内容 |
+|---|---|
+| `/md/README.md` | 全国数据总索引 |
+| `/md/行政层级总览.md` | 43,474 个行政节点（省→镇街） |
+| `/md/<省>/<省>.md` | 省级索引（城市列表 + 聚合统计） |
+| `/md/<省>/<市>.md` | 城市档案原文（13 章），与 JSON 同源同值 |
+"""
+    with open(os.path.join(MD_OUT, "API.md"), "w", encoding="utf-8") as f:
+        f.write(api_md)
+
+    # 4. SOURCES.md —— 数据来源与方法论（与 sources.html 同源）
+    src_md = f"""# 数据来源与方法论
+
+> 站点：https://fun.worldstip.com  ·  生成时间：{gen}
+
+## 三层数据源
+
+| 层级 | 来源 | 作用 | 覆盖 |
+|---|---|---|---|
+| **Primary 底账** | 高德地图 Web 服务 POI（restapi.amap.com） | 商圈载体、餐饮、休闲娱乐、儿童亲子、酒店、特产六大维度全量采集 | {len(light)} 城 / {poi_total:,} POI（去重） |
+| **Food 消费视角** | 美团 | 美食榜单、团购与实时消费热度参考；城市页提供搜索直达 | 每城搜索外链 |
+| **Food 评价视角** | 大众点评 | 必吃榜与用户评价参考；城市页提供城市美食频道直达（/拼音/ch10） | 每城频道外链 |
+
+## 采集与评级方法
+
+- **查询面**：每城约 60 个查询面，覆盖类型码（中餐厅/步行街/购物中心/酒吧/KTV/电影院/运动场馆/游乐场等）与关键词（美食/老字号/大排档/苍蝇馆/小吃/夜市/特产等）双通道。
+- **去重**：按高德 POI id 去重；跨查询面命中去重后计入维度。
+- **商圈评级**：S = 关联美食 ≥20 家且均分 ≥4.3、覆盖 ≥3 类业态；A = 美食 ≥10 家且均分 ≥4.0、覆盖 ≥2 类；B = 美食 ≥5 家或单业态 ≥10 家；C = 数据稀薄，仅登记待人工补充。
+- **载体识别**：剥离分店后缀、地址不参与判定、类型码须为 06 购物类或 050000 餐饮载体，三重护栏防止餐厅混入商圈列表。
+- **苍蝇馆纪律**：不凭空判定，仅命中关键词或小店语义（小馆/排挡/家常/私房/土菜/大排档）方列为候选。
+- **美食×商圈关联**：① 名称互证；② 距离就近（≤600m 且同区县）。仅靠距离的关联标注 ⚠。
+
+## 更新策略
+
+- 数据层随采集波次滚动更新（wave1 底账 → wave2 酒店/迷你动物园/商场 → wave3 休闲娱乐）。
+- 每城档案头部记录采集时间与告警数；站点统计（`/api/stats.json`）为全局快照。
+- 评分为快照值，营业状态以美团/大众点评实时信息为准。
+
+## 合规提示
+
+数据用于正当的信息聚合与探索参考，不整库转售；引用请标注「高德地图 POI / 美团 / 大众点评」。
+"""
+    with open(os.path.join(MD_OUT, "SOURCES.md"), "w", encoding="utf-8") as f:
+        f.write(src_md)
+
+    print(f"[build_api] site docs: {n_prov} 省级索引 / {n_root} 根级 / API.md / SOURCES.md "
+          f"(full-dim cities: {full3}/{len(light)})")
 
 
 if __name__ == "__main__":

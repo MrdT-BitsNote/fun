@@ -20,6 +20,11 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 ::selection{background:rgba(255,55,95,.18)}
+/* 键盘可达性：焦点环统一可见（2px + 2px 偏移），鼠标点击不显示 */
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+.nav-gh:focus-visible,.btn:focus-visible{outline-color:var(--text)}
+.btn:focus-visible{outline-offset:3px}
 
 /* ---------- 导航（毛玻璃） ---------- */
 .nav{position:fixed;inset:0 0 auto 0;height:var(--nav-h);z-index:1000;

@@ -65,6 +65,11 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 ::selection{background:rgba(255,55,95,.18)}
+/* 键盘可达性：焦点环统一可见（2px + 2px 偏移），鼠标点击不显示 */
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+.nav-gh:focus-visible,.btn:focus-visible{outline-color:var(--text)}
+.btn:focus-visible{outline-offset:3px}
 
 /* ---------- 导航（毛玻璃） ---------- */
 .nav{position:fixed;inset:0 0 auto 0;height:var(--nav-h);z-index:1000;
@@ -1306,24 +1311,39 @@ def render_readme(stats):
 <pre class="code"><code>site/
 ├── index.html              <span class="cm"># FUN hero + 主站</span>
 ├── assets/                 <span class="cm"># style.css / app.js（零依赖）</span>
-├── cities/&lt;adcode&gt;.html   <span class="cm"># 城市页</span>
-├── provinces/&lt;省&gt;.html    <span class="cm"># 省份页</span>
+├── cities/&lt;adcode&gt;.html   <span class="cm"># 城市页（389）</span>
+├── cities/&lt;市名&gt;.html     <span class="cm"># 城市名 URL 兼容存根 → 跳转 adcode 页</span>
+├── provinces/&lt;省&gt;.html    <span class="cm"># 省份页（32）</span>
 ├── api.html                <span class="cm"># 数据接口文档</span>
 ├── sources.html            <span class="cm"># 数据来源</span>
 ├── api/                    <span class="cm"># JSON 数据接口层</span>
 │   ├── index.json / stats.json / data.json
-│   ├── cities/&lt;adcode&gt;.json
+│   ├── cities/&lt;adcode&gt;.json（389 + index.json 轻索引）
 │   ├── provinces/&lt;省&gt;.json
 │   ├── food/top.json · districts/top.json
-├── md/&lt;省&gt;/&lt;市&gt;.md         <span class="cm"># Markdown 档案副本</span>
+├── md/                     <span class="cm"># Markdown 内容全量（skill 直读）</span>
+│   ├── README.md · API.md · SOURCES.md · 行政层级总览.md
+│   └── &lt;省&gt;/&lt;市&gt;.md（389 城档案 + 32 省级索引）
+├── 404.html                <span class="cm"># FUN 风格错误页</span>
+├── robots.txt · sitemap.xml  <span class="cm"># SEO（389 城 + 省页 + 文档页）</span>
+├── _headers                <span class="cm"># Cloudflare Pages 缓存规则</span>
+├── CNAME                   <span class="cm"># fun.worldstip.com</span>
 └── README.html             <span class="cm"># 本页</span></code></pre>
 
 <h2>fun.worldstip.com 部署（Cloudflare Pages）</h2>
 <ul>
 <li>构建命令：留空（纯静态）；输出目录：<code>site</code>。</li>
 <li>DNS：<code>fun</code> CNAME 到 Cloudflare Pages 域名，橙色云 proxied。</li>
-<li>缓存：<code>/api/*.json</code> 与 <code>/md/*.md</code> 设 <code>Cache-Control: public, max-age=86400</code>；HTML 走默认。</li>
-<li>备选：GitHub Pages（本仓库 <code>/docs</code> 或根目录 + Actions）、Netlify Drop、任意 Nginx。</li>
+<li>缓存规则已随站交付（<code>_headers</code>）：<code>/api/*</code> 与 <code>/md/*</code> 24h、<code>/assets/*</code> 一年 immutable、HTML 1h。</li>
+<li>备选：GitHub Pages（本仓库根目录 + Actions）、Netlify Drop、任意 Nginx。</li>
+</ul>
+
+<h2>直接上传产品（零配置上线）</h2>
+<ul>
+<li>交付物 <code>fun-site-upload.zip</code> 为 <code>site/</code> 的完整打包（含 CNAME / _headers / robots / sitemap / 404），<b>解压即传、无需构建</b>。</li>
+<li><b>Netlify Drop</b>：app.netlify.com/drop 拖入 zip 或解压后的文件夹 → 秒级上线，自定义域名绑定 fun.worldstip.com。</li>
+<li><b>Cloudflare Pages 直传</b>：Direct Upload 选该目录；<b>GitHub Pages</b>：推送本仓库后 Settings → Pages 选 main 分支根目录。</li>
+<li><b>任意 Nginx/宝塔</b>：解压到站点根目录，<code>try_files $uri $uri/ /404.html</code> 即可。</li>
 </ul>
 
 <h2>GitHub 备份</h2>
@@ -1334,12 +1354,94 @@ def render_readme(stats):
 </ul>
 
 <h2>重新生成</h2>
-<pre class="code"><code>python tools/build_api.py        <span class="cm"># md 档案 → JSON 数据层（site/api + site/md）</span>
-python tools/build_fun_site.py  <span class="cm"># JSON → 网站（site/*.html + assets）</span>
+<pre class="code"><code>python tools/build_api.py        <span class="cm"># md 档案 → JSON 数据层（site/api + site/md 全量内容）</span>
+python tools/build_fun_site.py  <span class="cm"># JSON → 网站（site/*.html + assets + 部署资产）</span>
 python tools/validate_data.py   <span class="cm"># C1–C10 数据校验</span></code></pre>
 </div></main>{footer()}"""
 
     return head("部署与备份说明 · FUN", "FUN 静态站点结构、fun.worldstip.com 部署方案与 GitHub 备份说明。") + body
+
+
+# ================================================================ 部署资产
+
+def build_redirect_stubs(idx):
+    """城市名 URL → adcode URL 兼容存根：保留 /cities/岳阳市.html 可读地址，301 语义由 meta refresh + canonical 表达。"""
+    n = 0
+    for c in idx["city_index"]:
+        ad = c["page"].split("/")[-1]  # <adcode>.html
+        stub = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="0; url={ad}">
+<link rel="canonical" href="{ad}">
+<title>{esc(c['city'])} · FUN</title>
+{favicon()}
+<style>body{{margin:0;background:#fbfbfd;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Helvetica Neue",sans-serif}}a{{color:#0071e3}}</style>
+</head>
+<body>
+<div style="min-height:100dvh;display:flex;align-items:center;justify-content:center;text-align:center">
+<div><div style="font-size:2rem;font-weight:900;letter-spacing:-.02em;color:#1d1d1f">{esc(c['city'])}</div>
+<p style="color:#6e6e73;margin-top:8px">正在跳转至 <a href="{ad}">{esc(c['city'])}档案页</a>…</p></div>
+</div>
+</body>
+</html>"""
+        # 文件名用城市名原文（URL 侧由浏览器/服务器自动编解码），与 site/md 命名一致
+        out = os.path.join(SITE, "cities", f"{c['city']}.html")
+        with open(out, "w", encoding="utf-8") as f:
+            f.write(stub)
+        n += 1
+    return n
+
+
+def build_404():
+    """FUN 风格 404 页（静态托管默认错误页）。"""
+    body = """<main>
+<div class="doc-hero" style="min-height:72dvh;display:flex;align-items:center"><div class="wrap" style="text-align:center">
+<div class="sec-label">404</div>
+<h1 style="font-size:clamp(4rem,13vw,8.5rem);font-weight:900;letter-spacing:-.04em;line-height:1;margin:.08em 0">走<span style="background:linear-gradient(135deg,#ff9f0a,#ff375f 55%,#bf5af2);-webkit-background-clip:text;background-clip:text;color:transparent">丢</span>了</h1>
+<p class="sec-desc" style="margin:14px auto 26px;max-width:34em">这条路线没有数据。回首页重新探索，或直接搜一座城市——389 城的美食与商圈都在。</p>
+<div class="hero-cta" style="justify-content:center">
+<a class="btn btn-p" href="index.html">回到首页</a>
+<a class="btn btn-g" href="index.html#cities">探索城市</a>
+<a class="btn btn-g" href="api.html">数据接口</a>
+</div></div></div></main>"""
+    with open(os.path.join(SITE, "404.html"), "w", encoding="utf-8") as f:
+        f.write(head("页面不存在 · FUN", "你访问的路线没有数据。回首页探索 389 城美食与商圈。") + body)
+
+
+def build_deploy_files(idx):
+    """robots.txt / sitemap.xml / _headers / CNAME —— 部署与 SEO 资产。"""
+    base = "https://fun.worldstip.com"
+    # robots.txt
+    with open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8") as f:
+        f.write(f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")
+    # sitemap.xml（首页 1.0 / 省份页 0.8 / 城市页 0.7 / 文档页 0.5）
+    urls = [(f"{base}/", "1.0", "weekly"), (f"{base}/index.html", "1.0", "weekly"),
+            (f"{base}/api.html", "0.5", "monthly"), (f"{base}/sources.html", "0.5", "monthly"),
+            (f"{base}/README.html", "0.4", "monthly")]
+    for prov in sorted(set(c["province"] for c in idx["city_index"])):
+        urls.append((f"{base}/provinces/{quote(prov)}.html", "0.8", "weekly"))
+    for c in idx["city_index"]:
+        urls.append((f"{base}/{c['page']}", "0.7", "weekly"))
+    items = "".join(f"<url><loc>{u}</loc><changefreq>{cf}</changefreq><priority>{p}</priority></url>"
+                    for u, p, cf in urls)
+    with open(os.path.join(SITE, "sitemap.xml"), "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                + items + "</urlset>")
+    # _headers（Cloudflare Pages 缓存规则）
+    with open(os.path.join(SITE, "_headers"), "w", encoding="utf-8") as f:
+        f.write("# Cloudflare Pages 缓存规则\n"
+                "/api/*\n  Cache-Control: public, max-age=86400\n"
+                "/md/*\n  Cache-Control: public, max-age=86400\n"
+                "/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n"
+                "/*.html\n  Cache-Control: public, max-age=3600\n")
+    # CNAME（Cloudflare Pages / GitHub Pages 自定义域名）
+    with open(os.path.join(SITE, "CNAME"), "w", encoding="utf-8") as f:
+        f.write("fun.worldstip.com\n")
+    return len(urls)
 
 
 # ================================================================ 主流程
@@ -1390,6 +1492,12 @@ def main():
         with open(os.path.join(SITE, name), "w", encoding="utf-8") as f:
             f.write(fn())
         print(f"[fun_site] {name}")
+
+    # 部署资产：城市名重定向存根 / 404 / robots / sitemap / _headers / CNAME
+    n_stub = build_redirect_stubs(idx)
+    build_404()
+    n_url = build_deploy_files(idx)
+    print(f"[fun_site] deploy assets: {n_stub} 重定向存根 + 404 + robots + sitemap({n_url} urls) + _headers + CNAME")
 
 
 if __name__ == "__main__":

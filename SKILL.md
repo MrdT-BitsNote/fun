@@ -934,10 +934,15 @@ S-0 候选枚举（不靠记忆，靠检索）
 | `https://fun.worldstip.com/api/districts/top.json` | 全国 S/A 级商圈榜 |
 | `https://fun.worldstip.com/api/stats.json` | 全站统计快照 |
 | `https://fun.worldstip.com/md/<省>/<市>.md` | 城市档案 Markdown 原文（skill 直读，与 JSON 同源同值） |
+| `https://fun.worldstip.com/md/API.md` | 数据接口文档（端点/Schema/调用示例/使用约定） |
+| `https://fun.worldstip.com/md/SOURCES.md` | 数据来源与方法论 |
+| `https://fun.worldstip.com/md/README.md` | 全国数据总索引 |
+| `https://fun.worldstip.com/md/行政层级总览.md` | 43,474 个行政节点（省→镇街） |
+| `https://fun.worldstip.com/md/<省>/<省>.md` | 省级索引（城市列表 + 聚合统计） |
 | `data/_status.tsv` | 全部城市的 POI 数/查询面/波次/告警 |
 | `site/data.json` | 兼容旧版轻量索引（城市/省份/adcode/POI 数/波次/URL） |
 | `data/行政层级总览.md` + `.cache/amap/hierarchy.json` | 43,474 个行政节点（省→镇街），村级高德不提供 |
-| `site/` | FUN 苹果风静态网站（hero + 389 城页 + 32 省页 + 接口文档，部署见 `docs/fun.worldstip.com部署方案.md`） |
+| `site/` | FUN 苹果风静态网站（hero + 389 城页 + 32 省页 + 接口文档；内容全量 md 化于 `site/md/`；部署资产含 CNAME/_headers/robots/sitemap/404/城市名重定向存根） |
 | GitHub 备份 | `MrdT-BitsNote/fun`（public，网站 + 数据 + 工具链全量） |
 
 **数据层纪律（五条）**
