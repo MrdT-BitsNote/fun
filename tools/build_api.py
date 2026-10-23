@@ -656,7 +656,11 @@ def build_data_md(provinces, all_cities, stats, gen):
     for p in provinces:
         name = p["province"]
         w(f"- **[{name}](#{name})**（{p['cities']} 城 · POI {p['poi']:,}）")
-        w(" · ".join(f"[{c}](#{c})" for c in by_prov.get(name, [])) + "\n")
+        cities_of = by_prov.get(name, [])
+        # 直辖市：省名即市名，目录里不再重复列一次同名城市
+        if not (len(cities_of) == 1 and cities_of[0] == name):
+            w(" · ".join(f"[{c}](#{c})" for c in cities_of))
+        w("\n")
 
     # 全国统计
     g = stats["grades"]
